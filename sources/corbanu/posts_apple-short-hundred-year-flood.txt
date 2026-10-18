@@ -1,0 +1,28 @@
+
+Apple (AAPL): The Hundred-Year Flood Meets a 35x Multiple — Corbanu
+Skip to article
+Corbanu
+Home
+Markets
+Research
+Terminal
+Subscribe
+ Published research
+Trade proposal / 27 Sep 2026
+Proposed short
+xyz:AAPL perpetual
+Reference mark
+$340.43
+Weighted target
+$304.84 (−10.5%)
+Horizon
+5 Feb 2027
+Copy for LLM
+Apple (AAPL): The Hundred-Year Flood Meets a 35x Multiple
+CORBANU · TRADE NOTE · 27 SEPTEMBER 2026
+The trade
+SHORT Apple (AAPL) through the xyz:AAPL perpetual on Hyperliquid from a reference entry of $340.43 (USD, Hyperliquid public snapshot at 2026-09-27 21:27 UTC; a reference price, not an executed fill), over a horizon to February 5, 2027, just after Apple's fiscal first-quarter report. The shares trade at 35.7x consensus FY2027 earnings while Apple's own guidance shows memory costs pulling gross margin lower and rising again after September; the fiscal fourth-quarter report expected in late October, with its December-quarter margin guide, is the catalyst, and the thesis ends if Apple guides December-quarter gross margin at or above about 48% excluding one-time refunds or discloses supply terms that cap its memory costs.
+Probability-weighted target: $304.84 by 2027-02-05
+, a 10.45% decline from the reference entry. This weighted figure blends three scenario targets; it is not itself a scenario. Scenario price targets: Margin reset $268.86 (40%); In line, slow de-rate $312.74 (38%); Demand and pricing hold $356.59 (22%).
+SHORT xyz:AAPL
+ · hyperliquid · reference entr

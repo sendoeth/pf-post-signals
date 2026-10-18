@@ -1,0 +1,5854 @@
+[
+{
+"asof": "2026-03-09",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 68432.16,
+"returns": {}
+},
+{
+"asof": "2026-03-09",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1992.98,
+"returns": {}
+},
+{
+"asof": "2026-03-09",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 84.96,
+"returns": {}
+},
+{
+"asof": "2026-03-09",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 8.87,
+"returns": {}
+},
+{
+"asof": "2026-03-10",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 69948.63,
+"returns": {}
+},
+{
+"asof": "2026-03-10",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2036.51,
+"returns": {}
+},
+{
+"asof": "2026-03-10",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 85.88,
+"returns": {}
+},
+{
+"asof": "2026-03-10",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 8.99,
+"returns": {}
+},
+{
+"asof": "2026-03-11",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 70191.86,
+"returns": {}
+},
+{
+"asof": "2026-03-11",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2051.97,
+"returns": {}
+},
+{
+"asof": "2026-03-11",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 86.58,
+"returns": {}
+},
+{
+"asof": "2026-03-11",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 8.99,
+"returns": {}
+},
+{
+"asof": "2026-03-12",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 70541.34,
+"returns": {}
+},
+{
+"asof": "2026-03-12",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2073.52,
+"returns": {}
+},
+{
+"asof": "2026-03-12",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 86.84,
+"returns": {}
+},
+{
+"asof": "2026-03-12",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 9.05,
+"returns": {}
+},
+{
+"asof": "2026-03-13",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 70930.0,
+"returns": {}
+},
+{
+"asof": "2026-03-13",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2092.22,
+"returns": {}
+},
+{
+"asof": "2026-03-13",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 88.18,
+"returns": {}
+},
+{
+"asof": "2026-03-13",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 9.08,
+"returns": {}
+},
+{
+"asof": "2026-03-16",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 74884.67,
+"returns": {}
+},
+{
+"asof": "2026-03-16",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2352.97,
+"returns": {}
+},
+{
+"asof": "2026-03-16",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 96.2,
+"returns": {}
+},
+{
+"asof": "2026-03-16",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 9.92,
+"returns": {}
+},
+{
+"asof": "2026-03-17",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 73909.36,
+"returns": {}
+},
+{
+"asof": "2026-03-17",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2317.39,
+"returns": {}
+},
+{
+"asof": "2026-03-17",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 94.62,
+"returns": {}
+},
+{
+"asof": "2026-03-17",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 9.79,
+"returns": {}
+},
+{
+"asof": "2026-03-18",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 71246.54,
+"returns": {}
+},
+{
+"asof": "2026-03-18",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2203.39,
+"returns": {}
+},
+{
+"asof": "2026-03-18",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 90.08,
+"returns": {}
+},
+{
+"asof": "2026-03-18",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 9.22,
+"returns": {}
+},
+{
+"asof": "2026-03-19",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 69930.0,
+"returns": {}
+},
+{
+"asof": "2026-03-19",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2137.81,
+"returns": {}
+},
+{
+"asof": "2026-03-19",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 88.89,
+"returns": {}
+},
+{
+"asof": "2026-03-19",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 9.04,
+"returns": {}
+},
+{
+"asof": "2026-03-20",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 70510.73,
+"returns": {}
+},
+{
+"asof": "2026-03-20",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2146.22,
+"returns": {}
+},
+{
+"asof": "2026-03-20",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 89.84,
+"returns": {}
+},
+{
+"asof": "2026-03-20",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 9.12,
+"returns": {}
+},
+{
+"asof": "2026-03-23",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 70906.45,
+"returns": {}
+},
+{
+"asof": "2026-03-23",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2152.03,
+"returns": {}
+},
+{
+"asof": "2026-03-23",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 91.43,
+"returns": {}
+},
+{
+"asof": "2026-03-23",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 9.11,
+"returns": {}
+},
+{
+"asof": "2026-03-24",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 70556.74,
+"returns": {}
+},
+{
+"asof": "2026-03-24",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2156.23,
+"returns": {}
+},
+{
+"asof": "2026-03-24",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 90.8,
+"returns": {}
+},
+{
+"asof": "2026-03-24",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 9.25,
+"returns": {}
+},
+{
+"asof": "2026-03-25",
+"symbol": "BTC",
+"regime": "DIVERGENCE",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 71336.53,
+"returns": {}
+},
+{
+"asof": "2026-03-25",
+"symbol": "ETH",
+"regime": "DIVERGENCE",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2169.02,
+"returns": {}
+},
+{
+"asof": "2026-03-25",
+"symbol": "SOL",
+"regime": "DIVERGENCE",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 91.7,
+"returns": {}
+},
+{
+"asof": "2026-03-25",
+"symbol": "LINK",
+"regime": "DIVERGENCE",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 9.37,
+"returns": {}
+},
+{
+"asof": "2026-03-26",
+"symbol": "BTC",
+"regime": "DIVERGENCE",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 68820.31,
+"returns": {}
+},
+{
+"asof": "2026-03-26",
+"symbol": "ETH",
+"regime": "DIVERGENCE",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2060.43,
+"returns": {}
+},
+{
+"asof": "2026-03-26",
+"symbol": "SOL",
+"regime": "DIVERGENCE",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 86.53,
+"returns": {}
+},
+{
+"asof": "2026-03-26",
+"symbol": "LINK",
+"regime": "DIVERGENCE",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 8.91,
+"returns": {}
+},
+{
+"asof": "2026-03-27",
+"symbol": "BTC",
+"regime": "DIVERGENCE",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 66407.28,
+"returns": {}
+},
+{
+"asof": "2026-03-27",
+"symbol": "ETH",
+"regime": "DIVERGENCE",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1992.75,
+"returns": {}
+},
+{
+"asof": "2026-03-27",
+"symbol": "SOL",
+"regime": "DIVERGENCE",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 83.11,
+"returns": {}
+},
+{
+"asof": "2026-03-27",
+"symbol": "LINK",
+"regime": "DIVERGENCE",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 8.57,
+"returns": {}
+},
+{
+"asof": "2026-03-30",
+"symbol": "BTC",
+"regime": "DIVERGENCE",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 66797.37,
+"returns": {}
+},
+{
+"asof": "2026-03-30",
+"symbol": "ETH",
+"regime": "DIVERGENCE",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2026.48,
+"returns": {}
+},
+{
+"asof": "2026-03-30",
+"symbol": "SOL",
+"regime": "DIVERGENCE",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 82.54,
+"returns": {}
+},
+{
+"asof": "2026-03-30",
+"symbol": "LINK",
+"regime": "DIVERGENCE",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 8.62,
+"returns": {}
+},
+{
+"asof": "2026-03-31",
+"symbol": "BTC",
+"regime": "DIVERGENCE",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 68284.48,
+"returns": {}
+},
+{
+"asof": "2026-03-31",
+"symbol": "ETH",
+"regime": "DIVERGENCE",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2105.43,
+"returns": {}
+},
+{
+"asof": "2026-03-31",
+"symbol": "SOL",
+"regime": "DIVERGENCE",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 83.2,
+"returns": {}
+},
+{
+"asof": "2026-03-31",
+"symbol": "LINK",
+"regime": "DIVERGENCE",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 8.78,
+"returns": {}
+},
+{
+"asof": "2026-04-01",
+"symbol": "BTC",
+"regime": "DIVERGENCE",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 68113.92,
+"returns": {}
+},
+{
+"asof": "2026-04-01",
+"symbol": "ETH",
+"regime": "DIVERGENCE",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2140.35,
+"returns": {}
+},
+{
+"asof": "2026-04-01",
+"symbol": "SOL",
+"regime": "DIVERGENCE",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 81.18,
+"returns": {}
+},
+{
+"asof": "2026-04-01",
+"symbol": "LINK",
+"regime": "DIVERGENCE",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 8.94,
+"returns": {}
+},
+{
+"asof": "2026-04-02",
+"symbol": "BTC",
+"regime": "DIVERGENCE",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 66901.99,
+"returns": {}
+},
+{
+"asof": "2026-04-02",
+"symbol": "ETH",
+"regime": "DIVERGENCE",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2057.17,
+"returns": {}
+},
+{
+"asof": "2026-04-02",
+"symbol": "SOL",
+"regime": "DIVERGENCE",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 78.94,
+"returns": {}
+},
+{
+"asof": "2026-04-02",
+"symbol": "LINK",
+"regime": "DIVERGENCE",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 8.63,
+"returns": {}
+},
+{
+"asof": "2026-04-06",
+"symbol": "BTC",
+"regime": "DIVERGENCE",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 68853.66,
+"returns": {}
+},
+{
+"asof": "2026-04-06",
+"symbol": "ETH",
+"regime": "DIVERGENCE",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2107.16,
+"returns": {}
+},
+{
+"asof": "2026-04-06",
+"symbol": "SOL",
+"regime": "DIVERGENCE",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 80.03,
+"returns": {}
+},
+{
+"asof": "2026-04-06",
+"symbol": "LINK",
+"regime": "DIVERGENCE",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 8.81,
+"returns": {}
+},
+{
+"asof": "2026-04-07",
+"symbol": "BTC",
+"regime": "DIVERGENCE",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 71924.22,
+"returns": {}
+},
+{
+"asof": "2026-04-07",
+"symbol": "ETH",
+"regime": "DIVERGENCE",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2240.01,
+"returns": {}
+},
+{
+"asof": "2026-04-07",
+"symbol": "SOL",
+"regime": "DIVERGENCE",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 85.56,
+"returns": {}
+},
+{
+"asof": "2026-04-07",
+"symbol": "LINK",
+"regime": "DIVERGENCE",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 9.29,
+"returns": {}
+},
+{
+"asof": "2026-04-08",
+"symbol": "BTC",
+"regime": "DIVERGENCE",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 71069.93,
+"returns": {}
+},
+{
+"asof": "2026-04-08",
+"symbol": "ETH",
+"regime": "DIVERGENCE",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2190.0,
+"returns": {}
+},
+{
+"asof": "2026-04-08",
+"symbol": "SOL",
+"regime": "DIVERGENCE",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 82.57,
+"returns": {}
+},
+{
+"asof": "2026-04-08",
+"symbol": "LINK",
+"regime": "DIVERGENCE",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 8.85,
+"returns": {}
+},
+{
+"asof": "2026-04-09",
+"symbol": "BTC",
+"regime": "DIVERGENCE",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 71787.97,
+"returns": {}
+},
+{
+"asof": "2026-04-09",
+"symbol": "ETH",
+"regime": "DIVERGENCE",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2190.2,
+"returns": {}
+},
+{
+"asof": "2026-04-09",
+"symbol": "SOL",
+"regime": "DIVERGENCE",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 83.33,
+"returns": {}
+},
+{
+"asof": "2026-04-09",
+"symbol": "LINK",
+"regime": "DIVERGENCE",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 8.95,
+"returns": {}
+},
+{
+"asof": "2026-04-10",
+"symbol": "BTC",
+"regime": "DIVERGENCE",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 72962.7,
+"returns": {}
+},
+{
+"asof": "2026-04-10",
+"symbol": "ETH",
+"regime": "DIVERGENCE",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2245.05,
+"returns": {}
+},
+{
+"asof": "2026-04-10",
+"symbol": "SOL",
+"regime": "DIVERGENCE",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 84.83,
+"returns": {}
+},
+{
+"asof": "2026-04-10",
+"symbol": "LINK",
+"regime": "DIVERGENCE",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 9.09,
+"returns": {}
+},
+{
+"asof": "2026-04-13",
+"symbol": "BTC",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 74417.99,
+"returns": {
+"1": 0.0038490692909066704,
+"7": -0.01912145168123991,
+"30": -0.06578543709659446
+}
+},
+{
+"asof": "2026-04-13",
+"symbol": "ETH",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 2369.46,
+"returns": {
+"1": 0.019844183906881696,
+"7": 0.023469482498121974,
+"30": 0.0467659297899099
+}
+},
+{
+"asof": "2026-04-13",
+"symbol": "SOL",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": 1,
+"entry": 86.51,
+"returns": {
+"1": -0.03225060686625836,
+"7": -0.014218009478673022,
+"30": 0.053866605016761104
+}
+},
+{
+"asof": "2026-04-13",
+"symbol": "LINK",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 9.36,
+"returns": {
+"1": 0.03632478632478631,
+"7": 0.007478632478632563,
+"30": -0.09081196581196593
+}
+},
+{
+"asof": "2026-04-14",
+"symbol": "BTC",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 74131.55,
+"returns": {
+"1": -0.009151838859432937,
+"7": -0.029739024747222897,
+"30": -0.09386610694097186
+}
+},
+{
+"asof": "2026-04-14",
+"symbol": "ETH",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 2322.44,
+"returns": {
+"1": -0.016151116928747156,
+"7": -0.002023733659427096,
+"30": 0.016874494066585144
+}
+},
+{
+"asof": "2026-04-14",
+"symbol": "SOL",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": 1,
+"entry": 83.72,
+"returns": {
+"1": 0.014094601051122924,
+"7": 0.027591973244147194,
+"30": 0.10069278547539429
+}
+},
+{
+"asof": "2026-04-14",
+"symbol": "LINK",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 9.02,
+"returns": {
+"1": -0.026607538802660757,
+"7": -0.04212860310421296,
+"30": -0.16186252771618626
+}
+},
+{
+"asof": "2026-04-15",
+"symbol": "BTC",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 74809.99,
+"returns": {
+"1": -0.004602326507462173,
+"7": -0.04502393330088661,
+"30": -0.0575219967279772
+}
+},
+{
+"asof": "2026-04-15",
+"symbol": "ETH",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 2359.95,
+"returns": {
+"1": 0.004991631178626554,
+"7": -0.005983177609695245,
+"30": 0.05732748575181679
+}
+},
+{
+"asof": "2026-04-15",
+"symbol": "SOL",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": 1,
+"entry": 84.9,
+"returns": {
+"1": 0.04888103651354525,
+"7": 0.023203769140164976,
+"30": 0.051118963486454616
+}
+},
+{
+"asof": "2026-04-15",
+"symbol": "LINK",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 9.26,
+"returns": {
+"1": -0.0356371490280778,
+"7": -0.003239740820734305,
+"30": -0.08747300215982734
+}
+},
+{
+"asof": "2026-04-16",
+"symbol": "BTC",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 75154.29,
+"returns": {
+"1": -0.02551697314950352,
+"7": -0.041290922979912326,
+"30": -0.039834851742994504
+}
+},
+{
+"asof": "2026-04-16",
+"symbol": "ETH",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 2348.17,
+"returns": {
+"1": -0.030163914878394538,
+"7": 0.007627216087421229,
+"30": 0.07128955740001797
+}
+},
+{
+"asof": "2026-04-16",
+"symbol": "SOL",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": 1,
+"entry": 89.05,
+"returns": {
+"1": -0.0032565974171813172,
+"7": -0.03290286355979777,
+"30": -0.028186412128017868
+}
+},
+{
+"asof": "2026-04-16",
+"symbol": "LINK",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 9.59,
+"returns": {
+"1": -0.0031282586027110426,
+"7": 0.02502606882168923,
+"30": -0.01355578727841511
+}
+},
+{
+"asof": "2026-04-17",
+"symbol": "BTC",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 77072.0,
+"returns": {
+"1": 0.017908449242267088,
+"7": -0.004737518164833032,
+"30": -0.0050040222129956735
+}
+},
+{
+"asof": "2026-04-17",
+"symbol": "ETH",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 2419.0,
+"returns": {
+"1": 0.028391897478296735,
+"7": 0.04299710624224895,
+"30": 0.11905746176105825
+}
+},
+{
+"asof": "2026-04-17",
+"symbol": "SOL",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": 1,
+"entry": 88.76,
+"returns": {
+"1": -0.029292474087426856,
+"7": -0.029067147363677326,
+"30": -0.03965750337990093
+}
+},
+{
+"asof": "2026-04-17",
+"symbol": "LINK",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 9.62,
+"returns": {
+"1": 0.03534303534303529,
+"7": 0.02494802494802484,
+"30": 0.005197505197505059
+}
+},
+{
+"asof": "2026-04-20",
+"symbol": "BTC",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 75840.97,
+"returns": {
+"1": -0.006529188643024986,
+"7": -0.020178407528279374,
+"30": -0.02256379368565553
+}
+},
+{
+"asof": "2026-04-20",
+"symbol": "ETH",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 2313.85,
+"returns": {
+"1": -0.005743673963307883,
+"7": 0.004399593750675224,
+"30": 0.07969833826738981
+}
+},
+{
+"asof": "2026-04-20",
+"symbol": "SOL",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": 1,
+"entry": 85.28,
+"returns": {
+"1": 0.00879455909943716,
+"7": -0.005393996247654909,
+"30": 0.010436210131332002
+}
+},
+{
+"asof": "2026-04-20",
+"symbol": "LINK",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 9.29,
+"returns": {
+"1": -0.011840688912809538,
+"7": -0.0043057050592034685,
+"30": -0.03724434876210991
+}
+},
+{
+"asof": "2026-04-21",
+"symbol": "BTC",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 76336.15,
+"returns": {
+"1": -0.02413116197240761,
+"7": -8.67216908373436e-05,
+"30": -0.01675968725171506
+}
+},
+{
+"asof": "2026-04-21",
+"symbol": "ETH",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 2327.14,
+"returns": {
+"1": -0.020166384489115563,
+"7": 0.01620873690452651,
+"30": 0.08309770791615445
+}
+},
+{
+"asof": "2026-04-21",
+"symbol": "SOL",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": 1,
+"entry": 86.03,
+"returns": {
+"1": 0.009764035801464566,
+"7": -0.0228989887248634,
+"30": 0.015459723352319044
+}
+},
+{
+"asof": "2026-04-21",
+"symbol": "LINK",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 9.4,
+"returns": {
+"1": 0.011702127659574568,
+"7": 0.017021276595744705,
+"30": -0.03797872340425523
+}
+},
+{
+"asof": "2026-04-22",
+"symbol": "BTC",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 78178.23,
+"returns": {
+"1": -0.001013709315240252,
+"7": 0.03067644278976378,
+"30": 0.033752746768505704
+}
+},
+{
+"asof": "2026-04-22",
+"symbol": "ETH",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 2374.07,
+"returns": {
+"1": 0.018453541807950002,
+"7": 0.05103893314013486,
+"30": 0.12982767989149446
+}
+},
+{
+"asof": "2026-04-22",
+"symbol": "SOL",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": 1,
+"entry": 86.87,
+"returns": {
+"1": -0.00863359042247036,
+"7": -0.044088868424081995,
+"30": -0.02843329112466908
+}
+},
+{
+"asof": "2026-04-22",
+"symbol": "LINK",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 9.29,
+"returns": {
+"1": -0.006458557588805203,
+"7": 0.019375672766415497,
+"30": -0.013993541442411273
+}
+},
+{
+"asof": "2026-04-23",
+"symbol": "BTC",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 78257.48,
+"returns": {
+"1": 0.010482704017558353,
+"7": 0.02441824091447853,
+"30": 0.019237394304033262
+}
+},
+{
+"asof": "2026-04-23",
+"symbol": "ETH",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 2330.26,
+"returns": {
+"1": 0.006552916841897627,
+"7": 0.031219692223185436,
+"30": 0.09122587179113073
+}
+},
+{
+"asof": "2026-04-23",
+"symbol": "SOL",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": 1,
+"entry": 86.12,
+"returns": {
+"1": 0.0006967022758941344,
+"7": -0.03518346493265212,
+"30": -0.004296330701347051
+}
+},
+{
+"asof": "2026-04-23",
+"symbol": "LINK",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 9.35,
+"returns": {
+"1": -0.0032085561497328108,
+"7": 0.025668449197860932,
+"30": -0.02299465240641707
+}
+},
+{
+"asof": "2026-04-24",
+"symbol": "BTC",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 77437.13,
+"returns": {
+"1": -0.0024260971448708535,
+"7": -0.010253479177237068,
+"30": 0.004806092374549542
+}
+},
+{
+"asof": "2026-04-24",
+"symbol": "ETH",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 2314.99,
+"returns": {
+"1": -0.0019481725623005097,
+"7": 0.008362887096704408,
+"30": 0.09293344679674642
+}
+},
+{
+"asof": "2026-04-24",
+"symbol": "SOL",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": 1,
+"entry": 86.18,
+"returns": {
+"1": 0.0,
+"7": -0.028080761197493587,
+"30": -0.010559294499884131
+}
+},
+{
+"asof": "2026-04-24",
+"symbol": "LINK",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 9.38,
+"returns": {
+"1": 0.004264392324093924,
+"7": 0.029850746268656803,
+"30": -0.005437100213219415
+}
+},
+{
+"asof": "2026-04-27",
+"symbol": "BTC",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 77371.32,
+"returns": {
+"1": 0.013293685567210223,
+"7": -0.03217846095943555,
+"30": 0.037766190366146035
+}
+},
+{
+"asof": "2026-04-27",
+"symbol": "ETH",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 2303.67,
+"returns": {
+"1": 0.006185781817708236,
+"7": -0.018878572017693385,
+"30": 0.12103730134958568
+}
+},
+{
+"asof": "2026-04-27",
+"symbol": "SOL",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": 1,
+"entry": 84.82,
+"returns": {
+"1": -0.008960150907804665,
+"7": -0.008488564017920308,
+"30": -0.02805941994812544
+}
+},
+{
+"asof": "2026-04-27",
+"symbol": "LINK",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 9.33,
+"returns": {
+"1": 0.009646302250803873,
+"7": -0.003215434083601254,
+"30": 0.020793140407288413
+}
+},
+{
+"asof": "2026-04-28",
+"symbol": "BTC",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 76342.77,
+"returns": {
+"1": 0.007371621438415188,
+"7": -0.05976662885038109,
+"30": 0.03569768296329845
+}
+},
+{
+"asof": "2026-04-28",
+"symbol": "ETH",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 2289.42,
+"returns": {
+"1": 0.015951638406233926,
+"7": -0.031165098583920692,
+"30": 0.12209205825056124
+}
+},
+{
+"asof": "2026-04-28",
+"symbol": "SOL",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": 1,
+"entry": 84.06,
+"returns": {
+"1": -0.012134189864382527,
+"7": 0.026528669997620824,
+"30": -0.02319771591720199
+}
+},
+{
+"asof": "2026-04-28",
+"symbol": "LINK",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 9.24,
+"returns": {
+"1": 0.01406926406926412,
+"7": -0.05627705627705626,
+"30": 0.025541125541125642
+}
+},
+{
+"asof": "2026-04-29",
+"symbol": "BTC",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 75780.0,
+"returns": {
+"1": -0.007476510952758142,
+"7": -0.07478239641066242,
+"30": 0.03060464502507254
+}
+},
+{
+"asof": "2026-04-29",
+"symbol": "ETH",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 2252.9,
+"returns": {
+"1": -0.0020462514980692514,
+"7": -0.04347285720626748,
+"30": 0.10580141151404865
+}
+},
+{
+"asof": "2026-04-29",
+"symbol": "SOL",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": 1,
+"entry": 83.04,
+"returns": {
+"1": 0.0006021194605010383,
+"7": 0.07369942196531776,
+"30": -0.012042389210019322
+}
+},
+{
+"asof": "2026-04-29",
+"symbol": "LINK",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 9.11,
+"returns": {
+"1": -0.0,
+"7": -0.09659714599341385,
+"30": 0.00965971459934134
+}
+},
+{
+"asof": "2026-04-30",
+"symbol": "BTC",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 76346.57,
+"returns": {
+"1": -0.024684278547156602,
+"7": -0.04793181933386137,
+"30": 0.032250171815184414
+}
+},
+{
+"asof": "2026-04-30",
+"symbol": "ETH",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 2257.51,
+"returns": {
+"1": -0.016885860970715427,
+"7": -0.014861506704289207,
+"30": 0.10412799943300366
+}
+},
+{
+"asof": "2026-04-30",
+"symbol": "SOL",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": 1,
+"entry": 83.09,
+"returns": {
+"1": 0.008063545553014917,
+"7": 0.06414731014562514,
+"30": -0.004332651341918403
+}
+},
+{
+"asof": "2026-04-30",
+"symbol": "LINK",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 9.11,
+"returns": {
+"1": 0.001097694840834218,
+"7": -0.08122941822173435,
+"30": -0.008891328210757443
+}
+},
+{
+"asof": "2026-05-01",
+"symbol": "BTC",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 78231.13,
+"returns": {
+"1": -0.005825302536215382,
+"7": -0.025080041666277753,
+"30": 0.058247145349939355
+}
+},
+{
+"asof": "2026-05-01",
+"symbol": "ETH",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 2295.63,
+"returns": {
+"1": -0.009295923123499694,
+"7": -0.004979025365585921,
+"30": 0.12572583560939699
+}
+},
+{
+"asof": "2026-05-01",
+"symbol": "SOL",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": 1,
+"entry": 83.76,
+"returns": {
+"1": 0.005969436485195878,
+"7": 0.09849570200573066,
+"30": -0.015759312320916985
+}
+},
+{
+"asof": "2026-05-01",
+"symbol": "LINK",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 9.1,
+"returns": {
+"1": -0.007692307692307665,
+"7": -0.13626373626373622,
+"30": -0.005274725274725389
+}
+},
+{
+"asof": "2026-05-04",
+"symbol": "BTC",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 79861.01,
+"returns": {
+"1": -0.013079098298406366,
+"7": -0.023599000313169194,
+"30": 0.19682020049583637
+}
+},
+{
+"asof": "2026-05-04",
+"symbol": "ETH",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 2347.16,
+"returns": {
+"1": -0.005798496906900263,
+"7": 0.0031058811499854455,
+"30": 0.2275558547350841
+}
+},
+{
+"asof": "2026-05-04",
+"symbol": "SOL",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": 1,
+"entry": 84.1,
+"returns": {
+"1": 0.026040428061831378,
+"7": 0.15778834720570756,
+"30": -0.14851367419738404
+}
+},
+{
+"asof": "2026-05-04",
+"symbol": "LINK",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 9.36,
+"returns": {
+"1": -0.042735042735042805,
+"7": -0.13247863247863245,
+"30": 0.10961538461538456
+}
+},
+{
+"asof": "2026-05-05",
+"symbol": "BTC",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 80905.52,
+"returns": {
+"1": -0.006692868422327525,
+"7": 0.004957016529898106,
+"30": 0.21036302590972789
+}
+},
+{
+"asof": "2026-05-05",
+"symbol": "ETH",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 2360.77,
+"returns": {
+"1": 0.00420625473891989,
+"7": 0.03634831008526873,
+"30": 0.2499184588079313
+}
+},
+{
+"asof": "2026-05-05",
+"symbol": "SOL",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": 1,
+"entry": 86.29,
+"returns": {
+"1": 0.033259937420326624,
+"7": 0.09259473867192014,
+"30": -0.2017615019121568
+}
+},
+{
+"asof": "2026-05-05",
+"symbol": "LINK",
+"regime": "NEUTRAL",
+"action": "EXECUTE",
+"side": -1,
+"entry": 9.76,
+"returns": {
+"1": -0.023565573770491843,
+"7": -0.05327868852459017,
+"30": 0.17848360655737694
+}
+},
+{
+"asof": "2026-05-06",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 81447.01,
+"returns": {}
+},
+{
+"asof": "2026-05-06",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2350.84,
+"returns": {}
+},
+{
+"asof": "2026-05-06",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 89.16,
+"returns": {}
+},
+{
+"asof": "2026-05-06",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 9.99,
+"returns": {}
+},
+{
+"asof": "2026-05-07",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 80006.0,
+"returns": {}
+},
+{
+"asof": "2026-05-07",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2291.06,
+"returns": {}
+},
+{
+"asof": "2026-05-07",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 88.42,
+"returns": {}
+},
+{
+"asof": "2026-05-07",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 9.85,
+"returns": {}
+},
+{
+"asof": "2026-05-08",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 80193.17,
+"returns": {}
+},
+{
+"asof": "2026-05-08",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2307.06,
+"returns": {}
+},
+{
+"asof": "2026-05-08",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 92.01,
+"returns": {}
+},
+{
+"asof": "2026-05-08",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 10.34,
+"returns": {}
+},
+{
+"asof": "2026-05-11",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 81745.65,
+"returns": {}
+},
+{
+"asof": "2026-05-11",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2339.87,
+"returns": {}
+},
+{
+"asof": "2026-05-11",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 97.37,
+"returns": {}
+},
+{
+"asof": "2026-05-11",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 10.6,
+"returns": {}
+},
+{
+"asof": "2026-05-12",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 80504.47,
+"returns": {}
+},
+{
+"asof": "2026-05-12",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2274.96,
+"returns": {}
+},
+{
+"asof": "2026-05-12",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 94.28,
+"returns": {}
+},
+{
+"asof": "2026-05-12",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 10.28,
+"returns": {}
+},
+{
+"asof": "2026-05-13",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 79313.61,
+"returns": {}
+},
+{
+"asof": "2026-05-13",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2258.65,
+"returns": {}
+},
+{
+"asof": "2026-05-13",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 91.17,
+"returns": {}
+},
+{
+"asof": "2026-05-13",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 10.21,
+"returns": {}
+},
+{
+"asof": "2026-05-14",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 81089.99,
+"returns": {}
+},
+{
+"asof": "2026-05-14",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2283.25,
+"returns": {}
+},
+{
+"asof": "2026-05-14",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 92.15,
+"returns": {}
+},
+{
+"asof": "2026-05-14",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 10.48,
+"returns": {}
+},
+{
+"asof": "2026-05-15",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 79113.21,
+"returns": {}
+},
+{
+"asof": "2026-05-15",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2224.66,
+"returns": {}
+},
+{
+"asof": "2026-05-15",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 89.24,
+"returns": {}
+},
+{
+"asof": "2026-05-15",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 10.07,
+"returns": {}
+},
+{
+"asof": "2026-05-18",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 77001.87,
+"returns": {}
+},
+{
+"asof": "2026-05-18",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2130.08,
+"returns": {}
+},
+{
+"asof": "2026-05-18",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 85.38,
+"returns": {}
+},
+{
+"asof": "2026-05-18",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 9.6,
+"returns": {}
+},
+{
+"asof": "2026-05-19",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 76834.36,
+"returns": {}
+},
+{
+"asof": "2026-05-19",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2111.93,
+"returns": {}
+},
+{
+"asof": "2026-05-19",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 84.29,
+"returns": {}
+},
+{
+"asof": "2026-05-19",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 9.45,
+"returns": {}
+},
+{
+"asof": "2026-05-20",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 77552.23,
+"returns": {}
+},
+{
+"asof": "2026-05-20",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2129.44,
+"returns": {}
+},
+{
+"asof": "2026-05-20",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 86.17,
+"returns": {}
+},
+{
+"asof": "2026-05-20",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 9.636,
+"returns": {}
+},
+{
+"asof": "2026-05-21",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 77615.52,
+"returns": {}
+},
+{
+"asof": "2026-05-21",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2133.76,
+"returns": {}
+},
+{
+"asof": "2026-05-21",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 87.36,
+"returns": {}
+},
+{
+"asof": "2026-05-21",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 9.757,
+"returns": {}
+},
+{
+"asof": "2026-05-22",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 75539.5,
+"returns": {}
+},
+{
+"asof": "2026-05-22",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2065.85,
+"returns": {}
+},
+{
+"asof": "2026-05-22",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 84.4,
+"returns": {}
+},
+{
+"asof": "2026-05-22",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 9.42,
+"returns": {}
+},
+{
+"asof": "2026-05-26",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 75930.01,
+"returns": {}
+},
+{
+"asof": "2026-05-26",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2073.77,
+"returns": {}
+},
+{
+"asof": "2026-05-26",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 83.72,
+"returns": {}
+},
+{
+"asof": "2026-05-26",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 9.386,
+"returns": {}
+},
+{
+"asof": "2026-05-27",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 74449.3,
+"returns": {}
+},
+{
+"asof": "2026-05-27",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2024.84,
+"returns": {}
+},
+{
+"asof": "2026-05-27",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 82.44,
+"returns": {}
+},
+{
+"asof": "2026-05-27",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 9.136,
+"returns": {}
+},
+{
+"asof": "2026-05-28",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 73617.51,
+"returns": {}
+},
+{
+"asof": "2026-05-28",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2009.9,
+"returns": {}
+},
+{
+"asof": "2026-05-28",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 82.11,
+"returns": {}
+},
+{
+"asof": "2026-05-28",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 9.004,
+"returns": {}
+},
+{
+"asof": "2026-05-29",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 73460.78,
+"returns": {}
+},
+{
+"asof": "2026-05-29",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2014.54,
+"returns": {}
+},
+{
+"asof": "2026-05-29",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 82.04,
+"returns": {}
+},
+{
+"asof": "2026-05-29",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 9.022,
+"returns": {}
+},
+{
+"asof": "2026-06-01",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 71408.9,
+"returns": {}
+},
+{
+"asof": "2026-06-01",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2006.73,
+"returns": {}
+},
+{
+"asof": "2026-06-01",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 81.28,
+"returns": {}
+},
+{
+"asof": "2026-06-01",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 9.057,
+"returns": {}
+},
+{
+"asof": "2026-06-02",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 66760.83,
+"returns": {}
+},
+{
+"asof": "2026-06-02",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1859.84,
+"returns": {}
+},
+{
+"asof": "2026-06-02",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 74.23,
+"returns": {}
+},
+{
+"asof": "2026-06-02",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 8.374,
+"returns": {}
+},
+{
+"asof": "2026-06-03",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 64142.75,
+"returns": {}
+},
+{
+"asof": "2026-06-03",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1813.05,
+"returns": {}
+},
+{
+"asof": "2026-06-03",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 71.61,
+"returns": {}
+},
+{
+"asof": "2026-06-03",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 8.334,
+"returns": {}
+},
+{
+"asof": "2026-06-04",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 63885.99,
+"returns": {}
+},
+{
+"asof": "2026-06-04",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1770.77,
+"returns": {}
+},
+{
+"asof": "2026-06-04",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 68.88,
+"returns": {}
+},
+{
+"asof": "2026-06-04",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 8.018,
+"returns": {}
+},
+{
+"asof": "2026-06-05",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 61056.47,
+"returns": {}
+},
+{
+"asof": "2026-06-05",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1583.4,
+"returns": {}
+},
+{
+"asof": "2026-06-05",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 63.64,
+"returns": {}
+},
+{
+"asof": "2026-06-05",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 7.366,
+"returns": {}
+},
+{
+"asof": "2026-06-08",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 63085.99,
+"returns": {}
+},
+{
+"asof": "2026-06-08",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1690.49,
+"returns": {}
+},
+{
+"asof": "2026-06-08",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 66.82,
+"returns": {}
+},
+{
+"asof": "2026-06-08",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 7.998,
+"returns": {}
+},
+{
+"asof": "2026-06-09",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 61730.0,
+"returns": {}
+},
+{
+"asof": "2026-06-09",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1639.52,
+"returns": {}
+},
+{
+"asof": "2026-06-09",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 64.96,
+"returns": {}
+},
+{
+"asof": "2026-06-09",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 7.838,
+"returns": {}
+},
+{
+"asof": "2026-06-10",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 61510.99,
+"returns": {}
+},
+{
+"asof": "2026-06-10",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1621.59,
+"returns": {}
+},
+{
+"asof": "2026-06-10",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 63.19,
+"returns": {}
+},
+{
+"asof": "2026-06-10",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 7.561,
+"returns": {}
+},
+{
+"asof": "2026-06-11",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 63625.99,
+"returns": {}
+},
+{
+"asof": "2026-06-11",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1673.46,
+"returns": {}
+},
+{
+"asof": "2026-06-11",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 66.93,
+"returns": {}
+},
+{
+"asof": "2026-06-11",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 7.887,
+"returns": {}
+},
+{
+"asof": "2026-06-12",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 63580.01,
+"returns": {}
+},
+{
+"asof": "2026-06-12",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1666.41,
+"returns": {}
+},
+{
+"asof": "2026-06-12",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 66.82,
+"returns": {}
+},
+{
+"asof": "2026-06-12",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 7.867,
+"returns": {}
+},
+{
+"asof": "2026-06-15",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 66328.74,
+"returns": {}
+},
+{
+"asof": "2026-06-15",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1796.13,
+"returns": {}
+},
+{
+"asof": "2026-06-15",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 73.98,
+"returns": {}
+},
+{
+"asof": "2026-06-15",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 8.3,
+"returns": {}
+},
+{
+"asof": "2026-06-16",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 65675.01,
+"returns": {}
+},
+{
+"asof": "2026-06-16",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1792.99,
+"returns": {}
+},
+{
+"asof": "2026-06-16",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 73.52,
+"returns": {}
+},
+{
+"asof": "2026-06-16",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 8.277,
+"returns": {}
+},
+{
+"asof": "2026-06-17",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 64509.4,
+"returns": {}
+},
+{
+"asof": "2026-06-17",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1750.6,
+"returns": {}
+},
+{
+"asof": "2026-06-17",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 72.05,
+"returns": {}
+},
+{
+"asof": "2026-06-17",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 8.092,
+"returns": {}
+},
+{
+"asof": "2026-06-18",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 62958.01,
+"returns": {}
+},
+{
+"asof": "2026-06-18",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1711.11,
+"returns": {}
+},
+{
+"asof": "2026-06-18",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 69.71,
+"returns": {}
+},
+{
+"asof": "2026-06-18",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 8.016,
+"returns": {}
+},
+{
+"asof": "2026-06-22",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 64020.01,
+"returns": {}
+},
+{
+"asof": "2026-06-22",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1728.19,
+"returns": {}
+},
+{
+"asof": "2026-06-22",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 71.95,
+"returns": {}
+},
+{
+"asof": "2026-06-22",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 7.874,
+"returns": {}
+},
+{
+"asof": "2026-06-23",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 62734.57,
+"returns": {}
+},
+{
+"asof": "2026-06-23",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1667.13,
+"returns": {}
+},
+{
+"asof": "2026-06-23",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 69.71,
+"returns": {}
+},
+{
+"asof": "2026-06-23",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 7.635,
+"returns": {}
+},
+{
+"asof": "2026-06-24",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 61077.99,
+"returns": {}
+},
+{
+"asof": "2026-06-24",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1622.17,
+"returns": {}
+},
+{
+"asof": "2026-06-24",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 68.11,
+"returns": {}
+},
+{
+"asof": "2026-06-24",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 7.426,
+"returns": {}
+},
+{
+"asof": "2026-06-25",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 59794.0,
+"returns": {}
+},
+{
+"asof": "2026-06-25",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1567.84,
+"returns": {}
+},
+{
+"asof": "2026-06-25",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 67.72,
+"returns": {}
+},
+{
+"asof": "2026-06-25",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 7.248,
+"returns": {}
+},
+{
+"asof": "2026-06-26",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 60097.27,
+"returns": {}
+},
+{
+"asof": "2026-06-26",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1578.68,
+"returns": {}
+},
+{
+"asof": "2026-06-26",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 71.9,
+"returns": {}
+},
+{
+"asof": "2026-06-26",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 7.354,
+"returns": {}
+},
+{
+"asof": "2026-06-29",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 60260.21,
+"returns": {}
+},
+{
+"asof": "2026-06-29",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1613.07,
+"returns": {}
+},
+{
+"asof": "2026-06-29",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 75.16,
+"returns": {}
+},
+{
+"asof": "2026-06-29",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 7.38,
+"returns": {}
+},
+{
+"asof": "2026-06-30",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 58624.71,
+"returns": {}
+},
+{
+"asof": "2026-06-30",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1572.01,
+"returns": {}
+},
+{
+"asof": "2026-06-30",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 73.67,
+"returns": {}
+},
+{
+"asof": "2026-06-30",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 7.201,
+"returns": {}
+},
+{
+"asof": "2026-07-01",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 60024.0,
+"returns": {}
+},
+{
+"asof": "2026-07-01",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1609.58,
+"returns": {}
+},
+{
+"asof": "2026-07-01",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 77.46,
+"returns": {}
+},
+{
+"asof": "2026-07-01",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 7.358,
+"returns": {}
+},
+{
+"asof": "2026-07-02",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 61560.0,
+"returns": {}
+},
+{
+"asof": "2026-07-02",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1700.57,
+"returns": {}
+},
+{
+"asof": "2026-07-02",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 80.73,
+"returns": {}
+},
+{
+"asof": "2026-07-02",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 7.747,
+"returns": {}
+},
+{
+"asof": "2026-07-06",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 64042.02,
+"returns": {}
+},
+{
+"asof": "2026-07-06",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1799.56,
+"returns": {}
+},
+{
+"asof": "2026-07-06",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 81.94,
+"returns": {}
+},
+{
+"asof": "2026-07-06",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 8.021,
+"returns": {}
+},
+{
+"asof": "2026-07-07",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 63363.99,
+"returns": {}
+},
+{
+"asof": "2026-07-07",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1771.45,
+"returns": {}
+},
+{
+"asof": "2026-07-07",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 80.58,
+"returns": {}
+},
+{
+"asof": "2026-07-07",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 7.861,
+"returns": {}
+},
+{
+"asof": "2026-07-08",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 62290.0,
+"returns": {}
+},
+{
+"asof": "2026-07-08",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1743.54,
+"returns": {}
+},
+{
+"asof": "2026-07-08",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 77.83,
+"returns": {}
+},
+{
+"asof": "2026-07-08",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 7.641,
+"returns": {}
+},
+{
+"asof": "2026-07-09",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 63230.0,
+"returns": {}
+},
+{
+"asof": "2026-07-09",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1745.16,
+"returns": {}
+},
+{
+"asof": "2026-07-09",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 78.04,
+"returns": {}
+},
+{
+"asof": "2026-07-09",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 7.735,
+"returns": {}
+},
+{
+"asof": "2026-07-10",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 64161.72,
+"returns": {}
+},
+{
+"asof": "2026-07-10",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1796.85,
+"returns": {}
+},
+{
+"asof": "2026-07-10",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 78.13,
+"returns": {}
+},
+{
+"asof": "2026-07-10",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 7.97,
+"returns": {}
+},
+{
+"asof": "2026-07-13",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 62334.52,
+"returns": {}
+},
+{
+"asof": "2026-07-13",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1776.72,
+"returns": {}
+},
+{
+"asof": "2026-07-13",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 75.01,
+"returns": {}
+},
+{
+"asof": "2026-07-13",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 7.889,
+"returns": {}
+},
+{
+"asof": "2026-07-14",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 65043.98,
+"returns": {}
+},
+{
+"asof": "2026-07-14",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1891.87,
+"returns": {}
+},
+{
+"asof": "2026-07-14",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 77.87,
+"returns": {}
+},
+{
+"asof": "2026-07-14",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 8.345,
+"returns": {}
+},
+{
+"asof": "2026-07-15",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 64756.28,
+"returns": {}
+},
+{
+"asof": "2026-07-15",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1917.86,
+"returns": {}
+},
+{
+"asof": "2026-07-15",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 77.29,
+"returns": {}
+},
+{
+"asof": "2026-07-15",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 8.539,
+"returns": {}
+},
+{
+"asof": "2026-07-16",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 63830.2,
+"returns": {}
+},
+{
+"asof": "2026-07-16",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1864.71,
+"returns": {}
+},
+{
+"asof": "2026-07-16",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 75.32,
+"returns": {}
+},
+{
+"asof": "2026-07-16",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 8.341,
+"returns": {}
+},
+{
+"asof": "2026-07-17",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 63931.67,
+"returns": {}
+},
+{
+"asof": "2026-07-17",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1841.93,
+"returns": {}
+},
+{
+"asof": "2026-07-17",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 75.04,
+"returns": {}
+},
+{
+"asof": "2026-07-17",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 8.254,
+"returns": {}
+},
+{
+"asof": "2026-07-20",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 65255.51,
+"returns": {}
+},
+{
+"asof": "2026-07-20",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1904.77,
+"returns": {}
+},
+{
+"asof": "2026-07-20",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 77.85,
+"returns": {}
+},
+{
+"asof": "2026-07-20",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 8.593,
+"returns": {}
+},
+{
+"asof": "2026-07-21",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 66556.16,
+"returns": {}
+},
+{
+"asof": "2026-07-21",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1930.09,
+"returns": {}
+},
+{
+"asof": "2026-07-21",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 78.12,
+"returns": {}
+},
+{
+"asof": "2026-07-21",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 8.659,
+"returns": {}
+},
+{
+"asof": "2026-07-22",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 66114.49,
+"returns": {}
+},
+{
+"asof": "2026-07-22",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1934.25,
+"returns": {}
+},
+{
+"asof": "2026-07-22",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 77.97,
+"returns": {}
+},
+{
+"asof": "2026-07-22",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 8.63,
+"returns": {}
+},
+{
+"asof": "2026-07-23",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 65098.97,
+"returns": {}
+},
+{
+"asof": "2026-07-23",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1878.38,
+"returns": {}
+},
+{
+"asof": "2026-07-23",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 75.88,
+"returns": {}
+},
+{
+"asof": "2026-07-23",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 8.471,
+"returns": {}
+},
+{
+"asof": "2026-07-24",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 64139.99,
+"returns": {}
+},
+{
+"asof": "2026-07-24",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1861.44,
+"returns": {}
+},
+{
+"asof": "2026-07-24",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 73.96,
+"returns": {}
+},
+{
+"asof": "2026-07-24",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 8.341,
+"returns": {}
+},
+{
+"asof": "2026-07-27",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 63755.86,
+"returns": {}
+},
+{
+"asof": "2026-07-27",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1892.53,
+"returns": {}
+},
+{
+"asof": "2026-07-27",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 74.2,
+"returns": {}
+},
+{
+"asof": "2026-07-27",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 8.382,
+"returns": {}
+},
+{
+"asof": "2026-07-28",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 63915.0,
+"returns": {}
+},
+{
+"asof": "2026-07-28",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1922.23,
+"returns": {}
+},
+{
+"asof": "2026-07-28",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 73.83,
+"returns": {}
+},
+{
+"asof": "2026-07-28",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 8.446,
+"returns": {}
+},
+{
+"asof": "2026-07-29",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 63984.28,
+"returns": {}
+},
+{
+"asof": "2026-07-29",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1910.72,
+"returns": {}
+},
+{
+"asof": "2026-07-29",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 73.68,
+"returns": {}
+},
+{
+"asof": "2026-07-29",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 8.335,
+"returns": {}
+},
+{
+"asof": "2026-07-30",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 64780.02,
+"returns": {}
+},
+{
+"asof": "2026-07-30",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1918.31,
+"returns": {}
+},
+{
+"asof": "2026-07-30",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 74.51,
+"returns": {}
+},
+{
+"asof": "2026-07-30",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 8.451,
+"returns": {}
+},
+{
+"asof": "2026-07-31",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 62887.88,
+"returns": {}
+},
+{
+"asof": "2026-07-31",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1862.6,
+"returns": {}
+},
+{
+"asof": "2026-07-31",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 72.87,
+"returns": {}
+},
+{
+"asof": "2026-07-31",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 8.171,
+"returns": {}
+},
+{
+"asof": "2026-08-03",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 63520.0,
+"returns": {}
+},
+{
+"asof": "2026-08-03",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1860.5,
+"returns": {}
+},
+{
+"asof": "2026-08-03",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 73.56,
+"returns": {}
+},
+{
+"asof": "2026-08-03",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 8.188,
+"returns": {}
+},
+{
+"asof": "2026-08-04",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 64106.56,
+"returns": {}
+},
+{
+"asof": "2026-08-04",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1869.75,
+"returns": {}
+},
+{
+"asof": "2026-08-04",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 73.75,
+"returns": {}
+},
+{
+"asof": "2026-08-04",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 8.149,
+"returns": {}
+},
+{
+"asof": "2026-08-05",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 64665.23,
+"returns": {}
+},
+{
+"asof": "2026-08-05",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1908.9,
+"returns": {}
+},
+{
+"asof": "2026-08-05",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 74.04,
+"returns": {}
+},
+{
+"asof": "2026-08-05",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 8.162,
+"returns": {}
+},
+{
+"asof": "2026-08-06",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 64323.61,
+"returns": {}
+},
+{
+"asof": "2026-08-06",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1904.1,
+"returns": {}
+},
+{
+"asof": "2026-08-06",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 72.7,
+"returns": {}
+},
+{
+"asof": "2026-08-06",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 8.196,
+"returns": {}
+},
+{
+"asof": "2026-08-07",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 64923.19,
+"returns": {}
+},
+{
+"asof": "2026-08-07",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1914.18,
+"returns": {}
+},
+{
+"asof": "2026-08-07",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 73.66,
+"returns": {}
+},
+{
+"asof": "2026-08-07",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 8.189,
+"returns": {}
+},
+{
+"asof": "2026-08-10",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 63970.01,
+"returns": {}
+},
+{
+"asof": "2026-08-10",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1873.16,
+"returns": {}
+},
+{
+"asof": "2026-08-10",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 75.99,
+"returns": {}
+},
+{
+"asof": "2026-08-10",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 8.3,
+"returns": {}
+},
+{
+"asof": "2026-08-11",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 63600.0,
+"returns": {}
+},
+{
+"asof": "2026-08-11",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1882.59,
+"returns": {}
+},
+{
+"asof": "2026-08-11",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 76.3,
+"returns": {}
+},
+{
+"asof": "2026-08-11",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 8.779,
+"returns": {}
+},
+{
+"asof": "2026-08-12",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 63479.99,
+"returns": {}
+},
+{
+"asof": "2026-08-12",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1879.81,
+"returns": {}
+},
+{
+"asof": "2026-08-12",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 75.63,
+"returns": {}
+},
+{
+"asof": "2026-08-12",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 8.674,
+"returns": {}
+},
+{
+"asof": "2026-08-13",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 63490.86,
+"returns": {}
+},
+{
+"asof": "2026-08-13",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1886.15,
+"returns": {}
+},
+{
+"asof": "2026-08-13",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 76.28,
+"returns": {}
+},
+{
+"asof": "2026-08-13",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 8.887,
+"returns": {}
+},
+{
+"asof": "2026-08-14",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 63043.56,
+"returns": {}
+},
+{
+"asof": "2026-08-14",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1882.2,
+"returns": {}
+},
+{
+"asof": "2026-08-14",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 75.4,
+"returns": {}
+},
+{
+"asof": "2026-08-14",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 8.97,
+"returns": {}
+},
+{
+"asof": "2026-08-17",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 64532.1,
+"returns": {}
+},
+{
+"asof": "2026-08-17",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1913.6,
+"returns": {}
+},
+{
+"asof": "2026-08-17",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 76.02,
+"returns": {}
+},
+{
+"asof": "2026-08-17",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 9.543,
+"returns": {}
+},
+{
+"asof": "2026-08-18",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 64725.42,
+"returns": {}
+},
+{
+"asof": "2026-08-18",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 1917.85,
+"returns": {}
+},
+{
+"asof": "2026-08-18",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 77.05,
+"returns": {}
+},
+{
+"asof": "2026-08-18",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 9.538,
+"returns": {}
+},
+{
+"asof": "2026-08-19",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 69334.79,
+"returns": {}
+},
+{
+"asof": "2026-08-19",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2252.8,
+"returns": {}
+},
+{
+"asof": "2026-08-19",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 85.38,
+"returns": {}
+},
+{
+"asof": "2026-08-19",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 10.557,
+"returns": {}
+},
+{
+"asof": "2026-08-20",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 73025.15,
+"returns": {}
+},
+{
+"asof": "2026-08-20",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2326.82,
+"returns": {}
+},
+{
+"asof": "2026-08-20",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 87.66,
+"returns": {}
+},
+{
+"asof": "2026-08-20",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 10.692,
+"returns": {}
+},
+{
+"asof": "2026-08-21",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 78338.03,
+"returns": {}
+},
+{
+"asof": "2026-08-21",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2516.3,
+"returns": {}
+},
+{
+"asof": "2026-08-21",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 93.72,
+"returns": {}
+},
+{
+"asof": "2026-08-21",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 11.99,
+"returns": {}
+},
+{
+"asof": "2026-08-24",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 78992.75,
+"returns": {}
+},
+{
+"asof": "2026-08-24",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2482.31,
+"returns": {}
+},
+{
+"asof": "2026-08-24",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 98.97,
+"returns": {}
+},
+{
+"asof": "2026-08-24",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 11.629,
+"returns": {}
+},
+{
+"asof": "2026-08-25",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 78539.14,
+"returns": {}
+},
+{
+"asof": "2026-08-25",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2442.64,
+"returns": {}
+},
+{
+"asof": "2026-08-25",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 96.6,
+"returns": {}
+},
+{
+"asof": "2026-08-25",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 11.291,
+"returns": {}
+},
+{
+"asof": "2026-08-26",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 79023.75,
+"returns": {}
+},
+{
+"asof": "2026-08-26",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2506.78,
+"returns": {}
+},
+{
+"asof": "2026-08-26",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 102.07,
+"returns": {}
+},
+{
+"asof": "2026-08-26",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 11.624,
+"returns": {}
+},
+{
+"asof": "2026-08-27",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 80249.58,
+"returns": {}
+},
+{
+"asof": "2026-08-27",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2510.94,
+"returns": {}
+},
+{
+"asof": "2026-08-27",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 109.14,
+"returns": {}
+},
+{
+"asof": "2026-08-27",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 11.919,
+"returns": {}
+},
+{
+"asof": "2026-08-28",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 77845.87,
+"returns": {}
+},
+{
+"asof": "2026-08-28",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2442.8,
+"returns": {}
+},
+{
+"asof": "2026-08-28",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 104.15,
+"returns": {}
+},
+{
+"asof": "2026-08-28",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 11.433,
+"returns": {}
+},
+{
+"asof": "2026-08-31",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 78581.29,
+"returns": {}
+},
+{
+"asof": "2026-08-31",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2467.65,
+"returns": {}
+},
+{
+"asof": "2026-08-31",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 103.06,
+"returns": {}
+},
+{
+"asof": "2026-08-31",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 11.325,
+"returns": {}
+},
+{
+"asof": "2026-09-01",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 77439.0,
+"returns": {}
+},
+{
+"asof": "2026-09-01",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2418.57,
+"returns": {}
+},
+{
+"asof": "2026-09-01",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 100.0,
+"returns": {}
+},
+{
+"asof": "2026-09-01",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 11.234,
+"returns": {}
+},
+{
+"asof": "2026-09-02",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 77340.01,
+"returns": {}
+},
+{
+"asof": "2026-09-02",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2391.92,
+"returns": {}
+},
+{
+"asof": "2026-09-02",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 100.43,
+"returns": {}
+},
+{
+"asof": "2026-09-02",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 11.119,
+"returns": {}
+},
+{
+"asof": "2026-09-03",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 81270.37,
+"returns": {}
+},
+{
+"asof": "2026-09-03",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2507.51,
+"returns": {}
+},
+{
+"asof": "2026-09-03",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 103.94,
+"returns": {}
+},
+{
+"asof": "2026-09-03",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 11.833,
+"returns": {}
+},
+{
+"asof": "2026-09-04",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 79660.77,
+"returns": {}
+},
+{
+"asof": "2026-09-04",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2455.85,
+"returns": {}
+},
+{
+"asof": "2026-09-04",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 101.93,
+"returns": {}
+},
+{
+"asof": "2026-09-04",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 11.632,
+"returns": {}
+},
+{
+"asof": "2026-09-08",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 78455.8,
+"returns": {}
+},
+{
+"asof": "2026-09-08",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2485.06,
+"returns": {}
+},
+{
+"asof": "2026-09-08",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 103.37,
+"returns": {}
+},
+{
+"asof": "2026-09-08",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 12.518,
+"returns": {}
+},
+{
+"asof": "2026-09-09",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 78306.43,
+"returns": {}
+},
+{
+"asof": "2026-09-09",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2468.13,
+"returns": {}
+},
+{
+"asof": "2026-09-09",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 101.57,
+"returns": {}
+},
+{
+"asof": "2026-09-09",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 11.804,
+"returns": {}
+},
+{
+"asof": "2026-09-10",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 76568.72,
+"returns": {}
+},
+{
+"asof": "2026-09-10",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2438.27,
+"returns": {}
+},
+{
+"asof": "2026-09-10",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 98.67,
+"returns": {}
+},
+{
+"asof": "2026-09-10",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 11.454,
+"returns": {}
+},
+{
+"asof": "2026-09-11",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 77225.7,
+"returns": {}
+},
+{
+"asof": "2026-09-11",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2516.43,
+"returns": {}
+},
+{
+"asof": "2026-09-11",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 102.46,
+"returns": {}
+},
+{
+"asof": "2026-09-11",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 11.551,
+"returns": {}
+},
+{
+"asof": "2026-09-14",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 78189.21,
+"returns": {}
+},
+{
+"asof": "2026-09-14",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2515.75,
+"returns": {}
+},
+{
+"asof": "2026-09-14",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 102.53,
+"returns": {}
+},
+{
+"asof": "2026-09-14",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 11.518,
+"returns": {}
+},
+{
+"asof": "2026-09-15",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 75644.48,
+"returns": {}
+},
+{
+"asof": "2026-09-15",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2398.26,
+"returns": {}
+},
+{
+"asof": "2026-09-15",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 96.88,
+"returns": {}
+},
+{
+"asof": "2026-09-15",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 10.887,
+"returns": {}
+},
+{
+"asof": "2026-09-16",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 76206.01,
+"returns": {}
+},
+{
+"asof": "2026-09-16",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2418.26,
+"returns": {}
+},
+{
+"asof": "2026-09-16",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 98.66,
+"returns": {}
+},
+{
+"asof": "2026-09-16",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 11.057,
+"returns": {}
+},
+{
+"asof": "2026-09-17",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 76417.01,
+"returns": {}
+},
+{
+"asof": "2026-09-17",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2447.28,
+"returns": {}
+},
+{
+"asof": "2026-09-17",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 101.64,
+"returns": {}
+},
+{
+"asof": "2026-09-17",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 11.387,
+"returns": {}
+},
+{
+"asof": "2026-09-18",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 80883.87,
+"returns": {}
+},
+{
+"asof": "2026-09-18",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2612.14,
+"returns": {}
+},
+{
+"asof": "2026-09-18",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 112.72,
+"returns": {}
+},
+{
+"asof": "2026-09-18",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 12.226,
+"returns": {}
+},
+{
+"asof": "2026-09-21",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 86620.0,
+"returns": {}
+},
+{
+"asof": "2026-09-21",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2776.19,
+"returns": {}
+},
+{
+"asof": "2026-09-21",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 118.9,
+"returns": {}
+},
+{
+"asof": "2026-09-21",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 13.183,
+"returns": {}
+},
+{
+"asof": "2026-09-22",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 86208.56,
+"returns": {}
+},
+{
+"asof": "2026-09-22",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2753.63,
+"returns": {}
+},
+{
+"asof": "2026-09-22",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 118.57,
+"returns": {}
+},
+{
+"asof": "2026-09-22",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 13.046,
+"returns": {}
+},
+{
+"asof": "2026-09-23",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 84397.6,
+"returns": {}
+},
+{
+"asof": "2026-09-23",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2684.71,
+"returns": {}
+},
+{
+"asof": "2026-09-23",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 114.99,
+"returns": {}
+},
+{
+"asof": "2026-09-23",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 12.355,
+"returns": {}
+},
+{
+"asof": "2026-09-24",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 84410.24,
+"returns": {}
+},
+{
+"asof": "2026-09-24",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2688.05,
+"returns": {}
+},
+{
+"asof": "2026-09-24",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 117.04,
+"returns": {}
+},
+{
+"asof": "2026-09-24",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 13.221,
+"returns": {}
+},
+{
+"asof": "2026-09-25",
+"symbol": "BTC",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 84099.99,
+"returns": {}
+},
+{
+"asof": "2026-09-25",
+"symbol": "ETH",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2691.61,
+"returns": {}
+},
+{
+"asof": "2026-09-25",
+"symbol": "SOL",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 122.15,
+"returns": {}
+},
+{
+"asof": "2026-09-25",
+"symbol": "LINK",
+"regime": "SYSTEMIC",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 13.93,
+"returns": {}
+},
+{
+"asof": "2026-09-28",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 83500.01,
+"returns": {}
+},
+{
+"asof": "2026-09-28",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2688.71,
+"returns": {}
+},
+{
+"asof": "2026-09-28",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 118.89,
+"returns": {}
+},
+{
+"asof": "2026-09-28",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 15.452,
+"returns": {}
+},
+{
+"asof": "2026-09-29",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 83663.66,
+"returns": {}
+},
+{
+"asof": "2026-09-29",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2677.98,
+"returns": {}
+},
+{
+"asof": "2026-09-29",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 119.15,
+"returns": {}
+},
+{
+"asof": "2026-09-29",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 14.607,
+"returns": {}
+},
+{
+"asof": "2026-09-30",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 83623.6,
+"returns": {}
+},
+{
+"asof": "2026-09-30",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2686.01,
+"returns": {}
+},
+{
+"asof": "2026-09-30",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 118.12,
+"returns": {}
+},
+{
+"asof": "2026-09-30",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 14.366,
+"returns": {}
+},
+{
+"asof": "2026-10-01",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 84880.05,
+"returns": {}
+},
+{
+"asof": "2026-10-01",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2706.42,
+"returns": {}
+},
+{
+"asof": "2026-10-01",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 118.41,
+"returns": {}
+},
+{
+"asof": "2026-10-01",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 14.386,
+"returns": {}
+},
+{
+"asof": "2026-10-02",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 84518.01,
+"returns": {}
+},
+{
+"asof": "2026-10-02",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2668.59,
+"returns": {}
+},
+{
+"asof": "2026-10-02",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 118.65,
+"returns": {}
+},
+{
+"asof": "2026-10-02",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 13.794,
+"returns": {}
+},
+{
+"asof": "2026-10-05",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 85766.87,
+"returns": {}
+},
+{
+"asof": "2026-10-05",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2709.98,
+"returns": {}
+},
+{
+"asof": "2026-10-05",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 120.78,
+"returns": {}
+},
+{
+"asof": "2026-10-05",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 13.854,
+"returns": {}
+},
+{
+"asof": "2026-10-06",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 85549.93,
+"returns": {}
+},
+{
+"asof": "2026-10-06",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2697.49,
+"returns": {}
+},
+{
+"asof": "2026-10-06",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 120.71,
+"returns": {}
+},
+{
+"asof": "2026-10-06",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 13.959,
+"returns": {}
+},
+{
+"asof": "2026-10-07",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 83321.81,
+"returns": {}
+},
+{
+"asof": "2026-10-07",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2574.14,
+"returns": {}
+},
+{
+"asof": "2026-10-07",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 116.3,
+"returns": {}
+},
+{
+"asof": "2026-10-07",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 13.326,
+"returns": {}
+},
+{
+"asof": "2026-10-08",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 81754.45,
+"returns": {}
+},
+{
+"asof": "2026-10-08",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2474.8,
+"returns": {}
+},
+{
+"asof": "2026-10-08",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 109.62,
+"returns": {}
+},
+{
+"asof": "2026-10-08",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 12.707,
+"returns": {}
+},
+{
+"asof": "2026-10-09",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 82635.55,
+"returns": {}
+},
+{
+"asof": "2026-10-09",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2487.7,
+"returns": {}
+},
+{
+"asof": "2026-10-09",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 109.13,
+"returns": {}
+},
+{
+"asof": "2026-10-09",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 12.811,
+"returns": {}
+},
+{
+"asof": "2026-10-12",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 81850.0,
+"returns": {}
+},
+{
+"asof": "2026-10-12",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2447.17,
+"returns": {}
+},
+{
+"asof": "2026-10-12",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 105.76,
+"returns": {}
+},
+{
+"asof": "2026-10-12",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 12.625,
+"returns": {}
+},
+{
+"asof": "2026-10-13",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 83169.0,
+"returns": {}
+},
+{
+"asof": "2026-10-13",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2497.95,
+"returns": {}
+},
+{
+"asof": "2026-10-13",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 106.83,
+"returns": {}
+},
+{
+"asof": "2026-10-13",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 12.884,
+"returns": {}
+},
+{
+"asof": "2026-10-14",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 81682.01,
+"returns": {}
+},
+{
+"asof": "2026-10-14",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2421.6,
+"returns": {}
+},
+{
+"asof": "2026-10-14",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 104.29,
+"returns": {}
+},
+{
+"asof": "2026-10-14",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 12.435,
+"returns": {}
+},
+{
+"asof": "2026-10-15",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 82245.93,
+"returns": {}
+},
+{
+"asof": "2026-10-15",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2442.08,
+"returns": {}
+},
+{
+"asof": "2026-10-15",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 105.44,
+"returns": {}
+},
+{
+"asof": "2026-10-15",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 12.462,
+"returns": {}
+},
+{
+"asof": "2026-10-16",
+"symbol": "BTC",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 81615.64,
+"returns": {}
+},
+{
+"asof": "2026-10-16",
+"symbol": "ETH",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 2423.54,
+"returns": {}
+},
+{
+"asof": "2026-10-16",
+"symbol": "SOL",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 104.45,
+"returns": {}
+},
+{
+"asof": "2026-10-16",
+"symbol": "LINK",
+"regime": "EARNINGS",
+"action": "WITHHOLD",
+"side": 0,
+"entry": 12.35,
+"returns": {}
+}
+]

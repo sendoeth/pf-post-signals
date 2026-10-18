@@ -1,0 +1,31 @@
+
+Oracle: the cheapest way to own AI compute — Corbanu
+Skip to article
+Corbanu
+Home
+Markets
+Research
+Terminal
+Subscribe
+ Published research
+Trade proposal / 26 Sep 2026
+Proposed long
+ORCLon, Felix spot
+Reference quote
+$139.16
+Weighted target
+$231.75 (+66.5%)
+Horizon
+30 Sep 2028
+Copy for LLM
+Oracle: the cheapest way to own AI compute
+CORBANU · TRADE NOTE · 27 SEPTEMBER 2026
+The trade
+LONG ORCLon, the Ondo tokenized Oracle share, held spot on Felix, against a reference quote of 139.16 USD observed at 2026-09-26T23:10:53Z (a reference price, not an executed fill), for a horizon to 2028-09-30. Oracle trades at 8.8x the Street's fiscal 2029 earnings. After September's credit scare, the market is pricing the capex and debt and giving less weight to the contracted backlog those outlays are building. The catalysts are OpenAI's next funding round, the December 2026 and March 2027 quarterly results and the New Mexico permit decisions. The thesis fails if OpenAI cannot fund its commitment, if backlog conversion slips, or if Oracle has to sell stock at these prices.
+The probability-weighted target is $231.75 by 2028-09-30, a price return of +66.5%.
+ That figure is the average of three scenario targets, weighted by probability: bear $72.73, base $240.83 and bull $350.65. The 
+valuation chart
+ shows all three.
+LONG ORCLon
+ · Felix (Ondo spot) · reference quote 139.16 USD · as of 2026-09-26T23:10:53Z · horizon 2028-09-30 · unlevered spot, no funding.
+Sizing: 2.52% of capital, unleve

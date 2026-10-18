@@ -1,0 +1,38 @@
+
+Cerebras: Left on the Bench — Corbanu
+Skip to article
+Corbanu
+Home
+Markets
+Research
+Terminal
+Subscribe
+ Published research
+Trade update / 30 Sep 2026
+Position
+2.625% short → 3.5%
+Add mark
+$191.75
+Original entry
+$209.225
+Weighted value
+$111
+Copy for LLM
+Cerebras: Left on the Bench
+OpenAI is selling speed on Nvidia. We think Cerebras's losses will get worse before they get better, and we are doubling the short in two steps.
+CORBANU · TRADE UPDATE · 30 SEPTEMBER 2026
+The Update
+Our 
+Cerebras short
+ opened at $209.23 on 4 September. The Hyperliquid perp marked $191.75 at 03:33 UTC on 30 September 2026, a gain of 8.4%. Our $118 base case sits 38% below that price.
+We are taking the short from 
+1.75% to 3.5% of capital
+ in two steps: to 2.625% now at $191.75, and the rest once OpenAI's Sol 6.1 Ultrafast launches and its hardware is confirmed. The reason is what happened at OpenAI DevDay on 29 September, and what it implies for a company whose losses are already widening.
+What DevDay Showed
+OpenAI turned speed into a paid product. Ultrafast now runs at up to 300 output tokens per second in Codex, eight times standard, and up to six times standard in the API. It costs six times the normal token price and sits in a new $500-a-month Pro 500 plan. Astra Ultrafast is live; GPT-6.1 Sol Ultrafast is "coming soon." 
+OpenAI recap
+ · 
+Simon Willison live blog
+The same day, 
+SemiAnalysis reported
+ that Sol 6.1 Ultrafast runs on Nvidia GPUs at low batch size, not on Cerebras. Sol is the

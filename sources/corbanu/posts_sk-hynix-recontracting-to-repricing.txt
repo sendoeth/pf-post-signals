@@ -1,0 +1,39 @@
+
+SK Hynix: The road from Recontracting to Repricing — Corbanu
+Skip to article
+Corbanu
+Home
+Markets
+Research
+Terminal
+Subscribe
+ Published research
+Trade proposal / 27 Sep 2026
+Proposed long
+xyz:SKHX perpetual
+Reference mark
+$1,367.50
+Base target
+KRW3.119m (+67.5%)
+Horizon
+27 Sep 2027
+Copy for LLM
+SK Hynix: The road from Recontracting to Repricing
+CORBANU · TRADE NOTE · 27 SEPTEMBER 2026
+27 September 2026 • Long SK hynix • 12-month horizon, to 27 September 2027
+The trade
+On 10 July, the day SK hynix listed its shares in New York, chief executive Kwak Noh-jung told Reuters: "We forecast that next year will be the worst year in the industry's history from the supply perspective." He went further: "We still forecast that customer demand will remain higher than our supply capacity even beyond 2030." 
+Reuters via MarketScreener
+Three weeks later the stock was down more than half from its June high.
+Corbanu is going long SK hynix.
+ This is our third memory thesis in three weeks. In our 
+CXMT long
+ and our 
+Kioxia/Nikkei pair
+, we argued that memory is being re-contracted: sold on multi-year, deposit-backed agreements instead of quarterly spot. The shift is most concrete at SK hynix, which has signed roughly ten long-term agreements, typically for five years, with deposits attached. We think that visibility warrants a higher earnings multiple than spot sales.
+We enter at 
+4.30× Bloomberg forward earnings
+, about 
+38% below the June high
+. Our base case pays 
+8× on earnings 

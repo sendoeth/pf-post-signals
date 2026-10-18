@@ -1,0 +1,1900 @@
+[
+ {
+  "asof": "2026-03-06",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 77,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-03-06"
+ },
+ {
+  "asof": "2026-03-09",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 68,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-03-09"
+ },
+ {
+  "asof": "2026-03-10",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 75,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-03-10"
+ },
+ {
+  "asof": "2026-03-11",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 78,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-03-11"
+ },
+ {
+  "asof": "2026-03-12",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 68,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-03-12"
+ },
+ {
+  "asof": "2026-03-13",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 74,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-03-13"
+ },
+ {
+  "asof": "2026-03-16",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 74,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-03-16"
+ },
+ {
+  "asof": "2026-03-17",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 65,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-03-17"
+ },
+ {
+  "asof": "2026-03-18",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 71,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-03-18"
+ },
+ {
+  "asof": "2026-03-19",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 71,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-03-19"
+ },
+ {
+  "asof": "2026-03-20",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 68,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-03-20"
+ },
+ {
+  "asof": "2026-03-23",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 74,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-03-23"
+ },
+ {
+  "asof": "2026-03-24",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 73,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-03-24"
+ },
+ {
+  "asof": "2026-03-25",
+  "regime": "DIVERGENCE",
+  "label": "Divergence / Decouple",
+  "confidence": 67,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS"
+  ],
+  "lastDate": "2026-03-25"
+ },
+ {
+  "asof": "2026-03-26",
+  "regime": "DIVERGENCE",
+  "label": "Divergence / Decouple",
+  "confidence": 59,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS"
+  ],
+  "lastDate": "2026-03-26"
+ },
+ {
+  "asof": "2026-03-27",
+  "regime": "DIVERGENCE",
+  "label": "Divergence / Decouple",
+  "confidence": 59,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS"
+  ],
+  "lastDate": "2026-03-27"
+ },
+ {
+  "asof": "2026-03-30",
+  "regime": "DIVERGENCE",
+  "label": "Divergence / Decouple",
+  "confidence": 59,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS"
+  ],
+  "lastDate": "2026-03-30"
+ },
+ {
+  "asof": "2026-03-31",
+  "regime": "DIVERGENCE",
+  "label": "Divergence / Decouple",
+  "confidence": 67,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS"
+  ],
+  "lastDate": "2026-03-31"
+ },
+ {
+  "asof": "2026-04-01",
+  "regime": "DIVERGENCE",
+  "label": "Divergence / Decouple",
+  "confidence": 59,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS"
+  ],
+  "lastDate": "2026-04-01"
+ },
+ {
+  "asof": "2026-04-02",
+  "regime": "DIVERGENCE",
+  "label": "Divergence / Decouple",
+  "confidence": 59,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS"
+  ],
+  "lastDate": "2026-04-02"
+ },
+ {
+  "asof": "2026-04-06",
+  "regime": "DIVERGENCE",
+  "label": "Divergence / Decouple",
+  "confidence": 66,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS"
+  ],
+  "lastDate": "2026-04-06"
+ },
+ {
+  "asof": "2026-04-07",
+  "regime": "DIVERGENCE",
+  "label": "Divergence / Decouple",
+  "confidence": 58,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS"
+  ],
+  "lastDate": "2026-04-07"
+ },
+ {
+  "asof": "2026-04-08",
+  "regime": "DIVERGENCE",
+  "label": "Divergence / Decouple",
+  "confidence": 66,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS"
+  ],
+  "lastDate": "2026-04-08"
+ },
+ {
+  "asof": "2026-04-09",
+  "regime": "DIVERGENCE",
+  "label": "Divergence / Decouple",
+  "confidence": 51,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS"
+  ],
+  "lastDate": "2026-04-09"
+ },
+ {
+  "asof": "2026-04-10",
+  "regime": "DIVERGENCE",
+  "label": "Divergence / Decouple",
+  "confidence": 51,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS"
+  ],
+  "lastDate": "2026-04-10"
+ },
+ {
+  "asof": "2026-04-13",
+  "regime": "NEUTRAL",
+  "label": "Neutral / Accumulation",
+  "confidence": 8,
+  "isAlert": false,
+  "decayingTypes": [],
+  "lastDate": "2026-04-13"
+ },
+ {
+  "asof": "2026-04-14",
+  "regime": "NEUTRAL",
+  "label": "Neutral / Accumulation",
+  "confidence": 8,
+  "isAlert": false,
+  "decayingTypes": [],
+  "lastDate": "2026-04-14"
+ },
+ {
+  "asof": "2026-04-15",
+  "regime": "NEUTRAL",
+  "label": "Neutral / Accumulation",
+  "confidence": 8,
+  "isAlert": false,
+  "decayingTypes": [],
+  "lastDate": "2026-04-15"
+ },
+ {
+  "asof": "2026-04-16",
+  "regime": "NEUTRAL",
+  "label": "Neutral / Accumulation",
+  "confidence": 8,
+  "isAlert": false,
+  "decayingTypes": [],
+  "lastDate": "2026-04-16"
+ },
+ {
+  "asof": "2026-04-17",
+  "regime": "NEUTRAL",
+  "label": "Neutral / Accumulation",
+  "confidence": 8,
+  "isAlert": false,
+  "decayingTypes": [],
+  "lastDate": "2026-04-17"
+ },
+ {
+  "asof": "2026-04-20",
+  "regime": "NEUTRAL",
+  "label": "Neutral / Accumulation",
+  "confidence": 8,
+  "isAlert": false,
+  "decayingTypes": [],
+  "lastDate": "2026-04-20"
+ },
+ {
+  "asof": "2026-04-21",
+  "regime": "NEUTRAL",
+  "label": "Neutral / Accumulation",
+  "confidence": 17,
+  "isAlert": false,
+  "decayingTypes": [],
+  "lastDate": "2026-04-21"
+ },
+ {
+  "asof": "2026-04-22",
+  "regime": "NEUTRAL",
+  "label": "Neutral / Accumulation",
+  "confidence": 8,
+  "isAlert": false,
+  "decayingTypes": [],
+  "lastDate": "2026-04-22"
+ },
+ {
+  "asof": "2026-04-23",
+  "regime": "NEUTRAL",
+  "label": "Neutral / Accumulation",
+  "confidence": 8,
+  "isAlert": false,
+  "decayingTypes": [],
+  "lastDate": "2026-04-23"
+ },
+ {
+  "asof": "2026-04-24",
+  "regime": "NEUTRAL",
+  "label": "Neutral / Accumulation",
+  "confidence": 8,
+  "isAlert": false,
+  "decayingTypes": [],
+  "lastDate": "2026-04-24"
+ },
+ {
+  "asof": "2026-04-27",
+  "regime": "NEUTRAL",
+  "label": "Neutral / Accumulation",
+  "confidence": 8,
+  "isAlert": false,
+  "decayingTypes": [],
+  "lastDate": "2026-04-27"
+ },
+ {
+  "asof": "2026-04-28",
+  "regime": "NEUTRAL",
+  "label": "Neutral / Accumulation",
+  "confidence": 8,
+  "isAlert": false,
+  "decayingTypes": [],
+  "lastDate": "2026-04-28"
+ },
+ {
+  "asof": "2026-04-29",
+  "regime": "NEUTRAL",
+  "label": "Neutral / Accumulation",
+  "confidence": 8,
+  "isAlert": false,
+  "decayingTypes": [],
+  "lastDate": "2026-04-29"
+ },
+ {
+  "asof": "2026-04-30",
+  "regime": "NEUTRAL",
+  "label": "Neutral / Accumulation",
+  "confidence": 8,
+  "isAlert": false,
+  "decayingTypes": [],
+  "lastDate": "2026-04-30"
+ },
+ {
+  "asof": "2026-05-01",
+  "regime": "NEUTRAL",
+  "label": "Neutral / Accumulation",
+  "confidence": 8,
+  "isAlert": false,
+  "decayingTypes": [],
+  "lastDate": "2026-05-01"
+ },
+ {
+  "asof": "2026-05-04",
+  "regime": "NEUTRAL",
+  "label": "Neutral / Accumulation",
+  "confidence": 8,
+  "isAlert": false,
+  "decayingTypes": [],
+  "lastDate": "2026-05-04"
+ },
+ {
+  "asof": "2026-05-05",
+  "regime": "NEUTRAL",
+  "label": "Neutral / Accumulation",
+  "confidence": 8,
+  "isAlert": false,
+  "decayingTypes": [],
+  "lastDate": "2026-05-05"
+ },
+ {
+  "asof": "2026-05-06",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 58,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-05-06"
+ },
+ {
+  "asof": "2026-05-07",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 60,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-05-07"
+ },
+ {
+  "asof": "2026-05-08",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 66,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-05-08"
+ },
+ {
+  "asof": "2026-05-11",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 63,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-05-11"
+ },
+ {
+  "asof": "2026-05-12",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 63,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-05-12"
+ },
+ {
+  "asof": "2026-05-13",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 63,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-05-13"
+ },
+ {
+  "asof": "2026-05-14",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 64,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-05-14"
+ },
+ {
+  "asof": "2026-05-15",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 67,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-05-15"
+ },
+ {
+  "asof": "2026-05-18",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 66,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-05-18"
+ },
+ {
+  "asof": "2026-05-19",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 66,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-05-19"
+ },
+ {
+  "asof": "2026-05-20",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 66,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-05-20"
+ },
+ {
+  "asof": "2026-05-21",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 64,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-05-21"
+ },
+ {
+  "asof": "2026-05-22",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 64,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-05-22"
+ },
+ {
+  "asof": "2026-05-26",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 64,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-05-26"
+ },
+ {
+  "asof": "2026-05-27",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 64,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-05-27"
+ },
+ {
+  "asof": "2026-05-28",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 64,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-05-28"
+ },
+ {
+  "asof": "2026-05-29",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 65,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-05-29"
+ },
+ {
+  "asof": "2026-06-01",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 65,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-06-01"
+ },
+ {
+  "asof": "2026-06-02",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 65,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-06-02"
+ },
+ {
+  "asof": "2026-06-03",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 65,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-06-03"
+ },
+ {
+  "asof": "2026-06-04",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 70,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-06-04"
+ },
+ {
+  "asof": "2026-06-05",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 64,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-06-05"
+ },
+ {
+  "asof": "2026-06-08",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 57,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-06-08"
+ },
+ {
+  "asof": "2026-06-09",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 57,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-06-09"
+ },
+ {
+  "asof": "2026-06-10",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 57,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-06-10"
+ },
+ {
+  "asof": "2026-06-11",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 55,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-06-11"
+ },
+ {
+  "asof": "2026-06-12",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 61,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-06-12"
+ },
+ {
+  "asof": "2026-06-15",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 60,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-06-15"
+ },
+ {
+  "asof": "2026-06-16",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 55,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-06-16"
+ },
+ {
+  "asof": "2026-06-17",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 55,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-06-17"
+ },
+ {
+  "asof": "2026-06-18",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 53,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-06-18"
+ },
+ {
+  "asof": "2026-06-22",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 59,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-06-22"
+ },
+ {
+  "asof": "2026-06-23",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 59,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-06-23"
+ },
+ {
+  "asof": "2026-06-24",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 55,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-06-24"
+ },
+ {
+  "asof": "2026-06-25",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 55,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-06-25"
+ },
+ {
+  "asof": "2026-06-26",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 43,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-06-26"
+ },
+ {
+  "asof": "2026-06-29",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 52,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-06-29"
+ },
+ {
+  "asof": "2026-06-30",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 51,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-06-30"
+ },
+ {
+  "asof": "2026-07-01",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 46,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-07-01"
+ },
+ {
+  "asof": "2026-07-02",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 46,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-07-02"
+ },
+ {
+  "asof": "2026-07-06",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 54,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-07-06"
+ },
+ {
+  "asof": "2026-07-07",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 52,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-07-07"
+ },
+ {
+  "asof": "2026-07-08",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 52,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-07-08"
+ },
+ {
+  "asof": "2026-07-09",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 45,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-07-09"
+ },
+ {
+  "asof": "2026-07-10",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 45,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-07-10"
+ },
+ {
+  "asof": "2026-07-13",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 54,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-07-13"
+ },
+ {
+  "asof": "2026-07-14",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 52,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-07-14"
+ },
+ {
+  "asof": "2026-07-15",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 52,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-07-15"
+ },
+ {
+  "asof": "2026-07-16",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 46,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-07-16"
+ },
+ {
+  "asof": "2026-07-17",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 46,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-07-17"
+ },
+ {
+  "asof": "2026-07-20",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 54,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-07-20"
+ },
+ {
+  "asof": "2026-07-21",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 52,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-07-21"
+ },
+ {
+  "asof": "2026-07-22",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 52,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-07-22"
+ },
+ {
+  "asof": "2026-07-23",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 46,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-07-23"
+ },
+ {
+  "asof": "2026-07-24",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 45,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-07-24"
+ },
+ {
+  "asof": "2026-07-27",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 53,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-07-27"
+ },
+ {
+  "asof": "2026-07-28",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 52,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-07-28"
+ },
+ {
+  "asof": "2026-07-29",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 51,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-07-29"
+ },
+ {
+  "asof": "2026-07-30",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 45,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-07-30"
+ },
+ {
+  "asof": "2026-07-31",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 45,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-07-31"
+ },
+ {
+  "asof": "2026-08-03",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 53,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-08-03"
+ },
+ {
+  "asof": "2026-08-04",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 51,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-08-04"
+ },
+ {
+  "asof": "2026-08-05",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 51,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-08-05"
+ },
+ {
+  "asof": "2026-08-06",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 45,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-08-06"
+ },
+ {
+  "asof": "2026-08-07",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 45,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-08-07"
+ },
+ {
+  "asof": "2026-08-10",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 52,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-08-10"
+ },
+ {
+  "asof": "2026-08-11",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 52,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-08-11"
+ },
+ {
+  "asof": "2026-08-12",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 52,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-08-12"
+ },
+ {
+  "asof": "2026-08-13",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 45,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-08-13"
+ },
+ {
+  "asof": "2026-08-14",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 45,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-08-14"
+ },
+ {
+  "asof": "2026-08-17",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 52,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-08-17"
+ },
+ {
+  "asof": "2026-08-18",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 52,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-08-18"
+ },
+ {
+  "asof": "2026-08-19",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 52,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-08-19"
+ },
+ {
+  "asof": "2026-08-20",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 70,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-08-20"
+ },
+ {
+  "asof": "2026-08-21",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 65,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-08-21"
+ },
+ {
+  "asof": "2026-08-24",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 55,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-08-24"
+ },
+ {
+  "asof": "2026-08-25",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 61,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-08-25"
+ },
+ {
+  "asof": "2026-08-26",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 65,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-08-26"
+ },
+ {
+  "asof": "2026-08-27",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 65,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-08-27"
+ },
+ {
+  "asof": "2026-08-28",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 74,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-08-28"
+ },
+ {
+  "asof": "2026-08-31",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 74,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-08-31"
+ },
+ {
+  "asof": "2026-09-01",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 69,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-09-01"
+ },
+ {
+  "asof": "2026-09-02",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 66,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-09-02"
+ },
+ {
+  "asof": "2026-09-03",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 67,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-09-03"
+ },
+ {
+  "asof": "2026-09-04",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 72,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-09-04"
+ },
+ {
+  "asof": "2026-09-08",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 54,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-09-08"
+ },
+ {
+  "asof": "2026-09-09",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 60,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-09-09"
+ },
+ {
+  "asof": "2026-09-10",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 60,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-09-10"
+ },
+ {
+  "asof": "2026-09-11",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 49,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-09-11"
+ },
+ {
+  "asof": "2026-09-14",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 48,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-09-14"
+ },
+ {
+  "asof": "2026-09-15",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 45,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-09-15"
+ },
+ {
+  "asof": "2026-09-16",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 62,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-09-16"
+ },
+ {
+  "asof": "2026-09-17",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 64,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-09-17"
+ },
+ {
+  "asof": "2026-09-18",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 64,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-09-18"
+ },
+ {
+  "asof": "2026-09-21",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 55,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-09-21"
+ },
+ {
+  "asof": "2026-09-22",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 53,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-09-22"
+ },
+ {
+  "asof": "2026-09-23",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 60,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-09-23"
+ },
+ {
+  "asof": "2026-09-24",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 59,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-09-24"
+ },
+ {
+  "asof": "2026-09-25",
+  "regime": "SYSTEMIC",
+  "label": "Systemic Risk-Off",
+  "confidence": 55,
+  "isAlert": true,
+  "decayingTypes": [
+   "SEMI_LEADS",
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-09-25"
+ },
+ {
+  "asof": "2026-09-28",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 42,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-09-28"
+ },
+ {
+  "asof": "2026-09-29",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 39,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-09-29"
+ },
+ {
+  "asof": "2026-09-30",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 49,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-09-30"
+ },
+ {
+  "asof": "2026-10-01",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 45,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-10-01"
+ },
+ {
+  "asof": "2026-10-02",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 38,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-10-02"
+ },
+ {
+  "asof": "2026-10-05",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 38,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-10-05"
+ },
+ {
+  "asof": "2026-10-06",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 35,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-10-06"
+ },
+ {
+  "asof": "2026-10-07",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 44,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-10-07"
+ },
+ {
+  "asof": "2026-10-08",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 42,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-10-08"
+ },
+ {
+  "asof": "2026-10-09",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 35,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-10-09"
+ },
+ {
+  "asof": "2026-10-12",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 35,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-10-12"
+ },
+ {
+  "asof": "2026-10-13",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 33,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-10-13"
+ },
+ {
+  "asof": "2026-10-14",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 42,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-10-14"
+ },
+ {
+  "asof": "2026-10-15",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 42,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-10-15"
+ },
+ {
+  "asof": "2026-10-16",
+  "regime": "EARNINGS",
+  "label": "Earnings / Rotation",
+  "confidence": 35,
+  "isAlert": true,
+  "decayingTypes": [
+   "CRYPTO_LEADS",
+   "FULL_DECOUPLE"
+  ],
+  "lastDate": "2026-10-16"
+ }
+]

@@ -1,0 +1,41 @@
+
+Shorting Cerebras on OpenAI Jalapeño Chip Narrative Acceleration and Liquidity Draw of Anthropic IPO — Corbanu
+Skip to article
+Corbanu
+Home
+Markets
+Research
+Terminal
+Subscribe
+ Published research
+Trade update / 4 Sep 2026
+Position
+1.75% short
+Entry
+$209.225
+OpenAI DevDay
+29 Sep
+Base target
+$118
+Copy for LLM
+New account? Apply CORBANU referral
+Shorting Cerebras on OpenAI Jalapeño Chip Narrative Acceleration and Liquidity Draw of Anthropic IPO
+The Trade
+Corbanu entered a short in the Cerebras Systems (
+CBRS
+; Nasdaq-listed) perpetual through 
+Hyperliquid
+ at a venue-native mid of 
+$209.225 at 20:09:40 UTC on 4 September 2026
+, sized at 1.75% of capital against the 3.5% CXMT (
+CXMT
+) long and re-struck weekly to keep the pair beta-neutral. Our $118 base target is 
+43.6% below entry
+; the $77 bear-case value is 63.2% below entry. The scenario budget retains a 2% annualized funding cost, but that is not the entry rate: the quoted hour annualized to a 
+61.7% cost for the short
+, the trailing 24 hours cost 0.0415% of notional, and the trailing seven days were roughly flat. We will mark actual funding and carry the position through OpenAI DevDay on 29 September, Anthropic's expected October listing, the final Cerebras (
+CBRS
+) lock-up release by 10 November and the Q3 print on 13 November.
+At entry, the market pays 177x the first positive earnings year and 32x the Street's 2028 EPS of $6.47. That 2028 number requires $7.83bn of revenue, 56% gross margin, an AWS (
+AMZN
+) ramp fro

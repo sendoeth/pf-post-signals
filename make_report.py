@@ -1,0 +1,64 @@
+#!/usr/bin/env python3
+"""Render RESULTS.md from data/comparison.json and data/new_system_resolved.json."""
+import json
+import os
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+DATA = os.path.join(HERE, "data")
+
+
+def pct(v, digits=1):
+    return "—" if v is None else f"{v * 100:+.{digits}f}%"
+
+
+def rate(v):
+    return "—" if v is None else f"{v * 100:.0f}%"
+
+
+def row(name, summ, abst):
+    cells = [name]
+    for h in ("1", "7", "30"):
+        s = summ[h]
+        cells.append(f'{rate(s["hit_rate"])} ({s["n"]}{", " + str(s["pending"]) + " pending" if s["pending"] else ""}) · {pct(s["mean_signed_return"], 2)}')
+    cells.append(abst)
+    return "| " + " | ".join(cells) + " |"
+
+
+def main():
+    c = json.load(open(os.path.join(DATA, "comparison.json")))
+    resolved = json.load(open(os.path.join(DATA, "new_system_resolved.json")))
+    lines = ["# Results", "",
+             "Cells: hit rate (resolved n, pending) · mean signed return. Abstention = share of decision points "
+             "with no directional call (old: symbol-days withheld; new: trading days in the common window before the first call).", "",
+             "## Headline", "",
+             "| System | 1d | 7d | 30d | Abstention |", "|---|---|---|---|---|",
+             row("Old regime pipeline, executed (Mar 9 – Oct 16)", c["old"], rate(c["old_abstention_full"])),
+             row("Old regime pipeline, executed (common window Sep 4 – Oct 16)", c["old_common_window"], rate(c["old_abstention_common"])),
+             row("Old pipeline *suppressed* directions (shadow: if it had not abstained)", c["old_shadow_suppressed"], "n/a"),
+             row("goodalexander / Corbanu calls, per leg (Sep 4 – Oct 16)", c["new_calls"], rate(c["new_abstention_common"])),
+             row("goodalexander / Corbanu published pairs, weighted", c["new_pairs"], "n/a"),
+             "", "## Per regime (counterfactual regime as of the decision day)", "",
+             "| Regime | Days | Old executed 7d | Old shadow 7d | Corbanu calls 7d | Old executed 30d | Old shadow 30d | Corbanu calls 30d |",
+             "|---|---|---|---|---|---|---|---|"]
+    for reg, v in c["per_regime"].items():
+        def cell(s):
+            return f'{rate(s["hit_rate"])} ({s["n"]}) {pct(s["mean_signed_return"], 2)}' if s["n"] else "—"
+        lines.append(f'| {reg} | {v["days"]} | {cell(v["old_executed"]["7"])} | {cell(v["old_shadow_if_not_abstained"]["7"])} | '
+                     f'{cell(v["new_calls"]["7"])} | {cell(v["old_executed"]["30"])} | {cell(v["old_shadow_if_not_abstained"]["30"])} | '
+                     f'{cell(v["new_calls"]["30"])} |')
+    lines += ["", "## Corbanu calls, resolved", "",
+              "| Called (UTC) | Call | Regime | 1d | 7d | 30d | Source |", "|---|---|---|---|---|---|---|"]
+    for r in resolved["calls"]:
+        side = "long" if r["side"] > 0 else "short"
+        lines.append(f'| {r["called_at"][:16]} | {side} {r["ticker"]} @ {r["entry"]:g} ({r["kind"]}) | {r["regime"]} | '
+                     f'{pct(r["returns"]["1"])} | {pct(r["returns"]["7"])} | {pct(r["returns"]["30"])} | [post]({r["source_link"]}) |')
+    lines += ["", "| Pair | Legs | 1d | 7d | 30d |", "|---|---|---|---|---|"]
+    for p in resolved["pairs"]:
+        lines.append(f'| {p["pair_id"]} | {", ".join(p["legs"])} | {pct(p["returns"]["1"])} | {pct(p["returns"]["7"])} | {pct(p["returns"]["30"])} |')
+    lines += ["", f'Regime days in the counterfactual replay (Mar 9 – Oct 16): {json.dumps(c["regime_days"])}', ""]
+    open(os.path.join(HERE, "RESULTS.md"), "w").write("\n".join(lines))
+    print("\n".join(lines))
+
+
+if __name__ == "__main__":
+    main()

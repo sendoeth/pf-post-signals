@@ -1,0 +1,39 @@
+
+Long Kioxia, Short the Nikkei: AI Storage at Four Times Forward Earnings — Corbanu
+Skip to article
+Corbanu
+Home
+Markets
+Research
+Terminal
+Subscribe
+ Published research
+Trade proposal / 15 Sep 2026
+Proposed long
+3.0% Kioxia
+Proposed short
+8.5% JP225
+Cash reference
+¥51,750
+Review
+13 Nov
+Copy for LLM
+New account? Apply CORBANU referral
+Long Kioxia, Short the Nikkei: AI Storage at Four Times Forward Earnings
+CORBANU · TRADE NOTE · 15 SEPTEMBER 2026
+Proposed exposure:
+ up to 3.0% long Kioxia / 8.5% short JP225
+Cash reference:
+ ¥51,750, Tokyo close on 15 September, pre-split
+Likely implementation:
+ spot Kioxia shares against a Nikkei short, as a core long/short position
+Main reassessment:
+ Kioxia results expected 13 November 2026
+Market prices refer to 
+15 September 2026
+; funding observations extend through 23:00 UTC. Bloomberg forecasts were retrieved on 15–16 September.
+Unless stated otherwise, yen prices and EPS are pre-split. Kioxia has announced a three-for-one split with a 30 September record date and a 1 October effective date. Once effective, cash-market prices and EPS will divide by three, while shares will multiply by three: the ¥51,750 reference becomes ¥17,250. 
+Split notice
+1. Why Put This Trade On Now?
+Kioxia trades at 4.18× next-12-month earnings while consensus expects revenue to grow 331.4% in the year ending March 2027. We think that multiple is unjustifiably low for a business whose customers are starting to commit to years of supply.
+ The shares are

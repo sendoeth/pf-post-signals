@@ -1,0 +1,42 @@
+# Results
+
+Cells: hit rate (resolved n, pending) · mean signed return. Abstention = share of decision points with no directional call (old: symbol-days withheld; new: trading days in the common window before the first call).
+
+## Headline
+
+| System | 1d | 7d | 30d | Abstention |
+|---|---|---|---|---|
+| Old regime pipeline, executed (Mar 9 – Oct 16) | 44% (68) · -0.10% | 41% (68) · -0.57% | 56% (68) · +2.58% | 89% |
+| Old regime pipeline, executed (common window Sep 4 – Oct 16) | — (0) · — | — (0) · — | — (0) · — | 100% |
+| Old pipeline *suppressed* directions (shadow: if it had not abstained) | 49% (304) · -0.17% | 40% (304) · -0.65% | 58% (284, 20 pending) · -0.34% | n/a |
+| goodalexander / Corbanu calls, per leg (Sep 4 – Oct 16) | 43% (7, 1 pending) · -0.39% | 75% (8) · +4.45% | 50% (4, 4 pending) · -3.43% | 0% |
+| goodalexander / Corbanu published pairs, weighted | 50% (2) · -0.52% | 100% (2) · +1.87% | 50% (2) · -1.71% | n/a |
+
+## Per regime (counterfactual regime as of the decision day)
+
+| Regime | Days | Old executed 7d | Old shadow 7d | Corbanu calls 7d | Old executed 30d | Old shadow 30d | Corbanu calls 30d |
+|---|---|---|---|---|---|---|---|
+| DIVERGENCE | 12 | — | — | — | — | — | — |
+| EARNINGS | 50 | — | — | 100% (1) +7.85% | — | — | — |
+| NEUTRAL | 17 | 41% (68) -0.57% | — | — | 56% (68) +2.58% | — | — |
+| SYSTEMIC | 76 | — | 40% (304) -0.65% | 71% (7) +3.97% | — | 58% (284) -0.34% | 50% (4) -3.43% |
+
+## Corbanu calls, resolved
+
+| Called (UTC) | Call | Regime | 1d | 7d | 30d | Source |
+|---|---|---|---|---|---|---|
+| 2026-09-04T20:09 | long CXMT @ 8.3403 (entry) | SYSTEMIC | +0.4% | -0.7% | +0.9% | [post](https://corbanu.com/posts/chinese-memory-sovereign-ai-long-cxmt/) |
+| 2026-09-04T20:09 | short CBRS @ 209.225 (entry) | SYSTEMIC | -0.4% | +8.3% | +12.7% | [post](https://corbanu.com/posts/shorting-cerebras-openai-jalapeno-anthropic-ipo/) |
+| 2026-09-16T00:00 | long KIOXIA @ 109.877 (entry) | SYSTEMIC | -2.5% | +19.7% | -25.0% | [post](https://corbanu.com/posts/long-kioxia-short-nikkei-ai-storage/) |
+| 2026-09-16T00:00 | short JP225 @ 63624 (entry) | SYSTEMIC | -0.7% | -5.1% | -2.4% | [post](https://corbanu.com/posts/long-kioxia-short-nikkei-ai-storage/) |
+| 2026-09-26T23:10 | long ORCL @ 139.16 (entry) | SYSTEMIC | — | +3.1% | — | [post](https://corbanu.com/posts/oracle-cheapest-way-to-own-ai-compute/) |
+| 2026-09-27T21:27 | short AAPL @ 340.43 (entry) | SYSTEMIC | +0.6% | +2.0% | — | [post](https://corbanu.com/posts/apple-short-hundred-year-flood/) |
+| 2026-09-27T21:27 | long SKHX @ 1367.5 (entry) | SYSTEMIC | -5.6% | +0.4% | — | [post](https://corbanu.com/posts/sk-hynix-recontracting-to-repricing/) |
+| 2026-09-30T03:33 | short CBRS @ 191.75 (add) | EARNINGS | +5.4% | +7.8% | — | [post](https://corbanu.com/posts/cerebras-left-on-the-bench/) |
+
+| Pair | Legs | 1d | 7d | 30d |
+|---|---|---|---|---|
+| cxmt-cbrs | CXMT long 3.5%, CBRS short 1.75% | +0.1% | +2.3% | +4.8% |
+| kioxia-jp225 | KIOXIA long 3.0%, JP225 short 8.5% | -1.2% | +1.4% | -8.3% |
+
+Regime days in the counterfactual replay (Mar 9 – Oct 16): {"SYSTEMIC": 76, "DIVERGENCE": 12, "NEUTRAL": 17, "EARNINGS": 50}
