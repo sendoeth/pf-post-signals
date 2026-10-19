@@ -85,7 +85,9 @@ def old_system(regimes, prices):
                 side = trades[sym]
                 rets = {h: (side * (p / p0 - 1) if p else None) for h, p in exits.items()}
                 decisions.append({"asof": day, "symbol": sym, "regime": r["regime"], "action": "EXECUTE",
-                                  "side": side, "entry": p0, "returns": rets})
+                                  "side": side, "entry": p0,
+                                  "exits": {h: ({"date": plus(day, int(h)), "price": p} if p else None) for h, p in exits.items()},
+                                  "returns": rets})
             else:
                 decisions.append({"asof": day, "symbol": sym, "regime": r["regime"], "action": "WITHHOLD",
                                   "side": 0, "entry": p0, "returns": {}})
