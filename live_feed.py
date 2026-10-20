@@ -127,7 +127,8 @@ def main():
         return 1
     os.replace(candidate, LIVE_HTML)
     atomic_write(STATUS, json.dumps({**gate_info, "rawRegime": raw_regime, "sessions_classified": len(raw),
-                                     "queue_regime_label": g.get("queueRegime")}, indent=1))
+                                     "queue_regime_label": g.get("queueRegime"),
+                                     "data_age_days_at_build": age, "stale": age > MAX_AGE_DAYS}, indent=1))
     log(f"PUBLISHED {latest}: raw={raw_regime} effective={effective} (since {since}, gate {MIN_DAYS}d)")
     return 0
 

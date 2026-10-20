@@ -6,8 +6,10 @@
  "minDays": 2,
  "maxAgeDays": 4,
  "gateVersion": 1,
- "builtAt": "2026-10-20T14:32:01Z",
+ "builtAt": "2026-10-20T15:23:07Z",
  "rawRegime": "EARNINGS",
  "sessions_classified": 156,
- "queue_regime_label": "Earnings / Rotation"
+ "queue_regime_label": "Earnings / Rotation",
+ "data_age_days_at_build": 1,
+ "stale": false
 }
