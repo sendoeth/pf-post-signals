@@ -25,10 +25,11 @@ def prev_day(d):
     return (dt.date.fromisoformat(d) - dt.timedelta(days=1)).isoformat()
 
 
-def extended_history():
+def extended_history(prices=None):
     """Embedded history + every later trading day with complete data."""
     dates, series = embedded.load()
-    prices = json.load(open(os.path.join(HERE, "data", "prices.json")))
+    if prices is None:
+        prices = json.load(open(os.path.join(HERE, "data", "prices.json")))
     last = dates[-1]
     new_days = sorted(d for d in prices["NVDA"] if d > last)
     ext_dates = list(dates)

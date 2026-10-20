@@ -89,6 +89,50 @@ Yahoo closes: AAPL 0.05%, ORCL 0.96% median difference (ORCLon is a tokenized sp
 - **Self-published tracker** as the exit source, mitigated by the Yahoo cross-check above.
 - One ORCL 1d exit is missing: the call was made on a Saturday and the Felix spot token had no mark within 2 days.
 
+## Step 2: live price feed + regime duration gate
+
+The live pipeline had been reading a price history embedded in its dashboard that ends 2026-03-06. Step 2:
+
+- **Live feed** — `live_feed.py` (daily cron, 22:30 UTC Mon–Fri) fetches the same 9 equity + 4 crypto inputs, classifies
+  every completed session not yet classified with the *unmodified* dashboard (trailing 251 sessions, cached per session in
+  `live/raw_regimes.json`), applies the gate, verifies the rendered page, and atomically publishes
+  `live/ai_semi_dashboard.live.html` + `live/status.json`. `signal_api.js` reads it via `PF_DASHBOARD_PATH`
+  (patch: [`patches/signal_api_live_feed.patch`](patches/signal_api_live_feed.patch)).
+- **Duration gate** — [`gate.py`](gate.py): a regime change takes effect only after 2 consecutive sessions. It is a pure
+  function of the raw session sequence, so re-runs cannot double-count a session. In the generated dashboard
+  `classifyRegime()` itself returns the gated regime, so every consumer (rebalancing queue, `signal_api.js` filters)
+  sees the same value; the raw regime is kept as `rawRegime`.
+- **Withholding** — after 4 days without new market data the page reports `STALE_DATA`, and `signal_api.js` now
+  withholds direction for any unknown regime id (previously it fell back to NEUTRAL, which publishes).
+- **Ledger push** — the `post-fiat-signals` ledger/status push had been rejected since 2026-06-09 while the cron log still
+  said "Pushed". Fixed in that repo: one lock for both jobs, rebase before push, real failure reporting, token via askpass,
+  and a guard that refuses to commit any file containing a server address.
+
+Before/after numbers: [RESULTS.md → Step 2](RESULTS.md#step-2-live-feed--regime-duration-gate-before--after).
+
+### Reproduce step 2
+
+```bash
+python3 gate.py          # data/gate_evaluation.json
+# expected: min_days=1: 22 changes, 15 weekend-driven ... min_days=2:  8 changes,  3 weekend-driven ...
+python3 step2_report.py  # data/step2.json + Step 2 section of RESULTS.md
+python3 live_feed.py     # needs network + chromium; publishes live/ or exits 1 with the reason
+# expected: "[...] PUBLISHED <latest session>: raw=<REGIME> effective=<REGIME> (since <date>, gate 2d)"
+```
+
+### Step 2 limitations (not tested)
+
+- The gate length (2) was chosen on the same replay it is evaluated on: in-sample, one 7-month window.
+- The gated re-score (43% / 57% at 7d / 30d vs 41% / 56% raw) comes from one 17-session NEUTRAL episode (n=68,
+  autocorrelated); the difference is noise, not an improvement claim.
+- Market holidays: a missing session simply is not classified; a long market closure would trip the 4-day
+  stale guard and withhold until data resumes (intended, but not exercised live).
+- The first scheduled 22:30 UTC run had not happened at submission time; the first live publish was run manually
+  (2026-10-20, session 2026-10-19).
+- Crypto inputs use the previous UTC day's close (the embedded convention); AKT comes from CoinGecko's 365-day window,
+  which covers the 251-session lookback but not deeper rebuilds.
+- `signal_api.js` is not in this repo; its 3 changes are shipped as a patch file.
+
 ## Reproduce
 
 ```bash

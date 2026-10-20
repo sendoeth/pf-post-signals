@@ -64,7 +64,7 @@ def coingecko(coin_id):
     return {day(ts / 1000 - 1): round(p, 6) for ts, p in get_json(url)["prices"]}
 
 
-def main():
+def fetch_all():
     prices = {}
     for s in STOCKS:
         prices[s] = yahoo(s)
@@ -75,6 +75,11 @@ def main():
     for s, cid in COINGECKO.items():
         prices[s] = coingecko(cid)
         print(f"{s}: {len(prices[s])} days", file=sys.stderr)
+    return prices
+
+
+def main():
+    prices = fetch_all()
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w") as f:
         json.dump(prices, f, indent=0, sort_keys=True)

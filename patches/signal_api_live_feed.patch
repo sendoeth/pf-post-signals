@@ -1,0 +1,37 @@
+--- a/signal_api.js
++++ b/signal_api.js
+@@ -16,7 +16,8 @@
+ const STALE_THRESHOLD_SEC = 2 * REFRESH_MS / 1000; // 30 minutes
+ const SCHEMA_VERSION = '1.1.0';
+ const PRODUCER_ID = 'post-fiat-signals';
+-const DASHBOARD_PATH = 'file:///home/postfiat/ai_semi_dashboard.html';
++// PF_DASHBOARD_PATH = live dashboard rebuilt daily by pf-post-signals/live_feed.py (no silent fallback when set)
++const DASHBOARD_PATH = process.env.PF_DASHBOARD_PATH ? 'file://' + process.env.PF_DASHBOARD_PATH : 'file:///home/postfiat/ai_semi_dashboard.html';
+ const SOURCE_WALLET = 'rfLJ4ZRnqmGFLAcMvCD56nKGbjpdTJmMqo';
+ const PUBLIC_API_URL = process.env.PF_PUBLIC_URL || `http://localhost:${PORT}`;
+ 
+@@ -423,7 +424,8 @@
+   const prox = c && c.regimeProximity ? c.regimeProximity.score || 0 : 0;
+   const dur = c && c.regimeProximity ? c.regimeProximity.regimeDurationDays || 0 : 0;
+   const hz = 24;
+-  const rp = SOVEREIGN_REGIME_POLICY[regime] || SOVEREIGN_REGIME_POLICY.NEUTRAL;
++  // Unknown regimes (e.g. STALE_DATA from the live feed) withhold direction instead of defaulting to NEUTRAL.
++  const rp = SOVEREIGN_REGIME_POLICY[regime] || { action: 'SUPPRESS_DIRECTION', pubDir: false };
+   const signals = [], inversions = [];
+ 
+   for (const sym of SOVEREIGN_SYMBOLS) {
+@@ -4446,7 +4448,13 @@
+         isAlert: rc.isAlert,
+         action: rc.regime.action || 'Hold base weights — no rebalancing needed',
+         targetWeights: rc.regime.weights || BT_WEIGHTS.base,
+-        signals: {}
++        signals: {},
++        rawRegimeId: rc.rawRegime || null,
++        dataAsOf: rc.dataAsOf || BT_DATES[BT_DATES.length - 1],
++        stale: !!rc.stale,
++        gated: !!rc.gated,
++        effectiveSince: rc.effectiveSince || null,
++        gateMinDays: rc.gateMinDays || null
+       };
+       STP_TYPES.forEach(t => {
+         const s = rc.signals[t];

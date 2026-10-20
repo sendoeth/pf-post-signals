@@ -40,3 +40,39 @@ Cells: hit rate (resolved n, pending) · mean signed return. Abstention = share 
 | kioxia-jp225 | KIOXIA long 3.0%, JP225 short 8.5% | -1.2% | +1.4% | -8.3% |
 
 Regime days in the counterfactual replay (Mar 9 – Oct 16): {"SYSTEMIC": 76, "DIVERGENCE": 12, "NEUTRAL": 17, "EARNINGS": 50}
+
+<!-- step2:start -->
+
+## Step 2: live feed + regime duration gate (before / after)
+
+| | Before | After |
+|---|---|---|
+| Dashboard price history | embedded, ends **2026-03-06** (live ledger frozen at SYSTEMIC 77 since 2026-03-19) | rebuilt daily by `live_feed.py`; latest session **2026-10-19**, 156 sessions classified since 2026-03-09 |
+| Live API `/regime/current` | SYSTEMIC, confidence 77, duration 228 d, no data date | EARNINGS (raw EARNINGS), effective since 2026-09-29, `dataAsOf` 2026-10-19, stale=false |
+| Stale / unknown regime | unknown ids fell back to NEUTRAL (publishes direction) | `STALE_DATA` after 4 days without data; unknown ids withhold |
+| Ledger push (`post-fiat-signals`) | rejected since 2026-06-09, 25,464 unpushed auto-commits, log said "Pushed" anyway | merged + pushed, shared lock, rebase before push, real failure reporting, token via askpass |
+
+### Regime changes with and without the gate (replay 2026-03-09 → 2026-10-16)
+
+| Minimum duration | Regime changes | Weekend-adjacent changes | Effective days |
+|---|---|---|---|
+| 1 session(s) (raw classifier) | 22 | 15 | DIVERGENCE 12, EARNINGS 50, NEUTRAL 17, SYSTEMIC 76 |
+| 2 session(s) ← chosen | 8 | 3 | DIVERGENCE 12, EARNINGS 56, NEUTRAL 17, SYSTEMIC 70 |
+| 3 session(s) | 8 | 3 | DIVERGENCE 12, EARNINGS 55, NEUTRAL 17, SYSTEMIC 71 |
+| 4 session(s) | 8 | 5 | DIVERGENCE 12, EARNINGS 54, NEUTRAL 17, SYSTEMIC 72 |
+| 5 session(s) | 6 | 2 | DIVERGENCE 12, EARNINGS 49, NEUTRAL 17, SYSTEMIC 77 |
+
+Changes with the 2-session gate: 2026-03-26 SYSTEMIC→DIVERGENCE, 2026-04-14 DIVERGENCE→NEUTRAL, 2026-05-07 NEUTRAL→SYSTEMIC, 2026-06-29 SYSTEMIC→EARNINGS, 2026-08-21 EARNINGS→SYSTEMIC, 2026-09-11 SYSTEMIC→EARNINGS, 2026-09-17 EARNINGS→SYSTEMIC, 2026-09-29 SYSTEMIC→EARNINGS.
+
+Weekend-adjacent = the session before the change was a Friday or a Monday (Fri→Mon / Mon→Tue flips). Step 1 counted 14 of the 18 post-May changes this way; over the whole replay it is 15 of 22.
+
+### Old pipeline executed calls, raw vs gated regimes
+
+| | 1d | 7d | 30d |
+|---|---|---|---|
+| raw classifier | 44% (n=68) -0.10% | 41% (n=68) -0.57% | 56% (n=68) +2.58% |
+| 2-session gate | 44% (n=68) -0.07% | 43% (n=68) -0.47% | 57% (n=68) +3.47% |
+
+The gate removes the weekend flapping without changing the one tradeable episode: NEUTRAL still runs 17 sessions, starting and ending one session later.
+
+<!-- step2:end -->

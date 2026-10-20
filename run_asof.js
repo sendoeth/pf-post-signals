@@ -5,7 +5,11 @@ const path = require('path');
 const puppeteer = require('/home/postfiat/node_modules/puppeteer');
 
 const HERE = __dirname;
-const index = JSON.parse(fs.readFileSync(path.join(HERE, 'work', 'asof', 'index.json'), 'utf8'));
+// usage: node run_asof.js [file.html ...]  (no args: work/asof/index.json -> data/counterfactual_regimes.json)
+const fileArgs = process.argv.slice(2);
+const index = fileArgs.length
+  ? fileArgs.map(f => ({ asof: null, file: path.resolve(f) }))
+  : JSON.parse(fs.readFileSync(path.join(HERE, 'work', 'asof', 'index.json'), 'utf8'));
 
 (async () => {
   const browser = await puppeteer.launch({
@@ -27,14 +31,16 @@ const index = JSON.parse(fs.readFileSync(path.join(HERE, 'work', 'asof', 'index.
           isAlert: r.isAlert,
           decayingTypes: r.decayingTypes,
           lastDate: BT_DATES[BT_DATES.length - 1],
+          gate: typeof PF_GATE === 'undefined' ? null : { effective: r.regime.id, raw: r.rawRegime, dataAsOf: r.dataAsOf, stale: !!r.stale, queueRegime: exeData.queue && exeData.queue[0] ? exeData.queue[0].regime : null },
         };
       });
-      if (rc.lastDate !== asof) throw new Error(`window mismatch ${asof} vs ${rc.lastDate}`);
-      out.push({ asof, ...rc });
+      if (asof && rc.lastDate !== asof) throw new Error(`window mismatch ${asof} vs ${rc.lastDate}`);
+      out.push({ asof: asof || rc.lastDate, ...rc });
       process.stderr.write(`${asof} ${rc.regime} ${rc.confidence}\n`);
     }
   } finally {
     await browser.close();
   }
-  fs.writeFileSync(path.join(HERE, 'data', 'counterfactual_regimes.json'), JSON.stringify(out, null, 1));
+  if (fileArgs.length) process.stdout.write(JSON.stringify(out));
+  else fs.writeFileSync(path.join(HERE, 'data', 'counterfactual_regimes.json'), JSON.stringify(out, null, 1));
 })();
