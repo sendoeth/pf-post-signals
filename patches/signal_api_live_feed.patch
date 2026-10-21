@@ -20,7 +20,26 @@
    const signals = [], inversions = [];
  
    for (const sym of SOVEREIGN_SYMBOLS) {
-@@ -4446,7 +4448,13 @@
+@@ -2436,7 +2438,7 @@
+ // ═══════════════════════════════════════════════════════════════════════════════
+ 
+ function computeEnsembleConfidence(modules) {
+-  const rd = (n, d) => parseFloat(n.toFixed(d));
++  const rd = (n, d) => (typeof n === 'number' && Number.isFinite(n)) ? parseFloat(n.toFixed(d)) : null;
+   const clamp = (v, lo, hi) => Math.max(lo, Math.min(hi, v));
+   const MODEL_VERSION = 'ensemble-confidence-v1';
+ 
+@@ -2726,7 +2728,8 @@
+       }
+       if (wK > 0 && wLam > 0) historicalMedian = wLam * Math.pow(Math.LN2, 1 / wK);
+     }
+-    if (historicalMedian !== null) {
++    // baseDays is null outside SYSTEMIC (no transition estimate); skip the comparison instead of throwing
++    if (Number.isFinite(baseDays) && Number.isFinite(historicalMedian)) {
+       var tfBias = rd(baseDays - historicalMedian, 2);
+       var tfBiasPct = historicalMedian !== 0 ? rd((tfBias / historicalMedian) * 100, 1) : 0;
+       var tfAbsBias = Math.abs(tfBiasPct);
+@@ -4446,7 +4449,13 @@
          isAlert: rc.isAlert,
          action: rc.regime.action || 'Hold base weights — no rebalancing needed',
          targetWeights: rc.regime.weights || BT_WEIGHTS.base,
@@ -35,3 +54,31 @@
        };
        STP_TYPES.forEach(t => {
          const s = rc.signals[t];
+@@ -5540,7 +5549,7 @@
+   res.end(JSON.stringify(body, null, 2));
+ }
+ 
+-const server = http.createServer((req, res) => {
++function handleRequest(req, res) {
+   // Request logging — capture inbound traffic for integration audit
+   const reqIP = req.headers['x-forwarded-for'] || req.socket.remoteAddress || 'unknown';
+   const reqTime = new Date().toISOString();
+@@ -6136,6 +6145,18 @@
+     default:
+       jsonResponse(res, 404, { error: `Endpoint '${url}' not found`, availableEndpoints: ['/', '/regime/current', '/rebalancing/queue', '/signals/reliability', '/signals/filtered', '/regime/history', '/health', '/system/status', '/ledger/summary', '/consumer/activity', '/signals/latest', '/conformance/status', '/calibration/outcomes'] });
+   }
++}
++
++// One failing endpoint must not take the whole API down: errors become a 500 for that request.
++const server = http.createServer((req, res) => {
++  const endpoint = (req.url || '').split('?')[0];
++  try {
++    handleRequest(req, res);
++  } catch (err) {
++    console.error(`[ERROR] ${new Date().toISOString()} ${req.method} ${endpoint}: ${err && err.stack || err}`);
++    if (!res.headersSent) jsonResponse(res, 500, { error: 'internal_error', endpoint });
++    else res.destroy();
++  }
+ });
+ 
+ function formatUptime(ms) {
