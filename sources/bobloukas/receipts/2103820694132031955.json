@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:09.681Z",
+ "conversationId": "2103592230669988110",
+ "dataSource": "graphql",
+ "id": "2103820694132031955",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 7,
+  "quotes": 0,
+  "replies": 1,
+  "reposts": 0,
+  "views": 1372
+ },
+ "postedAt": "2026-09-26T12:15:15.000Z",
+ "replyTo": {
+  "handle": "illumes__",
+  "postId": "2103651046727831920"
+ },
+ "text": "Never share your security setup.  Plenty of good resources to research.",
+ "url": "https://x.com/BobLoukas/status/2103820694132031955"
+}

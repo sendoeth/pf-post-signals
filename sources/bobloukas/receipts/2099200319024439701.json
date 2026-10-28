@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:00.977Z",
+ "conversationId": "2099165424281616516",
+ "dataSource": "graphql",
+ "id": "2099200319024439701",
+ "metrics": {
+  "bookmarks": 1,
+  "likes": 37,
+  "quotes": 0,
+  "replies": 15,
+  "reposts": 0,
+  "views": 4975
+ },
+ "postedAt": "2026-09-13T18:15:31.000Z",
+ "replyTo": {
+  "handle": "henleym25",
+  "postId": "2099187382503313592"
+ },
+ "text": "Only MAJOR difference, these so called experts are the actually experts who made it and develop it.",
+ "url": "https://x.com/BobLoukas/status/2099200319024439701"
+}

@@ -1,0 +1,233 @@
+{
+ "min_n_reliable": 30,
+ "min_n_reportable": 10,
+ "exit_lag_tolerance_days": 2,
+ "authors": {
+  "goodalexander/Corbanu": {
+   "calls": 8,
+   "by_horizon": {
+    "1": {
+     "n": 7,
+     "pending": 1,
+     "hit_rate": 0.4286,
+     "mean_signed_return": -0.00391,
+     "median_signed_return": -0.0037,
+     "sample_flag": "insufficient"
+    },
+    "7": {
+     "n": 8,
+     "pending": 0,
+     "hit_rate": 0.75,
+     "mean_signed_return": 0.04453,
+     "median_signed_return": 0.0255,
+     "sample_flag": "insufficient"
+    },
+    "30": {
+     "n": 4,
+     "pending": 4,
+     "hit_rate": 0.5,
+     "mean_signed_return": -0.0343,
+     "median_signed_return": -0.00737,
+     "sample_flag": "insufficient"
+    }
+   },
+   "pairs_by_horizon": {
+    "1": {
+     "n": 2,
+     "pending": 0,
+     "hit_rate": 0.5,
+     "mean_signed_return": -0.0052,
+     "median_signed_return": -0.0052,
+     "sample_flag": "insufficient"
+    },
+    "7": {
+     "n": 2,
+     "pending": 0,
+     "hit_rate": 1.0,
+     "mean_signed_return": 0.0187,
+     "median_signed_return": 0.0187,
+     "sample_flag": "insufficient"
+    },
+    "30": {
+     "n": 2,
+     "pending": 0,
+     "hit_rate": 0.5,
+     "mean_signed_return": -0.01714,
+     "median_signed_return": -0.01714,
+     "sample_flag": "insufficient"
+    }
+   },
+   "by_regime": {
+    "EARNINGS": {
+     "1": {
+      "n": 1,
+      "pending": 0,
+      "hit_rate": 1.0,
+      "mean_signed_return": 0.05445,
+      "median_signed_return": 0.05445,
+      "sample_flag": "insufficient"
+     },
+     "7": {
+      "n": 1,
+      "pending": 0,
+      "hit_rate": 1.0,
+      "mean_signed_return": 0.07849,
+      "median_signed_return": 0.07849,
+      "sample_flag": "insufficient"
+     },
+     "30": {
+      "n": 0,
+      "pending": 1,
+      "hit_rate": null,
+      "mean_signed_return": null,
+      "median_signed_return": null,
+      "sample_flag": "insufficient"
+     }
+    },
+    "SYSTEMIC": {
+     "1": {
+      "n": 6,
+      "pending": 1,
+      "hit_rate": 0.3333,
+      "mean_signed_return": -0.01363,
+      "median_signed_return": -0.00551,
+      "sample_flag": "insufficient"
+     },
+     "7": {
+      "n": 7,
+      "pending": 0,
+      "hit_rate": 0.7143,
+      "mean_signed_return": 0.03968,
+      "median_signed_return": 0.01971,
+      "sample_flag": "insufficient"
+     },
+     "30": {
+      "n": 4,
+      "pending": 3,
+      "hit_rate": 0.5,
+      "mean_signed_return": -0.0343,
+      "median_signed_return": -0.00737,
+      "sample_flag": "insufficient"
+     }
+    }
+   }
+  },
+  "BobLoukas": {
+   "calls": 10,
+   "by_horizon": {
+    "1": {
+     "n": 10,
+     "pending": 0,
+     "hit_rate": 0.6,
+     "mean_signed_return": 0.00344,
+     "median_signed_return": 0.00511,
+     "sample_flag": "unreliable"
+    },
+    "7": {
+     "n": 9,
+     "pending": 1,
+     "hit_rate": 0.4444,
+     "mean_signed_return": -0.01037,
+     "median_signed_return": -0.00802,
+     "sample_flag": "insufficient"
+    },
+    "30": {
+     "n": 3,
+     "pending": 7,
+     "hit_rate": 0.6667,
+     "mean_signed_return": -0.01273,
+     "median_signed_return": 0.00204,
+     "sample_flag": "insufficient"
+    }
+   },
+   "pairs_by_horizon": {
+    "1": {
+     "n": 1,
+     "pending": 0,
+     "hit_rate": 0.0,
+     "mean_signed_return": -0.00704,
+     "median_signed_return": -0.00704,
+     "sample_flag": "insufficient"
+    },
+    "7": {
+     "n": 1,
+     "pending": 0,
+     "hit_rate": 0.0,
+     "mean_signed_return": -0.01217,
+     "median_signed_return": -0.01217,
+     "sample_flag": "insufficient"
+    },
+    "30": {
+     "n": 0,
+     "pending": 1,
+     "hit_rate": null,
+     "mean_signed_return": null,
+     "median_signed_return": null,
+     "sample_flag": "insufficient"
+    }
+   },
+   "by_regime": {
+    "EARNINGS": {
+     "1": {
+      "n": 7,
+      "pending": 0,
+      "hit_rate": 0.5714,
+      "mean_signed_return": 0.00424,
+      "median_signed_return": 0.00835,
+      "sample_flag": "insufficient"
+     },
+     "7": {
+      "n": 6,
+      "pending": 1,
+      "hit_rate": 0.3333,
+      "mean_signed_return": -0.00507,
+      "median_signed_return": -0.00814,
+      "sample_flag": "insufficient"
+     },
+     "30": {
+      "n": 0,
+      "pending": 7,
+      "hit_rate": null,
+      "mean_signed_return": null,
+      "median_signed_return": null,
+      "sample_flag": "insufficient"
+     }
+    },
+    "SYSTEMIC": {
+     "1": {
+      "n": 3,
+      "pending": 0,
+      "hit_rate": 0.6667,
+      "mean_signed_return": 0.00158,
+      "median_signed_return": 0.0022,
+      "sample_flag": "insufficient"
+     },
+     "7": {
+      "n": 3,
+      "pending": 0,
+      "hit_rate": 0.6667,
+      "mean_signed_return": -0.02097,
+      "median_signed_return": 0.01469,
+      "sample_flag": "insufficient"
+     },
+     "30": {
+      "n": 3,
+      "pending": 0,
+      "hit_rate": 0.6667,
+      "mean_signed_return": -0.01273,
+      "median_signed_return": 0.00204,
+      "sample_flag": "insufficient"
+     }
+    }
+   }
+  }
+ },
+ "bobloukas_counts": {
+  "own_posts_captured": 260,
+  "labelled_rows": 16,
+  "scored_calls": 10,
+  "reiterations": 6,
+  "excluded_with_reason": 21,
+  "unresolved_cells": 8
+ }
+}

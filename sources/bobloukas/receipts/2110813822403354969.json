@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:19.422Z",
+ "conversationId": "2110810823740498358",
+ "dataSource": "graphql",
+ "id": "2110813822403354969",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 2,
+  "quotes": 0,
+  "replies": 2,
+  "reposts": 0,
+  "views": 1135
+ },
+ "postedAt": "2026-10-15T19:23:26.000Z",
+ "replyTo": {
+  "handle": "stonescotch",
+  "postId": "2110813158223057404"
+ },
+ "text": "I\u2019ll let you know next week.",
+ "url": "https://x.com/BobLoukas/status/2110813822403354969"
+}

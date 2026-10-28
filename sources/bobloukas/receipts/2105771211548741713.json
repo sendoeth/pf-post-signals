@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:41:00.694Z",
+ "conversationId": "2105699317004583026",
+ "dataSource": "graphql",
+ "id": "2105771211548741713",
+ "metrics": {
+  "bookmarks": 3,
+  "likes": 15,
+  "quotes": 0,
+  "replies": 2,
+  "reposts": 1,
+  "views": 3410
+ },
+ "postedAt": "2026-10-01T21:25:54.000Z",
+ "replyTo": {
+  "handle": "westmusk",
+  "postId": "2105753508389761257"
+ },
+ "text": "Over",
+ "url": "https://x.com/BobLoukas/status/2105771211548741713"
+}

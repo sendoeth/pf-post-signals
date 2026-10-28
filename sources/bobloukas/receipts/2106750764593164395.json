@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:55.996Z",
+ "conversationId": "2106744910896312646",
+ "dataSource": "graphql",
+ "id": "2106750764593164395",
+ "metrics": {
+  "bookmarks": 1,
+  "likes": 18,
+  "quotes": 0,
+  "replies": 2,
+  "reposts": 0,
+  "views": 2991
+ },
+ "postedAt": "2026-10-04T14:18:18.000Z",
+ "replyTo": {
+  "handle": "jkatcher74",
+  "postId": "2106747685323542549"
+ },
+ "text": "Yes but miners could still correct 30%",
+ "url": "https://x.com/BobLoukas/status/2106750764593164395"
+}

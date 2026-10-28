@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:00.975Z",
+ "conversationId": "2099165424281616516",
+ "dataSource": "graphql",
+ "id": "2099201719745790444",
+ "metrics": {
+  "bookmarks": 1,
+  "likes": 8,
+  "quotes": 0,
+  "replies": 0,
+  "reposts": 0,
+  "views": 2727
+ },
+ "postedAt": "2026-09-13T18:21:05.000Z",
+ "replyTo": {
+  "handle": "LordlessManner",
+  "postId": "2099183682632192281"
+ },
+ "text": "but these \"experts\" are the experts who made and develop it.  Stark diff.",
+ "url": "https://x.com/BobLoukas/status/2099201719745790444"
+}

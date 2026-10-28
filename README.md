@@ -133,6 +133,19 @@ python3 live_feed.py     # needs network + chromium; publishes live/ or exits 1 
   which covers the 251-session lookback but not deeper rebuilds.
 - `signal_api.js` is not in this repo; its 3 changes are shipped as a patch file.
 
+## Step 3: second author (@BobLoukas)
+
+`authors.py` adds @BobLoukas next to goodalexander/Corbanu with the unchanged step 1 scoring, regime tags from the live
+pipeline, and minimum-sample flags; `validate_authors.py` checks schema, source coverage, duplicates and scoring parity.
+Report: [AUTHORS.md](AUTHORS.md). Labels and rules: [`sources/bobloukas/labels.json`](sources/bobloukas/labels.json);
+capture coverage: [`sources/bobloukas/COVERAGE.md`](sources/bobloukas/COVERAGE.md).
+
+```bash
+python3 authors.py            # fetches hourly prices, resolves calls, writes data/bobloukas_calls.json + author_comparison.json
+python3 validate_authors.py   # expected: "checks: 16 rows, 59 candidates, 59 labelled ids -> ALL PASS"
+python3 make_authors_report.py
+```
+
 ## Reproduce
 
 ```bash

@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:19.420Z",
+ "conversationId": "2110810823740498358",
+ "dataSource": "graphql",
+ "id": "2110816269716885661",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 3,
+  "quotes": 0,
+  "replies": 1,
+  "reposts": 0,
+  "views": 1527
+ },
+ "postedAt": "2026-10-15T19:33:10.000Z",
+ "replyTo": {
+  "handle": "MisterSpread",
+  "postId": "2110815035102810350"
+ },
+ "text": "Unfortunately not.  One day.",
+ "url": "https://x.com/BobLoukas/status/2110816269716885661"
+}

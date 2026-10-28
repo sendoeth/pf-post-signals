@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:23.699Z",
+ "conversationId": "2107157542455451836",
+ "dataSource": "graphql",
+ "id": "2107157934668984798",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 98,
+  "quotes": 0,
+  "replies": 5,
+  "reposts": 0,
+  "views": 6904
+ },
+ "postedAt": "2026-10-05T17:16:15.000Z",
+ "replyTo": {
+  "handle": "Barchart",
+  "postId": "2107157542455451836"
+ },
+ "text": "So much for those promised 3% mortgage rates...",
+ "url": "https://x.com/BobLoukas/status/2107157934668984798"
+}

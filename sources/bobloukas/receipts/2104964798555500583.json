@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:09.680Z",
+ "conversationId": "2104957252121600117",
+ "dataSource": "graphql",
+ "id": "2104964798555500583",
+ "metrics": {
+  "bookmarks": 1,
+  "likes": 9,
+  "quotes": 0,
+  "replies": 0,
+  "reposts": 1,
+  "views": 2049
+ },
+ "postedAt": "2026-09-29T16:01:30.000Z",
+ "replyTo": {
+  "handle": "chap_eth",
+  "postId": "2104957982832529676"
+ },
+ "text": "The platform is crypto only but I also share my main traditional markets view here for free",
+ "url": "https://x.com/BobLoukas/status/2104964798555500583"
+}

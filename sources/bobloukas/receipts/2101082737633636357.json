@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:13.660Z",
+ "conversationId": "2101059971366711317",
+ "dataSource": "graphql",
+ "id": "2101082737633636357",
+ "metrics": {
+  "bookmarks": 7,
+  "likes": 38,
+  "quotes": 0,
+  "replies": 3,
+  "reposts": 0,
+  "views": 6659
+ },
+ "postedAt": "2026-09-18T22:55:35.000Z",
+ "replyTo": {
+  "handle": "moneymurmur",
+  "postId": "2101059971366711317"
+ },
+ "text": "ROTH IRA for the win, agree",
+ "url": "https://x.com/BobLoukas/status/2101082737633636357"
+}

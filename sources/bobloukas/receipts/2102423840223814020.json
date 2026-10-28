@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:13.656Z",
+ "conversationId": "2102422519944745283",
+ "dataSource": "graphql",
+ "id": "2102423840223814020",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 43,
+  "quotes": 0,
+  "replies": 1,
+  "reposts": 0,
+  "views": 5611
+ },
+ "postedAt": "2026-09-22T15:44:39.000Z",
+ "replyTo": {
+  "handle": "TheStalwart",
+  "postId": "2102422519944745283"
+ },
+ "text": "Surprised he didn't go with Trumptelligence",
+ "url": "https://x.com/BobLoukas/status/2102423840223814020"
+}

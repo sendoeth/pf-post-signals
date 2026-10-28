@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:23.699Z",
+ "conversationId": "2107117711549456536",
+ "dataSource": "graphql",
+ "id": "2107224281423994890",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 2,
+  "quotes": 0,
+  "replies": 0,
+  "reposts": 0,
+  "views": 1623
+ },
+ "postedAt": "2026-10-05T21:39:53.000Z",
+ "replyTo": {
+  "handle": "aminazgol",
+  "postId": "2107217889115955282"
+ },
+ "text": "\ud83d\ude2d",
+ "url": "https://x.com/BobLoukas/status/2107224281423994890"
+}

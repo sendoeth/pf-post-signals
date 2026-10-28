@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:21.616Z",
+ "conversationId": "2109741182813450539",
+ "dataSource": "graphql",
+ "id": "2109757477243740321",
+ "metrics": {
+  "bookmarks": 1,
+  "likes": 39,
+  "quotes": 0,
+  "replies": 2,
+  "reposts": 0,
+  "views": 7260
+ },
+ "postedAt": "2026-10-12T21:25:54.000Z",
+ "replyTo": {
+  "handle": "JJcycles",
+  "postId": "2109756162753089640"
+ },
+ "text": "Like a slave to spinning the wheel?",
+ "url": "https://x.com/BobLoukas/status/2109757477243740321"
+}

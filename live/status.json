@@ -2,14 +2,14 @@
  "effective": "EARNINGS",
  "effectiveSince": "2026-09-29",
  "rawAtBuild": "EARNINGS",
- "dataAsOf": "2026-10-19",
+ "dataAsOf": "2026-10-27",
  "minDays": 2,
  "maxAgeDays": 4,
  "gateVersion": 1,
- "builtAt": "2026-10-20T15:23:07Z",
+ "builtAt": "2026-10-27T22:30:01Z",
  "rawRegime": "EARNINGS",
- "sessions_classified": 156,
+ "sessions_classified": 162,
  "queue_regime_label": "Earnings / Rotation",
- "data_age_days_at_build": 1,
+ "data_age_days_at_build": 0,
  "stale": false
 }

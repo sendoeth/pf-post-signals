@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:39:32.342Z",
+ "conversationId": "2115096907244880130",
+ "dataSource": "graphql",
+ "id": "2115115607624482825",
+ "metrics": {
+  "bookmarks": 1,
+  "likes": 10,
+  "quotes": 0,
+  "replies": 1,
+  "reposts": 0,
+  "views": 2090
+ },
+ "postedAt": "2026-10-27T16:17:12.000Z",
+ "replyTo": {
+  "handle": "Paulbkdi",
+  "postId": "2115099598540743047"
+ },
+ "text": "I think it already did.  Which is why we dont want that level lost.",
+ "url": "https://x.com/BobLoukas/status/2115115607624482825"
+}

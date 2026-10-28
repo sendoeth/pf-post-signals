@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:41:00.695Z",
+ "conversationId": "2105699317004583026",
+ "dataSource": "graphql",
+ "id": "2105770449086919141",
+ "metrics": {
+  "bookmarks": 8,
+  "likes": 32,
+  "quotes": 0,
+  "replies": 4,
+  "reposts": 0,
+  "views": 3409
+ },
+ "postedAt": "2026-10-01T21:22:53.000Z",
+ "replyTo": {
+  "handle": "franchismo_",
+  "postId": "2105708198124560811"
+ },
+ "text": "Above $220k I would think",
+ "url": "https://x.com/BobLoukas/status/2105770449086919141"
+}

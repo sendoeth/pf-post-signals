@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:13.659Z",
+ "conversationId": "2101662911538077759",
+ "dataSource": "graphql",
+ "id": "2101825295242170622",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 3,
+  "quotes": 0,
+  "replies": 0,
+  "reposts": 0,
+  "views": 1409
+ },
+ "postedAt": "2026-09-21T00:06:15.000Z",
+ "replyTo": {
+  "handle": "inggaro",
+  "postId": "2101781078289609005"
+ },
+ "text": "Correct answer",
+ "url": "https://x.com/BobLoukas/status/2101825295242170622"
+}

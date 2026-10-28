@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:13.657Z",
+ "conversationId": "2102014028855820403",
+ "dataSource": "graphql",
+ "id": "2102015068737065456",
+ "metrics": {
+  "bookmarks": 51,
+  "likes": 426,
+  "quotes": 2,
+  "replies": 13,
+  "reposts": 15,
+  "views": 24491
+ },
+ "postedAt": "2026-09-21T12:40:20.000Z",
+ "replyTo": {
+  "handle": "BobLoukas",
+  "postId": "2102014028855820403"
+ },
+ "text": "Later as in Nov/Dec and higher as in $92k-$97k range.",
+ "url": "https://x.com/BobLoukas/status/2102015068737065456"
+}

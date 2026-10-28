@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:12.153Z",
+ "conversationId": "2102617774099140879",
+ "dataSource": "graphql",
+ "id": "2102850998884872645",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 23,
+  "quotes": 0,
+  "replies": 0,
+  "reposts": 0,
+  "views": 4230
+ },
+ "postedAt": "2026-09-23T20:02:01.000Z",
+ "replyTo": {
+  "handle": "TheSmarmyBum",
+  "postId": "2102617774099140879"
+ },
+ "text": "Weird point to make coming from a brand and creator guy.",
+ "url": "https://x.com/BobLoukas/status/2102850998884872645"
+}

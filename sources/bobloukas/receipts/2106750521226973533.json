@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:55.996Z",
+ "conversationId": "2106748990066971124",
+ "dataSource": "graphql",
+ "id": "2106750521226973533",
+ "metrics": {
+  "bookmarks": 3,
+  "likes": 90,
+  "quotes": 0,
+  "replies": 26,
+  "reposts": 0,
+  "views": 18195
+ },
+ "postedAt": "2026-10-04T14:17:20.000Z",
+ "replyTo": {
+  "handle": "eWfc0re",
+  "postId": "2106748990066971124"
+ },
+ "text": "Ok. And?",
+ "url": "https://x.com/BobLoukas/status/2106750521226973533"
+}

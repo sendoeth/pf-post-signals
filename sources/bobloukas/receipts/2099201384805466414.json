@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:00.976Z",
+ "conversationId": "2099165424281616516",
+ "dataSource": "graphql",
+ "id": "2099201384805466414",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 11,
+  "quotes": 0,
+  "replies": 0,
+  "reposts": 0,
+  "views": 3263
+ },
+ "postedAt": "2026-09-13T18:19:46.000Z",
+ "replyTo": {
+  "handle": "Manugougou",
+  "postId": "2099198578648338662"
+ },
+ "text": "yeah like AI is going to make a peasant not a peasant.",
+ "url": "https://x.com/BobLoukas/status/2099201384805466414"
+}

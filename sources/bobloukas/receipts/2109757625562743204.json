@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:21.616Z",
+ "conversationId": "2109741182813450539",
+ "dataSource": "graphql",
+ "id": "2109757625562743204",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 3,
+  "quotes": 0,
+  "replies": 1,
+  "reposts": 0,
+  "views": 5178
+ },
+ "postedAt": "2026-10-12T21:26:29.000Z",
+ "replyTo": {
+  "handle": "itsreza396219",
+  "postId": "2109755981450350630"
+ },
+ "text": "No real opinion. But it wouldn\u2019t surprise me.",
+ "url": "https://x.com/BobLoukas/status/2109757625562743204"
+}

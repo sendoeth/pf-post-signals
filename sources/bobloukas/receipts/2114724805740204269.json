@@ -1,0 +1,19 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:39:32.343Z",
+ "conversationId": "2114724805740204269",
+ "dataSource": "graphql",
+ "id": "2114724805740204269",
+ "metrics": {
+  "bookmarks": 9,
+  "likes": 426,
+  "quotes": 0,
+  "replies": 11,
+  "reposts": 9,
+  "views": 53168
+ },
+ "postedAt": "2026-10-26T14:24:18.000Z",
+ "replyTo": null,
+ "text": "Anthropic really is shooting for that rapidly closing funding gap.",
+ "url": "https://x.com/BobLoukas/status/2114724805740204269"
+}

@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:39:29.729Z",
+ "conversationId": "2115437384921964951",
+ "dataSource": "graphql",
+ "id": "2115441810176983065",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 4,
+  "quotes": 0,
+  "replies": 0,
+  "reposts": 0,
+  "views": 1008
+ },
+ "postedAt": "2026-10-28T13:53:25.000Z",
+ "replyTo": {
+  "handle": "CozomoMedici",
+  "postId": "2115437384921964951"
+ },
+ "text": "Still one of the top random pulls in genart",
+ "url": "https://x.com/BobLoukas/status/2115441810176983065"
+}

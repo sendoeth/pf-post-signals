@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:19.421Z",
+ "conversationId": "2110810823740498358",
+ "dataSource": "graphql",
+ "id": "2110814766876721483",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 16,
+  "quotes": 0,
+  "replies": 3,
+  "reposts": 0,
+  "views": 2066
+ },
+ "postedAt": "2026-10-15T19:27:12.000Z",
+ "replyTo": {
+  "handle": "AkosBeothy",
+  "postId": "2110813534842220974"
+ },
+ "text": "I am next week.",
+ "url": "https://x.com/BobLoukas/status/2110814766876721483"
+}

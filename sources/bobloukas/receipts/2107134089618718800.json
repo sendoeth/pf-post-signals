@@ -1,0 +1,19 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:55.992Z",
+ "conversationId": "2107081638073319437",
+ "dataSource": "graphql",
+ "id": "2107134089618718800",
+ "metrics": {
+  "bookmarks": 11093,
+  "likes": 30407,
+  "quotes": 1300,
+  "replies": 1945,
+  "reposts": 4202,
+  "views": 4852618
+ },
+ "postedAt": "2026-10-05T15:41:30.000Z",
+ "replyTo": null,
+ "text": "1/ How I infiltrated a Chinese organized crime syndicate that has laundered $1B+ across multiple exploits for Lazarus Group.\n\nPosing as a client, I gathered intel that helped action freezes for the Feb 2025 Bybit exploit and attribute illicit activity onchain.",
+ "url": "https://x.com/BobLoukas/status/2107134089618718800"
+}

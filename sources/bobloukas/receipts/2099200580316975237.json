@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:00.977Z",
+ "conversationId": "2099165424281616516",
+ "dataSource": "graphql",
+ "id": "2099200580316975237",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 14,
+  "quotes": 0,
+  "replies": 3,
+  "reposts": 0,
+  "views": 2835
+ },
+ "postedAt": "2026-09-13T18:16:34.000Z",
+ "replyTo": {
+  "handle": "sc00ter26",
+  "postId": "2099173105881034848"
+ },
+ "text": "No they have been very vocal for a long time.",
+ "url": "https://x.com/BobLoukas/status/2099200580316975237"
+}

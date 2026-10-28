@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:41:00.695Z",
+ "conversationId": "2105633440217301244",
+ "dataSource": "graphql",
+ "id": "2105642008090128818",
+ "metrics": {
+  "bookmarks": 3,
+  "likes": 133,
+  "quotes": 0,
+  "replies": 4,
+  "reposts": 0,
+  "views": 8380
+ },
+ "postedAt": "2026-10-01T12:52:30.000Z",
+ "replyTo": {
+  "handle": "TA_On_Chain",
+  "postId": "2105633440217301244"
+ },
+ "text": "Correct ser.",
+ "url": "https://x.com/BobLoukas/status/2105642008090128818"
+}

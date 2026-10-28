@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:41:00.695Z",
+ "conversationId": "2105699317004583026",
+ "dataSource": "graphql",
+ "id": "2105727219041485070",
+ "metrics": {
+  "bookmarks": 1,
+  "likes": 14,
+  "quotes": 0,
+  "replies": 1,
+  "reposts": 0,
+  "views": 2606
+ },
+ "postedAt": "2026-10-01T18:31:06.000Z",
+ "replyTo": {
+  "handle": "wheatfarm_",
+  "postId": "2105700947729023422"
+ },
+ "text": "Off lows.",
+ "url": "https://x.com/BobLoukas/status/2105727219041485070"
+}

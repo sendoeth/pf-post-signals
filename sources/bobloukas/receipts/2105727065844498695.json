@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:41:00.695Z",
+ "conversationId": "2105699317004583026",
+ "dataSource": "graphql",
+ "id": "2105727065844498695",
+ "metrics": {
+  "bookmarks": 4,
+  "likes": 32,
+  "quotes": 0,
+  "replies": 2,
+  "reposts": 0,
+  "views": 5515
+ },
+ "postedAt": "2026-10-01T18:30:29.000Z",
+ "replyTo": {
+  "handle": "lowcapgems1",
+  "postId": "2105723898993996238"
+ },
+ "text": "Technically there is no limit. \n\nBut practically 90% of cycles fall within a 10% windows. So 4-5 months either way.",
+ "url": "https://x.com/BobLoukas/status/2105727065844498695"
+}

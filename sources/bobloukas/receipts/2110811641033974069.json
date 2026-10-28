@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:19.422Z",
+ "conversationId": "2110810823740498358",
+ "dataSource": "graphql",
+ "id": "2110811641033974069",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 4,
+  "quotes": 0,
+  "replies": 1,
+  "reposts": 0,
+  "views": 1731
+ },
+ "postedAt": "2026-10-15T19:14:46.000Z",
+ "replyTo": {
+  "handle": "antonio25672183",
+  "postId": "2110811092675101119"
+ },
+ "text": "Cadiz is gorgeous.",
+ "url": "https://x.com/BobLoukas/status/2110811641033974069"
+}

@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:39:32.342Z",
+ "conversationId": "2115096907244880130",
+ "dataSource": "graphql",
+ "id": "2115115489991262523",
+ "metrics": {
+  "bookmarks": 2,
+  "likes": 16,
+  "quotes": 0,
+  "replies": 1,
+  "reposts": 0,
+  "views": 2192
+ },
+ "postedAt": "2026-10-27T16:16:44.000Z",
+ "replyTo": {
+  "handle": "JDP321",
+  "postId": "2115099970621816848"
+ },
+ "text": "The bullish case is on a thread, and it needs to go fairly quickly.",
+ "url": "https://x.com/BobLoukas/status/2115115489991262523"
+}

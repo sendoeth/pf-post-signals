@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:39:29.731Z",
+ "conversationId": "2115169473028071528",
+ "dataSource": "graphql",
+ "id": "2115209203413639281",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 10,
+  "quotes": 0,
+  "replies": 3,
+  "reposts": 0,
+  "views": 1667
+ },
+ "postedAt": "2026-10-27T22:29:07.000Z",
+ "replyTo": {
+  "handle": "Financewisdom01",
+  "postId": "2115202286863433914"
+ },
+ "text": "It\u2019s not $500 though. I think for many people it\u2019s $3k.",
+ "url": "https://x.com/BobLoukas/status/2115209203413639281"
+}

@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:21.616Z",
+ "conversationId": "2109749478119100773",
+ "dataSource": "graphql",
+ "id": "2109752099567198278",
+ "metrics": {
+  "bookmarks": 2,
+  "likes": 26,
+  "quotes": 0,
+  "replies": 3,
+  "reposts": 0,
+  "views": 5518
+ },
+ "postedAt": "2026-10-12T21:04:32.000Z",
+ "replyTo": {
+  "handle": "ShhhhCapital",
+  "postId": "2109749478119100773"
+ },
+ "text": "There will be winners.",
+ "url": "https://x.com/BobLoukas/status/2109752099567198278"
+}

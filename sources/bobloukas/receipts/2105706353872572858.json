@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:41:00.695Z",
+ "conversationId": "2105701927044755502",
+ "dataSource": "graphql",
+ "id": "2105706353872572858",
+ "metrics": {
+  "bookmarks": 1,
+  "likes": 28,
+  "quotes": 0,
+  "replies": 1,
+  "reposts": 0,
+  "views": 6981
+ },
+ "postedAt": "2026-10-01T17:08:11.000Z",
+ "replyTo": {
+  "handle": "CirrusNFT",
+  "postId": "2105701927044755502"
+ },
+ "text": "the inevitable always happens.",
+ "url": "https://x.com/BobLoukas/status/2105706353872572858"
+}

@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:59.025Z",
+ "conversationId": "2105699317004583026",
+ "dataSource": "graphql",
+ "id": "2106003711642247606",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 4,
+  "quotes": 0,
+  "replies": 1,
+  "reposts": 0,
+  "views": 989
+ },
+ "postedAt": "2026-10-02T12:49:47.000Z",
+ "replyTo": {
+  "handle": "zackmac63102618",
+  "postId": "2105996509145665931"
+ },
+ "text": "That's just not how we measure/track cycles. You're confusing measure a Cycle from low to low with \"the low must come in on a specific date\".",
+ "url": "https://x.com/BobLoukas/status/2106003711642247606"
+}

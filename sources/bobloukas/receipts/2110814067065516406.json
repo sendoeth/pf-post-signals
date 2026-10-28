@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:19.422Z",
+ "conversationId": "2110810823740498358",
+ "dataSource": "graphql",
+ "id": "2110814067065516406",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 8,
+  "quotes": 0,
+  "replies": 0,
+  "reposts": 0,
+  "views": 2247
+ },
+ "postedAt": "2026-10-15T19:24:25.000Z",
+ "replyTo": {
+  "handle": "interes_owna",
+  "postId": "2110812944720130457"
+ },
+ "text": "One day for sure.",
+ "url": "https://x.com/BobLoukas/status/2110814067065516406"
+}

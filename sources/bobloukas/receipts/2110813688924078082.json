@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:19.422Z",
+ "conversationId": "2110810823740498358",
+ "dataSource": "graphql",
+ "id": "2110813688924078082",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 2,
+  "quotes": 0,
+  "replies": 2,
+  "reposts": 0,
+  "views": 1068
+ },
+ "postedAt": "2026-10-15T19:22:55.000Z",
+ "replyTo": {
+  "handle": "thinksupernova",
+  "postId": "2110812723671937401"
+ },
+ "text": "",
+ "url": "https://x.com/BobLoukas/status/2110813688924078082"
+}

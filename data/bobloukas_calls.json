@@ -1,0 +1,645 @@
+[
+ {
+  "post_id": "2094827036812435935",
+  "url": "https://x.com/BobLoukas/status/2094827036812435935",
+  "posted_at": "2026-09-01T16:37:40Z",
+  "author": "BobLoukas",
+  "instrument": "BTC",
+  "price_source": "Binance BTCUSDT",
+  "side": 1,
+  "status": "call",
+  "reiteration_of": null,
+  "pair_id": null,
+  "conditional": false,
+  "stop": null,
+  "target": null,
+  "regime": "SYSTEMIC",
+  "note": "price lows are in, deploying last tranche",
+  "entry": {
+   "at": "2026-09-01T17:00:00Z",
+   "price": 77596.01
+  },
+  "exits": {
+   "1": {
+    "at": "2026-09-02T17:00:00Z",
+    "price": 77171.51
+   },
+   "7": {
+    "at": "2026-09-08T17:00:00Z",
+    "price": 78735.88
+   },
+   "30": {
+    "at": "2026-10-01T17:00:00Z",
+    "price": 84202.0
+   }
+  },
+  "returns": {
+   "1": -0.005470642111624069,
+   "7": 0.014689801705010552,
+   "30": 0.08513311444750848
+  },
+  "unresolved": {}
+ },
+ {
+  "post_id": "2097324043334451439",
+  "url": "https://x.com/BobLoukas/status/2097324043334451439",
+  "posted_at": "2026-09-08T13:59:52Z",
+  "author": "BobLoukas",
+  "instrument": "COPX",
+  "price_source": "Global X Copper Miners ETF",
+  "side": 1,
+  "status": "call",
+  "reiteration_of": null,
+  "pair_id": null,
+  "conditional": false,
+  "stop": null,
+  "target": null,
+  "regime": "SYSTEMIC",
+  "note": "breaking out after 8-month pause, small long-term allocation",
+  "entry": {
+   "at": "2026-09-08T14:30:00Z",
+   "price": 95.31
+  },
+  "exits": {
+   "1": {
+    "at": "2026-09-09T14:30:00Z",
+    "price": 95.52
+   },
+   "7": {
+    "at": "2026-09-15T14:30:00Z",
+    "price": 84.29
+   },
+   "30": {
+    "at": "2026-10-08T14:30:00Z",
+    "price": 83.36
+   }
+  },
+  "returns": {
+   "1": 0.00220333648095683,
+   "7": -0.11562270485783233,
+   "30": -0.12538033784492708
+  },
+  "unresolved": {}
+ },
+ {
+  "post_id": "2100953898630443447",
+  "url": "https://x.com/BobLoukas/status/2100953898630443447",
+  "posted_at": "2026-09-18T14:23:37Z",
+  "author": "BobLoukas",
+  "instrument": "BTC",
+  "price_source": "Binance BTCUSDT",
+  "side": 1,
+  "status": "call",
+  "reiteration_of": null,
+  "pair_id": null,
+  "conditional": true,
+  "stop": null,
+  "target": null,
+  "regime": "SYSTEMIC",
+  "note": "very good setup to smash through May highs, may not look back until the $90s; failure -> range lows",
+  "entry": {
+   "at": "2026-09-18T15:00:00Z",
+   "price": 80937.83
+  },
+  "exits": {
+   "1": {
+    "at": "2026-09-19T15:00:00Z",
+    "price": 81586.02
+   },
+   "7": {
+    "at": "2026-09-25T15:00:00Z",
+    "price": 84016.01
+   },
+   "30": {
+    "at": "2026-10-18T15:00:00Z",
+    "price": 81103.26
+   }
+  },
+  "returns": {
+   "1": 0.008008492444139037,
+   "7": 0.03803141250512887,
+   "30": 0.0020439144464337033
+  },
+  "unresolved": {}
+ },
+ {
+  "post_id": "2102014028855820403",
+  "url": "https://x.com/BobLoukas/status/2102014028855820403",
+  "posted_at": "2026-09-21T12:36:12Z",
+  "author": "BobLoukas",
+  "instrument": "BTC",
+  "price_source": "Binance BTCUSDT",
+  "side": 1,
+  "status": "reiteration",
+  "reiteration_of": "2100953898630443447",
+  "pair_id": null,
+  "conditional": false,
+  "stop": null,
+  "target": null,
+  "regime": "SYSTEMIC",
+  "note": "solid push, resume secular bull",
+  "entry": {
+   "at": "2026-09-21T13:00:00Z",
+   "price": 85323.0
+  },
+  "exits": {
+   "1": {
+    "at": "2026-09-22T13:00:00Z",
+    "price": 86024.01
+   },
+   "7": {
+    "at": "2026-09-28T13:00:00Z",
+    "price": 83579.75
+   },
+   "30": {
+    "at": "2026-10-21T13:00:00Z",
+    "price": 83504.0
+   }
+  },
+  "returns": {
+   "1": 0.008215955838402289,
+   "7": -0.020431185026311804,
+   "30": -0.021318987846184467
+  },
+  "unresolved": {}
+ },
+ {
+  "post_id": "2102024327075877097",
+  "url": "https://x.com/BobLoukas/status/2102024327075877097",
+  "posted_at": "2026-09-21T13:17:07Z",
+  "author": "BobLoukas",
+  "instrument": "BTC",
+  "price_source": "Binance BTCUSDT",
+  "side": 1,
+  "status": "reiteration",
+  "reiteration_of": "2100953898630443447",
+  "pair_id": null,
+  "conditional": false,
+  "stop": null,
+  "target": null,
+  "regime": "SYSTEMIC",
+  "note": "position disclosure: scaled in longs from the very bottom",
+  "entry": {
+   "at": "2026-09-21T14:00:00Z",
+   "price": 85466.35
+  },
+  "exits": {
+   "1": {
+    "at": "2026-09-22T14:00:00Z",
+    "price": 86346.01
+   },
+   "7": {
+    "at": "2026-09-28T14:00:00Z",
+    "price": 83641.99
+   },
+   "30": {
+    "at": "2026-10-21T14:00:00Z",
+    "price": 83826.0
+   }
+  },
+  "returns": {
+   "1": 0.010292471832481276,
+   "7": -0.021345944924522908,
+   "30": -0.01919293382717302
+  },
+  "unresolved": {}
+ },
+ {
+  "post_id": "2104977267109896477",
+  "url": "https://x.com/BobLoukas/status/2104977267109896477",
+  "posted_at": "2026-09-29T16:51:03Z",
+  "author": "BobLoukas",
+  "instrument": "SILVER",
+  "price_source": "COMEX silver futures SI=F",
+  "side": -1,
+  "status": "call",
+  "reiteration_of": null,
+  "pair_id": null,
+  "conditional": false,
+  "stop": null,
+  "target": null,
+  "regime": "EARNINGS",
+  "note": "don't like silver until 2027",
+  "entry": {
+   "at": "2026-09-29T17:00:00Z",
+   "price": 61.105
+  },
+  "exits": {
+   "1": {
+    "at": "2026-09-30T17:00:00Z",
+    "price": 60.595
+   },
+   "7": {
+    "at": "2026-10-06T17:00:00Z",
+    "price": 61.595
+   },
+   "30": null
+  },
+  "returns": {
+   "1": 0.008346289174371968,
+   "7": -0.008018983716553407,
+   "30": null
+  },
+  "unresolved": {
+   "30": "horizon not yet reached"
+  }
+ },
+ {
+  "post_id": "2105699317004583026",
+  "url": "https://x.com/BobLoukas/status/2105699317004583026",
+  "posted_at": "2026-10-01T16:40:13Z",
+  "author": "BobLoukas",
+  "instrument": "BTC",
+  "price_source": "Binance BTCUSDT",
+  "side": 1,
+  "status": "call",
+  "reiteration_of": null,
+  "pair_id": null,
+  "conditional": false,
+  "stop": null,
+  "target": null,
+  "regime": "EARNINGS",
+  "note": "Sept monthly close completes new-cycle confirmation",
+  "entry": {
+   "at": "2026-10-01T17:00:00Z",
+   "price": 84202.0
+  },
+  "exits": {
+   "1": {
+    "at": "2026-10-02T17:00:00Z",
+    "price": 85160.0
+   },
+   "7": {
+    "at": "2026-10-08T17:00:00Z",
+    "price": 80953.85
+   },
+   "30": null
+  },
+  "returns": {
+   "1": 0.011377401961948586,
+   "7": -0.0385756870383126,
+   "30": null
+  },
+  "unresolved": {
+   "30": "horizon not yet reached"
+  }
+ },
+ {
+  "post_id": "2106744910896312646",
+  "url": "https://x.com/BobLoukas/status/2106744910896312646",
+  "posted_at": "2026-10-04T13:55:02Z",
+  "author": "BobLoukas",
+  "instrument": "SILVER",
+  "price_source": "COMEX silver futures SI=F",
+  "side": -1,
+  "status": "reiteration",
+  "reiteration_of": "2104977267109896477",
+  "pair_id": null,
+  "conditional": false,
+  "stop": null,
+  "target": 46,
+  "regime": "EARNINGS",
+  "note": "heading to $46 before turning bullish",
+  "entry": {
+   "at": "2026-10-04T22:00:00Z",
+   "price": 61.06
+  },
+  "exits": {
+   "1": {
+    "at": "2026-10-05T14:00:00Z",
+    "price": 61.405
+   },
+   "7": {
+    "at": "2026-10-11T22:00:00Z",
+    "price": 61.225
+   },
+   "30": null
+  },
+  "returns": {
+   "1": -0.005650180150671424,
+   "7": -0.002702260072060314,
+   "30": null
+  },
+  "unresolved": {
+   "30": "horizon not yet reached"
+  }
+ },
+ {
+  "post_id": "2106750657877434407",
+  "url": "https://x.com/BobLoukas/status/2106750657877434407",
+  "posted_at": "2026-10-04T14:17:53Z",
+  "author": "BobLoukas",
+  "instrument": "COPX",
+  "price_source": "Global X Copper Miners ETF",
+  "side": 1,
+  "status": "call",
+  "reiteration_of": null,
+  "pair_id": null,
+  "conditional": false,
+  "stop": null,
+  "target": null,
+  "regime": "EARNINGS",
+  "note": "position disclosure: hold a decent COPX position",
+  "entry": {
+   "at": "2026-10-05T13:30:00Z",
+   "price": 86.0
+  },
+  "exits": {
+   "1": {
+    "at": "2026-10-05T14:30:00Z",
+    "price": 85.72
+   },
+   "7": {
+    "at": "2026-10-12T13:30:00Z",
+    "price": 85.29
+   },
+   "30": null
+  },
+  "returns": {
+   "1": -0.0032558139534883956,
+   "7": -0.008255813953488289,
+   "30": null
+  },
+  "unresolved": {
+   "30": "horizon not yet reached"
+  }
+ },
+ {
+  "post_id": "2107063137958564197",
+  "url": "https://x.com/BobLoukas/status/2107063137958564197",
+  "posted_at": "2026-10-05T10:59:34Z",
+  "author": "BobLoukas",
+  "instrument": "STOCKS",
+  "price_source": "SPY",
+  "side": 1,
+  "status": "call",
+  "reiteration_of": null,
+  "pair_id": null,
+  "conditional": false,
+  "stop": null,
+  "target": null,
+  "regime": "EARNINGS",
+  "note": "setup for a big new advance higher",
+  "entry": {
+   "at": "2026-10-05T13:30:00Z",
+   "price": 769.69
+  },
+  "exits": {
+   "1": {
+    "at": "2026-10-06T13:30:00Z",
+    "price": 778.15
+   },
+   "7": {
+    "at": "2026-10-12T13:30:00Z",
+    "price": 778.78
+   },
+   "30": null
+  },
+  "returns": {
+   "1": 0.010991438111447316,
+   "7": 0.01180994946017222,
+   "30": null
+  },
+  "unresolved": {
+   "30": "horizon not yet reached"
+  }
+ },
+ {
+  "post_id": "2107475725573906895",
+  "url": "https://x.com/BobLoukas/status/2107475725573906895",
+  "posted_at": "2026-10-06T14:19:02Z",
+  "author": "BobLoukas",
+  "instrument": "STOCKS",
+  "price_source": "SPY",
+  "side": 1,
+  "status": "reiteration",
+  "reiteration_of": "2107063137958564197",
+  "pair_id": null,
+  "conditional": false,
+  "stop": null,
+  "target": null,
+  "regime": "EARNINGS",
+  "note": "ATH with weak sectors = extremely bullish setup",
+  "entry": {
+   "at": "2026-10-06T14:30:00Z",
+   "price": 778.85
+  },
+  "exits": {
+   "1": {
+    "at": "2026-10-07T14:30:00Z",
+    "price": 774.46
+   },
+   "7": {
+    "at": "2026-10-13T14:30:00Z",
+    "price": 777.53
+   },
+   "30": null
+  },
+  "returns": {
+   "1": -0.005636515375232687,
+   "7": -0.0016948064454003209,
+   "30": null
+  },
+  "unresolved": {
+   "30": "horizon not yet reached"
+  }
+ },
+ {
+  "post_id": "2110764348981612915",
+  "url": "https://x.com/BobLoukas/status/2110764348981612915",
+  "posted_at": "2026-10-15T16:06:51Z",
+  "author": "BobLoukas",
+  "instrument": "BTC",
+  "price_source": "Binance BTCUSDT",
+  "side": 1,
+  "status": "call",
+  "reiteration_of": null,
+  "pair_id": null,
+  "conditional": false,
+  "stop": null,
+  "target": null,
+  "regime": "EARNINGS",
+  "note": "looking to put in a 60-day cycle low",
+  "entry": {
+   "at": "2026-10-15T17:00:00Z",
+   "price": 82108.01
+  },
+  "exits": {
+   "1": {
+    "at": "2026-10-16T17:00:00Z",
+    "price": 81436.11
+   },
+   "7": {
+    "at": "2026-10-22T17:00:00Z",
+    "price": 81284.01
+   },
+   "30": null
+  },
+  "returns": {
+   "1": -0.008183123668445869,
+   "7": -0.01003556169489428,
+   "30": null
+  },
+  "unresolved": {
+   "30": "horizon not yet reached"
+  }
+ },
+ {
+  "post_id": "2112915214479798344",
+  "url": "https://x.com/BobLoukas/status/2112915214479798344",
+  "posted_at": "2026-10-21T14:33:37Z",
+  "author": "BobLoukas",
+  "instrument": "BTC",
+  "price_source": "Binance BTCUSDT",
+  "side": 1,
+  "status": "reiteration",
+  "reiteration_of": "2110764348981612915",
+  "pair_id": null,
+  "conditional": false,
+  "stop": 79600,
+  "target": null,
+  "regime": "EARNINGS",
+  "note": "new cycle confirming, upside 30-45 days, defensive below $79,600",
+  "entry": {
+   "at": "2026-10-21T15:00:00Z",
+   "price": 84575.71
+  },
+  "exits": {
+   "1": {
+    "at": "2026-10-22T15:00:00Z",
+    "price": 81882.0
+   },
+   "7": {
+    "at": "2026-10-28T15:00:00Z",
+    "price": 80599.28
+   },
+   "30": null
+  },
+  "returns": {
+   "1": -0.03184968828520629,
+   "7": -0.04701621777694809,
+   "30": null
+  },
+  "unresolved": {
+   "30": "horizon not yet reached"
+  }
+ },
+ {
+  "post_id": "2112919830357577753",
+  "url": "https://x.com/BobLoukas/status/2112919830357577753",
+  "posted_at": "2026-10-21T14:51:58Z",
+  "author": "BobLoukas",
+  "instrument": "BTC",
+  "price_source": "Binance BTCUSDT",
+  "side": 1,
+  "status": "reiteration",
+  "reiteration_of": "2110764348981612915",
+  "pair_id": "btc-gold-2026-10-21",
+  "conditional": false,
+  "stop": null,
+  "target": null,
+  "regime": "EARNINGS",
+  "note": "position: long bitcoin - short gold futures into Dec",
+  "entry": {
+   "at": "2026-10-21T15:00:00Z",
+   "price": 84575.71
+  },
+  "exits": {
+   "1": {
+    "at": "2026-10-22T15:00:00Z",
+    "price": 81882.0
+   },
+   "7": {
+    "at": "2026-10-28T15:00:00Z",
+    "price": 80599.28
+   },
+   "30": null
+  },
+  "returns": {
+   "1": -0.03184968828520629,
+   "7": -0.04701621777694809,
+   "30": null
+  },
+  "unresolved": {
+   "30": "horizon not yet reached"
+  }
+ },
+ {
+  "post_id": "2112919830357577753",
+  "url": "https://x.com/BobLoukas/status/2112919830357577753",
+  "posted_at": "2026-10-21T14:51:58Z",
+  "author": "BobLoukas",
+  "instrument": "GOLD",
+  "price_source": "COMEX gold futures GC=F",
+  "side": -1,
+  "status": "call",
+  "reiteration_of": null,
+  "pair_id": "btc-gold-2026-10-21",
+  "conditional": false,
+  "stop": null,
+  "target": null,
+  "regime": "EARNINGS",
+  "note": "position: long bitcoin - short gold futures into Dec",
+  "entry": {
+   "at": "2026-10-21T15:00:00Z",
+   "price": 4148.5
+  },
+  "exits": {
+   "1": {
+    "at": "2026-10-22T15:00:00Z",
+    "price": 4074.8
+   },
+   "7": {
+    "at": "2026-10-28T15:00:00Z",
+    "price": 4054.3999
+   },
+   "30": null
+  },
+  "returns": {
+   "1": 0.01776545739423885,
+   "7": 0.0226829215379053,
+   "30": null
+  },
+  "unresolved": {
+   "30": "horizon not yet reached"
+  }
+ },
+ {
+  "post_id": "2113613893662588966",
+  "url": "https://x.com/BobLoukas/status/2113613893662588966",
+  "posted_at": "2026-10-23T12:49:55Z",
+  "author": "BobLoukas",
+  "instrument": "SILVER",
+  "price_source": "COMEX silver futures SI=F",
+  "side": -1,
+  "status": "call",
+  "reiteration_of": null,
+  "pair_id": null,
+  "conditional": false,
+  "stop": null,
+  "target": null,
+  "regime": "EARNINGS",
+  "note": "silver cycles in failed weekly state, ~2 more months of damage possible",
+  "entry": {
+   "at": "2026-10-23T13:00:00Z",
+   "price": 53.84
+  },
+  "exits": {
+   "1": {
+    "at": "2026-10-25T22:00:00Z",
+    "price": 54.235
+   },
+   "7": null,
+   "30": null
+  },
+  "returns": {
+   "1": -0.007336552748885561,
+   "7": null,
+   "30": null
+  },
+  "unresolved": {
+   "7": "horizon not yet reached",
+   "30": "horizon not yet reached"
+  }
+ }
+]

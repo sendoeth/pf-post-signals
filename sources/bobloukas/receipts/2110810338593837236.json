@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:19.423Z",
+ "conversationId": "2110726883751109063",
+ "dataSource": "graphql",
+ "id": "2110810338593837236",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 1,
+  "quotes": 0,
+  "replies": 0,
+  "reposts": 0,
+  "views": 965
+ },
+ "postedAt": "2026-10-15T19:09:36.000Z",
+ "replyTo": {
+  "handle": "DidntsayT",
+  "postId": "2110788094106726835"
+ },
+ "text": "Yeah you obviously didn\u2019t get it.",
+ "url": "https://x.com/BobLoukas/status/2110810338593837236"
+}

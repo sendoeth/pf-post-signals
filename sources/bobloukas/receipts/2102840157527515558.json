@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:12.154Z",
+ "conversationId": "2102839388765814997",
+ "dataSource": "graphql",
+ "id": "2102840157527515558",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 38,
+  "quotes": 0,
+  "replies": 2,
+  "reposts": 0,
+  "views": 3624
+ },
+ "postedAt": "2026-09-23T19:18:57.000Z",
+ "replyTo": {
+  "handle": "oldgreytired",
+  "postId": "2102839684678222043"
+ },
+ "text": "I sleep next to my wife.",
+ "url": "https://x.com/BobLoukas/status/2102840157527515558"
+}

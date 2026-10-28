@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:19.420Z",
+ "conversationId": "2110810823740498358",
+ "dataSource": "graphql",
+ "id": "2110961318161518731",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 3,
+  "quotes": 0,
+  "replies": 0,
+  "reposts": 0,
+  "views": 1470
+ },
+ "postedAt": "2026-10-16T05:09:32.000Z",
+ "replyTo": {
+  "handle": "PaTkway",
+  "postId": "2110827462691287096"
+ },
+ "text": "That\u2019s a compliment.",
+ "url": "https://x.com/BobLoukas/status/2110961318161518731"
+}

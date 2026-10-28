@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:03.506Z",
+ "conversationId": "2094827036812435935",
+ "dataSource": "graphql",
+ "id": "2094953290509307976",
+ "metrics": {
+  "bookmarks": 2,
+  "likes": 42,
+  "quotes": 0,
+  "replies": 0,
+  "reposts": 1,
+  "views": 4547
+ },
+ "postedAt": "2026-09-02T00:59:21.000Z",
+ "replyTo": {
+  "handle": "KAIZ3NS",
+  "postId": "2094827713119109420"
+ },
+ "text": "I don\u2019t think about how far it might dip from a prediction standpoint but rather the odds of each possibility and how I want to be positioned for each.",
+ "url": "https://x.com/BobLoukas/status/2094953290509307976"
+}

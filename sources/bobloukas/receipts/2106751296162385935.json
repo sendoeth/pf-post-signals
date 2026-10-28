@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:55.996Z",
+ "conversationId": "2106744910896312646",
+ "dataSource": "graphql",
+ "id": "2106751296162385935",
+ "metrics": {
+  "bookmarks": 1,
+  "likes": 5,
+  "quotes": 0,
+  "replies": 1,
+  "reposts": 0,
+  "views": 2133
+ },
+ "postedAt": "2026-10-04T14:20:25.000Z",
+ "replyTo": {
+  "handle": "11ee113",
+  "postId": "2106749805925929413"
+ },
+ "text": "Unfortunately in the same boat",
+ "url": "https://x.com/BobLoukas/status/2106751296162385935"
+}

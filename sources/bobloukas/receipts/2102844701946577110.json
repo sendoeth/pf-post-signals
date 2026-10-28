@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:12.153Z",
+ "conversationId": "2102839388765814997",
+ "dataSource": "graphql",
+ "id": "2102844701946577110",
+ "metrics": {
+  "bookmarks": 2,
+  "likes": 111,
+  "quotes": 1,
+  "replies": 8,
+  "reposts": 0,
+  "views": 4441
+ },
+ "postedAt": "2026-09-23T19:37:00.000Z",
+ "replyTo": {
+  "handle": "RamMasterFlash",
+  "postId": "2102843198414459132"
+ },
+ "text": "Letting her see you is your problem.",
+ "url": "https://x.com/BobLoukas/status/2102844701946577110"
+}

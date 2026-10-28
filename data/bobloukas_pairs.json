@@ -1,0 +1,17 @@
+[
+ {
+  "pair_id": "btc-gold-2026-10-21",
+  "author": "BobLoukas",
+  "posted_at": "2026-10-21T14:51:58Z",
+  "legs": [
+   "BTC long",
+   "GOLD short"
+  ],
+  "weighting": "equal (no weights stated)",
+  "returns": {
+   "1": -0.007042115445483721,
+   "7": -0.012166648119521395,
+   "30": null
+  }
+ }
+]

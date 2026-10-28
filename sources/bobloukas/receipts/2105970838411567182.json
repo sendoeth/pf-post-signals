@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:41:00.694Z",
+ "conversationId": "2105699317004583026",
+ "dataSource": "graphql",
+ "id": "2105970838411567182",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 5,
+  "quotes": 0,
+  "replies": 1,
+  "reposts": 0,
+  "views": 2273
+ },
+ "postedAt": "2026-10-02T10:39:09.000Z",
+ "replyTo": {
+  "handle": "MadCryptoClub",
+  "postId": "2105955797834350924"
+ },
+ "text": "That would be part of the new cycle.  What is so odd about that?",
+ "url": "https://x.com/BobLoukas/status/2105970838411567182"
+}

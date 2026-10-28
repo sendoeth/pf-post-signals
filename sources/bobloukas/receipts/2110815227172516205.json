@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:19.421Z",
+ "conversationId": "2110810823740498358",
+ "dataSource": "graphql",
+ "id": "2110815227172516205",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 10,
+  "quotes": 0,
+  "replies": 1,
+  "reposts": 0,
+  "views": 2371
+ },
+ "postedAt": "2026-10-15T19:29:01.000Z",
+ "replyTo": {
+  "handle": "MisterSpread",
+  "postId": "2110814925023322181"
+ },
+ "text": "Thank you",
+ "url": "https://x.com/BobLoukas/status/2110815227172516205"
+}

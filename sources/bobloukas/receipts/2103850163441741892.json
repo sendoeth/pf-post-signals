@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:09.681Z",
+ "conversationId": "2103849223833678047",
+ "dataSource": "graphql",
+ "id": "2103850163441741892",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 16,
+  "quotes": 0,
+  "replies": 0,
+  "reposts": 0,
+  "views": 2193
+ },
+ "postedAt": "2026-09-26T14:12:21.000Z",
+ "replyTo": {
+  "handle": "0xhexagonally",
+  "postId": "2103849519821517125"
+ },
+ "text": "For most I imagine it\u2019s a case of having a lot of misdirected attention.",
+ "url": "https://x.com/BobLoukas/status/2103850163441741892"
+}

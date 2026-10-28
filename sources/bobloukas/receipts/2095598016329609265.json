@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:03.503Z",
+ "conversationId": "2095594935604896234",
+ "dataSource": "graphql",
+ "id": "2095598016329609265",
+ "metrics": {
+  "bookmarks": 11,
+  "likes": 91,
+  "quotes": 0,
+  "replies": 3,
+  "reposts": 4,
+  "views": 15596
+ },
+ "postedAt": "2026-09-03T19:41:16.000Z",
+ "replyTo": {
+  "handle": "BarksBuilds",
+  "postId": "2095596981829935158"
+ },
+ "text": "Have to watch leverage overall and be flexible adjusting exposure both ways on trend changes.  \nScale out after long runs vs scaling harder.",
+ "url": "https://x.com/BobLoukas/status/2095598016329609265"
+}

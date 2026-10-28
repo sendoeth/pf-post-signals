@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:12.151Z",
+ "conversationId": "2103104187399905433",
+ "dataSource": "graphql",
+ "id": "2103218750225072579",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 2,
+  "quotes": 0,
+  "replies": 0,
+  "reposts": 0,
+  "views": 1295
+ },
+ "postedAt": "2026-09-24T20:23:20.000Z",
+ "replyTo": {
+  "handle": "alkemizt0",
+  "postId": "2103194166620512700"
+ },
+ "text": "Exactly my point.",
+ "url": "https://x.com/BobLoukas/status/2103218750225072579"
+}

@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:00.979Z",
+ "conversationId": "2098429219072069700",
+ "dataSource": "graphql",
+ "id": "2098440894831534363",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 24,
+  "quotes": 0,
+  "replies": 2,
+  "reposts": 1,
+  "views": 2703
+ },
+ "postedAt": "2026-09-11T15:57:51.000Z",
+ "replyTo": {
+  "handle": "IQMonkey47",
+  "postId": "2098430634213425571"
+ },
+ "text": "Yes",
+ "url": "https://x.com/BobLoukas/status/2098440894831534363"
+}

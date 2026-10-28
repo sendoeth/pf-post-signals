@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:00.977Z",
+ "conversationId": "2099165424281616516",
+ "dataSource": "graphql",
+ "id": "2099166445225545855",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 5,
+  "quotes": 0,
+  "replies": 1,
+  "reposts": 0,
+  "views": 5031
+ },
+ "postedAt": "2026-09-13T16:00:55.000Z",
+ "replyTo": {
+  "handle": "vermi321",
+  "postId": "2099165918672687142"
+ },
+ "text": "Yep. And \u201csouth\u201d in this case is a pretty picture.",
+ "url": "https://x.com/BobLoukas/status/2099166445225545855"
+}

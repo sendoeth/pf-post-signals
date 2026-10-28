@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:39:32.343Z",
+ "conversationId": "2115108481497694318",
+ "dataSource": "graphql",
+ "id": "2115114738724065680",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 2,
+  "quotes": 0,
+  "replies": 0,
+  "reposts": 0,
+  "views": 911
+ },
+ "postedAt": "2026-10-27T16:13:45.000Z",
+ "replyTo": {
+  "handle": "Investingwaves",
+  "postId": "2115113309599097048"
+ },
+ "text": "I can see that working too.",
+ "url": "https://x.com/BobLoukas/status/2115114738724065680"
+}

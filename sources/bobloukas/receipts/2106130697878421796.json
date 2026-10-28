@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:59.023Z",
+ "conversationId": "2106082466049982640",
+ "dataSource": "graphql",
+ "id": "2106130697878421796",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 3,
+  "quotes": 0,
+  "replies": 0,
+  "reposts": 0,
+  "views": 1248
+ },
+ "postedAt": "2026-10-02T21:14:23.000Z",
+ "replyTo": {
+  "handle": "SamsonHuntz",
+  "postId": "2106127027824922815"
+ },
+ "text": "No I think you missed the point or I just didn\u2019t express it well.",
+ "url": "https://x.com/BobLoukas/status/2106130697878421796"
+}

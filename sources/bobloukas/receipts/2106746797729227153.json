@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:55.997Z",
+ "conversationId": "2106744910896312646",
+ "dataSource": "graphql",
+ "id": "2106746797729227153",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 8,
+  "quotes": 0,
+  "replies": 0,
+  "reposts": 0,
+  "views": 2467
+ },
+ "postedAt": "2026-10-04T14:02:32.000Z",
+ "replyTo": {
+  "handle": "Meekthafr3ak",
+  "postId": "2106746105405100449"
+ },
+ "text": "nothing. Why should it?",
+ "url": "https://x.com/BobLoukas/status/2106746797729227153"
+}

@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:39:29.731Z",
+ "conversationId": "2115169473028071528",
+ "dataSource": "graphql",
+ "id": "2115174009448939798",
+ "metrics": {
+  "bookmarks": 1,
+  "likes": 6,
+  "quotes": 0,
+  "replies": 2,
+  "reposts": 0,
+  "views": 1896
+ },
+ "postedAt": "2026-10-27T20:09:16.000Z",
+ "replyTo": {
+  "handle": "vitalianer",
+  "postId": "2115170903755563339"
+ },
+ "text": "That's the point I am making.  how much more unaffordable has it become when you truly factor it all in.",
+ "url": "https://x.com/BobLoukas/status/2115174009448939798"
+}

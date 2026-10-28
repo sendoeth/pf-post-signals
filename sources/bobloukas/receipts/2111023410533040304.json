@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:19.419Z",
+ "conversationId": "2110810823740498358",
+ "dataSource": "graphql",
+ "id": "2111023410533040304",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 2,
+  "quotes": 0,
+  "replies": 0,
+  "reposts": 0,
+  "views": 1549
+ },
+ "postedAt": "2026-10-16T09:16:16.000Z",
+ "replyTo": {
+  "handle": "LibertasProj",
+  "postId": "2111021902680744449"
+ },
+ "text": "Thank you.",
+ "url": "https://x.com/BobLoukas/status/2111023410533040304"
+}

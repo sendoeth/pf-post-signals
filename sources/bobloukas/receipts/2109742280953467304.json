@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:21.616Z",
+ "conversationId": "2109741182813450539",
+ "dataSource": "graphql",
+ "id": "2109742280953467304",
+ "metrics": {
+  "bookmarks": 5,
+  "likes": 32,
+  "quotes": 0,
+  "replies": 9,
+  "reposts": 0,
+  "views": 6766
+ },
+ "postedAt": "2026-10-12T20:25:31.000Z",
+ "replyTo": {
+  "handle": "ynwaAnt",
+  "postId": "2109741569687396708"
+ },
+ "text": "That amount of RWA on chain will absolutely run on permissioned and private chains.  And the asset already exists and is already owned by",
+ "url": "https://x.com/BobLoukas/status/2109742280953467304"
+}

@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:13.657Z",
+ "conversationId": "2102012190639407128",
+ "dataSource": "graphql",
+ "id": "2102172613875265877",
+ "metrics": {
+  "bookmarks": 17,
+  "likes": 206,
+  "quotes": 0,
+  "replies": 8,
+  "reposts": 3,
+  "views": 13965
+ },
+ "postedAt": "2026-09-21T23:06:22.000Z",
+ "replyTo": {
+  "handle": "_Checkmatey_",
+  "postId": "2102012190639407128"
+ },
+ "text": "Cycles lengths can absolutely fall in a very wide range. It\u2019s a distribution and we use the average as a guide b/c a good majority fall within.  Not allowing for wide distribution is a traders mistake.  \n\nAnyone claiming absolute lengths or trading them as such is simply ignorant of cycles.",
+ "url": "https://x.com/BobLoukas/status/2102172613875265877"
+}

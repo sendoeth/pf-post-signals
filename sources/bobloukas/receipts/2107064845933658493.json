@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:55.994Z",
+ "conversationId": "2107063137958564197",
+ "dataSource": "graphql",
+ "id": "2107064845933658493",
+ "metrics": {
+  "bookmarks": 1,
+  "likes": 12,
+  "quotes": 0,
+  "replies": 1,
+  "reposts": 0,
+  "views": 3124
+ },
+ "postedAt": "2026-10-05T11:06:21.000Z",
+ "replyTo": {
+  "handle": "aj06346542",
+  "postId": "2107064069882884138"
+ },
+ "text": "Some of them look interesting.  MCD",
+ "url": "https://x.com/BobLoukas/status/2107064845933658493"
+}

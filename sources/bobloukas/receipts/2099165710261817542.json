@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:00.978Z",
+ "conversationId": "2098429219072069700",
+ "dataSource": "graphql",
+ "id": "2099165710261817542",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 3,
+  "quotes": 0,
+  "replies": 0,
+  "reposts": 2,
+  "views": 1220
+ },
+ "postedAt": "2026-09-13T15:58:00.000Z",
+ "replyTo": {
+  "handle": "ditchfiat",
+  "postId": "2099050374560690180"
+ },
+ "text": "The patriot act was a top 10 worst event ever for America.",
+ "url": "https://x.com/BobLoukas/status/2099165710261817542"
+}

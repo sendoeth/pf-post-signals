@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:03.506Z",
+ "conversationId": "2094827036812435935",
+ "dataSource": "graphql",
+ "id": "2094952725960155351",
+ "metrics": {
+  "bookmarks": 4,
+  "likes": 6,
+  "quotes": 0,
+  "replies": 1,
+  "reposts": 1,
+  "views": 1864
+ },
+ "postedAt": "2026-09-02T00:57:06.000Z",
+ "replyTo": {
+  "handle": "MatthewHyland_",
+  "postId": "2094889714939515133"
+ },
+ "text": "Correct.  The last weekly low was one to buy as a placeholder for the 4 yr low.",
+ "url": "https://x.com/BobLoukas/status/2094952725960155351"
+}

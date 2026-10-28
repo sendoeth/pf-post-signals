@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:21.615Z",
+ "conversationId": "2110366157236846776",
+ "dataSource": "graphql",
+ "id": "2110410496608538901",
+ "metrics": {
+  "bookmarks": 3,
+  "likes": 134,
+  "quotes": 0,
+  "replies": 5,
+  "reposts": 1,
+  "views": 7157
+ },
+ "postedAt": "2026-10-14T16:40:46.000Z",
+ "replyTo": {
+  "handle": "zoomerfied",
+  "postId": "2110366157236846776"
+ },
+ "text": "Best news I\u2019ve heard in a while.",
+ "url": "https://x.com/BobLoukas/status/2110410496608538901"
+}

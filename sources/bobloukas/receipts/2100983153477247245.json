@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:13.661Z",
+ "conversationId": "2100966611163181198",
+ "dataSource": "graphql",
+ "id": "2100983153477247245",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 2,
+  "quotes": 0,
+  "replies": 1,
+  "reposts": 0,
+  "views": 1181
+ },
+ "postedAt": "2026-09-18T16:19:52.000Z",
+ "replyTo": {
+  "handle": "backpacker_btc",
+  "postId": "2100972884646601021"
+ },
+ "text": "Actually in my rapid pace replies didn\u2019t even notice that part.  Yikes of course.",
+ "url": "https://x.com/BobLoukas/status/2100983153477247245"
+}

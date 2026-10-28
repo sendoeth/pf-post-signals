@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:21.616Z",
+ "conversationId": "2109735921239367972",
+ "dataSource": "graphql",
+ "id": "2109753759647809649",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 5,
+  "quotes": 0,
+  "replies": 0,
+  "reposts": 0,
+  "views": 2388
+ },
+ "postedAt": "2026-10-12T21:11:08.000Z",
+ "replyTo": {
+  "handle": "RyanPaganetti",
+  "postId": "2109735921239367972"
+ },
+ "text": "QB has a lot of fault. His problems all stem from taking 30 seconds in a huddle when all he had to do after 2nd down was go right back to the line and take a knee. They tried to burn the clock over 2 plays when only one was needed.",
+ "url": "https://x.com/BobLoukas/status/2109753759647809649"
+}

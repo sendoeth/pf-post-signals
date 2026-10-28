@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:12.154Z",
+ "conversationId": "2102839388765814997",
+ "dataSource": "graphql",
+ "id": "2102843560731013510",
+ "metrics": {
+  "bookmarks": 1,
+  "likes": 12,
+  "quotes": 0,
+  "replies": 1,
+  "reposts": 0,
+  "views": 1499
+ },
+ "postedAt": "2026-09-23T19:32:28.000Z",
+ "replyTo": {
+  "handle": "OracleOfTexas",
+  "postId": "2102840931103760468"
+ },
+ "text": "Here\u2019s the key!  \n\nFix them all and quickly.  Then you can demand what you want.",
+ "url": "https://x.com/BobLoukas/status/2102843560731013510"
+}

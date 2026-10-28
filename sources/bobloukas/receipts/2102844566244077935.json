@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:12.154Z",
+ "conversationId": "2102839388765814997",
+ "dataSource": "graphql",
+ "id": "2102844566244077935",
+ "metrics": {
+  "bookmarks": 3,
+  "likes": 51,
+  "quotes": 0,
+  "replies": 1,
+  "reposts": 1,
+  "views": 3685
+ },
+ "postedAt": "2026-09-23T19:36:28.000Z",
+ "replyTo": {
+  "handle": "G1ZA12",
+  "postId": "2102842175746707761"
+ },
+ "text": "The key is to reclaim the 9 to 5!\n\nThe 9 to 5 is always mine and mine alone.",
+ "url": "https://x.com/BobLoukas/status/2102844566244077935"
+}

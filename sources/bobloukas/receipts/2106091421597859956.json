@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:59.024Z",
+ "conversationId": "2106082466049982640",
+ "dataSource": "graphql",
+ "id": "2106091421597859956",
+ "metrics": {
+  "bookmarks": 1,
+  "likes": 12,
+  "quotes": 0,
+  "replies": 1,
+  "reposts": 0,
+  "views": 2083
+ },
+ "postedAt": "2026-10-02T18:38:18.000Z",
+ "replyTo": {
+  "handle": "JohannSmidth",
+  "postId": "2106089386282561735"
+ },
+ "text": "I like to think humanity trends higher over time.  But that was a spike.",
+ "url": "https://x.com/BobLoukas/status/2106091421597859956"
+}

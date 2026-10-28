@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:09.681Z",
+ "conversationId": "2103849223833678047",
+ "dataSource": "graphql",
+ "id": "2103851507166957938",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 10,
+  "quotes": 0,
+  "replies": 0,
+  "reposts": 0,
+  "views": 2331
+ },
+ "postedAt": "2026-09-26T14:17:41.000Z",
+ "replyTo": {
+  "handle": "TuneLower",
+  "postId": "2103850604531679592"
+ },
+ "text": "True.  I overstated that.",
+ "url": "https://x.com/BobLoukas/status/2103851507166957938"
+}

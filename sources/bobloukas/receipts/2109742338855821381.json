@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:21.616Z",
+ "conversationId": "2109741182813450539",
+ "dataSource": "graphql",
+ "id": "2109742338855821381",
+ "metrics": {
+  "bookmarks": 1,
+  "likes": 14,
+  "quotes": 0,
+  "replies": 6,
+  "reposts": 0,
+  "views": 5233
+ },
+ "postedAt": "2026-10-12T20:25:45.000Z",
+ "replyTo": {
+  "handle": "SJB_101",
+  "postId": "2109741744006778925"
+ },
+ "text": "Not your blockchain.",
+ "url": "https://x.com/BobLoukas/status/2109742338855821381"
+}

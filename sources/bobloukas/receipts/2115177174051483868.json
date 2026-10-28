@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:39:29.731Z",
+ "conversationId": "2115169473028071528",
+ "dataSource": "graphql",
+ "id": "2115177174051483868",
+ "metrics": {
+  "bookmarks": 1,
+  "likes": 2,
+  "quotes": 0,
+  "replies": 1,
+  "reposts": 0,
+  "views": 1444
+ },
+ "postedAt": "2026-10-27T20:21:51.000Z",
+ "replyTo": {
+  "handle": "gianfc2001",
+  "postId": "2115175846164025349"
+ },
+ "text": "I think maybe compared to 50's/60;s.  By the 70's is was mostly 2",
+ "url": "https://x.com/BobLoukas/status/2115177174051483868"
+}

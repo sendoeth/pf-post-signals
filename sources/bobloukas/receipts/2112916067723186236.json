@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:39:33.512Z",
+ "conversationId": "2112915214479798344",
+ "dataSource": "graphql",
+ "id": "2112916067723186236",
+ "metrics": {
+  "bookmarks": 1,
+  "likes": 11,
+  "quotes": 0,
+  "replies": 0,
+  "reposts": 0,
+  "views": 4785
+ },
+ "postedAt": "2026-10-21T14:37:01.000Z",
+ "replyTo": {
+  "handle": "jianjolly",
+  "postId": "2112915423658139669"
+ },
+ "text": "this the second half of the tweet",
+ "url": "https://x.com/BobLoukas/status/2112916067723186236"
+}

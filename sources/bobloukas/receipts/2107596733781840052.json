@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:23.698Z",
+ "conversationId": "2107590411376079073",
+ "dataSource": "graphql",
+ "id": "2107596733781840052",
+ "metrics": {
+  "bookmarks": 3,
+  "likes": 14,
+  "quotes": 0,
+  "replies": 2,
+  "reposts": 0,
+  "views": 1726
+ },
+ "postedAt": "2026-10-06T22:19:53.000Z",
+ "replyTo": {
+  "handle": "morpheus7447x",
+  "postId": "2107593037945663581"
+ },
+ "text": "Looks like last 3rd",
+ "url": "https://x.com/BobLoukas/status/2107596733781840052"
+}

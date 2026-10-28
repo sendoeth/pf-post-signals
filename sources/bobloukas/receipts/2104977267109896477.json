@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:09.679Z",
+ "conversationId": "2104972378186875141",
+ "dataSource": "graphql",
+ "id": "2104977267109896477",
+ "metrics": {
+  "bookmarks": 5,
+  "likes": 39,
+  "quotes": 0,
+  "replies": 3,
+  "reposts": 1,
+  "views": 3479
+ },
+ "postedAt": "2026-09-29T16:51:03.000Z",
+ "replyTo": {
+  "handle": "Harmand66836704",
+  "postId": "2104976532552999012"
+ },
+ "text": "Don\u2019t like silver until 2027",
+ "url": "https://x.com/BobLoukas/status/2104977267109896477"
+}

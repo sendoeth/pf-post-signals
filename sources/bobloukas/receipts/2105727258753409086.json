@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:41:00.695Z",
+ "conversationId": "2105699317004583026",
+ "dataSource": "graphql",
+ "id": "2105727258753409086",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 4,
+  "quotes": 0,
+  "replies": 0,
+  "reposts": 0,
+  "views": 1185
+ },
+ "postedAt": "2026-10-01T18:31:15.000Z",
+ "replyTo": {
+  "handle": "degenmakerHL",
+  "postId": "2105703629868949726"
+ },
+ "text": "Yes",
+ "url": "https://x.com/BobLoukas/status/2105727258753409086"
+}

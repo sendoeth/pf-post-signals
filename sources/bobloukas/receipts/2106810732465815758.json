@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:55.995Z",
+ "conversationId": "2106716370276639029",
+ "dataSource": "graphql",
+ "id": "2106810732465815758",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 114,
+  "quotes": 0,
+  "replies": 4,
+  "reposts": 1,
+  "views": 10852
+ },
+ "postedAt": "2026-10-04T18:16:35.000Z",
+ "replyTo": {
+  "handle": "FitAndFortune",
+  "postId": "2106716370276639029"
+ },
+ "text": "Only true if you\u2019re not really present.",
+ "url": "https://x.com/BobLoukas/status/2106810732465815758"
+}

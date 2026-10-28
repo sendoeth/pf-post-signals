@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:13.661Z",
+ "conversationId": "2100953898630443447",
+ "dataSource": "graphql",
+ "id": "2101001591977341252",
+ "metrics": {
+  "bookmarks": 1,
+  "likes": 45,
+  "quotes": 0,
+  "replies": 1,
+  "reposts": 0,
+  "views": 3533
+ },
+ "postedAt": "2026-09-18T17:33:08.000Z",
+ "replyTo": {
+  "handle": "rcdimalanta",
+  "postId": "2100992819460710620"
+ },
+ "text": "Because they\u2019re unhappy with themselves.",
+ "url": "https://x.com/BobLoukas/status/2101001591977341252"
+}

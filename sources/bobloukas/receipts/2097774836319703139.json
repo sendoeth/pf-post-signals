@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:00.980Z",
+ "conversationId": "2097764126697103572",
+ "dataSource": "graphql",
+ "id": "2097774836319703139",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 59,
+  "quotes": 0,
+  "replies": 0,
+  "reposts": 0,
+  "views": 2757
+ },
+ "postedAt": "2026-09-09T19:51:10.000Z",
+ "replyTo": {
+  "handle": "Nassau73",
+  "postId": "2097773472214639077"
+ },
+ "text": "",
+ "url": "https://x.com/BobLoukas/status/2097774836319703139"
+}

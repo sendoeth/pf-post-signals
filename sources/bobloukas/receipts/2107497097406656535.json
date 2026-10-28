@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:23.699Z",
+ "conversationId": "2107496400263188525",
+ "dataSource": "graphql",
+ "id": "2107497097406656535",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 37,
+  "quotes": 0,
+  "replies": 1,
+  "reposts": 0,
+  "views": 7805
+ },
+ "postedAt": "2026-10-06T15:43:58.000Z",
+ "replyTo": {
+  "handle": "TimechainIndex",
+  "postId": "2107496400263188525"
+ },
+ "text": "Coinbase Prime is hold the US Government's Bitcoin Strategi reserve right?....Right?",
+ "url": "https://x.com/BobLoukas/status/2107497097406656535"
+}

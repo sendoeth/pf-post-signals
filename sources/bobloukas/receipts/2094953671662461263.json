@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:03.505Z",
+ "conversationId": "2094827036812435935",
+ "dataSource": "graphql",
+ "id": "2094953671662461263",
+ "metrics": {
+  "bookmarks": 3,
+  "likes": 46,
+  "quotes": 0,
+  "replies": 3,
+  "reposts": 0,
+  "views": 5097
+ },
+ "postedAt": "2026-09-02T01:00:52.000Z",
+ "replyTo": {
+  "handle": "CryptoJelleNL",
+  "postId": "2094873825083064719"
+ },
+ "text": "A great strategy for most.",
+ "url": "https://x.com/BobLoukas/status/2094953671662461263"
+}

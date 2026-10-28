@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:39:32.344Z",
+ "conversationId": "2112919830357577753",
+ "dataSource": "graphql",
+ "id": "2112922044106981426",
+ "metrics": {
+  "bookmarks": 1,
+  "likes": 3,
+  "quotes": 0,
+  "replies": 1,
+  "reposts": 0,
+  "views": 1914
+ },
+ "postedAt": "2026-10-21T15:00:46.000Z",
+ "replyTo": {
+  "handle": "Arhcherdotxyz",
+  "postId": "2112921502265860403"
+ },
+ "text": "No they are totally independent. \nBut it's an interesting look and there is likely something behind the correlation.",
+ "url": "https://x.com/BobLoukas/status/2112922044106981426"
+}

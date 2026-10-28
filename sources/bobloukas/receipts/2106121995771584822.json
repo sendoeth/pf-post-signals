@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:59.024Z",
+ "conversationId": "2106082466049982640",
+ "dataSource": "graphql",
+ "id": "2106121995771584822",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 10,
+  "quotes": 0,
+  "replies": 1,
+  "reposts": 0,
+  "views": 1796
+ },
+ "postedAt": "2026-10-02T20:39:48.000Z",
+ "replyTo": {
+  "handle": "CandyPhlipper",
+  "postId": "2106085859661594696"
+ },
+ "text": "Are they really scraping shit?",
+ "url": "https://x.com/BobLoukas/status/2106121995771584822"
+}

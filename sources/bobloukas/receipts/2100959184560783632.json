@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:48.818Z",
+ "conversationId": "2100953898630443447",
+ "dataSource": "graphql",
+ "id": "2100959184560783632",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 87,
+  "quotes": 0,
+  "replies": 2,
+  "reposts": 0,
+  "views": 4030
+ },
+ "postedAt": "2026-09-18T14:44:38.000Z",
+ "replyTo": {
+  "handle": "victor_spath",
+  "postId": "2100956788216439242"
+ },
+ "text": "People like you put my kids through college. I appreciate you.",
+ "url": "https://x.com/BobLoukas/status/2100959184560783632"
+}

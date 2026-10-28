@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:09.680Z",
+ "conversationId": "2104040393801372012",
+ "dataSource": "graphql",
+ "id": "2104226843692093885",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 18,
+  "quotes": 0,
+  "replies": 0,
+  "reposts": 0,
+  "views": 6823
+ },
+ "postedAt": "2026-09-27T15:09:08.000Z",
+ "replyTo": {
+  "handle": "Tradermayne",
+  "postId": "2104040393801372012"
+ },
+ "text": "That's not even a mocktail these days",
+ "url": "https://x.com/BobLoukas/status/2104226843692093885"
+}

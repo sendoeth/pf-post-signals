@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:55.996Z",
+ "conversationId": "2106744910896312646",
+ "dataSource": "graphql",
+ "id": "2106751587871834525",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 12,
+  "quotes": 0,
+  "replies": 0,
+  "reposts": 0,
+  "views": 2798
+ },
+ "postedAt": "2026-10-04T14:21:34.000Z",
+ "replyTo": {
+  "handle": "StreetwiseBum",
+  "postId": "2106749928970006585"
+ },
+ "text": "Bullish still",
+ "url": "https://x.com/BobLoukas/status/2106751587871834525"
+}

@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:23.695Z",
+ "conversationId": "2107945211347578992",
+ "dataSource": "graphql",
+ "id": "2108189552355709309",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 2,
+  "quotes": 0,
+  "replies": 1,
+  "reposts": 0,
+  "views": 1124
+ },
+ "postedAt": "2026-10-08T13:35:32.000Z",
+ "replyTo": {
+  "handle": "emma_dka",
+  "postId": "2108096723172409801"
+ },
+ "text": "They will refund diff this morning.",
+ "url": "https://x.com/BobLoukas/status/2108189552355709309"
+}

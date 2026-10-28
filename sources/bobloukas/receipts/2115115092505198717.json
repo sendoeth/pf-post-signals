@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:39:32.343Z",
+ "conversationId": "2115096907244880130",
+ "dataSource": "graphql",
+ "id": "2115115092505198717",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 2,
+  "quotes": 0,
+  "replies": 0,
+  "reposts": 0,
+  "views": 1619
+ },
+ "postedAt": "2026-10-27T16:15:09.000Z",
+ "replyTo": {
+  "handle": "MacroBombastic",
+  "postId": "2115103863774515648"
+ },
+ "text": "Yep",
+ "url": "https://x.com/BobLoukas/status/2115115092505198717"
+}

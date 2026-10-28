@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:12.153Z",
+ "conversationId": "2102839388765814997",
+ "dataSource": "graphql",
+ "id": "2102844959003197921",
+ "metrics": {
+  "bookmarks": 1,
+  "likes": 54,
+  "quotes": 0,
+  "replies": 2,
+  "reposts": 0,
+  "views": 3210
+ },
+ "postedAt": "2026-09-23T19:38:01.000Z",
+ "replyTo": {
+  "handle": "Yawloz",
+  "postId": "2102841898834800882"
+ },
+ "text": "So much less about money than it is acceptance.",
+ "url": "https://x.com/BobLoukas/status/2102844959003197921"
+}

@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:21.616Z",
+ "conversationId": "2109741182813450539",
+ "dataSource": "graphql",
+ "id": "2109747544557232281",
+ "metrics": {
+  "bookmarks": 2,
+  "likes": 10,
+  "quotes": 0,
+  "replies": 1,
+  "reposts": 0,
+  "views": 5257
+ },
+ "postedAt": "2026-10-12T20:46:26.000Z",
+ "replyTo": {
+  "handle": "trp46532",
+  "postId": "2109744947712963040"
+ },
+ "text": "Not the RWA the article talks about.",
+ "url": "https://x.com/BobLoukas/status/2109747544557232281"
+}

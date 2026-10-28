@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:21.616Z",
+ "conversationId": "2109741182813450539",
+ "dataSource": "graphql",
+ "id": "2109750618491633862",
+ "metrics": {
+  "bookmarks": 1,
+  "likes": 16,
+  "quotes": 0,
+  "replies": 1,
+  "reposts": 0,
+  "views": 5739
+ },
+ "postedAt": "2026-10-12T20:58:39.000Z",
+ "replyTo": {
+  "handle": "BaseChain",
+  "postId": "2109742746349252737"
+ },
+ "text": "Totally unrelated though.",
+ "url": "https://x.com/BobLoukas/status/2109750618491633862"
+}

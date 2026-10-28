@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:12.154Z",
+ "conversationId": "2102839388765814997",
+ "dataSource": "graphql",
+ "id": "2102839908478181715",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 11,
+  "quotes": 0,
+  "replies": 1,
+  "reposts": 0,
+  "views": 3031
+ },
+ "postedAt": "2026-09-23T19:17:57.000Z",
+ "replyTo": {
+  "handle": "OracleOfTexas",
+  "postId": "2102839529904459886"
+ },
+ "text": "Yes.",
+ "url": "https://x.com/BobLoukas/status/2102839908478181715"
+}

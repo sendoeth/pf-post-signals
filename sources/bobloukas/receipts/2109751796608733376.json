@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:21.616Z",
+ "conversationId": "2109741182813450539",
+ "dataSource": "graphql",
+ "id": "2109751796608733376",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 6,
+  "quotes": 0,
+  "replies": 0,
+  "reposts": 0,
+  "views": 1366
+ },
+ "postedAt": "2026-10-12T21:03:20.000Z",
+ "replyTo": {
+  "handle": "JohnToTheMoon_",
+  "postId": "2109750497385082983"
+ },
+ "text": "Yeah and basically at the ipo price.",
+ "url": "https://x.com/BobLoukas/status/2109751796608733376"
+}

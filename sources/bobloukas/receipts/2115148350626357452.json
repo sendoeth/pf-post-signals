@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:39:32.342Z",
+ "conversationId": "2115140590299926712",
+ "dataSource": "graphql",
+ "id": "2115148350626357452",
+ "metrics": {
+  "bookmarks": 1,
+  "likes": 13,
+  "quotes": 0,
+  "replies": 1,
+  "reposts": 0,
+  "views": 3970
+ },
+ "postedAt": "2026-10-27T18:27:19.000Z",
+ "replyTo": {
+  "handle": "ShardiB2",
+  "postId": "2115140590299926712"
+ },
+ "text": "Quick, but the Melania Coin.     /s",
+ "url": "https://x.com/BobLoukas/status/2115148350626357452"
+}

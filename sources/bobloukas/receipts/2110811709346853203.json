@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:19.422Z",
+ "conversationId": "2110810823740498358",
+ "dataSource": "graphql",
+ "id": "2110811709346853203",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 3,
+  "quotes": 0,
+  "replies": 0,
+  "reposts": 0,
+  "views": 1853
+ },
+ "postedAt": "2026-10-15T19:15:03.000Z",
+ "replyTo": {
+  "handle": "DomVybiral",
+  "postId": "2110811179849257386"
+ },
+ "text": "Thanks. Very nice people.",
+ "url": "https://x.com/BobLoukas/status/2110811709346853203"
+}

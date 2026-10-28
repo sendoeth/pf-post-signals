@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:23.698Z",
+ "conversationId": "2107860821745574396",
+ "dataSource": "graphql",
+ "id": "2107864063631839242",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 6,
+  "quotes": 0,
+  "replies": 1,
+  "reposts": 0,
+  "views": 4395
+ },
+ "postedAt": "2026-10-07T16:02:09.000Z",
+ "replyTo": {
+  "handle": "RyanPaganetti",
+  "postId": "2107860821745574396"
+ },
+ "text": "Does this take into account that specific team's ability to make short yardage?  Feel like sometimes do it easily while others really suck at it",
+ "url": "https://x.com/BobLoukas/status/2107864063631839242"
+}

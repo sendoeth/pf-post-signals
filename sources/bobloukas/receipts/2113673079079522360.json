@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:39:32.343Z",
+ "conversationId": "2113646326298632206",
+ "dataSource": "graphql",
+ "id": "2113673079079522360",
+ "metrics": {
+  "bookmarks": 7,
+  "likes": 112,
+  "quotes": 1,
+  "replies": 3,
+  "reposts": 2,
+  "views": 6595
+ },
+ "postedAt": "2026-10-23T16:45:06.000Z",
+ "replyTo": {
+  "handle": "TheFlowHorse",
+  "postId": "2113646326298632206"
+ },
+ "text": "Giving it all back is the same mechanic that allowed for such a gain to exist in first place.  They go hand in hand.",
+ "url": "https://x.com/BobLoukas/status/2113673079079522360"
+}

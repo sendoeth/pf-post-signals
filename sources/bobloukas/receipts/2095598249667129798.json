@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:03.503Z",
+ "conversationId": "2095594935604896234",
+ "dataSource": "graphql",
+ "id": "2095598249667129798",
+ "metrics": {
+  "bookmarks": 13,
+  "likes": 79,
+  "quotes": 0,
+  "replies": 4,
+  "reposts": 1,
+  "views": 13103
+ },
+ "postedAt": "2026-09-03T19:42:11.000Z",
+ "replyTo": {
+  "handle": "dnwlspaosnbrfi",
+  "postId": "2095597027224694863"
+ },
+ "text": "Set to weather a long storm (5-10 yrs) and prepared to take full advantage of such storm.",
+ "url": "https://x.com/BobLoukas/status/2095598249667129798"
+}

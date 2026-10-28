@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:00.978Z",
+ "conversationId": "2099165424281616516",
+ "dataSource": "graphql",
+ "id": "2099166319396442527",
+ "metrics": {
+  "bookmarks": 1,
+  "likes": 43,
+  "quotes": 0,
+  "replies": 6,
+  "reposts": 0,
+  "views": 5412
+ },
+ "postedAt": "2026-09-13T16:00:25.000Z",
+ "replyTo": {
+  "handle": "unitedforlife86",
+  "postId": "2099165707992785021"
+ },
+ "text": "Don\u2019t know but I want to listen to the people who know this stuff best.",
+ "url": "https://x.com/BobLoukas/status/2099166319396442527"
+}

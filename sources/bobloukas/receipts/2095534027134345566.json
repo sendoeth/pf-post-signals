@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:03.504Z",
+ "conversationId": "2095140575859048623",
+ "dataSource": "graphql",
+ "id": "2095534027134345566",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 3,
+  "quotes": 0,
+  "replies": 1,
+  "reposts": 0,
+  "views": 2045
+ },
+ "postedAt": "2026-09-03T15:26:59.000Z",
+ "replyTo": {
+  "handle": "mpagni",
+  "postId": "2095477007672824249"
+ },
+ "text": "Yes can see this too.",
+ "url": "https://x.com/BobLoukas/status/2095534027134345566"
+}

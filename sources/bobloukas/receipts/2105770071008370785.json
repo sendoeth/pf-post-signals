@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:41:00.695Z",
+ "conversationId": "2105699317004583026",
+ "dataSource": "graphql",
+ "id": "2105770071008370785",
+ "metrics": {
+  "bookmarks": 1,
+  "likes": 14,
+  "quotes": 0,
+  "replies": 0,
+  "reposts": 0,
+  "views": 3340
+ },
+ "postedAt": "2026-10-01T21:21:22.000Z",
+ "replyTo": {
+  "handle": "rusasum",
+  "postId": "2105753472184492333"
+ },
+ "text": "I have never said that nor would I ever, given a student of cycles.",
+ "url": "https://x.com/BobLoukas/status/2105770071008370785"
+}

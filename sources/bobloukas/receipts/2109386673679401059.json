@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:21.617Z",
+ "conversationId": "2109386203065696519",
+ "dataSource": "graphql",
+ "id": "2109386673679401059",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 3,
+  "quotes": 0,
+  "replies": 0,
+  "reposts": 0,
+  "views": 1432
+ },
+ "postedAt": "2026-10-11T20:52:28.000Z",
+ "replyTo": {
+  "handle": "sc00ter26",
+  "postId": "2109386322645532843"
+ },
+ "text": "Me too.",
+ "url": "https://x.com/BobLoukas/status/2109386673679401059"
+}

@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:12.151Z",
+ "conversationId": "2103104187399905433",
+ "dataSource": "graphql",
+ "id": "2103109668948078977",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 43,
+  "quotes": 0,
+  "replies": 1,
+  "reposts": 0,
+  "views": 4523
+ },
+ "postedAt": "2026-09-24T13:09:53.000Z",
+ "replyTo": {
+  "handle": "rcdimalanta",
+  "postId": "2103109059977368027"
+ },
+ "text": "They couldn\u2019t care less. :)",
+ "url": "https://x.com/BobLoukas/status/2103109668948078977"
+}

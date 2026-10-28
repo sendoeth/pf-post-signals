@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:21.617Z",
+ "conversationId": "2109739849192235437",
+ "dataSource": "graphql",
+ "id": "2109741844603236394",
+ "metrics": {
+  "bookmarks": 1,
+  "likes": 13,
+  "quotes": 0,
+  "replies": 1,
+  "reposts": 0,
+  "views": 2695
+ },
+ "postedAt": "2026-10-12T20:23:47.000Z",
+ "replyTo": {
+  "handle": "RobCJJJ",
+  "postId": "2109740165094924334"
+ },
+ "text": "No not at all.  Clearly I hold a little Bitcoin. :)\n\nEverything has strengths and weakness.",
+ "url": "https://x.com/BobLoukas/status/2109741844603236394"
+}

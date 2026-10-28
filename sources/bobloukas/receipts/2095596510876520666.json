@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:03.503Z",
+ "conversationId": "2095594935604896234",
+ "dataSource": "graphql",
+ "id": "2095596510876520666",
+ "metrics": {
+  "bookmarks": 4,
+  "likes": 62,
+  "quotes": 0,
+  "replies": 2,
+  "reposts": 0,
+  "views": 10369
+ },
+ "postedAt": "2026-09-03T19:35:17.000Z",
+ "replyTo": {
+  "handle": "fitandflexable",
+  "postId": "2095595653414125568"
+ },
+ "text": "Was supposed to mean the type of change that we see only every few decades.",
+ "url": "https://x.com/BobLoukas/status/2095596510876520666"
+}

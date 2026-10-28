@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:39:32.342Z",
+ "conversationId": "2115096907244880130",
+ "dataSource": "graphql",
+ "id": "2115115225494040885",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 20,
+  "quotes": 0,
+  "replies": 0,
+  "reposts": 0,
+  "views": 3065
+ },
+ "postedAt": "2026-10-27T16:15:41.000Z",
+ "replyTo": {
+  "handle": "pianches",
+  "postId": "2115102162795573573"
+ },
+ "text": "Yes but I think the outcome of both are pretty much assured.",
+ "url": "https://x.com/BobLoukas/status/2115115225494040885"
+}

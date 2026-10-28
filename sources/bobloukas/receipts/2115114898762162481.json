@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:39:32.343Z",
+ "conversationId": "2115096907244880130",
+ "dataSource": "graphql",
+ "id": "2115114898762162481",
+ "metrics": {
+  "bookmarks": 2,
+  "likes": 7,
+  "quotes": 0,
+  "replies": 0,
+  "reposts": 0,
+  "views": 1691
+ },
+ "postedAt": "2026-10-27T16:14:23.000Z",
+ "replyTo": {
+  "handle": "GartGang25",
+  "postId": "2115108954590323057"
+ },
+ "text": "That's what we're looking at. But we always want to give a market a chance when the failure is not defined or definitive.",
+ "url": "https://x.com/BobLoukas/status/2115114898762162481"
+}

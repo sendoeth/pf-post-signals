@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:21.616Z",
+ "conversationId": "2109741182813450539",
+ "dataSource": "graphql",
+ "id": "2109751064832455161",
+ "metrics": {
+  "bookmarks": 2,
+  "likes": 13,
+  "quotes": 0,
+  "replies": 3,
+  "reposts": 0,
+  "views": 3305
+ },
+ "postedAt": "2026-10-12T21:00:25.000Z",
+ "replyTo": {
+  "handle": "Schmiddel89",
+  "postId": "2109748883068792955"
+ },
+ "text": "Plenty of great advantages for public blockchains. \n\nCorporations migrating trillions of value to a chain don\u2019t need or want that.  \n\nIf you want to trade the RWA the rails must be controlled.",
+ "url": "https://x.com/BobLoukas/status/2109751064832455161"
+}

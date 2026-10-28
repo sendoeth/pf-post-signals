@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:59.024Z",
+ "conversationId": "2106108731314622744",
+ "dataSource": "graphql",
+ "id": "2106124267226103955",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 9,
+  "quotes": 0,
+  "replies": 1,
+  "reposts": 0,
+  "views": 1290
+ },
+ "postedAt": "2026-10-02T20:48:49.000Z",
+ "replyTo": {
+  "handle": "PastaBeanFras",
+  "postId": "2106123772269064469"
+ },
+ "text": "You got me, Pasta Beans Fras.",
+ "url": "https://x.com/BobLoukas/status/2106124267226103955"
+}

@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:00.980Z",
+ "conversationId": "2096253717968191547",
+ "dataSource": "graphql",
+ "id": "2096583820787007718",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 6,
+  "quotes": 0,
+  "replies": 1,
+  "reposts": 0,
+  "views": 2080
+ },
+ "postedAt": "2026-09-06T12:58:30.000Z",
+ "replyTo": {
+  "handle": "Edtachi1",
+  "postId": "2096554564652536126"
+ },
+ "text": "View, strategies, thoughts, they can provide only an edge.  They\u2019re very far from an absolute.",
+ "url": "https://x.com/BobLoukas/status/2096583820787007718"
+}

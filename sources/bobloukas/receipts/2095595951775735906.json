@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:03.503Z",
+ "conversationId": "2095594935604896234",
+ "dataSource": "graphql",
+ "id": "2095595951775735906",
+ "metrics": {
+  "bookmarks": 5,
+  "likes": 83,
+  "quotes": 0,
+  "replies": 3,
+  "reposts": 0,
+  "views": 9379
+ },
+ "postedAt": "2026-09-03T19:33:03.000Z",
+ "replyTo": {
+  "handle": "BTC_Siferd",
+  "postId": "2095595283002405012"
+ },
+ "text": "I\u2019m not talking about market corrections.  \n\nI\u2019m talking about secular market downturns.",
+ "url": "https://x.com/BobLoukas/status/2095595951775735906"
+}

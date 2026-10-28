@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:41:00.695Z",
+ "conversationId": "2102839388765814997",
+ "dataSource": "graphql",
+ "id": "2105642170934084005",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 5,
+  "quotes": 0,
+  "replies": 0,
+  "reposts": 0,
+  "views": 1118
+ },
+ "postedAt": "2026-10-01T12:53:09.000Z",
+ "replyTo": {
+  "handle": "amirA7893",
+  "postId": "2105574036671537503"
+ },
+ "text": "You will most certainly miss those days.  Very much.",
+ "url": "https://x.com/BobLoukas/status/2105642170934084005"
+}

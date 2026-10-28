@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:23.695Z",
+ "conversationId": "2108189174146982107",
+ "dataSource": "graphql",
+ "id": "2108193481692975535",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 21,
+  "quotes": 0,
+  "replies": 4,
+  "reposts": 0,
+  "views": 2540
+ },
+ "postedAt": "2026-10-08T13:51:09.000Z",
+ "replyTo": {
+  "handle": "JcardinaJ",
+  "postId": "2108192691704172799"
+ },
+ "text": "Lets go into a business that costs us $256,000 to produce a $4,500 product.  That makes sense.",
+ "url": "https://x.com/BobLoukas/status/2108193481692975535"
+}

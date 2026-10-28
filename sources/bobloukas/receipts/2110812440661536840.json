@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:19.422Z",
+ "conversationId": "2110810823740498358",
+ "dataSource": "graphql",
+ "id": "2110812440661536840",
+ "metrics": {
+  "bookmarks": 3,
+  "likes": 8,
+  "quotes": 0,
+  "replies": 3,
+  "reposts": 0,
+  "views": 1889
+ },
+ "postedAt": "2026-10-15T19:17:57.000Z",
+ "replyTo": {
+  "handle": "Criostasi",
+  "postId": "2110811047799959657"
+ },
+ "text": "Copenhagen, Madrid, Lisbon, and Paris. But so many good ones.",
+ "url": "https://x.com/BobLoukas/status/2110812440661536840"
+}

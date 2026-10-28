@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:21.616Z",
+ "conversationId": "2109739849192235437",
+ "dataSource": "graphql",
+ "id": "2109751242541216233",
+ "metrics": {
+  "bookmarks": 0,
+  "likes": 22,
+  "quotes": 0,
+  "replies": 1,
+  "reposts": 1,
+  "views": 2374
+ },
+ "postedAt": "2026-10-12T21:01:08.000Z",
+ "replyTo": {
+  "handle": "quantumarmz",
+  "postId": "2109748673114767641"
+ },
+ "text": "Don\u2019t think it\u2019s about the device.  Avoid single point of failure.",
+ "url": "https://x.com/BobLoukas/status/2109751242541216233"
+}

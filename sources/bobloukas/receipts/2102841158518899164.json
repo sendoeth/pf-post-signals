@@ -1,0 +1,22 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-28T15:40:12.154Z",
+ "conversationId": "2102839388765814997",
+ "dataSource": "graphql",
+ "id": "2102841158518899164",
+ "metrics": {
+  "bookmarks": 17,
+  "likes": 148,
+  "quotes": 1,
+  "replies": 3,
+  "reposts": 3,
+  "views": 4872
+ },
+ "postedAt": "2026-09-23T19:22:55.000Z",
+ "replyTo": {
+  "handle": "Wizt0shi",
+  "postId": "2102839840425554180"
+ },
+ "text": "Meditating, napping, reading, philosophizing, reflecting, building mind, music, movies, walking in nature, etc etc.",
+ "url": "https://x.com/BobLoukas/status/2102841158518899164"
+}
