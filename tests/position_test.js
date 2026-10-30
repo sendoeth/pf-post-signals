@@ -75,7 +75,7 @@ function serve() {
     for (const a of bundle.assets) {
       await page.select('#asset', a.name);
       for (const p of a.posts) {
-        const want = `position.html?post=${p.post.id}&asset=${encodeURIComponent(a.name)}`;
+        const want = `position.html?post=${encodeURIComponent(p.post.id)}&asset=${encodeURIComponent(a.name)}`;
         const row = await page.$eval(`#posts a.row-link[data-post-id="${p.post.id}"]`, n => n.getAttribute('href')).catch(() => null);
         if (row !== want) fail(`main ${a.name} ${p.post.id}: table link ${row} != ${want}`);
         if (!p.entry) continue;
@@ -143,6 +143,12 @@ function serve() {
       if (!/^\d+(d \d+h|h \d+m|m) ago$/.test((got.fields.age || {}).text || '')) fail(`${tag}: age ${JSON.stringify((got.fields.age || {}).text)}`);
       fields++;
       if (!got.fields.url || got.fields.url.href !== rec.post.url) fail(`${tag}: x link ${got.fields.url && got.fields.url.href}`);
+      if (got.fields.url && got.fields.url.text !== (rec.post.source === 'corbanu' ? 'read the article' : 'open on X')) fail(`${tag}: source link text ${got.fields.url.text}`);
+      for (const [k, v] of [['stand_in', rec.asset.stand_in], ['adjustments', rec.asset.adjustments], ['trade', rec.trade], ['asset_choice', rec.asset_choice]]) {
+        fields++;
+        if (v === undefined) { if (got.fields[k]) fail(`${tag}: ${k} shown but the record has none`); continue; }
+        if (!got.fields[k] || JSON.stringify(got.fields[k].raw) !== JSON.stringify(v)) fail(`${tag}: ${k} raw ${got.fields[k] && JSON.stringify(got.fields[k].raw)} != record`);
+      }
       if (rec.entry) {
         placements++;
         const pl = got.place;

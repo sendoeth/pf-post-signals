@@ -120,6 +120,40 @@ function renderStats(rows) {
     stat("best_call", "Best call", top ? `${fmtPct(top.ret)} · ${top.assetName} @${top.author}` : "–", top ? signClass(top.ret) : "", top ? top.id + "|" + top.assetName : null));
 }
 
+// Per-author summary over the rows matching every filter except the author (so authors can be
+// compared side by side). Sample-size flags follow step 3: under 10 calls "insufficient sample",
+// under 30 "unreliable sample"; a small sample is never presented as a track record.
+const MIN_N_REPORTABLE = 10, MIN_N_RELIABLE = 30;
+function authorSummary(rows) {
+  const by = {};
+  for (const r of rows) (by[r.author] = by[r.author] || []).push(r);
+  return Object.keys(by).sort().map(a => {
+    const done = by[a].filter(r => r.ret != null), n = done.length;
+    const best = n ? done.reduce((m, r) => (r.ret > m.ret ? r : m)) : null, worst = n ? done.reduce((m, r) => (r.ret < m.ret ? r : m)) : null;
+    return { author: a, calls: by[a].length, resolved: n, hit: n ? done.filter(r => r.ret > 0).length / n : null,
+      avg: n ? done.reduce((s, r) => s + r.ret, 0) / n : null, best, worst,
+      flag: n < MIN_N_REPORTABLE ? "insufficient sample" : n < MIN_N_RELIABLE ? "unreliable sample" : "ok" };
+  });
+}
+function renderAuthors(summary, selected, avatars) {
+  const body = document.querySelector("#authors tbody");
+  body.replaceChildren();
+  for (const s of summary) {
+    const tr = el("tr", { "data-author": s.author, class: s.author === selected ? "selected" : "" });
+    const who = el("td", { class: "a-who" });
+    who.append(avatar(s.author, avatars), el("span", null, "@" + s.author));
+    const cell = (name, text, raw, cls) => { const td = el("td", { "data-field": name, class: cls || "" }, text); if (raw !== undefined) td.setAttribute("data-raw", JSON.stringify(raw)); return td; };
+    const callText = r => r ? `${fmtPct(r.ret)} ${r.assetName}` : "–";
+    tr.append(who, cell("calls", String(s.calls), s.calls),
+      cell("hit", s.hit == null ? "–" : `${Math.round(s.hit * 100)}%`, s.hit),
+      cell("avg", s.avg == null ? "–" : fmtPct(s.avg), s.avg, signClass(s.avg)),
+      cell("best", callText(s.best), s.best ? s.best.id + "|" + s.best.assetName : null, s.best ? signClass(s.best.ret) : ""),
+      cell("worst", callText(s.worst), s.worst ? s.worst.id + "|" + s.worst.assetName : null, s.worst ? signClass(s.worst.ret) : ""),
+      cell("flag", s.flag, s.flag, "flag " + (s.flag === "ok" ? "ok" : "warn")));
+    body.append(tr);
+  }
+}
+
 function renderRows(rows, asOf, avatars) {
   const list = document.getElementById("rows");
   list.replaceChildren();
@@ -134,6 +168,8 @@ function renderRows(rows, asOf, avatars) {
     const line1 = el("span", { class: "line1" });
     line1.append(el("span", { class: "ticker", "data-field": "asset" }, r.assetName));
     line1.append(el("span", { class: "badge " + r.side, "data-field": "side" }, r.side === "none" ? "NO SIDE" : r.side.toUpperCase()));
+    if (p.asset.stand_in) line1.append(el("span", { class: "tag", "data-field": "stand_in", title: p.asset.stand_in.reason }, "stand-in"));
+    if (p.asset.adjustments && p.asset.adjustments.length) line1.append(el("span", { class: "tag", "data-field": "adjusted", title: p.asset.adjustments.map(a => `${a.kind} on ${fmtTime(a.at)}`).join("; ") }, "split-adj."));
     meta.append(line1);
     const line2 = el("span", { class: "line2" });
     line2.append(el("span", { "data-field": "author" }, "@" + r.author), " · ");
@@ -184,6 +220,7 @@ async function main() {
   writeUrl(f);   // invalid or non-canonical values in the address bar are rewritten to the state shown
   const draw = () => {
     const rows = sortRows(applyFilters(all, f, asOf), f.sort);
+    renderAuthors(authorSummary(applyFilters(all, { ...f, author: "all" }, asOf)), f.author, avatars);
     renderStats(rows);
     renderRows(rows, asOf, avatars);
     document.body.setAttribute("data-shown", String(rows.length));

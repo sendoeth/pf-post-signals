@@ -1,0 +1,307 @@
+{
+ "compared": 8,
+ "rows": [
+  {
+   "event": "aapl-entry",
+   "asset": "XYZ:AAPL",
+   "side": -1,
+   "step1_entry": {
+    "price": 340.43,
+    "at": "2026-09-27T21:27:41Z",
+    "basis": "published reference price"
+   },
+   "step11_entry": {
+    "at": "2026-09-27T22:00:00Z",
+    "price": 340.31
+   },
+   "entry_diff": -0.00035249537349824056,
+   "horizons": {
+    "1": {
+     "step1": 0.006315542108509931,
+     "step11": 0.005965149422585414,
+     "diff": -0.00035039268592451656,
+     "why": "entry -0.04% (reference quote vs first hourly open); exit: Corbanu tracker mark vs Hyperliquid hourly open"
+    },
+    "7": {
+     "step1": 0.019710366301442184,
+     "step11": 0.019482236784108542,
+     "diff": -0.00022812951733364173,
+     "why": "entry -0.04% (reference quote vs first hourly open); exit: Corbanu tracker mark vs Hyperliquid hourly open"
+    },
+    "30": {
+     "step1": null,
+     "step11": -0.019923011371984378,
+     "diff": null,
+     "why": "newly resolved (pending in the step 1 snapshot)"
+    }
+   },
+   "stand_in": false,
+   "adjustments": []
+  },
+  {
+   "event": "cbrs-add",
+   "asset": "XYZ:CBRS",
+   "side": -1,
+   "step1_entry": {
+    "price": 191.75,
+    "at": "2026-09-30T03:33:23Z",
+    "basis": "published reference price"
+   },
+   "step11_entry": {
+    "at": "2026-09-30T04:00:00Z",
+    "price": 192.69
+   },
+   "entry_diff": 0.004902216427640216,
+   "horizons": {
+    "1": {
+     "step1": 0.05444589308996084,
+     "step11": 0.0583839327417095,
+     "diff": 0.003938039651748659,
+     "why": "entry +0.49% (reference quote vs first hourly open); exit: Corbanu tracker mark vs Hyperliquid hourly open"
+    },
+    "7": {
+     "step1": 0.07848761408083449,
+     "step11": 0.08168560900928956,
+     "diff": 0.0031979949284550724,
+     "why": "entry +0.49% (reference quote vs first hourly open); exit: Corbanu tracker mark vs Hyperliquid hourly open"
+    },
+    "30": {
+     "step1": null,
+     "step11": 0.42825263376407696,
+     "diff": null,
+     "why": "newly resolved (pending in the step 1 snapshot)"
+    }
+   },
+   "stand_in": false,
+   "adjustments": []
+  },
+  {
+   "event": "cbrs-entry",
+   "asset": "XYZ:CBRS",
+   "side": -1,
+   "step1_entry": {
+    "price": 209.225,
+    "at": "2026-09-04T20:09:40Z",
+    "basis": "published reference price"
+   },
+   "step11_entry": {
+    "at": "2026-09-04T21:00:00Z",
+    "price": 209.19
+   },
+   "entry_diff": -0.00016728402437560241,
+   "horizons": {
+    "1": {
+     "step1": -0.003704146254032814,
+     "step11": -0.003919881447487894,
+     "diff": -0.00021573519345507997,
+     "why": "entry -0.02% (reference quote vs first hourly open); exit: Corbanu tracker mark vs Hyperliquid hourly open"
+    },
+    "7": {
+     "step1": 0.08318795555024494,
+     "step11": 0.08293895501697024,
+     "diff": -0.0002490005332747014,
+     "why": "entry -0.02% (reference quote vs first hourly open); exit: Corbanu tracker mark vs Hyperliquid hourly open"
+    },
+    "30": {
+     "step1": 0.1272075516788146,
+     "step11": 0.12414551364787996,
+     "diff": -0.003062038030934633,
+     "why": "entry -0.02% (reference quote vs first hourly open); exit: Corbanu tracker mark vs Hyperliquid hourly open"
+    }
+   },
+   "stand_in": false,
+   "adjustments": []
+  },
+  {
+   "event": "cxmt-entry",
+   "asset": "XYZ:CXMT",
+   "side": 1,
+   "step1_entry": {
+    "price": 8.3403,
+    "at": "2026-09-04T20:09:40Z",
+    "basis": "published reference price"
+   },
+   "step11_entry": {
+    "at": "2026-09-04T21:00:00Z",
+    "price": 8.3489
+   },
+   "entry_diff": 0.00103113796865828,
+   "horizons": {
+    "1": {
+     "step1": 0.004064601992734174,
+     "step11": 0.0024554132879781587,
+     "diff": -0.001609188704756015,
+     "why": "entry +0.10% (reference quote vs first hourly open); exit: Corbanu tracker mark vs Hyperliquid hourly open"
+    },
+    "7": {
+     "step1": -0.00669040681989852,
+     "step11": -0.007701613386194683,
+     "diff": -0.0010112065662961633,
+     "why": "entry +0.10% (reference quote vs first hourly open); exit: Corbanu tracker mark vs Hyperliquid hourly open"
+    },
+    "30": {
+     "step1": 0.009004472261189722,
+     "step11": 0.007701613386194461,
+     "diff": -0.0013028588749952608,
+     "why": "entry +0.10% (reference quote vs first hourly open); exit: Corbanu tracker mark vs Hyperliquid hourly open"
+    }
+   },
+   "stand_in": false,
+   "adjustments": []
+  },
+  {
+   "event": "jp225-entry",
+   "asset": "XYZ:JP225",
+   "side": -1,
+   "step1_entry": {
+    "price": 63624.0,
+    "at": "2026-09-16T00:00:00Z",
+    "basis": "published reference price"
+   },
+   "step11_entry": {
+    "at": "2026-09-16T00:00:00Z",
+    "price": 63624.0
+   },
+   "entry_diff": 0.0,
+   "horizons": {
+    "1": {
+     "step1": -0.007324280145856843,
+     "step11": -0.018012070916635148,
+     "diff": -0.010687790770778305,
+     "why": "exit: Corbanu tracker mark vs Hyperliquid hourly open"
+    },
+    "7": {
+     "step1": -0.05053124607066506,
+     "step11": -0.05655098704891226,
+     "diff": -0.006019740978247201,
+     "why": "exit: Corbanu tracker mark vs Hyperliquid hourly open"
+    },
+    "30": {
+     "step1": -0.023748899786244282,
+     "step11": -0.026719476926945873,
+     "diff": -0.0029705771407015913,
+     "why": "exit: Corbanu tracker mark vs Hyperliquid hourly open"
+    }
+   },
+   "stand_in": false,
+   "adjustments": []
+  },
+  {
+   "event": "kioxia-entry",
+   "asset": "XYZ:KIOXIA",
+   "side": 1,
+   "step1_entry": {
+    "price": 109.87666666666667,
+    "at": "2026-09-16T00:00:00Z",
+    "basis": "published reference price"
+   },
+   "step11_entry": {
+    "at": "2026-09-16T00:00:00Z",
+    "price": 109.87666666666667
+   },
+   "entry_diff": 0.0,
+   "horizons": {
+    "1": {
+     "step1": -0.024755028365136544,
+     "step11": 0.0023662894760791975,
+     "diff": 0.027121317841215742,
+     "why": "exit: Corbanu tracker mark vs Hyperliquid hourly open"
+    },
+    "7": {
+     "step1": 0.19731213785153057,
+     "step11": 0.19922337165913317,
+     "diff": 0.001911233807602608,
+     "why": "exit: Corbanu tracker mark vs Hyperliquid hourly open"
+    },
+    "30": {
+     "step1": -0.24967691047538154,
+     "step11": -0.24084883050693207,
+     "diff": 0.008828079968449476,
+     "why": "exit: Corbanu tracker mark vs Hyperliquid hourly open"
+    }
+   },
+   "stand_in": false,
+   "adjustments": [
+    {
+     "at": "2026-09-28T08:00:00Z",
+     "ratio": 3,
+     "kind": "split 3:1"
+    }
+   ]
+  },
+  {
+   "event": "orcl-entry",
+   "asset": "XYZ:ORCL",
+   "side": 1,
+   "step1_entry": {
+    "price": 139.16,
+    "at": "2026-09-26T23:10:53Z",
+    "basis": "published reference price"
+   },
+   "step11_entry": {
+    "at": "2026-09-27T00:00:00Z",
+    "price": 137.94
+   },
+   "entry_diff": -0.008766887036504745,
+   "horizons": {
+    "1": {
+     "step1": null,
+     "step11": -0.004567203131796371,
+     "diff": null,
+     "why": "newly resolved (pending in the step 1 snapshot)"
+    },
+    "7": {
+     "step1": 0.03129149719991964,
+     "step11": 0.031825431346962585,
+     "diff": 0.0005339341470429471,
+     "why": "entry -0.88% (reference quote vs first hourly open); exit: Corbanu tracker mark vs Hyperliquid hourly open; ORCL priced from the xyz:ORCL stand-in, step 1 marked ORCLon"
+    },
+    "30": {
+     "step1": null,
+     "step11": -0.08286211396259235,
+     "diff": null,
+     "why": "newly resolved (pending in the step 1 snapshot)"
+    }
+   },
+   "stand_in": true,
+   "adjustments": []
+  },
+  {
+   "event": "skhx-entry",
+   "asset": "XYZ:SKHX",
+   "side": 1,
+   "step1_entry": {
+    "price": 1367.5,
+    "at": "2026-09-27T21:27:41Z",
+    "basis": "published reference price"
+   },
+   "step11_entry": {
+    "at": "2026-09-27T22:00:00Z",
+    "price": 1364.9
+   },
+   "entry_diff": -0.001901279707495318,
+   "horizons": {
+    "1": {
+     "step1": -0.05638025594149898,
+     "step11": -0.05450948787456966,
+     "diff": 0.001870768066929318,
+     "why": "entry -0.19% (reference quote vs first hourly open); exit: Corbanu tracker mark vs Hyperliquid hourly open"
+    },
+    "7": {
+     "step1": 0.00351005484460698,
+     "step11": 0.005641438933255083,
+     "diff": 0.002131384088648103,
+     "why": "entry -0.19% (reference quote vs first hourly open); exit: Corbanu tracker mark vs Hyperliquid hourly open"
+    },
+    "30": {
+     "step1": null,
+     "step11": -0.24507289911348817,
+     "diff": null,
+     "why": "newly resolved (pending in the step 1 snapshot)"
+    }
+   },
+   "stand_in": false,
+   "adjustments": []
+  }
+ ]
+}

@@ -15,6 +15,7 @@ usage: python3 ingest.py URL [URL ...]
 import argparse
 import datetime as dt
 import hashlib
+import html
 import json
 import math
 import os
@@ -76,7 +77,8 @@ def to_receipt(url, data, captured_at):
     author = data["user"]["screen_name"]
     if m.group(1).lower() != author.lower():
         raise IngestError(f"post {pid} is by @{author}, not @{m.group(1)}")
-    end = (data.get("display_text_range") or [0, len(data.get("text", ""))])[1]
+    raw_text = data.get("text", "")
+    start, end = (data.get("display_text_range") or [0, len(raw_text)])[:2]
     return {
         "authorHandle": author,
         "capturedAt": captured_at,
@@ -87,7 +89,9 @@ def to_receipt(url, data, captured_at):
         "metrics": {"likes": data.get("favorite_count"), "replies": data.get("conversation_count")},
         "postedAt": created[:19] + ".000Z",
         "replyTo": data.get("in_reply_to_status_id_str"),
-        "text": data.get("text", "")[:end] if end else data.get("text", ""),
+        # the embed text is HTML-escaped ("S&amp;P") and starts with the reply's @mentions, which
+        # display_text_range excludes; X counts the range in code points, like Python slicing
+        "text": html.unescape(raw_text[start:end] if end else raw_text),
         "textTruncated": "note_tweet" in data,
         "url": f"https://x.com/{author}/status/{pid}",
     }

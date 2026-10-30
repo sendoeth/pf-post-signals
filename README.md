@@ -312,6 +312,24 @@ position page. A stats strip (positions, share in profit, average return, best c
   their URLs, changes every select in the page, checks every row field against its record file, sparkline point
   counts, links, 0 console errors / CSP violations and the phone layout.
 
+## Step 11: Corbanu and goodalexander
+
+- **Corbanu**: every trade in Corbanu's published tracker ledger (8 events; the live ledger at
+  corbanu.com/assets/portfolio/ledger.json matched the step 1 snapshot) is a position (`tools/import_corbanu.py`,
+  `records/corbanu/`), with the ledger's side, reference price, weight, venue and article kept under `trade`.
+- **Venue pricing**: Hyperliquid's public candle API for the HIP-3 `xyz` stock perps the trades are published on.
+  `data/corporate_actions.json` back-adjusts the 3:1 Kioxia split of 2026-09-28 (Corbanu's ledger uses the same
+  post-split basis: its reference price equals our entry exactly); any other hour-to-hour jump over 40% stops
+  resolution. ORCLon has no public hourly candles and the Hyperliquid spot token named ORCL is unrelated, so the ORCL
+  trade is priced from the `xyz:ORCL` perp and labelled **stand-in** on every page.
+- **goodalexander**: 4 posts that state a position, through the step 6 pipeline (receipts in
+  `sources/goodalexander/receipts`); 2 assets by the detector, 2 manual with the reason stored in the record
+  (`asset_choice`). Ingest now decodes HTML entities (`S&amp;P`) and drops reply @mentions.
+- **Per-author summary** on the leaderboard (calls, share in profit, average return, best, worst) with the step 3
+  sample-size flags (under 10 calls: insufficient sample; under 30: unreliable sample).
+- `tools/compare_corbanu.py` compares every Corbanu trade with step 1 and explains each difference
+  (`data/corbanu_vs_step1.json`).
+
 ## Reproduce
 
 ```bash

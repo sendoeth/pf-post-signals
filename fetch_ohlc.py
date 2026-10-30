@@ -24,6 +24,9 @@ OUT = os.path.join(HERE, "web", "data", "ohlc")
 
 def fetch(source, symbol, since):
     start = resolve.parse(since).replace(minute=0, second=0, microsecond=0)
+    if source == "hyperliquid":
+        return resolve.adjust_for_actions(symbol, [[resolve.iso(c["t"] / 1000), float(c["o"]), float(c["h"]), float(c["l"]), float(c["c"])]
+                                                   for c in resolve.hyperliquid_candles(symbol, start)])
     if source == "binance":
         out, ms = [], int(start.timestamp() * 1000)
         while True:

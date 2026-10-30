@@ -67,11 +67,12 @@
    "properties": {
     "id": {
      "type": "string",
-     "pattern": "^\\d+$"
+     "pattern": "^([0-9]+|corbanu:[a-z0-9-]{1,48})$",
+     "description": "X post id, or corbanu:<ledger event id> for a Corbanu published trade"
     },
     "url": {
      "type": "string",
-     "pattern": "^https://x\\.com/[A-Za-z0-9_]{1,15}/status/\\d+$"
+     "pattern": "^(https://x\\.com/[A-Za-z0-9_]{1,15}/status/\\d+|https://corbanu\\.com/posts/[a-z0-9-]{1,120}/)$"
     },
     "author": {
      "type": "string",
@@ -83,7 +84,8 @@
     "posted_at_source": {
      "enum": [
       "receipt",
-      "snowflake"
+      "snowflake",
+      "ledger"
      ]
     },
     "text": {
@@ -100,6 +102,13 @@
       "null"
      ],
      "pattern": "^[0-9a-f]{64}$"
+    },
+    "source": {
+     "enum": [
+      "x",
+      "corbanu"
+     ],
+     "description": "absent = x"
     }
    }
   },
@@ -120,15 +129,62 @@
     "source": {
      "enum": [
       "binance",
-      "yahoo"
+      "yahoo",
+      "hyperliquid"
      ]
     },
     "symbol": {
      "type": "string",
-     "pattern": "^[A-Za-z0-9=.^-]{1,20}$"
+     "pattern": "^[A-Za-z0-9=.^:-]{1,20}$"
     },
     "price_field": {
      "const": "open"
+    },
+    "stand_in": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "for",
+      "reason"
+     ],
+     "properties": {
+      "for": {
+       "type": "string",
+       "maxLength": 200
+      },
+      "reason": {
+       "type": "string",
+       "maxLength": 600
+      }
+     },
+     "description": "set when the priced instrument stands in for the one actually published; shown on the page"
+    },
+    "adjustments": {
+     "type": "array",
+     "maxItems": 10,
+     "items": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+       "at",
+       "ratio",
+       "kind"
+      ],
+      "properties": {
+       "at": {
+        "$ref": "#/$defs/ts"
+       },
+       "ratio": {
+        "type": "number",
+        "exclusiveMinimum": 0
+       },
+       "kind": {
+        "type": "string",
+        "maxLength": 60
+       }
+      }
+     },
+     "description": "corporate actions applied to the price series (data/corporate_actions.json); shown on the page"
     }
    }
   },
@@ -281,6 +337,94 @@
       4
      ],
      "description": "tolerance applied to this record's entry and exits: 2 for 24/7 assets, 4 for exchange-hours assets (a post or horizon while the market is closed takes the next session open). Absent on records written before step 6, which used 2."
+    }
+   }
+  },
+  "trade": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "ledger_event_id",
+    "reference_price",
+    "target_weight_pct",
+    "article_url",
+    "source_sha256",
+    "price_convention"
+   ],
+   "description": "a Corbanu published trade: the ledger's own values, kept next to our resolution",
+   "properties": {
+    "ledger_event_id": {
+     "type": "string",
+     "pattern": "^[a-z0-9-]{1,48}$"
+    },
+    "position_id": {
+     "type": "string",
+     "pattern": "^[a-z0-9-]{1,48}$"
+    },
+    "reference_price": {
+     "type": "number",
+     "exclusiveMinimum": 0
+    },
+    "target_weight_pct": {
+     "type": "number"
+    },
+    "article_url": {
+     "type": "string",
+     "pattern": "^https://corbanu\\.com/posts/[a-z0-9-]{1,120}/$"
+    },
+    "source_sha256": {
+     "type": "string",
+     "pattern": "^[0-9a-f]{64}$"
+    },
+    "price_convention": {
+     "type": "string",
+     "maxLength": 100
+    },
+    "venue": {
+     "type": "string",
+     "maxLength": 120
+    },
+    "pair_id": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "maxLength": 48
+    },
+    "ledger_sha256": {
+     "type": "string",
+     "pattern": "^[0-9a-f]{64}$"
+    }
+   }
+  },
+  "asset_choice": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "method"
+   ],
+   "properties": {
+    "method": {
+     "enum": [
+      "detector",
+      "manual",
+      "ledger"
+     ]
+    },
+    "terms": {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "maxLength": 40
+     },
+     "maxItems": 20
+    },
+    "reason": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "maxLength": 600
     }
    }
   }

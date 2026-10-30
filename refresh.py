@@ -110,9 +110,20 @@ def main():
     news = []
     for rel, old in olds:
         try:
-            post = resolve.load_post(url=old["post"]["url"], receipt=receipt_for(old["post"]["id"]))
+            if old["post"].get("source", "x") == "x":
+                post = resolve.load_post(url=old["post"]["url"], receipt=receipt_for(old["post"]["id"]))
+                if old["post"].get("source"):
+                    post["source"] = old["post"]["source"]
+            else:                                       # ledger trades: the published post itself never changes
+                post = dict(old["post"])
             asset = resolve.asset_info(old["asset"]["name"])
+            for k in ("stand_in", "adjustments"):        # labels the page shows
+                if k in old["asset"]:
+                    asset[k] = old["asset"][k]
             new = resolve.resolve(post, asset, shared[asset["name"]], prices.label, old.get("side"))
+            for k in ("trade", "asset_choice"):          # the ledger's own values and how the asset was chosen
+                if k in old:
+                    new[k] = old[k]
             resolve.check_record(v, new)
             problems = build_chart.record_problems(v, new)
             for t, p, what in frozen_bars(old):           # frozen values really are unchanged

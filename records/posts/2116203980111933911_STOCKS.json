@@ -1,0 +1,85 @@
+{
+ "schema": "post_price.v1",
+ "post": {
+  "id": "2116203980111933911",
+  "url": "https://x.com/goodalexander/status/2116203980111933911",
+  "author": "goodalexander",
+  "posted_at": "2026-10-30T16:22:00Z",
+  "posted_at_source": "receipt",
+  "text": "Golden retriever version 🐕\n\nShort S&P 500 futures. Intel just flipped AI spending from \"paid for by cash flow\" to \"needs debt and stock sales.\" Memory prices are wrecking PC and consumer demand. Oil up and EURCHF down say Iran and Ukraine are heating up into the midterms.\n\nNot",
+  "receipt_sha256": "dac1f9d52bc7c0b899ef19b638f8620254e511ee9cb4db938a7dd7489543d4e4"
+ },
+ "asset": {
+  "name": "STOCKS",
+  "source": "yahoo",
+  "symbol": "SPY",
+  "price_field": "open"
+ },
+ "side": -1,
+ "status": "partial",
+ "entry": {
+  "at": "2026-10-30T16:30:00Z",
+  "price": 757.56
+ },
+ "latest": {
+  "at": "2026-10-30T20:00:00Z",
+  "price": 755.72
+ },
+ "change_since_post": -0.002428850520090675,
+ "exits": {
+  "1": null,
+  "7": null,
+  "30": null
+ },
+ "moves": {
+  "1": null,
+  "7": null,
+  "30": null
+ },
+ "unresolved": {
+  "1": "horizon not yet reached",
+  "7": "horizon not yet reached",
+  "30": "horizon not yet reached"
+ },
+ "series": [
+  [
+   "2026-10-30T16:30:00Z",
+   757.56
+  ],
+  [
+   "2026-10-30T17:30:00Z",
+   755.58
+  ],
+  [
+   "2026-10-30T18:30:00Z",
+   751.48
+  ],
+  [
+   "2026-10-30T19:30:00Z",
+   752.85
+  ],
+  [
+   "2026-10-30T20:00:00Z",
+   755.72
+  ]
+ ],
+ "resolved_with": {
+  "prices": "live:binance+yahoo",
+  "last_bar_at": "2026-10-30T20:00:00Z",
+  "max_lag_days": 2,
+  "session_lag_days": 4
+ },
+ "signed_returns": {
+  "1": null,
+  "7": null,
+  "30": null
+ },
+ "asset_choice": {
+  "method": "manual",
+  "terms": [
+   "s&p 500",
+   "oil"
+  ],
+  "reason": "the post opens with 'Short S&P 500 futures'; oil is mentioned only as macro context ('Oil up and EURCHF down say Iran and Ukraine are heating up'), not as a position"
+ }
+}

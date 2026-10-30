@@ -84,3 +84,16 @@ html[data-framed] body { display: none; }
   .status { right: 12px; }
 }
 @media (max-width: 560px) { .stat strong { white-space: normal; font-size: 16px; } }
+.authors { margin-bottom: 12px; overflow-x: auto; }
+#authors { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+#authors caption { text-align: left; font-weight: 700; padding: 10px 14px 4px; font-size: 14px; }
+#authors .cap-note { font-weight: 400; color: var(--muted); font-size: 12px; }
+#authors th { text-align: left; color: var(--muted); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; padding: 6px 14px; }
+#authors td { padding: 7px 14px; border-top: 1px solid var(--border); font-variant-numeric: tabular-nums; white-space: nowrap; }
+#authors tr.selected td { background: var(--page); }
+#authors .a-who { display: flex; align-items: center; gap: 8px; font-weight: 600; }
+#authors .a-who .avatar { width: 24px; height: 24px; font-size: 10px; }
+.flag { font-size: 11.5px; font-weight: 600; }
+.flag.warn { color: var(--muted); } .flag.ok { color: var(--ink-2); }
+.tag { font: 600 10px/1 ui-monospace, monospace; padding: 3px 5px; border-radius: 5px; border: 1px dashed var(--axis); color: var(--muted); cursor: help; }
+@media (max-width: 560px) { #authors td, #authors th { padding: 6px 8px; } }

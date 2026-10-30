@@ -27,10 +27,13 @@ def main():
     ap.add_argument("urls", nargs="+")
     ap.add_argument("--asset", help="manual asset, overrides the detector (one url at a time)")
     ap.add_argument("--side", help="long or short, if the post states one")
+    ap.add_argument("--reason", help="why the asset was chosen by hand (required with --asset; stored in the record)")
     ap.add_argument("--out", default=os.path.join(HERE, "records", "posts"))
     a = ap.parse_args()
     if a.asset and len(a.urls) > 1:
         ap.error("--asset applies to one url at a time")
+    if a.asset and not a.reason:
+        ap.error("--asset needs --reason: a manual asset choice is always explained")
     prices, v, failed = resolve.Prices(), resolve.validator(), 0
     for url in a.urls:
         try:
@@ -46,7 +49,10 @@ def main():
             print(f"STOP {url}: needs review ({d['reason']}); rerun with --asset to resolve it")
             failed += 1
             continue
-        records, _, errors = resolve.run([{"receipt": path, "asset": d["asset"], "side": a.side}], prices, a.out, v)
+        choice = {"method": "manual" if d["status"] == "manual" else "detector",
+                  "terms": [m["term"] for m in detect.detect(receipt.get("text"))["matched"]],
+                  "reason": a.reason if d["status"] == "manual" else None}
+        records, _, errors = resolve.run([{"receipt": path, "asset": d["asset"], "side": a.side, "asset_choice": choice}], prices, a.out, v)
         for err in errors:
             print(f"STOP {url}: {err}")
             failed += 1

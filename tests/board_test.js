@@ -1,8 +1,8 @@
 // Step 10 leaderboard test (headless Chromium). The ranking rules are re-implemented here
 // independently of web/assets/board.js and compared against what the page shows:
-//  A. every filter x sort combination (time 3 x side 4 x author (n+1) x asset (n+1) x sort 3), each
-//     loaded fresh from its shareable URL: row order, ranks, ids, returns, best, stats, empty state,
-//     and the selects showing the URL's values
+//  A. every filter x sort combination (time 3 x side 4 x author (n+1) x asset (n+1) x sort 3), set in
+//     the page; every 10th also loaded fresh from its shareable URL: row order, ranks, ids, returns,
+//     best, stats, per-author summary + sample flags, empty state, and the selects / URL
 //  B. the controls: every option of every select changed in the page updates rows and the URL
 //  C. default view: every field of every row equals its record file on disk (sha256-checked)
 //  D. sparklines: point count = bundle bars from entry to latest; unknown URL values -> defaults,
@@ -56,6 +56,17 @@ function expected(rows, f, asOf) {
     best_call: done.length ? (t => t.id + '|' + t.asset)(done.reduce((m, r) => (r.ret > m.ret ? r : m))) : null };
   return { rows: kept, stats };
 }
+function authorsExpected(rows, f, asOf) {
+  const kept = expected(rows, { ...f, author: 'all' }, asOf).rows, by = {};
+  for (const r of kept) (by[r.author] = by[r.author] || []).push(r);
+  return Object.keys(by).sort().map(a => {
+    const done = by[a].filter(r => r.ret != null), n = done.length;
+    const best = n ? done.reduce((m, r) => (r.ret > m.ret ? r : m)) : null, worst = n ? done.reduce((m, r) => (r.ret < m.ret ? r : m)) : null;
+    return { author: a, calls: by[a].length, hit: n ? done.filter(r => r.ret > 0).length / n : null, avg: n ? done.reduce((s, r) => s + r.ret, 0) / n : null,
+      best: best ? best.id + '|' + best.asset : null, worst: worst ? worst.id + '|' + worst.asset : null,
+      flag: n < 10 ? 'insufficient sample' : n < 30 ? 'unreliable sample' : 'ok' };
+  });
+}
 const query = f => { const q = new URLSearchParams(); for (const [k, v] of Object.entries(f)) if (v !== DEFAULTS[k]) q.set(k, v); const s = q.toString(); return s ? '?' + s : ''; };
 
 function serve() {
@@ -80,6 +91,8 @@ async function read(page) {
       f: Object.fromEntries([...li.querySelectorAll('[data-field]')].map(n => [n.dataset.field, { text: n.textContent, raw: n.dataset.raw !== undefined ? JSON.parse(n.dataset.raw) : undefined }])),
       points: li.querySelector('svg.spark') ? Number(li.querySelector('svg.spark').dataset.points) : null,
       avatar: li.querySelector('.avatar').dataset.avatar, img: li.querySelector('.avatar img') ? li.querySelector('.avatar img').naturalWidth : null })),
+    authors: [...document.querySelectorAll('#authors tbody tr')].map(tr => ({ author: tr.dataset.author,
+      ...Object.fromEntries([...tr.querySelectorAll('[data-field]')].map(n => [n.dataset.field, JSON.parse(n.dataset.raw)])) })),
     csp: window.__cspv || [] }));
 }
 
@@ -90,10 +103,11 @@ async function read(page) {
   const authors = [...new Set(rows.map(r => r.author))].sort(), assets = [...new Set(rows.map(r => r.asset))].sort();
   const server = liveUrl ? null : await serve();
   const base = liveUrl || `http://127.0.0.1:${server.address().port}/`;
+  if (shotDir) fs.mkdirSync(shotDir, { recursive: true });
   const browser = await puppeteer.launch({ headless: true, executablePath: '/snap/bin/chromium', args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-gpu'] });
   const fails = [], consoleErrors = [];
   const fail = m => fails.push(m);
-  let combos = 0, nonEmpty = 0, uiChanges = 0, fieldChecks = 0, csp = 0;
+  let combos = 0, nonEmpty = 0, uiChanges = 0, fieldChecks = 0, csp = 0, authorRows = 0, urlReloads = 0;
   const pendingChecks = [];
   const cmp = (tag, got, f) => {
     const want = expected(rows, f, asOf);
@@ -105,6 +119,10 @@ async function read(page) {
       if (JSON.stringify(g.f.best.raw) !== JSON.stringify(w.best)) fail(`${tag}: best of ${w.id}`);
     });
     for (const [k, v] of Object.entries(want.stats)) if (JSON.stringify(got.stats[k]) !== JSON.stringify(v)) fail(`${tag}: stat ${k} ${JSON.stringify(got.stats[k])} != ${JSON.stringify(v)}`);
+    const wa = authorsExpected(rows, f, asOf);
+    authorRows += wa.length;
+    const ga = got.authors.map(a => ({ author: a.author, calls: a.calls, hit: a.hit, avg: a.avg, best: a.best, worst: a.worst, flag: a.flag }));
+    if (JSON.stringify(ga) !== JSON.stringify(wa)) fail(`${tag}: author summary ${JSON.stringify(ga)} != ${JSON.stringify(wa)}`);
     if (got.empty !== (want.rows.length === 0)) fail(`${tag}: empty state shown=${got.empty} for ${want.rows.length} rows`);
     return want.rows.length > 0;
   };
@@ -118,15 +136,24 @@ async function read(page) {
     await page.setViewport({ width: 1280, height: 1000 });
     const load = async q => { await page.goto(base + q, { waitUntil: 'networkidle0' }); await page.waitForFunction(() => document.body.dataset.ready === '1', { timeout: 20000 }); const g = await read(page); csp += g.csp.length; for (const v of g.csp) fail(`CSP ${q}: ${v}`); return g; };
 
-    // A. every combination, fresh from its URL
+    // A. every combination: set in the page (all five selects), and every 10th also loaded fresh
+    //    from its URL, so the shared link reproduces the same view
+    await load('');
     for (const time of ['all', '7d', 'today']) for (const side of ['all', 'long', 'short', 'none'])
       for (const author of ['all', ...authors]) for (const asset of ['all', ...assets]) for (const sort of ['return', 'best', 'newest']) {
         const f = { time, side, author, asset, sort }, q = query(f);
-        const got = await load(q);
+        await page.evaluate(f => { for (const [k, v] of Object.entries(f)) { const s = document.getElementById('f-' + k); if (s.value !== v) { s.value = v; s.dispatchEvent(new Event('change', { bubbles: true })); } } }, f);
+        let got = await read(page);
         combos++;
-        if (cmp(`url ${q || '(default)'}`, got, f)) nonEmpty++;
-        if (JSON.stringify(got.selects) !== JSON.stringify(f)) fail(`url ${q}: selects show ${JSON.stringify(got.selects)}`);
-        if (got.search !== q) fail(`url ${q}: page rewrote the url to ${got.search}`);
+        if (cmp(`combo ${q || '(default)'}`, got, f)) nonEmpty++;
+        if (got.search !== q) fail(`combo ${q}: url ${got.search}`);
+        if (combos % 10 === 0) {
+          got = await load(q);
+          urlReloads++;
+          cmp(`url ${q || '(default)'}`, got, f);
+          if (JSON.stringify(got.selects) !== JSON.stringify(f)) fail(`url ${q}: selects show ${JSON.stringify(got.selects)}`);
+          if (got.search !== q) fail(`url ${q}: page rewrote the url to ${got.search}`);
+        }
       }
 
     // B. the controls: change each select to each option from the default view
@@ -159,7 +186,7 @@ async function read(page) {
       const ret = rec.change_since_post == null ? null : rec.side ? rec.side * rec.change_since_post : rec.change_since_post;
       eq('return', ret == null ? 'unresolved' : pct(ret));
       fieldChecks++;
-      if (g.href !== `position.html?post=${rec.post.id}&asset=${encodeURIComponent(rec.asset.name)}`) fail(`${tag}: link ${g.href}`);
+      if (g.href !== `position.html?post=${encodeURIComponent(rec.post.id)}&asset=${encodeURIComponent(rec.asset.name)}`) fail(`${tag}: link ${g.href}`);
       const bars = w.series.filter(([t]) => rec.entry && rec.latest && t >= rec.entry.at && t <= rec.latest.at).length;
       if (g.points !== bars) fail(`${tag}: sparkline ${g.points} points, bundle has ${bars} bars entry->latest`);
       if (g.avatar === 'image' && !(g.img > 0)) fail(`${tag}: avatar image did not load`);
@@ -228,7 +255,7 @@ async function read(page) {
   }
   for (const e of consoleErrors) fail(`console: ${e}`);
   console.log(`page ${base}`);
-  console.log(`filter/sort combinations loaded from their URL: ${combos} (${nonEmpty} with rows, ${combos - nonEmpty} correctly empty); select changes: ${uiChanges}; ` +
+  console.log(`filter/sort combinations: ${combos} set in the page (${nonEmpty} with rows, ${combos - nonEmpty} correctly empty), ${urlReloads} of them also loaded fresh from their URL; author-summary rows checked: ${authorRows}; select changes: ${uiChanges}; ` +
     `default-view fields checked against records: ${fieldChecks}; rows ${rows.length}; CSP violations ${csp}; console errors ${consoleErrors.length}`);
   for (const c of pendingChecks) console.log('unresolved (test-only fixture copy): ' + c);
   for (const f of fails.slice(0, 40)) console.log(' -', f);

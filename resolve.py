@@ -48,7 +48,41 @@ ASSETS = {
     "STOCKS": ("yahoo", "SPY"), "SPY": ("yahoo", "SPY"), "QQQ": ("yahoo", "QQQ"),
     "COPX": ("yahoo", "COPX"), "SILVER": ("yahoo", "SI=F"), "GOLD": ("yahoo", "GC=F"),
     "COPPER": ("yahoo", "HG=F"), "OIL": ("yahoo", "CL=F"),
+    # Hyperliquid HIP-3 stock perps (the "xyz" dex, TradeXYZ), where Corbanu publishes its trades
+    "XYZ:AAPL": ("hyperliquid", "xyz:AAPL"), "XYZ:CBRS": ("hyperliquid", "xyz:CBRS"),
+    "XYZ:KIOXIA": ("hyperliquid", "xyz:KIOXIA"), "XYZ:CXMT": ("hyperliquid", "xyz:CXMT"),
+    "XYZ:SKHX": ("hyperliquid", "xyz:SKHX"), "XYZ:JP225": ("hyperliquid", "xyz:JP225"),
+    "XYZ:ORCL": ("hyperliquid", "xyz:ORCL"),
 }
+HYPERLIQUID_INFO = "https://api.hyperliquid.xyz/info"
+CORPORATE_ACTIONS = os.path.join(HERE, "data", "corporate_actions.json")
+MAX_HOURLY_JUMP = 0.40   # larger unexplained hour-to-hour moves stop resolution (likely an unlisted split)
+
+
+def corporate_actions(symbol):
+    if not os.path.exists(CORPORATE_ACTIONS):
+        return []
+    with open(CORPORATE_ACTIONS) as f:
+        return json.load(f)["actions"].get(symbol, [])
+
+
+def adjust_for_actions(symbol, bars):
+    """bars: [[iso, open, (high, low, close)...]] -> split-adjusted to the latest basis, then checked
+    for unexplained discontinuities."""
+    acts = corporate_actions(symbol)
+    out = []
+    for b in bars:
+        f = 1.0
+        for a in acts:
+            if b[0] < a["at"]:
+                f *= a["ratio"]
+        out.append([b[0]] + [x / f for x in b[1:]] if f != 1.0 else list(b))
+    for i in range(1, len(out)):
+        r = out[i][1] / out[i - 1][1]
+        if not (1 - MAX_HOURLY_JUMP) < r < 1 / (1 - MAX_HOURLY_JUMP):
+            raise ResolveError(f"{symbol}: unexplained jump {out[i-1][1]} -> {out[i][1]} between {out[i-1][0]} and {out[i][0]} "
+                               "(add the corporate action to data/corporate_actions.json, or refuse the instrument)")
+    return out
 
 
 class ResolveError(Exception):
@@ -66,6 +100,9 @@ class DuplicatePostError(ResolveError):
 def asset_info(name):
     """'BTC' -> known map; 'binance:XRPUSDT' / 'yahoo:NVDA' -> explicit source; anything else fails."""
     raw = name.strip()
+    if raw.upper() in ASSETS:
+        src, sym = ASSETS[raw.upper()]
+        return {"name": raw.upper(), "source": src, "symbol": sym, "price_field": "open"}
     if ":" in raw:
         src, sym = raw.split(":", 1)
         src = src.lower()
@@ -138,9 +175,34 @@ def get_json(url, tries=3):
     raise last
 
 
+def hyperliquid_candles(coin, start):
+    """Hourly candles from Hyperliquid's public info API (candleSnapshot, max 5000 per call)."""
+    import time
+    out, ms, end = [], int(start.timestamp() * 1000), int(time.time() * 1000)
+    while ms < end:
+        body = json.dumps({"type": "candleSnapshot", "req": {"coin": coin, "interval": "1h", "startTime": ms, "endTime": end}}).encode()
+        req = urllib.request.Request(HYPERLIQUID_INFO, data=body, headers={"Content-Type": "application/json", "User-Agent": "pf-post-signals"})
+        try:
+            with urllib.request.urlopen(req, timeout=60) as resp:
+                rows = json.load(resp)
+        except urllib.error.HTTPError as e:
+            raise UnknownAssetError(f"no hyperliquid data for {coin} (HTTP {e.code})") from e
+        if not rows:
+            break
+        out += rows
+        if len(rows) < 5000:
+            break
+        ms = rows[-1]["t"] + 3_600_000
+    if not out:
+        raise UnknownAssetError(f"no hyperliquid candles for {coin}")
+    return out
+
+
 def fetch_series(asset, since):
     """Hourly [iso, open] bars from the hour containing `since` to now."""
     start = parse(since).replace(minute=0, second=0, microsecond=0)
+    if asset["source"] == "hyperliquid":
+        return adjust_for_actions(asset["symbol"], [[iso(c["t"] / 1000), float(c["o"])] for c in hyperliquid_candles(asset["symbol"], start)])
     if asset["source"] == "binance":
         out, ms = [], int(start.timestamp() * 1000)
         while True:
@@ -289,6 +351,8 @@ def run(items, prices, out_dir=None, v=None):
                 raise DuplicatePostError(f"duplicate post {post['id']} for {asset['name']} (item {n}), kept the first")
             seen.add(key)
             rec = resolve(post, asset, prices.series(asset, post["posted_at"]), prices.label, side_of(it.get("side")))
+            if it.get("asset_choice"):
+                rec["asset_choice"] = it["asset_choice"]
             check_record(v, rec)
         except DuplicatePostError as e:
             dupes.append(str(e))

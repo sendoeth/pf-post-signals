@@ -89,7 +89,8 @@ function render(asset, p, ohlc, avatars, bundle) {
   name.append(el("strong", { "data-field": "author" }, "@" + p.post.author));
   const meta = el("span", { class: "meta" });
   meta.append(el("span", { "data-field": "posted_at", "data-raw": JSON.stringify(p.post.posted_at) }, fmtTime(p.post.posted_at)), " · ");
-  meta.append(el("a", { href: p.post.url, target: "_blank", rel: "noopener noreferrer", "data-field": "url" }, "open on X"));
+  meta.append(el("a", { href: p.post.url, target: "_blank", rel: "noopener noreferrer", "data-field": "url" },
+    p.post.source === "corbanu" ? "read the article" : "open on X"));
   name.append(meta);
   who.append(name);
   post.append(who);
@@ -160,6 +161,15 @@ function render(asset, p, ohlc, avatars, bundle) {
     const v = p.signed_returns[h];
     field(dl, "signed_" + h, h + "d for the call", v == null ? "unresolved · " + p.unresolved[h] : fmtPct(v), v, signClass(v));
   }
+  if (p.asset.stand_in) field(dl, "stand_in", "Priced via", `stand-in for ${p.asset.stand_in.for}. ${p.asset.stand_in.reason}`, p.asset.stand_in);
+  if (p.asset.adjustments && p.asset.adjustments.length)
+    field(dl, "adjustments", "Adjusted", p.asset.adjustments.map(a => `${a.kind} on ${fmtTime(a.at)} (earlier prices divided by ${a.ratio})`).join("; "), p.asset.adjustments);
+  if (p.trade) {
+    field(dl, "trade", "Published trade",
+      `reference ${fmtPrice(p.trade.reference_price)} · weight ${p.trade.target_weight_pct > 0 ? "+" : ""}${p.trade.target_weight_pct}% · ${p.trade.venue}`, p.trade);
+  }
+  if (p.asset_choice) field(dl, "asset_choice", "Asset chosen by",
+    p.asset_choice.method + (p.asset_choice.reason ? ": " + p.asset_choice.reason : p.asset_choice.terms && p.asset_choice.terms.length ? " (" + p.asset_choice.terms.join(", ") + ")" : ""), p.asset_choice);
   recap.append(dl);
   recap.append(el("p", { class: "notes", "data-field": "record_file" }, `Record ${p.record_file} · sha256 ${p.record_sha256}`));
   app.append(recap);

@@ -48,6 +48,12 @@ class Ingest(unittest.TestCase):
         self.assertEqual(post["posted_at"], resolve.snowflake_time(PID))
         self.assertEqual(post["posted_at_source"], "receipt")
 
+    def test_text_is_unescaped_and_reply_mentions_dropped(self):
+        text = "@someone @grok Short S&amp;P 500 futures &gt; cash"
+        _, r, _ = self.run_ingest(payload(text=text, display_text_range=[15, len(text)]))
+        self.assertEqual(r["text"], "Short S&P 500 futures > cash")
+        self.assertEqual(detect.detect(r["text"])["asset"], "STOCKS")
+
     def test_long_post_is_marked_truncated(self):
         _, r, _ = self.run_ingest(payload(note_tweet={"id": "x"}))
         self.assertTrue(r["textTruncated"])

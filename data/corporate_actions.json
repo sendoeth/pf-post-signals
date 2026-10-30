@@ -1,0 +1,10 @@
+{
+ "schema": "pf-post-signals.corporate_actions.v1",
+ "note": "Hyperliquid xyz perps are relisted on the new basis after a stock split. Bars before 'at' are divided by 'ratio' so the series is continuous on the post-split basis (the basis Corbanu's ledger uses). A jump over 40% between hourly bars that is not listed here stops resolution.",
+ "actions": {
+  "xyz:KIOXIA": [
+   {"at": "2026-09-28T08:00:00Z", "ratio": 3, "kind": "split 3:1",
+    "evidence": "Hyperliquid xyz:KIOXIA hourly open 340.79 at 2026-09-28T07:00Z, 114.93 at 08:00Z (x0.337); Corbanu ledger: 'post-split quote basis across venue contract relisting', reference price 109.87666... = 329.63 / 3"}
+  ]
+ }
+}
