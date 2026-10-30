@@ -65,16 +65,54 @@ def main():
     for f in files:
         with open(f) as fh:
             olds.append((os.path.relpath(f, HERE), json.load(fh)))
+    seen = {}
+    for rel, old in olds:                    # one record per post and asset: two copies could freeze different values
+        key = (old["post"]["id"], old["asset"]["name"])
+        if key in seen:
+            print(f"FAIL duplicate record for post {key[0]} {key[1]}: {seen[key]} and {rel}; keep one")
+            sys.exit(1)
+        seen[key] = rel
     olds.sort(key=lambda x: x[1]["post"]["posted_at"])      # earliest first: one fetch per asset
     prices = resolve.Prices()
     revisions, changes, failures = [], [], []
+    # One shared series per asset, with the frozen bars of ALL its records written back once, so
+    # every record of an asset is resolved against the same bars and the chart line stays one line.
+    shared = {}
+    for name in sorted({old["asset"]["name"] for _, old in olds}):
+        recs = [(rel, old) for rel, old in olds if old["asset"]["name"] == name]
+        try:
+            asset = resolve.asset_info(name)
+            fetched = prices.series(asset, recs[0][1]["post"]["posted_at"])
+        except (resolve.ResolveError, OSError, ValueError, KeyError) as e:
+            failures.append(f"{name}: fetch failed: {e}")
+            continue
+        frozen = {}
+        for rel, old in recs:
+            for t, p, what in frozen_bars(old):
+                if t in frozen and frozen[t][0] != p:
+                    failures.append(f"{name}: records freeze different prices for {t}: {frozen[t][0]} ({frozen[t][1]}) vs {p} ({rel})")
+                frozen.setdefault(t, (p, rel))
+        bars = {t: p for t, p in fetched}
+        for rel, old in recs:                      # log per record that froze a revised / missing bar
+            for t, p, what in frozen_bars(old):
+                if bars.get(t) != p:
+                    revisions.append({"record": rel, "bar": t, "what": what, "frozen": p, "fetched": bars.get(t),
+                                      "note": "bar missing from the provider's series; frozen value kept" if t not in bars
+                                      else "provider revision; frozen value kept"})
+        for t, (p, _) in frozen.items():
+            bars[t] = p
+        shared[name] = [list(b) for b in sorted(bars.items())]
+    if failures:
+        for x in failures:
+            print("FAIL", x)
+        print(f"refresh: {len(failures)} failures; nothing written")
+        sys.exit(1)
+    news = []
     for rel, old in olds:
         try:
             post = resolve.load_post(url=old["post"]["url"], receipt=receipt_for(old["post"]["id"]))
             asset = resolve.asset_info(old["asset"]["name"])
-            series = prices.series(asset, post["posted_at"])
-            series = patched(series, frozen_bars(old), revisions, rel)
-            new = resolve.resolve(post, asset, [list(b) for b in series], prices.label, old.get("side"))
+            new = resolve.resolve(post, asset, shared[asset["name"]], prices.label, old.get("side"))
             resolve.check_record(v, new)
             problems = build_chart.record_problems(v, new)
             for t, p, what in frozen_bars(old):           # frozen values really are unchanged
@@ -87,6 +125,13 @@ def main():
         except (resolve.ResolveError, OSError, ValueError, KeyError) as e:
             failures.append(f"{rel}: {e}")
             continue
+        news.append((rel, old, new))
+    if failures:
+        for x in failures:
+            print("FAIL", x)
+        print(f"refresh: {len(failures)} failures; nothing written")
+        sys.exit(1)
+    for rel, old, new in news:
         filled = [h for h in HORIZONS if old["moves"].get(h) is None and new["moves"].get(h) is not None]
         changes.append({"record": rel, "post_id": new["post"]["id"], "asset": new["asset"]["name"],
                         "latest_before": old.get("latest"), "latest_after": new["latest"],

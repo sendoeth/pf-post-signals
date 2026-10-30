@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Step 5 record-to-card check (data level): web/data/charts.json must equal the record files.
 
-- every records/**/*.json is accounted for exactly once: drawn, superseded or refused
+- every records/**/*.json is accounted for exactly once: drawn, superseded or refused, and a
+  refused real record is a failure (a refresh that drops a post from the chart must not ship)
 - every drawn post equals its record file field for field (the record minus its series), and the
   record file's sha256 matches the one the card shows
 - every bar of every drawn record is on its asset's price line with the same price
@@ -26,6 +27,8 @@ seen = drawn + [s["file"] for s in bundle["superseded"]] + [r["file"] for r in b
 for f in files:
     if seen.count(f) != 1:
         fails.append(f"{f}: accounted for {seen.count(f)} times")
+for r in bundle["refused"]:   # every real record must be drawn (or superseded by a newer copy)
+    fails.append(f"{r['file']}: refused from the chart: {'; '.join(r['reasons'])[:200]}")
 if bundle["records_scanned"] != len(files):
     fails.append(f"records_scanned {bundle['records_scanned']} != {len(files)} files")
 
