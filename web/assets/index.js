@@ -8,6 +8,7 @@ function fmtPct(x) {
   const sign = x > 0 ? "+" : x < 0 ? "-" : "";
   return sign + (Math.abs(x) * 100).toFixed(2) + "%";
 }
+function signClass(x) { return x == null ? "unresolved" : x > 0 ? "gain" : x < 0 ? "loss" : ""; }
 function fmtPrice(p) { return p.toLocaleString("en-US", { maximumFractionDigits: 8 }); }
 function fmtTime(iso) { return iso.slice(0, 10) + " " + iso.slice(11, 16) + " UTC"; }
 function direction(post) {
@@ -163,14 +164,14 @@ function card(p) {
   field(dl, "latest", "Latest", p.latest ? `${fmtPrice(p.latest.price)} @ ${fmtTime(p.latest.at)}` : "no bar yet", p.latest);
   const dir = direction(p);
   field(dl, "change_since_post", "Since post", p.change_since_post == null ? "unresolved" : fmtPct(p.change_since_post),
-    p.change_since_post, p.change_since_post == null ? "unresolved" : dir === "up" ? "dir-up" : dir === "down" ? "dir-down" : "");
+    p.change_since_post, signClass(p.change_since_post));
   for (const h of HORIZONS) {
     const v = p.moves[h];
-    field(dl, "move_" + h, h + "d move", v == null ? "unresolved · " + p.unresolved[h] : fmtPct(v), v, v == null ? "unresolved" : "");
+    field(dl, "move_" + h, h + "d move", v == null ? "unresolved · " + p.unresolved[h] : fmtPct(v), v, signClass(v));
   }
   if (p.signed_returns) for (const h of HORIZONS) {
     const v = p.signed_returns[h];
-    field(dl, "signed_" + h, h + "d for the call", v == null ? "unresolved · " + p.unresolved[h] : fmtPct(v), v, v == null ? "unresolved" : "");
+    field(dl, "signed_" + h, h + "d for the call", v == null ? "unresolved · " + p.unresolved[h] : fmtPct(v), v, signClass(v));
   }
   c.append(dl);
   c.append(el("p", null, ""), el("a", { class: "open-position", href: positionUrl(p), "data-field": "position_url" }, "Open position page →"));
@@ -197,8 +198,8 @@ function table() {
     tr.append(first, el("td", null, "@" + p.post.author),
       el("td", null, p.side === 1 ? "long" : p.side === -1 ? "short" : "–"),
       el("td", null, p.entry ? fmtPrice(p.entry.price) : "no entry"),
-      el("td", null, p.change_since_post == null ? "unresolved" : fmtPct(p.change_since_post)),
-      el("td", null, p.moves["7"] == null ? "unresolved" : fmtPct(p.moves["7"])),
+      el("td", { class: signClass(p.change_since_post) }, p.change_since_post == null ? "unresolved" : fmtPct(p.change_since_post)),
+      el("td", { class: signClass(p.moves["7"]) }, p.moves["7"] == null ? "unresolved" : fmtPct(p.moves["7"])),
       el("td", null, p.status));
     tr.addEventListener("click", () => select(p));
     tr.addEventListener("keydown", ev => { if (ev.key === "Enter") select(p); });

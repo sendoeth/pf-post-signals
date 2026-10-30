@@ -12,6 +12,7 @@ function age(fromIso, nowMs) {
   const d = Math.floor(m / 1440), h = Math.floor((m % 1440) / 60);
   return d ? `${d}d ${h}h` : h ? `${h}h ${m % 60}m` : `${m}m`;
 }
+const signClass = x => x == null ? "unresolved" : x > 0 ? "gain" : x < 0 ? "loss" : "";
 function el(tag, attrs, text) {
   const n = document.createElement(tag);
   for (const [k, v] of Object.entries(attrs || {})) n.setAttribute(k, v);
@@ -108,8 +109,9 @@ function render(asset, p, ohlc, avatars, bundle) {
   right.append(el("span", null, p.latest ? fmtPrice(p.latest.price) : "–"));
   if (p.change_since_post != null) right.append(el("span", { class: "chip " + (dir === "up" ? "up" : dir === "down" ? "down" : "") }, fmtPct(p.change_since_post)));
   const forCall = sideName && p.change_since_post != null ? p.side * p.change_since_post : null;
-  right.append(el("span", { class: "since", "data-field": "header_since" },
-    "since post · " + age(p.post.posted_at, nowMs) + (forCall != null ? ` · ${fmtPct(forCall)} for the ${sideName}` : "")));
+  const since = el("span", { class: "since", "data-field": "header_since" }, "since post · " + age(p.post.posted_at, nowMs));
+  if (forCall != null) { since.append(" · "); since.append(el("span", { class: signClass(forCall) }, `${fmtPct(forCall)} for the ${sideName}`)); }
+  right.append(since);
   head.append(right);
   pos.append(head);
 
@@ -144,18 +146,19 @@ function render(asset, p, ohlc, avatars, bundle) {
   field(dl, "entry", "Entry", p.entry ? `${fmtPrice(p.entry.price)} @ ${fmtTime(p.entry.at)}` : "no entry bar", p.entry);
   field(dl, "latest", "Latest", p.latest ? `${fmtPrice(p.latest.price)} @ ${fmtTime(p.latest.at)}` : "no bar yet", p.latest);
   field(dl, "change_since_post", "Since post", p.change_since_post == null ? "unresolved" : fmtPct(p.change_since_post), p.change_since_post,
-    p.change_since_post == null ? "unresolved" : dir === "up" ? "dir-up" : dir === "down" ? "dir-down" : "");
+    signClass(p.change_since_post));
   const best = p.best;
   field(dl, "best", sideName ? "Best for the call" : "Best (highest) since post",
-    best ? `${fmtPct(sideName ? best.for_call : best.move)} at ${fmtPrice(best.price)} @ ${fmtTime(best.at)}` : "no entry bar", best);
+    best ? `${fmtPct(sideName ? best.for_call : best.move)} at ${fmtPrice(best.price)} @ ${fmtTime(best.at)}` : "no entry bar", best,
+    best ? signClass(sideName ? best.for_call : best.move) : "unresolved");
   field(dl, "age", "Called", age(p.post.posted_at, nowMs) + " ago");
   for (const h of HORIZONS) {
     const v = p.moves[h];
-    field(dl, "move_" + h, h + "d move", v == null ? "unresolved · " + p.unresolved[h] : fmtPct(v), v, v == null ? "unresolved" : "");
+    field(dl, "move_" + h, h + "d move", v == null ? "unresolved · " + p.unresolved[h] : fmtPct(v), v, signClass(v));
   }
   if (p.signed_returns) for (const h of HORIZONS) {
     const v = p.signed_returns[h];
-    field(dl, "signed_" + h, h + "d for the call", v == null ? "unresolved · " + p.unresolved[h] : fmtPct(v), v, v == null ? "unresolved" : "");
+    field(dl, "signed_" + h, h + "d for the call", v == null ? "unresolved · " + p.unresolved[h] : fmtPct(v), v, signClass(v));
   }
   recap.append(dl);
   recap.append(el("p", { class: "notes", "data-field": "record_file" }, `Record ${p.record_file} · sha256 ${p.record_sha256}`));
@@ -200,7 +203,7 @@ function render(asset, p, ohlc, avatars, bundle) {
     const gain = best ? (sideName ? best.for_call : best.move) : 0;
     if (ex == null || ey == null || bx == null || by == null || gain <= 0) { svg.style.display = "none"; return; }
     svg.style.display = "";
-    const color = sideName === "short" ? css("--down") : css("--up");
+    const color = css("--up");   // the marker shows a gain for the call, so it is always the positive colour
     line.setAttribute("x1", ex); line.setAttribute("y1", ey); line.setAttribute("x2", bx); line.setAttribute("y2", by);
     line.setAttribute("stroke", color);
     label.textContent = fmtPct(gain);
@@ -208,7 +211,7 @@ function render(asset, p, ohlc, avatars, bundle) {
     // label just beyond the best point, away from the entry side, kept inside the pane
     const up = by < ey, nearRight = bx > box.clientWidth - 140;
     label.setAttribute("x", nearRight ? bx - 8 : bx + 8);
-    label.setAttribute("y", up ? by - 10 : by + 18);
+    label.setAttribute("y", up || nearRight ? by - 10 : by + 18);   // near the right edge stay clear of the price-axis tags
     label.setAttribute("text-anchor", nearRight ? "end" : "start");
   }
   function draw() {

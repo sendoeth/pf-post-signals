@@ -1,19 +1,19 @@
 :root {
   --page: #f9f9f7; --surface: #fcfcfb; --ink: #0b0b0b; --ink-2: #52514e; --muted: #6f6d68;
-  --grid: #ecebe5; --axis: #c3c2b7; --up: #2a78d6; --down: #e34948; --flat: #898781;
-  --focus: #2a78d6; --card: #ffffff; --border: #e1e0d9; --chip-up: #e3eefb; --chip-down: #fbe5e4;
+  --grid: #ecebe5; --axis: #c3c2b7; --up: #15803d; --down: #b91c1c; --flat: #898781;
+  --focus: #2a78d6; --card: #ffffff; --border: #e1e0d9; --chip-up: #15803d14; --chip-down: #b91c1c14;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --page: #0d0d0d; --surface: #1a1a19; --ink: #ffffff; --ink-2: #c3c2b7; --muted: #a3a29b;
-    --grid: #262624; --axis: #383835; --up: #3987e5; --down: #e66767; --flat: #898781;
-    --focus: #3987e5; --card: #1f1f1e; --border: #383835; --chip-up: #16283f; --chip-down: #3a1a1a;
+    --grid: #262624; --axis: #383835; --up: #22c55e; --down: #ef4444; --flat: #898781;
+    --focus: #3987e5; --card: #1f1f1e; --border: #383835; --chip-up: #22c55e1f; --chip-down: #ef44441f;
   }
 }
 :root[data-theme="dark"] {
   --page: #0d0d0d; --surface: #1a1a19; --ink: #ffffff; --ink-2: #c3c2b7; --muted: #a3a29b;
-  --grid: #262624; --axis: #383835; --up: #3987e5; --down: #e66767; --flat: #898781;
-  --focus: #3987e5; --card: #1f1f1e; --border: #383835; --chip-up: #16283f; --chip-down: #3a1a1a;
+  --grid: #262624; --axis: #383835; --up: #22c55e; --down: #ef4444; --flat: #898781;
+  --focus: #3987e5; --card: #1f1f1e; --border: #383835; --chip-up: #22c55e1f; --chip-down: #ef44441f;
 }
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--page); color: var(--ink); font: 15px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; -webkit-tap-highlight-color: transparent; }
@@ -62,3 +62,4 @@ dt { color: var(--muted); } dd { margin: 0; font-variant-numeric: tabular-nums; 
 .error { padding: 18px; }
 html[data-framed] body { display: none; }
 .as-of { color: var(--ink-2); font: 600 12px ui-monospace, monospace; margin: 6px 0 0; }
+.gain { color: var(--up); } .loss { color: var(--down); }
