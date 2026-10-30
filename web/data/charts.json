@@ -5691,6 +5691,10 @@
     [
      "2026-10-30T17:00:00Z",
      77352.68
+    ],
+    [
+     "2026-10-30T18:00:00Z",
+     77192.46
     ]
    ],
    "posts": [
@@ -6208,10 +6212,10 @@
       "price": 81778.01
      },
      "latest": {
-      "at": "2026-10-30T17:00:00Z",
-      "price": 77352.68
+      "at": "2026-10-30T18:00:00Z",
+      "price": 77192.46
      },
-     "change_since_post": -0.054113936007980645,
+     "change_since_post": -0.056073142400994924,
      "exits": {
       "1": {
        "at": "2026-10-30T16:00:00Z",
@@ -6231,12 +6235,12 @@
      },
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-10-30T17:00:00Z",
+      "last_bar_at": "2026-10-30T18:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 2
      },
      "record_file": "records/posts/2115823513915290059_BTC.json",
-     "record_sha256": "4112e77587ae258f01b3dfb7ccb2aa3f25249d031ca69138ec201f457c98f766"
+     "record_sha256": "2cf194ac12ded235e7fe85f9255d6018003371836d18dbedbc730cadf242f7a4"
     }
    ]
   },
@@ -7870,8 +7874,8 @@
      3905.7
     ],
     [
-     "2026-10-30T17:42:28Z",
-     3891.6001
+     "2026-10-30T17:53:01Z",
+     3889.7
     ]
    ],
    "posts": [
@@ -7959,10 +7963,10 @@
       "price": 3905.7
      },
      "latest": {
-      "at": "2026-10-30T17:42:28Z",
-      "price": 3891.6001
+      "at": "2026-10-30T17:53:01Z",
+      "price": 3889.7
      },
-     "change_since_post": -0.003610082699644024,
+     "change_since_post": -0.0040965767980131185,
      "exits": {
       "1": null,
       "7": null,
@@ -7980,12 +7984,12 @@
      },
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-10-30T17:42:28Z",
+      "last_bar_at": "2026-10-30T17:53:01Z",
       "max_lag_days": 2,
       "session_lag_days": 4
      },
      "record_file": "records/posts/2116199680157647216_GOLD.json",
-     "record_sha256": "42e3b145758a2eb113694ff002477149e1cbff789a3987795fbc5d1faa0ca5e2"
+     "record_sha256": "5326cb934322e169c7c060de7dbc6e9c260f53cabd47ada13d7a99c1906c270e"
     }
    ]
   },
