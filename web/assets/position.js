@@ -31,6 +31,7 @@ function avatarNode(handle, avatars, cls) {
     img.addEventListener("error", () => { box.replaceChildren(initials(handle)); box.setAttribute("data-avatar", "initials"); });
     box.append(img);
   } else box.textContent = initials(handle);
+  if (box.getAttribute("data-avatar") === "initials") { box.style.backgroundColor = PFPS.authorColor(handle); box.style.color = "#fff"; }
   return box;
 }
 function field(dl, name, label, text, raw, cls) {
@@ -60,7 +61,9 @@ function fail(msg) {
 }
 
 async function main() {
-  const q = new URLSearchParams(location.search), id = q.get("post"), assetName = q.get("asset");
+  // position.html?post=..&asset=.. or a prerendered pos-<slug>.html (<main data-post data-asset>)
+  const q = new URLSearchParams(location.search), main = document.querySelector("main");
+  const id = q.get("post") || main.dataset.post, assetName = q.get("asset") || main.dataset.asset;
   if (!id) return fail("No post given. Open a post from the main chart.");
   const getJson = u => fetch(u).then(r => { if (!r.ok) throw new Error(u + " HTTP " + r.status); return r.json(); });
   const [bundle, avatars] = await Promise.all([getJson("data/charts.json"), getJson("avatars/index.json").catch(() => ({}))]);
@@ -143,7 +146,8 @@ function render(asset, p, ohlc, avatars, bundle) {
   const dl = el("dl");
   field(dl, "asset", "Asset", `${p.asset.name} (${p.asset.source}:${p.asset.symbol})`);
   field(dl, "side", "Side", sideName || "no side stated", p.side ?? null);
-  field(dl, "status", "Status", p.status, p.status);
+  field(dl, "status", "Status", PFPS.statusLabel(p), p.status);
+  dl.lastChild.setAttribute("title", PFPS.statusTip(p));
   field(dl, "entry", "Entry", p.entry ? `${fmtPrice(p.entry.price)} @ ${fmtTime(p.entry.at)}` : "no entry bar", p.entry);
   field(dl, "latest", "Latest", p.latest ? `${fmtPrice(p.latest.price)} @ ${fmtTime(p.latest.at)}` : "no bar yet", p.latest);
   field(dl, "change_since_post", "Since post", p.change_since_post == null ? "unresolved" : fmtPct(p.change_since_post), p.change_since_post,

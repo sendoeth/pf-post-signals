@@ -139,6 +139,10 @@ def main():
     with open(a.out, "w") as f:
         json.dump(bundle, f, indent=1)
         f.write("\n")
+    if os.path.abspath(a.out) == os.path.join(HERE, "web", "data", "charts.json"):
+        sys.path.insert(0, os.path.join(HERE, "tools"))
+        import prerender      # the real bundle -> refresh the plain-HTML copies of the data (step 12)
+        prerender.main(os.path.join(HERE, "web"))
     for x in bundle["refused"]:
         print(f"REFUSED {x['file']}: " + "; ".join(x["reasons"]))
     for x in bundle["superseded"]:

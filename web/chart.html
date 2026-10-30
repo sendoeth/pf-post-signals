@@ -19,6 +19,9 @@
   <div class="controls">
     <label class="picker">Asset <select id="asset"></select></label>
     <div class="legend" aria-hidden="true">
+      <span><span class="ring-key long"></span>long</span>
+      <span><span class="ring-key short"></span>short</span>
+      <span><span class="ring-key none"></span>no side</span>
       <span><span class="dot up">▲</span>up since post</span>
       <span><span class="dot down">▼</span>down since post</span>
       <span><svg width="22" height="8" aria-hidden="true"><line x1="0" y1="4" x2="22" y2="4" class="price gap"/></svg>no price data</span>
@@ -41,6 +44,7 @@
   <h3>Data</h3>
   <ul class="notes" id="notes"></ul>
 </main>
+<script src="assets/common.js"></script>
 <script src="assets/chart.js"></script>
 </body>
 </html>

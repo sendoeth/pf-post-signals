@@ -65,6 +65,9 @@ def main():
     with open(os.path.join(HERE, "web", "data", "charts.json"), "w") as f:
         json.dump(bundle, f, indent=1)
         f.write("\n")
+    sys.path.insert(0, os.path.join(HERE, "tools"))
+    import prerender
+    prerender.main(os.path.join(HERE, "web"))
     print(f"bundle: {bundle['records_scanned']} records scanned, {bundle['posts_drawn']} drawn, "
           f"{len(bundle['superseded'])} superseded, {len(bundle['refused'])} refused")
     sys.exit(1 if failed else 0)

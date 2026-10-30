@@ -330,6 +330,19 @@ position page. A stats strip (positions, share in profit, average return, best c
 - `tools/compare_corbanu.py` compares every Corbanu trade with step 1 and explains each difference
   (`data/corbanu_vs_step1.json`).
 
+## Step 12: readable without JavaScript, plain statuses, avatar bubbles
+
+- `tools/prerender.py` (run by `build_chart.py` and the daily refresh) writes the data into the HTML: the leaderboard's
+  rows, author table and stats in `index.html`, a list of all positions in `position.html`, and one static page per
+  position, `pos-<post>_<asset>.html`, with its key numbers and link-preview tags. `curl` sees real data; the scripts
+  then replace it with the interactive view. Leaderboard rows and chart cards link to the static pages.
+- Status wording: "all horizons in", "30d pending" (any horizons not reached yet), "no price yet", "no price at post
+  time", with a tooltip saying when each pending result comes in (`assets/common.js`).
+- Chart view bubbles: the author's local profile picture (or an initial on a fixed per-author colour, no greens or reds),
+  a ring for the side (green long, red short, grey no side) and a ▲/▼ badge for the move since the post.
+- `tests/test_static.py` (also in CI) parses the pages without running scripts and compares them with the bundle,
+  including the hostile fixtures; `tests/board_test.js` fetches the raw HTML and checks it against its own ranking.
+
 ## Reproduce
 
 ```bash

@@ -15,6 +15,11 @@ const liveUrl = process.argv.includes('--url') ? process.argv[process.argv.index
 const expect = process.argv.includes('--expect') ? process.argv[process.argv.indexOf('--expect') + 1].split(',') : [];
 const shotDir = process.argv.includes('--screenshots') ? path.resolve(process.argv[process.argv.indexOf('--screenshots') + 1]) : null;
 const HORIZONS = ['1', '7', '30'];
+// plain status wording, mirrored from web/assets/common.js
+const statusLabel = p => p.status === 'resolved' ? 'all horizons in' : p.status === 'pending' ? 'no price yet' : p.status === 'no_entry' ? 'no price at post time'
+  : (h => h.length ? h.map(x => x + 'd').join(', ') + ' pending' : p.status)(['1', '7', '30'].filter(x => p.unresolved && p.unresolved[x]));
+const slug = (id, asset) => `${id.replace(/[^A-Za-z0-9_-]/g, '-')}_${asset.replace(/[^A-Za-z0-9_-]/g, '-')}`;
+
 
 // Independent copies of the page's formatting rules.
 const pct = x => (x > 0 ? '+' : x < 0 ? '-' : '') + (Math.abs(x) * 100).toFixed(2) + '%';
@@ -43,7 +48,7 @@ function serve() {
   const browser = await puppeteer.launch({ headless: true, executablePath: '/snap/bin/chromium',
     args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-gpu'] });
   const fails = [], consoleErrors = [];
-  let cards = 0, fieldsChecked = 0, unresolvedChecked = 0, stacked = 0;
+  let cards = 0, fieldsChecked = 0, unresolvedChecked = 0, stacked = 0, bubbleChecks = 0, avatarImages = 0, avatarInitials = 0;
   const fail = m => fails.push(m);
   try {
     const page = await browser.newPage();
@@ -78,6 +83,18 @@ function serve() {
         const blob = fs.readFileSync(path.join(ROOT, p.record_file));
         if (crypto.createHash('sha256').update(blob).digest('hex') !== p.record_sha256) fail(`${p.record_file}: sha256 differs from bundle`);
         const rec = JSON.parse(blob);
+        const bub = await page.$eval(`.bubble[data-post-id="${id}"]`, n => ({
+          side: n.querySelector('circle.ring').getAttribute('data-side'), dir: n.querySelector('circle.badge').getAttribute('data-dir'),
+          face: n.querySelector('.face').getAttribute('data-avatar'), href: n.querySelector('image.face') ? n.querySelector('image.face').getAttribute('href') : null,
+          imgOk: n.querySelector('image.face') ? n.querySelector('image.face').getBBox().width > 0 : null }));
+        const wantSide = p.side === 1 ? 'long' : p.side === -1 ? 'short' : 'none';
+        const wantDir = p.change_since_post == null ? 'none' : p.change_since_post > 0 ? 'up' : p.change_since_post < 0 ? 'down' : 'flat';
+        bubbleChecks++;
+        if (bub.side !== wantSide) fail(`${asset.name} ${id}: ring side ${bub.side}, record ${wantSide}`);
+        if (bub.dir !== wantDir) fail(`${asset.name} ${id}: badge ${bub.dir}, record ${wantDir}`);
+        if (bub.face === 'image') { avatarImages++; if (!bub.href || !/^avatars\/[a-z0-9_]{1,15}\.jpg$/.test(bub.href)) fail(`${asset.name} ${id}: avatar ${bub.href} is not a local file`); }
+        else if (bub.face === 'initials') avatarInitials++;
+        else fail(`${asset.name} ${id}: no avatar or initial`);
         const h = await page.$(`.bubble[data-post-id="${id}"] circle.mark`);
         await h.click();
         const got = await page.$eval('#card', c => ({
@@ -99,7 +116,7 @@ function serve() {
         eq('text', rec.post.text || 'Post text not saved: open it on X.');
         eq('asset', `${rec.asset.name} (${rec.asset.source}:${rec.asset.symbol})`);
         eq('side', rec.side === 1 ? 'long' : rec.side === -1 ? 'short' : 'not given', rec.side ?? null);
-        eq('status', rec.status, rec.status);
+        eq('status', statusLabel(rec), rec.status);
         eq('entry', rec.entry ? `${price(rec.entry.price)} @ ${time(rec.entry.at)}` : 'no entry bar', rec.entry);
         eq('latest', rec.latest ? `${price(rec.latest.price)} @ ${time(rec.latest.at)}` : 'no bar yet', rec.latest);
         eq('change_since_post', rec.change_since_post == null ? 'unresolved' : pct(rec.change_since_post), rec.change_since_post);
@@ -165,7 +182,7 @@ function serve() {
   for (const e of consoleErrors) fail(`console: ${e}`);
   console.log(`page ${base}`);
   console.log(`assets ${bundle.assets.length}, cards opened ${cards}, card fields checked ${fieldsChecked}, ` +
-    `unresolved cells checked ${unresolvedChecked}, same-hour bubbles ${stacked}, console errors ${consoleErrors.length}`);
+    `unresolved cells checked ${unresolvedChecked}, same-hour bubbles ${stacked}, bubbles checked ${bubbleChecks} (avatar images ${avatarImages}, initials ${avatarInitials}; side ring + direction badge = record), console errors ${consoleErrors.length}`);
   for (const f of fails) console.log(' -', f);
   console.log(fails.length ? `FAIL (${fails.length})` : 'ALL PASS');
   process.exit(fails.length ? 1 : 0);

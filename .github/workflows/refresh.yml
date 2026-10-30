@@ -42,13 +42,13 @@ jobs:
           python3 check_bundle.py
           python3 validate_records.py
           python3 parity.py
-          python3 -m unittest tests.test_resolve tests.test_ingest_detect tests.test_guard tests.test_refresh
+          python3 -m unittest tests.test_resolve tests.test_ingest_detect tests.test_guard tests.test_refresh tests.test_static
       - name: commit
         id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add records data/refresh_log.json web/data
+          git add records data/refresh_log.json web
           if git diff --cached --quiet; then echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0; fi
           AS_OF=$(python3 -c 'import json; print(json.load(open("data/refresh_log.json"))["refreshed_at"])')
           git commit -q -m "refresh: prices as of $AS_OF"

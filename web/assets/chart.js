@@ -1,7 +1,9 @@
 "use strict";
 const SVGNS = "http://www.w3.org/2000/svg";
 const HORIZONS = ["1", "7", "30"];
-const state = { bundle: null, asset: null, selected: null };
+const state = { bundle: null, asset: null, selected: null, avatars: {} };
+let clipSeq = 0;
+const authorColor = PFPS.authorColor;
 
 // Formatting (mirrored independently in tests/browser_test.js).
 function fmtPct(x) {
@@ -50,7 +52,7 @@ function render() {
   root.setAttribute("viewBox", `0 0 ${W} ${H}`);
   const series = a.series, t0 = Date.parse(series[0][0]), t1 = Date.parse(series[series.length - 1][0]);
   const drawn = a.posts.filter(p => p.entry);
-  const STACK = 28, HIT = 13; // STACK > 2 * HIT: stacked hit areas never overlap
+  const STACK = 36, HIT = 16, R = 12; // STACK > 2 * HIT: stacked hit areas never overlap; R = avatar radius
   let lo = Math.min(...series.map(b => b[1])), hi = Math.max(...series.map(b => b[1]));
   const pad = (hi - lo) * 0.06 || hi * 0.01;
   lo -= pad; hi += pad;
@@ -124,11 +126,24 @@ function render() {
       const dir = direction(p);
       const node = svg("g", { class: "bubble", tabindex: "0", role: "button", "data-post-id": p.post.id, "data-asset": a.name,
         "aria-label": `${p.post.author} ${fmtTime(p.post.posted_at)}, ${p.change_since_post == null ? "no move" : fmtPct(p.change_since_post)} since post` });
-      if (cy !== py) node.append(svg("line", { class: "stem", x1: px, x2: px, y1: py, y2: cy + 9 }));
+      if (cy !== py) node.append(svg("line", { class: "stem", x1: px, x2: px, y1: py, y2: cy + R }));
       node.append(svg("circle", { class: "hit", cx: px, cy, r: HIT }));
-      node.append(svg("circle", { class: "mark", cx: px, cy, r: 9, fill: dir === "up" ? "var(--up)" : dir === "down" ? "var(--down)" : "var(--flat)" }));
-      node.append(svg("text", { x: px, y: cy + 3.2, "text-anchor": "middle" }, dir === "up" ? "▲" : dir === "down" ? "▼" : "•"));
-      node.setAttribute("data-href", positionUrl(p));
+      const side = p.side === 1 ? "long" : p.side === -1 ? "short" : "none";
+      const handle = p.post.author.toLowerCase(), meta = state.avatars[handle];
+      const okAvatar = meta && typeof meta.file === "string" && /^[a-z0-9_]{1,15}\.jpg$/.test(meta.file) && meta.file === handle + ".jpg";
+      if (okAvatar) {
+        const id = "clip-" + (++clipSeq);
+        const cp = svg("clipPath", { id });
+        cp.append(svg("circle", { cx: px, cy, r: R }));
+        node.append(cp, svg("image", { class: "face", href: "avatars/" + meta.file, x: px - R, y: cy - R, width: 2 * R, height: 2 * R, "clip-path": `url(#${id})`, "data-avatar": "image" }));
+      } else {
+        node.append(svg("circle", { class: "face initial", cx: px, cy, r: R, fill: authorColor(p.post.author), "data-avatar": "initials" }));
+        node.append(svg("text", { class: "initial-text", x: px, y: cy + 4, "text-anchor": "middle" }, p.post.author.replace(/[^A-Za-z0-9]/g, "").slice(0, 1).toUpperCase()));
+      }
+      node.append(svg("circle", { class: "mark ring " + side, cx: px, cy, r: R, "data-side": side }));
+      const bx = px + R * 0.78, by = cy + R * 0.78;
+      node.append(svg("circle", { class: "badge " + dir, cx: bx, cy: by, r: 6, "data-dir": dir }));
+      node.append(svg("text", { class: "badge-text", x: bx, y: by + 2.6, "text-anchor": "middle" }, dir === "up" ? "▲" : dir === "down" ? "▼" : "•"));
       node.addEventListener("click", () => select(p));
       node.addEventListener("dblclick", () => { location.href = positionUrl(p); });
       node.addEventListener("keydown", ev => { if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); select(p); } });
@@ -138,7 +153,7 @@ function render() {
   }
 }
 
-function positionUrl(p) { return `position.html?post=${encodeURIComponent(p.post.id)}&asset=${encodeURIComponent(p.asset.name)}`; }
+function positionUrl(p) { return PFPS.positionUrl(p.post.id, p.asset.name); }
 function field(dl, name, label, value, raw, cls) {
   dl.append(el("dt", null, label));
   const dd = el("dd", { "data-field": name }, value);
@@ -159,7 +174,8 @@ function card(p) {
   const dl = el("dl");
   field(dl, "asset", "Asset", `${p.asset.name} (${p.asset.source}:${p.asset.symbol})`);
   field(dl, "side", "Side", p.side === 1 ? "long" : p.side === -1 ? "short" : "not given", p.side ?? null);
-  field(dl, "status", "Status", p.status, p.status);
+  field(dl, "status", "Status", PFPS.statusLabel(p), p.status);
+  dl.lastChild.setAttribute("title", PFPS.statusTip(p));
   field(dl, "entry", "Entry", p.entry ? `${fmtPrice(p.entry.price)} @ ${fmtTime(p.entry.at)}` : "no entry bar", p.entry);
   field(dl, "latest", "Latest", p.latest ? `${fmtPrice(p.latest.price)} @ ${fmtTime(p.latest.at)}` : "no bar yet", p.latest);
   const dir = direction(p);
@@ -200,7 +216,7 @@ function table() {
       el("td", null, p.entry ? fmtPrice(p.entry.price) : "no entry"),
       el("td", { class: signClass(p.change_since_post) }, p.change_since_post == null ? "unresolved" : fmtPct(p.change_since_post)),
       el("td", { class: signClass(p.moves["7"]) }, p.moves["7"] == null ? "unresolved" : fmtPct(p.moves["7"])),
-      el("td", null, p.status));
+      el("td", { title: PFPS.statusTip(p) }, PFPS.statusLabel(p)));
     tr.addEventListener("click", () => select(p));
     tr.addEventListener("keydown", ev => { if (ev.key === "Enter") select(p); });
     tb.append(tr);
@@ -219,8 +235,12 @@ function setAsset(name) {
   render(); table();
 }
 
-fetch("data/charts.json").then(r => { if (!r.ok) throw new Error("charts.json HTTP " + r.status); return r.json(); }).then(b => {
+Promise.all([
+  fetch("data/charts.json").then(r => { if (!r.ok) throw new Error("charts.json HTTP " + r.status); return r.json(); }),
+  fetch("avatars/index.json").then(r => (r.ok ? r.json() : {})).catch(() => ({})),
+]).then(([b, avatars]) => {
   state.bundle = b;
+  state.avatars = avatars;
   const sel = document.getElementById("asset");
   for (const a of b.assets) sel.append(el("option", { value: a.name }, `${a.name} (${a.posts.length})`));
   sel.addEventListener("change", () => setAsset(sel.value));

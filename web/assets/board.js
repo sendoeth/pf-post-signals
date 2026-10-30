@@ -82,6 +82,7 @@ function avatar(handle, avatars) {
     img.addEventListener("error", () => { box.replaceChildren(handle.slice(0, 2).toUpperCase()); box.setAttribute("data-avatar", "initials"); });
     box.append(img);
   } else box.textContent = handle.replace(/[^A-Za-z0-9]/g, "").slice(0, 2).toUpperCase() || "?";
+  if (box.getAttribute("data-avatar") === "initials") { box.style.backgroundColor = PFPS.authorColor(handle); box.style.color = "#fff"; }
   return box;
 }
 
@@ -160,7 +161,7 @@ function renderRows(rows, asOf, avatars) {
   rows.forEach((r, i) => {
     const p = r.p;
     const li = el("li", { "data-post-id": r.id, "data-asset": r.assetName, "data-rank": String(i + 1) });
-    const a = el("a", { class: "row", href: `position.html?post=${encodeURIComponent(r.id)}&asset=${encodeURIComponent(r.assetName)}` });
+    const a = el("a", { class: "row", href: PFPS.positionUrl(r.id, r.assetName) });
     a.append(el("span", { class: "rank", "data-field": "rank" }, String(i + 1)));
     const who = el("span", { class: "who" });
     who.append(avatar(r.author, avatars));
@@ -188,7 +189,7 @@ function renderRows(rows, asOf, avatars) {
     const bestCell = el("span", { class: "r col-best best " + signClass(r.best), "data-field": "best", "data-raw": JSON.stringify(r.best) },
       r.best == null ? "–" : "▲ " + fmtPct(r.best));
     a.append(bestCell);
-    a.append(el("span", { class: "status", "data-field": "status" }, p.status));
+    a.append(el("span", { class: "status", "data-field": "status", "data-raw": JSON.stringify(p.status), title: PFPS.statusTip(p) }, PFPS.statusLabel(p)));
     li.append(a);
     list.append(li);
   });

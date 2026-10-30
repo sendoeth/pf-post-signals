@@ -27,6 +27,11 @@ const TYPES = { '.html': 'text/html', '.json': 'application/json', '.js': 'text/
 const pct = x => (x > 0 ? '+' : x < 0 ? '-' : '') + (Math.abs(x) * 100).toFixed(2) + '%';
 const price = p => p.toLocaleString('en-US', { maximumFractionDigits: 8 });
 const DEFAULTS = { time: 'all', side: 'all', author: 'all', asset: 'all', sort: 'return' };
+// plain status wording, mirrored from web/assets/common.js
+const statusLabel = p => p.status === 'resolved' ? 'all horizons in' : p.status === 'pending' ? 'no price yet' : p.status === 'no_entry' ? 'no price at post time'
+  : (h => h.length ? h.map(x => x + 'd').join(', ') + ' pending' : p.status)(['1', '7', '30'].filter(x => p.unresolved && p.unresolved[x]));
+const slug = (id, asset) => `${id.replace(/[^A-Za-z0-9_-]/g, '-')}_${asset.replace(/[^A-Za-z0-9_-]/g, '-')}`;
+
 
 function model(bundle) {
   const rows = [];
@@ -109,6 +114,7 @@ async function read(page) {
   const fail = m => fails.push(m);
   let combos = 0, nonEmpty = 0, uiChanges = 0, fieldChecks = 0, csp = 0, authorRows = 0, urlReloads = 0;
   const pendingChecks = [];
+  let staticChecks = 0, staticPages = 0;
   const cmp = (tag, got, f) => {
     const want = expected(rows, f, asOf);
     if (got.rows.map(r => r.id + '|' + r.asset).join(',') !== want.rows.map(r => r.id + '|' + r.asset).join(',')) return fail(`${tag}: order ${got.rows.map(r => r.asset + r.id.slice(-4))} != ${want.rows.map(r => r.asset + r.id.slice(-4))}`);
@@ -181,12 +187,12 @@ async function read(page) {
       eq('side', rec.side === 1 ? 'LONG' : rec.side === -1 ? 'SHORT' : 'NO SIDE');
       eq('author', '@' + rec.post.author);
       eq('prices', rec.entry ? `${price(rec.entry.price)} → ${rec.latest ? price(rec.latest.price) : '–'}` : 'no entry bar');
-      eq('status', rec.status);
+      eq('status', statusLabel(rec));
       if (rec.post.text) eq('quote', '“' + rec.post.text.replace(/\s+/g, ' ').trim() + '”');
       const ret = rec.change_since_post == null ? null : rec.side ? rec.side * rec.change_since_post : rec.change_since_post;
       eq('return', ret == null ? 'unresolved' : pct(ret));
       fieldChecks++;
-      if (g.href !== `position.html?post=${encodeURIComponent(rec.post.id)}&asset=${encodeURIComponent(rec.asset.name)}`) fail(`${tag}: link ${g.href}`);
+      if (g.href !== `pos-${slug(rec.post.id, rec.asset.name)}.html`) fail(`${tag}: link ${g.href}`);
       const bars = w.series.filter(([t]) => rec.entry && rec.latest && t >= rec.entry.at && t <= rec.latest.at).length;
       if (g.points !== bars) fail(`${tag}: sparkline ${g.points} points, bundle has ${bars} bars entry->latest`);
       if (g.avatar === 'image' && !(g.img > 0)) fail(`${tag}: avatar image did not load`);
@@ -243,6 +249,30 @@ async function read(page) {
       srv.close();
     }
 
+    // G. the same page without JavaScript: the prerendered rows (raw HTML, no script run) are the
+    //    default ranking and carry the bundle's values; every row's static position page has them too
+    const get = u => new Promise((ok, no) => (u.startsWith('https') ? require('https') : http).get(u, r => { let d = ''; r.on('data', c => (d += c)); r.on('end', () => ok({ status: r.statusCode, body: d })); }).on('error', no));
+    const rawIndex = (await get(base)).body;
+    const lis = [...rawIndex.matchAll(/<li data-static="1" data-post-id="([^"]+)" data-asset="([^"]+)" data-rank="(\d+)">(.*?)<\/li>/gs)];
+    const unesc = s => s.replace(/&quot;/g, '"').replace(/&#x27;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
+    const wantDef = expected(rows, DEFAULTS, asOf).rows;
+    if (lis.map(m => unesc(m[1]) + '|' + unesc(m[2])).join(',') !== wantDef.map(r => r.id + '|' + r.asset).join(',')) fail(`static rows ${lis.length}: order differs from the default ranking`);
+    for (const [i, m] of lis.entries()) {
+      const w = wantDef[i], body = m[4];
+      const rawOf = f => { const x = body.match(new RegExp(`data-field="${f}" data-raw="([^"]*)"`)); return x ? JSON.parse(unesc(x[1])) : undefined; };
+      staticChecks++;
+      if (JSON.stringify(rawOf('return')) !== JSON.stringify(w.ret) || JSON.stringify(rawOf('best')) !== JSON.stringify(w.best) || rawOf('status') !== w.p.status) fail(`static row ${w.id}: values differ from the bundle`);
+      if (!body.includes(`href="pos-${slug(w.id, w.asset)}.html"`)) fail(`static row ${w.id}: link`);
+      if (!body.includes('>' + statusLabel(w.p) + '<')) fail(`static row ${w.id}: status label`);
+      const pg = await get(base + `pos-${slug(w.id, w.asset)}.html`);
+      if (pg.status !== 200) { fail(`static page for ${w.id}: HTTP ${pg.status}`); continue; }
+      const pick = f => { const x = pg.body.match(new RegExp(`data-field="${f}" data-raw="([^"]*)"`)); return x ? JSON.parse(unesc(x[1])) : undefined; };
+      if (JSON.stringify(pick('entry')) !== JSON.stringify(w.p.entry) || JSON.stringify(pick('latest')) !== JSON.stringify(w.p.latest)
+          || JSON.stringify(pick('return')) !== JSON.stringify(w.ret) || pick('status') !== w.p.status) fail(`static page ${w.id}: values differ from the bundle`);
+      if (!pg.body.includes('<meta property="og:title"')) fail(`static page ${w.id}: no link-preview tags`);
+      staticPages++;
+    }
+
     // E. screenshots + phone
     if (shotDir) fs.mkdirSync(shotDir, { recursive: true });
     for (const [name, vp, q] of [['desktop', { width: 1280, height: 1000 }, ''], ['desktop_filtered', { width: 1280, height: 1000 }, '?side=short&sort=best'],
@@ -260,7 +290,7 @@ async function read(page) {
   for (const e of consoleErrors) fail(`console: ${e}`);
   console.log(`page ${base}`);
   console.log(`filter/sort combinations: ${combos} set in the page (${nonEmpty} with rows, ${combos - nonEmpty} correctly empty), ${urlReloads} of them also loaded fresh from their URL; author-summary rows checked: ${authorRows}; select changes: ${uiChanges}; ` +
-    `default-view fields checked against records: ${fieldChecks}; rows ${rows.length}; CSP violations ${csp}; console errors ${consoleErrors.length}`);
+    `default-view fields checked against records: ${fieldChecks}; without javascript: ${staticChecks} static rows + ${staticPages} static position pages equal the bundle; rows ${rows.length}; CSP violations ${csp}; console errors ${consoleErrors.length}`);
   for (const c of pendingChecks) console.log('unresolved (test-only fixture copy): ' + c);
   for (const f of fails.slice(0, 40)) console.log(' -', f);
   if (fails.length > 40) console.log(` ... ${fails.length - 40} more`);

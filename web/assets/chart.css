@@ -47,11 +47,16 @@ svg { display: block; width: 100%; height: auto; touch-action: pan-y; }
 .price.gap { stroke: var(--muted); stroke-width: 1.5; stroke-dasharray: 4 4; }
 .stem { stroke: var(--muted); stroke-width: 1; pointer-events: none; }
 .bubble { cursor: pointer; }
-.bubble circle { stroke: var(--surface); stroke-width: 2; }
-.bubble text { fill: #fff; font-size: 9px; pointer-events: none; }
+.bubble .face { stroke: none; }
+.bubble .initial-text { fill: #fff; font: 700 12px system-ui, sans-serif; pointer-events: none; }
+.bubble .ring { fill: none; stroke-width: 2.5; }
+.bubble .ring.long { stroke: var(--up); } .bubble .ring.short { stroke: var(--down); } .bubble .ring.none { stroke: var(--flat); }
+.bubble .badge { stroke: var(--surface); stroke-width: 1.5; }
+.bubble .badge.up { fill: var(--up); } .bubble .badge.down { fill: var(--down); } .bubble .badge.flat, .bubble .badge.none { fill: var(--flat); }
+.bubble .badge-text { fill: #fff; font-size: 7px; pointer-events: none; }
 .bubble .hit { fill: transparent; stroke: none; }
 .bubble:focus { outline: none; }
-.bubble:focus-visible circle.mark, .bubble.selected circle.mark { stroke: var(--ink); stroke-width: 2.5; }
+.bubble:focus-visible circle.mark, .bubble.selected circle.mark { stroke-width: 4; filter: drop-shadow(0 0 2px var(--ink)); }
 .crosshair { stroke: var(--muted); stroke-width: 1; pointer-events: none; }
 #tip { position: absolute; pointer-events: none; background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 8px; font-size: 12px; color: var(--ink-2); white-space: nowrap; box-shadow: 0 2px 8px rgb(0 0 0 / 0.12); }
 #tip strong { color: var(--ink); font-size: 13px; }
@@ -83,3 +88,5 @@ html[data-framed] body { display: none; }
 .gain { color: var(--up); } .loss { color: var(--down); }
 .crumbs { margin: 0 0 6px; font-size: 14px; }
 .crumbs a { text-decoration: none; }
+.ring-key { width: 14px; height: 14px; border-radius: 50%; border: 2.5px solid var(--flat); display: inline-block; box-sizing: border-box; }
+.ring-key.long { border-color: var(--up); } .ring-key.short { border-color: var(--down); }

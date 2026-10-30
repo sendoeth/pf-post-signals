@@ -16,6 +16,11 @@ const arg = k => (process.argv.includes(k) ? process.argv[process.argv.indexOf(k
 const liveUrl = arg('--url');
 const shotDir = arg('--screenshots') ? path.resolve(arg('--screenshots')) : null;
 const HORIZONS = ['1', '7', '30'];
+// plain status wording, mirrored from web/assets/common.js
+const statusLabel = p => p.status === 'resolved' ? 'all horizons in' : p.status === 'pending' ? 'no price yet' : p.status === 'no_entry' ? 'no price at post time'
+  : (h => h.length ? h.map(x => x + 'd').join(', ') + ' pending' : p.status)(['1', '7', '30'].filter(x => p.unresolved && p.unresolved[x]));
+const slug = (id, asset) => `${id.replace(/[^A-Za-z0-9_-]/g, '-')}_${asset.replace(/[^A-Za-z0-9_-]/g, '-')}`;
+
 
 const pct = x => (x > 0 ? '+' : x < 0 ? '-' : '') + (Math.abs(x) * 100).toFixed(2) + '%';
 const price = p => p.toLocaleString('en-US', { maximumFractionDigits: 8 });
@@ -75,7 +80,7 @@ function serve() {
     for (const a of bundle.assets) {
       await page.select('#asset', a.name);
       for (const p of a.posts) {
-        const want = `position.html?post=${encodeURIComponent(p.post.id)}&asset=${encodeURIComponent(a.name)}`;
+        const want = `pos-${slug(p.post.id, a.name)}.html`;
         const row = await page.$eval(`#posts a.row-link[data-post-id="${p.post.id}"]`, n => n.getAttribute('href')).catch(() => null);
         if (row !== want) fail(`main ${a.name} ${p.post.id}: table link ${row} != ${want}`);
         if (!p.entry) continue;
@@ -89,7 +94,8 @@ function serve() {
       const blob = fs.readFileSync(path.join(ROOT, p.record_file));
       if (crypto.createHash('sha256').update(blob).digest('hex') !== p.record_sha256) fail(`${p.record_file}: sha256 differs from bundle`);
       const rec = JSON.parse(blob);
-      const url = `${base}position.html?post=${p.post.id}&asset=${encodeURIComponent(a.name)}${interval ? '&interval=' + interval : ''}`;
+      // default interval: the prerendered static page (as linked from the leaderboard); 1h: the query form
+      const url = interval ? `${base}position.html?post=${encodeURIComponent(p.post.id)}&asset=${encodeURIComponent(a.name)}&interval=${interval}` : `${base}pos-${slug(p.post.id, a.name)}.html`;
       await page.goto(url, { waitUntil: 'networkidle0' });
       await page.waitForSelector('body[data-ready]', { timeout: 20000 });
       const tag = `${a.name} ${p.post.id}${interval ? ' @1h' : ''}`;
@@ -129,7 +135,7 @@ function serve() {
       eq('asset', `${rec.asset.name} (${rec.asset.source}:${rec.asset.symbol})`);
       eq('side', side || 'no side stated', rec.side ?? null);
       eq('side_badge', side ? side.toUpperCase() : 'NO SIDE');
-      eq('status', rec.status, rec.status);
+      eq('status', statusLabel(rec), rec.status);
       eq('entry', rec.entry ? `${price(rec.entry.price)} @ ${time(rec.entry.at)}` : 'no entry bar', rec.entry);
       eq('latest', rec.latest ? `${price(rec.latest.price)} @ ${time(rec.latest.at)}` : 'no bar yet', rec.latest);
       eq('change_since_post', rec.change_since_post == null ? 'unresolved' : pct(rec.change_since_post), rec.change_since_post);
