@@ -234,6 +234,29 @@ python3 add_post.py https://x.com/BobLoukas/status/2115823513915290059   # recei
 
 Run notes: [`verification/step6_run.md`](verification/step6_run.md).
 
+## Step 7: position pages
+
+Every post has its own page: `web/position.html?post=<id>&asset=<asset>`, for example
+**https://sendoeth.com/pf-post-signals/web/position.html?post=2104977267109896477&asset=SILVER**. The main chart's cards and
+table dates link to it.
+
+- Candlesticks (TradingView Lightweight Charts 4.2.3, pinned with a subresource-integrity hash, attribution kept) with
+  1h / 4h / 1D intervals, picked from the post's age; 4h and 1D are built from the 1h candles.
+- The author's avatar sits on the candle that holds the entry bar; a dashed line runs to the best price since the post
+  with its % label; a dotted line marks the record's latest price.
+- Recap: asset, side, entry, latest, % since post, best % since post (for the call when a side is stated, else the
+  highest price), age of the call, 1d/7d/30d moves. Every value comes from the record; best % is computed by
+  `build_chart.py` from the record's own series and recomputed independently by `check_bundle.py`.
+- `fetch_ohlc.py` writes `web/data/ohlc/<asset>.json` + `index.json` (sha256, fetch time) from the records' own
+  source/symbol and checks every entry bar: candle open == record entry price. Candles are display only.
+- Avatars are saved once at ingest into `web/avatars/` (source and sha256 in `index.json`), never hotlinked; initials
+  are the fallback.
+- `tests/position_test.js` opens every position page at the default interval and at 1h: recap = record, best % =
+  recomputed, avatar centre within 1.5 px of the chart's own coordinate for the entry candle, entry candle open =
+  record entry, no console errors; it also checks every card and table link on the main page.
+
+Run notes: [`verification/step7_run.md`](verification/step7_run.md).
+
 ## Reproduce
 
 ```bash

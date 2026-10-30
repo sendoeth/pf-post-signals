@@ -45,6 +45,21 @@ def record_problems(v, r):
     return out
 
 
+def best_since_post(r):
+    """Best bar since the post, from the record's own hourly series (opens, entry -> latest).
+    With a side: the bar with the largest side * move (best for the call). Without a side: the
+    highest price. Ties keep the earliest bar. None when the record has no entry."""
+    if not r["entry"]:
+        return None
+    p0, side = r["entry"]["price"], r.get("side")
+    key = (lambda b: side * (b[1] / p0 - 1)) if side else (lambda b: b[1])
+    at, price = max(r["series"], key=lambda b: (key(b), -resolve.parse(b[0]).timestamp()))
+    best = {"at": at, "price": price, "move": price / p0 - 1, "basis": "call side" if side else "highest price"}
+    if side:
+        best["for_call"] = side * (price / p0 - 1)
+    return best
+
+
 def build(records_dir):
     v = resolve.validator()
     files = sorted(glob.glob(os.path.join(records_dir, "**", "*.json"), recursive=True))
@@ -84,6 +99,7 @@ def build(records_dir):
                 a["conflicts"].append(f"{t}: {a['bars'][t]} vs {p} in {rel}")
             a["bars"][t] = p
         post = {k: val for k, val in r.items() if k != "series"}
+        post["best"] = best_since_post(r)
         post["record_file"], post["record_sha256"] = rel, sha
         a["posts"].append(post)
 

@@ -68,6 +68,7 @@ svg { display: block; width: 100%; height: auto; touch-action: pan-y; }
 #card .unresolved { color: var(--muted); font-style: italic; }
 #card .empty { color: var(--muted); }
 #card a { color: var(--focus); }
+#card .open-position { display: inline-block; font-weight: 600; margin-bottom: 4px; }
 .dir-up { color: var(--up); } .dir-down { color: var(--down); }
 table { width: 100%; border-collapse: collapse; font-size: 14px; }
 th, td { text-align: left; padding: 7px 10px; border-bottom: 1px solid var(--border); font-variant-numeric: tabular-nums; }
@@ -85,7 +86,7 @@ code { font-size: 12px; }
 <body>
 <main>
   <h1>Posts over price</h1>
-  <p class="sub">Each post sits at its entry bar: the first hourly bar at or after it was posted. Click a bubble or a table row to see the post and how the asset moved since. Every value comes from a <code>post_price.v1</code> record; horizons not reached yet say so instead of showing 0.</p>
+  <p class="sub">Each post sits at its entry bar: the first hourly bar at or after it was posted. Click a bubble to see the post and how the asset moved since; its card (or the table's date link) opens the position page with candles. Every value comes from a <code>post_price.v1</code> record; horizons not reached yet say so instead of showing 0.</p>
   <div class="controls">
     <label class="picker">Asset <select id="asset"></select></label>
     <div class="legend" aria-hidden="true">
@@ -241,7 +242,9 @@ function render() {
       node.append(svg("circle", { class: "hit", cx: px, cy, r: HIT }));
       node.append(svg("circle", { class: "mark", cx: px, cy, r: 9, fill: dir === "up" ? "var(--up)" : dir === "down" ? "var(--down)" : "var(--flat)" }));
       node.append(svg("text", { x: px, y: cy + 3.2, "text-anchor": "middle" }, dir === "up" ? "▲" : dir === "down" ? "▼" : "•"));
+      node.setAttribute("data-href", positionUrl(p));
       node.addEventListener("click", () => select(p));
+      node.addEventListener("dblclick", () => { location.href = positionUrl(p); });
       node.addEventListener("keydown", ev => { if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); select(p); } });
       if (state.selected === p) node.classList.add("selected");
       root.append(node);
@@ -249,6 +252,7 @@ function render() {
   }
 }
 
+function positionUrl(p) { return `position.html?post=${encodeURIComponent(p.post.id)}&asset=${encodeURIComponent(p.asset.name)}`; }
 function field(dl, name, label, value, raw, cls) {
   dl.append(el("dt", null, label));
   const dd = el("dd", { "data-field": name }, value);
@@ -284,6 +288,7 @@ function card(p) {
     field(dl, "signed_" + h, h + "d for the call", v == null ? "unresolved · " + p.unresolved[h] : fmtPct(v), v, v == null ? "unresolved" : "");
   }
   c.append(dl);
+  c.append(el("p", null, ""), el("a", { class: "open-position", href: positionUrl(p), "data-field": "position_url" }, "Open position page →"));
   const link = el("a", { href: p.post.url, target: "_blank", rel: "noopener noreferrer", "data-field": "url" }, "Open the post on X");
   c.append(el("p", null), link);
   c.append(el("p", { class: "notes", "data-field": "record_file" }, `Record ${p.record_file} · sha256 ${p.record_sha256.slice(0, 12)}…`));
@@ -302,7 +307,9 @@ function table() {
   tb.replaceChildren();
   for (const p of state.asset.posts) {
     const tr = el("tr", { "data-post-id": p.post.id, tabindex: "0" });
-    tr.append(el("td", null, fmtTime(p.post.posted_at)), el("td", null, "@" + p.post.author),
+    const first = el("td");
+    first.append(el("a", { href: positionUrl(p), class: "row-link", "data-post-id": p.post.id }, fmtTime(p.post.posted_at)));
+    tr.append(first, el("td", null, "@" + p.post.author),
       el("td", null, p.side === 1 ? "long" : p.side === -1 ? "short" : "–"),
       el("td", null, p.entry ? fmtPrice(p.entry.price) : "no entry"),
       el("td", null, p.change_since_post == null ? "unresolved" : fmtPct(p.change_since_post)),

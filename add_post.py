@@ -34,7 +34,7 @@ def main():
     prices, v, failed = resolve.Prices(), resolve.validator(), 0
     for url in a.urls:
         try:
-            path, receipt, created = ingest.ingest(url)
+            path, receipt, created = ingest.ingest(url, avatars=ingest.AVATARS)
         except ingest.IngestError as e:
             print(f"STOP {url}: {e}")
             failed += 1

@@ -7,6 +7,8 @@ save sources/<author>/receipts/<id>.json in the step 3 receipt format plus the c
 attached. Long posts come back cut to ~270 characters with no full text: the receipt says
 textTruncated: true. An existing receipt is never overwritten (a step 3 receipt has the full
 text). Unavailable or deleted posts fail with the reason; nothing is written for them.
+The author's profile picture is saved once as web/avatars/<handle>.jpg (step 7), so the
+position pages never hotlink X.
 
 usage: python3 ingest.py URL [URL ...]
 """
@@ -24,6 +26,7 @@ import resolve
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 EMBED = "https://cdn.syndication.twimg.com/tweet-result?id={id}&token={token}"
+AVATARS = os.path.join(HERE, "web", "avatars")
 
 
 class IngestError(Exception):
@@ -90,7 +93,37 @@ def to_receipt(url, data, captured_at):
     }
 
 
-def ingest(url, fetch=fetch_embed, root=HERE, now=None):
+def save_avatar(data, avatars=AVATARS):
+    """Store the author's profile picture from the embed data as web/avatars/<handle>.jpg (served
+    from our own page, never hotlinked) and record its source and sha256 in index.json.
+    Returns the path, or None when the post carries no picture (the page then shows initials)."""
+    user = (data or {}).get("user") or {}
+    src, handle = user.get("profile_image_url_https"), (user.get("screen_name") or "").lower()
+    if not src or not handle or not src.startswith("https://pbs.twimg.com/"):
+        return None
+    src = src.replace("_normal.", "_200x200.")
+    with urllib.request.urlopen(urllib.request.Request(src, headers={"User-Agent": "Mozilla/5.0"}), timeout=30) as resp:
+        if resp.headers.get_content_type() != "image/jpeg":
+            return None
+        blob = resp.read()
+    os.makedirs(avatars, exist_ok=True)
+    path = os.path.join(avatars, f"{handle}.jpg")
+    with open(path, "wb") as f:
+        f.write(blob)
+    index_path = os.path.join(avatars, "index.json")
+    index = {}
+    if os.path.exists(index_path):
+        with open(index_path) as f:
+            index = json.load(f)
+    index[handle] = {"file": f"{handle}.jpg", "source": src, "sha256": hashlib.sha256(blob).hexdigest(),
+                     "saved_at": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")}
+    with open(index_path, "w") as f:
+        json.dump(dict(sorted(index.items())), f, indent=1)
+        f.write("\n")
+    return path
+
+
+def ingest(url, fetch=fetch_embed, root=HERE, now=None, avatars=None):
     """Returns (path, receipt, created: bool)."""
     m = resolve.URL_RE.match(url or "")
     if not m:
@@ -101,9 +134,15 @@ def ingest(url, fetch=fetch_embed, root=HERE, now=None):
                  if os.path.isdir(os.path.join(root, "sources", d, "receipts"))]:
         if os.path.exists(path):
             with open(path) as f:
-                return path, json.load(f), False
+                receipt = json.load(f)
+            if avatars and not os.path.exists(os.path.join(avatars, f"{receipt['authorHandle'].lower()}.jpg")):
+                save_avatar(fetch(pid), avatars)   # existing receipt, first time we need its avatar
+            return path, receipt, False
     now = now or dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.000Z")
-    receipt = to_receipt(url, fetch(pid), now)
+    data = fetch(pid)
+    receipt = to_receipt(url, data, now)
+    if avatars:
+        save_avatar(data, avatars)
     path = os.path.join(root, "sources", receipt["authorHandle"].lower(), "receipts", f"{pid}.json")
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w") as f:
@@ -119,7 +158,7 @@ def main():
     errors = 0
     for url in a.urls:
         try:
-            path, r, created = ingest(url)
+            path, r, created = ingest(url, avatars=AVATARS)
         except IngestError as e:
             print("ERROR", e, file=sys.stderr)
             errors += 1

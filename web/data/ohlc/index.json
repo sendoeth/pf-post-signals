@@ -1,0 +1,45 @@
+{
+ "schema": "pf-post-signals.ohlc_index.v1",
+ "files": {
+  "BTC": {
+   "file": "BTC.json",
+   "sha256": "69c62663779cd6ce5553cd31ff00d14b2413de8a295846f4009b9b84b0f6c47a",
+   "fetched_at": "2026-10-30T18:27:40Z",
+   "bars": 1442,
+   "first": "2026-08-31T17:00:00Z",
+   "last": "2026-10-30T18:00:00Z"
+  },
+  "COPX": {
+   "file": "COPX.json",
+   "sha256": "977615e51576b7a376d1bb85bb94c7145662920682b86da53241cf0f39b9ad98",
+   "fetched_at": "2026-10-30T18:27:41Z",
+   "bars": 272,
+   "first": "2026-09-08T13:30:00Z",
+   "last": "2026-10-30T18:27:39Z"
+  },
+  "GOLD": {
+   "file": "GOLD.json",
+   "sha256": "c60914a71d78135d9f6cb01e74c0e8abb10d3ee103ccf81d702c63a7ea11be1a",
+   "fetched_at": "2026-10-30T18:27:42Z",
+   "bars": 189,
+   "first": "2026-10-20T15:00:00Z",
+   "last": "2026-10-30T18:17:36Z"
+  },
+  "SILVER": {
+   "file": "SILVER.json",
+   "sha256": "6e8da06e73a609407bb27ed1129781381a8e3cc408f631224a5d83512c866968",
+   "fetched_at": "2026-10-30T18:27:43Z",
+   "bars": 555,
+   "first": "2026-09-28T17:00:00Z",
+   "last": "2026-10-30T18:17:31Z"
+  },
+  "STOCKS": {
+   "file": "STOCKS.json",
+   "sha256": "12587a86081640c8df48a876912fe3d87e75053a97ea321ebe100a9191274e2a",
+   "fetched_at": "2026-10-30T18:27:44Z",
+   "bars": 139,
+   "first": "2026-10-05T13:30:00Z",
+   "last": "2026-10-30T18:27:43Z"
+  }
+ }
+}

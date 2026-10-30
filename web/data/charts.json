@@ -5757,6 +5757,13 @@
       "7": 0.014689801705010552,
       "30": 0.08513311444750848
      },
+     "best": {
+      "at": "2026-09-23T05:00:00Z",
+      "price": 87166.94,
+      "move": 0.12334306879954271,
+      "basis": "call side",
+      "for_call": 0.12334306879954271
+     },
      "record_file": "records/bobloukas/2094827036812435935_BTC.json",
      "record_sha256": "d35e1cc2703d5d68f2c5ac1b474f5bb3ffcf6365b61abc9cfc16d4fd50a98370"
     },
@@ -5818,6 +5825,13 @@
       "1": 0.008008492444139037,
       "7": 0.03803141250512887,
       "30": 0.0020439144464337033
+     },
+     "best": {
+      "at": "2026-09-23T05:00:00Z",
+      "price": 87166.94,
+      "move": 0.07696166304433905,
+      "basis": "call side",
+      "for_call": 0.07696166304433905
      },
      "record_file": "records/bobloukas/2100953898630443447_BTC.json",
      "record_sha256": "dbd62961705f350825ec6acaa5c6e87b1bb1e69f1fd2c18f10912a440da2dc02"
@@ -5881,6 +5895,13 @@
       "7": -0.020431185026311804,
       "30": -0.021318987846184467
      },
+     "best": {
+      "at": "2026-09-23T05:00:00Z",
+      "price": 87166.94,
+      "move": 0.021611288867011247,
+      "basis": "call side",
+      "for_call": 0.021611288867011247
+     },
      "record_file": "records/bobloukas/2102014028855820403_BTC.json",
      "record_sha256": "cb9263e80b6b3274a8564d8847f107b2359f3ea1b2654a260a9cf2b28fdcabdd"
     },
@@ -5943,6 +5964,13 @@
       "7": -0.021345944924522908,
       "30": -0.01919293382717302
      },
+     "best": {
+      "at": "2026-09-23T05:00:00Z",
+      "price": 87166.94,
+      "move": 0.019897772632152755,
+      "basis": "call side",
+      "for_call": 0.019897772632152755
+     },
      "record_file": "records/bobloukas/2102024327075877097_BTC.json",
      "record_sha256": "ed750d7c8d691722641b1b68a471f73d67bad64da36f73e4cfed23801c84be61"
     },
@@ -6003,6 +6031,13 @@
       "1": 0.011377401961948586,
       "7": -0.0385756870383126,
       "30": null
+     },
+     "best": {
+      "at": "2026-10-02T13:00:00Z",
+      "price": 86810.01,
+      "move": 0.0309732547920476,
+      "basis": "call side",
+      "for_call": 0.0309732547920476
      },
      "record_file": "records/bobloukas/2105699317004583026_BTC.json",
      "record_sha256": "287d07f5dbcc9a09581246e7fe1c1d7c445e654b7474ef4c8cdc4ab5c611fc2f"
@@ -6065,6 +6100,13 @@
       "7": -0.01003556169489428,
       "30": null
      },
+     "best": {
+      "at": "2026-10-21T22:00:00Z",
+      "price": 84843.72,
+      "move": 0.03331843019944114,
+      "basis": "call side",
+      "for_call": 0.03331843019944114
+     },
      "record_file": "records/bobloukas/2110764348981612915_BTC.json",
      "record_sha256": "6cefea17714d78575129607430ef3f2d2e039e15653427cf35b86b5074545fff"
     },
@@ -6126,6 +6168,13 @@
       "7": -0.04701621777694809,
       "30": null
      },
+     "best": {
+      "at": "2026-10-21T22:00:00Z",
+      "price": 84843.72,
+      "move": 0.0031688767377773264,
+      "basis": "call side",
+      "for_call": 0.0031688767377773264
+     },
      "record_file": "records/bobloukas/2112915214479798344_BTC.json",
      "record_sha256": "3f8aedbc5584773969ec16d96a15854b5e159eb11b4a3bd1230b50249abe4e0c"
     },
@@ -6186,6 +6235,13 @@
       "7": -0.04701621777694809,
       "30": null
      },
+     "best": {
+      "at": "2026-10-21T22:00:00Z",
+      "price": 84843.72,
+      "move": 0.0031688767377773264,
+      "basis": "call side",
+      "for_call": 0.0031688767377773264
+     },
      "record_file": "records/live/2112919830357577753_BTC.json",
      "record_sha256": "ceb9a1cd871f9a0e88ed7fcfac779bce19d316b47cfd13c451223c216e5fed45"
     },
@@ -6238,6 +6294,12 @@
       "last_bar_at": "2026-10-30T18:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 2
+     },
+     "best": {
+      "at": "2026-10-29T16:00:00Z",
+      "price": 81778.01,
+      "move": 0.0,
+      "basis": "highest price"
      },
      "record_file": "records/posts/2115823513915290059_BTC.json",
      "record_sha256": "2cf194ac12ded235e7fe85f9255d6018003371836d18dbedbc730cadf242f7a4"
@@ -7330,6 +7392,13 @@
       "7": -0.11562270485783233,
       "30": -0.12538033784492708
      },
+     "best": {
+      "at": "2026-09-09T18:30:00Z",
+      "price": 95.69,
+      "move": 0.003986989822683862,
+      "basis": "call side",
+      "for_call": 0.003986989822683862
+     },
      "record_file": "records/bobloukas/2097324043334451439_COPX.json",
      "record_sha256": "5c6a41592c848dc8a0ddf1900b91ff8d15c9213e6d68f98d72111b9f1f4dffe4"
     },
@@ -7390,6 +7459,13 @@
       "1": -0.0032558139534883956,
       "7": -0.008255813953488289,
       "30": null
+     },
+     "best": {
+      "at": "2026-10-06T18:30:00Z",
+      "price": 86.93,
+      "move": 0.010813953488372219,
+      "basis": "call side",
+      "for_call": 0.010813953488372219
      },
      "record_file": "records/bobloukas/2106750657877434407_COPX.json",
      "record_sha256": "259b9c04e68f7d88fd51bc81c2938910e28b581b9adf04122c85616ac36c3940"
@@ -7937,6 +8013,13 @@
       "7": 0.0226829215379053,
       "30": null
      },
+     "best": {
+      "at": "2026-10-26T01:00:00Z",
+      "price": 3998.8999,
+      "move": -0.03606125105459812,
+      "basis": "call side",
+      "for_call": 0.03606125105459812
+     },
      "record_file": "records/bobloukas/2112919830357577753_GOLD.json",
      "record_sha256": "63ef17a50fea146f50e9177d50d8abd29e20f65135b924bfd223d68fab4f71b0"
     },
@@ -7987,6 +8070,12 @@
       "last_bar_at": "2026-10-30T17:53:01Z",
       "max_lag_days": 2,
       "session_lag_days": 4
+     },
+     "best": {
+      "at": "2026-10-30T17:00:00Z",
+      "price": 3905.7,
+      "move": 0.0,
+      "basis": "highest price"
      },
      "record_file": "records/posts/2116199680157647216_GOLD.json",
      "record_sha256": "5326cb934322e169c7c060de7dbc6e9c260f53cabd47ada13d7a99c1906c270e"
@@ -10182,6 +10271,13 @@
       "7": -0.008018983716553407,
       "30": null
      },
+     "best": {
+      "at": "2026-10-27T08:00:00Z",
+      "price": 52.825,
+      "move": -0.13550445953686263,
+      "basis": "call side",
+      "for_call": 0.13550445953686263
+     },
      "record_file": "records/bobloukas/2104977267109896477_SILVER.json",
      "record_sha256": "10409fb1ca5c4088c3a38b3d5a8d694396b62c676359cd81d1b017c3aa2cd060"
     },
@@ -10243,6 +10339,13 @@
       "7": -0.002702260072060314,
       "30": null
      },
+     "best": {
+      "at": "2026-10-27T08:00:00Z",
+      "price": 52.825,
+      "move": -0.13486734359646246,
+      "basis": "call side",
+      "for_call": 0.13486734359646246
+     },
      "record_file": "records/bobloukas/2106744910896312646_SILVER.json",
      "record_sha256": "84cae51ee794343630e10d49278968531fd4621730a3e12a5e4f665d8c319cd5"
     },
@@ -10302,6 +10405,13 @@
       "1": -0.007336552748885561,
       "7": 0.07020802377414559,
       "30": null
+     },
+     "best": {
+      "at": "2026-10-30T16:01:39Z",
+      "price": 49.25,
+      "move": -0.08525260029717685,
+      "basis": "call side",
+      "for_call": 0.08525260029717685
      },
      "record_file": "records/live/2113613893662588966_SILVER.json",
      "record_sha256": "30ad6ae8c75744fa0a0b68644fa90dc9dd40dfebb795c066f0035b0200e10283"
@@ -10865,6 +10975,13 @@
       "7": 0.01180994946017222,
       "30": null
      },
+     "best": {
+      "at": "2026-10-06T15:30:00Z",
+      "price": 781.34,
+      "move": 0.015135963829593813,
+      "basis": "call side",
+      "for_call": 0.015135963829593813
+     },
      "record_file": "records/bobloukas/2107063137958564197_STOCKS.json",
      "record_sha256": "20086e15983cc0b4f75d8439151e8d9635b19caba59cfa042e287ef877b035f0"
     },
@@ -10925,6 +11042,13 @@
       "1": -0.005636515375232687,
       "7": -0.0016948064454003209,
       "30": null
+     },
+     "best": {
+      "at": "2026-10-06T15:30:00Z",
+      "price": 781.34,
+      "move": 0.003197021249277787,
+      "basis": "call side",
+      "for_call": 0.003197021249277787
      },
      "record_file": "records/bobloukas/2107475725573906895_STOCKS.json",
      "record_sha256": "e88e36f83e40ff81737442163de7aeb27e41cef6db3f741d0c72c72b20408767"

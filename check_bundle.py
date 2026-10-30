@@ -6,6 +6,7 @@
   record file's sha256 matches the one the card shows
 - every bar of every drawn record is on its asset's price line with the same price
 - every unresolved horizon is null in the bundle, never 0
+- every best-since-post value equals one recomputed here from the record's own series
 The browser test (tests/browser_test.js) then checks what each card actually renders.
 """
 import glob
@@ -29,6 +30,7 @@ if bundle["records_scanned"] != len(files):
     fails.append(f"records_scanned {bundle['records_scanned']} != {len(files)} files")
 
 cells = 0
+best_checked = 0
 for a in bundle["assets"]:
     bars = dict(map(tuple, a["series"]))
     if [t for t, _ in a["series"]] != sorted(bars):
@@ -39,7 +41,22 @@ for a in bundle["assets"]:
         rec = json.loads(blob)
         if hashlib.sha256(blob).hexdigest() != p["record_sha256"]:
             fails.append(f"{p['record_file']}: sha256 differs")
-        shown = {k: v for k, v in p.items() if k not in ("record_file", "record_sha256")}
+        shown = {k: v for k, v in p.items() if k not in ("record_file", "record_sha256", "best")}
+        # best % since post, recomputed here independently from the record's own series
+        best = None
+        if rec["entry"]:
+            p0, side = rec["entry"]["price"], rec.get("side")
+            top = None
+            for at, price in rec["series"]:
+                score = side * (price / p0 - 1) if side else price
+                if top is None or score > top[0]:
+                    top = (score, at, price)
+            best = {"at": top[1], "price": top[2], "move": top[2] / p0 - 1, "basis": "call side" if side else "highest price"}
+            if side:
+                best["for_call"] = side * (top[2] / p0 - 1)
+        if p.get("best") != best:
+            fails.append(f"{p['record_file']}: best since post {p.get('best')} != recomputed {best}")
+        best_checked += 1
         if shown != {k: v for k, v in rec.items() if k != "series"}:
             fails.append(f"{p['record_file']}: bundle post differs from the record")
         if rec["asset"]["name"] != a["name"]:
@@ -54,7 +71,7 @@ for a in bundle["assets"]:
                 fails.append(f"{p['record_file']}: {h}d unresolved but has a move")
 
 print(f"bundle: {len(files)} record files -> {len(drawn)} drawn, {len(bundle['superseded'])} superseded, "
-      f"{len(bundle['refused'])} refused; {cells} horizon cells checked -> " + ("ALL MATCH" if not fails else f"{len(fails)} FAIL"))
+      f"{len(bundle['refused'])} refused; {cells} horizon cells, {best_checked} best-since-post values checked -> " + ("ALL MATCH" if not fails else f"{len(fails)} FAIL"))
 for x in fails:
     print(" -", x)
 sys.exit(1 if fails else 0)
