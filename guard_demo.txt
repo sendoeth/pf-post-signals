@@ -1,0 +1,4 @@
+# CI guard demo (test values, not real): must be rejected
+server = 198.51.100.23
+aws_key_id = AKIAOXYIMCFIP6NZB353
+bot = 679361730:AAI08WoHmiXWnhREl-Asie_ys64KT2rumOT
