@@ -181,6 +181,7 @@ async function main() {
     if (![...s.options].some(o => o.value === f[k])) f[k] = DEFAULTS[k];   // unknown value in the url -> default
     s.value = f[k];
   }
+  writeUrl(f);   // invalid or non-canonical values in the address bar are rewritten to the state shown
   const draw = () => {
     const rows = sortRows(applyFilters(all, f, asOf), f.sort);
     renderStats(rows);

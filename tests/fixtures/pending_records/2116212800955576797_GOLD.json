@@ -1,0 +1,44 @@
+{
+ "schema": "post_price.v1",
+ "post": {
+  "id": "2116212800955576797",
+  "url": "https://x.com/BobLoukas/status/2116212800955576797",
+  "author": "BobLoukas",
+  "posted_at": "2026-10-30T16:57:03Z",
+  "posted_at_source": "snowflake",
+  "text": null,
+  "receipt_sha256": null
+ },
+ "asset": {
+  "name": "GOLD",
+  "source": "yahoo",
+  "symbol": "GC=F",
+  "price_field": "open"
+ },
+ "status": "pending",
+ "entry": null,
+ "latest": null,
+ "change_since_post": null,
+ "exits": {
+  "1": null,
+  "7": null,
+  "30": null
+ },
+ "moves": {
+  "1": null,
+  "7": null,
+  "30": null
+ },
+ "unresolved": {
+  "1": "no bar at or after the post yet",
+  "7": "no bar at or after the post yet",
+  "30": "no bar at or after the post yet"
+ },
+ "series": [],
+ "resolved_with": {
+  "prices": "tests/fixtures/pending_records",
+  "last_bar_at": "2026-10-30T15:00:00Z",
+  "max_lag_days": 2,
+  "session_lag_days": 4
+ }
+}

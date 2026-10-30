@@ -5,7 +5,10 @@
 //     and the selects showing the URL's values
 //  B. the controls: every option of every select changed in the page updates rows and the URL
 //  C. default view: every field of every row equals its record file on disk (sha256-checked)
-//  D. sparklines: point count = bundle bars from entry to latest; unknown URL values -> defaults
+//  D. sparklines: point count = bundle bars from entry to latest; unknown URL values -> defaults,
+//     removed from the address bar
+//  F. (local only) a test-only site copy with a pending post: it reads "unresolved" and ranks last
+//     by return and by best, first by newest; it counts in Positions but not in the averages
 //  E. 0 console errors, 0 CSP violations, no horizontal scroll on a phone; screenshots
 // usage: node tests/board_test.js [--url https://.../web/] [--screenshots DIR]
 const fs = require('fs');
@@ -91,6 +94,7 @@ async function read(page) {
   const fails = [], consoleErrors = [];
   const fail = m => fails.push(m);
   let combos = 0, nonEmpty = 0, uiChanges = 0, fieldChecks = 0, csp = 0;
+  const pendingChecks = [];
   const cmp = (tag, got, f) => {
     const want = expected(rows, f, asOf);
     if (got.rows.map(r => r.id + '|' + r.asset).join(',') !== want.rows.map(r => r.id + '|' + r.asset).join(',')) return fail(`${tag}: order ${got.rows.map(r => r.asset + r.id.slice(-4))} != ${want.rows.map(r => r.asset + r.id.slice(-4))}`);
@@ -102,7 +106,7 @@ async function read(page) {
     });
     for (const [k, v] of Object.entries(want.stats)) if (JSON.stringify(got.stats[k]) !== JSON.stringify(v)) fail(`${tag}: stat ${k} ${JSON.stringify(got.stats[k])} != ${JSON.stringify(v)}`);
     if (got.empty !== (want.rows.length === 0)) fail(`${tag}: empty state shown=${got.empty} for ${want.rows.length} rows`);
-    if (want.rows.length) nonEmpty++;
+    return want.rows.length > 0;
   };
   try {
     const page = await browser.newPage();
@@ -120,7 +124,7 @@ async function read(page) {
         const f = { time, side, author, asset, sort }, q = query(f);
         const got = await load(q);
         combos++;
-        cmp(`url ${q || '(default)'}`, got, f);
+        if (cmp(`url ${q || '(default)'}`, got, f)) nonEmpty++;
         if (JSON.stringify(got.selects) !== JSON.stringify(f)) fail(`url ${q}: selects show ${JSON.stringify(got.selects)}`);
         if (got.search !== q) fail(`url ${q}: page rewrote the url to ${got.search}`);
       }
@@ -162,11 +166,50 @@ async function read(page) {
     });
     const odd = await load('?side=bogus&sort=evil&time=1d&asset=%3Cb%3E');
     if (JSON.stringify(odd.selects) !== JSON.stringify(DEFAULTS)) fail(`unknown url values not reset: ${JSON.stringify(odd.selects)}`);
+    if (odd.search !== '') fail(`unknown url values not removed from the address bar: ${odd.search}`);
+    cmp('invalid url', odd, DEFAULTS);
+    const partly = await load('?side=short&sort=evil');
+    if (partly.search !== '?side=short') fail(`partly invalid url rewritten to ${partly.search}, want ?side=short`);
     // every row link opens its position page
     for (const r of want.slice(0, 3)) {
       await page.goto(base + `position.html?post=${r.id}&asset=${encodeURIComponent(r.asset)}`, { waitUntil: 'networkidle0' });
       await page.waitForFunction(() => document.body.dataset.ready, { timeout: 20000 });
       if (await page.evaluate(() => document.body.dataset.ready) !== '1') fail(`link target for ${r.id} did not load`);
+    }
+
+    // F. unresolved positions (local only): a test-only copy of the site whose bundle adds
+    //    tests/fixtures/pending_records (a post with no entry bar yet). Never deployed.
+    if (!liveUrl) {
+      const os = require('os'), { execFileSync } = require('child_process');
+      const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'pfps-pending-')), recs = path.join(tmp, 'records');
+      fs.cpSync(WEB, path.join(tmp, 'web'), { recursive: true });
+      fs.cpSync(path.join(ROOT, 'records'), recs, { recursive: true });
+      fs.cpSync(path.join(ROOT, 'tests', 'fixtures', 'pending_records'), path.join(recs, 'pending'), { recursive: true });
+      execFileSync('python3', [path.join(ROOT, 'build_chart.py'), '--records', recs, '--out', path.join(tmp, 'web', 'data', 'charts.json')], { cwd: ROOT });
+      const pb = JSON.parse(fs.readFileSync(path.join(tmp, 'web', 'data', 'charts.json'), 'utf8'));
+      const pend = pb.assets.flatMap(a => a.posts.filter(p => p.status === 'pending').map(p => p.post.id));
+      const srv = await new Promise(ok => { const s = http.createServer((req, res) => {
+        const rel = decodeURIComponent(new URL(req.url, 'http://x').pathname).replace(/^\/+/, '') || 'index.html';
+        const file = path.resolve(tmp, 'web', rel);
+        if (!fs.existsSync(file) || fs.statSync(file).isDirectory()) { res.writeHead(404); res.end(); return; }
+        res.writeHead(200, { 'content-type': TYPES[path.extname(file)] || 'application/octet-stream' }); fs.createReadStream(file).pipe(res);
+      }); s.listen(0, '127.0.0.1', () => ok(s)); });
+      const pbase = `http://127.0.0.1:${srv.address().port}/`;
+      for (const sort of ['return', 'best', 'newest']) {
+        await page.goto(pbase + (sort === 'return' ? '' : '?sort=' + sort), { waitUntil: 'networkidle0' });
+        await page.waitForFunction(() => document.body.dataset.ready === '1');
+        const g = await read(page), total = g.rows.length;
+        const idx = g.rows.findIndex(r => pend.includes(r.id));
+        const row = g.rows[idx];
+        const where = sort === 'newest' ? 'first (newest post)' : 'last';
+        const ok = idx >= 0 && (sort === 'newest' ? idx === 0 : idx === total - 1) && row.f.return.text === 'unresolved' && row.f.best.text === '–'
+          && row.f.prices.text === 'no entry bar' && g.stats.count === total
+          && JSON.stringify(g.stats.avg_return) === JSON.stringify(expected(model(pb), { ...DEFAULTS, sort }, pb.prices_as_of || new Date().toISOString()).stats.avg_return);
+        pendingChecks.push(`sort=${sort}: pending post ${pend[0]} at rank ${idx + 1} of ${total} (${where}), return "${row && row.f.return.text}", best "${row && row.f.best.text}", prices "${row && row.f.prices.text}" -> ${ok ? 'OK' : 'WRONG'}`);
+        if (!ok) fail(`pending fixture, sort=${sort}: rank ${idx + 1}/${total}, ${JSON.stringify(row && row.f.return)}`);
+        if (shotDir && sort === 'return') await page.screenshot({ path: path.join(shotDir, 'board_pending_fixture.png'), fullPage: true });
+      }
+      srv.close();
     }
 
     // E. screenshots + phone
@@ -187,6 +230,7 @@ async function read(page) {
   console.log(`page ${base}`);
   console.log(`filter/sort combinations loaded from their URL: ${combos} (${nonEmpty} with rows, ${combos - nonEmpty} correctly empty); select changes: ${uiChanges}; ` +
     `default-view fields checked against records: ${fieldChecks}; rows ${rows.length}; CSP violations ${csp}; console errors ${consoleErrors.length}`);
+  for (const c of pendingChecks) console.log('unresolved (test-only fixture copy): ' + c);
   for (const f of fails.slice(0, 40)) console.log(' -', f);
   if (fails.length > 40) console.log(` ... ${fails.length - 40} more`);
   console.log(fails.length ? `FAIL (${fails.length})` : 'ALL PASS');
