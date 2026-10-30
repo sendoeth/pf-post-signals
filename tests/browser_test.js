@@ -1,6 +1,8 @@
 // Step 5 browser test: load web/index.html in headless Chromium, click every bubble of every asset,
 // and check the opened card against the record file on disk. Fails on any mismatch or console error.
-// usage: node tests/browser_test.js [--screenshots DIR] [--url https://.../web/]  (default: serve web/ on 127.0.0.1)
+// usage: node tests/browser_test.js [--screenshots DIR] [--url https://.../web/] [--expect ID,ID]
+//   default: serve web/ on 127.0.0.1. --expect: these posts must be drawn as bubbles; with
+//   --screenshots, each one's card is captured as post_<id>.png
 const fs = require('fs');
 const path = require('path');
 const http = require('http');
@@ -10,6 +12,7 @@ const puppeteer = require('/home/postfiat/node_modules/puppeteer');
 const ROOT = path.resolve(__dirname, '..');
 const WEB = path.join(ROOT, 'web');
 const liveUrl = process.argv.includes('--url') ? process.argv[process.argv.indexOf('--url') + 1] : null;
+const expect = process.argv.includes('--expect') ? process.argv[process.argv.indexOf('--expect') + 1].split(',') : [];
 const shotDir = process.argv.includes('--screenshots') ? path.resolve(process.argv[process.argv.indexOf('--screenshots') + 1]) : null;
 const HORIZONS = ['1', '7', '30'];
 
@@ -116,7 +119,24 @@ function serve() {
       }
     }
 
-    if (shotDir) {
+    for (const id of expect) {
+      const asset = bundle.assets.find(a => a.posts.some(p => p.post.id === id));
+      if (!asset) { fail(`expected post ${id} is not in the bundle`); continue; }
+      await page.setViewport({ width: 1280, height: 900 });
+      await page.select('#asset', asset.name);
+      const mark = await page.$(`.bubble[data-post-id="${id}"] circle.mark`);
+      if (!mark) { fail(`expected post ${id} has no bubble on ${asset.name}`); continue; }
+      await mark.click();
+      const opened = await page.$eval('#card', c => c.getAttribute('data-post-id'));
+      if (opened !== id) fail(`expected post ${id}: bubble opened ${opened}`);
+      console.log(`expected post ${id}: bubble on ${asset.name}, card opens ${opened === id ? 'OK' : 'WRONG'}`);
+      if (shotDir) {
+        fs.mkdirSync(shotDir, { recursive: true });
+        await page.screenshot({ path: path.join(shotDir, `post_${id}.png`), fullPage: true });
+      }
+    }
+
+    if (shotDir && !expect.length) {
       fs.mkdirSync(shotDir, { recursive: true });
       const sameHour = bundle.assets.find(a => a.name === 'BTC');
       await page.select('#asset', 'BTC');

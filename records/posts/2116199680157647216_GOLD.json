@@ -1,0 +1,59 @@
+{
+ "schema": "post_price.v1",
+ "post": {
+  "id": "2116199680157647216",
+  "url": "https://x.com/BobLoukas/status/2116199680157647216",
+  "author": "BobLoukas",
+  "posted_at": "2026-10-30T16:04:55Z",
+  "posted_at_source": "receipt",
+  "text": "End of December Gold will be a screaming buy again.  A 1-year correction/reset, and the midpoint of the 8 yr cycle. \n\nStill believe it\u2019s a secular bull market.",
+  "receipt_sha256": "d95b5832b1b4140b2a003bfbd4f3970149176f1e9fecd2be7996a34d519228be"
+ },
+ "asset": {
+  "name": "GOLD",
+  "source": "yahoo",
+  "symbol": "GC=F",
+  "price_field": "open"
+ },
+ "status": "partial",
+ "entry": {
+  "at": "2026-10-30T17:00:00Z",
+  "price": 3905.7
+ },
+ "latest": {
+  "at": "2026-10-30T17:42:28Z",
+  "price": 3891.6001
+ },
+ "change_since_post": -0.003610082699644024,
+ "exits": {
+  "1": null,
+  "7": null,
+  "30": null
+ },
+ "moves": {
+  "1": null,
+  "7": null,
+  "30": null
+ },
+ "unresolved": {
+  "1": "horizon not yet reached",
+  "7": "horizon not yet reached",
+  "30": "horizon not yet reached"
+ },
+ "series": [
+  [
+   "2026-10-30T17:00:00Z",
+   3905.7
+  ],
+  [
+   "2026-10-30T17:42:28Z",
+   3891.6001
+  ]
+ ],
+ "resolved_with": {
+  "prices": "live:binance+yahoo",
+  "last_bar_at": "2026-10-30T17:42:28Z",
+  "max_lag_days": 2,
+  "session_lag_days": 4
+ }
+}

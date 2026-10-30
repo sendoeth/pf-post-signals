@@ -123,12 +123,31 @@ class Resolver(unittest.TestCase):
         r = self.one({"url": post_url("2026-10-03T13:30:00Z"), "asset": "STOCKS"}, p)  # Sat 13:30 -> Mon 13:00 = 1.98d
         self.assertEqual(r["entry"]["at"], "2026-10-05T13:00:00Z")
 
-    def test_friday_evening_post_has_no_entry_under_the_2_day_rule(self):
-        # known limitation, kept for step 3 parity: Fri 21:15 -> Mon 13:00 is 2.66 days
+    def test_friday_evening_stock_post_enters_at_monday_open(self):
+        # step 4 finding, fixed in step 6: Fri 21:15 -> Mon 13:00 is 2.66 days, inside the 4-day
+        # exchange-hours entry rule, so the post enters at the next session open
         p = self.snapshot(STOCKS=hourly("2026-09-01T00:00:00Z", "2026-11-10T00:00:00Z", skip=us_session))
-        r = self.one({"url": post_url("2026-10-02T21:15:00Z"), "asset": "STOCKS"}, p)
+        r = self.one({"url": post_url("2026-10-02T21:15:00Z"), "asset": "STOCKS", "side": "long"}, p)
+        self.assertEqual(r["entry"]["at"], "2026-10-05T13:00:00Z")
+        self.assertEqual(r["resolved_with"]["session_lag_days"], 4)
+        self.assertEqual(r["status"], "resolved")
+        self.assertEqual(r["exits"]["1"]["at"], "2026-10-05T13:00:00Z")  # Sat 21:15 target -> Mon open
+        self.assertEqual(r["exits"]["7"]["at"], "2026-10-12T13:00:00Z")  # Fri 21:15 target -> Mon open (2.66d)
+
+    def test_friday_evening_crypto_rule_unchanged(self):
+        # same 2.66-day gap on a 24/7 asset is still no_entry: crypto keeps the 2-day rule
+        p = self.snapshot(BTC=hourly("2026-09-01T00:00:00Z", "2026-11-10T00:00:00Z", skip=us_session))
+        r = self.one({"url": post_url("2026-10-02T21:15:00Z"), "asset": "BTC"}, p)
         self.assertEqual(r["status"], "no_entry")
+        self.assertEqual(r["resolved_with"]["session_lag_days"], 2)
         self.assertEqual(r["unresolved"]["1"], "first bar 2026-10-05T13:00:00Z is >2 days after the post (market closed)")
+
+    def test_stock_post_before_a_long_weekend_enters_tuesday(self):
+        # Fri 20:30 -> Tue 13:00 (Monday holiday) = 3.69 days: still the next session open
+        holiday = lambda t: us_session(t) or t.date() == dt.date(2026, 10, 5)
+        p = self.snapshot(STOCKS=hourly("2026-09-01T00:00:00Z", "2026-11-10T00:00:00Z", skip=holiday))
+        r = self.one({"url": post_url("2026-10-02T20:30:00Z"), "asset": "STOCKS"}, p)
+        self.assertEqual(r["entry"]["at"], "2026-10-06T13:00:00Z")
 
     def test_long_closure_gives_no_entry(self):
         gap = lambda t: dt.datetime(2026, 10, 2, tzinfo=dt.timezone.utc) <= t < dt.datetime(2026, 10, 7, tzinfo=dt.timezone.utc)
@@ -146,7 +165,7 @@ class Resolver(unittest.TestCase):
         p = self.snapshot(GOLD=hourly("2026-09-01T00:00:00Z", "2026-11-10T00:00:00Z", skip=gap))
         r = self.one({"url": post_url("2026-10-01T09:00:00Z"), "asset": "GOLD"}, p)
         self.assertIsNone(r["exits"]["7"])
-        self.assertIn("is >2 days after 2026-10-08T09:00:00Z (market closed)", r["unresolved"]["7"])
+        self.assertIn("is >4 days after 2026-10-08T09:00:00Z (market closed)", r["unresolved"]["7"])
         self.assertIsNotNone(r["moves"]["30"])
         self.assertEqual(r["status"], "partial")
 

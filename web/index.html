@@ -33,7 +33,8 @@ h1 { font-size: 22px; margin: 0 0 4px; }
 label.picker { display: flex; align-items: center; gap: 8px; font-weight: 600; }
 select { font: inherit; padding: 6px 10px; border-radius: 8px; border: 1px solid var(--axis); background: var(--card); color: var(--ink); }
 .legend { display: flex; gap: 16px; color: var(--ink-2); font-size: 14px; }
-.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.legend span { display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
+.legend { flex-wrap: wrap; }
 .dot { width: 14px; height: 14px; border-radius: 50%; display: inline-grid; place-items: center; color: #fff; font-size: 8px; line-height: 1; }
 .layout { display: grid; grid-template-columns: minmax(0, 1fr) 340px; grid-template-areas: "chart card" "table card"; gap: 16px; align-items: start; }
 #chart-wrap { grid-area: chart; } .tablewrap { grid-area: table; } #card { grid-area: card; }
@@ -46,6 +47,7 @@ svg { display: block; width: 100%; height: auto; touch-action: pan-y; }
 .axis { stroke: var(--axis); stroke-width: 1; }
 .tick { fill: var(--muted); font-size: 11px; }
 .price { fill: none; stroke: var(--line); stroke-width: 2; stroke-linejoin: round; }
+.price.gap { stroke: var(--muted); stroke-width: 1.5; stroke-dasharray: 4 4; }
 .stem { stroke: var(--muted); stroke-width: 1; pointer-events: none; }
 .bubble { cursor: pointer; }
 .bubble circle { stroke: var(--surface); stroke-width: 2; }
@@ -89,6 +91,7 @@ code { font-size: 12px; }
     <div class="legend" aria-hidden="true">
       <span><span class="dot" style="background:var(--up)">▲</span>up since post</span>
       <span><span class="dot" style="background:var(--down)">▼</span>down since post</span>
+      <span><svg width="22" height="8" aria-hidden="true"><line x1="0" y1="4" x2="22" y2="4" class="price gap"/></svg>no price data</span>
     </div>
     <span id="summary" class="notes"></span>
   </div>
@@ -124,6 +127,15 @@ function fmtTime(iso) { return iso.slice(0, 10) + " " + iso.slice(11, 16) + " UT
 function direction(post) {
   const c = post.change_since_post;
   return c == null ? "none" : c > 0 ? "up" : c < 0 ? "down" : "flat";
+}
+function missing(t0, t1, source) {
+  const a = Date.parse(t0), b = Date.parse(t1);
+  if (source === "binance") return b - a > 2 * 3600e3;
+  for (let d = new Date(t0.slice(0, 10) + "T00:00:00Z"); ; ) {
+    d.setUTCDate(d.getUTCDate() + 1);
+    if (d.getTime() + 864e5 > b) return false;   // only whole days strictly between the bars
+    if (d.getUTCDay() !== 0 && d.getUTCDay() !== 6) return true;
+  }
 }
 function el(tag, attrs, text) {
   const n = attrs && attrs.svg ? document.createElementNS(SVGNS, tag) : document.createElement(tag);
@@ -186,7 +198,16 @@ function render() {
     root.append(svg("text", { class: "tick", x: px, y: H - m.b + 18, "text-anchor": "middle" },
       d.toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone: "UTC" })));
   }
-  root.append(svg("path", { class: "price", d: series.map((b, i) => (i ? "L" : "M") + x(b[0]).toFixed(1) + "," + y(b[1]).toFixed(1)).join("") }));
+  // A stretch with no bars across a whole weekday (or > 2 h on a 24/7 asset) is missing data,
+  // not a closed market: drawn dashed so it is not read as prices.
+  const pt = b => x(b[0]).toFixed(1) + "," + y(b[1]).toFixed(1);
+  let solid = "", gaps = "";
+  series.forEach((b, i) => {
+    if (i && missing(series[i - 1][0], b[0], a.source)) { gaps += "M" + pt(series[i - 1]) + "L" + pt(b); solid += "M" + pt(b); }
+    else solid += (i ? "L" : "M") + pt(b);
+  });
+  root.append(svg("path", { class: "price", d: solid }));
+  if (gaps) root.append(svg("path", { class: "price gap", d: gaps, "data-gap": "1" }));
 
   const cross = svg("line", { class: "crosshair", y1: m.t, y2: H - m.b, visibility: "hidden" });
   const hover = svg("rect", { x: m.l, y: m.t, width: W - m.l - m.r, height: plotH, fill: "transparent" });

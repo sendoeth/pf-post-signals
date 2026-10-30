@@ -3615,7 +3615,8 @@
  "resolved_with": {
   "prices": "data/hourly_prices.json",
   "last_bar_at": "2026-10-28T15:00:00Z",
-  "max_lag_days": 2
+  "max_lag_days": 2,
+  "session_lag_days": 2
  },
  "signed_returns": {
   "1": 0.008215955838402289,

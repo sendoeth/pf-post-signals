@@ -1,0 +1,934 @@
+{
+ "labelled_posts": 59,
+ "groups": {
+  "call": 15,
+  "excluded": 21,
+  "off_topic": 23
+ },
+ "table": {
+  "call, one asset": {
+   "exact match": 12,
+   "needs review": 2
+  },
+  "call, two-asset pair": {
+   "needs review, both assets found": 1
+  },
+  "not a call (not scored)": {
+   "detected an asset": 15,
+   "needs review": 29
+  }
+ },
+ "rows": [
+  {
+   "post_id": "2094827036812435935",
+   "group": "call",
+   "label": [
+    "BTC"
+   ],
+   "detector": {
+    "status": "detected",
+    "asset": "BTC",
+    "matched": [
+     {
+      "asset": "BTC",
+      "term": "bitcoin"
+     }
+    ],
+    "reason": null
+   },
+   "outcome": "exact match"
+  },
+  {
+   "post_id": "2097324043334451439",
+   "group": "call",
+   "label": [
+    "COPX"
+   ],
+   "detector": {
+    "status": "detected",
+    "asset": "COPX",
+    "matched": [
+     {
+      "asset": "COPX",
+      "term": "$COPX"
+     }
+    ],
+    "reason": null
+   },
+   "outcome": "exact match"
+  },
+  {
+   "post_id": "2100953898630443447",
+   "group": "call",
+   "label": [
+    "BTC"
+   ],
+   "detector": {
+    "status": "detected",
+    "asset": "BTC",
+    "matched": [
+     {
+      "asset": "BTC",
+      "term": "bitcoin"
+     }
+    ],
+    "reason": null
+   },
+   "outcome": "exact match"
+  },
+  {
+   "post_id": "2102014028855820403",
+   "group": "call",
+   "label": [
+    "BTC"
+   ],
+   "detector": {
+    "status": "detected",
+    "asset": "BTC",
+    "matched": [
+     {
+      "asset": "BTC",
+      "term": "bitcoin"
+     }
+    ],
+    "reason": null
+   },
+   "outcome": "exact match"
+  },
+  {
+   "post_id": "2102024327075877097",
+   "group": "call",
+   "label": [
+    "BTC"
+   ],
+   "detector": {
+    "status": "needs_review",
+    "asset": null,
+    "matched": [],
+    "reason": "no asset words or cashtags"
+   },
+   "outcome": "needs review"
+  },
+  {
+   "post_id": "2104977267109896477",
+   "group": "call",
+   "label": [
+    "SILVER"
+   ],
+   "detector": {
+    "status": "detected",
+    "asset": "SILVER",
+    "matched": [
+     {
+      "asset": "SILVER",
+      "term": "silver"
+     }
+    ],
+    "reason": null
+   },
+   "outcome": "exact match"
+  },
+  {
+   "post_id": "2105699317004583026",
+   "group": "call",
+   "label": [
+    "BTC"
+   ],
+   "detector": {
+    "status": "detected",
+    "asset": "BTC",
+    "matched": [
+     {
+      "asset": "BTC",
+      "term": "bitcoin"
+     }
+    ],
+    "reason": null
+   },
+   "outcome": "exact match"
+  },
+  {
+   "post_id": "2106744910896312646",
+   "group": "call",
+   "label": [
+    "SILVER"
+   ],
+   "detector": {
+    "status": "needs_review",
+    "asset": null,
+    "matched": [
+     {
+      "asset": "SILVER",
+      "term": "silver"
+     },
+     {
+      "asset": "GOLD",
+      "term": "gold"
+     }
+    ],
+    "reason": "several assets: GOLD, SILVER"
+   },
+   "outcome": "needs review"
+  },
+  {
+   "post_id": "2106750657877434407",
+   "group": "call",
+   "label": [
+    "COPX"
+   ],
+   "detector": {
+    "status": "detected",
+    "asset": "COPX",
+    "matched": [
+     {
+      "asset": "COPX",
+      "term": "copx"
+     }
+    ],
+    "reason": null
+   },
+   "outcome": "exact match"
+  },
+  {
+   "post_id": "2107063137958564197",
+   "group": "call",
+   "label": [
+    "STOCKS"
+   ],
+   "detector": {
+    "status": "detected",
+    "asset": "STOCKS",
+    "matched": [
+     {
+      "asset": "STOCKS",
+      "term": "stocks"
+     }
+    ],
+    "reason": null
+   },
+   "outcome": "exact match"
+  },
+  {
+   "post_id": "2107475725573906895",
+   "group": "call",
+   "label": [
+    "STOCKS"
+   ],
+   "detector": {
+    "status": "detected",
+    "asset": "STOCKS",
+    "matched": [
+     {
+      "asset": "STOCKS",
+      "term": "stocks"
+     }
+    ],
+    "reason": null
+   },
+   "outcome": "exact match"
+  },
+  {
+   "post_id": "2110764348981612915",
+   "group": "call",
+   "label": [
+    "BTC"
+   ],
+   "detector": {
+    "status": "detected",
+    "asset": "BTC",
+    "matched": [
+     {
+      "asset": "BTC",
+      "term": "bitcoin"
+     }
+    ],
+    "reason": null
+   },
+   "outcome": "exact match"
+  },
+  {
+   "post_id": "2112915214479798344",
+   "group": "call",
+   "label": [
+    "BTC"
+   ],
+   "detector": {
+    "status": "detected",
+    "asset": "BTC",
+    "matched": [
+     {
+      "asset": "BTC",
+      "term": "bitcoin"
+     }
+    ],
+    "reason": null
+   },
+   "outcome": "exact match"
+  },
+  {
+   "post_id": "2112919830357577753",
+   "group": "call",
+   "label": [
+    "BTC",
+    "GOLD"
+   ],
+   "detector": {
+    "status": "needs_review",
+    "asset": null,
+    "matched": [
+     {
+      "asset": "GOLD",
+      "term": "gold futures"
+     },
+     {
+      "asset": "BTC",
+      "term": "bitcoin"
+     }
+    ],
+    "reason": "several assets: BTC, GOLD"
+   },
+   "outcome": "needs review, both assets found"
+  },
+  {
+   "post_id": "2113613893662588966",
+   "group": "call",
+   "label": [
+    "SILVER"
+   ],
+   "detector": {
+    "status": "detected",
+    "asset": "SILVER",
+    "matched": [
+     {
+      "asset": "SILVER",
+      "term": "silver"
+     }
+    ],
+    "reason": null
+   },
+   "outcome": "exact match"
+  },
+  {
+   "post_id": "2096253547021029380",
+   "group": "excluded",
+   "label": [],
+   "detector": {
+    "status": "detected",
+    "asset": "BTC",
+    "matched": [
+     {
+      "asset": "BTC",
+      "term": "bitcoin"
+     }
+    ],
+    "reason": null
+   },
+   "outcome": "detected an asset"
+  },
+  {
+   "post_id": "2096253717968191547",
+   "group": "excluded",
+   "label": [],
+   "detector": {
+    "status": "detected",
+    "asset": "BTC",
+    "matched": [
+     {
+      "asset": "BTC",
+      "term": "bitcoin"
+     }
+    ],
+    "reason": null
+   },
+   "outcome": "detected an asset"
+  },
+  {
+   "post_id": "2096667689552850971",
+   "group": "excluded",
+   "label": [],
+   "detector": {
+    "status": "detected",
+    "asset": "BTC",
+    "matched": [
+     {
+      "asset": "BTC",
+      "term": "bitcoin"
+     }
+    ],
+    "reason": null
+   },
+   "outcome": "detected an asset"
+  },
+  {
+   "post_id": "2099903031760310305",
+   "group": "excluded",
+   "label": [],
+   "detector": {
+    "status": "detected",
+    "asset": "STOCKS",
+    "matched": [
+     {
+      "asset": "STOCKS",
+      "term": "equities"
+     }
+    ],
+    "reason": null
+   },
+   "outcome": "detected an asset"
+  },
+  {
+   "post_id": "2100270946892337194",
+   "group": "excluded",
+   "label": [],
+   "detector": {
+    "status": "needs_review",
+    "asset": null,
+    "matched": [],
+    "reason": "no asset words or cashtags"
+   },
+   "outcome": "needs review"
+  },
+  {
+   "post_id": "2102759899830571026",
+   "group": "excluded",
+   "label": [],
+   "detector": {
+    "status": "needs_review",
+    "asset": null,
+    "matched": [],
+    "reason": "no asset words or cashtags"
+   },
+   "outcome": "needs review"
+  },
+  {
+   "post_id": "2103104187399905433",
+   "group": "excluded",
+   "label": [],
+   "detector": {
+    "status": "detected",
+    "asset": "BTC",
+    "matched": [
+     {
+      "asset": "BTC",
+      "term": "bitcoin"
+     }
+    ],
+    "reason": null
+   },
+   "outcome": "detected an asset"
+  },
+  {
+   "post_id": "2103109311170003131",
+   "group": "excluded",
+   "label": [],
+   "detector": {
+    "status": "needs_review",
+    "asset": null,
+    "matched": [],
+    "reason": "no asset words or cashtags"
+   },
+   "outcome": "needs review"
+  },
+  {
+   "post_id": "2103113938770829700",
+   "group": "excluded",
+   "label": [],
+   "detector": {
+    "status": "needs_review",
+    "asset": null,
+    "matched": [],
+    "reason": "no asset words or cashtags"
+   },
+   "outcome": "needs review"
+  },
+  {
+   "post_id": "2103845537120124990",
+   "group": "excluded",
+   "label": [],
+   "detector": {
+    "status": "needs_review",
+    "asset": null,
+    "matched": [
+     {
+      "asset": "STOCKS",
+      "term": "stocks"
+     },
+     {
+      "asset": "OIL",
+      "term": "oil"
+     }
+    ],
+    "reason": "several assets: OIL, STOCKS"
+   },
+   "outcome": "needs review"
+  },
+  {
+   "post_id": "2104939875136938419",
+   "group": "excluded",
+   "label": [],
+   "detector": {
+    "status": "needs_review",
+    "asset": null,
+    "matched": [],
+    "reason": "no asset words or cashtags"
+   },
+   "outcome": "needs review"
+  },
+  {
+   "post_id": "2104972378186875141",
+   "group": "excluded",
+   "label": [],
+   "detector": {
+    "status": "detected",
+    "asset": "OIL",
+    "matched": [
+     {
+      "asset": "OIL",
+      "term": "oil"
+     }
+    ],
+    "reason": null
+   },
+   "outcome": "detected an asset"
+  },
+  {
+   "post_id": "2105653383692419419",
+   "group": "excluded",
+   "label": [],
+   "detector": {
+    "status": "detected",
+    "asset": "BTC",
+    "matched": [
+     {
+      "asset": "BTC",
+      "term": "$BTC"
+     }
+    ],
+    "reason": null
+   },
+   "outcome": "detected an asset"
+  },
+  {
+   "post_id": "2106010692910219605",
+   "group": "excluded",
+   "label": [],
+   "detector": {
+    "status": "detected",
+    "asset": "BTC",
+    "matched": [
+     {
+      "asset": "BTC",
+      "term": "bitcoin"
+     }
+    ],
+    "reason": null
+   },
+   "outcome": "detected an asset"
+  },
+  {
+   "post_id": "2106063356150902804",
+   "group": "excluded",
+   "label": [],
+   "detector": {
+    "status": "needs_review",
+    "asset": null,
+    "matched": [],
+    "reason": "no asset words or cashtags"
+   },
+   "outcome": "needs review"
+  },
+  {
+   "post_id": "2106750764593164395",
+   "group": "excluded",
+   "label": [],
+   "detector": {
+    "status": "needs_review",
+    "asset": null,
+    "matched": [],
+    "reason": "no asset words or cashtags"
+   },
+   "outcome": "needs review"
+  },
+  {
+   "post_id": "2108189174146982107",
+   "group": "excluded",
+   "label": [],
+   "detector": {
+    "status": "detected",
+    "asset": "GOLD",
+    "matched": [
+     {
+      "asset": "GOLD",
+      "term": "gold"
+     }
+    ],
+    "reason": null
+   },
+   "outcome": "detected an asset"
+  },
+  {
+   "post_id": "2109741844603236394",
+   "group": "excluded",
+   "label": [],
+   "detector": {
+    "status": "detected",
+    "asset": "BTC",
+    "matched": [
+     {
+      "asset": "BTC",
+      "term": "bitcoin"
+     }
+    ],
+    "reason": null
+   },
+   "outcome": "detected an asset"
+  },
+  {
+   "post_id": "2111042923844215017",
+   "group": "excluded",
+   "label": [],
+   "detector": {
+    "status": "needs_review",
+    "asset": null,
+    "matched": [],
+    "reason": "no asset words or cashtags"
+   },
+   "outcome": "needs review"
+  },
+  {
+   "post_id": "2115096907244880130",
+   "group": "excluded",
+   "label": [],
+   "detector": {
+    "status": "needs_review",
+    "asset": null,
+    "matched": [
+     {
+      "asset": "BTC",
+      "term": "bitcoin"
+     },
+     {
+      "asset": "STOCKS",
+      "term": "stocks"
+     }
+    ],
+    "reason": "several assets: BTC, STOCKS"
+   },
+   "outcome": "needs review"
+  },
+  {
+   "post_id": "2115115489991262523",
+   "group": "excluded",
+   "label": [],
+   "detector": {
+    "status": "needs_review",
+    "asset": null,
+    "matched": [],
+    "reason": "no asset words or cashtags"
+   },
+   "outcome": "needs review"
+  },
+  {
+   "post_id": "2094952725960155351",
+   "group": "off_topic",
+   "label": [],
+   "detector": {
+    "status": "needs_review",
+    "asset": null,
+    "matched": [],
+    "reason": "no asset words or cashtags"
+   },
+   "outcome": "needs review"
+  },
+  {
+   "post_id": "2095594935604896234",
+   "group": "off_topic",
+   "label": [],
+   "detector": {
+    "status": "needs_review",
+    "asset": null,
+    "matched": [],
+    "reason": "no asset words or cashtags"
+   },
+   "outcome": "needs review"
+  },
+  {
+   "post_id": "2095598016329609265",
+   "group": "off_topic",
+   "label": [],
+   "detector": {
+    "status": "needs_review",
+    "asset": null,
+    "matched": [],
+    "reason": "no asset words or cashtags"
+   },
+   "outcome": "needs review"
+  },
+  {
+   "post_id": "2095598249667129798",
+   "group": "off_topic",
+   "label": [],
+   "detector": {
+    "status": "needs_review",
+    "asset": null,
+    "matched": [],
+    "reason": "no asset words or cashtags"
+   },
+   "outcome": "needs review"
+  },
+  {
+   "post_id": "2097764126697103572",
+   "group": "off_topic",
+   "label": [],
+   "detector": {
+    "status": "detected",
+    "asset": "BTC",
+    "matched": [
+     {
+      "asset": "BTC",
+      "term": "bitcoin"
+     }
+    ],
+    "reason": null
+   },
+   "outcome": "detected an asset"
+  },
+  {
+   "post_id": "2097989186003329328",
+   "group": "off_topic",
+   "label": [],
+   "detector": {
+    "status": "detected",
+    "asset": "BTC",
+    "matched": [
+     {
+      "asset": "BTC",
+      "term": "bitcoin"
+     }
+    ],
+    "reason": null
+   },
+   "outcome": "detected an asset"
+  },
+  {
+   "post_id": "2099165710261817542",
+   "group": "off_topic",
+   "label": [],
+   "detector": {
+    "status": "needs_review",
+    "asset": null,
+    "matched": [],
+    "reason": "no asset words or cashtags"
+   },
+   "outcome": "needs review"
+  },
+  {
+   "post_id": "2099200580316975237",
+   "group": "off_topic",
+   "label": [],
+   "detector": {
+    "status": "needs_review",
+    "asset": null,
+    "matched": [],
+    "reason": "no asset words or cashtags"
+   },
+   "outcome": "needs review"
+  },
+  {
+   "post_id": "2100966611163181198",
+   "group": "off_topic",
+   "label": [],
+   "detector": {
+    "status": "needs_review",
+    "asset": null,
+    "matched": [],
+    "reason": "no asset words or cashtags"
+   },
+   "outcome": "needs review"
+  },
+  {
+   "post_id": "2101001179916320802",
+   "group": "off_topic",
+   "label": [],
+   "detector": {
+    "status": "detected",
+    "asset": "BTC",
+    "matched": [
+     {
+      "asset": "BTC",
+      "term": "bitcoin"
+     }
+    ],
+    "reason": null
+   },
+   "outcome": "detected an asset"
+  },
+  {
+   "post_id": "2102807298879934771",
+   "group": "off_topic",
+   "label": [],
+   "detector": {
+    "status": "needs_review",
+    "asset": null,
+    "matched": [],
+    "reason": "no asset words or cashtags"
+   },
+   "outcome": "needs review"
+  },
+  {
+   "post_id": "2105968385624355109",
+   "group": "off_topic",
+   "label": [],
+   "detector": {
+    "status": "needs_review",
+    "asset": null,
+    "matched": [],
+    "reason": "no asset words or cashtags"
+   },
+   "outcome": "needs review"
+  },
+  {
+   "post_id": "2106082466049982640",
+   "group": "off_topic",
+   "label": [],
+   "detector": {
+    "status": "needs_review",
+    "asset": null,
+    "matched": [],
+    "reason": "no asset words or cashtags"
+   },
+   "outcome": "needs review"
+  },
+  {
+   "post_id": "2106123608007262506",
+   "group": "off_topic",
+   "label": [],
+   "detector": {
+    "status": "needs_review",
+    "asset": null,
+    "matched": [],
+    "reason": "no asset words or cashtags"
+   },
+   "outcome": "needs review"
+  },
+  {
+   "post_id": "2106125636699816324",
+   "group": "off_topic",
+   "label": [],
+   "detector": {
+    "status": "needs_review",
+    "asset": null,
+    "matched": [],
+    "reason": "no asset words or cashtags"
+   },
+   "outcome": "needs review"
+  },
+  {
+   "post_id": "2106746645153017887",
+   "group": "off_topic",
+   "label": [],
+   "detector": {
+    "status": "detected",
+    "asset": "SILVER",
+    "matched": [
+     {
+      "asset": "SILVER",
+      "term": "silver"
+     }
+    ],
+    "reason": null
+   },
+   "outcome": "detected an asset"
+  },
+  {
+   "post_id": "2107497097406656535",
+   "group": "off_topic",
+   "label": [],
+   "detector": {
+    "status": "detected",
+    "asset": "BTC",
+    "matched": [
+     {
+      "asset": "BTC",
+      "term": "bitcoin"
+     }
+    ],
+    "reason": null
+   },
+   "outcome": "detected an asset"
+  },
+  {
+   "post_id": "2107780130454241778",
+   "group": "off_topic",
+   "label": [],
+   "detector": {
+    "status": "needs_review",
+    "asset": null,
+    "matched": [],
+    "reason": "no asset words or cashtags"
+   },
+   "outcome": "needs review"
+  },
+  {
+   "post_id": "2107864063631839242",
+   "group": "off_topic",
+   "label": [],
+   "detector": {
+    "status": "needs_review",
+    "asset": null,
+    "matched": [],
+    "reason": "no asset words or cashtags"
+   },
+   "outcome": "needs review"
+  },
+  {
+   "post_id": "2110810823740498358",
+   "group": "off_topic",
+   "label": [],
+   "detector": {
+    "status": "needs_review",
+    "asset": null,
+    "matched": [],
+    "reason": "no asset words or cashtags"
+   },
+   "outcome": "needs review"
+  },
+  {
+   "post_id": "2115169473028071528",
+   "group": "off_topic",
+   "label": [],
+   "detector": {
+    "status": "needs_review",
+    "asset": null,
+    "matched": [],
+    "reason": "no asset words or cashtags"
+   },
+   "outcome": "needs review"
+  },
+  {
+   "post_id": "2115206087280345466",
+   "group": "off_topic",
+   "label": [],
+   "detector": {
+    "status": "needs_review",
+    "asset": null,
+    "matched": [],
+    "reason": "no asset words or cashtags"
+   },
+   "outcome": "needs review"
+  },
+  {
+   "post_id": "2115441810176983065",
+   "group": "off_topic",
+   "label": [],
+   "detector": {
+    "status": "needs_review",
+    "asset": null,
+    "matched": [],
+    "reason": "no asset words or cashtags"
+   },
+   "outcome": "needs review"
+  }
+ ],
+ "asset_map_sha256": "e511eebe7012ff71765f2298c5bd47ea8e68031adffaa4f628e75ef4dd9f4d41"
+}

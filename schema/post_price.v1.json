@@ -71,7 +71,8 @@
    "properties": {
     "prices": {"type": "string", "minLength": 1},
     "last_bar_at": {"oneOf": [{"$ref": "#/$defs/ts"}, {"type": "null"}]},
-    "max_lag_days": {"const": 2}
+    "max_lag_days": {"const": 2, "description": "tolerance for 24/7 assets"},
+    "session_lag_days": {"enum": [2, 4], "description": "tolerance applied to this record's entry and exits: 2 for 24/7 assets, 4 for exchange-hours assets (a post or horizon while the market is closed takes the next session open). Absent on records written before step 6, which used 2."}
    }
   }
  }

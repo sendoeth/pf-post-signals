@@ -212,6 +212,28 @@ node tests/browser_test.js --url https://sendoeth.com/pf-post-signals/web/   # s
 
 Run notes with raw output, hashes and screenshots: [`verification/step5_run.md`](verification/step5_run.md).
 
+## Step 6: paste a post link
+
+```bash
+python3 add_post.py https://x.com/BobLoukas/status/2115823513915290059   # receipt -> asset -> record -> chart bundle
+```
+
+- `ingest.py` fetches the post from X's public embed endpoint (no login), checks it exists, that its timestamp equals
+  the one in its id and that the author matches, and saves `sources/<author>/receipts/<id>.json`. Long posts come back cut
+  to ~270 characters; the receipt says `textTruncated: true`. Existing receipts are reused, never overwritten.
+- `detect.py` proposes the asset from cashtags and the written map in [`detect/asset_map.json`](detect/asset_map.json)
+  (whole words, longer terms first). One asset = detected; none, several or an unmapped cashtag = needs review, and
+  `add_post.py` stops there unless `--asset` is given. Scored once on the 59 hand-labelled step 3 posts
+  (`score_detector.py`, [`data/detector_scores.json`](data/detector_scores.json)): of 14 single-asset calls 12 exact,
+  0 wrong, 2 needs review; the BTC/gold pair is flagged with both assets. It only proposes an asset; whether a post is a
+  call stays a human decision.
+- **Exchange-hours fix**: stocks, ETFs and futures (Yahoo) take the next session open for entry and exits (tolerance 4
+  days, enough for a long weekend; longer gaps stay unresolved). Crypto keeps 2 days. Records carry
+  `resolved_with.session_lag_days`. Step 4 parity stays 16/16 exact.
+- The page draws a stretch with no bars across a whole weekday dashed ("no price data") instead of as prices.
+
+Run notes: [`verification/step6_run.md`](verification/step6_run.md).
+
 ## Reproduce
 
 ```bash

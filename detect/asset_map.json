@@ -1,0 +1,21 @@
+{
+ "schema": "pf-post-signals.asset_map.v1",
+ "note": "written before scoring. Terms match whole words, case-insensitive; longer terms win over the words inside them ('copper miners' -> COPX, not COPPER). Cashtags map through 'cashtags'. Asset names are resolve.py names.",
+ "terms": {
+  "BTC": ["bitcoin", "btc", "xbt"],
+  "ETH": ["ethereum", "ether", "eth"],
+  "SOL": ["solana"],
+  "LINK": ["chainlink"],
+  "SILVER": ["silver", "xag", "slv"],
+  "GOLD": ["gold", "xau", "gld", "gold futures"],
+  "COPPER": ["copper"],
+  "COPX": ["copx", "copper miners", "copper stocks"],
+  "STOCKS": ["stocks", "equities", "stock market", "s&p", "s&p 500", "sp500", "spx", "spy"],
+  "QQQ": ["nasdaq", "qqq", "ndx"],
+  "OIL": ["crude", "crude oil", "wti", "oil"]
+ },
+ "cashtags": {
+  "BTC": "BTC", "ETH": "ETH", "SOL": "SOL", "LINK": "LINK", "SPY": "STOCKS", "SPX": "STOCKS",
+  "QQQ": "QQQ", "GLD": "GOLD", "SLV": "SILVER", "COPX": "COPX"
+ }
+}

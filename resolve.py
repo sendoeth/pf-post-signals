@@ -4,7 +4,10 @@
 Input is a post URL (timestamp decoded from the X snowflake id) or a saved post receipt
 (sources/*/receipts/<id>.json, timestamp from the receipt), plus an asset. Rules are the step 3
 rules, unchanged:
-  entry  = open of the first hourly bar at/after posted_at; more than 2 days late -> no_entry
+  entry  = open of the first hourly bar at/after posted_at; more than 2 days late -> no_entry.
+           Exchange-hours assets (Yahoo: stocks, ETFs, futures) allow 4 days for entry and exits,
+           so a post or horizon falling while the market is closed (evening, weekend, long
+           weekend) takes the next session open
   exit h = open of the first bar at/after posted_at + h days (h = 1, 7, 30); past the last bar
            -> "horizon not yet reached", more than 2 days late -> market closed; both unresolved
   move h = P_h / P_entry - 1; with a side, signed_return h = side * move h
@@ -32,6 +35,9 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 SCHEMA_PATH = os.path.join(HERE, "schema", "post_price.v1.json")
 HORIZONS = (1, 7, 30)
 MAX_LAG_DAYS = 2
+# Fri 20:00 UTC close -> Tue 13:30 UTC open after a Monday holiday is 3.73 days; a longer gap means
+# missing data, not a closed market, and stays unresolved.
+EXCHANGE_HOURS_LAG_DAYS = 4
 TWITTER_EPOCH_MS = 1288834974657
 URL_RE = re.compile(r"^https://(?:x|twitter)\.com/([A-Za-z0-9_]{1,15})/status/(\d+)(?:[/?#].*)?$")
 
@@ -175,6 +181,11 @@ def bar_at_or_after(series, when, times=None):
     return (i, series[i]) if i < len(series) else (None, None)
 
 
+def lag_limit(asset):
+    """Days a bar may lag its target time: 2 for 24/7 crypto, 4 for exchange-hours assets."""
+    return EXCHANGE_HOURS_LAG_DAYS if asset["source"] == "yahoo" else MAX_LAG_DAYS
+
+
 def resolve(post, asset, series, prices_label, side=None):
     times = [t for t, _ in series]
     when = post["posted_at"]
@@ -184,13 +195,15 @@ def resolve(post, asset, series, prices_label, side=None):
     rec.update({"status": None, "entry": None, "latest": None, "change_since_post": None,
                 "exits": {}, "moves": {}, "unresolved": {}, "series": [],
                 "resolved_with": {"prices": prices_label, "last_bar_at": times[-1] if times else None,
-                                  "max_lag_days": MAX_LAG_DAYS}})
+                                  "max_lag_days": MAX_LAG_DAYS,
+                                  "session_lag_days": lag_limit(asset)}})
     if side is not None:
         rec["signed_returns"] = {}
     i, entry = bar_at_or_after(series, when, times)
-    if entry is None or lag_days(when, entry[0]) > MAX_LAG_DAYS:
+    limit = lag_limit(asset)
+    if entry is None or lag_days(when, entry[0]) > limit:
         reason = ("no bar at or after the post yet" if entry is None
-                  else f"first bar {entry[0]} is >{MAX_LAG_DAYS} days after the post (market closed)")
+                  else f"first bar {entry[0]} is >{limit} days after the post (market closed)")
         rec["status"] = "pending" if entry is None else "no_entry"
         for h in map(str, HORIZONS):
             rec["exits"][h] = None
@@ -211,8 +224,8 @@ def resolve(post, asset, series, prices_label, side=None):
         move = None
         if ex is None:
             rec["unresolved"][k] = "horizon not yet reached"
-        elif lag_days(target, ex[0]) > MAX_LAG_DAYS:
-            rec["unresolved"][k] = f"first bar {ex[0]} is >{MAX_LAG_DAYS} days after {target} (market closed)"
+        elif lag_days(target, ex[0]) > limit:
+            rec["unresolved"][k] = f"first bar {ex[0]} is >{limit} days after {target} (market closed)"
             ex = None
         else:
             move = ex[1] / p0 - 1
