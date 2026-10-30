@@ -5,9 +5,9 @@
   "url": "https://x.com/BobLoukas/status/2112919830357577753",
   "author": "BobLoukas",
   "posted_at": "2026-10-21T14:51:58Z",
-  "posted_at_source": "snowflake",
-  "text": null,
-  "receipt_sha256": null
+  "posted_at_source": "receipt",
+  "text": "Currently long bitcoin - short gold futures.\nBoth Cycle positions align well into Dec.   \nThe rest is out of my control.",
+  "receipt_sha256": "6658c37ef4d8e458082a8e72a007c08bb722944ad19f23898ac5b2a1ec90b121"
  },
  "asset": {
   "name": "BTC",
@@ -22,10 +22,10 @@
   "price": 84575.71
  },
  "latest": {
-  "at": "2026-10-30T16:00:00Z",
-  "price": 77622.01
+  "at": "2026-10-30T19:00:00Z",
+  "price": 76661.13
  },
- "change_since_post": -0.08221864173531634,
+ "change_since_post": -0.09357982333225467,
  "exits": {
   "1": {
    "at": "2026-10-22T15:00:00Z",
@@ -917,12 +917,25 @@
   [
    "2026-10-30T16:00:00Z",
    77622.01
+  ],
+  [
+   "2026-10-30T17:00:00Z",
+   77352.68
+  ],
+  [
+   "2026-10-30T18:00:00Z",
+   77192.46
+  ],
+  [
+   "2026-10-30T19:00:00Z",
+   76661.13
   ]
  ],
  "resolved_with": {
   "prices": "live:binance+yahoo",
-  "last_bar_at": "2026-10-30T16:00:00Z",
-  "max_lag_days": 2
+  "last_bar_at": "2026-10-30T19:00:00Z",
+  "max_lag_days": 2,
+  "session_lag_days": 2
  },
  "signed_returns": {
   "1": -0.03184968828520629,

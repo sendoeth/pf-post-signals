@@ -6,7 +6,7 @@
   "author": "BobLoukas",
   "posted_at": "2026-10-30T16:04:55Z",
   "posted_at_source": "receipt",
-  "text": "End of December Gold will be a screaming buy again.  A 1-year correction/reset, and the midpoint of the 8 yr cycle. \n\nStill believe it\u2019s a secular bull market.",
+  "text": "End of December Gold will be a screaming buy again.  A 1-year correction/reset, and the midpoint of the 8 yr cycle. \n\nStill believe it’s a secular bull market.",
   "receipt_sha256": "d95b5832b1b4140b2a003bfbd4f3970149176f1e9fecd2be7996a34d519228be"
  },
  "asset": {
@@ -21,10 +21,10 @@
   "price": 3905.7
  },
  "latest": {
-  "at": "2026-10-30T17:53:01Z",
-  "price": 3889.7
+  "at": "2026-10-30T19:12:12Z",
+  "price": 3888.7
  },
- "change_since_post": -0.0040965767980131185,
+ "change_since_post": -0.004352612847889015,
  "exits": {
   "1": null,
   "7": null,
@@ -46,13 +46,21 @@
    3905.7
   ],
   [
-   "2026-10-30T17:53:01Z",
-   3889.7
+   "2026-10-30T18:00:00Z",
+   3893.0
+  ],
+  [
+   "2026-10-30T19:00:00Z",
+   3889.3
+  ],
+  [
+   "2026-10-30T19:12:12Z",
+   3888.7
   ]
  ],
  "resolved_with": {
   "prices": "live:binance+yahoo",
-  "last_bar_at": "2026-10-30T17:53:01Z",
+  "last_bar_at": "2026-10-30T19:12:12Z",
   "max_lag_days": 2,
   "session_lag_days": 4
  }
