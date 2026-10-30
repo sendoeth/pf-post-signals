@@ -1,0 +1,82 @@
+# Daily price refresh (step 9). Re-resolves every record with fresh hourly prices (frozen entries
+# and resolved exits kept), refetches candles, rebuilds the bundle, runs every check, and only then
+# commits. Any failed fetch, check or guard stops the job before the commit reaches main, so the
+# last good data stays live.
+#
+# main is protected (required check "guard", no force push, no deletion). The job runs the same
+# guard (tools/guard.py --history and --tree) on its own commit, records that result as the
+# "guard" commit status on exactly that commit, and fast-forwards main to it. Nothing about the
+# protection is relaxed.
+name: refresh
+on:
+  schedule:
+    - cron: "20 21 * * *"   # daily 21:20 UTC, after the US cash close
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    permissions:
+      contents: write   # push the data commit
+      statuses: write   # record the guard result on that commit
+      pages: write      # request the Pages rebuild
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+        with:
+          fetch-depth: 0
+      - name: install jsonschema
+        run: python3 -m pip install --quiet jsonschema==4.10.3
+      - name: refresh records (fresh prices, frozen values kept)
+        run: python3 refresh.py
+      - name: rebuild the chart bundle
+        run: python3 build_chart.py
+      - name: refetch candles + entry-bar check
+        run: python3 fetch_ohlc.py
+      - name: checks and tests
+        run: |
+          python3 check_bundle.py
+          python3 validate_records.py
+          python3 parity.py
+          python3 -m unittest tests.test_resolve tests.test_ingest_detect tests.test_guard tests.test_refresh
+      - name: commit
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add records data/refresh_log.json web/data
+          if git diff --cached --quiet; then echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0; fi
+          AS_OF=$(python3 -c 'import json; print(json.load(open("data/refresh_log.json"))["refreshed_at"])')
+          git commit -q -m "refresh: prices as of $AS_OF"
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+      - name: guard the new commit
+        if: steps.commit.outputs.changed == 'true'
+        run: |
+          python3 tools/guard.py --history
+          python3 tools/guard.py --tree
+      - name: record the guard result and fast-forward main
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SHA: ${{ steps.commit.outputs.sha }}
+          REPO: ${{ github.repository }}
+        run: |
+          git push --force origin "HEAD:refs/heads/refresh-staging"
+          curl -fsS -X POST -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/$REPO/statuses/$SHA" \
+            -d '{"state":"success","context":"guard","description":"tools/guard.py history + tree: 0 hits (refresh job)"}'
+          git push origin "HEAD:main"
+          git push origin --delete refresh-staging
+      - name: request a Pages build
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          curl -fsS -X POST -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/$REPO/pages/builds"

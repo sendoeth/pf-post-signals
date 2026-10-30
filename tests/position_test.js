@@ -117,6 +117,7 @@ function serve() {
       };
       if (got.id !== rec.post.id || got.asset !== rec.asset.name) fail(`${tag}: page shows ${got.id} ${got.asset}`);
       const side = rec.side === 1 ? 'long' : rec.side === -1 ? 'short' : null;
+      eq('prices_as_of', bundle.prices_as_of ? 'Prices as of ' + time(bundle.prices_as_of) + ' (daily refresh)' : 'Prices not refreshed yet', bundle.prices_as_of || null);
       eq('author', '@' + rec.post.author);
       eq('posted_at', time(rec.post.posted_at), rec.post.posted_at);
       eq('text', rec.post.text || 'Post text not saved: open it on X.');

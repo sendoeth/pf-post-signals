@@ -118,7 +118,13 @@ def build(records_dir):
             continue
         out_assets.append({"name": name, "source": a["source"], "symbol": a["symbol"],
                            "series": [[t, a["bars"][t]] for t in sorted(a["bars"])], "posts": a["posts"]})
+    refreshed_at = None
+    log_path = os.path.join(HERE, "data", "refresh_log.json")
+    if os.path.abspath(records_dir) == os.path.join(HERE, "records") and os.path.exists(log_path):
+        with open(log_path) as f:
+            refreshed_at = json.load(f)["refreshed_at"]
     return {"schema": BUNDLE_SCHEMA, "record_schema": "post_price.v1", "records_scanned": len(files),
+            "prices_as_of": refreshed_at,
             "posts_drawn": sum(len(a["posts"]) for a in out_assets),
             "refused": refused, "superseded": superseded, "assets": out_assets}
 

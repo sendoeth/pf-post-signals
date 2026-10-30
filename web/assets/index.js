@@ -212,7 +212,9 @@ function setAsset(name) {
   document.getElementById("card").replaceChildren(el("p", { class: "empty" }, "Select a post to see its card."));
   const a = state.asset, last = a.series[a.series.length - 1][0];
   document.getElementById("summary").textContent =
-    `${a.posts.length} post${a.posts.length === 1 ? "" : "s"} · ${a.source}:${a.symbol} hourly open · last bar ${fmtTime(last)}`;
+    `${a.posts.length} post${a.posts.length === 1 ? "" : "s"} · ${a.source}:${a.symbol} hourly open · last bar ${fmtTime(last)}` +
+    (state.bundle.prices_as_of ? ` · prices as of ${fmtTime(state.bundle.prices_as_of)}` : "");
+  document.getElementById("summary").setAttribute("data-prices-as-of", state.bundle.prices_as_of || "");
   render(); table();
 }
 

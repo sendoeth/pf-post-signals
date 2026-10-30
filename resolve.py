@@ -117,10 +117,25 @@ def load_post(url=None, receipt=None):
             "posted_at": snowflake_time(pid), "posted_at_source": "snowflake", "text": None, "receipt_sha256": None}
 
 
-def get_json(url):
-    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-    with urllib.request.urlopen(req, timeout=60) as resp:
-        return json.load(resp)
+def get_json(url, tries=3):
+    """GET json with retries on rate limits / server errors; Yahoo also falls back to query2."""
+    import time
+    urls = [url] + ([url.replace("query1.finance.yahoo.com", "query2.finance.yahoo.com")] if "query1.finance" in url else [])
+    last = None
+    for attempt in range(tries):
+        for u in urls:
+            try:
+                req = urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0", "Accept": "application/json"})
+                with urllib.request.urlopen(req, timeout=60) as resp:
+                    return json.load(resp)
+            except urllib.error.HTTPError as e:
+                last = e
+                if e.code not in (429, 500, 502, 503, 504):
+                    raise
+            except (urllib.error.URLError, TimeoutError) as e:
+                last = e
+        time.sleep(5 * (attempt + 1))
+    raise last
 
 
 def fetch_series(asset, since):

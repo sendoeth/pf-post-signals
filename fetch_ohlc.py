@@ -44,6 +44,14 @@ def fetch(source, symbol, since):
 
 
 def check(bundle, candles_by_asset):
+    """Entry candle open == record entry price. The only accepted difference is a provider revision
+    that refresh.py logged for that bar (the record keeps the frozen value, the candle shows the
+    provider's current one)."""
+    revised = set()
+    log_path = os.path.join(HERE, "data", "refresh_log.json")
+    if os.path.exists(log_path):
+        with open(log_path) as f:
+            revised = {(r["bar"], r["fetched"]) for r in json.load(f)["revisions"] if r["what"] == "entry"}
     rows, fails = [], []
     for a in bundle["assets"]:
         opens = {c[0]: c[1] for c in candles_by_asset.get(a["name"], [])}
@@ -51,7 +59,7 @@ def check(bundle, candles_by_asset):
             if not p["entry"]:
                 continue
             got = opens.get(p["entry"]["at"])
-            ok = got == p["entry"]["price"]
+            ok = got == p["entry"]["price"] or (p["entry"]["at"], got) in revised
             rows.append((a["name"], p["post"]["id"], p["entry"]["at"], p["entry"]["price"], got, ok))
             if not ok:
                 fails.append(f"{a['name']} {p['post']['id']}: candle open at {p['entry']['at']} is {got}, record entry {p['entry']['price']}")

@@ -4,8 +4,8 @@
 Inputs are the step 3 labels (receipt + instrument + side) and the saved step 3 price snapshot
 (data/hourly_prices.json, the bars data/bobloukas_calls.json was computed from), so the check is
 not affected by later Yahoo revisions. Compared with == (no tolerance): entry bar, every exit bar,
-every signed return (side * move) and every unresolved reason. Writes records/bobloukas/*.json and
-data/parity_bobloukas.json; exit 1 on any mismatch.
+every signed return (side * move) and every unresolved reason. Writes data/parity_bobloukas.json
+only (since step 9 records/ holds the refreshed live records); exit 1 on any mismatch.
 """
 import json
 import os
@@ -24,8 +24,8 @@ def main():
     items = [{"receipt": os.path.join("sources", "bobloukas", "receipts", f"{c['id']}.json"),
               "asset": c["instrument"], "side": c["side"]} for c in labels["calls"]]
     os.chdir(HERE)
-    records, dupes, errors = resolve.run(items, resolve.Prices(os.path.join(DATA, "hourly_prices.json")),
-                                         os.path.join(HERE, "records", "bobloukas"))
+    # compared in memory only: records/ holds the live, refreshed records (step 9)
+    records, dupes, errors = resolve.run(items, resolve.Prices(os.path.join(DATA, "hourly_prices.json")))
     by_key = {(r["post"]["id"], r["asset"]["name"]): r for r in records}
     rows, fails = [], []
     for old in step3:

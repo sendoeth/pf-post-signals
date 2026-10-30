@@ -278,6 +278,24 @@ The site is static (GitHub Pages, no backend, no PHP, no connection to our serve
   `tools/guard.py` in CI (`.github/workflows/guard.yml`, actions pinned to commits, read-only token) rejects any
   commit whose history or tree has an unknown IPv4 address or a token pattern.
 
+## Step 9: daily price refresh
+
+`.github/workflows/refresh.yml` runs daily at 21:20 UTC (and on demand): `refresh.py` re-resolves every record from its
+receipt with fresh hourly prices, `build_chart.py` rebuilds the bundle, `fetch_ohlc.py` refetches the candles, then
+every check and test runs; only if all pass does the job commit (`refresh: prices as of <time>`). The pages show
+"prices as of" from `data/refresh_log.json`.
+
+- **Frozen values**: an entry bar and every horizon already resolved never change. Before re-resolving, they are written
+  back into the fetched series; a provider revision or a dropped bar is logged in `data/refresh_log.json` with the
+  frozen and fetched values, and the frozen value stays. Latest, % since post, best since post and newly reached
+  horizons come from the fresh bars.
+- **Fails closed**: any fetch, schema, invariant, parity, test or guard failure stops the job before anything reaches
+  `main`, so the last good data stays live.
+- **Protection unchanged**: `main` still requires the `guard` check and forbids force pushes and deletion. The job runs
+  `tools/guard.py --history` and `--tree` on its own commit, records that as the `guard` status on exactly that
+  commit, and fast-forwards `main`. Token scopes are per job: contents/statuses/pages write for the refresh job only.
+- `parity.py` now compares in memory (records/ holds the refreshed records); step 4 parity stays 16/16.
+
 ## Reproduce
 
 ```bash

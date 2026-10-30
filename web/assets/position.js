@@ -68,10 +68,10 @@ async function main() {
   const [asset, p] = matches[0];
   const ohlc = await getJson(`data/ohlc/${encodeURIComponent(asset.name)}.json`);
   document.title = `${p.asset.name} · @${p.post.author} · position`;
-  render(asset, p, ohlc, avatars);
+  render(asset, p, ohlc, avatars, bundle);
 }
 
-function render(asset, p, ohlc, avatars) {
+function render(asset, p, ohlc, avatars, bundle) {
   const app = document.getElementById("app");
   app.replaceChildren();
   app.setAttribute("data-post-id", p.post.id);
@@ -127,6 +127,8 @@ function render(asset, p, ohlc, avatars) {
   const chartEl = el("div", { id: "chart" }), overlay = el("div", { id: "overlay" });
   box.append(chartEl, overlay);
   pos.append(box);
+  pos.append(el("p", { class: "as-of", "data-field": "prices_as_of", "data-raw": JSON.stringify(bundle.prices_as_of || null) },
+    bundle.prices_as_of ? "Prices as of " + fmtTime(bundle.prices_as_of) + " (daily refresh)" : "Prices not refreshed yet"));
   pos.append(el("p", { class: "attribution" },
     "Candles: hourly opens/highs/lows/closes from " + ohlc.source + ":" + ohlc.symbol + " fetched " + fmtTime(ohlc.fetched_at) +
     ", display only. Charting by TradingView Lightweight Charts."));
@@ -175,7 +177,7 @@ function render(asset, p, ohlc, avatars) {
     priceFormat: { type: "custom", formatter: fmtPrice, minMove: 1e-8 },
   });
   if (p.latest) series.createPriceLine({ price: p.latest.price, color: css("--muted"), lineWidth: 1,
-    lineStyle: LightweightCharts.LineStyle.Dotted, axisLabelVisible: true, title: "record latest" });
+    lineStyle: LightweightCharts.LineStyle.Dotted, axisLabelVisible: true, title: "latest" });
   window.__position = { chart, series, post: p, get interval() { return interval; }, step: () => INTERVALS[interval] };
 
   const bubble = avatarNode(p.post.author, avatars, "");
