@@ -146,6 +146,44 @@ python3 validate_authors.py   # expected: "checks: 16 rows, 59 candidates, 59 la
 python3 make_authors_report.py
 ```
 
+## Step 4: post-to-price resolver
+
+`resolve.py` turns one post + one asset into a `post_price.v1` record ([schema](schema/post_price.v1.json)): entry
+(first hourly bar at or after the post), latest bar, % change since the post, 1d / 7d / 30d moves (unresolved when not
+reached or when the first bar is more than 2 days late, never guessed), signed returns when a side is given, and the
+hourly series from entry to latest. This is the data layer for a chart of posts against price; the chart, asset
+auto-detection and hosting are later steps.
+
+- **Input**: a post URL (the timestamp is decoded from the X snowflake id, checked equal to `postedAt` on all 260 saved
+  receipts) or a saved receipt (timestamp + text + receipt sha256). Assets: `BTC ETH SOL LINK` (Binance 1h),
+  `SPY QQQ STOCKS COPX SILVER GOLD COPPER OIL` (Yahoo 1h), or explicit `binance:<PAIR>` / `yahoo:<TICKER>`; anything
+  else is a clear `unknown asset` error.
+- **Duplicates**: the same (post, asset) twice in one run is kept once and reported; the same post with two assets
+  (a pair) is two records. Re-runs write identical bytes.
+- **Parity**: `parity.py` reruns all 16 step 3 BobLoukas rows from their receipts against the saved step 3 price
+  snapshot and compares entry, exits, signed returns and unresolved reasons with `==`: 16/16 exact
+  ([`data/parity_bobloukas.json`](data/parity_bobloukas.json)).
+
+```bash
+python3 resolve.py --url https://x.com/BobLoukas/status/2112919830357577753 --asset BTC --side long --out records/live
+python3 parity.py                         # expected last line: "parity: 16/16 exact, 16 records schema-valid, 0 duplicates, 0 errors"
+python3 -m unittest -v tests.test_resolve # 20 tests
+python3 validate_records.py               # expected: "records: 18 checked against post_price.v1 -> ALL VALID"
+```
+
+Run notes with raw output and file hashes: [`verification/step4_run.md`](verification/step4_run.md). Needs
+`jsonschema` (schema validation); everything else is stdlib.
+
+### Step 4 limitations
+
+- **Friday-evening stock posts get no entry.** The unchanged step 3 rule rejects an entry more than 2 days after the
+  post, and Friday 20:00 UTC to Monday 13:30 UTC is about 2.7 days. Kept for parity, pinned by a test; the chart step
+  should use "next session open" for exchange-hours assets.
+- Prices are the bar **open**, not a fill. Yahoo 1h history only reaches back about 730 days.
+- Live runs refetch prices, so `latest` and newly reached horizons change; parity uses the saved snapshot so it is
+  unaffected by later Yahoo revisions.
+- Asset choice is manual (`--asset`): detection from post text is step 5.
+
 ## Reproduce
 
 ```bash

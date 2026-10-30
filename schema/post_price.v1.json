@@ -1,0 +1,78 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "https://github.com/sendoeth/pf-post-signals/schema/post_price.v1.json",
+ "title": "post_price.v1",
+ "description": "One post resolved against the hourly price of one asset. Moves are unsigned price changes (P_h / P_entry - 1); signed_returns appear only when a side is given and equal side * move. A horizon that is not reached, or whose first bar is more than max_lag_days late, is listed in unresolved and never guessed.",
+ "type": "object",
+ "additionalProperties": false,
+ "required": ["schema", "post", "asset", "status", "entry", "latest", "change_since_post", "moves", "unresolved", "series", "resolved_with"],
+ "$defs": {
+  "ts": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$"},
+  "bar": {
+   "type": "object", "additionalProperties": false, "required": ["at", "price"],
+   "properties": {"at": {"$ref": "#/$defs/ts"}, "price": {"type": "number", "exclusiveMinimum": 0}}
+  },
+  "horizons": {
+   "type": "object", "additionalProperties": false,
+   "properties": {"1": {}, "7": {}, "30": {}}
+  }
+ },
+ "properties": {
+  "schema": {"const": "post_price.v1"},
+  "post": {
+   "type": "object", "additionalProperties": false, "required": ["id", "url", "author", "posted_at", "posted_at_source"],
+   "properties": {
+    "id": {"type": "string", "pattern": "^\\d+$"},
+    "url": {"type": "string", "pattern": "^https://x\\.com/[A-Za-z0-9_]{1,15}/status/\\d+$"},
+    "author": {"type": "string", "pattern": "^[A-Za-z0-9_]{1,15}$"},
+    "posted_at": {"$ref": "#/$defs/ts"},
+    "posted_at_source": {"enum": ["receipt", "snowflake"]},
+    "text": {"type": ["string", "null"]},
+    "receipt_sha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"}
+   }
+  },
+  "asset": {
+   "type": "object", "additionalProperties": false, "required": ["name", "source", "symbol", "price_field"],
+   "properties": {
+    "name": {"type": "string", "minLength": 1},
+    "source": {"enum": ["binance", "yahoo"]},
+    "symbol": {"type": "string", "minLength": 1},
+    "price_field": {"const": "open"}
+   }
+  },
+  "side": {"enum": [1, -1]},
+  "status": {"enum": ["resolved", "partial", "pending", "no_entry"]},
+  "entry": {"oneOf": [{"$ref": "#/$defs/bar"}, {"type": "null"}]},
+  "latest": {"oneOf": [{"$ref": "#/$defs/bar"}, {"type": "null"}]},
+  "change_since_post": {"type": ["number", "null"]},
+  "exits": {
+   "allOf": [{"$ref": "#/$defs/horizons"}],
+   "additionalProperties": {"oneOf": [{"$ref": "#/$defs/bar"}, {"type": "null"}]}
+  },
+  "moves": {
+   "allOf": [{"$ref": "#/$defs/horizons"}],
+   "required": ["1", "7", "30"],
+   "additionalProperties": {"type": ["number", "null"]}
+  },
+  "signed_returns": {
+   "allOf": [{"$ref": "#/$defs/horizons"}],
+   "additionalProperties": {"type": ["number", "null"]}
+  },
+  "unresolved": {
+   "allOf": [{"$ref": "#/$defs/horizons"}],
+   "additionalProperties": {"type": "string", "minLength": 1}
+  },
+  "series": {
+   "type": "array",
+   "items": {"type": "array", "prefixItems": [{"$ref": "#/$defs/ts"}, {"type": "number", "exclusiveMinimum": 0}], "items": false, "minItems": 2}
+  },
+  "resolved_with": {
+   "type": "object", "additionalProperties": false, "required": ["prices", "last_bar_at", "max_lag_days"],
+   "properties": {
+    "prices": {"type": "string", "minLength": 1},
+    "last_bar_at": {"oneOf": [{"$ref": "#/$defs/ts"}, {"type": "null"}]},
+    "max_lag_days": {"const": 2}
+   }
+  }
+ }
+}
