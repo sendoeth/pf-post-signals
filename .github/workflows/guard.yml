@@ -1,0 +1,29 @@
+# Runs on every push to any branch and on pull requests. Fails the commit when its history or tree
+# contains an unknown IPv4 address or a token pattern (tools/guard.py), and runs the offline tests.
+name: guard
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  guard:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683  # v4.2.2
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: guard - full history of this branch
+        run: python3 tools/guard.py --history
+      - name: guard - every tracked file
+        run: python3 tools/guard.py --tree
+      - name: guard tests
+        run: python3 -m unittest -v tests.test_guard
+      - name: offline tests
+        run: |
+          python3 -m pip install --quiet jsonschema==4.10.3
+          python3 -m unittest tests.test_resolve tests.test_ingest_detect
+          python3 check_bundle.py

@@ -40,7 +40,7 @@ function serve() {
     const rel = decodeURIComponent(new URL(req.url, 'http://x').pathname).replace(/^\/+/, '') || 'index.html';
     const file = path.resolve(WEB, rel);
     if (!file.startsWith(WEB + path.sep) || !fs.existsSync(file) || fs.statSync(file).isDirectory()) { res.writeHead(404); res.end(); return; }
-    const type = { '.html': 'text/html', '.json': 'application/json', '.jpg': 'image/jpeg' }[path.extname(file)] || 'application/octet-stream';
+    const type = { '.html': 'text/html', '.json': 'application/json', '.jpg': 'image/jpeg', '.css': 'text/css', '.js': 'text/javascript', '.svg': 'image/svg+xml' }[path.extname(file)] || 'application/octet-stream';
     res.writeHead(200, { 'content-type': type });
     fs.createReadStream(file).pipe(res);
   });

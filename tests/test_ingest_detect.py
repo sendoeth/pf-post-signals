@@ -99,6 +99,47 @@ class Ingest(unittest.TestCase):
         self.assertRegex(ingest.embed_token(PID), r"^[1-9a-z]+$")
 
 
+class Avatar(unittest.TestCase):
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.tmp.cleanup)
+
+    def fake(self, ctype, body=b"x"):
+        class Resp:
+            headers = type("H", (), {"get_content_type": staticmethod(lambda: ctype)})()
+            def read(self): return body
+            def __enter__(self): return self
+            def __exit__(self, *a): return False
+        return lambda req, timeout=None: Resp()
+
+    def data(self, src="https://pbs.twimg.com/profile_images/1/a_normal.jpg", handle="BobLoukas"):
+        return {"user": {"screen_name": handle, "profile_image_url_https": src}}
+
+    def test_non_image_avatar_is_refused(self):
+        orig = ingest.urllib.request.urlopen
+        ingest.urllib.request.urlopen = self.fake("text/html", b"<script>window.__pwned=1</script>")
+        try:
+            self.assertIsNone(ingest.save_avatar(self.data(), self.tmp.name))
+        finally:
+            ingest.urllib.request.urlopen = orig
+        self.assertEqual(os.listdir(self.tmp.name), [])
+
+    def test_avatar_from_another_host_is_refused(self):
+        self.assertIsNone(ingest.save_avatar(self.data(src="https://evil.example/a.jpg"), self.tmp.name))
+        self.assertEqual(os.listdir(self.tmp.name), [])
+
+    def test_jpeg_avatar_is_saved_as_handle_jpg(self):
+        orig = ingest.urllib.request.urlopen
+        ingest.urllib.request.urlopen = self.fake("image/jpeg", b"\xff\xd8jpeg")
+        try:
+            path = ingest.save_avatar(self.data(), self.tmp.name)
+        finally:
+            ingest.urllib.request.urlopen = orig
+        self.assertEqual(os.path.basename(path), "bobloukas.jpg")
+        with open(os.path.join(self.tmp.name, "index.json")) as f:
+            self.assertEqual(json.load(f)["bobloukas"]["file"], "bobloukas.jpg")
+
+
 class Detect(unittest.TestCase):
     def d(self, text, **kw):
         return detect.detect(text, **kw)

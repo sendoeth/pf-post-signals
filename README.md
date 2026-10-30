@@ -257,6 +257,27 @@ table dates link to it.
 
 Run notes: [`verification/step7_run.md`](verification/step7_run.md).
 
+## Step 8: security hardening
+
+The site is static (GitHub Pages, no backend, no PHP, no connection to our server). Hardening, with the proof in
+[`verification/step8_run.md`](verification/step8_run.md):
+
+- **HTTPS enforced** on the Pages sites: `http://` redirects to `https://`.
+- **Content Security Policy** (meta tag; Pages cannot send headers): only same-origin scripts, styles, images and data;
+  no inline script, no eval, no plugins, no forms, no base-uri. The one allowed inline style is the chart library's
+  attribution logo, pinned by its sha256. `no-referrer`. Frame busting (`assets/frame-guard.js`) because a meta CSP
+  cannot set `frame-ancestors`: a framed page breaks out or hides.
+- **No third parties at runtime**: the chart library is self-hosted in `web/vendor/` with its Apache-2.0 LICENSE;
+  `tools/check_vendor.py` checks it byte for byte against the npm tarball (verified against the registry's sha512).
+- **X-derived content is untrusted**: rendered with `textContent` only; the schema refuses HTML in author / asset
+  names, non-`https://x.com/<user>/status/<id>` links and oversized text; avatars must be JPEGs from X's image host
+  and are served as `<handle>.jpg` only. `tests/fixtures/attack_records` holds hostile records;
+  `tests/security_test.js` proves none of them executes (canary `window.__pwned` stays unset), every request stays on
+  the site's own origin, and there are 0 CSP violations and 0 console errors on every page.
+- **Repo**: secret scanning + push protection on, `main` protected (no force push, no deletion), and
+  `tools/guard.py` in CI (`.github/workflows/guard.yml`, actions pinned to commits, read-only token) rejects any
+  commit whose history or tree has an unknown IPv4 address or a token pattern.
+
 ## Reproduce
 
 ```bash

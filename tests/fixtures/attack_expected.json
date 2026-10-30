@@ -1,0 +1,30 @@
+{
+ "tests/fixtures/attack_records/text_html_payloads.json": {
+  "post_id": "2115823513915290060",
+  "expected": "drawn, inert"
+ },
+ "tests/fixtures/attack_records/text_unicode_tricks.json": {
+  "post_id": "2115823513915290061",
+  "expected": "drawn, inert"
+ },
+ "tests/fixtures/attack_records/author_html.json": {
+  "post_id": "2115823513915290062",
+  "expected": "refused"
+ },
+ "tests/fixtures/attack_records/url_javascript.json": {
+  "post_id": "2115823513915290063",
+  "expected": "refused"
+ },
+ "tests/fixtures/attack_records/url_lookalike_domain.json": {
+  "post_id": "2115823513915290064",
+  "expected": "refused"
+ },
+ "tests/fixtures/attack_records/asset_name_html.json": {
+  "post_id": "2115823513915290065",
+  "expected": "refused"
+ },
+ "tests/fixtures/attack_records/text_oversized.json": {
+  "post_id": "2115823513915290066",
+  "expected": "refused"
+ }
+}

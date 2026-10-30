@@ -22,9 +22,14 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 BUNDLE_SCHEMA = "pf-post-signals.charts.v1"
 
 
+def short(msg, limit=200):
+    """Keep refusal reasons readable when the offending value is huge or hostile."""
+    return msg if len(msg) <= limit else msg[:limit] + f"... ({len(msg)} chars)"
+
+
 def record_problems(v, r):
     """Schema errors + the validate_records.py invariants, as readable strings."""
-    out = [f"schema: {'/'.join(map(str, e.path)) or '(root)'}: {e.message}"
+    out = [f"schema: {'/'.join(map(str, e.path)) or '(root)'}: {short(e.message)}"
            for e in sorted(v.iter_errors(r), key=lambda e: list(map(str, e.path)))]
     if out:
         return out

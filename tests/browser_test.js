@@ -23,7 +23,7 @@ const time = iso => iso.slice(0, 10) + ' ' + iso.slice(11, 16) + ' UTC';
 const ZERO = /(^|[^\d.])[+-]?0(\.0+)?%/;
 
 function serve() {
-  const types = { '.html': 'text/html', '.json': 'application/json', '.js': 'text/javascript' };
+  const types = { '.html': 'text/html', '.json': 'application/json', '.js': 'text/javascript', '.css': 'text/css', '.svg': 'image/svg+xml', '.jpg': 'image/jpeg' };
   const server = http.createServer((req, res) => {
     const rel = decodeURIComponent(new URL(req.url, 'http://x').pathname).replace(/^\/+/, '') || 'index.html';
     const file = path.resolve(WEB, rel);
