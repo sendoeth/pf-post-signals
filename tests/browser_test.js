@@ -54,7 +54,7 @@ function serve() {
     const page = await browser.newPage();
     page.on('console', m => { if (m.type() === 'error' || m.type() === 'warning') consoleErrors.push(`${m.type()}: ${m.text()}`); });
     page.on('pageerror', e => consoleErrors.push(`pageerror: ${e.message}`));
-    page.on('requestfailed', r => consoleErrors.push(`requestfailed: ${r.url()}`));
+    page.on('requestfailed', r => consoleErrors.push(`requestfailed: ${r.url()} (${r.failure() ? r.failure().errorText : '?'})`));
     page.on('response', r => { if (r.status() >= 400) consoleErrors.push(`http ${r.status()}: ${r.url()}`); });
     await page.setViewport({ width: 1280, height: 900 });
     await page.goto(base + 'chart.html', { waitUntil: 'networkidle0' });
