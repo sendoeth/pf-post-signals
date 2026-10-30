@@ -214,7 +214,9 @@ async function main() {
   const f = readFilters();
   for (const k of Object.keys(DEFAULTS)) {
     const s = document.getElementById("f-" + k);
-    if (![...s.options].some(o => o.value === f[k])) f[k] = DEFAULTS[k];   // unknown value in the url -> default
+    // match url values case-insensitively (?author=corbanu -> Corbanu); unknown values -> default
+    const hit = [...s.options].find(o => o.value.toLowerCase() === String(f[k]).toLowerCase());
+    f[k] = hit ? hit.value : DEFAULTS[k];
     s.value = f[k];
   }
   writeUrl(f);   // invalid or non-canonical values in the address bar are rewritten to the state shown

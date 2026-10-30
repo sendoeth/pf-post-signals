@@ -195,6 +195,10 @@ async function read(page) {
     if (JSON.stringify(odd.selects) !== JSON.stringify(DEFAULTS)) fail(`unknown url values not reset: ${JSON.stringify(odd.selects)}`);
     if (odd.search !== '') fail(`unknown url values not removed from the address bar: ${odd.search}`);
     cmp('invalid url', odd, DEFAULTS);
+    const lower = await load('?author=' + authors[1].toLowerCase() + '&asset=' + assets[assets.length - 1].toLowerCase());
+    const lf = { ...DEFAULTS, author: authors[1], asset: assets[assets.length - 1] };
+    if (JSON.stringify(lower.selects) !== JSON.stringify(lf) || lower.search !== query(lf)) fail(`lower-case url not matched: ${JSON.stringify(lower.selects)} ${lower.search}`);
+    else cmp('lower-case url', lower, lf);
     const partly = await load('?side=short&sort=evil');
     if (partly.search !== '?side=short') fail(`partly invalid url rewritten to ${partly.search}, want ?side=short`);
     // every row link opens its position page
