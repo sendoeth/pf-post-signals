@@ -206,7 +206,7 @@ the post's card. Each bubble sits at the post's entry bar; blue ▲ = up since t
 python3 build_chart.py                       # 18 records scanned, 16 drawn, 2 superseded, 0 refused
 python3 build_chart.py --records tests/fixtures/records_with_invalid --out /tmp/x.json   # 4 refused with reasons
 python3 check_bundle.py                      # ALL MATCH
-node tests/browser_test.js --screenshots verification/step5          # ALL PASS (local server)
+node tests/browser_test.js --screenshots verification/step5          # ALL PASS (local server; chart view = web/chart.html since step 10)
 node tests/browser_test.js --url https://sendoeth.com/pf-post-signals/web/   # same checks on the live page
 ```
 
@@ -295,6 +295,22 @@ every check and test runs; only if all pass does the job commit (`refresh: price
   `tools/guard.py --history` and `--tree` on its own commit, records that as the `guard` status on exactly that
   commit, and fast-forwards `main`. Token scopes are per job: contents/statuses/pages write for the refresh job only.
 - `parity.py` now compares in memory (records/ holds the refreshed records); step 4 parity stays 16/16.
+
+## Step 10: leaderboard front page
+
+**https://sendoeth.com/pf-post-signals/web/** is now a ranked list of every position; the chart view moved to
+[`web/chart.html`](web/chart.html). Each row: rank, asset with LONG / SHORT badge, author avatar and handle, posted date
+and age, a quote of the post, a sparkline of the price from the entry bar to the latest bar, entry -> current price,
+return (for the call when a side is stated, else the price move), best since post and status; every row links to its
+position page. A stats strip (positions, share in profit, average return, best call) follows the filters.
+
+- Filters: time (all / last 7 days / today, relative to the "prices as of" time), side, author, asset; sort by
+  return, best since post or newest. The state lives in the URL (`?side=short&sort=best`), so any view can be shared;
+  unknown URL values fall back to the defaults.
+- Same bundle, same CSP, no new data source or third-party request; unresolved values never show as 0.
+- `tests/board_test.js` re-implements the ranking independently and loads all 432 filter x sort combinations from
+  their URLs, changes every select in the page, checks every row field against its record file, sparkline point
+  counts, links, 0 console errors / CSP violations and the phone layout.
 
 ## Reproduce
 

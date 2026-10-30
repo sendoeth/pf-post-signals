@@ -7,39 +7,52 @@
 <script src="assets/frame-guard.js"></script>
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Posts over price</title>
-<meta name="description" content="Each post placed at its entry bar on the hourly price of its asset. Values come from the pf-post-signals post_price.v1 records.">
-<link rel="stylesheet" href="assets/index.css">
+<title>Positions</title>
+<meta name="description" content="Every tracked post as a position, ranked by how it has done since it was posted. Record-backed values, refreshed daily.">
+<link rel="stylesheet" href="assets/board.css">
 </head>
 <body>
 <main>
-  <h1>Posts over price</h1>
-  <p class="sub">Each post sits at its entry bar: the first hourly bar at or after it was posted. Click a bubble to see the post and how the asset moved since; its card (or the table's date link) opens the position page with candles. Every value comes from a <code>post_price.v1</code> record; horizons not reached yet say so instead of showing 0.</p>
-  <div class="controls">
-    <label class="picker">Asset <select id="asset"></select></label>
-    <div class="legend" aria-hidden="true">
-      <span><span class="dot up">▲</span>up since post</span>
-      <span><span class="dot down">▼</span>down since post</span>
-      <span><svg width="22" height="8" aria-hidden="true"><line x1="0" y1="4" x2="22" y2="4" class="price gap"/></svg>no price data</span>
+  <header class="top">
+    <div>
+      <h1>Positions</h1>
+      <p class="sub" id="asof">Loading…</p>
     </div>
-    <span id="summary" class="notes"></span>
-  </div>
-  <div class="layout">
-      <div class="panel" id="chart-wrap">
-        <svg id="chart" role="img" aria-labelledby="chart-title"><title id="chart-title">Hourly price with posts</title></svg>
-        <div id="tip" hidden></div>
-      </div>
-      <div class="panel tablewrap">
-        <table id="posts">
-          <thead><tr><th>Posted (UTC)</th><th>Author</th><th>Side</th><th>Entry</th><th>Since post</th><th>7d</th><th>Status</th></tr></thead>
-          <tbody></tbody>
-        </table>
-      </div>
-    <aside class="panel" id="card" aria-live="polite"><p class="empty">Select a post to see its card.</p></aside>
-  </div>
-  <h3>Data</h3>
-  <ul class="notes" id="notes"></ul>
+    <nav class="nav" aria-label="Views">
+      <a href="./" aria-current="page">Leaderboard</a>
+      <a href="chart.html">Chart</a>
+    </nav>
+  </header>
+
+  <form class="filters" id="filters" aria-label="Filter and sort">
+    <label>Time <select id="f-time" name="time">
+      <option value="all">All time</option><option value="7d">Last 7 days</option><option value="today">Today</option>
+    </select></label>
+    <label>Side <select id="f-side" name="side">
+      <option value="all">All sides</option><option value="long">Long</option><option value="short">Short</option><option value="none">No side</option>
+    </select></label>
+    <label>Author <select id="f-author" name="author"><option value="all">All authors</option></select></label>
+    <label>Asset <select id="f-asset" name="asset"><option value="all">All assets</option></select></label>
+    <label>Sort <select id="f-sort" name="sort">
+      <option value="return">Return</option><option value="best">Best since post</option><option value="newest">Newest</option>
+    </select></label>
+  </form>
+
+  <section class="stats" id="stats" aria-label="Summary of the positions shown"></section>
+
+  <section class="board panel" aria-label="Positions">
+    <div class="head-row" aria-hidden="true">
+      <span>#</span><span>Position</span><span class="col-spark">Since post</span><span class="col-px">Entry → now</span>
+      <span class="r">Return</span><span class="r col-best">Best</span>
+    </div>
+    <ol id="rows"></ol>
+    <p class="empty" id="empty" hidden>No positions match these filters.</p>
+  </section>
+
+  <p class="notes">Return is the result for the call when the post states a side (long or short), otherwise the price move since the post.
+    Entry is the first hourly bar at or after the post; every value comes from a <code>post_price.v1</code> record and the daily refresh.
+    Unreached horizons are never shown as 0. Not trading advice.</p>
 </main>
-<script src="assets/index.js"></script>
+<script src="assets/board.js"></script>
 </body>
 </html>

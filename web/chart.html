@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; frame-src 'none'; worker-src 'none'; manifest-src 'none'; media-src 'none'; font-src 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="no-referrer">
+<script src="assets/frame-guard.js"></script>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Posts over price</title>
+<meta name="description" content="Each post placed at its entry bar on the hourly price of its asset. Values come from the pf-post-signals post_price.v1 records.">
+<link rel="stylesheet" href="assets/chart.css">
+</head>
+<body>
+<main>
+  <p class="crumbs"><a href="./">← Leaderboard</a></p>
+  <h1>Posts over price</h1>
+  <p class="sub">Each post sits at its entry bar: the first hourly bar at or after it was posted. Click a bubble to see the post and how the asset moved since; its card (or the table's date link) opens the position page with candles. Every value comes from a <code>post_price.v1</code> record; horizons not reached yet say so instead of showing 0.</p>
+  <div class="controls">
+    <label class="picker">Asset <select id="asset"></select></label>
+    <div class="legend" aria-hidden="true">
+      <span><span class="dot up">▲</span>up since post</span>
+      <span><span class="dot down">▼</span>down since post</span>
+      <span><svg width="22" height="8" aria-hidden="true"><line x1="0" y1="4" x2="22" y2="4" class="price gap"/></svg>no price data</span>
+    </div>
+    <span id="summary" class="notes"></span>
+  </div>
+  <div class="layout">
+      <div class="panel" id="chart-wrap">
+        <svg id="chart" role="img" aria-labelledby="chart-title"><title id="chart-title">Hourly price with posts</title></svg>
+        <div id="tip" hidden></div>
+      </div>
+      <div class="panel tablewrap">
+        <table id="posts">
+          <thead><tr><th>Posted (UTC)</th><th>Author</th><th>Side</th><th>Entry</th><th>Since post</th><th>7d</th><th>Status</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    <aside class="panel" id="card" aria-live="polite"><p class="empty">Select a post to see its card.</p></aside>
+  </div>
+  <h3>Data</h3>
+  <ul class="notes" id="notes"></ul>
+</main>
+<script src="assets/chart.js"></script>
+</body>
+</html>

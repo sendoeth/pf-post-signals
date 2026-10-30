@@ -81,3 +81,5 @@ code { font-size: 12px; }
 .dot.up { background: var(--up); } .dot.down { background: var(--down); }
 html[data-framed] body { display: none; }
 .gain { color: var(--up); } .loss { color: var(--down); }
+.crumbs { margin: 0 0 6px; font-size: 14px; }
+.crumbs a { text-decoration: none; }

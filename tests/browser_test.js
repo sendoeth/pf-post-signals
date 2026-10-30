@@ -1,4 +1,4 @@
-// Step 5 browser test: load web/index.html in headless Chromium, click every bubble of every asset,
+// Step 5 browser test (chart view, web/chart.html since step 10): load it in headless Chromium, click every bubble of every asset,
 // and check the opened card against the record file on disk. Fails on any mismatch or console error.
 // usage: node tests/browser_test.js [--screenshots DIR] [--url https://.../web/] [--expect ID,ID]
 //   default: serve web/ on 127.0.0.1. --expect: these posts must be drawn as bubbles; with
@@ -52,7 +52,7 @@ function serve() {
     page.on('requestfailed', r => consoleErrors.push(`requestfailed: ${r.url()}`));
     page.on('response', r => { if (r.status() >= 400) consoleErrors.push(`http ${r.status()}: ${r.url()}`); });
     await page.setViewport({ width: 1280, height: 900 });
-    await page.goto(base, { waitUntil: 'networkidle0' });
+    await page.goto(base + 'chart.html', { waitUntil: 'networkidle0' });
     await page.waitForSelector('body[data-ready="1"]', { timeout: 15000 });
 
     for (const asset of bundle.assets) {

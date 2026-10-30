@@ -1,5 +1,6 @@
 // Step 8 security test (headless Chromium).
-//  1. real site: index.html (every bubble clicked) and every position page at both intervals:
+//  1. real site: the leaderboard (index.html, several filtered views), chart.html (every bubble
+//     clicked) and every position page at both intervals:
 //     every request goes to the site's own origin, 0 CSP violations, 0 console errors, canary unset
 //  2. attack site (local only): a throwaway copy of web/ whose bundle is built from
 //     tests/fixtures/attack_records and whose avatars/index.json is tampered with. Refused fixtures
@@ -61,7 +62,14 @@ async function visitAll(browser, base, bundle, label, fails, log) {
     for (const v of s.csp) fails.push(`${label} ${where}: CSP violation ${v}`);
     log.csp += s.csp.length;
   };
-  await page.goto(base, { waitUntil: 'networkidle0' });
+  await page.goto(base, { waitUntil: 'networkidle0' });            // leaderboard (step 10)
+  await page.waitForSelector('body[data-ready="1"]');
+  for (const q of ['?sort=best', '?side=short', '?sort=newest&time=7d']) {
+    await page.goto(base + q, { waitUntil: 'networkidle0' });
+    await page.waitForSelector('body[data-ready="1"]');
+  }
+  await check('leaderboard');
+  await page.goto(base + 'chart.html', { waitUntil: 'networkidle0' });
   await page.waitForSelector('body[data-ready="1"]');
   for (const a of bundle.assets) {
     await page.select('#asset', a.name);
@@ -70,7 +78,7 @@ async function visitAll(browser, base, bundle, label, fails, log) {
       clicks++;
     }
   }
-  await check('index.html');
+  await check('chart.html');
   for (const a of bundle.assets) for (const p of a.posts) for (const iv of ['', '&interval=1h']) {
     await page.goto(`${base}position.html?post=${p.post.id}&asset=${encodeURIComponent(a.name)}${iv}`, { waitUntil: 'networkidle0' });
     await page.waitForSelector('body[data-ready]');
@@ -129,7 +137,14 @@ async function visitAll(browser, base, bundle, label, fails, log) {
       for (const o of aorigins) if (o !== new URL(abase).origin) fails.push(`attack: request to another origin ${o}`);
       // the hostile text is on screen as literal text, and created no elements
       const page = await watch(browser, 'attack-dom', log);
-      await page.goto(abase, { waitUntil: 'networkidle0' });
+      await page.goto(abase, { waitUntil: 'networkidle0' });              // leaderboard quotes the post text
+      await page.waitForSelector('body[data-ready="1"]');
+      const board = await page.evaluate(() => ({
+        literal: document.getElementById('rows').textContent.includes('<script>window.__pwned="script tag"</script>'),
+        injected: document.querySelectorAll('#rows script, #rows iframe, #rows img:not(.avatar img), #rows [onerror], #rows [onload], #rows a[href^="javascript:"]').length,
+        canary: typeof window.__pwned === 'undefined' ? null : String(window.__pwned) }));
+      if (!board.literal || board.injected || board.canary !== null) fail(`attack leaderboard: literal ${board.literal}, injected ${board.injected}, canary ${board.canary}`);
+      await page.goto(abase + 'chart.html', { waitUntil: 'networkidle0' });
       await page.waitForSelector('body[data-ready="1"]');
       const textPost = ab.assets[0].posts.find(p => (p.post.text || '').includes('<script>'));
       await (await page.$(`.bubble[data-post-id="${textPost.post.id}"] circle.mark`)).click();
@@ -150,7 +165,7 @@ async function visitAll(browser, base, bundle, label, fails, log) {
       if (!pos.literal || pos.injected) fail(`attack position page: literal ${pos.literal}, injected elements ${pos.injected}`);
       if (pos.avatar !== 'initials') fail(`attack: tampered avatar index used (${pos.avatar}), expected initials`);
       if (pos.canary !== null) fail(`attack: canary set to ${pos.canary}`);
-      attack = { rows, pages: visited.pages, clicks: visited.clicks, origins: aorigins, dom, pos };
+      attack = { rows, pages: visited.pages, clicks: visited.clicks, origins: aorigins, dom, pos, board };
     }
 
     // 3. framing: our pages inside frames on another origin
@@ -183,14 +198,14 @@ async function visitAll(browser, base, bundle, label, fails, log) {
     servers.forEach(s => s.close());
   }
   for (const c of log.console) fails.push(`console: ${c}`);
-  console.log(`site ${liveUrl || 'local'}: ${real.pages} page states checked (index + ${real.pages - 1} position loads), ${real.clicks} bubbles clicked, ` +
+  console.log(`site ${liveUrl || 'local'}: ${real.pages} page states checked (leaderboard + chart + ${real.pages - 2} position loads), ${real.clicks} bubbles clicked, ` +
     `${real.requests} requests, origins: ${real.origins.join(', ')}`);
   console.log(`  resources loaded: ${real.paths.join(' ')}`);
   if (attack) {
     console.log(`attack fixtures: ${attack.rows.map(r => `${r[0]}=${r[2]}`).join(', ')}`);
     console.log(`attack site: ${attack.pages} page states, ${attack.clicks} bubbles clicked, origins: ${attack.origins.join(', ')}; ` +
       `card shows payload as text: ${attack.dom.literal}, injected elements: ${attack.dom.injected}; position page text literal: ${attack.pos.literal}, ` +
-      `injected: ${attack.pos.injected}, tampered avatar -> ${attack.pos.avatar}; canary: ${attack.pos.canary === null ? 'unset' : attack.pos.canary}`);
+      `injected: ${attack.pos.injected}, tampered avatar -> ${attack.pos.avatar}; leaderboard quote literal: ${attack.board.literal}, injected: ${attack.board.injected}; canary: ${attack.pos.canary === null ? 'unset' : attack.pos.canary}`);
   }
   for (const f of frames) console.log(`framing ${f[0]} ${f[1] || 'index'}: ${f[2]}`);
   console.log(`canary window.__pwned: ${fails.some(f => f.includes('canary')) ? 'SET' : 'unset on every page'}; CSP violations: ${log.csp}; console errors: ${log.console.length}`);

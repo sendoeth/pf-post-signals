@@ -70,7 +70,7 @@ function serve() {
     await page.setViewport({ width: 1280, height: 1000 });
 
     // main page: every card and table row links to its position page
-    await page.goto(base, { waitUntil: 'networkidle0' });
+    await page.goto(base + 'chart.html', { waitUntil: 'networkidle0' });
     await page.waitForSelector('body[data-ready="1"]');
     for (const a of bundle.assets) {
       await page.select('#asset', a.name);
