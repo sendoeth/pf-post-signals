@@ -101,3 +101,77 @@ eb8547fbaf9b5085ef21eda2173fbcbded02c672efd9ee95cc6159fefbe2657b  verification/s
 53d12ad40731aa944610e6c7fd1654f5abf4daaf92b7d0702adc438f85a43dd4  verification/step10/board_phone.png
 0fd5caba64183242090958aa40cb0d0529a39a92a9a4f499fe316346c2769bb6  verification/step10/board_phone_filtered.png
 ```
+
+## Verification follow-up (2026-10-30 21:20-21:50 UTC)
+
+**Erratum.** The summary line above says `174 with rows, 258 correctly empty`. The correct split is **156 with rows, 276 correctly empty** (of 432). The test's counter also counted the 18 select-change checks (156 + 18 = 174). Every row/rank/value comparison was already correct; only that summary count was wrong. Fixed in [`03874b9`](https://github.com/sendoeth/pf-post-signals/commit/03874b9ef5a1e6dd29cb42345e40cf6c09f513a9) and confirmed by an independent count (Python, same rules): `combinations 432 with rows 156 empty 276`.
+
+**Invalid URL state.** Before `03874b9` the page reset unknown values to the defaults but left them in the address bar. Now it also rewrites the URL to the state shown. Live, after deploy:
+
+```text
+load https://sendoeth.com/pf-post-signals/web/?side=bogus&sort=bogus&time=8d
+{
+ "url": "https://sendoeth.com/pf-post-signals/web/",
+ "selects": {
+  "time": "all",
+  "side": "all",
+  "author": "all",
+  "asset": "all",
+  "sort": "return"
+ },
+ "stats": [
+  "Positions: 18",
+  "In profit: 22%",
+  "Average return: -3.47%",
+  "Best call: +19.58% · SILVER @BobLoukas"
+ ],
+ "rows": [
+  "1. SILVER SHORT +19.58% best ▲ +19.58%",
+  "2. SILVER SHORT +19.52% best ▲ +19.52%",
+  "3. SILVER SHORT +8.73% best ▲ +8.73%",
+  "4. GOLD SHORT +6.23% best ▲ +6.25%",
+  "5. GOLD NO SIDE -0.40% best ▲ 0.00%",
+  "6. BTC LONG -1.20% best ▲ +12.33%",
+  "7. STOCKS LONG -2.39% best ▲ +1.51%",
+  "8. STOCKS LONG -3.54% best ▲ +0.32%",
+  "9. BTC LONG -5.28% best ▲ +7.70%",
+  "10. BTC NO SIDE -6.26% best ▲ 0.00%",
+  "11. BTC LONG -6.63% best ▲ +3.33%",
+  "12. BTC LONG -8.96% best ▲ +3.10%",
+  "13. BTC LONG -9.36% best ▲ +0.32%",
+  "14. BTC LONG -9.36% best ▲ +0.32%",
+  "15. BTC LONG -10.15% best ▲ +2.16%",
+  "16. BTC LONG -10.30% best ▲ +1.99%",
+  "17. COPX LONG -17.28% best ▲ +1.08%",
+  "18. COPX LONG -25.36% best ▲ +0.40%"
+ ],
+ "unresolved": [],
+ "asOf": "18 positions from 1 author · prices as of 2026-10-30 19:28 UTC (daily refresh)"
+}
+```
+
+**Unresolved values.** No live position is unresolved today: all 18 have an entry bar and a current price. The ranking rule (unresolved last by return and by best, newest-first by post time) is checked by `tests/board_test.js` section F on a test-only copy of the deployed site files whose bundle adds `tests/fixtures/pending_records/2116212800955576797_GOLD.json` (a real BobLoukas post of 2026-10-30 16:57 UTC resolved against bars that end before it, so it has no entry bar). That copy is never deployed. Screenshot: [verification/step10/board_pending_fixture.png](step10/board_pending_fixture.png).
+
+```text
+$ node tests/board_test.js --url https://sendoeth.com/pf-post-signals/web/
+page https://sendoeth.com/pf-post-signals/web/
+filter/sort combinations loaded from their URL: 432 (156 with rows, 276 correctly empty); select changes: 18; default-view fields checked against records: 144; rows 18; CSP violations 0; console errors 0
+ALL PASS
+[exit 0]
+
+$ node tests/board_test.js   # local; adds the test-only pending fixture copy
+page http://127.0.0.1:40951/
+filter/sort combinations loaded from their URL: 432 (156 with rows, 276 correctly empty); select changes: 18; default-view fields checked against records: 144; rows 18; CSP violations 0; console errors 0
+unresolved (test-only fixture copy): sort=return: pending post 2116212800955576797 at rank 19 of 19 (last), return "unresolved", best "–", prices "no entry bar" -> OK
+unresolved (test-only fixture copy): sort=best: pending post 2116212800955576797 at rank 19 of 19 (last), return "unresolved", best "–", prices "no entry bar" -> OK
+unresolved (test-only fixture copy): sort=newest: pending post 2116212800955576797 at rank 1 of 19 (first (newest post)), return "unresolved", best "–", prices "no entry bar" -> OK
+ALL PASS
+[exit 0]
+```
+
+```text
+c417991f527be1276e5033eac8909ed8113699ba48121f050d6037f21671649d  web/assets/board.js
+7c39cde5c7a97478a7532ea4b412d0ec64f63c8aa1821313964df4531dd9d4ba  tests/board_test.js
+a212012499d9821f13c1a7a7c0d16ee72240d0cc6709c74159979aa626529027  tests/fixtures/pending_records/2116212800955576797_GOLD.json
+d73a438abdf762f1b02c200c399ce88e10c9484557c956bc653bf448974374ce  verification/step10/board_pending_fixture.png
+```
