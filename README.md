@@ -186,7 +186,7 @@ Run notes with raw output and file hashes: [`verification/step4_run.md`](verific
 
 ## Step 5: posts over price (chart page)
 
-Live page: **https://sendoeth.github.io/pf-post-signals/web/**: pick an asset, click a bubble (or a table row) to open
+Live page: **https://sendoeth.com/pf-post-signals/web/**: pick an asset, click a bubble (or a table row) to open
 the post's card. Each bubble sits at the post's entry bar; blue ▲ = up since the post, red ▼ = down.
 
 - `build_chart.py` checks every `records/**/*.json` with the step 4 schema + record invariants and writes
@@ -207,7 +207,7 @@ python3 build_chart.py                       # 18 records scanned, 16 drawn, 2 s
 python3 build_chart.py --records tests/fixtures/records_with_invalid --out /tmp/x.json   # 4 refused with reasons
 python3 check_bundle.py                      # ALL MATCH
 node tests/browser_test.js --screenshots verification/step5          # ALL PASS (local server)
-node tests/browser_test.js --url https://sendoeth.github.io/pf-post-signals/web/   # same checks on the live page
+node tests/browser_test.js --url https://sendoeth.com/pf-post-signals/web/   # same checks on the live page
 ```
 
 Run notes with raw output, hashes and screenshots: [`verification/step5_run.md`](verification/step5_run.md).
