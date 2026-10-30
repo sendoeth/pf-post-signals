@@ -184,6 +184,34 @@ Run notes with raw output and file hashes: [`verification/step4_run.md`](verific
   unaffected by later Yahoo revisions.
 - Asset choice is manual (`--asset`): detection from post text is step 5.
 
+## Step 5: posts over price (chart page)
+
+Live page: **https://sendoeth.github.io/pf-post-signals/web/**: pick an asset, click a bubble (or a table row) to open
+the post's card. Each bubble sits at the post's entry bar; blue ▲ = up since the post, red ▼ = down.
+
+- `build_chart.py` checks every `records/**/*.json` with the step 4 schema + record invariants and writes
+  `web/data/charts.json`. Invalid records are refused with their reasons and never drawn; the same post + asset in two
+  files is drawn once (the record with the later last bar wins, the other is listed as superseded); the price line per
+  asset is the union of the records' hourly bars (records disagreeing on a bar refuse that asset).
+- `web/index.html`: one static file, no build step, no external scripts. Bubbles closer than two hit radii
+  (same entry bar, or hours apart on a two-month axis) are stacked on stems so each one stays separately clickable.
+  Cards show only record values; unreached horizons read `unresolved · <reason>`, never 0. Light and dark mode.
+- `check_bundle.py`: every record file is drawn, superseded or refused exactly once, and every drawn post equals its
+  record field for field (sha256 shown on the card).
+- `tests/browser_test.js`: headless Chromium clicks every bubble of every asset and compares each card field (text and
+  raw value) with the record file on disk, checks no two hit areas overlap, no console errors, no horizontal scroll at
+  phone width, and takes the screenshots in `verification/step5/`.
+
+```bash
+python3 build_chart.py                       # 18 records scanned, 16 drawn, 2 superseded, 0 refused
+python3 build_chart.py --records tests/fixtures/records_with_invalid --out /tmp/x.json   # 4 refused with reasons
+python3 check_bundle.py                      # ALL MATCH
+node tests/browser_test.js --screenshots verification/step5          # ALL PASS (local server)
+node tests/browser_test.js --url https://sendoeth.github.io/pf-post-signals/web/   # same checks on the live page
+```
+
+Run notes with raw output, hashes and screenshots: [`verification/step5_run.md`](verification/step5_run.md).
+
 ## Reproduce
 
 ```bash
