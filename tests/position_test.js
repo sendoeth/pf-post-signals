@@ -49,6 +49,11 @@ function serve() {
 
 (async () => {
   const bundle = JSON.parse(fs.readFileSync(path.join(WEB, 'data', 'charts.json'), 'utf8'));
+  // provider revisions logged by refresh.py: the record keeps the frozen entry, the candle shows the
+  // provider's current open. Only exactly that logged (bar, fetched) pair is accepted.
+  const logPath = path.join(ROOT, 'data', 'refresh_log.json');
+  const revised = new Set(fs.existsSync(logPath) ? JSON.parse(fs.readFileSync(logPath, 'utf8')).revisions
+    .filter(r => r.what === 'entry').map(r => `${r.bar}|${r.fetched}`) : []);
   const server = liveUrl ? null : await serve();
   const base = liveUrl || `http://127.0.0.1:${server.address().port}/`;
   const browser = await puppeteer.launch({ headless: true, executablePath: '/snap/bin/chromium',
@@ -145,7 +150,7 @@ function serve() {
         else if (Math.abs(pl.cx - pl.x) > 1.5 || Math.abs(pl.cy - pl.y) > 1.5) fail(`${tag}: bubble at ${pl.cx.toFixed(1)},${pl.cy.toFixed(1)}, entry candle at ${pl.x.toFixed(1)},${pl.y.toFixed(1)}`);
         if (pl.avatar === 'image' && !(pl.img > 0)) fail(`${tag}: avatar image did not load`);
         if (!got.candle) fail(`${tag}: no candle at the entry bar`);
-        else if (got.interval === '1h' && got.candle.open !== rec.entry.price) fail(`${tag}: entry candle open ${got.candle.open} != record ${rec.entry.price}`);
+        else if (got.interval === '1h' && got.candle.open !== rec.entry.price && !revised.has(`${rec.entry.at}|${got.candle.open}`)) fail(`${tag}: entry candle open ${got.candle.open} != record ${rec.entry.price}`);
       }
     }
 
