@@ -1,17 +1,65 @@
 {
  "schema": "pf-post-signals.refresh_log.v1",
- "refreshed_at": "2026-10-31T00:13:58Z",
- "started_at": "2026-10-31T00:13:49Z",
+ "refreshed_at": "2026-10-31T00:52:10Z",
+ "started_at": "2026-10-31T00:52:03Z",
  "records": 31,
  "refreshed": 31,
  "failures": [],
  "revisions": [
+  {
+   "record": "records/bobloukas/2112919830357577753_GOLD.json",
+   "bar": "2026-10-22T15:00:00Z",
+   "what": "1d exit",
+   "frozen": 4074.8,
+   "fetched": 4074.8999,
+   "note": "provider revision; frozen value kept"
+  },
+  {
+   "record": "records/posts/2113602987008356795_GOLD.json",
+   "bar": "2026-10-23T13:00:00Z",
+   "what": "entry",
+   "frozen": 4040.3999,
+   "fetched": 4040.3,
+   "note": "provider revision; frozen value kept"
+  },
+  {
+   "record": "records/posts/2113602987008356795_GOLD.json",
+   "bar": "2026-10-30T13:00:00Z",
+   "what": "7d exit",
+   "frozen": 3963.6001,
+   "fetched": 3963.3,
+   "note": "provider revision; frozen value kept"
+  },
+  {
+   "record": "records/posts/2116199680157647216_GOLD.json",
+   "bar": "2026-10-30T17:00:00Z",
+   "what": "entry",
+   "frozen": 3905.7,
+   "fetched": 3905.6001,
+   "note": "provider revision; frozen value kept"
+  },
+  {
+   "record": "records/bobloukas/2106744910896312646_SILVER.json",
+   "bar": "2026-10-05T14:00:00Z",
+   "what": "1d exit",
+   "frozen": 61.405,
+   "fetched": 61.41,
+   "note": "provider revision; frozen value kept"
+  },
   {
    "record": "records/bobloukas/2113613893662588966_SILVER.json",
    "bar": "2026-10-30T13:00:00Z",
    "what": "7d exit",
    "frozen": 50.055,
    "fetched": 50.06,
+   "note": "provider revision; frozen value kept"
+  },
+  {
+   "record": "records/bobloukas/2107063137958564197_STOCKS.json",
+   "bar": "2026-10-06T13:30:00Z",
+   "what": "1d exit",
+   "frozen": 778.15,
+   "fetched": 778.17,
    "note": "provider revision; frozen value kept"
   }
  ],
