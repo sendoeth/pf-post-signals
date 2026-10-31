@@ -93,3 +93,29 @@ html[data-framed] body { display: none; }
 /* step 20: not-financial-advice notice */
 .nfa { margin: 18px 0 0; padding: 10px 12px; border: 1px solid var(--border); border-radius: 10px; color: var(--ink-2); font-size: 12.5px; line-height: 1.5; background: var(--surface); }
 .nfa strong { color: var(--ink); }
+
+/* episode theses: solid disc = call, dashed ring = thought, arrow = lean (never rated) */
+.ep-toggle { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; color: var(--ink-2); font-weight: 600; }
+.ep-toggle[hidden] { display: none; }
+.ep-bubble { cursor: pointer; }
+.ep-bubble:focus { outline: none; }
+.ep-bubble .hit { fill: transparent; stroke: none; }
+.ep-bubble .stem { stroke: var(--axis); stroke-width: 1; }
+.ep-bubble .ep-ring { stroke-width: 2.2; }
+.ep-bubble .ep-arrow { fill: none; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+.ep-bubble.call .ep-ring { stroke: none; }
+.ep-bubble.call.bullish .ep-ring { fill: var(--up); } .ep-bubble.call.bearish .ep-ring { fill: var(--down); } .ep-bubble.call.neutral .ep-ring { fill: var(--flat); }
+.ep-bubble.call .ep-arrow { stroke: var(--card); }
+.ep-bubble.thought .ep-ring { fill: var(--card); stroke-dasharray: 3.4 2.6; }
+.ep-bubble.thought.bullish .ep-ring, .ep-bubble.thought.bullish .ep-arrow { stroke: var(--up); }
+.ep-bubble.thought.bearish .ep-ring, .ep-bubble.thought.bearish .ep-arrow { stroke: var(--down); }
+.ep-bubble.thought.neutral .ep-ring, .ep-bubble.thought.neutral .ep-arrow { stroke: var(--flat); }
+.ep-bubble:focus-visible .ep-ring, .ep-bubble.selected .ep-ring { filter: drop-shadow(0 0 3px var(--ink)); stroke-width: 3.2; }
+.ep-key { display: inline-block; width: 13px; height: 13px; border-radius: 50%; }
+.ep-key.call { background: var(--flat); }
+.ep-key.thought { border: 2px dashed var(--flat); }
+#card .ep-lean { font-weight: 700; margin: 0 0 8px; }
+#card .ep-lean.bullish { color: var(--up); } #card .ep-lean.bearish { color: var(--down); } #card .ep-lean.neutral { color: var(--ink-2); }
+#card .ep-moments { margin: 0 0 12px; padding-left: 18px; font-size: 13px; color: var(--ink-2); max-height: 260px; overflow: auto; }
+#card .ep-moments li + li { margin-top: 6px; }
+#card .ep-moments strong { color: var(--ink); }

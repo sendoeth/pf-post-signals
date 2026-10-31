@@ -249,11 +249,16 @@ async function read(page) {
         const g = await read(page), total = g.rows.length;
         const idx = g.rows.findIndex(r => pend.includes(r.id));
         const row = g.rows[idx];
-        const where = sort === 'newest' ? 'first (newest post)' : 'last';
-        const ok = idx >= 0 && (sort === 'newest' ? idx === 0 : idx === total - 1) && row.f.return.text === 'unresolved' && row.f.best.text === '–'
-          && row.f.prices.text === 'no entry bar' && g.stats.count === total
+        // every pending row (the fixture plus any real post still waiting for its first bar) has no return,
+        // so together they form the tail of a return/best sort; newest-first puts a pending post on top
+        const pendIdx = g.rows.map((r, i) => (pend.includes(r.id) ? i : -1)).filter(i => i >= 0);
+        const tail = pendIdx.length === pend.length && pendIdx.every((i, k) => i === total - pendIdx.length + k);
+        const where = sort === 'newest' ? 'first (newest post)' : `last ${pendIdx.length} (all pending rows)`;
+        const ok = idx >= 0 && (sort === 'newest' ? idx === 0 : tail)
+          && pendIdx.every(i => g.rows[i].f.return.text === 'unresolved' && g.rows[i].f.best.text === '–' && g.rows[i].f.prices.text === 'no entry bar')
+          && g.stats.count === total
           && JSON.stringify(g.stats.avg_return) === JSON.stringify(expected(model(pb), { ...DEFAULTS, sort }, pb.prices_as_of || new Date().toISOString()).stats.avg_return);
-        pendingChecks.push(`sort=${sort}: pending post ${pend[0]} at rank ${idx + 1} of ${total} (${where}), return "${row && row.f.return.text}", best "${row && row.f.best.text}", prices "${row && row.f.prices.text}" -> ${ok ? 'OK' : 'WRONG'}`);
+        pendingChecks.push(`sort=${sort}: pending posts ${pend.join(", ")} at ranks ${pendIdx.map(i => i + 1).join(", ")} of ${total} (${where}), return "${row && row.f.return.text}", best "${row && row.f.best.text}", prices "${row && row.f.prices.text}" -> ${ok ? 'OK' : 'WRONG'}`);
         if (!ok) fail(`pending fixture, sort=${sort}: rank ${idx + 1}/${total}, ${JSON.stringify(row && row.f.return)}`);
         if (shotDir && sort === 'return') await page.screenshot({ path: path.join(shotDir, 'board_pending_fixture.png'), fullPage: true });
       }

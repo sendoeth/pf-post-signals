@@ -223,6 +223,18 @@ class Build(unittest.TestCase):
         self.assertIn('href="episode-forward-guidance-2026-10-30.html"', lst)
         self.assertEqual(lst.count('<p class="nfa" id="nfa"'), 1)
 
+    def test_refresh_keeps_the_bars_up_to_the_episode(self):
+        episode.build(root=self.root, fetch=self.fake_fetch)
+        revised = lambda info, since: [["2026-10-29T20:00:00Z", 1.0], ["2026-10-30T19:00:00Z", 2.0],      # a vendor revision
+                                       ["2026-11-03T14:00:00Z", 7.0], ["2026-11-04T14:00:00Z", 8.0]]
+        b = episode.build(root=self.root, refresh=True, fetch=revised)
+        gold = next(t for t in b["episodes"][0]["theses"] if t["asset"] == "GOLD")
+        self.assertEqual(gold["price"]["at_episode"]["price"], 3920.0)                 # frozen
+        self.assertEqual(gold["price"]["latest"], {"at": "2026-11-04T14:00:00Z", "price": 8.0})
+        self.assertEqual([x[0] for x in gold["series"]][-2:], ["2026-11-03T14:00:00Z", "2026-11-04T14:00:00Z"])
+        with self.assertRaises(SystemExit):                                            # a failed fetch stops the job
+            episode.build(root=self.root, refresh=True, fetch=lambda info, since: [])
+
     def test_offline_without_cache_fails(self):
         with self.assertRaises(SystemExit):
             episode.build(root=self.root, offline=True)

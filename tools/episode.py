@@ -64,6 +64,14 @@ def price_series(asset_key, assets, reference_at, cache_path, refresh=False, off
     info = resolve.asset_info(assets[asset_key]["price"])
     since = resolve.iso((resolve.parse(reference_at) - dt.timedelta(days=LOOKBACK_DAYS)).timestamp())
     series = (fetch or resolve.fetch_series)(info, since)
+    if not series:
+        raise SystemExit(f"no prices for {asset_key} ({info['source']}:{info['symbol']}); keeping the last good data")
+    old = cache.get(asset_key)
+    if old and (old["source"], old["symbol"]) == (info["source"], info["symbol"]):
+        # frozen: the bars up to the episode never change once cached, so "price at the episode" cannot drift
+        # with a data vendor revision; a refresh only adds the bars after it
+        kept = [b for b in old["series"] if b[0] <= reference_at]
+        series = kept + [b for b in series if b[0] > reference_at]
     cache[asset_key] = {"source": info["source"], "symbol": info["symbol"], "fetched_at": resolve.iso(dt.datetime.now(dt.timezone.utc).timestamp()), "series": series}
     with open(cache_path, "w") as f:
         json.dump(cache, f, indent=0)

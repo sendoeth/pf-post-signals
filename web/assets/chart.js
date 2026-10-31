@@ -1,7 +1,7 @@
 "use strict";
 const SVGNS = "http://www.w3.org/2000/svg";
 const HORIZONS = ["1", "7", "30"];
-const state = { bundle: null, asset: null, selected: null, avatars: {} };
+const state = { bundle: null, asset: null, selected: null, avatars: {}, showEpisodes: true };
 let clipSeq = 0;
 const authorColor = PFPS.authorColor;
 
@@ -55,7 +55,9 @@ function render() {
     root.append(svg("text", { class: "tick", x: W / 2, y: H / 2, "text-anchor": "middle", "data-empty": "1" }, "No prices after these posts yet: the entry fills in on the next daily refresh."));
     return;
   }
-  const series = a.series, t0 = Date.parse(series[0][0]), t1 = Date.parse(series[series.length - 1][0]);
+  const series = a.series, t0 = Date.parse(series[0][0]);
+  const eps = state.showEpisodes ? (a.episodes || []).filter(it => it.t.price.at_episode) : [];
+  const t1 = Math.max(Date.parse(series[series.length - 1][0]), ...eps.map(it => Date.parse(it.t.price.at_episode.at)));
   const drawn = a.posts.filter(p => p.entry);
   const STACK = 36, HIT = 16, R = 12; // STACK > 2 * HIT: stacked hit areas never overlap; R = avatar radius
   let lo = Math.min(...series.map(b => b[1])), hi = Math.max(...series.map(b => b[1]));
@@ -185,6 +187,88 @@ function render() {
       root.append(node);
     });
   }
+  // Episode theses (podcasts / videos): solid = a call, dashed ring = a thought; the arrow is the lean.
+  // Placed with the same spot() so they never cover a post; never rated.
+  for (const it of eps) {
+    const t = it.t, at = t.price.at_episode, px = x(at.at), py = y(at.price);
+    const [cx, cy] = spot(px, py);
+    placed.push({ x: cx, y: cy });
+    const node = svg("g", { class: `ep-bubble ${t.kind} ${t.direction}`, tabindex: "0", role: "button", "data-episode": it.ep.slug, "data-asset": t.asset,
+      "aria-label": `${it.ep.show} ${it.ep.recorded_on}: ${t.kind} ${EP_WORD[t.direction]} on ${t.label}` });
+    if (cy !== py || cx !== px) node.append(svg("line", { class: "stem", x1: px, x2: cx, y1: py, y2: cy }));
+    node.append(svg("circle", { class: "hit", cx, cy, r: HIT }));
+    node.append(svg("circle", { class: "ep-ring", cx, cy, r: R }));
+    const d = t.direction === "bullish" ? `M${cx} ${cy + 6}V${cy - 6}M${cx - 5} ${cy - 1}L${cx} ${cy - 6}L${cx + 5} ${cy - 1}`
+      : t.direction === "bearish" ? `M${cx} ${cy - 6}V${cy + 6}M${cx - 5} ${cy + 1}L${cx} ${cy + 6}L${cx + 5} ${cy + 1}` : `M${cx - 6} ${cy}H${cx + 6}`;
+    node.append(svg("path", { class: "ep-arrow", d }));
+    node.addEventListener("click", () => selectEpisode(it));
+    node.addEventListener("dblclick", () => { location.href = episodeUrl(it); });
+    node.addEventListener("keydown", ev => { if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); selectEpisode(it); } });
+    if (state.selected === it) node.classList.add("selected");
+    root.append(node);
+  }
+}
+
+// ---- episodes (data/episodes.json, optional: the chart works the same without it) ----
+const EP_WORD = { bullish: "bullish", bearish: "bearish", neutral: "wait / stand aside" };
+const EP_CHART_ASSET = { GOLD: "GOLD", SILVER: "SILVER", COPPER: "COPPER", BTC: "BTC", ETH: "ETH", STOCKS: "STOCKS", OIL: "OIL" };
+function episodeUrl(it) { return `episode-${it.ep.slug}.html#t-${it.t.asset.toLowerCase()}`; }
+function validThesis(ep, t) {
+  return ep && typeof ep.slug === "string" && /^[a-z0-9-]{1,80}$/.test(ep.slug) && t && typeof t.asset === "string" && /^[A-Z0-9_]{1,16}$/.test(t.asset)
+    && ["call", "thought"].includes(t.kind) && ["bullish", "bearish", "neutral"].includes(t.direction)
+    && t.price && Array.isArray(t.series) && t.series.every(b => Array.isArray(b) && typeof b[0] === "string" && typeof b[1] === "number" && isFinite(b[1]))
+    && (!t.price.at_episode || (typeof t.price.at_episode.at === "string" && typeof t.price.at_episode.price === "number"));
+}
+function attachEpisodes(bundle, eb) {
+  const list = eb && Array.isArray(eb.episodes) ? eb.episodes : [];
+  for (const ep of list) for (const t of ep.theses || []) {
+    if (!validThesis(ep, t)) continue;
+    const name = EP_CHART_ASSET[t.asset] || t.asset;
+    let a = bundle.assets.find(x => x.name === name);
+    if (!a) {   // an asset only an episode talks about (oil, the dollar, the AI trade): drawn from the episode's own prices
+      a = { name, label: t.label, source: t.price.source, symbol: t.price.symbol, series: [], posts: [], episodeOnly: true };
+      bundle.assets.push(a);
+    }
+    if (a.episodeOnly) {
+      const bars = new Map(a.series.map(b => [b[0], b[1]]));
+      for (const b of t.series) if (!bars.has(b[0])) bars.set(b[0], b[1]);
+      a.series = [...bars.entries()].sort((p, q) => (p[0] < q[0] ? -1 : 1));
+    }
+    (a.episodes = a.episodes || []).push({ ep, t });
+  }
+}
+function selectEpisode(it) {
+  state.selected = it;
+  const c = document.getElementById("card"), t = it.t, ep = it.ep, pr = t.price;
+  c.replaceChildren();
+  c.removeAttribute("data-post-id");
+  c.setAttribute("data-episode", ep.slug);
+  c.setAttribute("data-asset", t.asset);
+  c.append(el("h2", null, ep.show));
+  c.append(el("p", { class: "meta" }, `${ep.title} · recorded ${ep.recorded_on}`));
+  c.append(el("p", { class: "ep-lean " + t.direction, "data-field": "lean" },
+    `${t.kind === "call" ? "Call" : "Thought"}: ${EP_WORD[t.direction]}${t.later ? " · later " + EP_WORD[t.later] : ""}`));
+  if (t.text) c.append(el("blockquote", { "data-field": "text" }, t.text));
+  const dl = el("dl");
+  field(dl, "asset", "Asset", `${t.label} (${pr.source}:${pr.symbol})`);
+  field(dl, "entry", "Price at the episode", pr.at_episode ? `${fmtPrice(pr.at_episode.price)} @ ${fmtTime(pr.at_episode.at)}` : "no bar", pr.at_episode);
+  field(dl, "latest", "Latest", pr.latest ? `${fmtPrice(pr.latest.price)} @ ${fmtTime(pr.latest.at)}` : "no bar yet", pr.latest);
+  field(dl, "change", "Since the episode", pr.change == null ? "no trading since the episode yet" : fmtPct(pr.change), pr.change, signClass(pr.change));
+  if (pr.with_lean != null) field(dl, "with_lean", "For the lean", fmtPct(pr.with_lean), pr.with_lean, signClass(pr.with_lean));
+  c.append(dl);
+  const ol = el("ol", { class: "ep-moments", "data-field": "moments" });
+  for (const m of t.moments || []) {
+    const li = el("li");
+    li.append(el("strong", null, `${m.t} · ${m.kind === "call" ? "call" : "thought"}, ${EP_WORD[m.direction] || m.direction}`),
+      document.createTextNode(` · ${m.speaker}: “${String(m.quote).slice(0, 220)}”`));
+    ol.append(li);
+  }
+  c.append(el("p", { class: "meta" }, `${(t.moments || []).length} moments in the episode`), ol);
+  c.append(el("a", { class: "open-position", href: episodeUrl(it), "data-field": "episode_url" }, "Open the episode page →"));
+  c.append(el("p", { class: "notes" }, "Episode stances are the speakers' views, not tracked positions: they are never rated."));
+  for (const n of document.querySelectorAll(".bubble, .ep-bubble")) n.classList.toggle("selected", n.getAttribute("data-episode") === ep.slug && n.getAttribute("data-asset") === t.asset);
+  for (const r of document.querySelectorAll("#posts tbody tr")) r.classList.toggle("selected", r.getAttribute("data-episode") === ep.slug);
+  if (window.matchMedia("(max-width: 860px)").matches) c.scrollIntoView({ block: "nearest" });
 }
 
 function positionUrl(p) { return PFPS.positionUrl(p.post.id, p.asset.name); }
@@ -253,7 +337,8 @@ function card(p) {
 function select(p) {
   state.selected = p;
   card(p);
-  for (const n of document.querySelectorAll(".bubble")) n.classList.toggle("selected", n.getAttribute("data-post-id") === p.post.id);
+  document.getElementById("card").removeAttribute("data-episode");
+  for (const n of document.querySelectorAll(".bubble, .ep-bubble")) n.classList.toggle("selected", n.getAttribute("data-post-id") === p.post.id);
   for (const r of document.querySelectorAll("#posts tbody tr")) r.classList.toggle("selected", r.getAttribute("data-post-id") === p.post.id);
   if (window.matchMedia("(max-width: 860px)").matches) document.getElementById("card").scrollIntoView({ block: "nearest" });
 }
@@ -275,6 +360,22 @@ function table() {
     tr.addEventListener("keydown", ev => { if (ev.key === "Enter") select(p); });
     tb.append(tr);
   }
+  if (!state.showEpisodes) return;
+  for (const it of state.asset.episodes || []) {
+    const t = it.t, pr = t.price;
+    const tr = el("tr", { "data-episode": it.ep.slug, tabindex: "0", class: "ep-row" });
+    const first = el("td");
+    first.append(el("a", { href: episodeUrl(it), class: "row-link" }, it.ep.recorded_on));
+    tr.append(first, el("td", null, it.ep.show),
+      el("td", null, EP_WORD[t.direction]),
+      el("td", null, pr.at_episode ? fmtPrice(pr.at_episode.price) : "no bar"),
+      el("td", { class: signClass(pr.change) }, pr.change == null ? "no bar since" : fmtPct(pr.change)),
+      el("td", null, "–"),
+      el("td", null, "episode " + t.kind));
+    tr.addEventListener("click", () => selectEpisode(it));
+    tr.addEventListener("keydown", ev => { if (ev.key === "Enter") selectEpisode(it); });
+    tb.append(tr);
+  }
 }
 
 function setAsset(name) {
@@ -283,7 +384,8 @@ function setAsset(name) {
   document.getElementById("card").replaceChildren(el("p", { class: "empty" }, "Select a post to see its card."));
   const a = state.asset, last = a.series.length ? a.series[a.series.length - 1][0] : null;
   document.getElementById("summary").textContent =
-    `${a.posts.length} post${a.posts.length === 1 ? "" : "s"} · ${a.source}:${a.symbol} hourly open · ${last ? "last bar " + fmtTime(last) : "no bar after the posts yet"}` +
+    `${a.posts.length} post${a.posts.length === 1 ? "" : "s"}` + (a.episodes ? ` · ${a.episodes.length} episode thes${a.episodes.length === 1 ? "is" : "es"}` : "") +
+    ` · ${a.source}:${a.symbol} hourly open · ${last ? "last bar " + fmtTime(last) : "no bar after the posts yet"}` +
     (state.bundle.prices_as_of ? ` · prices as of ${fmtTime(state.bundle.prices_as_of)}` : "");
   document.getElementById("summary").setAttribute("data-prices-as-of", state.bundle.prices_as_of || "");
   render(); table();
@@ -292,11 +394,19 @@ function setAsset(name) {
 Promise.all([
   fetch("data/charts.json").then(r => { if (!r.ok) throw new Error("charts.json HTTP " + r.status); return r.json(); }),
   fetch("avatars/index.json").then(r => (r.ok ? r.json() : {})).catch(() => ({})),
-]).then(([b, avatars]) => {
+  fetch("data/episodes.json").then(r => (r.ok ? r.json() : null)).catch(() => null),
+]).then(([b, avatars, eb]) => {
   state.bundle = b;
   state.avatars = avatars;
+  attachEpisodes(b, eb);
   const sel = document.getElementById("asset");
-  for (const a of b.assets) sel.append(el("option", { value: a.name }, `${a.name} (${a.posts.length})`));
+  for (const a of b.assets) sel.append(el("option", { value: a.name },
+    a.episodeOnly ? `${a.label || a.name} (episode)` : `${a.name} (${a.posts.length}${a.episodes ? " + " + a.episodes.length + " ep" : ""})`));
+  const tog = document.getElementById("show-ep");
+  if (tog) {
+    tog.closest("label").hidden = !b.assets.some(a => a.episodes);
+    tog.addEventListener("change", () => { state.showEpisodes = tog.checked; if (state.selected && state.selected.ep) setAsset(state.asset.name); else { render(); table(); } });
+  }
   sel.addEventListener("change", () => setAsset(sel.value));
   const notes = document.getElementById("notes");
   notes.append(el("li", null, `${b.records_scanned} records scanned, ${b.posts_drawn} posts drawn, ${b.superseded.length} superseded, ${b.refused.length} refused (${b.schema}).`));
