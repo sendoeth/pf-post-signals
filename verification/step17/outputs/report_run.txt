@@ -1,0 +1,6 @@
+report @BobLoukas: {'call': 7, 'no_call': 1777, 'needs_review': 2} · to add 16
+score now      45.9 (exact 45.907729, rank 4 of 4, 17 scored calls, limited sample)
+with the calls 51.8 (exact 51.802955, rank 2 of 4, 33 scored calls)
+order          @goodalexander > @BobLoukas > @Corbanu > @DrProfitCrypto
+files          intake/scans/bobloukas/report.md, report.json; pending intake/pending/scan-bobloukas.json
+NOT PUBLISHED: nothing under web/ or records/ changed. Run 'add' to publish the batch.

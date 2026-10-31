@@ -1,0 +1,5 @@
+$ node tests/browser_test.js --url https://sendoeth.com/pf-post-signals/web/
+page https://sendoeth.com/pf-post-signals/web/
+assets 13, cards opened 48, card fields checked 714, unresolved cells checked 43, same-hour bubbles 2, bubbles checked 48 (avatar images 40, initials 8; side ring + direction badge = record), console errors 0
+ALL PASS
+exit 0

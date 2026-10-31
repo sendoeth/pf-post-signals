@@ -1,0 +1,7 @@
+scan @BobLoukas since 2025-10-31: 5 searches this run, stop: complete (every window searched)
+coverage: 47 windows done, 0 left, 10 split; 1786 own posts 2025-10-31T20:56:15.000Z -> 2026-10-30T16:57:03.000Z
+log: intake/scans/bobloukas/scan_log.json
+
+real	0m40.950s
+user	0m11.608s
+sys	0m5.796s

@@ -1,0 +1,6 @@
+$ curl -s https://sendoeth.com/pf-post-signals/web/data/charts.json | sha256sum
+68abeee8eaf00e25edde1a5e51d15db73787c3e9b14f72ff036f30ccd636c6e8  -
+$ curl -s https://sendoeth.com/pf-post-signals/web/caller-bobloukas.html | grep -o 'data-field="score_exact"[^<]*'
+data-field="score_exact" data-raw="51.80295456688874">50 + 0.7674 × (52.3493 − 50) = 51.8030
+$ curl -s -H 'Authorization: token …' https://api.github.com/repos/sendoeth/pf-post-signals/pages/builds/latest  (status, commit)
+built 2512061f88fc252300e313ee6ebff10dc13a22ba

@@ -1,0 +1,7 @@
+scan @BobLoukas since 2025-10-31: 18 searches this run, stop: empty_result (3 empty pages in a row from 2026-04-09: X throttling; they are searched again next run)
+coverage: 20 windows done, 21 left, 4 split; 1051 own posts 2025-10-31T20:56:15.000Z -> 2026-04-08T15:56:20.000Z
+log: intake/scans/bobloukas/scan_log.json
+
+real	2m44.443s
+user	0m43.624s
+sys	0m20.987s

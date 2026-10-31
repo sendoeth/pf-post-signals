@@ -1,0 +1,31 @@
+$ python3 -m unittest -v tests.test_scan_caller tests.test_add_call
+test_labels (tests.test_scan_caller.Labels.test_labels) ... ok
+test_report_review_add (tests.test_scan_caller.ReportAndAdd.test_report_review_add) ... ok
+test_a_full_window_that_stopped_scrolling_is_split (tests.test_scan_caller.Resume.test_a_full_window_that_stopped_scrolling_is_split) ... ok
+test_a_single_empty_window_needs_a_second_run (tests.test_scan_caller.Resume.test_a_single_empty_window_needs_a_second_run) ... ok
+test_budget_stop_and_resume (tests.test_scan_caller.Resume.test_budget_stop_and_resume) ... ok
+test_empty_pages_in_a_row_stop_the_run (tests.test_scan_caller.Resume.test_empty_pages_in_a_row_stop_the_run) ... ok
+test_rate_limit_stops_and_resumes (tests.test_scan_caller.Resume.test_rate_limit_stops_and_resumes) ... ok
+test_cutoff_other_authors_and_bad_ids_are_left_out (tests.test_scan_caller.Windows.test_cutoff_other_authors_and_bad_ids_are_left_out) ... ok
+test_twelve_months_in_ten_day_windows (tests.test_scan_caller.Windows.test_twelve_months_in_ten_day_windows) ... ok
+test_duplicate_is_refused (tests.test_add_call.Fixtures.test_duplicate_is_refused) ... ok
+test_existing_caller (tests.test_add_call.Fixtures.test_existing_caller) ... ok
+test_hostile_text_stays_text (tests.test_add_call.Fixtures.test_hostile_text_stays_text) ... ok
+test_new_caller (tests.test_add_call.Fixtures.test_new_caller) ... ok
+test_no_detectable_asset_is_refused (tests.test_add_call.Fixtures.test_no_detectable_asset_is_refused) ... ok
+test_override_keeps_its_reason (tests.test_add_call.Fixtures.test_override_keeps_its_reason) ... ok
+test_both_sides_is_refused_without_a_choice (tests.test_add_call.Guards.test_both_sides_is_refused_without_a_choice) ... ok
+test_manual_choices_need_a_reason (tests.test_add_call.Guards.test_manual_choices_need_a_reason) ... ok
+test_stale_preview_is_refused (tests.test_add_call.Guards.test_stale_preview_is_refused) ... ok
+test_the_new_record_shares_the_assets_bars (tests.test_add_call.Guards.test_the_new_record_shares_the_assets_bars) ... ok
+test_side_words (tests.test_add_call.Side.test_side_words) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 35.378s
+
+OK
+$ python3 -m unittest discover -s tests -p "test_*.py"
+Ran 114 tests in 36.838s
+OK
+$ python3 tools/guard.py --tree
+guard: scanned 2145 files -> 0 hits

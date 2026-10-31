@@ -1,0 +1,9 @@
+$ python3 tools/scan_caller.py https://x.com/BobLoukas/status/2116199680157647216 add
+prerender: index.html (48 rows, 4 authors), position.html list, 48 position pages, 4 caller pages
+@BobLoukas: previewed 51.8 (exact 51.802955, rank 2 of 4, 33 scored calls)
+           after add 51.8 (exact 51.802955, rank 2 of 4, 33 scored calls)
+records added 16; bundle 85253032a84785b0e0279205a31e17a2f1ff795d920aa032e733785e92f10439 -> 68abeee8eaf00e25edde1a5e51d15db73787c3e9b14f72ff036f30ccd636c6e8
+other callers unchanged: @Corbanu, @DrProfitCrypto, @goodalexander; frozen values checked 32, moved 0
+candles: {'BTC': 'candles refetched (fetch_ohlc.py): entry bars: 48/48 candle opens equal the record entry price', 'SILVER': 'candles already cover the entry bar', 'STOCKS': 'candles already cover the entry bar', 'GOLD': 'candles already cover the entry bar', 'COPPER': 'candles already cover the entry bar'}
+log intake/log/scan-bobloukas.json
+exit 0

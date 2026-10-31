@@ -1,0 +1,7 @@
+scan @BobLoukas since 2025-10-31: 14 searches this run, stop: budget (14 searches this run (X allows about 50 per 15 minutes); rerun to resume)
+coverage: 42 windows done, 5 left, 10 split; 1640 own posts 2025-10-31T20:56:15.000Z -> 2026-10-05T21:39:53.000Z
+log: intake/scans/bobloukas/scan_log.json
+
+real	1m37.100s
+user	0m31.232s
+sys	0m15.733s

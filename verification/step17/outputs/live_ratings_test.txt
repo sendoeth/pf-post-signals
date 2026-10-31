@@ -1,0 +1,9 @@
+$ node tests/ratings_test.js --url https://sendoeth.com/pf-post-signals/web/
+page https://sendoeth.com/pf-post-signals/web/
+  @goodalexander: recomputed 51.960963 (bundle 51.960963, shown 52.0) · n 4 · H 50.0000 A 48.4084 C 100.0000 raw 56.8634 w 0.2857
+  @BobLoukas: recomputed 51.802955 (bundle 51.802955, shown 51.8) · n 33 · H 42.4242 A 47.7888 C 94.2857 raw 52.3493 w 0.7674
+  @Corbanu: recomputed 49.299815 (bundle 49.299815, shown 49.3) · n 8 · H 37.5000 A 41.3740 C 100.0000 raw 48.4246 w 0.4444
+  @DrProfitCrypto: recomputed 48.036323 (bundle 48.036323, shown 48.0) · n 1 · H 0.0000 A 33.4989 C 100.0000 raw 28.3996 w 0.0909
+callers recomputed 4, calls compared 48, author-table sorts 15 (+15 reloads), caller pages 4 (92 fields, 48 call links), position chips 48, overlay cards 35, chart cards 48, CSP violations 0, console errors 0
+ALL PASS
+exit 0

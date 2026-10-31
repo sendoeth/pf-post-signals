@@ -1,0 +1,6 @@
+$ git status --short -- web records   # after scan + report, before add (empty = unchanged)
+$ git diff --stat HEAD -- web records | tail -1
+$ sha256sum web/data/charts.json
+85253032a84785b0e0279205a31e17a2f1ff795d920aa032e733785e92f10439  web/data/charts.json
+$ find web records -type f | sort | xargs sha256sum | sha256sum
+3f7b4c45b0a1c859a4d3992c82e9d0704e33dc982b665d90a0d11a599e1ed687  -

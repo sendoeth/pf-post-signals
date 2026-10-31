@@ -1,0 +1,13 @@
+$ python3 check_bundle.py
+bundle: 48 record files -> 48 drawn, 0 superseded, 0 refused; 144 horizon cells, 48 best-since-post values, 4 caller ratings checked -> ALL MATCH
+$ python3 validate_records.py | tail -1
+records: 48 checked against post_price.v1 -> ALL VALID
+$ python3 fetch_ohlc.py --check-only | tail -1
+entry bars: 48/48 candle opens equal the record entry price
+$ python3 tools/frozen_values.py compare verification/step14/frozen_baseline.json | head -1
+positions 31 (now 48), frozen values compared 177, changed 0
+$ python3 rate.py | grep "^#"
+#1 @goodalexander: score 51.9610 (small sample) · calls 4, with entry 4, scored 4 · wins 2 · H 50.0000 A 48.4084 C 100.0000 · raw 56.8634 · weight 0.2857 · avg result -0.40%
+#2 @BobLoukas: score 51.8030 (sample ok) · calls 35, with entry 35, scored 33 · wins 14 · H 42.4242 A 47.7888 C 94.2857 · raw 52.3493 · weight 0.7674 · avg result +4.52%
+#3 @Corbanu: score 49.2998 (small sample) · calls 8, with entry 8, scored 8 · wins 3 · H 37.5000 A 41.3740 C 100.0000 · raw 48.4246 · weight 0.4444 · avg result +0.91%
+#4 @DrProfitCrypto: score 48.0363 (small sample) · calls 1, with entry 1, scored 1 · wins 0 · H 0.0000 A 33.4989 C 100.0000 · raw 28.3996 · weight 0.0909 · avg result -3.43%

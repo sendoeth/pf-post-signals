@@ -1,0 +1,4 @@
+from:BobLoukas since:2026-05-09 until:2026-06-03: posts 1, Bob's posts inside 2026-05-09..2026-06-03: 1, not already in the scan: 0  run 2026-10-31T04-37-10Z
+    2026-05-10T10:54 2053428382335996185 (already scanned) Happy Mother’s Day. Mothers are underappreciated for the tireless work and love they give.
+from:BobLoukas (bitcoin OR gold OR stocks OR silver OR cycle) since:2026-06-25 until:2026-08-20: posts 7, Bob's posts inside 2026-06-28..2026-08-17: 1, not already in the scan: 0  run 2026-10-31T04-37-16Z
+    2026-08-01T19:14 2083632584479928378 (already scanned) Checking in to say 👋 and hope the summer going well. Sad to see the coldcard hack. And lot

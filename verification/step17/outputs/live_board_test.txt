@@ -1,0 +1,5 @@
+$ node tests/board_test.js --url https://sendoeth.com/pf-post-signals/web/
+page https://sendoeth.com/pf-post-signals/web/
+filter/sort combinations: 7560 set in the page (738 with rows, 6822 correctly empty), 302 of them also loaded fresh from their URL; author-summary rows checked: 2338; select changes: 32; default-view fields checked against records: 384; without javascript: 48 static rows + 48 static position pages equal the bundle; rows 48; CSP violations 0; console errors 0
+ALL PASS
+exit 0
