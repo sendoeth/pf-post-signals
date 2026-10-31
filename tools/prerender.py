@@ -24,6 +24,8 @@ from decimal import ROUND_HALF_UP, Decimal
 
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HZ = ("1", "7", "30")
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from rate import caller_slug  # noqa: E402
 AUTHOR_COLORS = ["#2a78d6", "#eb6834", "#4a3aa7", "#d55181", "#5b6475", "#8a5a2b"]
 SITE = "https://sendoeth.com/pf-post-signals/web/"
 
@@ -154,6 +156,8 @@ def board_blocks(bundle, avatars):
         stat("best_call", "Best call", f'{fmt_pct(top["ret"])} · {top["asset"]} @{top["p"]["post"]["author"]}' if top else "–",
              f'{top["p"]["post"]["id"]}|{top["asset"]}' if top else None, cls(top["ret"]) if top else "")])
     trs = []
+    rt = bundle.get("ratings") or {"callers": {}, "order": []}
+    authors = [a for a in rt["order"] if a in authors] + sorted(a for a in authors if a not in rt["order"])
     for a in authors:
         mine = [r for r in rows if r["p"]["post"]["author"] == a]
         d = [r for r in mine if r["ret"] is not None]
@@ -163,8 +167,11 @@ def board_blocks(bundle, avatars):
         worst = min(d, key=lambda r: r["ret"]) if d else None
         call = lambda r: f'{fmt_pct(r["ret"])} {r["asset"]}' if r else "–"
         avg_a = sum(r["ret"] for r in d) / n if n else None
-        trs.append(f'<tr data-author="{e(a)}" data-static="1"><td class="a-who">{avatar_html(a, avatars)}<span>@{e(a)}</span></td>'
-                   f'<td data-field="calls">{len(mine)}</td><td data-field="hit">{"–" if not n else str(round(sum(r["ret"] > 0 for r in d) / n * 100)) + "%"}</td>'
+        sc = rt["callers"].get(a)
+        trs.append(f'<tr data-author="{e(a)}" data-static="1"><td class="a-who">{avatar_html(a, avatars)}<a href="caller-{e(caller_slug(a))}.html" class="caller-link">@{e(a)}</a></td>'
+                   + (f'<td data-field="score" data-raw="{raw(sc["score"])}" class="score"><strong>{e(sc["display"])}</strong>'
+                      + (f' <span class="sample">{e(sc["label"])}</span>' if sc["label"] else "") + '</td>' if sc else '<td data-field="score">–</td>')
+                   + f'<td data-field="calls">{len(mine)}</td><td data-field="hit">{"–" if not n else str(round(sum(r["ret"] > 0 for r in d) / n * 100)) + "%"}</td>'
                    f'<td data-field="avg" class="{cls(avg_a)}">{"–" if avg_a is None else fmt_pct(avg_a)}</td>'
                    f'<td data-field="best" class="{cls(best["ret"]) if best else ""}">{e(call(best))}</td><td data-field="worst" class="{cls(worst["ret"]) if worst else ""}">{e(call(worst))}</td>'
                    f'<td data-field="flag" class="flag {"ok" if flag == "ok" else "warn"}">{flag}</td></tr>')
@@ -201,7 +208,45 @@ def other_calls(r, rows):
             f'<ul class="other-calls">{lis}</ul></section>')
 
 
-def position_static(r, asof, avatars, all_rows=()):
+def caller_static(name, c, rt, avatars):
+    """Step 15: one caller's score, every input and every call it read (plain HTML, no script)."""
+    f = rt["formula"]
+    comp = c["components"]
+    num = lambda x, d=4: "–" if x is None else f"{x:.{d}f}"
+    head = (f'<section class="panel post" data-field="caller" data-raw="{raw(name)}"><div class="who">{avatar_html(name, avatars)}<div>'
+            f'<strong>@{e(name)}</strong><span class="meta">Quanty Quants score · rank {c["rank"]} of {len(rt["order"])} · prices as of {e(fmt_time(rt["as_of"])) if rt["as_of"] else "–"}</span></div></div>'
+            f'<p class="score-big"><strong data-field="score" data-raw="{raw(c["score"])}">{e(c["display"])}</strong> / 100'
+            + (f' <span class="sample" data-field="label">{e(c["label"])}</span>' if c["label"] else ' <span data-field="label"></span>') + '</p>'
+            f'<p class="notes">{e(rt["version"])}: {e(f["text"])}. Same records, same score: no model or manual input. Open calls move with the daily price refresh.</p></section>')
+    rows = [("Calls", str(c["calls_total"]), "calls_total", c["calls_total"]),
+            ("With an entry price", str(c["with_entry"]), "with_entry", c["with_entry"]),
+            ("Scored (side stated, priced)", str(c["scored"]), "scored", c["scored"])]
+    if comp:
+        rows += [("Wins (result > 0)", f'{c["wins"]} of {c["scored"]}', "wins", c["wins"]),
+                 ("Average result", fmt_pct(c["avg_result"]), "avg_result", c["avg_result"]),
+                 (f'H hit rate × {f["weights"]["hit"]}', f'{num(comp["hit"])} → {num(f["weights"]["hit"] * comp["hit"])}', "hit", comp["hit"]),
+                 (f'A return quality × {f["weights"]["quality"]}', f'{num(comp["quality"])} → {num(f["weights"]["quality"] * comp["quality"])}', "quality", comp["quality"]),
+                 (f'C clarity × {f["weights"]["clarity"]}', f'{num(comp["clarity"])} → {num(f["weights"]["clarity"] * comp["clarity"])}', "clarity", comp["clarity"]),
+                 ("Raw (H, A, C weighted)", num(c["raw"]), "raw", c["raw"]),
+                 (f'Data weight n/(n+{f["k"]})', f'{num(c["weight"])} ({c["scored"]}/({c["scored"]}+{f["k"]}))', "weight", c["weight"]),
+                 ("Score = 50 + weight × (raw − 50)", f'50 + {num(c["weight"])} × ({num(c["raw"])} − 50) = {num(c["score"])}', "score_exact", c["score"])]
+    else:
+        rows.append(("Score", f'{num(c["score"])}: {c["note"]}', "score_exact", c["score"]))
+    dl = "".join(f'<dt>{e(k)}</dt><dd data-field="{fld}" data-raw="{raw(v)}">{e(t)}</dd>' for k, t, fld, v in rows)
+    trs = "".join(
+        f'<tr data-post-id="{e(x["post_id"])}" data-asset="{e(x["asset"])}" data-counted="{str(x["counted"]).lower()}">'
+        f'<td>{e(fmt_time(x["posted_at"]))}</td><td><a href="pos-{e(slug(x["post_id"], x["asset"]))}.html">{e(x["asset"])}</a></td>'
+        f'<td>{x["side"].upper() if x["side"] != "none" else "NO SIDE"}</td><td>{x["state"]}</td>'
+        f'<td class="{cls(x["result"])}" data-field="call_result" data-raw="{raw(x["result"])}">{"–" if x["result"] is None else fmt_pct(x["result"])}</td>'
+        f'<td data-field="call_quality" data-raw="{raw(x.get("quality"))}">{num(x.get("quality"), 3) if x["counted"] else "–"}</td>'
+        f'<td class="why">{"counted · " if x["counted"] else "not counted · "}{e(x["why"])}</td></tr>' for x in c["calls"])
+    table = (f'<section class="panel recap"><h2>Calls read ({c["calls_total"]})</h2><div class="table-wrap"><table class="calls" data-field="calls">'
+             f'<thead><tr><th>Posted</th><th>Asset</th><th>Side</th><th>State</th><th>Result</th><th>A<sub>i</sub></th><th>Counted</th></tr></thead><tbody>{trs}</tbody></table></div>'
+             f'<p class="notes">Result = realized return for the side when closed, else the return for the side since the post. A<sub>i</sub> = 50 + 50 tanh(result / {f["scale"]}).</p></section>')
+    return f'<div data-static="1">{head}<section class="panel recap"><h2>Inputs</h2><dl>{dl}</dl></section>{table}</div>'
+
+
+def position_static(r, asof, avatars, all_rows=(), ratings=None):
     p = r["p"]
     side = r["side"]
     rows = [("Asset", f'{r["asset"]} ({p["asset"]["source"]}:{p["asset"]["symbol"]})', "asset", None),
@@ -235,6 +280,9 @@ def position_static(r, asof, avatars, all_rows=()):
         rows.append(("Priced via", "stand-in for " + p["asset"]["stand_in"]["for"], "stand_in", None))
     if p["asset"].get("adjustments"):
         rows.append(("Adjusted", "; ".join(f'{a["kind"]} on {fmt_time(a["at"])}' for a in p["asset"]["adjustments"]), "adjustments", None))
+    sc = (ratings or {}).get("callers", {}).get(p["post"]["author"])
+    if sc:
+        rows.append(("Caller score", f'{sc["display"]} / 100 (rank {sc["rank"]}' + (f', {sc["label"]})' if sc["label"] else ")"), "caller_score", None))
     numeric = ("change_since_post", "return", "best", "if_still_held")
     dl = "".join(f'<dt>{e(k)}</dt><dd data-field="{f}"' + (f' data-raw="{raw(v)}"' if v is not None or f in numeric else "")
                  + f' class="{cls(v) if f in numeric or f.startswith("move_") else ""}">{e(t)}</dd>'
@@ -289,15 +337,35 @@ def main(web=None):
                 + (f' “{" ".join(p["post"]["text"].split())[:140]}”' if p["post"].get("text") else ""))
         page = re.sub(r"<title>.*?</title>\n<meta name=\"description\" content=\"[^\"]*\">", lambda m: meta_tags(title, desc, f"{SITE}pos-{s}.html"), template, count=1, flags=re.S)
         page = page.replace("<main>", f'<main data-post="{e(p["post"]["id"])}" data-asset="{e(r["asset"])}">', 1)
-        page = fill(page, {"app": position_static(r, asof, avatars, rows)})
+        page = fill(page, {"app": position_static(r, asof, avatars, rows, bundle.get("ratings"))})
         name = f"pos-{s}.html"
         with open(os.path.join(web, name), "w") as f:
             f.write(page)
         keep.add(name)
-    for old in glob.glob(os.path.join(web, "pos-*.html")):
+    rt = bundle.get("ratings")
+    if rt and os.path.exists(os.path.join(web, "caller.html")):
+        with open(os.path.join(web, "caller.html")) as f:
+            ctpl = f.read()
+        slugs = {}
+        for name, c in rt["callers"].items():
+            cs = caller_slug(name)
+            if cs in slugs:
+                raise SystemExit(f"caller page name clash: @{name} and @{slugs[cs]} -> caller-{cs}.html")
+            slugs[cs] = name
+            title = f'@{name} · score {c["display"]} · Quanty Quants'
+            desc = (f'@{name}: Quanty Quants score {c["display"]}/100 from {c["scored"]} scored calls'
+                    + (f' ({c["label"]})' if c["label"] else "") + f', rank {c["rank"]} of {len(rt["order"])}.')
+            page = re.sub(r"<title>.*?</title>\n<meta name=\"description\" content=\"[^\"]*\">", lambda m: meta_tags(title, desc, f"{SITE}caller-{cs}.html"), ctpl, count=1, flags=re.S)
+            page = page.replace("<main>", f'<main data-caller="{e(name)}">', 1)
+            page = fill(page, {"app": caller_static(name, c, rt, avatars)})
+            fname = f"caller-{cs}.html"
+            with open(os.path.join(web, fname), "w") as f:
+                f.write(page)
+            keep.add(fname)
+    for old in glob.glob(os.path.join(web, "pos-*.html")) + glob.glob(os.path.join(web, "caller-*.html")):
         if os.path.basename(old) not in keep:
             os.remove(old)
-    print(f"prerender: index.html ({len(rows)} rows, {len(blocks['authors'].splitlines())} authors), position.html list, {len(keep)} position pages")
+    print(f"prerender: index.html ({len(rows)} rows, {len(blocks['authors'].splitlines())} authors), position.html list, {len([k for k in keep if k.startswith("pos-")])} position pages, {len([k for k in keep if k.startswith("caller-")])} caller pages")
 
 
 if __name__ == "__main__":

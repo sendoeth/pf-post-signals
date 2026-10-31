@@ -44,11 +44,11 @@
 
   <section class="panel authors" aria-label="Authors">
     <table id="authors">
-      <caption>Authors <span class="cap-note">(every filter except author applies)</span></caption>
-      <thead><tr><th>Author</th><th>Calls</th><th>In profit</th><th>Avg return</th><th>Best</th><th>Worst</th><th>Sample</th></tr></thead>
-      <tbody><!--static:authors--><tr data-author="BobLoukas" data-static="1"><td class="a-who"><span class="avatar" data-avatar="image" aria-hidden="true"><img src="avatars/bobloukas.jpg" alt=""></span><span>@BobLoukas</span></td><td data-field="calls">19</td><td data-field="hit">26%</td><td data-field="avg" class="gain">+7.18%</td><td data-field="best" class="gain">+188.17% SILVER</td><td data-field="worst" class="loss">-24.50% COPX</td><td data-field="flag" class="flag warn">unreliable sample</td></tr>
-<tr data-author="Corbanu" data-static="1"><td class="a-who"><span class="avatar ac-2" data-avatar="initials" aria-hidden="true">CO</span><span>@Corbanu</span></td><td data-field="calls">8</td><td data-field="hit">38%</td><td data-field="avg" class="gain">+0.91%</td><td data-field="best" class="gain">+47.99% XYZ:CBRS</td><td data-field="worst" class="loss">-29.97% XYZ:KIOXIA</td><td data-field="flag" class="flag warn">insufficient sample</td></tr>
-<tr data-author="goodalexander" data-static="1"><td class="a-who"><span class="avatar" data-avatar="image" aria-hidden="true"><img src="avatars/goodalexander.jpg" alt=""></span><span>@goodalexander</span></td><td data-field="calls">4</td><td data-field="hit">50%</td><td data-field="avg" class="loss">-0.40%</td><td data-field="best" class="gain">+3.85% GOLD</td><td data-field="worst" class="loss">-5.51% BTC</td><td data-field="flag" class="flag warn">insufficient sample</td></tr><!--/static:authors--></tbody>
+      <caption>Authors <span class="cap-note">(score: every call, <a href="#score-notes">how it is computed</a>; other columns: every filter except author applies)</span></caption>
+      <thead><tr><th data-asort="author"><button type="button" data-asort="author">Author</button></th><th data-asort="score" aria-sort="descending"><button type="button" data-asort="score">Score</button></th><th data-asort="calls"><button type="button" data-asort="calls">Calls</button></th><th data-asort="hit"><button type="button" data-asort="hit">In profit</button></th><th data-asort="avg"><button type="button" data-asort="avg">Avg return</button></th><th>Best</th><th>Worst</th><th>Sample</th></tr></thead>
+      <tbody><!--static:authors--><tr data-author="goodalexander" data-static="1"><td class="a-who"><span class="avatar" data-avatar="image" aria-hidden="true"><img src="avatars/goodalexander.jpg" alt=""></span><a href="caller-goodalexander.html" class="caller-link">@goodalexander</a></td><td data-field="score" data-raw="51.96096283491956" class="score"><strong>52.0</strong> <span class="sample">small sample</span></td><td data-field="calls">4</td><td data-field="hit">50%</td><td data-field="avg" class="loss">-0.40%</td><td data-field="best" class="gain">+3.85% GOLD</td><td data-field="worst" class="loss">-5.51% BTC</td><td data-field="flag" class="flag warn">insufficient sample</td></tr>
+<tr data-author="Corbanu" data-static="1"><td class="a-who"><span class="avatar ac-2" data-avatar="initials" aria-hidden="true">CO</span><a href="caller-corbanu.html" class="caller-link">@Corbanu</a></td><td data-field="score" data-raw="49.29981506770131" class="score"><strong>49.3</strong> <span class="sample">small sample</span></td><td data-field="calls">8</td><td data-field="hit">38%</td><td data-field="avg" class="gain">+0.91%</td><td data-field="best" class="gain">+47.99% XYZ:CBRS</td><td data-field="worst" class="loss">-29.97% XYZ:KIOXIA</td><td data-field="flag" class="flag warn">insufficient sample</td></tr>
+<tr data-author="BobLoukas" data-static="1"><td class="a-who"><span class="avatar" data-avatar="image" aria-hidden="true"><img src="avatars/bobloukas.jpg" alt=""></span><a href="caller-bobloukas.html" class="caller-link">@BobLoukas</a></td><td data-field="score" data-raw="45.90772894422511" class="score"><strong>45.9</strong> <span class="sample">limited sample</span></td><td data-field="calls">19</td><td data-field="hit">26%</td><td data-field="avg" class="gain">+7.18%</td><td data-field="best" class="gain">+188.17% SILVER</td><td data-field="worst" class="loss">-24.50% COPX</td><td data-field="flag" class="flag warn">unreliable sample</td></tr><!--/static:authors--></tbody>
     </table>
   </section>
 
@@ -98,6 +98,13 @@
     author's closing post; the current price only appears as "if still held". Entry is the first hourly bar at or after the
     post (daily bars for history older than the hourly window); every value comes from a <code>post_price.v1</code> record and
     the daily refresh. Unreached horizons are never shown as 0. Not trading advice.</p>
+  <p class="notes" id="score-notes"><strong>Score (0-100, <code>quanty.rating.v1</code>)</strong>: built only from a caller's
+    priced calls, the same records always give the same score. Scored calls state a side and have a price; their result is the
+    realized return if closed, else the return since the post. H = share of scored calls in profit; A = average of
+    50 + 50·tanh(result / 10%) per call (one outsized call cannot carry it); C = share of calls with an entry that state a side.
+    raw = 0.45 H + 0.40 A + 0.15 C, then pulled toward 50 by sample size: score = 50 + n/(n+10)·(raw − 50). Under 10 scored
+    calls is a small sample, under 30 a limited one. Open calls move with the daily refresh. Each caller page lists every input
+    and every call.</p>
 </main>
 <script src="assets/common.js"></script>
 <script src="assets/board.js"></script>

@@ -124,6 +124,29 @@ Before/after numbers: [RESULTS.md → Step 2](RESULTS.md#step-2-live-feed--regim
 - **No JavaScript**: every static position page lists the other calls on its asset (author, side, date, return, link).
 - Tests: `tests/test_history.py`, `tests/test_static.py` (other-calls list), `tests/callers_test.js` (every caller combination by url + reload, toggle clicks, anchors, overlaps, cards, exit marks, daily readout).
 
+## Step 15: caller scores (0-100, deterministic)
+
+`rate.py` turns each caller's priced calls into one score, written into `web/data/charts.json` as `ratings` (version `quanty.rating.v1`). Only the records go in: no model, no manual input, and the same records always give the same score.
+
+| | |
+|---|---|
+| Calls | every position of the caller (one post can call several assets) |
+| Scored calls (n) | calls with an entry price that state a side (long / short) and have a result |
+| Result r | realized return for the side if the call is closed, else the return for the side since the post |
+| H, hit rate | 100 × (scored calls with r > 0) / n |
+| A, return quality | mean over scored calls of 50 + 50·tanh(r / 0.10): +10% → 88.1, +50% → 100, −10% → 11.9, so one outsized call cannot carry the score |
+| C, clarity | 100 × n / calls with an entry (share of calls that state a side) |
+| raw | 0.45 H + 0.40 A + 0.15 C |
+| shrinkage | w = n / (n + 10); **score = 50 + w × (raw − 50)**; no scored calls → 50 |
+| labels | under 10 scored calls "small sample", under 30 "limited sample" |
+
+Every input is monotone (a better result on any call never lowers the score). Open calls move with the daily price refresh, so a score is as of `prices_as_of`. The page shows the score to one decimal (half up); the exact value is in `data-raw` and the bundle.
+
+- Leaderboard: Score column in the author table (default order; sortable by score, author, calls, in profit, avg return via the headers, kept in `?asort=`), each author links to a static breakdown page `caller-<handle>.html`: every input, H / A / C with their weighted parts, raw, data weight, the arithmetic, and every call it read (result, A<sub>i</sub>, counted or why not).
+- Position pages and chart cards show the caller's score and link to the breakdown; static no-JS pages carry the same numbers.
+- `python3 rate.py` prints every caller's inputs and calls. `check_bundle.py` recomputes every score a second way from the record files; `tests/ratings_test.js` a third way in JavaScript against the live pages.
+- Tests: `tests/test_rating.py` (hand-computed fixture, shrinkage, monotonicity fuzz, realized returns, determinism, hostile names, live bundle), `tests/test_static.py` (static scores + caller pages + hostile name), `tests/ratings_test.js`, `tests/security_test.js` (caller pages), `tests/board_test.js` (score order).
+
 ## Reproduce step 2
 
 ```bash

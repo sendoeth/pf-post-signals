@@ -68,9 +68,11 @@ function readFilters() {
   for (const k of Object.keys(DEFAULTS)) f[k] = q.get(k) || DEFAULTS[k];
   return f;
 }
+let ASORT = "score";
 function writeUrl(f) {
   const q = new URLSearchParams();
   for (const [k, v] of Object.entries(f)) if (v !== DEFAULTS[k]) q.set(k, v);
+  if (ASORT !== "score") q.set("asort", ASORT);
   const s = q.toString();
   history.replaceState(null, "", s ? "?" + s : location.pathname);
 }
@@ -139,16 +141,42 @@ function authorSummary(rows) {
       flag: n < MIN_N_REPORTABLE ? "insufficient sample" : n < MIN_N_RELIABLE ? "unreliable sample" : "ok" };
   });
 }
-function renderAuthors(summary, selected, avatars) {
+// Author table order (?asort=): score (default, from the bundle's ratings: every call, not the
+// filters), author, calls, in profit, avg return; high first, missing values last, ties by name.
+const ASORTS = ["score", "author", "calls", "hit", "avg"];
+function sortAuthors(summary, asort, ratings) {
+  const sc = a => ratings.callers[a] ? ratings.callers[a].score : null;
+  const key = s => asort === "score" ? sc(s.author) : asort === "calls" ? s.calls : asort === "hit" ? s.hit : asort === "avg" ? s.avg : null;
+  return summary.slice().sort((x, y) => {
+    if (asort === "author") return x.author.toLowerCase() < y.author.toLowerCase() ? -1 : 1;
+    const a = key(x), b = key(y);
+    if (a == null && b != null) return 1;
+    if (b == null && a != null) return -1;
+    if (a !== b && a != null) return b - a;
+    return x.author.toLowerCase() < y.author.toLowerCase() ? -1 : 1;
+  });
+}
+function renderAuthors(summary, selected, avatars, ratings, asort) {
   const body = document.querySelector("#authors tbody");
   body.replaceChildren();
-  for (const s of summary) {
+  for (const th of document.querySelectorAll("#authors th[data-asort]")) {
+    if (th.dataset.asort === asort) th.setAttribute("aria-sort", asort === "author" ? "ascending" : "descending"); else th.removeAttribute("aria-sort");
+  }
+  for (const s of sortAuthors(summary, asort, ratings)) {
     const tr = el("tr", { "data-author": s.author, class: s.author === selected ? "selected" : "" });
     const who = el("td", { class: "a-who" });
-    who.append(avatar(s.author, avatars), el("span", null, "@" + s.author));
+    who.append(avatar(s.author, avatars), el("a", { href: PFPS.callerUrl(s.author), class: "caller-link" }, "@" + s.author));
+    const rt = ratings.callers[s.author];
+    const score = el("td", { "data-field": "score", class: "score" });
+    if (rt) {
+      score.setAttribute("data-raw", JSON.stringify(rt.score));
+      score.append(el("strong", null, rt.display));
+      if (rt.label) score.append(" ", el("span", { class: "sample" }, rt.label));
+      score.setAttribute("title", `rank ${rt.rank} · ${rt.scored} scored calls · raw ${rt.raw == null ? "–" : rt.raw.toFixed(2)} · data weight ${rt.weight.toFixed(3)}`);
+    } else score.textContent = "–";
     const cell = (name, text, raw, cls) => { const td = el("td", { "data-field": name, class: cls || "" }, text); if (raw !== undefined) td.setAttribute("data-raw", JSON.stringify(raw)); return td; };
     const callText = r => r ? `${fmtPct(r.ret)} ${r.assetName}` : "–";
-    tr.append(who, cell("calls", String(s.calls), s.calls),
+    tr.append(who, score, cell("calls", String(s.calls), s.calls),
       cell("hit", s.hit == null ? "–" : `${Math.round(s.hit * 100)}%`, s.hit),
       cell("avg", s.avg == null ? "–" : fmtPct(s.avg), s.avg, signClass(s.avg)),
       cell("best", callText(s.best), s.best ? s.best.id + "|" + s.best.assetName : null, s.best ? signClass(s.best.ret) : ""),
@@ -224,10 +252,13 @@ async function main() {
     f[k] = hit ? hit.value : DEFAULTS[k];
     s.value = f[k];
   }
+  const wantAsort = (new URLSearchParams(location.search).get("asort") || "score").toLowerCase();
+  ASORT = ASORTS.includes(wantAsort) ? wantAsort : "score";
+  const ratings = bundle.ratings || { callers: {}, order: [] };
   writeUrl(f);   // invalid or non-canonical values in the address bar are rewritten to the state shown
   const draw = () => {
     const rows = sortRows(applyFilters(all, f, asOf), f.sort);
-    renderAuthors(authorSummary(applyFilters(all, { ...f, author: "all" }, asOf)), f.author, avatars);
+    renderAuthors(authorSummary(applyFilters(all, { ...f, author: "all" }, asOf)), f.author, avatars, ratings, ASORT);
     renderStats(rows);
     renderRows(rows, asOf, avatars);
     document.body.setAttribute("data-shown", String(rows.length));
@@ -237,6 +268,7 @@ async function main() {
     if (k in DEFAULTS) { f[k] = e.target.value; writeUrl(f); draw(); }
   });
   document.getElementById("filters").addEventListener("submit", e => e.preventDefault());
+  for (const b of document.querySelectorAll("#authors th button[data-asort]")) b.addEventListener("click", () => { ASORT = b.dataset.asort; writeUrl(f); draw(); });
   draw();
   document.body.setAttribute("data-ready", "1");
 }

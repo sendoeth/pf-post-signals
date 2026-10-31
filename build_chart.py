@@ -16,6 +16,7 @@ import json
 import os
 import sys
 
+import rate
 import resolve
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -126,10 +127,12 @@ def build(records_dir):
     if os.path.abspath(records_dir) == os.path.join(HERE, "records") and os.path.exists(log_path):
         with open(log_path) as f:
             refreshed_at = json.load(f)["refreshed_at"]
-    return {"schema": BUNDLE_SCHEMA, "record_schema": "post_price.v1", "records_scanned": len(files),
-            "prices_as_of": refreshed_at,
-            "posts_drawn": sum(len(a["posts"]) for a in out_assets),
-            "refused": refused, "superseded": superseded, "assets": out_assets}
+    bundle = {"schema": BUNDLE_SCHEMA, "record_schema": "post_price.v1", "records_scanned": len(files),
+              "prices_as_of": refreshed_at,
+              "posts_drawn": sum(len(a["posts"]) for a in out_assets),
+              "refused": refused, "superseded": superseded, "assets": out_assets}
+    bundle["ratings"] = rate.rate_bundle(bundle)      # step 15: deterministic 0-100 caller ratings
+    return bundle
 
 
 def main():

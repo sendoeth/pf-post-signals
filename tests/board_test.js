@@ -62,13 +62,17 @@ function expected(rows, f, asOf) {
     best_call: done.length ? (t => t.id + '|' + t.asset)(done.reduce((m, r) => (r.ret > m.ret ? r : m))) : null };
   return { rows: kept, stats };
 }
+// step 15: authors in score order (bundle.ratings, every call), ties by name; the score itself is
+// recomputed independently in tests/ratings_test.js
+let RATINGS = { callers: {} };
 function authorsExpected(rows, f, asOf) {
   const kept = expected(rows, { ...f, author: 'all' }, asOf).rows, by = {};
   for (const r of kept) (by[r.author] = by[r.author] || []).push(r);
-  return Object.keys(by).sort().map(a => {
+  const sc = a => RATINGS.callers[a] ? RATINGS.callers[a].score : -Infinity;
+  return Object.keys(by).sort((x, y) => sc(y) - sc(x) || (x.toLowerCase() < y.toLowerCase() ? -1 : 1)).map(a => {
     const done = by[a].filter(r => r.ret != null), n = done.length;
     const best = n ? done.reduce((m, r) => (r.ret > m.ret ? r : m)) : null, worst = n ? done.reduce((m, r) => (r.ret < m.ret ? r : m)) : null;
-    return { author: a, calls: by[a].length, hit: n ? done.filter(r => r.ret > 0).length / n : null, avg: n ? done.reduce((s, r) => s + r.ret, 0) / n : null,
+    return { author: a, score: RATINGS.callers[a] ? RATINGS.callers[a].score : undefined, calls: by[a].length, hit: n ? done.filter(r => r.ret > 0).length / n : null, avg: n ? done.reduce((s, r) => s + r.ret, 0) / n : null,
       best: best ? best.id + '|' + best.asset : null, worst: worst ? worst.id + '|' + worst.asset : null,
       flag: n < 10 ? 'insufficient sample' : n < 30 ? 'unreliable sample' : 'ok' };
   });
@@ -105,6 +109,7 @@ async function read(page) {
 (async () => {
   const bundle = JSON.parse(fs.readFileSync(path.join(WEB, 'data', 'charts.json'), 'utf8'));
   const asOf = bundle.prices_as_of;
+  RATINGS = bundle.ratings;
   const rows = model(bundle);
   const authors = [...new Set(rows.map(r => r.author))].sort(), assets = [...new Set(rows.map(r => r.asset))].sort();
   const server = liveUrl ? null : await serve();
@@ -128,7 +133,7 @@ async function read(page) {
     for (const [k, v] of Object.entries(want.stats)) if (JSON.stringify(got.stats[k]) !== JSON.stringify(v)) fail(`${tag}: stat ${k} ${JSON.stringify(got.stats[k])} != ${JSON.stringify(v)}`);
     const wa = authorsExpected(rows, f, asOf);
     authorRows += wa.length;
-    const ga = got.authors.map(a => ({ author: a.author, calls: a.calls, hit: a.hit, avg: a.avg, best: a.best, worst: a.worst, flag: a.flag }));
+    const ga = got.authors.map(a => ({ author: a.author, score: a.score, calls: a.calls, hit: a.hit, avg: a.avg, best: a.best, worst: a.worst, flag: a.flag }));
     // the average is a float sum: the page adds in data order, this test in ranked order, so compare it
     // to 1e-12; every other field exactly
     const strip = xs => xs.map(x => ({ ...x, avg: null }));

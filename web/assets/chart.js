@@ -169,6 +169,12 @@ function card(p) {
   c.setAttribute("data-post-id", p.post.id);
   c.setAttribute("data-asset", p.asset.name);
   c.append(el("h2", null, "@" + p.post.author));
+  const rt = state.bundle.ratings && state.bundle.ratings.callers[p.post.author];
+  const sc = el("p", { class: "meta" });
+  const scoreLink = el("a", { href: PFPS.callerUrl(p.post.author), "data-field": "caller_score", "data-raw": JSON.stringify(rt ? rt.score : null) },
+    rt ? `Caller score ${rt.display} / 100${rt.label ? " · " + rt.label : ""}` : "Caller score –");
+  sc.append(scoreLink);
+  c.append(sc);
   c.append(el("p", { class: "meta", "data-field": "posted_at", "data-raw": JSON.stringify(p.post.posted_at) }, "Posted " + fmtTime(p.post.posted_at)));
   if (p.post.text) c.append(el("blockquote", { "data-field": "text" }, p.post.text));
   else c.append(el("p", { class: "empty", "data-field": "text" }, "Post text not saved: open it on X."));

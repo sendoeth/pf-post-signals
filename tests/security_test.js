@@ -69,6 +69,10 @@ async function visitAll(browser, base, bundle, label, fails, log) {
     await page.waitForSelector('body[data-ready="1"]');
   }
   await check('leaderboard');
+  for (const name of Object.keys((bundle.ratings || {}).callers || {})) {      // step 15 caller pages (static, no script)
+    await page.goto(base + `caller-${name.toLowerCase().replace(/[^a-z0-9_-]/g, '-')}.html`, { waitUntil: 'networkidle0' });
+    await check(`caller page @${name}`);
+  }
   await page.goto(base + 'chart.html', { waitUntil: 'networkidle0' });
   await page.waitForSelector('body[data-ready="1"]');
   for (const a of bundle.assets) {
@@ -116,6 +120,7 @@ async function visitAll(browser, base, bundle, label, fails, log) {
       fs.cpSync(web, tmp, { recursive: true });
       execFileSync('python3', [path.join(ROOT, 'build_chart.py'), '--records', path.join(ROOT, 'tests', 'fixtures', 'attack_records'),
                                '--out', path.join(tmp, 'data', 'charts.json')], { cwd: ROOT });
+      execFileSync('python3', [path.join(ROOT, 'tools', 'prerender.py'), '--web', tmp], { cwd: ROOT });   // static pages incl. caller pages
       fs.writeFileSync(path.join(tmp, 'avatars', 'index.json'), JSON.stringify({
         bobloukas: { file: '../position.html', source: 'tampered', sha256: 'x' } }));
       const ab = JSON.parse(fs.readFileSync(path.join(tmp, 'data', 'charts.json'), 'utf8'));
@@ -144,6 +149,15 @@ async function visitAll(browser, base, bundle, label, fails, log) {
         injected: document.querySelectorAll('#rows script, #rows iframe, #rows img:not(.avatar img), #rows [onerror], #rows [onload], #rows a[href^="javascript:"]').length,
         canary: typeof window.__pwned === 'undefined' ? null : String(window.__pwned) }));
       if (!board.literal || board.injected || board.canary !== null) fail(`attack leaderboard: literal ${board.literal}, injected ${board.injected}, canary ${board.canary}`);
+      // step 15: the hostile author record is refused by the schema, so no hostile name is ever rated;
+      // every caller link in the author table is a plain caller-<slug>.html (escaping itself: tests/test_static.py)
+      const rated = Object.keys(ab.ratings.callers);
+      if (rated.some(n => !/^[A-Za-z0-9_]{1,15}$/.test(n))) fail(`attack: a non-handle author was rated: ${JSON.stringify(rated)}`);
+      const authors = await page.evaluate(() => ({
+        injected: document.querySelectorAll('#authors script, #authors iframe, #authors img:not(.avatar img), #authors [onerror], #authors [onload]').length,
+        hrefs: [...document.querySelectorAll('#authors a.caller-link')].map(a => a.getAttribute('href')) }));
+      if (authors.injected || !authors.hrefs.every(h => /^caller-[a-z0-9_-]+\.html$/.test(h))) fail(`attack author table: ${JSON.stringify(authors)}`);
+      board.rated = rated;
       await page.goto(abase + 'chart.html', { waitUntil: 'networkidle0' });
       await page.waitForSelector('body[data-ready="1"]');
       const textPost = ab.assets[0].posts.find(p => (p.post.text || '').includes('<script>'));

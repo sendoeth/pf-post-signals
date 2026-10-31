@@ -75,8 +75,58 @@ for a in bundle["assets"]:
             if h in p["unresolved"] and p["moves"][h] is not None:
                 fails.append(f"{p['record_file']}: {h}d unresolved but has a move")
 
+# step 15: caller ratings, recomputed here a second way, from the record files (not the bundle's copies)
+import math  # noqa: E402
+per = {}
+for a in bundle["assets"]:
+    for p in a["posts"]:
+        with open(os.path.join(HERE, p["record_file"])) as fh:
+            rec = json.load(fh)
+        per.setdefault(rec["post"]["author"], []).append(rec)
+rt = bundle.get("ratings") or {}
+ratings_checked = 0
+if rt.get("version") != "quanty.rating.v1":
+    fails.append(f"ratings: version {rt.get('version')}")
+else:
+    want = {}
+    for author, recs in per.items():
+        entry_n, rs = 0, []
+        for rec in recs:
+            if not rec["entry"]:
+                continue
+            entry_n += 1
+            sd = rec.get("side") or 0
+            if not sd:
+                continue
+            if rec.get("closed"):
+                r = rec["closed"]["for_call"]
+            elif rec.get("change_since_post") is not None:
+                r = sd * rec["change_since_post"]
+            else:
+                continue
+            rs.append(r)
+        n = len(rs)
+        if n == 0:
+            want[author] = (50.0, 0, len(recs), entry_n)
+            continue
+        h = 100.0 * len([r for r in rs if r > 0]) / n
+        q = sum(50.0 + 50.0 * math.tanh(10.0 * r) for r in rs) / n
+        c = 100.0 * n / entry_n
+        want[author] = (50.0 + (n / (n + 10.0)) * (0.45 * h + 0.40 * q + 0.15 * c - 50.0), n, len(recs), entry_n)
+    got = rt.get("callers", {})
+    if set(got) != set(want):
+        fails.append(f"ratings: callers {sorted(got)} != {sorted(want)}")
+    for author, (score, n, total, entry_n) in want.items():
+        g = got.get(author)
+        ratings_checked += 1
+        if not g or abs(g["score"] - score) > 1e-9 or (g["scored"], g["calls_total"], g["with_entry"]) != (n, total, entry_n) or not 0 <= g["score"] <= 100:
+            fails.append(f"ratings: @{author} bundle {g and (g['score'], g['scored'], g['calls_total'], g['with_entry'])} != recomputed {(score, n, total, entry_n)}")
+    order = sorted(want, key=lambda x: (-want[x][0], x.lower()))
+    if rt.get("order") != order:
+        fails.append(f"ratings: order {rt.get('order')} != {order}")
+
 print(f"bundle: {len(files)} record files -> {len(drawn)} drawn, {len(bundle['superseded'])} superseded, "
-      f"{len(bundle['refused'])} refused; {cells} horizon cells, {best_checked} best-since-post values checked -> " + ("ALL MATCH" if not fails else f"{len(fails)} FAIL"))
+      f"{len(bundle['refused'])} refused; {cells} horizon cells, {best_checked} best-since-post values, {ratings_checked} caller ratings checked -> " + ("ALL MATCH" if not fails else f"{len(fails)} FAIL"))
 for x in fails:
     print(" -", x)
 sys.exit(1 if fails else 0)

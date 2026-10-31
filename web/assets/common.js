@@ -41,5 +41,7 @@ const PFPS = (() => {
   // file name of a position's static page (tools/prerender.py writes pos-<slug>.html)
   const slug = (id, asset) => `${id.replace(/[^A-Za-z0-9_-]/g, "-")}_${asset.replace(/[^A-Za-z0-9_-]/g, "-")}`;
   const positionUrl = (id, asset) => `pos-${slug(id, asset)}.html`;
-  return { statusLabel, statusTip, day, authorColor, slug, positionUrl, result, ifHeld, closeEvent };
+  // a caller's static score page (tools/prerender.py writes caller-<slug>.html; slug as rate.caller_slug)
+  const callerUrl = h => `caller-${h.toLowerCase().replace(/[^a-z0-9_-]/g, "-")}.html`;
+  return { callerUrl, statusLabel, statusTip, day, authorColor, slug, positionUrl, result, ifHeld, closeEvent };
 })();

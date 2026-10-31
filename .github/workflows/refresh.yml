@@ -42,7 +42,7 @@ jobs:
           python3 check_bundle.py
           python3 validate_records.py
           python3 parity.py
-          python3 -m unittest tests.test_resolve tests.test_ingest_detect tests.test_guard tests.test_refresh tests.test_static tests.test_lifecycle tests.test_history
+          python3 -m unittest tests.test_resolve tests.test_ingest_detect tests.test_guard tests.test_refresh tests.test_static tests.test_lifecycle tests.test_history tests.test_rating
       - name: commit
         id: commit
         run: |

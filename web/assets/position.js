@@ -55,6 +55,18 @@ function aggregate(candles, step) {
 // the candle a bar falls in: itself at 1h (Yahoo stock bars start at :30), else its UTC bucket
 const bucket = (iso, step) => step === 3600 ? sec(iso) : Math.floor(sec(iso) / step) * step;
 
+// the caller's 0-100 score (bundle.ratings, rate.py), linking to their caller page
+function scoreChip(author, ratings, fieldName) {
+  const rt = ratings && ratings.callers[author];
+  const a = el("a", { class: "score-chip", href: PFPS.callerUrl(author), "data-field": fieldName || "caller_score" });
+  if (!rt) { a.textContent = "score –"; a.setAttribute("data-raw", "null"); return a; }
+  a.setAttribute("data-raw", JSON.stringify(rt.score));
+  a.setAttribute("title", `Quanty Quants score: rank ${rt.rank} of ${ratings.order.length}, ${rt.scored} scored calls. Open the breakdown.`);
+  a.append("score ", el("strong", null, rt.display));
+  if (rt.label) a.append(` · ${rt.label}`);
+  return a;
+}
+
 // ?callers= : absent = every caller, "none" = only the opened call, else a comma list of handles
 function parseCallers(v, authors) {
   const all = authors.map(a => a.toLowerCase());
@@ -104,6 +116,7 @@ function render(asset, p, ohlc, avatars, bundle) {
   who.append(avatarNode(p.post.author, avatars, "avatar"));
   const name = el("div");
   name.append(el("strong", { "data-field": "author" }, "@" + p.post.author));
+  name.append(scoreChip(p.post.author, bundle.ratings));
   const meta = el("span", { class: "meta" });
   meta.append(el("span", { "data-field": "posted_at", "data-raw": JSON.stringify(p.post.posted_at) }, fmtTime(p.post.posted_at)), " · ");
   meta.append(el("a", { href: p.post.url, target: "_blank", rel: "noopener noreferrer", "data-field": "url" },
@@ -334,6 +347,7 @@ function render(asset, p, ohlc, avatars, bundle) {
     who.append(avatarNode(o.post.author, avatars, "avatar"));
     const nm = el("div");
     nm.append(el("strong", { "data-field": "card_author" }, "@" + o.post.author));
+    nm.append(scoreChip(o.post.author, bundle.ratings, "card_score"));
     nm.append(el("span", { class: "meta", "data-field": "card_posted_at" }, fmtTime(o.post.posted_at)));
     who.append(nm);
     card.append(who);

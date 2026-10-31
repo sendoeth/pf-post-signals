@@ -15,6 +15,7 @@ sys.path.insert(0, HERE)
 sys.path.insert(0, os.path.join(HERE, "tools"))
 import build_chart  # noqa: E402
 import prerender  # noqa: E402
+import rate  # noqa: E402
 
 ALLOWED_SCRIPTS = {"assets/frame-guard.js", "assets/common.js", "assets/board.js", "assets/chart.js", "assets/position.js",
                    "vendor/lightweight-charts-4.2.3/lightweight-charts.standalone.production.js"}
@@ -130,9 +131,50 @@ class Static(unittest.TestCase):
         want = {f"pos-{prerender.slug(r['p']['post']['id'], r['asset'])}.html" for r in self.rows}
         have = {n for n in os.listdir(self.web) if n.startswith("pos-")}
         self.assertEqual(have, want)
+        callers = {f"caller-{rate.caller_slug(n)}.html" for n in self.bundle["ratings"]["callers"]}
+        self.assertEqual({n for n in os.listdir(self.web) if n.startswith("caller-")}, callers)
+
+    def test_caller_scores_without_javascript(self):
+        rt = self.bundle["ratings"]
+        # leaderboard author table: score order, raw score, display, caller link
+        page = parse(os.path.join(self.web, "index.html"))
+        trs = [a["data-author"] for t, a in page.tags if t == "tr" and a.get("data-static") == "1"]
+        self.assertEqual(trs, rt["order"])
+        scores = [(raw, text) for f, raw, text in page.fields if f == "score"]
+        self.assertEqual([json.loads(r) for r, _ in scores], [rt["callers"][n]["score"] for n in rt["order"]])
+        for (_, text), n in zip(scores, rt["order"]):
+            self.assertTrue(text.startswith(rt["callers"][n]["display"]), text)
+        links = [a["href"] for t, a in page.tags if t == "a" and a.get("class") == "caller-link"]
+        self.assertEqual(links, [f"caller-{rate.caller_slug(n)}.html" for n in rt["order"]])
+        # caller pages: every input and every call, equal to the bundle
+        for name, c in rt["callers"].items():
+            cp = parse(os.path.join(self.web, f"caller-{rate.caller_slug(name)}.html"))
+            got = {f: raw for f, raw, _ in cp.fields}
+            self.assertEqual(json.loads(got["caller"]), name)
+            self.assertEqual(json.loads(got["score"]), c["score"])
+            self.assertEqual(json.loads(got["score_exact"]), c["score"])
+            for k in ("calls_total", "with_entry", "scored"):
+                self.assertEqual(json.loads(got[k]), c[k], name)
+            if c["components"]:
+                for k in ("hit", "quality", "clarity"):
+                    self.assertEqual(json.loads(got[k]), c["components"][k], name)
+                self.assertEqual((json.loads(got["raw"]), json.loads(got["weight"])), (c["raw"], c["weight"]))
+            rows = [a for t, a in cp.tags if t == "tr" and "data-post-id" in a]
+            self.assertEqual([(a["data-post-id"], a["data-asset"], a["data-counted"]) for a in rows],
+                             [(x["post_id"], x["asset"], str(x["counted"]).lower()) for x in c["calls"]])
+            results = [json.loads(raw) for f, raw, _ in cp.fields if f == "call_result"]
+            self.assertEqual(results, [x["result"] for x in c["calls"]])
+            metas = {a.get("property") or a.get("name"): a.get("content") for t, a in cp.tags if t == "meta"}
+            self.assertIn(c["display"], metas["og:title"])
+        # position pages: the caller's score row
+        for r in self.rows:
+            pp = parse(os.path.join(self.web, f"pos-{prerender.slug(r['p']['post']['id'], r['asset'])}.html"))
+            text = {f: t for f, _, t in pp.fields}
+            c = rt["callers"][r["p"]["post"]["author"]]
+            self.assertTrue(text["caller_score"].startswith(f'{c["display"]} / 100 (rank {c["rank"]}'), text["caller_score"])
 
     def test_only_known_scripts_and_no_inline_code(self):
-        for name in ["index.html", "position.html"] + sorted(n for n in os.listdir(self.web) if n.startswith("pos-")):
+        for name in ["index.html", "position.html"] + sorted(n for n in os.listdir(self.web) if n.startswith(("pos-", "caller-"))):
             page = parse(os.path.join(self.web, name))
             for tag, a in page.tags:
                 if tag == "script":
@@ -145,7 +187,8 @@ class HostileText(unittest.TestCase):
     def test_attack_fixtures_render_as_text(self):
         tmp, web = site_copy(os.path.join(HERE, "tests", "fixtures", "attack_records"))
         try:
-            pages = ["index.html"] + sorted(n for n in os.listdir(web) if n.startswith("pos-"))
+            pages = ["index.html"] + sorted(n for n in os.listdir(web) if n.startswith(("pos-", "caller-")))
+            self.assertTrue(any(n.startswith("caller-") for n in pages))
             self.assertGreater(len(pages), 1)
             seen_payload = False
             for name in pages:
@@ -163,6 +206,24 @@ class HostileText(unittest.TestCase):
             self.assertTrue(seen_payload, "the hostile text should be visible as literal text")
         finally:
             shutil.rmtree(tmp)
+
+
+class HostileCaller(unittest.TestCase):
+    """A hostile author name never reaches the pages in practice (the record schema refuses it, see
+    tests/fixtures/attack_expected.json); rendered anyway, it must stay text."""
+    def test_hostile_name_renders_as_text(self):
+        name = '"><img src=x onerror=window.__pwned=3><script>window.__pwned=4</script>'
+        bundle = {"prices_as_of": "2026-10-31T00:00:00Z", "assets": [{"name": "BTC", "posts": [
+            {"post": {"id": "1", "author": name, "posted_at": "2026-10-01T00:00:00Z", "text": "t", "url": "https://x.com/a/status/1"},
+             "side": 1, "change_since_post": 0.1, "entry": {"at": "2026-10-01T00:00:00Z", "price": 1.0}}]}]}
+        rt = rate.rate_bundle(bundle)
+        html_text = prerender.caller_static(name, rt["callers"][name], rt, {})
+        page = Page()
+        page.feed(html_text)
+        self.assertFalse([t for t, a in page.tags if t in ("img", "script", "iframe", "svg")])
+        self.assertFalse([a for t, a in page.tags if any(k.startswith("on") for k in a)])
+        self.assertIn(name, "".join(page.text))
+        self.assertRegex(rate.caller_slug(name), r"^[a-z0-9_-]+$")
 
 
 if __name__ == "__main__":
