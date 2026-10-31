@@ -14,7 +14,8 @@ function signClass(x) { return x == null ? "unresolved" : x > 0 ? "gain" : x < 0
 function fmtPrice(p) { return p.toLocaleString("en-US", { maximumFractionDigits: 8 }); }
 function fmtTime(iso) { return iso.slice(0, 10) + " " + iso.slice(11, 16) + " UTC"; }
 function direction(post) {
-  const c = post.change_since_post;
+  // closed: the move to the exit (the result); open: the move since the post
+  const c = post.closed ? post.closed.move : post.change_since_post;
   return c == null ? "none" : c > 0 ? "up" : c < 0 ? "down" : "flat";
 }
 function missing(t0, t1, source) {
@@ -179,7 +180,12 @@ function card(p) {
   field(dl, "entry", "Entry", p.entry ? `${fmtPrice(p.entry.price)} @ ${fmtTime(p.entry.at)}` : "no entry bar", p.entry);
   field(dl, "latest", "Latest", p.latest ? `${fmtPrice(p.latest.price)} @ ${fmtTime(p.latest.at)}` : "no bar yet", p.latest);
   const dir = direction(p);
-  field(dl, "change_since_post", "Since post", p.change_since_post == null ? "unresolved" : fmtPct(p.change_since_post),
+  if (p.closed) {
+    const res = PFPS.result(p);
+    field(dl, "closed", "Closed (realized)", `${fmtPct(res)} · exit ${fmtPrice(p.closed.exit.price)} @ ${fmtTime(p.closed.exit.at)}`, p.closed);
+    dl.lastChild.className = res > 0 ? "dir-up" : res < 0 ? "dir-down" : "";
+  }
+  field(dl, "change_since_post", p.closed ? "If still held (since post)" : "Since post", p.change_since_post == null ? "unresolved" : fmtPct(p.change_since_post),
     p.change_since_post, signClass(p.change_since_post));
   for (const h of HORIZONS) {
     const v = p.moves[h];

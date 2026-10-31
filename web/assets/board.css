@@ -104,3 +104,4 @@ html[data-framed] body { display: none; }
 .ac-4 { background: #5b6475; color: #fff; }
 .ac-5 { background: #8a5a2b; color: #fff; }
 .static-list { line-height: 1.9; padding-left: 18px; }
+.tag.closed { border-style: solid; border-color: var(--ink-2); color: var(--ink); }

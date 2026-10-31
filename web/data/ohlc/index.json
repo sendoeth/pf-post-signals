@@ -3,99 +3,99 @@
  "files": {
   "BTC": {
    "file": "BTC.json",
-   "sha256": "1251d78514546510d662fc804f2a50baaac18df25862a1fdcc3bc9d8971e6557",
-   "fetched_at": "2026-10-30T22:45:17Z",
-   "bars": 1446,
+   "sha256": "465b624837171875d815de7e3c10a09c890ecffa0d4eee13793775716246a470",
+   "fetched_at": "2026-10-31T00:14:13Z",
+   "bars": 1448,
    "first": "2026-08-31T17:00:00Z",
-   "last": "2026-10-30T22:00:00Z"
+   "last": "2026-10-31T00:00:00Z"
   },
   "COPX": {
    "file": "COPX.json",
-   "sha256": "5d677f0aa5e17ec6b9f7dde17ee28e855ecaf98cffb7720f4c90eb51193678ec",
-   "fetched_at": "2026-10-30T22:45:18Z",
+   "sha256": "dfe34872efdccc98a1823ec169b2aff27a6ac98ec51bcbcb807a32ea1356595f",
+   "fetched_at": "2026-10-31T00:14:14Z",
    "bars": 274,
    "first": "2026-09-08T13:30:00Z",
    "last": "2026-10-30T20:00:00Z"
   },
   "GOLD": {
    "file": "GOLD.json",
-   "sha256": "41a9cfa23d4ce78035a686e2e87fcf3082f5092bb52e247090a57e590bbc0e8c",
-   "fetched_at": "2026-10-30T22:45:19Z",
-   "bars": 191,
-   "first": "2026-10-20T15:00:00Z",
+   "sha256": "9e4722b7e16db684e7d491ca9141ebf70f0f1bec13c9a0c48c8ed881476932d2",
+   "fetched_at": "2026-10-31T00:14:15Z",
+   "bars": 214,
+   "first": "2026-10-19T15:00:00Z",
    "last": "2026-10-30T20:59:59Z"
   },
   "SILVER": {
    "file": "SILVER.json",
-   "sha256": "b50300e8f6bd5002c8f5d3229e38b82e095ed34314ea09da422e0432d15d8ac1",
-   "fetched_at": "2026-10-30T22:45:20Z",
-   "bars": 557,
-   "first": "2026-09-28T17:00:00Z",
+   "sha256": "f1ce49f7b714d5845ca52303acb2288ee0aab3dce616dff4a99652c6f06bb0f9",
+   "fetched_at": "2026-10-31T00:14:16Z",
+   "bars": 11590,
+   "first": "2024-04-08T04:00:00Z",
    "last": "2026-10-30T20:59:59Z"
   },
   "STOCKS": {
    "file": "STOCKS.json",
-   "sha256": "00fdb9a29a2c43f5effa724ba0bf1dfcd44d0ba4dc28fcc74af751302bfaa9ea",
-   "fetched_at": "2026-10-30T22:45:21Z",
+   "sha256": "7d56f2bafa8de110888ac00d82f734026d7758f109d4f53bff5d10d1d1df6d3d",
+   "fetched_at": "2026-10-31T00:14:19Z",
    "bars": 141,
    "first": "2026-10-05T13:30:00Z",
    "last": "2026-10-30T20:00:00Z"
   },
   "XYZ:AAPL": {
    "file": "XYZ:AAPL.json",
-   "sha256": "d2cca9b8ba680f4a01235cb82a882cdb9230a537a607a7e9a3c5f0e086c92c97",
-   "fetched_at": "2026-10-30T22:45:21Z",
-   "bars": 817,
+   "sha256": "e0a62154d6a159239079353fb68c0fe1d520471379d5ea36d2a7d6dae0226526",
+   "fetched_at": "2026-10-31T00:14:20Z",
+   "bars": 819,
    "first": "2026-09-26T22:00:00Z",
-   "last": "2026-10-30T22:00:00Z"
+   "last": "2026-10-31T00:00:00Z"
   },
   "XYZ:CBRS": {
    "file": "XYZ:CBRS.json",
-   "sha256": "61a1bf866e1dae5f6886f7b30c5994b01e9bec0f6f05ef130bd9a05ee969abb2",
-   "fetched_at": "2026-10-30T22:45:22Z",
-   "bars": 1370,
+   "sha256": "47a40b9ec4f038afd9848842b96c25b809bf2e1792ef232bb61120345673fc77",
+   "fetched_at": "2026-10-31T00:14:20Z",
+   "bars": 1372,
    "first": "2026-09-03T21:00:00Z",
-   "last": "2026-10-30T22:00:00Z"
+   "last": "2026-10-31T00:00:00Z"
   },
   "XYZ:CXMT": {
    "file": "XYZ:CXMT.json",
-   "sha256": "e4e1fce8494468de6a92f63418c891c3a2e87cbd4bff1d3f7188647d83db5e5f",
-   "fetched_at": "2026-10-30T22:45:22Z",
-   "bars": 1370,
+   "sha256": "d02b27e0e3e4fac58a1c6fa5f5f8028818c3aa6261f7b1b0dca3e32f599d65f4",
+   "fetched_at": "2026-10-31T00:14:20Z",
+   "bars": 1372,
    "first": "2026-09-03T21:00:00Z",
-   "last": "2026-10-30T22:00:00Z"
+   "last": "2026-10-31T00:00:00Z"
   },
   "XYZ:JP225": {
    "file": "XYZ:JP225.json",
-   "sha256": "0d6191159340ab6fb6c617e71a9db08af00556fbaecd9f4140b47de569986734",
-   "fetched_at": "2026-10-30T22:45:22Z",
-   "bars": 1103,
+   "sha256": "c1562d43ed993991c877abbf190b0c1f60da4c27b21021ab02870bafe3f14432",
+   "fetched_at": "2026-10-31T00:14:20Z",
+   "bars": 1105,
    "first": "2026-09-15T00:00:00Z",
-   "last": "2026-10-30T22:00:00Z"
+   "last": "2026-10-31T00:00:00Z"
   },
   "XYZ:KIOXIA": {
    "file": "XYZ:KIOXIA.json",
-   "sha256": "1850c71a141f948057cae30acd93d9b43318dd1289014d5b5925872f70a47a14",
-   "fetched_at": "2026-10-30T22:45:22Z",
-   "bars": 1103,
+   "sha256": "21d3f38d88121174c23f0448affdc41893e8c69f2df29de40d11aff562914de7",
+   "fetched_at": "2026-10-31T00:14:21Z",
+   "bars": 1105,
    "first": "2026-09-15T00:00:00Z",
-   "last": "2026-10-30T22:00:00Z"
+   "last": "2026-10-31T00:00:00Z"
   },
   "XYZ:ORCL": {
    "file": "XYZ:ORCL.json",
-   "sha256": "5f137d281b15b988daa0a0b3809206c427ffd14bc97e34df8554137438910755",
-   "fetched_at": "2026-10-30T22:45:23Z",
-   "bars": 839,
+   "sha256": "0f21493d5f619f466af0e3f646a72d13153d7cfb486b8158bb6a46294b0fbf54",
+   "fetched_at": "2026-10-31T00:14:21Z",
+   "bars": 841,
    "first": "2026-09-26T00:00:00Z",
-   "last": "2026-10-30T22:00:00Z"
+   "last": "2026-10-31T00:00:00Z"
   },
   "XYZ:SKHX": {
    "file": "XYZ:SKHX.json",
-   "sha256": "5f40645cb1fe54413f56233e26250f1ea5e506a9560bad1e2d75abb2e12708c4",
-   "fetched_at": "2026-10-30T22:45:23Z",
-   "bars": 817,
+   "sha256": "b20c97c239f2e3bc1ae56f5bd8301485cdf526311834550da69dce24280a659b",
+   "fetched_at": "2026-10-31T00:14:21Z",
+   "bars": 819,
    "first": "2026-09-26T22:00:00Z",
-   "last": "2026-10-30T22:00:00Z"
+   "last": "2026-10-31T00:00:00Z"
   }
  }
 }

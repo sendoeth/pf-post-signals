@@ -37,6 +37,13 @@
     "price": {
      "type": "number",
      "exclusiveMinimum": 0
+    },
+    "interval": {
+     "enum": [
+      "1d",
+      "1h"
+     ],
+     "description": "set to 1d when the bar is a daily bar (history older than the hourly window)"
     }
    }
   },
@@ -199,7 +206,8 @@
     "resolved",
     "partial",
     "pending",
-    "no_entry"
+    "no_entry",
+    "closed"
    ]
   },
   "entry": {
@@ -337,6 +345,10 @@
       4
      ],
      "description": "tolerance applied to this record's entry and exits: 2 for 24/7 assets, 4 for exchange-hours assets (a post or horizon while the market is closed takes the next session open). Absent on records written before step 6, which used 2."
+    },
+    "daily_until": {
+     "$ref": "#/$defs/ts",
+     "description": "bars before this time are daily (Yahoo keeps about 730 days of hourly history)"
     }
    }
   },
@@ -425,6 +437,163 @@
       "null"
      ],
      "maxLength": 600
+    }
+   }
+  },
+  "lifecycle": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "state",
+    "events"
+   ],
+   "description": "what the author did after the opening post; each event is backed by its own post (receipt)",
+   "properties": {
+    "state": {
+     "enum": [
+      "open",
+      "closed"
+     ]
+    },
+    "events": {
+     "type": "array",
+     "maxItems": 200,
+     "items": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+       "type",
+       "post",
+       "terms",
+       "reason",
+       "decided_by"
+      ],
+      "properties": {
+       "type": {
+        "enum": [
+         "trim",
+         "close",
+         "flip",
+         "review",
+         "not_close"
+        ]
+       },
+       "post": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+         "id",
+         "url",
+         "posted_at"
+        ],
+        "properties": {
+         "id": {
+          "type": "string",
+          "pattern": "^([0-9]+|corbanu:[a-z0-9-]{1,48})$"
+         },
+         "url": {
+          "type": "string",
+          "pattern": "^(https://x\\.com/[A-Za-z0-9_]{1,15}/status/\\d+|https://corbanu\\.com/posts/[a-z0-9-]{1,120}/)$"
+         },
+         "posted_at": {
+          "$ref": "#/$defs/ts"
+         },
+         "text": {
+          "type": [
+           "string",
+           "null"
+          ],
+          "maxLength": 25000
+         },
+         "receipt_sha256": {
+          "type": [
+           "string",
+           "null"
+          ],
+          "pattern": "^[0-9a-f]{64}$"
+         }
+        }
+       },
+       "terms": {
+        "type": "array",
+        "items": {
+         "type": "string",
+         "maxLength": 80
+        },
+        "maxItems": 20
+       },
+       "reason": {
+        "type": "string",
+        "maxLength": 600
+       },
+       "stated_time": {
+        "type": [
+         "string",
+         "null"
+        ],
+        "maxLength": 40
+       },
+       "decided_by": {
+        "enum": [
+         "classifier",
+         "override",
+         "ledger"
+        ]
+       },
+       "after_close": {
+        "type": "boolean"
+       },
+       "bar": {
+        "$ref": "#/$defs/bar"
+       },
+       "move": {
+        "type": "number"
+       },
+       "for_call": {
+        "type": "number"
+       }
+      }
+     }
+    }
+   }
+  },
+  "closed": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "post_id",
+    "exit",
+    "move"
+   ],
+   "description": "the frozen result of a closed position: exit = first bar at or after the closing post",
+   "properties": {
+    "post_id": {
+     "type": "string"
+    },
+    "post_url": {
+     "type": "string"
+    },
+    "by": {
+     "enum": [
+      "close",
+      "flip",
+      "ledger"
+     ]
+    },
+    "exit": {
+     "$ref": "#/$defs/bar"
+    },
+    "move": {
+     "type": "number"
+    },
+    "for_call": {
+     "type": "number"
+    },
+    "stated_time": {
+     "type": [
+      "string",
+      "null"
+     ]
     }
    }
   }

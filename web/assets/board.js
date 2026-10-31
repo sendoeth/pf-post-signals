@@ -8,7 +8,7 @@ const fmtTime = iso => iso.slice(0, 10) + " " + iso.slice(11, 16) + " UTC";
 const fmtDate = iso => new Date(iso).toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone: "UTC" });
 const signClass = x => x == null ? "unresolved" : x > 0 ? "gain" : x < 0 ? "loss" : "";
 const AVATAR_FILE = /^[a-z0-9_]{1,15}\.jpg$/;
-const DEFAULTS = { time: "all", side: "all", author: "all", asset: "all", sort: "return" };
+const DEFAULTS = { time: "all", side: "all", state: "all", author: "all", asset: "all", sort: "return" };
 const SVGNS = "http://www.w3.org/2000/svg";
 
 function el(tag, attrs, text) {
@@ -33,9 +33,10 @@ function rowsFrom(bundle) {
   const rows = [];
   for (const a of bundle.assets) for (const p of a.posts) {
     const side = p.side === 1 ? "long" : p.side === -1 ? "short" : "none";
-    const ret = p.change_since_post == null ? null : (p.side ? p.side * p.change_since_post : p.change_since_post);
+    const ret = PFPS.result(p);          // closed: frozen realized return; open: since post (for the call)
     const best = p.best ? (p.side ? p.best.for_call : p.best.move) : null;
-    rows.push({ p, asset: a, side, ret, best, id: p.post.id, assetName: a.name, author: p.post.author, posted: p.post.posted_at });
+    rows.push({ p, asset: a, side, ret, best, id: p.post.id, assetName: a.name, author: p.post.author, posted: p.post.posted_at,
+      state: p.closed ? "closed" : "open" });
   }
   return rows;
 }
@@ -45,6 +46,7 @@ function applyFilters(rows, f, asOf) {
   return rows.filter(r =>
     (f.time === "all" || (f.time === "7d" ? Date.parse(r.posted) >= ref - 7 * 864e5 : r.posted.slice(0, 10) === asOf.slice(0, 10))) &&
     (f.side === "all" || r.side === f.side) &&
+    (f.state === "all" || r.state === f.state) &&
     (f.author === "all" || r.author === f.author) &&
     (f.asset === "all" || r.assetName === f.asset));
 }
@@ -169,6 +171,7 @@ function renderRows(rows, asOf, avatars) {
     const line1 = el("span", { class: "line1" });
     line1.append(el("span", { class: "ticker", "data-field": "asset" }, r.assetName));
     line1.append(el("span", { class: "badge " + r.side, "data-field": "side" }, r.side === "none" ? "NO SIDE" : r.side.toUpperCase()));
+    if (p.closed) line1.append(el("span", { class: "tag closed", "data-field": "closed_tag", title: PFPS.statusTip(p) }, "closed"));
     if (p.asset.stand_in) line1.append(el("span", { class: "tag", "data-field": "stand_in", title: p.asset.stand_in.reason }, "stand-in"));
     if (p.asset.adjustments && p.asset.adjustments.length) line1.append(el("span", { class: "tag", "data-field": "adjusted", title: p.asset.adjustments.map(a => `${a.kind} on ${fmtTime(a.at)}`).join("; ") }, "split-adj."));
     meta.append(line1);
@@ -182,8 +185,8 @@ function renderRows(rows, asOf, avatars) {
     const sp = el("span", { class: "col-spark" });
     sp.append(sparkline(r));
     a.append(sp);
-    a.append(el("span", { class: "col-px px", "data-field": "prices" },
-      p.entry ? `${fmtPrice(p.entry.price)} → ${p.latest ? fmtPrice(p.latest.price) : "–"}` : "no entry bar"));
+    a.append(el("span", { class: "col-px px", "data-field": "prices", title: p.closed ? `exit; now ${fmtPrice(p.latest.price)} (if still held ${fmtPct(PFPS.ifHeld(p))})` : "" },
+      p.entry ? `${fmtPrice(p.entry.price)} → ${p.closed ? fmtPrice(p.closed.exit.price) + " exit" : p.latest ? fmtPrice(p.latest.price) : "–"}` : "no entry bar"));
     a.append(el("span", { class: "r ret " + signClass(r.ret), "data-field": "return", "data-raw": JSON.stringify(r.ret) },
       r.ret == null ? "unresolved" : fmtPct(r.ret)));
     const bestCell = el("span", { class: "r col-best best " + signClass(r.best), "data-field": "best", "data-raw": JSON.stringify(r.best) },

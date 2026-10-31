@@ -51,6 +51,8 @@ for a in bundle["assets"]:
             p0, side = rec["entry"]["price"], rec.get("side")
             top = None
             for at, price in rec["series"]:
+                if rec.get("closed") and at > rec["closed"]["exit"]["at"]:
+                    break
                 score = side * (price / p0 - 1) if side else price
                 if top is None or score > top[0]:
                     top = (score, at, price)

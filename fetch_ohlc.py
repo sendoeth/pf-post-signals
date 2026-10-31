@@ -36,14 +36,7 @@ def fetch(source, symbol, since):
             if len(rows) < 1000:
                 return out
             ms = rows[-1][0] + 3_600_000
-    p1 = int(start.timestamp())
-    p2 = int(dt.datetime.now(dt.timezone.utc).timestamp())
-    res = resolve.get_json(f"https://query1.finance.yahoo.com/v8/finance/chart/{symbol}"
-                           f"?period1={p1}&period2={p2}&interval=1h")["chart"]["result"][0]
-    q = res["indicators"]["quote"][0]
-    return [[resolve.iso(t), round(o, 4), round(h, 4), round(lo, 4), round(c, 4)]
-            for t, o, h, lo, c in zip(res["timestamp"], q["open"], q["high"], q["low"], q["close"])
-            if None not in (o, h, lo, c)]
+    return resolve.yahoo_bars(symbol, start)   # daily candles before Yahoo's hourly window, hourly after
 
 
 def check(bundle, candles_by_asset):

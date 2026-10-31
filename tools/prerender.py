@@ -63,7 +63,24 @@ def author_class(handle):
     return f"ac-{h % len(AUTHOR_COLORS)}"
 
 
+def result_of(p):
+    """closed: the frozen realized return; open: since post (for the call when a side is stated)"""
+    if p.get("closed"):
+        return p["closed"]["for_call"] if p.get("side") else p["closed"]["move"]
+    if p["change_since_post"] is None:
+        return None
+    return p["side"] * p["change_since_post"] if p.get("side") else p["change_since_post"]
+
+
+def if_held(p):
+    if p["change_since_post"] is None:
+        return None
+    return p["side"] * p["change_since_post"] if p.get("side") else p["change_since_post"]
+
+
 def status_label(p):
+    if p["status"] == "closed":
+        return "closed"
     if p["status"] == "resolved":
         return "all horizons in"
     if p["status"] == "pending":
@@ -79,7 +96,7 @@ def rows_of(bundle):
     for a in bundle["assets"]:
         for p in a["posts"]:
             side = {1: "long", -1: "short"}.get(p.get("side"), "none")
-            ret = None if p["change_since_post"] is None else (p["side"] * p["change_since_post"] if p.get("side") else p["change_since_post"])
+            ret = result_of(p)
             best = None if not p.get("best") else (p["best"]["for_call"] if p.get("side") else p["best"]["move"])
             rows.append({"p": p, "asset": a["name"], "side": side, "ret": ret, "best": best})
     # default view: by return, unresolved last, then newest, then id + asset (as board.js)
@@ -109,8 +126,10 @@ def board_blocks(bundle, avatars):
     for i, r in enumerate(rows, 1):
         p, s = r["p"], slug(r["p"]["post"]["id"], r["asset"])
         quote = f'<span class="quote" data-field="quote">“{e(" ".join(p["post"]["text"].split()))}”</span>' if p["post"].get("text") else ""
-        prices = (f'{fmt_price(p["entry"]["price"])} → {fmt_price(p["latest"]["price"]) if p.get("latest") else "–"}' if p.get("entry") else "no entry bar")
-        tags = (' <span class="tag" data-field="stand_in">stand-in</span>' if p["asset"].get("stand_in") else "") + \
+        end = (fmt_price(p["closed"]["exit"]["price"]) + " exit") if p.get("closed") else (fmt_price(p["latest"]["price"]) if p.get("latest") else "–")
+        prices = f'{fmt_price(p["entry"]["price"])} → {end}' if p.get("entry") else "no entry bar"
+        tags = (' <span class="tag closed" data-field="closed_tag">closed</span>' if p.get("closed") else "") + \
+               (' <span class="tag" data-field="stand_in">stand-in</span>' if p["asset"].get("stand_in") else "") + \
                (' <span class="tag" data-field="adjusted">split-adj.</span>' if p["asset"].get("adjustments") else "")
         out.append(
             f'<li data-static="1" data-post-id="{e(p["post"]["id"])}" data-asset="{e(r["asset"])}" data-rank="{i}">'
@@ -180,12 +199,29 @@ def position_static(r, asof, avatars):
     for h in HZ:
         v = p["moves"].get(h)
         rows.append((f"{h}d move", fmt_pct(v) if v is not None else "unresolved · " + p["unresolved"].get(h, ""), f"move_{h}", v))
+    if p.get("closed"):
+        c = p["closed"]
+        ev = next((x for x in p["lifecycle"]["events"] if x["post"]["id"] == c["post_id"]), None)
+        rows.insert(6, ("Closed (realized)", f'{fmt_pct(r["ret"])} · exit {fmt_price(c["exit"]["price"])} @ {fmt_time(c["exit"]["at"])}'
+                        + (" (daily bar)" if c["exit"].get("interval") == "1d" else ""), "closed", c))
+        rows.insert(7, ("Closing post", ("exit event in the published ledger" if c.get("by") == "ledger" else
+                        f'{fmt_time(ev["post"]["posted_at"]) if ev else ""} · {c.get("post_url", "")} · matched: {", ".join(ev["terms"]) if ev else ""}'
+                        + (f' · the post says "{c["stated_time"]}"; the exit uses the first bar after the post' if c.get("stated_time") else "")), "closing_post", None))
+        rows.insert(8, ("If still held", f'{fmt_pct(if_held(p))} (now {fmt_price(p["latest"]["price"])}), not the result', "if_still_held", if_held(p)))
+    if p.get("lifecycle", {}).get("events"):
+        names = {"trim": "trim", "close": "close", "flip": "flip", "review": "review", "not_close": "not a close"}
+        rows.append(("Lifecycle", " | ".join(f'{names[x["type"]]} {fmt_time(x["post"]["posted_at"])}'
+                     + (f' at {fmt_price(x["bar"]["price"])}' if x.get("bar") else "") + (f' ({", ".join(x["terms"])})' if x["terms"] else "")
+                     for x in p["lifecycle"]["events"]), "lifecycle", None))
+    if p.get("resolved_with", {}).get("daily_until") and (p.get("entry") or {}).get("interval") == "1d":
+        rows.append(("Resolution", f'daily bars before {fmt_time(p["resolved_with"]["daily_until"])}, hourly after', "resolution", None))
     if p["asset"].get("stand_in"):
         rows.append(("Priced via", "stand-in for " + p["asset"]["stand_in"]["for"], "stand_in", None))
     if p["asset"].get("adjustments"):
         rows.append(("Adjusted", "; ".join(f'{a["kind"]} on {fmt_time(a["at"])}' for a in p["asset"]["adjustments"]), "adjustments", None))
-    dl = "".join(f'<dt>{e(k)}</dt><dd data-field="{f}"' + (f' data-raw="{raw(v)}"' if v is not None or f in ("change_since_post", "return", "best") else "")
-                 + f' class="{cls(v) if f in ("change_since_post", "return", "best") or f.startswith("move_") else ""}">{e(t)}</dd>'
+    numeric = ("change_since_post", "return", "best", "if_still_held")
+    dl = "".join(f'<dt>{e(k)}</dt><dd data-field="{f}"' + (f' data-raw="{raw(v)}"' if v is not None or f in numeric else "")
+                 + f' class="{cls(v) if f in numeric or f.startswith("move_") else ""}">{e(t)}</dd>'
                  for k, t, f, v in rows)
     link = "read the article" if p["post"].get("source") == "corbanu" else "open on X"
     text = f'<p class="text" data-field="text">{e(p["post"]["text"])}</p>' if p["post"].get("text") else '<p class="text notes" data-field="text">Post text not saved: open it on X.</p>'
@@ -228,9 +264,11 @@ def main(web=None):
     for r in rows:
         p, s = r["p"], slug(r["p"]["post"]["id"], r["asset"])
         side = "NO SIDE" if r["side"] == "none" else r["side"].upper()
-        title = f'{r["asset"]} {side} · @{p["post"]["author"]} · {fmt_pct(r["ret"])}'
+        title = f'{r["asset"]} {side}{" (closed)" if p.get("closed") else ""} · @{p["post"]["author"]} · {fmt_pct(r["ret"])}'
         desc = (f'@{p["post"]["author"]} {fmt_time(p["post"]["posted_at"])}: {r["asset"]} {side.lower()}, entry '
-                + (fmt_price(p["entry"]["price"]) if p.get("entry") else "–") + f', return {fmt_pct(r["ret"])}, {status_label(p)}.'
+                + (fmt_price(p["entry"]["price"]) if p.get("entry") else "–")
+                + (f', closed at {fmt_price(p["closed"]["exit"]["price"])} on {p["closed"]["exit"]["at"][:10]}, realized {fmt_pct(r["ret"])}, if still held {fmt_pct(if_held(p))}.' if p.get("closed")
+                   else f', return {fmt_pct(r["ret"])}, {status_label(p)}.')
                 + (f' “{" ".join(p["post"]["text"].split())[:140]}”' if p["post"].get("text") else ""))
         page = re.sub(r"<title>.*?</title>\n<meta name=\"description\" content=\"[^\"]*\">", lambda m: meta_tags(title, desc, f"{SITE}pos-{s}.html"), template, count=1, flags=re.S)
         page = page.replace("<main>", f'<main data-post="{e(p["post"]["id"])}" data-asset="{e(r["asset"])}">', 1)

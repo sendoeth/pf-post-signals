@@ -1,7 +1,7 @@
 // Step 10 leaderboard test (headless Chromium). The ranking rules are re-implemented here
 // independently of web/assets/board.js and compared against what the page shows:
-//  A. every filter x sort combination (time 3 x side 4 x author (n+1) x asset (n+1) x sort 3), set in
-//     the page; every 10th also loaded fresh from its shareable URL: row order, ranks, ids, returns,
+//  A. every filter x sort combination (time 3 x side 4 x status 3 x author (n+1) x asset (n+1) x sort 3), set in
+//     the page; every 25th also loaded fresh from its shareable URL: row order, ranks, ids, returns,
 //     best, stats, per-author summary + sample flags, empty state, and the selects / URL
 //  B. the controls: every option of every select changed in the page updates rows and the URL
 //  C. default view: every field of every row equals its record file on disk (sha256-checked)
@@ -26,9 +26,9 @@ const TYPES = { '.html': 'text/html', '.json': 'application/json', '.js': 'text/
 
 const pct = x => (x > 0 ? '+' : x < 0 ? '-' : '') + (Math.abs(x) * 100).toFixed(2) + '%';
 const price = p => p.toLocaleString('en-US', { maximumFractionDigits: 8 });
-const DEFAULTS = { time: 'all', side: 'all', author: 'all', asset: 'all', sort: 'return' };
+const DEFAULTS = { time: 'all', side: 'all', state: 'all', author: 'all', asset: 'all', sort: 'return' };
 // plain status wording, mirrored from web/assets/common.js
-const statusLabel = p => p.status === 'resolved' ? 'all horizons in' : p.status === 'pending' ? 'no price yet' : p.status === 'no_entry' ? 'no price at post time'
+const statusLabel = p => p.status === 'closed' ? 'closed' : p.status === 'resolved' ? 'all horizons in' : p.status === 'pending' ? 'no price yet' : p.status === 'no_entry' ? 'no price at post time'
   : (h => h.length ? h.map(x => x + 'd').join(', ') + ' pending' : p.status)(['1', '7', '30'].filter(x => p.unresolved && p.unresolved[x]));
 const slug = (id, asset) => `${id.replace(/[^A-Za-z0-9_-]/g, '-')}_${asset.replace(/[^A-Za-z0-9_-]/g, '-')}`;
 
@@ -36,9 +36,10 @@ const slug = (id, asset) => `${id.replace(/[^A-Za-z0-9_-]/g, '-')}_${asset.repla
 function model(bundle) {
   const rows = [];
   for (const a of bundle.assets) for (const p of a.posts) {
-    const ret = p.change_since_post == null ? null : p.side ? p.side * p.change_since_post : p.change_since_post;
+    // closed: the frozen realized return (step 13); open: since post, for the call when a side is stated
+    const ret = p.closed ? (p.side ? p.closed.for_call : p.closed.move) : p.change_since_post == null ? null : p.side ? p.side * p.change_since_post : p.change_since_post;
     const best = p.best ? (p.side ? p.best.for_call : p.best.move) : null;
-    rows.push({ id: p.post.id, asset: a.name, side: p.side === 1 ? 'long' : p.side === -1 ? 'short' : 'none', author: p.post.author,
+    rows.push({ id: p.post.id, asset: a.name, side: p.side === 1 ? 'long' : p.side === -1 ? 'short' : 'none', state: p.closed ? 'closed' : 'open', author: p.post.author,
                 posted: p.post.posted_at, ret, best, p, series: a.series });
   }
   return rows;
@@ -46,7 +47,7 @@ function model(bundle) {
 function expected(rows, f, asOf) {
   const ref = Date.parse(asOf), day = asOf.slice(0, 10);
   const kept = rows.filter(r => (f.time === 'all' || (f.time === '7d' ? Date.parse(r.posted) >= ref - 7 * 864e5 : r.posted.slice(0, 10) === day))
-    && (f.side === 'all' || r.side === f.side) && (f.author === 'all' || r.author === f.author) && (f.asset === 'all' || r.asset === f.asset));
+    && (f.side === 'all' || r.side === f.side) && (f.state === 'all' || r.state === f.state) && (f.author === 'all' || r.author === f.author) && (f.asset === 'all' || r.asset === f.asset));
   const key = r => f.sort === 'best' ? r.best : f.sort === 'newest' ? Date.parse(r.posted) : r.ret;
   kept.sort((x, y) => {
     const a = key(x), b = key(y);
@@ -88,7 +89,7 @@ function serve() {
 async function read(page) {
   return page.evaluate(() => ({
     search: location.search,
-    selects: Object.fromEntries(['time', 'side', 'author', 'asset', 'sort'].map(k => [k, document.getElementById('f-' + k).value])),
+    selects: Object.fromEntries(['time', 'side', 'state', 'author', 'asset', 'sort'].map(k => [k, document.getElementById('f-' + k).value])),
     empty: !document.getElementById('empty').hidden,
     stats: Object.fromEntries([...document.querySelectorAll('[data-stat]')].map(s => [s.dataset.stat, JSON.parse(s.querySelector('strong').dataset.raw)])),
     rows: [...document.querySelectorAll('#rows > li')].map(li => ({
@@ -128,7 +129,11 @@ async function read(page) {
     const wa = authorsExpected(rows, f, asOf);
     authorRows += wa.length;
     const ga = got.authors.map(a => ({ author: a.author, calls: a.calls, hit: a.hit, avg: a.avg, best: a.best, worst: a.worst, flag: a.flag }));
-    if (JSON.stringify(ga) !== JSON.stringify(wa)) fail(`${tag}: author summary ${JSON.stringify(ga)} != ${JSON.stringify(wa)}`);
+    // the average is a float sum: the page adds in data order, this test in ranked order, so compare it
+    // to 1e-12; every other field exactly
+    const strip = xs => xs.map(x => ({ ...x, avg: null }));
+    const avgOk = ga.length === wa.length && ga.every((x, i) => (x.avg == null && wa[i].avg == null) || Math.abs(x.avg - wa[i].avg) < 1e-12);
+    if (JSON.stringify(strip(ga)) !== JSON.stringify(strip(wa)) || !avgOk) fail(`${tag}: author summary ${JSON.stringify(ga)} != ${JSON.stringify(wa)}`);
     if (got.empty !== (want.rows.length === 0)) fail(`${tag}: empty state shown=${got.empty} for ${want.rows.length} rows`);
     return want.rows.length > 0;
   };
@@ -142,18 +147,18 @@ async function read(page) {
     await page.setViewport({ width: 1280, height: 1000 });
     const load = async q => { await page.goto(base + q, { waitUntil: 'networkidle0' }); await page.waitForFunction(() => document.body.dataset.ready === '1', { timeout: 20000 }); const g = await read(page); csp += g.csp.length; for (const v of g.csp) fail(`CSP ${q}: ${v}`); return g; };
 
-    // A. every combination: set in the page (all five selects), and every 10th also loaded fresh
+    // A. every combination: set in the page (all five selects), and every 25th also loaded fresh
     //    from its URL, so the shared link reproduces the same view
     await load('');
-    for (const time of ['all', '7d', 'today']) for (const side of ['all', 'long', 'short', 'none'])
+    for (const time of ['all', '7d', 'today']) for (const side of ['all', 'long', 'short', 'none']) for (const state of ['all', 'open', 'closed'])
       for (const author of ['all', ...authors]) for (const asset of ['all', ...assets]) for (const sort of ['return', 'best', 'newest']) {
-        const f = { time, side, author, asset, sort }, q = query(f);
+        const f = { time, side, state, author, asset, sort }, q = query(f);
         await page.evaluate(f => { for (const [k, v] of Object.entries(f)) { const s = document.getElementById('f-' + k); if (s.value !== v) { s.value = v; s.dispatchEvent(new Event('change', { bubbles: true })); } } }, f);
         let got = await read(page);
         combos++;
         if (cmp(`combo ${q || '(default)'}`, got, f)) nonEmpty++;
         if (got.search !== q) fail(`combo ${q}: url ${got.search}`);
-        if (combos % 10 === 0) {
+        if (combos % 25 === 0) {
           got = await load(q);
           urlReloads++;
           cmp(`url ${q || '(default)'}`, got, f);
@@ -163,7 +168,7 @@ async function read(page) {
       }
 
     // B. the controls: change each select to each option from the default view
-    for (const [k, opts] of Object.entries({ time: ['7d', 'today', 'all'], side: ['long', 'short', 'none', 'all'], author: [...authors, 'all'], asset: [...assets, 'all'], sort: ['best', 'newest', 'return'] })) {
+    for (const [k, opts] of Object.entries({ time: ['7d', 'today', 'all'], side: ['long', 'short', 'none', 'all'], state: ['open', 'closed', 'all'], author: [...authors, 'all'], asset: [...assets, 'all'], sort: ['best', 'newest', 'return'] })) {
       await load('');
       for (const v of opts) {
         await page.select('#f-' + k, v);
@@ -186,10 +191,10 @@ async function read(page) {
       eq('asset', rec.asset.name);
       eq('side', rec.side === 1 ? 'LONG' : rec.side === -1 ? 'SHORT' : 'NO SIDE');
       eq('author', '@' + rec.post.author);
-      eq('prices', rec.entry ? `${price(rec.entry.price)} → ${rec.latest ? price(rec.latest.price) : '–'}` : 'no entry bar');
+      eq('prices', rec.entry ? `${price(rec.entry.price)} → ${rec.closed ? price(rec.closed.exit.price) + ' exit' : rec.latest ? price(rec.latest.price) : '–'}` : 'no entry bar');
       eq('status', statusLabel(rec));
       if (rec.post.text) eq('quote', '“' + rec.post.text.replace(/\s+/g, ' ').trim() + '”');
-      const ret = rec.change_since_post == null ? null : rec.side ? rec.side * rec.change_since_post : rec.change_since_post;
+      const ret = rec.closed ? (rec.side ? rec.closed.for_call : rec.closed.move) : rec.change_since_post == null ? null : rec.side ? rec.side * rec.change_since_post : rec.change_since_post;
       eq('return', ret == null ? 'unresolved' : pct(ret));
       fieldChecks++;
       if (g.href !== `pos-${slug(rec.post.id, rec.asset.name)}.html`) fail(`${tag}: link ${g.href}`);

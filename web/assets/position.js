@@ -110,12 +110,24 @@ function render(asset, p, ohlc, avatars, bundle) {
   if (p.entry) left.append(el("span", { class: "at" }, "@ " + fmtPrice(p.entry.price)));
   head.append(left);
   const right = el("div", { class: "now" });
-  right.append(el("span", null, p.latest ? fmtPrice(p.latest.price) : "–"));
-  if (p.change_since_post != null) right.append(el("span", { class: "chip " + (dir === "up" ? "up" : dir === "down" ? "down" : "") }, fmtPct(p.change_since_post)));
-  const forCall = sideName && p.change_since_post != null ? p.side * p.change_since_post : null;
-  const since = el("span", { class: "since", "data-field": "header_since" }, "since post · " + age(p.post.posted_at, nowMs));
-  if (forCall != null) { since.append(" · "); since.append(el("span", { class: signClass(forCall) }, `${fmtPct(forCall)} for the ${sideName}`)); }
-  right.append(since);
+  if (p.closed) {
+    // closed: the headline is the frozen result; the current price only appears as "if still held"
+    const res = PFPS.result(p), held = PFPS.ifHeld(p);
+    right.append(el("span", { class: "closed-badge", "data-field": "closed_badge" }, "CLOSED"), " ");
+    right.append(el("span", null, fmtPrice(p.closed.exit.price)));
+    right.append(el("span", { class: "chip " + (res > 0 ? "up" : res < 0 ? "down" : ""), "data-field": "header_result" }, fmtPct(res)));
+    const since = el("span", { class: "since", "data-field": "header_since" },
+      `closed ${fmtTime(p.closed.exit.at).slice(0, 10)} · ${sideName ? "for the " + sideName : "price move"} · if still held `);
+    since.append(el("span", { class: signClass(held) }, held == null ? "–" : fmtPct(held)));
+    right.append(since);
+  } else {
+    right.append(el("span", null, p.latest ? fmtPrice(p.latest.price) : "–"));
+    if (p.change_since_post != null) right.append(el("span", { class: "chip " + (dir === "up" ? "up" : dir === "down" ? "down" : "") }, fmtPct(p.change_since_post)));
+    const forCall = sideName && p.change_since_post != null ? p.side * p.change_since_post : null;
+    const since = el("span", { class: "since", "data-field": "header_since" }, "since post · " + age(p.post.posted_at, nowMs));
+    if (forCall != null) { since.append(" · "); since.append(el("span", { class: signClass(forCall) }, `${fmtPct(forCall)} for the ${sideName}`)); }
+    right.append(since);
+  }
   head.append(right);
   pos.append(head);
 
@@ -150,7 +162,7 @@ function render(asset, p, ohlc, avatars, bundle) {
   dl.lastChild.setAttribute("title", PFPS.statusTip(p));
   field(dl, "entry", "Entry", p.entry ? `${fmtPrice(p.entry.price)} @ ${fmtTime(p.entry.at)}` : "no entry bar", p.entry);
   field(dl, "latest", "Latest", p.latest ? `${fmtPrice(p.latest.price)} @ ${fmtTime(p.latest.at)}` : "no bar yet", p.latest);
-  field(dl, "change_since_post", "Since post", p.change_since_post == null ? "unresolved" : fmtPct(p.change_since_post), p.change_since_post,
+  field(dl, "change_since_post", p.closed ? "Since post (if still held)" : "Since post", p.change_since_post == null ? "unresolved" : fmtPct(p.change_since_post), p.change_since_post,
     signClass(p.change_since_post));
   const best = p.best;
   field(dl, "best", sideName ? "Best for the call" : "Best (highest) since post",
@@ -165,6 +177,36 @@ function render(asset, p, ohlc, avatars, bundle) {
     const v = p.signed_returns[h];
     field(dl, "signed_" + h, h + "d for the call", v == null ? "unresolved · " + p.unresolved[h] : fmtPct(v), v, signClass(v));
   }
+  if (p.closed) {
+    const ev = PFPS.closeEvent(p), res = PFPS.result(p), held = PFPS.ifHeld(p);
+    field(dl, "closed", "Closed (realized)", `${fmtPct(res)} ${sideName ? "for the " + sideName : "price move"} · exit ${fmtPrice(p.closed.exit.price)} @ ${fmtTime(p.closed.exit.at)}`
+      + (p.closed.exit.interval === "1d" ? " (daily bar)" : ""), p.closed, signClass(res));
+    const cp = el("dd", { "data-field": "closing_post" });
+    if (p.closed.by === "ledger") cp.append("exit event in Corbanu's published ledger");
+    else {
+      cp.append(el("a", { href: p.closed.post_url, target: "_blank", rel: "noopener noreferrer" }, ev ? `${fmtTime(ev.post.posted_at)} post` : "the closing post"));
+      if (ev && ev.post.text) cp.append(` · “${ev.post.text.replace(/\s+/g, " ").trim().slice(0, 160)}”`);
+      if (ev && ev.terms.length) cp.append(` · matched: ${ev.terms.join(", ")}`);
+      if (p.closed.stated_time) cp.append(` · the post says "${p.closed.stated_time}"; the exit uses the first bar after the post`);
+    }
+    dl.append(el("dt", null, "Closing post"), cp);
+    field(dl, "if_still_held", "If still held", held == null ? "–" : `${fmtPct(held)} (now ${fmtPrice(p.latest.price)} @ ${fmtTime(p.latest.at)}), not the result`, held, signClass(held));
+  }
+  if (p.lifecycle && p.lifecycle.events.length) {
+    const ol = el("ol", { class: "timeline", "data-field": "lifecycle" });
+    for (const ev of p.lifecycle.events) {
+      const li = el("li", { "data-type": ev.type, "data-post-id": ev.post.id });
+      li.append(el("strong", null, { trim: "trim", close: "close", flip: "flip", review: "review", not_close: "not a close" }[ev.type]), " · ");
+      li.append(el("a", { href: ev.post.url, target: "_blank", rel: "noopener noreferrer" }, fmtTime(ev.post.posted_at)));
+      if (ev.bar) li.append(` · ${fmtPrice(ev.bar.price)} (${ev.for_call != null ? fmtPct(ev.for_call) + " for the call" : fmtPct(ev.move)})`);
+      li.append(el("span", { class: "why" }, ` · ${ev.terms.length ? "“" + ev.terms.join("”, “") + "” · " : ""}${ev.reason}${ev.after_close ? " (after the close)" : ""}`));
+      ol.append(li);
+    }
+    dl.append(el("dt", null, "Lifecycle"), (() => { const dd = el("dd"); dd.append(ol); return dd; })());
+  }
+  if (p.resolved_with && p.resolved_with.daily_until && p.entry && p.entry.interval === "1d")
+    field(dl, "resolution", "Resolution", `daily bars before ${fmtTime(p.resolved_with.daily_until)} (older than the hourly history), hourly after; `
+      + "a horizon that lands on the same daily bar as the entry reads 0.00%");
   if (p.asset.stand_in) field(dl, "stand_in", "Priced via", `stand-in for ${p.asset.stand_in.for}. ${p.asset.stand_in.reason}`, p.asset.stand_in);
   if (p.asset.adjustments && p.asset.adjustments.length)
     field(dl, "adjustments", "Adjusted", p.asset.adjustments.map(a => `${a.kind} on ${fmtTime(a.at)} (earlier prices divided by ${a.ratio})`).join("; "), p.asset.adjustments);
@@ -194,7 +236,7 @@ function render(asset, p, ohlc, avatars, bundle) {
     priceFormat: { type: "custom", formatter: fmtPrice, minMove: 1e-8 },
   });
   if (p.latest) series.createPriceLine({ price: p.latest.price, color: css("--muted"), lineWidth: 1,
-    lineStyle: LightweightCharts.LineStyle.Dotted, axisLabelVisible: true, title: "latest" });
+    lineStyle: LightweightCharts.LineStyle.Dotted, axisLabelVisible: true, title: p.closed ? "now (if held)" : "latest" });
   window.__position = { chart, series, post: p, get interval() { return interval; }, step: () => INTERVALS[interval] };
 
   const bubble = avatarNode(p.post.author, avatars, "");
@@ -204,11 +246,19 @@ function render(asset, p, ohlc, avatars, bundle) {
   const line = document.createElementNS(svgNS, "line"), label = document.createElementNS(svgNS, "text");
   line.setAttribute("class", "best-line"); label.setAttribute("class", "best-label");
   svg.append(line, label);
-  overlay.append(svg, bubble);
+  const exitMark = el("span", { id: "exit-mark", title: p.closed ? "closed here" : "" }, "✕");
+  exitMark.hidden = true;
+  overlay.append(svg, bubble, exitMark);
 
   function place() {
     if (!p.entry) { bubble.hidden = true; svg.style.display = "none"; return; }
     const step = INTERVALS[interval];
+    if (p.closed) {
+      const xx = chart.timeScale().timeToCoordinate(bucket(p.closed.exit.at, step)), xy = series.priceToCoordinate(p.closed.exit.price);
+      exitMark.hidden = xx == null || xy == null;
+      if (!exitMark.hidden) { exitMark.style.left = xx + "px"; exitMark.style.top = xy + "px"; }
+      exitMark.setAttribute("data-x", xx); exitMark.setAttribute("data-y", xy);
+    }
     const ex = chart.timeScale().timeToCoordinate(bucket(p.entry.at, step)), ey = series.priceToCoordinate(p.entry.price);
     bubble.hidden = ex == null || ey == null;
     if (!bubble.hidden) { bubble.style.left = ex + "px"; bubble.style.top = ey + "px"; }

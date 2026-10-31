@@ -16,7 +16,7 @@ const expect = process.argv.includes('--expect') ? process.argv[process.argv.ind
 const shotDir = process.argv.includes('--screenshots') ? path.resolve(process.argv[process.argv.indexOf('--screenshots') + 1]) : null;
 const HORIZONS = ['1', '7', '30'];
 // plain status wording, mirrored from web/assets/common.js
-const statusLabel = p => p.status === 'resolved' ? 'all horizons in' : p.status === 'pending' ? 'no price yet' : p.status === 'no_entry' ? 'no price at post time'
+const statusLabel = p => p.status === 'closed' ? 'closed' : p.status === 'resolved' ? 'all horizons in' : p.status === 'pending' ? 'no price yet' : p.status === 'no_entry' ? 'no price at post time'
   : (h => h.length ? h.map(x => x + 'd').join(', ') + ' pending' : p.status)(['1', '7', '30'].filter(x => p.unresolved && p.unresolved[x]));
 const slug = (id, asset) => `${id.replace(/[^A-Za-z0-9_-]/g, '-')}_${asset.replace(/[^A-Za-z0-9_-]/g, '-')}`;
 
@@ -88,7 +88,8 @@ function serve() {
           face: n.querySelector('.face').getAttribute('data-avatar'), href: n.querySelector('image.face') ? n.querySelector('image.face').getAttribute('href') : null,
           imgOk: n.querySelector('image.face') ? n.querySelector('image.face').getBBox().width > 0 : null }));
         const wantSide = p.side === 1 ? 'long' : p.side === -1 ? 'short' : 'none';
-        const wantDir = p.change_since_post == null ? 'none' : p.change_since_post > 0 ? 'up' : p.change_since_post < 0 ? 'down' : 'flat';
+        const mv = p.closed ? p.closed.move : p.change_since_post;   // closed: the move to the exit
+        const wantDir = mv == null ? 'none' : mv > 0 ? 'up' : mv < 0 ? 'down' : 'flat';
         bubbleChecks++;
         if (bub.side !== wantSide) fail(`${asset.name} ${id}: ring side ${bub.side}, record ${wantSide}`);
         if (bub.dir !== wantDir) fail(`${asset.name} ${id}: badge ${bub.dir}, record ${wantDir}`);

@@ -17,7 +17,7 @@ const liveUrl = arg('--url');
 const shotDir = arg('--screenshots') ? path.resolve(arg('--screenshots')) : null;
 const HORIZONS = ['1', '7', '30'];
 // plain status wording, mirrored from web/assets/common.js
-const statusLabel = p => p.status === 'resolved' ? 'all horizons in' : p.status === 'pending' ? 'no price yet' : p.status === 'no_entry' ? 'no price at post time'
+const statusLabel = p => p.status === 'closed' ? 'closed' : p.status === 'resolved' ? 'all horizons in' : p.status === 'pending' ? 'no price yet' : p.status === 'no_entry' ? 'no price at post time'
   : (h => h.length ? h.map(x => x + 'd').join(', ') + ' pending' : p.status)(['1', '7', '30'].filter(x => p.unresolved && p.unresolved[x]));
 const slug = (id, asset) => `${id.replace(/[^A-Za-z0-9_-]/g, '-')}_${asset.replace(/[^A-Za-z0-9_-]/g, '-')}`;
 
@@ -32,6 +32,7 @@ function bestOf(rec) {
   const p0 = rec.entry.price, side = rec.side;
   let top = null;
   for (const [at, pr] of rec.series) {
+    if (rec.closed && at > rec.closed.exit.at) break;   // a closed position counts only the bars while held
     const score = side ? side * (pr / p0 - 1) : pr;
     if (!top || score > top[0]) top = [score, at, pr];
   }
@@ -65,7 +66,7 @@ function serve() {
     args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-gpu'] });
   const fails = [], consoleErrors = [];
   const fail = m => fails.push(m);
-  let pages = 0, fields = 0, placements = 0, unresolved = 0;
+  let pages = 0, fields = 0, placements = 0, unresolved = 0, closedPages = 0;
   try {
     const page = await browser.newPage();
     page.on('console', m => { if (m.type() === 'error' || m.type() === 'warning') consoleErrors.push(`${page.url()} ${m.type()}: ${m.text()}`); });
@@ -147,6 +148,17 @@ function serve() {
         if (v == null) { unresolved++; if (ZERO.test(got.fields[prefix + h].text)) fail(`${tag}: unresolved ${prefix}${h} shows a zero`); }
       }
       if (!/^\d+(d \d+h|h \d+m|m) ago$/.test((got.fields.age || {}).text || '')) fail(`${tag}: age ${JSON.stringify((got.fields.age || {}).text)}`);
+      if (rec.closed) {
+        closedPages++;
+        const res = rec.side ? rec.closed.for_call : rec.closed.move, held = rec.change_since_post == null ? null : rec.side ? rec.side * rec.change_since_post : rec.change_since_post;
+        if (!got.fields.closed || JSON.stringify(got.fields.closed.raw) !== JSON.stringify(rec.closed)) fail(`${tag}: closed raw differs from the record`);
+        else if (!got.fields.closed.text.startsWith(pct(res))) fail(`${tag}: closed shows ${got.fields.closed.text}, realized ${pct(res)}`);
+        if (!got.fields.if_still_held || JSON.stringify(got.fields.if_still_held.raw) !== JSON.stringify(held) || !/not the result/.test(got.fields.if_still_held.text)) fail(`${tag}: if still held ${got.fields.if_still_held && got.fields.if_still_held.text}`);
+        if (!got.fields.header_result || got.fields.header_result.text !== pct(res)) fail(`${tag}: header shows ${got.fields.header_result && got.fields.header_result.text}, not the realized ${pct(res)}`);
+        if (!got.fields.closing_post) fail(`${tag}: no closing post`);
+        else if (rec.closed.by !== 'ledger' && !got.fields.closing_post.text.includes(rec.closed.stated_time || '')) fail(`${tag}: stated time missing`);
+        if (!got.fields.lifecycle) fail(`${tag}: no lifecycle timeline`);
+      } else if (got.fields.closed || got.fields.if_still_held) fail(`${tag}: closed rows on an open position`);
       fields++;
       if (!got.fields.url || got.fields.url.href !== rec.post.url) fail(`${tag}: x link ${got.fields.url && got.fields.url.href}`);
       if (got.fields.url && got.fields.url.text !== (rec.post.source === 'corbanu' ? 'read the article' : 'open on X')) fail(`${tag}: source link text ${got.fields.url.text}`);
@@ -190,7 +202,7 @@ function serve() {
   for (const e of consoleErrors) fail(`console: ${e}`);
   console.log(`page ${base}`);
   console.log(`position pages opened ${pages} (${pages / 2} posts x default + 1h), recap fields checked ${fields}, ` +
-    `entry-bubble placements checked ${placements}, unresolved cells ${unresolved}, console errors ${consoleErrors.length}`);
+    `entry-bubble placements checked ${placements}, unresolved cells ${unresolved}, closed position loads checked ${closedPages}, console errors ${consoleErrors.length}`);
   for (const f of fails) console.log(' -', f);
   console.log(fails.length ? `FAIL (${fails.length})` : 'ALL PASS');
   process.exit(fails.length ? 1 : 0);

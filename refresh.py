@@ -21,6 +21,7 @@ import os
 import sys
 
 import build_chart
+import lifecycle
 import resolve
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -33,8 +34,9 @@ def receipt_for(post_id):
 
 
 def frozen_bars(old):
-    """(time, price, what) for every value that must not change."""
-    out = []
+    """(time, price, what) for every value that must not change: entry, resolved exits, lifecycle
+    trims and closes."""
+    out = list(lifecycle.frozen_bars(old))
     if old.get("entry"):
         out.append((old["entry"]["at"], old["entry"]["price"], "entry"))
         for h in HORIZONS:
@@ -74,6 +76,7 @@ def main():
         seen[key] = rel
     olds.sort(key=lambda x: x[1]["post"]["posted_at"])      # earliest first: one fetch per asset
     prices = resolve.Prices()
+    life_cfg = lifecycle.load_config()
     revisions, changes, failures = [], [], []
     # One shared series per asset, with the frozen bars of ALL its records written back once, so
     # every record of an asset is resolved against the same bars and the chart line stays one line.
@@ -121,15 +124,26 @@ def main():
                 if k in old["asset"]:
                     asset[k] = old["asset"][k]
             new = resolve.resolve(post, asset, shared[asset["name"]], prices.label, old.get("side"))
+            until = prices.daily_until(asset, post["posted_at"])
+            resolve.label_daily(new, until)
             for k in ("trade", "asset_choice"):          # the ledger's own values and how the asset was chosen
                 if k in old:
                     new[k] = old[k]
+            key = f'{new["post"]["id"]}|{new["asset"]["name"]}'
+            if key in life_cfg:                           # follow-up posts: trims / closes / flips (step 13)
+                lifecycle.apply(new, life_cfg[key], shared[asset["name"]], until)
+            elif old.get("closed", {}).get("by") == "ledger":   # a Corbanu ledger exit stays as it was
+                new["lifecycle"], new["closed"], new["status"] = old["lifecycle"], old["closed"], "closed"
             resolve.check_record(v, new)
             problems = build_chart.record_problems(v, new)
             for t, p, what in frozen_bars(old):           # frozen values really are unchanged
-                key = "entry" if what == "entry" else what.split("d ")[0]
-                got = new["entry"] if key == "entry" else new["exits"].get(key)
-                if got != {"at": t, "price": p}:
+                if what.split(" ")[0] in ("trim", "close", "flip"):        # lifecycle bar: the same event, same bar
+                    pid = what.split(" ", 1)[1]
+                    got = next((ev.get("bar") for ev in (new.get("lifecycle") or {}).get("events", []) if ev["post"]["id"] == pid), None)
+                else:
+                    key = "entry" if what == "entry" else what.split("d ")[0]
+                    got = new["entry"] if key == "entry" else new["exits"].get(key)
+                if not got or (got["at"], got["price"]) != (t, p):   # labels like interval may be added
                     problems.append(f"frozen {what} changed: {got} != {t} {p}")
             if problems:
                 raise resolve.ResolveError("; ".join(problems))

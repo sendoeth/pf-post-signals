@@ -71,3 +71,10 @@ html[data-framed] body { display: none; }
 .ac-4 { background: #5b6475; color: #fff; }
 .ac-5 { background: #8a5a2b; color: #fff; }
 .static-list { line-height: 1.9; padding-left: 18px; }
+.closed-badge { font: 700 11px/1 ui-monospace, monospace; padding: 4px 6px; border-radius: 6px; background: var(--ink); color: var(--surface); vertical-align: 3px; }
+#exit-mark { position: absolute; width: 22px; height: 22px; margin: -11px 0 0 -11px; border-radius: 50%; background: var(--ink); color: var(--surface);
+  display: grid; place-items: center; font: 700 12px system-ui; box-shadow: 0 0 0 2px var(--surface); }
+.timeline { margin: 0; padding-left: 18px; font-size: 13px; }
+.timeline li { margin: 3px 0; }
+.timeline .why { color: var(--muted); }
+.timeline li[data-type="close"] strong, .timeline li[data-type="flip"] strong { color: var(--ink); }

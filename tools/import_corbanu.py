@@ -26,6 +26,12 @@ import resolve  # noqa: E402
 
 LEDGER = os.path.join(HERE, "sources", "corbanu", "portfolio_ledger.json")
 OUT = os.path.join(HERE, "records", "corbanu")
+import lifecycle  # noqa: E402
+
+
+def is_exit(e):
+    """A ledger exit: an explicit exit/close event, or a trade that takes the target weight to 0."""
+    return e.get("type") in ("exit", "close") or (e.get("type") == "trade" and not e.get("targetWeightPct"))
 SITE = "https://corbanu.com"
 ORCL_STAND_IN = {
     "for": "ORCLon (Ondo tokenized Oracle, Felix spot), the instrument in Corbanu's ledger",
@@ -43,8 +49,9 @@ def title_of(href):
     return first.strip().replace(" — Corbanu", "")
 
 
-def main():
-    with open(LEDGER, "rb") as f:
+def main(ledger_path=None, out_dir=None):
+    ledger_path, out_dir = ledger_path or LEDGER, out_dir or OUT
+    with open(ledger_path, "rb") as f:
         blob = f.read()
     ledger = json.loads(blob)
     ledger_sha = hashlib.sha256(blob).hexdigest()
@@ -53,9 +60,13 @@ def main():
         calls = json.load(f)
     pair_of = {c["call_id"]: c.get("pair_id") for c in (calls["calls"] if isinstance(calls, dict) else calls)}
     v, prices, n = resolve.validator(), resolve.Prices(), 0
-    os.makedirs(OUT, exist_ok=True)
+    os.makedirs(out_dir, exist_ok=True)
+    exits = {}
     for e in sorted(ledger["events"], key=lambda e: (e["at"], e["id"])):
-        if e["type"] != "trade":
+        if is_exit(e):
+            exits[e["positionId"]] = e        # the latest exit of each position closes all its legs
+    for e in sorted(ledger["events"], key=lambda e: (e["at"], e["id"])):
+        if e["type"] != "trade" or is_exit(e):
             continue
         pos = positions[e["positionId"]]
         symbol = pos["symbol"]
@@ -75,8 +86,11 @@ def main():
                         "venue": pos.get("venue", ""), "pair_id": pair_of.get(e["id"]), "ledger_sha256": ledger_sha}
         rec["asset_choice"] = {"method": "ledger", "terms": [symbol],
                                "reason": "instrument named in Corbanu's published ledger" + ("; priced via stand-in (see asset.stand_in)" if symbol == "ORCLon" else "")}
+        x = exits.get(e["positionId"])
+        if x and x["at"] > e["at"]:
+            lifecycle.ledger_close(rec, x, prices.series(asset, post["posted_at"]))
         resolve.check_record(v, rec)
-        path = os.path.join(OUT, f"{e['id']}_{asset['name'].replace(':', '-')}.json")
+        path = os.path.join(out_dir, f"{e['id']}_{asset['name'].replace(':', '-')}.json")
         with open(path, "w") as f:
             json.dump(rec, f, indent=1, ensure_ascii=False)
             f.write("\n")
@@ -84,9 +98,12 @@ def main():
         en = rec["entry"]
         print(f"{e['id']:<12} {asset['name']:<11} {'long ' if side > 0 else 'short'} ref {e['price']} @ {e['at'][:16]} -> "
               f"entry {en['price'] if en else '-'} @ {en['at'][:16] if en else '-'}; for the call {resolve.pct(side * rec['change_since_post']) if rec['change_since_post'] is not None else 'unresolved'}"
-              + ("  [stand-in xyz:ORCL for ORCLon]" if symbol == "ORCLon" else ""))
-    print(f"{n} Corbanu trades imported from {os.path.relpath(LEDGER, HERE)} (sha256 {ledger_sha}) -> {os.path.relpath(OUT, HERE)}")
+              + ("  [stand-in xyz:ORCL for ORCLon]" if symbol == "ORCLon" else "")
+              + (f"  CLOSED by ledger exit at {rec['closed']['exit']['price']} @ {rec['closed']['exit']['at'][:16]}: realized {resolve.pct(rec['closed']['for_call'])}" if rec.get("closed") else ""))
+    print(f"{n} Corbanu trades imported from {os.path.relpath(ledger_path, HERE)} (sha256 {ledger_sha}) -> {os.path.relpath(out_dir, HERE)}; "
+          f"ledger exits: {len(exits)}" + (" (" + ", ".join(f"{k} at {x['at']}" for k, x in exits.items()) + ")" if exits else ""))
 
 
 if __name__ == "__main__":
-    main()
+    a = sys.argv
+    main(a[a.index("--ledger") + 1] if "--ledger" in a else None, a[a.index("--out") + 1] if "--out" in a else None)

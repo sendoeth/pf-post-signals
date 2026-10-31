@@ -343,6 +343,29 @@ position page. A stats strip (positions, share in profit, average return, best c
 - `tests/test_static.py` (also in CI) parses the pages without running scripts and compares them with the bundle,
   including the hostile fixtures; `tests/board_test.js` fetches the raw HTML and checks it against its own ranking.
 
+## Step 13: closing calls
+
+A position now has a lifecycle. `data/lifecycle.json` lists the author's follow-up posts about it (receipts in
+`sources/<author>/receipts`); `classify.py` decides each one and `lifecycle.py` applies it inside the daily refresh:
+
+- **close** (explicit exit: "rotated out of", "sold all", "closed", "exited", "out of", "covered", "stopped out") and
+  **flip** ("now short"): exit = first bar at or after the follow-up post; the realized return is frozen in
+  `closed` and the status becomes **closed**. A stated earlier time ("last week") is recorded, never used.
+- **trim** ("sold a clip", "took some profits"): priced and recorded, the position stays open.
+- **review** (hints: "trailing stops", "lightened up", "de-risking") and **not a close** (advice to others such as
+  "afford yourself some profit taking", or no exit words): recorded, nothing changes. A reviewed override needs a reason.
+- Corbanu: a ledger exit event (or a trade to 0% weight) closes the position automatically (`tools/import_corbanu.py`,
+  tested with `tests/fixtures/corbanu_ledger_with_exit.json`; the live ledger has no exits yet).
+- Pages: closed positions rank and aggregate by their realized return; the current price appears only as
+  "if still held"; best since post stops at the exit; a status filter (open / closed) on the leaderboard; the
+  position page shows the closing post, an exit marker and the lifecycle timeline.
+- History older than Yahoo's hourly window (about 730 days) uses daily bars, labelled `interval: "1d"`.
+
+Worked example (BobLoukas, silver): opened 2024-04-05 ("loaded to the gills"), trim 2025-10-19, review 2025-12-26
+("trailing stops"), close 2026-01-09 ("rotated out of silver last week"): **+188.17%** realized at 80.125; the
+2026-01-23 "$100 silver ... afford yourself some profit taking" is advice, not a close. Silver later peaked at $121.30
+(2026-01-29); if still held today: +76.71%.
+
 ## Reproduce
 
 ```bash

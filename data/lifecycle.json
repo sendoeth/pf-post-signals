@@ -1,0 +1,11 @@
+{
+ "schema": "pf-post-signals.lifecycle.v1",
+ "note": "Follow-up posts by the same author about an open position (post id|asset). classify.py decides each one; an override needs a reason and is shown as reviewed. Receipts for every listed post live in sources/<author>/receipts.",
+ "positions": {
+  "1776235528741937435|SILVER": {
+   "context": "BobLoukas long silver: 'Built a position over last few months ... Loaded to the gills' (2024-04-05); 2024-03-07 'Starting to build a sizable Silver position' is earlier context",
+   "followups": ["1979978358214774957", "2004636831774871803", "2009654117799739530", "2014728061996896651"],
+   "overrides": {}
+  }
+ }
+}

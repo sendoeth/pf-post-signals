@@ -35,6 +35,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 SCHEMA_PATH = os.path.join(HERE, "schema", "post_price.v1.json")
 HORIZONS = (1, 7, 30)
 MAX_LAG_DAYS = 2
+YAHOO_HOURLY_DAYS = 725
 # Fri 20:00 UTC close -> Tue 13:30 UTC open after a Monday holiday is 3.73 days; a longer gap means
 # missing data, not a closed market, and stays unresolved.
 EXCHANGE_HOURS_LAG_DAYS = 4
@@ -216,17 +217,53 @@ def fetch_series(asset, since):
                 break
             ms = rows[-1][0] + 3_600_000
         return out
-    p1 = int((start - dt.timedelta(days=1)).timestamp())
-    p2 = int(dt.datetime.now(dt.timezone.utc).timestamp())
+    return [b[:2] for b in yahoo_bars(asset["symbol"], start)]
+
+
+def yahoo_hourly_from():
+    """Yahoo serves hourly bars for roughly the last 730 days; older history comes from daily bars."""
+    now = dt.datetime.now(dt.timezone.utc).replace(minute=0, second=0, microsecond=0)
+    return now - dt.timedelta(days=YAHOO_HOURLY_DAYS)
+
+
+def yahoo_chart(symbol, p1, p2, interval):
     try:
-        res = get_json(f"https://query1.finance.yahoo.com/v8/finance/chart/{asset['symbol']}"
-                       f"?period1={p1}&period2={p2}&interval=1h")["chart"]["result"]
+        res = get_json(f"https://query1.finance.yahoo.com/v8/finance/chart/{symbol}"
+                       f"?period1={int(p1.timestamp())}&period2={int(p2.timestamp())}&interval={interval}")["chart"]["result"]
     except urllib.error.HTTPError as e:
-        raise UnknownAssetError(f"no yahoo data for {asset['symbol']} (HTTP {e.code})") from e
+        raise UnknownAssetError(f"no yahoo data for {symbol} (HTTP {e.code})") from e
     if not res or not res[0].get("timestamp"):
-        raise UnknownAssetError(f"no yahoo data for {asset['symbol']}")
-    opens = res[0]["indicators"]["quote"][0]["open"]
-    return [[iso(t), round(o, 4)] for t, o in zip(res[0]["timestamp"], opens) if o is not None]
+        return []
+    q = res[0]["indicators"]["quote"][0]
+    return [[iso(t), round(o, 4), round(h, 4), round(lo, 4), round(c, 4)]
+            for t, o, h, lo, c in zip(res[0]["timestamp"], q["open"], q["high"], q["low"], q["close"]) if None not in (o, h, lo, c)]
+
+
+def yahoo_bars(symbol, start):
+    """[iso, open, high, low, close] bars from `start`: daily bars before the hourly window, hourly
+    after it. Callers label bars before daily_until() as daily."""
+    now = dt.datetime.now(dt.timezone.utc)
+    cutoff = yahoo_hourly_from()
+    bars = []
+    if start < cutoff:
+        bars += [b for b in yahoo_chart(symbol, start - dt.timedelta(days=1), cutoff, "1d") if b[0] < iso(cutoff.timestamp())]
+    bars += yahoo_chart(symbol, max(start, cutoff) - dt.timedelta(days=1), now, "1h")
+    if not bars:
+        raise UnknownAssetError(f"no yahoo data for {symbol}")
+    out, seen = [], set()
+    for b in sorted(bars):
+        if b[0] not in seen:
+            seen.add(b[0])
+            out.append(b)
+    return out
+
+
+def daily_until(asset, since):
+    """The time before which this asset's series is made of daily bars (None: hourly throughout)."""
+    if asset["source"] != "yahoo":
+        return None
+    cutoff = yahoo_hourly_from()
+    return iso(cutoff.timestamp()) if parse(since) < cutoff else None
 
 
 class Prices:
@@ -239,6 +276,12 @@ class Prices:
             with open(snapshot) as f:
                 self.snapshot = json.load(f)
         self.cache = {}
+
+    def daily_until(self, asset, since):
+        if self.snapshot is not None:
+            return None
+        hit = self.cache.get(asset["name"])
+        return daily_until(asset, hit[0] if hit else since)
 
     def series(self, asset, since):
         if self.snapshot is not None:
@@ -261,6 +304,18 @@ def bar_at_or_after(series, when, times=None):
 def lag_limit(asset):
     """Days a bar may lag its target time: 2 for 24/7 crypto, 4 for exchange-hours assets."""
     return EXCHANGE_HOURS_LAG_DAYS if asset["source"] == "yahoo" else MAX_LAG_DAYS
+
+
+def label_daily(rec, until):
+    """Mark every bar the record shows that comes from a daily bar (before `until`)."""
+    if not until:
+        return rec
+    rec["resolved_with"]["daily_until"] = until
+    bars = [rec.get("entry"), rec.get("latest")] + list(rec.get("exits", {}).values())
+    for b in bars:
+        if b and b["at"] < until:
+            b["interval"] = "1d"
+    return rec
 
 
 def resolve(post, asset, series, prices_label, side=None):
@@ -350,7 +405,8 @@ def run(items, prices, out_dir=None, v=None):
             if key in seen:
                 raise DuplicatePostError(f"duplicate post {post['id']} for {asset['name']} (item {n}), kept the first")
             seen.add(key)
-            rec = resolve(post, asset, prices.series(asset, post["posted_at"]), prices.label, side_of(it.get("side")))
+            rec = label_daily(resolve(post, asset, prices.series(asset, post["posted_at"]), prices.label, side_of(it.get("side"))),
+                              prices.daily_until(asset, post["posted_at"]))
             if it.get("asset_choice"):
                 rec["asset_choice"] = it["asset_choice"]
             check_record(v, rec)
