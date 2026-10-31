@@ -49,8 +49,10 @@ import scan_caller  # noqa: E402
 VERSION = "quanty.context.v1"
 GLOAT = re.compile(r"\b(?:did (?:you|u) fade|who faded|still fading|told (?:you|ya|u)|called it|you'?re welcome|as i said|i said\b.*\b(?:long|short|buy)|"
                    r"hope you (?:listened|didn'?t fade|bought)|reminder that i)\b", re.I)
-HOLD = re.compile(r"\b(?:still (?:long|holding|in|bullish|bearish|short)|holding (?:my|it|strong)|not selling|haven'?t sold|"
-                  r"added (?:more|some)|bought more|buying more|adding (?:more|here)|diamond hands)\b", re.I)
+HOLD = re.compile(r"\b(?:still (?:long|holding|in|bullish|bearish|short)|(?:i'?m|i am|we'?re|we are) (?:still )?holding|holding (?:my|our)\b|"
+                  r"(?:i|we) (?:do not|don'?t|never|will not|won'?t) sell|not selling|haven'?t sold|(?:i'?ll|we'?ll|i will|we will|i am going to|i'?m going to|we are going to) (?:buy|bid)|"
+                  r"(?:i|we) (?:added|bought) (?:more|some)|bought more|buying more|adding (?:more|here)|diamond hands|"
+                  r"(?:i|we) (?:sold|swapped|rotated|traded) [\w$ ]{1,25}? (?:to buy|for|into)\b)", re.I)
 # coin / fund names for assets the asset map does not cover, by base symbol
 ALIASES = {"ZEC": ["zec", "zcash"], "XMR": ["xmr", "monero"], "HYPE": ["hype", "hyperliquid"], "SUI": ["sui"], "TAO": ["tao", "bittensor"],
            "DOGE": ["doge", "dogecoin"], "XRP": ["xrp", "ripple"], "AVAX": ["avax", "avalanche"], "LINK": ["link", "chainlink"],
@@ -98,6 +100,12 @@ def label_after(p, author, words, side):
     flips = [m for m in re.finditer(classify.FLIP[0], text, re.I)]
     if flips and side in (1, -1) and {m.group(1).lower() for m in flips} == {"short" if side == 1 else "long"}:
         return "flip", "states the opposite side", [m.group(0) for m in flips]
+    swap = re.search(r"\b(?:sold|swapped|rotated|traded) [\w$ ]{1,25}? (?:to buy|for|into) \$?(\w+)", text, re.I)
+    if swap and swap.group(1).lower() in words:
+        return "hold", f"sold something else to buy more of it ('{swap.group(0)}')", [swap.group(0)]
+    out_of = re.search(r"\b(?:sold|swapped|rotated out of|dumped|exited) (?:all (?:of )?)?(?:my |our )?\$?(\w+)", text, re.I)
+    if out_of and out_of.group(1).lower() in words:
+        return "close", f"sold this asset ('{out_of.group(0)}')", [out_of.group(0)]
     if find(classify.CLOSE):
         return "close", "explicit exit of the author's own position", find(classify.CLOSE)[:3]
     if find(classify.TRIM):
@@ -219,20 +227,7 @@ def analyse(url, root=HERE, asset=None, days=90, fetch=None, harness=scan_caller
             continue
         rows_a.append({"id": p["id"], "url": f"https://x.com/{p['authorHandle']}/status/{p['id']}", "posted_at": at, "kind": p.get("kind"),
                        "label": lab, "why": why, "words": terms, "text": " ".join((p.get("text") or "").split())[:280], "_raw": p})
-    closes = [r for r in rows_a if r["label"] in ("close", "flip")]
-    trims = [r for r in rows_a if r["label"] == "trim"]
-    holds = [r for r in rows_a if r["label"] == "hold"]
-    if closes:
-        state = f"closed: {closes[0]['label']} on {closes[0]['posted_at'][:10]} ({', '.join(closes[0]['words'])})"
-    elif holds:
-        state = f"open: still holding as of {holds[-1]['posted_at'][:10]}" + (f" (trimmed {len(trims)}x)" if trims else "")
-    elif trims:
-        state = f"open: trimmed {len(trims)}x, no close"
-    else:
-        state = "open: nothing disclosed after the call"
-    gaps = [w for w in after["coverage"] if w["status"] in ("not searched", "error")]
-    if gaps and not closes:
-        state += f" (INCOMPLETE: {len(gaps)} window(s) from {gaps[0]['since']} not searched, rerun later)"
+    state = state_of(rows_a, after["coverage"])
     out = {"version": VERSION, "url": receipt["url"], "post_id": receipt["id"], "author": author, "posted_at": post_at, "text": receipt.get("text"),
            "asset": info["name"], "words": words, "analysed_at": now or dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
            "victory_lap": gloat.group(0) if gloat else None, "side_in_post": side_here["side"],
@@ -293,6 +288,51 @@ def load(post_id, root=HERE, max_age_h=12):
     c["_raw_after"] = c.get("after_raw", {})
     c["file"] = os.path.relpath(path, root)
     return c, sha
+
+
+def relabel(c, root=HERE):
+    """Recompute the after-labels and the state from the saved posts (no search): for improved rules."""
+    side, start = c.get("side"), (c.get("suggested_call") or {"posted_at": c["posted_at"]})["posted_at"]
+    rows, others = [], 0
+    for p in sorted(c.get("after_raw", {}).values(), key=lambda p: p["postedAt"]):
+        at = p["postedAt"][:19] + "Z"
+        if at <= start or not mentions(p.get("text"), c["words"]):
+            continue
+        lab, why, terms = label_after(p, c["author"], c["words"], side)
+        if lab == "not theirs":
+            others += 1
+            continue
+        rows.append({"id": p["id"], "url": f"https://x.com/{p['authorHandle']}/status/{p['id']}", "posted_at": at, "kind": p.get("kind"),
+                     "label": lab, "why": why, "words": terms, "text": " ".join((p.get("text") or "").split())[:280]})
+    c["after"], c["others_after"] = rows, others
+    c["state"] = state_of(rows, c["searches"][1]["coverage"])
+    c["relabelled_at"] = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    path = os.path.join(root, "intake", "context", f"{c['post_id']}.json")
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w") as f:
+        json.dump({k: v for k, v in c.items() if not k.startswith("_") and k != "file"}, f, indent=1, ensure_ascii=False)
+        f.write("\n")
+    with open(path[:-5] + ".md", "w") as f:
+        f.write(to_md(c))
+    return c
+
+
+def state_of(rows, coverage):
+    closes = [r for r in rows if r["label"] in ("close", "flip")]
+    trims = [r for r in rows if r["label"] == "trim"]
+    holds = [r for r in rows if r["label"] == "hold"]
+    if closes:
+        state = f"closed: {closes[0]['label']} on {closes[0]['posted_at'][:10]} ({', '.join(closes[0]['words'])})"
+    elif holds:
+        state = f"open: still holding as of {holds[-1]['posted_at'][:10]}" + (f" (trimmed {len(trims)}x)" if trims else "")
+    elif trims:
+        state = f"open: trimmed {len(trims)}x, no close"
+    else:
+        state = "open: nothing disclosed after the call"
+    gaps = [w for w in coverage if w["status"] in ("not searched", "error")]
+    if gaps and not closes:
+        state += f" (INCOMPLETE: {len(gaps)} window(s) from {gaps[0]['since']} not searched, rerun later)"
+    return state
 
 
 def summary(c):
@@ -380,9 +420,18 @@ def main():
     ap.add_argument("--apply", action="store_true", help="write the follow-ups into data/lifecycle.json for the recorded call")
     ap.add_argument("--record-post", help="the recorded call's post id (default: the suggested original, else this post)")
     ap.add_argument("--reuse", action="store_true", help="use this post's context file from the last 12 hours (never searches again: fails if there is none)")
+    ap.add_argument("--relabel", action="store_true", help="recompute the after-labels from this post's saved context (no search) and save them")
     ap.add_argument("--expect-sha", help="with --reuse: the context file must still have this sha256 (the version that was reviewed)")
     a = ap.parse_args()
     m = resolve.URL_RE.match(a.url or "")
+    if a.relabel:
+        c, _ = load(m.group(2), max_age_h=24 * 365) if m else (None, None)
+        if not c:
+            raise SystemExit("no context file for this post to relabel")
+        c = relabel(c)
+        print(summary(c))
+        print(f"relabelled intake/context/{c['post_id']}.json (no search)")
+        return
     if a.expect_sha and not a.reuse:
         raise SystemExit("--expect-sha only works with --reuse (nothing applied)")
     if a.reuse:

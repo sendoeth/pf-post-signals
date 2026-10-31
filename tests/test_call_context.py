@@ -119,6 +119,35 @@ class After(Scratch):
         self.assertTrue(any(w["status"] == "not searched" for w in c["searches"][1]["coverage"]))
 
 
+class HoldWords(unittest.TestCase):
+    """Mert's real phrasing: first-person position statements are holds; a slogan is not."""
+    def label(self, text):
+        return call_context.label_after({"authorHandle": "mert", "text": text, "kind": "post"}, "mert", ["zec", "zcash"], 1)[0]
+
+    def test_holds(self):
+        for t in ("zero, i do not sell zec", "i am going to bid the living shit out of zec and sol", "I sold him to buy zec",
+                  "hello scott, nice to meet you, I sold my Bitcoin to buy Zcash", "Ill buy as much ZEC as you have rn", "still holding my zec"):
+            self.assertEqual(self.label(t), "hold", t)
+
+    def test_not_holds(self):
+        self.assertEqual(self.label("bitcoin liberated money zcash liberates the person holding it"), "mention")
+        self.assertEqual(self.label("I sold all my zec today"), "close")
+        self.assertEqual(self.label("sold my zec for sol"), "close")       # selling THIS asset is an exit, not a hold
+
+    def test_relabel_uses_the_saved_posts(self):
+        c = {"post_id": "1", "posted_at": "2025-09-29T00:00:00Z", "author": "mert", "words": ["zec"], "side": 1, "suggested_call": None,
+             "searches": [{"query": "q1", "posts": 0, "searches": 1, "coverage": [], "error": None},
+                          {"query": "q2", "posts": 1, "searches": 1, "coverage": [{"since": "2025-09-29", "until": "2026-11-01", "status": "done"}], "error": None}], "url": "u", "asset": "binance:ZECUSDT", "text": "t", "victory_lap": None, "before": [],
+             "after_raw": {"9": {"id": "9", "authorHandle": "mert", "postedAt": "2026-01-08T10:00:00.000Z", "text": "zero, i do not sell zec", "kind": "post"}}}
+        tmp = tempfile.mkdtemp()
+        try:
+            out = call_context.relabel(c, root=tmp)
+            self.assertEqual(out["state"], "open: still holding as of 2026-01-08")
+            self.assertTrue(os.path.exists(os.path.join(tmp, "intake", "context", "1.json")))
+        finally:
+            shutil.rmtree(tmp)
+
+
 class Apply(Scratch):
     def test_close_is_written_and_the_record_closes(self):
         rec_path = os.path.join(self.root, "records", "posts", "1970742039722479782_binance-ZECUSDT.json")

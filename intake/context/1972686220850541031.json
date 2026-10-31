@@ -1,0 +1,1948 @@
+{
+ "version": "quanty.context.v1",
+ "url": "https://x.com/mert/status/1972686220850541031",
+ "post_id": "1972686220850541031",
+ "author": "mert",
+ "posted_at": "2025-09-29T15:33:40Z",
+ "text": "did you fade",
+ "asset": "binance:ZECUSDT",
+ "words": [
+  "zec",
+  "zcash"
+ ],
+ "analysed_at": "2026-10-31T18:44:38Z",
+ "victory_lap": "did you fade",
+ "side_in_post": null,
+ "searches": [
+  {
+   "query": "from:mert (zec OR zcash) since:2025-07-01 until:2025-09-30",
+   "posts": 40,
+   "searches": 4,
+   "coverage": [
+    {
+     "since": "2025-07-01",
+     "until": "2025-07-31",
+     "status": "done",
+     "posts": 0
+    },
+    {
+     "since": "2025-07-31",
+     "until": "2025-08-30",
+     "status": "done",
+     "posts": 0
+    },
+    {
+     "since": "2025-08-30",
+     "until": "2025-09-29",
+     "status": "done",
+     "posts": 38,
+     "run": "2026-10-31T18-43-34Z",
+     "manifest_sha256": "eb9953559b3e6931acfc2c3f2d7fd22bee20227f3281b0316caf3be9cb7ff589"
+    },
+    {
+     "since": "2025-09-29",
+     "until": "2025-09-30",
+     "status": "done",
+     "posts": 8,
+     "run": "2026-10-31T18-43-43Z",
+     "manifest_sha256": "67e675c510bdbb59e91635e559f4eac06e9b53fadf8809c136ec19e44df0fc0e"
+    }
+   ],
+   "error": null
+  },
+  {
+   "query": "from:mert (zec OR zcash) (sold OR sell OR selling OR exited OR closed OR \"took profit\" OR \"took profits\" OR \"taking profit\" OR profits OR trimmed OR \"out of\" OR rotated OR \"stopped out\" OR holding OR \"still long\" OR \"still holding\" OR \"bought more\" OR added OR flipped OR short) since:2025-09-29 until:2026-11-01",
+   "posts": 76,
+   "searches": 7,
+   "coverage": [
+    {
+     "since": "2025-09-29",
+     "until": "2025-11-28",
+     "status": "done",
+     "posts": 23,
+     "run": "2026-10-31T18-43-50Z",
+     "manifest_sha256": "a827750889a84a6555b77d292cabbf555e7f303d555153e82a72d733ae34f701"
+    },
+    {
+     "since": "2025-11-28",
+     "until": "2026-01-27",
+     "status": "done",
+     "posts": 25,
+     "run": "2026-10-31T18-43-57Z",
+     "manifest_sha256": "268368af6f18af1ab74ed67a27c2d4c06adf6e905bb5de5db3fd70c7e8668b30"
+    },
+    {
+     "since": "2026-01-27",
+     "until": "2026-03-28",
+     "status": "done",
+     "posts": 8,
+     "run": "2026-10-31T18-44-06Z",
+     "manifest_sha256": "043fac5c2ff781bcba90cce0b90b8089e94b17222cd9f8689080e9919012bbcb"
+    },
+    {
+     "since": "2026-03-28",
+     "until": "2026-05-27",
+     "status": "done",
+     "posts": 2,
+     "run": "2026-10-31T18-44-12Z",
+     "manifest_sha256": "9fed21f617b6557a5812488275419aeb1a77847f6537e494b5026d5aa8f3fd38"
+    },
+    {
+     "since": "2026-05-27",
+     "until": "2026-07-26",
+     "status": "done",
+     "posts": 17,
+     "run": "2026-10-31T18-44-19Z",
+     "manifest_sha256": "4a64f155a1a668779ae61ee4e1acd2ba462a18546e1cb802feb35aa0cfc9d36c"
+    },
+    {
+     "since": "2026-07-26",
+     "until": "2026-09-24",
+     "status": "done",
+     "posts": 3,
+     "run": "2026-10-31T18-44-26Z",
+     "manifest_sha256": "1bc7c3892450ddfd94749ddfdcd7cd71b49091fa61e99e51bc748ad52f8fca44"
+    },
+    {
+     "since": "2026-09-24",
+     "until": "2026-11-01",
+     "status": "done",
+     "posts": 1,
+     "run": "2026-10-31T18-44-32Z",
+     "manifest_sha256": "d6e7c60fd197f4f949da5cf4268bc710fb15cdec5ae985511a8814ebc31c49ea"
+    }
+   ],
+   "error": null
+  }
+ ],
+ "before": [
+  {
+   "id": "1961483057875083508",
+   "url": "https://x.com/ShieldedLabs/status/1961483057875083508",
+   "posted_at": "2025-08-29T17:36:18Z",
+   "kind": null,
+   "label": "not theirs",
+   "why": "by @ShieldedLabs",
+   "side": null,
+   "words": [
+    "zcash"
+   ],
+   "text": "Zcash is now the fundamental privacy layer for all of crypto."
+  },
+  {
+   "id": "1961589534551916974",
+   "url": "https://x.com/mert/status/1961589534551916974",
+   "posted_at": "2025-08-30T00:39:24Z",
+   "kind": "repost",
+   "label": "not theirs",
+   "why": "a repost of someone else's post",
+   "side": null,
+   "words": [
+    "zcash"
+   ],
+   "text": "Zcash is now the fundamental privacy layer for all of crypto."
+  },
+  {
+   "id": "1961778143053664333",
+   "url": "https://x.com/mert/status/1961778143053664333",
+   "posted_at": "2025-08-30T13:08:52Z",
+   "kind": "post",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "zec",
+    "zcash"
+   ],
+   "text": "just this past week: - tornado cash equivalent now on solana with @theprivacycash - you can swap between ZEC (zcash) and SOL with Zashi - Solana donated 500k to Roman and Alexey defense Privacy/acc"
+  },
+  {
+   "id": "1962219394773201384",
+   "url": "https://x.com/mert/status/1962219394773201384",
+   "posted_at": "2025-08-31T18:22:14Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "zec",
+    "zcash"
+   ],
+   "text": "my current routine is something like: - trade on Solana - stake SOL - take some profits and bridge them to Zcash via Zashi wallet and NEAR - shield the money via shielded ZEC Basically treat it as insurance"
+  },
+  {
+   "id": "1963633646868312103",
+   "url": "https://x.com/mert/status/1963633646868312103",
+   "posted_at": "2025-09-04T16:01:58Z",
+   "kind": "post",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "zec"
+   ],
+   "text": "the most legit benefit of a treasury company (DAT) is that you can increase exposure to the asset most investors (institutional) aren't allowed to buy privacy coins directly so a privacy coin focused DAT (i.e for ZEC) seems like it'd make a lot of sense"
+  },
+  {
+   "id": "1964233825774432725",
+   "url": "https://x.com/mert/status/1964233825774432725",
+   "posted_at": "2025-09-06T07:46:52Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "zcash"
+   ],
+   "text": "No zcash"
+  },
+  {
+   "id": "1964375633779134697",
+   "url": "https://x.com/mert/status/1964375633779134697",
+   "posted_at": "2025-09-06T17:10:22Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "zcash"
+   ],
+   "text": "Sounds like someone in crypto for the right reasons Im also shilling zcash and will continue to do so Roughly nothing more important than privacy in crypto atm"
+  },
+  {
+   "id": "1964452833128010131",
+   "url": "https://x.com/mert/status/1964452833128010131",
+   "posted_at": "2025-09-06T22:17:07Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "zec"
+   ],
+   "text": "What i do: - buy ZEC (shield it) - swap between ZEC and SOL using Zashi wallet - @theprivacycash on SOL - payy for stable spending"
+  },
+  {
+   "id": "1964652805924454710",
+   "url": "https://x.com/mert/status/1964652805924454710",
+   "posted_at": "2025-09-07T11:31:45Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "zec"
+   ],
+   "text": "do yourself a favor get @zashi_app on mobile and start playing around with $ZEC"
+  },
+  {
+   "id": "1964739299758453066",
+   "url": "https://x.com/mert/status/1964739299758453066",
+   "posted_at": "2025-09-07T17:15:26Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "zec"
+   ],
+   "text": "xmr is ring sigs, zec is zk satoshi is talking about zk in this post"
+  },
+  {
+   "id": "1964775028018548843",
+   "url": "https://x.com/mert/status/1964775028018548843",
+   "posted_at": "2025-09-07T19:37:25Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "zcash"
+   ],
+   "text": "Just get zcash"
+  },
+  {
+   "id": "1964982146160087212",
+   "url": "https://x.com/mert/status/1964982146160087212",
+   "posted_at": "2025-09-08T09:20:25Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "zcash"
+   ],
+   "text": "Zcash Monero uses ring signatures, zcash uses zk Satoshi is talking about zk here"
+  },
+  {
+   "id": "1965568093507461176",
+   "url": "https://x.com/mert/status/1965568093507461176",
+   "posted_at": "2025-09-10T00:08:46Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "zec"
+   ],
+   "text": "add zec boss"
+  },
+  {
+   "id": "1965570189921321236",
+   "url": "https://x.com/mert/status/1965570189921321236",
+   "posted_at": "2025-09-10T00:17:06Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "zec"
+   ],
+   "text": "you can already do that on other chains the appeal of ZEC is that it itself *is* encrypted btc (i.e SoV)"
+  },
+  {
+   "id": "1965887173216907665",
+   "url": "https://x.com/sacha/status/1965887173216907665",
+   "posted_at": "2025-09-10T21:16:41Z",
+   "kind": null,
+   "label": "not theirs",
+   "why": "by @sacha",
+   "side": null,
+   "words": [
+    "zec"
+   ],
+   "text": "bought some zec (and will buy more if it corrects more) apart from the fundamentals improving drastically over the last year (from a UX, organizational, and shielded pool adoption front) it feels like there's finally a meaningful vibe shift underway (fuelled by a new crop of"
+  },
+  {
+   "id": "1966105630428581958",
+   "url": "https://x.com/mert/status/1966105630428581958",
+   "posted_at": "2025-09-11T11:44:45Z",
+   "kind": "repost",
+   "label": "not theirs",
+   "why": "a repost of someone else's post",
+   "side": null,
+   "words": [
+    "zec",
+    "zcash"
+   ],
+   "text": "bought some zec (and will buy more if it corrects more) apart from the fundamentals improving drastically over the last year (from a UX, organizational, and shielded pool adoption front) it feels like there's finally a meaningful vibe shift underway (fuelled by a new crop of youn"
+  },
+  {
+   "id": "1966558804641788224",
+   "url": "https://x.com/mert/status/1966558804641788224",
+   "posted_at": "2025-09-12T17:45:30Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "zcash"
+   ],
+   "text": "if you don't want staking to be too accessible, you should adjust the yield, not the lockup and the zcash privacy model is bimodal anyway right? if you want to privacy-max, you would shield your stuff and never unshield it, even for staking and if you're not privacy maxing, then "
+  },
+  {
+   "id": "1966610156277436880",
+   "url": "https://x.com/mert/status/1966610156277436880",
+   "posted_at": "2025-09-12T21:09:33Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "zec",
+    "zcash"
+   ],
+   "text": "thanks! if I'm to reiterate what you said more succinctly, basically: - PoS is used for finality only (unlike other networks) - staking requires unshielding and hence decreases privacy and so you want to minimize stake/unstake txns - you want people who don't plan on selling to e"
+  },
+  {
+   "id": "1967870393517322622",
+   "url": "https://x.com/roommatemusing/status/1967870393517322622",
+   "posted_at": "2025-09-16T08:37:17Z",
+   "kind": null,
+   "label": "not theirs",
+   "why": "by @roommatemusing",
+   "side": null,
+   "words": [
+    "zec",
+    "zcash"
+   ],
+   "text": "I used Zashi to anonymously pay for something over the Internet today. Shielded $ZEC -> USDT on Tron network. Used the Near Intents integration. Undoubtedly felt like PMF to me. This functionality should be table stakes for any Zcash-focused wallet."
+  },
+  {
+   "id": "1968007985629892912",
+   "url": "https://x.com/mert/status/1968007985629892912",
+   "posted_at": "2025-09-16T17:44:02Z",
+   "kind": "repost",
+   "label": "not theirs",
+   "why": "a repost of someone else's post",
+   "side": null,
+   "words": [
+    "zec",
+    "zcash"
+   ],
+   "text": "I used Zashi to anonymously pay for something over the Internet today. Shielded $ZEC -> USDT on Tron network. Used the Near Intents integration. Undoubtedly felt like PMF to me. This functionality should be table stakes for any Zcash-focused wallet."
+  },
+  {
+   "id": "1968626621935386976",
+   "url": "https://x.com/mert/status/1968626621935386976",
+   "posted_at": "2025-09-18T10:42:16Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "zec"
+   ],
+   "text": "> download zashi > send zec there > shield > you are now undetectable"
+  },
+  {
+   "id": "1968634895250465089",
+   "url": "https://x.com/mert/status/1968634895250465089",
+   "posted_at": "2025-09-18T11:15:09Z",
+   "kind": "quote",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "zcash"
+   ],
+   "text": "bitcoin = http zcash = https"
+  },
+  {
+   "id": "1968651945565982740",
+   "url": "https://x.com/gainzy222/status/1968651945565982740",
+   "posted_at": "2025-09-18T12:22:54Z",
+   "kind": null,
+   "label": "not theirs",
+   "why": "by @gainzy222",
+   "side": null,
+   "words": [
+    "zec"
+   ],
+   "text": "zec season it’s so due man"
+  },
+  {
+   "id": "1968662906221862948",
+   "url": "https://x.com/mert/status/1968662906221862948",
+   "posted_at": "2025-09-18T13:06:27Z",
+   "kind": "repost",
+   "label": "not theirs",
+   "why": "a repost of someone else's post",
+   "side": null,
+   "words": [
+    "zec"
+   ],
+   "text": "zec season it’s so due man"
+  },
+  {
+   "id": "1969353354670145843",
+   "url": "https://x.com/mert/status/1969353354670145843",
+   "posted_at": "2025-09-20T10:50:03Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "zec"
+   ],
+   "text": "Zec"
+  },
+  {
+   "id": "1969401318407061877",
+   "url": "https://x.com/mert/status/1969401318407061877",
+   "posted_at": "2025-09-20T14:00:38Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "zcash"
+   ],
+   "text": "no you don't need to do that lol even assuming you're not gonna do OTC, you can bridge to zcash via zashi, shield the coins, then bridge back whenever you need via a click you can not detect who the coins belong to this way"
+  },
+  {
+   "id": "1970742039722479782",
+   "url": "https://x.com/mert/status/1970742039722479782",
+   "posted_at": "2025-09-24T06:48:11Z",
+   "kind": "reply",
+   "label": "own call",
+   "why": "side words ['I am irresponsibly long']",
+   "side": 1,
+   "words": [
+    "zec"
+   ],
+   "text": "I am irresponsibly long ZEC"
+  },
+  {
+   "id": "1970906544704479417",
+   "url": "https://x.com/mert/status/1970906544704479417",
+   "posted_at": "2025-09-24T17:41:52Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "zcash"
+   ],
+   "text": "you can buy whatever you want, this is just my preference I think zcash has the best future shot of hosting private money that scales (most privacy stuff isn't actually private so you have to be careful)"
+  },
+  {
+   "id": "1970921906682593287",
+   "url": "https://x.com/mert/status/1970921906682593287",
+   "posted_at": "2025-09-24T18:42:55Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "zec",
+    "zcash"
+   ],
+   "text": "privacy properties too weak relative to zcash also from pure investment POV, clearly asymmetry in zec upside"
+  },
+  {
+   "id": "1972267247101215132",
+   "url": "https://x.com/mert/status/1972267247101215132",
+   "posted_at": "2025-09-28T11:48:49Z",
+   "kind": null,
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "zcash"
+   ],
+   "text": "zcash"
+  },
+  {
+   "id": "1972423717058756952",
+   "url": "https://x.com/mert/status/1972423717058756952",
+   "posted_at": "2025-09-28T22:10:34Z",
+   "kind": "post",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "zec"
+   ],
+   "text": "everyone talks about the dangers of technology like AI, robots, or self driving yet they all mistake the dangers of crypto the danger is not \"criminals using crypto for crime\", they can already easily do this with cash the danger is a total loss of freedom and sovereignty cancel "
+  },
+  {
+   "id": "1972451926680953078",
+   "url": "https://x.com/mert/status/1972451926680953078",
+   "posted_at": "2025-09-29T00:02:40Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "zec"
+   ],
+   "text": "im dev, I look at the tech first zec privacy scheme much stronger than xmr"
+  },
+  {
+   "id": "1972552498100736185",
+   "url": "https://x.com/mert/status/1972552498100736185",
+   "posted_at": "2025-09-29T06:42:18Z",
+   "kind": "post",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "zec"
+   ],
+   "text": "ZEC finally a billion dollar asset again the privacy comeback is well underway"
+  },
+  {
+   "id": "1972553657490280899",
+   "url": "https://x.com/mert/status/1972553657490280899",
+   "posted_at": "2025-09-29T06:46:54Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "zec"
+   ],
+   "text": "Zec up 72% since I told you btw"
+  },
+  {
+   "id": "1972588796094169171",
+   "url": "https://x.com/tradebutwhy/status/1972588796094169171",
+   "posted_at": "2025-09-29T09:06:32Z",
+   "kind": null,
+   "label": "not theirs",
+   "why": "by @tradebutwhy",
+   "side": null,
+   "words": [
+    "zec",
+    "zcash"
+   ],
+   "text": "I've been hurt far too many times by this problem child but ZEC/BTC just left its logarithmic (!) descending channel for the first time since 2017 is mert single handedly shaving zcash?"
+  },
+  {
+   "id": "1972599174916128893",
+   "url": "https://x.com/mert/status/1972599174916128893",
+   "posted_at": "2025-09-29T09:47:47Z",
+   "kind": "repost",
+   "label": "not theirs",
+   "why": "a repost of someone else's post",
+   "side": null,
+   "words": [
+    "zec",
+    "zcash"
+   ],
+   "text": "I've been hurt far too many times by this problem child but ZEC/BTC just left its logarithmic (!) descending channel for the first time since 2017 is mert single handedly shaving zcash?"
+  }
+ ],
+ "suggested_call": {
+  "id": "1970742039722479782",
+  "url": "https://x.com/mert/status/1970742039722479782",
+  "posted_at": "2025-09-24T06:48:11Z",
+  "kind": "reply",
+  "label": "own call",
+  "why": "side words ['I am irresponsibly long']",
+  "side": 1,
+  "words": [
+   "zec"
+  ],
+  "text": "I am irresponsibly long ZEC"
+ },
+ "after": [
+  {
+   "id": "1987466906693956091",
+   "url": "https://x.com/mert/status/1987466906693956091",
+   "posted_at": "2025-11-09T10:26:50Z",
+   "kind": "quote",
+   "label": "mention",
+   "why": "talks about the asset without exit or hold words",
+   "words": [],
+   "text": "there'll be many edgelords shadowboxing and trying to make up nonsense about ZEC to get \"rotations\" to their coins generally great entry time for the long term minded, but bad time for panicans dont worry about this, I told you that privacy was the last PvE, let them benefit from"
+  },
+  {
+   "id": "1988199756062130266",
+   "url": "https://x.com/mert/status/1988199756062130266",
+   "posted_at": "2025-11-11T10:58:55Z",
+   "kind": "reply",
+   "label": "hold",
+   "why": "still in the position",
+   "words": [
+    "Ill buy"
+   ],
+   "text": "Ill buy as much ZEC as you have rn Sell me all you want You know the rest"
+  },
+  {
+   "id": "1988574063497724154",
+   "url": "https://x.com/mert/status/1988574063497724154",
+   "posted_at": "2025-11-12T11:46:17Z",
+   "kind": "post",
+   "label": "mention",
+   "why": "talks about the asset without exit or hold words",
+   "words": [],
+   "text": "crypto is monetary technology money is extremely important, but money itself can not be the main motivation money is the thing you use to coordinate people, systems, and incentives it is how things get done in the world, and the builder cares about getting things done but it is n"
+  },
+  {
+   "id": "1988723981499666891",
+   "url": "https://x.com/mert/status/1988723981499666891",
+   "posted_at": "2025-11-12T21:42:00Z",
+   "kind": "post",
+   "label": "mention",
+   "why": "talks about the asset without exit or hold words",
+   "words": [],
+   "text": "surprise episode with balaji out now relatively short listen we chat: - bitcoin -> ethereum -> solana -> zcash - east vs. west - usa vs. china - crypto vs. the state - rome and christianity - how to write bangers enjoy!"
+  },
+  {
+   "id": "1988992645608153528",
+   "url": "https://x.com/mert/status/1988992645608153528",
+   "posted_at": "2025-11-13T15:29:35Z",
+   "kind": "post",
+   "label": "mention",
+   "why": "talks about the asset without exit or hold words",
+   "words": [],
+   "text": "recently I was flying Emirates from Saudi Arabia to Abu Dhabi pretty short flight but keep in mind im scared of flying (really just the takeoff part) the markets are down but also it's just a 2h flight so I did not get business (huge mistake) I sit down on the window seat of a 3 "
+  },
+  {
+   "id": "1989371074057048417",
+   "url": "https://x.com/mert/status/1989371074057048417",
+   "posted_at": "2025-11-14T16:33:19Z",
+   "kind": "reply",
+   "label": "mention",
+   "why": "talks about the asset without exit or hold words",
+   "words": [],
+   "text": "if you stake with me, you get the added benefit of also increased security on zcash incredible technology"
+  },
+  {
+   "id": "1989634268482675011",
+   "url": "https://x.com/mert/status/1989634268482675011",
+   "posted_at": "2025-11-15T09:59:09Z",
+   "kind": "quote",
+   "label": "mention",
+   "why": "talks about the asset without exit or hold words",
+   "words": [],
+   "text": "disappointing wake-up sign how many Bitcoin people have lost the plot promoting off-chain databases instead of blockchains some brief counters for the reader, even though the OP is clearly bad faith i) started talking sub $18, I can assure you I'm not underwater or need exit liqu"
+  },
+  {
+   "id": "1990340362452582492",
+   "url": "https://x.com/mert/status/1990340362452582492",
+   "posted_at": "2025-11-17T08:44:55Z",
+   "kind": "quote",
+   "label": "mention",
+   "why": "talks about the asset without exit or hold words",
+   "words": [],
+   "text": "encryption is not a \"feature\", surveillance is a bug it is disappointing how much these people have lost the plot if you don't believe me, go and use unencrypted chats for your messaging, unencrypted cloud hosting for your data, and go use HTTP internet, so all your credit card a"
+  },
+  {
+   "id": "1990550966652076530",
+   "url": "https://x.com/mert/status/1990550966652076530",
+   "posted_at": "2025-11-17T22:41:47Z",
+   "kind": "post",
+   "label": "mention",
+   "why": "talks about the asset without exit or hold words",
+   "words": [],
+   "text": "ZEC has shown the most strength for 2 straight months out of any coin in the most brutal crypto drawdown in a very long time you can imagine what happens when people are bullish again"
+  },
+  {
+   "id": "1991124037335146761",
+   "url": "https://x.com/mert/status/1991124037335146761",
+   "posted_at": "2025-11-19T12:38:58Z",
+   "kind": "post",
+   "label": "mention",
+   "why": "talks about the asset without exit or hold words",
+   "words": [],
+   "text": "quick crash course on mixers and obfuscation in crypto what is a mixer? a mixer is what it sounds like: it mixes funds a bunch of users deposit funds, mix them in a pool, and then people withdraw from that pool example: assume you have 7,500 of ShitcoinX on your account charles.s"
+  },
+  {
+   "id": "1991262159725293960",
+   "url": "https://x.com/mert/status/1991262159725293960",
+   "posted_at": "2025-11-19T21:47:49Z",
+   "kind": "quote",
+   "label": "mention",
+   "why": "talks about the asset without exit or hold words",
+   "words": [],
+   "text": "NVDA just added ~3 entire SOL or about ~20 entire ZEC marketcaps in roughly a second"
+  },
+  {
+   "id": "1993125906278183402",
+   "url": "https://x.com/mert/status/1993125906278183402",
+   "posted_at": "2025-11-25T01:13:41Z",
+   "kind": "post",
+   "label": "mention",
+   "why": "talks about the asset without exit or hold words",
+   "words": [],
+   "text": "bitcoin liberated money zcash liberates the person holding it"
+  },
+  {
+   "id": "1993412311600771162",
+   "url": "https://x.com/mert/status/1993412311600771162",
+   "posted_at": "2025-11-25T20:11:45Z",
+   "kind": "post",
+   "label": "mention",
+   "why": "talks about the asset without exit or hold words",
+   "words": [],
+   "text": "to whoever is selling their ZEC (and thus forfeiting their freedom and broadcasting to the earth that they are a fed) I will not hesitate to use the mossad backdoor on the zcash blockchain to find who you are shalomtardio"
+  },
+  {
+   "id": "1993656853822349732",
+   "url": "https://x.com/mert/status/1993656853822349732",
+   "posted_at": "2025-11-26T12:23:28Z",
+   "kind": "reply",
+   "label": "mention",
+   "why": "talks about the asset without exit or hold words",
+   "words": [],
+   "text": "outperformed everything for 2 months some early people became panicans and started rebalancing to realize profits, fair game this has been happening for a few days now what comes next is trillions zec is valued below ada rn"
+  },
+  {
+   "id": "1994150456998642086",
+   "url": "https://x.com/mert/status/1994150456998642086",
+   "posted_at": "2025-11-27T21:04:53Z",
+   "kind": "post",
+   "label": "mention",
+   "why": "talks about the asset without exit or hold words",
+   "words": [],
+   "text": "I can't explain it I just can't but it physically gives me cancer that all swap UIs in crypto look the same literally they are so non sensical, why would you surface on top the asset you want to SELL first you are training people to be JEETS if the sell button is first why not ex"
+  },
+  {
+   "id": "1995124737379631166",
+   "url": "https://x.com/mert/status/1995124737379631166",
+   "posted_at": "2025-11-30T13:36:19Z",
+   "kind": "reply",
+   "label": "mention",
+   "why": "talks about the asset without exit or hold words",
+   "words": [],
+   "text": "the only way to \"profit\" is if the project succeeds in its mission of private money nonsensical to imply that markets imply extracting user data, as that would mean zcash does not have pmf in privacy and it would tank all committee discussions are a derivative of \"I don't like yo"
+  },
+  {
+   "id": "1995128992039588154",
+   "url": "https://x.com/mert/status/1995128992039588154",
+   "posted_at": "2025-11-30T13:53:14Z",
+   "kind": "reply",
+   "label": "mention",
+   "why": "talks about the asset without exit or hold words",
+   "words": [],
+   "text": "I'm well aware of how it works you didn't tackle a single one of my points > As for the committee ZCAP, it’s not some closed thing. Anyone who contributes to the Zcash community in many ways is asked to join. so who decides who joins? go ahead and tell me extremely rich that you "
+  },
+  {
+   "id": "2001994578044367273",
+   "url": "https://x.com/mert/status/2001994578044367273",
+   "posted_at": "2025-12-19T12:34:37Z",
+   "kind": "reply",
+   "label": "mention",
+   "why": "talks about the asset without exit or hold words",
+   "words": [],
+   "text": "yeah RIP ZEC shielders, how will they ever survive being up 600% on the year when the rest of the market went down 90%? the money will be encrypted no matter how many short term karen-istas lash out"
+  },
+  {
+   "id": "2003102639459066317",
+   "url": "https://x.com/mert/status/2003102639459066317",
+   "posted_at": "2025-12-22T13:57:39Z",
+   "kind": "quote",
+   "label": "mention",
+   "why": "talks about the asset without exit or hold words",
+   "words": [],
+   "text": "added shielded ZEC over time this is the sexiest chart in crypto trillions"
+  },
+  {
+   "id": "2003603431349747910",
+   "url": "https://x.com/mert/status/2003603431349747910",
+   "posted_at": "2025-12-23T23:07:37Z",
+   "kind": "reply",
+   "label": "mention",
+   "why": "talks about the asset without exit or hold words",
+   "words": [],
+   "text": "added a little animation for shielded zec value changes shows it in real-time"
+  },
+  {
+   "id": "2003908108490625044",
+   "url": "https://x.com/mert/status/2003908108490625044",
+   "posted_at": "2025-12-24T19:18:18Z",
+   "kind": "quote",
+   "label": "mention",
+   "why": "talks about the asset without exit or hold words",
+   "words": [],
+   "text": "btw, this is an ATH in ZEC shielded this is the most money we've ever had encrypted added new 1d/1m/1y/all time toggles so you can view through it"
+  },
+  {
+   "id": "2004564786215104794",
+   "url": "https://x.com/mert/status/2004564786215104794",
+   "posted_at": "2025-12-26T14:47:42Z",
+   "kind": "reply",
+   "label": "mention",
+   "why": "talks about the asset without exit or hold words",
+   "words": [],
+   "text": "does ZEC have pred markets atm? trying to get them added"
+  },
+  {
+   "id": "2006068790623137898",
+   "url": "https://x.com/mert/status/2006068790623137898",
+   "posted_at": "2025-12-30T18:24:05Z",
+   "kind": "reply",
+   "label": "mention",
+   "why": "talks about the asset without exit or hold words",
+   "words": [],
+   "text": ".@theprivacycash for SOL mixer .@hush_wallet for privacy-focused SOL wallet can just use zashi to bridge in/out of zcash as well"
+  },
+  {
+   "id": "2009273192708293107",
+   "url": "https://x.com/mert/status/2009273192708293107",
+   "posted_at": "2026-01-08T14:37:14Z",
+   "kind": "reply",
+   "label": "mention",
+   "why": "talks about the asset without exit or hold words",
+   "words": [],
+   "text": "if you don't think it's bullish that a political foundation entity just became a hardcore shipping labs entity, you are a retard sell me all your ZEC"
+  },
+  {
+   "id": "2009327581573861794",
+   "url": "https://x.com/mert/status/2009327581573861794",
+   "posted_at": "2026-01-08T18:13:21Z",
+   "kind": "quote",
+   "label": "mention",
+   "why": "talks about the asset without exit or hold words",
+   "words": [],
+   "text": "the encryption renaissance is now in full charge with the best thinkers and talent in all of crypto powering it on 1,000 days to encrypt the money no temporary fake AI news is stopping this train help us or get out of the way gentlemen zcash"
+  },
+  {
+   "id": "2009336004675838315",
+   "url": "https://x.com/mert/status/2009336004675838315",
+   "posted_at": "2026-01-08T18:46:49Z",
+   "kind": "reply",
+   "label": "hold",
+   "why": "still in the position",
+   "words": [
+    "i do not sell"
+   ],
+   "text": "zero, i do not sell zec"
+  },
+  {
+   "id": "2009630582045847596",
+   "url": "https://x.com/mert/status/2009630582045847596",
+   "posted_at": "2026-01-09T14:17:22Z",
+   "kind": "post",
+   "label": "mention",
+   "why": "talks about the asset without exit or hold words",
+   "words": [],
+   "text": "what's cool is that the shielded ZEC supply is still near ATHs meaning privacy is as strong as ever and it was short-term people doing short-term things you need an insane base of long-term believers and this chart proves it $10,000"
+  },
+  {
+   "id": "2009772180020879428",
+   "url": "https://x.com/mert/status/2009772180020879428",
+   "posted_at": "2026-01-09T23:40:02Z",
+   "kind": "reply",
+   "label": "mention",
+   "why": "talks about the asset without exit or hold words",
+   "words": [],
+   "text": "sure, here's my take - it's a bit like asking why should solana exist if bitcoin or ethereum exists — the short answer is that a chain with a singular purpose will structure and integrate appropriately to achieve that goal more optimally than others. for example, for btc, even th"
+  },
+  {
+   "id": "2011350775654678576",
+   "url": "https://x.com/mert/status/2011350775654678576",
+   "posted_at": "2026-01-14T08:12:48Z",
+   "kind": "quote",
+   "label": "mention",
+   "why": "talks about the asset without exit or hold words",
+   "words": [],
+   "text": "washed traders making bad conclusions based on short term PA is your edge zcash objectively has the strongest cryptography, shielded pool, and inflow of talent also the strongest privacy, scale, and quantum roadmap true it was not executing before this year, but it is now"
+  },
+  {
+   "id": "2017682861915041995",
+   "url": "https://x.com/mert/status/2017682861915041995",
+   "posted_at": "2026-01-31T19:34:15Z",
+   "kind": "post",
+   "label": "hold",
+   "why": "still in the position",
+   "words": [
+    "i am going to bid"
+   ],
+   "text": "i am going to bid the living shit out of zec and sol fuck you suits"
+  },
+  {
+   "id": "2017704961669317003",
+   "url": "https://x.com/mert/status/2017704961669317003",
+   "posted_at": "2026-01-31T21:02:04Z",
+   "kind": "reply",
+   "label": "mention",
+   "why": "talks about the asset without exit or hold words",
+   "words": [],
+   "text": "barry i need you to bid ZEC with all your might and will, sell a kidney if you have to"
+  },
+  {
+   "id": "2020877673480749147",
+   "url": "https://x.com/mert/status/2020877673480749147",
+   "posted_at": "2026-02-09T15:09:18Z",
+   "kind": "reply",
+   "label": "mention",
+   "why": "talks about the asset without exit or hold words",
+   "words": [],
+   "text": "congrats derplet, you picked one asset thats down out of the 100 others that are also down BTC went from 120 to 69, crypto lost 2.5T in mcap, but yes Zcash is the problem (and also did 9/11 most likely) I started talking about it at 18, its now over 10x that see you at 10,000"
+  },
+  {
+   "id": "2022418599948984739",
+   "url": "https://x.com/mert/status/2022418599948984739",
+   "posted_at": "2026-02-13T21:12:23Z",
+   "kind": "post",
+   "label": "mention",
+   "why": "talks about the asset without exit or hold words",
+   "words": [],
+   "text": "51% odds ZEC goes over 320 in Feb according to Kalshi via Checkprice they are selling dollars for 50 cents"
+  },
+  {
+   "id": "2028595707175662044",
+   "url": "https://x.com/mert/status/2028595707175662044",
+   "posted_at": "2026-03-02T22:18:00Z",
+   "kind": "reply",
+   "label": "mention",
+   "why": "talks about the asset without exit or hold words",
+   "words": [],
+   "text": "for a short period, you don't even need an invite code anymore secured by privy https://checkprice.com/spot/zec"
+  },
+  {
+   "id": "2030285032485515633",
+   "url": "https://x.com/mert/status/2030285032485515633",
+   "posted_at": "2026-03-07T14:10:47Z",
+   "kind": "reply",
+   "label": "mention",
+   "why": "talks about the asset without exit or hold words",
+   "words": [],
+   "text": "holding zec has its perks"
+  },
+  {
+   "id": "2033670239020277952",
+   "url": "https://x.com/mert/status/2033670239020277952",
+   "posted_at": "2026-03-16T22:22:23Z",
+   "kind": "reply",
+   "label": "hold",
+   "why": "sold something else to buy more of it ('sold him to buy zec')",
+   "words": [
+    "sold him to buy zec"
+   ],
+   "text": "I sold him to buy zec"
+  },
+  {
+   "id": "2034640944893415639",
+   "url": "https://x.com/mert/status/2034640944893415639",
+   "posted_at": "2026-03-19T14:39:37Z",
+   "kind": "quote",
+   "label": "not_close",
+   "why": "advice to others",
+   "words": [
+    "if you're in"
+   ],
+   "text": "from the \"rainy day\" fund to the \"rainy era\" fund as the global order shifts, you need to reassess trust assumptions - do you trust European institutions with your capital? American ones? Southeast Asian ones? - what if they enact new processes citing \"unprecedented conditions\" a"
+  },
+  {
+   "id": "2041846665007554672",
+   "url": "https://x.com/mert/status/2041846665007554672",
+   "posted_at": "2026-04-08T11:52:35Z",
+   "kind": "post",
+   "label": "not_close",
+   "why": "advice to others",
+   "words": [
+    "you should"
+   ],
+   "text": "added basic logic to buy zec directly on zcash using sol as funding layer and near intents as the cross-chain swap layer get zec directly on zcash chain with just a passkey. note that it's not shielded, so you should withdraw to @zodl_co after"
+  },
+  {
+   "id": "2044780129394823202",
+   "url": "https://x.com/mert/status/2044780129394823202",
+   "posted_at": "2026-04-16T14:09:07Z",
+   "kind": "post",
+   "label": "mention",
+   "why": "talks about the asset without exit or hold words",
+   "words": [],
+   "text": "\"why didn't you sell ZEC when price went down?\""
+  },
+  {
+   "id": "2060087464866320575",
+   "url": "https://x.com/mert/status/2060087464866320575",
+   "posted_at": "2026-05-28T19:55:00Z",
+   "kind": "reply",
+   "label": "mention",
+   "why": "talks about the asset without exit or hold words",
+   "words": [],
+   "text": "he didn't actually sell zec because he was just longing on hl checkmate"
+  },
+  {
+   "id": "2060721982212083966",
+   "url": "https://x.com/mert/status/2060721982212083966",
+   "posted_at": "2026-05-30T13:56:21Z",
+   "kind": "reply",
+   "label": "hold",
+   "why": "sold something else to buy more of it ('sold my Bitcoin to buy Zcash')",
+   "words": [
+    "sold my Bitcoin to buy Zcash"
+   ],
+   "text": "hello scott, nice to meet you, I sold my Bitcoin to buy Zcash"
+  },
+  {
+   "id": "2062104414706426106",
+   "url": "https://x.com/mert/status/2062104414706426106",
+   "posted_at": "2026-06-03T09:29:39Z",
+   "kind": "post",
+   "label": "mention",
+   "why": "talks about the asset without exit or hold words",
+   "words": [],
+   "text": "some protocol updates. we have added a patch on the zcash network that atomically rolls back any transactions involving Michael Saleor and Thomas Lee. these individuals are barred from interacting with the blockchain. no further comments at this time."
+  },
+  {
+   "id": "2062658091431182492",
+   "url": "https://x.com/mert/status/2062658091431182492",
+   "posted_at": "2026-06-04T22:09:45Z",
+   "kind": "reply",
+   "label": "mention",
+   "why": "talks about the asset without exit or hold words",
+   "words": [],
+   "text": "almost all privacy protocols have a variant of this same thing this same FUD comes back every 5 months as new people learn how privacy pools work (and curiously it mostly comes from xmr ppl who are also vulnerable to counterfeit bugs lol) in theory, with a zk privacy protocol (no"
+  },
+  {
+   "id": "2062933162959700103",
+   "url": "https://x.com/mert/status/2062933162959700103",
+   "posted_at": "2026-06-05T16:22:48Z",
+   "kind": "post",
+   "label": "mention",
+   "why": "talks about the asset without exit or hold words",
+   "words": [],
+   "text": "soon, you will find out that *all software* handling funds is prone to AI finding vulnerabilities. all of it that's why you also saw tons of defi exploits already this year open source, L1, L2, DeFi, mutable, immutable, private, transparent, cross-chain. if it's software, it is a"
+  },
+  {
+   "id": "2087981722155819252",
+   "url": "https://x.com/mert/status/2087981722155819252",
+   "posted_at": "2026-08-13T19:16:50Z",
+   "kind": "quote",
+   "label": "mention",
+   "why": "talks about the asset without exit or hold words",
+   "words": [],
+   "text": "not long ago, some were sure an exploit happened on zcash that could never be verified now, it has: i) already verified 94% of the supply, with the remaining continuing to migrate ii) added mathematical verifiability to rule out the same bugs in the future great resilience"
+  },
+  {
+   "id": "2096567046456873230",
+   "url": "https://x.com/mert/status/2096567046456873230",
+   "posted_at": "2026-09-06T11:51:50Z",
+   "kind": "post",
+   "label": "mention",
+   "why": "talks about the asset without exit or hold words",
+   "words": [],
+   "text": "I understand for many new folks holding ZEC on an exchange is good enough for their needs but I'd really encourage at least playing around with the wallets as it's a perfect illustration of what crypto could be i) download vizor or zodl wallet (ideally secured with keystone hardw"
+  },
+  {
+   "id": "2103204693560172903",
+   "url": "https://x.com/mert/status/2103204693560172903",
+   "posted_at": "2026-09-24T19:27:29Z",
+   "kind": "reply",
+   "label": "mention",
+   "why": "talks about the asset without exit or hold words",
+   "words": [],
+   "text": "not sure anyone read the thing beyond the title tl;dr - if you somehow solved the laundry list of fundamental issues, then even after that you would still be roughly 7 years behind zcash it's a synthetic ledger with significant tradeoffs, some of which are fundamental (can't be m"
+  }
+ ],
+ "others_after": 0,
+ "state": "open: still holding as of 2026-05-30",
+ "side": 1,
+ "after_raw": {
+  "1987466906693956091": {
+   "id": "1987466906693956091",
+   "authorHandle": "mert",
+   "postedAt": "2025-11-09T10:26:50.000Z",
+   "text": "there'll be many edgelords shadowboxing and trying to make up nonsense about ZEC to get \"rotations\" to their coins\n\ngenerally great entry time for the long term minded, but bad time for panicans\n\ndont worry about this, I told you that privacy was the last PvE, let them benefit from your work, increasing the amount of privacy in crypto is net good\n\ndo not dunk on them except to correct false info \n\nanyone serious already knows the technical tradeoffs between mixers and encryption + zk or trusted setups which have been gone for years\n\nlet them brag about fringe ways of paying for internet drugs (which just ensures that privacy never becomes mainstream, not sure why anyone is happy about this)\n\nthe mission is much grander than that, it's about new stores of value for freedom that nation states cant take from you or debase you out of, the internet's new private swiss vault \n\nit's about privacy that's actually usable by the masses instead of fringe online scalpers \n\nnothing has been more damaging to individual sovereignty and usable privacy at scale than these types bragging about online crime, be better than this\n\nprivacy is not secrecy, it's about giving the individual the choice and dignity in what they willingly reveal to the world\n\ntrillions",
+   "kind": "quote",
+   "capturedAt": "2026-10-31T18:43:53.270Z",
+   "conversationId": "1987466906693956091",
+   "metrics": {
+    "replies": 88,
+    "reposts": 26,
+    "quotes": 5,
+    "likes": 278,
+    "bookmarks": 19,
+    "views": 47051
+   },
+   "completeness": "complete"
+  },
+  "1988199756062130266": {
+   "id": "1988199756062130266",
+   "authorHandle": "mert",
+   "postedAt": "2025-11-11T10:58:55.000Z",
+   "text": "Ill buy as much ZEC as you have rn\n\nSell me all you want \n\nYou know the rest",
+   "kind": "reply",
+   "capturedAt": "2026-10-31T18:43:53.270Z",
+   "conversationId": "1988182150538248229",
+   "metrics": {
+    "replies": 65,
+    "reposts": 24,
+    "quotes": 1,
+    "likes": 424,
+    "bookmarks": 11,
+    "views": 30577
+   },
+   "completeness": "complete"
+  },
+  "1988574063497724154": {
+   "id": "1988574063497724154",
+   "authorHandle": "mert",
+   "postedAt": "2025-11-12T11:46:17.000Z",
+   "text": "crypto is monetary technology\n\nmoney is extremely important, but money itself can not be the main motivation\n\nmoney is the thing you use to coordinate people, systems, and incentives\n\nit is how things get done in the world, and the builder cares about getting things done\n\nbut it is not the thing itself\n\nif you care about money for its own sake, you generally end up anxious, hedonistic, and ultimately unfulfilled\n\nexample: if you are a billionaire but you're lost out on the desert, it does not matter how much money you have, it matters if you can use your existing resources to get water and shelter\n\nthis is also why investors and builders tend to have much larger outcomes than trader types (look at the top 100 list)\n\ncrypto people have been focused way too much on the short term side of money and speculation, I think as the industry matures we see a violent swing back into longer term thinking and the efficient use of capital to build important structures\n\nanyway, this is probably a zcash or solana bullpost somehow\n\ntrillions",
+   "kind": "post",
+   "capturedAt": "2026-10-31T18:43:53.270Z",
+   "conversationId": "1988574063497724154",
+   "metrics": {
+    "replies": 119,
+    "reposts": 19,
+    "quotes": 9,
+    "likes": 376,
+    "bookmarks": 14,
+    "views": 26821
+   },
+   "completeness": "complete"
+  },
+  "1988723981499666891": {
+   "id": "1988723981499666891",
+   "authorHandle": "mert",
+   "postedAt": "2025-11-12T21:42:00.000Z",
+   "text": "surprise episode with balaji out now\n\nrelatively short listen\n\nwe chat:\n\n- bitcoin -> ethereum -> solana -> zcash\n- east vs. west\n- usa vs. china\n- crypto vs. the state\n- rome and christianity\n- how to write bangers\n\nenjoy!",
+   "kind": "post",
+   "capturedAt": "2026-10-31T18:43:53.270Z",
+   "conversationId": "1988723981499666891",
+   "metrics": {
+    "replies": 76,
+    "reposts": 70,
+    "quotes": 7,
+    "likes": 813,
+    "bookmarks": 435,
+    "views": 93924
+   },
+   "completeness": "complete"
+  },
+  "1988992645608153528": {
+   "id": "1988992645608153528",
+   "authorHandle": "mert",
+   "postedAt": "2025-11-13T15:29:35.000Z",
+   "text": "recently I was flying Emirates from Saudi Arabia to Abu Dhabi\n\npretty short flight but keep in mind im scared of flying (really just the takeoff part)\n\nthe markets are down but also it's just a 2h flight so I did not get business (huge mistake)\n\nI sit down on the window seat of a 3 seater row and im praying no one sits beside me\n\nAfter about 6 mins I think im going to be safe \n\nand then the flight attendant tells me they need to move 2 ppl beside me because the back row washroom is malfunctioning\n\nnot sure wtf this means since theyre presumably not sitting inside the washroom?\n\nAnd I shit you not it is two guys with TWO BABIES EACH\n\nthat is to say, each guy has 2 babies with them and so suddenly I have 6 humans beside me on a 3 seater!!!!\n\nexcellent\n\nobviously the babies cried literally the whole time and now I hate my life\n\nwhen I asked the flight attendant why she did this to me in a joking way at the end of the flight, she said:\n\n\"I figured you'd be used to listening to grown men and a bunch of babies crying nonstop for hours since you go on CT all the time\"\n\n\"by the way, if you read until here, buy some goddamn ZEC you noob so you never fly economy again. zetardio\"",
+   "kind": "post",
+   "capturedAt": "2026-10-31T18:43:53.269Z",
+   "conversationId": "1988992645608153528",
+   "metrics": {
+    "replies": 179,
+    "reposts": 26,
+    "quotes": 6,
+    "likes": 985,
+    "bookmarks": 62,
+    "views": 144165
+   },
+   "completeness": "complete"
+  },
+  "1989371074057048417": {
+   "id": "1989371074057048417",
+   "authorHandle": "mert",
+   "postedAt": "2025-11-14T16:33:19.000Z",
+   "text": "if you stake with me, you get the added benefit of also increased security on zcash\n\nincredible technology",
+   "kind": "reply",
+   "capturedAt": "2026-10-31T18:43:53.269Z",
+   "conversationId": "1989365975129727026",
+   "metrics": {
+    "replies": 3,
+    "reposts": 0,
+    "quotes": 0,
+    "likes": 27,
+    "bookmarks": 0,
+    "views": 1862
+   },
+   "completeness": "complete"
+  },
+  "1989634268482675011": {
+   "id": "1989634268482675011",
+   "authorHandle": "mert",
+   "postedAt": "2025-11-15T09:59:09.000Z",
+   "text": "disappointing wake-up sign how many Bitcoin people have lost the plot\n\npromoting off-chain databases instead of blockchains\n\nsome brief counters for the reader, even though the OP is clearly bad faith\n\ni) started talking sub $18, I can assure you I'm not underwater or need exit liquidity. if that were the case, I could launch a shitter on Solana for a fraction of the effort or would've sold by now\n\nthis is not a trade, it's a vote\n\nii) if you use zashi — which everyone does — the privacy is not opt-in, it's the default\n\nthis is a design choice that's left up to the apps, the dual mode allows for privacy to scale to a planetary scale as a trojan horse\n\nyou can confirm this by seeing ATHs in the shielded pool\n\n\"Privacy is not secrecy. Privacy is the power to selectively reveal oneself to the world.\" — Cypherpunk Manifesto\n\niii) it's weird to call this a tax, 8% goes to grants voted on by people, and 12% goes to a lockbox controlled by token-holders to reward devs if they deem worth it\n\ntoken-based governance seems pretty cool and useful to me, we wouldn't have had zashi without it\n\nthat said, the amount goes down every halving, and I agree we can bring it down more\n\niv) \"it can't scale\"\n\nlol I think I know a thing or two about scale, and let me tell you we are scaling this thing at least 100x\n\nfaster blocks, higher TPS, and complete elimination of the state-growth problem via Tachyon\n\nI do hope that as Zcash continues to rise, Bitcoin people take privacy more seriously at the core L1 layer instead of off-chain band-aids that have extremely weak properties\n\nI continue to hold a lot of Bitcoin regardless because one can simply hold multiple coins\n\nI'll finally leave you with a quote from Satoshi himself about how he wanted to incorporate ZK at the base later:",
+   "kind": "quote",
+   "capturedAt": "2026-10-31T18:43:53.269Z",
+   "conversationId": "1989634268482675011",
+   "metrics": {
+    "replies": 66,
+    "reposts": 45,
+    "quotes": 7,
+    "likes": 416,
+    "bookmarks": 79,
+    "views": 75762
+   },
+   "completeness": "complete"
+  },
+  "1990340362452582492": {
+   "id": "1990340362452582492",
+   "authorHandle": "mert",
+   "postedAt": "2025-11-17T08:44:55.000Z",
+   "text": "encryption is not a \"feature\", surveillance is a bug\n\nit is disappointing how much these people have lost the plot\n\nif you don't believe me, go and use unencrypted chats for your messaging, unencrypted cloud hosting for your data, and go use HTTP internet, so all your credit card and password info leaks\n\nwhile you're at it, show me all your bank accounts\n\nwhere do you think the word \"cypher\" in \"cypherpunk\" comes from? what do you think the word \"crypto\" is derived from?\n\nthis entire industry was created by the cypherpunks whose *entire* mission was privacy and open source code — this is not a \"feature\"\n\nalso note how often certain* BTC maxis post about ZEC\n\nnote how much space it occupies in their minds\n\nprivacy is as much of a feature to an SoV as a jet engine is to an airplane\n\nyes, it's just one part of the plane, but without it, the rest  does not work\n\nif you use a shit engine, the plane will come crashing down and ruin everyone\n\nyou can not have true money without fungibility\n\ngold has fungibility (you can melt it for another), bitcoin does not\n\nyou can not have fungibility without privacy\n\nthese people want to expose you to colossal risk by using bolt-on privacy instead of maximizing security and minimizing information leaks from the ground up\n\nthis is not a game, if you are storing serious money and voting for a SoV for the internet with your own money, you can not compromise on privacy and security\n\neven Satoshi says this would've allowed for a better Bitcoin, but you have the new age of bags maxis selectively ignoring their God when it suits them\n\n*(I say certain BTC maxis and not all out of respect for the Bitcoiners who i) understand that you can hold multiple coins, ii) understand that privacy is insanely important, iii) are actual cypherpunks)",
+   "kind": "quote",
+   "capturedAt": "2026-10-31T18:43:53.269Z",
+   "conversationId": "1990340362452582492",
+   "metrics": {
+    "replies": 74,
+    "reposts": 22,
+    "quotes": 7,
+    "likes": 243,
+    "bookmarks": 25,
+    "views": 24394
+   },
+   "completeness": "complete"
+  },
+  "1990550966652076530": {
+   "id": "1990550966652076530",
+   "authorHandle": "mert",
+   "postedAt": "2025-11-17T22:41:47.000Z",
+   "text": "ZEC has shown the most strength for 2 straight months out of any coin in the most brutal crypto drawdown in a very long time\n\nyou can imagine what happens when people are bullish again",
+   "kind": "post",
+   "capturedAt": "2026-10-31T18:43:53.268Z",
+   "conversationId": "1990550966652076530",
+   "metrics": {
+    "replies": 95,
+    "reposts": 46,
+    "quotes": 8,
+    "likes": 678,
+    "bookmarks": 17,
+    "views": 67683
+   },
+   "completeness": "complete"
+  },
+  "1991124037335146761": {
+   "id": "1991124037335146761",
+   "authorHandle": "mert",
+   "postedAt": "2025-11-19T12:38:58.000Z",
+   "text": "quick crash course on mixers and obfuscation in crypto\n\nwhat is a mixer?\n\na mixer is what it sounds like: it mixes funds\n\na bunch of users deposit funds, mix them in a pool, and then people withdraw from that pool\n\nexample: assume you have 7,500 of ShitcoinX on your account charles.sol, but you accidentally doxed your charles.sol account to degens on social media\n\nnow, everyone knows your real-life identity is tied to charles.sol and that you have 7.5k of this shitcoin\n\n(this is actually pretty bad because now they can also see everything you have EVER done onchain dating back forever but let's focus on one nightmare scenario at a time)\n\nin many cases, you do not want this unwanted attention from the whole world any more than you want the whole world knowing your private messages\n\nso what you can do is put 7.5 of your shitcoin into the mixer\n\n> charles.sol has deposited 7.5k shitcoinX into MixerCash\n\nsome time after, you make a new account, say derplet.sol, and then you send 7.5k of shitcoinX to derplet.sol\n\nwhat the outside world sees is:\n\n> MixerCash has sent 7.5k of shitcoinX to derplet.sol\n\nso in summary:\n> charles.sol deposited 7.5k shitcoinX into MixerCash\n> *some time passes*\n> MixerCash has sent 7.5k shitcoinX into derplet.sol\n\nnow I hope you have noticed a few problems here\n\ni) everyone now knows that charles.sol uses a mixer (this can be used against you by CEXes or feds, particularly if criminals have used this mixer before)\n\nii) it is super easy to suspect that derplet.sol is actually charles.sol \n\nso how do you solve these?\n\nfor i) you're pretty much shit out of luck. this is a problem with all blockchains today including bitcoin because the ledgers are all transparent\n\nthe best you can do is prove via zk that you didn't commit crime and that you are compliant (tornado cash allows for this for example), which helps with feds but nothing else\n\nonly real solution is using an encrypted ledger like zcash which hides your balances and history to begin with\n\nok how about ii)?\n\nwell this is where you can make a lot of improvements via some basic operational skills (call it \"opsec\")\n\n- if you deposit 7.5k but take out 4.3k, then it is harder to link that derplet.sol is charles.sol\n\n- however, the above is only true if there are many other people also using MixerCash!\n\nfor example, assume you're looking at MixerCash on the block explorer:\n\nMixerCash\n> charles.sol deposited 7.5k\n> derplet.sol took out 4.3k\n\nit's still very easy to tell!\n\nso you need i) many other people using the same protocol, ii) you need everyone to use uniform amounts that are not specific, iii) you need the timing to be random, if you withdraw 1 second after you deposit, you have just given your tracer a lot of information\n\nso basically:\n\nMixerCash\n> charles.sol deposited 5k\n> retardio.sol deposited 5k\n> james.sol deposited 5k\n> mertardio.sol deposited 5k\n\n*50,000 other similar transactions over 3 months\n\n> someguy.sol withdrew 1k\n> derplet.sol withdrew 1k\n\nnow, it is much harder to link that derplet.sol was indeed charles.sol (though still possible, especially with some OP computers)\n\nthe possible set of people who charles.sol could've been above is called the anonymity set. \n\nbut there are still quite a few problems here, namely that you are reliant on other people using the protocol consistently and reliably. importantly, \"the other people\" can actually just be feds adding fake transactions here to give you the illusion of security and the real anonymity set could be 100x smaller\n\nso then you have something like monero, which works kind of like the above but is an improvement since every single transaction done onchain introduces obfuscation, basically mandatory mixing always\n\nfor example, monero hides each real input among 15 decoy inputs taken from previous outputs on the chain\n\nhowever, you are still leaking information and you need a lot high velocity usage to probabilistically hide amongst the crowd\n\n(you are also vulnerable to quantum attacks later on)\n\nthe most robust solution is what we have all known since the internet: encryption\n\nyou need to encrypt and vanish the entire data, probabilistically hiding things always exposes you at some point\n\nand this is what zcash does, it encrypts everything so you can not tell sender, receiver, metadata, amount, it is all invisible\n\nand this is why it's considered the gold standard in privacy\n\nyou can also encrypt everything and then use FHE to compute on the encrypted data to do operations\n\nnext I'll talk about FHE, MPC, ZK, TEEs and how they differ",
+   "kind": "post",
+   "capturedAt": "2026-10-31T18:43:53.268Z",
+   "conversationId": "1991124037335146761",
+   "metrics": {
+    "replies": 148,
+    "reposts": 61,
+    "quotes": 12,
+    "likes": 618,
+    "bookmarks": 314,
+    "views": 70835
+   },
+   "completeness": "complete"
+  },
+  "1991262159725293960": {
+   "id": "1991262159725293960",
+   "authorHandle": "mert",
+   "postedAt": "2025-11-19T21:47:49.000Z",
+   "text": "NVDA just added ~3 entire SOL or about ~20 entire ZEC marketcaps in roughly a second",
+   "kind": "quote",
+   "capturedAt": "2026-10-31T18:43:53.268Z",
+   "conversationId": "1991262159725293960",
+   "metrics": {
+    "replies": 210,
+    "reposts": 130,
+    "quotes": 34,
+    "likes": 2381,
+    "bookmarks": 91,
+    "views": 290750
+   },
+   "completeness": "complete"
+  },
+  "1993125906278183402": {
+   "id": "1993125906278183402",
+   "authorHandle": "mert",
+   "postedAt": "2025-11-25T01:13:41.000Z",
+   "text": "bitcoin liberated money\n\nzcash liberates the person holding it",
+   "kind": "post",
+   "capturedAt": "2026-10-31T18:43:53.267Z",
+   "conversationId": "1993125906278183402",
+   "metrics": {
+    "replies": 101,
+    "reposts": 40,
+    "quotes": 5,
+    "likes": 510,
+    "bookmarks": 9,
+    "views": 23188
+   },
+   "completeness": "complete"
+  },
+  "1993412311600771162": {
+   "id": "1993412311600771162",
+   "authorHandle": "mert",
+   "postedAt": "2025-11-25T20:11:45.000Z",
+   "text": "to whoever is selling their ZEC (and thus forfeiting their freedom and broadcasting to the earth that they are a fed)\n\nI will not hesitate to use the mossad backdoor on the zcash blockchain to find who you are \n\nshalomtardio",
+   "kind": "post",
+   "capturedAt": "2026-10-31T18:43:53.267Z",
+   "conversationId": "1993412311600771162",
+   "metrics": {
+    "replies": 78,
+    "reposts": 9,
+    "quotes": 3,
+    "likes": 488,
+    "bookmarks": 7,
+    "views": 22242
+   },
+   "completeness": "complete"
+  },
+  "1993656853822349732": {
+   "id": "1993656853822349732",
+   "authorHandle": "mert",
+   "postedAt": "2025-11-26T12:23:28.000Z",
+   "text": "outperformed everything for 2 months\n\nsome early people became panicans and started rebalancing to realize profits, fair game\n\nthis has been happening for a few days now\n\nwhat comes next is trillions\n\nzec is valued below ada rn",
+   "kind": "reply",
+   "capturedAt": "2026-10-31T18:43:53.267Z",
+   "conversationId": "1993653758254051609",
+   "metrics": {
+    "replies": 14,
+    "reposts": 10,
+    "quotes": 2,
+    "likes": 290,
+    "bookmarks": 6,
+    "views": 9024
+   },
+   "completeness": "complete"
+  },
+  "1994150456998642086": {
+   "id": "1994150456998642086",
+   "authorHandle": "mert",
+   "postedAt": "2025-11-27T21:04:53.000Z",
+   "text": "I can't explain it I just can't but it physically gives me cancer that all swap UIs in crypto look the same\n\nliterally they are so non sensical, why would you surface on top the asset you want to SELL first\n\nyou are training people to be JEETS if the sell button is first\n\nwhy not experiment and do some cool shit\n\na swap UI is just two rectangles on top of each other\n\nyou know what else is a rectangle? a paper cash bill\n\njust make a paper bill for each asset\n\nbetter yet, instead of displaying each bid and ask in order book form\n\njust simulate a runescape background and seed like 500 fake characters and make it seem like they're offering to buy/sell like a regular good ol stock exchange\n\ngoddamn man whatever happened to taste\n\nzcash",
+   "kind": "post",
+   "capturedAt": "2026-10-31T18:44:03.884Z",
+   "conversationId": "1994150456998642086",
+   "metrics": {
+    "replies": 147,
+    "reposts": 15,
+    "quotes": 10,
+    "likes": 698,
+    "bookmarks": 133,
+    "views": 337151
+   },
+   "completeness": "complete"
+  },
+  "1995124737379631166": {
+   "id": "1995124737379631166",
+   "authorHandle": "mert",
+   "postedAt": "2025-11-30T13:36:19.000Z",
+   "text": "the only way to \"profit\" is if the project succeeds in its mission of private money\n\nnonsensical to imply that markets imply extracting user data, as that would mean zcash does not have pmf in privacy and it would tank\n\nall committee discussions are a derivative of \"I don't like your plutocracy, let's do my plutocracy instead\"\n\npeople who hold the token have something to lose and are incentivized to correct errors\n\npeople who are in committees are incentivized to bureacratize\n\nand that is not what ZCG does, if anything ZCG tries to bring at least some market dynamics by rewarding those who've put in the work with \"profits\"",
+   "kind": "reply",
+   "capturedAt": "2026-10-31T18:44:00.250Z",
+   "conversationId": "1995123329351504069",
+   "metrics": {
+    "replies": 2,
+    "reposts": 2,
+    "quotes": 0,
+    "likes": 4,
+    "bookmarks": 0,
+    "views": 287
+   },
+   "completeness": "complete"
+  },
+  "1995128992039588154": {
+   "id": "1995128992039588154",
+   "authorHandle": "mert",
+   "postedAt": "2025-11-30T13:53:14.000Z",
+   "text": "I'm well aware of how it works\n\nyou didn't tackle a single one of my points\n\n> As for the committee ZCAP, it’s not some closed thing. Anyone who contributes to the Zcash community in many ways is asked to join.\n\nso who decides who joins? go ahead and tell me\n\nextremely rich that you can't make a single coherent argument and have to just mention my name three times instead\n\nhint: study the developments on the project for the past 8 years with your glorious government structure that's perfect and contrast that to the developments of the past year and a half\n\nproof is right there, shalom",
+   "kind": "reply",
+   "capturedAt": "2026-10-31T18:44:00.250Z",
+   "conversationId": "1995113478403584082",
+   "metrics": {
+    "replies": 8,
+    "reposts": 0,
+    "quotes": 0,
+    "likes": 20,
+    "bookmarks": 0,
+    "views": 4961
+   },
+   "completeness": "complete"
+  },
+  "2001994578044367273": {
+   "id": "2001994578044367273",
+   "authorHandle": "mert",
+   "postedAt": "2025-12-19T12:34:37.000Z",
+   "text": "yeah RIP ZEC shielders, how will they ever survive being up 600% on the year when the rest of the market went down 90%?\n\nthe money will be encrypted no matter how many short term karen-istas lash out",
+   "kind": "reply",
+   "capturedAt": "2026-10-31T18:44:00.250Z",
+   "conversationId": "2001977933074980915",
+   "metrics": {
+    "replies": 6,
+    "reposts": 5,
+    "quotes": 0,
+    "likes": 177,
+    "bookmarks": 1,
+    "views": 6158
+   },
+   "completeness": "complete"
+  },
+  "2003102639459066317": {
+   "id": "2003102639459066317",
+   "authorHandle": "mert",
+   "postedAt": "2025-12-22T13:57:39.000Z",
+   "text": "added shielded ZEC over time\n\nthis is the sexiest chart in crypto\n\ntrillions",
+   "kind": "quote",
+   "capturedAt": "2026-10-31T18:44:00.250Z",
+   "conversationId": "2003102639459066317",
+   "metrics": {
+    "replies": 142,
+    "reposts": 42,
+    "quotes": 16,
+    "likes": 628,
+    "bookmarks": 24,
+    "views": 127870
+   },
+   "completeness": "complete"
+  },
+  "2003603431349747910": {
+   "id": "2003603431349747910",
+   "authorHandle": "mert",
+   "postedAt": "2025-12-23T23:07:37.000Z",
+   "text": "added a little animation for shielded zec value changes \n\nshows it in real-time",
+   "kind": "reply",
+   "capturedAt": "2026-10-31T18:44:00.250Z",
+   "conversationId": "2003102639459066317",
+   "metrics": {
+    "replies": 9,
+    "reposts": 2,
+    "quotes": 0,
+    "likes": 58,
+    "bookmarks": 1,
+    "views": 8731
+   },
+   "completeness": "complete"
+  },
+  "2003908108490625044": {
+   "id": "2003908108490625044",
+   "authorHandle": "mert",
+   "postedAt": "2025-12-24T19:18:18.000Z",
+   "text": "btw, this is an ATH in ZEC shielded\n\nthis is the most money we've ever had encrypted\n\nadded new 1d/1m/1y/all time toggles so you can view through it",
+   "kind": "quote",
+   "capturedAt": "2026-10-31T18:44:00.250Z",
+   "conversationId": "2003908108490625044",
+   "metrics": {
+    "replies": 69,
+    "reposts": 28,
+    "quotes": 7,
+    "likes": 344,
+    "bookmarks": 10,
+    "views": 45008
+   },
+   "completeness": "complete"
+  },
+  "2004564786215104794": {
+   "id": "2004564786215104794",
+   "authorHandle": "mert",
+   "postedAt": "2025-12-26T14:47:42.000Z",
+   "text": "does ZEC have pred markets atm? trying to get them added",
+   "kind": "reply",
+   "capturedAt": "2026-10-31T18:44:00.249Z",
+   "conversationId": "2004560094495981607",
+   "metrics": {
+    "replies": 1,
+    "reposts": 0,
+    "quotes": 0,
+    "likes": 1,
+    "bookmarks": 0,
+    "views": 674
+   },
+   "completeness": "complete"
+  },
+  "2006068790623137898": {
+   "id": "2006068790623137898",
+   "authorHandle": "mert",
+   "postedAt": "2025-12-30T18:24:05.000Z",
+   "text": ".@theprivacycash for SOL mixer\n\n.@hush_wallet for privacy-focused SOL wallet\n\ncan just use zashi to bridge in/out of zcash as well",
+   "kind": "reply",
+   "capturedAt": "2026-10-31T18:44:00.249Z",
+   "conversationId": "2006068594182938831",
+   "metrics": {
+    "replies": 6,
+    "reposts": 3,
+    "quotes": 1,
+    "likes": 52,
+    "bookmarks": 24,
+    "views": 5664
+   },
+   "completeness": "complete"
+  },
+  "2009273192708293107": {
+   "id": "2009273192708293107",
+   "authorHandle": "mert",
+   "postedAt": "2026-01-08T14:37:14.000Z",
+   "text": "if you don't think it's bullish that a political foundation entity just became a hardcore shipping labs entity, you are a retard\n\nsell me all your ZEC",
+   "kind": "reply",
+   "capturedAt": "2026-10-31T18:44:00.249Z",
+   "conversationId": "2009198809344266517",
+   "metrics": {
+    "replies": 1,
+    "reposts": 0,
+    "quotes": 1,
+    "likes": 11,
+    "bookmarks": 0,
+    "views": 1473
+   },
+   "completeness": "complete"
+  },
+  "2009327581573861794": {
+   "id": "2009327581573861794",
+   "authorHandle": "mert",
+   "postedAt": "2026-01-08T18:13:21.000Z",
+   "text": "the encryption renaissance is now in full charge with the best thinkers and talent in all of crypto powering it on\n\n1,000 days to encrypt the money\n\nno temporary fake AI news is stopping this train\n\nhelp us or get out of the way gentlemen\n\nzcash",
+   "kind": "quote",
+   "capturedAt": "2026-10-31T18:44:00.249Z",
+   "conversationId": "2009327581573861794",
+   "metrics": {
+    "replies": 40,
+    "reposts": 14,
+    "quotes": 0,
+    "likes": 272,
+    "bookmarks": 10,
+    "views": 19047
+   },
+   "completeness": "complete"
+  },
+  "2009336004675838315": {
+   "id": "2009336004675838315",
+   "authorHandle": "mert",
+   "postedAt": "2026-01-08T18:46:49.000Z",
+   "text": "zero, i do not sell zec",
+   "kind": "reply",
+   "capturedAt": "2026-10-31T18:44:00.249Z",
+   "conversationId": "2009334154933227582",
+   "metrics": {
+    "replies": 1,
+    "reposts": 0,
+    "quotes": 0,
+    "likes": 2,
+    "bookmarks": 0,
+    "views": 322
+   },
+   "completeness": "complete"
+  },
+  "2009630582045847596": {
+   "id": "2009630582045847596",
+   "authorHandle": "mert",
+   "postedAt": "2026-01-09T14:17:22.000Z",
+   "text": "what's cool is that the shielded ZEC supply is still near ATHs\n\nmeaning privacy is as strong as ever and it was short-term people doing short-term things\n\nyou need an insane base of long-term believers and this chart proves it\n\n$10,000",
+   "kind": "post",
+   "capturedAt": "2026-10-31T18:44:00.249Z",
+   "conversationId": "2009630582045847596",
+   "metrics": {
+    "replies": 89,
+    "reposts": 37,
+    "quotes": 5,
+    "likes": 444,
+    "bookmarks": 18,
+    "views": 36335
+   },
+   "completeness": "complete"
+  },
+  "2009772180020879428": {
+   "id": "2009772180020879428",
+   "authorHandle": "mert",
+   "postedAt": "2026-01-09T23:40:02.000Z",
+   "text": "sure, here's my take\n\n- it's a bit like asking why should solana exist if bitcoin or ethereum exists — the short answer is that a chain with a singular purpose will structure and integrate appropriately to achieve that goal more optimally than others. for example, for btc, even though wrapped btc exists on solana/ethereum, it still has the highest guarantees on bitcoin. similarly you wouldnt use bitcoin for high frequency trading or payments (even though you can use it for payments)\n\n- the above is also critical for talent since for example the best cryptographers will work on the vertically focused solution and so you get a compounding effect of domain expertise\n\n- for privacy this is particularly important because teleologically privacy is the absence  of information leaks. meaning: if the entire flow of apps, services, and infrastructure isn't designed for it, then it will inevitably leak information\n\n- if you take the above, then that means that anyone who REALLY needs privacy, will not be able to trust anything but the most privacy-optimized solution\n\n- however, privacy is also a network effect since the size of a shielded pool largely determines the privacy properties of the solution, meaning: given a privacy pool with a few billion vs a privacy pool with a few million, the former will outpace the other just like a social network effect\n\n- then you have the issue of tail risk, i.e what happens during sanctions or crackdowns. a privacy protocol on a chain is usually governed by a smart contract but a privacy chain is governed by a set of validators — so it is much, much harder to fuck with and change\n\n- finally the native asset and its tokenomics are critically important and you can not fork history or emission schedules or distributions from a PoW mined coin vs a newer coin\n\n- as a bonus edge case: when quantum computers arrive, they will be able to retroactively decrypt and identify who used what privacy pool and in what amounts, certain solutions like zcash are already built with this in mind (and reflect it in their roadmaps) and will have post-quantum privacy-soundness\n\n- there's plenty of other things i didnt tackle here like the value of client diversity, neutrality, etc but that should give you an idea",
+   "kind": "reply",
+   "capturedAt": "2026-10-31T18:44:00.249Z",
+   "conversationId": "2009763744231117132",
+   "metrics": {
+    "replies": 4,
+    "reposts": 4,
+    "quotes": 0,
+    "likes": 63,
+    "bookmarks": 20,
+    "views": 2539
+   },
+   "completeness": "complete"
+  },
+  "2011350775654678576": {
+   "id": "2011350775654678576",
+   "authorHandle": "mert",
+   "postedAt": "2026-01-14T08:12:48.000Z",
+   "text": "washed traders making bad conclusions based on short term PA is your edge \n\nzcash objectively has the strongest cryptography, shielded pool, and inflow of talent \n\nalso the strongest privacy, scale, and quantum roadmap \n\ntrue it was not executing before this year, but it is now",
+   "kind": "quote",
+   "capturedAt": "2026-10-31T18:44:00.248Z",
+   "conversationId": "2011350775654678576",
+   "metrics": {
+    "replies": 55,
+    "reposts": 12,
+    "quotes": 3,
+    "likes": 319,
+    "bookmarks": 15,
+    "views": 24284
+   },
+   "completeness": "complete"
+  },
+  "2017682861915041995": {
+   "id": "2017682861915041995",
+   "authorHandle": "mert",
+   "postedAt": "2026-01-31T19:34:15.000Z",
+   "text": "i am going to bid the living shit out of zec and sol \n\nfuck you suits",
+   "kind": "post",
+   "capturedAt": "2026-10-31T18:44:09.811Z",
+   "conversationId": "2017682861915041995",
+   "metrics": {
+    "replies": 69,
+    "reposts": 18,
+    "quotes": 2,
+    "likes": 501,
+    "bookmarks": 7,
+    "views": 19421
+   },
+   "completeness": "complete"
+  },
+  "2017704961669317003": {
+   "id": "2017704961669317003",
+   "authorHandle": "mert",
+   "postedAt": "2026-01-31T21:02:04.000Z",
+   "text": "barry i need you to bid ZEC with all your might and will, sell a kidney if you have to",
+   "kind": "reply",
+   "capturedAt": "2026-10-31T18:44:09.811Z",
+   "conversationId": "2017695225368494591",
+   "metrics": {
+    "replies": 12,
+    "reposts": 3,
+    "quotes": 1,
+    "likes": 184,
+    "bookmarks": 3,
+    "views": 14923
+   },
+   "completeness": "complete"
+  },
+  "2020877673480749147": {
+   "id": "2020877673480749147",
+   "authorHandle": "mert",
+   "postedAt": "2026-02-09T15:09:18.000Z",
+   "text": "congrats derplet, you picked one asset thats down out of the 100 others that are also down \n\nBTC went from 120 to 69, crypto lost 2.5T in mcap, but yes Zcash is the problem (and also did 9/11 most likely)\n\nI started talking about it at 18, its now over 10x that\n\nsee you at 10,000",
+   "kind": "reply",
+   "capturedAt": "2026-10-31T18:44:09.811Z",
+   "conversationId": "2020831524074197153",
+   "metrics": {
+    "replies": 33,
+    "reposts": 6,
+    "quotes": 0,
+    "likes": 534,
+    "bookmarks": 15,
+    "views": 26774
+   },
+   "completeness": "complete"
+  },
+  "2022418599948984739": {
+   "id": "2022418599948984739",
+   "authorHandle": "mert",
+   "postedAt": "2026-02-13T21:12:23.000Z",
+   "text": "51% odds ZEC goes over 320 in Feb according to Kalshi via Checkprice\n\nthey are selling dollars for 50 cents",
+   "kind": "post",
+   "capturedAt": "2026-10-31T18:44:09.809Z",
+   "conversationId": "2022418599948984739",
+   "metrics": {
+    "replies": 32,
+    "reposts": 8,
+    "quotes": 2,
+    "likes": 235,
+    "bookmarks": 8,
+    "views": 39632
+   },
+   "completeness": "complete"
+  },
+  "2028595707175662044": {
+   "id": "2028595707175662044",
+   "authorHandle": "mert",
+   "postedAt": "2026-03-02T22:18:00.000Z",
+   "text": "for a short period, you don't even need an invite code anymore\n\nsecured by privy\n\nhttps://checkprice.com/spot/zec",
+   "kind": "reply",
+   "capturedAt": "2026-10-31T18:44:09.809Z",
+   "conversationId": "2028595704571084919",
+   "metrics": {
+    "replies": 2,
+    "reposts": 1,
+    "quotes": 0,
+    "likes": 27,
+    "bookmarks": 4,
+    "views": 5194
+   },
+   "completeness": "complete"
+  },
+  "2030285032485515633": {
+   "id": "2030285032485515633",
+   "authorHandle": "mert",
+   "postedAt": "2026-03-07T14:10:47.000Z",
+   "text": "holding zec has its perks",
+   "kind": "reply",
+   "capturedAt": "2026-10-31T18:44:09.808Z",
+   "conversationId": "2030245364435956213",
+   "metrics": {
+    "replies": 2,
+    "reposts": 0,
+    "quotes": 0,
+    "likes": 13,
+    "bookmarks": 0,
+    "views": 939
+   },
+   "completeness": "complete"
+  },
+  "2033670239020277952": {
+   "id": "2033670239020277952",
+   "authorHandle": "mert",
+   "postedAt": "2026-03-16T22:22:23.000Z",
+   "text": "I sold him to buy zec",
+   "kind": "reply",
+   "capturedAt": "2026-10-31T18:44:09.808Z",
+   "conversationId": "2033670050641576337",
+   "metrics": {
+    "replies": 2,
+    "reposts": 0,
+    "quotes": 0,
+    "likes": 24,
+    "bookmarks": 0,
+    "views": 3001
+   },
+   "completeness": "complete"
+  },
+  "2034640944893415639": {
+   "id": "2034640944893415639",
+   "authorHandle": "mert",
+   "postedAt": "2026-03-19T14:39:37.000Z",
+   "text": "from the \"rainy day\" fund to the \"rainy era\" fund\n\nas the global order shifts, you need to reassess trust assumptions\n\n- do you trust European institutions with your capital? American ones? Southeast Asian ones?\n\n- what if they enact new processes citing \"unprecedented conditions\" around currencies, commodities, and conflicts?\n\n- there is no need for panic, but there is a need to re-assess your exposure to systems that rely on trust assumptions you forgot about because \"nothing ever happens\" is not true anymore  \n\n- this is an asymmetric action. there is no downside to doing it, but there's huge potential downside to not doing it, albeit at a very low probability\n\n- everyone knows of the \"rainy day\" fund. a set of liquid money you set aside to cover for unplanned short-term expenses\n\n- the next step is a \"rainy era\" fund (there probably exists a better name for this idk, maybe \"sovereignty insurance\")\n\n- if you're in crypto, you probably already have a version of this. you probably hold some combination of btc, eth, sol, hype, zec, usdc/usdt, and probably gold\n\n- you also already know that the CEXes you use to custody or transact with these assets are also institutions, and thus are susceptible to wartime policy changes\n\n- this is all very basic stuff that's easy to forget, so I would simply recommend:\n\ni) audit where all your funds are stored and the trust assumptions and jurisdictions and policies for withdrawals for them. account for different time horizons. maybe this is over in two weeks, but maybe it gradually shifts boundaries for years. who knows, your job is to mitigate risk\n\nii) *make sure you are not neglecting self-custodying your assets*\n\niii) make sure your self custody setups are well thought out. MFA, hardware wallets, hot/cold wallet setups. a card or two for ensuring you can actually spend these or trusted OTC desks\n\niv) this one is a bit more paranoid, but ensure you have assessed the risks due to a lack of privacy. there are scenarios where asset seizures or retroactive rent-seeking could happen as anything you do that's tied to a cex deposit/withdrawal can be traced trivially. you can be barred from moving your money across your own accounts, etc if they're in different spots.\n\nthis likely won't happen, but again, it's asymmetric in risk management in that your downside for preparing is zero but your downside for not preparing is colossal\n\nthis is why crypto exists. build your own sanctuary fund to secure your and your families assets in the case of further escalation that requires no reliance on institutions that will just do whatever they please",
+   "kind": "quote",
+   "capturedAt": "2026-10-31T18:44:09.807Z",
+   "conversationId": "2034640944893415639",
+   "metrics": {
+    "replies": 18,
+    "reposts": 8,
+    "quotes": 3,
+    "likes": 99,
+    "bookmarks": 22,
+    "views": 17470
+   },
+   "completeness": "complete"
+  },
+  "2041846665007554672": {
+   "id": "2041846665007554672",
+   "authorHandle": "mert",
+   "postedAt": "2026-04-08T11:52:35.000Z",
+   "text": "added basic logic to buy zec directly on zcash\n\nusing sol as funding layer and near intents as the cross-chain swap layer\n\nget zec directly on zcash chain with just a passkey. note that it's not shielded, so you should withdraw to @zodl_co after",
+   "kind": "post",
+   "capturedAt": "2026-10-31T18:44:15.908Z",
+   "conversationId": "2041846665007554672",
+   "metrics": {
+    "replies": 32,
+    "reposts": 14,
+    "quotes": 1,
+    "likes": 267,
+    "bookmarks": 34,
+    "views": 20182
+   },
+   "completeness": "complete"
+  },
+  "2044780129394823202": {
+   "id": "2044780129394823202",
+   "authorHandle": "mert",
+   "postedAt": "2026-04-16T14:09:07.000Z",
+   "text": "\"why didn't you sell ZEC when price went down?\"",
+   "kind": "post",
+   "capturedAt": "2026-10-31T18:44:15.908Z",
+   "conversationId": "2044780129394823202",
+   "metrics": {
+    "replies": 45,
+    "reposts": 25,
+    "quotes": 8,
+    "likes": 370,
+    "bookmarks": 48,
+    "views": 41352
+   },
+   "completeness": "complete"
+  },
+  "2060087464866320575": {
+   "id": "2060087464866320575",
+   "authorHandle": "mert",
+   "postedAt": "2026-05-28T19:55:00.000Z",
+   "text": "he didn't actually sell zec because he was just longing on hl\n\ncheckmate",
+   "kind": "reply",
+   "capturedAt": "2026-10-31T18:44:21.929Z",
+   "conversationId": "2060084024060555331",
+   "metrics": {
+    "replies": 0,
+    "reposts": 1,
+    "quotes": 0,
+    "likes": 9,
+    "bookmarks": 0,
+    "views": 1383
+   },
+   "completeness": "complete"
+  },
+  "2060721982212083966": {
+   "id": "2060721982212083966",
+   "authorHandle": "mert",
+   "postedAt": "2026-05-30T13:56:21.000Z",
+   "text": "hello scott, nice to meet you, I sold my Bitcoin to buy Zcash",
+   "kind": "reply",
+   "capturedAt": "2026-10-31T18:44:21.929Z",
+   "conversationId": "2060475197019340870",
+   "metrics": {
+    "replies": 41,
+    "reposts": 18,
+    "quotes": 3,
+    "likes": 401,
+    "bookmarks": 5,
+    "views": 10610
+   },
+   "completeness": "complete"
+  },
+  "2062104414706426106": {
+   "id": "2062104414706426106",
+   "authorHandle": "mert",
+   "postedAt": "2026-06-03T09:29:39.000Z",
+   "text": "some protocol updates.\n\nwe have added a patch on the zcash network that atomically rolls back any transactions involving Michael Saleor and Thomas Lee. these individuals are barred from interacting with the blockchain.\n\nno further comments at this time.",
+   "kind": "post",
+   "capturedAt": "2026-10-31T18:44:21.929Z",
+   "conversationId": "2062104414706426106",
+   "metrics": {
+    "replies": 50,
+    "reposts": 17,
+    "quotes": 5,
+    "likes": 379,
+    "bookmarks": 9,
+    "views": 27385
+   },
+   "completeness": "complete"
+  },
+  "2062658091431182492": {
+   "id": "2062658091431182492",
+   "authorHandle": "mert",
+   "postedAt": "2026-06-04T22:09:45.000Z",
+   "text": "almost all privacy protocols have a variant of this same thing\n\nthis same FUD comes back every 5 months as new people learn how privacy pools work (and curiously it mostly comes from xmr ppl who are also vulnerable to counterfeit bugs lol)\n\nin theory, with a zk privacy protocol (not just zcash), you could have a bug in a circuit that inflates supply provided someone extremely sophisticated finds it and somehow exploits it undetected (the difference between a regular defi exploit is that it's harder to detect)\n\nthe new information since last week is that the team has ramped up redteaming their own circuits with a ton of new advanced tools and teams specifically for this purpose and patched the bug in the process\n\n(I actually thought people would find this bullish but I'm retarded clearly)\n\non zcash, you can catch this with a turnstile such that the total supply is not inflated and the attacker is stopped but that would effect withdrawals from that specific shielded pool until social consensus\n\nyou can probabilistically claim there was no exploit though not definitively because the turnstile would've triggered and probabilistically an attacker would've sold by now or the several other run ups, and the fact that the very best security people from all over couldn't find an issue for years, but nothing has changed as this was always the case\n\nit's also why \"just adding privacy\" on a different chain (without audit ability) is not as easy as it sounds because you want the very best people working on this at all times and that was the point of this\n\nI get this makes some people uneasy, so there will be a network upgrade to allow anyone to verify the integrity, coming up (see zooko's post)\n\nthis is why project tachyon is going to be such a banger. not just because it will be quantum proof but because it will be a new pool (which will definitively prove this wasn't exploited), but because it will be formally verified, simpler, and provably sound\n\nanyway, im shielding and chilling\n\nsee:\nhttps://x.com/ebfull/status/2062257609197900122?s=20",
+   "kind": "reply",
+   "capturedAt": "2026-10-31T18:44:21.929Z",
+   "conversationId": "2062643767165739056",
+   "metrics": {
+    "replies": 60,
+    "reposts": 45,
+    "quotes": 16,
+    "likes": 451,
+    "bookmarks": 111,
+    "views": 181583
+   },
+   "completeness": "complete"
+  },
+  "2062933162959700103": {
+   "id": "2062933162959700103",
+   "authorHandle": "mert",
+   "postedAt": "2026-06-05T16:22:48.000Z",
+   "text": "soon, you will find out that *all software* handling funds is prone to AI finding vulnerabilities. all of it\n\nthat's why you also saw tons of defi exploits already this year\n\nopen source, L1, L2, DeFi, mutable, immutable, private, transparent, cross-chain. if it's software, it is at risk. in fact, it has always been at risk, but now AI changes the math.\n\nso what does one do about this? is the idea of crypto over?\n\nin theory, the main difference for privacy contracts vs regular contracts is detectability \n\nin practice, we've seen countless times in defi where the hackers got away fast even after detection (happened at least 7 times this year that I can count)\n\nit is not an accident that you've seen so many in recent times\n\nthe safest way against this is self-custodying the native asset itself on the native chain. because even in the worst case, the validators could roll it back if the exploit is large and core enough. so there is some lower bound there\n\nbut as vitalik, toly, and many others have pointed out, the main improvement to defend against this going forward will be formal verification\n\nthis is a rigorous, mathematically-based method to formally prove that software behaves exactly as intended\n\nthis is also why open source will be critical. because you will have countless others also trying to help you collectively improve security (for rewards) whereas with closed source the math is fundamentally skewed because only the core team can defend\n\nthe next zcash upgrade, some defi protocols, and some chains are already in the process of doing this, aggressively\n\nthe result will be that crypto emerges stronger than ever before and in fact safer than centralized counterparts. there will be no stopping crypto.",
+   "kind": "post",
+   "capturedAt": "2026-10-31T18:44:21.928Z",
+   "conversationId": "2062933162959700103",
+   "metrics": {
+    "replies": 99,
+    "reposts": 53,
+    "quotes": 16,
+    "likes": 534,
+    "bookmarks": 49,
+    "views": 35586
+   },
+   "completeness": "complete"
+  },
+  "2087981722155819252": {
+   "id": "2087981722155819252",
+   "authorHandle": "mert",
+   "postedAt": "2026-08-13T19:16:50.000Z",
+   "text": "not long ago, some were sure an exploit happened on zcash that could never be verified\n\nnow, it has: \n\ni) already verified 94% of the supply, with the remaining continuing to migrate\n\nii) added mathematical verifiability to rule out the same bugs in the future\n\ngreat resilience",
+   "kind": "quote",
+   "capturedAt": "2026-10-31T18:44:29.201Z",
+   "conversationId": "2087981722155819252",
+   "metrics": {
+    "replies": 58,
+    "reposts": 50,
+    "quotes": 4,
+    "likes": 446,
+    "bookmarks": 26,
+    "views": 82362
+   },
+   "completeness": "complete"
+  },
+  "2096567046456873230": {
+   "id": "2096567046456873230",
+   "authorHandle": "mert",
+   "postedAt": "2026-09-06T11:51:50.000Z",
+   "text": "I understand for many new folks holding ZEC on an exchange is good enough for their needs\n\nbut I'd really encourage at least playing around with the wallets as it's a perfect illustration of what crypto could be\n\ni) download vizor or zodl wallet (ideally secured with keystone hardware key, though ledger integration is coming soon)\n\nii) move some funds to it from the exchange and shield theme\n\niii) from here, you have an encrypted base of money. similar to a private bank for offshore wealth banking\n\niv) then, you can use the crosspay function to make payments on any chain and any token via the built-in near intents integration\n\nso you pretty much get an international private bank that you can use for shielding your wealth, making your payments, and even privately voting on zcash network upgrades",
+   "kind": "post",
+   "capturedAt": "2026-10-31T18:44:29.200Z",
+   "conversationId": "2096567046456873230",
+   "metrics": {
+    "replies": 144,
+    "reposts": 110,
+    "quotes": 18,
+    "likes": 1426,
+    "bookmarks": 682,
+    "views": 102626
+   },
+   "completeness": "complete"
+  },
+  "2103204693560172903": {
+   "id": "2103204693560172903",
+   "authorHandle": "mert",
+   "postedAt": "2026-09-24T19:27:29.000Z",
+   "text": "not sure anyone read the thing beyond the title\n\ntl;dr - if you somehow solved the laundry list of fundamental issues, then even after that you would still be roughly 7 years behind zcash\n\nit's a synthetic ledger with significant tradeoffs, some of which are fundamental (can't be mitigated), and others requiring many, many years of work + new research to be published and scrutinized (assuming it can even work)\n\nthe Bitcoin L1 does not validate the private state, prevent double-spends, or reconcile the balances, that's enforced by some offchain protocol -- so, saying L1 transfers is not entirely honest\n\nit also has:\n- a trusted setup\n- no fee anonymization (much worse than it sounds)\n- no in-protocol mechanism for getting actual BTC in or out (which means you are holding synthetics)\n- no real consideration for scale \n- several offchain parts that can't be run locally which means tracing and linkage and censorship\n- vulnerability to quantum without a plan\n- no working implementation for witness encryption where the last used scheme was broken (!) and depends on 330 TB ciphertext. that's terabytes btw \n\n(though they claim advancements here so let's see)\n\nit only somewhat can work if:\n\ni) you somehow acquire the private synthetic BTC inside their ledger to begin with (you cant)\nii) every counterparty recognizes the same offchain metaprotocol\niii) some trust minimized mechanism connects the synthetic balances back to actual BTC\niv) several other advancements are made to the scale, quantum, and foundational cryptography considerations, which is experimental and would require many years to establish (if at all)\n\npoint iii) specifically means that this is not fungible for the underlying\n\nI respect that people are working on this and taking notes from zcash finally. but the claims on this app vs. what's established are light years apart",
+   "kind": "reply",
+   "capturedAt": "2026-10-31T18:44:35.835Z",
+   "conversationId": "2103175954763821208",
+   "metrics": {
+    "replies": 28,
+    "reposts": 41,
+    "quotes": 11,
+    "likes": 286,
+    "bookmarks": 55,
+    "views": 11717
+   },
+   "completeness": "complete"
+  }
+ },
+ "relabelled_at": "2026-10-31T18:45:53Z"
+}
