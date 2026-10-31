@@ -1,0 +1,15 @@
+{
+ "url": "https://x.com/OverrideCaller/status/2112944499717046272",
+ "author": "OverrideCaller",
+ "at": "2026-10-21T16:30:00Z",
+ "text": "This chart says it all. Top is in.",
+ "args": {
+  "asset": "SILVER",
+  "side": "short",
+  "reason": "the attached chart is SI=F (silver futures) and 'top is in' is a short call; checked by hand"
+ },
+ "expect": {
+  "asset": "SILVER",
+  "side": -1
+ }
+}

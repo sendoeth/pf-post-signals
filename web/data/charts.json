@@ -1,9 +1,9 @@
 {
  "schema": "pf-post-signals.charts.v1",
  "record_schema": "post_price.v1",
- "records_scanned": 31,
+ "records_scanned": 32,
  "prices_as_of": "2026-10-31T00:52:10Z",
- "posts_drawn": 31,
+ "posts_drawn": 32,
  "refused": [],
  "superseded": [],
  "assets": [
@@ -5707,6 +5707,14 @@
     [
      "2026-10-31T00:00:00Z",
      77368.76
+    ],
+    [
+     "2026-10-31T01:00:00Z",
+     77568.81
+    ],
+    [
+     "2026-10-31T02:00:00Z",
+     77405.98
     ]
    ],
    "posts": [
@@ -6332,6 +6340,88 @@
      },
      "record_file": "records/posts/2113279842636419392_BTC.json",
      "record_sha256": "eb6d72bf90d201e394ba6898464b4ee6a60de61d26d2a2ce0e046f8e7f7d7f5b"
+    },
+    {
+     "schema": "post_price.v1",
+     "post": {
+      "id": "2114492799794254164",
+      "url": "https://x.com/DrProfitCrypto/status/2114492799794254164",
+      "author": "DrProfitCrypto",
+      "posted_at": "2026-10-25T23:02:23Z",
+      "posted_at_source": "receipt",
+      "text": "#Bitcoin \u2013 What\u2019s Next?\n\nThe Big Sunday Report: All We Need to Know\n\nTA / LCA / Psychological Breakdown\n\nI have finished building the long positions I announced and entered between $80K and $81K. My average entry is now $80,400 for the longs, while my average spot entry is",
+      "receipt_sha256": "2bef9d604088b32a5a748795ba79ff281bdd8e48ddba04184fbe4d7d47965731"
+     },
+     "asset": {
+      "name": "BTC",
+      "source": "binance",
+      "symbol": "BTCUSDT",
+      "price_field": "open"
+     },
+     "side": 1,
+     "status": "partial",
+     "entry": {
+      "at": "2026-10-26T00:00:00Z",
+      "price": 80154.09
+     },
+     "latest": {
+      "at": "2026-10-31T02:00:00Z",
+      "price": 77405.98
+     },
+     "change_since_post": -0.034285337154972395,
+     "exits": {
+      "1": {
+       "at": "2026-10-27T00:00:00Z",
+       "price": 80150.56
+      },
+      "7": null,
+      "30": null
+     },
+     "moves": {
+      "1": -4.404017312154007e-05,
+      "7": null,
+      "30": null
+     },
+     "unresolved": {
+      "7": "horizon not yet reached",
+      "30": "horizon not yet reached"
+     },
+     "resolved_with": {
+      "prices": "live:binance+yahoo",
+      "last_bar_at": "2026-10-31T02:00:00Z",
+      "max_lag_days": 2,
+      "session_lag_days": 2
+     },
+     "signed_returns": {
+      "1": -4.404017312154007e-05,
+      "7": null,
+      "30": null
+     },
+     "asset_choice": {
+      "method": "detector",
+      "terms": [
+       "bitcoin"
+      ],
+      "reason": null
+     },
+     "side_choice": {
+      "method": "detector",
+      "terms": [
+       "building the long",
+       "long positions",
+       "the longs"
+      ],
+      "reason": null
+     },
+     "best": {
+      "at": "2026-10-29T16:00:00Z",
+      "price": 81778.01,
+      "move": 0.020259976752277975,
+      "basis": "call side",
+      "for_call": 0.020259976752277975
+     },
+     "record_file": "records/posts/2114492799794254164_BTC.json",
+     "record_sha256": "17970a8a12f05236bd41731810048cbaa729b9be9f1d1c2bd2c170beacacb2dd"
     },
     {
      "schema": "post_price.v1",
@@ -85856,6 +85946,7 @@
   "order": [
    "goodalexander",
    "Corbanu",
+   "DrProfitCrypto",
    "BobLoukas"
   ],
   "callers": {
@@ -86084,7 +86175,7 @@
     "raw": 43.50051067612224,
     "weight": 0.6296296296296297,
     "score": 45.90772894422511,
-    "rank": 3,
+    "rank": 4,
     "display": "45.9"
    },
    "Corbanu": {
@@ -86195,6 +86286,38 @@
     "score": 49.29981506770131,
     "rank": 2,
     "display": "49.3"
+   },
+   "DrProfitCrypto": {
+    "calls_total": 1,
+    "with_entry": 1,
+    "scored": 1,
+    "calls": [
+     {
+      "post_id": "2114492799794254164",
+      "asset": "BTC",
+      "posted_at": "2026-10-25T23:02:23Z",
+      "side": "long",
+      "state": "open",
+      "result": -0.034285337154972395,
+      "counted": true,
+      "why": "return for the side since the post (open)",
+      "quality": 33.49888091535586
+     }
+    ],
+    "label": "small sample",
+    "wins": 0,
+    "hit_rate": 0.0,
+    "avg_result": -0.034285337154972395,
+    "components": {
+     "hit": 0.0,
+     "quality": 33.49888091535586,
+     "clarity": 100.0
+    },
+    "raw": 28.399552366142345,
+    "weight": 0.09090909090909091,
+    "score": 48.03632294237658,
+    "rank": 3,
+    "display": "48.0"
    },
    "goodalexander": {
     "calls_total": 4,

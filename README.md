@@ -147,6 +147,20 @@ Every input is monotone (a better result on any call never lowers the score). Op
 - `python3 rate.py` prints every caller's inputs and calls. `check_bundle.py` recomputes every score a second way from the record files; `tests/ratings_test.js` a third way in JavaScript against the live pages.
 - Tests: `tests/test_rating.py` (hand-computed fixture, shrinkage, monotonicity fuzz, realized returns, determinism, hostile names, live bundle), `tests/test_static.py` (static scores + caller pages + hostile name), `tests/ratings_test.js`, `tests/security_test.js` (caller pages), `tests/board_test.js` (score order).
 
+## Step 16: add a caller from one pasted post (owner-only)
+
+`tools/add_call.py` is a local script: there is no public intake, form or login on the site.
+
+```
+python3 tools/add_call.py https://x.com/<handle>/status/<id>          # preview
+python3 tools/add_call.py https://x.com/<handle>/status/<id> --add    # publish exactly that preview
+```
+
+- **Preview** saves the post receipt (`sources/<author>/receipts/<id>.json`, sha256), detects the asset (`detect.py`) and the side (`detect.detect_side`: first-person or explicit position words; both sides in one post is refused), prices the entry on the asset's shared series (every bar the bundle already has is written back, so the new record agrees with every existing one), and builds the bundle exactly as `--add` will, in a scratch copy of `records/`. It prints the call, its result so far, the author's current score and the score with this call added, and writes `intake/pending/<id>_<asset>.json`. Nothing under `web/` or `records/` changes.
+- **--add** applies that pending file and nothing else: it refuses if `charts.json` changed since the preview (stale) or the receipt changed, writes `records/posts/<id>_<asset>.json`, saves a new caller's avatar (initials when the post has no picture), rebuilds the bundle, ratings and static pages, refetches candles only if they do not cover the entry bar, then checks that the author's score and the ranking equal the preview exactly and that no frozen value of any other position moved. The result is logged in `intake/log/`.
+- Refused with the reason: deleted or private posts, posts whose asset the detector cannot read, a post + asset already recorded, a side stated both ways, and `--asset` / `--side` without `--reason`. A hand-picked asset or side keeps its reason in the record (`asset_choice`, `side_choice`).
+- Tests: `tests/test_add_call.py` (fixtures in `tests/fixtures/intake`: new caller, existing caller, duplicate, no detectable asset, override with reason, hostile text; preview leaves `web/` and `records/` byte-identical; preview score = post-add score and delta; stale previews, missing reasons and two-sided posts refused; the new record shares the asset's bars).
+
 ## Reproduce step 2
 
 ```bash

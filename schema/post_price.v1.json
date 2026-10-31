@@ -596,6 +596,38 @@
      ]
     }
    }
+  },
+  "side_choice": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "method"
+   ],
+   "description": "step 16: how the side was chosen (detector words, or manual with a written reason)",
+   "properties": {
+    "method": {
+     "enum": [
+      "detector",
+      "manual",
+      "none"
+     ]
+    },
+    "terms": {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "maxLength": 80
+     },
+     "maxItems": 20
+    },
+    "reason": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "maxLength": 600
+    }
+   }
   }
  }
 }

@@ -1,0 +1,44 @@
+{
+ "version": "quanty.intake.v1",
+ "added_at": "2026-10-31T02:42:30Z",
+ "url": "https://x.com/DrProfitCrypto/status/2114492799794254164",
+ "record_file": "records/posts/2114492799794254164_BTC.json",
+ "record_sha256": "17970a8a12f05236bd41731810048cbaa729b9be9f1d1c2bd2c170beacacb2dd",
+ "receipt": {
+  "file": "sources/drprofitcrypto/receipts/2114492799794254164.json",
+  "sha256": "2bef9d604088b32a5a748795ba79ff281bdd8e48ddba04184fbe4d7d47965731",
+  "created": true,
+  "text_truncated": true
+ },
+ "bundle_sha256_before": "31c331b7980535098d0db64655da94b2e2d78ec37ca6cc1bb976a947457d26ad",
+ "bundle_sha256_after": "85253032a84785b0e0279205a31e17a2f1ff795d920aa032e733785e92f10439",
+ "avatar": "saved web/avatars/drprofitcrypto.jpg",
+ "candles": "candles already cover the entry bar",
+ "score_previewed": {
+  "score": 48.03632294237658,
+  "display": "48.0",
+  "rank": 3,
+  "label": "small sample",
+  "scored": 1,
+  "calls_total": 1,
+  "with_entry": 1,
+  "raw": 28.399552366142345,
+  "weight": 0.09090909090909091,
+  "of": 4
+ },
+ "score_after_add": {
+  "score": 48.03632294237658,
+  "display": "48.0",
+  "rank": 3,
+  "label": "small sample",
+  "scored": 1,
+  "calls_total": 1,
+  "with_entry": 1,
+  "raw": 28.399552366142345,
+  "weight": 0.09090909090909091,
+  "of": 4
+ },
+ "score_before": null,
+ "matches_preview": true,
+ "problems": []
+}

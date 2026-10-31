@@ -1,0 +1,10 @@
+{
+ "url": "https://x.com/NewCaller/status/2112545621406646272",
+ "author": "NewCaller",
+ "at": "2026-10-20T14:05:00Z",
+ "text": "Going long bitcoin here. Opened a long position after the flush.",
+ "expect": {
+  "asset": "BTC",
+  "side": 1
+ }
+}

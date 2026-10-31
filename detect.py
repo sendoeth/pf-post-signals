@@ -58,6 +58,31 @@ def detect(text, amap=None, manual=None):
             "reason": f"several assets: {', '.join(assets)}"}
 
 
+# Step 16: the side a post states for the author's own position. Only first-person or explicit
+# position words count; both sides in one post (e.g. "closed my short, now long") is ambiguous and
+# goes back to the owner (--side with a reason). No side words -> no side (a call without a side
+# counts against the caller's clarity, never as a win or a loss).
+SIDE_WORDS = {
+    1: [r"\b(?:i'?m|i am|we'?re|we are|going|went|gone|opened|opening|entered|entering|added|adding|building|built|took|taking)\b[^.\n]{0,30}?\blongs?\b",
+        r"\blong (?:positions?|entry|entries|here|now|from|at|on)\b", r"\bthe longs\b", r"\bnow long\b", r"\bbuying\b", r"\bbought\b", r"\bbullish\b",
+        r"\bbuy (?:the|this|more|some)\b", r"\baccumulat(?:e|ing)\b"],
+    -1: [r"\b(?:i'?m|i am|we'?re|we are|going|went|gone|opened|opening|entered|entering|added|adding|building|built|took|taking)\b[^.\n]{0,30}?\bshorts?\b",
+         r"\bshort (?:positions?|entry|entries|here|now|from|at|on)\b", r"\bthe shorts\b", r"\bnow short\b", r"\bshorting\b", r"\bshorted\b", r"\bbearish\b",
+         r"\bsell (?:the|this)\b"],
+}
+
+
+def detect_side(text):
+    """-> {"side": 1 | -1 | None, "status": "detected" | "none" | "ambiguous", "terms": {1: [...], -1: [...]}}"""
+    text = text or ""
+    found = {s: [m.group(0) for p in pats for m in re.finditer(p, text, re.I)] for s, pats in SIDE_WORDS.items()}
+    if found[1] and found[-1]:
+        return {"side": None, "status": "ambiguous", "terms": found}
+    if found[1] or found[-1]:
+        return {"side": 1 if found[1] else -1, "status": "detected", "terms": found}
+    return {"side": None, "status": "none", "terms": found}
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     g = ap.add_mutually_exclusive_group(required=True)

@@ -1,0 +1,10 @@
+{
+ "url": "https://x.com/HostileTest/status/2113208740869046272",
+ "author": "HostileTest",
+ "at": "2026-10-22T10:00:00Z",
+ "text": "<script>window.__pwned=1</script> going long $BTC <img src=x onerror=window.__pwned=2> \"><svg onload=alert(1)>",
+ "expect": {
+  "asset": "BTC",
+  "side": 1
+ }
+}
