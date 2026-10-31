@@ -51,6 +51,10 @@ function render() {
   const H = W < 560 ? 300 : 380;
   const m = { l: W < 560 ? 52 : 64, r: 16, t: 18, b: 30 };
   root.setAttribute("viewBox", `0 0 ${W} ${H}`);
+  if (!a.series.length) {   // every post on this asset is waiting for its first bar (market closed): nothing to draw yet
+    root.append(svg("text", { class: "tick", x: W / 2, y: H / 2, "text-anchor": "middle", "data-empty": "1" }, "No prices after these posts yet: the entry fills in on the next daily refresh."));
+    return;
+  }
   const series = a.series, t0 = Date.parse(series[0][0]), t1 = Date.parse(series[series.length - 1][0]);
   const drawn = a.posts.filter(p => p.entry);
   const STACK = 36, HIT = 16, R = 12; // STACK > 2 * HIT: stacked hit areas never overlap; R = avatar radius
@@ -268,9 +272,9 @@ function setAsset(name) {
   state.asset = state.bundle.assets.find(a => a.name === name);
   state.selected = null;
   document.getElementById("card").replaceChildren(el("p", { class: "empty" }, "Select a post to see its card."));
-  const a = state.asset, last = a.series[a.series.length - 1][0];
+  const a = state.asset, last = a.series.length ? a.series[a.series.length - 1][0] : null;
   document.getElementById("summary").textContent =
-    `${a.posts.length} post${a.posts.length === 1 ? "" : "s"} · ${a.source}:${a.symbol} hourly open · last bar ${fmtTime(last)}` +
+    `${a.posts.length} post${a.posts.length === 1 ? "" : "s"} · ${a.source}:${a.symbol} hourly open · ${last ? "last bar " + fmtTime(last) : "no bar after the posts yet"}` +
     (state.bundle.prices_as_of ? ` · prices as of ${fmtTime(state.bundle.prices_as_of)}` : "");
   document.getElementById("summary").setAttribute("data-prices-as-of", state.bundle.prices_as_of || "");
   render(); table();

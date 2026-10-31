@@ -1,0 +1,115 @@
+{
+ "version": "quanty.intake.v1",
+ "added_at": "2026-10-31T14:19:18Z",
+ "records": [
+  {
+   "record_file": "records/posts/2116304617047007308_SOXL.json",
+   "record_sha256": "fdb8fe8dfb07979bc657ef76c332ad2a9a34ba8c11e289589972ca93b27b34b9",
+   "receipt": {
+    "file": "sources/goodalexander/receipts/2116304617047007308.json",
+    "sha256": "b883b4f302806ae9bc0918f685d98e82f40792c4af079027f74dc924a1387b26",
+    "created": false,
+    "text_truncated": false
+   }
+  }
+ ],
+ "bundle_sha256_before": "68abeee8eaf00e25edde1a5e51d15db73787c3e9b14f72ff036f30ccd636c6e8",
+ "bundle_sha256_after": "c108501a5969871e06322b9db2a2bdca6a35b76acd229641f9119e8e6edd54db",
+ "avatar": "kept",
+ "candles": "candles refetched (fetch_ohlc.py): entry bars: 48/48 candle opens equal the record entry price",
+ "scores_previewed": {
+  "goodalexander": {
+   "score": 51.96096283491956,
+   "display": "52.0",
+   "rank": 1,
+   "label": "small sample",
+   "scored": 4,
+   "calls_total": 5,
+   "with_entry": 4,
+   "raw": 56.86336992221847,
+   "weight": 0.2857142857142857,
+   "of": 4
+  }
+ },
+ "scores_after_add": {
+  "goodalexander": {
+   "score": 51.96096283491956,
+   "display": "52.0",
+   "rank": 1,
+   "label": "small sample",
+   "scored": 4,
+   "calls_total": 5,
+   "with_entry": 4,
+   "raw": 56.86336992221847,
+   "weight": 0.2857142857142857,
+   "of": 4
+  }
+ },
+ "scores_before": {
+  "goodalexander": {
+   "score": 51.96096283491956,
+   "display": "52.0",
+   "rank": 1,
+   "label": "small sample",
+   "scored": 4,
+   "calls_total": 4,
+   "with_entry": 4,
+   "raw": 56.86336992221847,
+   "weight": 0.2857142857142857,
+   "of": 4
+  }
+ },
+ "other_callers_unchanged": [
+  "BobLoukas",
+  "Corbanu",
+  "DrProfitCrypto"
+ ],
+ "frozen_values_checked": 48,
+ "matches_preview": true,
+ "problems": [],
+ "url": "https://x.com/goodalexander/status/2116304617047007308",
+ "record_file": "records/posts/2116304617047007308_SOXL.json",
+ "record_sha256": "fdb8fe8dfb07979bc657ef76c332ad2a9a34ba8c11e289589972ca93b27b34b9",
+ "receipt": {
+  "file": "sources/goodalexander/receipts/2116304617047007308.json",
+  "sha256": "b883b4f302806ae9bc0918f685d98e82f40792c4af079027f74dc924a1387b26",
+  "created": false,
+  "text_truncated": false
+ },
+ "score_previewed": {
+  "score": 51.96096283491956,
+  "display": "52.0",
+  "rank": 1,
+  "label": "small sample",
+  "scored": 4,
+  "calls_total": 5,
+  "with_entry": 4,
+  "raw": 56.86336992221847,
+  "weight": 0.2857142857142857,
+  "of": 4
+ },
+ "score_after_add": {
+  "score": 51.96096283491956,
+  "display": "52.0",
+  "rank": 1,
+  "label": "small sample",
+  "scored": 4,
+  "calls_total": 5,
+  "with_entry": 4,
+  "raw": 56.86336992221847,
+  "weight": 0.2857142857142857,
+  "of": 4
+ },
+ "score_before": {
+  "score": 51.96096283491956,
+  "display": "52.0",
+  "rank": 1,
+  "label": "small sample",
+  "scored": 4,
+  "calls_total": 4,
+  "with_entry": 4,
+  "raw": 56.86336992221847,
+  "weight": 0.2857142857142857,
+  "of": 4
+ }
+}

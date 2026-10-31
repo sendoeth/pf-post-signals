@@ -33,7 +33,8 @@ LOOKBACK_MIN_DAYS = 90
 
 def lookback(posts):
     """(days, start iso) for an asset's posts: max(90 days, first-to-last call span) before the first entry."""
-    entries = sorted(p["entry"]["at"] for p in posts if p["entry"])
+    # a post with no price after it yet (market closed) counts from its post time
+    entries = sorted(p["entry"]["at"] if p["entry"] else p["post"]["posted_at"] for p in posts)
     span = (resolve.parse(entries[-1]) - resolve.parse(entries[0])).total_seconds() / 86400
     days = max(LOOKBACK_MIN_DAYS, int(span) + 1)
     return days, (resolve.parse(entries[0]) - dt.timedelta(days=days)).strftime("%Y-%m-%dT%H:%M:%SZ")
@@ -126,7 +127,7 @@ def main():
             c, daily_until = fetch(a["source"], a["symbol"], since)
             candles[a["name"]] = c
             path = os.path.join(OUT, f"{a['name']}.json")
-            first_call = min(p["entry"]["at"] for p in a["posts"] if p["entry"])
+            first_call = min(p["entry"]["at"] if p["entry"] else p["post"]["posted_at"] for p in a["posts"])
             lb = {"days": days, "start": since, "first_call": first_call, "first_bar": c[0][0],
                   "starts_at_listing": c[0][0] > resolve.iso((resolve.parse(since) + dt.timedelta(days=4)).timestamp())}
             doc = {"asset": a["name"], "source": a["source"], "symbol": a["symbol"], "interval": "1h",

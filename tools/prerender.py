@@ -284,7 +284,8 @@ def position_static(r, asof, avatars, all_rows=(), ratings=None):
     if sc:
         rows.append(("Caller score", f'{sc["display"]} / 100 (rank {sc["rank"]}' + (f', {sc["label"]})' if sc["label"] else ")"), "caller_score", None))
     numeric = ("change_since_post", "return", "best", "if_still_held")
-    dl = "".join(f'<dt>{e(k)}</dt><dd data-field="{f}"' + (f' data-raw="{raw(v)}"' if v is not None or f in numeric else "")
+    always = numeric + ("entry", "latest")      # raw null when there is no price yet
+    dl = "".join(f'<dt>{e(k)}</dt><dd data-field="{f}"' + (f' data-raw="{raw(v)}"' if v is not None or f in always else "")
                  + f' class="{cls(v) if f in numeric or f.startswith("move_") else ""}">{e(t)}</dd>'
                  for k, t, f, v in rows)
     link = "read the article" if p["post"].get("source") == "corbanu" else "open on X"

@@ -1,0 +1,12 @@
+{
+ "_policy": "Owner review of image-inferred calls (tools/read_images.py). An image never sets a side; a call is added only with an asset, a side and a written reason, through tools/add_call.py, which records the evidence file and its sha256 in the record.",
+ "2116304617047007308": {
+  "decision": "add",
+  "asset": "SOXL",
+  "side": "short",
+  "evidence": "intake/images/2116304617047007308.json",
+  "evidence_sha256": "7823d4c7e41fff7697e73515ff0f99c32bc5a53c692ed85ae967c80696b47ac5",
+  "reason": "goodalexander's 'solid support here' image is a crop (score 0.823, shared label 6.89) of the weekly SOXL chart he replied to ('Direxion Daily Semiconductor Bull 3X Shares'); 6.89 is the 2025 low, 91% below SOXL's 77.05 at post time, so 'solid support' is a joke that SOXL could fall all the way back, in line with his short stance on semis",
+  "status": "approved, waiting for the first price: posted Friday 2026-10-30 23:01 UTC after the US close, so the first SOXL bar after the post is Monday 2026-11-02 13:30 UTC; add_call refuses a call without an entry price, so the add runs then"
+ }
+}

@@ -24,6 +24,6 @@ jobs:
         run: python3 -m unittest -v tests.test_guard
       - name: offline tests
         run: |
-          python3 -m pip install --quiet jsonschema==4.10.3
-          python3 -m unittest tests.test_resolve tests.test_ingest_detect tests.test_static tests.test_lifecycle tests.test_history tests.test_rating tests.test_add_call tests.test_scan_caller
+          python3 -m pip install --quiet jsonschema==4.10.3 pillow==11.3.0 numpy==2.3.4
+          python3 -m unittest tests.test_resolve tests.test_ingest_detect tests.test_static tests.test_lifecycle tests.test_history tests.test_rating tests.test_add_call tests.test_scan_caller tests.test_read_images
           python3 check_bundle.py

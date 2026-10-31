@@ -1,0 +1,24 @@
+{
+ "_note": "step 18: chart titles / fund names as they appear on chart screenshots -> asset. Written by hand; a title maps only when every word of it is found in the OCR text (case-insensitive). Tickers in screenshots are matched separately against resolve.ASSETS.",
+ "titles": {
+  "Direxion Daily Semiconductor Bull 3X Shares": "SOXL",
+  "Direxion Daily Semiconductor Bull 3X": "SOXL",
+  "SPDR S&P 500 ETF": "SPY",
+  "S&P 500": "STOCKS",
+  "SPX": "STOCKS",
+  "Invesco QQQ": "QQQ",
+  "Nasdaq 100": "QQQ",
+  "Global X Copper Miners": "COPX",
+  "Bitcoin / TetherUS": "BTC",
+  "Bitcoin / U.S. Dollar": "BTC",
+  "Ethereum / TetherUS": "ETH",
+  "Ethereum / U.S. Dollar": "ETH",
+  "Gold Futures": "GOLD",
+  "Gold Spot": "GOLD",
+  "Silver Futures": "SILVER",
+  "Silver Spot": "SILVER",
+  "Copper Futures": "COPPER",
+  "Crude Oil Futures": "OIL",
+  "Solana / TetherUS": "SOL"
+ }
+}

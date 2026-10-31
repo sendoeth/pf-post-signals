@@ -30,7 +30,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: install jsonschema
-        run: python3 -m pip install --quiet jsonschema==4.10.3
+        run: python3 -m pip install --quiet jsonschema==4.10.3 pillow==11.3.0 numpy==2.3.4
       - name: refresh records (fresh prices, frozen values kept)
         run: python3 refresh.py
       - name: rebuild the chart bundle
@@ -42,7 +42,7 @@ jobs:
           python3 check_bundle.py
           python3 validate_records.py
           python3 parity.py
-          python3 -m unittest tests.test_resolve tests.test_ingest_detect tests.test_guard tests.test_refresh tests.test_static tests.test_lifecycle tests.test_history tests.test_rating tests.test_add_call tests.test_scan_caller
+          python3 -m unittest tests.test_resolve tests.test_ingest_detect tests.test_guard tests.test_refresh tests.test_static tests.test_lifecycle tests.test_history tests.test_rating tests.test_add_call tests.test_scan_caller tests.test_read_images
       - name: commit
         id: commit
         run: |

@@ -1,9 +1,9 @@
 {
  "schema": "pf-post-signals.charts.v1",
  "record_schema": "post_price.v1",
- "records_scanned": 48,
+ "records_scanned": 49,
  "prices_as_of": "2026-10-31T00:52:10Z",
- "posts_drawn": 48,
+ "posts_drawn": 49,
  "refused": [],
  "superseded": [],
  "assets": [
@@ -123757,6 +123757,82 @@
    ]
   },
   {
+   "name": "SOXL",
+   "source": "yahoo",
+   "symbol": "SOXL",
+   "series": [],
+   "posts": [
+    {
+     "schema": "post_price.v1",
+     "post": {
+      "id": "2116304617047007308",
+      "url": "https://x.com/goodalexander/status/2116304617047007308",
+      "author": "goodalexander",
+      "posted_at": "2026-10-30T23:01:54Z",
+      "posted_at_source": "receipt",
+      "text": "solid support here",
+      "receipt_sha256": "b883b4f302806ae9bc0918f685d98e82f40792c4af079027f74dc924a1387b26"
+     },
+     "asset": {
+      "name": "SOXL",
+      "source": "yahoo",
+      "symbol": "SOXL",
+      "price_field": "open"
+     },
+     "side": -1,
+     "status": "pending",
+     "entry": null,
+     "latest": null,
+     "change_since_post": null,
+     "exits": {
+      "1": null,
+      "7": null,
+      "30": null
+     },
+     "moves": {
+      "1": null,
+      "7": null,
+      "30": null
+     },
+     "unresolved": {
+      "1": "no bar at or after the post yet",
+      "7": "no bar at or after the post yet",
+      "30": "no bar at or after the post yet"
+     },
+     "resolved_with": {
+      "prices": "live:binance+yahoo",
+      "last_bar_at": "2026-10-30T20:00:00Z",
+      "max_lag_days": 2,
+      "session_lag_days": 4
+     },
+     "signed_returns": {
+      "1": null,
+      "7": null,
+      "30": null
+     },
+     "asset_choice": {
+      "method": "image_review",
+      "terms": [],
+      "reason": "goodalexander's 'solid support here' image is a crop (score 0.823, shared label 6.89) of the weekly SOXL chart he replied to ('Direxion Daily Semiconductor Bull 3X Shares'); 6.89 is the 2025 low, 91% below SOXL's 77.05 at post time, so 'solid support' is a joke that SOXL could fall all the way back, in line with his short stance on semis",
+      "evidence": {
+       "file": "intake/images/2116304617047007308.json",
+       "sha256": "7823d4c7e41fff7697e73515ff0f99c32bc5a53c692ed85ae967c80696b47ac5",
+       "confidence": "high",
+       "suggested": "SOXL"
+      }
+     },
+     "side_choice": {
+      "method": "manual",
+      "terms": [],
+      "reason": "goodalexander's 'solid support here' image is a crop (score 0.823, shared label 6.89) of the weekly SOXL chart he replied to ('Direxion Daily Semiconductor Bull 3X Shares'); 6.89 is the 2025 low, 91% below SOXL's 77.05 at post time, so 'solid support' is a joke that SOXL could fall all the way back, in line with his short stance on semis"
+     },
+     "best": null,
+     "record_file": "records/posts/2116304617047007308_SOXL.json",
+     "record_sha256": "fdb8fe8dfb07979bc657ef76c332ad2a9a34ba8c11e289589972ca93b27b34b9"
+    }
+   ]
+  },
+  {
    "name": "STOCKS",
    "source": "yahoo",
    "symbol": "SPY",
@@ -161096,7 +161172,7 @@
     "display": "48.0"
    },
    "goodalexander": {
-    "calls_total": 4,
+    "calls_total": 5,
     "with_entry": 4,
     "scored": 4,
     "calls": [
@@ -161143,6 +161219,16 @@
       "counted": true,
       "why": "return for the side since the post (open)",
       "quality": 51.214186507152
+     },
+     {
+      "post_id": "2116304617047007308",
+      "asset": "SOXL",
+      "posted_at": "2026-10-30T23:01:54Z",
+      "side": "short",
+      "state": "open",
+      "result": null,
+      "counted": false,
+      "why": "no entry bar (no price at post time)"
      }
     ],
     "label": "small sample",

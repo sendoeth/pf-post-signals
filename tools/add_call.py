@@ -98,7 +98,17 @@ def choose_side(text, side, reason):
     return d["side"], {"method": "detector", "terms": terms[:20], "reason": None}
 
 
-def build_item(url, root=HERE, fetch=ingest.fetch_embed, prices=None, bundle=None, asset=None, side=None, reason=None, now=None):
+def image_evidence(root, pid):
+    """intake/images/<post>.json written by tools/read_images.py, if the post was read from its images."""
+    path = os.path.join(root, "intake", "images", f"{pid}.json")
+    if not os.path.exists(path):
+        return None
+    with open(path) as f:
+        e = json.load(f)
+    return {"file": os.path.relpath(path, root), "sha256": sha256_file(path), "confidence": e.get("confidence"), "suggested": e.get("asset_suggested")}
+
+
+def build_item(url, root=HERE, fetch=ingest.fetch_embed, prices=None, bundle=None, asset=None, side=None, reason=None, now=None, allow_pending=False):
     """One post -> {url, receipt, record_file, record, revisions, detected}. Writes only the receipt."""
     if asset and not reason:
         raise Refused("--asset needs --reason: an asset chosen by hand is always explained")
@@ -107,6 +117,10 @@ def build_item(url, root=HERE, fetch=ingest.fetch_embed, prices=None, bundle=Non
     except ingest.IngestError as e:
         raise Refused(f"unreadable post: {e}") from e
     text = receipt.get("text") or ""
+    # step 18: a post with image evidence (tools/read_images.py) is added only with a written reason;
+    # the record keeps the evidence file and its sha256 (asset_choice.evidence, below)
+    if image_evidence(root, receipt["id"]) and not (reason or "").strip():
+        raise Refused(f"image-inferred call: intake/images/{receipt['id']}.json exists; add it only with --asset, --side and a written --reason")
     d = detect.detect(text, manual=asset)
     if d["status"] not in ("detected", "manual"):
         raise Refused(f"unreadable post: the detector cannot tell the asset ({d['reason']}); rerun with --asset and --reason")
@@ -123,10 +137,18 @@ def build_item(url, root=HERE, fetch=ingest.fetch_embed, prices=None, bundle=Non
     rec = resolve.label_daily(resolve.resolve(post, info, series, prices.label, s), prices.daily_until(info, post["posted_at"]))
     rec["asset_choice"] = {"method": "manual" if d["status"] == "manual" else "detector",
                            "terms": [m["term"] for m in detect.detect(text)["matched"]][:20], "reason": reason if asset else None}
+    ev = image_evidence(root, receipt["id"])
+    if ev and d["status"] == "manual":
+        # step 18: an asset read from images is never added without a written review reason and the evidence it rests on
+        if not (reason or "").strip() or side is None:
+            raise Refused("an image-inferred call needs --asset, --side (long / short / none) and a written --reason")
+        rec["asset_choice"].update(method="image_review", evidence=ev)
     rec["side_choice"] = side_choice
     resolve.check_record(resolve.validator(), rec)
     if not rec.get("entry"):
-        raise Refused(f"no price at or after the post within the lag limit ({rec['status']}): nothing to score yet")
+        if not (allow_pending and rec["status"] == "pending"):
+            raise Refused(f"no price at or after the post within the lag limit ({rec['status']}): nothing to score yet"
+                          + ("; --pending adds it now and the daily refresh fills the entry from the first bar" if rec["status"] == "pending" else ""))
     return {"url": receipt["url"],
             "receipt": {"file": os.path.relpath(rpath, root), "sha256": sha256_file(rpath), "created": created, "text_truncated": receipt.get("textTruncated", False)},
             "detected": {"asset": d["status"], "terms": rec["asset_choice"]["terms"], "side": side_choice},
@@ -179,10 +201,10 @@ def load_bundle(root):
     return blob, json.loads(blob)
 
 
-def preview(url, root=HERE, fetch=ingest.fetch_embed, prices=None, asset=None, side=None, reason=None, now=None):
+def preview(url, root=HERE, fetch=ingest.fetch_embed, prices=None, asset=None, side=None, reason=None, now=None, allow_pending=False):
     """-> the pending intake (also written to intake/pending/). Writes only the receipt and the pending file."""
     blob, bundle = load_bundle(root)
-    it = build_item(url, root, fetch, prices or resolve.Prices(), bundle, asset, side, reason, now)
+    it = build_item(url, root, fetch, prices or resolve.Prices(), bundle, asset, side, reason, now, allow_pending)
     return project([it], root, blob, os.path.basename(it["record_file"]), now)
 
 
@@ -247,7 +269,7 @@ def add(pending_file, root=HERE, fetch=ingest.fetch_embed, save_avatar=True, ohl
     for it in items:
         name = it["record"]["asset"]["name"]
         if ohlc and name not in candles:
-            first = min(x["record"]["entry"]["at"] for x in items if x["record"]["asset"]["name"] == name)
+            first = min((x["record"]["entry"] or {"at": x["record"]["post"]["posted_at"]})["at"] for x in items if x["record"]["asset"]["name"] == name)
             candles[name] = ohlc(root, name, first)
     after = {a: caller_view(bundle["ratings"], a) for a in pending["authors"]}
     problems = []
@@ -310,8 +332,14 @@ def print_preview(p):
           + (f" reason: {r['asset_choice']['reason']}" if r['asset_choice'].get('reason') else ""))
     sc = r["side_choice"]
     print(f"side      {side} by {sc['method']} {sc['terms']}" + (f" reason: {sc['reason']}" if sc.get("reason") else ""))
-    print(f"entry     {e['price']} @ {e['at']}" + (" (daily bar)" if e.get("interval") == "1d" else "")
-          + f"   latest {r['latest']['price']} @ {r['latest']['at']}   status {r['status']}")
+    if e:
+        print(f"entry     {e['price']} @ {e['at']}" + (" (daily bar)" if e.get("interval") == "1d" else "")
+              + f"   latest {r['latest']['price']} @ {r['latest']['at']}   status {r['status']}")
+    else:
+        print(f"entry     none yet: status {r['status']} (no bar after the post: market closed); the daily refresh fills it from the first bar")
+    if r["asset_choice"].get("evidence"):
+        ev = r["asset_choice"]["evidence"]
+        print(f"evidence  {ev['file']} sha256 {ev['sha256']} (image read, confidence {ev.get('confidence')}, suggested {ev.get('suggested')})")
     print(f"result    {resolve.pct(res)} {'for the ' + side.lower() if r.get('side') else 'price move'} since the post"
           + "".join(f"   {h}d {resolve.pct(r['moves'][h]) if r['moves'][h] is not None else 'pending'}" for h in ("1", "7", "30")))
     if p["revisions"]:
@@ -330,10 +358,11 @@ def main():
     ap.add_argument("--side", choices=["long", "short", "none"], help="side chosen by hand (needs --reason)")
     ap.add_argument("--reason", help="why the asset or side was chosen by hand; stored in the record")
     ap.add_argument("--add", action="store_true", help="apply the pending preview for this post")
+    ap.add_argument("--pending", action="store_true", help="allow a post with no price after it yet (market closed): the daily refresh fills the entry")
     a = ap.parse_args()
     try:
         if not a.add:
-            p = preview(a.url, asset=a.asset, side=a.side, reason=a.reason)
+            p = preview(a.url, asset=a.asset, side=a.side, reason=a.reason, allow_pending=a.pending)
             print_preview(p)
             print("PREVIEW ONLY: nothing under web/ or records/ changed. Rerun with --add to publish it.")
             return

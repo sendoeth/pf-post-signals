@@ -23,7 +23,11 @@ def load(path):
 
 class Lookback(unittest.TestCase):
     def posts(self, *ats):
-        return [{"entry": {"at": a}} for a in ats] + [{"entry": None}]
+        # plus a post with no price after it yet (market closed), inside the range: it counts from its post time
+        return [{"entry": {"at": a}, "post": {"posted_at": a}} for a in ats] + [{"entry": None, "post": {"posted_at": ats[0]}}]
+
+    def test_a_post_with_no_price_yet_counts_from_its_post_time(self):
+        self.assertEqual(fetch_ohlc.lookback([{"entry": None, "post": {"posted_at": "2026-10-30T23:01:54Z"}}]), (90, "2026-08-01T23:01:54Z"))
 
     def test_ninety_days_minimum(self):
         self.assertEqual(fetch_ohlc.lookback(self.posts("2026-10-01T00:00:00Z", "2026-10-20T00:00:00Z")), (90, "2026-07-03T00:00:00Z"))
@@ -46,7 +50,7 @@ class CandleFiles(unittest.TestCase):
         for a in self.bundle["assets"]:
             doc = self.files[a["name"]]
             lb, c = doc["lookback"], doc["candles"]
-            first_call = min(p["entry"]["at"] for p in a["posts"] if p["entry"])
+            first_call = min(p["entry"]["at"] if p["entry"] else p["post"]["posted_at"] for p in a["posts"])
             self.assertEqual(lb["first_call"], first_call, a["name"])
             self.assertEqual((lb["days"], lb["start"]), fetch_ohlc.lookback(a["posts"]), a["name"])
             self.assertLess(c[0][0], first_call, f"{a['name']}: no bar before the first call")

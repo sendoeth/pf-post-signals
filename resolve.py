@@ -49,6 +49,7 @@ ASSETS = {
     "STOCKS": ("yahoo", "SPY"), "SPY": ("yahoo", "SPY"), "QQQ": ("yahoo", "QQQ"),
     "COPX": ("yahoo", "COPX"), "SILVER": ("yahoo", "SI=F"), "GOLD": ("yahoo", "GC=F"),
     "COPPER": ("yahoo", "HG=F"), "OIL": ("yahoo", "CL=F"),
+    "SOXL": ("yahoo", "SOXL"),
     # Hyperliquid HIP-3 stock perps (the "xyz" dex, TradeXYZ), where Corbanu publishes its trades
     "XYZ:AAPL": ("hyperliquid", "xyz:AAPL"), "XYZ:CBRS": ("hyperliquid", "xyz:CBRS"),
     "XYZ:KIOXIA": ("hyperliquid", "xyz:KIOXIA"), "XYZ:CXMT": ("hyperliquid", "xyz:CXMT"),

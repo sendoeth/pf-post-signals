@@ -174,6 +174,23 @@ python3 tools/scan_caller.py https://x.com/<handle>/status/<id> add      # publi
 - **add**: `tools/add_call.py add` on the batch: refuses if the bundle changed since the report, writes every record, rebuilds, and fails unless the projected score and ranking equal the result, every other caller's score is unchanged and no frozen value moved.
 - Tests: `tests/test_scan_caller.py` (windows and cutoff, other authors and bad ids, budget stop + resume, rate limit, empty pages, single empty windows, window split, labels, report -> review -> add with exact scores and unchanged other callers).
 
+## Step 18: calls read from chart screenshots (owner review only)
+
+```
+python3 -m venv --system-site-packages .venv && .venv/bin/pip install pillow==11.3.0 numpy==2.3.4   # once
+.venv/bin/python tools/read_images.py https://x.com/<handle>/status/<id>                           # evidence, nothing added
+python3 tools/add_call.py <url> --asset <A> --side long|short|none --reason "..." [--pending]       # after review
+python3 tools/add_call.py <url> --asset <A> --add
+```
+
+- **Collect**: the post's images and those of the post it replies to or quotes (public embed data, originals from pbs.twimg.com), saved as `sources/<author>/media/<post>_<n>.<ext>` with sha256; the context post's receipt is saved too. The site never hotlinks them.
+- **Read**: OCR (tesseract.js through the read-only research harness, cached beside each image with its sha256); chart titles and fund names map to assets through the written `detect/image_names.json` (every word of a title must be present); tickers on the chart are matched against the known assets; price labels (numbers with 2-4 decimals, thousands separators read whole) are collected.
+- **Crop**: multi-scale normalized cross-correlation (FFT, integral-image normalization) finds whether the post's image is a crop of a context image (score >= 0.70), with the labels both share.
+- **Price**: each label against the candidate asset's price at post time (within 3% = near) and the nearest daily low / high of the 2 years before.
+- **Decide**: never sets a side. Support / resistance words with a far label, or a joke marker, are flagged as sarcasm or a target level. The result is `needs_review` (or `no_asset`) with a confidence, in `intake/images/<post>.json` + `.md`. `tools/add_call.py` refuses a post with image evidence unless `--asset`, `--side` and a written `--reason` are given, and records `asset_choice.method = image_review` with the evidence file and its sha256.
+- **Market closed**: a post with no bar after it yet (e.g. after Friday's close) is refused unless `--pending`: then it is added with status "no price yet", is not scored, and the daily refresh fills the entry from the first bar after the post.
+- Tests: `tests/test_read_images.py` (fixture images made by `tests/fixtures/images/make.py`: a chart, a crop of it, an unrelated chart; the real SOXL pair; OCR text -> titles / tickers / labels; near and far labels; the SOXL pattern end-to-end with no side and nothing added; joke markers; no readable text; reasons required; pending refused unless allowed).
+
 ## Reproduce step 2
 
 ```bash

@@ -1,0 +1,135 @@
+{
+ "version": "quanty.images.v1",
+ "url": "https://x.com/goodalexander/status/2116304617047007308",
+ "post_id": "2116304617047007308",
+ "author": "goodalexander",
+ "posted_at": "2026-10-30T23:01:54Z",
+ "analysed_at": "2026-10-31T14:17:11Z",
+ "posts": [
+  {
+   "role": "post",
+   "id": "2116304617047007308",
+   "author": "goodalexander",
+   "url": "https://x.com/goodalexander/status/2116304617047007308",
+   "posted_at": "2026-10-30T23:01:54Z",
+   "text": "solid support here",
+   "receipt": "sources/goodalexander/receipts/2116304617047007308.json",
+   "images": [
+    {
+     "file": "sources/goodalexander/media/2116304617047007308_0.png",
+     "sha256": "d0e46316395bd27baa68986aab6cfce1877e814629781425555a4e35f6c0c1bb",
+     "source": "https://pbs.twimg.com/media/HV6f0xYWUAAhgy2",
+     "ocr": "a | rt\nho\n1+\n6.8900",
+     "read": {
+      "titles": [],
+      "tickers": [],
+      "words": [],
+      "labels": [
+       6.89
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "role": "reply_to",
+   "id": "2116217175962776030",
+   "author": "based16z",
+   "url": "https://x.com/based16z/status/2116217175962776030",
+   "posted_at": "2026-10-30T17:14:26Z",
+   "text": "https://t.co/S4AyJV1Ctb",
+   "receipt": "sources/based16z/receipts/2116217175962776030.json",
+   "images": [
+    {
+     "file": "sources/based16z/media/2116217175962776030_0.jpg",
+     "sha256": "1490ecfc2f3e38aa4f4afd95392971b7619248e0da3ea690fa2500e3e46389ee",
+     "source": "https://pbs.twimg.com/media/HV5QTifWwAAPIbW",
+     "ocr": "X Direxion Daily Semiconductor Bull 3X Shares - 1w - AMEX 400.0000\n360.0000\n302.0000 320.0000\nLd\n\n280.0000\n| 240.0000\n200.0000\n\n169.8500\n\nL 4\n| fl 160.0000\n| Ly | 120.0000\nihe \\ 86.2100 1+ [744500]\n“a ah R ily 74.1000\n= ol font hp 40.0000\nhl La Lamesa\nWH et\n4 0.0000\n6.8900\nA Otree.news 1 = L | = - ae\nles HENENES a = | | Le HI | i | of] [1] LIT [Lf]\nApr Jul Oct 2026 Apr Jul Oct",
+     "read": {
+      "titles": [
+       {
+        "title": "Direxion Daily Semiconductor Bull 3X Shares",
+        "asset": "SOXL"
+       }
+      ],
+      "tickers": [],
+      "words": [],
+      "labels": [
+       0.0,
+       6.89,
+       40.0,
+       74.1,
+       86.21,
+       120.0,
+       160.0,
+       169.85,
+       200.0,
+       240.0,
+       280.0,
+       302.0,
+       320.0,
+       360.0,
+       400.0
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "crop_matches": [
+  {
+   "post_image": "sources/goodalexander/media/2116304617047007308_0.png",
+   "context_image": "sources/based16z/media/2116217175962776030_0.jpg",
+   "score": 0.8230766257932702,
+   "box": [
+    83,
+    743,
+    256,
+    138
+   ],
+   "crop": true,
+   "shared_labels": [
+    6.89
+   ]
+  }
+ ],
+ "candidates": [
+  {
+   "asset": "SOXL",
+   "evidence": [
+    "title in the reply_to post's image (the post's image is a crop of it): 'Direxion Daily Semiconductor Bull 3X Shares'"
+   ]
+  }
+ ],
+ "price_checks": [
+  {
+   "asset": "SOXL",
+   "price_at_post": {
+    "at": "2026-10-30T20:00:00Z",
+    "price": 77.05
+   },
+   "labels": [
+    {
+     "label": 6.89,
+     "vs_price": -0.9105775470473718,
+     "near": false,
+     "nearest_daily": {
+      "date": "2025-04-07",
+      "which": "low",
+      "value": 7.23,
+      "label_vs_it": -0.04702627939142472,
+      "matches": false
+     }
+    }
+   ]
+  }
+ ],
+ "flags": [
+  "support / resistance words ('solid support') with a price label 6.89 that is -91.1% from the price at post time: sarcasm or a target level, not an entry"
+ ],
+ "asset_suggested": "SOXL",
+ "confidence": "high",
+ "side": null,
+ "side_note": "never set from an image or a joke: the owner decides with a written reason (tools/add_call.py --asset --side --reason)",
+ "status": "needs_review"
+}
