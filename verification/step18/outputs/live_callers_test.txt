@@ -1,0 +1,5 @@
+$ node tests/callers_test.js --url https://sendoeth.com/pf-post-signals/web/
+page https://sendoeth.com/pf-post-signals/web/
+position pages 48, caller combinations 448 (incl. 224 reloads), toggle clicks 192, bubbles anchored 354, bubble pairs checked for overlap 2292, cards opened 354, exit marks 4, daily readouts 5, console errors 0
+ALL PASS
+exit 0

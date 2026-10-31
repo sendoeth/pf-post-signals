@@ -1,0 +1,35 @@
+$ python3 check_bundle.py
+bundle: 49 record files -> 49 drawn, 0 superseded, 0 refused; 147 horizon cells, 49 best-since-post values, 4 caller ratings checked -> ALL MATCH
+$ python3 validate_records.py | tail -1
+records: 49 checked against post_price.v1 -> ALL VALID
+$ python3 fetch_ohlc.py --check-only | tail -1
+entry bars: 48/48 candle opens equal the record entry price
+$ python3 tools/frozen_values.py compare verification/step14/frozen_baseline.json | head -1
+positions 31 (now 49), frozen values compared 177, changed 0
+$ python3 rate.py | grep "^#"
+#1 @goodalexander: score 51.9610 (small sample) · calls 5, with entry 4, scored 4 · wins 2 · H 50.0000 A 48.4084 C 100.0000 · raw 56.8634 · weight 0.2857 · avg result -0.40%
+#2 @BobLoukas: score 51.8030 (sample ok) · calls 35, with entry 35, scored 33 · wins 14 · H 42.4242 A 47.7888 C 94.2857 · raw 52.3493 · weight 0.7674 · avg result +4.52%
+#3 @Corbanu: score 49.2998 (small sample) · calls 8, with entry 8, scored 8 · wins 3 · H 37.5000 A 41.3740 C 100.0000 · raw 48.4246 · weight 0.4444 · avg result +0.91%
+#4 @DrProfitCrypto: score 48.0363 (small sample) · calls 1, with entry 1, scored 1 · wins 0 · H 0.0000 A 33.4989 C 100.0000 · raw 28.3996 · weight 0.0909 · avg result -3.43%
+$ .venv/bin/python -m unittest -v tests.test_read_images
+test_a_joke_marker_never_sets_a_side (tests.test_read_images.Analyse.test_a_joke_marker_never_sets_a_side) ... ok
+test_add_call_needs_a_reason_and_records_the_evidence (tests.test_read_images.Analyse.test_add_call_needs_a_reason_and_records_the_evidence) ... ok
+test_no_readable_text_and_no_title (tests.test_read_images.Analyse.test_no_readable_text_and_no_title) ... ok
+test_pending_post_is_refused_unless_allowed (tests.test_read_images.Analyse.test_pending_post_is_refused_unless_allowed) ... ok
+test_the_soxl_pattern_goes_to_review_without_a_side (tests.test_read_images.Analyse.test_the_soxl_pattern_goes_to_review_without_a_side) ... ok
+test_a_crop_is_found_where_it_was_cut (tests.test_read_images.Crop.test_a_crop_is_found_where_it_was_cut) ... ok
+test_an_unrelated_chart_is_not_a_crop (tests.test_read_images.Crop.test_an_unrelated_chart_is_not_a_crop) ... ok
+test_the_real_soxl_crop (tests.test_read_images.Crop.test_the_real_soxl_crop) ... ok
+test_near_and_far_labels (tests.test_read_images.Prices.test_near_and_far_labels) ... ok
+test_a_ticker_on_the_chart (tests.test_read_images.Read.test_a_ticker_on_the_chart) ... ok
+test_a_title_needs_every_word (tests.test_read_images.Read.test_a_title_needs_every_word) ... ok
+test_no_readable_text (tests.test_read_images.Read.test_no_readable_text) ... ok
+test_title_maps_to_the_asset (tests.test_read_images.Read.test_title_maps_to_the_asset) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 9.410s
+
+OK
+$ .venv/bin/python -m unittest discover -s tests -p "test_*.py"
+Ran 128 tests in 45.806s
+OK

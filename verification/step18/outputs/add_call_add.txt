@@ -1,0 +1,10 @@
+$ python3 tools/add_call.py https://x.com/goodalexander/status/2116304617047007308 --asset SOXL --add
+prerender: index.html (49 rows, 4 authors), position.html list, 49 position pages, 4 caller pages
+added     records/posts/2116304617047007308_SOXL.json  sha256 fdb8fe8dfb07979bc657ef76c332ad2a9a34ba8c11e289589972ca93b27b34b9
+avatar    kept
+candles   candles refetched (fetch_ohlc.py): entry bars: 48/48 candle opens equal the record entry price
+bundle    68abeee8eaf00e25edde1a5e51d15db73787c3e9b14f72ff036f30ccd636c6e8 -> c108501a5969871e06322b9db2a2bdca6a35b76acd229641f9119e8e6edd54db
+score     previewed 52.0 (exact 51.960963, rank 1 of 4, 4 scored calls, small sample)
+          after add 52.0 (exact 51.960963, rank 1 of 4, 4 scored calls, small sample)
+checks    score = preview: yes; frozen values of every other position unchanged: yes; log intake/log/2116304617047007308_SOXL.json
+exit 0

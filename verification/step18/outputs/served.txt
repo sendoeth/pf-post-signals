@@ -1,0 +1,6 @@
+$ curl -s https://sendoeth.com/pf-post-signals/web/data/charts.json | sha256sum
+c108501a5969871e06322b9db2a2bdca6a35b76acd229641f9119e8e6edd54db  -
+$ curl -s https://sendoeth.com/pf-post-signals/web/pos-2116304617047007308_SOXL.html | grep -o '<title>[^<]*'
+<title>SOXL SHORT · @goodalexander · unresolved · Quanty Quants
+$ curl -s https://api.github.com/repos/sendoeth/pf-post-signals/pages/builds/latest (status, commit)
+built f1bbb50168ad8451b83bf77cea244205f197c3a0

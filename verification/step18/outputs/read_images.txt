@@ -1,0 +1,14 @@
+$ .venv/bin/python tools/read_images.py https://x.com/goodalexander/status/2116304617047007308
+post      https://x.com/goodalexander/status/2116304617047007308 @goodalexander 2026-10-30T23:01:54Z
+post      sources/goodalexander/media/2116304617047007308_0.png sha256 d0e46316395bd27baa68986aab6cfce1877e814629781425555a4e35f6c0c1bb
+          titles [] tickers [] labels [6.89]
+reply_to  sources/based16z/media/2116217175962776030_0.jpg sha256 1490ecfc2f3e38aa4f4afd95392971b7619248e0da3ea690fa2500e3e46389ee
+          titles ['Direxion Daily Semiconductor Bull 3X Shares'] tickers [] labels [0.0, 6.89, 40.0, 74.1, 86.21, 120.0, 160.0, 169.85, 200.0, 240.0, 280.0, 302.0, 320.0, 360.0, 400.0]
+crop      sources/goodalexander/media/2116304617047007308_0.png in sources/based16z/media/2116217175962776030_0.jpg: score 0.823 -> CROP; shared labels [6.89]
+candidate SOXL: title in the reply_to post's image (the post's image is a crop of it): 'Direxion Daily Semiconductor Bull 3X Shares'
+price     SOXL at post 77.05 @ 2026-10-30T20:00:00Z: label 6.89 -91.1%; nearest daily low (2 yrs before): 7.23 on 2025-04-07 (-4.7%)
+flag      support / resistance words ('solid support') with a price label 6.89 that is -91.1% from the price at post time: sarcasm or a target level, not an entry
+result    needs_review: asset SOXL (confidence high), side not set
+evidence  intake/images/2116304617047007308.json sha256 7823d4c7e41fff7697e73515ff0f99c32bc5a53c692ed85ae967c80696b47ac5
+NOTHING ADDED: add only after review, with tools/add_call.py --asset --side --reason.
+exit 0

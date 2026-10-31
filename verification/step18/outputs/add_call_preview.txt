@@ -1,0 +1,19 @@
+$ find web records -type f | sort | xargs sha256sum | sha256sum   # before the preview
+f727e623c39483a0cf719e4362c510cecb8007cf92f82ed44da54f2d394089b2  -
+$ python3 tools/add_call.py https://x.com/goodalexander/status/2116304617047007308 --asset SOXL --side short --reason "<review.json reason>" --pending
+post      https://x.com/goodalexander/status/2116304617047007308  @goodalexander  2026-10-30T23:01:54Z
+receipt   sources/goodalexander/receipts/2116304617047007308.json  sha256 b883b4f302806ae9bc0918f685d98e82f40792c4af079027f74dc924a1387b26  already saved
+text      “solid support here”
+asset     SOXL (yahoo:SOXL) by image_review [] reason: goodalexander's 'solid support here' image is a crop (score 0.823, shared label 6.89) of the weekly SOXL chart he replied to ('Direxion Daily Semiconductor Bull 3X Shares'); 6.89 is the 2025 low, 91% below SOXL's 77.05 at post time, so 'solid support' is a joke that SOXL could fall all the way back, in line with his short stance on semis
+side      SHORT by manual [] reason: goodalexander's 'solid support here' image is a crop (score 0.823, shared label 6.89) of the weekly SOXL chart he replied to ('Direxion Daily Semiconductor Bull 3X Shares'); 6.89 is the 2025 low, 91% below SOXL's 77.05 at post time, so 'solid support' is a joke that SOXL could fall all the way back, in line with his short stance on semis
+entry     none yet: status pending (no bar after the post: market closed); the daily refresh fills it from the first bar
+evidence  intake/images/2116304617047007308.json sha256 7823d4c7e41fff7697e73515ff0f99c32bc5a53c692ed85ae967c80696b47ac5 (image read, confidence high, suggested SOXL)
+result    unresolved for the short since the post   1d pending   7d pending   30d pending
+score now @goodalexander: 52.0 (exact 51.960963, rank 1 of 4, 4 scored calls, small sample)
+with this @goodalexander: 52.0 (exact 51.960963, rank 1 of 4, 4 scored calls, small sample)   delta +0.000000
+order     @goodalexander > @BobLoukas > @Corbanu > @DrProfitCrypto
+pending   intake/pending/2116304617047007308_SOXL.json  (bundle sha256 68abeee8eaf00e25edde1a5e51d15db73787c3e9b14f72ff036f30ccd636c6e8)
+PREVIEW ONLY: nothing under web/ or records/ changed. Rerun with --add to publish it.
+exit 0
+$ find web records -type f | sort | xargs sha256sum | sha256sum   # after the preview (unchanged)
+f727e623c39483a0cf719e4362c510cecb8007cf92f82ed44da54f2d394089b2  -

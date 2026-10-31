@@ -1,0 +1,9 @@
+$ python3 tools/add_call.py https://x.com/goodalexander/status/2116304617047007308   # no reason
+REFUSED   image-inferred call: intake/images/2116304617047007308.json exists; add it only with --asset, --side and a written --reason
+exit 2
+$ python3 tools/add_call.py https://x.com/goodalexander/status/2116304617047007308 --asset SOXL --side short   # no reason
+REFUSED   --asset needs --reason: an asset chosen by hand is always explained
+exit 2
+$ python3 tools/add_call.py https://x.com/goodalexander/status/2116304617047007308 --asset SOXL --side short --reason "<review.json reason>"   # no --pending
+REFUSED   no price at or after the post within the lag limit (pending): nothing to score yet; --pending adds it now and the daily refresh fills the entry from the first bar
+exit 2
