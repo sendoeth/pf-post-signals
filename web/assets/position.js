@@ -71,7 +71,7 @@ async function main() {
   if (!matches.length) return fail(`Post ${id}${assetName ? " on " + assetName : ""} is not in the data.`);
   const [asset, p] = matches[0];
   const ohlc = await getJson(`data/ohlc/${encodeURIComponent(asset.name)}.json`);
-  document.title = `${p.asset.name} · @${p.post.author} · position`;
+  document.title = `${p.asset.name} · @${p.post.author} · Quanty`;
   render(asset, p, ohlc, avatars, bundle);
 }
 

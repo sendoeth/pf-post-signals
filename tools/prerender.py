@@ -235,7 +235,7 @@ def position_static(r, asof, avatars):
 def meta_tags(title, desc, url):
     return (f'<title>{e(title)}</title>\n<meta name="description" content="{e(desc)}">\n'
             f'<meta property="og:title" content="{e(title)}">\n<meta property="og:description" content="{e(desc)}">\n'
-            f'<meta property="og:type" content="article">\n<meta property="og:url" content="{e(url)}">\n<meta name="twitter:card" content="summary">')
+            f'<meta property="og:type" content="article">\n<meta property="og:site_name" content="Quanty">\n<meta property="og:url" content="{e(url)}">\n<meta name="twitter:card" content="summary">')
 
 
 def main(web=None):
@@ -264,7 +264,7 @@ def main(web=None):
     for r in rows:
         p, s = r["p"], slug(r["p"]["post"]["id"], r["asset"])
         side = "NO SIDE" if r["side"] == "none" else r["side"].upper()
-        title = f'{r["asset"]} {side}{" (closed)" if p.get("closed") else ""} · @{p["post"]["author"]} · {fmt_pct(r["ret"])}'
+        title = f'{r["asset"]} {side}{" (closed)" if p.get("closed") else ""} · @{p["post"]["author"]} · {fmt_pct(r["ret"])} · Quanty'
         desc = (f'@{p["post"]["author"]} {fmt_time(p["post"]["posted_at"])}: {r["asset"]} {side.lower()}, entry '
                 + (fmt_price(p["entry"]["price"]) if p.get("entry") else "–")
                 + (f', closed at {fmt_price(p["closed"]["exit"]["price"])} on {p["closed"]["exit"]["at"][:10]}, realized {fmt_pct(r["ret"])}, if still held {fmt_pct(if_held(p))}.' if p.get("closed")
