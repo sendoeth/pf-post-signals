@@ -1,0 +1,426 @@
+{
+ "as_of": "2026-10-31T00:52:10Z",
+ "callers": {
+  "BobLoukas": {
+   "avg_result": 0.08372995661057137,
+   "calls": [
+    {
+     "asset": "SILVER",
+     "counted": true,
+     "post_id": "1776235528741937435",
+     "posted_at": "2024-04-05T13:08:45Z",
+     "quality": 100.0,
+     "result": 1.8816759575615896,
+     "side": "long",
+     "state": "closed",
+     "why": "realized return (closed)"
+    },
+    {
+     "asset": "BTC",
+     "counted": true,
+     "post_id": "2094827036812435935",
+     "posted_at": "2026-09-01T16:37:40Z",
+     "quality": 48.536103515726786,
+     "result": -0.002928629964349949,
+     "side": "long",
+     "state": "open",
+     "why": "return for the side since the post (open)"
+    },
+    {
+     "asset": "COPX",
+     "counted": true,
+     "post_id": "2097324043334451439",
+     "posted_at": "2026-09-08T13:59:52Z",
+     "quality": 0.7393004096490685,
+     "result": -0.24499003252544338,
+     "side": "long",
+     "state": "open",
+     "why": "return for the side since the post (open)"
+    },
+    {
+     "asset": "BTC",
+     "counted": true,
+     "post_id": "2100953898630443447",
+     "posted_at": "2026-09-18T14:23:37Z",
+     "quality": 29.27782520716522,
+     "result": -0.044096437969735613,
+     "side": "long",
+     "state": "open",
+     "why": "return for the side since the post (open)"
+    },
+    {
+     "asset": "BTC",
+     "counted": true,
+     "post_id": "2102014028855820403",
+     "posted_at": "2026-09-21T12:36:12Z",
+     "quality": 13.41793114556262,
+     "result": -0.0932250389695628,
+     "side": "long",
+     "state": "open",
+     "why": "return for the side since the post (open)"
+    },
+    {
+     "asset": "BTC",
+     "counted": true,
+     "post_id": "2102024327075877097",
+     "posted_at": "2026-09-21T13:17:07Z",
+     "quality": 13.068463877362738,
+     "result": -0.09474594387147706,
+     "side": "long",
+     "state": "open",
+     "why": "return for the side since the post (open)"
+    },
+    {
+     "asset": "SILVER",
+     "counted": true,
+     "post_id": "2104977267109896477",
+     "posted_at": "2026-09-29T16:51:03Z",
+     "quality": 98.05037882181685,
+     "result": 0.19589231650437766,
+     "side": "short",
+     "state": "open",
+     "why": "return for the side since the post (open)"
+    },
+    {
+     "asset": "BTC",
+     "counted": true,
+     "post_id": "2105699317004583026",
+     "posted_at": "2026-10-01T16:40:13Z",
+     "quality": 16.47834513987147,
+     "result": -0.08115294173535081,
+     "side": "long",
+     "state": "open",
+     "why": "return for the side since the post (open)"
+    },
+    {
+     "asset": "SILVER",
+     "counted": true,
+     "post_id": "2106744910896312646",
+     "posted_at": "2026-10-04T13:55:02Z",
+     "quality": 98.02759247453781,
+     "result": 0.19529970520799222,
+     "side": "short",
+     "state": "open",
+     "why": "return for the side since the post (open)"
+    },
+    {
+     "asset": "COPX",
+     "counted": true,
+     "post_id": "2106750657877434407",
+     "posted_at": "2026-10-04T14:17:53Z",
+     "quality": 3.6787487931677987,
+     "result": -0.16325581395348843,
+     "side": "long",
+     "state": "open",
+     "why": "return for the side since the post (open)"
+    },
+    {
+     "asset": "STOCKS",
+     "counted": true,
+     "post_id": "2107063137958564197",
+     "posted_at": "2026-10-05T10:59:34Z",
+     "quality": 41.0232749746025,
+     "result": -0.018150164351881992,
+     "side": "long",
+     "state": "open",
+     "why": "return for the side since the post (open)"
+    },
+    {
+     "asset": "STOCKS",
+     "counted": true,
+     "post_id": "2107475725573906895",
+     "posted_at": "2026-10-06T14:19:02Z",
+     "quality": 35.57284539825251,
+     "result": -0.02969763112280921,
+     "side": "long",
+     "state": "open",
+     "why": "return for the side since the post (open)"
+    },
+    {
+     "asset": "BTC",
+     "counted": true,
+     "post_id": "2110764348981612915",
+     "posted_at": "2026-10-15T16:06:51Z",
+     "quality": 23.968740332493915,
+     "result": -0.057719703595300875,
+     "side": "long",
+     "state": "open",
+     "why": "return for the side since the post (open)"
+    },
+    {
+     "asset": "BTC",
+     "counted": true,
+     "post_id": "2112915214479798344",
+     "posted_at": "2026-10-21T14:33:37Z",
+     "quality": 15.390970248448902,
+     "result": -0.08521300028105006,
+     "side": "long",
+     "state": "open",
+     "why": "return for the side since the post (open)"
+    },
+    {
+     "asset": "BTC",
+     "counted": true,
+     "post_id": "2112919830357577753",
+     "posted_at": "2026-10-21T14:51:58Z",
+     "quality": 15.390970248448902,
+     "result": -0.08521300028105006,
+     "side": "long",
+     "state": "open",
+     "why": "return for the side since the post (open)"
+    },
+    {
+     "asset": "GOLD",
+     "counted": true,
+     "post_id": "2112919830357577753",
+     "posted_at": "2026-10-21T14:51:58Z",
+     "quality": 78.08833017859682,
+     "result": 0.06354106303483187,
+     "side": "short",
+     "state": "open",
+     "why": "return for the side since the post (open)"
+    },
+    {
+     "asset": "SILVER",
+     "counted": true,
+     "post_id": "2113613893662588966",
+     "posted_at": "2026-10-23T12:49:55Z",
+     "quality": 85.1671461273859,
+     "result": 0.08738855869242212,
+     "side": "short",
+     "state": "open",
+     "why": "return for the side since the post (open)"
+    },
+    {
+     "asset": "BTC",
+     "counted": false,
+     "post_id": "2115823513915290059",
+     "posted_at": "2026-10-29T15:10:10Z",
+     "result": -0.05391730613156276,
+     "side": "none",
+     "state": "open",
+     "why": "no side stated: counts against clarity only"
+    },
+    {
+     "asset": "GOLD",
+     "counted": false,
+     "post_id": "2116199680157647216",
+     "posted_at": "2026-10-30T16:04:55Z",
+     "result": -0.005325575441022079,
+     "side": "none",
+     "state": "open",
+     "why": "no side stated: counts against clarity only"
+    }
+   ],
+   "calls_total": 19,
+   "components": {
+    "clarity": 89.47368421052632,
+    "hit": 29.41176470588235,
+    "quality": 42.11040981724058
+   },
+   "display": "45.9",
+   "hit_rate": 0.29411764705882354,
+   "label": "limited sample",
+   "rank": 3,
+   "raw": 43.50051067612224,
+   "score": 45.90772894422511,
+   "scored": 17,
+   "weight": 0.6296296296296297,
+   "wins": 5,
+   "with_entry": 19
+  },
+  "Corbanu": {
+   "avg_result": 0.009069195005375522,
+   "calls": [
+    {
+     "asset": "XYZ:CBRS",
+     "counted": true,
+     "post_id": "corbanu:cbrs-entry",
+     "posted_at": "2026-09-04T20:09:40Z",
+     "quality": 99.99322032976508,
+     "result": 0.4799464601558392,
+     "side": "short",
+     "state": "open",
+     "why": "return for the side since the post (open)"
+    },
+    {
+     "asset": "XYZ:CXMT",
+     "counted": true,
+     "post_id": "corbanu:cxmt-entry",
+     "posted_at": "2026-09-04T20:09:40Z",
+     "quality": 0.5421513000083067,
+     "result": -0.2605972044221395,
+     "side": "long",
+     "state": "open",
+     "why": "return for the side since the post (open)"
+    },
+    {
+     "asset": "XYZ:JP225",
+     "counted": true,
+     "post_id": "corbanu:jp225-entry",
+     "posted_at": "2026-09-16T00:00:00Z",
+     "quality": 59.71399261665766,
+     "result": 0.019678108889727097,
+     "side": "short",
+     "state": "open",
+     "why": "return for the side since the post (open)"
+    },
+    {
+     "asset": "XYZ:KIOXIA",
+     "counted": true,
+     "post_id": "corbanu:kioxia-entry",
+     "posted_at": "2026-09-16T00:00:00Z",
+     "quality": 0.24853763741965196,
+     "result": -0.2997421351211965,
+     "side": "long",
+     "state": "open",
+     "why": "return for the side since the post (open)"
+    },
+    {
+     "asset": "XYZ:ORCL",
+     "counted": true,
+     "post_id": "corbanu:orcl-entry",
+     "posted_at": "2026-09-26T23:10:53Z",
+     "quality": 26.6865515528848,
+     "result": -0.05052921560098589,
+     "side": "long",
+     "state": "open",
+     "why": "return for the side since the post (open)"
+    },
+    {
+     "asset": "XYZ:AAPL",
+     "counted": true,
+     "post_id": "corbanu:aapl-entry",
+     "posted_at": "2026-09-27T21:27:41Z",
+     "quality": 42.96519968161546,
+     "result": -0.01416355675707437,
+     "side": "short",
+     "state": "open",
+     "why": "return for the side since the post (open)"
+    },
+    {
+     "asset": "XYZ:SKHX",
+     "counted": true,
+     "post_id": "corbanu:skhx-entry",
+     "posted_at": "2026-09-27T21:27:41Z",
+     "quality": 0.8585432858061353,
+     "result": -0.23745329328155917,
+     "side": "long",
+     "state": "open",
+     "why": "return for the side since the post (open)"
+    },
+    {
+     "asset": "XYZ:CBRS",
+     "counted": true,
+     "post_id": "corbanu:cbrs-add",
+     "posted_at": "2026-09-30T03:33:23Z",
+     "quality": 99.98348164240201,
+     "result": 0.43541439618039335,
+     "side": "short",
+     "state": "open",
+     "why": "return for the side since the post (open)"
+    }
+   ],
+   "calls_total": 8,
+   "components": {
+    "clarity": 100.0,
+    "hit": 37.5,
+    "quality": 41.37395975581989
+   },
+   "display": "49.3",
+   "hit_rate": 0.375,
+   "label": "small sample",
+   "rank": 2,
+   "raw": 48.42458390232795,
+   "score": 49.29981506770131,
+   "scored": 8,
+   "weight": 0.4444444444444444,
+   "wins": 3,
+   "with_entry": 8
+  },
+  "goodalexander": {
+   "avg_result": -0.003979029435339648,
+   "calls": [
+    {
+     "asset": "BTC",
+     "counted": true,
+     "post_id": "2113279842636419392",
+     "posted_at": "2026-10-22T14:42:31Z",
+     "quality": 24.9294857793042,
+     "result": -0.05511882953518488,
+     "side": "long",
+     "state": "open",
+     "why": "return for the side since the post (open)"
+    },
+    {
+     "asset": "GOLD",
+     "counted": true,
+     "post_id": "2113602987008356795",
+     "posted_at": "2026-10-23T12:06:35Z",
+     "quality": 68.34615733572467,
+     "result": 0.03848628943882515,
+     "side": "short",
+     "state": "open",
+     "why": "return for the side since the post (open)"
+    },
+    {
+     "asset": "XYZ:AAPL",
+     "counted": true,
+     "post_id": "2115550350832996432",
+     "posted_at": "2026-10-28T21:04:43Z",
+     "quality": 49.143869600003804,
+     "result": -0.0017124281650895412,
+     "side": "short",
+     "state": "open",
+     "why": "return for the side since the post (open)"
+    },
+    {
+     "asset": "STOCKS",
+     "counted": true,
+     "post_id": "2116203980111933911",
+     "posted_at": "2026-10-30T16:22:00Z",
+     "quality": 51.214186507152,
+     "result": 0.002428850520090675,
+     "side": "short",
+     "state": "open",
+     "why": "return for the side since the post (open)"
+    }
+   ],
+   "calls_total": 4,
+   "components": {
+    "clarity": 100.0,
+    "hit": 50.0,
+    "quality": 48.40842480554617
+   },
+   "display": "52.0",
+   "hit_rate": 0.5,
+   "label": "small sample",
+   "rank": 1,
+   "raw": 56.86336992221847,
+   "score": 51.96096283491956,
+   "scored": 4,
+   "weight": 0.2857142857142857,
+   "wins": 2,
+   "with_entry": 4
+  }
+ },
+ "formula": {
+  "k": 10,
+  "limited_sample": 30,
+  "prior": 50.0,
+  "scale": 0.1,
+  "small_sample": 10,
+  "text": "score = 50 + n/(n+10) * (0.45 H + 0.40 A + 0.15 C - 50); H = 100 * wins/n; A = mean(50 + 50 tanh(r/0.10)); C = 100 * sided calls with entry / calls with entry",
+  "weights": {
+   "clarity": 0.15,
+   "hit": 0.45,
+   "quality": 0.4
+  }
+ },
+ "order": [
+  "goodalexander",
+  "Corbanu",
+  "BobLoukas"
+ ],
+ "version": "quanty.rating.v1"
+}
