@@ -1,0 +1,63 @@
+{
+ "schema": "quanty.episode.v1",
+ "slug": "forward-guidance-2026-10-30",
+ "show": "Forward Guidance (Blockworks)",
+ "title": "The Fed Is A Sideshow While The AI Trade Implodes | Weekly Roundup",
+ "speakers": [
+  "Felix Jauvin (Fejau)",
+  "Quinn Thompson"
+ ],
+ "recorded_on": "2026-10-30",
+ "recorded_source": "said in the episode at 41:36: \"we're recording this on Friday the 30th\"",
+ "reference_at": "2026-10-30T20:00:00Z",
+ "reference_note": "the exact recording hour is not stated; prices are the last bar at or before 16:00 New York time on the recording day, i.e. what the hosts were looking at ('gold today below 3,900')",
+ "url": null,
+ "show_url": "https://blockworks.com/podcast/forwardguidance",
+ "transcript": {
+  "private": true,
+  "note": "the full transcript is kept private; its sha256 is below and every quote on the page was checked against it word for word"
+ },
+ "summary_by": "claude-opus-5-5 (in-session), written in our own words",
+ "summary": [
+  {
+   "t": "2:46",
+   "text": "The Fed held with two hawkish dissents. Quinn calls the meeting meaningless: the Fed cannot hike into an AI unwind, an oil supply shock and slowing growth, so December likely comes off the table while inflation keeps rising."
+  },
+  {
+   "t": "8:52",
+   "text": "Single-mandate central banks (ECB, Bank of Canada) keep hiking into an energy shock, mostly to defend their currencies. Quinn ties this to gold: energy-short nations sell gold to defend currency while the dollar is strong, but expects the dollar to peak and roll over within weeks to months."
+  },
+  {
+   "t": "13:58",
+   "text": "Gold broke below 3,900 to a one-year low even with bonds rallying. Both see forced selling (liquidity crunch, sovereigns). Long-run case intact, but step aside below the summer lows until it recovers them."
+  },
+  {
+   "t": "19:21",
+   "text": "The AI trade is fracturing: Microsoft and Google capex guidance missed estimates (38B vs 45B, 51B vs 55B). Credit spreads widening, neocloud credit window shut, leveraged products unwound. Quinn shorts pops and expects a long bleed; maybe a first bullish semis call in 2027."
+  },
+  {
+   "t": "30:46",
+   "text": "Oil-industry lesson: over-levered producers keep producing into a bust, so a supply glut lasts. The same applies to chips and data centers. Compute becoming a commodity is bearish for margins even if the technology is great."
+  },
+  {
+   "t": "39:50",
+   "text": "Quinn's main call: long oil, early-2027 futures expiries. Prices rose through three months of pre-midterm peace with almost no positioning; the supply disruption forces US action after the midterms."
+  },
+  {
+   "t": "44:35",
+   "text": "Inflation as an invisible tax feeding populism, unrest and anti-data-center politics; prediction markets missed Brazil's election."
+  },
+  {
+   "t": "53:48",
+   "text": "The $6.36B Binance hack dents crypto sentiment. Felix is less constructive; Quinn is not long anything and sees no fertile conditions until next year. Bottom-ish signal, but time capitulation first; gold's new lows could be ominous for Bitcoin."
+  }
+ ],
+ "theses_text": {
+  "OIL": "Long oil into 2027: supply disruption is forcing action after the midterms and almost nobody is positioned.",
+  "SEMIS": "The AI capex cycle has turned (capex misses, shut credit window): short the pops, no buy before 2027.",
+  "GOLD": "Bearish near term on forced selling by energy-short nations; good long term, but step aside below the summer lows.",
+  "BTC": "Not long; the Binance hack and gold's new lows point to more chop, conditions improve sometime next year.",
+  "USD": "The dollar is near a peak and should roll over over the coming months as the Fed is forced to ease.",
+  "STOCKS": "An oil spike on top of the AI unwind hits growth stocks."
+ }
+}

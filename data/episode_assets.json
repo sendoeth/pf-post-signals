@@ -1,0 +1,15 @@
+{
+ "schema": "quanty.episode_assets.v1",
+ "note": "assets an episode stance may name. Each maps to one price series (resolve.py source:symbol). A theme without a clean ticker uses the closest liquid proxy and says so in its label.",
+ "assets": {
+  "GOLD":   {"label": "Gold",                 "price": "GOLD",           "proxy": null},
+  "SILVER": {"label": "Silver",               "price": "SILVER",         "proxy": null},
+  "OIL":    {"label": "Oil (WTI)",            "price": "OIL",            "proxy": "front-month WTI futures; calls on later expiries move with it but not 1:1"},
+  "USD":    {"label": "US dollar (DXY)",      "price": "yahoo:DX-Y.NYB", "proxy": null},
+  "SEMIS":  {"label": "AI trade / semis (SMH)", "price": "yahoo:SMH",    "proxy": "the AI infrastructure trade, priced with the VanEck semiconductor ETF"},
+  "STOCKS": {"label": "US stocks (SPY)",      "price": "STOCKS",         "proxy": null},
+  "BTC":    {"label": "Bitcoin",              "price": "BTC",            "proxy": null},
+  "ETH":    {"label": "Ether",                "price": "ETH",            "proxy": null},
+  "COPPER": {"label": "Copper",               "price": "COPPER",         "proxy": null}
+ }
+}
