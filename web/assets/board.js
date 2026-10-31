@@ -92,7 +92,8 @@ function avatar(handle, avatars) {
 function sparkline(r) {
   const p = r.p, box = svg("svg", { class: "spark", viewBox: "0 0 120 34", "aria-hidden": "true" });
   if (!p.entry || !p.latest) { box.setAttribute("data-points", "0"); return box; }
-  const bars = r.asset.series.filter(([t]) => t >= p.entry.at && t <= p.latest.at);
+  const end = p.closed ? p.closed.exit.at : p.latest.at;      // a closed position stops at its exit
+  const bars = r.asset.series.filter(([t]) => t >= p.entry.at && t <= end);
   box.setAttribute("data-points", String(bars.length));
   if (bars.length < 2) return box;
   const vals = bars.map(b => b[1]), lo = Math.min(...vals), hi = Math.max(...vals), span = hi - lo || 1;

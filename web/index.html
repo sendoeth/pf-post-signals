@@ -92,9 +92,11 @@
     <p class="empty" id="empty" hidden>No positions match these filters.</p>
   </section>
 
-  <p class="notes">Return is the result for the call when the post states a side (long or short), otherwise the price move since the post.
-    Entry is the first hourly bar at or after the post; every value comes from a <code>post_price.v1</code> record and the daily refresh.
-    Unreached horizons are never shown as 0. Not trading advice.</p>
+  <p class="notes">Return is the result for the call when the post states a side (long or short), otherwise the price move
+    since the post. For a <strong>closed</strong> position it is the realized return, frozen at the first bar after the
+    author's closing post; the current price only appears as "if still held". Entry is the first hourly bar at or after the
+    post (daily bars for history older than the hourly window); every value comes from a <code>post_price.v1</code> record and
+    the daily refresh. Unreached horizons are never shown as 0. Not trading advice.</p>
 </main>
 <script src="assets/common.js"></script>
 <script src="assets/board.js"></script>

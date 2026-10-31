@@ -198,8 +198,9 @@ async function read(page) {
       eq('return', ret == null ? 'unresolved' : pct(ret));
       fieldChecks++;
       if (g.href !== `pos-${slug(rec.post.id, rec.asset.name)}.html`) fail(`${tag}: link ${g.href}`);
-      const bars = w.series.filter(([t]) => rec.entry && rec.latest && t >= rec.entry.at && t <= rec.latest.at).length;
-      if (g.points !== bars) fail(`${tag}: sparkline ${g.points} points, bundle has ${bars} bars entry->latest`);
+      const end = rec.closed ? rec.closed.exit.at : rec.latest && rec.latest.at;
+      const bars = w.series.filter(([t]) => rec.entry && rec.latest && t >= rec.entry.at && t <= end).length;
+      if (g.points !== bars) fail(`${tag}: sparkline ${g.points} points, bundle has ${bars} bars entry->latest (exit if closed)`);
       if (g.avatar === 'image' && !(g.img > 0)) fail(`${tag}: avatar image did not load`);
     });
     const odd = await load('?side=bogus&sort=evil&time=1d&asset=%3Cb%3E');
