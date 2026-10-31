@@ -128,3 +128,4 @@ table.calls th { text-align: left; color: var(--muted); font-size: 11px; text-tr
 table.calls td { padding: 5px 8px; border-top: 1px solid var(--border); white-space: nowrap; }
 table.calls td.why { white-space: normal; color: var(--muted); min-width: 220px; }
 table.calls tr[data-counted="false"] td { opacity: .7; }
+#entry-bubble[hidden] { display: none; }
