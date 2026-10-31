@@ -1,6 +1,6 @@
-# Quanty
+# Quanty Quants
 
-Quanty turns posts into priced positions: each tracked post is priced at the first bar at or after it was posted, then followed (best since post, 1d / 7d / 30d, closing posts with frozen realized returns). Live: https://sendoeth.com/pf-post-signals/web/
+Quanty Quants turns posts into priced positions: each tracked post is priced at the first bar at or after it was posted, then followed (best since post, 1d / 7d / 30d, closing posts with frozen realized returns). Live: https://sendoeth.com/pf-post-signals/web/
 
 The repository keeps its original name (pf-post-signals) so existing commit and page links keep working; record and bundle schema ids (`pf-post-signals.*`, `post_price.v1`) are unchanged.
 
