@@ -1,0 +1,35 @@
+$ node tests/polish_test.js --url https://sendoeth.com/pf-post-signals/web/   # BEFORE the fix: the live site still serves the step 19 build
+page https://sendoeth.com/pf-post-signals/web/
+notice on 58 pages, close cards 1 (+1 by keyboard), price-at-post cards 404, chart-view cards 49, views checked 392 (8 per position page), visible markers inside the plot 1613, hidden outside the view 2035, console errors 0
+notice: 59 failure(s)
+   - notice missing or different on /: null
+   - notice missing or different on /chart.html: null
+   - notice missing or different on /position.html: null
+   - notice missing or different on /pos-1985733515221078204_BTC.html: null
+close card: 6 failure(s)
+   - silver click: no close card (got nothing )
+   - silver: exit words do not include "rotated out of"
+   - silver: exit text ""
+   - silver: closing post link ""
+price at the post: 404 failure(s)
+   - silver: opened call card null
+   - BTC 1985733515221078204: card for 1985733515221078204 price at the post undefined
+   - BTC 1985733515221078204: card for 2009356789356314714 price at the post {"text":"90,927.63 @ 2026-01-08 21:00 UTC","raw":{"at":"2026-01-08T21:00:00Z","price":90927.63},"href":null}
+   - BTC 1985733515221078204: card for 2017256982743339269 price at the post {"text":"82,882.84 @ 2026-01-30 16:00 UTC","raw":{"at":"2026-01-30T16:00:00Z","price":82882.84},"href":null}
+overlay: 784 failure(s)
+   - BTC 1985733515221078204 default: overlay {"x":0,"y":0,"w":754,"h":380,"overflow":"visible"} != plot {"W":642,"H":352}
+   - BTC 1985733515221078204 default: overlay does not clip (visible)
+   - BTC 1985733515221078204 fit: overlay {"x":0,"y":0,"w":754,"h":380,"overflow":"visible"} != plot {"W":642,"H":352}
+   - BTC 1985733515221078204 fit: overlay does not clip (visible)
+outside the plot: 101 failure(s)
+   - BTC 1985733515221078204 pastLeft: entry-bubble drawn at -52.6,93.7 outside the plot 642x352
+   - BTC 1985733515221078204 pastRight: entry-bubble drawn at 692.6,296.1 outside the plot 642x352
+   - BTC 2009356789356314714 pastLeft: entry-bubble drawn at -52.6,100.0 outside the plot 642x352
+   - BTC 2009356789356314714 pastRight: entry-bubble drawn at 692.6,210.5 outside the plot 642x352
+other: 49 failure(s)
+   - chart BTC 1985733515221078204: {"raw":{"at":"2025-11-04T16:00:00Z","price":103197.02},"label":"Entry","closing":null}
+   - chart BTC 2009356789356314714: {"raw":{"at":"2026-01-08T21:00:00Z","price":90927.63},"label":"Entry","closing":null}
+   - chart BTC 2017256982743339269: {"raw":{"at":"2026-01-30T16:00:00Z","price":82882.84},"label":"Entry","closing":null}
+   - chart BTC 2023793838322782454: {"raw":{"at":"2026-02-17T17:00:00Z","price":67517.36},"label":"Entry","closing":null}
+FAIL (1403)
+exit 1

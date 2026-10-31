@@ -1,0 +1,5 @@
+$ node tests/polish_test.js --url https://sendoeth.com/pf-post-signals/web/ --screenshots verification/step20
+page https://sendoeth.com/pf-post-signals/web/
+notice on 58 pages, close cards 6 (+1 by keyboard), price-at-post cards 404, chart-view cards 49, views checked 392 (8 per position page), visible markers inside the plot 1514, hidden outside the view 2134, console errors 0
+ALL PASS
+exit 0

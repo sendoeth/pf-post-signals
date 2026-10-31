@@ -1,0 +1,10 @@
+$ curl -s https://sendoeth.com/pf-post-signals/web/data/charts.json | sha256sum
+27f79259a21f6949d4826a9dcb0e3251b18c55ca9806256c8bff1c2445c4fb8f  -
+$ curl -s -o /dev/null -w '%{http_code}' https://sendoeth.com/pf-post-signals/web/pos-1776235528741937435_SILVER.html
+200
+$ curl -s https://sendoeth.com/pf-post-signals/web/pos-1776235528741937435_SILVER.html | grep -c 'id="nfa"'
+1
+$ git ls-remote https://github.com/sendoeth/pf-post-signals.git refs/heads/main
+5d7f4be5696c830bae1fe32073b8c4c3a148dd85	refs/heads/main
+$ curl -s https://api.github.com/repos/sendoeth/pf-post-signals/pages/builds/latest (status, commit)
+built 5d7f4be5696c830bae1fe32073b8c4c3a148dd85

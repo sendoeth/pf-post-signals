@@ -1,0 +1,5 @@
+# sha256 of every private bot file (source not published)
+71b60fa1ad60be6bd66ee239ae8e5130ef83717d7fbb2f4c011230d1dc1513ab  quanty_admin.py
+33ceeaab0528092ffa9479b304eb80fd66cabd9d0b8d693aec63a37debc9d783  tests/test_bot.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  tests/__init__.py
+834edeb1ce49e765bab3e4bf1b75ed9fbb8f0f6294efc346c701ebeb41330387  ~/.config/systemd/user/quanty-admin.service

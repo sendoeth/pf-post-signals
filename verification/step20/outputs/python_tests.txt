@@ -1,0 +1,23 @@
+$ .venv/bin/python -m unittest -v tests.test_static
+test_hostile_name_renders_as_text (tests.test_static.HostileCaller.test_hostile_name_renders_as_text) ... ok
+test_attack_fixtures_render_as_text (tests.test_static.HostileText.test_attack_fixtures_render_as_text) ... ok
+test_advice_notice_on_every_page (tests.test_static.Static.test_advice_notice_on_every_page)
+Step 20: the same not-financial-advice notice on every page, also without JavaScript. ... ok
+test_caller_scores_without_javascript (tests.test_static.Static.test_caller_scores_without_javascript) ... ok
+test_every_position_page_without_javascript (tests.test_static.Static.test_every_position_page_without_javascript) ... ok
+test_leaderboard_rows_without_javascript (tests.test_static.Static.test_leaderboard_rows_without_javascript) ... ok
+test_no_stale_or_missing_pages (tests.test_static.Static.test_no_stale_or_missing_pages) ... ok
+test_only_known_scripts_and_no_inline_code (tests.test_static.Static.test_only_known_scripts_and_no_inline_code) ... ok
+test_other_calls_on_the_same_asset (tests.test_static.Static.test_other_calls_on_the_same_asset) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.516s
+
+OK
+$ .venv/bin/python -m unittest discover -s tests -p "test_*.py"
+Ran 143 tests in 61.088s
+OK
+$ python3 check_bundle.py
+bundle: 50 record files -> 50 drawn, 0 superseded, 0 refused; 150 horizon cells, 50 best-since-post values, 5 caller ratings checked -> ALL MATCH
+$ python3 tools/guard.py --tree
+guard: scanned 2234 files -> 0 hits
