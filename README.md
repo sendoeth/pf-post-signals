@@ -191,6 +191,20 @@ python3 tools/add_call.py <url> --asset <A> --add
 - **Market closed**: a post with no bar after it yet (e.g. after Friday's close) is refused unless `--pending`: then it is added with status "no price yet", is not scored, and the daily refresh fills the entry from the first bar after the post.
 - Tests: `tests/test_read_images.py` (fixture images made by `tests/fixtures/images/make.py`: a chart, a crop of it, an unrelated chart; the real SOXL pair; OCR text -> titles / tickers / labels; near and far labels; the SOXL pattern end-to-end with no side and nothing added; joke markers; no readable text; reasons required; pending refused unless allowed).
 
+## Call context: what the author said before and after a post
+
+```
+python3 tools/call_context.py https://x.com/<handle>/status/<id> [--asset NAME]       # timeline, nothing changes
+python3 tools/call_context.py <url> --asset NAME --apply --reuse [--expect-sha SHA]      # follow-ups into the call's lifecycle
+```
+
+- **Before** (90 days, windowed read-only searches of the author's posts naming the asset): each post is the author's own call (side words), own mention, or not theirs (a repost of someone else's words, another account). A victory lap ("did you fade", "told you", "called it") is a look back, not a new call: the earliest own call before it is suggested as the call to add, so the entry is when the position was taken. Example: Mert's "did you fade" (2025-09-29, ZEC at $67.79) points back to "I am irresponsibly long ZEC" (2025-09-24, $54.49); his earlier "bought some zec" is a repost of another account and is not his call.
+- **After** (until today, only the author's own posts that name the asset *and* carry exit or hold words): the step 13 closing-call rules label each one close / flip / trim / review (a hint) / not a close (advice), plus hold ("still long", "holding", "added more"). Nothing disclosed keeps the trade open. Searches stop on a budget or on 3 empty pages in a row (X throttling) and the result says INCOMPLETE with the windows not searched.
+- **--apply** writes the follow-ups (labelled overrides with their matched words, plus receipts) into `data/lifecycle.json` for the recorded call, re-applies the lifecycle on the call's own bars and rebuilds the pages; the daily refresh keeps applying it. `--reuse` never searches again and fails if there is no recent context file; `--expect-sha` (only with `--reuse`) refuses unless the file still has the hash that was reviewed (hash and parse of the same bytes).
+- The owner's admin bot runs the context after every `/add` preview and offers "use the original" and "apply follow-ups".
+- Previews now start with the post itself (date, author, text, asset, side, entry), so a preview of the wrong post is obvious.
+- Tests: `tests/test_call_context.py` (victory lap → own call, reposts not theirs, nothing disclosed stays open, trim + hold, close, advice and hints do not close, throttled = INCOMPLETE, apply closes the real Mert record at the first bar after a closing post, nothing to apply, load hashes the bytes it parses, CLI fails closed).
+
 ## Reproduce step 2
 
 ```bash

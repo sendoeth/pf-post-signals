@@ -324,6 +324,12 @@ def print_preview(p):
     r = p["record"]
     e, side = r["entry"], {1: "LONG", -1: "SHORT"}.get(r.get("side"), "NO SIDE")
     res = rate.result(r)
+    # header first: which post this is (date, author, text), so a preview of the wrong post is obvious
+    print(f"📌 POST {r['post']['posted_at'][:16].replace('T', ' ')} UTC · @{p['author']}{' · NEW CALLER' if p['new_caller'] else ''}")
+    print(f"   “{' '.join((r['post'].get('text') or '').split())[:160]}”")
+    print(f"   {{asset}} {{side}} @ {{entry}}".format(asset=r['asset']['name'], side={1: 'LONG', -1: 'SHORT'}.get(r.get('side'), 'NO SIDE'),
+                                                      entry=(f"{r['entry']['price']} ({r['entry']['at'][:16].replace('T', ' ')})" if r.get('entry') else "no price yet")))
+    print("─" * 40)
     print(f"post      {p['url']}  @{p['author']}  {r['post']['posted_at']}" + ("  (new caller)" if p["new_caller"] else ""))
     print(f"receipt   {p['receipt']['file']}  sha256 {p['receipt']['sha256']}  {'saved now' if p['receipt']['created'] else 'already saved'}"
           + ("  (text cut by the embed endpoint: textTruncated)" if p["receipt"]["text_truncated"] else ""))

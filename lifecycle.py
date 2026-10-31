@@ -39,7 +39,7 @@ def receipt(post_id):
     hits = sorted(glob.glob(os.path.join(HERE, "sources", "*", "receipts", f"{post_id}.json")))
     if not hits:
         raise resolve.ResolveError(f"follow-up {post_id}: no saved receipt (ingest it first)")
-    return resolve.load_post(receipt=os.path.relpath(hits[0], HERE))
+    return resolve.load_post(receipt=hits[0])      # absolute: works for any root (the path itself is not stored)
 
 
 def exit_bar(series, when, asset):
