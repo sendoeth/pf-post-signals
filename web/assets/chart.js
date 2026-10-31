@@ -79,14 +79,22 @@ function render() {
     root.append(svg("text", { class: "tick", x: m.l - 6, y: y(v) + 4, "text-anchor": "end" }, fmtPrice(v)));
   }
   root.append(svg("line", { class: "axis", x1: m.l, x2: W - m.r, y1: H - m.b, y2: H - m.b }));
+  // ticks: every 1 / 2 / 7 / 14 days, or the 1st of every month (every 2nd month past ~14 months)
+  // when the range is long, with a label width check so labels never run into each other
   const days = (t1 - t0) / 864e5, every = days > 40 ? 14 : days > 14 ? 7 : days > 5 ? 2 : 1;
+  const monthly = days > 150, monthStep = days > 420 ? 2 : 1;
   const first = new Date(t0); first.setUTCHours(0, 0, 0, 0);
+  let lastPx = -Infinity;
   for (let d = new Date(first), i = 0; d.getTime() <= t1; d.setUTCDate(d.getUTCDate() + 1), i++) {
-    if (d.getTime() < t0 || i % every) continue;
+    if (d.getTime() < t0) continue;
+    if (monthly ? d.getUTCDate() !== 1 || d.getUTCMonth() % monthStep : i % every) continue;
+    if (x(d.toISOString()) - lastPx < 44) continue;
+    lastPx = x(d.toISOString());
     const iso = d.toISOString(), px = x(iso);
     if (px > W - m.r - 20) continue;
     root.append(svg("text", { class: "tick", x: px, y: H - m.b + 18, "text-anchor": "middle" },
-      d.toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone: "UTC" })));
+      monthly ? d.toLocaleDateString("en-US", { month: "short", timeZone: "UTC" }) + (d.getUTCMonth() === 0 ? " " + d.getUTCFullYear() : "")
+              : d.toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone: "UTC" })));
   }
   // A stretch with no bars across a whole weekday (or > 2 h on a 24/7 asset) is missing data,
   // not a closed market: drawn dashed so it is not read as prices.
