@@ -78,3 +78,37 @@ html[data-framed] body { display: none; }
 .timeline li { margin: 3px 0; }
 .timeline .why { color: var(--muted); }
 .timeline li[data-type="close"] strong, .timeline li[data-type="flip"] strong { color: var(--ink); }
+/* step 14: every caller's calls on this asset */
+.callers { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 8px; }
+.callers button { display: inline-flex; align-items: center; gap: 5px; font: 600 12px system-ui, sans-serif; padding: 3px 9px 3px 4px; border-radius: 999px;
+  border: 1px solid var(--border); background: var(--card); color: var(--ink-2); cursor: pointer; }
+.callers button[data-callers] { padding: 5px 10px; }
+.callers button[aria-pressed="true"] { background: var(--ink); color: var(--surface); border-color: var(--ink); }
+.callers .mini { width: 20px; height: 20px; border-radius: 50%; overflow: hidden; display: grid; place-items: center; font: 700 10px system-ui; background: var(--axis); }
+.callers .mini img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.callers .count { font: 600 11px ui-monospace, monospace; opacity: .7; }
+.call-bubble { position: absolute; width: 26px; height: 26px; margin: -13px 0 0 -13px; border-radius: 50%; border: 2.5px solid var(--flat); background: var(--axis);
+  display: grid; place-items: center; font: 700 11px system-ui; color: var(--ink); pointer-events: auto; cursor: pointer; box-sizing: border-box; z-index: 1; }
+.call-bubble img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; display: block; }
+.call-bubble.long { border-color: var(--up); } .call-bubble.short { border-color: var(--down); }
+.call-bubble .dir { position: absolute; right: -5px; bottom: -5px; width: 12px; height: 12px; border-radius: 50%; font-size: 7px; line-height: 12px; text-align: center;
+  color: #fff; background: var(--flat); box-shadow: 0 0 0 1.5px var(--surface); }
+.call-bubble .dir.up { background: var(--up); } .call-bubble .dir.down { background: var(--down); }
+.call-bubble.selected, .call-bubble:focus-visible { outline: 3px solid var(--focus); outline-offset: 1px; }
+.call-bubble[hidden], .call-exit[hidden] { display: none; }
+#entry-bubble.opened { z-index: 2; }
+.stem { stroke: var(--muted); stroke-width: 1; stroke-dasharray: 2 2; }
+.call-exit { position: absolute; width: 16px; height: 16px; margin: -8px 0 0 -8px; border-radius: 50%; background: var(--muted); color: var(--surface);
+  display: grid; place-items: center; font: 700 9px system-ui; box-shadow: 0 0 0 1.5px var(--surface); }
+.readout { color: var(--ink-2); font: 12px ui-monospace, monospace; margin: 6px 0 0; min-height: 1.45em; overflow-wrap: anywhere; }
+.call-card { position: relative; margin-top: 10px; padding: 12px 14px; border: 1px solid var(--border); border-radius: 12px; background: var(--card); font-size: 14px; }
+.call-card .card-text { margin: 0 0 8px; color: var(--ink-2); overflow-wrap: anywhere; }
+.call-card .card-links { margin: 8px 0 0; }
+.call-card .card-close { position: absolute; top: 6px; right: 8px; border: 0; background: none; font-size: 20px; color: var(--muted); cursor: pointer; }
+.call-card .meta { display: block; color: var(--muted); font-size: 13px; }
+.other-calls { margin: 0; padding-left: 18px; font-size: 14px; }
+#exit-mark[hidden] { display: none; }
+.edge { position: absolute; top: 8px; z-index: 4; font: 600 12px system-ui, sans-serif; padding: 4px 10px; border-radius: 999px; border: 1px solid var(--border);
+  background: var(--card); color: var(--ink); cursor: pointer; box-shadow: 0 1px 3px #0002; }
+.edge.left { left: 8px; } .edge.right { right: 70px; }
+.edge[hidden] { display: none; }

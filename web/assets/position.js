@@ -55,6 +55,20 @@ function aggregate(candles, step) {
 // the candle a bar falls in: itself at 1h (Yahoo stock bars start at :30), else its UTC bucket
 const bucket = (iso, step) => step === 3600 ? sec(iso) : Math.floor(sec(iso) / step) * step;
 
+// ?callers= : absent = every caller, "none" = only the opened call, else a comma list of handles
+function parseCallers(v, authors) {
+  const all = authors.map(a => a.toLowerCase());
+  if (v == null || v === "all") return new Set(all);
+  if (v === "none") return new Set();
+  return new Set(v.toLowerCase().split(",").filter(h => all.includes(h)));
+}
+function callersParam(shown, authors) {
+  const all = authors.map(a => a.toLowerCase());
+  if (all.every(a => shown.has(a))) return null;
+  if (!shown.size) return "none";
+  return all.filter(a => shown.has(a)).join(",");
+}
+
 function fail(msg) {
   document.getElementById("app").replaceChildren(el("div", { class: "panel error", "data-error": "1" }, msg));
   document.body.setAttribute("data-ready", "error");
@@ -137,19 +151,51 @@ function render(asset, p, ohlc, avatars, bundle) {
   const bar = el("div", { class: "toolbar", role: "group", "aria-label": "Candle interval" });
   for (const k of Object.keys(INTERVALS)) {
     const b = el("button", { type: "button", "data-interval": k, "aria-pressed": String(k === interval) }, k);
-    b.addEventListener("click", () => { interval = k; for (const x of bar.children) x.setAttribute("aria-pressed", String(x === b)); draw(); });
+    b.addEventListener("click", () => { interval = k; for (const x of bar.querySelectorAll("[data-interval]")) x.setAttribute("aria-pressed", String(x === b)); draw(); });
     bar.append(b);
   }
+  const fullBtn = el("button", { type: "button", "data-range": "all", title: "Show the whole fetched history, including the lookback before the first call" }, "Full history");
+  fullBtn.addEventListener("click", () => showRange(sec(ohlc.candles[0][0]), sec(ohlc.candles[ohlc.candles.length - 1][0])));
+  bar.append(fullBtn);
   pos.append(bar);
+
+  // step 14: every tracked caller's calls on this asset, one toggle per caller (state in the url)
+  const others = asset.posts.filter(o => o !== p && o.entry);
+  const authors = [...new Set(asset.posts.map(o => o.post.author))].sort((x, y) => x.toLowerCase() < y.toLowerCase() ? -1 : 1);
+  const shown = parseCallers(new URLSearchParams(location.search).get("callers"), authors);
+  const callersBar = el("div", { class: "callers", role: "group", "aria-label": "Callers on this chart", "data-field": "callers" });
+  const allBtn = el("button", { type: "button", "data-callers": "all" }, "All callers");
+  const noneBtn = el("button", { type: "button", "data-callers": "none" }, "None");
+  callersBar.append(allBtn, noneBtn);
+  const callerBtns = authors.map(a => {
+    const b = el("button", { type: "button", "data-caller": a.toLowerCase(), "aria-pressed": "false" });
+    b.append(avatarNode(a, avatars, "mini"), "@" + a);
+    const n = asset.posts.filter(o => o.post.author === a).length;
+    b.append(el("span", { class: "count" }, String(n)));
+    b.addEventListener("click", () => { shown.has(a.toLowerCase()) ? shown.delete(a.toLowerCase()) : shown.add(a.toLowerCase()); syncCallers(); });
+    return b;
+  });
+  callersBar.append(...callerBtns);
+  allBtn.addEventListener("click", () => { for (const a of authors) shown.add(a.toLowerCase()); syncCallers(); });
+  noneBtn.addEventListener("click", () => { shown.clear(); syncCallers(); });
+  pos.append(callersBar);
   const box = el("div", { id: "chart-box" });
   const chartEl = el("div", { id: "chart" }), overlay = el("div", { id: "overlay" });
   box.append(chartEl, overlay);
   pos.append(box);
+  const readout = el("p", { class: "readout", id: "readout", "aria-live": "off" }, "Hover the chart for a candle's prices.");
+  pos.append(readout);
+  const card = el("div", { class: "call-card", id: "call-card", hidden: "" });
+  pos.append(card);
   pos.append(el("p", { class: "as-of", "data-field": "prices_as_of", "data-raw": JSON.stringify(bundle.prices_as_of || null) },
     bundle.prices_as_of ? "Prices as of " + fmtTime(bundle.prices_as_of) + " (daily refresh)" : "Prices not refreshed yet"));
-  pos.append(el("p", { class: "attribution" },
-    "Candles: hourly opens/highs/lows/closes from " + ohlc.source + ":" + ohlc.symbol + " fetched " + fmtTime(ohlc.fetched_at) +
-    ", display only. Charting by TradingView Lightweight Charts."));
+  const lb = ohlc.lookback;
+  pos.append(el("p", { class: "attribution", "data-field": "history", "data-raw": JSON.stringify({ daily_until: ohlc.daily_until || null, lookback: lb || null }) },
+    "Candles: " + (ohlc.daily_until ? "daily bars before " + fmtTime(ohlc.daily_until) + ", hourly after" : "hourly") +
+    " opens/highs/lows/closes from " + ohlc.source + ":" + ohlc.symbol + " fetched " + fmtTime(ohlc.fetched_at) + ". " +
+    (lb ? `History from ${fmtTime(ohlc.candles[0][0])}: ${lb.days} days before the first call on ${asset.name} (${fmtTime(lb.first_call)})` +
+      (lb.starts_at_listing ? ", or the market's first bar if it listed later" : "") + ". " : "") +
+    "Display only: entries, exits and returns come from the records. Charting by TradingView Lightweight Charts."));
   app.append(pos);
 
   // recap: every value from the record (best since post from the record's own series)
@@ -226,7 +272,7 @@ function render(asset, p, ohlc, avatars, bundle) {
     layout: { background: { color: "transparent" }, textColor: css("--muted"), fontSize: 11, attributionLogo: true },
     grid: { vertLines: { color: css("--grid") }, horzLines: { color: css("--grid") } },
     rightPriceScale: { borderColor: css("--axis"), scaleMargins: { top: 0.15, bottom: 0.12 } },
-    timeScale: { borderColor: css("--axis"), timeVisible: true, secondsVisible: false, rightOffset: 4 },
+    timeScale: { borderColor: css("--axis"), timeVisible: true, secondsVisible: false, rightOffset: 4, minBarSpacing: 0.2 },
     localization: { priceFormatter: fmtPrice, timeFormatter: t => new Date(t * 1000).toISOString().slice(0, 16).replace("T", " ") + " UTC" },
     crosshair: { mode: LightweightCharts.CrosshairMode.Normal },
     handleScroll: { vertTouchDrag: false },
@@ -237,7 +283,7 @@ function render(asset, p, ohlc, avatars, bundle) {
   });
   if (p.latest) series.createPriceLine({ price: p.latest.price, color: css("--muted"), lineWidth: 1,
     lineStyle: LightweightCharts.LineStyle.Dotted, axisLabelVisible: true, title: p.closed ? "now (if held)" : "latest" });
-  window.__position = { chart, series, post: p, get interval() { return interval; }, step: () => INTERVALS[interval] };
+  window.__position = { chart, series, post: p, get interval() { return interval; }, step: () => INTERVALS[interval], authors, shown: () => [...shown].sort(), fitCalls: () => fitCalls() };
 
   const bubble = avatarNode(p.post.author, avatars, "");
   bubble.id = "entry-bubble";
@@ -249,6 +295,75 @@ function render(asset, p, ohlc, avatars, bundle) {
   const exitMark = el("span", { id: "exit-mark", title: p.closed ? "closed here" : "" }, "✕");
   exitMark.hidden = true;
   overlay.append(svg, bubble, exitMark);
+  bubble.classList.add("opened");
+  // shown calls outside the visible range: a pill at that edge zooms out to fit every shown call
+  const edgeL = el("button", { type: "button", class: "edge left", "data-edge": "left", hidden: "" }), edgeR = el("button", { type: "button", class: "edge right", "data-edge": "right", hidden: "" });
+  edgeL.addEventListener("click", () => fitCalls()); edgeR.addEventListener("click", () => fitCalls());
+  box.append(edgeL, edgeR);
+  const stems = document.createElementNS(svgNS, "g");
+  svg.prepend(stems);
+  const nodes = others.map(o => {
+    const side = o.side === 1 ? "long" : o.side === -1 ? "short" : "none";
+    const mv = o.closed ? o.closed.move : o.change_since_post;   // badge = price direction (to the exit if closed), as on the chart view
+    const dir = mv == null ? "none" : mv > 0 ? "up" : mv < 0 ? "down" : "flat";
+    const n = avatarNode(o.post.author, avatars, "call-bubble " + side);
+    n.setAttribute("role", "button"); n.setAttribute("tabindex", "0");
+    n.setAttribute("data-post-id", o.post.id); n.setAttribute("data-author", o.post.author.toLowerCase()); n.setAttribute("data-side", side);
+    n.setAttribute("title", `@${o.post.author} ${side === "none" ? "" : side + " "}${fmtTime(o.post.posted_at)}${o.closed ? " (closed)" : ""}`);
+    n.setAttribute("aria-label", n.getAttribute("title"));
+    const badge = el("span", { class: "dir " + dir, "data-dir": dir }, dir === "up" ? "▲" : dir === "down" ? "▼" : "•");
+    n.append(badge);
+    n.addEventListener("click", () => openCard(o));
+    n.addEventListener("keydown", ev => { if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); openCard(o); } });
+    const x = o.closed ? el("span", { class: "call-exit", "data-post-id": o.post.id, title: `@${o.post.author} closed here` }, "✕") : null;
+    const stem = document.createElementNS(svgNS, "line");
+    stem.setAttribute("class", "stem");
+    stems.append(stem);
+    overlay.append(n);
+    if (x) overlay.append(x);
+    return { o, n, x, stem };
+  });
+
+  function openCard(o) {
+    card.hidden = false;
+    card.replaceChildren();
+    card.setAttribute("data-post-id", o.post.id);
+    for (const t of nodes) t.n.classList.toggle("selected", t.o === o);
+    const side = o.side === 1 ? "long" : o.side === -1 ? "short" : null, r = PFPS.result(o);
+    const who = el("div", { class: "who" });
+    who.append(avatarNode(o.post.author, avatars, "avatar"));
+    const nm = el("div");
+    nm.append(el("strong", { "data-field": "card_author" }, "@" + o.post.author));
+    nm.append(el("span", { class: "meta", "data-field": "card_posted_at" }, fmtTime(o.post.posted_at)));
+    who.append(nm);
+    card.append(who);
+    if (o.post.text) card.append(el("p", { class: "card-text" }, o.post.text.replace(/\s+/g, " ").trim().slice(0, 220)));
+    const d = el("dl");
+    field(d, "card_side", "Side", side || "no side stated", o.side ?? null);
+    field(d, "card_entry", "Entry", `${fmtPrice(o.entry.price)} @ ${fmtTime(o.entry.at)}`, o.entry);
+    field(d, "card_result", o.closed ? "Closed (realized)" : side ? "For the call, since post" : "Since post", r == null ? "unresolved" : fmtPct(r), r, signClass(r));
+    field(d, "card_status", "Status", PFPS.statusLabel(o), o.status);
+    card.append(d);
+    const links = el("p", { class: "card-links" });
+    links.append(el("a", { href: PFPS.positionUrl(o.post.id, asset.name), "data-field": "card_position_url" }, "Open position page →"), " · ",
+      el("a", { href: o.post.url, target: "_blank", rel: "noopener noreferrer", "data-field": "card_url" }, o.post.source === "corbanu" ? "read the article" : "open on X"));
+    const close = el("button", { type: "button", class: "card-close", "aria-label": "Close the card" }, "×");
+    close.addEventListener("click", () => { card.hidden = true; for (const t of nodes) t.n.classList.remove("selected"); });
+    card.append(links, close);
+  }
+
+  function syncCallers() {
+    const q = new URLSearchParams(location.search);
+    const v = callersParam(shown, authors);
+    if (v == null) q.delete("callers"); else q.set("callers", v);
+    const qs = q.toString();
+    history.replaceState(null, "", location.pathname + (qs ? "?" + qs : "") + location.hash);
+    allBtn.setAttribute("aria-pressed", String(authors.every(a => shown.has(a.toLowerCase()))));
+    noneBtn.setAttribute("aria-pressed", String(shown.size === 0));
+    for (const b of callerBtns) b.setAttribute("aria-pressed", String(shown.has(b.dataset.caller)));
+    if (!card.hidden && !shown.has((nodes.find(t => t.o.post.id === card.dataset.postId) || { o: { post: { author: "" } } }).o.post.author.toLowerCase())) card.hidden = true;
+    requestAnimationFrame(place);
+  }
 
   function place() {
     if (!p.entry) { bubble.hidden = true; svg.style.display = "none"; return; }
@@ -263,6 +378,7 @@ function render(asset, p, ohlc, avatars, bundle) {
     bubble.hidden = ex == null || ey == null;
     if (!bubble.hidden) { bubble.style.left = ex + "px"; bubble.style.top = ey + "px"; }
     bubble.setAttribute("data-x", ex); bubble.setAttribute("data-y", ey);
+    placeOthers(step, bubble.hidden ? null : { x: ex, y: ey, r: 15 });
     const bx = best ? chart.timeScale().timeToCoordinate(bucket(best.at, step)) : null, by = best ? series.priceToCoordinate(best.price) : null;
     const gain = best ? (sideName ? best.for_call : best.move) : 0;
     if (ex == null || ey == null || bx == null || by == null || gain <= 0) { svg.style.display = "none"; return; }
@@ -278,18 +394,90 @@ function render(asset, p, ohlc, avatars, bundle) {
     label.setAttribute("y", up || nearRight ? by - 10 : by + 18);   // near the right edge stay clear of the price-axis tags
     label.setAttribute("text-anchor", nearRight ? "end" : "start");
   }
-  function draw() {
+  // Other calls: each bubble starts at its own entry candle; a bubble that would overlap one already
+  // placed (the opened call first, then by entry time) moves up past it (down if that leaves the
+  // pane), on a stem from its entry point, so every bubble keeps its own click area.
+  function placeOthers(step, opened) {
+    const placed = opened ? [opened] : [], W = chart.timeScale().width(), H = box.clientHeight, R = 13;
+    let left = 0, right = 0;
+    const clash = (x, y) => placed.find(q => Math.abs(q.x - x) < q.r + R + 1 && Math.abs(q.y - y) < q.r + R + 1);
+    for (const t of nodes.slice().sort((a, b) => a.o.entry.at < b.o.entry.at ? -1 : a.o.entry.at > b.o.entry.at ? 1 : 0)) {
+      const on = shown.has(t.o.post.author.toLowerCase());
+      const x = chart.timeScale().timeToCoordinate(bucket(t.o.entry.at, step)), y = series.priceToCoordinate(t.o.entry.price);
+      const visible = on && x != null && y != null && x >= 0 && x <= W && y >= 0 && y <= H;
+      if (on && x != null && x < 0) left++;
+      if (on && x != null && x > W) right++;
+      t.n.hidden = !visible;
+      t.n.setAttribute("data-shown", String(on));
+      t.stem.style.display = "none";
+      if (t.x) {
+        const xx = chart.timeScale().timeToCoordinate(bucket(t.o.closed.exit.at, step)), xy = series.priceToCoordinate(t.o.closed.exit.price);
+        t.x.hidden = !on || xx == null || xy == null || xx < 0 || xx > W;
+        if (!t.x.hidden) { t.x.style.left = xx + "px"; t.x.style.top = xy + "px"; }
+      }
+      if (!visible) continue;
+      let cy = y, q, guard = 0;
+      while ((q = clash(x, cy)) && guard++ < 60) cy = q.y - q.r - R - 2;
+      if (cy < R) { cy = y; guard = 0; while ((q = clash(x, cy)) && guard++ < 60) cy = q.y + q.r + R + 2; }
+      placed.push({ x, y: cy, r: R });
+      t.n.style.left = x + "px"; t.n.style.top = cy + "px";
+      t.n.setAttribute("data-x", x); t.n.setAttribute("data-y", y);
+      if (Math.abs(cy - y) > 0.5) {
+        t.stem.style.display = "";
+        t.stem.setAttribute("x1", x); t.stem.setAttribute("y1", y); t.stem.setAttribute("x2", x); t.stem.setAttribute("y2", cy);
+      }
+    }
+    edgeL.hidden = !left; edgeL.textContent = `◀ ${left} earlier call${left === 1 ? "" : "s"}`;
+    edgeR.hidden = !right; edgeR.textContent = `${right} later call${right === 1 ? "" : "s"} ▶`;
+    edgeL.setAttribute("data-count", left); edgeR.setAttribute("data-count", right);
+  }
+  // zoom out (keeping the interval) so the opened call and every shown call are in view
+  function fitCalls() {
+    const ts = [p.entry, ...nodes.filter(t => shown.has(t.o.post.author.toLowerCase())).map(t => t.o.entry)].filter(Boolean).map(e => sec(e.at));
+    const first = Math.min(...ts), last = sec(ohlc.candles[ohlc.candles.length - 1][0]);
+    showRange(first - Math.max(12 * 3600, (last - first) * 0.03), last);
+  }
+  // range = [fromSec, toSec] or null (the opened call's default view)
+  function draw(range) {
     const step = INTERVALS[interval];
     const data = aggregate(ohlc.candles, step);
     series.setData(data);
-    const from = p.entry ? bucket(p.entry.at, step) - step * 12 : data[0].time;
-    chart.timeScale().setVisibleRange({ from: Math.max(from, data[0].time), to: data[data.length - 1].time });
+    if (range) {
+      // by bar index: a time range starting in a market gap, or holding more bars than fit, would be shifted
+      let i0 = data.findIndex(d => d.time >= range[0]);
+      if (i0 < 0) i0 = 0;
+      chart.timeScale().setVisibleLogicalRange({ from: Math.max(-0.5, i0 - 2), to: data.length - 1 + 4 });
+    } else {
+      const from = p.entry ? bucket(p.entry.at, step) - step * 12 : data[0].time;
+      chart.timeScale().setVisibleRange({ from: Math.max(from, data[0].time), to: data[data.length - 1].time });
+    }
     requestAnimationFrame(() => requestAnimationFrame(place));
   }
+  // show [from, to]: the finest interval (current or coarser) whose candles fit the chart width
+  // (the chart keeps at least ~0.5px per bar, so too many bars would not fit)
+  function showRange(from, to) {
+    const keys = Object.keys(INTERVALS), width = chart.timeScale().width() || box.clientWidth;
+    let k = keys.indexOf(interval);
+    const count = key => aggregate(ohlc.candles.filter(c => sec(c[0]) >= from - INTERVALS[key] && sec(c[0]) <= to), INTERVALS[key]).length;
+    while (k < keys.length - 1 && count(keys[k]) > width / 2) k++;
+    interval = keys[k];
+    for (const x of bar.querySelectorAll("[data-interval]")) x.setAttribute("aria-pressed", String(x.dataset.interval === interval));
+    draw([from, to]);
+  }
   chart.timeScale().subscribeVisibleLogicalRangeChange(() => requestAnimationFrame(place));
-  chart.subscribeCrosshairMove(() => requestAnimationFrame(place));
+  chart.subscribeCrosshairMove(param => {
+    requestAnimationFrame(place);
+    const c = param && param.time != null ? param.seriesData.get(series) : null;
+    if (!c) return;
+    const daily = ohlc.daily_until && c.time < sec(ohlc.daily_until);
+    readout.textContent = `${fmtTime(new Date(c.time * 1000).toISOString())} · ${daily ? "daily bar" : interval === "1h" ? "hourly bar" : interval + " candle"} · `
+      + `O ${fmtPrice(c.open)} H ${fmtPrice(c.high)} L ${fmtPrice(c.low)} C ${fmtPrice(c.close)}`
+      + (p.entry && c.time < bucket(p.entry.at, INTERVALS[interval]) ? " · before this call" : "");
+    readout.setAttribute("data-daily", String(!!daily));
+  });
   new ResizeObserver(() => requestAnimationFrame(place)).observe(box);
   draw();
+  syncCallers();
   setTimeout(() => { place(); document.body.setAttribute("data-ready", "1"); }, 150);
 }
 

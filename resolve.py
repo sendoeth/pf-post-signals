@@ -176,12 +176,15 @@ def get_json(url, tries=3):
     raise last
 
 
-def hyperliquid_candles(coin, start):
-    """Hourly candles from Hyperliquid's public info API (candleSnapshot, max 5000 per call)."""
+def hyperliquid_candles(coin, start, interval="1h", end=None):
+    """Candles from Hyperliquid's public info API (candleSnapshot, max 5000 per call; hourly only for
+    roughly the latest 5000 hours, daily further back)."""
     import time
-    out, ms, end = [], int(start.timestamp() * 1000), int(time.time() * 1000)
+    step = {"1h": 3_600_000, "1d": 86_400_000}[interval]
+    out, ms = [], int(start.timestamp() * 1000)
+    end = int(end.timestamp() * 1000) if end else int(time.time() * 1000)
     while ms < end:
-        body = json.dumps({"type": "candleSnapshot", "req": {"coin": coin, "interval": "1h", "startTime": ms, "endTime": end}}).encode()
+        body = json.dumps({"type": "candleSnapshot", "req": {"coin": coin, "interval": interval, "startTime": ms, "endTime": end}}).encode()
         req = urllib.request.Request(HYPERLIQUID_INFO, data=body, headers={"Content-Type": "application/json", "User-Agent": "pf-post-signals"})
         try:
             with urllib.request.urlopen(req, timeout=60) as resp:
@@ -193,7 +196,7 @@ def hyperliquid_candles(coin, start):
         out += rows
         if len(rows) < 5000:
             break
-        ms = rows[-1]["t"] + 3_600_000
+        ms = rows[-1]["t"] + step
     if not out:
         raise UnknownAssetError(f"no hyperliquid candles for {coin}")
     return out

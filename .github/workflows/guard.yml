@@ -25,5 +25,5 @@ jobs:
       - name: offline tests
         run: |
           python3 -m pip install --quiet jsonschema==4.10.3
-          python3 -m unittest tests.test_resolve tests.test_ingest_detect tests.test_static tests.test_lifecycle
+          python3 -m unittest tests.test_resolve tests.test_ingest_detect tests.test_static tests.test_lifecycle tests.test_history
           python3 check_bundle.py

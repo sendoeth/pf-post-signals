@@ -1,9 +1,15 @@
 #!/usr/bin/env python3
 """Step 7: hourly OHLC candles per asset for the position pages (display only).
 
-For every asset in web/data/charts.json: fetch 1h candles from the same source and symbol the
-records use (Binance klines, Yahoo chart), from one day before the earliest entry to now, and write
-web/data/ohlc/<asset>.json plus web/data/ohlc/index.json (sha256, fetch time, bar count per file).
+For every asset in web/data/charts.json: fetch candles from the same source and symbol the records
+use (Binance klines, Yahoo chart, Hyperliquid candleSnapshot), from a lookback before the earliest
+entry to now, and write web/data/ohlc/<asset>.json plus web/data/ohlc/index.json (sha256, fetch
+time, bar count, lookback per file).
+Step 14 lookback: max(90 days, the span between the asset's first and last call) before the first
+call, so the chart shows what the price did before anyone called it. Hourly where the source has it,
+daily bars before that (Yahoo: ~730 days of hourly; Hyperliquid: ~5000 hours of hourly); the file's
+daily_until says where daily bars end. A market listed after the lookback start begins at its first
+bar (lookback.starts_at_listing). Pre-call bars are display only: no record value reads them.
 Yahoo opens are rounded to 4 decimals and Binance opens parsed as floats, exactly as resolve.py
 does, so every drawn record's entry bar can be checked: candle open == record entry price.
 Candles never feed a recap value; the records stay the only source of entry, moves and best %.
@@ -22,11 +28,39 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "web", "data", "ohlc")
 
 
+LOOKBACK_MIN_DAYS = 90
+
+
+def lookback(posts):
+    """(days, start iso) for an asset's posts: max(90 days, first-to-last call span) before the first entry."""
+    entries = sorted(p["entry"]["at"] for p in posts if p["entry"])
+    span = (resolve.parse(entries[-1]) - resolve.parse(entries[0])).total_seconds() / 86400
+    days = max(LOOKBACK_MIN_DAYS, int(span) + 1)
+    return days, (resolve.parse(entries[0]) - dt.timedelta(days=days)).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+def ohlc(c):
+    return [resolve.iso(c["t"] / 1000), float(c["o"]), float(c["h"]), float(c["l"]), float(c["c"])]
+
+
 def fetch(source, symbol, since):
+    """-> (candles, daily_until): daily_until is the time before which the candles are daily bars."""
     start = resolve.parse(since).replace(minute=0, second=0, microsecond=0)
     if source == "hyperliquid":
-        return resolve.adjust_for_actions(symbol, [[resolve.iso(c["t"] / 1000), float(c["o"]), float(c["h"]), float(c["l"]), float(c["c"])]
-                                                   for c in resolve.hyperliquid_candles(symbol, start)])
+        hourly = [ohlc(c) for c in resolve.hyperliquid_candles(symbol, start)]
+        daily_until = None
+        if resolve.parse(hourly[0][0]) - start > dt.timedelta(days=1):
+            # hourly history ends ~5000 hours back: daily bars before that (none before the listing)
+            first = resolve.parse(hourly[0][0])
+            try:
+                daily = [ohlc(c) for c in resolve.hyperliquid_candles(symbol, start, "1d", first)]
+            except resolve.UnknownAssetError:
+                daily = []
+            daily = [b for b in daily if b[0] < hourly[0][0] and resolve.parse(b[0]) + dt.timedelta(days=1) <= first]
+            if daily:
+                daily_until = hourly[0][0]
+            hourly = daily + hourly
+        return resolve.adjust_for_actions(symbol, hourly), daily_until
     if source == "binance":
         out, ms = [], int(start.timestamp() * 1000)
         while True:
@@ -34,9 +68,21 @@ def fetch(source, symbol, since):
                                     f"{symbol}&interval=1h&startTime={ms}&limit=1000")
             out += [[resolve.iso(r[0] / 1000), float(r[1]), float(r[2]), float(r[3]), float(r[4])] for r in rows]
             if len(rows) < 1000:
-                return out
+                return out, None
             ms = rows[-1][0] + 3_600_000
-    return resolve.yahoo_bars(symbol, start)   # daily candles before Yahoo's hourly window, hourly after
+    # Yahoo: hourly for ~730 days back; whole daily bars before the first hourly bar, none overlapping it
+    now, cutoff = dt.datetime.now(dt.timezone.utc), resolve.yahoo_hourly_from()
+    hourly = resolve.yahoo_chart(symbol, max(start, cutoff) - dt.timedelta(days=1), now, "1h")
+    if not hourly:
+        raise resolve.UnknownAssetError(f"no yahoo data for {symbol}")
+    hourly = sorted(dict((b[0], b) for b in hourly).values())
+    daily = []
+    if start < cutoff:
+        first = resolve.parse(hourly[0][0])
+        daily = [b for b in resolve.yahoo_chart(symbol, start - dt.timedelta(days=1), cutoff, "1d")
+                 if resolve.parse(b[0]) + dt.timedelta(days=1) <= first]
+        daily = sorted(dict((b[0], b) for b in daily).values())
+    return daily + hourly, (hourly[0][0] if daily else None)
 
 
 def check(bundle, candles_by_asset):
@@ -75,13 +121,16 @@ def main():
                 candles[name] = json.load(f)["candles"]
     else:
         for a in bundle["assets"]:
-            since = min(p["entry"]["at"] for p in a["posts"] if p["entry"])
-            since = (resolve.parse(since) - dt.timedelta(days=1)).strftime("%Y-%m-%dT%H:%M:%SZ")
+            days, since = lookback(a["posts"])
             fetched_at = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-            c = fetch(a["source"], a["symbol"], since)
+            c, daily_until = fetch(a["source"], a["symbol"], since)
             candles[a["name"]] = c
             path = os.path.join(OUT, f"{a['name']}.json")
+            first_call = min(p["entry"]["at"] for p in a["posts"] if p["entry"])
+            lb = {"days": days, "start": since, "first_call": first_call, "first_bar": c[0][0],
+                  "starts_at_listing": c[0][0] > resolve.iso((resolve.parse(since) + dt.timedelta(days=4)).timestamp())}
             doc = {"asset": a["name"], "source": a["source"], "symbol": a["symbol"], "interval": "1h",
+                   "daily_until": daily_until, "lookback": lb,
                    "fetched_at": fetched_at, "fields": ["t", "open", "high", "low", "close"], "candles": c}
             with open(path, "w") as f:
                 json.dump(doc, f, separators=(",", ":"))
@@ -89,8 +138,11 @@ def main():
             with open(path, "rb") as f:
                 sha = hashlib.sha256(f.read()).hexdigest()
             index["files"][a["name"]] = {"file": f"{a['name']}.json", "sha256": sha, "fetched_at": fetched_at,
-                                         "bars": len(c), "first": c[0][0], "last": c[-1][0]}
-            print(f"{a['name']:<7} {a['source']}:{a['symbol']:<8} {len(c)} candles {c[0][0]} -> {c[-1][0]} sha256 {sha}")
+                                         "bars": len(c), "first": c[0][0], "last": c[-1][0],
+                                         "daily_until": daily_until, "lookback": lb}
+            print(f"{a['name']:<10} {a['source']}:{a['symbol']:<11} {len(c)} candles {c[0][0]} -> {c[-1][0]} lookback {days}d from {since}"
+                  f"{' (market listed later: starts at its first bar)' if lb['starts_at_listing'] else ''}"
+                  f"{' daily before ' + daily_until if daily_until else ''} sha256 {sha}")
         with open(os.path.join(OUT, "index.json"), "w") as f:
             json.dump(index, f, indent=1)
             f.write("\n")

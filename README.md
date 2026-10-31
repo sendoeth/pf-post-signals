@@ -116,7 +116,15 @@ The live pipeline had been reading a price history embedded in its dashboard tha
 
 Before/after numbers: [RESULTS.md → Step 2](RESULTS.md#step-2-live-feed--regime-duration-gate-before--after).
 
-### Reproduce step 2
+### Step 14: every caller on the position chart, history before the first call
+
+- **All callers**: each position page draws every other tracked call on the same asset as an avatar bubble (ring = side, badge = price direction, ✕ at the exit of a closed call). One toggle per caller plus All / None; the state is in the url (`?callers=bobloukas`, `?callers=none`, no parameter = all). The opened call is always shown and highlighted. Bubbles start at their own entry candle and move up (or down near the top) on a stem when they would overlap one already placed, so each keeps its own click area; a click opens that call's card with links to its position page and the post. Calls outside the view get an edge pill ("◀ 2 earlier calls") that zooms out to fit every shown call.
+- **History before the first call**: `fetch_ohlc.py` starts candles max(90 days, first-to-last call span) before the asset's first call. Hourly where the source has it, daily bars before that (`daily_until` in each ohlc file, "daily bar" in the hover readout). Markets listed after the lookback start begin at their first bar (`lookback.starts_at_listing`). "Full history" shows all of it; the page still opens on the opened call. Candles are display only.
+- **Frozen values**: `tools/frozen_values.py` compares every entry, close, lifecycle bar and resolved horizon with the pre-step-14 baseline (`verification/step14/frozen_baseline.json`): 177 values, 0 changed.
+- **No JavaScript**: every static position page lists the other calls on its asset (author, side, date, return, link).
+- Tests: `tests/test_history.py`, `tests/test_static.py` (other-calls list), `tests/callers_test.js` (every caller combination by url + reload, toggle clicks, anchors, overlaps, cards, exit marks, daily readout).
+
+## Reproduce step 2
 
 ```bash
 python3 gate.py          # data/gate_evaluation.json

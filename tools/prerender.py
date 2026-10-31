@@ -185,7 +185,23 @@ def fill(html_text, blocks):
     return html_text
 
 
-def position_static(r, asof, avatars):
+def other_calls(r, rows):
+    """Step 14: every other tracked call on the same asset, as plain links (oldest first)."""
+    mine = (r["p"]["post"]["id"], r["asset"])
+    others = sorted((o for o in rows if o["asset"] == r["asset"] and (o["p"]["post"]["id"], o["asset"]) != mine),
+                    key=lambda o: (o["p"]["post"]["posted_at"], o["p"]["post"]["id"]))
+    if not others:
+        return f'<section class="panel recap" data-field="other_calls" data-raw="[]"><h2>Other calls on {e(r["asset"])}</h2><p class="notes">No other tracked calls on {e(r["asset"])}.</p></section>'
+    lis = "".join(f'<li data-post-id="{e(o["p"]["post"]["id"])}" data-author="{e(o["p"]["post"]["author"])}">'
+                  f'<a href="pos-{e(slug(o["p"]["post"]["id"], o["asset"]))}.html">@{e(o["p"]["post"]["author"])} · '
+                  f'{"NO SIDE" if o["side"] == "none" else o["side"].upper()} · {e(fmt_time(o["p"]["post"]["posted_at"]))} · '
+                  f'{"realized" if o["p"].get("closed") else "return"} {fmt_pct(o["ret"])}</a></li>' for o in others)
+    ids = raw([o["p"]["post"]["id"] for o in others])
+    return (f'<section class="panel recap" data-field="other_calls" data-raw="{ids}"><h2>Other calls on {e(r["asset"])} ({len(others)})</h2>'
+            f'<ul class="other-calls">{lis}</ul></section>')
+
+
+def position_static(r, asof, avatars, all_rows=()):
     p = r["p"]
     side = r["side"]
     rows = [("Asset", f'{r["asset"]} ({p["asset"]["source"]}:{p["asset"]["symbol"]})', "asset", None),
@@ -229,7 +245,8 @@ def position_static(r, asof, avatars):
             f'<strong data-field="author">@{e(p["post"]["author"])}</strong><span class="meta"><span data-field="posted_at">{e(fmt_time(p["post"]["posted_at"]))}</span> · '
             f'<a href="{e(p["post"]["url"])}" rel="noopener noreferrer" data-field="url">{link}</a></span></div></div>{text}</section>'
             f'<section class="panel recap"><h2>{e(r["asset"])} · {"NO SIDE" if side == "none" else side.upper()}</h2><dl>{dl}</dl>'
-            f'<p class="notes">Prices as of {e(fmt_time(asof)) if asof else "–"}. Record {e(p["record_file"])} · sha256 {e(p["record_sha256"])}</p></section></div>')
+            f'<p class="notes">Prices as of {e(fmt_time(asof)) if asof else "–"}. Record {e(p["record_file"])} · sha256 {e(p["record_sha256"])}</p></section>'
+            f"{other_calls(r, all_rows)}</div>")
 
 
 def meta_tags(title, desc, url):
@@ -272,7 +289,7 @@ def main(web=None):
                 + (f' “{" ".join(p["post"]["text"].split())[:140]}”' if p["post"].get("text") else ""))
         page = re.sub(r"<title>.*?</title>\n<meta name=\"description\" content=\"[^\"]*\">", lambda m: meta_tags(title, desc, f"{SITE}pos-{s}.html"), template, count=1, flags=re.S)
         page = page.replace("<main>", f'<main data-post="{e(p["post"]["id"])}" data-asset="{e(r["asset"])}">', 1)
-        page = fill(page, {"app": position_static(r, asof, avatars)})
+        page = fill(page, {"app": position_static(r, asof, avatars, rows)})
         name = f"pos-{s}.html"
         with open(os.path.join(web, name), "w") as f:
             f.write(page)

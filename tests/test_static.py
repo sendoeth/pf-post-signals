@@ -111,6 +111,21 @@ class Static(unittest.TestCase):
             self.assertIn(r["asset"], metas["og:title"])
             self.assertIn(prerender.fmt_pct(r["ret"]), metas["og:description"])
 
+    def test_other_calls_on_the_same_asset(self):
+        for r in self.rows:
+            p = r["p"]
+            page = parse(os.path.join(self.web, f"pos-{prerender.slug(p['post']['id'], r['asset'])}.html"))
+            want = sorted((o for o in self.rows if o["asset"] == r["asset"] and o["p"]["post"]["id"] != p["post"]["id"]),
+                          key=lambda o: (o["p"]["post"]["posted_at"], o["p"]["post"]["id"]))
+            got = {f: raw for f, raw, _ in page.fields}
+            self.assertEqual(json.loads(got["other_calls"]), [o["p"]["post"]["id"] for o in want])
+            links = [a["href"] for t, a in page.tags if t == "a" and a.get("href", "").startswith("pos-")]
+            self.assertEqual(links, [f"pos-{prerender.slug(o['p']['post']['id'], o['asset'])}.html" for o in want])
+            text = "".join(page.text)
+            for o in want:
+                self.assertIn(f"@{o['p']['post']['author']} · {'NO SIDE' if o['side'] == 'none' else o['side'].upper()} · "
+                              f"{prerender.fmt_time(o['p']['post']['posted_at'])} · {'realized' if o['p'].get('closed') else 'return'} {prerender.fmt_pct(o['ret'])}", text)
+
     def test_no_stale_or_missing_pages(self):
         want = {f"pos-{prerender.slug(r['p']['post']['id'], r['asset'])}.html" for r in self.rows}
         have = {n for n in os.listdir(self.web) if n.startswith("pos-")}
