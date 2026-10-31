@@ -1,0 +1,94 @@
+{
+ "version": "quanty.intake.v1",
+ "added_at": "2026-10-31T17:59:07Z",
+ "records": [
+  {
+   "record_file": "records/posts/1970742039722479782_binance-ZECUSDT.json",
+   "record_sha256": "281f5b91f801498f73ac06bdea70056640b0d404c35f283511cc605e13d0c658",
+   "receipt": {
+    "file": "sources/mert/receipts/1970742039722479782.json",
+    "sha256": "6784432be29f42e94d6890850b964fa64a57f2113ae880b86018f5fbc11afa8a",
+    "created": false,
+    "text_truncated": false
+   }
+  }
+ ],
+ "bundle_sha256_before": "c108501a5969871e06322b9db2a2bdca6a35b76acd229641f9119e8e6edd54db",
+ "bundle_sha256_after": "27f79259a21f6949d4826a9dcb0e3251b18c55ca9806256c8bff1c2445c4fb8f",
+ "avatar": "saved web/avatars/mert.jpg",
+ "candles": "candles refetched (fetch_ohlc.py): entry bars: 49/49 candle opens equal the record entry price",
+ "scores_previewed": {
+  "mert": {
+   "score": 54.54545454545455,
+   "display": "54.5",
+   "rank": 1,
+   "label": "small sample",
+   "scored": 1,
+   "calls_total": 1,
+   "with_entry": 1,
+   "raw": 100.0,
+   "weight": 0.09090909090909091,
+   "of": 5
+  }
+ },
+ "scores_after_add": {
+  "mert": {
+   "score": 54.54545454545455,
+   "display": "54.5",
+   "rank": 1,
+   "label": "small sample",
+   "scored": 1,
+   "calls_total": 1,
+   "with_entry": 1,
+   "raw": 100.0,
+   "weight": 0.09090909090909091,
+   "of": 5
+  }
+ },
+ "scores_before": {
+  "mert": null
+ },
+ "other_callers_unchanged": [
+  "BobLoukas",
+  "Corbanu",
+  "DrProfitCrypto",
+  "goodalexander"
+ ],
+ "frozen_values_checked": 49,
+ "matches_preview": true,
+ "problems": [],
+ "url": "https://x.com/mert/status/1970742039722479782",
+ "record_file": "records/posts/1970742039722479782_binance-ZECUSDT.json",
+ "record_sha256": "281f5b91f801498f73ac06bdea70056640b0d404c35f283511cc605e13d0c658",
+ "receipt": {
+  "file": "sources/mert/receipts/1970742039722479782.json",
+  "sha256": "6784432be29f42e94d6890850b964fa64a57f2113ae880b86018f5fbc11afa8a",
+  "created": false,
+  "text_truncated": false
+ },
+ "score_previewed": {
+  "score": 54.54545454545455,
+  "display": "54.5",
+  "rank": 1,
+  "label": "small sample",
+  "scored": 1,
+  "calls_total": 1,
+  "with_entry": 1,
+  "raw": 100.0,
+  "weight": 0.09090909090909091,
+  "of": 5
+ },
+ "score_after_add": {
+  "score": 54.54545454545455,
+  "display": "54.5",
+  "rank": 1,
+  "label": "small sample",
+  "scored": 1,
+  "calls_total": 1,
+  "with_entry": 1,
+  "raw": 100.0,
+  "weight": 0.09090909090909091,
+  "of": 5
+ },
+ "score_before": null
+}
