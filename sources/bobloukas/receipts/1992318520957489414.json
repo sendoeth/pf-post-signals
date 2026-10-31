@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:30.956Z",
+ "cashtags": [],
+ "conversationId": "1992305269544538356",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1992318520957489414",
+ "kind": "reply",
+ "metrics": {
+  "likes": 45,
+  "replies": 3,
+  "reposts": 0,
+  "views": 2951
+ },
+ "postedAt": "2025-11-22T19:45:25.000Z",
+ "replyTo": {
+  "postId": "1992314803772096649",
+  "handle": "Goblin61517961"
+ },
+ "text": "That's my take too.  But we're due a rally in stocks and a dead-cat bounce for bitcoin",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1992318520957489414",
+ "harness": {
+  "run": "2026-10-31T03-11-28Z",
+  "manifest_sha256": "5b4f94307a59f6b36bf90ded7f7487cb77a37651415230998ae74712e788ac95",
+  "query": "from:BobLoukas since:2025-11-20 until:2025-11-25"
+ }
+}

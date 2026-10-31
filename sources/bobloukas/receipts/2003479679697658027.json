@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:41.827Z",
+ "cashtags": [],
+ "conversationId": "2003479679697658027",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2003479679697658027",
+ "kind": "quote",
+ "metrics": {
+  "likes": 2297,
+  "replies": 262,
+  "reposts": 95,
+  "views": 170482
+ },
+ "postedAt": "2025-12-23T14:55:53.000Z",
+ "replyTo": null,
+ "text": "Most people are respectful and thankful that I share this journey. The excessive volume of troll and hate replies, however, is rather telling. In 35 years of investing, I’ve never seen a cohort as immature, inexperienced, and blinded as parts of crypto culture.\n\nClose a position that’s up from $4k, roughly a 20x, and suddenly it’s “you capitulated the April lows” or “paper hands.”  Mate, Bitcoin is up a whopping 8% since that action. I could buy it back today with minimal cost, but I don’t, because that would violate my stated strategy.\n\nMany of the loudest critics are MSTR Strategy sheep. Had they “capitulated” then as well, they would have avoided a 38% drawdown from those same lows. And lets not talk about alt holders, many of whom are down far more. If you want to hold something purely out of ideology, regardless of price or risk, that’s your choice, but it isn’t mine.\n\nWhat many fail to grasp is that investing isn’t about falling in love with an asset, no matter how compelling the story. I view investing holistically, from a total allocation perspective. Selling Bitcoin in April, and again now, is simply execution of my strategy. Every strategy has weaknesses, all do. But follow it (then refine it) I do, because I choose discipline over emotion.\n\nFor those worried about me “missing out”, I don’t. I maintain a dedicated HODL allocation with a clearly defined long term mandate for that reason, because i believe in it over that timeframe. Separately, I run a more active, daily/weekly strategy designed to participate in upside surprises. If Bitcoin delivers a long-overdue hyperbitcoinization shock, good, I’ll be there.\n\nOtherwise, capital is constantly rebalanced and redeployed. Since the April Bitcoin sale, funds didn’t sit idle. They rotated into things like\n\nPrecious metal miners: +141%\nSilver: +136%\nTech stocks: +56%\nVarious AI names: many multiples\nPurchased property\nWrote two angel investment checks\nBuilding a new food focused website business\n\nThe point is simple, rotation matters. Risk management matters. Flexibility paired with discipline matters. There is always a bull market somewhere, but only if you’re willing to look beyond a single asset and view your portfolio as a total system.\n\nI wish you well in yours.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2003479679697658027",
+ "harness": {
+  "run": "2026-10-31T03-28-37Z",
+  "manifest_sha256": "9d13b999b16b71141a9123223a30beac3017eedee0e627ab1a0efb00c27a8930",
+  "query": "from:BobLoukas since:2025-12-20 until:2025-12-30"
+ }
+}

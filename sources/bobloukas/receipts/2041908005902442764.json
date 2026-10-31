@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:45.916Z",
+ "cashtags": [],
+ "conversationId": "2041908005902442764",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2041908005902442764",
+ "kind": "post",
+ "metrics": {
+  "likes": 2525,
+  "replies": 161,
+  "reposts": 122,
+  "views": 255136
+ },
+ "postedAt": "2026-04-08T15:56:20.000Z",
+ "replyTo": null,
+ "text": "A rally to suck them all in.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2041908005902442764",
+ "harness": {
+  "run": "2026-10-31T03-30-43Z",
+  "manifest_sha256": "81f41d9816c6b1970d0e17601d6ddbc99f0a4d686b7b2547093e028d9cf765b4",
+  "query": "from:BobLoukas since:2026-03-30 until:2026-04-09"
+ }
+}

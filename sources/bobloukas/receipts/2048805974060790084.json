@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:09.204Z",
+ "cashtags": [],
+ "conversationId": "2048805974060790084",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2048805974060790084",
+ "kind": "post",
+ "metrics": {
+  "likes": 158,
+  "replies": 6,
+  "reposts": 9,
+  "views": 28041
+ },
+ "postedAt": "2026-04-27T16:46:23.000Z",
+ "replyTo": null,
+ "text": "New post for members of Bitcoin Live.  \n\n\"Why The Bear Market Remains in Control\"\n\nLink > https://bitcoin.live/video/why-the-bear-market-remains-in-control?aid=102",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2048805974060790084",
+ "harness": {
+  "run": "2026-10-31T03-47-04Z",
+  "manifest_sha256": "5336994f71bbe4f700cf60362be35add5dbd82d5eddf921d84495b46cbd2c660",
+  "query": "from:BobLoukas since:2026-04-24 until:2026-04-29"
+ }
+}

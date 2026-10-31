@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:38.927Z",
+ "cashtags": [],
+ "conversationId": "2037561030331478491",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2037561030331478491",
+ "kind": "post",
+ "metrics": {
+  "likes": 351,
+  "replies": 22,
+  "reposts": 7,
+  "views": 42870
+ },
+ "postedAt": "2026-03-27T16:03:00.000Z",
+ "replyTo": null,
+ "text": "Before AI, I’d burn weeks iterating business ideas, building full plans and models with just word/excel… just for the fun of it.\n\nAI killed that joy, just too quick and easy.  :)\n\nSo now it's down the rabbit hole of vibe coding MVP's.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2037561030331478491",
+ "harness": {
+  "run": "2026-10-31T03-30-36Z",
+  "manifest_sha256": "4650ab529d8aa763c70824f28353a63102c967a6a59d9111c9a5115d681b6e4d",
+  "query": "from:BobLoukas since:2026-03-20 until:2026-03-30"
+ }
+}

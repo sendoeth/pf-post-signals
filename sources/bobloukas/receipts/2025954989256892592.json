@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:12.025Z",
+ "cashtags": [],
+ "conversationId": "2025948913916674309",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2025954989256892592",
+ "kind": "reply",
+ "metrics": {
+  "likes": 31,
+  "replies": 1,
+  "reposts": 0,
+  "views": 3932
+ },
+ "postedAt": "2026-02-23T15:24:44.000Z",
+ "replyTo": {
+  "postId": "2025953308968443924",
+  "handle": "MisterSpread"
+ },
+ "text": "Yep. \n\nAll those 30 (highly correlated) indicators do is look for stretched, overbought and euphoric conditions.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2025954989256892592",
+ "harness": {
+  "run": "2026-10-31T03-30-09Z",
+  "manifest_sha256": "f4cb50b74e111333644768234a62c37c553d27111cb37124caf5fe4bcbd50de6",
+  "query": "from:BobLoukas since:2026-02-18 until:2026-02-28"
+ }
+}

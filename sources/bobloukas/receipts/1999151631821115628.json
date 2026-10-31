@@ -1,0 +1,27 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:26.894Z",
+ "cashtags": [
+  "SUI"
+ ],
+ "conversationId": "1999151631821115628",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1999151631821115628",
+ "kind": "post",
+ "metrics": {
+  "likes": 762,
+  "replies": 108,
+  "reposts": 52,
+  "views": 96700
+ },
+ "postedAt": "2025-12-11T16:17:46.000Z",
+ "replyTo": null,
+ "text": "Another crypto fav. $SUI\n\nThese are bear market charts in alt's.  Yes this cycle is different. It's different because it's absent of new blood, is all.  Or not enough of it.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1999151631821115628",
+ "harness": {
+  "run": "2026-10-31T03-28-21Z",
+  "manifest_sha256": "c02ce20beb826e706b2b33c18668b6975c7f6e723f9ba8dc68eba93123f5e55a",
+  "query": "from:BobLoukas since:2025-12-10 until:2025-12-15"
+ }
+}

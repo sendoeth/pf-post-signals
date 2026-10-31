@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:45.919Z",
+ "cashtags": [],
+ "conversationId": "2040801948350160946",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2040835392895647861",
+ "kind": "reply",
+ "metrics": {
+  "likes": 1205,
+  "replies": 57,
+  "reposts": 41,
+  "views": 46606
+ },
+ "postedAt": "2026-04-05T16:54:09.000Z",
+ "replyTo": {
+  "postId": "2040801948350160946",
+  "handle": "TXMCtrades"
+ },
+ "text": "Back to back senile presidents.   \n\nForget term limits we need age limits.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2040835392895647861",
+ "harness": {
+  "run": "2026-10-31T03-30-43Z",
+  "manifest_sha256": "81f41d9816c6b1970d0e17601d6ddbc99f0a4d686b7b2547093e028d9cf765b4",
+  "query": "from:BobLoukas since:2026-03-30 until:2026-04-09"
+ }
+}

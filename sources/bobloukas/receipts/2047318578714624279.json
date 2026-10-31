@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:46:58.839Z",
+ "cashtags": [],
+ "conversationId": "2047315362807435656",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2047318578714624279",
+ "kind": "reply",
+ "metrics": {
+  "likes": 78,
+  "replies": 2,
+  "reposts": 0,
+  "views": 2165
+ },
+ "postedAt": "2026-04-23T14:16:01.000Z",
+ "replyTo": {
+  "postId": "2047318100970803248",
+  "handle": "MoonOr_Dust"
+ },
+ "text": "I have poopcat in my BIO! down 97% but no it's nOt a bEAr mArKET.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2047318578714624279",
+ "harness": {
+  "run": "2026-10-31T03-46-54Z",
+  "manifest_sha256": "d66bf07857f47292cdfd802d2817253a59a804ad438a1e7c7e149ca9c0a4fd10",
+  "query": "from:BobLoukas since:2026-04-19 until:2026-04-24"
+ }
+}

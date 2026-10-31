@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:10.829Z",
+ "cashtags": [],
+ "conversationId": "2047660759698514164",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2047702339876794382",
+ "kind": "reply",
+ "metrics": {
+  "likes": 17,
+  "replies": 1,
+  "reposts": 0,
+  "views": 820
+ },
+ "postedAt": "2026-04-24T15:40:56.000Z",
+ "replyTo": {
+  "postId": "2047702086737920128",
+  "handle": "DidntsayT"
+ },
+ "text": "nobody should ever have their basic needs met by somebody else.\n\nDo not confuse this with a social safety net, which I support.  We're talking about a lifetime of needs been taking care of.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2047702339876794382",
+ "harness": {
+  "run": "2026-10-31T03-47-04Z",
+  "manifest_sha256": "5336994f71bbe4f700cf60362be35add5dbd82d5eddf921d84495b46cbd2c660",
+  "query": "from:BobLoukas since:2026-04-24 until:2026-04-29"
+ }
+}

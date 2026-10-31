@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:39.631Z",
+ "cashtags": [],
+ "conversationId": "2017650415932785073",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2017652659272978532",
+ "kind": "reply",
+ "metrics": {
+  "likes": 33,
+  "replies": 5,
+  "reposts": 2,
+  "views": 2558
+ },
+ "postedAt": "2026-01-31T17:34:14.000Z",
+ "replyTo": {
+  "postId": "2017651963949670681",
+  "handle": "Crypto_Jitsu"
+ },
+ "text": "You all wanted the big boys to come and play.  Enjoy.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2017652659272978532",
+ "harness": {
+  "run": "2026-10-31T03-29-33Z",
+  "manifest_sha256": "14f0ea84840c9dca9fe00212e469c77a2ebdd67bd750609b8a6bddcb4356ba1c",
+  "query": "from:BobLoukas since:2026-01-29 until:2026-02-03"
+ }
+}

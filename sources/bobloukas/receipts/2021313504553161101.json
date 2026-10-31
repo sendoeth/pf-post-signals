@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:04.928Z",
+ "cashtags": [],
+ "conversationId": "2021256547708399815",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2021313504553161101",
+ "kind": "reply",
+ "metrics": {
+  "likes": 14,
+  "replies": 0,
+  "reposts": 0,
+  "views": 1049
+ },
+ "postedAt": "2026-02-10T20:01:08.000Z",
+ "replyTo": {
+  "postId": "2021277670781108690",
+  "handle": "MikeCopples"
+ },
+ "text": "They're 100% free to think they're silly.  That's what a market and free speech are.   I share my views and thoughts, sometime right and wrong.  \n\nNot sure why you think otherwise.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2021313504553161101",
+ "harness": {
+  "run": "2026-10-31T03-29-58Z",
+  "manifest_sha256": "046caa1b799b16c1e3d97c7b87fc3565fd829c623a7d127628756b707828f2b0",
+  "query": "from:BobLoukas since:2026-02-08 until:2026-02-18"
+ }
+}

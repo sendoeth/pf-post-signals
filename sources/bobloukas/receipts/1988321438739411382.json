@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:09.122Z",
+ "cashtags": [],
+ "conversationId": "1988321072463413331",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1988321438739411382",
+ "kind": "reply",
+ "metrics": {
+  "likes": 85,
+  "replies": 6,
+  "reposts": 0,
+  "views": 11695
+ },
+ "postedAt": "2025-11-11T19:02:26.000Z",
+ "replyTo": {
+  "postId": "1988321072463413331",
+  "handle": "EddyElfenbein"
+ },
+ "text": "Yep.  And nothing compared to Wall Street. (87)",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1988321438739411382",
+ "harness": {
+  "run": "2026-10-31T03-11-03Z",
+  "manifest_sha256": "b0cd5b45f562107ecbd3f676474d96aae1d41979c54b4e544f26c5dfa8cecd1e",
+  "query": "from:BobLoukas since:2025-11-10 until:2025-11-15"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:13.439Z",
+ "cashtags": [],
+ "conversationId": "1983916606234202473",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1984364688227123499",
+ "kind": "reply",
+ "metrics": {
+  "likes": 4,
+  "replies": 1,
+  "reposts": 0,
+  "views": 762
+ },
+ "postedAt": "2025-10-31T20:59:44.000Z",
+ "replyTo": {
+  "postId": "1983944723891896711",
+  "handle": "CryptoAlt8"
+ },
+ "text": "a place to gather and collaborate.  Make some money a bonus.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1984364688227123499",
+ "harness": {
+  "run": "2026-10-31T03-10-01Z",
+  "manifest_sha256": "3844915c6905bd8c09b21e28b77ba45472ed71277b155e9aca6ad52457c02037",
+  "query": "from:BobLoukas since:2025-10-31 until:2025-11-10"
+ }
+}

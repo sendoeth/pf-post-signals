@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:30.956Z",
+ "cashtags": [],
+ "conversationId": "1992741782904553627",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1992751372635087221",
+ "kind": "reply",
+ "metrics": {
+  "likes": 79,
+  "replies": 14,
+  "reposts": 1,
+  "views": 20715
+ },
+ "postedAt": "2025-11-24T00:25:25.000Z",
+ "replyTo": {
+  "postId": "1992741782904553627",
+  "handle": "_Checkmatey_"
+ },
+ "text": "As much as a 1/4 of all bitcoin will be stolen.  \n\nWill be interesting.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1992751372635087221",
+ "harness": {
+  "run": "2026-10-31T03-11-28Z",
+  "manifest_sha256": "5b4f94307a59f6b36bf90ded7f7487cb77a37651415230998ae74712e788ac95",
+  "query": "from:BobLoukas since:2025-11-20 until:2025-11-25"
+ }
+}

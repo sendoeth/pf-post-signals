@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:48:00.528Z",
+ "cashtags": [],
+ "conversationId": "2062895943280660770",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2063023338365108368",
+ "kind": "reply",
+ "metrics": {
+  "likes": 14,
+  "replies": 2,
+  "reposts": 0,
+  "views": 1127
+ },
+ "postedAt": "2026-06-05T22:21:07.000Z",
+ "replyTo": {
+  "postId": "2062988654348312615",
+  "handle": "fllaropr"
+ },
+ "text": "It’s not fud. It’s real.  You might think it’s good tech but the market has confirmed it’s not. Or not needed.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2063023338365108368",
+ "harness": {
+  "run": "2026-10-31T03-47-55Z",
+  "manifest_sha256": "76ee69624ea2b9328b3f138dbfe04636ffc970ec1aa15cc43bb66d8325d64d30",
+  "query": "from:BobLoukas since:2026-06-03 until:2026-06-08"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:36:42.498Z",
+ "cashtags": [],
+ "conversationId": "2115948199190114707",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2115948580410192074",
+ "kind": "reply",
+ "metrics": {
+  "likes": 19,
+  "replies": 1,
+  "reposts": 0,
+  "views": 3940
+ },
+ "postedAt": "2026-10-29T23:27:08.000Z",
+ "replyTo": {
+  "postId": "2115948199190114707",
+  "handle": "intranazionale"
+ },
+ "text": "Yeah like defi hasn’t been a graveyard of late. Also.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2115948580410192074",
+ "harness": {
+  "run": "2026-10-31T04-36-38Z",
+  "manifest_sha256": "4ed1a5ced8c750ca12e8ad455fcb0440edc42dc649d9b9187902e0982ccc36b8",
+  "query": "from:BobLoukas since:2026-10-26 until:2026-11-01"
+ }
+}

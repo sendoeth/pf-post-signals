@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:57.480Z",
+ "cashtags": [],
+ "conversationId": "1995525155938869294",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1995525155938869294",
+ "kind": "post",
+ "metrics": {
+  "likes": 1375,
+  "replies": 106,
+  "reposts": 93,
+  "views": 326385
+ },
+ "postedAt": "2025-12-01T16:07:26.000Z",
+ "replyTo": null,
+ "text": "New monthly candles, and Bitcoin has its first close below 10ma. Late in a cycle generally provides lot of evidence of a top.  All timeframes are now in a downtrend. The divergence to equities is also glaring. \n\nKnow many feel \"it's different this time\", and it might be, but also I don't get ignoring it. \n\nStill think we're going to see a rally into Jan.  More importantly, don't see why people are holding ALT coins, those are sure to completely round trip (many well on their way).  Least with BTC you can hodl through.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1995525155938869294",
+ "harness": {
+  "run": "2026-10-31T03-11-49Z",
+  "manifest_sha256": "44284fd2b0f53f602994edeb448d034ad7c1447b6074bcf56e01e43a4ce3849c",
+  "query": "from:BobLoukas since:2025-11-30 until:2025-12-10"
+ }
+}

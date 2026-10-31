@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:44.068Z",
+ "cashtags": [],
+ "conversationId": "2002094215560642928",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2002187710354931728",
+ "kind": "reply",
+ "metrics": {
+  "likes": 19,
+  "replies": 0,
+  "reposts": 0,
+  "views": 1515
+ },
+ "postedAt": "2025-12-20T01:22:03.000Z",
+ "replyTo": {
+  "postId": "2002186635870376369",
+  "handle": "CaliEye1"
+ },
+ "text": "The first million comes quickest when you build and work towards it. It doesn’t come from taking wild bets you hope pay off.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2002187710354931728",
+ "harness": {
+  "run": "2026-10-31T03-28-37Z",
+  "manifest_sha256": "9d13b999b16b71141a9123223a30beac3017eedee0e627ab1a0efb00c27a8930",
+  "query": "from:BobLoukas since:2025-12-20 until:2025-12-30"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:33.403Z",
+ "cashtags": [],
+ "conversationId": "2031739333057659161",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2031740249081012498",
+ "kind": "reply",
+ "metrics": {
+  "likes": 75,
+  "replies": 2,
+  "reposts": 2,
+  "views": 8202
+ },
+ "postedAt": "2026-03-11T14:33:17.000Z",
+ "replyTo": {
+  "postId": "2031739849980379223",
+  "handle": "PalenTrade"
+ },
+ "text": "Given the move they have had, I would say down.  Risk off 4 yr cycle declines have a habit of bringing everything down with it.  At least for the main move.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2031740249081012498",
+ "harness": {
+  "run": "2026-10-31T03-30-28Z",
+  "manifest_sha256": "01e2451c651b7ec60ad39a25711bb00e031bd0ff8d61791c7b1a209fde870cd4",
+  "query": "from:BobLoukas since:2026-03-10 until:2026-03-20"
+ }
+}

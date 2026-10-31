@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:46:36.871Z",
+ "cashtags": [],
+ "conversationId": "2044896486953984343",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2045078580242100477",
+ "kind": "reply",
+ "metrics": {
+  "likes": 3,
+  "replies": 1,
+  "reposts": 0,
+  "views": 985
+ },
+ "postedAt": "2026-04-17T09:55:03.000Z",
+ "replyTo": {
+  "postId": "2045037021903900672",
+  "handle": "DecimalGroup"
+ },
+ "text": "I know but they are being compared extensively online.  Thus.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2045078580242100477",
+ "harness": {
+  "run": "2026-10-31T03-46-34Z",
+  "manifest_sha256": "c27074f7b8d8c85ca6aaed1a98de9a36b44ad09e077f54e4c1ddc2264c260dfe",
+  "query": "from:BobLoukas since:2026-04-14 until:2026-04-19"
+ }
+}

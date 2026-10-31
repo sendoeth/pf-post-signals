@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:10.829Z",
+ "cashtags": [],
+ "conversationId": "2047660759698514164",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2047699077308023076",
+ "kind": "reply",
+ "metrics": {
+  "likes": 21,
+  "replies": 1,
+  "reposts": 0,
+  "views": 930
+ },
+ "postedAt": "2026-04-24T15:27:59.000Z",
+ "replyTo": {
+  "postId": "2047689704984678643",
+  "handle": "YellowEuropea"
+ },
+ "text": "lol, nice try, i haven't stopped working since 11 yrs old working in a family small business.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2047699077308023076",
+ "harness": {
+  "run": "2026-10-31T03-47-04Z",
+  "manifest_sha256": "5336994f71bbe4f700cf60362be35add5dbd82d5eddf921d84495b46cbd2c660",
+  "query": "from:BobLoukas since:2026-04-24 until:2026-04-29"
+ }
+}

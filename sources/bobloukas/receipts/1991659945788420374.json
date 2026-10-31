@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:34.815Z",
+ "cashtags": [],
+ "conversationId": "1991548433736561089",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1991659945788420374",
+ "kind": "reply",
+ "metrics": {
+  "likes": 15,
+  "replies": 0,
+  "reposts": 0,
+  "views": 1778
+ },
+ "postedAt": "2025-11-21T00:08:28.000Z",
+ "replyTo": {
+  "postId": "1991553062390100351",
+  "handle": "HodlForLambo88"
+ },
+ "text": "Probably next week new video.  \n\nThe 4 yr cycle follows are a monthly chart.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1991659945788420374",
+ "harness": {
+  "run": "2026-10-31T03-11-28Z",
+  "manifest_sha256": "5b4f94307a59f6b36bf90ded7f7487cb77a37651415230998ae74712e788ac95",
+  "query": "from:BobLoukas since:2025-11-20 until:2025-11-25"
+ }
+}

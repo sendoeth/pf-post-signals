@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:14.211Z",
+ "cashtags": [],
+ "conversationId": "2016212310549745897",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2016214936972677473",
+ "kind": "reply",
+ "metrics": {
+  "likes": 29,
+  "replies": 6,
+  "reposts": 0,
+  "views": 10829
+ },
+ "postedAt": "2026-01-27T18:21:15.000Z",
+ "replyTo": {
+  "postId": "2016212310549745897",
+  "handle": "DeeZe"
+ },
+ "text": "It's a floor denza.  A nice one, but a floor.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2016214936972677473",
+ "harness": {
+  "run": "2026-10-31T03-29-09Z",
+  "manifest_sha256": "12b6383eb0d3e548fb1ff7b7fa27ac18c6544170639bb262e25d9278c33ad772",
+  "query": "from:BobLoukas since:2026-01-19 until:2026-01-29"
+ }
+}

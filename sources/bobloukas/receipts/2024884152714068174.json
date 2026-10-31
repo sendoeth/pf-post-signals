@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:13.949Z",
+ "cashtags": [],
+ "conversationId": "2024876728171008477",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2024884152714068174",
+ "kind": "reply",
+ "metrics": {
+  "likes": 15,
+  "replies": 1,
+  "reposts": 0,
+  "views": 1023
+ },
+ "postedAt": "2026-02-20T16:29:37.000Z",
+ "replyTo": {
+  "postId": "2024882178212122890",
+  "handle": "sweettezos"
+ },
+ "text": "Yeah, kind of what I'm talking about!",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2024884152714068174",
+ "harness": {
+  "run": "2026-10-31T03-30-09Z",
+  "manifest_sha256": "f4cb50b74e111333644768234a62c37c553d27111cb37124caf5fe4bcbd50de6",
+  "query": "from:BobLoukas since:2026-02-18 until:2026-02-28"
+ }
+}

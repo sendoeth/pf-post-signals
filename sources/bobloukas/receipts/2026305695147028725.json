@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:12.024Z",
+ "cashtags": [],
+ "conversationId": "2026305695147028725",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2026305695147028725",
+ "kind": "quote",
+ "metrics": {
+  "likes": 752,
+  "replies": 47,
+  "reposts": 59,
+  "views": 104352
+ },
+ "postedAt": "2026-02-24T14:38:19.000Z",
+ "replyTo": null,
+ "text": "All eyes on stocks now. Week 14 and 3rd week under the 10wma.  A loss of support here would indicate a Weekly Cycle in decline and likely an acceleration to the downside into late April or May.\n\nSuch an event (again IF) also suggest a top in the 4 Yr Cycle.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2026305695147028725",
+ "harness": {
+  "run": "2026-10-31T03-30-09Z",
+  "manifest_sha256": "f4cb50b74e111333644768234a62c37c553d27111cb37124caf5fe4bcbd50de6",
+  "query": "from:BobLoukas since:2026-02-18 until:2026-02-28"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:16.693Z",
+ "cashtags": [],
+ "conversationId": "1990611589800640686",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1990612221463048331",
+ "kind": "reply",
+ "metrics": {
+  "likes": 170,
+  "replies": 9,
+  "reposts": 1,
+  "views": 23047
+ },
+ "postedAt": "2025-11-18T02:45:12.000Z",
+ "replyTo": {
+  "postId": "1990612075518087377",
+  "handle": "donaldblakee"
+ },
+ "text": "You know what, not a horrible idea.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1990612221463048331",
+ "harness": {
+  "run": "2026-10-31T03-11-12Z",
+  "manifest_sha256": "da998034869f466cf3635ca5dde42938975bc207b093ae8c8984350ea65c57f3",
+  "query": "from:BobLoukas since:2025-11-15 until:2025-11-20"
+ }
+}

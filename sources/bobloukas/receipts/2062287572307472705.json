@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:48:03.671Z",
+ "cashtags": [],
+ "conversationId": "2062287572307472705",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2062287572307472705",
+ "kind": "quote",
+ "metrics": {
+  "likes": 939,
+  "replies": 49,
+  "reposts": 56,
+  "views": 111014
+ },
+ "postedAt": "2026-06-03T21:37:27.000Z",
+ "replyTo": null,
+ "text": "Despite Bulltards endless narratives, and hate, BTC was always going to retest this area (at min). A Cycle ending decline almost never comes that early & in one swoop. \n\nNow bulls at least have something to work with here, structurally. Fairly unlikely they can hold it though.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2062287572307472705",
+ "harness": {
+  "run": "2026-10-31T03-47-55Z",
+  "manifest_sha256": "76ee69624ea2b9328b3f138dbfe04636ffc970ec1aa15cc43bb66d8325d64d30",
+  "query": "from:BobLoukas since:2026-06-03 until:2026-06-08"
+ }
+}

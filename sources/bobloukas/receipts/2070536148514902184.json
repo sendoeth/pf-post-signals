@@ -1,0 +1,27 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:03:45.917Z",
+ "cashtags": [
+  "COIN"
+ ],
+ "conversationId": "2070536148514902184",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2070536148514902184",
+ "kind": "post",
+ "metrics": {
+  "likes": 1098,
+  "replies": 108,
+  "reposts": 60,
+  "views": 181145
+ },
+ "postedAt": "2026-06-26T15:54:21.000Z",
+ "replyTo": null,
+ "text": "Honestly don't see how $COIN avoids this.  Bloated and overvalued company, horrible customer service, crypto retail dead and have options.  Base chain meh.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2070536148514902184",
+ "harness": {
+  "run": "2026-10-31T04-03-43Z",
+  "manifest_sha256": "151afdee8bedac9fee9cf5b5571f2bc7c3f8925a0be613401ca72cfa26688b6d",
+  "query": "from:BobLoukas since:2026-06-23 until:2026-06-28"
+ }
+}

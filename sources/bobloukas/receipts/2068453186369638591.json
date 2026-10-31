@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:03:36.502Z",
+ "cashtags": [],
+ "conversationId": "2068340163256647835",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2068453186369638591",
+ "kind": "reply",
+ "metrics": {
+  "likes": 1,
+  "replies": 1,
+  "reposts": 0,
+  "views": 678
+ },
+ "postedAt": "2026-06-20T21:57:24.000Z",
+ "replyTo": {
+  "postId": "2068451935967912135",
+  "handle": "DPGSpurs"
+ },
+ "text": "No. If something is just weak (no blow off) that could/would carry over into a deeper bear.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2068453186369638591",
+ "harness": {
+  "run": "2026-10-31T04-03-34Z",
+  "manifest_sha256": "80481ec9abd4e75a790a038fdafcf2407911298e9bbac3a7dd1f344521f8274f",
+  "query": "from:BobLoukas since:2026-06-18 until:2026-06-23"
+ }
+}

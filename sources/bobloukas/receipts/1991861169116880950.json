@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:34.814Z",
+ "cashtags": [],
+ "conversationId": "1991786732677943794",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1991861169116880950",
+ "kind": "reply",
+ "metrics": {
+  "likes": 59,
+  "replies": 2,
+  "reposts": 1,
+  "views": 9139
+ },
+ "postedAt": "2025-11-21T13:28:04.000Z",
+ "replyTo": {
+  "postId": "1991786732677943794",
+  "handle": "MichaelAArouet"
+ },
+ "text": "Just change the model. 🤣",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1991861169116880950",
+ "harness": {
+  "run": "2026-10-31T03-11-28Z",
+  "manifest_sha256": "5b4f94307a59f6b36bf90ded7f7487cb77a37651415230998ae74712e788ac95",
+  "query": "from:BobLoukas since:2025-11-20 until:2025-11-25"
+ }
+}

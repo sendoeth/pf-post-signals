@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:12.025Z",
+ "cashtags": [],
+ "conversationId": "2025924153182663003",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2025961175867904124",
+ "kind": "reply",
+ "metrics": {
+  "likes": 70,
+  "replies": 6,
+  "reposts": 0,
+  "views": 11052
+ },
+ "postedAt": "2026-02-23T15:49:19.000Z",
+ "replyTo": {
+  "postId": "2025924153182663003",
+  "handle": "SBF_FTX"
+ },
+ "text": "Adderall prescriptions getting too expensive?",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2025961175867904124",
+ "harness": {
+  "run": "2026-10-31T03-30-09Z",
+  "manifest_sha256": "f4cb50b74e111333644768234a62c37c553d27111cb37124caf5fe4bcbd50de6",
+  "query": "from:BobLoukas since:2026-02-18 until:2026-02-28"
+ }
+}

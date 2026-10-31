@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:28.650Z",
+ "cashtags": [],
+ "conversationId": "1988648569453035869",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1988685096543744479",
+ "kind": "reply",
+ "metrics": {
+  "likes": 48,
+  "replies": 1,
+  "reposts": 2,
+  "views": 3631
+ },
+ "postedAt": "2025-11-12T19:07:29.000Z",
+ "replyTo": {
+  "postId": "1988668678486057202",
+  "handle": "unearthed2023"
+ },
+ "text": "The market is at a very important fork.\n\nAnyone that chooses only ONE outcome here is a fool.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1988685096543744479",
+ "harness": {
+  "run": "2026-10-31T03-10-22Z",
+  "manifest_sha256": "8219512b7c4ed9295ff50779c6865723e1b25c0ba9424dff8dd584d91eeef4c2",
+  "query": "from:BobLoukas since:2025-11-10 until:2025-11-15"
+ }
+}

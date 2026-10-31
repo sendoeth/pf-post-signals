@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:13.439Z",
+ "cashtags": [],
+ "conversationId": "1983916606234202473",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1984365115270160842",
+ "kind": "reply",
+ "metrics": {
+  "likes": 2,
+  "replies": 0,
+  "reposts": 0,
+  "views": 859
+ },
+ "postedAt": "2025-10-31T21:01:25.000Z",
+ "replyTo": {
+  "postId": "1983967047525765265",
+  "handle": "brguenther"
+ },
+ "text": "Yeah a lot of nice history in the building.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1984365115270160842",
+ "harness": {
+  "run": "2026-10-31T03-10-01Z",
+  "manifest_sha256": "3844915c6905bd8c09b21e28b77ba45472ed71277b155e9aca6ad52457c02037",
+  "query": "from:BobLoukas since:2025-10-31 until:2025-11-10"
+ }
+}

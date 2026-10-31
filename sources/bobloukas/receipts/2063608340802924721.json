@@ -1,0 +1,27 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:58.246Z",
+ "cashtags": [
+  "MSTR"
+ ],
+ "conversationId": "2063608340802924721",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2063608340802924721",
+ "kind": "quote",
+ "metrics": {
+  "likes": 524,
+  "replies": 31,
+  "reposts": 27,
+  "views": 87833
+ },
+ "postedAt": "2026-06-07T13:05:43.000Z",
+ "replyTo": null,
+ "text": "$MSTR analog since the peak vs Feb 21 peak.  Exact structure still.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2063608340802924721",
+ "harness": {
+  "run": "2026-10-31T03-47-55Z",
+  "manifest_sha256": "76ee69624ea2b9328b3f138dbfe04636ffc970ec1aa15cc43bb66d8325d64d30",
+  "query": "from:BobLoukas since:2026-06-03 until:2026-06-08"
+ }
+}

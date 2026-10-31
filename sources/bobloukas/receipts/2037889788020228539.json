@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:38.923Z",
+ "cashtags": [],
+ "conversationId": "2037601043601621389",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2037889788020228539",
+ "kind": "reply",
+ "metrics": {
+  "likes": 810,
+  "replies": 29,
+  "reposts": 12,
+  "views": 25202
+ },
+ "postedAt": "2026-03-28T13:49:22.000Z",
+ "replyTo": {
+  "postId": "2037601043601621389",
+  "handle": "Vivek4real_"
+ },
+ "text": "And in each example hitting these levels meant it stayed there for 4-6 months",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2037889788020228539",
+ "harness": {
+  "run": "2026-10-31T03-30-36Z",
+  "manifest_sha256": "4650ab529d8aa763c70824f28353a63102c967a6a59d9111c9a5115d681b6e4d",
+  "query": "from:BobLoukas since:2026-03-20 until:2026-03-30"
+ }
+}

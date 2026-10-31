@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:20:01.890Z",
+ "cashtags": [],
+ "conversationId": "2091161059801391206",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2091294027962311066",
+ "kind": "reply",
+ "metrics": {
+  "likes": 14,
+  "replies": 2,
+  "reposts": 0,
+  "views": 4378
+ },
+ "postedAt": "2026-08-22T22:38:45.000Z",
+ "replyTo": {
+  "postId": "2091246099461972079",
+  "handle": "bloodwave1830"
+ },
+ "text": "Bought the current bottom very far from sidelined.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2091294027962311066",
+ "harness": {
+  "run": "2026-10-31T04-19-58Z",
+  "manifest_sha256": "524676418c0f2612e016569f937d101eda0cc79472efa329bd665434f243e819",
+  "query": "from:BobLoukas since:2026-08-17 until:2026-08-27"
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:53.467Z",
+ "cashtags": [],
+ "conversationId": "1996699931436859461",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1996897882079973612",
+ "kind": "repost",
+ "metrics": {
+  "likes": 1637,
+  "replies": 99,
+  "reposts": 149,
+  "views": 122272
+ },
+ "postedAt": "2025-12-05T11:02:10.000Z",
+ "replyTo": null,
+ "text": "A lot of people I hear from (some I know) seem to always live on the edge when it comes to their money, moving from one idea and opportunity to the next as attention shifts between big ideas. They’re chasing the big outcome with blinders on, looking for that one big leap into riches.  You only need to see the bias that develops and grows on X around themes, until it’s too late. I certainly did a lot of this in my early years.\n\nSometimes they get close and sometimes they temporarily achieve far more than expected. Success creates a hero complex that consumes them and the network effect of reinforcement compounds it. But because everything is always in such hectic motion, always at risk, one forgets how to formalize their win.  What’s gained in one season or theme, is often quickly handed back before the theme runs its course, as all sense of discipline and logic escapes them.  Then the cycle repeats, they move on to the next idea looking for that escape level wealth, and again suddenly believing it’s their only chance to make it big or a way to get it all back.\n\nWhat I’ve come to appreciate later in life is that risk alone is not a wealth strategy. It's more akin to an income source.  You need a compounding strategy running alongside the speculation, something relatively predictable and structurally boring.  People shy away from this because it seems (on the surface) that you can’t get rich or leverage it. But without that parallel system, there’s nowhere for winnings to go except right back into the same volatile arena they came from. And without a home, your risk is just amplified to scale at another level, but without any newfound level of risk appreciation and with a belief that the idea will just keep on giving. The problem isn’t risk itself, it’s the absence of a place to crystallize the outcome of that risk and therefore it often runs it's course, the full cycle.\n\nI think real wealth is something that is not constantly at risk. Something stable and dependable. Something that emerges at the point where volatility is converted into something that can quietly grow on its own. A mechanism that allows temporary wins to turn into a permanent foundation. Risk then becomes something that feeds the foundation versus something that is never quite yours.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1996897882079973612",
+ "harness": {
+  "run": "2026-10-31T03-11-49Z",
+  "manifest_sha256": "44284fd2b0f53f602994edeb448d034ad7c1447b6074bcf56e01e43a4ce3849c",
+  "query": "from:BobLoukas since:2025-11-30 until:2025-12-10"
+ }
+}

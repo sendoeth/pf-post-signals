@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:46:38.671Z",
+ "cashtags": [],
+ "conversationId": "2044508902809628760",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2044818954061856803",
+ "kind": "reply",
+ "metrics": {
+  "likes": 165,
+  "replies": 24,
+  "reposts": 2,
+  "views": 18345
+ },
+ "postedAt": "2026-04-16T16:43:24.000Z",
+ "replyTo": {
+  "postId": "2044508902809628760",
+  "handle": "NYCMayor"
+ },
+ "text": "If they don't \"live here\", they're not using any services.  Yet these apartments pay big real estate taxes, significant transfer taxes on sale/buy.  \n\nWhy discourage them?",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2044818954061856803",
+ "harness": {
+  "run": "2026-10-31T03-46-34Z",
+  "manifest_sha256": "c27074f7b8d8c85ca6aaed1a98de9a36b44ad09e077f54e4c1ddc2264c260dfe",
+  "query": "from:BobLoukas since:2026-04-14 until:2026-04-19"
+ }
+}

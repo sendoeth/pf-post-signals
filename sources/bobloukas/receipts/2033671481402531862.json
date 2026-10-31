@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:31.561Z",
+ "cashtags": [],
+ "conversationId": "2033637755838992569",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2033671481402531862",
+ "kind": "reply",
+ "metrics": {
+  "likes": 254,
+  "replies": 7,
+  "reposts": 3,
+  "views": 14899
+ },
+ "postedAt": "2026-03-16T22:27:19.000Z",
+ "replyTo": {
+  "postId": "2033637755838992569",
+  "handle": "dfinzer"
+ },
+ "text": "Absolutely horrible decision and thought process.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2033671481402531862",
+ "harness": {
+  "run": "2026-10-31T03-30-28Z",
+  "manifest_sha256": "01e2451c651b7ec60ad39a25711bb00e031bd0ff8d61791c7b1a209fde870cd4",
+  "query": "from:BobLoukas since:2026-03-10 until:2026-03-20"
+ }
+}

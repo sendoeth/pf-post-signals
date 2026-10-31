@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:40.735Z",
+ "cashtags": [],
+ "conversationId": "2035001641980612659",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2035002491629158524",
+ "kind": "reply",
+ "metrics": {
+  "likes": 16,
+  "replies": 3,
+  "reposts": 0,
+  "views": 5688
+ },
+ "postedAt": "2026-03-20T14:36:17.000Z",
+ "replyTo": {
+  "postId": "2035002311731188127",
+  "handle": "drfluffski"
+ },
+ "text": "Here you're using 2 to 3 day trailing stops.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2035002491629158524",
+ "harness": {
+  "run": "2026-10-31T03-30-36Z",
+  "manifest_sha256": "4650ab529d8aa763c70824f28353a63102c967a6a59d9111c9a5115d681b6e4d",
+  "query": "from:BobLoukas since:2026-03-20 until:2026-03-30"
+ }
+}

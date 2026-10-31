@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:31.560Z",
+ "cashtags": [],
+ "conversationId": "2034586449551507627",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2034586449551507627",
+ "kind": "post",
+ "metrics": {
+  "likes": 2039,
+  "replies": 95,
+  "reposts": 101,
+  "views": 174637
+ },
+ "postedAt": "2026-03-19T11:03:05.000Z",
+ "replyTo": null,
+ "text": "Stocks are in the early stages of a cyclical bear market. \n\nOctober timeframe lows.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2034586449551507627",
+ "harness": {
+  "run": "2026-10-31T03-30-28Z",
+  "manifest_sha256": "01e2451c651b7ec60ad39a25711bb00e031bd0ff8d61791c7b1a209fde870cd4",
+  "query": "from:BobLoukas since:2026-03-10 until:2026-03-20"
+ }
+}

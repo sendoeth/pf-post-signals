@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:37.933Z",
+ "cashtags": [],
+ "conversationId": "2018311962845749502",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2018311962845749502",
+ "kind": "post",
+ "metrics": {
+  "likes": 2395,
+  "replies": 127,
+  "reposts": 118,
+  "views": 95214
+ },
+ "postedAt": "2026-02-02T13:14:05.000Z",
+ "replyTo": null,
+ "text": "When everyone finally accepts it’s a bear market, it’s usually closer to the end than the beginning.\n\nThat’s also where most people throw in the towel. We always behave the same way. \n\nPatience is needed.  Every phase of the Cycle has an action. This too shall pass.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2018311962845749502",
+ "harness": {
+  "run": "2026-10-31T03-29-33Z",
+  "manifest_sha256": "14f0ea84840c9dca9fe00212e469c77a2ebdd67bd750609b8a6bddcb4356ba1c",
+  "query": "from:BobLoukas since:2026-01-29 until:2026-02-03"
+ }
+}

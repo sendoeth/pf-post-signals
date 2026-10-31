@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:24.288Z",
+ "cashtags": [],
+ "conversationId": "1999244335343169720",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1999442848970919954",
+ "kind": "reply",
+ "metrics": {
+  "likes": 93,
+  "replies": 8,
+  "reposts": 0,
+  "views": 11309
+ },
+ "postedAt": "2025-12-12T11:34:57.000Z",
+ "replyTo": {
+  "postId": "1999244335343169720",
+  "handle": "jvr0x"
+ },
+ "text": "Should have gotten 30!",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1999442848970919954",
+ "harness": {
+  "run": "2026-10-31T03-28-21Z",
+  "manifest_sha256": "c02ce20beb826e706b2b33c18668b6975c7f6e723f9ba8dc68eba93123f5e55a",
+  "query": "from:BobLoukas since:2025-12-10 until:2025-12-15"
+ }
+}

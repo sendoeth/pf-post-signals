@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:46:58.839Z",
+ "cashtags": [],
+ "conversationId": "2047352775248585119",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2047353431715631154",
+ "kind": "reply",
+ "metrics": {
+  "likes": 13,
+  "replies": 0,
+  "reposts": 0,
+  "views": 763
+ },
+ "postedAt": "2026-04-23T16:34:30.000Z",
+ "replyTo": {
+  "postId": "2047353225544974559",
+  "handle": "AltcoinJason"
+ },
+ "text": "Oh sure.  But I had the capacity to add it.  Not everything has to be new and unique to make $$",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2047353431715631154",
+ "harness": {
+  "run": "2026-10-31T03-46-54Z",
+  "manifest_sha256": "d66bf07857f47292cdfd802d2817253a59a804ad438a1e7c7e149ca9c0a4fd10",
+  "query": "from:BobLoukas since:2026-04-19 until:2026-04-24"
+ }
+}

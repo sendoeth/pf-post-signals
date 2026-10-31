@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:49.679Z",
+ "cashtags": [],
+ "conversationId": "2019397249604731339",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2019408787812307135",
+ "kind": "repost",
+ "metrics": {
+  "likes": 156,
+  "replies": 7,
+  "reposts": 3,
+  "views": 28443
+ },
+ "postedAt": "2026-02-05T13:52:28.000Z",
+ "replyTo": {
+  "postId": "2019398270401782244",
+  "handle": "BobLoukas"
+ },
+ "text": "I remember reading a tweet from you something like: Even if it's just smoke, just move the funds, it's only a bit of work. I reluctantly got of the couch and moved my FTX funds. A day later, withdrawals paused. The return on these funds made me financially free this cycle. <3",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2019408787812307135",
+ "harness": {
+  "run": "2026-10-31T03-29-44Z",
+  "manifest_sha256": "aaa8d4e197f46be6cccda8b30abf99f805399d35c1bf30c84b78a3f1a95bcc12",
+  "query": "from:BobLoukas since:2026-02-03 until:2026-02-08"
+ }
+}

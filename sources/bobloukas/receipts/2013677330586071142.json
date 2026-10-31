@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:15.875Z",
+ "cashtags": [],
+ "conversationId": "2013676441196482831",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2013677330586071142",
+ "kind": "reply",
+ "metrics": {
+  "likes": 50,
+  "replies": 2,
+  "reposts": 0,
+  "views": 9703
+ },
+ "postedAt": "2026-01-20T18:17:42.000Z",
+ "replyTo": {
+  "postId": "2013676971490787631",
+  "handle": "bigger_always"
+ },
+ "text": "Unless it's a short vs long term consideration, I dont think it makes sense to consider taxes, not on an asset that consistently has shown an ability to drop >80%.\n\nAnd buying back increases your cost basis anyway.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2013677330586071142",
+ "harness": {
+  "run": "2026-10-31T03-29-09Z",
+  "manifest_sha256": "12b6383eb0d3e548fb1ff7b7fa27ac18c6544170639bb262e25d9278c33ad772",
+  "query": "from:BobLoukas since:2026-01-19 until:2026-01-29"
+ }
+}

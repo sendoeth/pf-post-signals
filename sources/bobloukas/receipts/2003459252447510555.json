@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:44.067Z",
+ "cashtags": [],
+ "conversationId": "2003459252447510555",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2003459252447510555",
+ "kind": "post",
+ "metrics": {
+  "likes": 472,
+  "replies": 36,
+  "reposts": 4,
+  "views": 66687
+ },
+ "postedAt": "2025-12-23T13:34:42.000Z",
+ "replyTo": null,
+ "text": "Hello $70.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2003459252447510555",
+ "harness": {
+  "run": "2026-10-31T03-28-37Z",
+  "manifest_sha256": "9d13b999b16b71141a9123223a30beac3017eedee0e627ab1a0efb00c27a8930",
+  "query": "from:BobLoukas since:2025-12-20 until:2025-12-30"
+ }
+}

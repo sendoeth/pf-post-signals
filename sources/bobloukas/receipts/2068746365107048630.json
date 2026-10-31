@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:03:36.501Z",
+ "cashtags": [],
+ "conversationId": "2068693029427315160",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2068746365107048630",
+ "kind": "reply",
+ "metrics": {
+  "likes": 72,
+  "replies": 3,
+  "reposts": 0,
+  "views": 10607
+ },
+ "postedAt": "2026-06-21T17:22:23.000Z",
+ "replyTo": {
+  "postId": "2068693029427315160",
+  "handle": "CactusVvm"
+ },
+ "text": "Sure go ahead and be an idiot for suggesting and outside possibility that is rooted in a specific idea.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2068746365107048630",
+ "harness": {
+  "run": "2026-10-31T04-03-34Z",
+  "manifest_sha256": "80481ec9abd4e75a790a038fdafcf2407911298e9bbac3a7dd1f344521f8274f",
+  "query": "from:BobLoukas since:2026-06-18 until:2026-06-23"
+ }
+}

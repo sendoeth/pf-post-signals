@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:01.652Z",
+ "cashtags": [],
+ "conversationId": "2011518973888905544",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2011522983303790672",
+ "kind": "reply",
+ "metrics": {
+  "likes": 52,
+  "replies": 1,
+  "reposts": 0,
+  "views": 13288
+ },
+ "postedAt": "2026-01-14T19:37:06.000Z",
+ "replyTo": {
+  "postId": "2011518973888905544",
+  "handle": "Truthcoin"
+ },
+ "text": "and not with worthless IOU paper.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2011522983303790672",
+ "harness": {
+  "run": "2026-10-31T03-28-58Z",
+  "manifest_sha256": "85f34bbfce551087a183cda6c242ec59865f566dc1f56165cc796d53128e011e",
+  "query": "from:BobLoukas since:2026-01-09 until:2026-01-19"
+ }
+}

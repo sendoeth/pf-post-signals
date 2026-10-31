@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:24.901Z",
+ "cashtags": [],
+ "conversationId": "2029218643964555284",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2029228034331431034",
+ "kind": "reply",
+ "metrics": {
+  "likes": 348,
+  "replies": 17,
+  "reposts": 2,
+  "views": 30645
+ },
+ "postedAt": "2026-03-04T16:10:39.000Z",
+ "replyTo": {
+  "postId": "2029218643964555284",
+  "handle": "BitPaine"
+ },
+ "text": "You still trolling being down 75% on MSTR when i told you to save your capital.  You could have bought 4x the amount of MSTR this week.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2029228034331431034",
+ "harness": {
+  "run": "2026-10-31T03-30-20Z",
+  "manifest_sha256": "3d96553ad1872d40978ec78e357b1cef213e2cb79cabbf5b401432e513cb4d1c",
+  "query": "from:BobLoukas since:2026-02-28 until:2026-03-10"
+ }
+}

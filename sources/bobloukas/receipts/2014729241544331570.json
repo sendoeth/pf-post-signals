@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:15.874Z",
+ "cashtags": [],
+ "conversationId": "2014728061996896651",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2014729241544331570",
+ "kind": "reply",
+ "metrics": {
+  "likes": 18,
+  "replies": 1,
+  "reposts": 0,
+  "views": 5425
+ },
+ "postedAt": "2026-01-23T15:57:37.000Z",
+ "replyTo": {
+  "postId": "2014729116067758491",
+  "handle": "fruitman82"
+ },
+ "text": "Nice to hear mate.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2014729241544331570",
+ "harness": {
+  "run": "2026-10-31T03-29-09Z",
+  "manifest_sha256": "12b6383eb0d3e548fb1ff7b7fa27ac18c6544170639bb262e25d9278c33ad772",
+  "query": "from:BobLoukas since:2026-01-19 until:2026-01-29"
+ }
+}

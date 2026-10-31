@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:01.717Z",
+ "cashtags": [],
+ "conversationId": "2046708385928634658",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2046708886934048921",
+ "kind": "reply",
+ "metrics": {
+  "likes": 18,
+  "replies": 1,
+  "reposts": 0,
+  "views": 2597
+ },
+ "postedAt": "2026-04-21T21:53:19.000Z",
+ "replyTo": {
+  "postId": "2046708619090305491",
+  "handle": "0xPhoenix2023"
+ },
+ "text": "Yes.  Only they can last a while and you never hear what’s coming.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2046708886934048921",
+ "harness": {
+  "run": "2026-10-31T03-46-54Z",
+  "manifest_sha256": "d66bf07857f47292cdfd802d2817253a59a804ad438a1e7c7e149ca9c0a4fd10",
+  "query": "from:BobLoukas since:2026-04-19 until:2026-04-24"
+ }
+}

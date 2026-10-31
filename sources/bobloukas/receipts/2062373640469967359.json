@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:48:01.864Z",
+ "cashtags": [],
+ "conversationId": "2062372123461513428",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2062373640469967359",
+ "kind": "reply",
+ "metrics": {
+  "likes": 1,
+  "replies": 1,
+  "reposts": 0,
+  "views": 1290
+ },
+ "postedAt": "2026-06-04T03:19:27.000Z",
+ "replyTo": {
+  "postId": "2062372818369606030",
+  "handle": "Aucoin1"
+ },
+ "text": "Imagine having that type of ability.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2062373640469967359",
+ "harness": {
+  "run": "2026-10-31T03-47-55Z",
+  "manifest_sha256": "76ee69624ea2b9328b3f138dbfe04636ffc970ec1aa15cc43bb66d8325d64d30",
+  "query": "from:BobLoukas since:2026-06-03 until:2026-06-08"
+ }
+}

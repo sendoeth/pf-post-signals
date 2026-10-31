@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:48:09.376Z",
+ "cashtags": [],
+ "conversationId": "2065607561227722763",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2065607561227722763",
+ "kind": "post",
+ "metrics": {
+  "likes": 211,
+  "replies": 28,
+  "reposts": 3,
+  "views": 40151
+ },
+ "postedAt": "2026-06-13T01:29:54.000Z",
+ "replyTo": null,
+ "text": "Americans got their 4 Qtrs Football.  lol.   #worldcup",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2065607561227722763",
+ "harness": {
+  "run": "2026-10-31T03-48-06Z",
+  "manifest_sha256": "485917866faaacba3f6ba610f71bd9e8742dd651e87192dd8b73f98728b3818a",
+  "query": "from:BobLoukas since:2026-06-08 until:2026-06-18"
+ }
+}

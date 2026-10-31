@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:51.696Z",
+ "cashtags": [],
+ "conversationId": "2009291616217903397",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2009350270388715708",
+ "kind": "reply",
+ "metrics": {
+  "likes": 23,
+  "replies": 1,
+  "reposts": 0,
+  "views": 3597
+ },
+ "postedAt": "2026-01-08T19:43:31.000Z",
+ "replyTo": {
+  "postId": "2009346483649384502",
+  "handle": "LinusCaldwell5"
+ },
+ "text": "So we're safe from the machines, is that what you're telling me?",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2009350270388715708",
+ "harness": {
+  "run": "2026-10-31T03-28-48Z",
+  "manifest_sha256": "15f3f120834a9e146f93308ba01d65815256ffe13b590dc9e35f844e48ccf261",
+  "query": "from:BobLoukas since:2025-12-30 until:2026-01-09"
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:36:42.499Z",
+ "cashtags": [],
+ "conversationId": "2115944292451577867",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2115944292451577867",
+ "kind": "post",
+ "metrics": {
+  "likes": 690,
+  "replies": 127,
+  "reposts": 9,
+  "views": 103697
+ },
+ "postedAt": "2026-10-29T23:10:06.000Z",
+ "replyTo": null,
+ "text": "Is the decentralized self custody dream dead?",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2115944292451577867",
+ "harness": {
+  "run": "2026-10-31T04-36-38Z",
+  "manifest_sha256": "4ed1a5ced8c750ca12e8ad455fcb0440edc42dc649d9b9187902e0982ccc36b8",
+  "query": "from:BobLoukas since:2026-10-26 until:2026-11-01"
+ }
+}

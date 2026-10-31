@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:48:01.864Z",
+ "cashtags": [],
+ "conversationId": "2062510804277039295",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2062521087531917730",
+ "kind": "reply",
+ "metrics": {
+  "likes": 187,
+  "replies": 5,
+  "reposts": 2,
+  "views": 11679
+ },
+ "postedAt": "2026-06-04T13:05:21.000Z",
+ "replyTo": {
+  "postId": "2062510804277039295",
+  "handle": "benjamincowen"
+ },
+ "text": "Every cycle they hate, then come into the fold.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2062521087531917730",
+ "harness": {
+  "run": "2026-10-31T03-47-55Z",
+  "manifest_sha256": "76ee69624ea2b9328b3f138dbfe04636ffc970ec1aa15cc43bb66d8325d64d30",
+  "query": "from:BobLoukas since:2026-06-03 until:2026-06-08"
+ }
+}

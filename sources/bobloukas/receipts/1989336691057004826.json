@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:25.223Z",
+ "cashtags": [],
+ "conversationId": "1989334671289967046",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1989336691057004826",
+ "kind": "reply",
+ "metrics": {
+  "likes": 3,
+  "replies": 1,
+  "reposts": 0,
+  "views": 929
+ },
+ "postedAt": "2025-11-14T14:16:41.000Z",
+ "replyTo": {
+  "postId": "1989336069981249700",
+  "handle": "WesternXBT"
+ },
+ "text": "disproven, I mean at this point it's mirroring perfectly in a scary way.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1989336691057004826",
+ "harness": {
+  "run": "2026-10-31T03-10-22Z",
+  "manifest_sha256": "8219512b7c4ed9295ff50779c6865723e1b25c0ba9424dff8dd584d91eeef4c2",
+  "query": "from:BobLoukas since:2025-11-10 until:2025-11-15"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:38.923Z",
+ "cashtags": [],
+ "conversationId": "2037523005899731403",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2037664863976108158",
+ "kind": "reply",
+ "metrics": {
+  "likes": 7,
+  "replies": 0,
+  "reposts": 1,
+  "views": 1115
+ },
+ "postedAt": "2026-03-27T22:55:36.000Z",
+ "replyTo": {
+  "postId": "2037604156744032370",
+  "handle": "ChartSpartan"
+ },
+ "text": "Because we count days the markets trade. \n\nIf we measured calendar days same result in end we would have longer expected cycle lengths.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2037664863976108158",
+ "harness": {
+  "run": "2026-10-31T03-30-36Z",
+  "manifest_sha256": "4650ab529d8aa763c70824f28353a63102c967a6a59d9111c9a5115d681b6e4d",
+  "query": "from:BobLoukas since:2026-03-20 until:2026-03-30"
+ }
+}

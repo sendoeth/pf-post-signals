@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:13.950Z",
+ "cashtags": [],
+ "conversationId": "2024205376652992742",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2024205376652992742",
+ "kind": "post",
+ "metrics": {
+  "likes": 1134,
+  "replies": 55,
+  "reposts": 51,
+  "views": 63502
+ },
+ "postedAt": "2026-02-18T19:32:24.000Z",
+ "replyTo": null,
+ "text": "You cannot rush the transition from a bear market to a bull market.  #bitcoin \nIn a bear market, hope destroys more portfolios than price ever could.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2024205376652992742",
+ "harness": {
+  "run": "2026-10-31T03-30-09Z",
+  "manifest_sha256": "f4cb50b74e111333644768234a62c37c553d27111cb37124caf5fe4bcbd50de6",
+  "query": "from:BobLoukas since:2026-02-18 until:2026-02-28"
+ }
+}

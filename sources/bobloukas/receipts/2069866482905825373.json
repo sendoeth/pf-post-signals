@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:03:50.135Z",
+ "cashtags": [],
+ "conversationId": "2069815748990484728",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2069866482905825373",
+ "kind": "reply",
+ "metrics": {
+  "likes": 125,
+  "replies": 6,
+  "reposts": 1,
+  "views": 10501
+ },
+ "postedAt": "2026-06-24T19:33:20.000Z",
+ "replyTo": {
+  "postId": "2069815748990484728",
+  "handle": "BigCheds"
+ },
+ "text": "That was Michael Saylor cashing in his MSTR stock options for hundreds of millions while at the same time telling people to sell a kidney.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2069866482905825373",
+ "harness": {
+  "run": "2026-10-31T04-03-43Z",
+  "manifest_sha256": "151afdee8bedac9fee9cf5b5571f2bc7c3f8925a0be613401ca72cfa26688b6d",
+  "query": "from:BobLoukas since:2026-06-23 until:2026-06-28"
+ }
+}

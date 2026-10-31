@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:51.420Z",
+ "cashtags": [],
+ "conversationId": "1996935782322368644",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1996944069700833525",
+ "kind": "reply",
+ "metrics": {
+  "likes": 10,
+  "replies": 2,
+  "reposts": 0,
+  "views": 2349
+ },
+ "postedAt": "2025-12-05T14:05:42.000Z",
+ "replyTo": {
+  "postId": "1996943877564166522",
+  "handle": "HeadedNine"
+ },
+ "text": "Yes it would.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1996944069700833525",
+ "harness": {
+  "run": "2026-10-31T03-11-49Z",
+  "manifest_sha256": "44284fd2b0f53f602994edeb448d034ad7c1447b6074bcf56e01e43a4ce3849c",
+  "query": "from:BobLoukas since:2025-11-30 until:2025-12-10"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:13.439Z",
+ "cashtags": [],
+ "conversationId": "1983916606234202473",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1984364408756453597",
+ "kind": "reply",
+ "metrics": {
+  "likes": 2,
+  "replies": 0,
+  "reposts": 0,
+  "views": 665
+ },
+ "postedAt": "2025-10-31T20:58:37.000Z",
+ "replyTo": {
+  "postId": "1983955626569904327",
+  "handle": "DarkStarNFT"
+ },
+ "text": "Yes that’s a sub community.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1984364408756453597",
+ "harness": {
+  "run": "2026-10-31T03-10-01Z",
+  "manifest_sha256": "3844915c6905bd8c09b21e28b77ba45472ed71277b155e9aca6ad52457c02037",
+  "query": "from:BobLoukas since:2025-10-31 until:2025-11-10"
+ }
+}

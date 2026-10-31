@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:51.416Z",
+ "cashtags": [],
+ "conversationId": "1998432482199552241",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1998436446563164376",
+ "kind": "reply",
+ "metrics": {
+  "likes": 49,
+  "replies": 1,
+  "reposts": 0,
+  "views": 5314
+ },
+ "postedAt": "2025-12-09T16:55:52.000Z",
+ "replyTo": {
+  "postId": "1998435521324871713",
+  "handle": "yakozaki"
+ },
+ "text": "Good question, that's around $100k.  That's the big test imo.  I think it gets there but agree it's a good place to get stalled.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1998436446563164376",
+ "harness": {
+  "run": "2026-10-31T03-11-49Z",
+  "manifest_sha256": "44284fd2b0f53f602994edeb448d034ad7c1447b6074bcf56e01e43a4ce3849c",
+  "query": "from:BobLoukas since:2025-11-30 until:2025-12-10"
+ }
+}

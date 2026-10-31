@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:32.383Z",
+ "cashtags": [],
+ "conversationId": "2001671214968783222",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2001690911416463388",
+ "kind": "reply",
+ "metrics": {
+  "likes": 10,
+  "replies": 2,
+  "reposts": 0,
+  "views": 774
+ },
+ "postedAt": "2025-12-18T16:27:57.000Z",
+ "replyTo": {
+  "postId": "2001684907341312459",
+  "handle": "Lorenzo_inXsona"
+ },
+ "text": "I'm saying BTC has no momentum or buying interest on it's own.  Without a general/broad rally to support it, it could be trouble,",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2001690911416463388",
+ "harness": {
+  "run": "2026-10-31T03-28-29Z",
+  "manifest_sha256": "6b809f4562719e0f7de013cb2199555f0361999760d9b9ef86799734f195de03",
+  "query": "from:BobLoukas since:2025-12-15 until:2025-12-20"
+ }
+}

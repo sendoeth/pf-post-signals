@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:12.023Z",
+ "cashtags": [],
+ "conversationId": "2027043531185943019",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2027044744304447510",
+ "kind": "reply",
+ "metrics": {
+  "likes": 16,
+  "replies": 1,
+  "reposts": 0,
+  "views": 5144
+ },
+ "postedAt": "2026-02-26T15:35:02.000Z",
+ "replyTo": {
+  "postId": "2027044282633498745",
+  "handle": "sedonaroxx"
+ },
+ "text": "it's already out in stealth mode.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2027044744304447510",
+ "harness": {
+  "run": "2026-10-31T03-30-09Z",
+  "manifest_sha256": "f4cb50b74e111333644768234a62c37c553d27111cb37124caf5fe4bcbd50de6",
+  "query": "from:BobLoukas since:2026-02-18 until:2026-02-28"
+ }
+}

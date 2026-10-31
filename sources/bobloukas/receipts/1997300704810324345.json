@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:51.419Z",
+ "cashtags": [],
+ "conversationId": "1994010081260884447",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1997300704810324345",
+ "kind": "reply",
+ "metrics": {
+  "likes": 35,
+  "replies": 3,
+  "reposts": 3,
+  "views": 2189
+ },
+ "postedAt": "2025-12-06T13:42:50.000Z",
+ "replyTo": {
+  "postId": "1997284272529719418",
+  "handle": "DPGSpurs"
+ },
+ "text": "Yes, I think all markets are going to rally into late January. I’m not hung up on ATH or not.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1997300704810324345",
+ "harness": {
+  "run": "2026-10-31T03-11-49Z",
+  "manifest_sha256": "44284fd2b0f53f602994edeb448d034ad7c1447b6074bcf56e01e43a4ce3849c",
+  "query": "from:BobLoukas since:2025-11-30 until:2025-12-10"
+ }
+}

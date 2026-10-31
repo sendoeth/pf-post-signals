@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:55.719Z",
+ "cashtags": [],
+ "conversationId": "1995556218648121803",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1995556218648121803",
+ "kind": "post",
+ "metrics": {
+  "likes": 1218,
+  "replies": 88,
+  "reposts": 54,
+  "views": 105502
+ },
+ "postedAt": "2025-12-01T18:10:52.000Z",
+ "replyTo": null,
+ "text": "People getting really comfortable sharing a lot of very diverse (financial, medial, legal, personal) detail with chatgpt, all while subscribed with their primary PII gmail account. \n\nSounds like a horrible idea to me.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1995556218648121803",
+ "harness": {
+  "run": "2026-10-31T03-11-49Z",
+  "manifest_sha256": "44284fd2b0f53f602994edeb448d034ad7c1447b6074bcf56e01e43a4ce3849c",
+  "query": "from:BobLoukas since:2025-11-30 until:2025-12-10"
+ }
+}

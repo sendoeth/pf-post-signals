@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:48:09.375Z",
+ "cashtags": [],
+ "conversationId": "2066000276490691057",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2066000826649149572",
+ "kind": "repost",
+ "metrics": {
+  "likes": 57231,
+  "replies": 806,
+  "reposts": 10095,
+  "views": 1824513
+ },
+ "postedAt": "2026-06-14T03:32:36.000Z",
+ "replyTo": null,
+ "text": "KNICKS WIN!!! \nKNICKS WIN!!! \nKNICKS WIN!!! \nKNICKS WIN!!!",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2066000826649149572",
+ "harness": {
+  "run": "2026-10-31T03-48-06Z",
+  "manifest_sha256": "485917866faaacba3f6ba610f71bd9e8742dd651e87192dd8b73f98728b3818a",
+  "query": "from:BobLoukas since:2026-06-08 until:2026-06-18"
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:48:09.378Z",
+ "cashtags": [],
+ "conversationId": "2064721856507072773",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2064721856507072773",
+ "kind": "post",
+ "metrics": {
+  "likes": 166,
+  "replies": 20,
+  "reposts": 7,
+  "views": 39942
+ },
+ "postedAt": "2026-06-10T14:50:25.000Z",
+ "replyTo": null,
+ "text": "Live shot at A.M Goldman broker meeting on SpaceX IPO.\nhttps://youtu.be/PQleT6BtCbE?si=Sf3BfPy2D5r05Pt4",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2064721856507072773",
+ "harness": {
+  "run": "2026-10-31T03-48-06Z",
+  "manifest_sha256": "485917866faaacba3f6ba610f71bd9e8742dd651e87192dd8b73f98728b3818a",
+  "query": "from:BobLoukas since:2026-06-08 until:2026-06-18"
+ }
+}

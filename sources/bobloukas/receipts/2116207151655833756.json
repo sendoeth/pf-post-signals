@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:36:40.398Z",
+ "cashtags": [],
+ "conversationId": "2116199680157647216",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2116207151655833756",
+ "kind": "reply",
+ "metrics": {
+  "likes": 12,
+  "replies": 0,
+  "reposts": 0,
+  "views": 1786
+ },
+ "postedAt": "2026-10-30T16:34:36.000Z",
+ "replyTo": {
+  "postId": "2116206237108830374",
+  "handle": "missaddler"
+ },
+ "text": "I focus on time.   The rectangle is just a logical place for a bottom, but again focusing on timing.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2116207151655833756",
+ "harness": {
+  "run": "2026-10-31T04-36-38Z",
+  "manifest_sha256": "4ed1a5ced8c750ca12e8ad455fcb0440edc42dc649d9b9187902e0982ccc36b8",
+  "query": "from:BobLoukas since:2026-10-26 until:2026-11-01"
+ }
+}

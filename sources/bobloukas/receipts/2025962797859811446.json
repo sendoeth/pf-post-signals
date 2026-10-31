@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:12.025Z",
+ "cashtags": [],
+ "conversationId": "2025958266707296730",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2025962797859811446",
+ "kind": "reply",
+ "metrics": {
+  "likes": 133,
+  "replies": 12,
+  "reposts": 0,
+  "views": 13265
+ },
+ "postedAt": "2026-02-23T15:55:46.000Z",
+ "replyTo": {
+  "postId": "2025958266707296730",
+  "handle": "mark_dow"
+ },
+ "text": "Na he bailed a while ago.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2025962797859811446",
+ "harness": {
+  "run": "2026-10-31T03-30-09Z",
+  "manifest_sha256": "f4cb50b74e111333644768234a62c37c553d27111cb37124caf5fe4bcbd50de6",
+  "query": "from:BobLoukas since:2026-02-18 until:2026-02-28"
+ }
+}

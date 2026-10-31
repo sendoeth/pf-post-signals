@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:51.695Z",
+ "cashtags": [],
+ "conversationId": "2009356789356314714",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2009357637058744456",
+ "kind": "reply",
+ "metrics": {
+  "likes": 62,
+  "replies": 3,
+  "reposts": 1,
+  "views": 3837
+ },
+ "postedAt": "2026-01-08T20:12:47.000Z",
+ "replyTo": {
+  "postId": "2009357294073757730",
+  "handle": "colecut"
+ },
+ "text": "Simple. \n\nOne is a trading strategy. \n\nOne is a foundational capital strategy.  \n\nThey each have different rules/objectives/profiles.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2009357637058744456",
+ "harness": {
+  "run": "2026-10-31T03-28-48Z",
+  "manifest_sha256": "15f3f120834a9e146f93308ba01d65815256ffe13b590dc9e35f844e48ccf261",
+  "query": "from:BobLoukas since:2025-12-30 until:2026-01-09"
+ }
+}

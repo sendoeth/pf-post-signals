@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:46.983Z",
+ "cashtags": [],
+ "conversationId": "2018752510505226279",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2019915717945225682",
+ "kind": "reply",
+ "metrics": {
+  "likes": 8,
+  "replies": 1,
+  "reposts": 0,
+  "views": 892
+ },
+ "postedAt": "2026-02-06T23:26:50.000Z",
+ "replyTo": {
+  "postId": "2019103024199741660",
+  "handle": "Viri38734389"
+ },
+ "text": "“Not a prediction”. \n\nSimply based on if we got a full euphoric cycle that would be the target based on the full length (time) of the cycle.   \n\nI throw out a LOT of ideas.  Half will be wrong.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2019915717945225682",
+ "harness": {
+  "run": "2026-10-31T03-29-44Z",
+  "manifest_sha256": "aaa8d4e197f46be6cccda8b30abf99f805399d35c1bf30c84b78a3f1a95bcc12",
+  "query": "from:BobLoukas since:2026-02-03 until:2026-02-08"
+ }
+}

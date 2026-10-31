@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:25.383Z",
+ "cashtags": [],
+ "conversationId": "2028143291309400574",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2028184231164154337",
+ "kind": "reply",
+ "metrics": {
+  "likes": 13,
+  "replies": 1,
+  "reposts": 1,
+  "views": 5007
+ },
+ "postedAt": "2026-03-01T19:02:57.000Z",
+ "replyTo": {
+  "postId": "2028143291309400574",
+  "handle": "SKYCRYPTOBOOMER"
+ },
+ "text": "Grail.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2028184231164154337",
+ "harness": {
+  "run": "2026-10-31T03-30-20Z",
+  "manifest_sha256": "3d96553ad1872d40978ec78e357b1cef213e2cb79cabbf5b401432e513cb4d1c",
+  "query": "from:BobLoukas since:2026-02-28 until:2026-03-10"
+ }
+}

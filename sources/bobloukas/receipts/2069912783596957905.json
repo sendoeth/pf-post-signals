@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:03:48.264Z",
+ "cashtags": [],
+ "conversationId": "2069870795178803267",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2069912783596957905",
+ "kind": "reply",
+ "metrics": {
+  "likes": 13,
+  "replies": 0,
+  "reposts": 0,
+  "views": 1506
+ },
+ "postedAt": "2026-06-24T22:37:19.000Z",
+ "replyTo": {
+  "postId": "2069905185334571284",
+  "handle": "SuperBitcoinBro"
+ },
+ "text": "Absolutely.  But I change the view rapidly and often because it doesn’t predict price or make assumption market must act a certain way.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2069912783596957905",
+ "harness": {
+  "run": "2026-10-31T04-03-43Z",
+  "manifest_sha256": "151afdee8bedac9fee9cf5b5571f2bc7c3f8925a0be613401ca72cfa26688b6d",
+  "query": "from:BobLoukas since:2026-06-23 until:2026-06-28"
+ }
+}

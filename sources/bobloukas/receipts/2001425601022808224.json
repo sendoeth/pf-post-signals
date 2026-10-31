@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:34.213Z",
+ "cashtags": [],
+ "conversationId": "2001054570072465571",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2001425601022808224",
+ "kind": "reply",
+ "metrics": {
+  "likes": 2,
+  "replies": 0,
+  "reposts": 0,
+  "views": 488
+ },
+ "postedAt": "2025-12-17T22:53:42.000Z",
+ "replyTo": {
+  "postId": "2001399022574031295",
+  "handle": "realcodyhurst"
+ },
+ "text": "Punk price",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2001425601022808224",
+ "harness": {
+  "run": "2026-10-31T03-28-29Z",
+  "manifest_sha256": "6b809f4562719e0f7de013cb2199555f0361999760d9b9ef86799734f195de03",
+  "query": "from:BobLoukas since:2025-12-15 until:2025-12-20"
+ }
+}

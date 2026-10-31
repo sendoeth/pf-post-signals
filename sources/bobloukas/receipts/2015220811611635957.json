@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:14.212Z",
+ "cashtags": [],
+ "conversationId": "2015139349847834674",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2015220811611635957",
+ "kind": "reply",
+ "metrics": {
+  "likes": 25,
+  "replies": 4,
+  "reposts": 1,
+  "views": 1928
+ },
+ "postedAt": "2026-01-25T00:30:57.000Z",
+ "replyTo": {
+  "postId": "2015219594428887546",
+  "handle": "SMoney2025"
+ },
+ "text": "“You know, it’s perfectly fine to be in support of a crackdown on illegal immigration and the removal of such people”",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2015220811611635957",
+ "harness": {
+  "run": "2026-10-31T03-29-09Z",
+  "manifest_sha256": "12b6383eb0d3e548fb1ff7b7fa27ac18c6544170639bb262e25d9278c33ad772",
+  "query": "from:BobLoukas since:2026-01-19 until:2026-01-29"
+ }
+}

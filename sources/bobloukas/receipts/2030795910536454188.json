@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:22.935Z",
+ "cashtags": [],
+ "conversationId": "2030763034256220355",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2030795910536454188",
+ "kind": "reply",
+ "metrics": {
+  "likes": 19,
+  "replies": 0,
+  "reposts": 0,
+  "views": 6514
+ },
+ "postedAt": "2026-03-09T00:00:50.000Z",
+ "replyTo": {
+  "postId": "2030763034256220355",
+  "handle": "GarryB1rd"
+ },
+ "text": "Yes. Because decentralized sales process was a joke.  Gamed and never about the work or the collector.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2030795910536454188",
+ "harness": {
+  "run": "2026-10-31T03-30-20Z",
+  "manifest_sha256": "3d96553ad1872d40978ec78e357b1cef213e2cb79cabbf5b401432e513cb4d1c",
+  "query": "from:BobLoukas since:2026-02-28 until:2026-03-10"
+ }
+}

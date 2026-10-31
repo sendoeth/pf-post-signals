@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:12.215Z",
+ "cashtags": [],
+ "conversationId": "2016582224355729596",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2016590670526308540",
+ "kind": "reply",
+ "metrics": {
+  "likes": 48,
+  "replies": 3,
+  "reposts": 1,
+  "views": 9968
+ },
+ "postedAt": "2026-01-28T19:14:16.000Z",
+ "replyTo": {
+  "postId": "2016582224355729596",
+  "handle": "Tyler_Did_It"
+ },
+ "text": "Holders are like na, I'm going to wait for $4.2b...",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2016590670526308540",
+ "harness": {
+  "run": "2026-10-31T03-29-09Z",
+  "manifest_sha256": "12b6383eb0d3e548fb1ff7b7fa27ac18c6544170639bb262e25d9278c33ad772",
+  "query": "from:BobLoukas since:2026-01-19 until:2026-01-29"
+ }
+}

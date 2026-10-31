@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:32.382Z",
+ "cashtags": [],
+ "conversationId": "2002094215560642928",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2002094215560642928",
+ "kind": "post",
+ "metrics": {
+  "likes": 1389,
+  "replies": 85,
+  "reposts": 79,
+  "views": 90280
+ },
+ "postedAt": "2025-12-19T19:10:32.000Z",
+ "replyTo": null,
+ "text": "Having great and reliable income streams beats anything you’re ever going to earn playing in the public markets. \n\nMarkets are a compounding machine, rewarding patience and consistency, not hope and moonshots.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2002094215560642928",
+ "harness": {
+  "run": "2026-10-31T03-28-29Z",
+  "manifest_sha256": "6b809f4562719e0f7de013cb2199555f0361999760d9b9ef86799734f195de03",
+  "query": "from:BobLoukas since:2025-12-15 until:2025-12-20"
+ }
+}

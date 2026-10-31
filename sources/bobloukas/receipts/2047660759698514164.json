@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:12.545Z",
+ "cashtags": [],
+ "conversationId": "2047660759698514164",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2047660759698514164",
+ "kind": "post",
+ "metrics": {
+  "likes": 970,
+  "replies": 154,
+  "reposts": 73,
+  "views": 61304
+ },
+ "postedAt": "2026-04-24T12:55:43.000Z",
+ "replyTo": null,
+ "text": "The idea of Universal High Income to counter AI dominance replacing need for people to work for their existence is frightening.\n\nA society existing mostly off the governments tit is a society enslaved and one that will never be content in life.  And we know the dangers of a dependent and idle mind.\n\nThats going to be their angle though, “you won’t have to work”.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2047660759698514164",
+ "harness": {
+  "run": "2026-10-31T03-47-04Z",
+  "manifest_sha256": "5336994f71bbe4f700cf60362be35add5dbd82d5eddf921d84495b46cbd2c660",
+  "query": "from:BobLoukas since:2026-04-24 until:2026-04-29"
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:31.561Z",
+ "cashtags": [],
+ "conversationId": "2032499555791499643",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2032499555791499643",
+ "kind": "post",
+ "metrics": {
+  "likes": 684,
+  "replies": 32,
+  "reposts": 54,
+  "views": 61265
+ },
+ "postedAt": "2026-03-13T16:50:30.000Z",
+ "replyTo": null,
+ "text": "Stocks are approaching the 2nd Daily Cycle Low, timing is mid next week.\n\nBut the damage is done. The next Daily Cycle (last of the weekly) is where the pain would come from. Weakness into mid may.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2032499555791499643",
+ "harness": {
+  "run": "2026-10-31T03-30-28Z",
+  "manifest_sha256": "01e2451c651b7ec60ad39a25711bb00e031bd0ff8d61791c7b1a209fde870cd4",
+  "query": "from:BobLoukas since:2026-03-10 until:2026-03-20"
+ }
+}

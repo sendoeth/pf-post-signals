@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:41.827Z",
+ "cashtags": [],
+ "conversationId": "2003464442869412241",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2003465454829105448",
+ "kind": "reply",
+ "metrics": {
+  "likes": 46,
+  "replies": 3,
+  "reposts": 0,
+  "views": 8241
+ },
+ "postedAt": "2025-12-23T13:59:21.000Z",
+ "replyTo": {
+  "postId": "2003464442869412241",
+  "handle": "HodlMagoo"
+ },
+ "text": "Shocked.  Not.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2003465454829105448",
+ "harness": {
+  "run": "2026-10-31T03-28-37Z",
+  "manifest_sha256": "9d13b999b16b71141a9123223a30beac3017eedee0e627ab1a0efb00c27a8930",
+  "query": "from:BobLoukas since:2025-12-20 until:2025-12-30"
+ }
+}

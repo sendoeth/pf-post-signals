@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:46:36.870Z",
+ "cashtags": [],
+ "conversationId": "2045316741618954554",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2045462903474516016",
+ "kind": "reply",
+ "metrics": {
+  "likes": 15,
+  "replies": 3,
+  "reposts": 0,
+  "views": 1760
+ },
+ "postedAt": "2026-04-18T11:22:13.000Z",
+ "replyTo": {
+  "postId": "2045317269706932330",
+  "handle": "CryptoParadyme"
+ },
+ "text": "I’ve tried.  But I really always come back to the white background.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2045462903474516016",
+ "harness": {
+  "run": "2026-10-31T03-46-34Z",
+  "manifest_sha256": "c27074f7b8d8c85ca6aaed1a98de9a36b44ad09e077f54e4c1ddc2264c260dfe",
+  "query": "from:BobLoukas since:2026-04-14 until:2026-04-19"
+ }
+}

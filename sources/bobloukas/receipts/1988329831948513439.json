@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:09.122Z",
+ "cashtags": [],
+ "conversationId": "1988312504930542026",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1988329831948513439",
+ "kind": "reply",
+ "metrics": {
+  "likes": 33,
+  "replies": 6,
+  "reposts": 0,
+  "views": 1501
+ },
+ "postedAt": "2025-11-11T19:35:47.000Z",
+ "replyTo": {
+  "postId": "1988324032102748485",
+  "handle": "sieg40865"
+ },
+ "text": "You don’t get to decide what is filtered. That’s the slope you don’t want to slip on.  Simple.  \n\nYou filter, you censor.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1988329831948513439",
+ "harness": {
+  "run": "2026-10-31T03-11-03Z",
+  "manifest_sha256": "b0cd5b45f562107ecbd3f676474d96aae1d41979c54b4e544f26c5dfa8cecd1e",
+  "query": "from:BobLoukas since:2025-11-10 until:2025-11-15"
+ }
+}

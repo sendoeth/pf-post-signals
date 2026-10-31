@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:08.040Z",
+ "cashtags": [],
+ "conversationId": "1986192100283883837",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1986203271208337433",
+ "kind": "reply",
+ "metrics": {
+  "likes": 4,
+  "replies": 1,
+  "reposts": 0,
+  "views": 471
+ },
+ "postedAt": "2025-11-05T22:45:36.000Z",
+ "replyTo": {
+  "postId": "1986200823756472785",
+  "handle": "Paper_hands92"
+ },
+ "text": "It's just a joke mate.  Like the spammers post all day long on tweets.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1986203271208337433",
+ "harness": {
+  "run": "2026-10-31T03-10-01Z",
+  "manifest_sha256": "3844915c6905bd8c09b21e28b77ba45472ed71277b155e9aca6ad52457c02037",
+  "query": "from:BobLoukas since:2025-10-31 until:2025-11-10"
+ }
+}

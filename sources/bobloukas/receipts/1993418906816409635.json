@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:44.212Z",
+ "cashtags": [],
+ "conversationId": "1993418401016918200",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1993418906816409635",
+ "kind": "reply",
+ "metrics": {
+  "likes": 57,
+  "replies": 3,
+  "reposts": 1,
+  "views": 4140
+ },
+ "postedAt": "2025-11-25T20:37:57.000Z",
+ "replyTo": {
+  "postId": "1993418692856582310",
+  "handle": "milo90168085"
+ },
+ "text": "4 Yr Cycle portfolio calls your B.S.  😂",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1993418906816409635",
+ "harness": {
+  "run": "2026-10-31T03-11-39Z",
+  "manifest_sha256": "8b207307b5b7f63da4785b2292870b7a03e0480c97b05c0d561f294be3c54557",
+  "query": "from:BobLoukas since:2025-11-25 until:2025-11-30"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:20:01.892Z",
+ "cashtags": [],
+ "conversationId": "2091161059801391206",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2091193637442855329",
+ "kind": "reply",
+ "metrics": {
+  "likes": 20,
+  "replies": 3,
+  "reposts": 0,
+  "views": 3726
+ },
+ "postedAt": "2026-08-22T15:59:50.000Z",
+ "replyTo": {
+  "postId": "2091174195279622395",
+  "handle": "Michaejack37336"
+ },
+ "text": "trade seashells.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2091193637442855329",
+ "harness": {
+  "run": "2026-10-31T04-19-58Z",
+  "manifest_sha256": "524676418c0f2612e016569f937d101eda0cc79472efa329bd665434f243e819",
+  "query": "from:BobLoukas since:2026-08-17 until:2026-08-27"
+ }
+}

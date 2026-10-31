@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:25.224Z",
+ "cashtags": [],
+ "conversationId": "1989334671289967046",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1989334671289967046",
+ "kind": "post",
+ "metrics": {
+  "likes": 2543,
+  "replies": 195,
+  "reposts": 217,
+  "views": 190285
+ },
+ "postedAt": "2025-11-14T14:08:40.000Z",
+ "replyTo": null,
+ "text": "Up until this point the monthly (4Yr Cycle) has remained intact. \nBut now odds Bitcoin 4yr Cycle peaked exceed 50% IMO. Suspect we're very soon going to see a sharp rally form from here. The reaction will be key and the last chance for bulls to right this ship to another high.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1989334671289967046",
+ "harness": {
+  "run": "2026-10-31T03-10-22Z",
+  "manifest_sha256": "8219512b7c4ed9295ff50779c6865723e1b25c0ba9424dff8dd584d91eeef4c2",
+  "query": "from:BobLoukas since:2025-11-10 until:2025-11-15"
+ }
+}

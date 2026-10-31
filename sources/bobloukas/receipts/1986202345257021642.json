@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:08.040Z",
+ "cashtags": [],
+ "conversationId": "1986191000281264467",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1986202345257021642",
+ "kind": "reply",
+ "metrics": {
+  "likes": 39,
+  "replies": 1,
+  "reposts": 1,
+  "views": 13017
+ },
+ "postedAt": "2025-11-05T22:41:55.000Z",
+ "replyTo": {
+  "postId": "1986202157675356577",
+  "handle": "SilverPlatter__"
+ },
+ "text": "More keys levels to be out and fully in.  Giving up some on either side.  \n\nThere is always risk of chop.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1986202345257021642",
+ "harness": {
+  "run": "2026-10-31T03-10-01Z",
+  "manifest_sha256": "3844915c6905bd8c09b21e28b77ba45472ed71277b155e9aca6ad52457c02037",
+  "query": "from:BobLoukas since:2025-10-31 until:2025-11-10"
+ }
+}

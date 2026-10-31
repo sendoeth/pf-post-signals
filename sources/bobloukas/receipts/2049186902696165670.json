@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:07.287Z",
+ "cashtags": [],
+ "conversationId": "2049185903378379088",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2049186902696165670",
+ "kind": "reply",
+ "metrics": {
+  "likes": 6,
+  "replies": 1,
+  "reposts": 0,
+  "views": 1773
+ },
+ "postedAt": "2026-04-28T18:00:04.000Z",
+ "replyTo": {
+  "postId": "2049185903378379088",
+  "handle": "aylaelmoussa"
+ },
+ "text": "Love the collection. Well done.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2049186902696165670",
+ "harness": {
+  "run": "2026-10-31T03-47-04Z",
+  "manifest_sha256": "5336994f71bbe4f700cf60362be35add5dbd82d5eddf921d84495b46cbd2c660",
+  "query": "from:BobLoukas since:2026-04-24 until:2026-04-29"
+ }
+}

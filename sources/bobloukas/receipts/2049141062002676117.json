@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:09.202Z",
+ "cashtags": [],
+ "conversationId": "2049137992128766119",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2049141062002676117",
+ "kind": "reply",
+ "metrics": {
+  "likes": 36,
+  "replies": 0,
+  "reposts": 1,
+  "views": 3841
+ },
+ "postedAt": "2026-04-28T14:57:55.000Z",
+ "replyTo": {
+  "postId": "2049140577111773225",
+  "handle": "polaris_xbt"
+ },
+ "text": "Yes, the '21 high was the bull market top for ALT's.  bear market since.  Only new issuance (temporary) has kept the cap up there.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2049141062002676117",
+ "harness": {
+  "run": "2026-10-31T03-47-04Z",
+  "manifest_sha256": "5336994f71bbe4f700cf60362be35add5dbd82d5eddf921d84495b46cbd2c660",
+  "query": "from:BobLoukas since:2026-04-24 until:2026-04-29"
+ }
+}

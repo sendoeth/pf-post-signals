@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:14.212Z",
+ "cashtags": [],
+ "conversationId": "2015139349847834674",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2015139349847834674",
+ "kind": "post",
+ "metrics": {
+  "likes": 5480,
+  "replies": 438,
+  "reposts": 534,
+  "views": 284816
+ },
+ "postedAt": "2026-01-24T19:07:15.000Z",
+ "replyTo": null,
+ "text": "You know, it’s perfectly fine to be in support of a crackdown on illegal immigration and the removal of such people AND really disgusted with your government acting as the gestapo, grossly violating the constitution, and our civil liberties.  Wake up.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2015139349847834674",
+ "harness": {
+  "run": "2026-10-31T03-29-09Z",
+  "manifest_sha256": "12b6383eb0d3e548fb1ff7b7fa27ac18c6544170639bb262e25d9278c33ad772",
+  "query": "from:BobLoukas since:2026-01-19 until:2026-01-29"
+ }
+}

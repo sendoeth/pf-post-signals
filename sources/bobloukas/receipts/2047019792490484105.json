@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:00.735Z",
+ "cashtags": [],
+ "conversationId": "2047018349021020447",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2047019792490484105",
+ "kind": "reply",
+ "metrics": {
+  "likes": 40,
+  "replies": 1,
+  "reposts": 0,
+  "views": 5427
+ },
+ "postedAt": "2026-04-22T18:28:44.000Z",
+ "replyTo": {
+  "postId": "2047018349021020447",
+  "handle": "BitPaine"
+ },
+ "text": "Oh you just haven't been paying close attention.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2047019792490484105",
+ "harness": {
+  "run": "2026-10-31T03-46-54Z",
+  "manifest_sha256": "d66bf07857f47292cdfd802d2817253a59a804ad438a1e7c7e149ca9c0a4fd10",
+  "query": "from:BobLoukas since:2026-04-19 until:2026-04-24"
+ }
+}

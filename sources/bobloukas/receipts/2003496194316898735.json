@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:41.825Z",
+ "cashtags": [],
+ "conversationId": "2003496194316898735",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2003496194316898735",
+ "kind": "post",
+ "metrics": {
+  "likes": 1029,
+  "replies": 102,
+  "reposts": 85,
+  "views": 89061
+ },
+ "postedAt": "2025-12-23T16:01:30.000Z",
+ "replyTo": null,
+ "text": "Silver 2011 blowoff vs today.  2011 was a 35 week move, currently 29 weeks in here.  Probably the final leg before a meaningful correction, but no idea where the top is.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2003496194316898735",
+ "harness": {
+  "run": "2026-10-31T03-28-37Z",
+  "manifest_sha256": "9d13b999b16b71141a9123223a30beac3017eedee0e627ab1a0efb00c27a8930",
+  "query": "from:BobLoukas since:2025-12-20 until:2025-12-30"
+ }
+}

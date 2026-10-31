@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:46:36.871Z",
+ "cashtags": [],
+ "conversationId": "2044896486953984343",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2045155897115107687",
+ "kind": "reply",
+ "metrics": {
+  "likes": 2,
+  "replies": 0,
+  "reposts": 0,
+  "views": 903
+ },
+ "postedAt": "2026-04-17T15:02:17.000Z",
+ "replyTo": {
+  "postId": "2045154867564671237",
+  "handle": "OddStockTrader"
+ },
+ "text": "I know thats the point, they're being compared as they are",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2045155897115107687",
+ "harness": {
+  "run": "2026-10-31T03-46-34Z",
+  "manifest_sha256": "c27074f7b8d8c85ca6aaed1a98de9a36b44ad09e077f54e4c1ddc2264c260dfe",
+  "query": "from:BobLoukas since:2026-04-14 until:2026-04-19"
+ }
+}

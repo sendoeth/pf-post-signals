@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:04.776Z",
+ "cashtags": [],
+ "conversationId": "2010915708042174521",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2011100477707207019",
+ "kind": "reply",
+ "metrics": {
+  "likes": 84,
+  "replies": 2,
+  "reposts": 1,
+  "views": 12872
+ },
+ "postedAt": "2026-01-13T15:38:12.000Z",
+ "replyTo": {
+  "postId": "2010915708042174521",
+  "handle": "caprioleio"
+ },
+ "text": "Still early, with the usual latecomers soon tested.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2011100477707207019",
+ "harness": {
+  "run": "2026-10-31T03-28-58Z",
+  "manifest_sha256": "85f34bbfce551087a183cda6c242ec59865f566dc1f56165cc796d53128e011e",
+  "query": "from:BobLoukas since:2026-01-09 until:2026-01-19"
+ }
+}

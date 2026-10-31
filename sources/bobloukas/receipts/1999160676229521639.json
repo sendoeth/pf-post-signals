@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:24.289Z",
+ "cashtags": [],
+ "conversationId": "1999151631821115628",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1999160676229521639",
+ "kind": "reply",
+ "metrics": {
+  "likes": 29,
+  "replies": 1,
+  "reposts": 1,
+  "views": 4412
+ },
+ "postedAt": "2025-12-11T16:53:42.000Z",
+ "replyTo": {
+  "postId": "1999159848156409931",
+  "handle": "MindfulMinter"
+ },
+ "text": "Plenty of liquidity, just went elsewhere",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1999160676229521639",
+ "harness": {
+  "run": "2026-10-31T03-28-21Z",
+  "manifest_sha256": "c02ce20beb826e706b2b33c18668b6975c7f6e723f9ba8dc68eba93123f5e55a",
+  "query": "from:BobLoukas since:2025-12-10 until:2025-12-15"
+ }
+}

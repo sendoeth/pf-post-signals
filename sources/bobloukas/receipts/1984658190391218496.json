@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:13.439Z",
+ "cashtags": [],
+ "conversationId": "1984636554053369878",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1984658190391218496",
+ "kind": "reply",
+ "metrics": {
+  "likes": 416,
+  "replies": 23,
+  "reposts": 6,
+  "views": 24147
+ },
+ "postedAt": "2025-11-01T16:26:00.000Z",
+ "replyTo": {
+  "postId": "1984636554053369878",
+  "handle": "Tyler_Did_It"
+ },
+ "text": "If these are the horseman, pack it up.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1984658190391218496",
+ "harness": {
+  "run": "2026-10-31T03-10-01Z",
+  "manifest_sha256": "3844915c6905bd8c09b21e28b77ba45472ed71277b155e9aca6ad52457c02037",
+  "query": "from:BobLoukas since:2025-10-31 until:2025-11-10"
+ }
+}

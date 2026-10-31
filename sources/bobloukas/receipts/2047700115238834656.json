@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:10.829Z",
+ "cashtags": [],
+ "conversationId": "2047660759698514164",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2047700115238834656",
+ "kind": "reply",
+ "metrics": {
+  "likes": 6,
+  "replies": 1,
+  "reposts": 0,
+  "views": 697
+ },
+ "postedAt": "2026-04-24T15:32:06.000Z",
+ "replyTo": {
+  "postId": "2047681773232865501",
+  "handle": "DidntsayT"
+ },
+ "text": "\"eat the rich\"",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2047700115238834656",
+ "harness": {
+  "run": "2026-10-31T03-47-04Z",
+  "manifest_sha256": "5336994f71bbe4f700cf60362be35add5dbd82d5eddf921d84495b46cbd2c660",
+  "query": "from:BobLoukas since:2026-04-24 until:2026-04-29"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:32.382Z",
+ "cashtags": [],
+ "conversationId": "2002068715660271820",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2002072617696833855",
+ "kind": "reply",
+ "metrics": {
+  "likes": 114,
+  "replies": 10,
+  "reposts": 0,
+  "views": 10976
+ },
+ "postedAt": "2025-12-19T17:44:43.000Z",
+ "replyTo": {
+  "postId": "2002068715660271820",
+  "handle": "TXMCtrades"
+ },
+ "text": "Crypto been in denial about this for years.  They want/need a permissioned chain and one they own.  \n\nYou won’t even been able to bridge assets off.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2002072617696833855",
+ "harness": {
+  "run": "2026-10-31T03-28-29Z",
+  "manifest_sha256": "6b809f4562719e0f7de013cb2199555f0361999760d9b9ef86799734f195de03",
+  "query": "from:BobLoukas since:2025-12-15 until:2025-12-20"
+ }
+}

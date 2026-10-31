@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:46:36.872Z",
+ "cashtags": [],
+ "conversationId": "2044889640134418921",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2044924410033733973",
+ "kind": "reply",
+ "metrics": {
+  "likes": 1,
+  "replies": 1,
+  "reposts": 0,
+  "views": 705
+ },
+ "postedAt": "2026-04-16T23:42:26.000Z",
+ "replyTo": {
+  "postId": "2044922094442414387",
+  "handle": "raver_science"
+ },
+ "text": "a screen",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2044924410033733973",
+ "harness": {
+  "run": "2026-10-31T03-46-34Z",
+  "manifest_sha256": "c27074f7b8d8c85ca6aaed1a98de9a36b44ad09e077f54e4c1ddc2264c260dfe",
+  "query": "from:BobLoukas since:2026-04-14 until:2026-04-19"
+ }
+}

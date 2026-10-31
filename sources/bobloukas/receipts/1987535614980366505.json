@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:03.697Z",
+ "cashtags": [],
+ "conversationId": "1987219179565400110",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1987535614980366505",
+ "kind": "reply",
+ "metrics": {
+  "likes": 27,
+  "replies": 1,
+  "reposts": 1,
+  "views": 3518
+ },
+ "postedAt": "2025-11-09T14:59:51.000Z",
+ "replyTo": {
+  "postId": "1987481165712986361",
+  "handle": "bears_are_broke"
+ },
+ "text": "Plenty of technical references going to the 1930's.  \n\nJM Hurst - 1967 - the definition of a Cycle. “It is the troughs, not the peaks, that provide a dependable measure of cycle periodicity.”\n\n\"market peaks are often variable, irregular.  \nBut troughs—lows—tend to align more reliably across multiple nested cycles.\"",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1987535614980366505",
+ "harness": {
+  "run": "2026-10-31T03-10-01Z",
+  "manifest_sha256": "3844915c6905bd8c09b21e28b77ba45472ed71277b155e9aca6ad52457c02037",
+  "query": "from:BobLoukas since:2025-10-31 until:2025-11-10"
+ }
+}

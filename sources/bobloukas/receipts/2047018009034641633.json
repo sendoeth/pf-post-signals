@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:00.735Z",
+ "cashtags": [],
+ "conversationId": "2046984846489043072",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2047018009034641633",
+ "kind": "reply",
+ "metrics": {
+  "likes": 5,
+  "replies": 1,
+  "reposts": 1,
+  "views": 1916
+ },
+ "postedAt": "2026-04-22T18:21:39.000Z",
+ "replyTo": {
+  "postId": "2046994876940648870",
+  "handle": "hindsightoshi"
+ },
+ "text": "what are these crypto equities you speak of?",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2047018009034641633",
+ "harness": {
+  "run": "2026-10-31T03-46-54Z",
+  "manifest_sha256": "d66bf07857f47292cdfd802d2817253a59a804ad438a1e7c7e149ca9c0a4fd10",
+  "query": "from:BobLoukas since:2026-04-19 until:2026-04-24"
+ }
+}

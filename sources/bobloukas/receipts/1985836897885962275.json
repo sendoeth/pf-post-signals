@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:09.809Z",
+ "cashtags": [],
+ "conversationId": "1985757100106989816",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1985836897885962275",
+ "kind": "reply",
+ "metrics": {
+  "likes": 277,
+  "replies": 8,
+  "reposts": 2,
+  "views": 14944
+ },
+ "postedAt": "2025-11-04T22:29:46.000Z",
+ "replyTo": {
+  "postId": "1985757100106989816",
+  "handle": "BilldeBlasio"
+ },
+ "text": "Yeah because Eight years of running the city into the ground wasn’t enough !",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1985836897885962275",
+ "harness": {
+  "run": "2026-10-31T03-10-01Z",
+  "manifest_sha256": "3844915c6905bd8c09b21e28b77ba45472ed71277b155e9aca6ad52457c02037",
+  "query": "from:BobLoukas since:2025-10-31 until:2025-11-10"
+ }
+}

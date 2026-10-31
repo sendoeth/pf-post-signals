@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:27.305Z",
+ "cashtags": [],
+ "conversationId": "1989058521447457024",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1989087368197083351",
+ "kind": "reply",
+ "metrics": {
+  "likes": 2,
+  "replies": 1,
+  "reposts": 0,
+  "views": 963
+ },
+ "postedAt": "2025-11-13T21:45:58.000Z",
+ "replyTo": {
+  "postId": "1989085668363161740",
+  "handle": "DiscoverCrypto1"
+ },
+ "text": "I mean, I'm on Nonce 2676 and that's only one of many active accounts.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1989087368197083351",
+ "harness": {
+  "run": "2026-10-31T03-10-22Z",
+  "manifest_sha256": "8219512b7c4ed9295ff50779c6865723e1b25c0ba9424dff8dd584d91eeef4c2",
+  "query": "from:BobLoukas since:2025-11-10 until:2025-11-15"
+ }
+}

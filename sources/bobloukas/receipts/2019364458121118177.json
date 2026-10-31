@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:51.509Z",
+ "cashtags": [],
+ "conversationId": "2019121730124443679",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2019364458121118177",
+ "kind": "repost",
+ "metrics": {
+  "likes": 1975,
+  "replies": 147,
+  "reposts": 181,
+  "views": 145216
+ },
+ "postedAt": "2026-02-05T10:56:19.000Z",
+ "replyTo": null,
+ "text": "Every cycle feels different, but it never is.\n\nYou make real money on paper and think it’s permanent. Then you round-trip it and swear you’re done forever.\n\nYou then miss the early part of the next cycle because of PTSD. You buy back some only after it doubles “just to be safe.”  You get fully loaded by the mid-cycle, the tingly feeling is back. You promise yourself this time you’ve learned a thing or two and will be smart and reasonable this time.\n\nThen the gains start and you take the bait, you get emotional, fall in love, and go searching for narratives to latch too. The hucksters are back too in full force selling you a dream, you ignore their last cycle grift, and fall for their new shiny paper. A faster path to your dream. You start regurgitating all their talking points, welcome to the club.\n\nYou start adding leverage, this is easy, you’re going to be super-yacht rich. You buy garbage tokens and projects, telling yourself they figured out some money glitch.  It’s a whole new paradigm. You start to project where you’re going to be just one year out at this rate and say that’s too long, let’s go harder. And then the rugs begin to get pulled.\n\nYou’re quickly down 50% on a leveraged/speculative pile of poop, that you fear selling at such a “discount”. What about the dream. Paralysis becomes so great you can’t even action an exit over your better thoughts.\n\nAnd not before long, you’re back to the beginning.\n-----------------------------\n\nI know this is only a subset of people entirely, more so in crypto, but I think we all to some level or extent, fall for the above. I do too! \nSo not intended to throw shade on people (except the hucksters), but a reminder that a balance between risk and preservation is paramount, but more importantly when to be balanced between the two at various stages of the cycle. Knowing where we are in the cycle requires being as unemotional and agnostic to your positions as possible.  Once money becomes so personal, rational judgement is lost.\n\nAs for where we are now. Stocks haven’t broken down broadly, although the cracks are forming. We’re in a bull trend still, but also in that “be mindful” stage, and dips are probably not opportunities anymore. \n\nFor crypto, the carnage is huge, but can get so much worse. We’re way past the get out stage, but that doesn’t mean you can’t get out to live another day. If you’re sitting on stuff with paralysis, free yourself of this burden and dump it.  A worthless token isn’t cheap because it's down 60%.\nThis does not apply to spot bitcoin, you’re not selling that 44% off highs, even expecting much deeper levels to come in 2026.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2019364458121118177",
+ "harness": {
+  "run": "2026-10-31T03-29-44Z",
+  "manifest_sha256": "aaa8d4e197f46be6cccda8b30abf99f805399d35c1bf30c84b78a3f1a95bcc12",
+  "query": "from:BobLoukas since:2026-02-03 until:2026-02-08"
+ }
+}

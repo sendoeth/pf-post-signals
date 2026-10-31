@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:34.214Z",
+ "cashtags": [],
+ "conversationId": "2001287319005831474",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2001287319005831474",
+ "kind": "post",
+ "metrics": {
+  "likes": 815,
+  "replies": 58,
+  "reposts": 30,
+  "views": 52726
+ },
+ "postedAt": "2025-12-17T13:44:13.000Z",
+ "replyTo": null,
+ "text": "Precious metal holders.  The temptation to sell is strong.  Every time would have left you locked out. \n\nIt’s impossible to time dips, especially in a raging bull market like this. Stay the course.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2001287319005831474",
+ "harness": {
+  "run": "2026-10-31T03-28-29Z",
+  "manifest_sha256": "6b809f4562719e0f7de013cb2199555f0361999760d9b9ef86799734f195de03",
+  "query": "from:BobLoukas since:2025-12-15 until:2025-12-20"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:03:38.671Z",
+ "cashtags": [],
+ "conversationId": "2067650440645206159",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2067653304956375083",
+ "kind": "reply",
+ "metrics": {
+  "likes": 89,
+  "replies": 6,
+  "reposts": 0,
+  "views": 4435
+ },
+ "postedAt": "2026-06-18T16:58:57.000Z",
+ "replyTo": {
+  "postId": "2067651729613636044",
+  "handle": "Fruuho"
+ },
+ "text": "No, it's a ponzi.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2067653304956375083",
+ "harness": {
+  "run": "2026-10-31T04-03-34Z",
+  "manifest_sha256": "80481ec9abd4e75a790a038fdafcf2407911298e9bbac3a7dd1f344521f8274f",
+  "query": "from:BobLoukas since:2026-06-18 until:2026-06-23"
+ }
+}

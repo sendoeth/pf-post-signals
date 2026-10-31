@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:18.237Z",
+ "cashtags": [],
+ "conversationId": "2052466040030847257",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2052466040030847257",
+ "kind": "post",
+ "metrics": {
+  "likes": 1204,
+  "replies": 75,
+  "reposts": 61,
+  "views": 100851
+ },
+ "postedAt": "2026-05-07T19:10:11.000Z",
+ "replyTo": null,
+ "text": "If more people put the same amount of energy into building their income as they do trying to trade their way to wealth, they would probably reach their financial goals so much faster, and with a much higher likelihood of success. \n\nNot to mention becoming far more marketable, self-sufficient, and scalable along the way.\n\nEventually, most people find out the hard way when they don’t strike it, that they need something real and consistent to fall back on or more importantly, to make consistent progress.  \nThe market isn’t handing out free lunches. Most of the stories that make it seem otherwise are closer to infomercials than reality for all.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2052466040030847257",
+ "harness": {
+  "run": "2026-10-31T03-47-15Z",
+  "manifest_sha256": "d829a2466fa415a7cdaeaff4a6cfdcca76ad661f2ee8e9461b5c6c66af591c27",
+  "query": "from:BobLoukas since:2026-04-29 until:2026-05-09"
+ }
+}

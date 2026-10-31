@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:24.901Z",
+ "cashtags": [],
+ "conversationId": "2029218643964555284",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2029361623073161698",
+ "kind": "reply",
+ "metrics": {
+  "likes": 6,
+  "replies": 1,
+  "reposts": 0,
+  "views": 933
+ },
+ "postedAt": "2026-03-05T01:01:29.000Z",
+ "replyTo": {
+  "postId": "2029272786359992473",
+  "handle": "Sykodelic_"
+ },
+ "text": "You’re another one trying the troll engagement track I’ve noticed.   Amateur hack.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2029361623073161698",
+ "harness": {
+  "run": "2026-10-31T03-30-20Z",
+  "manifest_sha256": "3d96553ad1872d40978ec78e357b1cef213e2cb79cabbf5b401432e513cb4d1c",
+  "query": "from:BobLoukas since:2026-02-28 until:2026-03-10"
+ }
+}

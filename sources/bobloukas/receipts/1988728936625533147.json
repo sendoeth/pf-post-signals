@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:27.306Z",
+ "cashtags": [],
+ "conversationId": "1988650008284147994",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1988728936625533147",
+ "kind": "reply",
+ "metrics": {
+  "likes": 427,
+  "replies": 11,
+  "reposts": 8,
+  "views": 37961
+ },
+ "postedAt": "2025-11-12T22:01:41.000Z",
+ "replyTo": {
+  "postId": "1988650008284147994",
+  "handle": "BobLoukas"
+ },
+ "text": "Haven't seen a \"Standard Chartered Bank sees Bitcoin at $723,000 by year end tweet\".  So we can 🙏 this is the sentiment bottom.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1988728936625533147",
+ "harness": {
+  "run": "2026-10-31T03-10-22Z",
+  "manifest_sha256": "8219512b7c4ed9295ff50779c6865723e1b25c0ba9424dff8dd584d91eeef4c2",
+  "query": "from:BobLoukas since:2025-11-10 until:2025-11-15"
+ }
+}

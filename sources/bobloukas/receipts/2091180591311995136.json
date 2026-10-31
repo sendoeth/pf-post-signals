@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:20:01.895Z",
+ "cashtags": [],
+ "conversationId": "2091161059801391206",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2091180591311995136",
+ "kind": "reply",
+ "metrics": {
+  "likes": 68,
+  "replies": 4,
+  "reposts": 0,
+  "views": 5625
+ },
+ "postedAt": "2026-08-22T15:07:59.000Z",
+ "replyTo": {
+  "postId": "2091177361865654553",
+  "handle": "rollando_magic"
+ },
+ "text": "Sorry to disappoint you. We loaded up on spot low $60's and also just closed a long swing trade from $64k - $78k.  \n\nGet http://Bitcoin.live membership if you want to stay informed.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2091180591311995136",
+ "harness": {
+  "run": "2026-10-31T04-19-58Z",
+  "manifest_sha256": "524676418c0f2612e016569f937d101eda0cc79472efa329bd665434f243e819",
+  "query": "from:BobLoukas since:2026-08-17 until:2026-08-27"
+ }
+}

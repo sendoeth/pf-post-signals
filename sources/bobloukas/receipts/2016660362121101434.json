@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:12.214Z",
+ "cashtags": [],
+ "conversationId": "2016655906696532303",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2016660362121101434",
+ "kind": "reply",
+ "metrics": {
+  "likes": 56,
+  "replies": 3,
+  "reposts": 0,
+  "views": 5964
+ },
+ "postedAt": "2026-01-28T23:51:12.000Z",
+ "replyTo": {
+  "postId": "2016659806682018247",
+  "handle": "0xPajke"
+ },
+ "text": "Yes and no. \n\nFrom this tip to the bull market tip, yes.  But you would expect a sizable mid cycle correction. From those lows to next tip, good meat.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2016660362121101434",
+ "harness": {
+  "run": "2026-10-31T03-29-09Z",
+  "manifest_sha256": "12b6383eb0d3e548fb1ff7b7fa27ac18c6544170639bb262e25d9278c33ad772",
+  "query": "from:BobLoukas since:2026-01-19 until:2026-01-29"
+ }
+}

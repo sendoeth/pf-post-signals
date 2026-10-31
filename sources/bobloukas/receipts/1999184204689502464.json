@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:24.289Z",
+ "cashtags": [],
+ "conversationId": "1999179540506014087",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1999184204689502464",
+ "kind": "reply",
+ "metrics": {
+  "likes": 11,
+  "replies": 1,
+  "reposts": 0,
+  "views": 4619
+ },
+ "postedAt": "2025-12-11T18:27:12.000Z",
+ "replyTo": {
+  "postId": "1999183755458629935",
+  "handle": "TechCharts"
+ },
+ "text": "Thanks.\n\nIt's difficult on something like Silver when it makes moves like this.  So much of a giveback to ride the trend.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1999184204689502464",
+ "harness": {
+  "run": "2026-10-31T03-28-21Z",
+  "manifest_sha256": "c02ce20beb826e706b2b33c18668b6975c7f6e723f9ba8dc68eba93123f5e55a",
+  "query": "from:BobLoukas since:2025-12-10 until:2025-12-15"
+ }
+}

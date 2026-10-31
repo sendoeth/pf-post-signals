@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:39.632Z",
+ "cashtags": [],
+ "conversationId": "2017314181200929146",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2017315582803136919",
+ "kind": "repost",
+ "metrics": {
+  "likes": 613,
+  "replies": 28,
+  "reposts": 53,
+  "views": 96411
+ },
+ "postedAt": "2026-01-30T19:14:49.000Z",
+ "replyTo": null,
+ "text": "The parabolic advance on #GOLD (monthly scale charts) is not similar to 2002-2011 period but more resembling the 1970s. \n\nSo if you look at it with that perspective, there can be wide swings along the way.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2017315582803136919",
+ "harness": {
+  "run": "2026-10-31T03-29-33Z",
+  "manifest_sha256": "14f0ea84840c9dca9fe00212e469c77a2ebdd67bd750609b8a6bddcb4356ba1c",
+  "query": "from:BobLoukas since:2026-01-29 until:2026-02-03"
+ }
+}

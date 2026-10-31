@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:22.507Z",
+ "cashtags": [],
+ "conversationId": "2049565284768317760",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2049570192242401717",
+ "kind": "reply",
+ "metrics": {
+  "likes": 5,
+  "replies": 3,
+  "reposts": 0,
+  "views": 2598
+ },
+ "postedAt": "2026-04-29T19:23:07.000Z",
+ "replyTo": {
+  "postId": "2049570013141492205",
+  "handle": "oi_martino"
+ },
+ "text": "Just another vibration.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2049570192242401717",
+ "harness": {
+  "run": "2026-10-31T03-47-15Z",
+  "manifest_sha256": "d829a2466fa415a7cdaeaff4a6cfdcca76ad661f2ee8e9461b5c6c66af591c27",
+  "query": "from:BobLoukas since:2026-04-29 until:2026-05-09"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:03:36.502Z",
+ "cashtags": [],
+ "conversationId": "2068353512405164542",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2068504836773994559",
+ "kind": "reply",
+ "metrics": {
+  "likes": 2,
+  "replies": 2,
+  "reposts": 0,
+  "views": 877
+ },
+ "postedAt": "2026-06-21T01:22:38.000Z",
+ "replyTo": {
+  "postId": "2068479597142835640",
+  "handle": "markerogan"
+ },
+ "text": "Firstly, you don't read well, do you.  Read the first line.\n\nSecond, it shows a near perfect top and coming low.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2068504836773994559",
+ "harness": {
+  "run": "2026-10-31T04-03-34Z",
+  "manifest_sha256": "80481ec9abd4e75a790a038fdafcf2407911298e9bbac3a7dd1f344521f8274f",
+  "query": "from:BobLoukas since:2026-06-18 until:2026-06-23"
+ }
+}

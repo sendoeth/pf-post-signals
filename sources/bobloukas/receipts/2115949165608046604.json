@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:36:42.498Z",
+ "cashtags": [],
+ "conversationId": "2115944292451577867",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2115949165608046604",
+ "kind": "reply",
+ "metrics": {
+  "likes": 1,
+  "replies": 1,
+  "reposts": 0,
+  "views": 822
+ },
+ "postedAt": "2026-10-29T23:29:28.000Z",
+ "replyTo": {
+  "postId": "2115948575897370768",
+  "handle": "fibmast0r"
+ },
+ "text": "This ain’t a wrench attack.  Code doesn’t discriminate or have limits.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2115949165608046604",
+ "harness": {
+  "run": "2026-10-31T04-36-38Z",
+  "manifest_sha256": "4ed1a5ced8c750ca12e8ad455fcb0440edc42dc649d9b9187902e0982ccc36b8",
+  "query": "from:BobLoukas since:2026-10-26 until:2026-11-01"
+ }
+}

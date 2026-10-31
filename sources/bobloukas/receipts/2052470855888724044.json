@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:18.235Z",
+ "cashtags": [],
+ "conversationId": "2052466040030847257",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2052470855888724044",
+ "kind": "reply",
+ "metrics": {
+  "likes": 13,
+  "replies": 0,
+  "reposts": 1,
+  "views": 1573
+ },
+ "postedAt": "2026-05-07T19:29:19.000Z",
+ "replyTo": {
+  "postId": "2052469338087796798",
+  "handle": "ChrisJorgo"
+ },
+ "text": "I didn’t say avoid the market. \n\nAnd You don’t read the stats.  95% of people who try to be super active with their money lose.  If you’re in the 5% kudos.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2052470855888724044",
+ "harness": {
+  "run": "2026-10-31T03-47-15Z",
+  "manifest_sha256": "d829a2466fa415a7cdaeaff4a6cfdcca76ad661f2ee8e9461b5c6c66af591c27",
+  "query": "from:BobLoukas since:2026-04-29 until:2026-05-09"
+ }
+}

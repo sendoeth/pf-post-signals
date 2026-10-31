@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:30.955Z",
+ "cashtags": [],
+ "conversationId": "1993064666810270183",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1993065413312475257",
+ "kind": "reply",
+ "metrics": {
+  "likes": 9,
+  "replies": 1,
+  "reposts": 0,
+  "views": 6532
+ },
+ "postedAt": "2025-11-24T21:13:18.000Z",
+ "replyTo": {
+  "postId": "1993064666810270183",
+  "handle": "intangiblecoins"
+ },
+ "text": "He not wrong",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1993065413312475257",
+ "harness": {
+  "run": "2026-10-31T03-11-28Z",
+  "manifest_sha256": "5b4f94307a59f6b36bf90ded7f7487cb77a37651415230998ae74712e788ac95",
+  "query": "from:BobLoukas since:2025-11-20 until:2025-11-25"
+ }
+}

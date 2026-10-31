@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:04.926Z",
+ "cashtags": [],
+ "conversationId": "2021746323838423448",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2021906602387980690",
+ "kind": "reply",
+ "metrics": {
+  "likes": 5,
+  "replies": 3,
+  "reposts": 0,
+  "views": 1735
+ },
+ "postedAt": "2026-02-12T11:17:53.000Z",
+ "replyTo": {
+  "postId": "2021826459753390158",
+  "handle": "maximalismo_btc"
+ },
+ "text": "Gold doesn’t pretend to be anything more than it is.  Or promise any new future.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2021906602387980690",
+ "harness": {
+  "run": "2026-10-31T03-29-58Z",
+  "manifest_sha256": "046caa1b799b16c1e3d97c7b87fc3565fd829c623a7d127628756b707828f2b0",
+  "query": "from:BobLoukas since:2026-02-08 until:2026-02-18"
+ }
+}

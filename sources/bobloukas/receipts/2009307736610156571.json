@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:51.696Z",
+ "cashtags": [],
+ "conversationId": "2009291616217903397",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2009307736610156571",
+ "kind": "reply",
+ "metrics": {
+  "likes": 11,
+  "replies": 1,
+  "reposts": 0,
+  "views": 1501
+ },
+ "postedAt": "2026-01-08T16:54:30.000Z",
+ "replyTo": {
+  "postId": "2009307282216042739",
+  "handle": "polish__crypto"
+ },
+ "text": "for bitcoin holders it is.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2009307736610156571",
+ "harness": {
+  "run": "2026-10-31T03-28-48Z",
+  "manifest_sha256": "15f3f120834a9e146f93308ba01d65815256ffe13b590dc9e35f844e48ccf261",
+  "query": "from:BobLoukas since:2025-12-30 until:2026-01-09"
+ }
+}

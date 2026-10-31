@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:09.809Z",
+ "cashtags": [],
+ "conversationId": "1986180722936164681",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1986180722936164681",
+ "kind": "post",
+ "metrics": {
+  "likes": 2192,
+  "replies": 99,
+  "reposts": 118,
+  "views": 251484
+ },
+ "postedAt": "2025-11-05T21:16:00.000Z",
+ "replyTo": null,
+ "text": "For Crypto, this was basically a retest of the 10/10 panic, but over a more deliberate period.  Sentiment is beyond wiped clean.\n\nWe've hit the 50wma and the weekly cycle should start fresh.  Any good upside price separation from the lows should put a line in the bull/bear market narrative at the recent lows.  Bitcoin would have no business revisiting it later this month or in Dec.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1986180722936164681",
+ "harness": {
+  "run": "2026-10-31T03-10-01Z",
+  "manifest_sha256": "3844915c6905bd8c09b21e28b77ba45472ed71277b155e9aca6ad52457c02037",
+  "query": "from:BobLoukas since:2025-10-31 until:2025-11-10"
+ }
+}

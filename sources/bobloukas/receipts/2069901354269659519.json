@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:03:48.265Z",
+ "cashtags": [],
+ "conversationId": "2069815748990484728",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2069901354269659519",
+ "kind": "reply",
+ "metrics": {
+  "likes": 5,
+  "replies": 1,
+  "reposts": 0,
+  "views": 1245
+ },
+ "postedAt": "2026-06-24T21:51:54.000Z",
+ "replyTo": {
+  "postId": "2069897955859980304",
+  "handle": "MSTRCAT_"
+ },
+ "text": "Look up how much he cash in options in mstr.  Took in cash, not stock.  Something like $400m.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2069901354269659519",
+ "harness": {
+  "run": "2026-10-31T04-03-43Z",
+  "manifest_sha256": "151afdee8bedac9fee9cf5b5571f2bc7c3f8925a0be613401ca72cfa26688b6d",
+  "query": "from:BobLoukas since:2026-06-23 until:2026-06-28"
+ }
+}

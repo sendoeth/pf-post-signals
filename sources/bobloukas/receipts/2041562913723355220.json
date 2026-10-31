@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:45.917Z",
+ "cashtags": [],
+ "conversationId": "2041538463976042717",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2041562913723355220",
+ "kind": "reply",
+ "metrics": {
+  "likes": 4,
+  "replies": 3,
+  "reposts": 0,
+  "views": 891
+ },
+ "postedAt": "2026-04-07T17:05:03.000Z",
+ "replyTo": {
+  "postId": "2041556167059493098",
+  "handle": "CriptoWolverine"
+ },
+ "text": "I was really trying to squeeze in Cadiz.  Just not enough days.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2041562913723355220",
+ "harness": {
+  "run": "2026-10-31T03-30-43Z",
+  "manifest_sha256": "81f41d9816c6b1970d0e17601d6ddbc99f0a4d686b7b2547093e028d9cf765b4",
+  "query": "from:BobLoukas since:2026-03-30 until:2026-04-09"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:14.212Z",
+ "cashtags": [],
+ "conversationId": "2015139349847834674",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2015161634637897880",
+ "kind": "reply",
+ "metrics": {
+  "likes": 131,
+  "replies": 9,
+  "reposts": 0,
+  "views": 4689
+ },
+ "postedAt": "2026-01-24T20:35:48.000Z",
+ "replyTo": {
+  "postId": "2015145922133643418",
+  "handle": "sovereignsats"
+ },
+ "text": "Oh no.  Not the traffic.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2015161634637897880",
+ "harness": {
+  "run": "2026-10-31T03-29-09Z",
+  "manifest_sha256": "12b6383eb0d3e548fb1ff7b7fa27ac18c6544170639bb262e25d9278c33ad772",
+  "query": "from:BobLoukas since:2026-01-19 until:2026-01-29"
+ }
+}

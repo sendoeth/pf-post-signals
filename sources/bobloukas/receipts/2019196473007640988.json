@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:53.383Z",
+ "cashtags": [],
+ "conversationId": "2019121730124443679",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2019196473007640988",
+ "kind": "reply",
+ "metrics": {
+  "likes": 29,
+  "replies": 3,
+  "reposts": 0,
+  "views": 2427
+ },
+ "postedAt": "2026-02-04T23:48:48.000Z",
+ "replyTo": {
+  "postId": "2019132854492623311",
+  "handle": "Crypto____Bull"
+ },
+ "text": "Because Bitcoin is special and expected to do very well over time. Unlike the rest.   There isn’t enough downside potential to give up your Bitcoin now.  \n\nDifferent if you’re trying to actively trade it.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2019196473007640988",
+ "harness": {
+  "run": "2026-10-31T03-29-44Z",
+  "manifest_sha256": "aaa8d4e197f46be6cccda8b30abf99f805399d35c1bf30c84b78a3f1a95bcc12",
+  "query": "from:BobLoukas since:2026-02-03 until:2026-02-08"
+ }
+}

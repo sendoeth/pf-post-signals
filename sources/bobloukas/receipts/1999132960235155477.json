@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:26.896Z",
+ "cashtags": [],
+ "conversationId": "1999132960235155477",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1999132960235155477",
+ "kind": "quote",
+ "metrics": {
+  "likes": 563,
+  "replies": 53,
+  "reposts": 52,
+  "views": 77356
+ },
+ "postedAt": "2025-12-11T15:03:34.000Z",
+ "replyTo": null,
+ "text": "Copper is in new price discovery mode. With inflation elevated and higher demand in an AI/data center world, makes sense we see a drive to $10 copper.  Supply constraints.\n\nI think a small allocation to copper miners in long term accounts is a good strategy.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1999132960235155477",
+ "harness": {
+  "run": "2026-10-31T03-28-21Z",
+  "manifest_sha256": "c02ce20beb826e706b2b33c18668b6975c7f6e723f9ba8dc68eba93123f5e55a",
+  "query": "from:BobLoukas since:2025-12-10 until:2025-12-15"
+ }
+}

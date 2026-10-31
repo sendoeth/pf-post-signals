@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:30.956Z",
+ "cashtags": [],
+ "conversationId": "1992280862252212723",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1992410054809800817",
+ "kind": "reply",
+ "metrics": {
+  "likes": 18,
+  "replies": 0,
+  "reposts": 0,
+  "views": 2551
+ },
+ "postedAt": "2025-11-23T01:49:08.000Z",
+ "replyTo": {
+  "postId": "1992398208845418916",
+  "handle": "AliQTweets"
+ },
+ "text": "Think lower.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1992410054809800817",
+ "harness": {
+  "run": "2026-10-31T03-11-28Z",
+  "manifest_sha256": "5b4f94307a59f6b36bf90ded7f7487cb77a37651415230998ae74712e788ac95",
+  "query": "from:BobLoukas since:2025-11-20 until:2025-11-25"
+ }
+}

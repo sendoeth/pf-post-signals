@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:51.417Z",
+ "cashtags": [],
+ "conversationId": "1998434220868247562",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1998434220868247562",
+ "kind": "quote",
+ "metrics": {
+  "likes": 1029,
+  "replies": 82,
+  "reposts": 93,
+  "views": 125553
+ },
+ "postedAt": "2025-12-09T16:47:02.000Z",
+ "replyTo": null,
+ "text": "$60 on Silver, trade of the year, easily.  In the parabolic phase and will very likely top by end of year or Jan.  Could see $80.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1998434220868247562",
+ "harness": {
+  "run": "2026-10-31T03-11-49Z",
+  "manifest_sha256": "44284fd2b0f53f602994edeb448d034ad7c1447b6074bcf56e01e43a4ce3849c",
+  "query": "from:BobLoukas since:2025-11-30 until:2025-12-10"
+ }
+}

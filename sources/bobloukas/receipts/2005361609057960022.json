@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:39.717Z",
+ "cashtags": [],
+ "conversationId": "2005272369791955273",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2005361609057960022",
+ "kind": "reply",
+ "metrics": {
+  "likes": 326,
+  "replies": 43,
+  "reposts": 0,
+  "views": 45880
+ },
+ "postedAt": "2025-12-28T19:34:00.000Z",
+ "replyTo": {
+  "postId": "2005272369791955273",
+  "handle": "saylor"
+ },
+ "text": "And people in comments think this is somehow bullish.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2005361609057960022",
+ "harness": {
+  "run": "2026-10-31T03-28-37Z",
+  "manifest_sha256": "9d13b999b16b71141a9123223a30beac3017eedee0e627ab1a0efb00c27a8930",
+  "query": "from:BobLoukas since:2025-12-20 until:2025-12-30"
+ }
+}

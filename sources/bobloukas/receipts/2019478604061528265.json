@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:49.678Z",
+ "cashtags": [],
+ "conversationId": "2019477329299272116",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2019478604061528265",
+ "kind": "reply",
+ "metrics": {
+  "likes": 252,
+  "replies": 7,
+  "reposts": 1,
+  "views": 12545
+ },
+ "postedAt": "2026-02-05T18:29:53.000Z",
+ "replyTo": {
+  "postId": "2019477329299272116",
+  "handle": "dollarsanddata"
+ },
+ "text": "That's the greatest risk now.  Stocks yet to see a meaningful correction.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2019478604061528265",
+ "harness": {
+  "run": "2026-10-31T03-29-44Z",
+  "manifest_sha256": "aaa8d4e197f46be6cccda8b30abf99f805399d35c1bf30c84b78a3f1a95bcc12",
+  "query": "from:BobLoukas since:2026-02-03 until:2026-02-08"
+ }
+}

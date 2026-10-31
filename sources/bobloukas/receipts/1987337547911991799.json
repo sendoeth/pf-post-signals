@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:03.697Z",
+ "cashtags": [],
+ "conversationId": "1987219179565400110",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1987337547911991799",
+ "kind": "repost",
+ "metrics": {
+  "likes": 1697,
+  "replies": 152,
+  "reposts": 120,
+  "views": 389749
+ },
+ "postedAt": "2025-11-09T01:52:49.000Z",
+ "replyTo": null,
+ "text": "The word cycle is thrown around carelessly a lot or co-opted to fit narratives. \n\nBut the technical definition is Cycles are always measured from low to low. That’s the only count that is relatively consistent, the duration between one low and the next defines the cycle’s timeframe. \n\nThe top of the cycle is the wildcard, and will change from cycle to cycle.  It’s not a consistent duration because it’s dictated by the broader trend. In raging secular bull markets, tops form late in lower timeframe cycles to allow price to stretch upwards, deep into the cycle. In bear markets, they show up early, giving the downtrend time to dig in and extended lower. \n\nIn bull phases, a common theme is price rising about three-quarters of the time, one-quarter down. Bitcoin, still in a secular bull market, has followed that pattern fairly well across several cycles so far.  Mature assets like gold have too, but they also have seen periods of only 1/4 up, 3/4 down, defined as secular bear phases.\n\nWhen people say the Bitcoin “4-year cycle” is dead, what they’re really saying is it’s stupid to expect every peak to arrive at the same interval from the last low, every 4 years.   And they’re 💯 right, the next top could easily form later than in the last! And in the next cycle, much sooner potentially. But pretending the cycle structure can’t repeat again in this one, is equally foolish.\n\nSo Cycles bring the most clarity when identifying bear market lows. On shorter timeframes (weekly or daily Cycles), although noisier, they also help time intermediate entries when the higher-timeframe trend is up.\n\nLike any tool, cycles can provide a great edge, but nothing (should go without saying) close to certainty.  They can also give many false signals in directionless markets, because not every cycle will have a clean sine wave structure.  And beyond that, there’s always discretion involved with identifying where we stand in a cycle and when key turning points (trough-peak-trough) have occurred. There are tools (like TA and sentiment) that help with this, but confirmation often has to come after the fact, because one cannot discern easily between a normal dip in an uptrend vs a dip that begins the bear (declining) phase.  \n\nOutside of the rare euphoric blow-offs, which can be easier to front-run, nailing the exact top is never easy, and in some ways, not the intent. Cycle analysis is trend-following by nature, and waiting for top confirmation means surrendering a bit (or a lot) of upside. The strategy attempts to get a good head start (more predictable lows) and then capture the meat of the upside move.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1987337547911991799",
+ "harness": {
+  "run": "2026-10-31T03-10-01Z",
+  "manifest_sha256": "3844915c6905bd8c09b21e28b77ba45472ed71277b155e9aca6ad52457c02037",
+  "query": "from:BobLoukas since:2025-10-31 until:2025-11-10"
+ }
+}

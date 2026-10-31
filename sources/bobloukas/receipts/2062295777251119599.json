@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:48:03.670Z",
+ "cashtags": [],
+ "conversationId": "2062295435675385986",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2062295777251119599",
+ "kind": "reply",
+ "metrics": {
+  "likes": 21,
+  "replies": 2,
+  "reposts": 0,
+  "views": 5567
+ },
+ "postedAt": "2026-06-03T22:10:03.000Z",
+ "replyTo": {
+  "postId": "2062295435675385986",
+  "handle": "Labochain"
+ },
+ "text": "They never fail.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2062295777251119599",
+ "harness": {
+  "run": "2026-10-31T03-47-55Z",
+  "manifest_sha256": "76ee69624ea2b9328b3f138dbfe04636ffc970ec1aa15cc43bb66d8325d64d30",
+  "query": "from:BobLoukas since:2026-06-03 until:2026-06-08"
+ }
+}

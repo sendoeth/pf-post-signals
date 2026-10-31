@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:22.506Z",
+ "cashtags": [],
+ "conversationId": "2049935733146653021",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2049936452348170318",
+ "kind": "reply",
+ "metrics": {
+  "likes": 16,
+  "replies": 1,
+  "reposts": 0,
+  "views": 3565
+ },
+ "postedAt": "2026-04-30T19:38:30.000Z",
+ "replyTo": {
+  "postId": "2049935733146653021",
+  "handle": "Ars0nic"
+ },
+ "text": "Is that a hardware wallet loaded with HEX?",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2049936452348170318",
+ "harness": {
+  "run": "2026-10-31T03-47-15Z",
+  "manifest_sha256": "d829a2466fa415a7cdaeaff4a6cfdcca76ad661f2ee8e9461b5c6c66af591c27",
+  "query": "from:BobLoukas since:2026-04-29 until:2026-05-09"
+ }
+}

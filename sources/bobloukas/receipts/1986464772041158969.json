@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:05.727Z",
+ "cashtags": [],
+ "conversationId": "1986462949695762627",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1986464772041158969",
+ "kind": "reply",
+ "metrics": {
+  "likes": 18,
+  "replies": 1,
+  "reposts": 0,
+  "views": 3672
+ },
+ "postedAt": "2025-11-06T16:04:43.000Z",
+ "replyTo": {
+  "postId": "1986463437187391943",
+  "handle": "0xgoldenhat"
+ },
+ "text": "I was buying miners in 2022.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1986464772041158969",
+ "harness": {
+  "run": "2026-10-31T03-10-01Z",
+  "manifest_sha256": "3844915c6905bd8c09b21e28b77ba45472ed71277b155e9aca6ad52457c02037",
+  "query": "from:BobLoukas since:2025-10-31 until:2025-11-10"
+ }
+}

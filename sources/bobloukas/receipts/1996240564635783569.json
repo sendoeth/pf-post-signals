@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:55.715Z",
+ "cashtags": [],
+ "conversationId": "1996035572176224753",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1996240564635783569",
+ "kind": "reply",
+ "metrics": {
+  "likes": 17,
+  "replies": 2,
+  "reposts": 0,
+  "views": 1165
+ },
+ "postedAt": "2025-12-03T15:30:13.000Z",
+ "replyTo": {
+  "postId": "1996229287163171038",
+  "handle": "osikobeisnksobs"
+ },
+ "text": "\"Anyone can be convinced\".  Do you watch the videos. Pretty much every video I share my views from a probability standpoint and where the main thesis is incorrect.  Not once is it ever presented as an absolute.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1996240564635783569",
+ "harness": {
+  "run": "2026-10-31T03-11-49Z",
+  "manifest_sha256": "44284fd2b0f53f602994edeb448d034ad7c1447b6074bcf56e01e43a4ce3849c",
+  "query": "from:BobLoukas since:2025-11-30 until:2025-12-10"
+ }
+}

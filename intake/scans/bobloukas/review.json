@@ -1,0 +1,129 @@
+{
+ "_policy": "Owner review of the 12-month scan (2026-10-31). A post is added when it states a new or changed directional stance on one asset in Bob's own voice (a position, or a clear expectation with a direction), with the asset and side chosen by hand. Skipped: conditionals ('if X then'), descriptions of the past, posts that are bullish and bearish at once, quoted text that is not his view, and repeats of a stance already added for the same asset and side within 14 days (so one opinion is not counted several times). Every decision has a reason.",
+ "1993658195982876720": {
+  "decision": "add",
+  "asset": "SILVER",
+  "side": "long",
+  "reason": "calls the silver pause 'a refueling for another big continuation of the bull market', expected 'as soon as Jan': a long view in his own words"
+ },
+ "1999149068459618541": {
+  "decision": "add",
+  "asset": "STOCKS",
+  "side": "long",
+  "reason": "expects 'a good 6-8 Week run higher' for stocks and names a stop (the Nov 17th candle)"
+ },
+ "2003111794072801304": {
+  "decision": "add",
+  "asset": "GOLD",
+  "side": "long",
+  "reason": "'No quit in this gold bull ... the cleanest chart you could ever hope to ride': a long stance on gold"
+ },
+ "2003490330650575038": {
+  "decision": "add",
+  "asset": "COPPER",
+  "side": "long",
+  "reason": "industrial metals 'starting their big bull legs', suggests rotating into them and posts the copper chart: long copper"
+ },
+ "2011105173104705981": {
+  "decision": "add",
+  "asset": "GOLD",
+  "side": "long",
+  "reason": "'Now targeting $5,800 ... Just got to keep holding on': holding the gold long with a target, 22 days after the last added gold call"
+ },
+ "2016523209500131511": {
+  "decision": "add",
+  "asset": "STOCKS",
+  "side": "long",
+  "reason": "'Very strong signal on Stocks here', new all-time highs and a clean stop at the Daily Cycle Low"
+ },
+ "2017256982743339269": {
+  "decision": "add",
+  "asset": "BTC",
+  "side": "short",
+  "reason": "the 4-year cycle update says the move to $98k was the counter-trend move and the declining phase is on ('I hate being bearish any asset, especially bitcoin'); the detector's 'very bullish on' is about fundamentals in general, so the side is set by hand"
+ },
+ "2022006665764082140": {
+  "decision": "add",
+  "asset": "STOCKS",
+  "side": "long",
+  "reason": "'Still leaning and positioned on the bull side' for stocks: his own positioning, 15 days after the last added stocks call"
+ },
+ "2023793838322782454": {
+  "decision": "add",
+  "asset": "BTC",
+  "side": "short",
+  "reason": "'Bitcoin price action remains horrendous ... has to reclaim $72k to even consider a counter-trend move': a bearish stance, 18 days after the last added bitcoin call"
+ },
+ "2031739333057659161": {
+  "decision": "add",
+  "asset": "STOCKS",
+  "side": "short",
+  "reason": "says stocks have likely peaked for the 4-year cycle, moved his active portfolios defensive (33% cash) with 'further selling to come': a change from long to defensive"
+ },
+ "2062277523288068152": {
+  "decision": "add",
+  "asset": "BTC",
+  "side": "long",
+  "reason": "the 4 Year Cycle Model Portfolio 'made its first buy in 3.5yrs. Picking up 10BTC at $65,000': a stated buy"
+ },
+ "2009291616217903397": {
+  "decision": "skip",
+  "reason": "the matched 'still bullish' is inside a quoted AI-model answer; the post weighs a 55% chance the cycle topped and takes no position"
+ },
+ "1985730433510973908": {
+  "decision": "skip",
+  "reason": "same day as the 'still long bitcoin' call already counted: a repeat"
+ },
+ "1989334671289967046": {
+  "decision": "skip",
+  "reason": "a sharp rally expected, 10 days after the bitcoin long already counted: a repeat"
+ },
+ "1990611589800640686": {
+  "decision": "skip",
+  "reason": "'time for a strong rally now', 14 days after the bitcoin long already counted: a repeat"
+ },
+ "1992280862252212723": {
+  "decision": "skip",
+  "reason": "'a meaningful rally soon', a repeat of the bitcoin rally view"
+ },
+ "1995532011818106902": {
+  "decision": "skip",
+  "reason": "silver targeting $80, 5 days after the silver long added: a repeat"
+ },
+ "1998434220868247562": {
+  "decision": "skip",
+  "reason": "'trade of the year' looking back, with a likely top 'by end of year or Jan': hedged timing, no clear side going forward"
+ },
+ "2005330899899121670": {
+  "decision": "skip",
+  "reason": "'very mixed feeling on Bitcoin': no side"
+ },
+ "2027043531185943019": {
+  "decision": "skip",
+  "reason": "a conditional ('If Bitcoin sees no counter-trend relief rally ...'), possibilities only"
+ },
+ "2028473753022136453": {
+  "decision": "skip",
+  "reason": "'readying for another big leg lower', 13 days after the bitcoin short added: a repeat"
+ },
+ "2034586449551507627": {
+  "decision": "skip",
+  "reason": "'early stages of a cyclical bear market', 8 days after the stocks short added: a repeat"
+ },
+ "2051627961724305706": {
+  "decision": "skip",
+  "reason": "end of a counter-trend move in a bear market, but then 'more of a time based Cycle Low ... We shall have to see': hedged both ways"
+ },
+ "2091161059801391206": {
+  "decision": "skip",
+  "reason": "'bullish nonetheless' on a short-covering move but 'a little more work to do before a bear market bottom can be confirmed': hedged"
+ },
+ "2099903031760310305": {
+  "decision": "skip",
+  "reason": "stocks in a decline phase 'especially if it closes below the 10wma', dip to be bought: conditional, both directions"
+ },
+ "2115826344118632837": {
+  "decision": "skip",
+  "reason": "gold in a cycle decline, 8 days after the tracked gold short (2026-10-21): a repeat"
+ }
+}

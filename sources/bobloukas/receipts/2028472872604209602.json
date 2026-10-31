@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:25.382Z",
+ "cashtags": [],
+ "conversationId": "2028472872604209602",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2028472872604209602",
+ "kind": "post",
+ "metrics": {
+  "likes": 475,
+  "replies": 28,
+  "reposts": 33,
+  "views": 46595
+ },
+ "postedAt": "2026-03-02T14:09:54.000Z",
+ "replyTo": null,
+ "text": "Week 15 for stocks and still no resolution of the range.  Bollinger bands are tightening hard, and the longer it continues implies a breakdown possibility is rising.\n\nAlso deep in the timing band for the 4Yr Cycle peak.  Most resembling the peak into the 2015 4yr high here. \n\nI'm still long a core position stocks...for now.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2028472872604209602",
+ "harness": {
+  "run": "2026-10-31T03-30-20Z",
+  "manifest_sha256": "3d96553ad1872d40978ec78e357b1cef213e2cb79cabbf5b401432e513cb4d1c",
+  "query": "from:BobLoukas since:2026-02-28 until:2026-03-10"
+ }
+}

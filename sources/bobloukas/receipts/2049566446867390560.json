@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:22.507Z",
+ "cashtags": [],
+ "conversationId": "2049565284768317760",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2049566446867390560",
+ "kind": "reply",
+ "metrics": {
+  "likes": 15,
+  "replies": 3,
+  "reposts": 0,
+  "views": 3687
+ },
+ "postedAt": "2026-04-29T19:08:14.000Z",
+ "replyTo": {
+  "postId": "2049566252394262545",
+  "handle": "joaoloreto13"
+ },
+ "text": "best looking chart in crypto and getting a lot of attention.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2049566446867390560",
+ "harness": {
+  "run": "2026-10-31T03-47-15Z",
+  "manifest_sha256": "d829a2466fa415a7cdaeaff4a6cfdcca76ad661f2ee8e9461b5c6c66af591c27",
+  "query": "from:BobLoukas since:2026-04-29 until:2026-05-09"
+ }
+}

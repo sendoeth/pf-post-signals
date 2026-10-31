@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:03:50.138Z",
+ "cashtags": [],
+ "conversationId": "2069420613429539057",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2069445365833589086",
+ "kind": "reply",
+ "metrics": {
+  "likes": 42,
+  "replies": 1,
+  "reposts": 0,
+  "views": 4957
+ },
+ "postedAt": "2026-06-23T15:39:58.000Z",
+ "replyTo": {
+  "postId": "2069431955066683836",
+  "handle": "cryptoklotz"
+ },
+ "text": "I don’t think it’s 8 yr cycle is anywhere near done.  Especially coming from that decade base.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2069445365833589086",
+ "harness": {
+  "run": "2026-10-31T04-03-43Z",
+  "manifest_sha256": "151afdee8bedac9fee9cf5b5571f2bc7c3f8925a0be613401ca72cfa26688b6d",
+  "query": "from:BobLoukas since:2026-06-23 until:2026-06-28"
+ }
+}

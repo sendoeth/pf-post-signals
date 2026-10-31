@@ -161,6 +161,19 @@ python3 tools/add_call.py https://x.com/<handle>/status/<id> --add    # publish 
 - Refused with the reason: deleted or private posts, posts whose asset the detector cannot read, a post + asset already recorded, a side stated both ways, and `--asset` / `--side` without `--reason`. A hand-picked asset or side keeps its reason in the record (`asset_choice`, `side_choice`).
 - Tests: `tests/test_add_call.py` (fixtures in `tests/fixtures/intake`: new caller, existing caller, duplicate, no detectable asset, override with reason, hostile text; preview leaves `web/` and `records/` byte-identical; preview score = post-add score and delta; stale previews, missing reasons and two-sided posts refused; the new record shares the asset's bars).
 
+## Step 17: scan a caller's last 12 months from one post (owner-only)
+
+```
+python3 tools/scan_caller.py https://x.com/<handle>/status/<id> scan     # collect (resumable)
+python3 tools/scan_caller.py https://x.com/<handle>/status/<id> report   # classify, price, project; nothing published
+python3 tools/scan_caller.py https://x.com/<handle>/status/<id> add      # publish the reviewed batch
+```
+
+- **scan**: 10-day windows over the 365 days before the scan, each one search `from:<handle> since:… until:…` through the read-only research harness (its network guard blocks posting, liking, following). One search at a time, no retries. A run stops itself after 25 searches (X allows about 50 per 15 minutes per account), on a rate limit, a login prompt or a harness error, and on 3 empty pages in a row (X answers a throttled account with empty pages); the next run resumes at the first window not done. A single empty window counts only when a later run sees it empty again. A full window whose oldest post is far from its start is split in two. Every own post is saved as a receipt with the harness run id and manifest sha256; `intake/scans/<handle>/scan_log.json` logs every window, run and stop reason.
+- **report**: every post is labelled `call` (one asset, one side), `no_call` (no asset, commentary without side words, a question, advice to others, someone else's trade, a joke) or `needs_review` (several assets, both sides, exit words), with the matched words. `review.json` holds the owner's decisions (`add` with an asset / side and a written reason, or `skip` with a reason). Calls already recorded are listed, not added again. Calls and reviewed additions are priced with the resolver on shared bars and projected into the bundle exactly as `add` builds it: `intake/scans/<handle>/report.md` + `report.json` (entries, results, 1 / 7 / 30-day moves, the score now and projected) and a pending batch. Nothing under `web/` or `records/` changes.
+- **add**: `tools/add_call.py add` on the batch: refuses if the bundle changed since the report, writes every record, rebuilds, and fails unless the projected score and ranking equal the result, every other caller's score is unchanged and no frozen value moved.
+- Tests: `tests/test_scan_caller.py` (windows and cutoff, other authors and bad ids, budget stop + resume, rate limit, empty pages, single empty windows, window split, labels, report -> review -> add with exact scores and unchanged other callers).
+
 ## Reproduce step 2
 
 ```bash

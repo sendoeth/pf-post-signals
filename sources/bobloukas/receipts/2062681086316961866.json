@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:48:01.863Z",
+ "cashtags": [],
+ "conversationId": "2062555473358823797",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2062681086316961866",
+ "kind": "reply",
+ "metrics": {
+  "likes": 5,
+  "replies": 2,
+  "reposts": 1,
+  "views": 408
+ },
+ "postedAt": "2026-06-04T23:41:08.000Z",
+ "replyTo": {
+  "postId": "2062666942469513300",
+  "handle": "cry_bebi"
+ },
+ "text": "How quickly one responds to a change in view is ALL that matters.  Not what one thinks is more likely.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2062681086316961866",
+ "harness": {
+  "run": "2026-10-31T03-47-55Z",
+  "manifest_sha256": "76ee69624ea2b9328b3f138dbfe04636ffc970ec1aa15cc43bb66d8325d64d30",
+  "query": "from:BobLoukas since:2026-06-03 until:2026-06-08"
+ }
+}

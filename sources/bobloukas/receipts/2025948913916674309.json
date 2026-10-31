@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:12.025Z",
+ "cashtags": [],
+ "conversationId": "2025948913916674309",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2025948913916674309",
+ "kind": "post",
+ "metrics": {
+  "likes": 974,
+  "replies": 61,
+  "reposts": 56,
+  "views": 68373
+ },
+ "postedAt": "2026-02-23T15:00:36.000Z",
+ "replyTo": null,
+ "text": "Everything happening in crypto right now is simply natural ebb and flow.\n\nThe more global, unregulated, and unconstrained an asset class is, the clearer its cycles generally are.\n\nYet people still try to project their biases onto it, believing their narrative can or should override the natural course of a market.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2025948913916674309",
+ "harness": {
+  "run": "2026-10-31T03-30-09Z",
+  "manifest_sha256": "f4cb50b74e111333644768234a62c37c553d27111cb37124caf5fe4bcbd50de6",
+  "query": "from:BobLoukas since:2026-02-18 until:2026-02-28"
+ }
+}

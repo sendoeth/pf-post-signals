@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:05.728Z",
+ "cashtags": [],
+ "conversationId": "1986462949695762627",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1986464657327218989",
+ "kind": "reply",
+ "metrics": {
+  "likes": 41,
+  "replies": 3,
+  "reposts": 2,
+  "views": 4903
+ },
+ "postedAt": "2025-11-06T16:04:15.000Z",
+ "replyTo": {
+  "postId": "1986463424205795803",
+  "handle": "unitedforlife86"
+ },
+ "text": "I keep it fairly simple with GDX/GDXJ.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1986464657327218989",
+ "harness": {
+  "run": "2026-10-31T03-10-01Z",
+  "manifest_sha256": "3844915c6905bd8c09b21e28b77ba45472ed71277b155e9aca6ad52457c02037",
+  "query": "from:BobLoukas since:2025-10-31 until:2025-11-10"
+ }
+}

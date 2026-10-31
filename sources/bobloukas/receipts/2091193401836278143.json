@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:20:01.893Z",
+ "cashtags": [],
+ "conversationId": "2091161059801391206",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2091193401836278143",
+ "kind": "reply",
+ "metrics": {
+  "likes": 22,
+  "replies": 0,
+  "reposts": 0,
+  "views": 5611
+ },
+ "postedAt": "2026-08-22T15:58:54.000Z",
+ "replyTo": {
+  "postId": "2091172127604879456",
+  "handle": "HardMoneyLex"
+ },
+ "text": "That would be dumb to wait, but everybody has their own version of things.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2091193401836278143",
+ "harness": {
+  "run": "2026-10-31T04-19-58Z",
+  "manifest_sha256": "524676418c0f2612e016569f937d101eda0cc79472efa329bd665434f243e819",
+  "query": "from:BobLoukas since:2026-08-17 until:2026-08-27"
+ }
+}

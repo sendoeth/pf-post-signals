@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:11.632Z",
+ "cashtags": [],
+ "conversationId": "1985662474436100341",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1985702035975487994",
+ "kind": "reply",
+ "metrics": {
+  "likes": 4,
+  "replies": 1,
+  "reposts": 0,
+  "views": 698
+ },
+ "postedAt": "2025-11-04T13:33:52.000Z",
+ "replyTo": {
+  "postId": "1985691499435004355",
+  "handle": "SmolCompute"
+ },
+ "text": "Right so it’s an investment and you welcome it being hijacked for your own personal security/wealth.  I get it, but that was my point.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1985702035975487994",
+ "harness": {
+  "run": "2026-10-31T03-10-01Z",
+  "manifest_sha256": "3844915c6905bd8c09b21e28b77ba45472ed71277b155e9aca6ad52457c02037",
+  "query": "from:BobLoukas since:2025-10-31 until:2025-11-10"
+ }
+}

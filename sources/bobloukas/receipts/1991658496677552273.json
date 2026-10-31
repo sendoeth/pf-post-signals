@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:34.815Z",
+ "cashtags": [],
+ "conversationId": "1991548433736561089",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1991658496677552273",
+ "kind": "reply",
+ "metrics": {
+  "likes": 51,
+  "replies": 3,
+  "reposts": 0,
+  "views": 4020
+ },
+ "postedAt": "2025-11-21T00:02:43.000Z",
+ "replyTo": {
+  "postId": "1991550590237962507",
+  "handle": "billpaloukas"
+ },
+ "text": "Will be doing a video next week on next steps.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1991658496677552273",
+ "harness": {
+  "run": "2026-10-31T03-11-28Z",
+  "manifest_sha256": "5b4f94307a59f6b36bf90ded7f7487cb77a37651415230998ae74712e788ac95",
+  "query": "from:BobLoukas since:2025-11-20 until:2025-11-25"
+ }
+}

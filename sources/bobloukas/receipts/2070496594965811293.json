@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:03:45.919Z",
+ "cashtags": [],
+ "conversationId": "2070235668782227491",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2070496594965811293",
+ "kind": "reply",
+ "metrics": {
+  "likes": 17,
+  "replies": 2,
+  "reposts": 1,
+  "views": 2337
+ },
+ "postedAt": "2026-06-26T13:17:10.000Z",
+ "replyTo": {
+  "postId": "2070490398347436541",
+  "handle": "BitPaine"
+ },
+ "text": "In the long run it’s an underperforming Bitcoin etf. \n\nYou might get one good outperforming run in the next cycle, and that’s it.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2070496594965811293",
+ "harness": {
+  "run": "2026-10-31T04-03-43Z",
+  "manifest_sha256": "151afdee8bedac9fee9cf5b5571f2bc7c3f8925a0be613401ca72cfa26688b6d",
+  "query": "from:BobLoukas since:2026-06-23 until:2026-06-28"
+ }
+}

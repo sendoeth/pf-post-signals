@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:36:43.947Z",
+ "cashtags": [],
+ "conversationId": "2115826344118632837",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2115826344118632837",
+ "kind": "post",
+ "metrics": {
+  "likes": 733,
+  "replies": 21,
+  "reposts": 57,
+  "views": 64531
+ },
+ "postedAt": "2026-10-29T15:21:25.000Z",
+ "replyTo": null,
+ "text": "Same theme for gold, in the grasp of an intermediate timeframe cycle decline.  Gold is still 9 weeks away from a typical weekly cycle low.  \n\nGold bulls can hope it holds the summer lows, but I'm not confident.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2115826344118632837",
+ "harness": {
+  "run": "2026-10-31T04-36-38Z",
+  "manifest_sha256": "4ed1a5ced8c750ca12e8ad455fcb0440edc42dc649d9b9187902e0982ccc36b8",
+  "query": "from:BobLoukas since:2026-10-26 until:2026-11-01"
+ }
+}

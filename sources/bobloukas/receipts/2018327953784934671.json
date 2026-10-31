@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:37.932Z",
+ "cashtags": [],
+ "conversationId": "2017256982743339269",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2018327953784934671",
+ "kind": "reply",
+ "metrics": {
+  "likes": 3,
+  "replies": 1,
+  "reposts": 0,
+  "views": 537
+ },
+ "postedAt": "2026-02-02T14:17:37.000Z",
+ "replyTo": {
+  "postId": "2017364682076479512",
+  "handle": "gaiussolaris"
+ },
+ "text": "A year up or down is NOT what cycles measure. \n\nThere will be future 4 yr cycles where it's 3 straight years down!",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2018327953784934671",
+ "harness": {
+  "run": "2026-10-31T03-29-33Z",
+  "manifest_sha256": "14f0ea84840c9dca9fe00212e469c77a2ebdd67bd750609b8a6bddcb4356ba1c",
+  "query": "from:BobLoukas since:2026-01-29 until:2026-02-03"
+ }
+}

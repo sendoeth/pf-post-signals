@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:34.815Z",
+ "cashtags": [],
+ "conversationId": "1991825705219612937",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1991829472929349998",
+ "kind": "reply",
+ "metrics": {
+  "likes": 127,
+  "replies": 3,
+  "reposts": 1,
+  "views": 13179
+ },
+ "postedAt": "2025-11-21T11:22:07.000Z",
+ "replyTo": {
+  "postId": "1991828953196322934",
+  "handle": "mag8500168976"
+ },
+ "text": "Calling for a new weekly cycle.  \n\nStill am.  That’s the “2 month rally” I mention.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1991829472929349998",
+ "harness": {
+  "run": "2026-10-31T03-11-28Z",
+  "manifest_sha256": "5b4f94307a59f6b36bf90ded7f7487cb77a37651415230998ae74712e788ac95",
+  "query": "from:BobLoukas since:2025-11-20 until:2025-11-25"
+ }
+}

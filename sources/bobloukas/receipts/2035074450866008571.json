@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:40.734Z",
+ "cashtags": [],
+ "conversationId": "2035073733962919977",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2035074450866008571",
+ "kind": "post",
+ "metrics": {
+  "likes": 60,
+  "replies": 3,
+  "reposts": 2,
+  "views": 3102
+ },
+ "postedAt": "2026-03-20T19:22:13.000Z",
+ "replyTo": null,
+ "text": "I think we bounce hard Mon or Tue and rally for 10 days.  Then watch out.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2035074450866008571",
+ "harness": {
+  "run": "2026-10-31T03-30-36Z",
+  "manifest_sha256": "4650ab529d8aa763c70824f28353a63102c967a6a59d9111c9a5115d681b6e4d",
+  "query": "from:BobLoukas since:2026-03-20 until:2026-03-30"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:51.696Z",
+ "cashtags": [],
+ "conversationId": "2009291616217903397",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2009300717081649471",
+ "kind": "reply",
+ "metrics": {
+  "likes": 12,
+  "replies": 2,
+  "reposts": 0,
+  "views": 1823
+ },
+ "postedAt": "2026-01-08T16:26:36.000Z",
+ "replyTo": {
+  "postId": "2009300417742520645",
+  "handle": "bitsandchriss"
+ },
+ "text": "It's not broken.  but in your version of broken it would be the 15% outcome.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2009300717081649471",
+ "harness": {
+  "run": "2026-10-31T03-28-48Z",
+  "manifest_sha256": "15f3f120834a9e146f93308ba01d65815256ffe13b590dc9e35f844e48ccf261",
+  "query": "from:BobLoukas since:2025-12-30 until:2026-01-09"
+ }
+}

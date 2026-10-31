@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:32.378Z",
+ "cashtags": [],
+ "conversationId": "2002132432552689961",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2002143535232069971",
+ "kind": "reply",
+ "metrics": {
+  "likes": 137,
+  "replies": 1,
+  "reposts": 3,
+  "views": 29886
+ },
+ "postedAt": "2025-12-19T22:26:31.000Z",
+ "replyTo": {
+  "postId": "2002132432552689961",
+  "handle": "leamuirleyn"
+ },
+ "text": "Such a travesty when real criminals (in this industry too) are getting pardoned. \n\nWish you both all the best and to brighter days ahead, soon I hope.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2002143535232069971",
+ "harness": {
+  "run": "2026-10-31T03-28-29Z",
+  "manifest_sha256": "6b809f4562719e0f7de013cb2199555f0361999760d9b9ef86799734f195de03",
+  "query": "from:BobLoukas since:2025-12-15 until:2025-12-20"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:41.411Z",
+ "cashtags": [],
+ "conversationId": "2017256982743339269",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2017284502356168895",
+ "kind": "reply",
+ "metrics": {
+  "likes": 99,
+  "replies": 5,
+  "reposts": 0,
+  "views": 6775
+ },
+ "postedAt": "2026-01-30T17:11:19.000Z",
+ "replyTo": {
+  "postId": "2017268707462947194",
+  "handle": "SupermoonPics"
+ },
+ "text": "Haven't really touched ALT's since 2024 and those did OK overall.  Some winners (like SOL) and some losers, maybe a wash. Considering what people lost on ALT's, I'm happy with that.  \n\nOn Bitcoin, i sold at $80k the first time. Guess what, it's at $82k now.  Did I sell the top, no.  I ride trends and it takes a long time to see a trend break.  We didn't get a blowoff top that would help try to get out near a top.  \n\nThe Cycle has sucked all round.  Considering that, I'm happy with it overall.  Also on a video 4 days ago, you dont appreciate that markets move wildly and change direction often.  You're looking for predictions that stick, but i dont see markets like that.  I will change views immediately and rapidly as needed.  If you think changing views is a sign of \"getting it wrong\", then I'm not somebody you should follow.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2017284502356168895",
+ "harness": {
+  "run": "2026-10-31T03-29-33Z",
+  "manifest_sha256": "14f0ea84840c9dca9fe00212e469c77a2ebdd67bd750609b8a6bddcb4356ba1c",
+  "query": "from:BobLoukas since:2026-01-29 until:2026-02-03"
+ }
+}

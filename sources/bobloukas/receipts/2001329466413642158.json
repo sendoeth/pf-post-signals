@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:34.213Z",
+ "cashtags": [],
+ "conversationId": "1998868160582426781",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2001329466413642158",
+ "kind": "reply",
+ "metrics": {
+  "likes": 7,
+  "replies": 1,
+  "reposts": 0,
+  "views": 1888
+ },
+ "postedAt": "2025-12-17T16:31:42.000Z",
+ "replyTo": {
+  "postId": "2001094768764576236",
+  "handle": "elliotrades"
+ },
+ "text": "I do it too.  Probably not 100%, but for sure a great early detection practice.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2001329466413642158",
+ "harness": {
+  "run": "2026-10-31T03-28-29Z",
+  "manifest_sha256": "6b809f4562719e0f7de013cb2199555f0361999760d9b9ef86799734f195de03",
+  "query": "from:BobLoukas since:2025-12-15 until:2025-12-20"
+ }
+}

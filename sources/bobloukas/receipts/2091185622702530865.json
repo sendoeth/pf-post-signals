@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:20:01.895Z",
+ "cashtags": [],
+ "conversationId": "2091183201653854291",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2091185622702530865",
+ "kind": "reply",
+ "metrics": {
+  "likes": 79,
+  "replies": 6,
+  "reposts": 3,
+  "views": 4045
+ },
+ "postedAt": "2026-08-22T15:27:59.000Z",
+ "replyTo": {
+  "postId": "2091184877815103901",
+  "handle": "CryptoBullet1"
+ },
+ "text": "No.  The window is 10% either side, 44 to 52 months.  And if that was the low, it's more likely we retest the lower 60's range to complete the cycle more via time.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2091185622702530865",
+ "harness": {
+  "run": "2026-10-31T04-19-58Z",
+  "manifest_sha256": "524676418c0f2612e016569f937d101eda0cc79472efa329bd665434f243e819",
+  "query": "from:BobLoukas since:2026-08-17 until:2026-08-27"
+ }
+}

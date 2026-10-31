@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:51.508Z",
+ "cashtags": [],
+ "conversationId": "2019397249604731339",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2019397249604731339",
+ "kind": "post",
+ "metrics": {
+  "likes": 1115,
+  "replies": 95,
+  "reposts": 50,
+  "views": 167749
+ },
+ "postedAt": "2026-02-05T13:06:37.000Z",
+ "replyTo": null,
+ "text": "Every crypto bear cycle we see a washout of some shady centralized entities.   \n\nOne’s involved in shady practices or bet with customer money.  This has been the pattern.  \n\nOnce the tide goes out you don’t know who’s naked.  \n\nNot trying to cause FUD but if you’re on any 2nd tier platform and don’t have the keys, I’d get control of your funds.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2019397249604731339",
+ "harness": {
+  "run": "2026-10-31T03-29-44Z",
+  "manifest_sha256": "aaa8d4e197f46be6cccda8b30abf99f805399d35c1bf30c84b78a3f1a95bcc12",
+  "query": "from:BobLoukas since:2026-02-03 until:2026-02-08"
+ }
+}

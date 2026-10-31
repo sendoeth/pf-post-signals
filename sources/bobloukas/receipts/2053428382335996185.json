@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:29.898Z",
+ "cashtags": [],
+ "conversationId": "2053428382335996185",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2053428382335996185",
+ "kind": "post",
+ "metrics": {
+  "likes": 726,
+  "replies": 37,
+  "reposts": 15,
+  "views": 63986
+ },
+ "postedAt": "2026-05-10T10:54:11.000Z",
+ "replyTo": null,
+ "text": "Happy Mother’s Day.\n\nMothers are underappreciated for the tireless work and love they give. Wishing you a wonderful day.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2053428382335996185",
+ "harness": {
+  "run": "2026-10-31T03-47-27Z",
+  "manifest_sha256": "81887de3f3765f41b30dbbd404e04e4b1b49d0a96be7803e04996f241dc431a0",
+  "query": "from:BobLoukas since:2026-05-09 until:2026-05-19"
+ }
+}

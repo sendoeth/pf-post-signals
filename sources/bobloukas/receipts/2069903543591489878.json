@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:03:52.130Z",
+ "cashtags": [],
+ "conversationId": "2069903543591489878",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2069903543591489878",
+ "kind": null,
+ "metrics": {
+  "likes": null,
+  "replies": null,
+  "reposts": null,
+  "views": null
+ },
+ "postedAt": "2026-06-24T22:00:36.000Z",
+ "replyTo": null,
+ "text": "NAKA holding 99.7% like a boss.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2069903543591489878",
+ "harness": {
+  "run": "2026-10-31T04-03-43Z",
+  "manifest_sha256": "151afdee8bedac9fee9cf5b5571f2bc7c3f8925a0be613401ca72cfa26688b6d",
+  "query": "from:BobLoukas since:2026-06-23 until:2026-06-28"
+ }
+}

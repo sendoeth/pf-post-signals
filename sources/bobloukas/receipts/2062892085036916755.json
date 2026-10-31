@@ -1,0 +1,27 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:48:00.529Z",
+ "cashtags": [
+  "ZEC"
+ ],
+ "conversationId": "2062892085036916755",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2062892085036916755",
+ "kind": "post",
+ "metrics": {
+  "likes": 755,
+  "replies": 41,
+  "reposts": 27,
+  "views": 57289
+ },
+ "postedAt": "2026-06-05T13:39:34.000Z",
+ "replyTo": null,
+ "text": "The surprise over $ZEC's crash is a fascinating case study in psychology, greed, and the madness of crowds.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2062892085036916755",
+ "harness": {
+  "run": "2026-10-31T03-47-55Z",
+  "manifest_sha256": "76ee69624ea2b9328b3f138dbfe04636ffc970ec1aa15cc43bb66d8325d64d30",
+  "query": "from:BobLoukas since:2026-06-03 until:2026-06-08"
+ }
+}

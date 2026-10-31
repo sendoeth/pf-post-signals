@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:53.383Z",
+ "cashtags": [],
+ "conversationId": "2019151616989958462",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2019151616989958462",
+ "kind": "post",
+ "metrics": {
+  "likes": 419,
+  "replies": 14,
+  "reposts": 23,
+  "views": 40554
+ },
+ "postedAt": "2026-02-04T20:50:34.000Z",
+ "replyTo": null,
+ "text": "Nice move on energy.   Even with crude prices constrained.  \nAnd comes with a 3.5% divi.  Commodities/Energy/Materials etc all look good.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2019151616989958462",
+ "harness": {
+  "run": "2026-10-31T03-29-44Z",
+  "manifest_sha256": "aaa8d4e197f46be6cccda8b30abf99f805399d35c1bf30c84b78a3f1a95bcc12",
+  "query": "from:BobLoukas since:2026-02-03 until:2026-02-08"
+ }
+}

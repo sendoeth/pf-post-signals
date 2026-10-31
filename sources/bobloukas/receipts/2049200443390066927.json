@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:07.285Z",
+ "cashtags": [],
+ "conversationId": "2049198652795539699",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2049200443390066927",
+ "kind": "reply",
+ "metrics": {
+  "likes": 29,
+  "replies": 0,
+  "reposts": 0,
+  "views": 2417
+ },
+ "postedAt": "2026-04-28T18:53:52.000Z",
+ "replyTo": {
+  "postId": "2049199491614716104",
+  "handle": "FLOAT_LOCKER"
+ },
+ "text": "This is a universal fact.\n\nBut we can share experiences for free, and maybe help some.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2049200443390066927",
+ "harness": {
+  "run": "2026-10-31T03-47-04Z",
+  "manifest_sha256": "5336994f71bbe4f700cf60362be35add5dbd82d5eddf921d84495b46cbd2c660",
+  "query": "from:BobLoukas since:2026-04-24 until:2026-04-29"
+ }
+}

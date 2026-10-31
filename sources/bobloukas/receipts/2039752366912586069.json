@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:45.920Z",
+ "cashtags": [],
+ "conversationId": "2039751250665697550",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2039752366912586069",
+ "kind": "reply",
+ "metrics": {
+  "likes": 2,
+  "replies": 1,
+  "reposts": 0,
+  "views": 604
+ },
+ "postedAt": "2026-04-02T17:10:35.000Z",
+ "replyTo": {
+  "postId": "2039752092223480134",
+  "handle": "taoinvestment"
+ },
+ "text": "My account is fine.  I was warning of Peter's account",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2039752366912586069",
+ "harness": {
+  "run": "2026-10-31T03-30-43Z",
+  "manifest_sha256": "81f41d9816c6b1970d0e17601d6ddbc99f0a4d686b7b2547093e028d9cf765b4",
+  "query": "from:BobLoukas since:2026-03-30 until:2026-04-09"
+ }
+}

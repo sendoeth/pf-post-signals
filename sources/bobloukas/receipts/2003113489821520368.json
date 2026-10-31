@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:44.068Z",
+ "cashtags": [],
+ "conversationId": "2003113489821520368",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2003113489821520368",
+ "kind": "post",
+ "metrics": {
+  "likes": 849,
+  "replies": 62,
+  "reposts": 59,
+  "views": 66239
+ },
+ "postedAt": "2025-12-22T14:40:46.000Z",
+ "replyTo": null,
+ "text": "Bitcoin into the 5th week of the Weekly Cycle, and failing to respond positively during the most bullish part of the cycle.\nDesperately needs a tailwind from equities moving to ATH's.  Absent of that, a significant continuation of the downtrend could unfold.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2003113489821520368",
+ "harness": {
+  "run": "2026-10-31T03-28-37Z",
+  "manifest_sha256": "9d13b999b16b71141a9123223a30beac3017eedee0e627ab1a0efb00c27a8930",
+  "query": "from:BobLoukas since:2025-12-20 until:2025-12-30"
+ }
+}

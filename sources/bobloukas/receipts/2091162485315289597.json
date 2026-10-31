@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:20:01.895Z",
+ "cashtags": [],
+ "conversationId": "2091161059801391206",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2091162485315289597",
+ "kind": "reply",
+ "metrics": {
+  "likes": 97,
+  "replies": 2,
+  "reposts": 2,
+  "views": 8808
+ },
+ "postedAt": "2026-08-22T13:56:03.000Z",
+ "replyTo": {
+  "postId": "2091161882690232742",
+  "handle": "alpha_pls"
+ },
+ "text": "Yeah this move at least does set up the scenario that we get a low to mid $60's retest only.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2091162485315289597",
+ "harness": {
+  "run": "2026-10-31T04-19-58Z",
+  "manifest_sha256": "524676418c0f2612e016569f937d101eda0cc79472efa329bd665434f243e819",
+  "query": "from:BobLoukas since:2026-08-17 until:2026-08-27"
+ }
+}

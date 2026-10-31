@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:05.729Z",
+ "cashtags": [],
+ "conversationId": "1986191000281264467",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1986256151902597294",
+ "kind": "reply",
+ "metrics": {
+  "likes": 17,
+  "replies": 2,
+  "reposts": 0,
+  "views": 4811
+ },
+ "postedAt": "2025-11-06T02:15:44.000Z",
+ "replyTo": {
+  "postId": "1986219390988394565",
+  "handle": "m7od8c"
+ },
+ "text": "Not in that portfolio. \n\nBut recently in others.  \n\nThere are 3 different Bitcoin strategies I use.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1986256151902597294",
+ "harness": {
+  "run": "2026-10-31T03-10-01Z",
+  "manifest_sha256": "3844915c6905bd8c09b21e28b77ba45472ed71277b155e9aca6ad52457c02037",
+  "query": "from:BobLoukas since:2025-10-31 until:2025-11-10"
+ }
+}

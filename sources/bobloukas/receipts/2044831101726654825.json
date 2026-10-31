@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:46:38.671Z",
+ "cashtags": [],
+ "conversationId": "2044508902809628760",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2044831101726654825",
+ "kind": "reply",
+ "metrics": {
+  "likes": 2,
+  "replies": 2,
+  "reposts": 0,
+  "views": 654
+ },
+ "postedAt": "2026-04-16T17:31:40.000Z",
+ "replyTo": {
+  "postId": "2044829949165506679",
+  "handle": "steviepxyz"
+ },
+ "text": "Why do you think you're entitled to tax them more than the amount you receive from property and transfer taxes?",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2044831101726654825",
+ "harness": {
+  "run": "2026-10-31T03-46-34Z",
+  "manifest_sha256": "c27074f7b8d8c85ca6aaed1a98de9a36b44ad09e077f54e4c1ddc2264c260dfe",
+  "query": "from:BobLoukas since:2026-04-14 until:2026-04-19"
+ }
+}

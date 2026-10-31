@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:58.242Z",
+ "cashtags": [],
+ "conversationId": "2063611454146634002",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2063671463253565570",
+ "kind": "reply",
+ "metrics": {
+  "likes": 0,
+  "replies": 0,
+  "reposts": 0,
+  "views": 808
+ },
+ "postedAt": "2026-06-07T17:16:32.000Z",
+ "replyTo": {
+  "postId": "2063637461591323031",
+  "handle": "CryptoPriceHub1"
+ },
+ "text": "if only you had followed the AVAX warnings...",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2063671463253565570",
+ "harness": {
+  "run": "2026-10-31T03-47-55Z",
+  "manifest_sha256": "76ee69624ea2b9328b3f138dbfe04636ffc970ec1aa15cc43bb66d8325d64d30",
+  "query": "from:BobLoukas since:2026-06-03 until:2026-06-08"
+ }
+}

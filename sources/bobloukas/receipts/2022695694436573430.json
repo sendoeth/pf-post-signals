@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:03.309Z",
+ "cashtags": [],
+ "conversationId": "2022463429823598999",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2022695694436573430",
+ "kind": "repost",
+ "metrics": {
+  "likes": 67771,
+  "replies": 1485,
+  "reposts": 6142,
+  "views": 15272850
+ },
+ "postedAt": "2026-02-14T15:33:28.000Z",
+ "replyTo": null,
+ "text": "Seedance 2.0\n\nPrompt: Sum up the AI discourse in a meme - make sure it’s retarded and gets 50 likes.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2022695694436573430",
+ "harness": {
+  "run": "2026-10-31T03-29-58Z",
+  "manifest_sha256": "046caa1b799b16c1e3d97c7b87fc3565fd829c623a7d127628756b707828f2b0",
+  "query": "from:BobLoukas since:2026-02-08 until:2026-02-18"
+ }
+}

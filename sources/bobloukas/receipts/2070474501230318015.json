@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:03:45.923Z",
+ "cashtags": [],
+ "conversationId": "2070228774264697174",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2070474501230318015",
+ "kind": "repost",
+ "metrics": {
+  "likes": 632,
+  "replies": 45,
+  "reposts": 60,
+  "views": 198001
+ },
+ "postedAt": "2026-06-26T11:49:23.000Z",
+ "replyTo": null,
+ "text": "I like Nic and generally agree with a lot of his work, but I think he's using the wrong framework here. This isn't a CCC bond. It's a distressed special situations security.\n\nI've spent the better part of two decades in distressed credit and roughly the last 12 years buying distressed crypto. I've competed with or worked alongside many of the largest distressed investors. When I ask myself who the marginal buyer of STRC is today, it isn't a traditional high-yield fund.\n\nIt's an opportunistic credit fund. Those funds don't wake up looking for 15% returns. They generally need 30%+ IRRs before they commit capital to something this uncertain.\n\nToday you can buy:\n\n• Government refund claims targeting 10-15% IRRs.\n\n• Distressed crypto claims with recoveries denominated in dollars and often substantial collateral protection for 20-25%+ IRRs.\n\nSTRC is riskier than both. You're subordinated. There are essentially no meaningful lender protections. The dividend is non-cumulative. The collateral is one volatile asset. There is negative convexity.\n\nAnd unlike a traditional distressed loan, you don't control the collateral or have meaningful enforcement rights. This isn't lending against Bitcoin.\n\nIt's taking directional Bitcoin exposure through a structurally weak preferred security.\n\nThere's an important distinction people miss.\n\nCommon shareholders have a fiduciary relationship with management. Creditors don't. Management's job is to obtain the cheapest possible financing for shareholders - not to create an attractive security for creditors.\n\nTo Strategy's credit, they did exactly that. They issued extraordinarily issuer-friendly paper because the market let them. Good for them!\n\nBut once that paper leaves the hands of income-oriented crypto investors, who is the next buyer? That's the question. I think it's an opportunistic distressed investor. And that buyer isn't showing up for a 15-20% required return. They're looking for something closer to a 30%+ IRR.\n\nAt an 11.5% coupon, that implies a price of roughly $38.33 (11.5 ÷ 30%), versus about $76.67 for a 15% yield and $57.50 for a 20% yield. Maybe 30% isn't exactly the right number. Maybe it's 35%. Maybe it's 40%. But I think anchoring this off CCC spreads misses who the actual marginal buyer is.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2070474501230318015",
+ "harness": {
+  "run": "2026-10-31T04-03-43Z",
+  "manifest_sha256": "151afdee8bedac9fee9cf5b5571f2bc7c3f8925a0be613401ca72cfa26688b6d",
+  "query": "from:BobLoukas since:2026-06-23 until:2026-06-28"
+ }
+}

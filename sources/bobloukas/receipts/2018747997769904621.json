@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:55.099Z",
+ "cashtags": [],
+ "conversationId": "2018747997769904621",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2018747997769904621",
+ "kind": "post",
+ "metrics": {
+  "likes": 1665,
+  "replies": 86,
+  "reposts": 58,
+  "views": 111336
+ },
+ "postedAt": "2026-02-03T18:06:43.000Z",
+ "replyTo": null,
+ "text": "Bitcoin down $23,000 in less than 23 days.  \n\nSweep the April lows to suck in bears.  Then rally to suck in bulls.  Nothing comes easy.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2018747997769904621",
+ "harness": {
+  "run": "2026-10-31T03-29-44Z",
+  "manifest_sha256": "aaa8d4e197f46be6cccda8b30abf99f805399d35c1bf30c84b78a3f1a95bcc12",
+  "query": "from:BobLoukas since:2026-02-03 until:2026-02-08"
+ }
+}

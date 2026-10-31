@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:34.214Z",
+ "cashtags": [],
+ "conversationId": "2001323514943676732",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2001323514943676732",
+ "kind": "post",
+ "metrics": {
+  "likes": 741,
+  "replies": 101,
+  "reposts": 59,
+  "views": 100368
+ },
+ "postedAt": "2025-12-17T16:08:03.000Z",
+ "replyTo": null,
+ "text": "XRP will want to hold this support line.  \n\nOtherwise it's an 80% drop back to the typical bear lows.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2001323514943676732",
+ "harness": {
+  "run": "2026-10-31T03-28-29Z",
+  "manifest_sha256": "6b809f4562719e0f7de013cb2199555f0361999760d9b9ef86799734f195de03",
+  "query": "from:BobLoukas since:2025-12-15 until:2025-12-20"
+ }
+}

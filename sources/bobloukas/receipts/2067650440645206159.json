@@ -1,0 +1,27 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:03:38.671Z",
+ "cashtags": [
+  "STRC"
+ ],
+ "conversationId": "2067650440645206159",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2067650440645206159",
+ "kind": "post",
+ "metrics": {
+  "likes": 795,
+  "replies": 76,
+  "reposts": 41,
+  "views": 103322
+ },
+ "postedAt": "2026-06-18T16:47:34.000Z",
+ "replyTo": null,
+ "text": "$STRC Market demanding a lot more yield to fund this Ponzi.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2067650440645206159",
+ "harness": {
+  "run": "2026-10-31T04-03-34Z",
+  "manifest_sha256": "80481ec9abd4e75a790a038fdafcf2407911298e9bbac3a7dd1f344521f8274f",
+  "query": "from:BobLoukas since:2026-06-18 until:2026-06-23"
+ }
+}

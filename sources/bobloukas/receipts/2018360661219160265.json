@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:36.051Z",
+ "cashtags": [],
+ "conversationId": "2018311962845749502",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2018360661219160265",
+ "kind": "reply",
+ "metrics": {
+  "likes": 5,
+  "replies": 0,
+  "reposts": 0,
+  "views": 1839
+ },
+ "postedAt": "2026-02-02T16:27:35.000Z",
+ "replyTo": {
+  "postId": "2018356567804924049",
+  "handle": "LavaThunderbolt"
+ },
+ "text": "Only it's not that.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2018360661219160265",
+ "harness": {
+  "run": "2026-10-31T03-29-33Z",
+  "manifest_sha256": "14f0ea84840c9dca9fe00212e469c77a2ebdd67bd750609b8a6bddcb4356ba1c",
+  "query": "from:BobLoukas since:2026-01-29 until:2026-02-03"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:33.101Z",
+ "cashtags": [],
+ "conversationId": "1990452056415404151",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1991892739043274915",
+ "kind": "reply",
+ "metrics": {
+  "likes": 21,
+  "replies": 2,
+  "reposts": 0,
+  "views": 6046
+ },
+ "postedAt": "2025-11-21T15:33:31.000Z",
+ "replyTo": {
+  "postId": "1990452056415404151",
+  "handle": "Sendrock"
+ },
+ "text": "I’m glad this went to you, it’s in great hands. And you have the signed print to claim!  \n\nCongrats.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1991892739043274915",
+ "harness": {
+  "run": "2026-10-31T03-11-28Z",
+  "manifest_sha256": "5b4f94307a59f6b36bf90ded7f7487cb77a37651415230998ae74712e788ac95",
+  "query": "from:BobLoukas since:2025-11-20 until:2025-11-25"
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:27.306Z",
+ "cashtags": [],
+ "conversationId": "1989043561673703456",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1989043561673703456",
+ "kind": "post",
+ "metrics": {
+  "likes": 1867,
+  "replies": 169,
+  "reposts": 81,
+  "views": 286768
+ },
+ "postedAt": "2025-11-13T18:51:54.000Z",
+ "replyTo": null,
+ "text": "Steady lads, the institutions are coming..",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1989043561673703456",
+ "harness": {
+  "run": "2026-10-31T03-10-22Z",
+  "manifest_sha256": "8219512b7c4ed9295ff50779c6865723e1b25c0ba9424dff8dd584d91eeef4c2",
+  "query": "from:BobLoukas since:2025-11-10 until:2025-11-15"
+ }
+}

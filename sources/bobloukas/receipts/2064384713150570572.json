@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:48:09.378Z",
+ "cashtags": [],
+ "conversationId": "2064382511686308068",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2064384713150570572",
+ "kind": "reply",
+ "metrics": {
+  "likes": 31,
+  "replies": 0,
+  "reposts": 0,
+  "views": 2197
+ },
+ "postedAt": "2026-06-09T16:30:44.000Z",
+ "replyTo": {
+  "postId": "2064383265390182762",
+  "handle": "Vision33X"
+ },
+ "text": "What happened is a simple chart fact, not opinion. \n\nI shared what the historical outcome 'generally' is.\n\nIt doesn't guarantee any outcome, but should provide possibilities one can use to position.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2064384713150570572",
+ "harness": {
+  "run": "2026-10-31T03-48-06Z",
+  "manifest_sha256": "485917866faaacba3f6ba610f71bd9e8742dd651e87192dd8b73f98728b3818a",
+  "query": "from:BobLoukas since:2026-06-08 until:2026-06-18"
+ }
+}

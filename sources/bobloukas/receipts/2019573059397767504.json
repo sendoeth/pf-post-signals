@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:46.994Z",
+ "cashtags": [],
+ "conversationId": "2019571622915764388",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2019573059397767504",
+ "kind": "reply",
+ "metrics": {
+  "likes": 42,
+  "replies": 2,
+  "reposts": 0,
+  "views": 6790
+ },
+ "postedAt": "2026-02-06T00:45:13.000Z",
+ "replyTo": {
+  "postId": "2019571622915764388",
+  "handle": "TXMCtrades"
+ },
+ "text": "They all had the “must have euphoric mania” as a hardcoded parameter.   Would work fine in that.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2019573059397767504",
+ "harness": {
+  "run": "2026-10-31T03-29-44Z",
+  "manifest_sha256": "aaa8d4e197f46be6cccda8b30abf99f805399d35c1bf30c84b78a3f1a95bcc12",
+  "query": "from:BobLoukas since:2026-02-03 until:2026-02-08"
+ }
+}

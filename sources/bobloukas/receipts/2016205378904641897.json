@@ -1,0 +1,27 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:14.211Z",
+ "cashtags": [
+  "USD"
+ ],
+ "conversationId": "2016205378904641897",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2016205378904641897",
+ "kind": "post",
+ "metrics": {
+  "likes": 376,
+  "replies": 26,
+  "reposts": 20,
+  "views": 83948
+ },
+ "postedAt": "2026-01-27T17:43:16.000Z",
+ "replyTo": null,
+ "text": "As expected, another failed Weekly Cycle for the $USD.\n\nBut the index is junk, because it measures Junk vs Junk.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2016205378904641897",
+ "harness": {
+  "run": "2026-10-31T03-29-09Z",
+  "manifest_sha256": "12b6383eb0d3e548fb1ff7b7fa27ac18c6544170639bb262e25d9278c33ad772",
+  "query": "from:BobLoukas since:2026-01-19 until:2026-01-29"
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:48:03.671Z",
+ "cashtags": [],
+ "conversationId": "2062277523288068152",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2062277523288068152",
+ "kind": "post",
+ "metrics": {
+  "likes": 1753,
+  "replies": 91,
+  "reposts": 124,
+  "views": 175838
+ },
+ "postedAt": "2026-06-03T20:57:31.000Z",
+ "replyTo": null,
+ "text": "The Bitcoin 4 Year Cycle Journey ‘Model Portfolio’ has made its first buy in 3.5yrs.  Picking up 10BTC at $65,000.  Moving up to around a 60% BTC allocation. \n\nThe model can always be found here >> https://bitcoin.live/4yearcycle\n\nA new 4 YR Cycle video will be published tomorrow morning.  \n\nFYI - I very much doubt the 4 Yr Cycle has bottomed, however at this level it makes sense to begin some re accumulation, as the possibility of only a retest of the Feb lows to mark the 4yr cycle low is possible.  That would be the best Bull Case.  Dry powder remains for a more tradition Cycle Low around the Q3 period.\n\nReminder - The 4 Year Model is not designed to trade often, intends to always have solid allocation to Bitcoin (even when a top is defined), does not try to time tops, but rather waits for trend breakdown on a monthly timeframe, and is ultimately designed as a HODL strategy with strategic (well defined HTF) trades to add Bitcoin over time.  As evident by only 8 trades in 8 years.\nIf you're looking for more aggressive Spot positioning over the Weekly and 4 year Cycles that content is published on the Bitcoin Live website.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2062277523288068152",
+ "harness": {
+  "run": "2026-10-31T03-47-55Z",
+  "manifest_sha256": "76ee69624ea2b9328b3f138dbfe04636ffc970ec1aa15cc43bb66d8325d64d30",
+  "query": "from:BobLoukas since:2026-06-03 until:2026-06-08"
+ }
+}

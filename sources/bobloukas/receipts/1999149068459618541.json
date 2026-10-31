@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:26.895Z",
+ "cashtags": [],
+ "conversationId": "1999149068459618541",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1999149068459618541",
+ "kind": "post",
+ "metrics": {
+  "likes": 609,
+  "replies": 37,
+  "reposts": 36,
+  "views": 42825
+ },
+ "postedAt": "2025-12-11T16:07:34.000Z",
+ "replyTo": null,
+ "text": "Still believe Stocks are setup here for a good 6-8 Week run higher.  So far a constructive eight week pause before the next Cycle confirms.  \nHave to give it a little wiggle room until it breaks resistance.  Nov 17th candle is a stop.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1999149068459618541",
+ "harness": {
+  "run": "2026-10-31T03-28-21Z",
+  "manifest_sha256": "c02ce20beb826e706b2b33c18668b6975c7f6e723f9ba8dc68eba93123f5e55a",
+  "query": "from:BobLoukas since:2025-12-10 until:2025-12-15"
+ }
+}

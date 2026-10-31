@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:21.405Z",
+ "cashtags": [],
+ "conversationId": "2050241005366976617",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2050940521070080285",
+ "kind": "reply",
+ "metrics": {
+  "likes": 9,
+  "replies": 2,
+  "reposts": 2,
+  "views": 1441
+ },
+ "postedAt": "2026-05-03T14:08:19.000Z",
+ "replyTo": {
+  "postId": "2050940089371340882",
+  "handle": "JDP321"
+ },
+ "text": "I like BTC Only tbh, even knowing MSTR hi beta. I guess if you're buying it near mnav parity its ok.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2050940521070080285",
+ "harness": {
+  "run": "2026-10-31T03-47-15Z",
+  "manifest_sha256": "d829a2466fa415a7cdaeaff4a6cfdcca76ad661f2ee8e9461b5c6c66af591c27",
+  "query": "from:BobLoukas since:2026-04-29 until:2026-05-09"
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:57.876Z",
+ "cashtags": [],
+ "conversationId": "2007114650811343239",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2007114650811343239",
+ "kind": null,
+ "metrics": {
+  "likes": null,
+  "replies": null,
+  "reposts": null,
+  "views": null
+ },
+ "postedAt": "2026-01-02T15:39:57.000Z",
+ "replyTo": null,
+ "text": "Scammer warning: I will never DM you.\nMy only official accounts are X and YouTube.\n No Telegram. No other socials.\n\nWhere I publish analysis:\n Bitcoin Live – 3 videos/week on crypto & market analysis.  LINK> \nhttps://\nbitcoin.live/?aid=102\n The Financial Tap – Weekly coverage on",
+ "textTruncated": true,
+ "url": "https://x.com/BobLoukas/status/2007114650811343239",
+ "harness": {
+  "run": "2026-10-31T03-28-48Z",
+  "manifest_sha256": "15f3f120834a9e146f93308ba01d65815256ffe13b590dc9e35f844e48ccf261",
+  "query": "from:BobLoukas since:2025-12-30 until:2026-01-09"
+ }
+}

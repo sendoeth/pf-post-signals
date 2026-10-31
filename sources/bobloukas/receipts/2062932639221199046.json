@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:48:00.528Z",
+ "cashtags": [],
+ "conversationId": "2059272580956098826",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2062932639221199046",
+ "kind": "reply",
+ "metrics": {
+  "likes": 19,
+  "replies": 5,
+  "reposts": 0,
+  "views": 695
+ },
+ "postedAt": "2026-06-05T16:20:43.000Z",
+ "replyTo": {
+  "postId": "2059272580956098826",
+  "handle": "JoeCarlasare"
+ },
+ "text": "How’s the non stop trolling and Bullard posts working out for you about now, Joe?",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2062932639221199046",
+ "harness": {
+  "run": "2026-10-31T03-47-55Z",
+  "manifest_sha256": "76ee69624ea2b9328b3f138dbfe04636ffc970ec1aa15cc43bb66d8325d64d30",
+  "query": "from:BobLoukas since:2026-06-03 until:2026-06-08"
+ }
+}

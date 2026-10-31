@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:14.211Z",
+ "cashtags": [],
+ "conversationId": "2015841991372779729",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2015843156885958847",
+ "kind": "reply",
+ "metrics": {
+  "likes": 93,
+  "replies": 5,
+  "reposts": 1,
+  "views": 8242
+ },
+ "postedAt": "2026-01-26T17:43:55.000Z",
+ "replyTo": {
+  "postId": "2015842876958105890",
+  "handle": "yellokguy"
+ },
+ "text": "Because institutions are NET sellers, along with whales.  \n\nInstitutions, contrary to what bulltard Bitcoin maxi's want to tell you, dont care about bitcoin.  They go up 100% after Trump win, they Sell.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2015843156885958847",
+ "harness": {
+  "run": "2026-10-31T03-29-09Z",
+  "manifest_sha256": "12b6383eb0d3e548fb1ff7b7fa27ac18c6544170639bb262e25d9278c33ad772",
+  "query": "from:BobLoukas since:2026-01-19 until:2026-01-29"
+ }
+}

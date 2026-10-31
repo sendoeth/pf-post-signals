@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:48:09.375Z",
+ "cashtags": [],
+ "conversationId": "2065984699525165537",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2065992400963535175",
+ "kind": "reply",
+ "metrics": {
+  "likes": 1,
+  "replies": 2,
+  "reposts": 0,
+  "views": 763
+ },
+ "postedAt": "2026-06-14T02:59:07.000Z",
+ "replyTo": {
+  "postId": "2065990345704226818",
+  "handle": "Super_DaveO"
+ },
+ "text": "Yeah a game 6 is worth big $$$",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2065992400963535175",
+ "harness": {
+  "run": "2026-10-31T03-48-06Z",
+  "manifest_sha256": "485917866faaacba3f6ba610f71bd9e8742dd651e87192dd8b73f98728b3818a",
+  "query": "from:BobLoukas since:2026-06-08 until:2026-06-18"
+ }
+}

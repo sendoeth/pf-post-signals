@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:31.561Z",
+ "cashtags": [],
+ "conversationId": "2034359665539117115",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2034360828879597947",
+ "kind": "reply",
+ "metrics": {
+  "likes": 43,
+  "replies": 5,
+  "reposts": 0,
+  "views": 3628
+ },
+ "postedAt": "2026-03-18T20:06:32.000Z",
+ "replyTo": {
+  "postId": "2034360167991738719",
+  "handle": "sedonaroxx"
+ },
+ "text": "I’ve been hibernating.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2034360828879597947",
+ "harness": {
+  "run": "2026-10-31T03-30-28Z",
+  "manifest_sha256": "01e2451c651b7ec60ad39a25711bb00e031bd0ff8d61791c7b1a209fde870cd4",
+  "query": "from:BobLoukas since:2026-03-10 until:2026-03-20"
+ }
+}

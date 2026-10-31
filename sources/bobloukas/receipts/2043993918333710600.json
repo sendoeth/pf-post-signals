@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:46:38.671Z",
+ "cashtags": [],
+ "conversationId": "2043830218868080997",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2043993918333710600",
+ "kind": "repost",
+ "metrics": {
+  "likes": 217,
+  "replies": 61,
+  "reposts": 16,
+  "views": 71672
+ },
+ "postedAt": "2026-04-14T10:05:00.000Z",
+ "replyTo": null,
+ "text": "Sentiment check - \n\nIn 6 months, Bitcoin will be",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2043993918333710600",
+ "harness": {
+  "run": "2026-10-31T03-46-34Z",
+  "manifest_sha256": "c27074f7b8d8c85ca6aaed1a98de9a36b44ad09e077f54e4c1ddc2264c260dfe",
+  "query": "from:BobLoukas since:2026-04-14 until:2026-04-19"
+ }
+}

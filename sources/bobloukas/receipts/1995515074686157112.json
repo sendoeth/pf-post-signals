@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:57.480Z",
+ "cashtags": [],
+ "conversationId": "1995515074686157112",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1995515074686157112",
+ "kind": "post",
+ "metrics": {
+  "likes": 337,
+  "replies": 48,
+  "reposts": 3,
+  "views": 34827
+ },
+ "postedAt": "2025-12-01T15:27:23.000Z",
+ "replyTo": null,
+ "text": "gm - happy Monday.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1995515074686157112",
+ "harness": {
+  "run": "2026-10-31T03-11-49Z",
+  "manifest_sha256": "44284fd2b0f53f602994edeb448d034ad7c1447b6074bcf56e01e43a4ce3849c",
+  "query": "from:BobLoukas since:2025-11-30 until:2025-12-10"
+ }
+}

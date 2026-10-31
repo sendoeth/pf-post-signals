@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:03.308Z",
+ "cashtags": [],
+ "conversationId": "2023258901379183029",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2023411952240968067",
+ "kind": "reply",
+ "metrics": {
+  "likes": 7,
+  "replies": 2,
+  "reposts": 0,
+  "views": 1570
+ },
+ "postedAt": "2026-02-16T14:59:37.000Z",
+ "replyTo": {
+  "postId": "2023406973350461803",
+  "handle": "HydratedViper_"
+ },
+ "text": "Not possible and never will.  Not at any meaningful level anyway.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2023411952240968067",
+ "harness": {
+  "run": "2026-10-31T03-29-58Z",
+  "manifest_sha256": "046caa1b799b16c1e3d97c7b87fc3565fd829c623a7d127628756b707828f2b0",
+  "query": "from:BobLoukas since:2026-02-08 until:2026-02-18"
+ }
+}

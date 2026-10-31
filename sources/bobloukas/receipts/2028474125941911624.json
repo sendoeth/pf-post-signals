@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:25.382Z",
+ "cashtags": [],
+ "conversationId": "2028473753022136453",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2028474125941911624",
+ "kind": "reply",
+ "metrics": {
+  "likes": 319,
+  "replies": 17,
+  "reposts": 5,
+  "views": 102566
+ },
+ "postedAt": "2026-03-02T14:14:53.000Z",
+ "replyTo": {
+  "postId": "2028473901726986740",
+  "handle": "randgroup"
+ },
+ "text": "Business Cycle indicator = the biggest cope in crypto.\n\nJust my thoughts.  🤷‍♂️",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2028474125941911624",
+ "harness": {
+  "run": "2026-10-31T03-30-20Z",
+  "manifest_sha256": "3d96553ad1872d40978ec78e357b1cef213e2cb79cabbf5b401432e513cb4d1c",
+  "query": "from:BobLoukas since:2026-02-28 until:2026-03-10"
+ }
+}

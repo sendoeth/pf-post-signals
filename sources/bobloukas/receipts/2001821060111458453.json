@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:32.382Z",
+ "cashtags": [],
+ "conversationId": "2001707680721932521",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2001821060111458453",
+ "kind": "reply",
+ "metrics": {
+  "likes": 22,
+  "replies": 3,
+  "reposts": 0,
+  "views": 3336
+ },
+ "postedAt": "2025-12-19T01:05:07.000Z",
+ "replyTo": {
+  "postId": "2001738519321153557",
+  "handle": "BTCceo42069"
+ },
+ "text": "Selling is never off the table.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2001821060111458453",
+ "harness": {
+  "run": "2026-10-31T03-28-29Z",
+  "manifest_sha256": "6b809f4562719e0f7de013cb2199555f0361999760d9b9ef86799734f195de03",
+  "query": "from:BobLoukas since:2025-12-15 until:2025-12-20"
+ }
+}

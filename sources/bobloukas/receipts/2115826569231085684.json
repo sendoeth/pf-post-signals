@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:36:43.946Z",
+ "cashtags": [],
+ "conversationId": "2115823513915290059",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2115826569231085684",
+ "kind": "reply",
+ "metrics": {
+  "likes": 20,
+  "replies": 3,
+  "reposts": 0,
+  "views": 3193
+ },
+ "postedAt": "2026-10-29T15:22:18.000Z",
+ "replyTo": {
+  "postId": "2115824895343075680",
+  "handle": "rushabh62"
+ },
+ "text": "I think it's more about holding above $79k",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2115826569231085684",
+ "harness": {
+  "run": "2026-10-31T04-36-38Z",
+  "manifest_sha256": "4ed1a5ced8c750ca12e8ad455fcb0440edc42dc649d9b9187902e0982ccc36b8",
+  "query": "from:BobLoukas since:2026-10-26 until:2026-11-01"
+ }
+}

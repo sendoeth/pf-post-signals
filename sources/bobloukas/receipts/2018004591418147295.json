@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:37.933Z",
+ "cashtags": [],
+ "conversationId": "2017825233265099004",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2018004591418147295",
+ "kind": "reply",
+ "metrics": {
+  "likes": 45,
+  "replies": 2,
+  "reposts": 0,
+  "views": 2193
+ },
+ "postedAt": "2026-02-01T16:52:41.000Z",
+ "replyTo": {
+  "postId": "2017962023208779783",
+  "handle": "camelfinance"
+ },
+ "text": "Trolls.  People living miserable lives getting a little rise online.  \n\nJust keeping doing and improving and ignore them.  Nobody can satisfy everyone.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2018004591418147295",
+ "harness": {
+  "run": "2026-10-31T03-29-33Z",
+  "manifest_sha256": "14f0ea84840c9dca9fe00212e469c77a2ebdd67bd750609b8a6bddcb4356ba1c",
+  "query": "from:BobLoukas since:2026-01-29 until:2026-02-03"
+ }
+}

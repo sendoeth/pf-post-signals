@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:03:50.135Z",
+ "cashtags": [],
+ "conversationId": "2069870795178803267",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2069870795178803267",
+ "kind": "quote",
+ "metrics": {
+  "likes": 381,
+  "replies": 28,
+  "reposts": 9,
+  "views": 93571
+ },
+ "postedAt": "2026-06-24T19:50:28.000Z",
+ "replyTo": null,
+ "text": "Tweak the math slightly, move the band, then call it “math programmed”.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2069870795178803267",
+ "harness": {
+  "run": "2026-10-31T04-03-43Z",
+  "manifest_sha256": "151afdee8bedac9fee9cf5b5571f2bc7c3f8925a0be613401ca72cfa26688b6d",
+  "query": "from:BobLoukas since:2026-06-23 until:2026-06-28"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:46:36.872Z",
+ "cashtags": [],
+ "conversationId": "2044869638211698786",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2044912305163399185",
+ "kind": "reply",
+ "metrics": {
+  "likes": 7,
+  "replies": 1,
+  "reposts": 1,
+  "views": 906
+ },
+ "postedAt": "2026-04-16T22:54:20.000Z",
+ "replyTo": {
+  "postId": "2044903657251254737",
+  "handle": "georgerye2025"
+ },
+ "text": "Dates DO NOT matter for tops in cycles.  \n\nOne must wait for trends to break.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2044912305163399185",
+ "harness": {
+  "run": "2026-10-31T03-46-34Z",
+  "manifest_sha256": "c27074f7b8d8c85ca6aaed1a98de9a36b44ad09e077f54e4c1ddc2264c260dfe",
+  "query": "from:BobLoukas since:2026-04-14 until:2026-04-19"
+ }
+}

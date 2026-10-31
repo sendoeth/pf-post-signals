@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:48:03.671Z",
+ "cashtags": [],
+ "conversationId": "2062282074204086698",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2062284600978620453",
+ "kind": "reply",
+ "metrics": {
+  "likes": 17,
+  "replies": 2,
+  "reposts": 0,
+  "views": 887
+ },
+ "postedAt": "2026-06-03T21:25:38.000Z",
+ "replyTo": {
+  "postId": "2062283702445478257",
+  "handle": "factorydoge69"
+ },
+ "text": "Only one portfolio and nibbling. Active account is very heavy cash.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2062284600978620453",
+ "harness": {
+  "run": "2026-10-31T03-47-55Z",
+  "manifest_sha256": "76ee69624ea2b9328b3f138dbfe04636ffc970ec1aa15cc43bb66d8325d64d30",
+  "query": "from:BobLoukas since:2026-06-03 until:2026-06-08"
+ }
+}

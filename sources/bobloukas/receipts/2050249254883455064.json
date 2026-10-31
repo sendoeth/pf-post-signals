@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:21.406Z",
+ "cashtags": [],
+ "conversationId": "2050238756373037381",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2050249254883455064",
+ "kind": "reply",
+ "metrics": {
+  "likes": 3,
+  "replies": 1,
+  "reposts": 0,
+  "views": 982
+ },
+ "postedAt": "2026-05-01T16:21:28.000Z",
+ "replyTo": {
+  "postId": "2050247195413336219",
+  "handle": "CirrusNFT"
+ },
+ "text": "What you valuing this at, more than an APE?",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2050249254883455064",
+ "harness": {
+  "run": "2026-10-31T03-47-15Z",
+  "manifest_sha256": "d829a2466fa415a7cdaeaff4a6cfdcca76ad661f2ee8e9461b5c6c66af591c27",
+  "query": "from:BobLoukas since:2026-04-29 until:2026-05-09"
+ }
+}

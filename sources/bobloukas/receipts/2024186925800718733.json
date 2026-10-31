@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:16.945Z",
+ "cashtags": [],
+ "conversationId": "2024086492931633153",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2024186925800718733",
+ "kind": "reply",
+ "metrics": {
+  "likes": 407,
+  "replies": 15,
+  "reposts": 6,
+  "views": 37536
+ },
+ "postedAt": "2026-02-18T18:19:05.000Z",
+ "replyTo": {
+  "postId": "2024086492931633153",
+  "handle": "coinbureau"
+ },
+ "text": "That's because institutions got in, made their 2x, and got out.  And on to the next.  They dont care, that was the misconception of the Cycle.\n\nNow it's a matter of time.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2024186925800718733",
+ "harness": {
+  "run": "2026-10-31T03-30-09Z",
+  "manifest_sha256": "f4cb50b74e111333644768234a62c37c553d27111cb37124caf5fe4bcbd50de6",
+  "query": "from:BobLoukas since:2026-02-18 until:2026-02-28"
+ }
+}

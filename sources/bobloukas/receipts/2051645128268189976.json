@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:20.274Z",
+ "cashtags": [],
+ "conversationId": "2051627961724305706",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2051645128268189976",
+ "kind": "reply",
+ "metrics": {
+  "likes": 9,
+  "replies": 2,
+  "reposts": 0,
+  "views": 2012
+ },
+ "postedAt": "2026-05-05T12:48:10.000Z",
+ "replyTo": {
+  "postId": "2051641948512076250",
+  "handle": "Sykodelic_"
+ },
+ "text": "Also, very sorry to hear about your loss.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2051645128268189976",
+ "harness": {
+  "run": "2026-10-31T03-47-15Z",
+  "manifest_sha256": "d829a2466fa415a7cdaeaff4a6cfdcca76ad661f2ee8e9461b5c6c66af591c27",
+  "query": "from:BobLoukas since:2026-04-29 until:2026-05-09"
+ }
+}

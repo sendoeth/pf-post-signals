@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:01.652Z",
+ "cashtags": [],
+ "conversationId": "2011603926483951869",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2011796693847507260",
+ "kind": "reply",
+ "metrics": {
+  "likes": 12,
+  "replies": 1,
+  "reposts": 0,
+  "views": 1618
+ },
+ "postedAt": "2026-01-15T13:44:43.000Z",
+ "replyTo": {
+  "postId": "2011704538034745715",
+  "handle": "NorthstarCharts"
+ },
+ "text": "You did. \n\nAnd funny he said. “Nobody in the gold complex”.   A fair few of us have been on this ride from the ground.  Let’s be happy. \n\nBut click baiting still the focus.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2011796693847507260",
+ "harness": {
+  "run": "2026-10-31T03-28-58Z",
+  "manifest_sha256": "85f34bbfce551087a183cda6c242ec59865f566dc1f56165cc796d53128e011e",
+  "query": "from:BobLoukas since:2026-01-09 until:2026-01-19"
+ }
+}

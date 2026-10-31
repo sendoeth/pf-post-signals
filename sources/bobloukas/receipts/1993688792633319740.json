@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:42.262Z",
+ "cashtags": [],
+ "conversationId": "1993675350820155784",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1993688792633319740",
+ "kind": "post",
+ "metrics": {
+  "likes": 8,
+  "replies": 1,
+  "reposts": 0,
+  "views": 769
+ },
+ "postedAt": "2025-11-26T14:30:23.000Z",
+ "replyTo": null,
+ "text": "yes all strategies rebalance twice a year.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1993688792633319740",
+ "harness": {
+  "run": "2026-10-31T03-11-39Z",
+  "manifest_sha256": "8b207307b5b7f63da4785b2292870b7a03e0480c97b05c0d561f294be3c54557",
+  "query": "from:BobLoukas since:2025-11-25 until:2025-11-30"
+ }
+}

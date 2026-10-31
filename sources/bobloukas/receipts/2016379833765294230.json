@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:12.216Z",
+ "cashtags": [],
+ "conversationId": "2016379371573960870",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2016379833765294230",
+ "kind": "reply",
+ "metrics": {
+  "likes": 376,
+  "replies": 15,
+  "reposts": 3,
+  "views": 36792
+ },
+ "postedAt": "2026-01-28T05:16:29.000Z",
+ "replyTo": {
+  "postId": "2016379371573960870",
+  "handle": "benjamincowen"
+ },
+ "text": "It’s cooked.  But therein lies the opportunity.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2016379833765294230",
+ "harness": {
+  "run": "2026-10-31T03-29-09Z",
+  "manifest_sha256": "12b6383eb0d3e548fb1ff7b7fa27ac18c6544170639bb262e25d9278c33ad772",
+  "query": "from:BobLoukas since:2026-01-19 until:2026-01-29"
+ }
+}

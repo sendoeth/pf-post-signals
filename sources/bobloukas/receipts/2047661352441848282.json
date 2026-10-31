@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:12.545Z",
+ "cashtags": [],
+ "conversationId": "2047660759698514164",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2047661352441848282",
+ "kind": "reply",
+ "metrics": {
+  "likes": 21,
+  "replies": 1,
+  "reposts": 0,
+  "views": 1826
+ },
+ "postedAt": "2026-04-24T12:58:04.000Z",
+ "replyTo": {
+  "postId": "2047661078180475279",
+  "handle": "Brian_A_E"
+ },
+ "text": "There is a choice!\n\nMaybe not collectively.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2047661352441848282",
+ "harness": {
+  "run": "2026-10-31T03-47-04Z",
+  "manifest_sha256": "5336994f71bbe4f700cf60362be35add5dbd82d5eddf921d84495b46cbd2c660",
+  "query": "from:BobLoukas since:2026-04-24 until:2026-04-29"
+ }
+}

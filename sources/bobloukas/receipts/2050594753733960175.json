@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:21.406Z",
+ "cashtags": [],
+ "conversationId": "2049565284768317760",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2050594753733960175",
+ "kind": "reply",
+ "metrics": {
+  "likes": 1,
+  "replies": 2,
+  "reposts": 0,
+  "views": 599
+ },
+ "postedAt": "2026-05-02T15:14:22.000Z",
+ "replyTo": {
+  "postId": "2050579848016326919",
+  "handle": "WhenFlies"
+ },
+ "text": "You mean that Triple Crown winner and 21 wins in 26 starts War Admiral?",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2050594753733960175",
+ "harness": {
+  "run": "2026-10-31T03-47-15Z",
+  "manifest_sha256": "d829a2466fa415a7cdaeaff4a6cfdcca76ad661f2ee8e9461b5c6c66af591c27",
+  "query": "from:BobLoukas since:2026-04-29 until:2026-05-09"
+ }
+}

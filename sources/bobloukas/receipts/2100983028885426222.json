@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:20:38.630Z",
+ "cashtags": [],
+ "conversationId": "2100966611163181198",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2100983028885426222",
+ "kind": "reply",
+ "metrics": {
+  "likes": 3,
+  "replies": 0,
+  "reposts": 0,
+  "views": 1110
+ },
+ "postedAt": "2026-09-18T16:19:23.000Z",
+ "replyTo": {
+  "postId": "2100968834362384744",
+  "handle": "zapzarap_eth"
+ },
+ "text": "Yikes. Actually didn’t even notice the Jews part of it.  Ofc total bs.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2100983028885426222",
+ "harness": {
+  "run": "2026-10-31T04-20-32Z",
+  "manifest_sha256": "80a148b1f994cf8c839d1c034ed935a5012ef4db79cbea22e92cec2ce7b8c23a",
+  "query": "from:BobLoukas since:2026-09-16 until:2026-09-26"
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:48:09.377Z",
+ "cashtags": [],
+ "conversationId": "2064767776879763466",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2064767776879763466",
+ "kind": "post",
+ "metrics": {
+  "likes": 719,
+  "replies": 24,
+  "reposts": 21,
+  "views": 56967
+ },
+ "postedAt": "2026-06-10T17:52:54.000Z",
+ "replyTo": null,
+ "text": "Significant confluence of HTF Cycle Lows that are due around Oct this year.  Bitcoin and now PM's heading there.\n\nSemi's have been carrying a LOT of weight for equities broadly.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2064767776879763466",
+ "harness": {
+  "run": "2026-10-31T03-48-06Z",
+  "manifest_sha256": "485917866faaacba3f6ba610f71bd9e8742dd651e87192dd8b73f98728b3818a",
+  "query": "from:BobLoukas since:2026-06-08 until:2026-06-18"
+ }
+}

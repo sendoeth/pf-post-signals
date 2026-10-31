@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:37.932Z",
+ "cashtags": [],
+ "conversationId": "2018311962845749502",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2018321067014496347",
+ "kind": "reply",
+ "metrics": {
+  "likes": 35,
+  "replies": 3,
+  "reposts": 1,
+  "views": 2941
+ },
+ "postedAt": "2026-02-02T13:50:15.000Z",
+ "replyTo": {
+  "postId": "2018319408410591595",
+  "handle": "joshkimerling"
+ },
+ "text": "That’s the current “best fit” timing for a low.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2018321067014496347",
+ "harness": {
+  "run": "2026-10-31T03-29-33Z",
+  "manifest_sha256": "14f0ea84840c9dca9fe00212e469c77a2ebdd67bd750609b8a6bddcb4356ba1c",
+  "query": "from:BobLoukas since:2026-01-29 until:2026-02-03"
+ }
+}

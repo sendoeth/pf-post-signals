@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:44.067Z",
+ "cashtags": [],
+ "conversationId": "2003118600819753362",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2003458222578123216",
+ "kind": "reply",
+ "metrics": {
+  "likes": 6,
+  "replies": 1,
+  "reposts": 0,
+  "views": 588
+ },
+ "postedAt": "2025-12-23T13:30:37.000Z",
+ "replyTo": {
+  "postId": "2003455285525090468",
+  "handle": "schrijen_stijn"
+ },
+ "text": "The cycle low is not and exact date. It’s a range or a timing band.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2003458222578123216",
+ "harness": {
+  "run": "2026-10-31T03-28-37Z",
+  "manifest_sha256": "9d13b999b16b71141a9123223a30beac3017eedee0e627ab1a0efb00c27a8930",
+  "query": "from:BobLoukas since:2025-12-20 until:2025-12-30"
+ }
+}

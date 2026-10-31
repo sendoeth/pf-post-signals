@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:55.099Z",
+ "cashtags": [],
+ "conversationId": "2018747997769904621",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2018752205927391594",
+ "kind": "reply",
+ "metrics": {
+  "likes": 31,
+  "replies": 0,
+  "reposts": 0,
+  "views": 5103
+ },
+ "postedAt": "2026-02-03T18:23:27.000Z",
+ "replyTo": {
+  "postId": "2018750023044128814",
+  "handle": "Cryptollica"
+ },
+ "text": "that chart looks like it has a long way to go before lining up",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2018752205927391594",
+ "harness": {
+  "run": "2026-10-31T03-29-44Z",
+  "manifest_sha256": "aaa8d4e197f46be6cccda8b30abf99f805399d35c1bf30c84b78a3f1a95bcc12",
+  "query": "from:BobLoukas since:2026-02-03 until:2026-02-08"
+ }
+}

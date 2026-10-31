@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:55.785Z",
+ "cashtags": [],
+ "conversationId": "2007109829383626911",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2007110857629852042",
+ "kind": "reply",
+ "metrics": {
+  "likes": 0,
+  "replies": 1,
+  "reposts": 0,
+  "views": 737
+ },
+ "postedAt": "2026-01-02T15:24:53.000Z",
+ "replyTo": {
+  "postId": "2007109829383626911",
+  "handle": "hindersson"
+ },
+ "text": "They keep the old rate.  Cheers.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2007110857629852042",
+ "harness": {
+  "run": "2026-10-31T03-28-48Z",
+  "manifest_sha256": "15f3f120834a9e146f93308ba01d65815256ffe13b590dc9e35f844e48ccf261",
+  "query": "from:BobLoukas since:2025-12-30 until:2026-01-09"
+ }
+}

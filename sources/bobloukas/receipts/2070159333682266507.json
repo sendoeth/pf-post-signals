@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:03:48.263Z",
+ "cashtags": [],
+ "conversationId": "2070157766312780061",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2070159333682266507",
+ "kind": "reply",
+ "metrics": {
+  "likes": 48,
+  "replies": 2,
+  "reposts": 0,
+  "views": 4485
+ },
+ "postedAt": "2026-06-25T14:57:01.000Z",
+ "replyTo": {
+  "postId": "2070158906920488961",
+  "handle": "LoneKonig"
+ },
+ "text": "Show me where i said bottom is in?",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2070159333682266507",
+ "harness": {
+  "run": "2026-10-31T04-03-43Z",
+  "manifest_sha256": "151afdee8bedac9fee9cf5b5571f2bc7c3f8925a0be613401ca72cfa26688b6d",
+  "query": "from:BobLoukas since:2026-06-23 until:2026-06-28"
+ }
+}

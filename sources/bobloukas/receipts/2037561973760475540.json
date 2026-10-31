@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:38.926Z",
+ "cashtags": [],
+ "conversationId": "2037561030331478491",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2037561973760475540",
+ "kind": "reply",
+ "metrics": {
+  "likes": 14,
+  "replies": 1,
+  "reposts": 1,
+  "views": 735
+ },
+ "postedAt": "2026-03-27T16:06:45.000Z",
+ "replyTo": {
+  "postId": "2037561831695274352",
+  "handle": "777regulus"
+ },
+ "text": "effort is where joy lives.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2037561973760475540",
+ "harness": {
+  "run": "2026-10-31T03-30-36Z",
+  "manifest_sha256": "4650ab529d8aa763c70824f28353a63102c967a6a59d9111c9a5115d681b6e4d",
+  "query": "from:BobLoukas since:2026-03-20 until:2026-03-30"
+ }
+}

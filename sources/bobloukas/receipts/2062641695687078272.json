@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:48:01.863Z",
+ "cashtags": [],
+ "conversationId": "2062580409091620951",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2062641695687078272",
+ "kind": "reply",
+ "metrics": {
+  "likes": 34,
+  "replies": 0,
+  "reposts": 1,
+  "views": 1858
+ },
+ "postedAt": "2026-06-04T21:04:36.000Z",
+ "replyTo": {
+  "postId": "2062603505135755310",
+  "handle": "McD5fl"
+ },
+ "text": "Narratives get created once early money fills.  Then sentiment turns.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2062641695687078272",
+ "harness": {
+  "run": "2026-10-31T03-47-55Z",
+  "manifest_sha256": "76ee69624ea2b9328b3f138dbfe04636ffc970ec1aa15cc43bb66d8325d64d30",
+  "query": "from:BobLoukas since:2026-06-03 until:2026-06-08"
+ }
+}

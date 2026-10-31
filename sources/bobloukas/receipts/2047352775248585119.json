@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:46:58.839Z",
+ "cashtags": [],
+ "conversationId": "2047352775248585119",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2047352775248585119",
+ "kind": "post",
+ "metrics": {
+  "likes": 301,
+  "replies": 16,
+  "reposts": 18,
+  "views": 44873
+ },
+ "postedAt": "2026-04-23T16:31:54.000Z",
+ "replyTo": null,
+ "text": "Launched new service for entrepreneurs, nomads, and independents who want a physical mailing address in Manhattan.\n\nUse it for letterhead, website, banking and filings. Get mail scanned and emailed to your inbox or physically forwarded.\n\nManhattan Address- https://manhattanaddress.com/",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2047352775248585119",
+ "harness": {
+  "run": "2026-10-31T03-46-54Z",
+  "manifest_sha256": "d66bf07857f47292cdfd802d2817253a59a804ad438a1e7c7e149ca9c0a4fd10",
+  "query": "from:BobLoukas since:2026-04-19 until:2026-04-24"
+ }
+}

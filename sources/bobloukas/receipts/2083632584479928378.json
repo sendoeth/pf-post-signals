@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:19:49.115Z",
+ "cashtags": [],
+ "conversationId": "2083632584479928378",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2083632584479928378",
+ "kind": "post",
+ "metrics": {
+  "likes": 1368,
+  "replies": 72,
+  "reposts": 15,
+  "views": 87682
+ },
+ "postedAt": "2026-08-01T19:14:54.000Z",
+ "replyTo": null,
+ "text": "Checking in to say 👋 and hope the summer going well.  \n\nSad to see the coldcard hack.  And lots of factors slowly starting to line up for a bitcoin low, but gee, so many accounts are so impatient.  \n\nAll the best everyone. ☀️",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2083632584479928378",
+ "harness": {
+  "run": "2026-10-31T04-19-47Z",
+  "manifest_sha256": "0d10a2ba044e87d7994bccc9c7e9f293ef408c69e222d5cad2abf8e6ae6ce30c",
+  "query": "from:BobLoukas since:2026-07-28 until:2026-08-07"
+ }
+}

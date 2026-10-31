@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:14.211Z",
+ "cashtags": [],
+ "conversationId": "2016207827027796278",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2016207827027796278",
+ "kind": "quote",
+ "metrics": {
+  "likes": 295,
+  "replies": 16,
+  "reposts": 12,
+  "views": 52024
+ },
+ "postedAt": "2026-01-27T17:52:59.000Z",
+ "replyTo": null,
+ "text": "Since June '25, the index is essentially flat and was positive for most of that period until the past two weeks. Gold’s repricing isn’t a dollar story but a global one, and beyond fiat repricing.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2016207827027796278",
+ "harness": {
+  "run": "2026-10-31T03-29-09Z",
+  "manifest_sha256": "12b6383eb0d3e548fb1ff7b7fa27ac18c6544170639bb262e25d9278c33ad772",
+  "query": "from:BobLoukas since:2026-01-19 until:2026-01-29"
+ }
+}

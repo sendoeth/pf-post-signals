@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:55.716Z",
+ "cashtags": [],
+ "conversationId": "1996035572176224753",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1996222885849944435",
+ "kind": "reply",
+ "metrics": {
+  "likes": 451,
+  "replies": 17,
+  "reposts": 5,
+  "views": 20466
+ },
+ "postedAt": "2025-12-03T14:19:58.000Z",
+ "replyTo": {
+  "postId": "1996035572176224753",
+  "handle": "JoeCarlasare"
+ },
+ "text": "We don't know, Joe. Everyone is just trying their best to be positioned for all outcomes.  \n\nIt's not a religion.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1996222885849944435",
+ "harness": {
+  "run": "2026-10-31T03-11-49Z",
+  "manifest_sha256": "44284fd2b0f53f602994edeb448d034ad7c1447b6074bcf56e01e43a4ce3849c",
+  "query": "from:BobLoukas since:2025-11-30 until:2025-12-10"
+ }
+}

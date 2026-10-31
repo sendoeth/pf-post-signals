@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:55.100Z",
+ "cashtags": [],
+ "conversationId": "2018735557237780680",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2018735557237780680",
+ "kind": "quote",
+ "metrics": {
+  "likes": 679,
+  "replies": 55,
+  "reposts": 29,
+  "views": 104442
+ },
+ "postedAt": "2026-02-03T17:17:17.000Z",
+ "replyTo": null,
+ "text": "Probably bullish for ETH in the long term.  Short term just adds more confusion and lack of clarity.  \n\nIt's a technical argument but think they just realized they hijack the value.  The whole L2/L3 as the scalability path never made sense to me.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2018735557237780680",
+ "harness": {
+  "run": "2026-10-31T03-29-44Z",
+  "manifest_sha256": "aaa8d4e197f46be6cccda8b30abf99f805399d35c1bf30c84b78a3f1a95bcc12",
+  "query": "from:BobLoukas since:2026-02-03 until:2026-02-08"
+ }
+}

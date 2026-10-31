@@ -1,0 +1,27 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:26.895Z",
+ "cashtags": [
+  "HYPE"
+ ],
+ "conversationId": "1999142435549593830",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1999142435549593830",
+ "kind": "post",
+ "metrics": {
+  "likes": 632,
+  "replies": 126,
+  "reposts": 27,
+  "views": 111569
+ },
+ "postedAt": "2025-12-11T15:41:13.000Z",
+ "replyTo": null,
+ "text": "Not a good look on all that $HYPE\n\nWas one of the leaders this cycle.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1999142435549593830",
+ "harness": {
+  "run": "2026-10-31T03-28-21Z",
+  "manifest_sha256": "c02ce20beb826e706b2b33c18668b6975c7f6e723f9ba8dc68eba93123f5e55a",
+  "query": "from:BobLoukas since:2025-12-10 until:2025-12-15"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:24.289Z",
+ "cashtags": [],
+ "conversationId": "1999179540506014087",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1999182999225598008",
+ "kind": "reply",
+ "metrics": {
+  "likes": 25,
+  "replies": 4,
+  "reposts": 0,
+  "views": 15011
+ },
+ "postedAt": "2025-12-11T18:22:24.000Z",
+ "replyTo": {
+  "postId": "1999179540506014087",
+  "handle": "TechCharts"
+ },
+ "text": "How do you normally play this Aksel.  Take profit be happy, or trailing stop?",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1999182999225598008",
+ "harness": {
+  "run": "2026-10-31T03-28-21Z",
+  "manifest_sha256": "c02ce20beb826e706b2b33c18668b6975c7f6e723f9ba8dc68eba93123f5e55a",
+  "query": "from:BobLoukas since:2025-12-10 until:2025-12-15"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:48:01.864Z",
+ "cashtags": [],
+ "conversationId": "2028473753022136453",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2062559704719425702",
+ "kind": "reply",
+ "metrics": {
+  "likes": 31,
+  "replies": 1,
+  "reposts": 0,
+  "views": 2767
+ },
+ "postedAt": "2026-06-04T15:38:48.000Z",
+ "replyTo": {
+  "postId": "2028662251272413597",
+  "handle": "EagleOneWhiskey"
+ },
+ "text": "You levered up and lost it all because somebody convinced you bitcoin follows the Manufacturing index.  Yes, MaNufActUring index, and you're mad at me?  :)",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2062559704719425702",
+ "harness": {
+  "run": "2026-10-31T03-47-55Z",
+  "manifest_sha256": "76ee69624ea2b9328b3f138dbfe04636ffc970ec1aa15cc43bb66d8325d64d30",
+  "query": "from:BobLoukas since:2026-06-03 until:2026-06-08"
+ }
+}

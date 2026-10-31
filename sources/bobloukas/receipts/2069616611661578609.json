@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:03:50.138Z",
+ "cashtags": [],
+ "conversationId": "2069613442852417902",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2069616611661578609",
+ "kind": "reply",
+ "metrics": {
+  "likes": 35,
+  "replies": 2,
+  "reposts": 0,
+  "views": 4497
+ },
+ "postedAt": "2026-06-24T03:00:26.000Z",
+ "replyTo": {
+  "postId": "2069615962052337750",
+  "handle": "jaggedah"
+ },
+ "text": "That’s one idea.  But even if you look at it, it has swings of well over 100%",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2069616611661578609",
+ "harness": {
+  "run": "2026-10-31T04-03-43Z",
+  "manifest_sha256": "151afdee8bedac9fee9cf5b5571f2bc7c3f8925a0be613401ca72cfa26688b6d",
+  "query": "from:BobLoukas since:2026-06-23 until:2026-06-28"
+ }
+}

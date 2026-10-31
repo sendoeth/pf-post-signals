@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:33.099Z",
+ "cashtags": [],
+ "conversationId": "1992280862252212723",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1992286222882877444",
+ "kind": "reply",
+ "metrics": {
+  "likes": 34,
+  "replies": 2,
+  "reposts": 0,
+  "views": 2607
+ },
+ "postedAt": "2025-11-22T17:37:05.000Z",
+ "replyTo": {
+  "postId": "1992285538964090881",
+  "handle": "WittyChartGuy"
+ },
+ "text": "I dont think it exceeds the ATH.  But ofc can't rule it out.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1992286222882877444",
+ "harness": {
+  "run": "2026-10-31T03-11-28Z",
+  "manifest_sha256": "5b4f94307a59f6b36bf90ded7f7487cb77a37651415230998ae74712e788ac95",
+  "query": "from:BobLoukas since:2025-11-20 until:2025-11-25"
+ }
+}

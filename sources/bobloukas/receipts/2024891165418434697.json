@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:13.949Z",
+ "cashtags": [],
+ "conversationId": "2024876728171008477",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2024891165418434697",
+ "kind": "reply",
+ "metrics": {
+  "likes": 22,
+  "replies": 2,
+  "reposts": 0,
+  "views": 842
+ },
+ "postedAt": "2026-02-20T16:57:29.000Z",
+ "replyTo": {
+  "postId": "2024888263371374840",
+  "handle": "MacroGHOST777"
+ },
+ "text": "Doubt they guy imposing them at will has one either.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2024891165418434697",
+ "harness": {
+  "run": "2026-10-31T03-30-09Z",
+  "manifest_sha256": "f4cb50b74e111333644768234a62c37c553d27111cb37124caf5fe4bcbd50de6",
+  "query": "from:BobLoukas since:2026-02-18 until:2026-02-28"
+ }
+}

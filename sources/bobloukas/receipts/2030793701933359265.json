@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:22.935Z",
+ "cashtags": [],
+ "conversationId": "2030793701933359265",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2030793701933359265",
+ "kind": "post",
+ "metrics": {
+  "likes": 600,
+  "replies": 29,
+  "reposts": 11,
+  "views": 59083
+ },
+ "postedAt": "2026-03-08T23:52:03.000Z",
+ "replyTo": null,
+ "text": "Big week.  \n\nIn an election year, especially this administration, Markets are going to force the hands of objective and policy.  But once you’re in this deep, do you change course. \n\nLot to calculate.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2030793701933359265",
+ "harness": {
+  "run": "2026-10-31T03-30-20Z",
+  "manifest_sha256": "3d96553ad1872d40978ec78e357b1cef213e2cb79cabbf5b401432e513cb4d1c",
+  "query": "from:BobLoukas since:2026-02-28 until:2026-03-10"
+ }
+}

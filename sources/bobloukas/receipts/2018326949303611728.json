@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:37.932Z",
+ "cashtags": [],
+ "conversationId": "2018311962845749502",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2018326949303611728",
+ "kind": "reply",
+ "metrics": {
+  "likes": 66,
+  "replies": 5,
+  "reposts": 0,
+  "views": 4490
+ },
+ "postedAt": "2026-02-02T14:13:38.000Z",
+ "replyTo": {
+  "postId": "2018321091995779167",
+  "handle": "BitcoinAddict_"
+ },
+ "text": "I'm saying they haven't even accepted we're in one yet!",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2018326949303611728",
+ "harness": {
+  "run": "2026-10-31T03-29-33Z",
+  "manifest_sha256": "14f0ea84840c9dca9fe00212e469c77a2ebdd67bd750609b8a6bddcb4356ba1c",
+  "query": "from:BobLoukas since:2026-01-29 until:2026-02-03"
+ }
+}

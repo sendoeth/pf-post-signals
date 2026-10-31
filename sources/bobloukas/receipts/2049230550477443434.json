@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:07.284Z",
+ "cashtags": [],
+ "conversationId": "2049198652795539699",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2049230550477443434",
+ "kind": "reply",
+ "metrics": {
+  "likes": 23,
+  "replies": 1,
+  "reposts": 0,
+  "views": 1838
+ },
+ "postedAt": "2026-04-28T20:53:30.000Z",
+ "replyTo": {
+  "postId": "2049210910346994029",
+  "handle": "mattmanuelTO"
+ },
+ "text": "Earlier, for sure.  Not the last 10+ years.  But that's still a damn good strategy for most people.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2049230550477443434",
+ "harness": {
+  "run": "2026-10-31T03-47-04Z",
+  "manifest_sha256": "5336994f71bbe4f700cf60362be35add5dbd82d5eddf921d84495b46cbd2c660",
+  "query": "from:BobLoukas since:2026-04-24 until:2026-04-29"
+ }
+}

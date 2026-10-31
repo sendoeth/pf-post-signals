@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:04.927Z",
+ "cashtags": [],
+ "conversationId": "2021592641348005963",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2021595061704642824",
+ "kind": "reply",
+ "metrics": {
+  "likes": 193,
+  "replies": 3,
+  "reposts": 2,
+  "views": 16684
+ },
+ "postedAt": "2026-02-11T14:39:56.000Z",
+ "replyTo": {
+  "postId": "2021592641348005963",
+  "handle": "jack_t59794"
+ },
+ "text": "Thanks.  There is also a lot of important detail that gets left out in X banter.\n\nBitcoin is currently and clearly in a bear market, but I'm not a bear in the sense anyone should be selling bitcoin here.  If anything, I've stated that these are not bad areas to accumulate for long term holders.  \n\nThe above analysis is more for anyone being active and looking for even better entries or at least be mindful of how heavy (leverage - ALT's etc) they position.  Historically, bear markets just take a lot more time, even if we see an \"off the charts\" bottom like indicator early on.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2021595061704642824",
+ "harness": {
+  "run": "2026-10-31T03-29-58Z",
+  "manifest_sha256": "046caa1b799b16c1e3d97c7b87fc3565fd829c623a7d127628756b707828f2b0",
+  "query": "from:BobLoukas since:2026-02-08 until:2026-02-18"
+ }
+}

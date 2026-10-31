@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:26.899Z",
+ "cashtags": [],
+ "conversationId": "1999097633659330782",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1999105274431300060",
+ "kind": "reply",
+ "metrics": {
+  "likes": 14,
+  "replies": 2,
+  "reposts": 0,
+  "views": 1734
+ },
+ "postedAt": "2025-12-11T13:13:33.000Z",
+ "replyTo": {
+  "postId": "1999099004911538201",
+  "handle": "VelvetSoul"
+ },
+ "text": "Crazy adoption for now.  \n\nBubble too in a few years.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1999105274431300060",
+ "harness": {
+  "run": "2026-10-31T03-28-21Z",
+  "manifest_sha256": "c02ce20beb826e706b2b33c18668b6975c7f6e723f9ba8dc68eba93123f5e55a",
+  "query": "from:BobLoukas since:2025-12-10 until:2025-12-15"
+ }
+}

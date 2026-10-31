@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:13.950Z",
+ "cashtags": [],
+ "conversationId": "2024205887666098688",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2024213253958648007",
+ "kind": "reply",
+ "metrics": {
+  "likes": 106,
+  "replies": 16,
+  "reposts": 3,
+  "views": 3923
+ },
+ "postedAt": "2026-02-18T20:03:42.000Z",
+ "replyTo": {
+  "postId": "2024212989906190705",
+  "handle": "HardMoneyLex"
+ },
+ "text": "This reminds me of my teenage self walking into a casino and seeing 11 straight Blacks on roulette.  For the next 4 spins i bet on red and lost all my money.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2024213253958648007",
+ "harness": {
+  "run": "2026-10-31T03-30-09Z",
+  "manifest_sha256": "f4cb50b74e111333644768234a62c37c553d27111cb37124caf5fe4bcbd50de6",
+  "query": "from:BobLoukas since:2026-02-18 until:2026-02-28"
+ }
+}

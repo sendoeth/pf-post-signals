@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:34.814Z",
+ "cashtags": [],
+ "conversationId": "1991842296267166116",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1991842296267166116",
+ "kind": "quote",
+ "metrics": {
+  "likes": 495,
+  "replies": 30,
+  "reposts": 12,
+  "views": 127202
+ },
+ "postedAt": "2025-11-21T12:13:04.000Z",
+ "replyTo": null,
+ "text": "Kudos to @TechCharts on this Bitcoin move the past month.  Such clean classical charts.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1991842296267166116",
+ "harness": {
+  "run": "2026-10-31T03-11-28Z",
+  "manifest_sha256": "5b4f94307a59f6b36bf90ded7f7487cb77a37651415230998ae74712e788ac95",
+  "query": "from:BobLoukas since:2025-11-20 until:2025-11-25"
+ }
+}

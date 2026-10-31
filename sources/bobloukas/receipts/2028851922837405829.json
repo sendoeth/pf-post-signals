@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:24.902Z",
+ "cashtags": [],
+ "conversationId": "2028851922837405829",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2028851922837405829",
+ "kind": "post",
+ "metrics": {
+  "likes": 909,
+  "replies": 51,
+  "reposts": 77,
+  "views": 229866
+ },
+ "postedAt": "2026-03-03T15:16:07.000Z",
+ "replyTo": null,
+ "text": "Cyclical bear market signal here in Stocks.  Lets see how it closes today, and then the week.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2028851922837405829",
+ "harness": {
+  "run": "2026-10-31T03-30-20Z",
+  "manifest_sha256": "3d96553ad1872d40978ec78e357b1cef213e2cb79cabbf5b401432e513cb4d1c",
+  "query": "from:BobLoukas since:2026-02-28 until:2026-03-10"
+ }
+}

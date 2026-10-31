@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:13.438Z",
+ "cashtags": [],
+ "conversationId": "1985336554437361800",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1985337680268349830",
+ "kind": "reply",
+ "metrics": {
+  "likes": 234,
+  "replies": 8,
+  "reposts": 4,
+  "views": 15665
+ },
+ "postedAt": "2025-11-03T13:26:03.000Z",
+ "replyTo": {
+  "postId": "1985337053341684030",
+  "handle": "mesopotamia717"
+ },
+ "text": "The move to new ATH’s that was rejected stinks of distribution.  Alt’s performance at this phase of the cycle is telling.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1985337680268349830",
+ "harness": {
+  "run": "2026-10-31T03-10-01Z",
+  "manifest_sha256": "3844915c6905bd8c09b21e28b77ba45472ed71277b155e9aca6ad52457c02037",
+  "query": "from:BobLoukas since:2025-10-31 until:2025-11-10"
+ }
+}

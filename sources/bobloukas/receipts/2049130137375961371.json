@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:09.203Z",
+ "cashtags": [],
+ "conversationId": "2049105324381237323",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2049130137375961371",
+ "kind": "reply",
+ "metrics": {
+  "likes": 11,
+  "replies": 0,
+  "reposts": 0,
+  "views": 969
+ },
+ "postedAt": "2026-04-28T14:14:30.000Z",
+ "replyTo": {
+  "postId": "2049128031290048625",
+  "handle": "Meloku13"
+ },
+ "text": "Why you surprised?  I was (hobby) mining XMR in late 2016/17.  And I definitely don't consider it an alt-coin.  \n\nSoured on in 2020-2025 but no more than ever think the argument for it is strongest. (with BTC being VC'ed).",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2049130137375961371",
+ "harness": {
+  "run": "2026-10-31T03-47-04Z",
+  "manifest_sha256": "5336994f71bbe4f700cf60362be35add5dbd82d5eddf921d84495b46cbd2c660",
+  "query": "from:BobLoukas since:2026-04-24 until:2026-04-29"
+ }
+}

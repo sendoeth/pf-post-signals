@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:12.024Z",
+ "cashtags": [],
+ "conversationId": "2026288504091873429",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2026290411002647006",
+ "kind": "reply",
+ "metrics": {
+  "likes": 105,
+  "replies": 4,
+  "reposts": 0,
+  "views": 11736
+ },
+ "postedAt": "2026-02-24T13:37:35.000Z",
+ "replyTo": {
+  "postId": "2026288504091873429",
+  "handle": "coinbureau"
+ },
+ "text": "Tide goes in, tide goes out.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2026290411002647006",
+ "harness": {
+  "run": "2026-10-31T03-30-09Z",
+  "manifest_sha256": "f4cb50b74e111333644768234a62c37c553d27111cb37124caf5fe4bcbd50de6",
+  "query": "from:BobLoukas since:2026-02-18 until:2026-02-28"
+ }
+}

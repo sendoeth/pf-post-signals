@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:55.716Z",
+ "cashtags": [],
+ "conversationId": "1995883656145944926",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1995888099482804463",
+ "kind": "reply",
+ "metrics": {
+  "likes": 14,
+  "replies": 0,
+  "reposts": 0,
+  "views": 1062
+ },
+ "postedAt": "2025-12-02T16:09:39.000Z",
+ "replyTo": {
+  "postId": "1995886316974641378",
+  "handle": "AkosBull"
+ },
+ "text": "You only need to look at the positions and performance. They're doing perfectly fine.  \n\nYou retweet Saylor at every opportunity, and your portfolio is cut in half.  Maybe direct your hate there?",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1995888099482804463",
+ "harness": {
+  "run": "2026-10-31T03-11-49Z",
+  "manifest_sha256": "44284fd2b0f53f602994edeb448d034ad7c1447b6074bcf56e01e43a4ce3849c",
+  "query": "from:BobLoukas since:2025-11-30 until:2025-12-10"
+ }
+}

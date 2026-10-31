@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:48:01.864Z",
+ "cashtags": [],
+ "conversationId": "2062372123461513428",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2062373345153147076",
+ "kind": "reply",
+ "metrics": {
+  "likes": 4,
+  "replies": 1,
+  "reposts": 0,
+  "views": 1178
+ },
+ "postedAt": "2026-06-04T03:18:17.000Z",
+ "replyTo": {
+  "postId": "2062373080400302124",
+  "handle": "ttexashedge"
+ },
+ "text": "Ok Tex. 😉",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2062373345153147076",
+ "harness": {
+  "run": "2026-10-31T03-47-55Z",
+  "manifest_sha256": "76ee69624ea2b9328b3f138dbfe04636ffc970ec1aa15cc43bb66d8325d64d30",
+  "query": "from:BobLoukas since:2026-06-03 until:2026-06-08"
+ }
+}

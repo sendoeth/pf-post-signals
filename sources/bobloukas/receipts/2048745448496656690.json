@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:13.743Z",
+ "cashtags": [],
+ "conversationId": "2048745448496656690",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2048745448496656690",
+ "kind": null,
+ "metrics": {
+  "likes": null,
+  "replies": null,
+  "reposts": null,
+  "views": null
+ },
+ "postedAt": "2026-04-27T12:45:53.000Z",
+ "replyTo": null,
+ "text": "Believe we need a full consolidating IC after those two blowoffs.  Needs a new base to build off.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2048745448496656690",
+ "harness": {
+  "run": "2026-10-31T03-47-04Z",
+  "manifest_sha256": "5336994f71bbe4f700cf60362be35add5dbd82d5eddf921d84495b46cbd2c660",
+  "query": "from:BobLoukas since:2026-04-24 until:2026-04-29"
+ }
+}

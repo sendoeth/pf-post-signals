@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:04.928Z",
+ "cashtags": [],
+ "conversationId": "2021256547708399815",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2021319847892721950",
+ "kind": "reply",
+ "metrics": {
+  "likes": 6,
+  "replies": 0,
+  "reposts": 0,
+  "views": 1049
+ },
+ "postedAt": "2026-02-10T20:26:20.000Z",
+ "replyTo": {
+  "postId": "2021318389608653236",
+  "handle": "MikeCopples"
+ },
+ "text": "The accounts you retweet all the time are the most overconfident permabulls who do the same thing every cycle.   So you're not applying this metric well or prepared to hear counter arguments.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2021319847892721950",
+ "harness": {
+  "run": "2026-10-31T03-29-58Z",
+  "manifest_sha256": "046caa1b799b16c1e3d97c7b87fc3565fd829c623a7d127628756b707828f2b0",
+  "query": "from:BobLoukas since:2026-02-08 until:2026-02-18"
+ }
+}

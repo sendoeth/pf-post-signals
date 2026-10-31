@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:46.014Z",
+ "cashtags": [],
+ "conversationId": "1993116618558415098",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1993300788303847808",
+ "kind": "post",
+ "metrics": {
+  "likes": 4,
+  "replies": 1,
+  "reposts": 0,
+  "views": 708
+ },
+ "postedAt": "2025-11-25T12:48:36.000Z",
+ "replyTo": null,
+ "text": "It’s not.  But can be replicated and capital chases new opportunity",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1993300788303847808",
+ "harness": {
+  "run": "2026-10-31T03-11-39Z",
+  "manifest_sha256": "8b207307b5b7f63da4785b2292870b7a03e0480c97b05c0d561f294be3c54557",
+  "query": "from:BobLoukas since:2025-11-25 until:2025-11-30"
+ }
+}

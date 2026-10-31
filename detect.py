@@ -63,12 +63,12 @@ def detect(text, amap=None, manual=None):
 # goes back to the owner (--side with a reason). No side words -> no side (a call without a side
 # counts against the caller's clarity, never as a win or a loss).
 SIDE_WORDS = {
-    1: [r"\b(?:i'?m|i am|we'?re|we are|going|went|gone|opened|opening|entered|entering|added|adding|building|built|took|taking)\b[^.\n]{0,30}?\blongs?\b",
-        r"\blong (?:positions?|entry|entries|here|now|from|at|on)\b", r"\bthe longs\b", r"\bnow long\b", r"\bbuying\b", r"\bbought\b", r"\bbullish\b",
-        r"\bbuy (?:the|this|more|some)\b", r"\baccumulat(?:e|ing)\b"],
-    -1: [r"\b(?:i'?m|i am|we'?re|we are|going|went|gone|opened|opening|entered|entering|added|adding|building|built|took|taking)\b[^.\n]{0,30}?\bshorts?\b",
-         r"\bshort (?:positions?|entry|entries|here|now|from|at|on)\b", r"\bthe shorts\b", r"\bnow short\b", r"\bshorting\b", r"\bshorted\b", r"\bbearish\b",
-         r"\bsell (?:the|this)\b"],
+    1: [r"\b(?:i'?m|i am|we'?re|we are|going|went|gone|opened|opening|entered|entering|added|adding|building|built)\b[^.\n]{0,30}?\blongs?\b", r"\b(?:took|taking) (?:a|the|my|some) longs?\b",
+        r"\blong (?:positions?|entry|entries|here|now|from|at|on)\b", r"\bthe longs\b", r"\bnow long\b", r"\bcurrently long\b", r"\bstill long\b", r"\b(?:i|we)(?:'ve| have|'m| am|'re| are)? (?:just |also |been )?(?:bought|buying|added|adding|accumulat(?:ed|ing))\b",
+        r"\b(?:i'?m|i am|we'?re|we are|i remain|still|very|getting|turning|turned) bullish\b", r"\bbullish (?:on|here)\b"],
+    -1: [r"\b(?:i'?m|i am|we'?re|we are|going|went|gone|opened|opening|entered|entering|added|adding|building|built)\b[^.\n]{0,30}?\bshorts?\b", r"\b(?:took|taking) (?:a|the|my|some) shorts?\b",
+         r"\bshort (?:positions?|entry|entries|here|now|from|at|on)\b", r"\bthe shorts\b", r"\bnow short\b", r"\bcurrently short\b", r"\blong \w+ - short\b", r"\bstill short\b", r"\b(?:i|we)(?:'m| am|'re| are|'ve| have)? (?:just |also )?(?:shorting|shorted)\b",
+         r"\b(?:i'?m|i am|we'?re|we are|i remain|still|very|getting|turning|turned) bearish\b", r"\bbearish (?:on|here)\b"],
 }
 
 

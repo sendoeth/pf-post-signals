@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:09.203Z",
+ "cashtags": [],
+ "conversationId": "2049064283376648685",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2049067368144363524",
+ "kind": "reply",
+ "metrics": {
+  "likes": 26,
+  "replies": 2,
+  "reposts": 0,
+  "views": 6204
+ },
+ "postedAt": "2026-04-28T10:05:05.000Z",
+ "replyTo": {
+  "postId": "2049064283376648685",
+  "handle": "Airstrip__1"
+ },
+ "text": "Na you got a good deal selling some of my highest tax loss pieces.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2049067368144363524",
+ "harness": {
+  "run": "2026-10-31T03-47-04Z",
+  "manifest_sha256": "5336994f71bbe4f700cf60362be35add5dbd82d5eddf921d84495b46cbd2c660",
+  "query": "from:BobLoukas since:2026-04-24 until:2026-04-29"
+ }
+}

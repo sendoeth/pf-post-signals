@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:55.719Z",
+ "cashtags": [],
+ "conversationId": "1995883656145944926",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1995883656145944926",
+ "kind": "post",
+ "metrics": {
+  "likes": 1440,
+  "replies": 82,
+  "reposts": 83,
+  "views": 76770
+ },
+ "postedAt": "2025-12-02T15:52:00.000Z",
+ "replyTo": null,
+ "text": "S&P-500, stocks, even Bitcoin, are well positioned now to finish out the year strong.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1995883656145944926",
+ "harness": {
+  "run": "2026-10-31T03-11-49Z",
+  "manifest_sha256": "44284fd2b0f53f602994edeb448d034ad7c1447b6074bcf56e01e43a4ce3849c",
+  "query": "from:BobLoukas since:2025-11-30 until:2025-12-10"
+ }
+}

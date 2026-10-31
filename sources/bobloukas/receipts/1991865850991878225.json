@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:34.814Z",
+ "cashtags": [],
+ "conversationId": "1991857551735218500",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1991865850991878225",
+ "kind": "reply",
+ "metrics": {
+  "likes": 445,
+  "replies": 41,
+  "reposts": 8,
+  "views": 53702
+ },
+ "postedAt": "2025-11-21T13:46:40.000Z",
+ "replyTo": {
+  "postId": "1991857551735218500",
+  "handle": "CryptoBullet1"
+ },
+ "text": "Have to think lower.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1991865850991878225",
+ "harness": {
+  "run": "2026-10-31T03-11-28Z",
+  "manifest_sha256": "5b4f94307a59f6b36bf90ded7f7487cb77a37651415230998ae74712e788ac95",
+  "query": "from:BobLoukas since:2025-11-20 until:2025-11-25"
+ }
+}

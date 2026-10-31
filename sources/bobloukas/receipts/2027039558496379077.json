@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:12.023Z",
+ "cashtags": [],
+ "conversationId": "2026333442061811988",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2027039558496379077",
+ "kind": "reply",
+ "metrics": {
+  "likes": 18,
+  "replies": 2,
+  "reposts": 0,
+  "views": 1394
+ },
+ "postedAt": "2026-02-26T15:14:25.000Z",
+ "replyTo": {
+  "postId": "2026818041514783198",
+  "handle": "RaoulGMI"
+ },
+ "text": "The possibility of an earlier cycle low is on the table if this downtrend continues without relief.  With a higher low around the normal timing low area.    \n\nBut this is a full blown bear phase, the decline is nothing like the 2021 event, which occurred earlier in the bull phase over a number of weeks (not months) and didn't not break the monthly structure.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2027039558496379077",
+ "harness": {
+  "run": "2026-10-31T03-30-09Z",
+  "manifest_sha256": "f4cb50b74e111333644768234a62c37c553d27111cb37124caf5fe4bcbd50de6",
+  "query": "from:BobLoukas since:2026-02-18 until:2026-02-28"
+ }
+}

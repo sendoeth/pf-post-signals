@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:46:36.873Z",
+ "cashtags": [],
+ "conversationId": "2044869638211698786",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2044873320114409922",
+ "kind": "reply",
+ "metrics": {
+  "likes": 436,
+  "replies": 9,
+  "reposts": 2,
+  "views": 17464
+ },
+ "postedAt": "2026-04-16T20:19:26.000Z",
+ "replyTo": {
+  "postId": "2044869638211698786",
+  "handle": "mithcoons"
+ },
+ "text": "The guy that trolled back then when Bitcoin was $90k and before MSTR dropped 60% has an opinion.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2044873320114409922",
+ "harness": {
+  "run": "2026-10-31T03-46-34Z",
+  "manifest_sha256": "c27074f7b8d8c85ca6aaed1a98de9a36b44ad09e077f54e4c1ddc2264c260dfe",
+  "query": "from:BobLoukas since:2026-04-14 until:2026-04-19"
+ }
+}

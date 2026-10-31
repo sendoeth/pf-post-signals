@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:03:50.138Z",
+ "cashtags": [],
+ "conversationId": "2069433161864577239",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2069769652205388279",
+ "kind": "reply",
+ "metrics": {
+  "likes": 2,
+  "replies": 1,
+  "reposts": 0,
+  "views": 1154
+ },
+ "postedAt": "2026-06-24T13:08:34.000Z",
+ "replyTo": {
+  "postId": "2069760788517011595",
+  "handle": "Mave12198174"
+ },
+ "text": "Hydro rules suck.  Var sucks (except for goals and penalties).  \n\nBut thinking the hand of god was a god thing?",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2069769652205388279",
+ "harness": {
+  "run": "2026-10-31T04-03-43Z",
+  "manifest_sha256": "151afdee8bedac9fee9cf5b5571f2bc7c3f8925a0be613401ca72cfa26688b6d",
+  "query": "from:BobLoukas since:2026-06-23 until:2026-06-28"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:37.933Z",
+ "cashtags": [],
+ "conversationId": "2017825233265099004",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2017955143786885150",
+ "kind": "reply",
+ "metrics": {
+  "likes": 4,
+  "replies": 1,
+  "reposts": 0,
+  "views": 853
+ },
+ "postedAt": "2026-02-01T13:36:12.000Z",
+ "replyTo": {
+  "postId": "2017825780835737947",
+  "handle": "SmugAndFree28"
+ },
+ "text": "WC failure is only interpretation.  Makes sense the monthly has been showing the breakdown for 2 months.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2017955143786885150",
+ "harness": {
+  "run": "2026-10-31T03-29-33Z",
+  "manifest_sha256": "14f0ea84840c9dca9fe00212e469c77a2ebdd67bd750609b8a6bddcb4356ba1c",
+  "query": "from:BobLoukas since:2026-01-29 until:2026-02-03"
+ }
+}

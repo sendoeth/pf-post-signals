@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:26.895Z",
+ "cashtags": [],
+ "conversationId": "1999149068459618541",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1999149386656256263",
+ "kind": "reply",
+ "metrics": {
+  "likes": 17,
+  "replies": 4,
+  "reposts": 0,
+  "views": 2028
+ },
+ "postedAt": "2025-12-11T16:08:50.000Z",
+ "replyTo": {
+  "postId": "1999149162718462301",
+  "handle": "FractalVeritas"
+ },
+ "text": "It's a 🚀\nWho knows where it tops!\nHold on tight, have a trailing stop.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1999149386656256263",
+ "harness": {
+  "run": "2026-10-31T03-28-21Z",
+  "manifest_sha256": "c02ce20beb826e706b2b33c18668b6975c7f6e723f9ba8dc68eba93123f5e55a",
+  "query": "from:BobLoukas since:2025-12-10 until:2025-12-15"
+ }
+}

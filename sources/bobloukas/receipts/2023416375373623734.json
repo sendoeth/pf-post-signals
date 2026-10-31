@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:00.948Z",
+ "cashtags": [],
+ "conversationId": "2023258901379183029",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2023416375373623734",
+ "kind": "reply",
+ "metrics": {
+  "likes": 2,
+  "replies": 0,
+  "reposts": 0,
+  "views": 595
+ },
+ "postedAt": "2026-02-16T15:17:11.000Z",
+ "replyTo": {
+  "postId": "2023415627814433152",
+  "handle": "Drunken_senseii"
+ },
+ "text": "Just comes down the cost to produce an asset. Why spend 100x to 1000x the cost to produce gold?",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2023416375373623734",
+ "harness": {
+  "run": "2026-10-31T03-29-58Z",
+  "manifest_sha256": "046caa1b799b16c1e3d97c7b87fc3565fd829c623a7d127628756b707828f2b0",
+  "query": "from:BobLoukas since:2026-02-08 until:2026-02-18"
+ }
+}

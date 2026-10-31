@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:14.459Z",
+ "cashtags": [],
+ "conversationId": "1991151902126493698",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1991151902126493698",
+ "kind": "post",
+ "metrics": {
+  "likes": 246,
+  "replies": 41,
+  "reposts": 8,
+  "views": 113847
+ },
+ "postedAt": "2025-11-19T14:29:41.000Z",
+ "replyTo": null,
+ "text": "$236,000,000!\n\nhttps://youtu.be/0hmym3W53No?si=t8qDeNtFVtOXTV_M",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1991151902126493698",
+ "harness": {
+  "run": "2026-10-31T03-11-12Z",
+  "manifest_sha256": "da998034869f466cf3635ca5dde42938975bc207b093ae8c8984350ea65c57f3",
+  "query": "from:BobLoukas since:2025-11-15 until:2025-11-20"
+ }
+}

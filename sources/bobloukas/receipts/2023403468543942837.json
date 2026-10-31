@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:03.309Z",
+ "cashtags": [],
+ "conversationId": "2023258901379183029",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2023403468543942837",
+ "kind": "reply",
+ "metrics": {
+  "likes": 69,
+  "replies": 4,
+  "reposts": 0,
+  "views": 15279
+ },
+ "postedAt": "2026-02-16T14:25:54.000Z",
+ "replyTo": {
+  "postId": "2023258901379183029",
+  "handle": "willywoo"
+ },
+ "text": "And the eventual fork will be highly contentious and split the network.  This might be more of a factor on price than the 4m (or not) circulating supply.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2023403468543942837",
+ "harness": {
+  "run": "2026-10-31T03-29-58Z",
+  "manifest_sha256": "046caa1b799b16c1e3d97c7b87fc3565fd829c623a7d127628756b707828f2b0",
+  "query": "from:BobLoukas since:2026-02-08 until:2026-02-18"
+ }
+}

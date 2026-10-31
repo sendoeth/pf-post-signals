@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:48:03.671Z",
+ "cashtags": [],
+ "conversationId": "2062277523288068152",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2062280756118884841",
+ "kind": "reply",
+ "metrics": {
+  "likes": 10,
+  "replies": 0,
+  "reposts": 0,
+  "views": 2914
+ },
+ "postedAt": "2026-06-03T21:10:22.000Z",
+ "replyTo": {
+  "postId": "2062278942124298516",
+  "handle": "xxyungTurtle"
+ },
+ "text": "Not for this portfolio.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2062280756118884841",
+ "harness": {
+  "run": "2026-10-31T03-47-55Z",
+  "manifest_sha256": "76ee69624ea2b9328b3f138dbfe04636ffc970ec1aa15cc43bb66d8325d64d30",
+  "query": "from:BobLoukas since:2026-06-03 until:2026-06-08"
+ }
+}

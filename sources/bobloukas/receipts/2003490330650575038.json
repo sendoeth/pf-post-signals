@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:41.825Z",
+ "cashtags": [],
+ "conversationId": "2003490330650575038",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2003490330650575038",
+ "kind": "post",
+ "metrics": {
+  "likes": 566,
+  "replies": 49,
+  "reposts": 44,
+  "views": 60733
+ },
+ "postedAt": "2025-12-23T15:38:12.000Z",
+ "replyTo": null,
+ "text": "Seems like Industrial Metals are really starting their big bull legs. Some rotation from Precious Metals allocations not a bad idea.\n\nHere is copper and miners.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2003490330650575038",
+ "harness": {
+  "run": "2026-10-31T03-28-37Z",
+  "manifest_sha256": "9d13b999b16b71141a9123223a30beac3017eedee0e627ab1a0efb00c27a8930",
+  "query": "from:BobLoukas since:2025-12-20 until:2025-12-30"
+ }
+}

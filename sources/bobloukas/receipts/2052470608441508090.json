@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:18.235Z",
+ "cashtags": [],
+ "conversationId": "2052466040030847257",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2052470608441508090",
+ "kind": "reply",
+ "metrics": {
+  "likes": 5,
+  "replies": 0,
+  "reposts": 0,
+  "views": 1579
+ },
+ "postedAt": "2026-05-07T19:28:20.000Z",
+ "replyTo": {
+  "postId": "2052470125144465759",
+  "handle": "metapata"
+ },
+ "text": "Make somebody else accountable to them.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2052470608441508090",
+ "harness": {
+  "run": "2026-10-31T03-47-15Z",
+  "manifest_sha256": "d829a2466fa415a7cdaeaff4a6cfdcca76ad661f2ee8e9461b5c6c66af591c27",
+  "query": "from:BobLoukas since:2026-04-29 until:2026-05-09"
+ }
+}

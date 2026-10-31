@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:14.212Z",
+ "cashtags": [],
+ "conversationId": "2015139349847834674",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2015140899336892738",
+ "kind": "reply",
+ "metrics": {
+  "likes": 195,
+  "replies": 14,
+  "reposts": 2,
+  "views": 7528
+ },
+ "postedAt": "2026-01-24T19:13:24.000Z",
+ "replyTo": {
+  "postId": "2015140665697480822",
+  "handle": "CollingsGregory"
+ },
+ "text": "Citizens of this country have the right and should protest when our rights are being threatened and taken away.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2015140899336892738",
+ "harness": {
+  "run": "2026-10-31T03-29-09Z",
+  "manifest_sha256": "12b6383eb0d3e548fb1ff7b7fa27ac18c6544170639bb262e25d9278c33ad772",
+  "query": "from:BobLoukas since:2026-01-19 until:2026-01-29"
+ }
+}

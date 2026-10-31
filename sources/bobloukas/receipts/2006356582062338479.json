@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:55.785Z",
+ "cashtags": [],
+ "conversationId": "2006356582062338479",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2006356582062338479",
+ "kind": "post",
+ "metrics": {
+  "likes": 1766,
+  "replies": 122,
+  "reposts": 69,
+  "views": 66989
+ },
+ "postedAt": "2025-12-31T13:27:40.000Z",
+ "replyTo": null,
+ "text": "My resolutions over the years that truly stuck never began on Jan 1st. Like watching  motivational clip, it never lasted.  \nI battled addiction in my early years, really crippling addiction. And it taught me a lot about change. \n\nA resolution is simply a recognition, a desire for change, and proof we believe we can do better for ourselves. \n\nWe all know we’re capable of much more.  So I try to focus less on what I want to add in life, and more on what I want to stop.\nIf I can just remove some negative actions, there is a good chance positive naturally fills that space.  It’s that process of stopping the most negative actions that has helped most.  \n\nHappy New Year’s to all.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2006356582062338479",
+ "harness": {
+  "run": "2026-10-31T03-28-48Z",
+  "manifest_sha256": "15f3f120834a9e146f93308ba01d65815256ffe13b590dc9e35f844e48ccf261",
+  "query": "from:BobLoukas since:2025-12-30 until:2026-01-09"
+ }
+}

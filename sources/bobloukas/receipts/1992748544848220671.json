@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:30.956Z",
+ "cashtags": [],
+ "conversationId": "1992620151984820417",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1992748544848220671",
+ "kind": "reply",
+ "metrics": {
+  "likes": 50,
+  "replies": 4,
+  "reposts": 0,
+  "views": 11736
+ },
+ "postedAt": "2025-11-24T00:14:11.000Z",
+ "replyTo": {
+  "postId": "1992620151984820417",
+  "handle": "NaughtalieStone"
+ },
+ "text": "Did they though?  \n\nWe love punks, but these aren’t art sales.  Most is token trades.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1992748544848220671",
+ "harness": {
+  "run": "2026-10-31T03-11-28Z",
+  "manifest_sha256": "5b4f94307a59f6b36bf90ded7f7487cb77a37651415230998ae74712e788ac95",
+  "query": "from:BobLoukas since:2025-11-20 until:2025-11-25"
+ }
+}

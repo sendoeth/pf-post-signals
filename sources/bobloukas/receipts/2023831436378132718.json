@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:00.945Z",
+ "cashtags": [],
+ "conversationId": "2023831436378132718",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2023831436378132718",
+ "kind": "post",
+ "metrics": {
+  "likes": 547,
+  "replies": 47,
+  "reposts": 15,
+  "views": 50214
+ },
+ "postedAt": "2026-02-17T18:46:30.000Z",
+ "replyTo": null,
+ "text": "Tip on how to be a permabull or permabear for great engagement!\n\nPost these charts every single week for as long a it takes, along with a cool sounding narrative.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2023831436378132718",
+ "harness": {
+  "run": "2026-10-31T03-29-58Z",
+  "manifest_sha256": "046caa1b799b16c1e3d97c7b87fc3565fd829c623a7d127628756b707828f2b0",
+  "query": "from:BobLoukas since:2026-02-08 until:2026-02-18"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:48:03.670Z",
+ "cashtags": [],
+ "conversationId": "2062277523288068152",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2062296825986466056",
+ "kind": "reply",
+ "metrics": {
+  "likes": 13,
+  "replies": 1,
+  "reposts": 0,
+  "views": 3202
+ },
+ "postedAt": "2026-06-03T22:14:13.000Z",
+ "replyTo": {
+  "postId": "2062295643893149973",
+  "handle": "VikingQuant"
+ },
+ "text": "If you read the tweet, I agree with that.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2062296825986466056",
+ "harness": {
+  "run": "2026-10-31T03-47-55Z",
+  "manifest_sha256": "76ee69624ea2b9328b3f138dbfe04636ffc970ec1aa15cc43bb66d8325d64d30",
+  "query": "from:BobLoukas since:2026-06-03 until:2026-06-08"
+ }
+}

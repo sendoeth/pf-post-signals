@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:04.925Z",
+ "cashtags": [],
+ "conversationId": "2021746323838423448",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2021964217100714254",
+ "kind": "reply",
+ "metrics": {
+  "likes": 3,
+  "replies": 1,
+  "reposts": 0,
+  "views": 943
+ },
+ "postedAt": "2026-02-12T15:06:50.000Z",
+ "replyTo": {
+  "postId": "2021956470393233559",
+  "handle": "maximalismo_btc"
+ },
+ "text": "Yeah but he said \"crypto\".  Bitcoin is like gold and I agree",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2021964217100714254",
+ "harness": {
+  "run": "2026-10-31T03-29-58Z",
+  "manifest_sha256": "046caa1b799b16c1e3d97c7b87fc3565fd829c623a7d127628756b707828f2b0",
+  "query": "from:BobLoukas since:2026-02-08 until:2026-02-18"
+ }
+}

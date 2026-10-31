@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:04.925Z",
+ "cashtags": [],
+ "conversationId": "2021963942919385368",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2021963942919385368",
+ "kind": "post",
+ "metrics": {
+  "likes": 152,
+  "replies": 13,
+  "reposts": 7,
+  "views": 23746
+ },
+ "postedAt": "2026-02-12T15:05:44.000Z",
+ "replyTo": null,
+ "text": "Bitcoin Live members, I’ve posted a new piece breaking down how to approach shifting market conditions through the lens of disciplined mental models.\n\nLink >\nhttps://bitcoin.live/video/how-im-thinking?aid=102",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2021963942919385368",
+ "harness": {
+  "run": "2026-10-31T03-29-58Z",
+  "manifest_sha256": "046caa1b799b16c1e3d97c7b87fc3565fd829c623a7d127628756b707828f2b0",
+  "query": "from:BobLoukas since:2026-02-08 until:2026-02-18"
+ }
+}

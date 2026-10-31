@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:28.650Z",
+ "cashtags": [],
+ "conversationId": "1988648569453035869",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1988684448699936926",
+ "kind": "reply",
+ "metrics": {
+  "likes": 30,
+  "replies": 3,
+  "reposts": 0,
+  "views": 4122
+ },
+ "postedAt": "2025-11-12T19:04:55.000Z",
+ "replyTo": {
+  "postId": "1988682984376135930",
+  "handle": "ajtbtc"
+ },
+ "text": "You dont believe in bitcoin if you're using MSTR for the exposure.\n\nI mean, you can say you aim to make more $$$ out of bitcoin via MSTR, but you dont believe in bitcoin",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1988684448699936926",
+ "harness": {
+  "run": "2026-10-31T03-10-22Z",
+  "manifest_sha256": "8219512b7c4ed9295ff50779c6865723e1b25c0ba9424dff8dd584d91eeef4c2",
+  "query": "from:BobLoukas since:2025-11-10 until:2025-11-15"
+ }
+}

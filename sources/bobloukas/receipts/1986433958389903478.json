@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:05.728Z",
+ "cashtags": [],
+ "conversationId": "1986427489128767670",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1986433958389903478",
+ "kind": "reply",
+ "metrics": {
+  "likes": 8,
+  "replies": 1,
+  "reposts": 0,
+  "views": 708
+ },
+ "postedAt": "2025-11-06T14:02:16.000Z",
+ "replyTo": {
+  "postId": "1986430968324911473",
+  "handle": "ErnieYachts"
+ },
+ "text": "Yes you should do that too.  But to your point, schooling for skills that won’t be needed or easily learned might be a waste.  \n\nWhereas 4 yrs of very deep development of the mind is a different story.   I’m not talking about the fluff arts schools.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1986433958389903478",
+ "harness": {
+  "run": "2026-10-31T03-10-01Z",
+  "manifest_sha256": "3844915c6905bd8c09b21e28b77ba45472ed71277b155e9aca6ad52457c02037",
+  "query": "from:BobLoukas since:2025-10-31 until:2025-11-10"
+ }
+}

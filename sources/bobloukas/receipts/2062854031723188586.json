@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:48:00.530Z",
+ "cashtags": [],
+ "conversationId": "2062580409091620951",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2062854031723188586",
+ "kind": "reply",
+ "metrics": {
+  "likes": 1,
+  "replies": 1,
+  "reposts": 0,
+  "views": 562
+ },
+ "postedAt": "2026-06-05T11:08:21.000Z",
+ "replyTo": {
+  "postId": "2062848079112585673",
+  "handle": "CornHarvest_BTC"
+ },
+ "text": "Sounds like you don’t want to learn anything. Go back to retweeting moonboy.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2062854031723188586",
+ "harness": {
+  "run": "2026-10-31T03-47-55Z",
+  "manifest_sha256": "76ee69624ea2b9328b3f138dbfe04636ffc970ec1aa15cc43bb66d8325d64d30",
+  "query": "from:BobLoukas since:2026-06-03 until:2026-06-08"
+ }
+}

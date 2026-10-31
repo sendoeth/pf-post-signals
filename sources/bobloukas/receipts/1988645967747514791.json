@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:09.122Z",
+ "cashtags": [],
+ "conversationId": "1988645470584078533",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1988645967747514791",
+ "kind": "reply",
+ "metrics": {
+  "likes": 385,
+  "replies": 15,
+  "reposts": 8,
+  "views": 35275
+ },
+ "postedAt": "2025-11-12T16:32:00.000Z",
+ "replyTo": {
+  "postId": "1988645470584078533",
+  "handle": "BobLoukas"
+ },
+ "text": "But a \"final phase\" could mean months, all the way through to Feb/March too.  Not something to shy away from, just hold long positions.  Wait for a clear (repeated) breakdown before any reaction.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1988645967747514791",
+ "harness": {
+  "run": "2026-10-31T03-11-03Z",
+  "manifest_sha256": "b0cd5b45f562107ecbd3f676474d96aae1d41979c54b4e544f26c5dfa8cecd1e",
+  "query": "from:BobLoukas since:2025-11-10 until:2025-11-15"
+ }
+}

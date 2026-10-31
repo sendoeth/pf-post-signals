@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:08.040Z",
+ "cashtags": [],
+ "conversationId": "1986180722936164681",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1986193023642800287",
+ "kind": "reply",
+ "metrics": {
+  "likes": 67,
+  "replies": 5,
+  "reposts": 1,
+  "views": 7112
+ },
+ "postedAt": "2025-11-05T22:04:53.000Z",
+ "replyTo": {
+  "postId": "1986192910807969831",
+  "handle": "fabulousrazz"
+ },
+ "text": "ofc i think 26 is a bear",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1986193023642800287",
+ "harness": {
+  "run": "2026-10-31T03-10-01Z",
+  "manifest_sha256": "3844915c6905bd8c09b21e28b77ba45472ed71277b155e9aca6ad52457c02037",
+  "query": "from:BobLoukas since:2025-10-31 until:2025-11-10"
+ }
+}

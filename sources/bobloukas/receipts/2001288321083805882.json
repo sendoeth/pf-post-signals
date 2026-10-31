@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:34.214Z",
+ "cashtags": [],
+ "conversationId": "2001287319005831474",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2001288321083805882",
+ "kind": "reply",
+ "metrics": {
+  "likes": 21,
+  "replies": 2,
+  "reposts": 0,
+  "views": 2054
+ },
+ "postedAt": "2025-12-17T13:48:12.000Z",
+ "replyTo": {
+  "postId": "2001288148471476484",
+  "handle": "PatrikBatCrypto"
+ },
+ "text": "",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2001288321083805882",
+ "harness": {
+  "run": "2026-10-31T03-28-29Z",
+  "manifest_sha256": "6b809f4562719e0f7de013cb2199555f0361999760d9b9ef86799734f195de03",
+  "query": "from:BobLoukas since:2025-12-15 until:2025-12-20"
+ }
+}

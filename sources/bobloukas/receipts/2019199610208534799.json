@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:51.509Z",
+ "cashtags": [],
+ "conversationId": "2019199610208534799",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2019199610208534799",
+ "kind": "post",
+ "metrics": {
+  "likes": 1366,
+  "replies": 101,
+  "reposts": 47,
+  "views": 187747
+ },
+ "postedAt": "2026-02-05T00:01:16.000Z",
+ "replyTo": null,
+ "text": "Some hopium or random thoughts. \n\nStill think this was the first bear cycle for crypto.  Even though BTC made new highs.   That’s why it also is “different” from a topping perspective. \n\nWe just had a tonne of positive developments and a flood of capital that offset it somewhat.  And it be a nascent space. We also don’t respect that typical “research and development” generally happens in a lab and test environments for a long time before it’s in public’s hands. Crypto (onchain) was priced from the first test.  \n\nId bet the next Cycle looks nothing like the last 3.  I don’t want to be bearish, this cycle is done from an opportunity perspective.  Time to be positive and focus on the other side of this, could always be much sooner than we think.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2019199610208534799",
+ "harness": {
+  "run": "2026-10-31T03-29-44Z",
+  "manifest_sha256": "aaa8d4e197f46be6cccda8b30abf99f805399d35c1bf30c84b78a3f1a95bcc12",
+  "query": "from:BobLoukas since:2026-02-03 until:2026-02-08"
+ }
+}

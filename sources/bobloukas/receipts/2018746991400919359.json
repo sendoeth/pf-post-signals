@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:55.099Z",
+ "cashtags": [],
+ "conversationId": "1983236447688962367",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2018746991400919359",
+ "kind": "reply",
+ "metrics": {
+  "likes": 9,
+  "replies": 6,
+  "reposts": 0,
+  "views": 1490
+ },
+ "postedAt": "2026-02-03T18:02:43.000Z",
+ "replyTo": {
+  "postId": "2003322647262957879",
+  "handle": "EntryLiquidity_"
+ },
+ "text": "How's that working out for you.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2018746991400919359",
+ "harness": {
+  "run": "2026-10-31T03-29-44Z",
+  "manifest_sha256": "aaa8d4e197f46be6cccda8b30abf99f805399d35c1bf30c84b78a3f1a95bcc12",
+  "query": "from:BobLoukas since:2026-02-03 until:2026-02-08"
+ }
+}

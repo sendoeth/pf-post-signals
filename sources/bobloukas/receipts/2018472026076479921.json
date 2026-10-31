@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:36.051Z",
+ "cashtags": [],
+ "conversationId": "2018470055982555157",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2018472026076479921",
+ "kind": "reply",
+ "metrics": {
+  "likes": 19,
+  "replies": 2,
+  "reposts": 0,
+  "views": 4821
+ },
+ "postedAt": "2026-02-02T23:50:07.000Z",
+ "replyTo": {
+  "postId": "2018470055982555157",
+  "handle": "fintechfrank"
+ },
+ "text": "ChaseChain.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2018472026076479921",
+ "harness": {
+  "run": "2026-10-31T03-29-33Z",
+  "manifest_sha256": "14f0ea84840c9dca9fe00212e469c77a2ebdd67bd750609b8a6bddcb4356ba1c",
+  "query": "from:BobLoukas since:2026-01-29 until:2026-02-03"
+ }
+}

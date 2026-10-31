@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:09.203Z",
+ "cashtags": [],
+ "conversationId": "2048843199838314941",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2048843199838314941",
+ "kind": "post",
+ "metrics": {
+  "likes": 936,
+  "replies": 37,
+  "reposts": 52,
+  "views": 44325
+ },
+ "postedAt": "2026-04-27T19:14:19.000Z",
+ "replyTo": null,
+ "text": "No trade is worth your freedom and peace of mind.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2048843199838314941",
+ "harness": {
+  "run": "2026-10-31T03-47-04Z",
+  "manifest_sha256": "5336994f71bbe4f700cf60362be35add5dbd82d5eddf921d84495b46cbd2c660",
+  "query": "from:BobLoukas since:2026-04-24 until:2026-04-29"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:03.698Z",
+ "cashtags": [],
+ "conversationId": "1987219179565400110",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1987226550367100972",
+ "kind": "reply",
+ "metrics": {
+  "likes": 4,
+  "replies": 1,
+  "reposts": 0,
+  "views": 704
+ },
+ "postedAt": "2025-11-08T18:31:45.000Z",
+ "replyTo": {
+  "postId": "1987225973453136317",
+  "handle": "GoodGoyTrump"
+ },
+ "text": "Been the case for me since the first video in 2018.   \n\nIt’s also what I mean by “co-opted” for narrative.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1987226550367100972",
+ "harness": {
+  "run": "2026-10-31T03-10-01Z",
+  "manifest_sha256": "3844915c6905bd8c09b21e28b77ba45472ed71277b155e9aca6ad52457c02037",
+  "query": "from:BobLoukas since:2025-10-31 until:2025-11-10"
+ }
+}

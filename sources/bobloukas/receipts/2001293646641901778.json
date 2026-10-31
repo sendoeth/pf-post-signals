@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:34.214Z",
+ "cashtags": [],
+ "conversationId": "2001287907785507251",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2001293646641901778",
+ "kind": "reply",
+ "metrics": {
+  "likes": 19,
+  "replies": 3,
+  "reposts": 1,
+  "views": 2115
+ },
+ "postedAt": "2025-12-17T14:09:22.000Z",
+ "replyTo": {
+  "postId": "2001292047832039722",
+  "handle": "MoneyDuke2035"
+ },
+ "text": "My active portfolio has been selling.   \n\nThe 4 yr cycle we will see. Yes I’ve consider no big rally.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2001293646641901778",
+ "harness": {
+  "run": "2026-10-31T03-28-29Z",
+  "manifest_sha256": "6b809f4562719e0f7de013cb2199555f0361999760d9b9ef86799734f195de03",
+  "query": "from:BobLoukas since:2025-12-15 until:2025-12-20"
+ }
+}

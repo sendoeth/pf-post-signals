@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:48:09.376Z",
+ "cashtags": [],
+ "conversationId": "2064837394424070521",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2064852489078263819",
+ "kind": "reply",
+ "metrics": {
+  "likes": 48,
+  "replies": 4,
+  "reposts": 1,
+  "views": 3771
+ },
+ "postedAt": "2026-06-10T23:29:31.000Z",
+ "replyTo": {
+  "postId": "2064846872838115568",
+  "handle": "Baconista1"
+ },
+ "text": "Turned it down.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2064852489078263819",
+ "harness": {
+  "run": "2026-10-31T03-48-06Z",
+  "manifest_sha256": "485917866faaacba3f6ba610f71bd9e8742dd651e87192dd8b73f98728b3818a",
+  "query": "from:BobLoukas since:2026-06-08 until:2026-06-18"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:32.382Z",
+ "cashtags": [],
+ "conversationId": "2001323514943676732",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2002074209221292457",
+ "kind": "reply",
+ "metrics": {
+  "likes": 1,
+  "replies": 1,
+  "reposts": 0,
+  "views": 748
+ },
+ "postedAt": "2025-12-19T17:51:02.000Z",
+ "replyTo": {
+  "postId": "2002064812105494889",
+  "handle": "Digitalbuccukoo"
+ },
+ "text": "If it holds support it could bounce well.  \n\nRemind me in 1 yr chump.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2002074209221292457",
+ "harness": {
+  "run": "2026-10-31T03-28-29Z",
+  "manifest_sha256": "6b809f4562719e0f7de013cb2199555f0361999760d9b9ef86799734f195de03",
+  "query": "from:BobLoukas since:2025-12-15 until:2025-12-20"
+ }
+}

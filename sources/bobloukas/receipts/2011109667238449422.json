@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:03.685Z",
+ "cashtags": [],
+ "conversationId": "2011108172472467861",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2011109667238449422",
+ "kind": "reply",
+ "metrics": {
+  "likes": 3,
+  "replies": 0,
+  "reposts": 0,
+  "views": 375
+ },
+ "postedAt": "2026-01-13T16:14:43.000Z",
+ "replyTo": {
+  "postId": "2011109522409144756",
+  "handle": "smw000001"
+ },
+ "text": "You're an idiot.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2011109667238449422",
+ "harness": {
+  "run": "2026-10-31T03-28-58Z",
+  "manifest_sha256": "85f34bbfce551087a183cda6c242ec59865f566dc1f56165cc796d53128e011e",
+  "query": "from:BobLoukas since:2026-01-09 until:2026-01-19"
+ }
+}

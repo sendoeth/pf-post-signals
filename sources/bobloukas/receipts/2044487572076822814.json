@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:46:38.671Z",
+ "cashtags": [],
+ "conversationId": "2044487572076822814",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2044487572076822814",
+ "kind": "quote",
+ "metrics": {
+  "likes": 1070,
+  "replies": 102,
+  "reposts": 57,
+  "views": 148683
+ },
+ "postedAt": "2026-04-15T18:46:36.000Z",
+ "replyTo": null,
+ "text": "So far I'm wrong the S&P500, didn't expect it could do a new ATH here.  \n\nThe move confirms a new weekly cycle when it was expected in a couple of months. Still long but underweight.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2044487572076822814",
+ "harness": {
+  "run": "2026-10-31T03-46-34Z",
+  "manifest_sha256": "c27074f7b8d8c85ca6aaed1a98de9a36b44ad09e077f54e4c1ddc2264c260dfe",
+  "query": "from:BobLoukas since:2026-04-14 until:2026-04-19"
+ }
+}

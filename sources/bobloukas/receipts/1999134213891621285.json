@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:26.896Z",
+ "cashtags": [],
+ "conversationId": "1999132960235155477",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1999134213891621285",
+ "kind": "reply",
+ "metrics": {
+  "likes": 10,
+  "replies": 1,
+  "reposts": 0,
+  "views": 1744
+ },
+ "postedAt": "2025-12-11T15:08:33.000Z",
+ "replyTo": {
+  "postId": "1999133700945035449",
+  "handle": "pianches"
+ },
+ "text": "Energy is a core (5%) allocation of my long term accounts.  With crude prices depressed, the majors still print money.  Give off 3.5% income. \n\nIf we get much higher energy prices, they will rip.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1999134213891621285",
+ "harness": {
+  "run": "2026-10-31T03-28-21Z",
+  "manifest_sha256": "c02ce20beb826e706b2b33c18668b6975c7f6e723f9ba8dc68eba93123f5e55a",
+  "query": "from:BobLoukas since:2025-12-10 until:2025-12-15"
+ }
+}

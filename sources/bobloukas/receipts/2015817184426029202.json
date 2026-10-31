@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:14.211Z",
+ "cashtags": [],
+ "conversationId": "2015817184426029202",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2015817184426029202",
+ "kind": "post",
+ "metrics": {
+  "likes": 462,
+  "replies": 24,
+  "reposts": 27,
+  "views": 38889
+ },
+ "postedAt": "2026-01-26T16:00:43.000Z",
+ "replyTo": null,
+ "text": "Stocks trying to confirm the 2nd Daily Cycle has started. Close above 10dma today would be it.\n\nThen we can see a meaningful push through ATH's on the Weekly Cycle.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2015817184426029202",
+ "harness": {
+  "run": "2026-10-31T03-29-09Z",
+  "manifest_sha256": "12b6383eb0d3e548fb1ff7b7fa27ac18c6544170639bb262e25d9278c33ad772",
+  "query": "from:BobLoukas since:2026-01-19 until:2026-01-29"
+ }
+}

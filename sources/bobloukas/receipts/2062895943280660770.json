@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:48:00.528Z",
+ "cashtags": [],
+ "conversationId": "2062895943280660770",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2062895943280660770",
+ "kind": "post",
+ "metrics": {
+  "likes": 1229,
+  "replies": 59,
+  "reposts": 18,
+  "views": 81493
+ },
+ "postedAt": "2026-06-05T13:54:54.000Z",
+ "replyTo": null,
+ "text": "I'm here to think out loud and share opinion, free from influence, bias, and need for endorsement.\n\nI share what I observe and believe to be true.  If a view, position, or statement bothers you, that's your problem to wrestle with, not mine.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2062895943280660770",
+ "harness": {
+  "run": "2026-10-31T03-47-55Z",
+  "manifest_sha256": "76ee69624ea2b9328b3f138dbfe04636ffc970ec1aa15cc43bb66d8325d64d30",
+  "query": "from:BobLoukas since:2026-06-03 until:2026-06-08"
+ }
+}

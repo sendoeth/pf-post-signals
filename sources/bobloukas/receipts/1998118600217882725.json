@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:51.418Z",
+ "cashtags": [],
+ "conversationId": "1998117845742633403",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1998118600217882725",
+ "kind": "reply",
+ "metrics": {
+  "likes": 18,
+  "replies": 2,
+  "reposts": 0,
+  "views": 10069
+ },
+ "postedAt": "2025-12-08T19:52:52.000Z",
+ "replyTo": {
+  "postId": "1998117845742633403",
+  "handle": "TimechainIndex"
+ },
+ "text": "great history, why would you want to separate them from the physical. no market for the coin with btc?",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1998118600217882725",
+ "harness": {
+  "run": "2026-10-31T03-11-49Z",
+  "manifest_sha256": "44284fd2b0f53f602994edeb448d034ad7c1447b6074bcf56e01e43a4ce3849c",
+  "query": "from:BobLoukas since:2025-11-30 until:2025-12-10"
+ }
+}

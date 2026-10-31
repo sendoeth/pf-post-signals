@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:46:38.671Z",
+ "cashtags": [],
+ "conversationId": "2044487572076822814",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2044490204442952009",
+ "kind": "reply",
+ "metrics": {
+  "likes": 35,
+  "replies": 3,
+  "reposts": 0,
+  "views": 2535
+ },
+ "postedAt": "2026-04-15T18:57:04.000Z",
+ "replyTo": {
+  "postId": "2044489098027581816",
+  "handle": "Kavics88"
+ },
+ "text": "Sure. \n\nBut it looks weak for a very long time before it isn't too.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2044490204442952009",
+ "harness": {
+  "run": "2026-10-31T03-46-34Z",
+  "manifest_sha256": "c27074f7b8d8c85ca6aaed1a98de9a36b44ad09e077f54e4c1ddc2264c260dfe",
+  "query": "from:BobLoukas since:2026-04-14 until:2026-04-19"
+ }
+}

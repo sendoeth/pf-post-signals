@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:46:58.838Z",
+ "cashtags": [],
+ "conversationId": "2047352775248585119",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2047371383957504511",
+ "kind": "reply",
+ "metrics": {
+  "likes": 3,
+  "replies": 1,
+  "reposts": 0,
+  "views": 1115
+ },
+ "postedAt": "2026-04-23T17:45:50.000Z",
+ "replyTo": {
+  "postId": "2047369944539808249",
+  "handle": "cafromthesky"
+ },
+ "text": "No.  If you dont have nexus in NY or are not deriving income in the state of NY",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2047371383957504511",
+ "harness": {
+  "run": "2026-10-31T03-46-54Z",
+  "manifest_sha256": "d66bf07857f47292cdfd802d2817253a59a804ad438a1e7c7e149ca9c0a4fd10",
+  "query": "from:BobLoukas since:2026-04-19 until:2026-04-24"
+ }
+}

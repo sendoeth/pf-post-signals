@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:55.100Z",
+ "cashtags": [],
+ "conversationId": "2018722278029291948",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2018730416375746744",
+ "kind": "reply",
+ "metrics": {
+  "likes": 18,
+  "replies": 2,
+  "reposts": 0,
+  "views": 1480
+ },
+ "postedAt": "2026-02-03T16:56:52.000Z",
+ "replyTo": {
+  "postId": "2018725602937692343",
+  "handle": "WillToMake"
+ },
+ "text": "I've sold hundreds and hundreds of them that more than pays for what I own.  \n\nAnd there is actually quite a bit of underground interest in these that doesn't go away.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2018730416375746744",
+ "harness": {
+  "run": "2026-10-31T03-29-44Z",
+  "manifest_sha256": "aaa8d4e197f46be6cccda8b30abf99f805399d35c1bf30c84b78a3f1a95bcc12",
+  "query": "from:BobLoukas since:2026-02-03 until:2026-02-08"
+ }
+}

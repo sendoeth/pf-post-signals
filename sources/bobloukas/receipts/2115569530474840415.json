@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:36:43.947Z",
+ "cashtags": [],
+ "conversationId": "2115549741153137122",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2115569530474840415",
+ "kind": "reply",
+ "metrics": {
+  "likes": 39,
+  "replies": 2,
+  "reposts": 0,
+  "views": 6158
+ },
+ "postedAt": "2026-10-28T22:20:56.000Z",
+ "replyTo": {
+  "postId": "2115549741153137122",
+  "handle": "StockSavvyShay"
+ },
+ "text": "Search is still their business and very high margin.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2115569530474840415",
+ "harness": {
+  "run": "2026-10-31T04-36-38Z",
+  "manifest_sha256": "4ed1a5ced8c750ca12e8ad455fcb0440edc42dc649d9b9187902e0982ccc36b8",
+  "query": "from:BobLoukas since:2026-10-26 until:2026-11-01"
+ }
+}

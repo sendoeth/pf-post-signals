@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:33.100Z",
+ "cashtags": [],
+ "conversationId": "1992280862252212723",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1992282754730328569",
+ "kind": "reply",
+ "metrics": {
+  "likes": 50,
+  "replies": 2,
+  "reposts": 1,
+  "views": 4835
+ },
+ "postedAt": "2025-11-22T17:23:18.000Z",
+ "replyTo": {
+  "postId": "1992282549335494731",
+  "handle": "CryptKeeper_06"
+ },
+ "text": "Alt’s are dogs with fleas.   Always have been.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1992282754730328569",
+ "harness": {
+  "run": "2026-10-31T03-11-28Z",
+  "manifest_sha256": "5b4f94307a59f6b36bf90ded7f7487cb77a37651415230998ae74712e788ac95",
+  "query": "from:BobLoukas since:2025-11-20 until:2025-11-25"
+ }
+}

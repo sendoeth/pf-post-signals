@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:10.829Z",
+ "cashtags": [],
+ "conversationId": "2047563633610350863",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2048044495762006418",
+ "kind": "reply",
+ "metrics": {
+  "likes": 9,
+  "replies": 0,
+  "reposts": 0,
+  "views": 631
+ },
+ "postedAt": "2026-04-25T14:20:33.000Z",
+ "replyTo": {
+  "postId": "2047723055548698812",
+  "handle": "K3m0s"
+ },
+ "text": "No i dont agree, the cycle will continue.  The halving has always been irrelevant.  What i was saying is how the cycle unfolds will be very different.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2048044495762006418",
+ "harness": {
+  "run": "2026-10-31T03-47-04Z",
+  "manifest_sha256": "5336994f71bbe4f700cf60362be35add5dbd82d5eddf921d84495b46cbd2c660",
+  "query": "from:BobLoukas since:2026-04-24 until:2026-04-29"
+ }
+}

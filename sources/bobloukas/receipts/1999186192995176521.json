@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:24.288Z",
+ "cashtags": [],
+ "conversationId": "1999151631821115628",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1999186192995176521",
+ "kind": "reply",
+ "metrics": {
+  "likes": 9,
+  "replies": 3,
+  "reposts": 0,
+  "views": 3099
+ },
+ "postedAt": "2025-12-11T18:35:06.000Z",
+ "replyTo": {
+  "postId": "1999185655826645347",
+  "handle": "0xZOZ"
+ },
+ "text": "It's a 12 month downtrend, down 70%.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1999186192995176521",
+ "harness": {
+  "run": "2026-10-31T03-28-21Z",
+  "manifest_sha256": "c02ce20beb826e706b2b33c18668b6975c7f6e723f9ba8dc68eba93123f5e55a",
+  "query": "from:BobLoukas since:2025-12-10 until:2025-12-15"
+ }
+}

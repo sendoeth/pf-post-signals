@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:40.734Z",
+ "cashtags": [],
+ "conversationId": "2035001641980612659",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2036383643728326826",
+ "kind": "reply",
+ "metrics": {
+  "likes": 7,
+  "replies": 0,
+  "reposts": 0,
+  "views": 1164
+ },
+ "postedAt": "2026-03-24T10:04:29.000Z",
+ "replyTo": {
+  "postId": "2036088601407271255",
+  "handle": "2Dawgs2daMoon"
+ },
+ "text": "That’s my take.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2036383643728326826",
+ "harness": {
+  "run": "2026-10-31T03-30-36Z",
+  "manifest_sha256": "4650ab529d8aa763c70824f28353a63102c967a6a59d9111c9a5115d681b6e4d",
+  "query": "from:BobLoukas since:2026-03-20 until:2026-03-30"
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:46.993Z",
+ "cashtags": [],
+ "conversationId": "2019774445053792739",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2019774445053792739",
+ "kind": "quote",
+ "metrics": {
+  "likes": 307,
+  "replies": 28,
+  "reposts": 28,
+  "views": 66319
+ },
+ "postedAt": "2026-02-06T14:05:27.000Z",
+ "replyTo": null,
+ "text": "Good piece by Joe.  \n\nLot of these dynamics take time to run their course. Kind of what a bear market is all about.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2019774445053792739",
+ "harness": {
+  "run": "2026-10-31T03-29-44Z",
+  "manifest_sha256": "aaa8d4e197f46be6cccda8b30abf99f805399d35c1bf30c84b78a3f1a95bcc12",
+  "query": "from:BobLoukas since:2026-02-03 until:2026-02-08"
+ }
+}

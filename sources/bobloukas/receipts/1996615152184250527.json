@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:53.468Z",
+ "cashtags": [],
+ "conversationId": "1996591419587252424",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1996615152184250527",
+ "kind": "reply",
+ "metrics": {
+  "likes": 25,
+  "replies": 3,
+  "reposts": 0,
+  "views": 4517
+ },
+ "postedAt": "2025-12-04T16:18:42.000Z",
+ "replyTo": {
+  "postId": "1996609929239740481",
+  "handle": "WittyChartGuy"
+ },
+ "text": "No, 6 weeks is normally a bullish period even in a bear market. Cycle starts from the lows,",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1996615152184250527",
+ "harness": {
+  "run": "2026-10-31T03-11-49Z",
+  "manifest_sha256": "44284fd2b0f53f602994edeb448d034ad7c1447b6074bcf56e01e43a4ce3849c",
+  "query": "from:BobLoukas since:2025-11-30 until:2025-12-10"
+ }
+}

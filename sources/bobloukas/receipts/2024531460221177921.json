@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:13.950Z",
+ "cashtags": [],
+ "conversationId": "2024086492931633153",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2024531460221177921",
+ "kind": "reply",
+ "metrics": {
+  "likes": 3,
+  "replies": 0,
+  "reposts": 0,
+  "views": 772
+ },
+ "postedAt": "2026-02-19T17:08:08.000Z",
+ "replyTo": {
+  "postId": "2024219861220807161",
+  "handle": "Krastus101"
+ },
+ "text": "Yes I was very bullish at the top and turned negative when price broke down.  Funny how that works.  You follow the trend.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2024531460221177921",
+ "harness": {
+  "run": "2026-10-31T03-30-09Z",
+  "manifest_sha256": "f4cb50b74e111333644768234a62c37c553d27111cb37124caf5fe4bcbd50de6",
+  "query": "from:BobLoukas since:2026-02-18 until:2026-02-28"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:12.214Z",
+ "cashtags": [],
+ "conversationId": "2016655906696532303",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2016660025779908663",
+ "kind": "reply",
+ "metrics": {
+  "likes": 47,
+  "replies": 1,
+  "reposts": 1,
+  "views": 3634
+ },
+ "postedAt": "2026-01-28T23:49:52.000Z",
+ "replyTo": {
+  "postId": "2016659735626355198",
+  "handle": "better_holland"
+ },
+ "text": "Probably nowhere near soon.   \n\nBut sadly markets also trade on hope/fear and it doesn’t seem like dispelling that fear will be easy.  Or understanding it.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2016660025779908663",
+ "harness": {
+  "run": "2026-10-31T03-29-09Z",
+  "manifest_sha256": "12b6383eb0d3e548fb1ff7b7fa27ac18c6544170639bb262e25d9278c33ad772",
+  "query": "from:BobLoukas since:2026-01-19 until:2026-01-29"
+ }
+}

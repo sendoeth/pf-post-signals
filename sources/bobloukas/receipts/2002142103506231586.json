@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:32.380Z",
+ "cashtags": [],
+ "conversationId": "2002094215560642928",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2002142103506231586",
+ "kind": "reply",
+ "metrics": {
+  "likes": 56,
+  "replies": 2,
+  "reposts": 1,
+  "views": 5696
+ },
+ "postedAt": "2025-12-19T22:20:50.000Z",
+ "replyTo": {
+  "postId": "2002139951673020444",
+  "handle": "Innerdevcrypto"
+ },
+ "text": "You’re in the 2%. \nMy message is for the rest. \n\nYes my income streams dwarf trading.  But like you I view trading as an income stream. \n\nBut most are not “trading” they’re gambling.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2002142103506231586",
+ "harness": {
+  "run": "2026-10-31T03-28-29Z",
+  "manifest_sha256": "6b809f4562719e0f7de013cb2199555f0361999760d9b9ef86799734f195de03",
+  "query": "from:BobLoukas since:2025-12-15 until:2025-12-20"
+ }
+}

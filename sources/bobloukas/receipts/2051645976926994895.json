@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:20.274Z",
+ "cashtags": [],
+ "conversationId": "2051627961724305706",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2051645976926994895",
+ "kind": "reply",
+ "metrics": {
+  "likes": 12,
+  "replies": 0,
+  "reposts": 0,
+  "views": 2665
+ },
+ "postedAt": "2026-05-05T12:51:33.000Z",
+ "replyTo": {
+  "postId": "2051645565851652135",
+  "handle": "CryptoDadJR33"
+ },
+ "text": "Price wise it is, so far.  \n\nBut this post does exactly “consider it”.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2051645976926994895",
+ "harness": {
+  "run": "2026-10-31T03-47-15Z",
+  "manifest_sha256": "d829a2466fa415a7cdaeaff4a6cfdcca76ad661f2ee8e9461b5c6c66af591c27",
+  "query": "from:BobLoukas since:2026-04-29 until:2026-05-09"
+ }
+}

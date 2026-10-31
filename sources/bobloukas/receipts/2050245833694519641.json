@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:21.406Z",
+ "cashtags": [],
+ "conversationId": "2050241005366976617",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2050245833694519641",
+ "kind": "reply",
+ "metrics": {
+  "likes": 30,
+  "replies": 4,
+  "reposts": 1,
+  "views": 4963
+ },
+ "postedAt": "2026-05-01T16:07:53.000Z",
+ "replyTo": {
+  "postId": "2050243920152469849",
+  "handle": "earlyisontimeH"
+ },
+ "text": "In the very least MSTR bottomed for the cycle is very likely.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2050245833694519641",
+ "harness": {
+  "run": "2026-10-31T03-47-15Z",
+  "manifest_sha256": "d829a2466fa415a7cdaeaff4a6cfdcca76ad661f2ee8e9461b5c6c66af591c27",
+  "query": "from:BobLoukas since:2026-04-29 until:2026-05-09"
+ }
+}

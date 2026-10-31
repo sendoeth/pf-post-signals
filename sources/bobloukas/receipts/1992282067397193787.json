@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:33.100Z",
+ "cashtags": [],
+ "conversationId": "1992280862252212723",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1992282067397193787",
+ "kind": "reply",
+ "metrics": {
+  "likes": 83,
+  "replies": 2,
+  "reposts": 0,
+  "views": 9274
+ },
+ "postedAt": "2025-11-22T17:20:34.000Z",
+ "replyTo": {
+  "postId": "1992281836819742895",
+  "handle": "WittyChartGuy"
+ },
+ "text": "No.  Sellers will just refuse to dump at these levels.  We can stabilize then it’s another vacuum back up to a level where sellers return.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1992282067397193787",
+ "harness": {
+  "run": "2026-10-31T03-11-28Z",
+  "manifest_sha256": "5b4f94307a59f6b36bf90ded7f7487cb77a37651415230998ae74712e788ac95",
+  "query": "from:BobLoukas since:2025-11-20 until:2025-11-25"
+ }
+}

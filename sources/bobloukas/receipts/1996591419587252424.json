@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:53.469Z",
+ "cashtags": [
+  "BTC",
+  "ETH"
+ ],
+ "conversationId": "1996591419587252424",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1996591419587252424",
+ "kind": "post",
+ "metrics": {
+  "likes": 1563,
+  "replies": 116,
+  "reposts": 141,
+  "views": 108525
+ },
+ "postedAt": "2025-12-04T14:44:23.000Z",
+ "replyTo": null,
+ "text": "$BTC should have 6 weeks of higher support in a new weekly Cycle.\n\nImpress with how $ETH is trading and could put in a really good showing over that period.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1996591419587252424",
+ "harness": {
+  "run": "2026-10-31T03-11-49Z",
+  "manifest_sha256": "44284fd2b0f53f602994edeb448d034ad7c1447b6074bcf56e01e43a4ce3849c",
+  "query": "from:BobLoukas since:2025-11-30 until:2025-12-10"
+ }
+}

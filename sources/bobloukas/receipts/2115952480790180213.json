@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:36:40.401Z",
+ "cashtags": [],
+ "conversationId": "2115944292451577867",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2115952480790180213",
+ "kind": "reply",
+ "metrics": {
+  "likes": 3,
+  "replies": 1,
+  "reposts": 0,
+  "views": 2218
+ },
+ "postedAt": "2026-10-29T23:42:38.000Z",
+ "replyTo": {
+  "postId": "2115951932099731854",
+  "handle": "georgerye2025"
+ },
+ "text": "Not a good time for sure.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2115952480790180213",
+ "harness": {
+  "run": "2026-10-31T04-36-38Z",
+  "manifest_sha256": "4ed1a5ced8c750ca12e8ad455fcb0440edc42dc649d9b9187902e0982ccc36b8",
+  "query": "from:BobLoukas since:2026-10-26 until:2026-11-01"
+ }
+}

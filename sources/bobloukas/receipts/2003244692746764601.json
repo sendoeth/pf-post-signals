@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:44.067Z",
+ "cashtags": [],
+ "conversationId": "2003118600819753362",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2003244692746764601",
+ "kind": "reply",
+ "metrics": {
+  "likes": 34,
+  "replies": 6,
+  "reposts": 1,
+  "views": 4800
+ },
+ "postedAt": "2025-12-22T23:22:07.000Z",
+ "replyTo": {
+  "postId": "2003208447488327862",
+  "handle": "Sykodelic_"
+ },
+ "text": "I think we can have a 12 week bull period within that.  And a LOT of sideways chop.  That's still a bear market.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2003244692746764601",
+ "harness": {
+  "run": "2026-10-31T03-28-37Z",
+  "manifest_sha256": "9d13b999b16b71141a9123223a30beac3017eedee0e627ab1a0efb00c27a8930",
+  "query": "from:BobLoukas since:2025-12-20 until:2025-12-30"
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:13.949Z",
+ "cashtags": [],
+ "conversationId": "2024890275579961534",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2024890275579961534",
+ "kind": "post",
+ "metrics": {
+  "likes": 684,
+  "replies": 51,
+  "reposts": 57,
+  "views": 130847
+ },
+ "postedAt": "2026-02-20T16:53:56.000Z",
+ "replyTo": null,
+ "text": "Four year decline for crude oil could be coming to an end now.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2024890275579961534",
+ "harness": {
+  "run": "2026-10-31T03-30-09Z",
+  "manifest_sha256": "f4cb50b74e111333644768234a62c37c553d27111cb37124caf5fe4bcbd50de6",
+  "query": "from:BobLoukas since:2026-02-18 until:2026-02-28"
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:33.403Z",
+ "cashtags": [],
+ "conversationId": "2031739333057659161",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2031739333057659161",
+ "kind": "post",
+ "metrics": {
+  "likes": 1948,
+  "replies": 105,
+  "reposts": 178,
+  "views": 183279
+ },
+ "postedAt": "2026-03-11T14:29:39.000Z",
+ "replyTo": null,
+ "text": "I believe there is a good chance that Stocks have peaked for its 4 Year Cycle. Last week my 'active' portfolios went into more defensive positions, cash to 33%.  Further selling to come on more confirmation.\n\nSeeing the signs of the breakdown on the Daily Cycle currently.  The weekly Cycle has NOT yet confirmed this, so it's early days on this view.  \n\nA top would bring the Oct timeframe into focus for a bottom. Given the AI capex and fiscal stimulus, this more likely to be a relatively mild cyclical bear, a shakeout, setting up for a really explosive rally for 2027-2029.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2031739333057659161",
+ "harness": {
+  "run": "2026-10-31T03-30-28Z",
+  "manifest_sha256": "01e2451c651b7ec60ad39a25711bb00e031bd0ff8d61791c7b1a209fde870cd4",
+  "query": "from:BobLoukas since:2026-03-10 until:2026-03-20"
+ }
+}

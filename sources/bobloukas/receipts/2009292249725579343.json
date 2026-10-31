@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:53.749Z",
+ "cashtags": [],
+ "conversationId": "2009291616217903397",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2009292249725579343",
+ "kind": "reply",
+ "metrics": {
+  "likes": 50,
+  "replies": 1,
+  "reposts": 0,
+  "views": 4378
+ },
+ "postedAt": "2026-01-08T15:52:57.000Z",
+ "replyTo": {
+  "postId": "2009291980161818923",
+  "handle": "ForkedFemme"
+ },
+ "text": "This is NOT my view although it's pretty close.  it's the output of the model.\n\nMy main goal with the AI is to level check my realtime bias at all times with my own prior thought process and unbiased views.  A way to challenge myself.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2009292249725579343",
+ "harness": {
+  "run": "2026-10-31T03-28-48Z",
+  "manifest_sha256": "15f3f120834a9e146f93308ba01d65815256ffe13b590dc9e35f844e48ccf261",
+  "query": "from:BobLoukas since:2025-12-30 until:2026-01-09"
+ }
+}

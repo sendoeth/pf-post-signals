@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:46:58.839Z",
+ "cashtags": [],
+ "conversationId": "2047322851745665326",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2047322851745665326",
+ "kind": "post",
+ "metrics": {
+  "likes": 1498,
+  "replies": 147,
+  "reposts": 47,
+  "views": 67442
+ },
+ "postedAt": "2026-04-23T14:32:59.000Z",
+ "replyTo": null,
+ "text": "Not sure why people get so toxic over someone sharing a market view. It’s an opinion, not a prophecy.  This isn’t a prediction game but a positioning game.  Trying to maximize outcome in all environments.  And in trading, opinions are wrong all the time and change with the tape.\nIf I’m wrong, I try to adjust, as fast as possible. i wont hold the view because it was stated before.  It might well cost me opportunity, but that's the price to pay when i think there is capital needing to be protected or an opportunity further below.  Sometimes that means giving up upside to protect downside.\n\nHappy to engage and debate, but I couldn't care less what you think of my views because they don't impact how I position.  If a view of mine bothers you enough to be rude or toxic, because it conflicts with your bag,  that’s just your insecurity and immaturity.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2047322851745665326",
+ "harness": {
+  "run": "2026-10-31T03-46-54Z",
+  "manifest_sha256": "d66bf07857f47292cdfd802d2817253a59a804ad438a1e7c7e149ca9c0a4fd10",
+  "query": "from:BobLoukas since:2026-04-19 until:2026-04-24"
+ }
+}

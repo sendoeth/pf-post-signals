@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:51.508Z",
+ "cashtags": [],
+ "conversationId": "2019397249604731339",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2019406684255580478",
+ "kind": "reply",
+ "metrics": {
+  "likes": 52,
+  "replies": 2,
+  "reposts": 0,
+  "views": 3478
+ },
+ "postedAt": "2026-02-05T13:44:06.000Z",
+ "replyTo": {
+  "postId": "2019397534037471497",
+  "handle": "Jeffwilm"
+ },
+ "text": "I’d say yes.   \n\nIf it’s not, boy are we in trouble.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2019406684255580478",
+ "harness": {
+  "run": "2026-10-31T03-29-44Z",
+  "manifest_sha256": "aaa8d4e197f46be6cccda8b30abf99f805399d35c1bf30c84b78a3f1a95bcc12",
+  "query": "from:BobLoukas since:2026-02-03 until:2026-02-08"
+ }
+}

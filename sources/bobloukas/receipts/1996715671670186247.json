@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:53.468Z",
+ "cashtags": [],
+ "conversationId": "1996699931436859461",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1996715671670186247",
+ "kind": "reply",
+ "metrics": {
+  "likes": 19,
+  "replies": 4,
+  "reposts": 0,
+  "views": 2703
+ },
+ "postedAt": "2025-12-04T22:58:07.000Z",
+ "replyTo": {
+  "postId": "1996704575097917558",
+  "handle": "chr1z235_"
+ },
+ "text": "Mostly indices as it requires little hand holding.  I hand pick more on the income side of stocks. \n\nBit of both but mostly boring compounding. Also income sources to add.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1996715671670186247",
+ "harness": {
+  "run": "2026-10-31T03-11-49Z",
+  "manifest_sha256": "44284fd2b0f53f602994edeb448d034ad7c1447b6074bcf56e01e43a4ce3849c",
+  "query": "from:BobLoukas since:2025-11-30 until:2025-12-10"
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:38.928Z",
+ "cashtags": [],
+ "conversationId": "2037523005899731403",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2037523005899731403",
+ "kind": "quote",
+ "metrics": {
+  "likes": 631,
+  "replies": 33,
+  "reposts": 48,
+  "views": 180997
+ },
+ "postedAt": "2026-03-27T13:31:54.000Z",
+ "replyTo": null,
+ "text": "Looks like the Daily cycle low is not in.  Very bear market like behavior.  #Stocks\n\nAnd 3 days left on the monthly, clearly showing the 4 yr Cycle top in development.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2037523005899731403",
+ "harness": {
+  "run": "2026-10-31T03-30-36Z",
+  "manifest_sha256": "4650ab529d8aa763c70824f28353a63102c967a6a59d9111c9a5115d681b6e4d",
+  "query": "from:BobLoukas since:2026-03-20 until:2026-03-30"
+ }
+}

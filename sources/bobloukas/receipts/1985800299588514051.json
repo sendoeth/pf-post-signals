@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:09.809Z",
+ "cashtags": [],
+ "conversationId": "1985793760761094421",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1985800299588514051",
+ "kind": "reply",
+ "metrics": {
+  "likes": 78,
+  "replies": 8,
+  "reposts": 0,
+  "views": 17414
+ },
+ "postedAt": "2025-11-04T20:04:20.000Z",
+ "replyTo": {
+  "postId": "1985793760761094421",
+  "handle": "_Checkmatey_"
+ },
+ "text": "Wait, you mean no more buyers of the Ponzi's?",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1985800299588514051",
+ "harness": {
+  "run": "2026-10-31T03-10-01Z",
+  "manifest_sha256": "3844915c6905bd8c09b21e28b77ba45472ed71277b155e9aca6ad52457c02037",
+  "query": "from:BobLoukas since:2025-10-31 until:2025-11-10"
+ }
+}

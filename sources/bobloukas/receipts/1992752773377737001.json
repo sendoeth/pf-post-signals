@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:30.956Z",
+ "cashtags": [],
+ "conversationId": "1992733817241837936",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1992752773377737001",
+ "kind": "reply",
+ "metrics": {
+  "likes": 346,
+  "replies": 9,
+  "reposts": 1,
+  "views": 23034
+ },
+ "postedAt": "2025-11-24T00:30:59.000Z",
+ "replyTo": {
+  "postId": "1992733817241837936",
+  "handle": "unusual_whales"
+ },
+ "text": "On to the next circus.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1992752773377737001",
+ "harness": {
+  "run": "2026-10-31T03-11-28Z",
+  "manifest_sha256": "5b4f94307a59f6b36bf90ded7f7487cb77a37651415230998ae74712e788ac95",
+  "query": "from:BobLoukas since:2025-11-20 until:2025-11-25"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:27.306Z",
+ "cashtags": [],
+ "conversationId": "1988703591121711472",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1988733654718410773",
+ "kind": "reply",
+ "metrics": {
+  "likes": 115,
+  "replies": 7,
+  "reposts": 2,
+  "views": 13691
+ },
+ "postedAt": "2025-11-12T22:20:26.000Z",
+ "replyTo": {
+  "postId": "1988703591121711472",
+  "handle": "ErikVoorhees"
+ },
+ "text": "So Zcash 10x's and they have a light bulb moment.  :-)",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1988733654718410773",
+ "harness": {
+  "run": "2026-10-31T03-10-22Z",
+  "manifest_sha256": "8219512b7c4ed9295ff50779c6865723e1b25c0ba9424dff8dd584d91eeef4c2",
+  "query": "from:BobLoukas since:2025-11-10 until:2025-11-15"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:36:42.498Z",
+ "cashtags": [],
+ "conversationId": "2115947669931909327",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2115948302587838767",
+ "kind": "reply",
+ "metrics": {
+  "likes": 60,
+  "replies": 7,
+  "reposts": 0,
+  "views": 10693
+ },
+ "postedAt": "2026-10-29T23:26:02.000Z",
+ "replyTo": {
+  "postId": "2115947669931909327",
+  "handle": "CryptoParadyme"
+ },
+ "text": "Only a fool wouldn’t use a multisig for high value today.  \n\nAnd yes securing high value assets is still achievable.  \n\nBut I’m talking about a promised future crypto world that has very high and active touch points.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2115948302587838767",
+ "harness": {
+  "run": "2026-10-31T04-36-38Z",
+  "manifest_sha256": "4ed1a5ced8c750ca12e8ad455fcb0440edc42dc649d9b9187902e0982ccc36b8",
+  "query": "from:BobLoukas since:2026-10-26 until:2026-11-01"
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:39.632Z",
+ "cashtags": [],
+ "conversationId": "2017358188492812696",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2017358188492812696",
+ "kind": "post",
+ "metrics": {
+  "likes": 442,
+  "replies": 37,
+  "reposts": 0,
+  "views": 39130
+ },
+ "postedAt": "2026-01-30T22:04:07.000Z",
+ "replyTo": null,
+ "text": "Have a good weekend all.  🤝\n\nGoing to touch some ice.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2017358188492812696",
+ "harness": {
+  "run": "2026-10-31T03-29-33Z",
+  "manifest_sha256": "14f0ea84840c9dca9fe00212e469c77a2ebdd67bd750609b8a6bddcb4356ba1c",
+  "query": "from:BobLoukas since:2026-01-29 until:2026-02-03"
+ }
+}

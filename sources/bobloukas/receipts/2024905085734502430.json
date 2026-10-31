@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:12.025Z",
+ "cashtags": [],
+ "conversationId": "2024876728171008477",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2024905085734502430",
+ "kind": "reply",
+ "metrics": {
+  "likes": 5,
+  "replies": 1,
+  "reposts": 0,
+  "views": 944
+ },
+ "postedAt": "2026-02-20T17:52:48.000Z",
+ "replyTo": {
+  "postId": "2024903931566927951",
+  "handle": "jay_morgan97"
+ },
+ "text": "And I'm sure you were perfectly ok with the buster when Obama had 59 senators,",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2024905085734502430",
+ "harness": {
+  "run": "2026-10-31T03-30-09Z",
+  "manifest_sha256": "f4cb50b74e111333644768234a62c37c553d27111cb37124caf5fe4bcbd50de6",
+  "query": "from:BobLoukas since:2026-02-18 until:2026-02-28"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:48:03.671Z",
+ "cashtags": [],
+ "conversationId": "2062277928197738550",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2062278991348634110",
+ "kind": "reply",
+ "metrics": {
+  "likes": 207,
+  "replies": 14,
+  "reposts": 1,
+  "views": 15374
+ },
+ "postedAt": "2026-06-03T21:03:21.000Z",
+ "replyTo": {
+  "postId": "2062277928197738550",
+  "handle": "kajiXBT"
+ },
+ "text": "I’m nibbling.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2062278991348634110",
+ "harness": {
+  "run": "2026-10-31T03-47-55Z",
+  "manifest_sha256": "76ee69624ea2b9328b3f138dbfe04636ffc970ec1aa15cc43bb66d8325d64d30",
+  "query": "from:BobLoukas since:2026-06-03 until:2026-06-08"
+ }
+}

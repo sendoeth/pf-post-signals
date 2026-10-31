@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:32.381Z",
+ "cashtags": [],
+ "conversationId": "2002094215560642928",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2002140718081708110",
+ "kind": "reply",
+ "metrics": {
+  "likes": 5,
+  "replies": 0,
+  "reposts": 0,
+  "views": 527
+ },
+ "postedAt": "2025-12-19T22:15:19.000Z",
+ "replyTo": {
+  "postId": "2002110880855830690",
+  "handle": "PatrickParking"
+ },
+ "text": "A good example of one.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2002140718081708110",
+ "harness": {
+  "run": "2026-10-31T03-28-29Z",
+  "manifest_sha256": "6b809f4562719e0f7de013cb2199555f0361999760d9b9ef86799734f195de03",
+  "query": "from:BobLoukas since:2025-12-15 until:2025-12-20"
+ }
+}

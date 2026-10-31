@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:34.815Z",
+ "cashtags": [],
+ "conversationId": "1991825705219612937",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1991825705219612937",
+ "kind": "post",
+ "metrics": {
+  "likes": 2760,
+  "replies": 200,
+  "reposts": 126,
+  "views": 157970
+ },
+ "postedAt": "2025-11-21T11:07:09.000Z",
+ "replyTo": null,
+ "text": "The Bitcoin 4Year Cycle peak coming once again the Cycle on Month 35 (Oct 2025) is almost all but certain now.  \n\nIn the meantime, a good 2 month rally will be coming.  \n\nI’ll do a new 4 yr Cycle video (YouTube) on Tuesday.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1991825705219612937",
+ "harness": {
+  "run": "2026-10-31T03-11-28Z",
+  "manifest_sha256": "5b4f94307a59f6b36bf90ded7f7487cb77a37651415230998ae74712e788ac95",
+  "query": "from:BobLoukas since:2025-11-20 until:2025-11-25"
+ }
+}

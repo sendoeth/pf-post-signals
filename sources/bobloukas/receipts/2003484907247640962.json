@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:41.826Z",
+ "cashtags": [],
+ "conversationId": "2003479679697658027",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2003484907247640962",
+ "kind": "reply",
+ "metrics": {
+  "likes": 39,
+  "replies": 2,
+  "reposts": 0,
+  "views": 2183
+ },
+ "postedAt": "2025-12-23T15:16:39.000Z",
+ "replyTo": {
+  "postId": "2003481464542048479",
+  "handle": "toddram3"
+ },
+ "text": "Follow the actions, that's all.  Actions matter.  The rest is outlining possibilities, nothing more.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2003484907247640962",
+ "harness": {
+  "run": "2026-10-31T03-28-37Z",
+  "manifest_sha256": "9d13b999b16b71141a9123223a30beac3017eedee0e627ab1a0efb00c27a8930",
+  "query": "from:BobLoukas since:2025-12-20 until:2025-12-30"
+ }
+}

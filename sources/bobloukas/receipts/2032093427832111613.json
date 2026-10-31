@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:33.403Z",
+ "cashtags": [],
+ "conversationId": "2032093427832111613",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2032093427832111613",
+ "kind": "post",
+ "metrics": {
+  "likes": 851,
+  "replies": 50,
+  "reposts": 26,
+  "views": 52592
+ },
+ "postedAt": "2026-03-12T13:56:42.000Z",
+ "replyTo": null,
+ "text": "Having the biggest stick and the biggest ego, leads to some really dumb decision making.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2032093427832111613",
+ "harness": {
+  "run": "2026-10-31T03-30-28Z",
+  "manifest_sha256": "01e2451c651b7ec60ad39a25711bb00e031bd0ff8d61791c7b1a209fde870cd4",
+  "query": "from:BobLoukas since:2026-03-10 until:2026-03-20"
+ }
+}

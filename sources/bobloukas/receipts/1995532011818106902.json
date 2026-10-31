@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:57.480Z",
+ "cashtags": [],
+ "conversationId": "1995532011818106902",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1995532011818106902",
+ "kind": "post",
+ "metrics": {
+  "likes": 957,
+  "replies": 36,
+  "reposts": 85,
+  "views": 99495
+ },
+ "postedAt": "2025-12-01T16:34:41.000Z",
+ "replyTo": null,
+ "text": "Silver back in a runaway, lockout move.  The recent 6 week pause the midpoint of the total move, targeting $80.  \n\nSimilar to prior runaway moves, like 2004 + 2011.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1995532011818106902",
+ "harness": {
+  "run": "2026-10-31T03-11-49Z",
+  "manifest_sha256": "44284fd2b0f53f602994edeb448d034ad7c1447b6074bcf56e01e43a4ce3849c",
+  "query": "from:BobLoukas since:2025-11-30 until:2025-12-10"
+ }
+}

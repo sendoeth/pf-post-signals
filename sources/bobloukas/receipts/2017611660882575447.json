@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:39.632Z",
+ "cashtags": [],
+ "conversationId": "1533908579928915969",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2017611660882575447",
+ "kind": "repost",
+ "metrics": {
+  "likes": 545,
+  "replies": 33,
+  "reposts": 27,
+  "views": null
+ },
+ "postedAt": "2026-01-31T14:51:20.000Z",
+ "replyTo": null,
+ "text": "Altcoin traders chasing the cheese.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2017611660882575447",
+ "harness": {
+  "run": "2026-10-31T03-29-33Z",
+  "manifest_sha256": "14f0ea84840c9dca9fe00212e469c77a2ebdd67bd750609b8a6bddcb4356ba1c",
+  "query": "from:BobLoukas since:2026-01-29 until:2026-02-03"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:53.383Z",
+ "cashtags": [
+  "CIFR",
+  "EOSE",
+  "AMD",
+  "ONDS",
+  "IREN",
+  "CRML",
+  "APP",
+  "RKLB",
+  "OKLO",
+  "LMND",
+  "PLTR",
+  "RDW",
+  "ASTS",
+  "AEHR",
+  "NBIS",
+  "MU",
+  "PL",
+  "HOOD"
+ ],
+ "conversationId": "2019096818748190790",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2019101040805908488",
+ "kind": "repost",
+ "metrics": {
+  "likes": 2019,
+  "replies": 149,
+  "reposts": 218,
+  "views": 322059
+ },
+ "postedAt": "2026-02-04T17:29:35.000Z",
+ "replyTo": null,
+ "text": "BRUTAL DAY FOR GROWTH STOCKS\n\n• $CIFR -18%\n• $EOSE -17%\n• $AMD -16%\n• $ONDS -15%\n• $IREN -15%\n• $CRML -14%\n• $APP -14%\n• $RKLB -13%\n• $OKLO -12%\n• $LMND -12%\n• $PLTR -12%\n• $RDW -12%\n• $ASTS -11%\n• $AEHR -11%\n• $NBIS -10%\n• $MU -10%\n• $PL -10%\n• $HOOD -9%",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2019101040805908488",
+ "harness": {
+  "run": "2026-10-31T03-29-44Z",
+  "manifest_sha256": "aaa8d4e197f46be6cccda8b30abf99f805399d35c1bf30c84b78a3f1a95bcc12",
+  "query": "from:BobLoukas since:2026-02-03 until:2026-02-08"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:41.411Z",
+ "cashtags": [],
+ "conversationId": "2017025599358062993",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2017028252506673571",
+ "kind": "reply",
+ "metrics": {
+  "likes": 73,
+  "replies": 1,
+  "reposts": 0,
+  "views": 8103
+ },
+ "postedAt": "2026-01-30T00:13:04.000Z",
+ "replyTo": {
+  "postId": "2017025599358062993",
+  "handle": "FusionptCapital"
+ },
+ "text": "One of the biggest grifters there.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2017028252506673571",
+ "harness": {
+  "run": "2026-10-31T03-29-33Z",
+  "manifest_sha256": "14f0ea84840c9dca9fe00212e469c77a2ebdd67bd750609b8a6bddcb4356ba1c",
+  "query": "from:BobLoukas since:2026-01-29 until:2026-02-03"
+ }
+}

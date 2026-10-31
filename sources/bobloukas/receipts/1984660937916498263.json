@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:13.439Z",
+ "cashtags": [],
+ "conversationId": "1984658711663563134",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1984660937916498263",
+ "kind": "reply",
+ "metrics": {
+  "likes": 125,
+  "replies": 20,
+  "reposts": 1,
+  "views": 15457
+ },
+ "postedAt": "2025-11-01T16:36:55.000Z",
+ "replyTo": {
+  "postId": "1984658711663563134",
+  "handle": "DeeZe"
+ },
+ "text": "Litecoin bros stressed they're not getting their typical end of cycle pump.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1984660937916498263",
+ "harness": {
+  "run": "2026-10-31T03-10-01Z",
+  "manifest_sha256": "3844915c6905bd8c09b21e28b77ba45472ed71277b155e9aca6ad52457c02037",
+  "query": "from:BobLoukas since:2025-10-31 until:2025-11-10"
+ }
+}

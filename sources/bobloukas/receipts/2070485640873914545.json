@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:03:45.922Z",
+ "cashtags": [],
+ "conversationId": "2070485640873914545",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2070485640873914545",
+ "kind": "quote",
+ "metrics": {
+  "likes": 530,
+  "replies": 86,
+  "reposts": 23,
+  "views": 92797
+ },
+ "postedAt": "2026-06-26T12:33:39.000Z",
+ "replyTo": null,
+ "text": "2 yr leases - 0% increase.  \n\nImagine owning a building in a 4% inflation environment, in a city where rents are at record levels (cost of living) and you can’t raise rates for at least 2 more years.  \n\nOn top of this, if a tenant decides they don’t want to pay you, can take 2 years and a lot of legal to get them out. \n\nAnd you wonder why housing stock is tight and nobody wants to build housing.  \n\nReal estate sucks, glad I got out of that game a while ago.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2070485640873914545",
+ "harness": {
+  "run": "2026-10-31T04-03-43Z",
+  "manifest_sha256": "151afdee8bedac9fee9cf5b5571f2bc7c3f8925a0be613401ca72cfa26688b6d",
+  "query": "from:BobLoukas since:2026-06-23 until:2026-06-28"
+ }
+}

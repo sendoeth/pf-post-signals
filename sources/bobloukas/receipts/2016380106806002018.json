@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:12.216Z",
+ "cashtags": [],
+ "conversationId": "2016379459503329291",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2016380106806002018",
+ "kind": "reply",
+ "metrics": {
+  "likes": 52,
+  "replies": 1,
+  "reposts": 0,
+  "views": 8004
+ },
+ "postedAt": "2026-01-28T05:17:34.000Z",
+ "replyTo": {
+  "postId": "2016379459503329291",
+  "handle": "coinbureau"
+ },
+ "text": "All that’s left is a sea of junk.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2016380106806002018",
+ "harness": {
+  "run": "2026-10-31T03-29-09Z",
+  "manifest_sha256": "12b6383eb0d3e548fb1ff7b7fa27ac18c6544170639bb262e25d9278c33ad772",
+  "query": "from:BobLoukas since:2026-01-19 until:2026-01-29"
+ }
+}

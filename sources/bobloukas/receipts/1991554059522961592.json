@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:34.815Z",
+ "cashtags": [],
+ "conversationId": "1991554059522961592",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1991554059522961592",
+ "kind": "post",
+ "metrics": {
+  "likes": 816,
+  "replies": 59,
+  "reposts": 58,
+  "views": 81856
+ },
+ "postedAt": "2025-11-20T17:07:43.000Z",
+ "replyTo": null,
+ "text": "Stocks selling off after the NVDA blowout is not a good look.  See how it closes out the week. But Weekly Cycle is finally showing it's in decline.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1991554059522961592",
+ "harness": {
+  "run": "2026-10-31T03-11-28Z",
+  "manifest_sha256": "5b4f94307a59f6b36bf90ded7f7487cb77a37651415230998ae74712e788ac95",
+  "query": "from:BobLoukas since:2025-11-20 until:2025-11-25"
+ }
+}

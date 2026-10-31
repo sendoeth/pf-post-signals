@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:22.937Z",
+ "cashtags": [],
+ "conversationId": "2029944561053696142",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2029947318540144859",
+ "kind": "reply",
+ "metrics": {
+  "likes": 28,
+  "replies": 2,
+  "reposts": 0,
+  "views": 1698
+ },
+ "postedAt": "2026-03-06T15:48:49.000Z",
+ "replyTo": {
+  "postId": "2029945748020666855",
+  "handle": "Colonel_Burr"
+ },
+ "text": "Such cope",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2029947318540144859",
+ "harness": {
+  "run": "2026-10-31T03-30-20Z",
+  "manifest_sha256": "3d96553ad1872d40978ec78e357b1cef213e2cb79cabbf5b401432e513cb4d1c",
+  "query": "from:BobLoukas since:2026-02-28 until:2026-03-10"
+ }
+}

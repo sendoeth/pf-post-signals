@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:15.874Z",
+ "cashtags": [],
+ "conversationId": "2013679024493543533",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2013680607935549921",
+ "kind": "reply",
+ "metrics": {
+  "likes": 50,
+  "replies": 0,
+  "reposts": 0,
+  "views": 10512
+ },
+ "postedAt": "2026-01-20T18:30:43.000Z",
+ "replyTo": {
+  "postId": "2013679024493543533",
+  "handle": "arkham"
+ },
+ "text": "You make this sound like it's surprising news.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2013680607935549921",
+ "harness": {
+  "run": "2026-10-31T03-29-09Z",
+  "manifest_sha256": "12b6383eb0d3e548fb1ff7b7fa27ac18c6544170639bb262e25d9278c33ad772",
+  "query": "from:BobLoukas since:2026-01-19 until:2026-01-29"
+ }
+}

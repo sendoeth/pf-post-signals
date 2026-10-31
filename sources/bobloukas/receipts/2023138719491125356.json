@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:03.309Z",
+ "cashtags": [],
+ "conversationId": "2023132753508872352",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2023138719491125356",
+ "kind": "reply",
+ "metrics": {
+  "likes": 6,
+  "replies": 0,
+  "reposts": 0,
+  "views": 834
+ },
+ "postedAt": "2026-02-15T20:53:53.000Z",
+ "replyTo": {
+  "postId": "2023138367211512258",
+  "handle": "305Logic"
+ },
+ "text": "Digital Art.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2023138719491125356",
+ "harness": {
+  "run": "2026-10-31T03-29-58Z",
+  "manifest_sha256": "046caa1b799b16c1e3d97c7b87fc3565fd829c623a7d127628756b707828f2b0",
+  "query": "from:BobLoukas since:2026-02-08 until:2026-02-18"
+ }
+}

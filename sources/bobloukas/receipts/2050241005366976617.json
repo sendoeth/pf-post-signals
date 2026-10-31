@@ -1,0 +1,27 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:21.406Z",
+ "cashtags": [
+  "MSTR"
+ ],
+ "conversationId": "2050241005366976617",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2050241005366976617",
+ "kind": "post",
+ "metrics": {
+  "likes": 687,
+  "replies": 51,
+  "reposts": 53,
+  "views": 160681
+ },
+ "postedAt": "2026-05-01T15:48:41.000Z",
+ "replyTo": null,
+ "text": "2021 $MSTR  top and bear vs 2025+\n\nOffset is 1 to 4 weeks on all major pivots.  Above $200 this starts to break.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2050241005366976617",
+ "harness": {
+  "run": "2026-10-31T03-47-15Z",
+  "manifest_sha256": "d829a2466fa415a7cdaeaff4a6cfdcca76ad661f2ee8e9461b5c6c66af591c27",
+  "query": "from:BobLoukas since:2026-04-29 until:2026-05-09"
+ }
+}

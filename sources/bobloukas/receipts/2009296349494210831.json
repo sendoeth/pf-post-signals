@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:53.749Z",
+ "cashtags": [],
+ "conversationId": "2009291616217903397",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2009296349494210831",
+ "kind": "reply",
+ "metrics": {
+  "likes": 9,
+  "replies": 1,
+  "reposts": 0,
+  "views": 1938
+ },
+ "postedAt": "2026-01-08T16:09:15.000Z",
+ "replyTo": {
+  "postId": "2009294096343396588",
+  "handle": "ghost_ac_99"
+ },
+ "text": "Probably how I would see it too.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2009296349494210831",
+ "harness": {
+  "run": "2026-10-31T03-28-48Z",
+  "manifest_sha256": "15f3f120834a9e146f93308ba01d65815256ffe13b590dc9e35f844e48ccf261",
+  "query": "from:BobLoukas since:2025-12-30 until:2026-01-09"
+ }
+}

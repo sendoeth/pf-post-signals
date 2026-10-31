@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:12.214Z",
+ "cashtags": [],
+ "conversationId": "2016655906696532303",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2016661917679382602",
+ "kind": "reply",
+ "metrics": {
+  "likes": 138,
+  "replies": 6,
+  "reposts": 5,
+  "views": 6511
+ },
+ "postedAt": "2026-01-28T23:57:23.000Z",
+ "replyTo": {
+  "postId": "2016660150019358788",
+  "handle": "Innerdevcrypto"
+ },
+ "text": "Changing world order accelerating what was already the path.  Just steeper with this admin.  \n\nI think bitcoins going to have a great 2027-29.   I don’t see it as rotation, just a hot meta to chase again.  I think it’s far too early for bitcoin to play any role similar to gold.  Trust on that scale takes decades. \n\nThe debt only matters in terms of money supply/inflation.  Reflected in higher metals and asset prices. \n\nOnly just finished this week rebalancing.  Mostly equal weight the other buckets to keep the balance.  But still overweight.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2016661917679382602",
+ "harness": {
+  "run": "2026-10-31T03-29-09Z",
+  "manifest_sha256": "12b6383eb0d3e548fb1ff7b7fa27ac18c6544170639bb262e25d9278c33ad772",
+  "query": "from:BobLoukas since:2026-01-19 until:2026-01-29"
+ }
+}

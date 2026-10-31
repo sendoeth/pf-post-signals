@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:13.949Z",
+ "cashtags": [],
+ "conversationId": "2024876728171008477",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2024892099871609085",
+ "kind": "reply",
+ "metrics": {
+  "likes": 3,
+  "replies": 1,
+  "reposts": 0,
+  "views": 718
+ },
+ "postedAt": "2026-02-20T17:01:11.000Z",
+ "replyTo": {
+  "postId": "2024886728629129392",
+  "handle": "RayHemimgway"
+ },
+ "text": "I think they all care about themselves and their friends.  \n\nWhich is why we need to have these checks respected.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2024892099871609085",
+ "harness": {
+  "run": "2026-10-31T03-30-09Z",
+  "manifest_sha256": "f4cb50b74e111333644768234a62c37c553d27111cb37124caf5fe4bcbd50de6",
+  "query": "from:BobLoukas since:2026-02-18 until:2026-02-28"
+ }
+}

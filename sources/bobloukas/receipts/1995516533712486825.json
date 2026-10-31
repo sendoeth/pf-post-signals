@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:57.480Z",
+ "cashtags": [],
+ "conversationId": "1995501749163995247",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1995516533712486825",
+ "kind": "reply",
+ "metrics": {
+  "likes": 18,
+  "replies": 1,
+  "reposts": 0,
+  "views": 1294
+ },
+ "postedAt": "2025-12-01T15:33:11.000Z",
+ "replyTo": {
+  "postId": "1995512860655718723",
+  "handle": "Daren5577"
+ },
+ "text": "You retweet Saylor/Lee all day long, yet you get upset at me when I said get out before a 60% drawdown. \n\nYeah, that makes sense.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1995516533712486825",
+ "harness": {
+  "run": "2026-10-31T03-11-49Z",
+  "manifest_sha256": "44284fd2b0f53f602994edeb448d034ad7c1447b6074bcf56e01e43a4ce3849c",
+  "query": "from:BobLoukas since:2025-11-30 until:2025-12-10"
+ }
+}

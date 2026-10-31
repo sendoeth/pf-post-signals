@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:53.749Z",
+ "cashtags": [],
+ "conversationId": "2008950654426136960",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2008952543703945465",
+ "kind": "post",
+ "metrics": {
+  "likes": 14,
+  "replies": 2,
+  "reposts": 0,
+  "views": 2328
+ },
+ "postedAt": "2026-01-07T17:23:05.000Z",
+ "replyTo": null,
+ "text": "One track investing is great when it's on track.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2008952543703945465",
+ "harness": {
+  "run": "2026-10-31T03-28-48Z",
+  "manifest_sha256": "15f3f120834a9e146f93308ba01d65815256ffe13b590dc9e35f844e48ccf261",
+  "query": "from:BobLoukas since:2025-12-30 until:2026-01-09"
+ }
+}

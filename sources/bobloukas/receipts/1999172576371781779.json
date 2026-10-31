@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:24.289Z",
+ "cashtags": [],
+ "conversationId": "1999151631821115628",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1999172576371781779",
+ "kind": "reply",
+ "metrics": {
+  "likes": 8,
+  "replies": 3,
+  "reposts": 0,
+  "views": 3102
+ },
+ "postedAt": "2025-12-11T17:40:59.000Z",
+ "replyTo": {
+  "postId": "1999170107504017443",
+  "handle": "fitandflexable"
+ },
+ "text": "I've never been interested in it.  I was in for a short time a while back.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1999172576371781779",
+ "harness": {
+  "run": "2026-10-31T03-28-21Z",
+  "manifest_sha256": "c02ce20beb826e706b2b33c18668b6975c7f6e723f9ba8dc68eba93123f5e55a",
+  "query": "from:BobLoukas since:2025-12-10 until:2025-12-15"
+ }
+}

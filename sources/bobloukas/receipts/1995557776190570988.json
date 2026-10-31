@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:55.719Z",
+ "cashtags": [],
+ "conversationId": "1995556218648121803",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1995557776190570988",
+ "kind": "reply",
+ "metrics": {
+  "likes": 52,
+  "replies": 2,
+  "reposts": 1,
+  "views": 7748
+ },
+ "postedAt": "2025-12-01T18:17:04.000Z",
+ "replyTo": {
+  "postId": "1995557483868230086",
+  "handle": "WittyChartGuy"
+ },
+ "text": "Always burner",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1995557776190570988",
+ "harness": {
+  "run": "2026-10-31T03-11-49Z",
+  "manifest_sha256": "44284fd2b0f53f602994edeb448d034ad7c1447b6074bcf56e01e43a4ce3849c",
+  "query": "from:BobLoukas since:2025-11-30 until:2025-12-10"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:31.560Z",
+ "cashtags": [],
+ "conversationId": "2034586449551507627",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2034600770939576786",
+ "kind": "reply",
+ "metrics": {
+  "likes": 37,
+  "replies": 4,
+  "reposts": 0,
+  "views": 5596
+ },
+ "postedAt": "2026-03-19T11:59:59.000Z",
+ "replyTo": {
+  "postId": "2034591036241056100",
+  "handle": "JesC_Swings"
+ },
+ "text": "Short in trading accounts.    Cash in investing accounts.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2034600770939576786",
+ "harness": {
+  "run": "2026-10-31T03-30-28Z",
+  "manifest_sha256": "01e2451c651b7ec60ad39a25711bb00e031bd0ff8d61791c7b1a209fde870cd4",
+  "query": "from:BobLoukas since:2026-03-10 until:2026-03-20"
+ }
+}

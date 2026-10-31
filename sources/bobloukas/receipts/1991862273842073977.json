@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:34.814Z",
+ "cashtags": [],
+ "conversationId": "1991591185857888561",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1991862273842073977",
+ "kind": "reply",
+ "metrics": {
+  "likes": 6,
+  "replies": 0,
+  "reposts": 0,
+  "views": 1536
+ },
+ "postedAt": "2025-11-21T13:32:27.000Z",
+ "replyTo": {
+  "postId": "1991821942203285685",
+  "handle": "adam3us"
+ },
+ "text": "Not if it includes the cost of the capex.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1991862273842073977",
+ "harness": {
+  "run": "2026-10-31T03-11-28Z",
+  "manifest_sha256": "5b4f94307a59f6b36bf90ded7f7487cb77a37651415230998ae74712e788ac95",
+  "query": "from:BobLoukas since:2025-11-20 until:2025-11-25"
+ }
+}

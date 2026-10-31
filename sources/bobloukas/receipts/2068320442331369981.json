@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:03:38.671Z",
+ "cashtags": [],
+ "conversationId": "2068320442331369981",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2068320442331369981",
+ "kind": "quote",
+ "metrics": {
+  "likes": 1287,
+  "replies": 266,
+  "reposts": 108,
+  "views": 444906
+ },
+ "postedAt": "2026-06-20T13:09:55.000Z",
+ "replyTo": null,
+ "text": "If the Bitcoin thesis is purely a SOV play, then in a world of AI capturing all the attention/capital, coupled with quantum fear, an outcome similar to this for the next 4 yr cycle would not be a big surprise, to me.  \n\nWould also align with a secular crypto bull market having peaked (as seen in alt's and bitcoin poor performance).",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2068320442331369981",
+ "harness": {
+  "run": "2026-10-31T04-03-34Z",
+  "manifest_sha256": "80481ec9abd4e75a790a038fdafcf2407911298e9bbac3a7dd1f344521f8274f",
+  "query": "from:BobLoukas since:2026-06-18 until:2026-06-23"
+ }
+}

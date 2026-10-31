@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:03:36.504Z",
+ "cashtags": [],
+ "conversationId": "2068340947952242869",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2068340947952242869",
+ "kind": "post",
+ "metrics": {
+  "likes": 881,
+  "replies": 49,
+  "reposts": 66,
+  "views": 77551
+ },
+ "postedAt": "2026-06-20T14:31:24.000Z",
+ "replyTo": null,
+ "text": "USD putting in its first higher low and high on the Weekly Cycle in a very long time. Possible major bottom.\n\nWould suggest more pressure for precious metals and bitcoin into end of year. Stocks don't care, for now,",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2068340947952242869",
+ "harness": {
+  "run": "2026-10-31T04-03-34Z",
+  "manifest_sha256": "80481ec9abd4e75a790a038fdafcf2407911298e9bbac3a7dd1f344521f8274f",
+  "query": "from:BobLoukas since:2026-06-18 until:2026-06-23"
+ }
+}

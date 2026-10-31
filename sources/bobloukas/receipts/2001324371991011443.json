@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:34.213Z",
+ "cashtags": [],
+ "conversationId": "2001324371991011443",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2001324371991011443",
+ "kind": "post",
+ "metrics": {
+  "likes": 502,
+  "replies": 31,
+  "reposts": 41,
+  "views": 47432
+ },
+ "postedAt": "2025-12-17T16:11:27.000Z",
+ "replyTo": null,
+ "text": "Stocks still look ok, remaining patient. 8-Week range, currently on just Week 4 of the Cycle.  Chopping around below ATH's.  Only thing to worry about is the Cycle Low 6,521, otherwise noise before the next leg higher.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2001324371991011443",
+ "harness": {
+  "run": "2026-10-31T03-28-29Z",
+  "manifest_sha256": "6b809f4562719e0f7de013cb2199555f0361999760d9b9ef86799734f195de03",
+  "query": "from:BobLoukas since:2025-12-15 until:2025-12-20"
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:31.561Z",
+ "cashtags": [],
+ "conversationId": "2032557308308271555",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2032557308308271555",
+ "kind": "post",
+ "metrics": {
+  "likes": 726,
+  "replies": 31,
+  "reposts": 41,
+  "views": 65756
+ },
+ "postedAt": "2026-03-13T20:40:00.000Z",
+ "replyTo": null,
+ "text": "Only week 6 and the dollar made a 10-month high. More importantly, a higher high on the Cycle front.\n\nConfluence with signs off a risk off environment ahead.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2032557308308271555",
+ "harness": {
+  "run": "2026-10-31T03-30-28Z",
+  "manifest_sha256": "01e2451c651b7ec60ad39a25711bb00e031bd0ff8d61791c7b1a209fde870cd4",
+  "query": "from:BobLoukas since:2026-03-10 until:2026-03-20"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:51.509Z",
+ "cashtags": [],
+ "conversationId": "2019199610208534799",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2019205233692536901",
+ "kind": "reply",
+ "metrics": {
+  "likes": 118,
+  "replies": 6,
+  "reposts": 2,
+  "views": 8891
+ },
+ "postedAt": "2026-02-05T00:23:37.000Z",
+ "replyTo": {
+  "postId": "2019200991187632600",
+  "handle": "CryptoCurb"
+ },
+ "text": "Yes this is part of that bear narrative.  \n\nI also think crypto is done with the white paper era.   Where an idea alone is price like a success.   \n\nThe bullshit was called out.  \n\nIn the next cycles, it’s going to be much fewer winners.  One’s that show real adoption.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2019205233692536901",
+ "harness": {
+  "run": "2026-10-31T03-29-44Z",
+  "manifest_sha256": "aaa8d4e197f46be6cccda8b30abf99f805399d35c1bf30c84b78a3f1a95bcc12",
+  "query": "from:BobLoukas since:2026-02-03 until:2026-02-08"
+ }
+}

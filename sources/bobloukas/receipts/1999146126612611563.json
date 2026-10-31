@@ -1,0 +1,27 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:26.895Z",
+ "cashtags": [
+  "SILJ"
+ ],
+ "conversationId": "1999146126612611563",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1999146126612611563",
+ "kind": "post",
+ "metrics": {
+  "likes": 301,
+  "replies": 26,
+  "reposts": 16,
+  "views": 36440
+ },
+ "postedAt": "2025-12-11T15:55:53.000Z",
+ "replyTo": null,
+ "text": "\"That's so boring\".   \n\nEven boring, in the right periods, can be sexy.  $SILJ.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1999146126612611563",
+ "harness": {
+  "run": "2026-10-31T03-28-21Z",
+  "manifest_sha256": "c02ce20beb826e706b2b33c18668b6975c7f6e723f9ba8dc68eba93123f5e55a",
+  "query": "from:BobLoukas since:2025-12-10 until:2025-12-15"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:00.736Z",
+ "cashtags": [],
+ "conversationId": "2046723618206310407",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2046724505255444512",
+ "kind": "reply",
+ "metrics": {
+  "likes": 192,
+  "replies": 6,
+  "reposts": 0,
+  "views": 10917
+ },
+ "postedAt": "2026-04-21T22:55:23.000Z",
+ "replyTo": {
+  "postId": "2046723618206310407",
+  "handle": "benjamincowen"
+ },
+ "text": "The tragedy is not the tariffs, it’s that you had to post “this is sarcasm”.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2046724505255444512",
+ "harness": {
+  "run": "2026-10-31T03-46-54Z",
+  "manifest_sha256": "d66bf07857f47292cdfd802d2817253a59a804ad438a1e7c7e149ca9c0a4fd10",
+  "query": "from:BobLoukas since:2026-04-19 until:2026-04-24"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:51.508Z",
+ "cashtags": [],
+ "conversationId": "2019388726842204267",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2019391212822884472",
+ "kind": "reply",
+ "metrics": {
+  "likes": 477,
+  "replies": 11,
+  "reposts": 8,
+  "views": 16138
+ },
+ "postedAt": "2026-02-05T12:42:38.000Z",
+ "replyTo": {
+  "postId": "2019388726842204267",
+  "handle": "NorthstarCharts"
+ },
+ "text": "They all sell things.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2019391212822884472",
+ "harness": {
+  "run": "2026-10-31T03-29-44Z",
+  "manifest_sha256": "aaa8d4e197f46be6cccda8b30abf99f805399d35c1bf30c84b78a3f1a95bcc12",
+  "query": "from:BobLoukas since:2026-02-03 until:2026-02-08"
+ }
+}

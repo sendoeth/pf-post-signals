@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:00.946Z",
+ "cashtags": [],
+ "conversationId": "2023793838322782454",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2023793838322782454",
+ "kind": "post",
+ "metrics": {
+  "likes": 1507,
+  "replies": 116,
+  "reposts": 96,
+  "views": 91279
+ },
+ "postedAt": "2026-02-17T16:17:05.000Z",
+ "replyTo": null,
+ "text": "Bitcoin price action remains horrendous.  Very weak.  \n\nAfter the recent flush out, a natural, sharp counter trend bounce would be expected, but was not forthcoming. \n\nHas to reclaim $72k to even consider a counter-trend move. \n\nJust bear market things.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2023793838322782454",
+ "harness": {
+  "run": "2026-10-31T03-29-58Z",
+  "manifest_sha256": "046caa1b799b16c1e3d97c7b87fc3565fd829c623a7d127628756b707828f2b0",
+  "query": "from:BobLoukas since:2026-02-08 until:2026-02-18"
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:51.418Z",
+ "cashtags": [],
+ "conversationId": "1998376177820635198",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1998380201676607549",
+ "kind": "repost",
+ "metrics": {
+  "likes": 614,
+  "replies": 23,
+  "reposts": 56,
+  "views": 75800
+ },
+ "postedAt": "2025-12-09T13:12:22.000Z",
+ "replyTo": null,
+ "text": "#SILVER wants to resume higher. That last few days consolidation can act as a bull flag.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1998380201676607549",
+ "harness": {
+  "run": "2026-10-31T03-11-49Z",
+  "manifest_sha256": "44284fd2b0f53f602994edeb448d034ad7c1447b6074bcf56e01e43a4ce3849c",
+  "query": "from:BobLoukas since:2025-11-30 until:2025-12-10"
+ }
+}

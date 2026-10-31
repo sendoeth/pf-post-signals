@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:05.728Z",
+ "cashtags": [],
+ "conversationId": "1986427489128767670",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1986431196314894834",
+ "kind": "reply",
+ "metrics": {
+  "likes": 18,
+  "replies": 5,
+  "reposts": 0,
+  "views": 989
+ },
+ "postedAt": "2025-11-06T13:51:17.000Z",
+ "replyTo": {
+  "postId": "1986429323130380639",
+  "handle": "Super_DaveO"
+ },
+ "text": "Universal basic income might have to be the option. \n\nIf you can’t tax humans yet AI/Robots are “earning” they will need to be taxed.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1986431196314894834",
+ "harness": {
+  "run": "2026-10-31T03-10-01Z",
+  "manifest_sha256": "3844915c6905bd8c09b21e28b77ba45472ed71277b155e9aca6ad52457c02037",
+  "query": "from:BobLoukas since:2025-10-31 until:2025-11-10"
+ }
+}

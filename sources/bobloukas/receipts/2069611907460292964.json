@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:03:50.138Z",
+ "cashtags": [],
+ "conversationId": "2069433161864577239",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2069611907460292964",
+ "kind": "reply",
+ "metrics": {
+  "likes": 12,
+  "replies": 2,
+  "reposts": 0,
+  "views": 5041
+ },
+ "postedAt": "2026-06-24T02:41:44.000Z",
+ "replyTo": {
+  "postId": "2069433161864577239",
+  "handle": "punk9059"
+ },
+ "text": "All valid points expect #8.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2069611907460292964",
+ "harness": {
+  "run": "2026-10-31T04-03-43Z",
+  "manifest_sha256": "151afdee8bedac9fee9cf5b5571f2bc7c3f8925a0be613401ca72cfa26688b6d",
+  "query": "from:BobLoukas since:2026-06-23 until:2026-06-28"
+ }
+}

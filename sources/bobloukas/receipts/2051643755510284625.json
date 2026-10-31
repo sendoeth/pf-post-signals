@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:20.274Z",
+ "cashtags": [],
+ "conversationId": "2051627961724305706",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2051643755510284625",
+ "kind": "reply",
+ "metrics": {
+  "likes": 111,
+  "replies": 3,
+  "reposts": 0,
+  "views": 5616
+ },
+ "postedAt": "2026-05-05T12:42:43.000Z",
+ "replyTo": {
+  "postId": "2051637643604025554",
+  "handle": "CudeDesign"
+ },
+ "text": "Stick to web design.  Thats going well.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2051643755510284625",
+ "harness": {
+  "run": "2026-10-31T03-47-15Z",
+  "manifest_sha256": "d829a2466fa415a7cdaeaff4a6cfdcca76ad661f2ee8e9461b5c6c66af591c27",
+  "query": "from:BobLoukas since:2026-04-29 until:2026-05-09"
+ }
+}

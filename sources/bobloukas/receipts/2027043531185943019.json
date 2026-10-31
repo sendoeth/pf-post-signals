@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:12.023Z",
+ "cashtags": [],
+ "conversationId": "2027043531185943019",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2027043531185943019",
+ "kind": "post",
+ "metrics": {
+  "likes": 1734,
+  "replies": 98,
+  "reposts": 112,
+  "views": 139485
+ },
+ "postedAt": "2026-02-26T15:30:13.000Z",
+ "replyTo": null,
+ "text": "If Bitcoin sees no counter-trend relief rally, and instead continues the downtrend to sub $50k (into March/April), the possibility this type of action induces an early 4 Year Cycle low is real.  \n\nAgain just possibilities, but extreme price action can/does force premature ends to cycle.  Those price levels, regardless of where we think the low forms from a time perspective, should be too good to pass up, accumulate. \n\nThen what you see during the \"expected timing - Q3\" is a retrace and only partial test of the lows. \n\nStay flexible, multiple paths.  Focus on accumulation opportunities now, not doomer posts.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2027043531185943019",
+ "harness": {
+  "run": "2026-10-31T03-30-09Z",
+  "manifest_sha256": "f4cb50b74e111333644768234a62c37c553d27111cb37124caf5fe4bcbd50de6",
+  "query": "from:BobLoukas since:2026-02-18 until:2026-02-28"
+ }
+}

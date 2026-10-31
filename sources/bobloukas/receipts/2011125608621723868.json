@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:03.684Z",
+ "cashtags": [],
+ "conversationId": "2011108172472467861",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2011125608621723868",
+ "kind": "reply",
+ "metrics": {
+  "likes": 10,
+  "replies": 0,
+  "reposts": 1,
+  "views": 2264
+ },
+ "postedAt": "2026-01-13T17:18:04.000Z",
+ "replyTo": {
+  "postId": "2011123363658510742",
+  "handle": "JacksonG68178"
+ },
+ "text": "Think we've seen more than enough this is a new weekly cycle.  A sweep would be unusual. I'd prefer to think of new lows as a bear continuation.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2011125608621723868",
+ "harness": {
+  "run": "2026-10-31T03-28-58Z",
+  "manifest_sha256": "85f34bbfce551087a183cda6c242ec59865f566dc1f56165cc796d53128e011e",
+  "query": "from:BobLoukas since:2026-01-09 until:2026-01-19"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:53.469Z",
+ "cashtags": [],
+ "conversationId": "1996282780490047846",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1996349088766267638",
+ "kind": "reply",
+ "metrics": {
+  "likes": 6,
+  "replies": 1,
+  "reposts": 0,
+  "views": 1086
+ },
+ "postedAt": "2025-12-03T22:41:27.000Z",
+ "replyTo": {
+  "postId": "1996299997953094009",
+  "handle": "FederalistNo_22"
+ },
+ "text": "I’ll eat Ramen for a few years.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1996349088766267638",
+ "harness": {
+  "run": "2026-10-31T03-11-49Z",
+  "manifest_sha256": "44284fd2b0f53f602994edeb448d034ad7c1447b6074bcf56e01e43a4ce3849c",
+  "query": "from:BobLoukas since:2025-11-30 until:2025-12-10"
+ }
+}

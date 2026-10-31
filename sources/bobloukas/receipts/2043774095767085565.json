@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:46:30.404Z",
+ "cashtags": [],
+ "conversationId": "2043681165911965743",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2043774095767085565",
+ "kind": "reply",
+ "metrics": {
+  "likes": 7,
+  "replies": 1,
+  "reposts": 0,
+  "views": 1995
+ },
+ "postedAt": "2026-04-13T19:31:30.000Z",
+ "replyTo": {
+  "postId": "2043772327658217858",
+  "handle": "McD5fl"
+ },
+ "text": "What common sense?",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2043774095767085565",
+ "harness": {
+  "run": "2026-10-31T03-46-27Z",
+  "manifest_sha256": "cd0704e3741600e3b2c37a916fb477af48fa4d7848238b19626cbd8e89cc993f",
+  "query": "from:BobLoukas since:2026-04-09 until:2026-04-14"
+ }
+}

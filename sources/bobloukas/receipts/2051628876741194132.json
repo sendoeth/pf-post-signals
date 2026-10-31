@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:21.404Z",
+ "cashtags": [],
+ "conversationId": "2051627961724305706",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2051628876741194132",
+ "kind": "reply",
+ "metrics": {
+  "likes": 0,
+  "replies": 1,
+  "reposts": 0,
+  "views": 1322
+ },
+ "postedAt": "2026-05-05T11:43:36.000Z",
+ "replyTo": {
+  "postId": "2051628771883585864",
+  "handle": "attmgromov"
+ },
+ "text": "Fairly long actually.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2051628876741194132",
+ "harness": {
+  "run": "2026-10-31T03-47-15Z",
+  "manifest_sha256": "d829a2466fa415a7cdaeaff4a6cfdcca76ad661f2ee8e9461b5c6c66af591c27",
+  "query": "from:BobLoukas since:2026-04-29 until:2026-05-09"
+ }
+}

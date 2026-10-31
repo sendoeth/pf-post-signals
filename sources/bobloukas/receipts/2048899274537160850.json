@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:09.203Z",
+ "cashtags": [],
+ "conversationId": "2048880402824073533",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2048899274537160850",
+ "kind": "reply",
+ "metrics": {
+  "likes": 29,
+  "replies": 3,
+  "reposts": 0,
+  "views": 4704
+ },
+ "postedAt": "2026-04-27T22:57:08.000Z",
+ "replyTo": {
+  "postId": "2048880402824073533",
+  "handle": "HodlMagoo"
+ },
+ "text": "Get to meet some great politicians/VC heads, oh sorry I mean’t Bitcoiners.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2048899274537160850",
+ "harness": {
+  "run": "2026-10-31T03-47-04Z",
+  "manifest_sha256": "5336994f71bbe4f700cf60362be35add5dbd82d5eddf921d84495b46cbd2c660",
+  "query": "from:BobLoukas since:2026-04-24 until:2026-04-29"
+ }
+}

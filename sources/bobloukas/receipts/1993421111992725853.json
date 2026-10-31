@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:44.212Z",
+ "cashtags": [],
+ "conversationId": "1993418401016918200",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1993421111992725853",
+ "kind": "reply",
+ "metrics": {
+  "likes": 50,
+  "replies": 2,
+  "reposts": 1,
+  "views": 4637
+ },
+ "postedAt": "2025-11-25T20:46:43.000Z",
+ "replyTo": {
+  "postId": "1993420776825868641",
+  "handle": "z0nkr"
+ },
+ "text": "That's why an opinion is not a position.\n\nThe model portfolio did only 8 actions. That's all that matters.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1993421111992725853",
+ "harness": {
+  "run": "2026-10-31T03-11-39Z",
+  "manifest_sha256": "8b207307b5b7f63da4785b2292870b7a03e0480c97b05c0d561f294be3c54557",
+  "query": "from:BobLoukas since:2025-11-25 until:2025-11-30"
+ }
+}

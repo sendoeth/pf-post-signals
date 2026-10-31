@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:51.696Z",
+ "cashtags": [],
+ "conversationId": "2009291616217903397",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2009343385631699175",
+ "kind": "reply",
+ "metrics": {
+  "likes": 9,
+  "replies": 1,
+  "reposts": 0,
+  "views": 900
+ },
+ "postedAt": "2026-01-08T19:16:09.000Z",
+ "replyTo": {
+  "postId": "2009328993246564457",
+  "handle": "DiogenesEp81"
+ },
+ "text": "then you dont understand my thesis.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2009343385631699175",
+ "harness": {
+  "run": "2026-10-31T03-28-48Z",
+  "manifest_sha256": "15f3f120834a9e146f93308ba01d65815256ffe13b590dc9e35f844e48ccf261",
+  "query": "from:BobLoukas since:2025-12-30 until:2026-01-09"
+ }
+}

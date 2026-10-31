@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:09.203Z",
+ "cashtags": [],
+ "conversationId": "2049137992128766119",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2049137992128766119",
+ "kind": "quote",
+ "metrics": {
+  "likes": 695,
+  "replies": 62,
+  "reposts": 36,
+  "views": 113375
+ },
+ "postedAt": "2026-04-28T14:45:43.000Z",
+ "replyTo": null,
+ "text": "Holding some of the large multicap coins that have done absolutely nothing of late (even after a big drop), because \"they're down so much already\" is a recipe for big losses to come, late in a bear market.\n\nSure they'll likely bounce hard off the eventual bear market lows. But where is that?",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2049137992128766119",
+ "harness": {
+  "run": "2026-10-31T03-47-04Z",
+  "manifest_sha256": "5336994f71bbe4f700cf60362be35add5dbd82d5eddf921d84495b46cbd2c660",
+  "query": "from:BobLoukas since:2026-04-24 until:2026-04-29"
+ }
+}

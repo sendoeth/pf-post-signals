@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:30.956Z",
+ "cashtags": [],
+ "conversationId": "1992305269544538356",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1992313682823446724",
+ "kind": "reply",
+ "metrics": {
+  "likes": 37,
+  "replies": 2,
+  "reposts": 0,
+  "views": 7983
+ },
+ "postedAt": "2025-11-22T19:26:12.000Z",
+ "replyTo": {
+  "postId": "1992313563403493509",
+  "handle": "Geekman1028092"
+ },
+ "text": "market crashed 25%!",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1992313682823446724",
+ "harness": {
+  "run": "2026-10-31T03-11-28Z",
+  "manifest_sha256": "5b4f94307a59f6b36bf90ded7f7487cb77a37651415230998ae74712e788ac95",
+  "query": "from:BobLoukas since:2025-11-20 until:2025-11-25"
+ }
+}

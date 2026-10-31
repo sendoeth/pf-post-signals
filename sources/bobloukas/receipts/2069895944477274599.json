@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:03:50.134Z",
+ "cashtags": [],
+ "conversationId": "2069835357584039959",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2069895944477274599",
+ "kind": "reply",
+ "metrics": {
+  "likes": 144,
+  "replies": 7,
+  "reposts": 1,
+  "views": 7621
+ },
+ "postedAt": "2026-06-24T21:30:24.000Z",
+ "replyTo": {
+  "postId": "2069835357584039959",
+  "handle": "Sykodelic_"
+ },
+ "text": "Just ebb and flow of markets mate. \n\nLet it go.  Correlations are suckers game in investing. Indicators are there to be broken.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2069895944477274599",
+ "harness": {
+  "run": "2026-10-31T04-03-43Z",
+  "manifest_sha256": "151afdee8bedac9fee9cf5b5571f2bc7c3f8925a0be613401ca72cfa26688b6d",
+  "query": "from:BobLoukas since:2026-06-23 until:2026-06-28"
+ }
+}

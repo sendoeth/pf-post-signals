@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:15.875Z",
+ "cashtags": [],
+ "conversationId": "2013611393660993640",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2013611393660993640",
+ "kind": "post",
+ "metrics": {
+  "likes": 765,
+  "replies": 37,
+  "reposts": 28,
+  "views": 55733
+ },
+ "postedAt": "2026-01-20T13:55:41.000Z",
+ "replyTo": null,
+ "text": "Gold is like an inverse approval rating metric.  And it’s screaming.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2013611393660993640",
+ "harness": {
+  "run": "2026-10-31T03-29-09Z",
+  "manifest_sha256": "12b6383eb0d3e548fb1ff7b7fa27ac18c6544170639bb262e25d9278c33ad772",
+  "query": "from:BobLoukas since:2026-01-19 until:2026-01-29"
+ }
+}

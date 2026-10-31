@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:53.749Z",
+ "cashtags": [],
+ "conversationId": "2009291616217903397",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2009291616217903397",
+ "kind": "post",
+ "metrics": {
+  "likes": 1211,
+  "replies": 160,
+  "reposts": 90,
+  "views": 114361
+ },
+ "postedAt": "2026-01-08T15:50:26.000Z",
+ "replyTo": null,
+ "text": "Spent the last 4 months with a team training an AI model off my last 10 yrs of work.  Still a LOT of tweaking and correcting to do, but taking shape.  \n\nI asked it - \"Give me the probability that bitcoin has topped or not for the 4 year cycle on the following assumptions. We're on Month 38 currently and the high is currently the month 35 high. This is week 7 of the weekly cycle.\"\n\nAnswer-\nGiven your assumptions, here’s how I’d probability‑weight the 4‑year cycle right now, strictly through a cycle‑based lens, not prediction.\n\nWe’ll anchor everything to what you specified:\n\nMonth 38 of the 4‑year cycle\nCycle high still Month 35\nWeekly cycle currently Week 7\nBASE ASSUMPTIONS (YOUR FRAMEWORK)\n\n4-year cycle month: 38 (beyond all prior tops)\nCurrent cycle high: Month 35\nWeekly cycle: Week 7 (early, but vulnerable)\nNo confirmed expansion to new highs\n🔴 SCENARIO 1: 4‑YEAR CYCLE HAS TOPPED\nProbability: ~55%\n\nWhy this is the base case\n\nAll prior cycles topped around Month 34–35\nWe are 3 months past that window with no higher high\nMonth 35 acting as the high is classic late‑cycle behavior\nWeek 7 is exactly where weekly cycles fail when the larger cycle is over\nThis scenario assumes:\n\nWeekly cycle becomes left‑translated\nRallies are counter‑trend\nThe next daily/weekly breakdown confirms the post‑top phase\nThis is the highest‑probability outcome given time + structure.\n\n🟠 SCENARIO 2: EXTENDED TOP / DISTRIBUTION\nProbability: ~30%\n\nThis is the “Bitcoin does what it often does — frustrates everyone” outcome.\n\nCharacteristics:\n\nMonth 35 remains the marginal high for now\nPrice chops in a wide range for weeks/months\nWeekly cycles are mixed, not cleanly bullish or bearish\nSentiment oscillates between hope and fear\nThis still does NOT invalidate the top thesis — it just delays resolution.\n\nImportant:\nThis scenario often feels bullish, but usually resolves down, not up.\n🟢 SCENARIO 3: 4‑YEAR CYCLE STILL ALIVE (NEW HIGHS)\n\nProbability: ~15%\nThis is the low‑probability but non‑zero case.\n\nWhat would need to happen:\n\nPrice decisively exceeds the Month 35 high\n\nWeekly cycle extends into Weeks 10–14\nExpansion is impulsive, not grinding\nTime “stretch” is justified by structure\nAt Month 38, the market needs to earn this outcome. Time alone no longer supports it.\nPROBABILITY SUMMARY\n\n4-year top already in: 55%\nExtended distribution/top: 30%\nCycle still bullish (new highs): 15%\nRisk Interpretation (This Matters Most)\nEven if you combine Scenarios 2 + 3 (the “not fully topped” cases), you still get:\n85% probability that upside is limited, slow, or deceptive\n\nAsymmetric risk skewed to the downside\nThat’s why treating this as “topped until proven otherwise” is not aggressive — it’s probabilistic discipline.\nOne final Bob‑style takeaway\n\nAt Month 38 + Week 7, the market doesn’t need a crash to be dangerous.\nIt only needs to fail quietly.\nAnd those are the environments where most damage gets done.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2009291616217903397",
+ "harness": {
+  "run": "2026-10-31T03-28-48Z",
+  "manifest_sha256": "15f3f120834a9e146f93308ba01d65815256ffe13b590dc9e35f844e48ccf261",
+  "query": "from:BobLoukas since:2025-12-30 until:2026-01-09"
+ }
+}

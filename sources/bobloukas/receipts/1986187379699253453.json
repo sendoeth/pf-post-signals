@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:09.808Z",
+ "cashtags": [],
+ "conversationId": "1986185794634064242",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1986187379699253453",
+ "kind": "reply",
+ "metrics": {
+  "likes": 398,
+  "replies": 9,
+  "reposts": 11,
+  "views": 16736
+ },
+ "postedAt": "2025-11-05T21:42:27.000Z",
+ "replyTo": {
+  "postId": "1986185794634064242",
+  "handle": "Tyler_Did_It"
+ },
+ "text": "Next few days not so much, we can retest this week.  \n\nIt's more the next few weeks.  Once we make a clear separation (like 110k-115k) Any move back below is a problem, for me at least.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1986187379699253453",
+ "harness": {
+  "run": "2026-10-31T03-10-01Z",
+  "manifest_sha256": "3844915c6905bd8c09b21e28b77ba45472ed71277b155e9aca6ad52457c02037",
+  "query": "from:BobLoukas since:2025-10-31 until:2025-11-10"
+ }
+}

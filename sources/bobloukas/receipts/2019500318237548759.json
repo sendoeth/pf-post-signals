@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:46.995Z",
+ "cashtags": [],
+ "conversationId": "2019499903421149622",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2019500318237548759",
+ "kind": "reply",
+ "metrics": {
+  "likes": 4,
+  "replies": 0,
+  "reposts": 0,
+  "views": 727
+ },
+ "postedAt": "2026-02-05T19:56:11.000Z",
+ "replyTo": {
+  "postId": "2019499961784938560",
+  "handle": "VonMaketh"
+ },
+ "text": "I don't think crypto players the one's \"informed\" vs traditional markets.  \n\nI think this is crypto internally in a spiral",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2019500318237548759",
+ "harness": {
+  "run": "2026-10-31T03-29-44Z",
+  "manifest_sha256": "aaa8d4e197f46be6cccda8b30abf99f805399d35c1bf30c84b78a3f1a95bcc12",
+  "query": "from:BobLoukas since:2026-02-03 until:2026-02-08"
+ }
+}

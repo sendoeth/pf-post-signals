@@ -1,0 +1,27 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:49.678Z",
+ "cashtags": [
+  "BTC"
+ ],
+ "conversationId": "2019402529767919888",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2019410705212903477",
+ "kind": "repost",
+ "metrics": {
+  "likes": 540,
+  "replies": 78,
+  "reposts": 63,
+  "views": 112088
+ },
+ "postedAt": "2026-02-05T14:00:05.000Z",
+ "replyTo": null,
+ "text": "Crypto is built on the principle of being permissionless; it's supposed to be a disruptive force to Tradfi. I believe in this mission. In many ways, Tradfi needs to be disrupted.\n\nThis is why I bristled against **TradFi / Boomer Adoption** narrative. Asking permission from Larry Fink, Jay Powell (or Donald Trump) is everything crypto is NOT supposed to be.   Thankfully this \"asking permission\" narrative died in November 2024 (see post below).\n\nThe next leg won’t come from more suits blessing $BTC and telling tradfi to buy. \n\nI believe it should come from building systems that replace tradfi, and forcing them to join in or lose.\n\nStop rationalizing why Boomers are not selling, or will buy again. Get back to building the altenative financial system.  Take it away from BlackRock, not waiting for them to bless you.\n\nDo this, and $BTC can go to $1M. Until then, winter will continue.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2019410705212903477",
+ "harness": {
+  "run": "2026-10-31T03-29-44Z",
+  "manifest_sha256": "aaa8d4e197f46be6cccda8b30abf99f805399d35c1bf30c84b78a3f1a95bcc12",
+  "query": "from:BobLoukas since:2026-02-03 until:2026-02-08"
+ }
+}

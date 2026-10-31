@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:11.632Z",
+ "cashtags": [],
+ "conversationId": "1985662474436100341",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1985688278264172815",
+ "kind": "reply",
+ "metrics": {
+  "likes": 3,
+  "replies": 1,
+  "reposts": 0,
+  "views": 784
+ },
+ "postedAt": "2025-11-04T12:39:12.000Z",
+ "replyTo": {
+  "postId": "1985685713707270397",
+  "handle": "SmolCompute"
+ },
+ "text": "Maybe. Maybe not.  \n\nBut you seem to care only about price.   And not principals.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1985688278264172815",
+ "harness": {
+  "run": "2026-10-31T03-10-01Z",
+  "manifest_sha256": "3844915c6905bd8c09b21e28b77ba45472ed71277b155e9aca6ad52457c02037",
+  "query": "from:BobLoukas since:2025-10-31 until:2025-11-10"
+ }
+}

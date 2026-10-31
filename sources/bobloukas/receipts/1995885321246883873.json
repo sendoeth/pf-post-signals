@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:55.716Z",
+ "cashtags": [],
+ "conversationId": "1995883656145944926",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1995885321246883873",
+ "kind": "reply",
+ "metrics": {
+  "likes": 19,
+  "replies": 0,
+  "reposts": 0,
+  "views": 3126
+ },
+ "postedAt": "2025-12-02T15:58:36.000Z",
+ "replyTo": {
+  "postId": "1995884060447567901",
+  "handle": "StoryTeller_17"
+ },
+ "text": "Look at Strategy top Feb 2021 (which is exactly same as today) it took 22 months to bottom",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1995885321246883873",
+ "harness": {
+  "run": "2026-10-31T03-11-49Z",
+  "manifest_sha256": "44284fd2b0f53f602994edeb448d034ad7c1447b6074bcf56e01e43a4ce3849c",
+  "query": "from:BobLoukas since:2025-11-30 until:2025-12-10"
+ }
+}

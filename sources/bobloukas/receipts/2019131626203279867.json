@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:53.383Z",
+ "cashtags": [],
+ "conversationId": "2019121730124443679",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2019131626203279867",
+ "kind": "reply",
+ "metrics": {
+  "likes": 31,
+  "replies": 1,
+  "reposts": 0,
+  "views": 3572
+ },
+ "postedAt": "2026-02-04T19:31:07.000Z",
+ "replyTo": {
+  "postId": "2019130972634247400",
+  "handle": "SeatsSidecar"
+ },
+ "text": "Sounds good here. \n\nProbably get some better discounts too by May-July.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2019131626203279867",
+ "harness": {
+  "run": "2026-10-31T03-29-44Z",
+  "manifest_sha256": "aaa8d4e197f46be6cccda8b30abf99f805399d35c1bf30c84b78a3f1a95bcc12",
+  "query": "from:BobLoukas since:2026-02-03 until:2026-02-08"
+ }
+}

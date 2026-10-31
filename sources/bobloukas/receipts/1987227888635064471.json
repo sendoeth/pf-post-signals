@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:03.697Z",
+ "cashtags": [],
+ "conversationId": "1987219179565400110",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1987227888635064471",
+ "kind": "reply",
+ "metrics": {
+  "likes": 4,
+  "replies": 1,
+  "reposts": 0,
+  "views": 1017
+ },
+ "postedAt": "2025-11-08T18:37:04.000Z",
+ "replyTo": {
+  "postId": "1987227317819912400",
+  "handle": "GoodGoyTrump"
+ },
+ "text": "But you replied to MY post and I’m clarifying how I measure.  \n\nAnd cycles didn’t start in 2009!",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1987227888635064471",
+ "harness": {
+  "run": "2026-10-31T03-10-01Z",
+  "manifest_sha256": "3844915c6905bd8c09b21e28b77ba45472ed71277b155e9aca6ad52457c02037",
+  "query": "from:BobLoukas since:2025-10-31 until:2025-11-10"
+ }
+}

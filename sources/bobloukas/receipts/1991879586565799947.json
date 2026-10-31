@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:33.101Z",
+ "cashtags": [],
+ "conversationId": "1991879586565799947",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1991879586565799947",
+ "kind": "quote",
+ "metrics": {
+  "likes": 778,
+  "replies": 58,
+  "reposts": 29,
+  "views": 116127
+ },
+ "postedAt": "2025-11-21T14:41:15.000Z",
+ "replyTo": null,
+ "text": "For me, 4yr cycle follows MONTHLY trend. Not an arbitrary “sell at month 35” strategy.  Absent of a euphoric 2017 style peak, just selling there is not the strategy.\n\nSo a breakdown in trend generally takes months to develop. This only 1st month breakdown, and candle still open.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1991879586565799947",
+ "harness": {
+  "run": "2026-10-31T03-11-28Z",
+  "manifest_sha256": "5b4f94307a59f6b36bf90ded7f7487cb77a37651415230998ae74712e788ac95",
+  "query": "from:BobLoukas since:2025-11-20 until:2025-11-25"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:00.945Z",
+ "cashtags": [],
+ "conversationId": "2023793838322782454",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2023823928364593335",
+ "kind": "reply",
+ "metrics": {
+  "likes": 69,
+  "replies": 4,
+  "reposts": 0,
+  "views": 4190
+ },
+ "postedAt": "2026-02-17T18:16:40.000Z",
+ "replyTo": {
+  "postId": "2023800853128421555",
+  "handle": "Tradernaber"
+ },
+ "text": "There is no invalidation, this is already a bear market.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2023823928364593335",
+ "harness": {
+  "run": "2026-10-31T03-29-58Z",
+  "manifest_sha256": "046caa1b799b16c1e3d97c7b87fc3565fd829c623a7d127628756b707828f2b0",
+  "query": "from:BobLoukas since:2026-02-08 until:2026-02-18"
+ }
+}

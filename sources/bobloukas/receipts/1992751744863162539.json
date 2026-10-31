@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:30.956Z",
+ "cashtags": [],
+ "conversationId": "1992740859155190045",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1992751744863162539",
+ "kind": "reply",
+ "metrics": {
+  "likes": 31,
+  "replies": 4,
+  "reposts": 1,
+  "views": 9685
+ },
+ "postedAt": "2025-11-24T00:26:54.000Z",
+ "replyTo": {
+  "postId": "1992740859155190045",
+  "handle": "RyanDetrick"
+ },
+ "text": "Tulsa mind is entertaining for like 20 minutes.  Max.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1992751744863162539",
+ "harness": {
+  "run": "2026-10-31T03-11-28Z",
+  "manifest_sha256": "5b4f94307a59f6b36bf90ded7f7487cb77a37651415230998ae74712e788ac95",
+  "query": "from:BobLoukas since:2025-11-20 until:2025-11-25"
+ }
+}

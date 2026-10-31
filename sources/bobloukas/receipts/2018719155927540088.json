@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:57.089Z",
+ "cashtags": [],
+ "conversationId": "2018719155927540088",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2018719155927540088",
+ "kind": null,
+ "metrics": {
+  "likes": null,
+  "replies": null,
+  "reposts": null,
+  "views": null
+ },
+ "postedAt": "2026-02-03T16:12:07.000Z",
+ "replyTo": null,
+ "text": "This week marks the 14th consecutive year of writing a weekly letter at The Financial Tap, geared towards investors.\n\nCovering Metals/Stocks and other assets, focusing on a multi-Cycle approach.  \n\nNo hyperbole or get rich quick nonsense. \n \n\nhttps://\nthefinancialtap.com",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2018719155927540088",
+ "harness": {
+  "run": "2026-10-31T03-29-44Z",
+  "manifest_sha256": "aaa8d4e197f46be6cccda8b30abf99f805399d35c1bf30c84b78a3f1a95bcc12",
+  "query": "from:BobLoukas since:2026-02-03 until:2026-02-08"
+ }
+}

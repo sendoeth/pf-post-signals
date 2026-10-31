@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:22.937Z",
+ "cashtags": [],
+ "conversationId": "2029946124006515071",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2030005859896480008",
+ "kind": "reply",
+ "metrics": {
+  "likes": 29,
+  "replies": 3,
+  "reposts": 0,
+  "views": 2612
+ },
+ "postedAt": "2026-03-06T19:41:27.000Z",
+ "replyTo": {
+  "postId": "2029990069206143285",
+  "handle": "Sykodelic_"
+ },
+ "text": "Crude rise is not demand/growth driven.  Big diff.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2030005859896480008",
+ "harness": {
+  "run": "2026-10-31T03-30-20Z",
+  "manifest_sha256": "3d96553ad1872d40978ec78e357b1cef213e2cb79cabbf5b401432e513cb4d1c",
+  "query": "from:BobLoukas since:2026-02-28 until:2026-03-10"
+ }
+}

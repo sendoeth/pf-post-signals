@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:03:45.921Z",
+ "cashtags": [],
+ "conversationId": "2070235668782227491",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2070490184253116492",
+ "kind": "reply",
+ "metrics": {
+  "likes": 131,
+  "replies": 4,
+  "reposts": 0,
+  "views": 11936
+ },
+ "postedAt": "2026-06-26T12:51:42.000Z",
+ "replyTo": {
+  "postId": "2070235668782227491",
+  "handle": "BitPaine"
+ },
+ "text": "I thought the buy of the century was 300% higher?",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2070490184253116492",
+ "harness": {
+  "run": "2026-10-31T04-03-43Z",
+  "manifest_sha256": "151afdee8bedac9fee9cf5b5571f2bc7c3f8925a0be613401ca72cfa26688b6d",
+  "query": "from:BobLoukas since:2026-06-23 until:2026-06-28"
+ }
+}

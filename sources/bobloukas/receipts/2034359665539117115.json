@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:31.561Z",
+ "cashtags": [],
+ "conversationId": "2034359665539117115",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2034359665539117115",
+ "kind": "post",
+ "metrics": {
+  "likes": 854,
+  "replies": 37,
+  "reposts": 35,
+  "views": 57505
+ },
+ "postedAt": "2026-03-18T20:01:55.000Z",
+ "replyTo": null,
+ "text": "There are seasons for reaping, and seasons for waiting.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2034359665539117115",
+ "harness": {
+  "run": "2026-10-31T03-30-28Z",
+  "manifest_sha256": "01e2451c651b7ec60ad39a25711bb00e031bd0ff8d61791c7b1a209fde870cd4",
+  "query": "from:BobLoukas since:2026-03-10 until:2026-03-20"
+ }
+}

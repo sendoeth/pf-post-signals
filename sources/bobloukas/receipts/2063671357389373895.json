@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:58.243Z",
+ "cashtags": [],
+ "conversationId": "2063611454146634002",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2063671357389373895",
+ "kind": "reply",
+ "metrics": {
+  "likes": 25,
+  "replies": 2,
+  "reposts": 0,
+  "views": 2211
+ },
+ "postedAt": "2026-06-07T17:16:07.000Z",
+ "replyTo": {
+  "postId": "2063637461591323031",
+  "handle": "CryptoPriceHub1"
+ },
+ "text": "What's your point?  That many of my tweets showing charts might not work out?   no shit sherlock around half the ideas dont pan out",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2063671357389373895",
+ "harness": {
+  "run": "2026-10-31T03-47-55Z",
+  "manifest_sha256": "76ee69624ea2b9328b3f138dbfe04636ffc970ec1aa15cc43bb66d8325d64d30",
+  "query": "from:BobLoukas since:2026-06-03 until:2026-06-08"
+ }
+}

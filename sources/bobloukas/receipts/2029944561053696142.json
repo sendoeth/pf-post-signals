@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:22.937Z",
+ "cashtags": [],
+ "conversationId": "2029944561053696142",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2029944561053696142",
+ "kind": "post",
+ "metrics": {
+  "likes": 498,
+  "replies": 22,
+  "reposts": 22,
+  "views": 47721
+ },
+ "postedAt": "2026-03-06T15:37:52.000Z",
+ "replyTo": null,
+ "text": "NET job losses doesn't exactly sound like business cycle expansion.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2029944561053696142",
+ "harness": {
+  "run": "2026-10-31T03-30-20Z",
+  "manifest_sha256": "3d96553ad1872d40978ec78e357b1cef213e2cb79cabbf5b401432e513cb4d1c",
+  "query": "from:BobLoukas since:2026-02-28 until:2026-03-10"
+ }
+}

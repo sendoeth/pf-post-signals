@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:46.984Z",
+ "cashtags": [],
+ "conversationId": "2019521941565239706",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2019857763501773064",
+ "kind": "reply",
+ "metrics": {
+  "likes": 2,
+  "replies": 1,
+  "reposts": 0,
+  "views": 824
+ },
+ "postedAt": "2026-02-06T19:36:32.000Z",
+ "replyTo": {
+  "postId": "2019853274036232502",
+  "handle": "BitcoinAddict_"
+ },
+ "text": "I think denial bounce here.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2019857763501773064",
+ "harness": {
+  "run": "2026-10-31T03-29-44Z",
+  "manifest_sha256": "aaa8d4e197f46be6cccda8b30abf99f805399d35c1bf30c84b78a3f1a95bcc12",
+  "query": "from:BobLoukas since:2026-02-03 until:2026-02-08"
+ }
+}

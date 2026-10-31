@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:03.698Z",
+ "cashtags": [],
+ "conversationId": "1986850780779876705",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1986850780779876705",
+ "kind": "post",
+ "metrics": {
+  "likes": 1724,
+  "replies": 78,
+  "reposts": 60,
+  "views": 121821
+ },
+ "postedAt": "2025-11-07T17:38:34.000Z",
+ "replyTo": null,
+ "text": "Very early still, but a really positive (and different to late) feeling on the crypto tape.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1986850780779876705",
+ "harness": {
+  "run": "2026-10-31T03-10-01Z",
+  "manifest_sha256": "3844915c6905bd8c09b21e28b77ba45472ed71277b155e9aca6ad52457c02037",
+  "query": "from:BobLoukas since:2025-10-31 until:2025-11-10"
+ }
+}

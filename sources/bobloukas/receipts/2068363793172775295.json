@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:03:36.504Z",
+ "cashtags": [],
+ "conversationId": "2068320442331369981",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2068363793172775295",
+ "kind": "reply",
+ "metrics": {
+  "likes": 22,
+  "replies": 2,
+  "reposts": 0,
+  "views": 2719
+ },
+ "postedAt": "2026-06-20T16:02:11.000Z",
+ "replyTo": {
+  "postId": "2068345360704024585",
+  "handle": "FP21M"
+ },
+ "text": "A mathematical fact.  So lol.   We’ve seen mathematical facts in finance for 100yrs.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2068363793172775295",
+ "harness": {
+  "run": "2026-10-31T04-03-34Z",
+  "manifest_sha256": "80481ec9abd4e75a790a038fdafcf2407911298e9bbac3a7dd1f344521f8274f",
+  "query": "from:BobLoukas since:2026-06-18 until:2026-06-23"
+ }
+}

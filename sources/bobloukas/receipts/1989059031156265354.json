@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:27.305Z",
+ "cashtags": [],
+ "conversationId": "1989058521447457024",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1989059031156265354",
+ "kind": "reply",
+ "metrics": {
+  "likes": 42,
+  "replies": 3,
+  "reposts": 0,
+  "views": 5148
+ },
+ "postedAt": "2025-11-13T19:53:22.000Z",
+ "replyTo": {
+  "postId": "1989058921563353318",
+  "handle": "VipperOfCryp"
+ },
+ "text": "Sadly lot of truth to this.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1989059031156265354",
+ "harness": {
+  "run": "2026-10-31T03-10-22Z",
+  "manifest_sha256": "8219512b7c4ed9295ff50779c6865723e1b25c0ba9424dff8dd584d91eeef4c2",
+  "query": "from:BobLoukas since:2025-11-10 until:2025-11-15"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:25.382Z",
+ "cashtags": [],
+ "conversationId": "2028473753022136453",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2028498097014243357",
+ "kind": "reply",
+ "metrics": {
+  "likes": 15,
+  "replies": 0,
+  "reposts": 0,
+  "views": 1287
+ },
+ "postedAt": "2026-03-02T15:50:08.000Z",
+ "replyTo": {
+  "postId": "2028497035905679582",
+  "handle": "hanni_abu"
+ },
+ "text": "Not at all.  We respond to the price action, not keep predicting a change over and over again while it goes against us.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2028498097014243357",
+ "harness": {
+  "run": "2026-10-31T03-30-20Z",
+  "manifest_sha256": "3d96553ad1872d40978ec78e357b1cef213e2cb79cabbf5b401432e513cb4d1c",
+  "query": "from:BobLoukas since:2026-02-28 until:2026-03-10"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:27.306Z",
+ "cashtags": [],
+ "conversationId": "1988648569453035869",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1988728579979640952",
+ "kind": "reply",
+ "metrics": {
+  "likes": 30,
+  "replies": 1,
+  "reposts": 1,
+  "views": 2045
+ },
+ "postedAt": "2025-11-12T22:00:16.000Z",
+ "replyTo": {
+  "postId": "1988721065850482802",
+  "handle": "jwang88k"
+ },
+ "text": "It's at 12+ lows.\nIt's down 59% off the highs.\n\nIt's a literal bear market and MORE. \n\nIf it rallies, fine, but my observation is the right take.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1988728579979640952",
+ "harness": {
+  "run": "2026-10-31T03-10-22Z",
+  "manifest_sha256": "8219512b7c4ed9295ff50779c6865723e1b25c0ba9424dff8dd584d91eeef4c2",
+  "query": "from:BobLoukas since:2025-11-10 until:2025-11-15"
+ }
+}

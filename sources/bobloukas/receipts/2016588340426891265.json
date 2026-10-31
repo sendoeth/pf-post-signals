@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:12.215Z",
+ "cashtags": [],
+ "conversationId": "2016588158759043128",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2016588340426891265",
+ "kind": "reply",
+ "metrics": {
+  "likes": 11,
+  "replies": 1,
+  "reposts": 0,
+  "views": 4461
+ },
+ "postedAt": "2026-01-28T19:05:01.000Z",
+ "replyTo": {
+  "postId": "2016588158759043128",
+  "handle": "SamSpratt"
+ },
+ "text": "Well done Randy.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2016588340426891265",
+ "harness": {
+  "run": "2026-10-31T03-29-09Z",
+  "manifest_sha256": "12b6383eb0d3e548fb1ff7b7fa27ac18c6544170639bb262e25d9278c33ad772",
+  "query": "from:BobLoukas since:2026-01-19 until:2026-01-29"
+ }
+}

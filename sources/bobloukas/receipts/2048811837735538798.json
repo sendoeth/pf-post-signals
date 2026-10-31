@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:09.204Z",
+ "cashtags": [],
+ "conversationId": "2048804198762877414",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2048811837735538798",
+ "kind": "reply",
+ "metrics": {
+  "likes": 12,
+  "replies": 4,
+  "reposts": 0,
+  "views": 3537
+ },
+ "postedAt": "2026-04-27T17:09:41.000Z",
+ "replyTo": {
+  "postId": "2048810826287423915",
+  "handle": "Alexand41516608"
+ },
+ "text": "Typically how silver behaves in bull markets",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2048811837735538798",
+ "harness": {
+  "run": "2026-10-31T03-47-04Z",
+  "manifest_sha256": "5336994f71bbe4f700cf60362be35add5dbd82d5eddf921d84495b46cbd2c660",
+  "query": "from:BobLoukas since:2026-04-24 until:2026-04-29"
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:53.750Z",
+ "cashtags": [],
+ "conversationId": "2008233015290613962",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2008233015290613962",
+ "kind": "post",
+ "metrics": {
+  "likes": 641,
+  "replies": 43,
+  "reposts": 36,
+  "views": 131095
+ },
+ "postedAt": "2026-01-05T17:43:56.000Z",
+ "replyTo": null,
+ "text": "Week 7 of the Cycle for Stocks, sitting at the prior Weekly Cycle high.  Feeling like it's working through some overhead resistance, before a new big move higher.  Bitcoin catching some of the love.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2008233015290613962",
+ "harness": {
+  "run": "2026-10-31T03-28-48Z",
+  "manifest_sha256": "15f3f120834a9e146f93308ba01d65815256ffe13b590dc9e35f844e48ccf261",
+  "query": "from:BobLoukas since:2025-12-30 until:2026-01-09"
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:48:01.864Z",
+ "cashtags": [],
+ "conversationId": "2062554209212358962",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2062554209212358962",
+ "kind": "quote",
+ "metrics": {
+  "likes": 848,
+  "replies": 23,
+  "reposts": 68,
+  "views": 133955
+ },
+ "postedAt": "2026-06-04T15:16:58.000Z",
+ "replyTo": null,
+ "text": "18 weeks since the gold blow-off, gold is going through a normal rebasing period.  Speculative interest moved on 12-18 weeks ago.  \n\nBut this is remains a secular bull market, so we're looking at reaccumulation of long positions from underweight to overweight over the coming 4 months.  The bull goes again in 2027.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2062554209212358962",
+ "harness": {
+  "run": "2026-10-31T03-47-55Z",
+  "manifest_sha256": "76ee69624ea2b9328b3f138dbfe04636ffc970ec1aa15cc43bb66d8325d64d30",
+  "query": "from:BobLoukas since:2026-06-03 until:2026-06-08"
+ }
+}

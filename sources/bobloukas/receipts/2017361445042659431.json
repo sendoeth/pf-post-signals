@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:39.632Z",
+ "cashtags": [],
+ "conversationId": "2017360319010517142",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2017361445042659431",
+ "kind": "reply",
+ "metrics": {
+  "likes": 159,
+  "replies": 5,
+  "reposts": 5,
+  "views": 26848
+ },
+ "postedAt": "2026-01-30T22:17:03.000Z",
+ "replyTo": {
+  "postId": "2017360319010517142",
+  "handle": "benjamincowen"
+ },
+ "text": "Stocks 4 yr cycle is also in the top timing window.  Was hoping for one more surge.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2017361445042659431",
+ "harness": {
+  "run": "2026-10-31T03-29-33Z",
+  "manifest_sha256": "14f0ea84840c9dca9fe00212e469c77a2ebdd67bd750609b8a6bddcb4356ba1c",
+  "query": "from:BobLoukas since:2026-01-29 until:2026-02-03"
+ }
+}

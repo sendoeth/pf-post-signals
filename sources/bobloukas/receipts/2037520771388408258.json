@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:38.928Z",
+ "cashtags": [],
+ "conversationId": "2037520771388408258",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2037520771388408258",
+ "kind": "post",
+ "metrics": {
+  "likes": 1318,
+  "replies": 74,
+  "reposts": 103,
+  "views": 96738
+ },
+ "postedAt": "2026-03-27T13:23:01.000Z",
+ "replyTo": null,
+ "text": "Quarterly candle view of the Bitcoin 4 Year Cycle.  Just like all prior Cycles, despite the relentless narrative changes you hear.\n\nDon't get hung up on price.  Time matters more than Price.  Time gives structure.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2037520771388408258",
+ "harness": {
+  "run": "2026-10-31T03-30-36Z",
+  "manifest_sha256": "4650ab529d8aa763c70824f28353a63102c967a6a59d9111c9a5115d681b6e4d",
+  "query": "from:BobLoukas since:2026-03-20 until:2026-03-30"
+ }
+}

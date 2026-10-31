@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:36:42.499Z",
+ "cashtags": [],
+ "conversationId": "2115823513915290059",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2115830799824019605",
+ "kind": "reply",
+ "metrics": {
+  "likes": 41,
+  "replies": 2,
+  "reposts": 0,
+  "views": 3358
+ },
+ "postedAt": "2026-10-29T15:39:07.000Z",
+ "replyTo": {
+  "postId": "2115828505464406376",
+  "handle": "MisterSpread"
+ },
+ "text": "It is on thin ice for sure.  It has to move now",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2115830799824019605",
+ "harness": {
+  "run": "2026-10-31T04-36-38Z",
+  "manifest_sha256": "4ed1a5ced8c750ca12e8ad455fcb0440edc42dc649d9b9187902e0982ccc36b8",
+  "query": "from:BobLoukas since:2026-10-26 until:2026-11-01"
+ }
+}

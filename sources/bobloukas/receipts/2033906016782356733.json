@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:31.561Z",
+ "cashtags": [],
+ "conversationId": "2033904366390841369",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2033906016782356733",
+ "kind": "reply",
+ "metrics": {
+  "likes": 22,
+  "replies": 1,
+  "reposts": 0,
+  "views": 1885
+ },
+ "postedAt": "2026-03-17T13:59:17.000Z",
+ "replyTo": {
+  "postId": "2033904860383375544",
+  "handle": "TXMCtrades"
+ },
+ "text": "This has been my experience too.  About half the time is wasted.\n\nBut in my case, when you're through with it and completed, you realize what you accomplished would have taken weeks and involved other contractors/experts.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2033906016782356733",
+ "harness": {
+  "run": "2026-10-31T03-30-28Z",
+  "manifest_sha256": "01e2451c651b7ec60ad39a25711bb00e031bd0ff8d61791c7b1a209fde870cd4",
+  "query": "from:BobLoukas since:2026-03-10 until:2026-03-20"
+ }
+}

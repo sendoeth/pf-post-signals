@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:20:01.893Z",
+ "cashtags": [],
+ "conversationId": "2091161059801391206",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2091193159262830853",
+ "kind": "reply",
+ "metrics": {
+  "likes": 25,
+  "replies": 1,
+  "reposts": 0,
+  "views": 3426
+ },
+ "postedAt": "2026-08-22T15:57:56.000Z",
+ "replyTo": {
+  "postId": "2091180296011919539",
+  "handle": "1JBX1"
+ },
+ "text": "No Cycle's end on time and sentiment, price does not need to make a new low.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2091193159262830853",
+ "harness": {
+  "run": "2026-10-31T04-19-58Z",
+  "manifest_sha256": "524676418c0f2612e016569f937d101eda0cc79472efa329bd665434f243e819",
+  "query": "from:BobLoukas since:2026-08-17 until:2026-08-27"
+ }
+}

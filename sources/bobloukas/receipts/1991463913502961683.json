@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:36.609Z",
+ "cashtags": [],
+ "conversationId": "1991265166659391649",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1991463913502961683",
+ "kind": "reply",
+ "metrics": {
+  "likes": 27,
+  "replies": 4,
+  "reposts": 0,
+  "views": 2187
+ },
+ "postedAt": "2025-11-20T11:09:31.000Z",
+ "replyTo": {
+  "postId": "1991405377385283763",
+  "handle": "NathOnMarkets"
+ },
+ "text": "I dont hate crypto.  \n\nI hate many of the players, the crime, the fraud, the false narratives.   \n\nThat’s a big difference.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1991463913502961683",
+ "harness": {
+  "run": "2026-10-31T03-11-28Z",
+  "manifest_sha256": "5b4f94307a59f6b36bf90ded7f7487cb77a37651415230998ae74712e788ac95",
+  "query": "from:BobLoukas since:2025-11-20 until:2025-11-25"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:03.699Z",
+ "cashtags": [],
+ "conversationId": "1986540276459110606",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1986542637017432381",
+ "kind": "reply",
+ "metrics": {
+  "likes": 110,
+  "replies": 4,
+  "reposts": 0,
+  "views": 11537
+ },
+ "postedAt": "2025-11-06T21:14:07.000Z",
+ "replyTo": {
+  "postId": "1986540276459110606",
+  "handle": "SubuTrade"
+ },
+ "text": "This is like the actual Hindenburg.  It flew 63 times before blowing up.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1986542637017432381",
+ "harness": {
+  "run": "2026-10-31T03-10-01Z",
+  "manifest_sha256": "3844915c6905bd8c09b21e28b77ba45472ed71277b155e9aca6ad52457c02037",
+  "query": "from:BobLoukas since:2025-10-31 until:2025-11-10"
+ }
+}

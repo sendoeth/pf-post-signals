@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:44.212Z",
+ "cashtags": [],
+ "conversationId": "1993418401016918200",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1993420637348528166",
+ "kind": "reply",
+ "metrics": {
+  "likes": 51,
+  "replies": 3,
+  "reposts": 1,
+  "views": 4401
+ },
+ "postedAt": "2025-11-25T20:44:50.000Z",
+ "replyTo": {
+  "postId": "1993420286461685879",
+  "handle": "Patsfan19838268"
+ },
+ "text": "Just wait until $100k they will quickly forget and be saying 2026 and much higher.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1993420637348528166",
+ "harness": {
+  "run": "2026-10-31T03-11-39Z",
+  "manifest_sha256": "8b207307b5b7f63da4785b2292870b7a03e0480c97b05c0d561f294be3c54557",
+  "query": "from:BobLoukas since:2025-11-25 until:2025-11-30"
+ }
+}

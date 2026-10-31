@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:41.411Z",
+ "cashtags": [],
+ "conversationId": "2017022566146462036",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2017028960924619165",
+ "kind": "reply",
+ "metrics": {
+  "likes": 351,
+  "replies": 25,
+  "reposts": 1,
+  "views": 32597
+ },
+ "postedAt": "2026-01-30T00:15:53.000Z",
+ "replyTo": {
+  "postId": "2017022566146462036",
+  "handle": "CredibleCrypto"
+ },
+ "text": "You’re right the trend has not broken. \n\nBut I’d argue the line to watch is $80.4k. That’s the clear last low.   The last line of hope.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2017028960924619165",
+ "harness": {
+  "run": "2026-10-31T03-29-33Z",
+  "manifest_sha256": "14f0ea84840c9dca9fe00212e469c77a2ebdd67bd750609b8a6bddcb4356ba1c",
+  "query": "from:BobLoukas since:2026-01-29 until:2026-02-03"
+ }
+}

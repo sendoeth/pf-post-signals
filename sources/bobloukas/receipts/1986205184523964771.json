@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:08.039Z",
+ "cashtags": [],
+ "conversationId": "1986192100283883837",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1986205184523964771",
+ "kind": "reply",
+ "metrics": {
+  "likes": 7,
+  "replies": 0,
+  "reposts": 0,
+  "views": 672
+ },
+ "postedAt": "2025-11-05T22:53:12.000Z",
+ "replyTo": {
+  "postId": "1986204753806958807",
+  "handle": "simke_111"
+ },
+ "text": "I think that's a good strategy.  I've taken plenty off too.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1986205184523964771",
+ "harness": {
+  "run": "2026-10-31T03-10-01Z",
+  "manifest_sha256": "3844915c6905bd8c09b21e28b77ba45472ed71277b155e9aca6ad52457c02037",
+  "query": "from:BobLoukas since:2025-10-31 until:2025-11-10"
+ }
+}

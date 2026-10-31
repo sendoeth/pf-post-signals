@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:04.776Z",
+ "cashtags": [],
+ "conversationId": "2011105173104705981",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2011105173104705981",
+ "kind": "post",
+ "metrics": {
+  "likes": 786,
+  "replies": 46,
+  "reposts": 53,
+  "views": 59159
+ },
+ "postedAt": "2026-01-13T15:56:52.000Z",
+ "replyTo": null,
+ "text": "Formidable, but controlled appetite for gold remains.  Now targeting $5,800 for this (maybe) new cycle.\n\nJust got to keep holding on.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2011105173104705981",
+ "harness": {
+  "run": "2026-10-31T03-28-58Z",
+  "manifest_sha256": "85f34bbfce551087a183cda6c242ec59865f566dc1f56165cc796d53128e011e",
+  "query": "from:BobLoukas since:2026-01-09 until:2026-01-19"
+ }
+}

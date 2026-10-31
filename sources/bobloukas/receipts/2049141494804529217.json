@@ -1,0 +1,30 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:07.288Z",
+ "cashtags": [
+  "BTC"
+ ],
+ "conversationId": "2049137992128766119",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2049141494804529217",
+ "kind": "reply",
+ "metrics": {
+  "likes": 37,
+  "replies": 3,
+  "reposts": 2,
+  "views": 3353
+ },
+ "postedAt": "2026-04-28T14:59:38.000Z",
+ "replyTo": {
+  "postId": "2049140849393426883",
+  "handle": "MadCryptoClub"
+ },
+ "text": "$BTC is down 52% off the highs over a 5 month decline and trending down.  \n\nThat is very much a bear market.\n\nIf you want to argue it's going to be (or was) a lighter bear market than in the past, you can make that argument.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2049141494804529217",
+ "harness": {
+  "run": "2026-10-31T03-47-04Z",
+  "manifest_sha256": "5336994f71bbe4f700cf60362be35add5dbd82d5eddf921d84495b46cbd2c660",
+  "query": "from:BobLoukas since:2026-04-24 until:2026-04-29"
+ }
+}

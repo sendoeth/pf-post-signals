@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:03:36.501Z",
+ "cashtags": [],
+ "conversationId": "2069029230143238356",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2069029230143238356",
+ "kind": "post",
+ "metrics": {
+  "likes": 681,
+  "replies": 31,
+  "reposts": 36,
+  "views": 84588
+ },
+ "postedAt": "2026-06-22T12:06:23.000Z",
+ "replyTo": null,
+ "text": "Alan Greenspan died.  Still remember his 1996 speech about Irrational exuberance.  Markets didn’t peak for another 3+ yrs.   Maybe applicable to today’s environment.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2069029230143238356",
+ "harness": {
+  "run": "2026-10-31T04-03-34Z",
+  "manifest_sha256": "80481ec9abd4e75a790a038fdafcf2407911298e9bbac3a7dd1f344521f8274f",
+  "query": "from:BobLoukas since:2026-06-18 until:2026-06-23"
+ }
+}

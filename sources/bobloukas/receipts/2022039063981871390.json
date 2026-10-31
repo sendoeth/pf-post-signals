@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:04.925Z",
+ "cashtags": [],
+ "conversationId": "2022039063981871390",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2022039063981871390",
+ "kind": "post",
+ "metrics": {
+  "likes": 1471,
+  "replies": 81,
+  "reposts": 57,
+  "views": 103355
+ },
+ "postedAt": "2026-02-12T20:04:15.000Z",
+ "replyTo": null,
+ "text": "One thing is clear.   If or when we get a really gut wrenching correction in Tech/AI (say 30/60%),  you better buy that hand over fist.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2022039063981871390",
+ "harness": {
+  "run": "2026-10-31T03-29-58Z",
+  "manifest_sha256": "046caa1b799b16c1e3d97c7b87fc3565fd829c623a7d127628756b707828f2b0",
+  "query": "from:BobLoukas since:2026-02-08 until:2026-02-18"
+ }
+}

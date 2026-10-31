@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:39.720Z",
+ "cashtags": [],
+ "conversationId": "2005327625791906291",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2005327625791906291",
+ "kind": "post",
+ "metrics": {
+  "likes": 842,
+  "replies": 58,
+  "reposts": 21,
+  "views": 53223
+ },
+ "postedAt": "2025-12-28T17:18:57.000Z",
+ "replyTo": null,
+ "text": "Zero point or reason to compare bitcoin vs gold/silver performance over cherry picked times.  \n\nEmbrace all assets objectively. Every dog has its day.  Some far more often than others.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2005327625791906291",
+ "harness": {
+  "run": "2026-10-31T03-28-37Z",
+  "manifest_sha256": "9d13b999b16b71141a9123223a30beac3017eedee0e627ab1a0efb00c27a8930",
+  "query": "from:BobLoukas since:2025-12-20 until:2025-12-30"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:48:00.530Z",
+ "cashtags": [],
+ "conversationId": "2062580409091620951",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2062846640646467724",
+ "kind": "reply",
+ "metrics": {
+  "likes": 3,
+  "replies": 1,
+  "reposts": 0,
+  "views": 541
+ },
+ "postedAt": "2026-06-05T10:38:59.000Z",
+ "replyTo": {
+  "postId": "2062839969451004176",
+  "handle": "CornHarvest_BTC"
+ },
+ "text": "The highs don’t measure a cycle.  The lows do. \n\nIf price double bottoms then it’s obviously part of the same declining structure.  The later data point is therefore part of the same cycle. \n\nThis isn’t a bitcoin thing. It’s defined cycle in finance for many decades.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2062846640646467724",
+ "harness": {
+  "run": "2026-10-31T03-47-55Z",
+  "manifest_sha256": "76ee69624ea2b9328b3f138dbfe04636ffc970ec1aa15cc43bb66d8325d64d30",
+  "query": "from:BobLoukas since:2026-06-03 until:2026-06-08"
+ }
+}

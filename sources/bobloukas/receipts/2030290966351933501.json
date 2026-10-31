@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:22.937Z",
+ "cashtags": [],
+ "conversationId": "2030290966351933501",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2030290966351933501",
+ "kind": "post",
+ "metrics": {
+  "likes": 692,
+  "replies": 44,
+  "reposts": 57,
+  "views": 62565
+ },
+ "postedAt": "2026-03-07T14:34:22.000Z",
+ "replyTo": null,
+ "text": "Stocks showed us a Failed Daily Cycle this friday on closing basis.  In last 4 years, only 2nd such case (March 25 other) of a Failed cycle when it wasn't expected or due. \n\nDoesn't guarantee anything, but does very often signal an intermediate timeframe downturn is underway.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2030290966351933501",
+ "harness": {
+  "run": "2026-10-31T03-30-20Z",
+  "manifest_sha256": "3d96553ad1872d40978ec78e357b1cef213e2cb79cabbf5b401432e513cb4d1c",
+  "query": "from:BobLoukas since:2026-02-28 until:2026-03-10"
+ }
+}

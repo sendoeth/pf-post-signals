@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:04.925Z",
+ "cashtags": [],
+ "conversationId": "2021949912250769425",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2021990850591699251",
+ "kind": "reply",
+ "metrics": {
+  "likes": 43,
+  "replies": 2,
+  "reposts": 0,
+  "views": 3893
+ },
+ "postedAt": "2026-02-12T16:52:40.000Z",
+ "replyTo": {
+  "postId": "2021988294360502743",
+  "handle": "Pentosh1"
+ },
+ "text": "Yep.  If anything, it should be used as a confirmer of the environment, and not a contrarian view.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2021990850591699251",
+ "harness": {
+  "run": "2026-10-31T03-29-58Z",
+  "manifest_sha256": "046caa1b799b16c1e3d97c7b87fc3565fd829c623a7d127628756b707828f2b0",
+  "query": "from:BobLoukas since:2026-02-08 until:2026-02-18"
+ }
+}

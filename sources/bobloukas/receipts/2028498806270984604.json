@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:25.381Z",
+ "cashtags": [],
+ "conversationId": "2028473753022136453",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2028498806270984604",
+ "kind": "reply",
+ "metrics": {
+  "likes": 47,
+  "replies": 6,
+  "reposts": 0,
+  "views": 5272
+ },
+ "postedAt": "2026-03-02T15:52:57.000Z",
+ "replyTo": {
+  "postId": "2028492909448949872",
+  "handle": "Chiko_wav"
+ },
+ "text": "Who cares, I'm out from 50% higher.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2028498806270984604",
+ "harness": {
+  "run": "2026-10-31T03-30-20Z",
+  "manifest_sha256": "3d96553ad1872d40978ec78e357b1cef213e2cb79cabbf5b401432e513cb4d1c",
+  "query": "from:BobLoukas since:2026-02-28 until:2026-03-10"
+ }
+}

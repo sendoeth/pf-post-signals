@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:25.223Z",
+ "cashtags": [],
+ "conversationId": "1989334671289967046",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1989338091199533295",
+ "kind": "post",
+ "metrics": {
+  "likes": 60,
+  "replies": 1,
+  "reposts": 1,
+  "views": 11029
+ },
+ "postedAt": "2025-11-14T14:22:15.000Z",
+ "replyTo": null,
+ "text": "We want to see a low form here and then that line defended.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1989338091199533295",
+ "harness": {
+  "run": "2026-10-31T03-10-22Z",
+  "manifest_sha256": "8219512b7c4ed9295ff50779c6865723e1b25c0ba9424dff8dd584d91eeef4c2",
+  "query": "from:BobLoukas since:2025-11-10 until:2025-11-15"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:30.955Z",
+ "cashtags": [],
+ "conversationId": "1992988602431688842",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1992989498230337725",
+ "kind": "reply",
+ "metrics": {
+  "likes": 108,
+  "replies": 8,
+  "reposts": 0,
+  "views": 9313
+ },
+ "postedAt": "2025-11-24T16:11:38.000Z",
+ "replyTo": {
+  "postId": "1992989200384471216",
+  "handle": "RexUmberleigh"
+ },
+ "text": "ADA is still worth $15b! and the other day somebody vibe coded the chain down.  And really nobody but some old timers use it pushing tokens back and forth.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1992989498230337725",
+ "harness": {
+  "run": "2026-10-31T03-11-28Z",
+  "manifest_sha256": "5b4f94307a59f6b36bf90ded7f7487cb77a37651415230998ae74712e788ac95",
+  "query": "from:BobLoukas since:2025-11-20 until:2025-11-25"
+ }
+}

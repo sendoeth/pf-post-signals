@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:36:43.947Z",
+ "cashtags": [],
+ "conversationId": "2115607968448393273",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2115607968448393273",
+ "kind": "quote",
+ "metrics": {
+  "likes": 2543,
+  "replies": 164,
+  "reposts": 155,
+  "views": 132623
+ },
+ "postedAt": "2026-10-29T00:53:40.000Z",
+ "replyTo": null,
+ "text": "This is what crypto has become.  A pure coordinated social grift extracting from an ever financially illiterate retail base.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2115607968448393273",
+ "harness": {
+  "run": "2026-10-31T04-36-38Z",
+  "manifest_sha256": "4ed1a5ced8c750ca12e8ad455fcb0440edc42dc649d9b9187902e0982ccc36b8",
+  "query": "from:BobLoukas since:2026-10-26 until:2026-11-01"
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:21.405Z",
+ "cashtags": [],
+ "conversationId": "2051627961724305706",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2051627961724305706",
+ "kind": "quote",
+ "metrics": {
+  "likes": 1982,
+  "replies": 204,
+  "reposts": 157,
+  "views": 288071
+ },
+ "postedAt": "2026-05-05T11:39:58.000Z",
+ "replyTo": null,
+ "text": "Bitcoin - Getting close now to the end of a natural counter trend move in a bear market.  $85-$88k area.   \n\nHowever, there is a difference to this move.  Counter trend moves are typically stronger (impulse) and shorter duration, this move is more consistent with base building over a longer period.  For example, it has been 88 days since the low, no counter trend move to a local high took anywhere near this long. \n\nIt means we could be looking at more of a time based Cycle Low developing over 2026.  In that scenario, the next big pullback could be more of a retest of the bear range.  We shall have to see.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2051627961724305706",
+ "harness": {
+  "run": "2026-10-31T03-47-15Z",
+  "manifest_sha256": "d829a2466fa415a7cdaeaff4a6cfdcca76ad661f2ee8e9461b5c6c66af591c27",
+  "query": "from:BobLoukas since:2026-04-29 until:2026-05-09"
+ }
+}

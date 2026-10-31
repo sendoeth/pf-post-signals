@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:22.507Z",
+ "cashtags": [],
+ "conversationId": "2049567811027272135",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2049569774032626156",
+ "kind": "reply",
+ "metrics": {
+  "likes": 35,
+  "replies": 1,
+  "reposts": 0,
+  "views": 3989
+ },
+ "postedAt": "2026-04-29T19:21:27.000Z",
+ "replyTo": {
+  "postId": "2049567811027272135",
+  "handle": "CirrusNFT"
+ },
+ "text": "Live look at the borrowers.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2049569774032626156",
+ "harness": {
+  "run": "2026-10-31T03-47-15Z",
+  "manifest_sha256": "d829a2466fa415a7cdaeaff4a6cfdcca76ad661f2ee8e9461b5c6c66af591c27",
+  "query": "from:BobLoukas since:2026-04-29 until:2026-05-09"
+ }
+}

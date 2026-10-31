@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:14.212Z",
+ "cashtags": [],
+ "conversationId": "2015775479576621297",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2015787706496774201",
+ "kind": "reply",
+ "metrics": {
+  "likes": 434,
+  "replies": 20,
+  "reposts": 2,
+  "views": 19126
+ },
+ "postedAt": "2026-01-26T14:03:35.000Z",
+ "replyTo": {
+  "postId": "2015775479576621297",
+  "handle": "coinbureau"
+ },
+ "text": "God advice.   Leaving all the losing for your customers.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2015787706496774201",
+ "harness": {
+  "run": "2026-10-31T03-29-09Z",
+  "manifest_sha256": "12b6383eb0d3e548fb1ff7b7fa27ac18c6544170639bb262e25d9278c33ad772",
+  "query": "from:BobLoukas since:2026-01-19 until:2026-01-29"
+ }
+}

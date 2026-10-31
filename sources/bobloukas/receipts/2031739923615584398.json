@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:33.403Z",
+ "cashtags": [],
+ "conversationId": "2030290966351933501",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2031739923615584398",
+ "kind": "reply",
+ "metrics": {
+  "likes": 1,
+  "replies": 0,
+  "reposts": 0,
+  "views": 630
+ },
+ "postedAt": "2026-03-11T14:32:00.000Z",
+ "replyTo": {
+  "postId": "2030293770227310892",
+  "handle": "raychix"
+ },
+ "text": "Speak for yourself.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2031739923615584398",
+ "harness": {
+  "run": "2026-10-31T03-30-28Z",
+  "manifest_sha256": "01e2451c651b7ec60ad39a25711bb00e031bd0ff8d61791c7b1a209fde870cd4",
+  "query": "from:BobLoukas since:2026-03-10 until:2026-03-20"
+ }
+}

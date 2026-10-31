@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:46.983Z",
+ "cashtags": [],
+ "conversationId": "2019829688986984694",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2019914467916616083",
+ "kind": "reply",
+ "metrics": {
+  "likes": 9,
+  "replies": 0,
+  "reposts": 0,
+  "views": 4139
+ },
+ "postedAt": "2026-02-06T23:21:52.000Z",
+ "replyTo": {
+  "postId": "2019829688986984694",
+  "handle": "jdh"
+ },
+ "text": "Little Cargo meets Alternative vibes.  Nice.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2019914467916616083",
+ "harness": {
+  "run": "2026-10-31T03-29-44Z",
+  "manifest_sha256": "aaa8d4e197f46be6cccda8b30abf99f805399d35c1bf30c84b78a3f1a95bcc12",
+  "query": "from:BobLoukas since:2026-02-03 until:2026-02-08"
+ }
+}

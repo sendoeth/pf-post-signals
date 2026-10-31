@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:38.926Z",
+ "cashtags": [],
+ "conversationId": "2037568445273841795",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2037568889286959563",
+ "kind": "reply",
+ "metrics": {
+  "likes": 78,
+  "replies": 6,
+  "reposts": 1,
+  "views": 10555
+ },
+ "postedAt": "2026-03-27T16:34:14.000Z",
+ "replyTo": {
+  "postId": "2037568445273841795",
+  "handle": "TXMCtrades"
+ },
+ "text": "Crypto exposed for what it is.  A couple of great fringe use cases.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2037568889286959563",
+ "harness": {
+  "run": "2026-10-31T03-30-36Z",
+  "manifest_sha256": "4650ab529d8aa763c70824f28353a63102c967a6a59d9111c9a5115d681b6e4d",
+  "query": "from:BobLoukas since:2026-03-20 until:2026-03-30"
+ }
+}

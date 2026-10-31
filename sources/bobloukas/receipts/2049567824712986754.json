@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:22.507Z",
+ "cashtags": [],
+ "conversationId": "2049565284768317760",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2049567824712986754",
+ "kind": "reply",
+ "metrics": {
+  "likes": 64,
+  "replies": 5,
+  "reposts": 0,
+  "views": 3821
+ },
+ "postedAt": "2026-04-29T19:13:43.000Z",
+ "replyTo": {
+  "postId": "2049565645570822280",
+  "handle": "xmrjon"
+ },
+ "text": "being band everywhere sounds exciting honestly.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2049567824712986754",
+ "harness": {
+  "run": "2026-10-31T03-47-15Z",
+  "manifest_sha256": "d829a2466fa415a7cdaeaff4a6cfdcca76ad661f2ee8e9461b5c6c66af591c27",
+  "query": "from:BobLoukas since:2026-04-29 until:2026-05-09"
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:13.950Z",
+ "cashtags": [],
+ "conversationId": "2024205887666098688",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2024205887666098688",
+ "kind": "post",
+ "metrics": {
+  "likes": 799,
+  "replies": 37,
+  "reposts": 20,
+  "views": 60237
+ },
+ "postedAt": "2026-02-18T19:34:26.000Z",
+ "replyTo": null,
+ "text": "If you find these levels attractive for the long term, buy it and own it.  \n\nBe content, because that should be a decision that spans whatever happens in 2026.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2024205887666098688",
+ "harness": {
+  "run": "2026-10-31T03-30-09Z",
+  "manifest_sha256": "f4cb50b74e111333644768234a62c37c553d27111cb37124caf5fe4bcbd50de6",
+  "query": "from:BobLoukas since:2026-02-18 until:2026-02-28"
+ }
+}

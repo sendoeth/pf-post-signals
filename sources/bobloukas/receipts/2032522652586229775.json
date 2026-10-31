@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:31.561Z",
+ "cashtags": [],
+ "conversationId": "2032500369306120610",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2032522652586229775",
+ "kind": "reply",
+ "metrics": {
+  "likes": 27,
+  "replies": 1,
+  "reposts": 0,
+  "views": 3341
+ },
+ "postedAt": "2026-03-13T18:22:17.000Z",
+ "replyTo": {
+  "postId": "2032519453104074885",
+  "handle": "ColinTCrypto"
+ },
+ "text": "Yes.  but silver normally runs in streaks.  Under performs until it wakes up.  And after the run it had its likely going to take more time to do another streak",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2032522652586229775",
+ "harness": {
+  "run": "2026-10-31T03-30-28Z",
+  "manifest_sha256": "01e2451c651b7ec60ad39a25711bb00e031bd0ff8d61791c7b1a209fde870cd4",
+  "query": "from:BobLoukas since:2026-03-10 until:2026-03-20"
+ }
+}

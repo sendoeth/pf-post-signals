@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:58.245Z",
+ "cashtags": [],
+ "conversationId": "2063611454146634002",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2063611454146634002",
+ "kind": "post",
+ "metrics": {
+  "likes": 1364,
+  "replies": 84,
+  "reposts": 72,
+  "views": 109585
+ },
+ "postedAt": "2026-06-07T13:18:05.000Z",
+ "replyTo": null,
+ "text": "Just like all prior cycles.  Current drawdown from 2022-26 crypto Cycle - \n\nETH - 69%\nXRP - 71%\nLTC - 72%\nLink - 77%\nSOL - 79%\nSUI - 87%\nADA - 88%\nAVAX - 90%\n\nWay oversold, due a bounce, but all potentially have up to 50% declines left in them this year.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2063611454146634002",
+ "harness": {
+  "run": "2026-10-31T03-47-55Z",
+  "manifest_sha256": "76ee69624ea2b9328b3f138dbfe04636ffc970ec1aa15cc43bb66d8325d64d30",
+  "query": "from:BobLoukas since:2026-06-03 until:2026-06-08"
+ }
+}

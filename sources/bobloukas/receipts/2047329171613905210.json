@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:46:58.839Z",
+ "cashtags": [],
+ "conversationId": "2047322851745665326",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2047329171613905210",
+ "kind": "reply",
+ "metrics": {
+  "likes": 49,
+  "replies": 4,
+  "reposts": 0,
+  "views": 1879
+ },
+ "postedAt": "2026-04-23T14:58:06.000Z",
+ "replyTo": {
+  "postId": "2047327870276497704",
+  "handle": "motionbynick"
+ },
+ "text": "Believe it or not it doesn't get to me.  Annoying at times, sure.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2047329171613905210",
+ "harness": {
+  "run": "2026-10-31T03-46-54Z",
+  "manifest_sha256": "d66bf07857f47292cdfd802d2817253a59a804ad438a1e7c7e149ca9c0a4fd10",
+  "query": "from:BobLoukas since:2026-04-19 until:2026-04-24"
+ }
+}

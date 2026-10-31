@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:48:09.375Z",
+ "cashtags": [],
+ "conversationId": "2065837797903065208",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2065852771245375951",
+ "kind": "reply",
+ "metrics": {
+  "likes": 65,
+  "replies": 5,
+  "reposts": 0,
+  "views": 29306
+ },
+ "postedAt": "2026-06-13T17:44:17.000Z",
+ "replyTo": {
+  "postId": "2065837797903065208",
+  "handle": "Tradermayne"
+ },
+ "text": "Lunch next week?",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2065852771245375951",
+ "harness": {
+  "run": "2026-10-31T03-48-06Z",
+  "manifest_sha256": "485917866faaacba3f6ba610f71bd9e8742dd651e87192dd8b73f98728b3818a",
+  "query": "from:BobLoukas since:2026-06-08 until:2026-06-18"
+ }
+}

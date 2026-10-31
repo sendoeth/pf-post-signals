@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:40.734Z",
+ "cashtags": [],
+ "conversationId": "2035084043704803419",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2035103790450225512",
+ "kind": "reply",
+ "metrics": {
+  "likes": 28,
+  "replies": 3,
+  "reposts": 0,
+  "views": 12398
+ },
+ "postedAt": "2026-03-20T21:18:48.000Z",
+ "replyTo": {
+  "postId": "2035084043704803419",
+  "handle": "LynAldenContact"
+ },
+ "text": "Yeah but they recently cut food assistance programs and the like, so it paid for this……/s",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2035103790450225512",
+ "harness": {
+  "run": "2026-10-31T03-30-36Z",
+  "manifest_sha256": "4650ab529d8aa763c70824f28353a63102c967a6a59d9111c9a5115d681b6e4d",
+  "query": "from:BobLoukas since:2026-03-20 until:2026-03-30"
+ }
+}

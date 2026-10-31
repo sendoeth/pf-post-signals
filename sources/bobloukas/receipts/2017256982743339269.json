@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:41.411Z",
+ "cashtags": [],
+ "conversationId": "2017256982743339269",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2017256982743339269",
+ "kind": "post",
+ "metrics": {
+  "likes": 1574,
+  "replies": 133,
+  "reposts": 141,
+  "views": 142942
+ },
+ "postedAt": "2026-01-30T15:21:58.000Z",
+ "replyTo": null,
+ "text": "Bitcoin 4 Yr Cycle update.  \n\nOn month 38 of 48(avg).  Closing 3rd month below the 10ma.  About to close 4 red months in a row, not seen since 2018.  Looking like the recent move to $98k was the counter-trend move.  Clear divergence from all other assets.\n\nI hate being bearish any asset, especially bitcoin.  I rarely short markets or believe any decent asset class stays down for long.  I always want to be a bull in general.  But this \"currently\" is a perfect 4yr cycle and mirrors all priors.  Remember you can be very bullish on the fundamentals, but also realize that everything is cyclical and respecting there is a time and place.  \n\nOfc, markets can change in a heartbeat, every strategy is breakable, and it's our job not to get hung up on any narrative or bias.  In that regard, on the positive, Bitcoin's declining phase is likely accelerated now, as sentiment has been repeatedly killed.  Cycle declines are ALL about sentiment clearing events, and on that front we could be looking at an earlier (month 44?) low as a result.   \n\nBut many of the bulls on X are just selling services, funds/DAT's, clout, etc, choosing personal gain/bias over reality and price action.  Shifting narratives to keep the hope alive. They're human after-all. \n\nI think that if this consistent historical structure were to change, then we would see a close back over the 10ma and i would want to quickly start to shift focus to the bull side.  If such a change is structure were to happen, then I believe it would be signaling something massive afoot.  I'll never say it can't happen here, I have strong convictions that I want to constantly challenge.  I also think you're not giving up (besides some upside) being defensive and risk adverse here, even if this reverses and goes on to new highs.  \n\nLastly, I also think most investors are still better off socking bitcoin away and ignoring all the volatility. And just use long drawdown period to aggressively accumulate.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2017256982743339269",
+ "harness": {
+  "run": "2026-10-31T03-29-33Z",
+  "manifest_sha256": "14f0ea84840c9dca9fe00212e469c77a2ebdd67bd750609b8a6bddcb4356ba1c",
+  "query": "from:BobLoukas since:2026-01-29 until:2026-02-03"
+ }
+}

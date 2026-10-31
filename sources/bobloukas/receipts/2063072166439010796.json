@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:58.247Z",
+ "cashtags": [],
+ "conversationId": "2062985062228934952",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2063072166439010796",
+ "kind": "reply",
+ "metrics": {
+  "likes": 132,
+  "replies": 11,
+  "reposts": 1,
+  "views": 17050
+ },
+ "postedAt": "2026-06-06T01:35:09.000Z",
+ "replyTo": {
+  "postId": "2062985062228934952",
+  "handle": "EricBalchunas"
+ },
+ "text": "Whales selling because of Saylor, tradfi, institutions etc.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2063072166439010796",
+ "harness": {
+  "run": "2026-10-31T03-47-55Z",
+  "manifest_sha256": "76ee69624ea2b9328b3f138dbfe04636ffc970ec1aa15cc43bb66d8325d64d30",
+  "query": "from:BobLoukas since:2026-06-03 until:2026-06-08"
+ }
+}

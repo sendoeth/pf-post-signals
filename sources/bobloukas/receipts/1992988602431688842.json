@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:30.956Z",
+ "cashtags": [],
+ "conversationId": "1992988602431688842",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1992988602431688842",
+ "kind": "post",
+ "metrics": {
+  "likes": 1412,
+  "replies": 134,
+  "reposts": 91,
+  "views": 156371
+ },
+ "postedAt": "2025-11-24T16:08:05.000Z",
+ "replyTo": null,
+ "text": "When you scroll through CoinMarketCap and look closely at most of the names sitting above a billion dollars (top 62), it hits you how wildly overvalued a lot of this space still is.\n\nVery few real use cases.\nNear-zero barriers to entry. Little friction. A token exit (vs building a real business) that encourages fraud or token first ideas.\nAn endless stream of new tokens launching.\n\nIt explains why squeezing out gains in the ALT space has become so hard, and why it’ll likely stay that way. The easy money from prior cycles created this belief that altcoins “always come back or how you make big money.” \nThat narrative dies slowly, through repeated give-backs.\n\nAnd that’s usually when the real damage starts.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1992988602431688842",
+ "harness": {
+  "run": "2026-10-31T03-11-28Z",
+  "manifest_sha256": "5b4f94307a59f6b36bf90ded7f7487cb77a37651415230998ae74712e788ac95",
+  "query": "from:BobLoukas since:2025-11-20 until:2025-11-25"
+ }
+}

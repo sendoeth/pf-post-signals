@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:00.946Z",
+ "cashtags": [],
+ "conversationId": "2023792938447438321",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2023792938447438321",
+ "kind": "quote",
+ "metrics": {
+  "likes": 568,
+  "replies": 31,
+  "reposts": 33,
+  "views": 76901
+ },
+ "postedAt": "2026-02-17T16:13:31.000Z",
+ "replyTo": null,
+ "text": "Yet another intra day/week breach of the last Cycle Low for SP500.  More red flags.  \n\nIf it loses that level the Daily Cycle fails, which could have broader implications for the 4yr cycle and the next 6 months.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2023792938447438321",
+ "harness": {
+  "run": "2026-10-31T03-29-58Z",
+  "manifest_sha256": "046caa1b799b16c1e3d97c7b87fc3565fd829c623a7d127628756b707828f2b0",
+  "query": "from:BobLoukas since:2026-02-08 until:2026-02-18"
+ }
+}

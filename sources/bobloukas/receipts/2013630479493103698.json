@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:15.875Z",
+ "cashtags": [
+  "GDX",
+  "HUI"
+ ],
+ "conversationId": "2013630479493103698",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2013630479493103698",
+ "kind": "post",
+ "metrics": {
+  "likes": 305,
+  "replies": 24,
+  "reposts": 17,
+  "views": 42488
+ },
+ "postedAt": "2026-01-20T15:11:32.000Z",
+ "replyTo": null,
+ "text": "$GDX cracks $100, up 3x or 200% in the last 12 months. No idea when the eventual (first) correction occurs.\n\nI'm reminded of trading the 2000's bull, $HUI index did 1,600% over that 10yrs.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2013630479493103698",
+ "harness": {
+  "run": "2026-10-31T03-29-09Z",
+  "manifest_sha256": "12b6383eb0d3e548fb1ff7b7fa27ac18c6544170639bb262e25d9278c33ad772",
+  "query": "from:BobLoukas since:2026-01-19 until:2026-01-29"
+ }
+}

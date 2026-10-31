@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:04.778Z",
+ "cashtags": [],
+ "conversationId": "2009653322555514911",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2009653322555514911",
+ "kind": "post",
+ "metrics": {
+  "likes": 305,
+  "replies": 26,
+  "reposts": 5,
+  "views": 47683
+ },
+ "postedAt": "2026-01-09T15:47:44.000Z",
+ "replyTo": null,
+ "text": "Supreme court tariffs is the wildcard i guess.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2009653322555514911",
+ "harness": {
+  "run": "2026-10-31T03-28-58Z",
+  "manifest_sha256": "85f34bbfce551087a183cda6c242ec59865f566dc1f56165cc796d53128e011e",
+  "query": "from:BobLoukas since:2026-01-09 until:2026-01-19"
+ }
+}

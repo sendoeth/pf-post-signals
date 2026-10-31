@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:28.650Z",
+ "cashtags": [],
+ "conversationId": "1988650008284147994",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1988650008284147994",
+ "kind": "quote",
+ "metrics": {
+  "likes": 1431,
+  "replies": 95,
+  "reposts": 135,
+  "views": 219160
+ },
+ "postedAt": "2025-11-12T16:48:03.000Z",
+ "replyTo": null,
+ "text": "This remains the bull case for Bitcoin here, a new Weekly Cycle.  💤\n\nAnd once that happens, the lows can become defensible.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1988650008284147994",
+ "harness": {
+  "run": "2026-10-31T03-10-22Z",
+  "manifest_sha256": "8219512b7c4ed9295ff50779c6865723e1b25c0ba9424dff8dd584d91eeef4c2",
+  "query": "from:BobLoukas since:2025-11-10 until:2025-11-15"
+ }
+}

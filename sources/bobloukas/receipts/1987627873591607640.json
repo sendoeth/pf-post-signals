@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:03.697Z",
+ "cashtags": [],
+ "conversationId": "1987626401030082616",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1987627873591607640",
+ "kind": "reply",
+ "metrics": {
+  "likes": 10,
+  "replies": 0,
+  "reposts": 0,
+  "views": 5653
+ },
+ "postedAt": "2025-11-09T21:06:28.000Z",
+ "replyTo": {
+  "postId": "1987626401030082616",
+  "handle": "wr2020ny"
+ },
+ "text": "Fire him either way.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1987627873591607640",
+ "harness": {
+  "run": "2026-10-31T03-10-01Z",
+  "manifest_sha256": "3844915c6905bd8c09b21e28b77ba45472ed71277b155e9aca6ad52457c02037",
+  "query": "from:BobLoukas since:2025-10-31 until:2025-11-10"
+ }
+}

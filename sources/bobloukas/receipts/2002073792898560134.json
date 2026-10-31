@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:32.382Z",
+ "cashtags": [],
+ "conversationId": "2002068715660271820",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2002073792898560134",
+ "kind": "reply",
+ "metrics": {
+  "likes": 14,
+  "replies": 3,
+  "reposts": 0,
+  "views": 1931
+ },
+ "postedAt": "2025-12-19T17:49:23.000Z",
+ "replyTo": {
+  "postId": "2002073183713939964",
+  "handle": "TXMCtrades"
+ },
+ "text": "Yep agree. Why would it be otherwise is the easy question.  \n\nThey will acquire where needed (already seeing it) and then hire for the rest. \n\nIn the meantime, they’ll be careful to keep the ecosystem on their side, conveniently leaving out detail when they talk about future tokenization.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2002073792898560134",
+ "harness": {
+  "run": "2026-10-31T03-28-29Z",
+  "manifest_sha256": "6b809f4562719e0f7de013cb2199555f0361999760d9b9ef86799734f195de03",
+  "query": "from:BobLoukas since:2025-12-15 until:2025-12-20"
+ }
+}

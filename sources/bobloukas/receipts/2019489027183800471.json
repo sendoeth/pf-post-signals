@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:49.677Z",
+ "cashtags": [],
+ "conversationId": "2019482101251248245",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2019489027183800471",
+ "kind": "reply",
+ "metrics": {
+  "likes": 22,
+  "replies": 2,
+  "reposts": 0,
+  "views": 7175
+ },
+ "postedAt": "2026-02-05T19:11:19.000Z",
+ "replyTo": {
+  "postId": "2019488732164784488",
+  "handle": "HodlMagoo"
+ },
+ "text": "You don't strike me as a puker.  :)",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2019489027183800471",
+ "harness": {
+  "run": "2026-10-31T03-29-44Z",
+  "manifest_sha256": "aaa8d4e197f46be6cccda8b30abf99f805399d35c1bf30c84b78a3f1a95bcc12",
+  "query": "from:BobLoukas since:2026-02-03 until:2026-02-08"
+ }
+}

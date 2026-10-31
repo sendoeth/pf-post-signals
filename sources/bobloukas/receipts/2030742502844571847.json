@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:22.936Z",
+ "cashtags": [],
+ "conversationId": "2030691529568784661",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2030742502844571847",
+ "kind": "reply",
+ "metrics": {
+  "likes": 1,
+  "replies": 1,
+  "reposts": 0,
+  "views": 793
+ },
+ "postedAt": "2026-03-08T20:28:36.000Z",
+ "replyTo": {
+  "postId": "2030739978834121111",
+  "handle": "IVY_LBY"
+ },
+ "text": "65 works by one artist. Yeah I’d say pretty good.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2030742502844571847",
+ "harness": {
+  "run": "2026-10-31T03-30-20Z",
+  "manifest_sha256": "3d96553ad1872d40978ec78e357b1cef213e2cb79cabbf5b401432e513cb4d1c",
+  "query": "from:BobLoukas since:2026-02-28 until:2026-03-10"
+ }
+}

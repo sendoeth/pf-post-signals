@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:18.236Z",
+ "cashtags": [],
+ "conversationId": "2052466040030847257",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2052470411397394612",
+ "kind": "reply",
+ "metrics": {
+  "likes": 13,
+  "replies": 0,
+  "reposts": 0,
+  "views": 2391
+ },
+ "postedAt": "2026-05-07T19:27:33.000Z",
+ "replyTo": {
+  "postId": "2052468852802400599",
+  "handle": "kalkoj"
+ },
+ "text": "Few do get lucky.  \n\nAnd yet growing income would never have impeded that anyway.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2052470411397394612",
+ "harness": {
+  "run": "2026-10-31T03-47-15Z",
+  "manifest_sha256": "d829a2466fa415a7cdaeaff4a6cfdcca76ad661f2ee8e9461b5c6c66af591c27",
+  "query": "from:BobLoukas since:2026-04-29 until:2026-05-09"
+ }
+}

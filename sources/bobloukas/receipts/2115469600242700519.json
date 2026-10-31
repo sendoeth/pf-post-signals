@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:36:43.947Z",
+ "cashtags": [],
+ "conversationId": "2115463761699971083",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2115469600242700519",
+ "kind": "reply",
+ "metrics": {
+  "likes": 35,
+  "replies": 8,
+  "reposts": 0,
+  "views": 6651
+ },
+ "postedAt": "2026-10-28T15:43:50.000Z",
+ "replyTo": {
+  "postId": "2115463761699971083",
+  "handle": "Foxsquire"
+ },
+ "text": "It is much more expensive today, it is harder, but it's still very much achievable. You want to compare prices without comparing the lifestyle and sacrifices too.  In the 80's people got started on saving very young and were consistent. The avocado is certainly a big factor.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2115469600242700519",
+ "harness": {
+  "run": "2026-10-31T04-36-38Z",
+  "manifest_sha256": "4ed1a5ced8c750ca12e8ad455fcb0440edc42dc649d9b9187902e0982ccc36b8",
+  "query": "from:BobLoukas since:2026-10-26 until:2026-11-01"
+ }
+}

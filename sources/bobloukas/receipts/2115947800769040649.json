@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:36:42.498Z",
+ "cashtags": [],
+ "conversationId": "2115944292451577867",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2115947800769040649",
+ "kind": "reply",
+ "metrics": {
+  "likes": 5,
+  "replies": 0,
+  "reposts": 0,
+  "views": 1480
+ },
+ "postedAt": "2026-10-29T23:24:02.000Z",
+ "replyTo": {
+  "postId": "2115947089788100692",
+  "handle": "Bitcoinsearch"
+ },
+ "text": "It’s a question. \n\nWhy you mad, bro?",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2115947800769040649",
+ "harness": {
+  "run": "2026-10-31T04-36-38Z",
+  "manifest_sha256": "4ed1a5ced8c750ca12e8ad455fcb0440edc42dc649d9b9187902e0982ccc36b8",
+  "query": "from:BobLoukas since:2026-10-26 until:2026-11-01"
+ }
+}

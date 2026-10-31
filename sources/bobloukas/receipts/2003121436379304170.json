@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:44.068Z",
+ "cashtags": [],
+ "conversationId": "2002941617075011650",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2003121436379304170",
+ "kind": "reply",
+ "metrics": {
+  "likes": 70,
+  "replies": 4,
+  "reposts": 1,
+  "views": 23651
+ },
+ "postedAt": "2025-12-22T15:12:21.000Z",
+ "replyTo": {
+  "postId": "2002941617075011650",
+  "handle": "CirrusNFT"
+ },
+ "text": "Hope that lender isn't at all surprised to take a loss on that.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2003121436379304170",
+ "harness": {
+  "run": "2026-10-31T03-28-37Z",
+  "manifest_sha256": "9d13b999b16b71141a9123223a30beac3017eedee0e627ab1a0efb00c27a8930",
+  "query": "from:BobLoukas since:2025-12-20 until:2025-12-30"
+ }
+}

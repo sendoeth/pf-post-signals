@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:14.212Z",
+ "cashtags": [],
+ "conversationId": "2015139349847834674",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2015141510103158833",
+ "kind": "reply",
+ "metrics": {
+  "likes": 52,
+  "replies": 9,
+  "reposts": 0,
+  "views": 1536
+ },
+ "postedAt": "2026-01-24T19:15:50.000Z",
+ "replyTo": {
+  "postId": "2015141032774509003",
+  "handle": "NatPagleCosplay"
+ },
+ "text": "The right to protest. \nRandomly being asked to provide evidence of being a citizen. \nBreaking into a citizens home without a warrant. \n\nWake up.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2015141510103158833",
+ "harness": {
+  "run": "2026-10-31T03-29-09Z",
+  "manifest_sha256": "12b6383eb0d3e548fb1ff7b7fa27ac18c6544170639bb262e25d9278c33ad772",
+  "query": "from:BobLoukas since:2026-01-19 until:2026-01-29"
+ }
+}

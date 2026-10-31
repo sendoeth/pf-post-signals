@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:08.040Z",
+ "cashtags": [],
+ "conversationId": "1986191000281264467",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1986200521238040820",
+ "kind": "reply",
+ "metrics": {
+  "likes": 50,
+  "replies": 0,
+  "reposts": 1,
+  "views": 4711
+ },
+ "postedAt": "2025-11-05T22:34:40.000Z",
+ "replyTo": {
+  "postId": "1986200274185429441",
+  "handle": "domi_esser"
+ },
+ "text": "Yes next few weeks want to see this low put behind us.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1986200521238040820",
+ "harness": {
+  "run": "2026-10-31T03-10-01Z",
+  "manifest_sha256": "3844915c6905bd8c09b21e28b77ba45472ed71277b155e9aca6ad52457c02037",
+  "query": "from:BobLoukas since:2025-10-31 until:2025-11-10"
+ }
+}

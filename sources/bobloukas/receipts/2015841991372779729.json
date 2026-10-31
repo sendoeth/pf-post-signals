@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:14.211Z",
+ "cashtags": [],
+ "conversationId": "2015841991372779729",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2015841991372779729",
+ "kind": "post",
+ "metrics": {
+  "likes": 848,
+  "replies": 79,
+  "reposts": 47,
+  "views": 118842
+ },
+ "postedAt": "2026-01-26T17:39:17.000Z",
+ "replyTo": null,
+ "text": "Week 10 for #Bitcoin after what was a major sentiment clearing Cycle low in Nov. In a bull market, that was a BTD event and would be pushing ATH's now, like stocks. \n\nAn extremely anemic and poor response to date.  Has nothing to do with gold.  \n\nIf stocks punch through ATH's here, this chart probably paints a little excitement for bulls.  If stocks somehow fail to follow through.........",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2015841991372779729",
+ "harness": {
+  "run": "2026-10-31T03-29-09Z",
+  "manifest_sha256": "12b6383eb0d3e548fb1ff7b7fa27ac18c6544170639bb262e25d9278c33ad772",
+  "query": "from:BobLoukas since:2026-01-19 until:2026-01-29"
+ }
+}

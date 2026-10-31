@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:34.212Z",
+ "cashtags": [],
+ "conversationId": "2001671214968783222",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2001671214968783222",
+ "kind": "post",
+ "metrics": {
+  "likes": 544,
+  "replies": 50,
+  "reposts": 9,
+  "views": 52538
+ },
+ "postedAt": "2025-12-18T15:09:41.000Z",
+ "replyTo": null,
+ "text": "Given how it's trading,. Bitcoin has a lot riding on an Equity market holiday rally hope.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2001671214968783222",
+ "harness": {
+  "run": "2026-10-31T03-28-29Z",
+  "manifest_sha256": "6b809f4562719e0f7de013cb2199555f0361999760d9b9ef86799734f195de03",
+  "query": "from:BobLoukas since:2025-12-15 until:2025-12-20"
+ }
+}

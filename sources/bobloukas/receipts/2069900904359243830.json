@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:03:48.265Z",
+ "cashtags": [],
+ "conversationId": "2069870795178803267",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2069900904359243830",
+ "kind": "reply",
+ "metrics": {
+  "likes": 6,
+  "replies": 0,
+  "reposts": 0,
+  "views": 1050
+ },
+ "postedAt": "2026-06-24T21:50:07.000Z",
+ "replyTo": {
+  "postId": "2069899876687564894",
+  "handle": "lourenco_vs"
+ },
+ "text": "That’s not how most people position it though.  And you know that.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2069900904359243830",
+ "harness": {
+  "run": "2026-10-31T04-03-43Z",
+  "manifest_sha256": "151afdee8bedac9fee9cf5b5571f2bc7c3f8925a0be613401ca72cfa26688b6d",
+  "query": "from:BobLoukas since:2026-06-23 until:2026-06-28"
+ }
+}

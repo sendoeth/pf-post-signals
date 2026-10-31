@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:03:50.138Z",
+ "cashtags": [],
+ "conversationId": "2068320442331369981",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2069769304262734171",
+ "kind": "reply",
+ "metrics": {
+  "likes": 12,
+  "replies": 2,
+  "reposts": 1,
+  "views": 2247
+ },
+ "postedAt": "2026-06-24T13:07:11.000Z",
+ "replyTo": {
+  "postId": "2069763577947336948",
+  "handle": "J0nnyMang0"
+ },
+ "text": "If anyone believes that bitcoin will never (maybe not this time) go through periods of 5 to 10 yrs of sideways action I strongly believe they will be mistaken.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2069769304262734171",
+ "harness": {
+  "run": "2026-10-31T04-03-43Z",
+  "manifest_sha256": "151afdee8bedac9fee9cf5b5571f2bc7c3f8925a0be613401ca72cfa26688b6d",
+  "query": "from:BobLoukas since:2026-06-23 until:2026-06-28"
+ }
+}

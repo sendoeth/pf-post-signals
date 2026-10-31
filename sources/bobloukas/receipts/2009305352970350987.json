@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:51.696Z",
+ "cashtags": [],
+ "conversationId": "2009291616217903397",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2009305352970350987",
+ "kind": "reply",
+ "metrics": {
+  "likes": 8,
+  "replies": 0,
+  "reposts": 0,
+  "views": 639
+ },
+ "postedAt": "2026-01-08T16:45:01.000Z",
+ "replyTo": {
+  "postId": "2009301631616102777",
+  "handle": "Alpha_CoinFlip"
+ },
+ "text": "every single trading strategy is build on assumptions and model parameters.  Thats not the goal of the model.  It's designed to level check your own views as my strategy is highly discretionary and not algorithmic.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2009305352970350987",
+ "harness": {
+  "run": "2026-10-31T03-28-48Z",
+  "manifest_sha256": "15f3f120834a9e146f93308ba01d65815256ffe13b590dc9e35f844e48ccf261",
+  "query": "from:BobLoukas since:2025-12-30 until:2026-01-09"
+ }
+}

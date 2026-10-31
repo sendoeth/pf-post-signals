@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:37.933Z",
+ "cashtags": [],
+ "conversationId": "2017650415932785073",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2017666832178536662",
+ "kind": "reply",
+ "metrics": {
+  "likes": 14,
+  "replies": 1,
+  "reposts": 0,
+  "views": 1520
+ },
+ "postedAt": "2026-01-31T18:30:33.000Z",
+ "replyTo": {
+  "postId": "2017663038153806234",
+  "handle": "JeanCla20598188"
+ },
+ "text": "Na we ride with what we have.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2017666832178536662",
+ "harness": {
+  "run": "2026-10-31T03-29-33Z",
+  "manifest_sha256": "14f0ea84840c9dca9fe00212e469c77a2ebdd67bd750609b8a6bddcb4356ba1c",
+  "query": "from:BobLoukas since:2026-01-29 until:2026-02-03"
+ }
+}

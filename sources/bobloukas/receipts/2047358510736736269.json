@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:46:58.839Z",
+ "cashtags": [],
+ "conversationId": "2047315362807435656",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2047358510736736269",
+ "kind": "reply",
+ "metrics": {
+  "likes": 19,
+  "replies": 3,
+  "reposts": 0,
+  "views": 4519
+ },
+ "postedAt": "2026-04-23T16:54:41.000Z",
+ "replyTo": {
+  "postId": "2047356974195511369",
+  "handle": "HayKing369"
+ },
+ "text": "I'm long only",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2047358510736736269",
+ "harness": {
+  "run": "2026-10-31T03-46-54Z",
+  "manifest_sha256": "d66bf07857f47292cdfd802d2817253a59a804ad438a1e7c7e149ca9c0a4fd10",
+  "query": "from:BobLoukas since:2026-04-19 until:2026-04-24"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:01.651Z",
+ "cashtags": [],
+ "conversationId": "2011494459339583899",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2011889948564328880",
+ "kind": "reply",
+ "metrics": {
+  "likes": 12,
+  "replies": 3,
+  "reposts": 0,
+  "views": 1987
+ },
+ "postedAt": "2026-01-15T19:55:17.000Z",
+ "replyTo": {
+  "postId": "2011838855809466424",
+  "handle": "Greysonshreds"
+ },
+ "text": "I only bought at $610.  Not a trade. Something to sock away so i dont have regret with XMR one day being $20k.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2011889948564328880",
+ "harness": {
+  "run": "2026-10-31T03-28-58Z",
+  "manifest_sha256": "85f34bbfce551087a183cda6c242ec59865f566dc1f56165cc796d53128e011e",
+  "query": "from:BobLoukas since:2026-01-09 until:2026-01-19"
+ }
+}

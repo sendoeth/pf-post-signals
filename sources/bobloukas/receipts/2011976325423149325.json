@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:01.651Z",
+ "cashtags": [],
+ "conversationId": "2011494459339583899",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2011976325423149325",
+ "kind": "reply",
+ "metrics": {
+  "likes": 2,
+  "replies": 0,
+  "reposts": 0,
+  "views": 864
+ },
+ "postedAt": "2026-01-16T01:38:31.000Z",
+ "replyTo": {
+  "postId": "2011947663999086886",
+  "handle": "JoaoOmfg"
+ },
+ "text": "Such is life.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2011976325423149325",
+ "harness": {
+  "run": "2026-10-31T03-28-58Z",
+  "manifest_sha256": "85f34bbfce551087a183cda6c242ec59865f566dc1f56165cc796d53128e011e",
+  "query": "from:BobLoukas since:2026-01-09 until:2026-01-19"
+ }
+}

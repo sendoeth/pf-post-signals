@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:00.736Z",
+ "cashtags": [],
+ "conversationId": "2046741024530206910",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2046893338029134166",
+ "kind": "reply",
+ "metrics": {
+  "likes": 148,
+  "replies": 3,
+  "reposts": 1,
+  "views": 13305
+ },
+ "postedAt": "2026-04-22T10:06:15.000Z",
+ "replyTo": {
+  "postId": "2046741024530206910",
+  "handle": "Jeffreyw5000"
+ },
+ "text": "Goat?  \n\nHe made well over 200 investements in like 12-24 months, with stolen money.  Basically anyone that pitched him.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2046893338029134166",
+ "harness": {
+  "run": "2026-10-31T03-46-54Z",
+  "manifest_sha256": "d66bf07857f47292cdfd802d2817253a59a804ad438a1e7c7e149ca9c0a4fd10",
+  "query": "from:BobLoukas since:2026-04-19 until:2026-04-24"
+ }
+}

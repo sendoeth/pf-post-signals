@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:55.716Z",
+ "cashtags": [],
+ "conversationId": "1995900126137929880",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1995901664939704572",
+ "kind": "reply",
+ "metrics": {
+  "likes": 90,
+  "replies": 3,
+  "reposts": 0,
+  "views": 12288
+ },
+ "postedAt": "2025-12-02T17:03:33.000Z",
+ "replyTo": {
+  "postId": "1995900126137929880",
+  "handle": "PeterLBrandt"
+ },
+ "text": "Remember that time well. \n\nThe chart is stretched, but doesn't seem to have anywhere near the same euphoria today though.  Not yet at least",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1995901664939704572",
+ "harness": {
+  "run": "2026-10-31T03-11-49Z",
+  "manifest_sha256": "44284fd2b0f53f602994edeb448d034ad7c1447b6074bcf56e01e43a4ce3849c",
+  "query": "from:BobLoukas since:2025-11-30 until:2025-12-10"
+ }
+}

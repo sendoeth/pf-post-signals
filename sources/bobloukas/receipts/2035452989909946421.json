@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:40.734Z",
+ "cashtags": [],
+ "conversationId": "2035438244817453291",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2035452989909946421",
+ "kind": "reply",
+ "metrics": {
+  "likes": 82,
+  "replies": 1,
+  "reposts": 0,
+  "views": 7082
+ },
+ "postedAt": "2026-03-21T20:26:24.000Z",
+ "replyTo": {
+  "postId": "2035438244817453291",
+  "handle": "JasonrShuman"
+ },
+ "text": "Higher.  And calling them traders is rich.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2035452989909946421",
+ "harness": {
+  "run": "2026-10-31T03-30-36Z",
+  "manifest_sha256": "4650ab529d8aa763c70824f28353a63102c967a6a59d9111c9a5115d681b6e4d",
+  "query": "from:BobLoukas since:2026-03-20 until:2026-03-30"
+ }
+}

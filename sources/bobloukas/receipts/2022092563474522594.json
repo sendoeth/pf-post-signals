@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:03.310Z",
+ "cashtags": [],
+ "conversationId": "2022039063981871390",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2022092563474522594",
+ "kind": "reply",
+ "metrics": {
+  "likes": 24,
+  "replies": 2,
+  "reposts": 0,
+  "views": 1975
+ },
+ "postedAt": "2026-02-12T23:36:50.000Z",
+ "replyTo": {
+  "postId": "2022075197399162974",
+  "handle": "donaldblakee"
+ },
+ "text": "That’s a little extreme. \n\nBut extreme is possible.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2022092563474522594",
+ "harness": {
+  "run": "2026-10-31T03-29-58Z",
+  "manifest_sha256": "046caa1b799b16c1e3d97c7b87fc3565fd829c623a7d127628756b707828f2b0",
+  "query": "from:BobLoukas since:2026-02-08 until:2026-02-18"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:36:40.398Z",
+ "cashtags": [],
+ "conversationId": "2116199680157647216",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2116212800955576797",
+ "kind": "reply",
+ "metrics": {
+  "likes": 48,
+  "replies": 3,
+  "reposts": 0,
+  "views": 2060
+ },
+ "postedAt": "2026-10-30T16:57:03.000Z",
+ "replyTo": {
+  "postId": "2116209455930954061",
+  "handle": "Timothy18108360"
+ },
+ "text": "My track record on getting people in and out of gold/silver bull markets over the decade+ has been unmatched.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2116212800955576797",
+ "harness": {
+  "run": "2026-10-31T04-36-38Z",
+  "manifest_sha256": "4ed1a5ced8c750ca12e8ad455fcb0440edc42dc649d9b9187902e0982ccc36b8",
+  "query": "from:BobLoukas since:2026-10-26 until:2026-11-01"
+ }
+}

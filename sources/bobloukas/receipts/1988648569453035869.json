@@ -1,0 +1,27 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:09.122Z",
+ "cashtags": [
+  "MSTR"
+ ],
+ "conversationId": "1988648569453035869",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1988648569453035869",
+ "kind": "post",
+ "metrics": {
+  "likes": 1417,
+  "replies": 171,
+  "reposts": 122,
+  "views": 185008
+ },
+ "postedAt": "2025-11-12T16:42:20.000Z",
+ "replyTo": null,
+ "text": "$MSTR is in a clear bear market structure now.  Down -35% over 12 months and DAT's out of demand/money, all while we're in a bull market!  \n\nThis is a proxy for Bitcoin speculative demand and certainly not a good sign for this phase of the 4yr Cycle.  \n\nThis is the concern for Bitcoin, which also is structurally teetering on the edge.  We like to see dips in a bull market bought quickly, not languish.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1988648569453035869",
+ "harness": {
+  "run": "2026-10-31T03-11-03Z",
+  "manifest_sha256": "b0cd5b45f562107ecbd3f676474d96aae1d41979c54b4e544f26c5dfa8cecd1e",
+  "query": "from:BobLoukas since:2025-11-10 until:2025-11-15"
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:46:36.872Z",
+ "cashtags": [],
+ "conversationId": "2044602429002367330",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2044935421319090686",
+ "kind": "repost",
+ "metrics": {
+  "likes": 1632,
+  "replies": 76,
+  "reposts": 230,
+  "views": 765683
+ },
+ "postedAt": "2026-04-17T00:26:12.000Z",
+ "replyTo": null,
+ "text": "1/ I’ve spent most of the last few weeks since the Google, Caltech papers to think about tradable implications around quantum computing and crypto\n\nspecifically what happens to the market around q-day",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2044935421319090686",
+ "harness": {
+  "run": "2026-10-31T03-46-34Z",
+  "manifest_sha256": "c27074f7b8d8c85ca6aaed1a98de9a36b44ad09e077f54e4c1ddc2264c260dfe",
+  "query": "from:BobLoukas since:2026-04-14 until:2026-04-19"
+ }
+}

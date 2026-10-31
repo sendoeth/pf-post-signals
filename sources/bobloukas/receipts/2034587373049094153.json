@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:31.560Z",
+ "cashtags": [],
+ "conversationId": "2034586449551507627",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2034587373049094153",
+ "kind": "reply",
+ "metrics": {
+  "likes": 99,
+  "replies": 2,
+  "reposts": 0,
+  "views": 8248
+ },
+ "postedAt": "2026-03-19T11:06:45.000Z",
+ "replyTo": {
+  "postId": "2034586821351350472",
+  "handle": "maxpain_crypto"
+ },
+ "text": "That would be the more likely scenario",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2034587373049094153",
+ "harness": {
+  "run": "2026-10-31T03-30-28Z",
+  "manifest_sha256": "01e2451c651b7ec60ad39a25711bb00e031bd0ff8d61791c7b1a209fde870cd4",
+  "query": "from:BobLoukas since:2026-03-10 until:2026-03-20"
+ }
+}

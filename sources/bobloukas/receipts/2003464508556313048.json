@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:44.067Z",
+ "cashtags": [],
+ "conversationId": "2003460969625002221",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2003464508556313048",
+ "kind": "reply",
+ "metrics": {
+  "likes": 38,
+  "replies": 6,
+  "reposts": 0,
+  "views": 4590
+ },
+ "postedAt": "2025-12-23T13:55:36.000Z",
+ "replyTo": {
+  "postId": "2003461925674602616",
+  "handle": "LongJonSolana"
+ },
+ "text": "Bitcoin is up a whole 8% since then.  😂\n\nEverything else I allocated too is big double digits. \n\nThanks for your donation.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2003464508556313048",
+ "harness": {
+  "run": "2026-10-31T03-28-37Z",
+  "manifest_sha256": "9d13b999b16b71141a9123223a30beac3017eedee0e627ab1a0efb00c27a8930",
+  "query": "from:BobLoukas since:2025-12-20 until:2025-12-30"
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:05.728Z",
+ "cashtags": [],
+ "conversationId": "1986462949695762627",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1986462949695762627",
+ "kind": "post",
+ "metrics": {
+  "likes": 1121,
+  "replies": 55,
+  "reposts": 128,
+  "views": 85216
+ },
+ "postedAt": "2025-11-06T15:57:28.000Z",
+ "replyTo": null,
+ "text": "I believe gold's mini blowoff represents the the top of the FIRST half of the 8 yr cycle.   A 3-6 month period of rebasing before the 2nd leg of this bull market gets going.  You would want to hold through, and add on big dips.  #miners for the win in the 2nd leg.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1986462949695762627",
+ "harness": {
+  "run": "2026-10-31T03-10-01Z",
+  "manifest_sha256": "3844915c6905bd8c09b21e28b77ba45472ed71277b155e9aca6ad52457c02037",
+  "query": "from:BobLoukas since:2025-10-31 until:2025-11-10"
+ }
+}

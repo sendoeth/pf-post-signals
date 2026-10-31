@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:34.213Z",
+ "cashtags": [],
+ "conversationId": "2001352880104857972",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2001356155155812439",
+ "kind": "reply",
+ "metrics": {
+  "likes": 8,
+  "replies": 0,
+  "reposts": 0,
+  "views": 3863
+ },
+ "postedAt": "2025-12-17T18:17:45.000Z",
+ "replyTo": {
+  "postId": "2001352880104857972",
+  "handle": "phantom_scribbs"
+ },
+ "text": "Fake news, the image shows a Last Selfie selling for just $3m-ish.  $13m or it's not true.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2001356155155812439",
+ "harness": {
+  "run": "2026-10-31T03-28-29Z",
+  "manifest_sha256": "6b809f4562719e0f7de013cb2199555f0361999760d9b9ef86799734f195de03",
+  "query": "from:BobLoukas since:2025-12-15 until:2025-12-20"
+ }
+}

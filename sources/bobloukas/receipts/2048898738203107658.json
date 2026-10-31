@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:09.203Z",
+ "cashtags": [],
+ "conversationId": "2048863961282719976",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2048898738203107658",
+ "kind": "reply",
+ "metrics": {
+  "likes": 31,
+  "replies": 1,
+  "reposts": 2,
+  "views": 3714
+ },
+ "postedAt": "2026-04-27T22:55:00.000Z",
+ "replyTo": {
+  "postId": "2048863961282719976",
+  "handle": "mattmedved"
+ },
+ "text": "The NFT’s/digital art world needs to get beyond “crypto”, it’s holding it back.  \n\nIt’s a main stream potential movement that is being severely anchored.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2048898738203107658",
+ "harness": {
+  "run": "2026-10-31T03-47-04Z",
+  "manifest_sha256": "5336994f71bbe4f700cf60362be35add5dbd82d5eddf921d84495b46cbd2c660",
+  "query": "from:BobLoukas since:2026-04-24 until:2026-04-29"
+ }
+}

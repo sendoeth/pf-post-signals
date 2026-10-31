@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:53.749Z",
+ "cashtags": [],
+ "conversationId": "2008950654426136960",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2008953229871333759",
+ "kind": "reply",
+ "metrics": {
+  "likes": 9,
+  "replies": 2,
+  "reposts": 0,
+  "views": 878
+ },
+ "postedAt": "2026-01-07T17:25:49.000Z",
+ "replyTo": {
+  "postId": "2008953066918158746",
+  "handle": "OboteSan"
+ },
+ "text": "Yes you're taking from the overall equity bucket.\n\nI'm going to work on a more granular portfolio in the very near future.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2008953229871333759",
+ "harness": {
+  "run": "2026-10-31T03-28-48Z",
+  "manifest_sha256": "15f3f120834a9e146f93308ba01d65815256ffe13b590dc9e35f844e48ccf261",
+  "query": "from:BobLoukas since:2025-12-30 until:2026-01-09"
+ }
+}

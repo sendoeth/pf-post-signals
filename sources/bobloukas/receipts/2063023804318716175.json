@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:58.250Z",
+ "cashtags": [],
+ "conversationId": "2062880187629363236",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2063023804318716175",
+ "kind": "reply",
+ "metrics": {
+  "likes": 2,
+  "replies": 1,
+  "reposts": 0,
+  "views": 512
+ },
+ "postedAt": "2026-06-05T22:22:58.000Z",
+ "replyTo": {
+  "postId": "2062974363180175692",
+  "handle": "Crypto_Aki"
+ },
+ "text": "Great use case. Will be around. Just don’t know why the token needs to be valuable.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2063023804318716175",
+ "harness": {
+  "run": "2026-10-31T03-47-55Z",
+  "manifest_sha256": "76ee69624ea2b9328b3f138dbfe04636ffc970ec1aa15cc43bb66d8325d64d30",
+  "query": "from:BobLoukas since:2026-06-03 until:2026-06-08"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:55.785Z",
+ "cashtags": [],
+ "conversationId": "2007127239679508509",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2007132273888375156",
+ "kind": "reply",
+ "metrics": {
+  "likes": 69,
+  "replies": 2,
+  "reposts": 0,
+  "views": 8740
+ },
+ "postedAt": "2026-01-02T16:49:59.000Z",
+ "replyTo": {
+  "postId": "2007127239679508509",
+  "handle": "TXMCtrades"
+ },
+ "text": "Such great times.  \n\nGenX'ers fondly talk about it...then parent in the opposite manner.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2007132273888375156",
+ "harness": {
+  "run": "2026-10-31T03-28-48Z",
+  "manifest_sha256": "15f3f120834a9e146f93308ba01d65815256ffe13b590dc9e35f844e48ccf261",
+  "query": "from:BobLoukas since:2025-12-30 until:2026-01-09"
+ }
+}

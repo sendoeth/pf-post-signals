@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:14.456Z",
+ "cashtags": [],
+ "conversationId": "1991265166659391649",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1991265166659391649",
+ "kind": "post",
+ "metrics": {
+  "likes": 757,
+  "replies": 52,
+  "reposts": 14,
+  "views": 73608
+ },
+ "postedAt": "2025-11-19T21:59:46.000Z",
+ "replyTo": null,
+ "text": "Crypto feed giddy and praising Jensen's AI performance is a new low.  But we take what we can.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1991265166659391649",
+ "harness": {
+  "run": "2026-10-31T03-11-12Z",
+  "manifest_sha256": "da998034869f466cf3635ca5dde42938975bc207b093ae8c8984350ea65c57f3",
+  "query": "from:BobLoukas since:2025-11-15 until:2025-11-20"
+ }
+}

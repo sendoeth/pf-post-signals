@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:00.735Z",
+ "cashtags": [],
+ "conversationId": "2046984846489043072",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2047018689233326187",
+ "kind": "reply",
+ "metrics": {
+  "likes": 7,
+  "replies": 1,
+  "reposts": 0,
+  "views": 925
+ },
+ "postedAt": "2026-04-22T18:24:21.000Z",
+ "replyTo": {
+  "postId": "2047018440343380296",
+  "handle": "hindsightoshi"
+ },
+ "text": "So 2 out of 5,000?  \n\nAnd no, I'm literally making a bullish case for BTC",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2047018689233326187",
+ "harness": {
+  "run": "2026-10-31T03-46-54Z",
+  "manifest_sha256": "d66bf07857f47292cdfd802d2817253a59a804ad438a1e7c7e149ca9c0a4fd10",
+  "query": "from:BobLoukas since:2026-04-19 until:2026-04-24"
+ }
+}

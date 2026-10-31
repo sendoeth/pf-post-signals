@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:03.699Z",
+ "cashtags": [],
+ "conversationId": "1986454673964909030",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1986525444854759925",
+ "kind": "reply",
+ "metrics": {
+  "likes": 697,
+  "replies": 36,
+  "reposts": 15,
+  "views": 27412
+ },
+ "postedAt": "2025-11-06T20:05:48.000Z",
+ "replyTo": {
+  "postId": "1986454673964909030",
+  "handle": "EricBalchunas"
+ },
+ "text": "I.e “we need exit liquidity”.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1986525444854759925",
+ "harness": {
+  "run": "2026-10-31T03-10-01Z",
+  "manifest_sha256": "3844915c6905bd8c09b21e28b77ba45472ed71277b155e9aca6ad52457c02037",
+  "query": "from:BobLoukas since:2025-10-31 until:2025-11-10"
+ }
+}

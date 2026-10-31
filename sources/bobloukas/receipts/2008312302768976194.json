@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:53.750Z",
+ "cashtags": [],
+ "conversationId": "2008233015290613962",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2008312302768976194",
+ "kind": "reply",
+ "metrics": {
+  "likes": 15,
+  "replies": 0,
+  "reposts": 0,
+  "views": 1952
+ },
+ "postedAt": "2026-01-05T22:59:00.000Z",
+ "replyTo": {
+  "postId": "2008235555914739749",
+  "handle": "Rayarn0ld"
+ },
+ "text": "In that case, i wont be wrong, i will be less allocated.  🤣",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2008312302768976194",
+ "harness": {
+  "run": "2026-10-31T03-28-48Z",
+  "manifest_sha256": "15f3f120834a9e146f93308ba01d65815256ffe13b590dc9e35f844e48ccf261",
+  "query": "from:BobLoukas since:2025-12-30 until:2026-01-09"
+ }
+}

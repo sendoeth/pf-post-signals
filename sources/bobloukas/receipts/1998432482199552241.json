@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:51.418Z",
+ "cashtags": [],
+ "conversationId": "1998432482199552241",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1998432482199552241",
+ "kind": "post",
+ "metrics": {
+  "likes": 1307,
+  "replies": 80,
+  "reposts": 82,
+  "views": 78394
+ },
+ "postedAt": "2025-12-09T16:40:07.000Z",
+ "replyTo": null,
+ "text": "Stocks and Bitcoin have the right cycle setup for this move to finally get some upside momentum going.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1998432482199552241",
+ "harness": {
+  "run": "2026-10-31T03-11-49Z",
+  "manifest_sha256": "44284fd2b0f53f602994edeb448d034ad7c1447b6074bcf56e01e43a4ce3849c",
+  "query": "from:BobLoukas since:2025-11-30 until:2025-12-10"
+ }
+}

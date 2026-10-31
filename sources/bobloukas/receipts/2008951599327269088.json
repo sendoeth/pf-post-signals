@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:53.750Z",
+ "cashtags": [],
+ "conversationId": "2008950654426136960",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2008951599327269088",
+ "kind": "reply",
+ "metrics": {
+  "likes": 9,
+  "replies": 1,
+  "reposts": 0,
+  "views": 3179
+ },
+ "postedAt": "2026-01-07T17:19:20.000Z",
+ "replyTo": {
+  "postId": "2008951011373650234",
+  "handle": "OboteSan"
+ },
+ "text": "That portfolio covers indices for a broad Cycle perspective.  Not individual names in long term accounts.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2008951599327269088",
+ "harness": {
+  "run": "2026-10-31T03-28-48Z",
+  "manifest_sha256": "15f3f120834a9e146f93308ba01d65815256ffe13b590dc9e35f844e48ccf261",
+  "query": "from:BobLoukas since:2025-12-30 until:2026-01-09"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:46:58.840Z",
+ "cashtags": [],
+ "conversationId": "2046984846489043072",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2047106876035264776",
+ "kind": "reply",
+ "metrics": {
+  "likes": 10,
+  "replies": 1,
+  "reposts": 0,
+  "views": 1786
+ },
+ "postedAt": "2026-04-23T00:14:47.000Z",
+ "replyTo": {
+  "postId": "2047072390950387712",
+  "handle": "Sykodelic_"
+ },
+ "text": "Not possible by my definition.  Maybe it is with yours.  Word can have many meanings.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2047106876035264776",
+ "harness": {
+  "run": "2026-10-31T03-46-54Z",
+  "manifest_sha256": "d66bf07857f47292cdfd802d2817253a59a804ad438a1e7c7e149ca9c0a4fd10",
+  "query": "from:BobLoukas since:2026-04-19 until:2026-04-24"
+ }
+}

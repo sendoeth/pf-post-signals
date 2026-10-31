@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:33.101Z",
+ "cashtags": [],
+ "conversationId": "1991879586565799947",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1991881119114187207",
+ "kind": "reply",
+ "metrics": {
+  "likes": 44,
+  "replies": 3,
+  "reposts": 0,
+  "views": 4129
+ },
+ "postedAt": "2025-11-21T14:47:20.000Z",
+ "replyTo": {
+  "postId": "1991880721947115879",
+  "handle": "BryptoDegen"
+ },
+ "text": "In a couple of hours when I’m back at my desk.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1991881119114187207",
+ "harness": {
+  "run": "2026-10-31T03-11-28Z",
+  "manifest_sha256": "5b4f94307a59f6b36bf90ded7f7487cb77a37651415230998ae74712e788ac95",
+  "query": "from:BobLoukas since:2025-11-20 until:2025-11-25"
+ }
+}

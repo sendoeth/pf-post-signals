@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:39.722Z",
+ "cashtags": [],
+ "conversationId": "2004645656665985178",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2004646062225850443",
+ "kind": "reply",
+ "metrics": {
+  "likes": 44,
+  "replies": 3,
+  "reposts": 0,
+  "views": 4821
+ },
+ "postedAt": "2025-12-26T20:10:40.000Z",
+ "replyTo": {
+  "postId": "2004645805014339769",
+  "handle": "rezzonico"
+ },
+ "text": "I dont like to give up long term positions in a bull market",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2004646062225850443",
+ "harness": {
+  "run": "2026-10-31T03-28-37Z",
+  "manifest_sha256": "9d13b999b16b71141a9123223a30beac3017eedee0e627ab1a0efb00c27a8930",
+  "query": "from:BobLoukas since:2025-12-20 until:2025-12-30"
+ }
+}

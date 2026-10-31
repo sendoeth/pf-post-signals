@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:24.288Z",
+ "cashtags": [],
+ "conversationId": "1999181449191207337",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1999214899176804677",
+ "kind": "reply",
+ "metrics": {
+  "likes": 45,
+  "replies": 4,
+  "reposts": 1,
+  "views": 5256
+ },
+ "postedAt": "2025-12-11T20:29:10.000Z",
+ "replyTo": {
+  "postId": "1999211711879086196",
+  "handle": "KAProductions"
+ },
+ "text": "No chance in hell this will be a failed bitcoin cycle",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1999214899176804677",
+ "harness": {
+  "run": "2026-10-31T03-28-21Z",
+  "manifest_sha256": "c02ce20beb826e706b2b33c18668b6975c7f6e723f9ba8dc68eba93123f5e55a",
+  "query": "from:BobLoukas since:2025-12-10 until:2025-12-15"
+ }
+}

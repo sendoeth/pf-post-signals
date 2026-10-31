@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:40.734Z",
+ "cashtags": [],
+ "conversationId": "2036039279395148145",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2036043494410576339",
+ "kind": "reply",
+ "metrics": {
+  "likes": 26,
+  "replies": 3,
+  "reposts": 0,
+  "views": 3901
+ },
+ "postedAt": "2026-03-23T11:32:51.000Z",
+ "replyTo": {
+  "postId": "2036040294290874633",
+  "handle": "drfluffski"
+ },
+ "text": "I was literally adding long orders before the pump and missed it by seconds.   Too late for me now.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2036043494410576339",
+ "harness": {
+  "run": "2026-10-31T03-30-36Z",
+  "manifest_sha256": "4650ab529d8aa763c70824f28353a63102c967a6a59d9111c9a5115d681b6e4d",
+  "query": "from:BobLoukas since:2026-03-20 until:2026-03-30"
+ }
+}

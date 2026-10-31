@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:09.204Z",
+ "cashtags": [],
+ "conversationId": "2048804198762877414",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2048804198762877414",
+ "kind": "post",
+ "metrics": {
+  "likes": 1036,
+  "replies": 99,
+  "reposts": 92,
+  "views": 129061
+ },
+ "postedAt": "2026-04-27T16:39:20.000Z",
+ "replyTo": null,
+ "text": "Silver bulls.  You're unlikely to see anything happen until 2027.  \nSilver (in a bull market) likes to go on these 20-30 week blowoff moves and then spend 12 to 18 months backfilling, in preparation for the next blow-off.  \n\nWhere as gold is generally the more consistent gainer.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2048804198762877414",
+ "harness": {
+  "run": "2026-10-31T03-47-04Z",
+  "manifest_sha256": "5336994f71bbe4f700cf60362be35add5dbd82d5eddf921d84495b46cbd2c660",
+  "query": "from:BobLoukas since:2026-04-24 until:2026-04-29"
+ }
+}

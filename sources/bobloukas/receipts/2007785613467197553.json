@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:53.750Z",
+ "cashtags": [],
+ "conversationId": "2007557337184370971",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2007785613467197553",
+ "kind": "repost",
+ "metrics": {
+  "likes": 657,
+  "replies": 48,
+  "reposts": 44,
+  "views": 86308
+ },
+ "postedAt": "2026-01-04T12:06:07.000Z",
+ "replyTo": null,
+ "text": "Published a blog post on my The Financial Tap website covering 2025 and a look into 2026.  \n\nIt's a public video.  Cheers.\n\nLink >  https://thefinancialtap.com/2026/01/year-in-review-and-what-might-lie-ahead/",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2007785613467197553",
+ "harness": {
+  "run": "2026-10-31T03-28-48Z",
+  "manifest_sha256": "15f3f120834a9e146f93308ba01d65815256ffe13b590dc9e35f844e48ccf261",
+  "query": "from:BobLoukas since:2025-12-30 until:2026-01-09"
+ }
+}

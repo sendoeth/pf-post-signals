@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:12.025Z",
+ "cashtags": [],
+ "conversationId": "2025948913916674309",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2025949818577703205",
+ "kind": "reply",
+ "metrics": {
+  "likes": 49,
+  "replies": 4,
+  "reposts": 1,
+  "views": 3653
+ },
+ "postedAt": "2026-02-23T15:04:11.000Z",
+ "replyTo": {
+  "postId": "2025949667159146899",
+  "handle": "nr1memeonbtc"
+ },
+ "text": "Between now and the eventual bear lows there will be.  \n\nLOT of time left.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2025949818577703205",
+ "harness": {
+  "run": "2026-10-31T03-30-09Z",
+  "manifest_sha256": "f4cb50b74e111333644768234a62c37c553d27111cb37124caf5fe4bcbd50de6",
+  "query": "from:BobLoukas since:2026-02-18 until:2026-02-28"
+ }
+}

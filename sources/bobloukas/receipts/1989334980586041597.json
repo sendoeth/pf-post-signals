@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:25.223Z",
+ "cashtags": [],
+ "conversationId": "1989332793776619714",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1989334980586041597",
+ "kind": "reply",
+ "metrics": {
+  "likes": 28,
+  "replies": 1,
+  "reposts": 0,
+  "views": 2030
+ },
+ "postedAt": "2025-11-14T14:09:54.000Z",
+ "replyTo": {
+  "postId": "1989333539356115161",
+  "handle": "DIVIDIND"
+ },
+ "text": "No he's been cashing out just fine.\n\nI feel for those who bought the bs.  And hate on all those accounts that peddle this.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1989334980586041597",
+ "harness": {
+  "run": "2026-10-31T03-10-22Z",
+  "manifest_sha256": "8219512b7c4ed9295ff50779c6865723e1b25c0ba9424dff8dd584d91eeef4c2",
+  "query": "from:BobLoukas since:2025-11-10 until:2025-11-15"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:13.950Z",
+ "cashtags": [],
+ "conversationId": "2024086492931633153",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2024531263223120080",
+ "kind": "reply",
+ "metrics": {
+  "likes": 3,
+  "replies": 0,
+  "reposts": 1,
+  "views": 641
+ },
+ "postedAt": "2026-02-19T17:07:21.000Z",
+ "replyTo": {
+  "postId": "2024352183974842448",
+  "handle": "RealFreedomSaga"
+ },
+ "text": "Institutions like retail follow the same sentiment paths.  The Cycle mirrors this",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2024531263223120080",
+ "harness": {
+  "run": "2026-10-31T03-30-09Z",
+  "manifest_sha256": "f4cb50b74e111333644768234a62c37c553d27111cb37124caf5fe4bcbd50de6",
+  "query": "from:BobLoukas since:2026-02-18 until:2026-02-28"
+ }
+}

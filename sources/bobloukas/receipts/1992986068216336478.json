@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:30.956Z",
+ "cashtags": [],
+ "conversationId": "1992986068216336478",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1992986068216336478",
+ "kind": "post",
+ "metrics": {
+  "likes": 463,
+  "replies": 36,
+  "reposts": 0,
+  "views": 39773
+ },
+ "postedAt": "2025-11-24T15:58:01.000Z",
+ "replyTo": null,
+ "text": "gm\n\nHappy Monday!",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1992986068216336478",
+ "harness": {
+  "run": "2026-10-31T03-11-28Z",
+  "manifest_sha256": "5b4f94307a59f6b36bf90ded7f7487cb77a37651415230998ae74712e788ac95",
+  "query": "from:BobLoukas since:2025-11-20 until:2025-11-25"
+ }
+}

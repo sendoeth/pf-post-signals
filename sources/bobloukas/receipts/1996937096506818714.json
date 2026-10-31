@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:53.467Z",
+ "cashtags": [],
+ "conversationId": "1996935782322368644",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1996937096506818714",
+ "kind": "reply",
+ "metrics": {
+  "likes": 69,
+  "replies": 4,
+  "reposts": 1,
+  "views": 3463
+ },
+ "postedAt": "2025-12-05T13:37:59.000Z",
+ "replyTo": {
+  "postId": "1996935988791193644",
+  "handle": "Angello3400PRMR"
+ },
+ "text": "Who cares what people believe. Markets don't.\n\nGold in 2024/25 has been by far the most profitable thing to trade.  \n\nFocusing exclusively on price really misses the more important fact. It's the quality of the uptrend, the consistency of the move, and the lack of downside vol.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1996937096506818714",
+ "harness": {
+  "run": "2026-10-31T03-11-49Z",
+  "manifest_sha256": "44284fd2b0f53f602994edeb448d034ad7c1447b6074bcf56e01e43a4ce3849c",
+  "query": "from:BobLoukas since:2025-11-30 until:2025-12-10"
+ }
+}

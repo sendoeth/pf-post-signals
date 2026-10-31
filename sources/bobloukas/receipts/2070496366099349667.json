@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:03:45.919Z",
+ "cashtags": [],
+ "conversationId": "2070478947356209374",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2070496366099349667",
+ "kind": "reply",
+ "metrics": {
+  "likes": 2,
+  "replies": 1,
+  "reposts": 0,
+  "views": 1276
+ },
+ "postedAt": "2026-06-26T13:16:16.000Z",
+ "replyTo": {
+  "postId": "2070493738246307928",
+  "handle": "Thein_Sein"
+ },
+ "text": "No it’s only a problem for the owner.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2070496366099349667",
+ "harness": {
+  "run": "2026-10-31T04-03-43Z",
+  "manifest_sha256": "151afdee8bedac9fee9cf5b5571f2bc7c3f8925a0be613401ca72cfa26688b6d",
+  "query": "from:BobLoukas since:2026-06-23 until:2026-06-28"
+ }
+}

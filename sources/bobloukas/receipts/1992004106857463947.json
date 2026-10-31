@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:33.100Z",
+ "cashtags": [],
+ "conversationId": "1991825705219612937",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1992004106857463947",
+ "kind": "reply",
+ "metrics": {
+  "likes": 6,
+  "replies": 1,
+  "reposts": 0,
+  "views": 1332
+ },
+ "postedAt": "2025-11-21T22:56:03.000Z",
+ "replyTo": {
+  "postId": "1991996938544431552",
+  "handle": "thinksupernova"
+ },
+ "text": "We crushed it on silver.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1992004106857463947",
+ "harness": {
+  "run": "2026-10-31T03-11-28Z",
+  "manifest_sha256": "5b4f94307a59f6b36bf90ded7f7487cb77a37651415230998ae74712e788ac95",
+  "query": "from:BobLoukas since:2025-11-20 until:2025-11-25"
+ }
+}

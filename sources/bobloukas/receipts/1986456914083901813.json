@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:05.728Z",
+ "cashtags": [],
+ "conversationId": "1986456914083901813",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1986456914083901813",
+ "kind": "post",
+ "metrics": {
+  "likes": 875,
+  "replies": 94,
+  "reposts": 52,
+  "views": 111638
+ },
+ "postedAt": "2025-11-06T15:33:29.000Z",
+ "replyTo": null,
+ "text": "Not a huge fan of analogs but the MSTR 2021 vs 2025 is hard to ignore.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1986456914083901813",
+ "harness": {
+  "run": "2026-10-31T03-10-01Z",
+  "manifest_sha256": "3844915c6905bd8c09b21e28b77ba45472ed71277b155e9aca6ad52457c02037",
+  "query": "from:BobLoukas since:2025-10-31 until:2025-11-10"
+ }
+}

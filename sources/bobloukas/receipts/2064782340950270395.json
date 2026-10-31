@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:48:09.377Z",
+ "cashtags": [],
+ "conversationId": "2064768925808680992",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2064782340950270395",
+ "kind": "reply",
+ "metrics": {
+  "likes": 6,
+  "replies": 0,
+  "reposts": 0,
+  "views": 3546
+ },
+ "postedAt": "2026-06-10T18:50:46.000Z",
+ "replyTo": {
+  "postId": "2064776220298838492",
+  "handle": "Jojo_invest"
+ },
+ "text": "No don’t think that’s a requirement. There is clear separation from the lows in the window for a new cycle.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2064782340950270395",
+ "harness": {
+  "run": "2026-10-31T03-48-06Z",
+  "manifest_sha256": "485917866faaacba3f6ba610f71bd9e8742dd651e87192dd8b73f98728b3818a",
+  "query": "from:BobLoukas since:2026-06-08 until:2026-06-18"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:09.203Z",
+ "cashtags": [],
+ "conversationId": "2047352775248585119",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2048815574680018981",
+ "kind": "reply",
+ "metrics": {
+  "likes": 1,
+  "replies": 0,
+  "reposts": 0,
+  "views": 412
+ },
+ "postedAt": "2026-04-27T17:24:32.000Z",
+ "replyTo": {
+  "postId": "2048815106801491987",
+  "handle": "GOLDMANTRACKS"
+ },
+ "text": "Why would you register a business in NYC if you're not doing  business there?  🤣",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2048815574680018981",
+ "harness": {
+  "run": "2026-10-31T03-47-04Z",
+  "manifest_sha256": "5336994f71bbe4f700cf60362be35add5dbd82d5eddf921d84495b46cbd2c660",
+  "query": "from:BobLoukas since:2026-04-24 until:2026-04-29"
+ }
+}

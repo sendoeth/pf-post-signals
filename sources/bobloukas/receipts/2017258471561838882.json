@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:41.411Z",
+ "cashtags": [],
+ "conversationId": "2017258471561838882",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2017258471561838882",
+ "kind": "post",
+ "metrics": {
+  "likes": 1326,
+  "replies": 111,
+  "reposts": 55,
+  "views": 249719
+ },
+ "postedAt": "2026-01-30T15:27:53.000Z",
+ "replyTo": null,
+ "text": "That was an epic two year run for gold.  But the juice has been squeezed.  On to the next.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2017258471561838882",
+ "harness": {
+  "run": "2026-10-31T03-29-33Z",
+  "manifest_sha256": "14f0ea84840c9dca9fe00212e469c77a2ebdd67bd750609b8a6bddcb4356ba1c",
+  "query": "from:BobLoukas since:2026-01-29 until:2026-02-03"
+ }
+}

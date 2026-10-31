@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:14.458Z",
+ "cashtags": [],
+ "conversationId": "1991155023271678355",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1991155608318308800",
+ "kind": "reply",
+ "metrics": {
+  "likes": 27,
+  "replies": 2,
+  "reposts": 0,
+  "views": 4074
+ },
+ "postedAt": "2025-11-19T14:44:25.000Z",
+ "replyTo": {
+  "postId": "1991155401010684248",
+  "handle": "starbw_eth"
+ },
+ "text": "Not a good idea, you'd be pulling them out soon.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1991155608318308800",
+ "harness": {
+  "run": "2026-10-31T03-11-12Z",
+  "manifest_sha256": "da998034869f466cf3635ca5dde42938975bc207b093ae8c8984350ea65c57f3",
+  "query": "from:BobLoukas since:2025-11-15 until:2025-11-20"
+ }
+}

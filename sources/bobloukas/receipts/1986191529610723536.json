@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:09.808Z",
+ "cashtags": [],
+ "conversationId": "1986191000281264467",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1986191529610723536",
+ "kind": "reply",
+ "metrics": {
+  "likes": 83,
+  "replies": 5,
+  "reposts": 2,
+  "views": 11780
+ },
+ "postedAt": "2025-11-05T21:58:56.000Z",
+ "replyTo": {
+  "postId": "1986191376602833136",
+  "handle": "PLORisky"
+ },
+ "text": "I dont see any rational reason to be holding alt's.  \n\nAt least not without a clear bull market mode back on, new ath for bitcoin",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1986191529610723536",
+ "harness": {
+  "run": "2026-10-31T03-10-01Z",
+  "manifest_sha256": "3844915c6905bd8c09b21e28b77ba45472ed71277b155e9aca6ad52457c02037",
+  "query": "from:BobLoukas since:2025-10-31 until:2025-11-10"
+ }
+}

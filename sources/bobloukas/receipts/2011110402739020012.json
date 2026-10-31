@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:03.685Z",
+ "cashtags": [],
+ "conversationId": "2011105173104705981",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2011110402739020012",
+ "kind": "reply",
+ "metrics": {
+  "likes": 24,
+  "replies": 1,
+  "reposts": 1,
+  "views": 2259
+ },
+ "postedAt": "2026-01-13T16:17:39.000Z",
+ "replyTo": {
+  "postId": "2011109801288217051",
+  "handle": "WittyChartGuy"
+ },
+ "text": "nothing about this chart yet tells me to sell.  \n\nBut if you're uncomfortable, start taking a little off the table gradually.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2011110402739020012",
+ "harness": {
+  "run": "2026-10-31T03-28-58Z",
+  "manifest_sha256": "85f34bbfce551087a183cda6c242ec59865f566dc1f56165cc796d53128e011e",
+  "query": "from:BobLoukas since:2026-01-09 until:2026-01-19"
+ }
+}

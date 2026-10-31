@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:18.237Z",
+ "cashtags": [],
+ "conversationId": "2051802261320245698",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2051802261320245698",
+ "kind": "post",
+ "metrics": {
+  "likes": 1096,
+  "replies": 116,
+  "reposts": 49,
+  "views": 131844
+ },
+ "postedAt": "2026-05-05T23:12:34.000Z",
+ "replyTo": null,
+ "text": "Sell Bitcoin, to pay somebody for giving you money to buy bitcoin.   \n\nWait, and nobody through financial history thought of this?    /s",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2051802261320245698",
+ "harness": {
+  "run": "2026-10-31T03-47-15Z",
+  "manifest_sha256": "d829a2466fa415a7cdaeaff4a6cfdcca76ad661f2ee8e9461b5c6c66af591c27",
+  "query": "from:BobLoukas since:2026-04-29 until:2026-05-09"
+ }
+}

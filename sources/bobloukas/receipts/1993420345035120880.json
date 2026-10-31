@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:44.212Z",
+ "cashtags": [],
+ "conversationId": "1993420158858063897",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1993420345035120880",
+ "kind": "reply",
+ "metrics": {
+  "likes": 2,
+  "replies": 1,
+  "reposts": 0,
+  "views": 385
+ },
+ "postedAt": "2025-11-25T20:43:40.000Z",
+ "replyTo": {
+  "postId": "1993420158858063897",
+  "handle": "value_____trade"
+ },
+ "text": "It's called adapting with price action.  Interesting idea.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1993420345035120880",
+ "harness": {
+  "run": "2026-10-31T03-11-39Z",
+  "manifest_sha256": "8b207307b5b7f63da4785b2292870b7a03e0480c97b05c0d561f294be3c54557",
+  "query": "from:BobLoukas since:2025-11-25 until:2025-11-30"
+ }
+}

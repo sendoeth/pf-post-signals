@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:32.380Z",
+ "cashtags": [],
+ "conversationId": "2002132432552689961",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2002143189793177710",
+ "kind": "repost",
+ "metrics": {
+  "likes": 3832,
+  "replies": 367,
+  "reposts": 662,
+  "views": 1356481
+ },
+ "postedAt": "2025-12-19T22:25:09.000Z",
+ "replyTo": null,
+ "text": "Just returned home after dropping my husband @keonne off at FPC Morgantown, to begin serving a 5year prison term for a crime he is innocent of. My first instinct was to reach for my phone to let him know I arrived safely. This is a habit I need to learn to break. I’m uncertain when I will next be able to speak with my husband, as it can take several days for inmates to gain access to the phone system. For now, I will simply have to wait.\n\n#pardonsamourai",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2002143189793177710",
+ "harness": {
+  "run": "2026-10-31T03-28-29Z",
+  "manifest_sha256": "6b809f4562719e0f7de013cb2199555f0361999760d9b9ef86799734f195de03",
+  "query": "from:BobLoukas since:2025-12-15 until:2025-12-20"
+ }
+}

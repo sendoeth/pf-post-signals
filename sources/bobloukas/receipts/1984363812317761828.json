@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:13.439Z",
+ "cashtags": [],
+ "conversationId": "1984362791902593525",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1984363812317761828",
+ "kind": "reply",
+ "metrics": {
+  "likes": 98,
+  "replies": 12,
+  "reposts": 5,
+  "views": 21107
+ },
+ "postedAt": "2025-10-31T20:56:15.000Z",
+ "replyTo": {
+  "postId": "1984362791902593525",
+  "handle": "FusionptCapital"
+ },
+ "text": "Where have we seen this script before. 🤔",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1984363812317761828",
+ "harness": {
+  "run": "2026-10-31T03-10-01Z",
+  "manifest_sha256": "3844915c6905bd8c09b21e28b77ba45472ed71277b155e9aca6ad52457c02037",
+  "query": "from:BobLoukas since:2025-10-31 until:2025-11-10"
+ }
+}

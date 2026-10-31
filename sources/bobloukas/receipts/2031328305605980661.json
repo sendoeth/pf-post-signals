@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:33.403Z",
+ "cashtags": [],
+ "conversationId": "2031328305605980661",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2031328305605980661",
+ "kind": "post",
+ "metrics": {
+  "likes": 832,
+  "replies": 48,
+  "reposts": 27,
+  "views": 70713
+ },
+ "postedAt": "2026-03-10T11:16:22.000Z",
+ "replyTo": null,
+ "text": "Oil spiked over $100 and the market plunges so we go from “Unconditional Surrender” to “it’s almost over”.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2031328305605980661",
+ "harness": {
+  "run": "2026-10-31T03-30-28Z",
+  "manifest_sha256": "01e2451c651b7ec60ad39a25711bb00e031bd0ff8d61791c7b1a209fde870cd4",
+  "query": "from:BobLoukas since:2026-03-10 until:2026-03-20"
+ }
+}

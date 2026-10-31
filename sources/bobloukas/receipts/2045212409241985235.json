@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:46:36.870Z",
+ "cashtags": [],
+ "conversationId": "2045211912426660144",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2045212409241985235",
+ "kind": "reply",
+ "metrics": {
+  "likes": 9,
+  "replies": 2,
+  "reposts": 0,
+  "views": 1505
+ },
+ "postedAt": "2026-04-17T18:46:51.000Z",
+ "replyTo": {
+  "postId": "2045212152923877840",
+  "handle": "79amadison79"
+ },
+ "text": "What am I being careful with?",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2045212409241985235",
+ "harness": {
+  "run": "2026-10-31T03-46-34Z",
+  "manifest_sha256": "c27074f7b8d8c85ca6aaed1a98de9a36b44ad09e077f54e4c1ddc2264c260dfe",
+  "query": "from:BobLoukas since:2026-04-14 until:2026-04-19"
+ }
+}

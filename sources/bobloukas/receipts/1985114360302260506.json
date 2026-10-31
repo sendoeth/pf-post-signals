@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:13.438Z",
+ "cashtags": [],
+ "conversationId": "1985093318351458691",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1985114360302260506",
+ "kind": "repost",
+ "metrics": {
+  "likes": 331,
+  "replies": 23,
+  "reposts": 43,
+  "views": 85369
+ },
+ "postedAt": "2025-11-02T22:38:39.000Z",
+ "replyTo": null,
+ "text": "The Melt-Up\n\n\"However you measure it, tech stocks are on an all-time heater. This is one of the great bull markets we’ve ever witnessed. So now what?\"\n\nhttps://buff.ly/bKDU0ja \n\nby @awealthofcs",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1985114360302260506",
+ "harness": {
+  "run": "2026-10-31T03-10-01Z",
+  "manifest_sha256": "3844915c6905bd8c09b21e28b77ba45472ed71277b155e9aca6ad52457c02037",
+  "query": "from:BobLoukas since:2025-10-31 until:2025-11-10"
+ }
+}

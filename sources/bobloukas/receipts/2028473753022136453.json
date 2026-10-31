@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:25.382Z",
+ "cashtags": [],
+ "conversationId": "2028473753022136453",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2028473753022136453",
+ "kind": "post",
+ "metrics": {
+  "likes": 1524,
+  "replies": 200,
+  "reposts": 105,
+  "views": 170106
+ },
+ "postedAt": "2026-03-02T14:13:24.000Z",
+ "replyTo": null,
+ "text": "As deeply oversold as Bitcoin is, this weekly chart remains horrendous and from a purely visual perspective, feels like it's hanging on by a thread and readying for another big leg lower.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2028473753022136453",
+ "harness": {
+  "run": "2026-10-31T03-30-20Z",
+  "manifest_sha256": "3d96553ad1872d40978ec78e357b1cef213e2cb79cabbf5b401432e513cb4d1c",
+  "query": "from:BobLoukas since:2026-02-28 until:2026-03-10"
+ }
+}

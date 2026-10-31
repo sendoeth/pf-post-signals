@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:03.698Z",
+ "cashtags": [],
+ "conversationId": "1986848530699591889",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1986848530699591889",
+ "kind": "post",
+ "metrics": {
+  "likes": 1074,
+  "replies": 126,
+  "reposts": 34,
+  "views": 90424
+ },
+ "postedAt": "2025-11-07T17:29:38.000Z",
+ "replyTo": null,
+ "text": "7 years of fringe interest, now people suddenly see the “great value” in privacy coins.   \n\nGuess there was no value when it 90% lower few months ago.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1986848530699591889",
+ "harness": {
+  "run": "2026-10-31T03-10-01Z",
+  "manifest_sha256": "3844915c6905bd8c09b21e28b77ba45472ed71277b155e9aca6ad52457c02037",
+  "query": "from:BobLoukas since:2025-10-31 until:2025-11-10"
+ }
+}

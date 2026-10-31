@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:27.305Z",
+ "cashtags": [],
+ "conversationId": "1989058521447457024",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1989086534507663818",
+ "kind": "reply",
+ "metrics": {
+  "likes": 10,
+  "replies": 1,
+  "reposts": 0,
+  "views": 1156
+ },
+ "postedAt": "2025-11-13T21:42:39.000Z",
+ "replyTo": {
+  "postId": "1989085668363161740",
+  "handle": "DiscoverCrypto1"
+ },
+ "text": "No i look at and tinker with a lot in crypto.  Plenty of promising things.  I have very decent exposure to ETH as example.\n\nTo your other comment on \"sentiment\", you have to understand on twitter I'm discussing on things i see, both sides.  Probably said \"nobody knows\" a thousand times.   Those observations don't equal a position.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1989086534507663818",
+ "harness": {
+  "run": "2026-10-31T03-10-22Z",
+  "manifest_sha256": "8219512b7c4ed9295ff50779c6865723e1b25c0ba9424dff8dd584d91eeef4c2",
+  "query": "from:BobLoukas since:2025-11-10 until:2025-11-15"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:48:00.529Z",
+ "cashtags": [],
+ "conversationId": "2062880187629363236",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2062887594350776605",
+ "kind": "reply",
+ "metrics": {
+  "likes": 57,
+  "replies": 1,
+  "reposts": 0,
+  "views": 3943
+ },
+ "postedAt": "2026-06-05T13:21:43.000Z",
+ "replyTo": {
+  "postId": "2062884751472566336",
+  "handle": "MacroBombastic"
+ },
+ "text": "they dont wake up, they just bounce less.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2062887594350776605",
+ "harness": {
+  "run": "2026-10-31T03-47-55Z",
+  "manifest_sha256": "76ee69624ea2b9328b3f138dbfe04636ffc970ec1aa15cc43bb66d8325d64d30",
+  "query": "from:BobLoukas since:2026-06-03 until:2026-06-08"
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:44.068Z",
+ "cashtags": [],
+ "conversationId": "2003118600819753362",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2003118600819753362",
+ "kind": "post",
+ "metrics": {
+  "likes": 867,
+  "replies": 88,
+  "reposts": 43,
+  "views": 87295
+ },
+ "postedAt": "2025-12-22T15:01:05.000Z",
+ "replyTo": null,
+ "text": "Seeing \"Manipulation\" cries to explain crypto 2025.  Pure Cope. It's called Sellers!\n\nThe 4yr Cycle saw faster accumulation early, then whales (and INST's) have been unloading ever since.  \n\nAnd ALT's, well most are just trash and that game has been played twice before.  And AI sector capturing the attention. \n\nThe positive, we could potentially be looking at an earlier (July/Aug) 4Yr Cycle low",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2003118600819753362",
+ "harness": {
+  "run": "2026-10-31T03-28-37Z",
+  "manifest_sha256": "9d13b999b16b71141a9123223a30beac3017eedee0e627ab1a0efb00c27a8930",
+  "query": "from:BobLoukas since:2025-12-20 until:2025-12-30"
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:39.719Z",
+ "cashtags": [],
+ "conversationId": "2005330899899121670",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2005330899899121670",
+ "kind": "post",
+ "metrics": {
+  "likes": 1397,
+  "replies": 182,
+  "reposts": 42,
+  "views": 124617
+ },
+ "postedAt": "2025-12-28T17:31:58.000Z",
+ "replyTo": null,
+ "text": "Have very mixed feeling on Bitcoin currently.  \n\nSentiment is in the gutter and we could argue overdue some type of strong countertrend rally. \n\nYet, I really dislike the price action, the tape feel (for me) is one wanting to start another big leg lower.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2005330899899121670",
+ "harness": {
+  "run": "2026-10-31T03-28-37Z",
+  "manifest_sha256": "9d13b999b16b71141a9123223a30beac3017eedee0e627ab1a0efb00c27a8930",
+  "query": "from:BobLoukas since:2025-12-20 until:2025-12-30"
+ }
+}

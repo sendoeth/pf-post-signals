@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:42.261Z",
+ "cashtags": [],
+ "conversationId": "1994036829419405733",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1994036829419405733",
+ "kind": "post",
+ "metrics": {
+  "likes": 832,
+  "replies": 38,
+  "reposts": 9,
+  "views": 46427
+ },
+ "postedAt": "2025-11-27T13:33:22.000Z",
+ "replyTo": null,
+ "text": "Happy Thanksgiving 🦃 everyone.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1994036829419405733",
+ "harness": {
+  "run": "2026-10-31T03-11-39Z",
+  "manifest_sha256": "8b207307b5b7f63da4785b2292870b7a03e0480c97b05c0d561f294be3c54557",
+  "query": "from:BobLoukas since:2025-11-25 until:2025-11-30"
+ }
+}

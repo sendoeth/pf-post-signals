@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:53.468Z",
+ "cashtags": [],
+ "conversationId": "1996699931436859461",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1996716221081825764",
+ "kind": "reply",
+ "metrics": {
+  "likes": 7,
+  "replies": 1,
+  "reposts": 0,
+  "views": 2186
+ },
+ "postedAt": "2025-12-04T23:00:18.000Z",
+ "replyTo": {
+  "postId": "1996700246483558807",
+  "handle": "ForkedFemme"
+ },
+ "text": "Balance them.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1996716221081825764",
+ "harness": {
+  "run": "2026-10-31T03-11-49Z",
+  "manifest_sha256": "44284fd2b0f53f602994edeb448d034ad7c1447b6074bcf56e01e43a4ce3849c",
+  "query": "from:BobLoukas since:2025-11-30 until:2025-12-10"
+ }
+}

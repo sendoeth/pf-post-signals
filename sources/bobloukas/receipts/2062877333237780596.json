@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:48:00.530Z",
+ "cashtags": [],
+ "conversationId": "2062580409091620951",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2062877333237780596",
+ "kind": "reply",
+ "metrics": {
+  "likes": 3,
+  "replies": 2,
+  "reposts": 0,
+  "views": 883
+ },
+ "postedAt": "2026-06-05T12:40:57.000Z",
+ "replyTo": {
+  "postId": "2062853953600029024",
+  "handle": "VikingQuant"
+ },
+ "text": "The network will be patched but that's not what the market worries about.  It's how the old coins get handled, there is no answer the market will like,",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2062877333237780596",
+ "harness": {
+  "run": "2026-10-31T03-47-55Z",
+  "manifest_sha256": "76ee69624ea2b9328b3f138dbfe04636ffc970ec1aa15cc43bb66d8325d64d30",
+  "query": "from:BobLoukas since:2026-06-03 until:2026-06-08"
+ }
+}

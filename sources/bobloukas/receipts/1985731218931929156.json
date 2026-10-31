@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:11.632Z",
+ "cashtags": [],
+ "conversationId": "1985730433510973908",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1985731218931929156",
+ "kind": "reply",
+ "metrics": {
+  "likes": 142,
+  "replies": 3,
+  "reposts": 2,
+  "views": 33307
+ },
+ "postedAt": "2025-11-04T15:29:50.000Z",
+ "replyTo": {
+  "postId": "1985730861464011011",
+  "handle": "WittyChartGuy"
+ },
+ "text": "No we want to see a low put in and clear separation back higher.  Then the lows can become invalidation.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1985731218931929156",
+ "harness": {
+  "run": "2026-10-31T03-10-01Z",
+  "manifest_sha256": "3844915c6905bd8c09b21e28b77ba45472ed71277b155e9aca6ad52457c02037",
+  "query": "from:BobLoukas since:2025-10-31 until:2025-11-10"
+ }
+}

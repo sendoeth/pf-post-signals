@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:03.309Z",
+ "cashtags": [],
+ "conversationId": "2023132753508872352",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2023142868521783784",
+ "kind": "reply",
+ "metrics": {
+  "likes": 5,
+  "replies": 3,
+  "reposts": 0,
+  "views": 994
+ },
+ "postedAt": "2026-02-15T21:10:22.000Z",
+ "replyTo": {
+  "postId": "2023142714485899494",
+  "handle": "infinitefreedum"
+ },
+ "text": "You’re so original.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2023142868521783784",
+ "harness": {
+  "run": "2026-10-31T03-29-58Z",
+  "manifest_sha256": "046caa1b799b16c1e3d97c7b87fc3565fd829c623a7d127628756b707828f2b0",
+  "query": "from:BobLoukas since:2026-02-08 until:2026-02-18"
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:13.438Z",
+ "cashtags": [],
+ "conversationId": "1985336554437361800",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1985336554437361800",
+ "kind": "post",
+ "metrics": {
+  "likes": 2165,
+  "replies": 230,
+  "reposts": 128,
+  "views": 216642
+ },
+ "postedAt": "2025-11-03T13:21:35.000Z",
+ "replyTo": null,
+ "text": "Crypto is running scared, very scared.  \n\nVaporware can only be peddled for so long.  Few want to be honest about this fact.  Who’s left is just prior cycle holdouts, no new retail blood, all resorting to max extraction, greed/theft/crime, and PvP type games, thinly masked as revolutionary tech. Short-lived metas spring up to support short-lived runs.  What is working are the “picks and shovels” that support vaporware speculation.  Extraction. \n\nThe contrarian sees such sentiment as an opportunity, marks of pullback nearing an end, and the perfect environment set for an explosive upside move.  \n\nThey may not be wrong, I honestly don’t know.  🤷‍♂️ \nBut there is something lurking in crypto (pure gut feel) that isn’t right. Been that way the entire cycle.   \n\nFor me, holding anything other than Bitcoin here remains misguided, even if we’re on the eve of a new bull market rally for alt’s/crypto.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1985336554437361800",
+ "harness": {
+  "run": "2026-10-31T03-10-01Z",
+  "manifest_sha256": "3844915c6905bd8c09b21e28b77ba45472ed71277b155e9aca6ad52457c02037",
+  "query": "from:BobLoukas since:2025-10-31 until:2025-11-10"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:51.420Z",
+ "cashtags": [],
+ "conversationId": "1996943045271441898",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1996944552746193092",
+ "kind": "reply",
+ "metrics": {
+  "likes": 79,
+  "replies": 8,
+  "reposts": 3,
+  "views": 5777
+ },
+ "postedAt": "2025-12-05T14:07:37.000Z",
+ "replyTo": {
+  "postId": "1996944030538621244",
+  "handle": "PalenTrade"
+ },
+ "text": "De-risk slowly on breakdowns. Dont panic sell the bottoms.  Buy 30% dips. Quality assets and more diversified during those periods.\n\nWhat not to do.  Don't buy a lot of silver and spend a fortune on a home bunker.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1996944552746193092",
+ "harness": {
+  "run": "2026-10-31T03-11-49Z",
+  "manifest_sha256": "44284fd2b0f53f602994edeb448d034ad7c1447b6074bcf56e01e43a4ce3849c",
+  "query": "from:BobLoukas since:2025-11-30 until:2025-12-10"
+ }
+}

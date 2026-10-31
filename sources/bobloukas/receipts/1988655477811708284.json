@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:28.650Z",
+ "cashtags": [],
+ "conversationId": "1988648569453035869",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1988655477811708284",
+ "kind": "reply",
+ "metrics": {
+  "likes": 34,
+  "replies": 3,
+  "reposts": 0,
+  "views": 8787
+ },
+ "postedAt": "2025-11-12T17:09:47.000Z",
+ "replyTo": {
+  "postId": "1988654010996519165",
+  "handle": "Slamma5284"
+ },
+ "text": "It never made sense why retail was buying it at such a premium.  Oh...I guess it makes some sense.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1988655477811708284",
+ "harness": {
+  "run": "2026-10-31T03-10-22Z",
+  "manifest_sha256": "8219512b7c4ed9295ff50779c6865723e1b25c0ba9424dff8dd584d91eeef4c2",
+  "query": "from:BobLoukas since:2025-11-10 until:2025-11-15"
+ }
+}

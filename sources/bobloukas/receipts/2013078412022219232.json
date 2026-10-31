@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:15.875Z",
+ "cashtags": [],
+ "conversationId": "2013078412022219232",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2013078412022219232",
+ "kind": "post",
+ "metrics": {
+  "likes": 553,
+  "replies": 50,
+  "reposts": 6,
+  "views": 101833
+ },
+ "postedAt": "2026-01-19T02:37:49.000Z",
+ "replyTo": null,
+ "text": "Bears.   What!!!  \n\nInsane.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2013078412022219232",
+ "harness": {
+  "run": "2026-10-31T03-29-09Z",
+  "manifest_sha256": "12b6383eb0d3e548fb1ff7b7fa27ac18c6544170639bb262e25d9278c33ad772",
+  "query": "from:BobLoukas since:2026-01-19 until:2026-01-29"
+ }
+}

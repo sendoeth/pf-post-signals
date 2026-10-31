@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:18.237Z",
+ "cashtags": [],
+ "conversationId": "2051802261320245698",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2051999830805811533",
+ "kind": "reply",
+ "metrics": {
+  "likes": 18,
+  "replies": 3,
+  "reposts": 0,
+  "views": 2615
+ },
+ "postedAt": "2026-05-06T12:17:38.000Z",
+ "replyTo": {
+  "postId": "2051997881385500761",
+  "handle": "MM2014455150282"
+ },
+ "text": "Mathematically that will not always be true.  It’s a matter of when not if.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2051999830805811533",
+ "harness": {
+  "run": "2026-10-31T03-47-15Z",
+  "manifest_sha256": "d829a2466fa415a7cdaeaff4a6cfdcca76ad661f2ee8e9461b5c6c66af591c27",
+  "query": "from:BobLoukas since:2026-04-29 until:2026-05-09"
+ }
+}

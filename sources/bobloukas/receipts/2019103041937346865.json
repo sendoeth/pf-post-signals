@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:53.383Z",
+ "cashtags": [],
+ "conversationId": "2019103041937346865",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2019103041937346865",
+ "kind": "quote",
+ "metrics": {
+  "likes": 674,
+  "replies": 49,
+  "reposts": 14,
+  "views": 90855
+ },
+ "postedAt": "2026-02-04T17:37:32.000Z",
+ "replyTo": null,
+ "text": "Enter FUD season.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2019103041937346865",
+ "harness": {
+  "run": "2026-10-31T03-29-44Z",
+  "manifest_sha256": "aaa8d4e197f46be6cccda8b30abf99f805399d35c1bf30c84b78a3f1a95bcc12",
+  "query": "from:BobLoukas since:2026-02-03 until:2026-02-08"
+ }
+}

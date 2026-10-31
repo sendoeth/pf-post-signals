@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:46:57.026Z",
+ "cashtags": [],
+ "conversationId": "2047315362807435656",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2047447695699099947",
+ "kind": "reply",
+ "metrics": {
+  "likes": 16,
+  "replies": 0,
+  "reposts": 0,
+  "views": 873
+ },
+ "postedAt": "2026-04-23T22:49:05.000Z",
+ "replyTo": {
+  "postId": "2047335675456852244",
+  "handle": "J0hnnyChase"
+ },
+ "text": "Probably would be around $100k",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2047447695699099947",
+ "harness": {
+  "run": "2026-10-31T03-46-54Z",
+  "manifest_sha256": "d66bf07857f47292cdfd802d2817253a59a804ad438a1e7c7e149ca9c0a4fd10",
+  "query": "from:BobLoukas since:2026-04-19 until:2026-04-24"
+ }
+}

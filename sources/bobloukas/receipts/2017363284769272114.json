@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:39.632Z",
+ "cashtags": [],
+ "conversationId": "2017256982743339269",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2017363284769272114",
+ "kind": "reply",
+ "metrics": {
+  "likes": 12,
+  "replies": 1,
+  "reposts": 0,
+  "views": 2371
+ },
+ "postedAt": "2026-01-30T22:24:22.000Z",
+ "replyTo": {
+  "postId": "2017362722799726918",
+  "handle": "gaiussolaris"
+ },
+ "text": "The cycles before were 3 yrs to the peak.  Just like this one. \n\nLast cycle the 2nd peak was barely higher too.  \n\nThere isn’t much different here.  Diminishing is fine there was a lot of extraction from whales and institutional.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2017363284769272114",
+ "harness": {
+  "run": "2026-10-31T03-29-33Z",
+  "manifest_sha256": "14f0ea84840c9dca9fe00212e469c77a2ebdd67bd750609b8a6bddcb4356ba1c",
+  "query": "from:BobLoukas since:2026-01-29 until:2026-02-03"
+ }
+}

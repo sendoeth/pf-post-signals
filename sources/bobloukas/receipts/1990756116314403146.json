@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:14.462Z",
+ "cashtags": [],
+ "conversationId": "1990611589800640686",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1990756116314403146",
+ "kind": "reply",
+ "metrics": {
+  "likes": 73,
+  "replies": 0,
+  "reposts": 0,
+  "views": 4866
+ },
+ "postedAt": "2025-11-18T12:16:59.000Z",
+ "replyTo": {
+  "postId": "1990712056136257680",
+  "handle": "llkratom"
+ },
+ "text": "Yeah don’t follow me.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1990756116314403146",
+ "harness": {
+  "run": "2026-10-31T03-11-12Z",
+  "manifest_sha256": "da998034869f466cf3635ca5dde42938975bc207b093ae8c8984350ea65c57f3",
+  "query": "from:BobLoukas since:2025-11-15 until:2025-11-20"
+ }
+}

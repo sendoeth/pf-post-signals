@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:39.719Z",
+ "cashtags": [],
+ "conversationId": "2005330899899121670",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2005334307804712971",
+ "kind": "reply",
+ "metrics": {
+  "likes": 28,
+  "replies": 2,
+  "reposts": 0,
+  "views": 11154
+ },
+ "postedAt": "2025-12-28T17:45:30.000Z",
+ "replyTo": {
+  "postId": "2005334103026237626",
+  "handle": "mialito77"
+ },
+ "text": "Yeah I can see that.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2005334307804712971",
+ "harness": {
+  "run": "2026-10-31T03-28-37Z",
+  "manifest_sha256": "9d13b999b16b71141a9123223a30beac3017eedee0e627ab1a0efb00c27a8930",
+  "query": "from:BobLoukas since:2025-12-20 until:2025-12-30"
+ }
+}

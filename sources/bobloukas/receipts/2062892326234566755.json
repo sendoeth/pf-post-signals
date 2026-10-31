@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:48:00.529Z",
+ "cashtags": [],
+ "conversationId": "2062782041784291764",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2062892326234566755",
+ "kind": "reply",
+ "metrics": {
+  "likes": 80,
+  "replies": 1,
+  "reposts": 1,
+  "views": 6325
+ },
+ "postedAt": "2026-06-05T13:40:31.000Z",
+ "replyTo": {
+  "postId": "2062782041784291764",
+  "handle": "BitPaine"
+ },
+ "text": "A rare day when I agree with you.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2062892326234566755",
+ "harness": {
+  "run": "2026-10-31T03-47-55Z",
+  "manifest_sha256": "76ee69624ea2b9328b3f138dbfe04636ffc970ec1aa15cc43bb66d8325d64d30",
+  "query": "from:BobLoukas since:2026-06-03 until:2026-06-08"
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:25.382Z",
+ "cashtags": [],
+ "conversationId": "2028497558272639426",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2028497558272639426",
+ "kind": "post",
+ "metrics": {
+  "likes": 350,
+  "replies": 15,
+  "reposts": 17,
+  "views": 37183
+ },
+ "postedAt": "2026-03-02T15:48:00.000Z",
+ "replyTo": null,
+ "text": "Gold miners showing nice resilience.  They're typically far more volatile at this phase, up 400% in 24 months.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2028497558272639426",
+ "harness": {
+  "run": "2026-10-31T03-30-20Z",
+  "manifest_sha256": "3d96553ad1872d40978ec78e357b1cef213e2cb79cabbf5b401432e513cb4d1c",
+  "query": "from:BobLoukas since:2026-02-28 until:2026-03-10"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:55.099Z",
+ "cashtags": [],
+ "conversationId": "2018719155927540088",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2018745721365700731",
+ "kind": "reply",
+ "metrics": {
+  "likes": 3,
+  "replies": 1,
+  "reposts": 0,
+  "views": 585
+ },
+ "postedAt": "2026-02-03T17:57:41.000Z",
+ "replyTo": {
+  "postId": "2018742598601429206",
+  "handle": "Cliffsafari1"
+ },
+ "text": "Watch the video on the portfolio page",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2018745721365700731",
+ "harness": {
+  "run": "2026-10-31T03-29-44Z",
+  "manifest_sha256": "aaa8d4e197f46be6cccda8b30abf99f805399d35c1bf30c84b78a3f1a95bcc12",
+  "query": "from:BobLoukas since:2026-02-03 until:2026-02-08"
+ }
+}

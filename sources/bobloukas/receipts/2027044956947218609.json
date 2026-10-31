@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:12.022Z",
+ "cashtags": [],
+ "conversationId": "2027043531185943019",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2027044956947218609",
+ "kind": "reply",
+ "metrics": {
+  "likes": 69,
+  "replies": 3,
+  "reposts": 1,
+  "views": 8371
+ },
+ "postedAt": "2026-02-26T15:35:53.000Z",
+ "replyTo": {
+  "postId": "2027044571364925888",
+  "handle": "yellokguy"
+ },
+ "text": "SPX overdue this type of event, (which likely takes months) is the biggest overhang on bitcoin.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2027044956947218609",
+ "harness": {
+  "run": "2026-10-31T03-30-09Z",
+  "manifest_sha256": "f4cb50b74e111333644768234a62c37c553d27111cb37124caf5fe4bcbd50de6",
+  "query": "from:BobLoukas since:2026-02-18 until:2026-02-28"
+ }
+}

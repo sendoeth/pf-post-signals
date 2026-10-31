@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:27.306Z",
+ "cashtags": [],
+ "conversationId": "1989058521447457024",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1989058521447457024",
+ "kind": "quote",
+ "metrics": {
+  "likes": 934,
+  "replies": 65,
+  "reposts": 24,
+  "views": 160830
+ },
+ "postedAt": "2025-11-13T19:51:21.000Z",
+ "replyTo": null,
+ "text": "Post created a little stir. I get it. A little cheek against my hated \"institutions\" narratives permabulls live by.\n\nYou know difference between a basement degen and an Inst Trader? -  An ivy league degree and bigger connections.\n\nYeah they will pump price for sure. But they're in to max extract, sell you a story and dump on you, rinse and repeat. And they don't for a minute believe the underlying use case.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1989058521447457024",
+ "harness": {
+  "run": "2026-10-31T03-10-22Z",
+  "manifest_sha256": "8219512b7c4ed9295ff50779c6865723e1b25c0ba9424dff8dd584d91eeef4c2",
+  "query": "from:BobLoukas since:2025-11-10 until:2025-11-15"
+ }
+}

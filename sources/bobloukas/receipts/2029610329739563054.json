@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:24.901Z",
+ "cashtags": [],
+ "conversationId": "2029610329739563054",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2029610329739563054",
+ "kind": "quote",
+ "metrics": {
+  "likes": 436,
+  "replies": 25,
+  "reposts": 32,
+  "views": 76065
+ },
+ "postedAt": "2026-03-05T17:29:45.000Z",
+ "replyTo": null,
+ "text": "Tuesday was yet another massive save with that reversal in stocks. But still do not like this setup on day 31.  The consistent push on support, anchored on the Jan 20th cycle low, feels like it wants to give way.   Market hinging on a very quick resolution in the mideast.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2029610329739563054",
+ "harness": {
+  "run": "2026-10-31T03-30-20Z",
+  "manifest_sha256": "3d96553ad1872d40978ec78e357b1cef213e2cb79cabbf5b401432e513cb4d1c",
+  "query": "from:BobLoukas since:2026-02-28 until:2026-03-10"
+ }
+}

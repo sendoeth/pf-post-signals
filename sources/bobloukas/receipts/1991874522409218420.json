@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:33.102Z",
+ "cashtags": [],
+ "conversationId": "1991825705219612937",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1991874522409218420",
+ "kind": "reply",
+ "metrics": {
+  "likes": 5,
+  "replies": 2,
+  "reposts": 0,
+  "views": 880
+ },
+ "postedAt": "2025-11-21T14:21:08.000Z",
+ "replyTo": {
+  "postId": "1991870463577055443",
+  "handle": "Azorean369"
+ },
+ "text": "That would seem too early, but is possible.  \n\nEspecially if there was some very aggressive fed and gov action.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1991874522409218420",
+ "harness": {
+  "run": "2026-10-31T03-11-28Z",
+  "manifest_sha256": "5b4f94307a59f6b36bf90ded7f7487cb77a37651415230998ae74712e788ac95",
+  "query": "from:BobLoukas since:2025-11-20 until:2025-11-25"
+ }
+}

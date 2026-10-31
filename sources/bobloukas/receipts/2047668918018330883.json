@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:10.830Z",
+ "cashtags": [],
+ "conversationId": "2047563633610350863",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2047668918018330883",
+ "kind": "reply",
+ "metrics": {
+  "likes": 93,
+  "replies": 2,
+  "reposts": 4,
+  "views": 9378
+ },
+ "postedAt": "2026-04-24T13:28:08.000Z",
+ "replyTo": {
+  "postId": "2047563633610350863",
+  "handle": "0x_Kun"
+ },
+ "text": "You are correct.  And the premise used is incorrect.\n\nA Cycle simply maps the ebb and flow of sentiment over time.  Collectively over time human behaviors evolve into group think and repitition.\n\nWhere people get tripped up is in believing that must equal these massive and very distinct peaks and troughs that we've seen, and then believe these patterns will always exist.  But they wont.  \n\nThere are so many factors that then influence the outcome within these cycles.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2047668918018330883",
+ "harness": {
+  "run": "2026-10-31T03-47-04Z",
+  "manifest_sha256": "5336994f71bbe4f700cf60362be35add5dbd82d5eddf921d84495b46cbd2c660",
+  "query": "from:BobLoukas since:2026-04-24 until:2026-04-29"
+ }
+}

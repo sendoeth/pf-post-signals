@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:34.814Z",
+ "cashtags": [],
+ "conversationId": "1991825705219612937",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1991829762134929912",
+ "kind": "reply",
+ "metrics": {
+  "likes": 25,
+  "replies": 4,
+  "reposts": 0,
+  "views": 3061
+ },
+ "postedAt": "2025-11-21T11:23:16.000Z",
+ "replyTo": {
+  "postId": "1991829459960578212",
+  "handle": "MadCryptoClub"
+ },
+ "text": "Can’t rule that out just yet.  \n\nWe can still find a low here then go to new ath.  Just doesn’t seem that likely given this cut so deep in the cycle.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1991829762134929912",
+ "harness": {
+  "run": "2026-10-31T03-11-28Z",
+  "manifest_sha256": "5b4f94307a59f6b36bf90ded7f7487cb77a37651415230998ae74712e788ac95",
+  "query": "from:BobLoukas since:2025-11-20 until:2025-11-25"
+ }
+}

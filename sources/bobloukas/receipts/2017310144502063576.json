@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:41.410Z",
+ "cashtags": [],
+ "conversationId": "2017310144502063576",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2017310144502063576",
+ "kind": "post",
+ "metrics": {
+  "likes": 861,
+  "replies": 37,
+  "reposts": 19,
+  "views": 51276
+ },
+ "postedAt": "2026-01-30T18:53:12.000Z",
+ "replyTo": null,
+ "text": "Silver crashes 30%\nSilver currently best performing asset of 2026.\n\nWho doesn't love the markets.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2017310144502063576",
+ "harness": {
+  "run": "2026-10-31T03-29-33Z",
+  "manifest_sha256": "14f0ea84840c9dca9fe00212e469c77a2ebdd67bd750609b8a6bddcb4356ba1c",
+  "query": "from:BobLoukas since:2026-01-29 until:2026-02-03"
+ }
+}

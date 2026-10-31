@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:46:36.873Z",
+ "cashtags": [],
+ "conversationId": "2044832230049026518",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2044832230049026518",
+ "kind": "post",
+ "metrics": {
+  "likes": 1172,
+  "replies": 52,
+  "reposts": 182,
+  "views": 210545
+ },
+ "postedAt": "2026-04-16T17:36:09.000Z",
+ "replyTo": null,
+ "text": "The latest Bitcoin 4 Year Cycle Video.\n\nNot Done Yet https://youtu.be/fk1dkrGUar4?si=rD5cCwM4MQdN0D2R \n\nIf you enjoy the content, a retweet is appreciated.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2044832230049026518",
+ "harness": {
+  "run": "2026-10-31T03-46-34Z",
+  "manifest_sha256": "c27074f7b8d8c85ca6aaed1a98de9a36b44ad09e077f54e4c1ddc2264c260dfe",
+  "query": "from:BobLoukas since:2026-04-14 until:2026-04-19"
+ }
+}

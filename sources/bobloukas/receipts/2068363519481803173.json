@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:03:36.504Z",
+ "cashtags": [],
+ "conversationId": "2068353512405164542",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2068363519481803173",
+ "kind": "reply",
+ "metrics": {
+  "likes": 110,
+  "replies": 10,
+  "reposts": 0,
+  "views": 13356
+ },
+ "postedAt": "2026-06-20T16:01:06.000Z",
+ "replyTo": {
+  "postId": "2068353512405164542",
+  "handle": "lourenco_vs"
+ },
+ "text": "You keep shitting on my Bitcoin views yet they keep coming through.  😂",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2068363519481803173",
+ "harness": {
+  "run": "2026-10-31T04-03-34Z",
+  "manifest_sha256": "80481ec9abd4e75a790a038fdafcf2407911298e9bbac3a7dd1f344521f8274f",
+  "query": "from:BobLoukas since:2026-06-18 until:2026-06-23"
+ }
+}

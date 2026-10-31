@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:01.651Z",
+ "cashtags": [],
+ "conversationId": "2012157473793495465",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2012157473793495465",
+ "kind": "post",
+ "metrics": {
+  "likes": 312,
+  "replies": 25,
+  "reposts": 12,
+  "views": 51946
+ },
+ "postedAt": "2026-01-16T13:38:20.000Z",
+ "replyTo": null,
+ "text": "Think it’s a fascinating that a tech company needs to go out and “secure” materials like Copper.  \n\nhttps://www.reuters.com/business/rio-tinto-supply-copper-amazon-ai-data-centers-2026-01-15/",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2012157473793495465",
+ "harness": {
+  "run": "2026-10-31T03-28-58Z",
+  "manifest_sha256": "85f34bbfce551087a183cda6c242ec59865f566dc1f56165cc796d53128e011e",
+  "query": "from:BobLoukas since:2026-01-09 until:2026-01-19"
+ }
+}

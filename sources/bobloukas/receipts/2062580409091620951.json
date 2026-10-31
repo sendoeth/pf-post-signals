@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:48:01.864Z",
+ "cashtags": [],
+ "conversationId": "2062580409091620951",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2062580409091620951",
+ "kind": "post",
+ "metrics": {
+  "likes": 1449,
+  "replies": 69,
+  "reposts": 227,
+  "views": 173520
+ },
+ "postedAt": "2026-06-04T17:01:05.000Z",
+ "replyTo": null,
+ "text": "ThE fOur YeAr cyCle iS dEAd \n\nhttps://youtu.be/ctJSV8aTDSk?si=x0kHFubXqzMko1G7 \n\nIf you've enjoyed this Bitcoin Journey over the past 8 years, appreciate a Retweet and sharing on other forums.  Thanks,.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2062580409091620951",
+ "harness": {
+  "run": "2026-10-31T03-47-55Z",
+  "manifest_sha256": "76ee69624ea2b9328b3f138dbfe04636ffc970ec1aa15cc43bb66d8325d64d30",
+  "query": "from:BobLoukas since:2026-06-03 until:2026-06-08"
+ }
+}

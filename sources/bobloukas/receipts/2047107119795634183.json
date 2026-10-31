@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:46:58.840Z",
+ "cashtags": [],
+ "conversationId": "2046984846489043072",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2047107119795634183",
+ "kind": "reply",
+ "metrics": {
+  "likes": 4,
+  "replies": 1,
+  "reposts": 0,
+  "views": 1772
+ },
+ "postedAt": "2026-04-23T00:15:45.000Z",
+ "replyTo": {
+  "postId": "2047072390950387712",
+  "handle": "Sykodelic_"
+ },
+ "text": "I’ve had this argument in the last two cycles too with many others.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2047107119795634183",
+ "harness": {
+  "run": "2026-10-31T03-46-54Z",
+  "manifest_sha256": "d66bf07857f47292cdfd802d2817253a59a804ad438a1e7c7e149ca9c0a4fd10",
+  "query": "from:BobLoukas since:2026-04-19 until:2026-04-24"
+ }
+}

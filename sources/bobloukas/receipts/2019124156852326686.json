@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:53.383Z",
+ "cashtags": [],
+ "conversationId": "2019121730124443679",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2019124156852326686",
+ "kind": "reply",
+ "metrics": {
+  "likes": 70,
+  "replies": 3,
+  "reposts": 1,
+  "views": 7384
+ },
+ "postedAt": "2026-02-04T19:01:27.000Z",
+ "replyTo": {
+  "postId": "2019123325520445844",
+  "handle": "Cryptollica"
+ },
+ "text": "Not a fan of looking at RSI in the direction of the trend. It can lag for months, extend deeper, or just sit pegged for weeks/months.  \n\nI also said you're not selling long term bitcoin here. It's a note about the shitcoins.  Historically they have so so much further to drop.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2019124156852326686",
+ "harness": {
+  "run": "2026-10-31T03-29-44Z",
+  "manifest_sha256": "aaa8d4e197f46be6cccda8b30abf99f805399d35c1bf30c84b78a3f1a95bcc12",
+  "query": "from:BobLoukas since:2026-02-03 until:2026-02-08"
+ }
+}

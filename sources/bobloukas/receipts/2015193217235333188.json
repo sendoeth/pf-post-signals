@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:14.212Z",
+ "cashtags": [],
+ "conversationId": "2015139349847834674",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2015193217235333188",
+ "kind": "reply",
+ "metrics": {
+  "likes": 58,
+  "replies": 3,
+  "reposts": 0,
+  "views": 5659
+ },
+ "postedAt": "2026-01-24T22:41:18.000Z",
+ "replyTo": {
+  "postId": "2015191748142899476",
+  "handle": "KrisRoss8131"
+ },
+ "text": "Just as American as you.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2015193217235333188",
+ "harness": {
+  "run": "2026-10-31T03-29-09Z",
+  "manifest_sha256": "12b6383eb0d3e548fb1ff7b7fa27ac18c6544170639bb262e25d9278c33ad772",
+  "query": "from:BobLoukas since:2026-01-19 until:2026-01-29"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:51.696Z",
+ "cashtags": [],
+ "conversationId": "2009291616217903397",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2009305008475357546",
+ "kind": "reply",
+ "metrics": {
+  "likes": 7,
+  "replies": 1,
+  "reposts": 0,
+  "views": 603
+ },
+ "postedAt": "2026-01-08T16:43:39.000Z",
+ "replyTo": {
+  "postId": "2009302361211056601",
+  "handle": "bitsandchriss"
+ },
+ "text": "because cycles didnt begin and end with bitcoin.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2009305008475357546",
+ "harness": {
+  "run": "2026-10-31T03-28-48Z",
+  "manifest_sha256": "15f3f120834a9e146f93308ba01d65815256ffe13b590dc9e35f844e48ccf261",
+  "query": "from:BobLoukas since:2025-12-30 until:2026-01-09"
+ }
+}

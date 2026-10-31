@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:04.925Z",
+ "cashtags": [],
+ "conversationId": "2022006665764082140",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2022007534551433643",
+ "kind": "reply",
+ "metrics": {
+  "likes": 97,
+  "replies": 10,
+  "reposts": 3,
+  "views": 23366
+ },
+ "postedAt": "2026-02-12T17:58:57.000Z",
+ "replyTo": {
+  "postId": "2022006665764082140",
+  "handle": "BobLoukas"
+ },
+ "text": "The slope is growing like a cancer.  (sorry if there is a human in that group).",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2022007534551433643",
+ "harness": {
+  "run": "2026-10-31T03-29-58Z",
+  "manifest_sha256": "046caa1b799b16c1e3d97c7b87fc3565fd829c623a7d127628756b707828f2b0",
+  "query": "from:BobLoukas since:2026-02-08 until:2026-02-18"
+ }
+}

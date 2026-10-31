@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:12.023Z",
+ "cashtags": [],
+ "conversationId": "2027043531185943019",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2027044699807056202",
+ "kind": "reply",
+ "metrics": {
+  "likes": 226,
+  "replies": 10,
+  "reposts": 0,
+  "views": 6214
+ },
+ "postedAt": "2026-02-26T15:34:51.000Z",
+ "replyTo": {
+  "postId": "2027044525064278171",
+  "handle": "mojoxbtc"
+ },
+ "text": "Mate the entire tweet was basically saying chill and watch it do its thing.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2027044699807056202",
+ "harness": {
+  "run": "2026-10-31T03-30-09Z",
+  "manifest_sha256": "f4cb50b74e111333644768234a62c37c553d27111cb37124caf5fe4bcbd50de6",
+  "query": "from:BobLoukas since:2026-02-18 until:2026-02-28"
+ }
+}

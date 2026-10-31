@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:48:01.864Z",
+ "cashtags": [],
+ "conversationId": "2062555473358823797",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2062555473358823797",
+ "kind": "post",
+ "metrics": {
+  "likes": 1388,
+  "replies": 47,
+  "reposts": 121,
+  "views": 111149
+ },
+ "postedAt": "2026-06-04T15:21:59.000Z",
+ "replyTo": null,
+ "text": "Besides the gold Cycle count, the tell is Silver.  It never holds up like this 5 months after a blowoff unless it's preparing for the next move.  In a bull market silver advances via blowoff moves generally 12-24 months apart.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2062555473358823797",
+ "harness": {
+  "run": "2026-10-31T03-47-55Z",
+  "manifest_sha256": "76ee69624ea2b9328b3f138dbfe04636ffc970ec1aa15cc43bb66d8325d64d30",
+  "query": "from:BobLoukas since:2026-06-03 until:2026-06-08"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:03.308Z",
+ "cashtags": [],
+ "conversationId": "2023258901379183029",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2023413006244483116",
+ "kind": "reply",
+ "metrics": {
+  "likes": 4,
+  "replies": 1,
+  "reposts": 0,
+  "views": 953
+ },
+ "postedAt": "2026-02-16T15:03:48.000Z",
+ "replyTo": {
+  "postId": "2023408012736819605",
+  "handle": "Innerdevcrypto"
+ },
+ "text": "It’s not true at all.  \n\nThe cost per ounce to mine that would be something like 1000x the value.  \n\nWould you run a BTC mining farm out of a Manhattan office building?",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2023413006244483116",
+ "harness": {
+  "run": "2026-10-31T03-29-58Z",
+  "manifest_sha256": "046caa1b799b16c1e3d97c7b87fc3565fd829c623a7d127628756b707828f2b0",
+  "query": "from:BobLoukas since:2026-02-08 until:2026-02-18"
+ }
+}

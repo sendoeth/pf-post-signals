@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:32.381Z",
+ "cashtags": [],
+ "conversationId": "2002094215560642928",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2002141394916290856",
+ "kind": "reply",
+ "metrics": {
+  "likes": 17,
+  "replies": 0,
+  "reposts": 0,
+  "views": 1648
+ },
+ "postedAt": "2025-12-19T22:18:01.000Z",
+ "replyTo": {
+  "postId": "2002099520596005127",
+  "handle": "Ramblin_Rebel13"
+ },
+ "text": "Oh if you’re not enjoying life whatever you’re doing, you’re doing it wrong.  That’s a given.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2002141394916290856",
+ "harness": {
+  "run": "2026-10-31T03-28-29Z",
+  "manifest_sha256": "6b809f4562719e0f7de013cb2199555f0361999760d9b9ef86799734f195de03",
+  "query": "from:BobLoukas since:2025-12-15 until:2025-12-20"
+ }
+}

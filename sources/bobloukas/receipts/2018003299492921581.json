@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:37.933Z",
+ "cashtags": [],
+ "conversationId": "2017825233265099004",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2018003299492921581",
+ "kind": "reply",
+ "metrics": {
+  "likes": 4,
+  "replies": 1,
+  "reposts": 0,
+  "views": 776
+ },
+ "postedAt": "2026-02-01T16:47:33.000Z",
+ "replyTo": {
+  "postId": "2017979397538709953",
+  "handle": "awpthorp"
+ },
+ "text": "No there not.  I can’t see how you can believe Bitcoin has a 4 yr cycle and it’s not in decline here.  WC failure or not it’s obvious to the eye.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2018003299492921581",
+ "harness": {
+  "run": "2026-10-31T03-29-33Z",
+  "manifest_sha256": "14f0ea84840c9dca9fe00212e469c77a2ebdd67bd750609b8a6bddcb4356ba1c",
+  "query": "from:BobLoukas since:2026-01-29 until:2026-02-03"
+ }
+}

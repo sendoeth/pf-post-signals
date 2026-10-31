@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:51.696Z",
+ "cashtags": [],
+ "conversationId": "2009356789356314714",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2009356789356314714",
+ "kind": "post",
+ "metrics": {
+  "likes": 1233,
+  "replies": 78,
+  "reposts": 42,
+  "views": 65287
+ },
+ "postedAt": "2026-01-08T20:09:25.000Z",
+ "replyTo": null,
+ "text": "Yes I’ve been bearish on Bitcoin of late.  \n\nBut that is opinion on where we stand for the near future. \n\nWhat gets forgotten or not mentioned enough, I’m always a massive bull long term.   \n\nI’m always and consistently stacking, even if one strategy is selling.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2009356789356314714",
+ "harness": {
+  "run": "2026-10-31T03-28-48Z",
+  "manifest_sha256": "15f3f120834a9e146f93308ba01d65815256ffe13b590dc9e35f844e48ccf261",
+  "query": "from:BobLoukas since:2025-12-30 until:2026-01-09"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:32.383Z",
+ "cashtags": [],
+ "conversationId": "2001707680721932521",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2001708130850250810",
+ "kind": "reply",
+ "metrics": {
+  "likes": 83,
+  "replies": 7,
+  "reposts": 1,
+  "views": 9532
+ },
+ "postedAt": "2025-12-18T17:36:22.000Z",
+ "replyTo": {
+  "postId": "2001707838306161214",
+  "handle": "teh_pwnor"
+ },
+ "text": "That it hurts being down 50% from the high, but that doesn't mean \"value\".  And that historically, these fall 90% when it's eventually done.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2001708130850250810",
+ "harness": {
+  "run": "2026-10-31T03-28-29Z",
+  "manifest_sha256": "6b809f4562719e0f7de013cb2199555f0361999760d9b9ef86799734f195de03",
+  "query": "from:BobLoukas since:2025-12-15 until:2025-12-20"
+ }
+}

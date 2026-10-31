@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:41.410Z",
+ "cashtags": [],
+ "conversationId": "2017306932395090324",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2017306932395090324",
+ "kind": "post",
+ "metrics": {
+  "likes": 67,
+  "replies": 14,
+  "reposts": 0,
+  "views": 28112
+ },
+ "postedAt": "2026-01-30T18:40:27.000Z",
+ "replyTo": null,
+ "text": "Fin Tap members.  New Post.\n\nhttps://thefinancialtap.com/2026/01/metals-crash-update/",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2017306932395090324",
+ "harness": {
+  "run": "2026-10-31T03-29-33Z",
+  "manifest_sha256": "14f0ea84840c9dca9fe00212e469c77a2ebdd67bd750609b8a6bddcb4356ba1c",
+  "query": "from:BobLoukas since:2026-01-29 until:2026-02-03"
+ }
+}

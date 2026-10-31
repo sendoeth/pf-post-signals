@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:07.287Z",
+ "cashtags": [],
+ "conversationId": "2049143403460362412",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2049147177692213398",
+ "kind": "reply",
+ "metrics": {
+  "likes": 0,
+  "replies": 2,
+  "reposts": 0,
+  "views": 670
+ },
+ "postedAt": "2026-04-28T15:22:13.000Z",
+ "replyTo": {
+  "postId": "2049146266853028094",
+  "handle": "Tyler_Did_It"
+ },
+ "text": "For like a month or two, maybe.  But a jump the shark moment for this type of engagement.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2049147177692213398",
+ "harness": {
+  "run": "2026-10-31T03-47-04Z",
+  "manifest_sha256": "5336994f71bbe4f700cf60362be35add5dbd82d5eddf921d84495b46cbd2c660",
+  "query": "from:BobLoukas since:2026-04-24 until:2026-04-29"
+ }
+}

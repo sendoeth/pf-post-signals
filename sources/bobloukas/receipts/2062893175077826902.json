@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:48:00.529Z",
+ "cashtags": [],
+ "conversationId": "2062892085036916755",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2062893175077826902",
+ "kind": "reply",
+ "metrics": {
+  "likes": 70,
+  "replies": 7,
+  "reposts": 1,
+  "views": 3379
+ },
+ "postedAt": "2026-06-05T13:43:54.000Z",
+ "replyTo": {
+  "postId": "2062892376004178135",
+  "handle": "maxpain_crypto"
+ },
+ "text": "XMR.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2062893175077826902",
+ "harness": {
+  "run": "2026-10-31T03-47-55Z",
+  "manifest_sha256": "76ee69624ea2b9328b3f138dbfe04636ffc970ec1aa15cc43bb66d8325d64d30",
+  "query": "from:BobLoukas since:2026-06-03 until:2026-06-08"
+ }
+}

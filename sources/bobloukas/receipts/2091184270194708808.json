@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:20:01.895Z",
+ "cashtags": [],
+ "conversationId": "2091183201653854291",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2091184270194708808",
+ "kind": "reply",
+ "metrics": {
+  "likes": 173,
+  "replies": 4,
+  "reposts": 0,
+  "views": 19668
+ },
+ "postedAt": "2026-08-22T15:22:36.000Z",
+ "replyTo": {
+  "postId": "2091183201653854291",
+  "handle": "CryptoBullet1"
+ },
+ "text": "Nobody remotely serious can be saying that. \n\nOnly questioning is whether \" we have/had a mild, time and price by BTC standards bear market, or not\".",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2091184270194708808",
+ "harness": {
+  "run": "2026-10-31T04-19-58Z",
+  "manifest_sha256": "524676418c0f2612e016569f937d101eda0cc79472efa329bd665434f243e819",
+  "query": "from:BobLoukas since:2026-08-17 until:2026-08-27"
+ }
+}

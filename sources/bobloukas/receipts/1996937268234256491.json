@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:53.467Z",
+ "cashtags": [],
+ "conversationId": "1996935782322368644",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1996937268234256491",
+ "kind": "reply",
+ "metrics": {
+  "likes": 44,
+  "replies": 1,
+  "reposts": 2,
+  "views": 2962
+ },
+ "postedAt": "2025-12-05T13:38:40.000Z",
+ "replyTo": {
+  "postId": "1996936722320351238",
+  "handle": "pianches"
+ },
+ "text": "Silver is already doing its thing. And it looks like it will continue to outperform",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1996937268234256491",
+ "harness": {
+  "run": "2026-10-31T03-11-49Z",
+  "manifest_sha256": "44284fd2b0f53f602994edeb448d034ad7c1447b6074bcf56e01e43a4ce3849c",
+  "query": "from:BobLoukas since:2025-11-30 until:2025-12-10"
+ }
+}

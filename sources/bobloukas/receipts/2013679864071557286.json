@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:15.874Z",
+ "cashtags": [],
+ "conversationId": "2013676441196482831",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2013679864071557286",
+ "kind": "reply",
+ "metrics": {
+  "likes": 64,
+  "replies": 3,
+  "reposts": 0,
+  "views": 7330
+ },
+ "postedAt": "2026-01-20T18:27:46.000Z",
+ "replyTo": {
+  "postId": "2013678977672437892",
+  "handle": "JasonBr38474283"
+ },
+ "text": "Still think they are.  Or at least, they should be",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2013679864071557286",
+ "harness": {
+  "run": "2026-10-31T03-29-09Z",
+  "manifest_sha256": "12b6383eb0d3e548fb1ff7b7fa27ac18c6544170639bb262e25d9278c33ad772",
+  "query": "from:BobLoukas since:2026-01-19 until:2026-01-29"
+ }
+}

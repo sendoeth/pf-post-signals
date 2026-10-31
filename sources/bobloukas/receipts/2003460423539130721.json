@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:44.067Z",
+ "cashtags": [],
+ "conversationId": "2003459252447510555",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2003460423539130721",
+ "kind": "reply",
+ "metrics": {
+  "likes": 12,
+  "replies": 1,
+  "reposts": 1,
+  "views": 4692
+ },
+ "postedAt": "2025-12-23T13:39:22.000Z",
+ "replyTo": {
+  "postId": "2003459598578229631",
+  "handle": "DiamondHandsDig"
+ },
+ "text": "We can only control our participation.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2003460423539130721",
+ "harness": {
+  "run": "2026-10-31T03-28-37Z",
+  "manifest_sha256": "9d13b999b16b71141a9123223a30beac3017eedee0e627ab1a0efb00c27a8930",
+  "query": "from:BobLoukas since:2025-12-20 until:2025-12-30"
+ }
+}

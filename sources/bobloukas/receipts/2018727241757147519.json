@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:55.100Z",
+ "cashtags": [],
+ "conversationId": "2018722278029291948",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2018727241757147519",
+ "kind": "reply",
+ "metrics": {
+  "likes": 18,
+  "replies": 2,
+  "reposts": 0,
+  "views": 1943
+ },
+ "postedAt": "2026-02-03T16:44:15.000Z",
+ "replyTo": {
+  "postId": "2018727007308464616",
+  "handle": "ManAlejg"
+ },
+ "text": "Sadly, no.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2018727241757147519",
+ "harness": {
+  "run": "2026-10-31T03-29-44Z",
+  "manifest_sha256": "aaa8d4e197f46be6cccda8b30abf99f805399d35c1bf30c84b78a3f1a95bcc12",
+  "query": "from:BobLoukas since:2026-02-03 until:2026-02-08"
+ }
+}

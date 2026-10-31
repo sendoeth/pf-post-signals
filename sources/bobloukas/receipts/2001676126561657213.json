@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:32.383Z",
+ "cashtags": [],
+ "conversationId": "2001676126561657213",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2001676126561657213",
+ "kind": "post",
+ "metrics": {
+  "likes": 416,
+  "replies": 37,
+  "reposts": 7,
+  "views": 39038
+ },
+ "postedAt": "2025-12-18T15:29:12.000Z",
+ "replyTo": null,
+ "text": "The CPI numbers are on the blockchain, they must be real.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2001676126561657213",
+ "harness": {
+  "run": "2026-10-31T03-28-29Z",
+  "manifest_sha256": "6b809f4562719e0f7de013cb2199555f0361999760d9b9ef86799734f195de03",
+  "query": "from:BobLoukas since:2025-12-15 until:2025-12-20"
+ }
+}

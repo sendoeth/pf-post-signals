@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:04.926Z",
+ "cashtags": [],
+ "conversationId": "2021256547708399815",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2021637109031784853",
+ "kind": "reply",
+ "metrics": {
+  "likes": 8,
+  "replies": 0,
+  "reposts": 0,
+  "views": 584
+ },
+ "postedAt": "2026-02-11T17:27:01.000Z",
+ "replyTo": {
+  "postId": "2021636158309216497",
+  "handle": "CICEROALVESJUN1"
+ },
+ "text": "If you've held all this time and are doing consistent DCA, then this is the time you absolutely want to be doing more DCA.    \n\nYou want to be delaying DCA after long (years) periods of ATH's.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2021637109031784853",
+ "harness": {
+  "run": "2026-10-31T03-29-58Z",
+  "manifest_sha256": "046caa1b799b16c1e3d97c7b87fc3565fd829c623a7d127628756b707828f2b0",
+  "query": "from:BobLoukas since:2026-02-08 until:2026-02-18"
+ }
+}

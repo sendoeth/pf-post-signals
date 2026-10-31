@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:08.040Z",
+ "cashtags": [],
+ "conversationId": "1986191000281264467",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1986203049451528662",
+ "kind": "reply",
+ "metrics": {
+  "likes": 61,
+  "replies": 2,
+  "reposts": 1,
+  "views": 7670
+ },
+ "postedAt": "2025-11-05T22:44:43.000Z",
+ "replyTo": {
+  "postId": "1986201072004661348",
+  "handle": "Planetstreet1"
+ },
+ "text": "\"Grant me the serenity to accept the things I cannot change and wisdom to know the difference\"",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1986203049451528662",
+ "harness": {
+  "run": "2026-10-31T03-10-01Z",
+  "manifest_sha256": "3844915c6905bd8c09b21e28b77ba45472ed71277b155e9aca6ad52457c02037",
+  "query": "from:BobLoukas since:2025-10-31 until:2025-11-10"
+ }
+}

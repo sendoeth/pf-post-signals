@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:21.406Z",
+ "cashtags": [],
+ "conversationId": "2050229909164081583",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2050939483948757151",
+ "kind": "reply",
+ "metrics": {
+  "likes": 35,
+  "replies": 4,
+  "reposts": 0,
+  "views": 4312
+ },
+ "postedAt": "2026-05-03T14:04:12.000Z",
+ "replyTo": {
+  "postId": "2050229909164081583",
+  "handle": "punk9059"
+ },
+ "text": "Geographically dispersed multi-sig with time delays for significant assets or just park it in an etf, no in between in my book.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2050939483948757151",
+ "harness": {
+  "run": "2026-10-31T03-47-15Z",
+  "manifest_sha256": "d829a2466fa415a7cdaeaff4a6cfdcca76ad661f2ee8e9461b5c6c66af591c27",
+  "query": "from:BobLoukas since:2026-04-29 until:2026-05-09"
+ }
+}

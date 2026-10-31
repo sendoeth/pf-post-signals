@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:55.715Z",
+ "cashtags": [],
+ "conversationId": "1996035572176224753",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1996224827820999113",
+ "kind": "reply",
+ "metrics": {
+  "likes": 37,
+  "replies": 3,
+  "reposts": 0,
+  "views": 1567
+ },
+ "postedAt": "2025-12-03T14:27:41.000Z",
+ "replyTo": {
+  "postId": "1996223988129767647",
+  "handle": "osikobeisnksobs"
+ },
+ "text": "Forming an idea to position on based on one's strategy is what trading is about.  \n\nSorry if you need kid gloves and a disclaimer on every tweet.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1996224827820999113",
+ "harness": {
+  "run": "2026-10-31T03-11-49Z",
+  "manifest_sha256": "44284fd2b0f53f602994edeb448d034ad7c1447b6074bcf56e01e43a4ce3849c",
+  "query": "from:BobLoukas since:2025-11-30 until:2025-12-10"
+ }
+}

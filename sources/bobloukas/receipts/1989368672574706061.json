@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:25.222Z",
+ "cashtags": [],
+ "conversationId": "1989096378669404394",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1989368672574706061",
+ "kind": "reply",
+ "metrics": {
+  "likes": 44,
+  "replies": 8,
+  "reposts": 0,
+  "views": 6710
+ },
+ "postedAt": "2025-11-14T16:23:46.000Z",
+ "replyTo": {
+  "postId": "1989315134984994913",
+  "handle": "scottmelker"
+ },
+ "text": "\"Bitcoin literally made an all-time high months ahead of schedule.\"  That was coming on two years ago, this is old information. What is the \"new\" information?",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1989368672574706061",
+ "harness": {
+  "run": "2026-10-31T03-10-22Z",
+  "manifest_sha256": "8219512b7c4ed9295ff50779c6865723e1b25c0ba9424dff8dd584d91eeef4c2",
+  "query": "from:BobLoukas since:2025-11-10 until:2025-11-15"
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:22.937Z",
+ "cashtags": [],
+ "conversationId": "2029946124006515071",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2029946124006515071",
+ "kind": "quote",
+ "metrics": {
+  "likes": 531,
+  "replies": 26,
+  "reposts": 25,
+  "views": 66779
+ },
+ "postedAt": "2026-03-06T15:44:05.000Z",
+ "replyTo": null,
+ "text": "30 month highs for crude.  Not a major problem yet, but if this trend continues and sticks for a while, it's going to start really hurting the markets.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2029946124006515071",
+ "harness": {
+  "run": "2026-10-31T03-30-20Z",
+  "manifest_sha256": "3d96553ad1872d40978ec78e357b1cef213e2cb79cabbf5b401432e513cb4d1c",
+  "query": "from:BobLoukas since:2026-02-28 until:2026-03-10"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:41.411Z",
+ "cashtags": [],
+ "conversationId": "2016952548431642873",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2016958571443847300",
+ "kind": "reply",
+ "metrics": {
+  "likes": 5,
+  "replies": 1,
+  "reposts": 0,
+  "views": 698
+ },
+ "postedAt": "2026-01-29T19:36:11.000Z",
+ "replyTo": {
+  "postId": "2016957009766023471",
+  "handle": "K2C05428480"
+ },
+ "text": "Says the guy who has a ticket as his profile pic.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2016958571443847300",
+ "harness": {
+  "run": "2026-10-31T03-29-33Z",
+  "manifest_sha256": "14f0ea84840c9dca9fe00212e469c77a2ebdd67bd750609b8a6bddcb4356ba1c",
+  "query": "from:BobLoukas since:2026-01-29 until:2026-02-03"
+ }
+}

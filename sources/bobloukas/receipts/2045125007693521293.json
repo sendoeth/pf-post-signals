@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:46:36.871Z",
+ "cashtags": [],
+ "conversationId": "2044732485821440030",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2045125007693521293",
+ "kind": "reply",
+ "metrics": {
+  "likes": 0,
+  "replies": 0,
+  "reposts": 0,
+  "views": 752
+ },
+ "postedAt": "2026-04-17T12:59:33.000Z",
+ "replyTo": {
+  "postId": "2045043670663971314",
+  "handle": "MadCryptoClub"
+ },
+ "text": "Don’t be sidelined then.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2045125007693521293",
+ "harness": {
+  "run": "2026-10-31T03-46-34Z",
+  "manifest_sha256": "c27074f7b8d8c85ca6aaed1a98de9a36b44ad09e077f54e4c1ddc2264c260dfe",
+  "query": "from:BobLoukas since:2026-04-14 until:2026-04-19"
+ }
+}

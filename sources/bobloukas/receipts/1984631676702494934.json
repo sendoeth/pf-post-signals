@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:13.439Z",
+ "cashtags": [],
+ "conversationId": "1984630746628145659",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1984631676702494934",
+ "kind": "reply",
+ "metrics": {
+  "likes": 32,
+  "replies": 1,
+  "reposts": 0,
+  "views": 5427
+ },
+ "postedAt": "2025-11-01T14:40:39.000Z",
+ "replyTo": {
+  "postId": "1984631548541378845",
+  "handle": "RealYaga"
+ },
+ "text": "Ethereum bro.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1984631676702494934",
+ "harness": {
+  "run": "2026-10-31T03-10-01Z",
+  "manifest_sha256": "3844915c6905bd8c09b21e28b77ba45472ed71277b155e9aca6ad52457c02037",
+  "query": "from:BobLoukas since:2025-10-31 until:2025-11-10"
+ }
+}

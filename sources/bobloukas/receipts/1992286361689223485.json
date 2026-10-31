@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:33.099Z",
+ "cashtags": [],
+ "conversationId": "1992280862252212723",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1992286361689223485",
+ "kind": "reply",
+ "metrics": {
+  "likes": 31,
+  "replies": 1,
+  "reposts": 0,
+  "views": 4517
+ },
+ "postedAt": "2025-11-22T17:37:38.000Z",
+ "replyTo": {
+  "postId": "1992285666928108026",
+  "handle": "thedragonzord"
+ },
+ "text": "I dont think it does either",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1992286361689223485",
+ "harness": {
+  "run": "2026-10-31T03-11-28Z",
+  "manifest_sha256": "5b4f94307a59f6b36bf90ded7f7487cb77a37651415230998ae74712e788ac95",
+  "query": "from:BobLoukas since:2025-11-20 until:2025-11-25"
+ }
+}

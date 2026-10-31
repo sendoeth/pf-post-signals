@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:45.919Z",
+ "cashtags": [],
+ "conversationId": "2041538463976042717",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2041538463976042717",
+ "kind": "post",
+ "metrics": {
+  "likes": 919,
+  "replies": 82,
+  "reposts": 9,
+  "views": 61106
+ },
+ "postedAt": "2026-04-07T15:27:54.000Z",
+ "replyTo": null,
+ "text": "Enjoying a great week in Spain 🇪🇸.   Lovely country and people.  \n\nLot of time to pass still.  Waiting for the Q3 opportunities.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2041538463976042717",
+ "harness": {
+  "run": "2026-10-31T03-30-43Z",
+  "manifest_sha256": "81f41d9816c6b1970d0e17601d6ddbc99f0a4d686b7b2547093e028d9cf765b4",
+  "query": "from:BobLoukas since:2026-03-30 until:2026-04-09"
+ }
+}

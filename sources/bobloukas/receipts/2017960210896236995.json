@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:37.933Z",
+ "cashtags": [],
+ "conversationId": "2017825233265099004",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2017960210896236995",
+ "kind": "reply",
+ "metrics": {
+  "likes": 2,
+  "replies": 1,
+  "reposts": 0,
+  "views": 780
+ },
+ "postedAt": "2026-02-01T13:56:20.000Z",
+ "replyTo": {
+  "postId": "2017957110416314400",
+  "handle": "GoldnGuitars"
+ },
+ "text": "Even if so, I think it’s clear the 4 yr is in decline.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2017960210896236995",
+ "harness": {
+  "run": "2026-10-31T03-29-33Z",
+  "manifest_sha256": "14f0ea84840c9dca9fe00212e469c77a2ebdd67bd750609b8a6bddcb4356ba1c",
+  "query": "from:BobLoukas since:2026-01-29 until:2026-02-03"
+ }
+}

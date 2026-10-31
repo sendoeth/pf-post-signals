@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:39.632Z",
+ "cashtags": [],
+ "conversationId": "2017256982743339269",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2017348113229381983",
+ "kind": "reply",
+ "metrics": {
+  "likes": 4,
+  "replies": 0,
+  "reposts": 0,
+  "views": 712
+ },
+ "postedAt": "2026-01-30T21:24:05.000Z",
+ "replyTo": {
+  "postId": "2017347696957255949",
+  "handle": "DotGainHQ"
+ },
+ "text": "Yes that pattern has been very consistent.   \n\nI think it’s going to break.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2017348113229381983",
+ "harness": {
+  "run": "2026-10-31T03-29-33Z",
+  "manifest_sha256": "14f0ea84840c9dca9fe00212e469c77a2ebdd67bd750609b8a6bddcb4356ba1c",
+  "query": "from:BobLoukas since:2026-01-29 until:2026-02-03"
+ }
+}

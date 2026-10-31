@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:25.221Z",
+ "cashtags": [],
+ "conversationId": "1989334671289967046",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1989482480617796045",
+ "kind": "reply",
+ "metrics": {
+  "likes": 25,
+  "replies": 3,
+  "reposts": 0,
+  "views": 7267
+ },
+ "postedAt": "2025-11-14T23:56:00.000Z",
+ "replyTo": {
+  "postId": "1989481751060910301",
+  "handle": "AstroCryptoGuru"
+ },
+ "text": "You're not wrong",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1989482480617796045",
+ "harness": {
+  "run": "2026-10-31T03-10-22Z",
+  "manifest_sha256": "8219512b7c4ed9295ff50779c6865723e1b25c0ba9424dff8dd584d91eeef4c2",
+  "query": "from:BobLoukas since:2025-11-10 until:2025-11-15"
+ }
+}

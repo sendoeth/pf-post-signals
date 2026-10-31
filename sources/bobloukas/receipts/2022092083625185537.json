@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:03.310Z",
+ "cashtags": [],
+ "conversationId": "2022039063981871390",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2022092083625185537",
+ "kind": "reply",
+ "metrics": {
+  "likes": 14,
+  "replies": 1,
+  "reposts": 0,
+  "views": 3489
+ },
+ "postedAt": "2026-02-12T23:34:56.000Z",
+ "replyTo": {
+  "postId": "2022086749724586211",
+  "handle": "SirByzantine"
+ },
+ "text": "Tech has been down more many times then.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2022092083625185537",
+ "harness": {
+  "run": "2026-10-31T03-29-58Z",
+  "manifest_sha256": "046caa1b799b16c1e3d97c7b87fc3565fd829c623a7d127628756b707828f2b0",
+  "query": "from:BobLoukas since:2026-02-08 until:2026-02-18"
+ }
+}

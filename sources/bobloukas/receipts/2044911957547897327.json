@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:46:36.873Z",
+ "cashtags": [],
+ "conversationId": "2044896486953984343",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2044911957547897327",
+ "kind": "reply",
+ "metrics": {
+  "likes": 64,
+  "replies": 5,
+  "reposts": 3,
+  "views": 18875
+ },
+ "postedAt": "2026-04-16T22:52:57.000Z",
+ "replyTo": {
+  "postId": "2044896486953984343",
+  "handle": "BobLoukas"
+ },
+ "text": "Hamnet was the best movie of the year.  Serious.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2044911957547897327",
+ "harness": {
+  "run": "2026-10-31T03-46-34Z",
+  "manifest_sha256": "c27074f7b8d8c85ca6aaed1a98de9a36b44ad09e077f54e4c1ddc2264c260dfe",
+  "query": "from:BobLoukas since:2026-04-14 until:2026-04-19"
+ }
+}

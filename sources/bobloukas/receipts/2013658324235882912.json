@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:15.875Z",
+ "cashtags": [],
+ "conversationId": "2013606402976293243",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2013658324235882912",
+ "kind": "reply",
+ "metrics": {
+  "likes": 9,
+  "replies": 2,
+  "reposts": 0,
+  "views": 1305
+ },
+ "postedAt": "2026-01-20T17:02:11.000Z",
+ "replyTo": {
+  "postId": "2013653868857508308",
+  "handle": "DPGSpurs"
+ },
+ "text": "False.  The energy cost for all those will NEVER, not even remotely close, make those feasible.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2013658324235882912",
+ "harness": {
+  "run": "2026-10-31T03-29-09Z",
+  "manifest_sha256": "12b6383eb0d3e548fb1ff7b7fa27ac18c6544170639bb262e25d9278c33ad772",
+  "query": "from:BobLoukas since:2026-01-19 until:2026-01-29"
+ }
+}

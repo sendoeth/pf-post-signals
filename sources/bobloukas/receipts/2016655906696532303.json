@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:12.215Z",
+ "cashtags": [],
+ "conversationId": "2016655906696532303",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2016655906696532303",
+ "kind": "post",
+ "metrics": {
+  "likes": 2101,
+  "replies": 96,
+  "reposts": 115,
+  "views": 120739
+ },
+ "postedAt": "2026-01-28T23:33:30.000Z",
+ "replyTo": null,
+ "text": "\"Gold added Bitcoin’s entire market cap today”, all over the feed.\n\nWho cares? The buyers moving tons of gold certainly don’t.\n\nThese narratives are cyclical. It’s all about the timing, not cheerleading someone else’s party out of hope.\n\nWhat it does show is that when Bitcoin’s turn comes, the path to truly silly and outsized numbers is no longer  fantasy.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2016655906696532303",
+ "harness": {
+  "run": "2026-10-31T03-29-09Z",
+  "manifest_sha256": "12b6383eb0d3e548fb1ff7b7fa27ac18c6544170639bb262e25d9278c33ad772",
+  "query": "from:BobLoukas since:2026-01-19 until:2026-01-29"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:21.405Z",
+ "cashtags": [],
+ "conversationId": "2050923641370452081",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2051006258484814145",
+ "kind": "reply",
+ "metrics": {
+  "likes": 3,
+  "replies": 1,
+  "reposts": 0,
+  "views": 583
+ },
+ "postedAt": "2026-05-03T18:29:32.000Z",
+ "replyTo": {
+  "postId": "2050932816641212867",
+  "handle": "kargo187"
+ },
+ "text": "Realize the loss gives back $35k in taxes, and deploy the sale $77k into new art for exposure.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2051006258484814145",
+ "harness": {
+  "run": "2026-10-31T03-47-15Z",
+  "manifest_sha256": "d829a2466fa415a7cdaeaff4a6cfdcca76ad661f2ee8e9461b5c6c66af591c27",
+  "query": "from:BobLoukas since:2026-04-29 until:2026-05-09"
+ }
+}

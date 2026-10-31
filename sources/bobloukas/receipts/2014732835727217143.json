@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:14.212Z",
+ "cashtags": [],
+ "conversationId": "2014730736129953805",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2014732835727217143",
+ "kind": "reply",
+ "metrics": {
+  "likes": 11,
+  "replies": 2,
+  "reposts": 0,
+  "views": 872
+ },
+ "postedAt": "2026-01-23T16:11:54.000Z",
+ "replyTo": {
+  "postId": "2014731576504959413",
+  "handle": "beausecurity"
+ },
+ "text": "They do?  They’re junk compared to trezor.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2014732835727217143",
+ "harness": {
+  "run": "2026-10-31T03-29-09Z",
+  "manifest_sha256": "12b6383eb0d3e548fb1ff7b7fa27ac18c6544170639bb262e25d9278c33ad772",
+  "query": "from:BobLoukas since:2026-01-19 until:2026-01-29"
+ }
+}

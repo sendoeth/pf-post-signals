@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:49.678Z",
+ "cashtags": [],
+ "conversationId": "2019402529767919888",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2019410831231074740",
+ "kind": "reply",
+ "metrics": {
+  "likes": 55,
+  "replies": 2,
+  "reposts": 1,
+  "views": 5445
+ },
+ "postedAt": "2026-02-05T14:00:35.000Z",
+ "replyTo": {
+  "postId": "2019402529767919888",
+  "handle": "biancoresearch"
+ },
+ "text": "This is the right take.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2019410831231074740",
+ "harness": {
+  "run": "2026-10-31T03-29-44Z",
+  "manifest_sha256": "aaa8d4e197f46be6cccda8b30abf99f805399d35c1bf30c84b78a3f1a95bcc12",
+  "query": "from:BobLoukas since:2026-02-03 until:2026-02-08"
+ }
+}

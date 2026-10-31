@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:39.720Z",
+ "cashtags": [],
+ "conversationId": "2005327625791906291",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2005328730189922609",
+ "kind": "reply",
+ "metrics": {
+  "likes": 68,
+  "replies": 5,
+  "reposts": 3,
+  "views": 2885
+ },
+ "postedAt": "2025-12-28T17:23:21.000Z",
+ "replyTo": {
+  "postId": "2005328365801324719",
+  "handle": "CryptoCurb"
+ },
+ "text": "I have mixed feelings on bitcoin currently.   \n\nSentiment is already at bear market levels and overdue a rally. Yet, I really do not like this price action, feels like it’s preparing for another big leg lower.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2005328730189922609",
+ "harness": {
+  "run": "2026-10-31T03-28-37Z",
+  "manifest_sha256": "9d13b999b16b71141a9123223a30beac3017eedee0e627ab1a0efb00c27a8930",
+  "query": "from:BobLoukas since:2025-12-20 until:2025-12-30"
+ }
+}

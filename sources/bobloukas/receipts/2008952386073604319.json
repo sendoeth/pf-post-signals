@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:53.749Z",
+ "cashtags": [],
+ "conversationId": "2008950654426136960",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2008952386073604319",
+ "kind": "reply",
+ "metrics": {
+  "likes": 5,
+  "replies": 1,
+  "reposts": 0,
+  "views": 780
+ },
+ "postedAt": "2026-01-07T17:22:28.000Z",
+ "replyTo": {
+  "postId": "2008951979083444522",
+  "handle": "OboteSan"
+ },
+ "text": "Energy is separate asset class allocation vs a sector.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2008952386073604319",
+ "harness": {
+  "run": "2026-10-31T03-28-48Z",
+  "manifest_sha256": "15f3f120834a9e146f93308ba01d65815256ffe13b590dc9e35f844e48ccf261",
+  "query": "from:BobLoukas since:2025-12-30 until:2026-01-09"
+ }
+}

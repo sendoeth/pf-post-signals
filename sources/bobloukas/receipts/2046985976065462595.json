@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:00.735Z",
+ "cashtags": [],
+ "conversationId": "2046984846489043072",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2046985976065462595",
+ "kind": "reply",
+ "metrics": {
+  "likes": 9,
+  "replies": 0,
+  "reposts": 0,
+  "views": 4849
+ },
+ "postedAt": "2026-04-22T16:14:22.000Z",
+ "replyTo": {
+  "postId": "2046985818544218351",
+  "handle": "investingtomars"
+ },
+ "text": "Likely will but then on the downside it should form well above recent lows",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2046985976065462595",
+ "harness": {
+  "run": "2026-10-31T03-46-54Z",
+  "manifest_sha256": "d66bf07857f47292cdfd802d2817253a59a804ad438a1e7c7e149ca9c0a4fd10",
+  "query": "from:BobLoukas since:2026-04-19 until:2026-04-24"
+ }
+}

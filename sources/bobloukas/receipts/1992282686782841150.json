@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:33.100Z",
+ "cashtags": [],
+ "conversationId": "1992280862252212723",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1992282686782841150",
+ "kind": "reply",
+ "metrics": {
+  "likes": 98,
+  "replies": 6,
+  "reposts": 0,
+  "views": 6413
+ },
+ "postedAt": "2025-11-22T17:23:02.000Z",
+ "replyTo": {
+  "postId": "1992282548680999151",
+  "handle": "Dizzle123C"
+ },
+ "text": "Ofc they were.  \n\nBecause they changed the culture of Bitcoin.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1992282686782841150",
+ "harness": {
+  "run": "2026-10-31T03-11-28Z",
+  "manifest_sha256": "5b4f94307a59f6b36bf90ded7f7487cb77a37651415230998ae74712e788ac95",
+  "query": "from:BobLoukas since:2025-11-20 until:2025-11-25"
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:48:00.530Z",
+ "cashtags": [
+  "ADA"
+ ],
+ "conversationId": "2062880187629363236",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2062880187629363236",
+ "kind": "quote",
+ "metrics": {
+  "likes": 869,
+  "replies": 79,
+  "reposts": 49,
+  "views": 150855
+ },
+ "postedAt": "2026-06-05T12:52:17.000Z",
+ "replyTo": null,
+ "text": "$ADA and many other such projects (Like AVAX, DOT like prior cycle coins) are finally in terminal death decline phases.\n\nTaking out their prior 4yr cycle lows = 💀",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2062880187629363236",
+ "harness": {
+  "run": "2026-10-31T03-47-55Z",
+  "manifest_sha256": "76ee69624ea2b9328b3f138dbfe04636ffc970ec1aa15cc43bb66d8325d64d30",
+  "query": "from:BobLoukas since:2026-06-03 until:2026-06-08"
+ }
+}

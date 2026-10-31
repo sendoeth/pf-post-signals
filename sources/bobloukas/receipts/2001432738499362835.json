@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:34.213Z",
+ "cashtags": [],
+ "conversationId": "2001432738499362835",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2001432738499362835",
+ "kind": "post",
+ "metrics": {
+  "likes": 435,
+  "replies": 67,
+  "reposts": 16,
+  "views": 42409
+ },
+ "postedAt": "2025-12-17T23:22:04.000Z",
+ "replyTo": null,
+ "text": "Just got ‘Aphelion Skies’ back from the framers.  Really gorgeous piece from my absolute favorite Digital Artist, @emilyxxie \n\nNice addition to the office.  \n\nAlso, her works, like many great digital artists, have never been more affordable.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2001432738499362835",
+ "harness": {
+  "run": "2026-10-31T03-28-29Z",
+  "manifest_sha256": "6b809f4562719e0f7de013cb2199555f0361999760d9b9ef86799734f195de03",
+  "query": "from:BobLoukas since:2025-12-15 until:2025-12-20"
+ }
+}

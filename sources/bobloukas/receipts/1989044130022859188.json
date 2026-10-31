@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:27.306Z",
+ "cashtags": [],
+ "conversationId": "1989043561673703456",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1989044130022859188",
+ "kind": "reply",
+ "metrics": {
+  "likes": 199,
+  "replies": 8,
+  "reposts": 0,
+  "views": 12376
+ },
+ "postedAt": "2025-11-13T18:54:09.000Z",
+ "replyTo": {
+  "postId": "1989043841635348914",
+  "handle": "NicheDown"
+ },
+ "text": "It's only money mate.  \n\nYou win some and you lose some.  If it's more than \"lose some\", then it's a life lesson.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1989044130022859188",
+ "harness": {
+  "run": "2026-10-31T03-10-22Z",
+  "manifest_sha256": "8219512b7c4ed9295ff50779c6865723e1b25c0ba9424dff8dd584d91eeef4c2",
+  "query": "from:BobLoukas since:2025-11-10 until:2025-11-15"
+ }
+}

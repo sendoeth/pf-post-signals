@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:22.936Z",
+ "cashtags": [],
+ "conversationId": "2030646668316606485",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2030680189999501336",
+ "kind": "reply",
+ "metrics": {
+  "likes": 62,
+  "replies": 2,
+  "reposts": 1,
+  "views": 7084
+ },
+ "postedAt": "2026-03-08T16:21:00.000Z",
+ "replyTo": {
+  "postId": "2030646668316606485",
+  "handle": "TXMCtrades"
+ },
+ "text": "Exactly.   Tradfi will completely abstract anything “crypto” related. No dumb wallets and signing.  And you will just send “dollars”.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2030680189999501336",
+ "harness": {
+  "run": "2026-10-31T03-30-20Z",
+  "manifest_sha256": "3d96553ad1872d40978ec78e357b1cef213e2cb79cabbf5b401432e513cb4d1c",
+  "query": "from:BobLoukas since:2026-02-28 until:2026-03-10"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:20.274Z",
+ "cashtags": [],
+ "conversationId": "2051627961724305706",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2051644968830169337",
+ "kind": "reply",
+ "metrics": {
+  "likes": 6,
+  "replies": 0,
+  "reposts": 0,
+  "views": 535
+ },
+ "postedAt": "2026-05-05T12:47:32.000Z",
+ "replyTo": {
+  "postId": "2051644811208491040",
+  "handle": "simonwins28"
+ },
+ "text": "Yep.   “Just tell me exactly what’s going to happen and don’t change your mind no matter what”",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2051644968830169337",
+ "harness": {
+  "run": "2026-10-31T03-47-15Z",
+  "manifest_sha256": "d829a2466fa415a7cdaeaff4a6cfdcca76ad661f2ee8e9461b5c6c66af591c27",
+  "query": "from:BobLoukas since:2026-04-29 until:2026-05-09"
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:12.215Z",
+ "cashtags": [],
+ "conversationId": "2016523209500131511",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2016523209500131511",
+ "kind": "quote",
+ "metrics": {
+  "likes": 592,
+  "replies": 42,
+  "reposts": 34,
+  "views": 180253
+ },
+ "postedAt": "2026-01-28T14:46:12.000Z",
+ "replyTo": null,
+ "text": "Very strong signal on Stocks here.  Week 10 of the Cycle, new ATH's, and recently left behind a very clean stop with the recent Daily Cycle Low.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2016523209500131511",
+ "harness": {
+  "run": "2026-10-31T03-29-09Z",
+  "manifest_sha256": "12b6383eb0d3e548fb1ff7b7fa27ac18c6544170639bb262e25d9278c33ad772",
+  "query": "from:BobLoukas since:2026-01-19 until:2026-01-29"
+ }
+}

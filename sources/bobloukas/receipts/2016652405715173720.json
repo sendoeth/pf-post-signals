@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:12.215Z",
+ "cashtags": [],
+ "conversationId": "2016647059693035816",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2016652405715173720",
+ "kind": "reply",
+ "metrics": {
+  "likes": 189,
+  "replies": 5,
+  "reposts": 2,
+  "views": 21098
+ },
+ "postedAt": "2026-01-28T23:19:35.000Z",
+ "replyTo": {
+  "postId": "2016647059693035816",
+  "handle": "EricBalchunas"
+ },
+ "text": "This remind me of 2011 bubble peak when Sprot Silver was something like a 30% premium.  Interestingly, no real premium now.  Big Asian buying this time,",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2016652405715173720",
+ "harness": {
+  "run": "2026-10-31T03-29-09Z",
+  "manifest_sha256": "12b6383eb0d3e548fb1ff7b7fa27ac18c6544170639bb262e25d9278c33ad772",
+  "query": "from:BobLoukas since:2026-01-19 until:2026-01-29"
+ }
+}

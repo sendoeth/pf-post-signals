@@ -1,0 +1,230 @@
+{
+ "version": "quanty.intake.v1",
+ "added_at": "2026-10-31T04:39:25Z",
+ "records": [
+  {
+   "record_file": "records/posts/1985733515221078204_BTC.json",
+   "record_sha256": "332fc123266a49f40669d83a94929c78fbd757d26be76a2ee130533b80b401d8",
+   "receipt": {
+    "file": "sources/bobloukas/receipts/1985733515221078204.json",
+    "sha256": "fb1ba58cde3444da54ad7d54111adc991f2f6201c9f609c8cc110b11797fac7e",
+    "created": false,
+    "text_truncated": false
+   }
+  },
+  {
+   "record_file": "records/posts/1993658195982876720_SILVER.json",
+   "record_sha256": "f47ba145de8f2f8b7c62d9989879164c2013594306fb978bd19bb02c825c343b",
+   "receipt": {
+    "file": "sources/bobloukas/receipts/1993658195982876720.json",
+    "sha256": "250a7573132d9b18425b61a3c6ba60389d5fc3c9eca3378045412621570f32fa",
+    "created": false,
+    "text_truncated": false
+   }
+  },
+  {
+   "record_file": "records/posts/1999149068459618541_STOCKS.json",
+   "record_sha256": "6a6886a458f824890b711d4eb239e9d5c824fc1addb1669bc04121a23631a255",
+   "receipt": {
+    "file": "sources/bobloukas/receipts/1999149068459618541.json",
+    "sha256": "a44b7ef0f1dc52e75fcf3e5882d8b612826c72f35c9029dc18d3c337d2823b30",
+    "created": false,
+    "text_truncated": false
+   }
+  },
+  {
+   "record_file": "records/posts/2003111794072801304_GOLD.json",
+   "record_sha256": "6087a4c1fba4afedecc567b48af1e1a7aafc8882b6ed9cb5727e166b0623158f",
+   "receipt": {
+    "file": "sources/bobloukas/receipts/2003111794072801304.json",
+    "sha256": "d27965213f02971663dc3a2f13f6cc119803cf55c4427347517b211b1292a4c9",
+    "created": false,
+    "text_truncated": false
+   }
+  },
+  {
+   "record_file": "records/posts/2003490330650575038_COPPER.json",
+   "record_sha256": "5838c3ea388b2dc0d0129f4afe402c14fcf5428cbf0e163e6a5f751d5098d62b",
+   "receipt": {
+    "file": "sources/bobloukas/receipts/2003490330650575038.json",
+    "sha256": "75d2ea0dea9f44f7987d86173a21cb89a74297ff4eec5eade1d21407b1a04e3a",
+    "created": false,
+    "text_truncated": false
+   }
+  },
+  {
+   "record_file": "records/posts/2009356789356314714_BTC.json",
+   "record_sha256": "4d91ce953a8549a07fcd6fd486965c7e553734041dfec35bce4096ace9027b65",
+   "receipt": {
+    "file": "sources/bobloukas/receipts/2009356789356314714.json",
+    "sha256": "bfde7b8d0bb4301ba4f9c0c467c008282b2448d9c1527bbac5227ce9c9dbf3e6",
+    "created": false,
+    "text_truncated": false
+   }
+  },
+  {
+   "record_file": "records/posts/2011105173104705981_GOLD.json",
+   "record_sha256": "b42f53f12a4d6dac3adbca77dad871e9350b8f548d1a959fe94cbb1aec007ebe",
+   "receipt": {
+    "file": "sources/bobloukas/receipts/2011105173104705981.json",
+    "sha256": "7ac0a65fcf844cee4714d36a0620d13fdb407a01d68ad109b2b875bc7e4b6565",
+    "created": false,
+    "text_truncated": false
+   }
+  },
+  {
+   "record_file": "records/posts/2011110630338535867_COPPER.json",
+   "record_sha256": "4f9363cbfdc1ffad46cc2d915e29f332da45002ef0be51c1db12c2c04741cbb0",
+   "receipt": {
+    "file": "sources/bobloukas/receipts/2011110630338535867.json",
+    "sha256": "e62dcf1884ce96cc6105e1ce902ea5a305e48378560dbbf7f7eebcc1998f4514",
+    "created": false,
+    "text_truncated": false
+   }
+  },
+  {
+   "record_file": "records/posts/2016523209500131511_STOCKS.json",
+   "record_sha256": "fd2385d0438568c7da16f6c7f4a1e4ebdcc12f94929304957fe4a272d6171e22",
+   "receipt": {
+    "file": "sources/bobloukas/receipts/2016523209500131511.json",
+    "sha256": "892eff09a9b46324bb2b9e1806ed911a592b5365d1abf82fe50d5c29aa7ac4cb",
+    "created": false,
+    "text_truncated": false
+   }
+  },
+  {
+   "record_file": "records/posts/2017256982743339269_BTC.json",
+   "record_sha256": "77e5f921a2adac984c566ff5090c1f095be3cbd5b21619b3870617d63a8cd78f",
+   "receipt": {
+    "file": "sources/bobloukas/receipts/2017256982743339269.json",
+    "sha256": "0b43e251e04f0dd49577db1b19df772e93579e8784134959c552d1554eb7d725",
+    "created": false,
+    "text_truncated": false
+   }
+  },
+  {
+   "record_file": "records/posts/2022006665764082140_STOCKS.json",
+   "record_sha256": "04e38ad9d86e4a53891443ce183cdd775bd32e9ead3c66b7de2760667117f935",
+   "receipt": {
+    "file": "sources/bobloukas/receipts/2022006665764082140.json",
+    "sha256": "aff241c353bab7192db251495bdab116726feb091507dc08301834e725bd6e9b",
+    "created": false,
+    "text_truncated": false
+   }
+  },
+  {
+   "record_file": "records/posts/2023793838322782454_BTC.json",
+   "record_sha256": "2a05d675d5e04c48b6db76956cf330fa09850ad8a2e717a235b532212e7a9d0e",
+   "receipt": {
+    "file": "sources/bobloukas/receipts/2023793838322782454.json",
+    "sha256": "79ff76a4aaf13076238ec5463a477e18572283af28642a9433a79c76d5b0cbc0",
+    "created": false,
+    "text_truncated": false
+   }
+  },
+  {
+   "record_file": "records/posts/2028472872604209602_STOCKS.json",
+   "record_sha256": "42a1ea86c53594d8683f2b757779beaf42f4583540cc26d42c85f8ccdfe1fbb1",
+   "receipt": {
+    "file": "sources/bobloukas/receipts/2028472872604209602.json",
+    "sha256": "6c079435707001f7971d2a143e61ea4a3b2244984ac3af2994b89d22c6c21515",
+    "created": false,
+    "text_truncated": false
+   }
+  },
+  {
+   "record_file": "records/posts/2031739333057659161_STOCKS.json",
+   "record_sha256": "b7e20d8488a38010e3c6c38fd5862b1a7faeb12fa66a48a60bf67d13baf504b5",
+   "receipt": {
+    "file": "sources/bobloukas/receipts/2031739333057659161.json",
+    "sha256": "91560a2dd09bf098a46da9aa8d8aed04c7de2388bb23d976255df2b1daa92780",
+    "created": false,
+    "text_truncated": false
+   }
+  },
+  {
+   "record_file": "records/posts/2062277523288068152_BTC.json",
+   "record_sha256": "7346b187c2017d7d701927b5da48ac2c16bd0a28f1ad3db92c18fa73bf8cc322",
+   "receipt": {
+    "file": "sources/bobloukas/receipts/2062277523288068152.json",
+    "sha256": "e3d72b1037596f3bd027340467c5bd67fe053fcc25b5aba6cbf92c4180b8c87e",
+    "created": false,
+    "text_truncated": false
+   }
+  },
+  {
+   "record_file": "records/posts/2062554209212358962_GOLD.json",
+   "record_sha256": "c69d57944f9aa40425c739435f4832a3bc7f2b46f2936697955e27f887f40e56",
+   "receipt": {
+    "file": "sources/bobloukas/receipts/2062554209212358962.json",
+    "sha256": "4f4e96ce5f3c7733aa986c1ed634ca3ae0d0dcfd190143197313f7eb9d1bc802",
+    "created": false,
+    "text_truncated": false
+   }
+  }
+ ],
+ "bundle_sha256_before": "85253032a84785b0e0279205a31e17a2f1ff795d920aa032e733785e92f10439",
+ "bundle_sha256_after": "68abeee8eaf00e25edde1a5e51d15db73787c3e9b14f72ff036f30ccd636c6e8",
+ "avatar": {
+  "BobLoukas": "kept"
+ },
+ "candles": {
+  "BTC": "candles refetched (fetch_ohlc.py): entry bars: 48/48 candle opens equal the record entry price",
+  "SILVER": "candles already cover the entry bar",
+  "STOCKS": "candles already cover the entry bar",
+  "GOLD": "candles already cover the entry bar",
+  "COPPER": "candles already cover the entry bar"
+ },
+ "scores_previewed": {
+  "BobLoukas": {
+   "score": 51.80295456688874,
+   "display": "51.8",
+   "rank": 2,
+   "label": null,
+   "scored": 33,
+   "calls_total": 35,
+   "with_entry": 35,
+   "raw": 52.3493044356429,
+   "weight": 0.7674418604651163,
+   "of": 4
+  }
+ },
+ "scores_after_add": {
+  "BobLoukas": {
+   "score": 51.80295456688874,
+   "display": "51.8",
+   "rank": 2,
+   "label": null,
+   "scored": 33,
+   "calls_total": 35,
+   "with_entry": 35,
+   "raw": 52.3493044356429,
+   "weight": 0.7674418604651163,
+   "of": 4
+  }
+ },
+ "scores_before": {
+  "BobLoukas": {
+   "score": 45.90772894422511,
+   "display": "45.9",
+   "rank": 4,
+   "label": "limited sample",
+   "scored": 17,
+   "calls_total": 19,
+   "with_entry": 19,
+   "raw": 43.50051067612224,
+   "weight": 0.6296296296296297,
+   "of": 4
+  }
+ },
+ "other_callers_unchanged": [
+  "Corbanu",
+  "DrProfitCrypto",
+  "goodalexander"
+ ],
+ "frozen_values_checked": 32,
+ "matches_preview": true,
+ "problems": [],
+ "scan": "intake/scans/bobloukas/scan_log.json",
+ "review_file": "intake/scans/bobloukas/review.json"
+}

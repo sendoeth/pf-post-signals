@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:55.716Z",
+ "cashtags": [],
+ "conversationId": "1995883656145944926",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1995885790426268070",
+ "kind": "reply",
+ "metrics": {
+  "likes": 69,
+  "replies": 5,
+  "reposts": 0,
+  "views": 4645
+ },
+ "postedAt": "2025-12-02T16:00:28.000Z",
+ "replyTo": {
+  "postId": "1995883885151084641",
+  "handle": "AkosBull"
+ },
+ "text": "Still think the top is in.  It has to make a 50% move just to make a high.  \n\nThere are things in between.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1995885790426268070",
+ "harness": {
+  "run": "2026-10-31T03-11-49Z",
+  "manifest_sha256": "44284fd2b0f53f602994edeb448d034ad7c1447b6074bcf56e01e43a4ce3849c",
+  "query": "from:BobLoukas since:2025-11-30 until:2025-12-10"
+ }
+}

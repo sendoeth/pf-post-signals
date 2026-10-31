@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:09.808Z",
+ "cashtags": [],
+ "conversationId": "1986191000281264467",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1986191000281264467",
+ "kind": "post",
+ "metrics": {
+  "likes": 1759,
+  "replies": 168,
+  "reposts": 75,
+  "views": 351449
+ },
+ "postedAt": "2025-11-05T21:56:50.000Z",
+ "replyTo": null,
+ "text": "So many questions on where bitcoin is heading.\n\nMy honest answer, at this phase of cycle we're in that zone where it's not bull only mode. So I wouldn't be surprised with bitcoin at $60k or $180k in 3 months.  Bitcoin doubles in 3 months during bull phases and historically drops 50% off the highs in 8 weeks from a top. \n\nSo I'm no help to you and I wont stake a position for future clout. \n\nMy only goal personally here is how to get the best possible result from either outcome.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1986191000281264467",
+ "harness": {
+  "run": "2026-10-31T03-10-01Z",
+  "manifest_sha256": "3844915c6905bd8c09b21e28b77ba45472ed71277b155e9aca6ad52457c02037",
+  "query": "from:BobLoukas since:2025-10-31 until:2025-11-10"
+ }
+}

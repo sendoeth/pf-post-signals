@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:11.633Z",
+ "cashtags": [],
+ "conversationId": "1985336554437361800",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1985337828864139387",
+ "kind": "reply",
+ "metrics": {
+  "likes": 8,
+  "replies": 1,
+  "reposts": 0,
+  "views": 1372
+ },
+ "postedAt": "2025-11-03T13:26:38.000Z",
+ "replyTo": {
+  "postId": "1985337450240389191",
+  "handle": "ironhealthy"
+ },
+ "text": "Nobody really ever does.  \n\nOne must adapt to sentiment and price action.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1985337828864139387",
+ "harness": {
+  "run": "2026-10-31T03-10-01Z",
+  "manifest_sha256": "3844915c6905bd8c09b21e28b77ba45472ed71277b155e9aca6ad52457c02037",
+  "query": "from:BobLoukas since:2025-10-31 until:2025-11-10"
+ }
+}

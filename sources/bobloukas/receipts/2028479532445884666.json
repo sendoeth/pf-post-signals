@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:25.382Z",
+ "cashtags": [],
+ "conversationId": "2028473753022136453",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2028479532445884666",
+ "kind": "reply",
+ "metrics": {
+  "likes": 27,
+  "replies": 4,
+  "reposts": 0,
+  "views": 4064
+ },
+ "postedAt": "2026-03-02T14:36:22.000Z",
+ "replyTo": {
+  "postId": "2028477986022756713",
+  "handle": "chartist_ext"
+ },
+ "text": "There is none, it's bias fitting.  No offense to who Cryptorand tagged as the source, he's been sharing the exact same type of charts for 12 months showing indicators at a bottom and ready to explode.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2028479532445884666",
+ "harness": {
+  "run": "2026-10-31T03-30-20Z",
+  "manifest_sha256": "3d96553ad1872d40978ec78e357b1cef213e2cb79cabbf5b401432e513cb4d1c",
+  "query": "from:BobLoukas since:2026-02-28 until:2026-03-10"
+ }
+}

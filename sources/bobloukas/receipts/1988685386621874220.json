@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:28.650Z",
+ "cashtags": [],
+ "conversationId": "1988312504930542026",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1988685386621874220",
+ "kind": "reply",
+ "metrics": {
+  "likes": 11,
+  "replies": 1,
+  "reposts": 0,
+  "views": 1141
+ },
+ "postedAt": "2025-11-12T19:08:38.000Z",
+ "replyTo": {
+  "postId": "1988666247211544634",
+  "handle": "1914ad"
+ },
+ "text": "Enjoy your Saylor bitcoin, I mean stock.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1988685386621874220",
+ "harness": {
+  "run": "2026-10-31T03-10-22Z",
+  "manifest_sha256": "8219512b7c4ed9295ff50779c6865723e1b25c0ba9424dff8dd584d91eeef4c2",
+  "query": "from:BobLoukas since:2025-11-10 until:2025-11-15"
+ }
+}

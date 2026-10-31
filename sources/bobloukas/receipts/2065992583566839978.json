@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:48:09.375Z",
+ "cashtags": [],
+ "conversationId": "2065984699525165537",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2065992583566839978",
+ "kind": "reply",
+ "metrics": {
+  "likes": 1,
+  "replies": 1,
+  "reposts": 0,
+  "views": 741
+ },
+ "postedAt": "2026-06-14T02:59:50.000Z",
+ "replyTo": {
+  "postId": "2065988053798191201",
+  "handle": "rexxxryan10"
+ },
+ "text": "Like the last one they called.  Oh right, no.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2065992583566839978",
+ "harness": {
+  "run": "2026-10-31T03-48-06Z",
+  "manifest_sha256": "485917866faaacba3f6ba610f71bd9e8742dd651e87192dd8b73f98728b3818a",
+  "query": "from:BobLoukas since:2026-06-08 until:2026-06-18"
+ }
+}

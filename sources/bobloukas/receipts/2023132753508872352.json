@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:03.309Z",
+ "cashtags": [],
+ "conversationId": "2023132753508872352",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2023132753508872352",
+ "kind": "quote",
+ "metrics": {
+  "likes": 597,
+  "replies": 83,
+  "reposts": 21,
+  "views": 60507
+ },
+ "postedAt": "2026-02-15T20:30:11.000Z",
+ "replyTo": null,
+ "text": "Really happy to collect this wonderful piece by @JenPanepinto, along with 3 others works.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2023132753508872352",
+ "harness": {
+  "run": "2026-10-31T03-29-58Z",
+  "manifest_sha256": "046caa1b799b16c1e3d97c7b87fc3565fd829c623a7d127628756b707828f2b0",
+  "query": "from:BobLoukas since:2026-02-08 until:2026-02-18"
+ }
+}

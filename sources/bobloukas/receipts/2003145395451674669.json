@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:44.067Z",
+ "cashtags": [],
+ "conversationId": "2003145395451674669",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2003145395451674669",
+ "kind": "post",
+ "metrics": {
+  "likes": 1133,
+  "replies": 68,
+  "reposts": 137,
+  "views": 388592
+ },
+ "postedAt": "2025-12-22T16:47:33.000Z",
+ "replyTo": null,
+ "text": "New Bitcoin 4 Year Cycle video has been published to Youtube.  With new action in the model portfolio.\n\nThe Turn in the Cycle https://youtu.be/FYxQXT8J7ek?si=A-SYztjTfQYFc1A4 \n\nAppreciate a share and retweet.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2003145395451674669",
+ "harness": {
+  "run": "2026-10-31T03-28-37Z",
+  "manifest_sha256": "9d13b999b16b71141a9123223a30beac3017eedee0e627ab1a0efb00c27a8930",
+  "query": "from:BobLoukas since:2025-12-20 until:2025-12-30"
+ }
+}

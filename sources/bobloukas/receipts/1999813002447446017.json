@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:24.287Z",
+ "cashtags": [],
+ "conversationId": "1999142435549593830",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1999813002447446017",
+ "kind": "reply",
+ "metrics": {
+  "likes": 6,
+  "replies": 0,
+  "reposts": 0,
+  "views": 985
+ },
+ "postedAt": "2025-12-13T12:05:49.000Z",
+ "replyTo": {
+  "postId": "1999510939263983959",
+  "handle": "Tommannerrr"
+ },
+ "text": "No the point was that they’re all down eve the “leaders”.  It’s not to signal out one.  It’s a market trend.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1999813002447446017",
+ "harness": {
+  "run": "2026-10-31T03-28-21Z",
+  "manifest_sha256": "c02ce20beb826e706b2b33c18668b6975c7f6e723f9ba8dc68eba93123f5e55a",
+  "query": "from:BobLoukas since:2025-12-10 until:2025-12-15"
+ }
+}

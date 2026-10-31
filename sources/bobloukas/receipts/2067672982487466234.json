@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:03:38.671Z",
+ "cashtags": [],
+ "conversationId": "2067650440645206159",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2067672982487466234",
+ "kind": "reply",
+ "metrics": {
+  "likes": 27,
+  "replies": 4,
+  "reposts": 0,
+  "views": 1302
+ },
+ "postedAt": "2026-06-18T18:17:09.000Z",
+ "replyTo": {
+  "postId": "2067671314630840737",
+  "handle": "MSTRCAT_"
+ },
+ "text": "What free cash flow do they have?  None.  \n\nThey generate money to pay people back by issuing shares or selling bitcoin.  \n\nThe entire model is based 100% on bitcoin going up.  \n\nIs it a ponzi in the tradition sense, maybe not.  And being \"transparent\" about the financing doesn't make it not one either.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2067672982487466234",
+ "harness": {
+  "run": "2026-10-31T04-03-34Z",
+  "manifest_sha256": "80481ec9abd4e75a790a038fdafcf2407911298e9bbac3a7dd1f344521f8274f",
+  "query": "from:BobLoukas since:2026-06-18 until:2026-06-23"
+ }
+}

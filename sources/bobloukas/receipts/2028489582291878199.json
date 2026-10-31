@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:25.382Z",
+ "cashtags": [],
+ "conversationId": "2028473753022136453",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2028489582291878199",
+ "kind": "reply",
+ "metrics": {
+  "likes": 125,
+  "replies": 14,
+  "reposts": 0,
+  "views": 9143
+ },
+ "postedAt": "2026-03-02T15:16:18.000Z",
+ "replyTo": {
+  "postId": "2028486913548796233",
+  "handle": "dotkrueger"
+ },
+ "text": "Yes true.  If you're happy to sit through 80% drawdown in your portfolio, holding indefinitely is an option.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2028489582291878199",
+ "harness": {
+  "run": "2026-10-31T03-30-20Z",
+  "manifest_sha256": "3d96553ad1872d40978ec78e357b1cef213e2cb79cabbf5b401432e513cb4d1c",
+  "query": "from:BobLoukas since:2026-02-28 until:2026-03-10"
+ }
+}

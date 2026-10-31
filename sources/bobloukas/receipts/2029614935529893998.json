@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:24.901Z",
+ "cashtags": [],
+ "conversationId": "2029614772480516230",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2029614935529893998",
+ "kind": "reply",
+ "metrics": {
+  "likes": 594,
+  "replies": 17,
+  "reposts": 14,
+  "views": 42261
+ },
+ "postedAt": "2026-03-05T17:48:03.000Z",
+ "replyTo": {
+  "postId": "2029614772480516230",
+  "handle": "benjamincowen"
+ },
+ "text": "High chance S&P 500 4 yr cycle top is in.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2029614935529893998",
+ "harness": {
+  "run": "2026-10-31T03-30-20Z",
+  "manifest_sha256": "3d96553ad1872d40978ec78e357b1cef213e2cb79cabbf5b401432e513cb4d1c",
+  "query": "from:BobLoukas since:2026-02-28 until:2026-03-10"
+ }
+}

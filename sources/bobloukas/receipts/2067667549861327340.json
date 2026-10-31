@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T04:03:38.671Z",
+ "cashtags": [],
+ "conversationId": "2067667549861327340",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2067667549861327340",
+ "kind": "post",
+ "metrics": {
+  "likes": 1085,
+  "replies": 82,
+  "reposts": 55,
+  "views": 98433
+ },
+ "postedAt": "2026-06-18T17:55:33.000Z",
+ "replyTo": null,
+ "text": "The Trump & Co grift (and all those who followed) in crypto this cycle just marked the peak of a Major Cycle in my book.  \n\nThere will be some success stories and bitcoin certainly will be back, but on the whole, grift, theft, degen etc hitting peak levels is significant.  Few suckers left to fleece.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2067667549861327340",
+ "harness": {
+  "run": "2026-10-31T04-03-34Z",
+  "manifest_sha256": "80481ec9abd4e75a790a038fdafcf2407911298e9bbac3a7dd1f344521f8274f",
+  "query": "from:BobLoukas since:2026-06-18 until:2026-06-23"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:55.719Z",
+ "cashtags": [],
+ "conversationId": "1977827421497004510",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1995553127248908714",
+ "kind": "reply",
+ "metrics": {
+  "likes": 576,
+  "replies": 43,
+  "reposts": 2,
+  "views": 54691
+ },
+ "postedAt": "2025-12-01T17:58:35.000Z",
+ "replyTo": {
+  "postId": "1977827421497004510",
+  "handle": "BitPaine"
+ },
+ "text": "Probably agree with you now that MSTR is a good buy here again.  \n\nIt just needed that 50% drop.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1995553127248908714",
+ "harness": {
+  "run": "2026-10-31T03-11-49Z",
+  "manifest_sha256": "44284fd2b0f53f602994edeb448d034ad7c1447b6074bcf56e01e43a4ce3849c",
+  "query": "from:BobLoukas since:2025-11-30 until:2025-12-10"
+ }
+}

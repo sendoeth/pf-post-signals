@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:13.950Z",
+ "cashtags": [],
+ "conversationId": "2024205887666098688",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2024210501354267134",
+ "kind": "reply",
+ "metrics": {
+  "likes": 75,
+  "replies": 4,
+  "reposts": 1,
+  "views": 4270
+ },
+ "postedAt": "2026-02-18T19:52:46.000Z",
+ "replyTo": {
+  "postId": "2024209123198280037",
+  "handle": "pantheEU"
+ },
+ "text": "Think it depends on what exposure you already have and want to get.\n\nIf you're short of that goal, this isnt bad.  I personally want to see something in the lower 50's to be more compelled.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2024210501354267134",
+ "harness": {
+  "run": "2026-10-31T03-30-09Z",
+  "manifest_sha256": "f4cb50b74e111333644768234a62c37c553d27111cb37124caf5fe4bcbd50de6",
+  "query": "from:BobLoukas since:2026-02-18 until:2026-02-28"
+ }
+}

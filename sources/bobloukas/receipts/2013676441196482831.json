@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:15.875Z",
+ "cashtags": [],
+ "conversationId": "2013676441196482831",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2013676441196482831",
+ "kind": "post",
+ "metrics": {
+  "likes": 1452,
+  "replies": 125,
+  "reposts": 133,
+  "views": 132220
+ },
+ "postedAt": "2026-01-20T18:14:10.000Z",
+ "replyTo": null,
+ "text": "Most of crypto is behaving as they would, in a bear market.  \n\nEvery Cycle we tell ourselves, \"I won't round trip this time\".  \n\nYet we're conditioned to respond with inaction, saving our fear not for losses, but for the possibility of missing out.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2013676441196482831",
+ "harness": {
+  "run": "2026-10-31T03-29-09Z",
+  "manifest_sha256": "12b6383eb0d3e548fb1ff7b7fa27ac18c6544170639bb262e25d9278c33ad772",
+  "query": "from:BobLoukas since:2026-01-19 until:2026-01-29"
+ }
+}

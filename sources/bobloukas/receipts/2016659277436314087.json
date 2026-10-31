@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:29:12.214Z",
+ "cashtags": [],
+ "conversationId": "2016655906696532303",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2016659277436314087",
+ "kind": "reply",
+ "metrics": {
+  "likes": 34,
+  "replies": 2,
+  "reposts": 0,
+  "views": 4035
+ },
+ "postedAt": "2026-01-28T23:46:54.000Z",
+ "replyTo": {
+  "postId": "2016658210044989503",
+  "handle": "AdamantiumNFT"
+ },
+ "text": "Or 24 weeks.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2016659277436314087",
+ "harness": {
+  "run": "2026-10-31T03-29-09Z",
+  "manifest_sha256": "12b6383eb0d3e548fb1ff7b7fa27ac18c6544170639bb262e25d9278c33ad772",
+  "query": "from:BobLoukas since:2026-01-19 until:2026-01-29"
+ }
+}

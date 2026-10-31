@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:48:09.376Z",
+ "cashtags": [],
+ "conversationId": "2064837394424070521",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2064837394424070521",
+ "kind": "post",
+ "metrics": {
+  "likes": 1588,
+  "replies": 65,
+  "reposts": 53,
+  "views": 84113
+ },
+ "postedAt": "2026-06-10T22:29:32.000Z",
+ "replyTo": null,
+ "text": "SpaceX you might want to play it for a massive opening pump but you also know you’re getting these shares at 50% lower some point in next 12 months.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2064837394424070521",
+ "harness": {
+  "run": "2026-10-31T03-48-06Z",
+  "manifest_sha256": "485917866faaacba3f6ba610f71bd9e8742dd651e87192dd8b73f98728b3818a",
+  "query": "from:BobLoukas since:2026-06-08 until:2026-06-18"
+ }
+}

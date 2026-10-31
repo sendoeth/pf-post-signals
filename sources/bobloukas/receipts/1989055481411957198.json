@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:27.306Z",
+ "cashtags": [],
+ "conversationId": "1989043561673703456",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1989055481411957198",
+ "kind": "reply",
+ "metrics": {
+  "likes": 21,
+  "replies": 2,
+  "reposts": 0,
+  "views": 2126
+ },
+ "postedAt": "2025-11-13T19:39:16.000Z",
+ "replyTo": {
+  "postId": "1989052501530931282",
+  "handle": "SenatorsSicko"
+ },
+ "text": "Wrong about MSTR?  It's down 60% and ive been warning people against it for months",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1989055481411957198",
+ "harness": {
+  "run": "2026-10-31T03-10-22Z",
+  "manifest_sha256": "8219512b7c4ed9295ff50779c6865723e1b25c0ba9424dff8dd584d91eeef4c2",
+  "query": "from:BobLoukas since:2025-11-10 until:2025-11-15"
+ }
+}

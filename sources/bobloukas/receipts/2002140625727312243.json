@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:32.381Z",
+ "cashtags": [],
+ "conversationId": "2002094215560642928",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2002140625727312243",
+ "kind": "reply",
+ "metrics": {
+  "likes": 25,
+  "replies": 2,
+  "reposts": 0,
+  "views": 3565
+ },
+ "postedAt": "2025-12-19T22:14:57.000Z",
+ "replyTo": {
+  "postId": "2002110535261913492",
+  "handle": "btc_charlie"
+ },
+ "text": "Never been easier to start a business that earns on value and not time.  \n\nIn the mean time side-hustles and extra work to get there.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2002140625727312243",
+ "harness": {
+  "run": "2026-10-31T03-28-29Z",
+  "manifest_sha256": "6b809f4562719e0f7de013cb2199555f0361999760d9b9ef86799734f195de03",
+  "query": "from:BobLoukas since:2025-12-15 until:2025-12-20"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:27.305Z",
+ "cashtags": [],
+ "conversationId": "1989058521447457024",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1989084708760928484",
+ "kind": "reply",
+ "metrics": {
+  "likes": 7,
+  "replies": 2,
+  "reposts": 0,
+  "views": 826
+ },
+ "postedAt": "2025-11-13T21:35:24.000Z",
+ "replyTo": {
+  "postId": "1989066155454263645",
+  "handle": "DiscoverCrypto1"
+ },
+ "text": "Spent 25 yrs in Fintech. \n\nAnd I'm far from BTC only.  You're mistaking \"current trades\".",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1989084708760928484",
+ "harness": {
+  "run": "2026-10-31T03-10-22Z",
+  "manifest_sha256": "8219512b7c4ed9295ff50779c6865723e1b25c0ba9424dff8dd584d91eeef4c2",
+  "query": "from:BobLoukas since:2025-11-10 until:2025-11-15"
+ }
+}

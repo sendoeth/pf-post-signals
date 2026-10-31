@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:58.247Z",
+ "cashtags": [],
+ "conversationId": "2063096234865279271",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2063100918824866067",
+ "kind": "reply",
+ "metrics": {
+  "likes": 0,
+  "replies": 0,
+  "reposts": 0,
+  "views": 868
+ },
+ "postedAt": "2026-06-06T03:29:24.000Z",
+ "replyTo": {
+  "postId": "2063099170987417992",
+  "handle": "sex941ret"
+ },
+ "text": "lol. Ofc.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2063100918824866067",
+ "harness": {
+  "run": "2026-10-31T03-47-55Z",
+  "manifest_sha256": "76ee69624ea2b9328b3f138dbfe04636ffc970ec1aa15cc43bb66d8325d64d30",
+  "query": "from:BobLoukas since:2026-06-03 until:2026-06-08"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:58.250Z",
+ "cashtags": [],
+ "conversationId": "2062880187629363236",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2063025028216537593",
+ "kind": "reply",
+ "metrics": {
+  "likes": 16,
+  "replies": 0,
+  "reposts": 0,
+  "views": 1375
+ },
+ "postedAt": "2026-06-05T22:27:50.000Z",
+ "replyTo": {
+  "postId": "2062942929283412081",
+  "handle": "Crypto_Chiro"
+ },
+ "text": "I talk about what works.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2063025028216537593",
+ "harness": {
+  "run": "2026-10-31T03-47-55Z",
+  "manifest_sha256": "76ee69624ea2b9328b3f138dbfe04636ffc970ec1aa15cc43bb66d8325d64d30",
+  "query": "from:BobLoukas since:2026-06-03 until:2026-06-08"
+ }
+}

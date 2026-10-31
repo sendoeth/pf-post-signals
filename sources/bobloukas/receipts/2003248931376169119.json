@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:28:44.067Z",
+ "cashtags": [],
+ "conversationId": "2003118600819753362",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2003248931376169119",
+ "kind": "reply",
+ "metrics": {
+  "likes": 34,
+  "replies": 4,
+  "reposts": 0,
+  "views": 3108
+ },
+ "postedAt": "2025-12-22T23:38:58.000Z",
+ "replyTo": {
+  "postId": "2003246243909369916",
+  "handle": "Sykodelic_"
+ },
+ "text": "Thanks for the info. \n\nI hope you’re right mate.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2003248931376169119",
+ "harness": {
+  "run": "2026-10-31T03-28-37Z",
+  "manifest_sha256": "9d13b999b16b71141a9123223a30beac3017eedee0e627ab1a0efb00c27a8930",
+  "query": "from:BobLoukas since:2025-12-20 until:2025-12-30"
+ }
+}

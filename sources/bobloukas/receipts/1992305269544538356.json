@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:11:33.099Z",
+ "cashtags": [],
+ "conversationId": "1992305269544538356",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1992305269544538356",
+ "kind": "post",
+ "metrics": {
+  "likes": 1274,
+  "replies": 105,
+  "reposts": 86,
+  "views": 140174
+ },
+ "postedAt": "2025-11-22T18:52:46.000Z",
+ "replyTo": null,
+ "text": "Stocks have been bleeding the past 4 weeks, but S&P down just 4.5%.  Yet, sentiment is well past the levels where I would want to buy the dip, in a bull market.  This is classic bull market, sentiment resets and price remains well supported.\n\nWe had a similar cycle leading up to the Stocks 4yr cycle in 2021. \n\nWith many AI names already punished, I think stocks are not going to see much more of a decline here.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1992305269544538356",
+ "harness": {
+  "run": "2026-10-31T03-11-28Z",
+  "manifest_sha256": "5b4f94307a59f6b36bf90ded7f7487cb77a37651415230998ae74712e788ac95",
+  "query": "from:BobLoukas since:2025-11-20 until:2025-11-25"
+ }
+}

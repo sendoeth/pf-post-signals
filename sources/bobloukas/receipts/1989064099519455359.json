@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:27.305Z",
+ "cashtags": [],
+ "conversationId": "1988648569453035869",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1989064099519455359",
+ "kind": "reply",
+ "metrics": {
+  "likes": 5,
+  "replies": 0,
+  "reposts": 0,
+  "views": 1056
+ },
+ "postedAt": "2025-11-13T20:13:31.000Z",
+ "replyTo": {
+  "postId": "1989062080473989231",
+  "handle": "s_vidyat"
+ },
+ "text": "Rolling, not rolled.  That's the difference for now.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1989064099519455359",
+ "harness": {
+  "run": "2026-10-31T03-10-22Z",
+  "manifest_sha256": "8219512b7c4ed9295ff50779c6865723e1b25c0ba9424dff8dd584d91eeef4c2",
+  "query": "from:BobLoukas since:2025-11-10 until:2025-11-15"
+ }
+}

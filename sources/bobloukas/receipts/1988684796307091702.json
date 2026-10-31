@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:10:28.650Z",
+ "cashtags": [],
+ "conversationId": "1988650008284147994",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "1988684796307091702",
+ "kind": "reply",
+ "metrics": {
+  "likes": 11,
+  "replies": 4,
+  "reposts": 0,
+  "views": 5400
+ },
+ "postedAt": "2025-11-12T19:06:18.000Z",
+ "replyTo": {
+  "postId": "1988673871705407874",
+  "handle": "lovemesexy8"
+ },
+ "text": "You dont think I see that mate.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/1988684796307091702",
+ "harness": {
+  "run": "2026-10-31T03-10-22Z",
+  "manifest_sha256": "8219512b7c4ed9295ff50779c6865723e1b25c0ba9424dff8dd584d91eeef4c2",
+  "query": "from:BobLoukas since:2025-11-10 until:2025-11-15"
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:46:58.840Z",
+ "cashtags": [],
+ "conversationId": "2047316895838118342",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2047316895838118342",
+ "kind": "post",
+ "metrics": {
+  "likes": 866,
+  "replies": 32,
+  "reposts": 77,
+  "views": 198211
+ },
+ "postedAt": "2026-04-23T14:09:19.000Z",
+ "replyTo": null,
+ "text": "40 months into the Gold bull market, a mid-cycle pause and consolidation is likely developing.  48 months marks the midpoint which is towards the Nov window.  Lot of confluence in that area across many asset classes.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2047316895838118342",
+ "harness": {
+  "run": "2026-10-31T03-46-54Z",
+  "manifest_sha256": "d66bf07857f47292cdfd802d2817253a59a804ad438a1e7c7e149ca9c0a4fd10",
+  "query": "from:BobLoukas since:2026-04-19 until:2026-04-24"
+ }
+}

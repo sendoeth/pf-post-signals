@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:30:24.901Z",
+ "cashtags": [],
+ "conversationId": "2029606870999257398",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2029607420247384510",
+ "kind": "reply",
+ "metrics": {
+  "likes": 59,
+  "replies": 2,
+  "reposts": 0,
+  "views": 4058
+ },
+ "postedAt": "2026-03-05T17:18:11.000Z",
+ "replyTo": {
+  "postId": "2029606870999257398",
+  "handle": "coinbureau"
+ },
+ "text": "",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2029607420247384510",
+ "harness": {
+  "run": "2026-10-31T03-30-20Z",
+  "manifest_sha256": "3d96553ad1872d40978ec78e357b1cef213e2cb79cabbf5b401432e513cb4d1c",
+  "query": "from:BobLoukas since:2026-02-28 until:2026-03-10"
+ }
+}

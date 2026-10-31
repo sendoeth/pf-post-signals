@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:46:57.026Z",
+ "cashtags": [],
+ "conversationId": "2047352775248585119",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2047421479554326591",
+ "kind": "reply",
+ "metrics": {
+  "likes": 12,
+  "replies": 0,
+  "reposts": 0,
+  "views": 892
+ },
+ "postedAt": "2026-04-23T21:04:54.000Z",
+ "replyTo": {
+  "postId": "2047387631433003201",
+  "handle": "EVMBit"
+ },
+ "text": "Helped?   It literally did everything.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2047421479554326591",
+ "harness": {
+  "run": "2026-10-31T03-46-54Z",
+  "manifest_sha256": "d66bf07857f47292cdfd802d2817253a59a804ad438a1e7c7e149ca9c0a4fd10",
+  "query": "from:BobLoukas since:2026-04-19 until:2026-04-24"
+ }
+}

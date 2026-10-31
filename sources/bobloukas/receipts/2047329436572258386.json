@@ -1,0 +1,28 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:46:58.839Z",
+ "cashtags": [],
+ "conversationId": "2047315362807435656",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2047329436572258386",
+ "kind": "reply",
+ "metrics": {
+  "likes": 37,
+  "replies": 2,
+  "reposts": 0,
+  "views": 9677
+ },
+ "postedAt": "2026-04-23T14:59:09.000Z",
+ "replyTo": {
+  "postId": "2047319186817331223",
+  "handle": "MisterSpread"
+ },
+ "text": "Similar views.  Bulls have to break the structure and do it in a way they haven't before timing wise.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2047329436572258386",
+ "harness": {
+  "run": "2026-10-31T03-46-54Z",
+  "manifest_sha256": "d66bf07857f47292cdfd802d2817253a59a804ad438a1e7c7e149ca9c0a4fd10",
+  "query": "from:BobLoukas since:2026-04-19 until:2026-04-24"
+ }
+}

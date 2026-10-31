@@ -1,0 +1,25 @@
+{
+ "authorHandle": "BobLoukas",
+ "capturedAt": "2026-10-31T03:47:07.287Z",
+ "cashtags": [],
+ "conversationId": "2049198652795539699",
+ "dataSource": "graphql (x-research harness, read-only)",
+ "id": "2049198652795539699",
+ "kind": "post",
+ "metrics": {
+  "likes": 2356,
+  "replies": 87,
+  "reposts": 148,
+  "views": 116747
+ },
+ "postedAt": "2026-04-28T18:46:45.000Z",
+ "replyTo": null,
+ "text": "I've been heavily speculating in the markets (not full time) since 1992. My first trades were before online brokerage, you had to call in for quotes and to place orders. 4% commission in AND out.\n\nI had a great run during the DOT COM era. By 1999, I had a really chunky (for my age) portfolio and thought it was easy. By late 2000, the account was $0. That part was fun, at least.  For the next 10 years I was super active, some good runs, some big drawdowns. Overall, nothing exceptional. Just decent.\n\nThen something shifted. The need to speculate faded and that’s when things actually got better.\n\nOnce I stopped chasing it, opportunities started coming to me. Not just in trading. As I’ve gotten older and less interested in money itself, seeing opportunity has become clearer. And more than anything, removing that constant need elevated how I experience life.\n\nThis isn’t meant to be spiritual (for some it is). But for a lot of people who are active and still underperforming, it’s worth asking what purpose this is really serving.\n\nMost of the time, it’s just a dopamine loop. And for many, it’s closer to an addiction than they would like to admit. And that could be what’s holding you back.",
+ "textTruncated": false,
+ "url": "https://x.com/BobLoukas/status/2049198652795539699",
+ "harness": {
+  "run": "2026-10-31T03-47-04Z",
+  "manifest_sha256": "5336994f71bbe4f700cf60362be35add5dbd82d5eddf921d84495b46cbd2c660",
+  "query": "from:BobLoukas since:2026-04-24 until:2026-04-29"
+ }
+}
