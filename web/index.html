@@ -118,7 +118,7 @@
     since the post. For a <strong>closed</strong> position it is the realized return, frozen at the first bar after the
     author's closing post; the current price only appears as "if still held". Entry is the first hourly bar at or after the
     post (daily bars for history older than the hourly window); every value comes from a <code>post_price.v1</code> record and
-    the daily refresh. Unreached horizons are never shown as 0. Not trading advice.</p>
+    the daily refresh. Unreached horizons are never shown as 0. <a href="#nfa">Not financial advice</a>.</p>
   <p class="notes" id="score-notes"><strong>Score (0-100, <code>quanty.rating.v1</code>)</strong>: built only from a caller's
     priced calls, the same records always give the same score. Scored calls state a side and have a price; their result is the
     realized return if closed, else the return since the post. H = share of scored calls in profit; A = average of
@@ -126,6 +126,7 @@
     raw = 0.45 H + 0.40 A + 0.15 C, then pulled toward 50 by sample size: score = 50 + n/(n+10)·(raw − 50). Under 10 scored
     calls is a small sample, under 30 a limited one. Open calls move with the daily refresh. Each caller page lists every input
     and every call.</p>
+  <p class="nfa" id="nfa" data-field="nfa"><strong>Not financial advice.</strong> The calls on this site are public posts by their authors, tracked and priced for analysis. They are the authors' expressions of opinion, not recommendations: nothing here is advice to buy, sell or hold anything, and past results say nothing about future ones.</p>
 </main>
 <script src="assets/common.js"></script>
 <script src="assets/board.js"></script>

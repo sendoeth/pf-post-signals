@@ -90,3 +90,6 @@ html[data-framed] body { display: none; }
 .crumbs a { text-decoration: none; }
 .ring-key { width: 14px; height: 14px; border-radius: 50%; border: 2.5px solid var(--flat); display: inline-block; box-sizing: border-box; }
 .ring-key.long { border-color: var(--up); } .ring-key.short { border-color: var(--down); }
+/* step 20: not-financial-advice notice */
+.nfa { margin: 18px 0 0; padding: 10px 12px; border: 1px solid var(--border); border-radius: 10px; color: var(--ink-2); font-size: 12.5px; line-height: 1.5; background: var(--surface); }
+.nfa strong { color: var(--ink); }

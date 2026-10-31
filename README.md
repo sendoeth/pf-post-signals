@@ -205,6 +205,15 @@ python3 tools/call_context.py <url> --asset NAME --apply --reuse [--expect-sha S
 - Previews now start with the post itself (date, author, text, asset, side, entry), so a preview of the wrong post is obvious.
 - Tests: `tests/test_call_context.py` (victory lap → own call, reposts not theirs, nothing disclosed stays open, trim + hold, close, advice and hints do not close, throttled = INCOMPLETE, apply closes the real Mert record at the first bar after a closing post, nothing to apply, load hashes the bytes it parses, CLI fails closed).
 
+## Step 20: site polish
+
+- **Not financial advice**: one notice (`#nfa`, identical wording) on the leaderboard, chart view, every position page and every caller page, also without JavaScript; the leaderboard notes link to it. The calls are public posts by their authors, tracked and priced for analysis: expressions of opinion, not recommendations.
+- **Clickable closes**: the exit mark (✕) of a closed call, on the position chart for the opened call and for other callers, is a button (click, Enter, Space). It opens a close card: the closing post's text, time and link (the post or, for Corbanu, the article / ledger), the matched exit words, the exit price at the first bar after the closing post, the price at the post and the realized result; a stated earlier time ("last week") is shown as recorded, not used. The chart view's card for a closed call links its closing post too.
+- **Price at the post**: every call card (the opened call's own bubble is clickable now, the other callers' bubbles, the chart view) shows the entry bar as "Price at the post": the first bar at or after the post, the price every result is measured from.
+- **Markers stay inside the chart**: the overlay is exactly the plot area (price scale and time axis excluded) and clips; a bubble, stem or exit mark whose bar is outside the visible range is hidden. Before, the opened call's bubble could draw outside the chart onto the page when zoomed or scrolled (e.g. at x = -52 px). The opened call's default view now starts 12 bars before the entry and shows as many bars after it as fit, so at 1h a long history no longer pushes the entry off-screen.
+- **Admin bot** (private): every slow command first says what it is doing and the expected time.
+- Tests: `tests/polish_test.js` (the notice on every page, every visible exit mark opens the right close card by click and by keyboard with the record's values, price at the post on every card, 8 zoom / scroll views per position page with every visible marker inside the plot and the overlay clipping), `tests/test_static.py` (the notice on every static page, identical wording, the leaderboard link).
+
 ## Reproduce step 2
 
 ```bash

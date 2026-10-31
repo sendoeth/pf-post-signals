@@ -216,13 +216,22 @@ function card(p) {
   field(dl, "side", "Side", p.side === 1 ? "long" : p.side === -1 ? "short" : "not given", p.side ?? null);
   field(dl, "status", "Status", PFPS.statusLabel(p), p.status);
   dl.lastChild.setAttribute("title", PFPS.statusTip(p));
-  field(dl, "entry", "Entry", p.entry ? `${fmtPrice(p.entry.price)} @ ${fmtTime(p.entry.at)}` : "no entry bar", p.entry);
+  field(dl, "entry", "Price at the post", p.entry ? `${fmtPrice(p.entry.price)} @ ${fmtTime(p.entry.at)}` : "no entry bar", p.entry);
   field(dl, "latest", "Latest", p.latest ? `${fmtPrice(p.latest.price)} @ ${fmtTime(p.latest.at)}` : "no bar yet", p.latest);
   const dir = direction(p);
   if (p.closed) {
     const res = PFPS.result(p);
     field(dl, "closed", "Closed (realized)", `${fmtPct(res)} · exit ${fmtPrice(p.closed.exit.price)} @ ${fmtTime(p.closed.exit.at)}`, p.closed);
     dl.lastChild.className = res > 0 ? "dir-up" : res < 0 ? "dir-down" : "";
+    const ev = PFPS.closeEvent(p);
+    dl.append(el("dt", null, "Closing post"));
+    const cp = el("dd", { "data-field": "closing_post", "data-raw": JSON.stringify(ev ? ev.post.id : p.closed.post_id) });
+    if (p.closed.by === "ledger") cp.append("exit event in Corbanu's published ledger");
+    else {
+      cp.append(el("a", { href: p.closed.post_url, target: "_blank", rel: "noopener noreferrer" }, ev ? fmtTime(ev.post.posted_at) : "the closing post"));
+      if (ev && ev.post.text) cp.append(` · “${ev.post.text.replace(/\s+/g, " ").trim().slice(0, 140)}”`);
+    }
+    dl.append(cp);
   }
   field(dl, "change_since_post", p.closed ? "If still held (since post)" : "Since post", p.change_since_post == null ? "unresolved" : fmtPct(p.change_since_post),
     p.change_since_post, signClass(p.change_since_post));

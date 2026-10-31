@@ -115,3 +115,6 @@ html[data-framed] body { display: none; }
 #authors .sample { font-size: 11px; color: var(--muted); font-weight: 600; }
 #authors .a-who a { color: inherit; text-decoration: none; }
 #authors .a-who a:hover { text-decoration: underline; }
+/* step 20: not-financial-advice notice */
+.nfa { margin: 18px 0 0; padding: 10px 12px; border: 1px solid var(--border); border-radius: 10px; color: var(--ink-2); font-size: 12.5px; line-height: 1.5; background: var(--surface); }
+.nfa strong { color: var(--ink); }

@@ -129,3 +129,14 @@ table.calls td { padding: 5px 8px; border-top: 1px solid var(--border); white-sp
 table.calls td.why { white-space: normal; color: var(--muted); min-width: 220px; }
 table.calls tr[data-counted="false"] td { opacity: .7; }
 #entry-bubble[hidden] { display: none; }
+/* step 20: the overlay is exactly the plot area and clips; exit marks and the opened bubble are buttons */
+#overlay { inset: auto; top: 0; left: 0; overflow: hidden; }
+#overlay svg { overflow: hidden; }
+#entry-bubble, .exit-btn { pointer-events: auto; cursor: pointer; }
+#exit-mark.exit-btn, .call-exit.exit-btn { z-index: 3; }
+.exit-btn:hover { transform: scale(1.15); }
+.exit-btn:focus-visible, #entry-bubble:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+#entry-bubble.selected, .exit-btn.selected { outline: 3px solid var(--focus); outline-offset: 2px; }
+.call-card[data-card="close"] { border-left: 4px solid var(--ink); }
+.nfa { margin: 18px 0 0; padding: 10px 12px; border: 1px solid var(--border); border-radius: 10px; color: var(--ink-2); font-size: 12.5px; line-height: 1.5; background: var(--surface); }
+.nfa strong { color: var(--ink); }

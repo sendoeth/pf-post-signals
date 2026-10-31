@@ -127,6 +127,21 @@ class Static(unittest.TestCase):
                 self.assertIn(f"@{o['p']['post']['author']} · {'NO SIDE' if o['side'] == 'none' else o['side'].upper()} · "
                               f"{prerender.fmt_time(o['p']['post']['posted_at'])} · {'realized' if o['p'].get('closed') else 'return'} {prerender.fmt_pct(o['ret'])}", text)
 
+    def test_advice_notice_on_every_page(self):
+        """Step 20: the same not-financial-advice notice on every page, also without JavaScript."""
+        names = ["index.html", "chart.html", "position.html"] + sorted(n for n in os.listdir(self.web) if n.startswith(("pos-", "caller-")))
+        texts = set()
+        import re
+        for name in names:
+            with open(os.path.join(self.web, name), encoding="utf-8") as f:
+                got = re.findall(r'<p class="nfa" id="nfa" data-field="nfa">(.*?)</p>', f.read(), re.S)
+            self.assertEqual(len(got), 1, name)
+            texts.add(" ".join(re.sub(r"<[^>]+>", "", got[0]).split()))
+        self.assertEqual(len(texts), 1)                                   # identical wording everywhere
+        self.assertTrue(texts.pop().startswith("Not financial advice. The calls on this site are public posts by their authors"))
+        links = [a.get("href") for t, a in parse(os.path.join(self.web, "index.html")).tags if t == "a"]
+        self.assertIn("#nfa", links)
+
     def test_no_stale_or_missing_pages(self):
         want = {f"pos-{prerender.slug(r['p']['post']['id'], r['asset'])}.html" for r in self.rows}
         have = {n for n in os.listdir(self.web) if n.startswith("pos-")}

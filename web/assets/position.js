@@ -305,10 +305,19 @@ function render(asset, p, ohlc, avatars, bundle) {
   const line = document.createElementNS(svgNS, "line"), label = document.createElementNS(svgNS, "text");
   line.setAttribute("class", "best-line"); label.setAttribute("class", "best-label");
   svg.append(line, label);
-  const exitMark = el("span", { id: "exit-mark", title: p.closed ? "closed here" : "" }, "✕");
+  const exitMark = el("span", { id: "exit-mark", class: "exit-btn", role: "button", tabindex: "0", "data-post-id": p.post.id,
+    title: p.closed ? "closed here: open the closing post" : "", "aria-label": p.closed ? `@${p.post.author} closed here: open the closing post` : "" }, "✕");
   exitMark.hidden = true;
   overlay.append(svg, bubble, exitMark);
   bubble.classList.add("opened");
+  bubble.setAttribute("role", "button"); bubble.setAttribute("tabindex", "0"); bubble.setAttribute("data-post-id", p.post.id);
+  bubble.setAttribute("aria-label", `@${p.post.author} ${fmtTime(p.post.posted_at)}: open this call's card`);
+  const activate = (node, fn) => {
+    node.addEventListener("click", fn);
+    node.addEventListener("keydown", ev => { if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); fn(); } });
+  };
+  activate(bubble, () => openCard(p));
+  if (p.closed) activate(exitMark, () => openCloseCard(p));
   // shown calls outside the visible range: a pill at that edge zooms out to fit every shown call
   const edgeL = el("button", { type: "button", class: "edge left", "data-edge": "left", hidden: "" }), edgeR = el("button", { type: "button", class: "edge right", "data-edge": "right", hidden: "" });
   edgeL.addEventListener("click", () => fitCalls()); edgeR.addEventListener("click", () => fitCalls());
@@ -328,7 +337,9 @@ function render(asset, p, ohlc, avatars, bundle) {
     n.append(badge);
     n.addEventListener("click", () => openCard(o));
     n.addEventListener("keydown", ev => { if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); openCard(o); } });
-    const x = o.closed ? el("span", { class: "call-exit", "data-post-id": o.post.id, title: `@${o.post.author} closed here` }, "✕") : null;
+    const x = o.closed ? el("span", { class: "call-exit exit-btn", role: "button", tabindex: "0", "data-post-id": o.post.id,
+      title: `@${o.post.author} closed here: open the closing post`, "aria-label": `@${o.post.author} closed here: open the closing post` }, "✕") : null;
+    if (x) activate(x, () => openCloseCard(o));
     const stem = document.createElementNS(svgNS, "line");
     stem.setAttribute("class", "stem");
     stems.append(stem);
@@ -342,6 +353,8 @@ function render(asset, p, ohlc, avatars, bundle) {
     card.replaceChildren();
     card.setAttribute("data-post-id", o.post.id);
     for (const t of nodes) t.n.classList.toggle("selected", t.o === o);
+    bubble.classList.toggle("selected", o === p);
+    card.setAttribute("data-card", "call");
     const side = o.side === 1 ? "long" : o.side === -1 ? "short" : null, r = PFPS.result(o);
     const who = el("div", { class: "who" });
     who.append(avatarNode(o.post.author, avatars, "avatar"));
@@ -354,7 +367,8 @@ function render(asset, p, ohlc, avatars, bundle) {
     if (o.post.text) card.append(el("p", { class: "card-text" }, o.post.text.replace(/\s+/g, " ").trim().slice(0, 220)));
     const d = el("dl");
     field(d, "card_side", "Side", side || "no side stated", o.side ?? null);
-    field(d, "card_entry", "Entry", `${fmtPrice(o.entry.price)} @ ${fmtTime(o.entry.at)}`, o.entry);
+    field(d, "card_entry", "Price at the post", `${fmtPrice(o.entry.price)} @ ${fmtTime(o.entry.at)}`, o.entry);
+    d.lastChild.setAttribute("title", "the first bar at or after the post: the price the call is measured from");
     field(d, "card_result", o.closed ? "Closed (realized)" : side ? "For the call, since post" : "Since post", r == null ? "unresolved" : fmtPct(r), r, signClass(r));
     field(d, "card_status", "Status", PFPS.statusLabel(o), o.status);
     card.append(d);
@@ -362,8 +376,47 @@ function render(asset, p, ohlc, avatars, bundle) {
     links.append(el("a", { href: PFPS.positionUrl(o.post.id, asset.name), "data-field": "card_position_url" }, "Open position page →"), " · ",
       el("a", { href: o.post.url, target: "_blank", rel: "noopener noreferrer", "data-field": "card_url" }, o.post.source === "corbanu" ? "read the article" : "open on X"));
     const close = el("button", { type: "button", class: "card-close", "aria-label": "Close the card" }, "×");
-    close.addEventListener("click", () => { card.hidden = true; for (const t of nodes) t.n.classList.remove("selected"); });
+    close.addEventListener("click", () => { card.hidden = true; for (const t of nodes) t.n.classList.remove("selected"); bubble.classList.remove("selected"); });
     card.append(links, close);
+  }
+
+  // the closing post of a closed call: its text and link, the matched exit words, the exit bar
+  function openCloseCard(o) {
+    const ev = PFPS.closeEvent(o), c = o.closed, r = PFPS.result(o);
+    const side = o.side === 1 ? "long" : o.side === -1 ? "short" : null;
+    card.hidden = false;
+    card.replaceChildren();
+    card.setAttribute("data-post-id", o.post.id);
+    card.setAttribute("data-card", "close");
+    for (const t of nodes) t.n.classList.toggle("selected", t.o === o);
+    bubble.classList.toggle("selected", o === p);
+    const who = el("div", { class: "who" });
+    who.append(avatarNode(o.post.author, avatars, "avatar"));
+    const nm = el("div");
+    nm.append(el("strong", { "data-field": "close_author" }, `@${o.post.author} closed the ${side || "call"}`));
+    const when = ev ? ev.post.posted_at : c.exit.at;
+    nm.append(el("span", { class: "meta", "data-field": "close_posted_at", "data-raw": JSON.stringify(ev ? ev.post.posted_at : null) },
+      c.by === "ledger" ? "exit in the published ledger" : `closing post ${fmtTime(when)}`));
+    who.append(nm);
+    card.append(who);
+    const text = c.by === "ledger" ? "Exit event in Corbanu's published ledger." : ev && ev.post.text ? ev.post.text.replace(/\s+/g, " ").trim().slice(0, 400) : "Closing post text not saved: open it.";
+    card.append(el("p", { class: "card-text", "data-field": "close_text" }, text));
+    const d = el("dl");
+    if (ev && ev.terms.length) field(d, "close_terms", "Exit words", ev.terms.join(", "), ev.terms);
+    field(d, "close_exit", "Exit price", `${fmtPrice(c.exit.price)} @ ${fmtTime(c.exit.at)} (first bar after the closing post)`, c.exit);
+    field(d, "close_entry", "Price at the post", `${fmtPrice(o.entry.price)} @ ${fmtTime(o.entry.at)}`, o.entry);
+    field(d, "close_result", "Realized", `${fmtPct(r)} ${side ? "for the " + side : "price move"}`, r, signClass(r));
+    if (c.stated_time) field(d, "close_stated", "The post says", `"${c.stated_time}" (recorded, not used: the exit is the first bar after the post)`);
+    card.append(d);
+    const links = el("p", { class: "card-links" });
+    const url = c.post_url || (ev && ev.post.url);
+    if (url) links.append(el("a", { href: url, target: "_blank", rel: "noopener noreferrer", "data-field": "close_url" },
+      o.post.source === "corbanu" ? "read the article" : "open the closing post on X"), " · ");
+    links.append(el("a", { href: PFPS.positionUrl(o.post.id, asset.name), "data-field": "close_position_url" }, "Open position page →"));
+    const close = el("button", { type: "button", class: "card-close", "aria-label": "Close the card" }, "×");
+    close.addEventListener("click", () => { card.hidden = true; for (const t of nodes) t.n.classList.remove("selected"); bubble.classList.remove("selected"); });
+    card.append(links, close);
+    card.focus && card.focus();
   }
 
   function syncCallers() {
@@ -379,20 +432,31 @@ function render(asset, p, ohlc, avatars, bundle) {
     requestAnimationFrame(place);
   }
 
+  // the plot area: the overlay is sized to it and clips (overflow hidden), so nothing drawn for a
+  // call can spill onto the price scale, the time axis or the page; a marker whose bar is outside
+  // the visible range is hidden
+  function plotSize() {
+    const W = Math.max(0, chart.timeScale().width()), H = Math.max(0, box.clientHeight - chart.timeScale().height());
+    overlay.style.width = W + "px"; overlay.style.height = H + "px";
+    overlay.setAttribute("data-plot", `${W}x${H}`);
+    return { W, H };
+  }
+  const inPlot = (x, y, P) => x != null && y != null && x >= 0 && x <= P.W && y >= 0 && y <= P.H;
   function place() {
-    if (!p.entry) { bubble.hidden = true; svg.style.display = "none"; return; }
+    const P = plotSize();
+    if (!p.entry) { bubble.hidden = true; svg.style.display = "none"; placeOthers(INTERVALS[interval], null, P); return; }
     const step = INTERVALS[interval];
     if (p.closed) {
       const xx = chart.timeScale().timeToCoordinate(bucket(p.closed.exit.at, step)), xy = series.priceToCoordinate(p.closed.exit.price);
-      exitMark.hidden = xx == null || xy == null;
+      exitMark.hidden = !inPlot(xx, xy, P);
       if (!exitMark.hidden) { exitMark.style.left = xx + "px"; exitMark.style.top = xy + "px"; }
       exitMark.setAttribute("data-x", xx); exitMark.setAttribute("data-y", xy);
     }
     const ex = chart.timeScale().timeToCoordinate(bucket(p.entry.at, step)), ey = series.priceToCoordinate(p.entry.price);
-    bubble.hidden = ex == null || ey == null;
+    bubble.hidden = !inPlot(ex, ey, P);
     if (!bubble.hidden) { bubble.style.left = ex + "px"; bubble.style.top = ey + "px"; }
     bubble.setAttribute("data-x", ex); bubble.setAttribute("data-y", ey);
-    placeOthers(step, bubble.hidden ? null : { x: ex, y: ey, r: 15 });
+    placeOthers(step, bubble.hidden ? null : { x: ex, y: ey, r: 15 }, P);
     const bx = best ? chart.timeScale().timeToCoordinate(bucket(best.at, step)) : null, by = best ? series.priceToCoordinate(best.price) : null;
     const gain = best ? (sideName ? best.for_call : best.move) : 0;
     if (ex == null || ey == null || bx == null || by == null || gain <= 0) { svg.style.display = "none"; return; }
@@ -411,8 +475,8 @@ function render(asset, p, ohlc, avatars, bundle) {
   // Other calls: each bubble starts at its own entry candle; a bubble that would overlap one already
   // placed (the opened call first, then by entry time) moves up past it (down if that leaves the
   // pane), on a stem from its entry point, so every bubble keeps its own click area.
-  function placeOthers(step, opened) {
-    const placed = opened ? [opened] : [], W = chart.timeScale().width(), H = box.clientHeight, R = 13;
+  function placeOthers(step, opened, P) {
+    const placed = opened ? [opened] : [], W = P.W, H = P.H, R = 13;
     let left = 0, right = 0;
     const clash = (x, y) => placed.find(q => Math.abs(q.x - x) < q.r + R + 1 && Math.abs(q.y - y) < q.r + R + 1);
     for (const t of nodes.slice().sort((a, b) => a.o.entry.at < b.o.entry.at ? -1 : a.o.entry.at > b.o.entry.at ? 1 : 0)) {
@@ -426,7 +490,7 @@ function render(asset, p, ohlc, avatars, bundle) {
       t.stem.style.display = "none";
       if (t.x) {
         const xx = chart.timeScale().timeToCoordinate(bucket(t.o.closed.exit.at, step)), xy = series.priceToCoordinate(t.o.closed.exit.price);
-        t.x.hidden = !on || xx == null || xy == null || xx < 0 || xx > W;
+        t.x.hidden = !on || !inPlot(xx, xy, P);
         if (!t.x.hidden) { t.x.style.left = xx + "px"; t.x.style.top = xy + "px"; }
       }
       if (!visible) continue;
@@ -462,8 +526,14 @@ function render(asset, p, ohlc, avatars, bundle) {
       if (i0 < 0) i0 = 0;
       chart.timeScale().setVisibleLogicalRange({ from: Math.max(-0.5, i0 - 2), to: data.length - 1 + 4 });
     } else {
-      const from = p.entry ? bucket(p.entry.at, step) - step * 12 : data[0].time;
-      chart.timeScale().setVisibleRange({ from: Math.max(from, data[0].time), to: data[data.length - 1].time });
+      // the opened call's view: from 12 bars before the entry to as many bars after it as fit the
+      // width (a long history at 1h would not fit up to today, and the chart would shift the entry
+      // off-screen); by bar index so market gaps do not shift it either
+      const t = p.entry ? bucket(p.entry.at, step) : data[0].time;
+      let i0 = data.findIndex(d => d.time >= t);
+      if (i0 < 0) i0 = data.length - 1;
+      const fit = Math.max(40, Math.floor((chart.timeScale().width() || box.clientWidth || 600) / 0.6));   // ~0.6 px per bar still reads; everything up to today when it fits
+      chart.timeScale().setVisibleLogicalRange({ from: Math.max(-0.5, i0 - 12), to: Math.min(data.length - 1 + 4, i0 - 12 + fit) });
     }
     requestAnimationFrame(() => requestAnimationFrame(place));
   }
