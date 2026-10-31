@@ -118,31 +118,52 @@ function render() {
   });
   hover.addEventListener("pointerleave", () => { cross.setAttribute("visibility", "hidden"); tip.hidden = true; });
 
+  // Placement: each bubble starts at its entry point; one that would overlap a bubble already placed
+  // moves up past it, then (no room above) down, then one hit width left / right at a time, always
+  // inside the plot, on a stem from its entry point. So every post keeps its own click area, also
+  // when a long history squeezes many posts into a few pixels.
+  const placed = [];
+  const clash = (cx, cy) => placed.find(q => Math.abs(q.x - cx) < 2 * HIT && Math.abs(q.y - cy) < 2 * HIT);
+  const top = m.t + R, bottom = H - m.b - R, left = m.l + R, right = W - m.r - R;
+  function spot(px, py) {
+    for (let dx = 0; dx < 40; dx++) {
+      for (const sx of dx ? [1, -1] : [1]) {
+        const cx = px + sx * dx * 2 * HIT;
+        if (cx < left || cx > right) continue;
+        let cy = Math.min(Math.max(py, top), bottom), q, g = 0;
+        while ((q = clash(cx, cy)) && g++ < 40) cy = q.y - STACK;
+        if (!clash(cx, cy) && cy >= top) return [cx, cy];
+        cy = Math.min(Math.max(py, top), bottom); g = 0;
+        while ((q = clash(cx, cy)) && g++ < 40) cy = q.y + STACK;
+        if (!clash(cx, cy) && cy <= bottom) return [cx, cy];
+      }
+    }
+    return [px, py];
+  }
   for (const c of clusters) {
-    let prevY = Infinity;
     c.forEach((p, k) => {
       const px = x(p.entry.at), py = y(p.entry.price);
-      const cy = Math.min(py, prevY - STACK);
-      prevY = cy;
+      const [bxx, cy] = spot(px, py);
+      placed.push({ x: bxx, y: cy });
       const dir = direction(p);
       const node = svg("g", { class: "bubble", tabindex: "0", role: "button", "data-post-id": p.post.id, "data-asset": a.name,
         "aria-label": `${p.post.author} ${fmtTime(p.post.posted_at)}, ${p.change_since_post == null ? "no move" : fmtPct(p.change_since_post)} since post` });
-      if (cy !== py) node.append(svg("line", { class: "stem", x1: px, x2: px, y1: py, y2: cy + R }));
-      node.append(svg("circle", { class: "hit", cx: px, cy, r: HIT }));
+      if (cy !== py || bxx !== px) node.append(svg("line", { class: "stem", x1: px, x2: bxx, y1: py, y2: cy, "data-entry-x": px, "data-entry-y": py }));
+      node.append(svg("circle", { class: "hit", cx: bxx, cy, r: HIT, "data-entry-x": px, "data-entry-y": py }));
       const side = p.side === 1 ? "long" : p.side === -1 ? "short" : "none";
       const handle = p.post.author.toLowerCase(), meta = state.avatars[handle];
       const okAvatar = meta && typeof meta.file === "string" && /^[a-z0-9_]{1,15}\.jpg$/.test(meta.file) && meta.file === handle + ".jpg";
       if (okAvatar) {
         const id = "clip-" + (++clipSeq);
         const cp = svg("clipPath", { id });
-        cp.append(svg("circle", { cx: px, cy, r: R }));
-        node.append(cp, svg("image", { class: "face", href: "avatars/" + meta.file, x: px - R, y: cy - R, width: 2 * R, height: 2 * R, "clip-path": `url(#${id})`, "data-avatar": "image" }));
+        cp.append(svg("circle", { cx: bxx, cy, r: R }));
+        node.append(cp, svg("image", { class: "face", href: "avatars/" + meta.file, x: bxx - R, y: cy - R, width: 2 * R, height: 2 * R, "clip-path": `url(#${id})`, "data-avatar": "image" }));
       } else {
-        node.append(svg("circle", { class: "face initial", cx: px, cy, r: R, fill: authorColor(p.post.author), "data-avatar": "initials" }));
-        node.append(svg("text", { class: "initial-text", x: px, y: cy + 4, "text-anchor": "middle" }, p.post.author.replace(/[^A-Za-z0-9]/g, "").slice(0, 1).toUpperCase()));
+        node.append(svg("circle", { class: "face initial", cx: bxx, cy, r: R, fill: authorColor(p.post.author), "data-avatar": "initials" }));
+        node.append(svg("text", { class: "initial-text", x: bxx, y: cy + 4, "text-anchor": "middle" }, p.post.author.replace(/[^A-Za-z0-9]/g, "").slice(0, 1).toUpperCase()));
       }
-      node.append(svg("circle", { class: "mark ring " + side, cx: px, cy, r: R, "data-side": side }));
-      const bx = px + R * 0.78, by = cy + R * 0.78;
+      node.append(svg("circle", { class: "mark ring " + side, cx: bxx, cy, r: R, "data-side": side }));
+      const bx = bxx + R * 0.78, by = cy + R * 0.78;
       node.append(svg("circle", { class: "badge " + dir, cx: bx, cy: by, r: 6, "data-dir": dir }));
       node.append(svg("text", { class: "badge-text", x: bx, y: by + 2.6, "text-anchor": "middle" }, dir === "up" ? "▲" : dir === "down" ? "▼" : "•"));
       node.addEventListener("click", () => select(p));
