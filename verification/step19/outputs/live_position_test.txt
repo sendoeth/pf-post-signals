@@ -1,0 +1,5 @@
+$ node tests/position_test.js --url https://sendoeth.com/pf-post-signals/web/
+page https://sendoeth.com/pf-post-signals/web/
+position pages opened 100 (50 posts x default + 1h), recap fields checked 2288, entry-bubble placements checked 98, unresolved cells 98, closed position loads checked 2, console errors 0
+ALL PASS
+exit 0

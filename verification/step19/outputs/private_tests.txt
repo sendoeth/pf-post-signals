@@ -1,0 +1,118 @@
+$ python3 -m unittest -v tests.test_bot   # private tests (fake Telegram API + fake tools), run in /home/postfiat/quanty-admin
+test_a_strangers_button_is_ignored (tests.test_bot.Access.test_a_strangers_button_is_ignored) ... /home/postfiat/quanty-admin/quanty_admin.py:70: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/qa-test-mjl1eovk/home/github_token' mode='r' encoding='UTF-8'>
+  self.github = open(gh).read().strip() if self.github_file else None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_owner_gets_help (tests.test_bot.Access.test_owner_gets_help) ... /home/postfiat/quanty-admin/quanty_admin.py:70: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/qa-test-rh6n1eg9/home/github_token' mode='r' encoding='UTF-8'>
+  self.github = open(gh).read().strip() if self.github_file else None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_strangers_get_nothing (tests.test_bot.Access.test_strangers_get_nothing) ... /home/postfiat/quanty-admin/quanty_admin.py:70: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/qa-test-2pcewlcp/home/github_token' mode='r' encoding='UTF-8'>
+  self.github = open(gh).read().strip() if self.github_file else None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_a_button_works_once_and_expires (tests.test_bot.Add.test_a_button_works_once_and_expires) ... /home/postfiat/quanty-admin/quanty_admin.py:70: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/qa-test-1yi8aweb/home/github_token' mode='r' encoding='UTF-8'>
+  self.github = open(gh).read().strip() if self.github_file else None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_bad_url_is_refused_without_running_anything (tests.test_bot.Add.test_bad_url_is_refused_without_running_anything) ... /home/postfiat/quanty-admin/quanty_admin.py:70: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/qa-test-cnw68otj/home/github_token' mode='r' encoding='UTF-8'>
+  self.github = open(gh).read().strip() if self.github_file else None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_one_job_at_a_time (tests.test_bot.Add.test_one_job_at_a_time) ... /home/postfiat/quanty-admin/quanty_admin.py:70: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/qa-test-91enfgj8/home/github_token' mode='r' encoding='UTF-8'>
+  self.github = open(gh).read().strip() if self.github_file else None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_pending_post_asks_for_asset_side_reason (tests.test_bot.Add.test_pending_post_asks_for_asset_side_reason) ... /home/postfiat/quanty-admin/quanty_admin.py:70: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/qa-test-x30na_hk/home/github_token' mode='r' encoding='UTF-8'>
+  self.github = open(gh).read().strip() if self.github_file else None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_preview_then_add (tests.test_bot.Add.test_preview_then_add) ... /home/postfiat/quanty-admin/quanty_admin.py:70: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/qa-test-wcwpu0w5/home/github_token' mode='r' encoding='UTF-8'>
+  self.github = open(gh).read().strip() if self.github_file else None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_stale_preview_is_refused (tests.test_bot.Add.test_stale_preview_is_refused) ... /home/postfiat/quanty-admin/quanty_admin.py:70: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/qa-test-5eoxpyqm/home/github_token' mode='r' encoding='UTF-8'>
+  self.github = open(gh).read().strip() if self.github_file else None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_uncertain_add_is_not_retried (tests.test_bot.Add.test_uncertain_add_is_not_retried) ... /home/postfiat/quanty-admin/quanty_admin.py:70: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/qa-test-p3l9h_tn/home/github_token' mode='r' encoding='UTF-8'>
+  self.github = open(gh).read().strip() if self.github_file else None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_image_flow_needs_a_side_and_a_reason (tests.test_bot.Image.test_image_flow_needs_a_side_and_a_reason) ... /home/postfiat/quanty-admin/quanty_admin.py:70: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/qa-test-z7x7c1pv/home/github_token' mode='r' encoding='UTF-8'>
+  self.github = open(gh).read().strip() if self.github_file else None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/postfiat/quanty-admin/quanty_admin.py:521: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/qa-test-z7x7c1pv/repo/intake/images/2116304617047007308.json' mode='r' encoding='UTF-8'>
+  e = json.load(open(ev))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_blocked_files_stop_it (tests.test_bot.Publish.test_blocked_files_stop_it) ... /home/postfiat/quanty-admin/quanty_admin.py:70: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/qa-test-utv_3qon/home/github_token' mode='r' encoding='UTF-8'>
+  self.github = open(gh).read().strip() if self.github_file else None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_changed_files_since_preview (tests.test_bot.Publish.test_changed_files_since_preview) ... /home/postfiat/quanty-admin/quanty_admin.py:70: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/qa-test-jax5gfck/home/github_token' mode='r' encoding='UTF-8'>
+  self.github = open(gh).read().strip() if self.github_file else None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/postfiat/quanty-admin/quanty_admin.py:601: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/qa-test-jax5gfck/repo/web/data/charts.json' mode='r' encoding='UTF-8'>
+  after = json.load(open(os.path.join(self.repo, "web", "data", "charts.json")))["ratings"]["callers"]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_failed_check_pushes_nothing (tests.test_bot.Publish.test_failed_check_pushes_nothing) ... /home/postfiat/quanty-admin/quanty_admin.py:70: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/qa-test-cnm07i1z/home/github_token' mode='r' encoding='UTF-8'>
+  self.github = open(gh).read().strip() if self.github_file else None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/postfiat/quanty-admin/quanty_admin.py:601: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/qa-test-cnm07i1z/repo/web/data/charts.json' mode='r' encoding='UTF-8'>
+  after = json.load(open(os.path.join(self.repo, "web", "data", "charts.json")))["ratings"]["callers"]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_publish_happy_path_keeps_credentials_off_argv (tests.test_bot.Publish.test_publish_happy_path_keeps_credentials_off_argv) ... /home/postfiat/quanty-admin/quanty_admin.py:70: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/qa-test-bh3pk_sy/home/github_token' mode='r' encoding='UTF-8'>
+  self.github = open(gh).read().strip() if self.github_file else None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/postfiat/quanty-admin/quanty_admin.py:601: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/qa-test-bh3pk_sy/repo/web/data/charts.json' mode='r' encoding='UTF-8'>
+  after = json.load(open(os.path.join(self.repo, "web", "data", "charts.json")))["ratings"]["callers"]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_remote_moved_stops_it (tests.test_bot.Publish.test_remote_moved_stops_it) ... /home/postfiat/quanty-admin/quanty_admin.py:70: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/qa-test-gy6zh5is/home/github_token' mode='r' encoding='UTF-8'>
+  self.github = open(gh).read().strip() if self.github_file else None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_stale_publish_button (tests.test_bot.Publish.test_stale_publish_button) ... /home/postfiat/quanty-admin/quanty_admin.py:70: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/qa-test-dhoriull/home/github_token' mode='r' encoding='UTF-8'>
+  self.github = open(gh).read().strip() if self.github_file else None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/postfiat/quanty-admin/quanty_admin.py:601: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/qa-test-dhoriull/repo/web/data/charts.json' mode='r' encoding='UTF-8'>
+  after = json.load(open(os.path.join(self.repo, "web", "data", "charts.json")))["ratings"]["callers"]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_audit_log_is_private (tests.test_bot.Redaction.test_audit_log_is_private) ... /home/postfiat/quanty-admin/quanty_admin.py:70: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/qa-test-9q74v93q/home/github_token' mode='r' encoding='UTF-8'>
+  self.github = open(gh).read().strip() if self.github_file else None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_secrets_never_reach_a_message_or_the_audit_log (tests.test_bot.Redaction.test_secrets_never_reach_a_message_or_the_audit_log) ... /home/postfiat/quanty-admin/quanty_admin.py:70: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/qa-test-rdj9s6b4/home/github_token' mode='r' encoding='UTF-8'>
+  self.github = open(gh).read().strip() if self.github_file else None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_offset_persists_and_old_buttons_die (tests.test_bot.Restart.test_offset_persists_and_old_buttons_die) ... /home/postfiat/quanty-admin/quanty_admin.py:70: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/qa-test-y2ob3m7r/home/github_token' mode='r' encoding='UTF-8'>
+  self.github = open(gh).read().strip() if self.github_file else None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/postfiat/quanty-admin/quanty_admin.py:170: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/qa-test-y2ob3m7r/home/state.json' mode='r' encoding='UTF-8'>
+  self.state = json.load(open(self.state_path)) if os.path.exists(self.state_path) else {"offset": 0}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_walk_decide_with_reasons_then_report (tests.test_bot.Review.test_walk_decide_with_reasons_then_report) ... /home/postfiat/quanty-admin/quanty_admin.py:70: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/qa-test-v5wdhxf2/home/github_token' mode='r' encoding='UTF-8'>
+  self.github = open(gh).read().strip() if self.github_file else None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/postfiat/quanty-admin/quanty_admin.py:427: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/qa-test-v5wdhxf2/repo/intake/scans/somecaller/report.json' mode='r' encoding='UTF-8'>
+  r = json.load(open(os.path.join(d, "report.json")))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/postfiat/quanty-admin/quanty_admin.py:452: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/qa-test-v5wdhxf2/repo/intake/scans/somecaller/review.json' mode='r' encoding='UTF-8'>
+  data = json.load(open(path)) if os.path.exists(path) else {}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_background_scan_reports_and_releases_the_lock (tests.test_bot.Scan.test_background_scan_reports_and_releases_the_lock) ... /home/postfiat/quanty-admin/quanty_admin.py:70: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/qa-test-bdrazvdu/home/github_token' mode='r' encoding='UTF-8'>
+  self.github = open(gh).read().strip() if self.github_file else None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.046s
+
+OK

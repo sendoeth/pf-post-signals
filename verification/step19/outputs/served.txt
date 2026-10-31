@@ -1,0 +1,10 @@
+$ curl -s https://sendoeth.com/pf-post-signals/web/data/charts.json | sha256sum
+27f79259a21f6949d4826a9dcb0e3251b18c55ca9806256c8bff1c2445c4fb8f  -
+$ curl -s https://sendoeth.com/pf-post-signals/web/pos-1970742039722479782_binance-ZECUSDT.html | grep -o '<title>[^<]*'
+<title>binance:ZECUSDT LONG · @mert · +2251.88% · Quanty Quants
+$ curl -s https://api.github.com/repos/sendoeth/pf-post-signals/pages/builds/latest (status, commit)
+built bf466d74d261465d821f39639bd01339febf432e
+$ git show --stat --format='%H %an %s' bf466d74d261465d821f39639bd01339febf432e | tail -3
+ web/pos-corbanu-skhx-entry_XYZ-SKHX.html           |     2 +-
+ web/position.html                                  |     3 +-
+ 80 files changed, 77854 insertions(+), 180 deletions(-)
