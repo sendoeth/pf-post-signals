@@ -1,0 +1,8 @@
+page http://127.0.0.1:44059/
+  @mert: recomputed 54.545455 (bundle 54.545455, shown 54.5) · n 1 · H 100.0000 A 100.0000 C 100.0000 raw 100.0000 w 0.0909
+  @goodalexander: recomputed 51.982661 (bundle 51.982661, shown 52.0) · n 4 · H 50.0000 A 48.5983 C 100.0000 raw 56.9393 w 0.2857
+  @BobLoukas: recomputed 51.822421 (bundle 51.822421, shown 51.8) · n 33 · H 42.4242 A 47.8523 C 94.2857 raw 52.3747 w 0.7674
+  @Corbanu: recomputed 49.315727 (bundle 49.315727, shown 49.3) · n 8 · H 37.5000 A 41.4635 C 100.0000 raw 48.4604 w 0.4444
+  @DrProfitCrypto: recomputed 48.072160 (bundle 48.072160, shown 48.1) · n 1 · H 0.0000 A 34.4844 C 100.0000 raw 28.7938 w 0.0909
+callers recomputed 5, calls compared 50, author-table sorts 15 (+15 reloads), caller pages 5 (105 fields, 50 call links), position chips 50, overlay cards 35, chart cards 49, CSP violations 0, console errors 0
+ALL PASS

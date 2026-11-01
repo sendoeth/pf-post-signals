@@ -1,0 +1,17 @@
+prerender: index.html (50 rows, 5 authors), position.html list, 51 position pages, 5 caller pages
+record    records/posts/1970742039722479782_binance-ZECUSDT.json -> records/posts/1970742039722479782_ZEC.json
+coin      Zcash [zcash] #11 on binance:ZECUSDT (registry: sources/tickers/ZEC.json)
+1970742039722479782 entry           EQUAL {"at": "2025-09-24T07:00:00Z", "price": 54.49}
+1970742039722479782 exits           EQUAL {"1": {"at": "2025-09-25T07:00:00Z", "price": 58.32}, "7": {"at": "2025-10-01T07:00:00Z", "price": 79.09}, "30
+1970742039722479782 signed_returns  EQUAL {"1": 0.07028812626169945, "7": 0.45145898329968803, "30": 3.7463754817397685}
+1970742039722479782 latest          EQUAL {"at": "2026-11-01T00:00:00Z", "price": 1251.48}
+1970742039722479782 status          EQUAL "resolved"
+1970742039722479782 closed          EQUAL null
+1970742039722479782 best            EQUAL {"at": "2026-09-26T22:00:00Z", "price": 1684.6, "move": 29.915764360433105, "basis": "call side", "for_call": 
+score     @BobLoukas       EQUAL 51.8224213202641 -> 51.8224213202641
+score     @Corbanu         EQUAL 49.3157272834963 -> 49.3157272834963
+score     @DrProfitCrypto  EQUAL 48.072159905899916 -> 48.072159905899916
+score     @goodalexander   EQUAL 51.98266087588089 -> 51.98266087588089
+score     @mert            EQUAL 54.54545454545455 -> 54.54545454545455
+bundle    bb89b9686696e24b56bd02bdc6f56e551b60e19159a46d5b7a1a6bf5bd9d5aaf -> b7f9058a182075b125201bf853483d2b7370aeb28fdc77c67766d575a445bce1
+ALL EQUAL

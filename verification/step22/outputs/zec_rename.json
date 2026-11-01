@@ -1,0 +1,203 @@
+{
+ "old": "binance:ZECUSDT",
+ "new": "ZEC",
+ "coin": {
+  "id": "zcash",
+  "name": "Zcash",
+  "rank": 11,
+  "price": 1232.66
+ },
+ "venue": "binance:ZECUSDT",
+ "registry_entry": {
+  "coingecko_id": "zcash",
+  "name": "Zcash",
+  "source": "binance",
+  "symbol": "ZECUSDT",
+  "receipt": "sources/tickers/ZEC.json",
+  "receipt_sha256": "cfc66ac234462a02b7fd0423f7fe1c5d6859c70862a9b0cd8eca79b1384ad3d6",
+  "added_at": "2026-11-01T17:50:47Z"
+ },
+ "records": [
+  {
+   "from": "records/posts/1970742039722479782_binance-ZECUSDT.json",
+   "to": "records/posts/1970742039722479782_ZEC.json"
+  }
+ ],
+ "redirects": {
+  "pos-1970742039722479782_binance-ZECUSDT.html": "pos-1970742039722479782_ZEC.html"
+ },
+ "bundle_sha256_before": "bb89b9686696e24b56bd02bdc6f56e551b60e19159a46d5b7a1a6bf5bd9d5aaf",
+ "bundle_sha256_after": "b7f9058a182075b125201bf853483d2b7370aeb28fdc77c67766d575a445bce1",
+ "positions_before": {
+  "1970742039722479782": {
+   "side": 1,
+   "status": "resolved",
+   "entry": {
+    "at": "2025-09-24T07:00:00Z",
+    "price": 54.49
+   },
+   "exits": {
+    "1": {
+     "at": "2025-09-25T07:00:00Z",
+     "price": 58.32
+    },
+    "7": {
+     "at": "2025-10-01T07:00:00Z",
+     "price": 79.09
+    },
+    "30": {
+     "at": "2025-10-24T07:00:00Z",
+     "price": 258.63
+    }
+   },
+   "moves": {
+    "1": 0.07028812626169945,
+    "7": 0.45145898329968803,
+    "30": 3.7463754817397685
+   },
+   "signed_returns": {
+    "1": 0.07028812626169945,
+    "7": 0.45145898329968803,
+    "30": 3.7463754817397685
+   },
+   "unresolved": {},
+   "latest": {
+    "at": "2026-11-01T00:00:00Z",
+    "price": 1251.48
+   },
+   "change_since_post": 21.96714993576803,
+   "closed": null,
+   "best": {
+    "at": "2026-09-26T22:00:00Z",
+    "price": 1684.6,
+    "move": 29.915764360433105,
+    "basis": "call side",
+    "for_call": 29.915764360433105
+   }
+  }
+ },
+ "positions_after": {
+  "1970742039722479782": {
+   "side": 1,
+   "status": "resolved",
+   "entry": {
+    "at": "2025-09-24T07:00:00Z",
+    "price": 54.49
+   },
+   "exits": {
+    "1": {
+     "at": "2025-09-25T07:00:00Z",
+     "price": 58.32
+    },
+    "7": {
+     "at": "2025-10-01T07:00:00Z",
+     "price": 79.09
+    },
+    "30": {
+     "at": "2025-10-24T07:00:00Z",
+     "price": 258.63
+    }
+   },
+   "moves": {
+    "1": 0.07028812626169945,
+    "7": 0.45145898329968803,
+    "30": 3.7463754817397685
+   },
+   "signed_returns": {
+    "1": 0.07028812626169945,
+    "7": 0.45145898329968803,
+    "30": 3.7463754817397685
+   },
+   "unresolved": {},
+   "latest": {
+    "at": "2026-11-01T00:00:00Z",
+    "price": 1251.48
+   },
+   "change_since_post": 21.96714993576803,
+   "closed": null,
+   "best": {
+    "at": "2026-09-26T22:00:00Z",
+    "price": 1684.6,
+    "move": 29.915764360433105,
+    "basis": "call side",
+    "for_call": 29.915764360433105
+   }
+  }
+ },
+ "caller_scores_before": {
+  "BobLoukas": {
+   "score": 51.8224213202641,
+   "display": "51.8",
+   "rank": 3,
+   "scored": 33,
+   "calls_total": 35
+  },
+  "Corbanu": {
+   "score": 49.3157272834963,
+   "display": "49.3",
+   "rank": 4,
+   "scored": 8,
+   "calls_total": 8
+  },
+  "DrProfitCrypto": {
+   "score": 48.072159905899916,
+   "display": "48.1",
+   "rank": 5,
+   "scored": 1,
+   "calls_total": 1
+  },
+  "goodalexander": {
+   "score": 51.98266087588089,
+   "display": "52.0",
+   "rank": 2,
+   "scored": 4,
+   "calls_total": 5
+  },
+  "mert": {
+   "score": 54.54545454545455,
+   "display": "54.5",
+   "rank": 1,
+   "scored": 1,
+   "calls_total": 1
+  }
+ },
+ "caller_scores_after": {
+  "BobLoukas": {
+   "score": 51.8224213202641,
+   "display": "51.8",
+   "rank": 3,
+   "scored": 33,
+   "calls_total": 35
+  },
+  "Corbanu": {
+   "score": 49.3157272834963,
+   "display": "49.3",
+   "rank": 4,
+   "scored": 8,
+   "calls_total": 8
+  },
+  "DrProfitCrypto": {
+   "score": 48.072159905899916,
+   "display": "48.1",
+   "rank": 5,
+   "scored": 1,
+   "calls_total": 1
+  },
+  "goodalexander": {
+   "score": 51.98266087588089,
+   "display": "52.0",
+   "rank": 2,
+   "scored": 4,
+   "calls_total": 5
+  },
+  "mert": {
+   "score": 54.54545454545455,
+   "display": "54.5",
+   "rank": 1,
+   "scored": 1,
+   "calls_total": 1
+  }
+ },
+ "equal": true,
+ "problems": []
+}

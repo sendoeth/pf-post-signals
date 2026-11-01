@@ -1,0 +1,10 @@
+site local: 107 page states checked (leaderboard + chart + 105 position loads), 49 bubbles clicked, 1154 requests, origins: http://127.0.0.1:39757
+  resources loaded: / /assets/board.css /assets/board.js /assets/chart.css /assets/chart.js /assets/common.js /assets/favicon.svg /assets/frame-guard.js /assets/position.css /assets/position.js /avatars/bobloukas.jpg /avatars/drprofitcrypto.jpg /avatars/goodalexander.jpg /avatars/index.json /avatars/mert.jpg /caller-bobloukas.html /caller-corbanu.html /caller-drprofitcrypto.html /caller-goodalexander.html /caller-mert.html /chart.html /data/charts.json /data/episodes.json /data/ohlc/BTC.json /data/ohlc/COPPER.json /data/ohlc/COPX.json /data/ohlc/GOLD.json /data/ohlc/SILVER.json /data/ohlc/SOXL.json /data/ohlc/STOCKS.json /data/ohlc/XYZ%3AAAPL.json /data/ohlc/XYZ%3ACBRS.json /data/ohlc/XYZ%3ACXMT.json /data/ohlc/XYZ%3AJP225.json /data/ohlc/XYZ%3AKIOXIA.json /data/ohlc/XYZ%3AORCL.json /data/ohlc/XYZ%3ASKHX.json /data/ohlc/ZEC.json /position.html /vendor/lightweight-charts-4.2.3/lightweight-charts.standalone.production.js
+attack fixtures: text_html_payloads=drawn, text_unicode_tricks=drawn, author_html=refused, url_javascript=refused, url_lookalike_domain=refused, asset_name_html=refused, text_oversized=refused
+attack site: 7 page states, 2 bubbles clicked, origins: http://127.0.0.1:37295; card shows payload as text: true, injected elements: 0; position page text literal: true, injected: 0, tampered avatar -> initials; leaderboard quote literal: true, injected: 0; canary: unset
+framing plain index: hidden inside the frame
+framing sandboxed index: hidden inside the frame
+framing plain position.html?post=2104977267109896477&asset=SILVER: hidden inside the frame
+framing sandboxed position.html?post=2104977267109896477&asset=SILVER: hidden inside the frame
+canary window.__pwned: unset on every page; CSP violations: 0; console errors: 0
+ALL PASS
