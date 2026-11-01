@@ -97,6 +97,7 @@ TRANSCRIPT
 TS = re.compile(r"^(\d{1,2}):(\d{2})(?::(\d{2}))?")
 DURATION = re.compile(r"^(?:(\d+) hours?)?(?:, )?(?:(\d+) minutes?)?(?:, )?(?:(\d+) seconds?)?")
 CHAPTER = re.compile(r"^Chapter (\d+): (.+)$")
+BARE_TS = re.compile(r"^\d{1,2}:\d{2}(?::\d{2})?$")
 
 
 class TranscriptError(ValueError):
@@ -142,12 +143,38 @@ def split_line(line):
 
 
 def parse(text):
-    """-> {"segments": [{t, ts, chapter, text}], "chapters": [{n, title, t}]}; refuses lines it can't read."""
+    """-> {"segments": [{t, ts, chapter, text}], "chapters": [{n, title, t}]}; refuses lines it can't read.
+
+    Two YouTube copy formats are read, also mixed:
+      glued    '10:5510 minutes, 55 secondsI think gold...' + 'Chapter N: Title' lines
+      stacked  '10:55' on its own line, the text on the next line; a chapter title is a short line of
+               its own that sits right before a timestamp, at the top or after a segment's text.
+    Anything else (a timestamp without text, a stray line in the middle, time going backwards) is refused."""
     segs, chapters, bad = [], [], []
-    chapter = None
-    for i, raw in enumerate(text.splitlines(), 1):
-        line = raw.strip()
-        if not line:
+    chapter, pending, last_stacked = None, None, False
+    lines = [(i, raw.strip()) for i, raw in enumerate(text.splitlines(), 1) if raw.strip()]
+
+    def add(i, sec, body):
+        nonlocal chapter
+        if segs and sec < segs[-1]["t"]:
+            bad.append(f"line {i}: time goes backwards ({fmt(sec)} after {segs[-1]['ts']})")
+            return
+        if chapter and chapter["t"] is None:
+            chapter["t"] = sec
+        segs.append({"t": sec, "ts": fmt(sec), "chapter": chapter["n"] if chapter else None, "text": body})
+
+    for k, (i, line) in enumerate(lines):
+        bare = BARE_TS.match(line)
+        if pending is not None:                      # stacked: the line after a timestamp is its text
+            if bare or CHAPTER.match(line) or split_line(line):     # a timestamped line is never another stamp's text
+                bad.append(f"line {pending[0]}: timestamp {fmt(pending[1])} has no text")
+                pending = None
+            else:
+                add(i, pending[1], line)
+                pending, last_stacked = None, True
+                continue
+        if bare:
+            pending = (i, to_seconds(line))
             continue
         c = CHAPTER.match(line)
         if c:
@@ -155,16 +182,18 @@ def parse(text):
             chapters.append(chapter)
             continue
         got = split_line(line)
-        if not got:
-            bad.append(f"line {i}: {short(line)}")
+        if got:
+            add(i, *got)
+            last_stacked = False
             continue
-        sec, body = got
-        if segs and sec < segs[-1]["t"]:
-            bad.append(f"line {i}: time goes backwards ({fmt(sec)} after {segs[-1]['ts']})")
+        nxt = lines[k + 1][1] if k + 1 < len(lines) else ""
+        if (not segs or last_stacked) and len(line) <= 100 and BARE_TS.match(nxt):
+            chapter = {"n": len(chapters) + 1, "title": line, "t": None}      # a stacked-format chapter title
+            chapters.append(chapter)
             continue
-        if chapter and chapter["t"] is None:
-            chapter["t"] = sec
-        segs.append({"t": sec, "ts": fmt(sec), "chapter": chapter["n"] if chapter else None, "text": body})
+        bad.append(f"line {i}: {short(line)}")
+    if pending is not None:
+        bad.append(f"line {pending[0]}: timestamp {fmt(pending[1])} has no text")
     if bad:
         raise TranscriptError("unreadable transcript lines:\n  " + "\n  ".join(bad[:10]))
     if not segs:

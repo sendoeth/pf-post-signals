@@ -69,6 +69,36 @@ class Parse(unittest.TestCase):
         with self.assertRaises(tr.TranscriptError):
             tr.parse("")
 
+    def test_stacked_format(self):
+        """YouTube's other copy: chapter title, then the timestamp on its own line, then the text."""
+        p = tr.parse("Brewers Win the World Series\n0:00\nNothing said on for guidance is a recommendation\n0:07\n[music]\n"
+                     "Fed Holds With Two Hawkish Dissents\n2:46\nyeah markets had broadly priced a pause\n1:02:03\nhours work too")
+        self.assertEqual([(s["ts"], s["chapter"], s["text"][:12]) for s in p["segments"]],
+                         [("0:00", 1, "Nothing said"), ("0:07", 1, "[music]"), ("2:46", 2, "yeah markets"), ("1:02:03", 2, "hours work t")])
+        self.assertEqual([(c["n"], c["title"], c["t"]) for c in p["chapters"]], [(1, "Brewers Win the World Series", 0), (2, "Fed Holds With Two Hawkish Dissents", 166)])
+
+    def test_stacked_format_refusals(self):
+        for bad, why in [("0:00\n0:07\ntext", "has no text"), ("0:00\ntext\n0:07", "has no text"),
+                         ("0:00\ntext\nstray line not before a timestamp\nmore", "stray line"),
+                         ("0:00\ntext\n" + "x" * 120 + "\n0:07\nmore", "xxxx"),              # too long for a chapter title
+                         ("0:10\ntext\n0:05\nearlier", "backwards"),
+                         ("0:05\n0:1010 secondsActual quote", "0:05 has no text")]:          # a glued line is not the text of a bare stamp
+            with self.assertRaises(tr.TranscriptError, msg=bad) as c:
+                tr.parse(bad)
+            self.assertIn(why, str(c.exception), bad)
+
+    def test_both_formats_give_the_same_episode(self):
+        p = tr.parse(SAMPLE)
+        out, cur = [], None
+        for sg in p["segments"]:
+            if sg["chapter"] != cur:
+                cur = sg["chapter"]
+                out.append(next(c["title"] for c in p["chapters"] if c["n"] == cur))
+            out += [sg["ts"], sg["text"]]
+        q = tr.parse("\n".join(out))
+        self.assertEqual(q["segments"], p["segments"])
+        self.assertEqual(q["chapters"], p["chapters"])
+
     def test_quote_matching_spans_lines_and_ignores_punctuation(self):
         p = tr.parse(SAMPLE)
         self.assertEqual(tr.find_quote(p, "gold is probably getting hit here, as you know; the energy-short nations are trying to defend currency", 655), 655)
