@@ -1,0 +1,10 @@
+fresh clone 68af4efe811d49629917dca7b145b9eae2e95a8d
+guard: scanned 75 commits (all added lines + messages) -> 0 hits
+guard: scanned 2318 files -> 0 hits
+Ran 59 tests in 43.714s
+OK (skipped=1)
+bundle: 52 record files -> 52 drawn, 0 superseded, 0 refused; 156 horizon cells, 52 best-since-post values, 6 caller ratings checked -> ALL MATCH
+records: 52 checked against post_price.v1 -> ALL VALID
+entry bars: 51/51 candle opens equal the record entry price
+{'ZEC': ('binance', 'ZECUSDT'), 'HYPE': ('binance', 'HYPEUSDT'), 'LIT': ('hyperliquid', 'LIT')}
+rebuild diff lines: 0

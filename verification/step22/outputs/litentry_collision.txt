@@ -1,0 +1,17 @@
+1) $LIT as a post names it (registry as published):
+$LIT -> LIT: OK
+  coin   Lighter [lighter] rank #82 price $3.23
+  also   Litentry [litentry] rank #1782
+  venue  binance:LITUSDT skip price 0.743 vs 3.23 (-77.00%) - not trading (status BREAK)
+  venue  hyperliquid:LIT OK price 3.21885 vs 3.23 (-0.35%)
+  chosen hyperliquid:LIT
+
+2) the other LIT asked for explicitly (coingecko id litentry), registry as published:
+$LIT -> LIT: REVIEW (LIT is already Lighter (lighter) on the site, this is Litentry (litentry))
+  coin   Litentry [litentry] rank #1782 price $0.097287
+
+3) the same with an empty registry (no Lighter on the site yet):
+$LIT -> LIT: REVIEW (no trading venue with hourly bars agrees with Litentry's price)
+  coin   Litentry [litentry] rank #1782 price $0.097287
+  venue  binance:LITUSDT skip price 0.743 vs 0.097287 (+663.72%) - not trading (status BREAK)
+  venue  hyperliquid:LIT skip price 3.21885 vs 0.097287 (+3208.61%) - price 3.21885 is +3208.6% from the coin's 0.097287: a different coin or a stale pair

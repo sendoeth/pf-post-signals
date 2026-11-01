@@ -1,0 +1,12 @@
+served commit 563a16583feb92f4e63a0e5fda6b137b48c6ed1b
+served https://sendoeth.com/pf-post-signals/web/data/charts.json sha256 8591d74a2f3d7e8066a904fc2d07756ae5cacc0649b486d2263087a2be7a2421
+git show 563a165:web/data/charts.json sha256 8591d74a2f3d7e8066a904fc2d07756ae5cacc0649b486d2263087a2be7a2421
+pos-2116898993435463783_HYPE.html HTTP 200
+pos-2116898993435463783_LIT.html HTTP 200
+pos-1970742039722479782_ZEC.html HTTP 200
+pos-1970742039722479782_binance-ZECUSDT.html HTTP 200
+old URL redirect tag: <meta http-equiv="refresh" content="0; url=pos-1970742039722479782_ZEC.html">
+HYPE binance:HYPEUSDT side None entry {'at': '2026-11-01T15:00:00Z', 'price': 88.08} coin ('hyperliquid', 'Hyperliquid') leg ['HYPE', 'LIT'] side_choice {'method': 'detector-leg', 'terms': ['selling some $100 HYPE calls'], 'reason': 'selling calls caps the upside; it is not a stated short'} renamed_from None
+LIT hyperliquid:LIT side 1 entry {'at': '2026-11-01T15:00:00Z', 'price': 3.2523} coin ('lighter', 'Lighter') leg ['HYPE', 'LIT'] side_choice {'method': 'detector-leg', 'terms': ['buying ~equal premium of $LIT calls'], 'reason': 'buying calls'} renamed_from None
+ZEC binance:ZECUSDT side 1 entry {'at': '2025-09-24T07:00:00Z', 'price': 54.49} coin None leg None side_choice None renamed_from binance:ZECUSDT
+scores {'BobLoukas': 51.8224213202641, 'Corbanu': 49.3157272834963, 'DrProfitCrypto': 48.072159905899916, 'goodalexander': 51.98266087588089, 'koolkrypto223': 47.808947155369516, 'mert': 54.54545454545455}

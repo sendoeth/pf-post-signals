@@ -1,0 +1,46 @@
+test_hype_leg_has_no_side_and_unknown_coins_are_refused (tests.test_tickers.AddWithoutAsset.test_hype_leg_has_no_side_and_unknown_coins_are_refused) ... /home/postfiat/pf-post-signals/tests/test_tickers.py:187: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/quanty-legs-cgo2yosm/data/tickers.json' mode='r' encoding='UTF-8'>
+test_two_coins_need_a_leg_then_lit_is_lighter (tests.test_tickers.AddWithoutAsset.test_two_coins_need_a_leg_then_lit_is_lighter) ... /home/postfiat/pf-post-signals/tests/test_tickers.py:187: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/quanty-legs-pwdfd8d1/data/tickers.json' mode='r' encoding='UTF-8'>
+test_a_mapped_cashtag_does_not_hide_a_contract_tag (tests.test_tickers.CodexRepros.test_a_mapped_cashtag_does_not_hide_a_contract_tag) ... /home/postfiat/pf-post-signals/tests/test_tickers.py:187: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/quanty-legs-81av5bn0/data/tickers.json' mode='r' encoding='UTF-8'>
+test_a_registered_venue_that_fails_today_is_refused (tests.test_tickers.CodexRepros.test_a_registered_venue_that_fails_today_is_refused) ... /home/postfiat/pf-post-signals/tests/test_tickers.py:187: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/quanty-legs-6rqhhcxk/data/tickers.json' mode='r' encoding='UTF-8'>
+test_buying_puts_on_one_coin_is_short (tests.test_tickers.CodexRepros.test_buying_puts_on_one_coin_is_short) ... /home/postfiat/pf-post-signals/tests/test_tickers.py:187: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/quanty-legs-3vra1v6u/data/tickers.json' mode='r' encoding='UTF-8'>
+test_hype_leg_has_no_side_and_unknown_coins_are_refused (tests.test_tickers.CodexRepros.test_hype_leg_has_no_side_and_unknown_coins_are_refused) ... /home/postfiat/pf-post-signals/tests/test_tickers.py:187: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/quanty-legs-g_7s2k2u/data/tickers.json' mode='r' encoding='UTF-8'>
+test_two_coins_need_a_leg_then_lit_is_lighter (tests.test_tickers.CodexRepros.test_two_coins_need_a_leg_then_lit_is_lighter) ... /home/postfiat/pf-post-signals/tests/test_tickers.py:187: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/quanty-legs-1xjg6zoi/data/tickers.json' mode='r' encoding='UTF-8'>
+test_a_refused_coin_is_listed_not_guessed (tests.test_tickers.Legs.test_a_refused_coin_is_listed_not_guessed) ... ok
+test_mapped_assets_need_no_lookup (tests.test_tickers.Legs.test_mapped_assets_need_no_lookup) ... ok
+test_sides (tests.test_tickers.Legs.test_sides) ... ok
+test_the_koolkrypto_post (tests.test_tickers.Legs.test_the_koolkrypto_post) ... ok
+test_a_rename_changes_no_number_and_keeps_the_old_url (tests.test_tickers.Rename.test_a_rename_changes_no_number_and_keeps_the_old_url) ... /home/postfiat/pf-post-signals/tests/test_tickers.py:298: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/quanty-ren-5th9cvr0/records/corbanu/skhx-entry_XYZ-SKHX.json' mode='r' encoding='UTF-8'>
+test_a_trading_pair_with_the_wrong_price_is_skipped (tests.test_tickers.Resolver.test_a_trading_pair_with_the_wrong_price_is_skipped) ... ok
+test_binance_first_when_it_agrees (tests.test_tickers.Resolver.test_binance_first_when_it_agrees) ... ok
+test_contract_tags (tests.test_tickers.Resolver.test_contract_tags) ... ok
+test_identity_rules (tests.test_tickers.Resolver.test_identity_rules) ... ok
+test_lit_is_lighter_on_hyperliquid_not_the_halted_binance_pair (tests.test_tickers.Resolver.test_lit_is_lighter_on_hyperliquid_not_the_halted_binance_pair) ... ok
+test_no_agreeing_venue_is_review (tests.test_tickers.Resolver.test_no_agreeing_venue_is_review) ... ok
+test_provider_down_fails_closed (tests.test_tickers.Resolver.test_provider_down_fails_closed) ... ok
+test_rate_limit_waits_then_fails_closed (tests.test_tickers.Resolver.test_rate_limit_waits_then_fails_closed) ... ok
+test_registry (tests.test_tickers.Resolver.test_registry) ... /home/postfiat/pf-post-signals/tickers.py:260: ResourceWarning: unclosed file <_io.BufferedReader name='/tmp/tmp1phw2weq/sources/tickers/LIT.json'>
+test_hostile_name_renders_as_text (tests.test_static.HostileCaller.test_hostile_name_renders_as_text) ... ok
+test_attack_fixtures_render_as_text (tests.test_static.HostileText.test_attack_fixtures_render_as_text) ... ok
+Step 20: the same not-financial-advice notice on every page, also without JavaScript. ... ok
+test_caller_scores_without_javascript (tests.test_static.Static.test_caller_scores_without_javascript) ... ok
+test_every_position_page_without_javascript (tests.test_static.Static.test_every_position_page_without_javascript) ... ok
+test_leaderboard_rows_without_javascript (tests.test_static.Static.test_leaderboard_rows_without_javascript) ... ok
+test_no_stale_or_missing_pages (tests.test_static.Static.test_no_stale_or_missing_pages) ... ok
+test_only_known_scripts_and_no_inline_code (tests.test_static.Static.test_only_known_scripts_and_no_inline_code) ... ok
+test_other_calls_on_the_same_asset (tests.test_static.Static.test_other_calls_on_the_same_asset) ... ok
+test_a_close (tests.test_call_context.After.test_a_close) ... ok
+test_advice_and_hints_do_not_close (tests.test_call_context.After.test_advice_and_hints_do_not_close) ... ok
+test_nothing_disclosed_stays_open (tests.test_call_context.After.test_nothing_disclosed_stays_open) ... ok
+test_throttled_search_is_incomplete (tests.test_call_context.After.test_throttled_search_is_incomplete) ... ok
+test_trim_then_hold (tests.test_call_context.After.test_trim_then_hold) ... ok
+test_close_is_written_and_the_record_closes (tests.test_call_context.Apply.test_close_is_written_and_the_record_closes) ... /home/postfiat/pf-post-signals/tools/call_context.py:370: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/quanty-ctx-_sr2_b4b/records/posts/1970742039722479782_ZEC.json' mode='r' encoding='UTF-8'>
+test_nothing_to_apply (tests.test_call_context.Apply.test_nothing_to_apply) ... /home/postfiat/pf-post-signals/tools/call_context.py:370: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/quanty-ctx-fjzzm38e/records/posts/1970742039722479782_ZEC.json' mode='r' encoding='UTF-8'>
+test_victory_lap_points_back_to_the_own_call (tests.test_call_context.Before.test_victory_lap_points_back_to_the_own_call) ... ok
+test_words_for_a_pair_asset (tests.test_call_context.Before.test_words_for_a_pair_asset) ... ok
+test_holds (tests.test_call_context.HoldWords.test_holds) ... ok
+test_not_holds (tests.test_call_context.HoldWords.test_not_holds) ... ok
+test_relabel_uses_the_saved_posts (tests.test_call_context.HoldWords.test_relabel_uses_the_saved_posts) ... ok
+test_cli_fails_closed (tests.test_call_context.Reuse.test_cli_fails_closed) ... ok
+test_load_hashes_the_bytes_it_parses (tests.test_call_context.Reuse.test_load_hashes_the_bytes_it_parses) ... ok
+Ran 44 tests in 42.427s
+OK (skipped=1)
