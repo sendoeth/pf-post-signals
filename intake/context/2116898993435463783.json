@@ -1,0 +1,769 @@
+{
+ "version": "quanty.context.v1",
+ "url": "https://x.com/koolkrypto223/status/2116898993435463783",
+ "post_id": "2116898993435463783",
+ "author": "koolkrypto223",
+ "posted_at": "2026-11-01T14:23:44Z",
+ "text": "Probably best trade to capture my view towards hyperliquid:native and $LIT right now is selling some $100 HYPE calls for Dec25, and buying ~equal premium of $LIT calls.\n\nOn @DeriveXYZ that'd look something like:\n\nDeposit 1000 hyperliquid:native \nSell 1000x$100C hyperliquid:native",
+ "asset": "hyperliquid:LIT",
+ "words": [
+  "lit"
+ ],
+ "analysed_at": "2026-11-01T18:23:30Z",
+ "victory_lap": null,
+ "side_in_post": null,
+ "searches": [
+  {
+   "query": "from:koolkrypto223 (lit) since:2026-08-03 until:2026-11-02",
+   "posts": 57,
+   "searches": 4,
+   "coverage": [
+    {
+     "since": "2026-08-03",
+     "until": "2026-09-02",
+     "status": "done",
+     "posts": 6,
+     "run": "2026-11-01T18-22-54Z",
+     "manifest_sha256": "49570e47d450985f686eb7d0a26c13fc1124c30726ad3a165d215ef19be39100"
+    },
+    {
+     "since": "2026-09-02",
+     "until": "2026-10-02",
+     "status": "done",
+     "posts": 24,
+     "run": "2026-11-01T18-23-01Z",
+     "manifest_sha256": "62319266c8af156f8d4dbb652a6cb1c7ad9b851d53a510424c0a429dbed4d52c"
+    },
+    {
+     "since": "2026-10-02",
+     "until": "2026-11-01",
+     "status": "done",
+     "posts": 26,
+     "run": "2026-11-01T18-23-10Z",
+     "manifest_sha256": "8588c454d00cd00216de7eb49984f006a91a0a48aa24f1284ea8a19cdd51d7fc"
+    },
+    {
+     "since": "2026-11-01",
+     "until": "2026-11-02",
+     "status": "done",
+     "posts": 5,
+     "run": "2026-11-01T18-23-18Z",
+     "manifest_sha256": "988cb9df6899f419bcae85bc12a912ac64b759286c3dda4a231d03c6c771ec51"
+    }
+   ],
+   "error": null
+  },
+  {
+   "query": "from:koolkrypto223 (lit) (sold OR sell OR selling OR exited OR closed OR \"took profit\" OR \"took profits\" OR \"taking profit\" OR profits OR trimmed OR \"out of\" OR rotated OR \"stopped out\" OR holding OR \"still long\" OR \"still holding\" OR \"bought more\" OR added OR flipped OR short) since:2026-11-01 until:2026-11-02",
+   "posts": 1,
+   "searches": 1,
+   "coverage": [
+    {
+     "since": "2026-11-01",
+     "until": "2026-11-02",
+     "status": "done",
+     "posts": 1,
+     "run": "2026-11-01T18-23-24Z",
+     "manifest_sha256": "9d73277981ae26078df4dfd2762f0f946aaeada9e5da3bfd360ad21472e052b1"
+    }
+   ],
+   "error": null
+  }
+ ],
+ "before": [
+  {
+   "id": "2089414188204753266",
+   "url": "https://x.com/koolkrypto223/status/2089414188204753266",
+   "posted_at": "2026-08-17T18:08:56Z",
+   "kind": "post",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "lit"
+   ],
+   "text": "My entire crypto portfolio (and most of ours) is functionally \"long the casino\" tokens. $HYPE and $LIT are a bet that the perps casino expands $DRV is a bet that the on chain options casino expands Not invested but $PUMP is obviously memecoin casino I love these bets and they are"
+  },
+  {
+   "id": "2090428657861075314",
+   "url": "https://x.com/koolkrypto223/status/2090428657861075314",
+   "posted_at": "2026-08-20T13:20:04Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "lit"
+   ],
+   "text": "Sub $1 $LIT was freeeeee"
+  },
+  {
+   "id": "2090625222668112379",
+   "url": "https://x.com/koolkrypto223/status/2090625222668112379",
+   "posted_at": "2026-08-21T02:21:09Z",
+   "kind": "post",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "lit"
+   ],
+   "text": "Think we've got legs for $2800 on $ETH within ~2-4 weeks Have a bunch of 2400/2800 call spreads for Oct too Keeping most of my long exposure open across the board on $BTC, $HYPE, $ETH, $SOL, $LIT, $AERO, $DRV, $KNTQ etc here. Think people will cope and seethe on the sidelines and"
+  },
+  {
+   "id": "2090910286450483441",
+   "url": "https://x.com/koolkrypto223/status/2090910286450483441",
+   "posted_at": "2026-08-21T21:13:54Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "lit"
+   ],
+   "text": "PUMP or LIT first you reckon?"
+  },
+  {
+   "id": "2092354268996985210",
+   "url": "https://x.com/koolkrypto223/status/2092354268996985210",
+   "posted_at": "2026-08-25T20:51:46Z",
+   "kind": "post",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "lit"
+   ],
+   "text": "For all the alts I talk about on here like: $AERO $LIT $DRV $KNTQ $NEST I'm generally 90-95% staked. It's not because I care about the 2-10% APR yield. It's to stop myself from trying to swing trade 10% moves on assets I think will 10x. Most of us here now are going to get outper"
+  },
+  {
+   "id": "2093233892102991910",
+   "url": "https://x.com/koolkrypto223/status/2093233892102991910",
+   "posted_at": "2026-08-28T07:07:04Z",
+   "kind": "post",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "lit"
+   ],
+   "text": "Caught the meat of the $2000>$2400 $ETH move, only major I'm trimming now. I think it'll continue to perform reasonably well in dollar terms (denominator trending to zero innit) but it's back to the usual unhappy middleground for $ETH vs other crypto majors bitcoin:native and eth"
+  },
+  {
+   "id": "2096044433028296989",
+   "url": "https://x.com/koolkrypto223/status/2096044433028296989",
+   "posted_at": "2026-09-05T01:15:10Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "lit"
+   ],
+   "text": "Right but it's priced in what they're currently doing. Do you think it's sustainable? It's trading 15% higher than LIT right now"
+  },
+  {
+   "id": "2097106188618101221",
+   "url": "https://x.com/koolkrypto223/status/2097106188618101221",
+   "posted_at": "2026-09-07T23:34:12Z",
+   "kind": "post",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "lit"
+   ],
+   "text": "Turned a lot of my unrealized PNL into realized PNL on @DeriveXYZ, finally hit 8 figs YTD PNL (apparently still not enough to retire though). Derisking into a week that I imagine will give lots of opportunities to buy lower and sell higher. Want as much dry powder as possible to "
+  },
+  {
+   "id": "2098422766102106221",
+   "url": "https://x.com/koolkrypto223/status/2098422766102106221",
+   "posted_at": "2026-09-11T14:45:48Z",
+   "kind": "quote",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "lit"
+   ],
+   "text": "This $ETH trade on @DeriveXYZ really got the people going so I'll explain my thought process. I'm not really interested in betting on an $ETH move to $3000, especially with tokens like $HYPE and $LIT pushing all time highs. $ETH trading like 1.1x $BTC beta isn't bad, but it's als"
+  },
+  {
+   "id": "2099178806812799120",
+   "url": "https://x.com/koolkrypto223/status/2099178806812799120",
+   "posted_at": "2026-09-13T16:50:03Z",
+   "kind": "post",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "lit"
+   ],
+   "text": "It's worth highlighting too that this view isn't just bullish euphoria; it's a bet that $ETH vol is cheap relative to the valuation phase shift ahead of it. If $ETH falls to ~$2300, I'd be losing more from a 1500 ETH (the current delta, $3.75m notional) spot/perp long. If $ETH cr"
+  },
+  {
+   "id": "2099273430419845243",
+   "url": "https://x.com/koolkrypto223/status/2099273430419845243",
+   "posted_at": "2026-09-13T23:06:03Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "lit"
+   ],
+   "text": "Sounds like your bullish catalyst is more so a LIT DAT/ETF than regulatory clarity, which I can definitely get behind."
+  },
+  {
+   "id": "2099275228061044852",
+   "url": "https://x.com/koolkrypto223/status/2099275228061044852",
+   "posted_at": "2026-09-13T23:13:11Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "lit"
+   ],
+   "text": "I think a lot of funds just don't want to/aren't set up to invest on chain. Regulatory approval won't necessary favor LIT over HYPE, but leveling the playing field as far as ease of access for institutional money would be huge. LIT needs its own PURR/ETF to really rerate imo. But"
+  },
+  {
+   "id": "2100085865825317156",
+   "url": "https://x.com/koolkrypto223/status/2100085865825317156",
+   "posted_at": "2026-09-16T04:54:22Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "lit"
+   ],
+   "text": "I own $LIT too"
+  },
+  {
+   "id": "2100247237255467198",
+   "url": "https://x.com/koolkrypto223/status/2100247237255467198",
+   "posted_at": "2026-09-16T15:35:36Z",
+   "kind": "post",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "lit"
+   ],
+   "text": "Deribit's $ZEC options market is so privacy coded that you...can't actually see it. It doesn't exist. It might never exist realistically due to $ZEC being a privacy coin. The big break for @DeriveXYZ earlier this year was listing $HYPE options months before Deribit did, and they "
+  },
+  {
+   "id": "2100311889276178646",
+   "url": "https://x.com/koolkrypto223/status/2100311889276178646",
+   "posted_at": "2026-09-16T19:52:30Z",
+   "kind": "quote",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "lit"
+   ],
+   "text": "$LIT and $PUMP already in bound already for @DeriveXYZ What else you guys want?"
+  },
+  {
+   "id": "2100395306588467693",
+   "url": "https://x.com/koolkrypto223/status/2100395306588467693",
+   "posted_at": "2026-09-17T01:23:59Z",
+   "kind": "quote",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "lit"
+   ],
+   "text": "Since my first ethereum:0xb1d1eae60eea9525032a6dcb4c1ce336a1de71be buys at $0.04, I increased my bag size (# of tokens not notional $) by about 7.5x. I genuinely felt that the investment got less risky as the price went up. Execution risk down, token warchest up, narrative streng"
+  },
+  {
+   "id": "2101159722489352596",
+   "url": "https://x.com/koolkrypto223/status/2101159722489352596",
+   "posted_at": "2026-09-19T04:01:30Z",
+   "kind": null,
+   "label": "own call",
+   "why": "side words ['long at']",
+   "side": 1,
+   "words": [
+    "lit"
+   ],
+   "text": "It's like me with LIT, huge bear pre TGE, flipped long at $1. They've deserved a lot of the criticism but it's crazy to think they and Coinbase give up quietly. It's gonna be a battle"
+  },
+  {
+   "id": "2101317382241439978",
+   "url": "https://x.com/koolkrypto223/status/2101317382241439978",
+   "posted_at": "2026-09-19T14:27:59Z",
+   "kind": "quote",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "lit"
+   ],
+   "text": "\"There is no second best\", but if there was, it sure as hell wouldn't be ethereum:0x0f2d719407fdbeff09d87557abb7232601fd9f29. I mentioned months ago that if you really wanna diversify the on chain options thesis out, ethereum:0xb32e10022ffbedfe10bc818a1c7e67d9d87e0fa7 and $LIT ar"
+  },
+  {
+   "id": "2101367322963296419",
+   "url": "https://x.com/koolkrypto223/status/2101367322963296419",
+   "posted_at": "2026-09-19T17:46:25Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "lit"
+   ],
+   "text": "Chuck a little nest-2:native, $LIT, and $AERO in there"
+  },
+  {
+   "id": "2101440093214974223",
+   "url": "https://x.com/koolkrypto223/status/2101440093214974223",
+   "posted_at": "2026-09-19T22:35:35Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "lit"
+   ],
+   "text": "$LIT $KNTQ $DRV $AERO are all top picks for me that you don't have. Lots of tokenization themes you cover with those. Good mix of lower mid caps and higher mid caps too."
+  },
+  {
+   "id": "2102029500322054247",
+   "url": "https://x.com/koolkrypto223/status/2102029500322054247",
+   "posted_at": "2026-09-21T13:37:41Z",
+   "kind": "quote",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "lit"
+   ],
+   "text": "I'm reasonably confident that I'm not even thinking big enough for how much on chain options will grow through EOY 2027. And I'm thinking in the trillions 😂 I do think on chain options will gain market share vs Deribit much faster than on chain perps have gained on Binance. For r"
+  },
+  {
+   "id": "2102586469843911024",
+   "url": "https://x.com/koolkrypto223/status/2102586469843911024",
+   "posted_at": "2026-09-23T02:30:53Z",
+   "kind": "quote",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "lit"
+   ],
+   "text": "You guys aren't ready for the conversation of what @DeriveXYZ will enable for peer to peer trading for options. We're barely scratching the surface for $DRV. Some of the very first $LIT options traded on chain. No market makers required. Thanks for the trade @DeFi_Dad"
+  },
+  {
+   "id": "2103139769303618012",
+   "url": "https://x.com/koolkrypto223/status/2103139769303618012",
+   "posted_at": "2026-09-24T15:09:30Z",
+   "kind": "post",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "lit"
+   ],
+   "text": "Had a small basket open from April of this year via @pear_protocol, just think it's interesting to look back at some of these prices and my picks from back then compared to now. Also think it's a great opportunity to reflect on the year so far. Everyone seems to think I can't mis"
+  },
+  {
+   "id": "2103617537812693213",
+   "url": "https://x.com/koolkrypto223/status/2103617537812693213",
+   "posted_at": "2026-09-25T22:47:58Z",
+   "kind": "reply",
+   "label": "own call",
+   "why": "side words [\"I'm long\"]",
+   "side": 1,
+   "words": [
+    "lit"
+   ],
+   "text": "Huh I'm long so much $LIT 😭"
+  },
+  {
+   "id": "2103930153944383852",
+   "url": "https://x.com/koolkrypto223/status/2103930153944383852",
+   "posted_at": "2026-09-26T19:30:12Z",
+   "kind": "quote",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "lit"
+   ],
+   "text": "I know this sounds conceptually fair and 4% looks small but let's keep in mind this would be a liquid supply dump 3x the size of $LIT current market cap, and over 10x team $HYPE unlocks this year."
+  },
+  {
+   "id": "2104406416991633521",
+   "url": "https://x.com/koolkrypto223/status/2104406416991633521",
+   "posted_at": "2026-09-28T03:02:42Z",
+   "kind": "reply",
+   "label": "own call",
+   "why": "side words [\"I'm bullish\"]",
+   "side": 1,
+   "words": [
+    "lit"
+   ],
+   "text": "Gonna have to agree to disagree here probably. Don't think vanilla options are particularly on the Hyperliquid roadmap. Relative growth definitely matters more imo though, because that's how they're priced. If HYPE makes $100m extra revenue next year from perps growing that hardl"
+  },
+  {
+   "id": "2104416296615956882",
+   "url": "https://x.com/koolkrypto223/status/2104416296615956882",
+   "posted_at": "2026-09-28T03:41:57Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "lit"
+   ],
+   "text": "This isn't really the correct counterexample though, you're comparing two wildly different times in the market. LIT trades at a lower ratio than HYPE too for the same reason. Incumbents and leaders get premiums. It's the same concept as with LIT, it likely deserves to trade at a "
+  },
+  {
+   "id": "2105095234275471514",
+   "url": "https://x.com/koolkrypto223/status/2105095234275471514",
+   "posted_at": "2026-09-30T00:39:49Z",
+   "kind": "quote",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "lit"
+   ],
+   "text": "If Robinhood announces an integration with another currently unregulated DEX before @Lighter_xyz, $LIT bull case would be somewhat cooked. Robinhood doing a @HyperliquidX integration for example would send $LIT to the shadow realm. But a non-exclusive deal with the regulated Tier"
+  },
+  {
+   "id": "2105099231530729775",
+   "url": "https://x.com/koolkrypto223/status/2105099231530729775",
+   "posted_at": "2026-09-30T00:55:42Z",
+   "kind": "quote",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "lit"
+   ],
+   "text": "For example this announcement with Arcus would be $LIT apocalypse, Vlad on Vlad violence This news with Bitstamp is just the reality that none of these DEXs are legal... Yet."
+  },
+  {
+   "id": "2105315729998598302",
+   "url": "https://x.com/koolkrypto223/status/2105315729998598302",
+   "posted_at": "2026-09-30T15:15:59Z",
+   "kind": "quote",
+   "label": "own call",
+   "why": "side words [\"I'm buying\"]",
+   "side": 1,
+   "words": [
+    "lit"
+   ],
+   "text": "I disagree here regarding $LIT unlocks being a nothing burger The Bitstamp FUD is pretty irrelevant, but the unlock FUD isn't, and it'll increasingly be the biggest impediment to allocations to $LIT in the next quarter if they aren't sorted out/gotten ahead of The \"bullish unlock"
+  },
+  {
+   "id": "2106061477597598036",
+   "url": "https://x.com/koolkrypto223/status/2106061477597598036",
+   "posted_at": "2026-10-02T16:39:19Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "lit"
+   ],
+   "text": "Why did HYPE moon after it's airdrop but LIT nuked?"
+  },
+  {
+   "id": "2106600351336198621",
+   "url": "https://x.com/koolkrypto223/status/2106600351336198621",
+   "posted_at": "2026-10-04T04:20:37Z",
+   "kind": "reply",
+   "label": "own call",
+   "why": "side words [\"I'm long\"]",
+   "side": 1,
+   "words": [
+    "lit"
+   ],
+   "text": "I'm long LIT so is this just free money 😂"
+  },
+  {
+   "id": "2107878236894191920",
+   "url": "https://x.com/koolkrypto223/status/2107878236894191920",
+   "posted_at": "2026-10-07T16:58:28Z",
+   "kind": "quote",
+   "label": "own call",
+   "why": "side words [\"I'm long\", 'very bullish']",
+   "side": 1,
+   "words": [
+    "lit"
+   ],
+   "text": "After listening to Jeff's DAS interview, my $DRV bull thesis is unchanged, and possibly strengthened. No, this isn't cope. Strap in for a long one. First off, it was framed in a terribly misleading way by CoinTelegraph for clickbait (shocking). Jeff was asked if we he wasn't forc"
+  },
+  {
+   "id": "2108896632628785217",
+   "url": "https://x.com/koolkrypto223/status/2108896632628785217",
+   "posted_at": "2026-10-10T12:25:13Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "lit"
+   ],
+   "text": "I think bearish is excessive. I just never found the exchange particularly interesting for my own trading and generally think it's been quite farmed and might have similar TGE price action to $LIT. I've gotten more fundamentally intrigued from swaps though."
+  },
+  {
+   "id": "2110824009093067034",
+   "url": "https://x.com/koolkrypto223/status/2110824009093067034",
+   "posted_at": "2026-10-15T20:03:55Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "lit"
+   ],
+   "text": "You've been posting a lot of generational entries on $LIT 😅"
+  },
+  {
+   "id": "2111103926003290468",
+   "url": "https://x.com/koolkrypto223/status/2111103926003290468",
+   "posted_at": "2026-10-16T14:36:13Z",
+   "kind": "quote",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "lit"
+   ],
+   "text": "$LIT looked incredibly cheap ~$3. Sentiment in the gutters and all bad news digested. Might be very unpopular, but $LIT back to $5 within ~40 days feels infinitely more doable than $HYPE to $130 (same % gain). Tons of bad news can be unwound very quickly with any headline involvi"
+  },
+  {
+   "id": "2111125245398831140",
+   "url": "https://x.com/koolkrypto223/status/2111125245398831140",
+   "posted_at": "2026-10-16T16:00:55Z",
+   "kind": "quote",
+   "label": "own call",
+   "why": "side words [\"I'm bullish\"]",
+   "side": 1,
+   "words": [
+    "lit"
+   ],
+   "text": "Adding to this, a lot of people missed in the recent Jeff interview that he explicitly advocates for the HIP4 style approach for on chain options because it makes both parties pre-fund their obligations. Binaries are always fixed win/loss by nature, and if you stack them they jus"
+  },
+  {
+   "id": "2111167393053683968",
+   "url": "https://x.com/koolkrypto223/status/2111167393053683968",
+   "posted_at": "2026-10-16T18:48:24Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "lit"
+   ],
+   "text": "Probably in the ball park of fair, not really worth locking up collat for tbill yield though. @sk1337le make this man a market, ask on Dec 2027 $50 $LIT calls 😂"
+  },
+  {
+   "id": "2111873183204639097",
+   "url": "https://x.com/koolkrypto223/status/2111873183204639097",
+   "posted_at": "2026-10-18T17:32:58Z",
+   "kind": "quote",
+   "label": "own call",
+   "why": "side words ['long here']",
+   "side": 1,
+   "words": [
+    "lit"
+   ],
+   "text": "$LIT is a free long here if most people think they \"lost the Robinhood integration\"..."
+  },
+  {
+   "id": "2111878363686273475",
+   "url": "https://x.com/koolkrypto223/status/2111878363686273475",
+   "posted_at": "2026-10-18T17:53:33Z",
+   "kind": "quote",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "lit"
+   ],
+   "text": "Looking to add another 1,000,000 $4 $LIT call for Dec expiry on @DeriveXYZ right now, please fill RFQ. Looking for $250k premium"
+  },
+  {
+   "id": "2111882359184543802",
+   "url": "https://x.com/koolkrypto223/status/2111882359184543802",
+   "posted_at": "2026-10-18T18:09:25Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "lit"
+   ],
+   "text": "I don't hate papertrade I just don't really see the connection to the LIT bull case. You just think it vamps no fee chasers?"
+  },
+  {
+   "id": "2111887671517642985",
+   "url": "https://x.com/koolkrypto223/status/2111887671517642985",
+   "posted_at": "2026-10-18T18:30:32Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "lit"
+   ],
+   "text": "I'm not a $LIT Chad and I think he sold all his $HYPE 😂 I just like the trade"
+  },
+  {
+   "id": "2111890845536534989",
+   "url": "https://x.com/koolkrypto223/status/2111890845536534989",
+   "posted_at": "2026-10-18T18:43:09Z",
+   "kind": "post",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "lit"
+   ],
+   "text": "Always be selling Unless it's selling 1,000,000 $4 Dec $LIT calls to me apparently 🥲"
+  },
+  {
+   "id": "2111916538479648993",
+   "url": "https://x.com/koolkrypto223/status/2111916538479648993",
+   "posted_at": "2026-10-18T20:25:14Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "lit"
+   ],
+   "text": "You can both pick time frames to fit your argument. They're both up similar amounts off the lows. $LIT has been trash for a month and probably has a decent chance at outperforming in a month on a bounce. Both are good long term holds imo."
+  },
+  {
+   "id": "2113048446961606957",
+   "url": "https://x.com/koolkrypto223/status/2113048446961606957",
+   "posted_at": "2026-10-21T23:23:02Z",
+   "kind": "post",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "lit"
+   ],
+   "text": "Surprised to see that people still debate what's a \"better\" investment between $LIT and $HYPE $HYPE is 20x the size and $LIT is double the volatility (60v vs 120v currently). It's kinda like debating if betting on a number is a better bet than betting on a colour in roulette. You"
+  },
+  {
+   "id": "2113052180949176526",
+   "url": "https://x.com/koolkrypto223/status/2113052180949176526",
+   "posted_at": "2026-10-21T23:37:53Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "lit"
+   ],
+   "text": "Honestly a $LIT $KNTQ barbell is one of the best ways to play the current perp dex market imo. You get great exposure to a lot of different outcomes. Crypto loves punishing beta chasers though so I still own some $HYPE too, but $KNTQ is more interesting here imo."
+  },
+  {
+   "id": "2113670483313058274",
+   "url": "https://x.com/koolkrypto223/status/2113670483313058274",
+   "posted_at": "2026-10-23T16:34:47Z",
+   "kind": "quote",
+   "label": "own call",
+   "why": "side words ['very bullish']",
+   "side": 1,
+   "words": [
+    "lit"
+   ],
+   "text": "Cool story behind this. @onchainquant hit me up over DM wanting to sell 100,000xDec 4.5C on $LIT after seeing my post trying to buy some off Flood. We chat for 15 minutes or so, coordinate the RFQ on @DeriveXYZ, and we both get filled at mid, each saving probably 5-10k of spread "
+  },
+  {
+   "id": "2113672851190604122",
+   "url": "https://x.com/koolkrypto223/status/2113672851190604122",
+   "posted_at": "2026-10-23T16:44:12Z",
+   "kind": "reply",
+   "label": "own call",
+   "why": "side words [\"I'm very long\"]",
+   "side": 1,
+   "words": [
+    "lit"
+   ],
+   "text": "huh? No I'm very long $LIT"
+  },
+  {
+   "id": "2115852375172972742",
+   "url": "https://x.com/koolkrypto223/status/2115852375172972742",
+   "posted_at": "2026-10-29T17:04:51Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "lit"
+   ],
+   "text": "My big 5 spot bags are still $DRV, $HYPE, $LIT, $AERO, $KNTQ. All pretty even actually. Just lots of extra derivatives exposure on $HYPE"
+  },
+  {
+   "id": "2116534220076024078",
+   "url": "https://x.com/koolkrypto223/status/2116534220076024078",
+   "posted_at": "2026-10-31T14:14:16Z",
+   "kind": "quote",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "lit"
+   ],
+   "text": "Just so you clowns know, this is the exact same dynamic as when Robinhood went with Bitstamp until @Lighter_xyz gets CFTC approval... ICE will use $HYPE Robinhood will use $LIT If you're selling the news that neither of them can until CFTC approval (obviously)... Idk feels like a"
+  },
+  {
+   "id": "2116535657111720111",
+   "url": "https://x.com/koolkrypto223/status/2116535657111720111",
+   "posted_at": "2026-10-31T14:19:58Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "lit"
+   ],
+   "text": "Extremely free imo. I'd rather own $LIT for 3-4 months but I'd rather go into a multi year coma with full $HYPE bags x100000"
+  },
+  {
+   "id": "2116658717085360512",
+   "url": "https://x.com/koolkrypto223/status/2116658717085360512",
+   "posted_at": "2026-10-31T22:28:58Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "lit"
+   ],
+   "text": "Probably $HYPE But if it's $HYPE, it's $KNTQ And if it's not $HYPE, it's $LIT That's why I like the $LIT $KNTQ combination. But probably $HYPE"
+  }
+ ],
+ "suggested_call": {
+  "id": "2101159722489352596",
+  "url": "https://x.com/koolkrypto223/status/2101159722489352596",
+  "posted_at": "2026-09-19T04:01:30Z",
+  "kind": null,
+  "label": "own call",
+  "why": "side words ['long at']",
+  "side": 1,
+  "words": [
+   "lit"
+  ],
+  "text": "It's like me with LIT, huge bear pre TGE, flipped long at $1. They've deserved a lot of the criticism but it's crazy to think they and Coinbase give up quietly. It's gonna be a battle"
+ },
+ "after": [],
+ "others_after": 0,
+ "state": "open: nothing disclosed after the call",
+ "side": 1,
+ "after_raw": {}
+}

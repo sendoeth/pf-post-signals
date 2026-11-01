@@ -1,6 +1,24 @@
 {
  "schema": "quanty.tickers.v1",
  "tickers": {
+  "HYPE": {
+   "coingecko_id": "hyperliquid",
+   "name": "Hyperliquid",
+   "source": "binance",
+   "symbol": "HYPEUSDT",
+   "receipt": "sources/tickers/HYPE.json",
+   "receipt_sha256": "f9eaceb09ea3808263d85c9dff38473caf32f681997ddae071f6c4f07bbe9956",
+   "added_at": "2026-11-01T18:14:32Z"
+  },
+  "LIT": {
+   "coingecko_id": "lighter",
+   "name": "Lighter",
+   "source": "hyperliquid",
+   "symbol": "LIT",
+   "receipt": "sources/tickers/LIT.json",
+   "receipt_sha256": "c726444899d400b7bf616904ab467cd24ff50a15a01eea587f076738be367b08",
+   "added_at": "2026-11-01T18:22:50Z"
+  },
   "ZEC": {
    "coingecko_id": "zcash",
    "name": "Zcash",

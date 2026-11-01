@@ -1,0 +1,97 @@
+{
+ "schema": "post_price.v1",
+ "post": {
+  "id": "2116898993435463783",
+  "url": "https://x.com/koolkrypto223/status/2116898993435463783",
+  "author": "koolkrypto223",
+  "posted_at": "2026-11-01T14:23:44Z",
+  "posted_at_source": "receipt",
+  "text": "Probably best trade to capture my view towards hyperliquid:native and $LIT right now is selling some $100 HYPE calls for Dec25, and buying ~equal premium of $LIT calls.\n\nOn @DeriveXYZ that'd look something like:\n\nDeposit 1000 hyperliquid:native \nSell 1000x$100C hyperliquid:native",
+  "receipt_sha256": "50d7d8f0d957db217994ad742313606d026992fac01b386816bc632fffc6db74"
+ },
+ "asset": {
+  "name": "HYPE",
+  "source": "binance",
+  "symbol": "HYPEUSDT",
+  "price_field": "open"
+ },
+ "status": "partial",
+ "entry": {
+  "at": "2026-11-01T15:00:00Z",
+  "price": 88.08
+ },
+ "latest": {
+  "at": "2026-11-01T18:00:00Z",
+  "price": 88.04
+ },
+ "change_since_post": -0.0004541326067211138,
+ "exits": {
+  "1": null,
+  "7": null,
+  "30": null
+ },
+ "moves": {
+  "1": null,
+  "7": null,
+  "30": null
+ },
+ "unresolved": {
+  "1": "horizon not yet reached",
+  "7": "horizon not yet reached",
+  "30": "horizon not yet reached"
+ },
+ "series": [
+  [
+   "2026-11-01T15:00:00Z",
+   88.08
+  ],
+  [
+   "2026-11-01T16:00:00Z",
+   87.67
+  ],
+  [
+   "2026-11-01T17:00:00Z",
+   88.2
+  ],
+  [
+   "2026-11-01T18:00:00Z",
+   88.04
+  ]
+ ],
+ "resolved_with": {
+  "prices": "live:binance+yahoo",
+  "last_bar_at": "2026-11-01T18:00:00Z",
+  "max_lag_days": 2,
+  "session_lag_days": 2
+ },
+ "asset_choice": {
+  "method": "detector",
+  "terms": [
+   "hyperliquid:native"
+  ],
+  "reason": null,
+  "ticker": {
+   "coingecko_id": "hyperliquid",
+   "name": "Hyperliquid",
+   "source": "binance",
+   "symbol": "HYPEUSDT",
+   "receipt_sha256": "f9eaceb09ea3808263d85c9dff38473caf32f681997ddae071f6c4f07bbe9956",
+   "checked_at": "2026-11-01T18:14:32Z",
+   "asked": "hyperliquid:native"
+  },
+  "leg": {
+   "of": [
+    "HYPE",
+    "LIT"
+   ],
+   "words": "selling some $100 HYPE calls"
+  }
+ },
+ "side_choice": {
+  "method": "detector-leg",
+  "terms": [
+   "selling some $100 HYPE calls"
+  ],
+  "reason": "selling calls caps the upside; it is not a stated short"
+ }
+}

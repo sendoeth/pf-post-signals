@@ -1,0 +1,103 @@
+{
+ "version": "quanty.intake.v1",
+ "added_at": "2026-11-01T18:17:58Z",
+ "records": [
+  {
+   "record_file": "records/posts/2116898993435463783_HYPE.json",
+   "record_sha256": "44c912cf3817962247c77ca380cbfb1e8f80ef00b1a933ad05a2e0bb3934a486",
+   "receipt": {
+    "file": "sources/koolkrypto223/receipts/2116898993435463783.json",
+    "sha256": "50d7d8f0d957db217994ad742313606d026992fac01b386816bc632fffc6db74",
+    "created": false,
+    "text_truncated": true
+   }
+  }
+ ],
+ "bundle_sha256_before": "b7f9058a182075b125201bf853483d2b7370aeb28fdc77c67766d575a445bce1",
+ "bundle_sha256_after": "4f18e380b303a0ea142ea5dd16292a5dd3d540e7d320954fab571b8daac5e8d7",
+ "avatar": "saved web/avatars/koolkrypto223.jpg",
+ "candles": "candles refetched (fetch_ohlc.py): entry bars: 50/50 candle opens equal the record entry price",
+ "tickers_registered": [
+  {
+   "ticker": "HYPE",
+   "coingecko_id": "hyperliquid",
+   "venue": "binance:HYPEUSDT",
+   "receipt": "sources/tickers/HYPE.json"
+  }
+ ],
+ "scores_previewed": {
+  "koolkrypto223": {
+   "score": 50.0,
+   "display": "50.0",
+   "rank": 4,
+   "label": "small sample",
+   "scored": 0,
+   "calls_total": 1,
+   "with_entry": 1,
+   "raw": null,
+   "weight": 0.0,
+   "of": 6
+  }
+ },
+ "scores_after_add": {
+  "koolkrypto223": {
+   "score": 50.0,
+   "display": "50.0",
+   "rank": 4,
+   "label": "small sample",
+   "scored": 0,
+   "calls_total": 1,
+   "with_entry": 1,
+   "raw": null,
+   "weight": 0.0,
+   "of": 6
+  }
+ },
+ "scores_before": {
+  "koolkrypto223": null
+ },
+ "other_callers_unchanged": [
+  "BobLoukas",
+  "Corbanu",
+  "DrProfitCrypto",
+  "goodalexander",
+  "mert"
+ ],
+ "frozen_values_checked": 50,
+ "matches_preview": true,
+ "problems": [],
+ "url": "https://x.com/koolkrypto223/status/2116898993435463783",
+ "record_file": "records/posts/2116898993435463783_HYPE.json",
+ "record_sha256": "44c912cf3817962247c77ca380cbfb1e8f80ef00b1a933ad05a2e0bb3934a486",
+ "receipt": {
+  "file": "sources/koolkrypto223/receipts/2116898993435463783.json",
+  "sha256": "50d7d8f0d957db217994ad742313606d026992fac01b386816bc632fffc6db74",
+  "created": false,
+  "text_truncated": true
+ },
+ "score_previewed": {
+  "score": 50.0,
+  "display": "50.0",
+  "rank": 4,
+  "label": "small sample",
+  "scored": 0,
+  "calls_total": 1,
+  "with_entry": 1,
+  "raw": null,
+  "weight": 0.0,
+  "of": 6
+ },
+ "score_after_add": {
+  "score": 50.0,
+  "display": "50.0",
+  "rank": 4,
+  "label": "small sample",
+  "scored": 0,
+  "calls_total": 1,
+  "with_entry": 1,
+  "raw": null,
+  "weight": 0.0,
+  "of": 6
+ },
+ "score_before": null
+}

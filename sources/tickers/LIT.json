@@ -1,0 +1,65 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "LIT",
+ "asked": "$LIT",
+ "checked_at": "2026-11-01T18:22:50Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "lighter",
+  "symbol": "LIT",
+  "name": "Lighter",
+  "rank": 82,
+  "price": 3.21
+ },
+ "candidates": [
+  {
+   "id": "lighter",
+   "symbol": "LIT",
+   "name": "Lighter",
+   "rank": 82
+  },
+  {
+   "id": "litentry",
+   "symbol": "LIT",
+   "name": "Litentry",
+   "rank": 1782
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "LITUSDT",
+   "listed": true,
+   "status": "BREAK",
+   "price": 0.743,
+   "coin_price": 3.21,
+   "diff": -0.768536,
+   "ok": false,
+   "why": "not trading (status BREAK)"
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "LIT",
+   "listed": true,
+   "status": "trading",
+   "price": 3.2171,
+   "coin_price": 3.21,
+   "diff": 0.002212,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "hyperliquid",
+  "symbol": "LIT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid"
+  ]
+ }
+}

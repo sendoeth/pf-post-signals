@@ -1,9 +1,9 @@
 {
  "schema": "pf-post-signals.charts.v1",
  "record_schema": "post_price.v1",
- "records_scanned": 50,
+ "records_scanned": 52,
  "prices_as_of": "2026-11-01T00:12:08Z",
- "posts_drawn": 50,
+ "posts_drawn": 52,
  "refused": [],
  "superseded": [],
  "assets": [
@@ -76718,6 +76718,237 @@
      },
      "record_file": "records/posts/2116199680157647216_GOLD.json",
      "record_sha256": "2f487dc6fe3bdd312d36e8f0cdae2dc65f3afe1284406914b5fc122a080bcac2"
+    }
+   ]
+  },
+  {
+   "name": "HYPE",
+   "source": "binance",
+   "symbol": "HYPEUSDT",
+   "series": [
+    [
+     "2026-11-01T15:00:00Z",
+     88.08
+    ],
+    [
+     "2026-11-01T16:00:00Z",
+     87.67
+    ],
+    [
+     "2026-11-01T17:00:00Z",
+     88.2
+    ],
+    [
+     "2026-11-01T18:00:00Z",
+     88.04
+    ]
+   ],
+   "posts": [
+    {
+     "schema": "post_price.v1",
+     "post": {
+      "id": "2116898993435463783",
+      "url": "https://x.com/koolkrypto223/status/2116898993435463783",
+      "author": "koolkrypto223",
+      "posted_at": "2026-11-01T14:23:44Z",
+      "posted_at_source": "receipt",
+      "text": "Probably best trade to capture my view towards hyperliquid:native and $LIT right now is selling some $100 HYPE calls for Dec25, and buying ~equal premium of $LIT calls.\n\nOn @DeriveXYZ that'd look something like:\n\nDeposit 1000 hyperliquid:native \nSell 1000x$100C hyperliquid:native",
+      "receipt_sha256": "50d7d8f0d957db217994ad742313606d026992fac01b386816bc632fffc6db74"
+     },
+     "asset": {
+      "name": "HYPE",
+      "source": "binance",
+      "symbol": "HYPEUSDT",
+      "price_field": "open"
+     },
+     "status": "partial",
+     "entry": {
+      "at": "2026-11-01T15:00:00Z",
+      "price": 88.08
+     },
+     "latest": {
+      "at": "2026-11-01T18:00:00Z",
+      "price": 88.04
+     },
+     "change_since_post": -0.0004541326067211138,
+     "exits": {
+      "1": null,
+      "7": null,
+      "30": null
+     },
+     "moves": {
+      "1": null,
+      "7": null,
+      "30": null
+     },
+     "unresolved": {
+      "1": "horizon not yet reached",
+      "7": "horizon not yet reached",
+      "30": "horizon not yet reached"
+     },
+     "resolved_with": {
+      "prices": "live:binance+yahoo",
+      "last_bar_at": "2026-11-01T18:00:00Z",
+      "max_lag_days": 2,
+      "session_lag_days": 2
+     },
+     "asset_choice": {
+      "method": "detector",
+      "terms": [
+       "hyperliquid:native"
+      ],
+      "reason": null,
+      "ticker": {
+       "coingecko_id": "hyperliquid",
+       "name": "Hyperliquid",
+       "source": "binance",
+       "symbol": "HYPEUSDT",
+       "receipt_sha256": "f9eaceb09ea3808263d85c9dff38473caf32f681997ddae071f6c4f07bbe9956",
+       "checked_at": "2026-11-01T18:14:32Z",
+       "asked": "hyperliquid:native"
+      },
+      "leg": {
+       "of": [
+        "HYPE",
+        "LIT"
+       ],
+       "words": "selling some $100 HYPE calls"
+      }
+     },
+     "side_choice": {
+      "method": "detector-leg",
+      "terms": [
+       "selling some $100 HYPE calls"
+      ],
+      "reason": "selling calls caps the upside; it is not a stated short"
+     },
+     "best": {
+      "at": "2026-11-01T17:00:00Z",
+      "price": 88.2,
+      "move": 0.0013623978201635634,
+      "basis": "highest price"
+     },
+     "record_file": "records/posts/2116898993435463783_HYPE.json",
+     "record_sha256": "44c912cf3817962247c77ca380cbfb1e8f80ef00b1a933ad05a2e0bb3934a486"
+    }
+   ]
+  },
+  {
+   "name": "LIT",
+   "source": "hyperliquid",
+   "symbol": "LIT",
+   "series": [
+    [
+     "2026-11-01T15:00:00Z",
+     3.2523
+    ],
+    [
+     "2026-11-01T16:00:00Z",
+     3.2317
+    ],
+    [
+     "2026-11-01T17:00:00Z",
+     3.2362
+    ],
+    [
+     "2026-11-01T18:00:00Z",
+     3.2262
+    ]
+   ],
+   "posts": [
+    {
+     "schema": "post_price.v1",
+     "post": {
+      "id": "2116898993435463783",
+      "url": "https://x.com/koolkrypto223/status/2116898993435463783",
+      "author": "koolkrypto223",
+      "posted_at": "2026-11-01T14:23:44Z",
+      "posted_at_source": "receipt",
+      "text": "Probably best trade to capture my view towards hyperliquid:native and $LIT right now is selling some $100 HYPE calls for Dec25, and buying ~equal premium of $LIT calls.\n\nOn @DeriveXYZ that'd look something like:\n\nDeposit 1000 hyperliquid:native \nSell 1000x$100C hyperliquid:native",
+      "receipt_sha256": "50d7d8f0d957db217994ad742313606d026992fac01b386816bc632fffc6db74"
+     },
+     "asset": {
+      "name": "LIT",
+      "source": "hyperliquid",
+      "symbol": "LIT",
+      "price_field": "open"
+     },
+     "side": 1,
+     "status": "partial",
+     "entry": {
+      "at": "2026-11-01T15:00:00Z",
+      "price": 3.2523
+     },
+     "latest": {
+      "at": "2026-11-01T18:00:00Z",
+      "price": 3.2262
+     },
+     "change_since_post": -0.008025089936352758,
+     "exits": {
+      "1": null,
+      "7": null,
+      "30": null
+     },
+     "moves": {
+      "1": null,
+      "7": null,
+      "30": null
+     },
+     "unresolved": {
+      "1": "horizon not yet reached",
+      "7": "horizon not yet reached",
+      "30": "horizon not yet reached"
+     },
+     "resolved_with": {
+      "prices": "live:binance+yahoo",
+      "last_bar_at": "2026-11-01T18:00:00Z",
+      "max_lag_days": 2,
+      "session_lag_days": 2
+     },
+     "signed_returns": {
+      "1": null,
+      "7": null,
+      "30": null
+     },
+     "asset_choice": {
+      "method": "detector",
+      "terms": [
+       "$LIT"
+      ],
+      "reason": null,
+      "ticker": {
+       "coingecko_id": "lighter",
+       "name": "Lighter",
+       "source": "hyperliquid",
+       "symbol": "LIT",
+       "receipt_sha256": "c726444899d400b7bf616904ab467cd24ff50a15a01eea587f076738be367b08",
+       "checked_at": "2026-11-01T18:22:50Z",
+       "asked": "$LIT"
+      },
+      "leg": {
+       "of": [
+        "HYPE",
+        "LIT"
+       ],
+       "words": "buying ~equal premium of $LIT calls"
+      }
+     },
+     "side_choice": {
+      "method": "detector-leg",
+      "terms": [
+       "buying ~equal premium of $LIT calls"
+      ],
+      "reason": "buying calls"
+     },
+     "best": {
+      "at": "2026-11-01T15:00:00Z",
+      "price": 3.2523,
+      "move": 0.0,
+      "basis": "call side",
+      "for_call": 0.0
+     },
+     "record_file": "records/posts/2116898993435463783_LIT.json",
+     "record_sha256": "61e6c4dbd0e83c8f22d0ad14884f2bc5fa7e5897426cf3cf9c57851dba3d2115"
     }
    ]
   },
@@ -199546,7 +199777,8 @@
    "goodalexander",
    "BobLoukas",
    "Corbanu",
-   "DrProfitCrypto"
+   "DrProfitCrypto",
+   "koolkrypto223"
   ],
   "callers": {
    "BobLoukas": {
@@ -200168,6 +200400,48 @@
     "score": 51.98266087588089,
     "rank": 2,
     "display": "52.0"
+   },
+   "koolkrypto223": {
+    "calls_total": 2,
+    "with_entry": 2,
+    "scored": 1,
+    "calls": [
+     {
+      "post_id": "2116898993435463783",
+      "asset": "HYPE",
+      "posted_at": "2026-11-01T14:23:44Z",
+      "side": "none",
+      "state": "open",
+      "result": -0.0004541326067211138,
+      "counted": false,
+      "why": "no side stated: counts against clarity only"
+     },
+     {
+      "post_id": "2116898993435463783",
+      "asset": "LIT",
+      "posted_at": "2026-11-01T14:23:44Z",
+      "side": "long",
+      "state": "open",
+      "result": -0.008025089936352758,
+      "counted": true,
+      "why": "return for the side since the post (open)",
+      "quality": 45.996046772661785
+     }
+    ],
+    "label": "small sample",
+    "wins": 0,
+    "hit_rate": 0.0,
+    "avg_result": -0.008025089936352758,
+    "components": {
+     "hit": 0.0,
+     "quality": 45.996046772661785,
+     "clarity": 50.0
+    },
+    "raw": 25.898418709064714,
+    "weight": 0.09090909090909091,
+    "score": 47.808947155369516,
+    "rank": 6,
+    "display": "47.8"
    },
    "mert": {
     "calls_total": 1,

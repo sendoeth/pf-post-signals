@@ -1,0 +1,59 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "HYPE",
+ "asked": "hyperliquid:native",
+ "checked_at": "2026-11-01T18:14:32Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "hyperliquid",
+  "symbol": "HYPE",
+  "name": "Hyperliquid",
+  "rank": 10,
+  "price": 87.75
+ },
+ "candidates": [
+  {
+   "id": "hyperliquid",
+   "symbol": "HYPE",
+   "name": "Hyperliquid",
+   "rank": 10
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "HYPEUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 87.79,
+   "coin_price": 87.75,
+   "diff": 0.000456,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "HYPE",
+   "listed": true,
+   "status": "trading",
+   "price": 87.7465,
+   "coin_price": 87.75,
+   "diff": -4e-05,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "HYPEUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid"
+  ]
+ }
+}

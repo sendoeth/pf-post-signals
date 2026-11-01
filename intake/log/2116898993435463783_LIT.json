@@ -1,0 +1,125 @@
+{
+ "version": "quanty.intake.v1",
+ "added_at": "2026-11-01T18:25:10Z",
+ "records": [
+  {
+   "record_file": "records/posts/2116898993435463783_LIT.json",
+   "record_sha256": "61e6c4dbd0e83c8f22d0ad14884f2bc5fa7e5897426cf3cf9c57851dba3d2115",
+   "receipt": {
+    "file": "sources/koolkrypto223/receipts/2116898993435463783.json",
+    "sha256": "50d7d8f0d957db217994ad742313606d026992fac01b386816bc632fffc6db74",
+    "created": false,
+    "text_truncated": true
+   }
+  }
+ ],
+ "bundle_sha256_before": "4f18e380b303a0ea142ea5dd16292a5dd3d540e7d320954fab571b8daac5e8d7",
+ "bundle_sha256_after": "8591d74a2f3d7e8066a904fc2d07756ae5cacc0649b486d2263087a2be7a2421",
+ "avatar": "kept",
+ "candles": "candles refetched (fetch_ohlc.py): entry bars: 51/51 candle opens equal the record entry price",
+ "tickers_registered": [
+  {
+   "ticker": "LIT",
+   "coingecko_id": "lighter",
+   "venue": "hyperliquid:LIT",
+   "receipt": "sources/tickers/LIT.json"
+  }
+ ],
+ "scores_previewed": {
+  "koolkrypto223": {
+   "score": 47.808947155369516,
+   "display": "47.8",
+   "rank": 6,
+   "label": "small sample",
+   "scored": 1,
+   "calls_total": 2,
+   "with_entry": 2,
+   "raw": 25.898418709064714,
+   "weight": 0.09090909090909091,
+   "of": 6
+  }
+ },
+ "scores_after_add": {
+  "koolkrypto223": {
+   "score": 47.808947155369516,
+   "display": "47.8",
+   "rank": 6,
+   "label": "small sample",
+   "scored": 1,
+   "calls_total": 2,
+   "with_entry": 2,
+   "raw": 25.898418709064714,
+   "weight": 0.09090909090909091,
+   "of": 6
+  }
+ },
+ "scores_before": {
+  "koolkrypto223": {
+   "score": 50.0,
+   "display": "50.0",
+   "rank": 4,
+   "label": "small sample",
+   "scored": 0,
+   "calls_total": 1,
+   "with_entry": 1,
+   "raw": null,
+   "weight": 0.0,
+   "of": 6
+  }
+ },
+ "other_callers_unchanged": [
+  "BobLoukas",
+  "Corbanu",
+  "DrProfitCrypto",
+  "goodalexander",
+  "mert"
+ ],
+ "frozen_values_checked": 51,
+ "matches_preview": true,
+ "problems": [],
+ "url": "https://x.com/koolkrypto223/status/2116898993435463783",
+ "record_file": "records/posts/2116898993435463783_LIT.json",
+ "record_sha256": "61e6c4dbd0e83c8f22d0ad14884f2bc5fa7e5897426cf3cf9c57851dba3d2115",
+ "receipt": {
+  "file": "sources/koolkrypto223/receipts/2116898993435463783.json",
+  "sha256": "50d7d8f0d957db217994ad742313606d026992fac01b386816bc632fffc6db74",
+  "created": false,
+  "text_truncated": true
+ },
+ "score_previewed": {
+  "score": 47.808947155369516,
+  "display": "47.8",
+  "rank": 6,
+  "label": "small sample",
+  "scored": 1,
+  "calls_total": 2,
+  "with_entry": 2,
+  "raw": 25.898418709064714,
+  "weight": 0.09090909090909091,
+  "of": 6
+ },
+ "score_after_add": {
+  "score": 47.808947155369516,
+  "display": "47.8",
+  "rank": 6,
+  "label": "small sample",
+  "scored": 1,
+  "calls_total": 2,
+  "with_entry": 2,
+  "raw": 25.898418709064714,
+  "weight": 0.09090909090909091,
+  "of": 6
+ },
+ "score_before": {
+  "score": 50.0,
+  "display": "50.0",
+  "rank": 4,
+  "label": "small sample",
+  "scored": 0,
+  "calls_total": 1,
+  "with_entry": 1,
+  "raw": null,
+  "weight": 0.0,
+  "of": 6
+ }
+}

@@ -1,0 +1,103 @@
+{
+ "schema": "post_price.v1",
+ "post": {
+  "id": "2116898993435463783",
+  "url": "https://x.com/koolkrypto223/status/2116898993435463783",
+  "author": "koolkrypto223",
+  "posted_at": "2026-11-01T14:23:44Z",
+  "posted_at_source": "receipt",
+  "text": "Probably best trade to capture my view towards hyperliquid:native and $LIT right now is selling some $100 HYPE calls for Dec25, and buying ~equal premium of $LIT calls.\n\nOn @DeriveXYZ that'd look something like:\n\nDeposit 1000 hyperliquid:native \nSell 1000x$100C hyperliquid:native",
+  "receipt_sha256": "50d7d8f0d957db217994ad742313606d026992fac01b386816bc632fffc6db74"
+ },
+ "asset": {
+  "name": "LIT",
+  "source": "hyperliquid",
+  "symbol": "LIT",
+  "price_field": "open"
+ },
+ "side": 1,
+ "status": "partial",
+ "entry": {
+  "at": "2026-11-01T15:00:00Z",
+  "price": 3.2523
+ },
+ "latest": {
+  "at": "2026-11-01T18:00:00Z",
+  "price": 3.2262
+ },
+ "change_since_post": -0.008025089936352758,
+ "exits": {
+  "1": null,
+  "7": null,
+  "30": null
+ },
+ "moves": {
+  "1": null,
+  "7": null,
+  "30": null
+ },
+ "unresolved": {
+  "1": "horizon not yet reached",
+  "7": "horizon not yet reached",
+  "30": "horizon not yet reached"
+ },
+ "series": [
+  [
+   "2026-11-01T15:00:00Z",
+   3.2523
+  ],
+  [
+   "2026-11-01T16:00:00Z",
+   3.2317
+  ],
+  [
+   "2026-11-01T17:00:00Z",
+   3.2362
+  ],
+  [
+   "2026-11-01T18:00:00Z",
+   3.2262
+  ]
+ ],
+ "resolved_with": {
+  "prices": "live:binance+yahoo",
+  "last_bar_at": "2026-11-01T18:00:00Z",
+  "max_lag_days": 2,
+  "session_lag_days": 2
+ },
+ "signed_returns": {
+  "1": null,
+  "7": null,
+  "30": null
+ },
+ "asset_choice": {
+  "method": "detector",
+  "terms": [
+   "$LIT"
+  ],
+  "reason": null,
+  "ticker": {
+   "coingecko_id": "lighter",
+   "name": "Lighter",
+   "source": "hyperliquid",
+   "symbol": "LIT",
+   "receipt_sha256": "c726444899d400b7bf616904ab467cd24ff50a15a01eea587f076738be367b08",
+   "checked_at": "2026-11-01T18:22:50Z",
+   "asked": "$LIT"
+  },
+  "leg": {
+   "of": [
+    "HYPE",
+    "LIT"
+   ],
+   "words": "buying ~equal premium of $LIT calls"
+  }
+ },
+ "side_choice": {
+  "method": "detector-leg",
+  "terms": [
+   "buying ~equal premium of $LIT calls"
+  ],
+  "reason": "buying calls"
+ }
+}
