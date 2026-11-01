@@ -59,7 +59,10 @@ Calls vs thoughts: solid bubble = call (a position or telling listeners to act n
 - quanty_admin.py sha256 `7e3993ff7323688684321a9707dc9a8459b1382000be4bca855442516bd821ee`
 - tests/test_bot.py sha256 `9c95b04f45b3653912c3326fd2d67e5d921b4a4ad020f7a7ffc6de1a051fcdd1`: 47 OK (13 for /episode: upload and paste intake, preview with rejections, the key passed as a file never on argv, single-use and expiring stage button, the job lock, LLM failure stages nothing, the key redacted from messages and the audit log, /publish lists episode files and blocks anything else, titles containing "|")
 - Bot service active since 2026-11-01 15:39:22 UTC (after the last bot change); the LLM key file is mode 600.
-- Telegram screenshots (kept private, sha256 only; no ids or addresses visible in them):
+- Telegram screenshots (published in verification/step21/telegram/, same bytes as the hashes below; no ids or addresses visible in them):
+  - https://github.com/sendoeth/pf-post-signals/blob/main/verification/step21/telegram/tg_stage_publish_published.png
+  - https://github.com/sendoeth/pf-post-signals/blob/main/verification/step21/telegram/tg_details_preview_stage_button.png
+  - https://github.com/sendoeth/pf-post-signals/blob/main/verification/step21/telegram/tg_episode_intake_parse.png
   - `quanty episdode (2).png` `399c6d8d2f30adae58091a5f1751b9ad932c943166461484c96ff26efbfd87e7`: /episode, the .txt upload (60.6 KB), the parse reply (transcript sha256 ad8a9647…c104, 566 segments, 13 chapters, 0:00 -> 59:08)
   - `quanty episdode (3).png` `a809cf184e4c8458af3512d5a07d05729707dd016243b0c9743ce947920444c8`: the details line with the YouTube link, the progress message with the expected time, the private preview (31 accepted: 7 calls, 24 thoughts, 0 rejected; every thesis with its timestamps) and the single-use Stage / Drop buttons
   - `quanty episdode (1).png` `93fc060545c849c3ebe4019e6dabd84a7b425d605f4b3bc06d81c7c5b86b2369`: the stage reply (6 theses priced at the episode, web/data/episodes.json sha256 93dc045f…ea30, "nothing is public yet"), /publish (7 files, episodes: forward-guidance-2026-10-30, scores unchanged, charts.json bb89b968…), the 5 checks all passing and "Published 244509c3361e2896072d42f72d5dc2f75f7c776b"
