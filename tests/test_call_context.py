@@ -178,11 +178,14 @@ class Apply(Scratch):
 class Reuse(Scratch):
     def test_load_hashes_the_bytes_it_parses(self):
         c, _ = self.run_ctx([])
-        got, sha = call_context.load(GLOAT_ID, root=self.root)
+        # the test pins "now" to 2026-10-31 18:00, so allow any age here (the real clock moves on) ...
+        got, sha = call_context.load(GLOAT_ID, root=self.root, max_age_h=10 ** 6)
         import hashlib
         with open(os.path.join(self.root, "intake", "context", f"{GLOAT_ID}.json"), "rb") as f:
             self.assertEqual(sha, hashlib.sha256(f.read()).hexdigest())
         self.assertEqual(got["state"], c["state"])
+        # ... and the age limit itself: a context file analysed long ago is not reused
+        self.assertEqual(call_context.load(GLOAT_ID, root=self.root, max_age_h=0), (None, None))
         self.assertEqual(call_context.load("123", root=self.root), (None, None))
 
     def test_cli_fails_closed(self):

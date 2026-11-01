@@ -273,7 +273,8 @@ def episode_page(ep):
     leans = "; ".join(f'{t["label"]} {WORD[t["direction"]]}' for t in ep["theses"])
     desc = f'{len(ep["theses"])} theses from {ep["show"]} ({ep["recorded_on"]}): {leans}.'
     link = (f'<a href="{e(ep["url"])}" rel="noopener noreferrer">the original episode</a>' if ep["url"]
-            else f'<a href="{e(ep["show_url"])}" rel="noopener noreferrer">the show page</a> (episode link not added yet)')
+            else f'<a href="{e(ep["show_url"])}" rel="noopener noreferrer">the show page</a> (episode link not added yet)' if ep.get("show_url")
+            else "the original episode (link not added yet)")
     summary = "".join(f'<li><span class="ts">{e(s["t"])}</span> {e(s["text"])}</li>' for s in ep["summary"])
     chapters = " · ".join(f'{e(c["t"])} {e(c["title"])}' for c in ep["chapters"])
     calls = sum(1 for t in ep["theses"] for m in t["moments"] if m["kind"] == "call")

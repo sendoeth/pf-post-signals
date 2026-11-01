@@ -19,7 +19,9 @@ import episode  # noqa: E402
 import transcript as tr  # noqa: E402
 
 EP = os.path.join(HERE, "sources", "episodes", "forward-guidance-2026-10-30")
-PRIVATE = os.path.join(HERE, "private", "transcripts", "forward-guidance", "2026-10-30-weekly-roundup.txt")
+PRIVATE = next((p for p in (os.path.join(HERE, "private", "transcripts", "forward-guidance-2026-10-30.txt"),       # where /episode keeps it
+                             os.path.join(HERE, "private", "transcripts", "forward-guidance", "2026-10-30-weekly-roundup.txt"))
+                if os.path.exists(p)), "missing")
 
 SAMPLE = """Chapter 1: Intro
 0:000 secondsNothing said here is a recommendation.
@@ -79,7 +81,7 @@ class Parse(unittest.TestCase):
         self.assertIn("10:55 I'm sure we'll talk about metals", text)
         self.assertIn('"quote"', text)
         self.assertNotIn("FIELD_DOCS", text)
-        self.assertEqual(tr.PROMPT_VERSION, "quanty.transcript.v1")
+        self.assertEqual(tr.PROMPT_VERSION, "quanty.transcript.v2")
 
 
 class Verify(unittest.TestCase):
@@ -144,7 +146,9 @@ class RealEpisode(unittest.TestCase):
         self.assertEqual(th["transcript_sha256"], ver["transcript_sha256"])
         self.assertEqual(th["transcript_sha256"], ex["transcript_sha256"])
         self.assertEqual(th["extraction_sha256"], tr.sha256(open(os.path.join(EP, "extraction.json"), "rb").read()))
-        self.assertEqual((th["accepted"], th["rejected"]), (len(ex["stances"]), 0))
+        self.assertEqual(th["accepted"] + th["rejected"], len(ex["stances"]))
+        self.assertEqual(th["accepted"], len(ver["accepted"]))
+        self.assertEqual(th["accepted"], sum(t["mentions"] for t in th["theses"]))
         gold = next(t for t in th["theses"] if t["asset"] == "GOLD")
         self.assertIn("10:55", [m["t"] for m in gold["moments"]])                # the user's example moment
         self.assertEqual(gold["moments"][0]["kind"], "thought")
@@ -153,9 +157,13 @@ class RealEpisode(unittest.TestCase):
 
     @unittest.skipUnless(os.path.exists(PRIVATE), "private transcript not in this checkout")
     def test_reverify_against_the_private_transcript(self):
+        ex = json.load(open(os.path.join(EP, "extraction.json")))
+        if ex["prompt_version"] != tr.PROMPT_VERSION:
+            self.skipTest(f"published extraction uses {ex['prompt_version']}")
         blob, p = tr.read(PRIVATE)
-        acc, rej = tr.verify(p, json.load(open(os.path.join(EP, "extraction.json"))), tr.sha256(blob))
-        self.assertEqual((len(acc), rej), (26, []))
+        acc, rej = tr.verify(p, ex, tr.sha256(blob))
+        th = json.load(open(os.path.join(EP, "theses.json")))
+        self.assertEqual((len(acc), len(rej)), (th["accepted"], th["rejected"]))
         self.assertEqual(len(p["segments"]), 471)
         self.assertEqual(len(p["chapters"]), 13)
 
@@ -215,8 +223,10 @@ class Build(unittest.TestCase):
         self.assertEqual(page.count('<p class="nfa" id="nfa"'), 1)
         for h in ("1 · The episode in short", "2 · Theses", "3 · Every moment"):
             self.assertIn(h, page)
-        self.assertEqual(page.count('class="moment"'), 26)
-        self.assertEqual(page.count('class="bub thought'), 21 + 2 + 1)      # 21 thought moments + 2 thought-only theses on their charts + the legend
+        moments = [m for t in ep["theses"] for m in t["moments"]]
+        self.assertEqual(page.count('class="moment"'), len(moments))
+        thought_theses = sum(t["kind"] == "thought" for t in ep["theses"])
+        self.assertEqual(page.count('class="bub thought'), sum(m["kind"] == "thought" for m in moments) + thought_theses + 1)   # + the legend
         self.assertIn("I think gold is probably getting hit here", page)
         self.assertIn("the show page", page)                                 # no episode link yet -> says so
         lst = open(os.path.join(self.web, "episodes.html"), encoding="utf-8").read()

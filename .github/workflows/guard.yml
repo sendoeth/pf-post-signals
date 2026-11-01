@@ -25,5 +25,5 @@ jobs:
       - name: offline tests
         run: |
           python3 -m pip install --quiet jsonschema==4.10.3 pillow==11.3.0 numpy==2.3.4
-          python3 -m unittest tests.test_resolve tests.test_ingest_detect tests.test_static tests.test_lifecycle tests.test_history tests.test_rating tests.test_add_call tests.test_scan_caller tests.test_read_images tests.test_call_context tests.test_transcript
+          python3 -m unittest tests.test_resolve tests.test_ingest_detect tests.test_static tests.test_lifecycle tests.test_history tests.test_rating tests.test_add_call tests.test_scan_caller tests.test_read_images tests.test_call_context tests.test_transcript tests.test_episode_intake
           python3 check_bundle.py

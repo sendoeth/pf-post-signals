@@ -37,7 +37,7 @@ import unicodedata
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, HERE)
 
-PROMPT_VERSION = "quanty.transcript.v1"
+PROMPT_VERSION = "quanty.transcript.v2"
 EXTRACTION_SCHEMA = "quanty.extraction.v1"
 EPISODE_SCHEMA = "quanty.episode.v1"
 WINDOW = 90                        # seconds: a quote must start within this distance of its timestamp
@@ -65,16 +65,29 @@ Rules:
 - kind = "call" only when the speaker states their own position or tells listeners to be long/short,
   buy/sell, or to stay out NOW (e.g. "what we've been advocating for longing", "I'm not long anything").
   Everything else - a reason an asset is moving, an expectation, a conditional plan - is "thought".
-- direction is the speaker's lean for the asset's price: bullish, bearish, or neutral (wait / step aside).
+- direction is the speaker's lean for the asset's price over the stated horizon: bullish, bearish, or neutral
+  (wait / step aside). "Not a buy yet, maybe bullish in 2027" is two stances: neutral now and bullish next year.
+- An asset discussed at length usually has several moments: a new reason, a new speaker, or a new conclusion is
+  a new stance with its own timestamp. Do not merge them; it is normal for one asset to have 5-10 stances.
 - Facts and news read out (earnings numbers, what a stock did today) are not stances unless the speaker
   draws a direction from them.
 - Ignore ads, disclaimers and sponsor reads.
 - quote must be copied verbatim from the transcript text (no timestamps), 8-60 words.
 - Transcripts have no speaker labels; infer the speaker from context and say how sure you are.
 
-Return JSON: {"stances": [ {FIELDS} ]}
+- asset must be one of these names (use the closest one; skip stances on anything else):
+ASSET_LIST
 
-Fields:
+Also return:
+- "speakers": {"<full name>": "<how you recognised them, one short line>"} for the hosts and guests.
+- "summary": 4 to 10 items {"t": "<timestamp where that part starts>", "text": "<1-2 sentences in your own
+  words, no quotes>"} covering the episode in order, markets content only (skip ads and small talk).
+- "theses_text": {"<ASSET>": "<one short line, max 25 words: the overall view on that asset across the
+  whole episode>"} for every asset you report a stance on.
+
+Return only JSON: {"speakers": {...}, "summary": [...], "stances": [ {FIELDS} ], "theses_text": {...}}
+
+Stance fields:
 FIELD_DOCS
 
 Transcript (timestamp then text):
@@ -191,11 +204,13 @@ def find_quote(parsed, quote, near, index=None):
     return min(hits, key=lambda t: abs(t - near)) if hits else None
 
 
-def render_prompt(parsed):
+def render_prompt(parsed, assets=None):
+    assets = assets or load_assets()["assets"]
     body = "\n".join(f"{s['ts']} {s['text']}" for s in parsed["segments"])
     fields = "\n".join(f"- {k}: {v}" for k, v in STANCE_FIELDS.items())
-    return (PROMPT.replace("FIELDS", ", ".join(f'"{k}"' for k in STANCE_FIELDS))
-                  .replace("FIELD_DOCS", fields).replace("TRANSCRIPT", body))
+    alist = "\n".join(f"  {k}: {v['label']}" for k, v in sorted(assets.items()))
+    return (PROMPT.replace("ASSET_LIST", alist).replace("FIELD_DOCS", fields)
+                  .replace("FIELDS", ", ".join(f'"{k}"' for k in STANCE_FIELDS)).replace("TRANSCRIPT", body))
 
 
 def load_assets():
@@ -252,7 +267,44 @@ def verify(parsed, extraction, transcript_sha, assets=None):
     return accepted, rejected
 
 
+def verify_extras(parsed, extraction, accepted):
+    """summary / theses_text / speakers from the model: kept only when well formed, else dropped with
+    a note (they are our-words text, not quotes, so they are length capped and never contain markup
+    beyond what the page escapes)."""
+    notes, end = [], parsed["segments"][-1]["t"]
+    summary = []
+    for i, it in enumerate(extraction.get("summary") or []):
+        try:
+            sec = to_seconds(it["t"])
+            text = " ".join(str(it["text"]).split())
+        except (KeyError, TypeError, TranscriptError) as e:
+            notes.append(f"summary #{i} dropped: {e}")
+            continue
+        if not 0 <= sec <= end or not 10 <= len(text) <= 500:
+            notes.append(f"summary #{i} dropped: time {it.get('t')} or length {len(text)} out of range")
+            continue
+        summary.append({"t": fmt(sec), "seconds": sec, "text": text})
+    summary.sort(key=lambda x: x["seconds"])
+    if len(summary) < 2:
+        notes.append(f"summary has {len(summary)} usable items (need 2+)")
+    have = {a["asset"] for a in accepted}
+    texts = {}
+    for k, v in (extraction.get("theses_text") or {}).items():
+        v = " ".join(str(v).split())
+        if k not in have:
+            notes.append(f"theses_text {k!r} dropped: no accepted stance on it")
+        elif not 5 <= len(v) <= 240:
+            notes.append(f"theses_text {k} dropped: length {len(v)}")
+        else:
+            texts[k] = v
+    for k in sorted(have - set(texts)):
+        notes.append(f"theses_text missing for {k}")
+    speakers = {" ".join(str(k).split())[:60]: " ".join(str(v).split())[:160] for k, v in (extraction.get("speakers") or {}).items()}
+    return {"summary": [{"t": x["t"], "text": x["text"]} for x in summary], "theses_text": texts, "speakers": speakers}, notes
+
+
 LEAN = {"bullish": 1, "bearish": -1, "neutral": 0}
+NEAR = ("now", "weeks", "months")
 
 
 def consolidate(accepted, assets=None):
@@ -263,10 +315,12 @@ def consolidate(accepted, assets=None):
         by.setdefault(s["asset"], []).append(s)
     theses = []
     for name, moments in by.items():
-        score = sum(LEAN[m["direction"]] * (2 if m["kind"] == "call" else 1) for m in moments)
         calls = [m for m in moments if m["kind"] == "call"]
-        # the call (if any) sets the headline; otherwise the weighted lean of the thoughts
-        head = calls[-1]["direction"] if calls else ("bullish" if score > 0 else "bearish" if score < 0 else "neutral")
+        near_calls = [m for m in calls if m["horizon"] in NEAR]
+        # the headline is the view for now: the latest near-term call; without one, the weighted lean
+        # (calls count double) of everything except the turns they expect next year
+        score = sum(LEAN[m["direction"]] * (2 if m["kind"] == "call" else 1) for m in moments if m["horizon"] != "next year")
+        head = near_calls[-1]["direction"] if near_calls else ("bullish" if score > 0 else "bearish" if score < 0 else "neutral")
         later = [m for m in moments if m["horizon"] in ("next year", "long term") and m["direction"] != head]
         theses.append({
             "asset": name, "label": assets[name]["label"], "kind": "call" if calls else "thought",
