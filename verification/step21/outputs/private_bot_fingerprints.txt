@@ -1,0 +1,5 @@
+7e3993ff7323688684321a9707dc9a8459b1382000be4bca855442516bd821ee  quanty_admin.py
+9c95b04f45b3653912c3326fd2d67e5d921b4a4ad020f7a7ffc6de1a051fcdd1  tests/test_bot.py
+ExecMainStartTimestamp=Sun 2026-11-01 15:39:22 UTC
+ActiveState=active
+llm key file mode -rw-------

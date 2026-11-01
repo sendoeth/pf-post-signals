@@ -1,0 +1,14 @@
+fresh clone 244509c3361e2896072d42f72d5dc2f75f7c776b
+guard: scanned 69 commits (all added lines + messages) -> 0 hits
+guard: scanned 2269 files -> 0 hits
+ls: cannot access 'private': No such file or directory
+0
+Ran 56 tests in 0.835s
+OK (skipped=1)
+forward-guidance-2026-10-30: 6 theses
+  Bitcoin                  call    neutral  at episode 76942.57  now 77582.02  +0.83%
+  AI trade / semis (SMH)   call    bearish  at episode 522.49  now 522.49  n/a
+  Gold                     call    neutral  at episode 3892.8  now 3892.8  n/a
+  Oil (WTI)                call    bullish  at episode 103.13  now 103.13  n/a
+  US dollar (DXY)          thought bearish  at episode 101.894  now 101.894  n/a
+  US stocks (SPY)          thought bearish  at episode 755.72  now 755.72  n/a

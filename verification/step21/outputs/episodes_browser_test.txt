@@ -1,0 +1,2 @@
+episode bubbles checked 12 (6 assets x 2 widths), cards opened 12, static page loads 4 (no JS)
+ALL PASS

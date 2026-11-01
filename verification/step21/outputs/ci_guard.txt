@@ -1,0 +1,3 @@
+guard CI on 244509c: success
+pages build and deployment success https://github.com/sendoeth/pf-post-signals/actions/runs/41328274427
+guard success https://github.com/sendoeth/pf-post-signals/actions/runs/41328274490

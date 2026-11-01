@@ -1,0 +1,52 @@
+transcript (private) sha256 ad8a964714c8e71affdbf2aafe700979bc8da693a496fb07f61aacf0cb1bc104 == published ad8a964714c8e71affdbf2aafe700979bc8da693a496fb07f61aacf0cb1bc104: True
+segments 566, chapters 13, 0:00 -> 59:08
+model anthropic/claude-opus-5.5 (via OpenRouter) · prompt quanty.transcript.v2 · response gen-1793550201-wC8GfQwZS7imfzN4ADaT · usage 21784 in / 11822 out, cost $0.323576
+re-verified now: 31 accepted (7 calls, 24 thoughts), 0 rejected; published 31/0
+rejected with reasons: none
+notes: none
+
+Bitcoin: call neutral, later bullish · 8 moments
+   54:42  thought neutral  months    Felix Jauvin (high): "like I don't know, man. That does something fundamentally. So, I'm I'm reevaluating a little bit that that tha"
+   55:26  call    neutral  now       Quinn Thompson (high): "Um, for me, nothing's changed cuz I'm I'm not long anything. And this is a"
+   55:32  thought neutral  months    Felix Jauvin (medium): "Yeah, it's definitely a bit of a bottom signal. I just think it it might prolong the period of the the the con"
+   55:50  thought bullish  next year Quinn Thompson (high): "Yeah. I mean, my base case is that we don't it's not really fertile conditions until sometime next year. Could"
+   55:57  call    neutral  now       Quinn Thompson (high): "But anyways, um, so I think remaining patient is very good cuz you're right, like we just deviated range highs"
+   56:34  thought neutral  months    Felix Jauvin (high): "I think it's just time capitulation. Like I think it's, you know, we Yeah, we've seen some some recent lows in"
+   57:10  thought neutral  months    Quinn Thompson (medium): "I think you have to see analog gold bottom before you're going to get their ability on the crypto."
+   57:41  thought bearish  weeks     Quinn Thompson (medium): "Um, and gold's now completely retraced and set new lows. could be ominous sign uh for for Bitcoin as well"
+
+AI trade / semis (SMH): call bearish, later bullish · 8 moments
+   19:57  thought bearish  months    Felix Jauvin (high): "day that you see a hyperscalers earning where the capex estimates are or the the cap yeah the capex guidance i"
+   27:14  call    bearish  long term Quinn Thompson (high): "the bubble was being blown. So I just think that like from from my investment perspective like this stuff is i"
+   28:40  thought bearish  months    Felix Jauvin (high): "so so what do you do? I guess just equity issuance is kind of your main leg right now and that's just why woul"
+   32:50  thought bearish  long term Quinn Thompson (high): "we need to keep every every dollar of operating margin we can get." So, it prolongs the supply glut basically."
+   37:31  thought bearish  long term Quinn Thompson (high): "seeing it with open models. But it's very very very bearish from a investment perspective because like anythin"
+   38:11  thought neutral  now       Quinn Thompson (high): "and buying when I don't think we're at the buying point yet, but we will be at some point."
+   38:11  thought bullish  next year Quinn Thompson (high): "And then maybe I'll say my first bullish thing about semi semiconductors [laughter] in 2027."
+   39:08  thought bearish  months    Felix Jauvin (high): "just a leverage wash out. I think what's what's concerning now is that we're back at those those similar lows "
+
+Gold: call neutral, later bullish · 7 moments
+   11:00  thought bearish  weeks     Quinn Thompson (high): "gold is probably getting hit here as you know the energy short nations are trying to defend currency. The doll"
+   17:46  thought bearish  weeks     Quinn Thompson (medium): "liquidity crunch. So, you're going to you're going to you're getting tapped on the shoulder whether you're the"
+   18:10  call    neutral  now       Felix Jauvin (high): "in the interim. Um or yeah, you just you have to come in with a trading plan because it's it's getting caught "
+   18:16  thought bullish  long term Felix Jauvin (high): "things. Um even though we know where this will go eventually, I don't know when that eventually will specifica"
+   18:52  thought neutral  months    Quinn Thompson (high): "a just very simple validation invalidation level you could say like, hey, below those summer lows, I' not goin"
+   19:06  call    neutral  now       Quinn Thompson (high): "things, you know, come to fruition, then then probably start to care again. But yeah, like you said, yeah, ste"
+   19:13  call    neutral  now       Felix Jauvin (high): "Yeah, step aside. Wait it out. Um, wait till it all blows over."
+
+Oil (WTI): call bullish · 5 moments
+    7:25  thought bullish  weeks     Quinn Thompson (high): "there's a record energy crisis in oil supply and prices might, you know, go to 150 soon and then growth in sto"
+   41:07  call    bullish  months    Quinn Thompson (high): "if you look at the chart of oil over the last two, three months, it's straight up and to the right and has bar"
+   41:44  thought bullish  weeks     Quinn Thompson (high): "the supply disruption is so great that the US has to has to unblock it like this it will just be a one-way tra"
+   42:15  thought bullish  weeks     Felix Jauvin (medium): "Yeah. The only way out is through, like we said last week."
+   42:33  thought bullish  weeks     Quinn Thompson (high): "And there's no positioning. Price rises every day in this asset. And futures positioning is falling. Volume is"
+
+US dollar (DXY): thought bearish · 2 moments
+   11:16  thought bearish  months    Quinn Thompson (high): "takes a week, maybe it takes 3 months, but the dollar should probably start peeking out when when the market c"
+   11:48  thought bearish  months    Quinn Thompson (high): "than they otherwise would like to be probably given where inflation is. And I think that will end up, you know"
+
+US stocks (SPY): thought bearish · 1 moments
+    7:25  thought bearish  months    Quinn Thompson (high): "there's a record energy crisis in oil supply and prices might, you know, go to 150 soon and then growth in sto"
+
+the 10:55 example: in this copy the quote starts the 11:00 segment; the same quote in the first copy (sha256 6dd3188e5aad9adb…) starts at 10:55
+gold timestamps: 11:00 17:46 18:10 18:16 18:52 19:06 19:13

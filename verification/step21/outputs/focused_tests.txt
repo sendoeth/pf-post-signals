@@ -1,0 +1,22 @@
+test_offline_without_cache_fails (tests.test_transcript.Build.test_offline_without_cache_fails) ... ok
+test_refresh_keeps_the_bars_up_to_the_episode (tests.test_transcript.Build.test_refresh_keeps_the_bars_up_to_the_episode) ... ok
+test_one_thesis_per_asset_with_every_timestamp (tests.test_transcript.Consolidate.test_one_thesis_per_asset_with_every_timestamp) ... ok
+test_both_formats_give_the_same_episode (tests.test_transcript.Parse.test_both_formats_give_the_same_episode) ... ok
+test_glued_timestamps (tests.test_transcript.Parse.test_glued_timestamps) ... ok
+test_prompt_is_fixed_and_carries_the_whole_transcript (tests.test_transcript.Parse.test_prompt_is_fixed_and_carries_the_whole_transcript) ... ok
+test_quote_matching_spans_lines_and_ignores_punctuation (tests.test_transcript.Parse.test_quote_matching_spans_lines_and_ignores_punctuation) ... ok
+test_refuses_unreadable_and_backwards (tests.test_transcript.Parse.test_refuses_unreadable_and_backwards) ... ok
+YouTube's other copy: chapter title, then the timestamp on its own line, then the text. ... ok
+test_stacked_format_refusals (tests.test_transcript.Parse.test_stacked_format_refusals) ... ok
+test_raw_transcript_is_private (tests.test_transcript.RealEpisode.test_raw_transcript_is_private) ... ok
+test_good_stance (tests.test_transcript.Verify.test_good_stance) ... ok
+test_refuses_other_transcript_or_prompt (tests.test_transcript.Verify.test_refuses_other_transcript_or_prompt) ... ok
+test_rejections (tests.test_transcript.Verify.test_rejections) ... ok
+test_summary_and_lines_are_checked (tests.test_episode_intake.Extras.test_summary_and_lines_are_checked) ... ok
+test_a_near_call_wins (tests.test_episode_intake.Headline.test_a_near_call_wins) ... ok
+test_a_next_year_call_does_not_set_today (tests.test_episode_intake.Headline.test_a_next_year_call_does_not_set_today) ... ok
+test_fails_closed (tests.test_episode_intake.Provider.test_fails_closed) ... ok
+test_fenced_json_is_accepted (tests.test_episode_intake.Provider.test_fenced_json_is_accepted) ... ok
+test_good_reply_carries_provenance (tests.test_episode_intake.Provider.test_good_reply_carries_provenance) ... ok
+Ran 32 tests in 0.076s
+OK
