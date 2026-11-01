@@ -19,6 +19,7 @@ import episode  # noqa: E402
 import transcript as tr  # noqa: E402
 
 EP = os.path.join(HERE, "sources", "episodes", "forward-guidance-2026-10-30")
+FIRST_COPY = os.path.join(HERE, "private", "transcripts", "forward-guidance", "2026-10-30-weekly-roundup.txt")
 PRIVATE = next((p for p in (os.path.join(HERE, "private", "transcripts", "forward-guidance-2026-10-30.txt"),       # where /episode keeps it
                              os.path.join(HERE, "private", "transcripts", "forward-guidance", "2026-10-30-weekly-roundup.txt"))
                 if os.path.exists(p)), "missing")
@@ -180,7 +181,14 @@ class RealEpisode(unittest.TestCase):
         self.assertEqual(th["accepted"], len(ver["accepted"]))
         self.assertEqual(th["accepted"], sum(t["mentions"] for t in th["theses"]))
         gold = next(t for t in th["theses"] if t["asset"] == "GOLD")
-        self.assertIn("10:55", [m["t"] for m in gold["moments"]])                # the user's example moment
+        # the user's example moment (10:55: "gold is probably getting hit here ... defend currency"); each YouTube copy
+        # splits lines differently, so its segment start is within a few seconds of 10:55
+        ex_m = [m for m in gold["moments"] if "gold is probably getting hit" in m["quote"].lower()]
+        self.assertEqual(len(ex_m), 1)
+        self.assertLessEqual(abs(ex_m[0]["seconds"] - 655), tr.WINDOW)
+        if os.path.exists(FIRST_COPY):                                             # the copy the example was taken from
+            blob, first = tr.read(FIRST_COPY)
+            self.assertEqual(tr.fmt(tr.find_quote(first, ex_m[0]["quote"], 655)), "10:55")
         self.assertEqual(gold["moments"][0]["kind"], "thought")
         oil = next(t for t in th["theses"] if t["asset"] == "OIL")
         self.assertEqual((oil["kind"], oil["direction"]), ("call", "bullish"))
@@ -194,8 +202,8 @@ class RealEpisode(unittest.TestCase):
         acc, rej = tr.verify(p, ex, tr.sha256(blob))
         th = json.load(open(os.path.join(EP, "theses.json")))
         self.assertEqual((len(acc), len(rej)), (th["accepted"], th["rejected"]))
-        self.assertEqual(len(p["segments"]), 471)
-        self.assertEqual(len(p["chapters"]), 13)
+        self.assertEqual((len(p["segments"]), len(p["chapters"]), p["segments"][-1]["ts"]), (th["segments"], len(th["chapters"]), th["duration"]))
+        self.assertEqual(tr.sha256(blob), th["transcript_sha256"])
 
     def test_every_published_quote_is_short(self):
         for s in json.load(open(os.path.join(EP, "extraction.json")))["stances"]:
@@ -240,7 +248,15 @@ class Build(unittest.TestCase):
         self.assertGreater(oil["price"]["with_lean"], 0)
         self.assertEqual(set(ep["files"]), {f"sources/episodes/forward-guidance-2026-10-30/{n}" for n in
                                            ("episode.json", "theses.json", "verified.json", "extraction.json")})
-        self.assertNotIn("rating", json.dumps(b).lower().replace("are not rated", ""))
+        def keys(v):
+            if isinstance(v, dict):
+                for k, x in v.items():
+                    yield k
+                    yield from keys(x)
+            elif isinstance(v, list):
+                for x in v:
+                    yield from keys(x)
+        self.assertFalse({"rating", "ratings", "score", "scores"} & set(keys(b)))      # episodes carry no score of any kind
         # the cache makes the second build identical without fetching
         b2 = episode.build(root=self.root, offline=True)
         self.assertEqual(json.dumps(b, sort_keys=True), json.dumps(b2, sort_keys=True))
@@ -257,8 +273,11 @@ class Build(unittest.TestCase):
         self.assertEqual(page.count('class="moment"'), len(moments))
         thought_theses = sum(t["kind"] == "thought" for t in ep["theses"])
         self.assertEqual(page.count('class="bub thought'), sum(m["kind"] == "thought" for m in moments) + thought_theses + 1)   # + the legend
-        self.assertIn("I think gold is probably getting hit here", page)
-        self.assertIn("the show page", page)                                 # no episode link yet -> says so
+        self.assertIn("gold is probably getting hit here", page)
+        if ep["url"]:                                                        # the original link (escaped, https only)
+            self.assertIn(f'<a href="{ep["url"]}" rel="noopener noreferrer">the original episode</a>', page)
+        else:
+            self.assertIn("link not added yet", page)
         lst = open(os.path.join(self.web, "episodes.html"), encoding="utf-8").read()
         self.assertIn('href="episode-forward-guidance-2026-10-30.html"', lst)
         self.assertEqual(lst.count('<p class="nfa" id="nfa"'), 1)
