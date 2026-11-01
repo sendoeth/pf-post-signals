@@ -257,6 +257,14 @@ def position_static(r, asof, avatars, all_rows=(), ratings=None):
             ("Since post", fmt_pct(p["change_since_post"]), "change_since_post", p["change_since_post"]),
             ("Return" + (" for the call" if side != "none" else ""), fmt_pct(r["ret"]), "return", r["ret"]),
             ("Best since post", "–" if r["best"] is None else fmt_pct(r["best"]), "best", r["best"])]
+    # step 22: which coin a plain ticker is (identity + checked venue) and how the side was read
+    tk = (p.get("asset_choice") or {}).get("ticker")
+    if tk:
+        rows.insert(1, ("Coin", f'{tk["name"]} [{tk["coingecko_id"]}] · identity and price checked {tk["checked_at"][:10]} (receipt sources/tickers/{p["asset"]["name"]}.json)', "coin", None))
+    sch = p.get("side_choice")
+    if sch:
+        rows.insert(3 if tk else 2, ("Side chosen by", sch["method"] + (f' ("{sch["terms"][0]}")' if sch.get("terms") else "")
+                                     + (f': {sch["reason"]}' if sch.get("reason") else ""), "side_choice", None))
     for h in HZ:
         v = p["moves"].get(h)
         rows.append((f"{h}d move", fmt_pct(v) if v is not None else "unresolved · " + p["unresolved"].get(h, ""), f"move_{h}", v))

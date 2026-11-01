@@ -216,7 +216,11 @@ function render(asset, p, ohlc, avatars, bundle) {
   recap.append(el("h2", null, "Recap"));
   const dl = el("dl");
   field(dl, "asset", "Asset", `${p.asset.name} (${p.asset.source}:${p.asset.symbol})`);
+  const tk = p.asset_choice && p.asset_choice.ticker;      // step 22: the coin a plain ticker is, and its checked venue
+  if (tk) field(dl, "coin", "Coin", `${tk.name} [${tk.coingecko_id}] · identity and price checked ${String(tk.checked_at).slice(0, 10)} (receipt sources/tickers/${p.asset.name}.json)`);
   field(dl, "side", "Side", sideName || "no side stated", p.side ?? null);
+  const sch = p.side_choice;
+  if (sch) field(dl, "side_choice", "Side chosen by", sch.method + (sch.terms && sch.terms.length ? ` ("${sch.terms[0]}")` : "") + (sch.reason ? `: ${sch.reason}` : ""));
   field(dl, "status", "Status", PFPS.statusLabel(p), p.status);
   dl.lastChild.setAttribute("title", PFPS.statusTip(p));
   field(dl, "entry", "Entry", p.entry ? `${fmtPrice(p.entry.price)} @ ${fmtTime(p.entry.at)}` : "no entry bar", p.entry);
