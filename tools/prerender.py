@@ -304,6 +304,34 @@ def meta_tags(title, desc, url):
             f'<meta property="og:type" content="article">\n<meta property="og:site_name" content="Quanty Quants">\n<meta property="og:url" content="{e(url)}">\n<meta name="twitter:card" content="summary">')
 
 
+def redirect_page(old_name, r, nfa):
+    """A static page at an old URL that sends the visitor to the renamed page (no JS: meta refresh + a link)."""
+    to = r["to"]
+    return f"""<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; frame-src 'none'; worker-src 'none'; manifest-src 'none'; media-src 'none'; font-src 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="no-referrer">
+<script src="assets/frame-guard.js"></script>
+<meta http-equiv="refresh" content="0; url={e(to)}">
+<link rel="canonical" href="{e(SITE + to)}">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moved · Quanty Quants</title>
+<meta name="description" content="{e(r.get('reason', 'This page moved.'))}">
+<link rel="stylesheet" href="assets/position.css">
+</head>
+<body>
+<main data-redirect="{e(to)}">
+  <p>This position moved to <a href="{e(to)}" data-field="redirect">{e(to)}</a>. {e(r.get('reason', ''))}</p>
+  {nfa}
+</main>
+</body>
+</html>
+"""
+
+
 def main(web=None):
     web = web or (sys.argv[sys.argv.index("--web") + 1] if "--web" in sys.argv else os.path.join(HERE, "web"))
     with open(os.path.join(web, "data", "charts.json")) as f:
@@ -363,6 +391,18 @@ def main(web=None):
             with open(os.path.join(web, fname), "w") as f:
                 f.write(page)
             keep.add(fname)
+    # step 22: renamed pages (data/redirects.json, next to web/) keep their old URL as a static redirect
+    # to the page that exists now; a redirect whose target is gone is not written (and its page is removed)
+    red_path = os.path.join(os.path.dirname(os.path.abspath(web)), "data", "redirects.json")
+    nfa = re.search(r'<p class="nfa" id="nfa" data-field="nfa">.*?</p>', template, re.S)
+    if os.path.exists(red_path):
+        with open(red_path) as f:
+            redirects = json.load(f)["pages"]
+        for old_name, r in sorted(redirects.items()):
+            if r["to"] in keep and re.fullmatch(r"pos-[A-Za-z0-9_-]+\.html", old_name) and old_name not in keep:
+                with open(os.path.join(web, old_name), "w") as f:
+                    f.write(redirect_page(old_name, r, nfa.group(0) if nfa else ""))
+                keep.add(old_name)
     for old in glob.glob(os.path.join(web, "pos-*.html")) + glob.glob(os.path.join(web, "caller-*.html")):
         if os.path.basename(old) not in keep:
             os.remove(old)

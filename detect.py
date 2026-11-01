@@ -83,6 +83,79 @@ def detect_side(text):
     return {"side": None, "status": "none", "terms": found}
 
 
+# Step 22: every coin a post names (mapped words, any cashtag, X contract tags) resolved to a plain
+# ticker by tickers.py, one leg per coin, and the side each leg's own words give it.
+LEG_VERBS = {"buy": 1, "buying": 1, "bought": 1, "long": 1, "longing": 1, "sell": -1, "selling": -1, "sold": -1, "short": -1, "shorting": -1}
+OPTION = re.compile(r"\b(calls?|puts?)\b", re.I)
+
+
+def coin_legs(text, amap=None, net=None, registry=None):
+    """-> [{"asset", "via", "receipt" (None for a mapped asset), "status", "reason"}] in order of first mention."""
+    import tickers
+    amap = amap or load_map()
+    text = text or ""
+    legs, seen = [], {}
+
+    def add(asset, via, receipt=None, status="ok", reason=None, pos=0):
+        key = asset or via
+        if key in seen:
+            if via not in seen[key]["via"]:
+                seen[key]["via"].append(via)
+            return
+        seen[key] = {"asset": asset, "via": [via], "receipt": receipt, "status": status, "reason": reason, "pos": pos}
+        legs.append(seen[key])
+
+    for m in tickers.CONTRACT_TAG.finditer(text):
+        r = tickers.resolve_contract(m.group(1), m.group(2), net, registry)
+        add(r["ticker"] if r["status"] == "ok" else None, m.group(0), r, r["status"], r["reason"], m.start())
+    for m in CASHTAG.finditer(text):
+        tag = m.group(1).upper()
+        mapped = amap["cashtags"].get(tag)
+        if mapped:
+            add(mapped, "$" + tag, pos=m.start())
+            continue
+        if tag in seen or any(l["asset"] == tag for l in legs):
+            add(tag, "$" + tag, pos=m.start())
+            continue
+        r = tickers.resolve_ticker(tag, net, registry=registry)
+        add(r["ticker"] if r["status"] == "ok" else None, "$" + tag, r, r["status"], r["reason"], m.start())
+    rest = tickers.CONTRACT_TAG.sub(" ", CASHTAG.sub(" ", text))
+    for pat, term, asset in amap["terms"]:
+        mm = pat.search(rest)
+        if mm:
+            add(asset, term, pos=mm.start())
+            rest = pat.sub(" ", rest)
+    legs.sort(key=lambda l: l["pos"])
+    return [{k: v for k, v in l.items() if k != "pos"} for l in legs]
+
+
+def leg_side(text, aliases):
+    """The side one coin's own words give it. Options: buying calls = long, buying puts = short,
+    selling calls = no side (capped upside is not a stated short), selling puts = long. Without option
+    words, the nearest buy / sell / long / short word before the coin. -> (side, reason, words)."""
+    text = text or ""
+    names = sorted({a for a in aliases if a}, key=len, reverse=True)
+    alias_re = re.compile(r"(?<![\w$:])\$?(?:" + "|".join(re.escape(a.lstrip("$")) for a in names) + r")(?![\w])", re.I)
+    for m in alias_re.finditer(text):
+        after = text[m.end():m.end() + 12]
+        opt = OPTION.match(after.strip()) if after.strip() else None
+        before = text[max(0, m.start() - 60):m.start()]
+        before = re.split(r"[.;\n]|,\s*and\b|\band\b", before)[-1]            # the clause this mention sits in
+        verbs = [(v.group(0).lower(), v.start()) for v in re.finditer(r"\b(" + "|".join(LEG_VERBS) + r")\b", before, re.I)]
+        if not verbs:
+            continue
+        verb = verbs[-1][0]
+        words = (before[verbs[-1][1]:] + m.group(0) + (" " + opt.group(1) if opt else "")).strip()
+        buy = LEG_VERBS[verb] == 1
+        if opt:
+            call = opt.group(1).lower().startswith("call")
+            if buy:
+                return (1 if call else -1), f"buying {'calls' if call else 'puts'}", words
+            return (None, "selling calls caps the upside; it is not a stated short", words) if call else (1, "selling puts", words)
+        return (1 if buy else -1), f"'{verb}' before the coin", words
+    return None, "no side words next to this coin", None
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     g = ap.add_mutually_exclusive_group(required=True)

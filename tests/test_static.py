@@ -145,7 +145,15 @@ class Static(unittest.TestCase):
     def test_no_stale_or_missing_pages(self):
         want = {f"pos-{prerender.slug(r['p']['post']['id'], r['asset'])}.html" for r in self.rows}
         have = {n for n in os.listdir(self.web) if n.startswith("pos-")}
-        self.assertEqual(have, want)
+        # step 22: a renamed position keeps its old URL as a static redirect to a page that exists
+        red_path = os.path.join(os.path.dirname(self.web), "data", "redirects.json")
+        redirects = json.load(open(red_path))["pages"] if os.path.exists(red_path) else {}
+        for old in have - want:
+            self.assertIn(old, redirects, f"{old} is neither a position nor a listed redirect")
+            self.assertIn(redirects[old]["to"], want)
+            page = open(os.path.join(self.web, old)).read()
+            self.assertIn(f'<meta http-equiv="refresh" content="0; url={redirects[old]["to"]}">', page)
+        self.assertEqual(have - set(redirects), want)
         callers = {f"caller-{rate.caller_slug(n)}.html" for n in self.bundle["ratings"]["callers"]}
         self.assertEqual({n for n in os.listdir(self.web) if n.startswith("caller-")}, callers)
 

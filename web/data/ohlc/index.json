@@ -225,9 +225,9 @@
     "starts_at_listing": false
    }
   },
-  "binance:ZECUSDT": {
-   "file": "binance:ZECUSDT.json",
-   "sha256": "aa777f6917079e1a12a7afa7873878d7bff1d32afde5c8327050cabf962b5e87",
+  "ZEC": {
+   "file": "ZEC.json",
+   "sha256": "d4215378eceeeb2b896db2b20ca9553f84ec546403ef6ce6f4126bdb27137776",
    "fetched_at": "2026-11-01T00:12:39Z",
    "bars": 11826,
    "first": "2025-06-26T07:00:00Z",

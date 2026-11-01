@@ -99,6 +99,15 @@ class DuplicatePostError(ResolveError):
     pass
 
 
+def registered_tickers(path=None):
+    """data/tickers.json: plain tickers confirmed by tickers.py (coin identity + a price-checked venue)."""
+    path = path or os.path.join(HERE, "data", "tickers.json")
+    if not os.path.exists(path):
+        return {}
+    with open(path) as f:
+        return json.load(f).get("tickers", {})
+
+
 def asset_info(name):
     """'BTC' -> known map; 'binance:XRPUSDT' / 'yahoo:NVDA' -> explicit source; anything else fails."""
     raw = name.strip()
@@ -108,12 +117,16 @@ def asset_info(name):
     if ":" in raw:
         src, sym = raw.split(":", 1)
         src = src.lower()
-        if src not in ("binance", "yahoo") or not re.fullmatch(r"[A-Za-z0-9=.^\-]{1,20}", sym):
-            raise UnknownAssetError(f"unknown asset {name!r}: prefix must be binance:<PAIR> or yahoo:<TICKER>")
+        if src not in ("binance", "yahoo", "hyperliquid") or not re.fullmatch(r"[A-Za-z0-9=.^\-]{1,20}", sym):
+            raise UnknownAssetError(f"unknown asset {name!r}: prefix must be binance:<PAIR>, yahoo:<TICKER> or hyperliquid:<COIN>")
         return {"name": f"{src}:{sym.upper()}", "source": src, "symbol": sym.upper(), "price_field": "open"}
     key = raw.upper()
+    reg = registered_tickers().get(key)
+    if key not in ASSETS and reg:
+        # step 22: a plain ticker resolved and confirmed by tickers.py (data/tickers.json + its receipt)
+        return {"name": key, "source": reg["source"], "symbol": reg["symbol"], "price_field": "open"}
     if key not in ASSETS:
-        raise UnknownAssetError(f"unknown asset {name!r}: known {', '.join(sorted(ASSETS))}; "
+        raise UnknownAssetError(f"unknown asset {name!r}: known {', '.join(sorted(ASSETS))}, the tickers in data/tickers.json; "
                                 "or pass binance:<PAIR> / yahoo:<TICKER>")
     src, sym = ASSETS[key]
     return {"name": key, "source": src, "symbol": sym, "price_field": "open"}

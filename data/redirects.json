@@ -1,0 +1,10 @@
+{
+ "schema": "quanty.redirects.v1",
+ "note": "old page URL -> the page it moved to (tools/prerender.py writes a static redirect)",
+ "pages": {
+  "pos-1970742039722479782_binance-ZECUSDT.html": {
+   "to": "pos-1970742039722479782_ZEC.html",
+   "reason": "binance:ZECUSDT is now shown as its plain ticker ZEC; prices and results are unchanged."
+  }
+ }
+}

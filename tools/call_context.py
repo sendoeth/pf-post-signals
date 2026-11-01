@@ -70,6 +70,9 @@ def asset_words(name):
             base = base[: -len(q)]
             break
     words += ALIASES.get(base, [base.lower()])
+    reg = resolve.registered_tickers().get(base)       # step 22: a resolved ticker also searches its coin's name
+    if reg:
+        words.append(reg["name"].lower())
     return sorted({w for w in words if w}, key=len)
 
 

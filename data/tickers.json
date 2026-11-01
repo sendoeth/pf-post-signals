@@ -1,0 +1,14 @@
+{
+ "schema": "quanty.tickers.v1",
+ "tickers": {
+  "ZEC": {
+   "coingecko_id": "zcash",
+   "name": "Zcash",
+   "source": "binance",
+   "symbol": "ZECUSDT",
+   "receipt": "sources/tickers/ZEC.json",
+   "receipt_sha256": "cfc66ac234462a02b7fd0423f7fe1c5d6859c70862a9b0cd8eca79b1384ad3d6",
+   "added_at": "2026-11-01T17:50:47Z"
+  }
+ }
+}

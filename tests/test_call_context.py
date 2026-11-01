@@ -70,7 +70,7 @@ class Scratch(unittest.TestCase):
 
     def run_ctx(self, after, empty_from=None):
         h = Harness(after, empty_from)
-        c = call_context.analyse(f"https://x.com/mert/status/{GLOAT_ID}", root=self.root, asset="binance:ZECUSDT", fetch=lambda pid: embed(),
+        c = call_context.analyse(f"https://x.com/mert/status/{GLOAT_ID}", root=self.root, asset="ZEC", fetch=lambda pid: embed(),
                                  harness=h, today=TODAY, now="2026-10-31T18:00:00Z")
         return c, h
 
@@ -137,7 +137,7 @@ class HoldWords(unittest.TestCase):
     def test_relabel_uses_the_saved_posts(self):
         c = {"post_id": "1", "posted_at": "2025-09-29T00:00:00Z", "author": "mert", "words": ["zec"], "side": 1, "suggested_call": None,
              "searches": [{"query": "q1", "posts": 0, "searches": 1, "coverage": [], "error": None},
-                          {"query": "q2", "posts": 1, "searches": 1, "coverage": [{"since": "2025-09-29", "until": "2026-11-01", "status": "done"}], "error": None}], "url": "u", "asset": "binance:ZECUSDT", "text": "t", "victory_lap": None, "before": [],
+                          {"query": "q2", "posts": 1, "searches": 1, "coverage": [{"since": "2025-09-29", "until": "2026-11-01", "status": "done"}], "error": None}], "url": "u", "asset": "ZEC", "text": "t", "victory_lap": None, "before": [],
              "after_raw": {"9": {"id": "9", "authorHandle": "mert", "postedAt": "2026-01-08T10:00:00.000Z", "text": "zero, i do not sell zec", "kind": "post"}}}
         tmp = tempfile.mkdtemp()
         try:
@@ -150,7 +150,7 @@ class HoldWords(unittest.TestCase):
 
 class Apply(Scratch):
     def test_close_is_written_and_the_record_closes(self):
-        rec_path = os.path.join(self.root, "records", "posts", "1970742039722479782_binance-ZECUSDT.json")
+        rec_path = os.path.join(self.root, "records", "posts", "1970742039722479782_ZEC.json")
         self.assertTrue(os.path.exists(rec_path))
         closing = post("2026-03-02T10:15:00Z", "sold all my zec today")
         c, _ = self.run_ctx([closing])
@@ -161,7 +161,7 @@ class Apply(Scratch):
         self.assertEqual(rec["closed"]["post_id"], closing["id"])
         self.assertEqual(rec["closed"]["exit"]["at"], "2026-03-02T11:00:00Z")          # first bar after the post
         with open(os.path.join(self.root, "data", "lifecycle.json")) as f:
-            life = json.load(f)["positions"]["1970742039722479782|binance:ZECUSDT"]
+            life = json.load(f)["positions"]["1970742039722479782|ZEC"]
         self.assertEqual(life["followups"], [closing["id"]])
         self.assertEqual(life["overrides"][closing["id"]]["type"], "close")
         self.assertTrue(os.path.exists(os.path.join(self.root, "sources", "mert", "receipts", f"{closing['id']}.json")))
@@ -192,10 +192,10 @@ class Reuse(Scratch):
         import subprocess
         run = lambda *a: subprocess.run([sys.executable, os.path.join(HERE, "tools", "call_context.py"), f"https://x.com/mert/status/{GLOAT_ID}0", *a],
                                         capture_output=True, text=True, cwd=HERE)
-        r = run("--asset", "binance:ZECUSDT", "--expect-sha", "0" * 64)
+        r = run("--asset", "ZEC", "--expect-sha", "0" * 64)
         self.assertNotEqual(r.returncode, 0)
         self.assertIn("only works with --reuse", r.stderr)
-        r = run("--asset", "binance:ZECUSDT", "--apply", "--reuse", "--expect-sha", "0" * 64)       # no context file for this id
+        r = run("--asset", "ZEC", "--apply", "--reuse", "--expect-sha", "0" * 64)       # no context file for this id
         self.assertNotEqual(r.returncode, 0)
         self.assertIn("no recent context file", r.stderr)
 

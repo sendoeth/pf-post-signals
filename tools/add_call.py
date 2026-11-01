@@ -42,6 +42,7 @@ import ingest  # noqa: E402
 import prerender  # noqa: E402
 import rate  # noqa: E402
 import resolve  # noqa: E402
+import tickers  # noqa: E402
 
 VERSION = "quanty.intake.v1"
 
@@ -108,7 +109,47 @@ def image_evidence(root, pid):
     return {"file": os.path.relpath(path, root), "sha256": sha256_file(path), "confidence": e.get("confidence"), "suggested": e.get("asset_suggested")}
 
 
-def build_item(url, root=HERE, fetch=ingest.fetch_embed, prices=None, bundle=None, asset=None, side=None, reason=None, now=None, allow_pending=False):
+def receipt_sha(receipt):
+    """sha256 of the ticker receipt exactly as tickers.register writes it (sources/tickers/<TICKER>.json)."""
+    return hashlib.sha256((json.dumps(receipt, indent=1) + "\n").encode()).hexdigest()
+
+
+def legs_message(legs, text):
+    """The refusal for a post naming several coins (or a coin that needs review): one line per leg,
+    machine-readable for the admin bot (LEG / REVIEW lines)."""
+    lines = []
+    for l in legs:
+        if l["status"] != "ok":
+            lines.append(f"REVIEW {' / '.join(l['via'])}: {l['reason']}")
+            continue
+        s, why, words = detect.leg_side(text, [l["asset"]] + [v.lstrip("$") for v in l["via"]])
+        side = {1: "long", -1: "short"}.get(s, "none")
+        coin = f" = {l['receipt']['coin']['name']} [{l['receipt']['coin']['id']}] on {l['receipt']['chosen']['source']}:{l['receipt']['chosen']['symbol']}" if l.get("receipt") else ""
+        lines.append(f"LEG {l['asset']} side {side}: {why}" + (f" ('{words}')" if words else "") + f" via {' / '.join(l['via'])}{coin}")
+    return "\n".join(lines)
+
+
+def pick_coin(text, leg, net):
+    """No mapped asset: resolve every coin the post names (tickers.py). One ok coin -> it; several ->
+    the chosen --leg; anything else -> Refused with the legs listed."""
+    legs = detect.coin_legs(text, net=net)
+    ok = [l for l in legs if l["status"] == "ok"]
+    if leg:
+        hit = next((l for l in ok if l["asset"] == leg.upper()), None)
+        if not hit:
+            raise Refused(f"--leg {leg}: not a resolved coin of this post\n" + legs_message(legs, text))
+        return hit, legs
+    if len(legs) == 1 and ok:
+        return ok[0], legs
+    if not legs:
+        raise Refused("unreadable post: the detector cannot tell the asset (no asset words, cashtags or contract tags); rerun with --asset and --reason")
+    if len(ok) > 1:
+        raise Refused("several coins in this post: each is added on its own, pick one with --leg\n" + legs_message(legs, text))
+    raise Refused("the coin(s) of this post could not be confirmed (nothing guessed)\n" + legs_message(legs, text))
+
+
+def build_item(url, root=HERE, fetch=ingest.fetch_embed, prices=None, bundle=None, asset=None, side=None, reason=None, now=None, allow_pending=False,
+               leg=None, net=None):
     """One post -> {url, receipt, record_file, record, revisions, detected}. Writes only the receipt."""
     if asset and not reason:
         raise Refused("--asset needs --reason: an asset chosen by hand is always explained")
@@ -122,21 +163,48 @@ def build_item(url, root=HERE, fetch=ingest.fetch_embed, prices=None, bundle=Non
     if image_evidence(root, receipt["id"]) and not (reason or "").strip():
         raise Refused(f"image-inferred call: intake/images/{receipt['id']}.json exists; add it only with --asset, --side and a written --reason")
     d = detect.detect(text, manual=asset)
-    if d["status"] not in ("detected", "manual"):
-        raise Refused(f"unreadable post: the detector cannot tell the asset ({d['reason']}); rerun with --asset and --reason")
+    coin, legs = None, None
+    if d["status"] not in ("detected", "manual") or leg or (d["status"] == "detected" and tickers.CONTRACT_TAG.search(text)):
+        # step 22: cashtags without a fixed mapping and X contract tags are resolved to plain tickers
+        coin, legs = pick_coin(text, leg, net or tickers.Net())
+        d = {"status": "detected", "asset": coin["asset"], "matched": [{"asset": coin["asset"], "term": v} for v in coin["via"]], "reason": None}
     try:
         info = resolve.asset_info(d["asset"])
     except resolve.ResolveError as e:
-        raise Refused(f"unknown asset {d['asset']}: {e}") from e
+        if not (coin and coin.get("receipt")):
+            raise Refused(f"unknown asset {d['asset']}: {e}") from e
+        ch = coin["receipt"]["chosen"]                # a new ticker: priced from the venue its receipt confirmed
+        info = {"name": coin["asset"], "source": ch["source"], "symbol": ch["symbol"], "price_field": "open"}
+    if coin and coin.get("receipt"):
+        passed = {(v["source"], v.get("symbol")) for v in coin["receipt"]["venues"] if v["ok"]}
+        if (info["source"], info["symbol"]) not in passed:
+            raise Refused(f"{info['name']} is priced on {info['source']}:{info['symbol']} on this site, but that venue failed today's check "
+                          f"({', '.join(f'{v[0]}:{v[1]}' for v in sorted(passed)) or 'no venue'} passed): nothing added, review the ticker")
     dup = existing_record(root, receipt["id"], info["name"])
     if dup:
         raise Refused(f"duplicate: post {receipt['id']} on {info['name']} is already recorded in {dup}")
-    s, side_choice = choose_side(text, side, reason)
+    multi = bool(legs and len(legs) > 1)
+    aliases = [info["name"].split(":")[-1]] + [m["term"].lstrip("$") for m in d["matched"]] + ([v.lstrip("$") for v in coin["via"]] if coin else [])
+    if side is None and (multi or detect.OPTION.search(text)):
+        # options ("buying puts" = short, "selling calls" = no side) and several coins: the coin's own words decide
+        s, why, words = detect.leg_side(text, aliases)
+        if not words and detect.OPTION.search(text) and not multi:
+            why = "option words without a clear buy / sell next to this coin: no side (set it by hand if the post says more)"
+        side_choice = {"method": "detector-leg", "terms": [words[:80]] if words else [], "reason": why}
+    else:
+        s, side_choice = choose_side(text, side, reason)
     post = resolve.load_post(receipt=rpath)
     series, revisions = shared_series(prices.series(info, post["posted_at"]), bundle, info["name"])
     rec = resolve.label_daily(resolve.resolve(post, info, series, prices.label, s), prices.daily_until(info, post["posted_at"]))
     rec["asset_choice"] = {"method": "manual" if d["status"] == "manual" else "detector",
-                           "terms": [m["term"] for m in detect.detect(text)["matched"]][:20], "reason": reason if asset else None}
+                           "terms": ([m["term"] for m in d["matched"]] if coin else [m["term"] for m in detect.detect(text)["matched"]])[:20],
+                           "reason": reason if asset else None}
+    if coin and coin.get("receipt"):
+        r = coin["receipt"]
+        rec["asset_choice"]["ticker"] = {"coingecko_id": r["coin"]["id"], "name": r["coin"]["name"], "source": info["source"], "symbol": info["symbol"],
+                                         "receipt_sha256": receipt_sha(r), "checked_at": r["checked_at"], "asked": r["asked"]}
+    if multi:
+        rec["asset_choice"]["leg"] = {"of": [l["asset"] or "/".join(l["via"]) for l in legs], "words": side_choice["terms"][0] if side_choice["terms"] else None}
     ev = image_evidence(root, receipt["id"])
     if ev and d["status"] == "manual":
         # step 18: an asset read from images is never added without a written review reason and the evidence it rests on
@@ -149,7 +217,7 @@ def build_item(url, root=HERE, fetch=ingest.fetch_embed, prices=None, bundle=Non
         if not (allow_pending and rec["status"] == "pending"):
             raise Refused(f"no price at or after the post within the lag limit ({rec['status']}): nothing to score yet"
                           + ("; --pending adds it now and the daily refresh fills the entry from the first bar" if rec["status"] == "pending" else ""))
-    return {"url": receipt["url"],
+    return {"url": receipt["url"], "ticker_receipt": coin["receipt"] if coin and coin.get("receipt") else None,
             "receipt": {"file": os.path.relpath(rpath, root), "sha256": sha256_file(rpath), "created": created, "text_truncated": receipt.get("textTruncated", False)},
             "detected": {"asset": d["status"], "terms": rec["asset_choice"]["terms"], "side": side_choice},
             "record_file": os.path.join("records", "posts", file_name(receipt["id"], info["name"])), "record": rec, "revisions": revisions}
@@ -201,10 +269,10 @@ def load_bundle(root):
     return blob, json.loads(blob)
 
 
-def preview(url, root=HERE, fetch=ingest.fetch_embed, prices=None, asset=None, side=None, reason=None, now=None, allow_pending=False):
+def preview(url, root=HERE, fetch=ingest.fetch_embed, prices=None, asset=None, side=None, reason=None, now=None, allow_pending=False, leg=None, net=None):
     """-> the pending intake (also written to intake/pending/). Writes only the receipt and the pending file."""
     blob, bundle = load_bundle(root)
-    it = build_item(url, root, fetch, prices or resolve.Prices(), bundle, asset, side, reason, now, allow_pending)
+    it = build_item(url, root, fetch, prices or resolve.Prices(), bundle, asset, side, reason, now, allow_pending, leg=leg, net=net)
     return project([it], root, blob, os.path.basename(it["record_file"]), now)
 
 
@@ -242,6 +310,20 @@ def add(pending_file, root=HERE, fetch=ingest.fetch_embed, save_avatar=True, ohl
             raise Refused(f"duplicate: post {rec['post']['id']} on {rec['asset']['name']} is already recorded in {dup}")
     with open(charts) as f:
         old = json.load(f)
+    registered = []
+    for it in items:                                  # step 22: keep the coin identity + checked venue of a new ticker
+        tr = it.get("ticker_receipt")
+        if tr:
+            if receipt_sha(tr) != it["record"]["asset_choice"]["ticker"]["receipt_sha256"]:
+                raise Refused(f"the ticker receipt for {tr['ticker']} does not match its record; rerun the preview")
+            have = resolve.registered_tickers(os.path.join(root, "data", "tickers.json")).get(tr["ticker"])
+            if have and (have["source"], have["symbol"]) != (it["record"]["asset"]["source"], it["record"]["asset"]["symbol"]):
+                raise Refused(f"{tr['ticker']} is registered on {have['source']}:{have['symbol']}, the preview priced it elsewhere; rerun the preview")
+            try:
+                entry = tickers.register(tr, root)
+            except ValueError as e:
+                raise Refused(f"ticker {tr['ticker']}: {e}") from e
+            registered.append({"ticker": tr["ticker"], "coingecko_id": entry["coingecko_id"], "venue": f"{entry['source']}:{entry['symbol']}", "receipt": entry["receipt"]})
     written = []
     for it in items:
         path = os.path.join(root, it["record_file"])
@@ -291,7 +373,7 @@ def add(pending_file, root=HERE, fetch=ingest.fetch_embed, save_avatar=True, ohl
             problems.append(f"{key} is not in the rebuilt bundle")
     log = {"version": VERSION, "added_at": now or dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
            "records": written, "bundle_sha256_before": pending["bundle_sha256"], "bundle_sha256_after": sha256_file(charts),
-           "avatar": avatar, "candles": candles or "skipped", "scores_previewed": pending["scores_after"], "scores_after_add": after,
+           "avatar": avatar, "candles": candles or "skipped", "tickers_registered": registered, "scores_previewed": pending["scores_after"], "scores_after_add": after,
            "scores_before": pending["scores_before"], "other_callers_unchanged": sorted(others), "frozen_values_checked": len(frozen_values.frozen(old)),
            "matches_preview": not problems, "problems": problems}
     if len(items) == 1:      # the step 16 log fields
@@ -336,6 +418,12 @@ def print_preview(p):
     print(f"text      “{' '.join((r['post'].get('text') or '').split())[:200]}”")
     print(f"asset     {r['asset']['name']} ({r['asset']['source']}:{r['asset']['symbol']}) by {r['asset_choice']['method']} {r['asset_choice']['terms']}"
           + (f" reason: {r['asset_choice']['reason']}" if r['asset_choice'].get('reason') else ""))
+    tk = r["asset_choice"].get("ticker")
+    if tk:
+        print(f"coin      {tk['name']} [{tk['coingecko_id']}] priced on {tk['source']}:{tk['symbol']} (identity + price checked by tickers.py, asked as {tk.get('asked')}, receipt sha256 {tk['receipt_sha256'][:16]}…)")
+    lg = r["asset_choice"].get("leg")
+    if lg:
+        print(f"leg       one of {', '.join(lg['of'])} in this post (each coin is its own record)")
     sc = r["side_choice"]
     print(f"side      {side} by {sc['method']} {sc['terms']}" + (f" reason: {sc['reason']}" if sc.get("reason") else ""))
     if e:
@@ -365,10 +453,11 @@ def main():
     ap.add_argument("--reason", help="why the asset or side was chosen by hand; stored in the record")
     ap.add_argument("--add", action="store_true", help="apply the pending preview for this post")
     ap.add_argument("--pending", action="store_true", help="allow a post with no price after it yet (market closed): the daily refresh fills the entry")
+    ap.add_argument("--leg", help="for a post naming several coins: the coin (ticker) to add; each leg is its own record")
     a = ap.parse_args()
     try:
         if not a.add:
-            p = preview(a.url, asset=a.asset, side=a.side, reason=a.reason, allow_pending=a.pending)
+            p = preview(a.url, asset=a.asset, side=a.side, reason=a.reason, allow_pending=a.pending, leg=a.leg)
             print_preview(p)
             print("PREVIEW ONLY: nothing under web/ or records/ changed. Rerun with --add to publish it.")
             return
@@ -376,12 +465,13 @@ def main():
         if not m:
             raise Refused(f"not a post url: {a.url!r}")
         hits = sorted(glob.glob(os.path.join(HERE, "intake", "pending", f"{m.group(2)}_*.json")))
-        if a.asset:
-            hits = [h for h in hits if os.path.basename(h) == file_name(m.group(2), resolve.asset_info(a.asset)["name"])]
+        if a.asset or a.leg:
+            want = a.leg.upper() if a.leg else resolve.asset_info(a.asset)["name"]
+            hits = [h for h in hits if os.path.basename(h) == file_name(m.group(2), want)]
         if not hits:
             raise Refused("no pending preview for this post: run the preview first")
         if len(hits) > 1:
-            raise Refused(f"several pending previews for this post ({[os.path.basename(h) for h in hits]}): pass --asset")
+            raise Refused(f"several pending previews for this post ({[os.path.basename(h) for h in hits]}): pass --leg (or --asset)")
         log = add(os.path.relpath(hits[0], HERE))
         print(f"added     {log['record_file']}  sha256 {log['record_sha256']}")
         print(f"avatar    {log['avatar']}")

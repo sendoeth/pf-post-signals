@@ -160777,7 +160777,7 @@
    ]
   },
   {
-   "name": "binance:ZECUSDT",
+   "name": "ZEC",
    "source": "binance",
    "symbol": "ZECUSDT",
    "series": [
@@ -199459,10 +199459,11 @@
       "receipt_sha256": "6784432be29f42e94d6890850b964fa64a57f2113ae880b86018f5fbc11afa8a"
      },
      "asset": {
-      "name": "binance:ZECUSDT",
+      "name": "ZEC",
       "source": "binance",
       "symbol": "ZECUSDT",
-      "price_field": "open"
+      "price_field": "open",
+      "renamed_from": "binance:ZECUSDT"
      },
      "side": 1,
      "status": "resolved",
@@ -199518,8 +199519,8 @@
       "basis": "call side",
       "for_call": 29.915764360433105
      },
-     "record_file": "records/posts/1970742039722479782_binance-ZECUSDT.json",
-     "record_sha256": "57e111af5a9c0e82cbaf007ce17ab319949947af68b3cc74913dba62055fd516"
+     "record_file": "records/posts/1970742039722479782_ZEC.json",
+     "record_sha256": "ddaca37cbe9ee0ab6370b818020485c5cf553c6091674525678ddad3b732923c"
     }
    ]
   }
@@ -200175,7 +200176,7 @@
     "calls": [
      {
       "post_id": "1970742039722479782",
-      "asset": "binance:ZECUSDT",
+      "asset": "ZEC",
       "posted_at": "2025-09-24T06:48:11Z",
       "side": "long",
       "state": "open",

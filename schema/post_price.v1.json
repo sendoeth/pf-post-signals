@@ -192,6 +192,11 @@
       }
      },
      "description": "corporate actions applied to the price series (data/corporate_actions.json); shown on the page"
+    },
+    "renamed_from": {
+     "type": "string",
+     "pattern": "^[A-Za-z0-9:=.^-]{1,32}$",
+     "description": "step 22: the asset's name before the plain-ticker rename (prices, entry and exits unchanged)"
     }
    }
   },
@@ -468,6 +473,76 @@
        "maxLength": 40
       }
      }
+    },
+    "ticker": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "coingecko_id",
+      "name",
+      "source",
+      "symbol",
+      "receipt_sha256",
+      "checked_at"
+     ],
+     "description": "step 22: the coin identity and price-checked venue from tickers.py; the receipt is sources/tickers/<TICKER>.json",
+     "properties": {
+      "coingecko_id": {
+       "type": "string",
+       "maxLength": 80
+      },
+      "name": {
+       "type": "string",
+       "maxLength": 80
+      },
+      "source": {
+       "enum": [
+        "binance",
+        "hyperliquid"
+       ]
+      },
+      "symbol": {
+       "type": "string",
+       "maxLength": 20
+      },
+      "receipt_sha256": {
+       "type": "string",
+       "pattern": "^[0-9a-f]{64}$"
+      },
+      "checked_at": {
+       "type": "string",
+       "maxLength": 25
+      },
+      "asked": {
+       "type": "string",
+       "maxLength": 80
+      }
+     }
+    },
+    "leg": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "of"
+     ],
+     "description": "step 22: one coin of a post that names several; each is its own record",
+     "properties": {
+      "of": {
+       "type": "array",
+       "items": {
+        "type": "string",
+        "maxLength": 32
+       },
+       "maxItems": 10
+      },
+      "words": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "maxLength": 200
+      }
+     }
     }
    }
   },
@@ -640,7 +715,8 @@
      "enum": [
       "detector",
       "manual",
-      "none"
+      "none",
+      "detector-leg"
      ]
     },
     "terms": {

@@ -10,10 +10,11 @@
   "receipt_sha256": "6784432be29f42e94d6890850b964fa64a57f2113ae880b86018f5fbc11afa8a"
  },
  "asset": {
-  "name": "binance:ZECUSDT",
+  "name": "ZEC",
   "source": "binance",
   "symbol": "ZECUSDT",
-  "price_field": "open"
+  "price_field": "open",
+  "renamed_from": "binance:ZECUSDT"
  },
  "side": 1,
  "status": "resolved",

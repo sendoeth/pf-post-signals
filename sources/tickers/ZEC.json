@@ -1,0 +1,77 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "ZEC",
+ "asked": "$ZEC",
+ "checked_at": "2026-11-01T17:50:47Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "zcash",
+  "symbol": "ZEC",
+  "name": "Zcash",
+  "rank": 11,
+  "price": 1232.66
+ },
+ "candidates": [
+  {
+   "id": "zcash",
+   "symbol": "ZEC",
+   "name": "Zcash",
+   "rank": 11
+  },
+  {
+   "id": "binance-peg-zcash-token",
+   "symbol": "ZEC",
+   "name": "Binance-Peg ZEC",
+   "rank": null
+  },
+  {
+   "id": "near-intents-bridged-zec",
+   "symbol": "ZEC",
+   "name": "NEAR Intents Bridged ZEC",
+   "rank": null
+  },
+  {
+   "id": "omnibridge-bridged-zcash-solana",
+   "symbol": "ZEC",
+   "name": "OmniBridge Bridged Zcash (Solana)",
+   "rank": null
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "ZECUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 1234.89,
+   "coin_price": 1232.66,
+   "diff": 0.001809,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "ZEC",
+   "listed": true,
+   "status": "trading",
+   "price": 1235.85,
+   "coin_price": 1232.66,
+   "diff": 0.002588,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "ZECUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid"
+  ]
+ }
+}
