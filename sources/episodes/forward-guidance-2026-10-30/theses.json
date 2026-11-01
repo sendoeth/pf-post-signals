@@ -1,11 +1,11 @@
 {
  "schema": "quanty.theses.v1",
- "transcript_sha256": "6dd3188e5aad9adb34e949427bf6dc4894b9bb9d321c0acf5c5186173ad12e89",
- "extraction_sha256": "5a2d79546492a5172e1f9d3f64e4c4f44e303c17725215bee1833c7ed750f937",
- "model": "claude-opus-5-5 (in-session, Claude Code)",
- "prompt_version": "quanty.transcript.v1",
- "segments": 471,
- "duration": "59:13",
+ "transcript_sha256": "ad8a964714c8e71affdbf2aafe700979bc8da693a496fb07f61aacf0cb1bc104",
+ "extraction_sha256": "0341fe21070d862147b6ced0216422a2e1fa5483b77ccf252cb3b325b4818404",
+ "model": "anthropic/claude-opus-5.5 (via OpenRouter)",
+ "prompt_version": "quanty.transcript.v2",
+ "segments": 566,
+ "duration": "59:08",
  "chapters": [
   {
    "n": 1,
@@ -15,17 +15,17 @@
   {
    "n": 2,
    "title": "Fed Holds With Two Hawkish Dissents",
-   "t": "2:46"
+   "t": "2:43"
   },
   {
    "n": 3,
    "title": "Lagarde Exits as Central Banks Hike",
-   "t": "8:52"
+   "t": "8:49"
   },
   {
    "n": 4,
    "title": "Fidelity / DAS London",
-   "t": "12:52"
+   "t": "12:46"
   },
   {
    "n": 5,
@@ -35,22 +35,22 @@
   {
    "n": 6,
    "title": "Is the AI Trade Fracturing?",
-   "t": "19:21"
+   "t": "19:19"
   },
   {
    "n": 7,
    "title": "Fidelity / DAS London",
-   "t": "29:36"
+   "t": "29:29"
   },
   {
    "n": 8,
    "title": "What Oil Teaches Us About AI",
-   "t": "30:46"
+   "t": "30:48"
   },
   {
    "n": 9,
    "title": "Midterms, War and Oil Supply",
-   "t": "39:50"
+   "t": "39:48"
   },
   {
    "n": 10,
@@ -70,217 +70,18 @@
   {
    "n": 13,
    "title": "Gold, Bitcoin and DAS London",
-   "t": "57:39"
+   "t": "57:41"
   }
  ],
- "accepted": 26,
+ "accepted": 31,
  "rejected": 0,
  "theses": [
-  {
-   "asset": "GOLD",
-   "label": "Gold",
-   "kind": "call",
-   "direction": "neutral",
-   "mentions": 7,
-   "later": "bullish",
-   "first_t": "10:55",
-   "speakers": [
-    "Felix Jauvin",
-    "Quinn Thompson",
-    "both"
-   ],
-   "moments": [
-    {
-     "t": "10:55",
-     "seconds": 655,
-     "kind": "thought",
-     "direction": "bearish",
-     "horizon": "now",
-     "speaker": "Quinn Thompson",
-     "speaker_confidence": "high",
-     "quote": "I think gold is probably getting hit here as you know the energy short nations are trying to defend currency. The dollar's been been super strong.",
-     "reason": "energy-short countries sell gold to defend their currencies while the dollar is strong",
-     "chapter": 3
-    },
-    {
-     "t": "14:29",
-     "seconds": 869,
-     "kind": "thought",
-     "direction": "bearish",
-     "horizon": "now",
-     "speaker": "Felix Jauvin",
-     "speaker_confidence": "medium",
-     "quote": "people are just trying to sell what they can and it sounds like to your point that's also what sovereigns are doing to, you know, defend their currencies amidst this energy shock.",
-     "reason": "gold below 3,900 as funds and central banks sell what they can",
-     "chapter": 5
-    },
-    {
-     "t": "17:33",
-     "seconds": 1053,
-     "kind": "thought",
-     "direction": "bearish",
-     "horizon": "now",
-     "speaker": "Quinn Thompson",
-     "speaker_confidence": "high",
-     "quote": "there's a liquidity crunch. So, you're going to you're going to you're getting tapped on the shoulder whether you're the PM at a pod or a a treasury manager at at a central bank.",
-     "reason": "a liquidity crunch forces holders to sell gold to cover other losses",
-     "chapter": 5
-    },
-    {
-     "t": "17:56",
-     "seconds": 1076,
-     "kind": "thought",
-     "direction": "bullish",
-     "horizon": "long term",
-     "speaker": "Felix Jauvin",
-     "speaker_confidence": "high",
-     "quote": "Yeah, I think that summarizes what we talked about last week, which is that like fundamentally gold is is good here",
-     "reason": "the long-run case for gold is intact",
-     "chapter": 5
-    },
-    {
-     "t": "18:04",
-     "seconds": 1084,
-     "kind": "thought",
-     "direction": "neutral",
-     "horizon": "now",
-     "speaker": "Felix Jauvin",
-     "speaker_confidence": "high",
-     "quote": "but you need to wait out this this bleed in the interim. Um or yeah, you just you have to come in with a trading plan",
-     "reason": "wait out the selling first, or trade it with a plan",
-     "chapter": 5
-    },
-    {
-     "t": "18:54",
-     "seconds": 1134,
-     "kind": "call",
-     "direction": "neutral",
-     "horizon": "now",
-     "speaker": "Quinn Thompson",
-     "speaker_confidence": "high",
-     "quote": "hey, below those summer lows, I' not going to really care. If we if we recover and regain some moving averages",
-     "reason": "stands aside below the summer lows; interested again only if gold reclaims them and the moving averages",
-     "chapter": 5
-    },
-    {
-     "t": "19:03",
-     "seconds": 1143,
-     "kind": "call",
-     "direction": "neutral",
-     "horizon": "now",
-     "speaker": "both",
-     "speaker_confidence": "medium",
-     "quote": "But yeah, like you said, yeah, step aside. Yeah, step aside. Wait it out.",
-     "reason": "both: step aside on gold for now",
-     "chapter": 5
-    }
-   ]
-  },
-  {
-   "asset": "SEMIS",
-   "label": "AI trade / semis (SMH)",
-   "kind": "call",
-   "direction": "bearish",
-   "mentions": 7,
-   "later": "bullish",
-   "first_t": "19:54",
-   "speakers": [
-    "Felix Jauvin",
-    "Quinn Thompson"
-   ],
-   "moments": [
-    {
-     "t": "19:54",
-     "seconds": 1194,
-     "kind": "thought",
-     "direction": "bearish",
-     "horizon": "months",
-     "speaker": "Felix Jauvin",
-     "speaker_confidence": "high",
-     "quote": "the capex guidance is below the estimate to me that that's that's the you know show's over",
-     "reason": "hyperscaler capex guidance missed estimates twice this week (MSFT 38B vs 45B, GOOGL 51B vs 55B)",
-     "chapter": 6
-    },
-    {
-     "t": "27:14",
-     "seconds": 1634,
-     "kind": "call",
-     "direction": "bearish",
-     "horizon": "months",
-     "speaker": "Quinn Thompson",
-     "speaker_confidence": "high",
-     "quote": "So I just think that like from from my investment perspective like this stuff is interesting on pops and to short",
-     "reason": "leveraged bubble unwinding; sells rallies, expects a long bleed like past bubbles",
-     "chapter": 6
-    },
-    {
-     "t": "28:42",
-     "seconds": 1722,
-     "kind": "thought",
-     "direction": "bearish",
-     "horizon": "months",
-     "speaker": "Felix Jauvin",
-     "speaker_confidence": "high",
-     "quote": "I guess just equity issuance is kind of your main leg right now and that's just why would you want to own that?",
-     "reason": "credit window shut for neoclouds; equity issuance dilutes holders",
-     "chapter": 6
-    },
-    {
-     "t": "37:21",
-     "seconds": 2241,
-     "kind": "thought",
-     "direction": "bearish",
-     "horizon": "long term",
-     "speaker": "Quinn Thompson",
-     "speaker_confidence": "high",
-     "quote": "And we're seeing it with open models. But it's very very very bearish from a investment perspective",
-     "reason": "compute becoming a commodity means margins go to zero",
-     "chapter": 8
-    },
-    {
-     "t": "38:02",
-     "seconds": 2282,
-     "kind": "thought",
-     "direction": "neutral",
-     "horizon": "now",
-     "speaker": "Quinn Thompson",
-     "speaker_confidence": "high",
-     "quote": "I don't think we're at the buying point yet, but we will be at some point.",
-     "reason": "not yet time to buy the AI/semis selloff",
-     "chapter": 8
-    },
-    {
-     "t": "38:10",
-     "seconds": 2290,
-     "kind": "thought",
-     "direction": "bullish",
-     "horizon": "next year",
-     "speaker": "Quinn Thompson",
-     "speaker_confidence": "high",
-     "quote": "And then maybe I'll say my first bullish thing about semi semiconductors [laughter] in 2027.",
-     "reason": "possible turn to bullish on semis in 2027",
-     "chapter": 8
-    },
-    {
-     "t": "39:03",
-     "seconds": 2343,
-     "kind": "thought",
-     "direction": "bearish",
-     "horizon": "months",
-     "speaker": "Felix Jauvin",
-     "speaker_confidence": "high",
-     "quote": "what's concerning now is that we're back at those those similar lows of that leverage wash out but now it's about the fundamental story.",
-     "reason": "back at the July lows, but now capex misses make it fundamental, not just leverage",
-     "chapter": 8
-    }
-   ]
-  },
   {
    "asset": "BTC",
    "label": "Bitcoin",
    "kind": "call",
    "direction": "neutral",
-   "mentions": 5,
+   "mentions": 8,
    "later": "bullish",
    "first_t": "54:42",
    "speakers": [
@@ -293,11 +94,11 @@
      "seconds": 3282,
      "kind": "thought",
      "direction": "neutral",
-     "horizon": "weeks",
+     "horizon": "months",
      "speaker": "Felix Jauvin",
      "speaker_confidence": "high",
-     "quote": "So, I'm I'm reevaluating a little bit that that that fundamental bullishness.",
-     "reason": "the $6.36B Binance hack hurts sentiment; less constructive on crypto",
+     "quote": "like I don't know, man. That does something fundamentally. So, I'm I'm reevaluating a little bit that that that fundamental bullishness.",
+     "reason": "The $6B Binance hack hurts sentiment and the appetite of newcomers.",
      "chapter": 12
     },
     {
@@ -307,46 +108,292 @@
      "direction": "neutral",
      "horizon": "now",
      "speaker": "Quinn Thompson",
+     "speaker_confidence": "high",
+     "quote": "Um, for me, nothing's changed cuz I'm I'm not long anything. And this is a",
+     "reason": "He has no position; it is a bear market.",
+     "chapter": 12
+    },
+    {
+     "t": "55:32",
+     "seconds": 3332,
+     "kind": "thought",
+     "direction": "neutral",
+     "horizon": "months",
+     "speaker": "Felix Jauvin",
      "speaker_confidence": "medium",
-     "quote": "for me, nothing's changed cuz I'm I'm not long anything. And this is a also what happens in bare markets.",
-     "reason": "not long anything; treats the hack as bear-market behaviour",
+     "quote": "Yeah, it's definitely a bit of a bottom signal. I just think it it might prolong the period of the the the consolidation chop kind of thing.",
+     "reason": "The hack looks like a bottom signal but likely extends the chop.",
      "chapter": 12
     },
     {
      "t": "55:50",
      "seconds": 3350,
      "kind": "thought",
+     "direction": "bullish",
+     "horizon": "next year",
+     "speaker": "Quinn Thompson",
+     "speaker_confidence": "high",
+     "quote": "Yeah. I mean, my base case is that we don't it's not really fertile conditions until sometime next year. Could be mid,",
+     "reason": "He expects better conditions for crypto sometime next year.",
+     "chapter": 12
+    },
+    {
+     "t": "55:57",
+     "seconds": 3357,
+     "kind": "call",
+     "direction": "neutral",
+     "horizon": "now",
+     "speaker": "Quinn Thompson",
+     "speaker_confidence": "high",
+     "quote": "But anyways, um, so I think remaining patient is very good cuz you're right, like we just deviated range highs and got smoked below",
+     "reason": "A failed breakout, possible liquidity issues and bad macro argue for patience.",
+     "chapter": 12
+    },
+    {
+     "t": "56:34",
+     "seconds": 3394,
+     "kind": "thought",
+     "direction": "neutral",
+     "horizon": "months",
+     "speaker": "Felix Jauvin",
+     "speaker_confidence": "high",
+     "quote": "I think it's just time capitulation. Like I think it's, you know, we Yeah, we've seen some some recent lows in Bitcoin price, but but really it's just a time capitulation thing.",
+     "reason": "A leverage-driven chop is wearing holders down; the bottoming process is still underway.",
+     "chapter": 12
+    },
+    {
+     "t": "57:10",
+     "seconds": 3430,
+     "kind": "thought",
      "direction": "neutral",
      "horizon": "months",
      "speaker": "Quinn Thompson",
      "speaker_confidence": "medium",
-     "quote": "my base case is that we don't it's not really fertile conditions until sometime next year.",
-     "reason": "conditions not right for crypto until sometime next year; stay patient",
+     "quote": "I think you have to see analog gold bottom before you're going to get their ability on the crypto.",
+     "reason": "Gold needs to bottom before Bitcoin can turn.",
      "chapter": 12
     },
     {
-     "t": "56:59",
-     "seconds": 3419,
-     "kind": "thought",
-     "direction": "bullish",
-     "horizon": "long term",
-     "speaker": "Felix Jauvin",
-     "speaker_confidence": "medium",
-     "quote": "But uh yeah, it is more of a bottomy signal than a top one, that's for sure.",
-     "reason": "time capitulation; the hack looks more like a bottom signal",
-     "chapter": 12
-    },
-    {
-     "t": "57:39",
-     "seconds": 3459,
+     "t": "57:41",
+     "seconds": 3461,
      "kind": "thought",
      "direction": "bearish",
      "horizon": "weeks",
      "speaker": "Quinn Thompson",
      "speaker_confidence": "medium",
-     "quote": "gold's now completely retraced and set new lows. could be ominous sign uh for for Bitcoin as well",
-     "reason": "gold and BTC rallied for the same reasons; gold's new lows may lead BTC lower",
+     "quote": "Um, and gold's now completely retraced and set new lows. could be ominous sign uh for for Bitcoin as well",
+     "reason": "Gold rallied for the same reasons as Bitcoin and has fully retraced, a warning sign for Bitcoin.",
      "chapter": 13
+    }
+   ]
+  },
+  {
+   "asset": "SEMIS",
+   "label": "AI trade / semis (SMH)",
+   "kind": "call",
+   "direction": "bearish",
+   "mentions": 8,
+   "later": "bullish",
+   "first_t": "19:57",
+   "speakers": [
+    "Felix Jauvin",
+    "Quinn Thompson"
+   ],
+   "moments": [
+    {
+     "t": "19:57",
+     "seconds": 1197,
+     "kind": "thought",
+     "direction": "bearish",
+     "horizon": "months",
+     "speaker": "Felix Jauvin",
+     "speaker_confidence": "high",
+     "quote": "day that you see a hyperscalers earning where the capex estimates are or the the cap yeah the capex guidance is below the estimate to me that that's that's the you know show's over. Um, and we got that twice this week",
+     "reason": "Microsoft and Google capex guidance missed estimates.",
+     "chapter": 6
+    },
+    {
+     "t": "27:14",
+     "seconds": 1634,
+     "kind": "call",
+     "direction": "bearish",
+     "horizon": "long term",
+     "speaker": "Quinn Thompson",
+     "speaker_confidence": "high",
+     "quote": "the bubble was being blown. So I just think that like from from my investment perspective like this stuff is interesting on pops and to short",
+     "reason": "Cyclical overinvestment takes as long to clear as the bubble took to form, so he would short rallies.",
+     "chapter": 6
+    },
+    {
+     "t": "28:40",
+     "seconds": 1720,
+     "kind": "thought",
+     "direction": "bearish",
+     "horizon": "months",
+     "speaker": "Felix Jauvin",
+     "speaker_confidence": "high",
+     "quote": "so so what do you do? I guess just equity issuance is kind of your main leg right now and that's just why would you want to own that?",
+     "reason": "With the credit window closed, AI builders must issue equity, diluting holders.",
+     "chapter": 6
+    },
+    {
+     "t": "32:50",
+     "seconds": 1970,
+     "kind": "thought",
+     "direction": "bearish",
+     "horizon": "long term",
+     "speaker": "Quinn Thompson",
+     "speaker_confidence": "high",
+     "quote": "we need to keep every every dollar of operating margin we can get.\" So, it prolongs the supply glut basically. Um, yeah. So, that's just kind of dynamic of why they usually take longer.",
+     "reason": "Indebted producers keep supplying as demand falls, which drags out the glut.",
+     "chapter": 8
+    },
+    {
+     "t": "37:31",
+     "seconds": 2251,
+     "kind": "thought",
+     "direction": "bearish",
+     "horizon": "long term",
+     "speaker": "Quinn Thompson",
+     "speaker_confidence": "high",
+     "quote": "seeing it with open models. But it's very very very bearish from a investment perspective because like anything when profits boom, competition arrives",
+     "reason": "Compute becoming a commodity pushes margins toward zero.",
+     "chapter": 8
+    },
+    {
+     "t": "38:11",
+     "seconds": 2291,
+     "kind": "thought",
+     "direction": "neutral",
+     "horizon": "now",
+     "speaker": "Quinn Thompson",
+     "speaker_confidence": "high",
+     "quote": "and buying when I don't think we're at the buying point yet, but we will be at some point.",
+     "reason": "It is not yet time to buy.",
+     "chapter": 8
+    },
+    {
+     "t": "38:11",
+     "seconds": 2291,
+     "kind": "thought",
+     "direction": "bullish",
+     "horizon": "next year",
+     "speaker": "Quinn Thompson",
+     "speaker_confidence": "high",
+     "quote": "And then maybe I'll say my first bullish thing about semi semiconductors [laughter] in 2027.",
+     "reason": "He sees a possible buying point in 2027 once the cycle has cleared.",
+     "chapter": 8
+    },
+    {
+     "t": "39:08",
+     "seconds": 2348,
+     "kind": "thought",
+     "direction": "bearish",
+     "horizon": "months",
+     "speaker": "Felix Jauvin",
+     "speaker_confidence": "high",
+     "quote": "just a leverage wash out. I think what's what's concerning now is that we're back at those those similar lows of that leverage wash out but now it's about the fundamental story.",
+     "reason": "The weakness is now fundamental (capex misses), not just a leverage flush.",
+     "chapter": 8
+    }
+   ]
+  },
+  {
+   "asset": "GOLD",
+   "label": "Gold",
+   "kind": "call",
+   "direction": "neutral",
+   "mentions": 7,
+   "later": "bullish",
+   "first_t": "11:00",
+   "speakers": [
+    "Felix Jauvin",
+    "Quinn Thompson"
+   ],
+   "moments": [
+    {
+     "t": "11:00",
+     "seconds": 660,
+     "kind": "thought",
+     "direction": "bearish",
+     "horizon": "weeks",
+     "speaker": "Quinn Thompson",
+     "speaker_confidence": "high",
+     "quote": "gold is probably getting hit here as you know the energy short nations are trying to defend currency. The dollar's been been super strong.",
+     "reason": "Energy-short countries are selling gold to defend their currencies while the dollar is strong.",
+     "chapter": 3
+    },
+    {
+     "t": "17:46",
+     "seconds": 1066,
+     "kind": "thought",
+     "direction": "bearish",
+     "horizon": "weeks",
+     "speaker": "Quinn Thompson",
+     "speaker_confidence": "medium",
+     "quote": "liquidity crunch. So, you're going to you're going to you're getting tapped on the shoulder whether you're the PM at a pod or a a treasury manager at at a central bank.",
+     "reason": "A liquidity crunch is forcing holders to sell what they can, including gold.",
+     "chapter": 5
+    },
+    {
+     "t": "18:10",
+     "seconds": 1090,
+     "kind": "call",
+     "direction": "neutral",
+     "horizon": "now",
+     "speaker": "Felix Jauvin",
+     "speaker_confidence": "high",
+     "quote": "in the interim. Um or yeah, you just you have to come in with a trading plan because it's it's getting caught up in things.",
+     "reason": "Gold is caught up in cross-asset selling, so wait out the bleed.",
+     "chapter": 5
+    },
+    {
+     "t": "18:16",
+     "seconds": 1096,
+     "kind": "thought",
+     "direction": "bullish",
+     "horizon": "long term",
+     "speaker": "Felix Jauvin",
+     "speaker_confidence": "high",
+     "quote": "things. Um even though we know where this will go eventually, I don't know when that eventually will specifically be and it can be very painful in the interim",
+     "reason": "The fundamentals for gold are good over the long run.",
+     "chapter": 5
+    },
+    {
+     "t": "18:52",
+     "seconds": 1132,
+     "kind": "thought",
+     "direction": "neutral",
+     "horizon": "months",
+     "speaker": "Quinn Thompson",
+     "speaker_confidence": "high",
+     "quote": "a just very simple validation invalidation level you could say like, hey, below those summer lows, I' not going to really care.",
+     "reason": "Gold is below the summer lows; he would only re-engage if it recovers them.",
+     "chapter": 5
+    },
+    {
+     "t": "19:06",
+     "seconds": 1146,
+     "kind": "call",
+     "direction": "neutral",
+     "horizon": "now",
+     "speaker": "Quinn Thompson",
+     "speaker_confidence": "high",
+     "quote": "things, you know, come to fruition, then then probably start to care again. But yeah, like you said, yeah, step aside.",
+     "reason": "He wants a recovery of the moving averages and better catalysts before getting involved.",
+     "chapter": 5
+    },
+    {
+     "t": "19:13",
+     "seconds": 1153,
+     "kind": "call",
+     "direction": "neutral",
+     "horizon": "now",
+     "speaker": "Felix Jauvin",
+     "speaker_confidence": "high",
+     "quote": "Yeah, step aside. Wait it out. Um, wait till it all blows over.",
+     "reason": "He agrees with staying out until the selling passes.",
+     "chapter": 5
     }
    ]
   },
@@ -355,10 +402,11 @@
    "label": "Oil (WTI)",
    "kind": "call",
    "direction": "bullish",
-   "mentions": 4,
+   "mentions": 5,
    "later": null,
    "first_t": "7:25",
    "speakers": [
+    "Felix Jauvin",
     "Quinn Thompson"
    ],
    "moments": [
@@ -370,20 +418,20 @@
      "horizon": "weeks",
      "speaker": "Quinn Thompson",
      "speaker_confidence": "high",
-     "quote": "there's a record energy crisis in oil supply and prices might, you know, go to 150 soon",
-     "reason": "record supply crisis; sees oil possibly going to 150 soon",
+     "quote": "there's a record energy crisis in oil supply and prices might, you know, go to 150 soon and then growth in stocks are going to get smoked.",
+     "reason": "A record oil supply crisis could push prices toward $150.",
      "chapter": 2
     },
     {
-     "t": "41:10",
-     "seconds": 2470,
+     "t": "41:07",
+     "seconds": 2467,
      "kind": "call",
      "direction": "bullish",
      "horizon": "months",
      "speaker": "Quinn Thompson",
      "speaker_confidence": "high",
-     "quote": "If you look out at any of the experies in early 27, which is what we've been advocating for longing",
-     "reason": "long oil futures expiring early 2027; up and to the right even during peace",
+     "quote": "if you look at the chart of oil over the last two, three months, it's straight up and to the right and has barely sniffed its daily trend. If you look out at any of the experies in early 27, which is what we've been advocating for longing",
+     "reason": "There is a strong uptrend, and he advocates longing early-2027 contracts.",
      "chapter": 9
     },
     {
@@ -395,19 +443,31 @@
      "speaker": "Quinn Thompson",
      "speaker_confidence": "high",
      "quote": "the supply disruption is so great that the US has to has to unblock it like this it will just be a one-way train higher if they don't rectify it.",
-     "reason": "supply disruption forces US action; otherwise a one-way move higher",
+     "reason": "The supply disruption forces US action, and prices keep rising until it is fixed.",
      "chapter": 9
     },
     {
-     "t": "42:37",
-     "seconds": 2557,
+     "t": "42:15",
+     "seconds": 2535,
+     "kind": "thought",
+     "direction": "bullish",
+     "horizon": "weeks",
+     "speaker": "Felix Jauvin",
+     "speaker_confidence": "medium",
+     "quote": "Yeah. The only way out is through, like we said last week.",
+     "reason": "He agrees that escalation is needed to resolve the supply problem.",
+     "chapter": 9
+    },
+    {
+     "t": "42:33",
+     "seconds": 2553,
      "kind": "thought",
      "direction": "bullish",
      "horizon": "weeks",
      "speaker": "Quinn Thompson",
      "speaker_confidence": "high",
-     "quote": "And there's no positioning. Price rises every day in this asset. And futures positioning is falling.",
-     "reason": "price rising while positioning falls; nobody is long",
+     "quote": "And there's no positioning. Price rises every day in this asset. And futures positioning is falling. Volume is low.",
+     "reason": "Light positioning while price rises leaves room for more upside, and escalation looks likely after the midterms.",
      "chapter": 9
     }
    ]
@@ -419,33 +479,33 @@
    "direction": "bearish",
    "mentions": 2,
    "later": null,
-   "first_t": "11:18",
+   "first_t": "11:16",
    "speakers": [
     "Quinn Thompson"
    ],
    "moments": [
     {
-     "t": "11:18",
-     "seconds": 678,
+     "t": "11:16",
+     "seconds": 676,
      "kind": "thought",
      "direction": "bearish",
      "horizon": "months",
      "speaker": "Quinn Thompson",
      "speaker_confidence": "high",
-     "quote": "but the dollar should probably start peeking out when when the market catches on to, you know, the emptiness of the Fed's promises",
-     "reason": "the market will see through the Fed's hawkish talk; dollar likely peaks",
+     "quote": "takes a week, maybe it takes 3 months, but the dollar should probably start peeking out when when the market catches on to, you know, the emptiness of the Fed's promises",
+     "reason": "Markets will see the Fed's hawkish talk as empty.",
      "chapter": 3
     },
     {
-     "t": "11:52",
-     "seconds": 712,
+     "t": "11:48",
+     "seconds": 708,
      "kind": "thought",
      "direction": "bearish",
      "horizon": "months",
      "speaker": "Quinn Thompson",
      "speaker_confidence": "high",
-     "quote": "I think that will end up, you know, kind of dampening this dollar a cent and eventually getting it to roll over, but it could, like I said, take months.",
-     "reason": "AI unwind + oil hit demand, Fed forced to ease, dollar rolls over (could take months)",
+     "quote": "than they otherwise would like to be probably given where inflation is. And I think that will end up, you know, kind of dampening this dollar a cent and eventually getting it to roll over, but it could, like I said, take months.",
+     "reason": "The AI unwind and the oil hit to demand force the Fed to be more accommodative.",
      "chapter": 3
     }
    ]
@@ -470,8 +530,8 @@
      "horizon": "months",
      "speaker": "Quinn Thompson",
      "speaker_confidence": "high",
-     "quote": "go to 150 soon and then growth in stocks are going to get smoked",
-     "reason": "an oil spike plus the AI unwind hits growth stocks; the Fed cannot help",
+     "quote": "there's a record energy crisis in oil supply and prices might, you know, go to 150 soon and then growth in stocks are going to get smoked.",
+     "reason": "An oil shock and the AI unwind would hit growth and stocks.",
      "chapter": 2
     }
    ]

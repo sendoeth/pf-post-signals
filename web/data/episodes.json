@@ -7,55 +7,55 @@
    "show": "Forward Guidance (Blockworks)",
    "title": "The Fed Is A Sideshow While The AI Trade Implodes | Weekly Roundup",
    "speakers": [
-    "Felix Jauvin (Fejau)",
-    "Quinn Thompson"
+    "Quinn Thompson",
+    "Felix Jauvin"
    ],
    "recorded_on": "2026-10-30",
-   "recorded_source": "said in the episode at 41:36: \"we're recording this on Friday the 30th\"",
+   "recorded_source": "entered by the owner in the admin bot",
    "reference_at": "2026-10-30T20:00:00Z",
-   "reference_note": "the exact recording hour is not stated; prices are the last bar at or before 16:00 New York time on the recording day, i.e. what the hosts were looking at ('gold today below 3,900')",
-   "url": null,
-   "show_url": "https://blockworks.com/podcast/forwardguidance",
+   "reference_note": "prices are the last bar at or before 20:00 UTC on 2026-10-30, the time given for the episode",
+   "url": "https://www.youtube.com/watch?v=StARUc1Lxrw",
+   "show_url": null,
    "summary": [
     {
-     "t": "2:46",
-     "text": "The Fed held with two hawkish dissents. Quinn calls the meeting meaningless: the Fed cannot hike into an AI unwind, an oil supply shock and slowing growth, so December likely comes off the table while inflation keeps rising."
+     "t": "2:37",
+     "text": "The hosts review the Fed pause and its two dissents and the plan to hold fewer meetings. Quinn calls the Fed a boxed-in sideshow that cannot hike amid AI, oil-supply and growth risks."
     },
     {
-     "t": "8:52",
-     "text": "Single-mandate central banks (ECB, Bank of Canada) keep hiking into an energy shock, mostly to defend their currencies. Quinn ties this to gold: energy-short nations sell gold to defend currency while the dollar is strong, but expects the dollar to peak and roll over within weeks to months."
+     "t": "8:44",
+     "text": "They discuss single-mandate central banks: the ECB and Bank of Canada are hiking into an energy shock, partly to defend their currencies. Quinn expects the dollar to peak and roll over within weeks to months as the Fed is forced to ease."
     },
     {
      "t": "13:58",
-     "text": "Gold broke below 3,900 to a one-year low even with bonds rallying. Both see forced selling (liquidity crunch, sovereigns). Long-run case intact, but step aside below the summer lows until it recovers them."
+     "text": "Gold is making new lows despite falling yields, blamed on a liquidity crunch and energy-short sovereigns selling reserves. Both say the fundamentals are good, but they would step aside until it regains the summer lows."
     },
     {
-     "t": "19:21",
-     "text": "The AI trade is fracturing: Microsoft and Google capex guidance missed estimates (38B vs 45B, 51B vs 55B). Credit spreads widening, neocloud credit window shut, leveraged products unwound. Quinn shorts pops and expects a long bleed; maybe a first bullish semis call in 2027."
+     "t": "19:13",
+     "text": "Felix argues the AI trade is fracturing because Microsoft and Google capex guidance came in below estimates, while GDP growth leans on the AI buildout. Quinn adds that higher real rates, wider credit spreads and leverage unwinding point to a long, cyclical bust in semis."
     },
     {
-     "t": "30:46",
-     "text": "Oil-industry lesson: over-levered producers keep producing into a bust, so a supply glut lasts. The same applies to chips and data centers. Compute becoming a commodity is bearish for margins even if the technology is great."
+     "t": "33:03",
+     "text": "They separate the usefulness of AI from its financing. Quinn argues that compute becoming commoditized is bearish for margins and says he is not a semis buyer until perhaps 2027."
     },
     {
-     "t": "39:50",
-     "text": "Quinn's main call: long oil, early-2027 futures expiries. Prices rose through three months of pre-midterm peace with almost no positioning; the supply disruption forces US action after the midterms."
+     "t": "40:00",
+     "text": "Quinn makes his oil case: prices are rising on supply disruption during a pre-midterm peace, positioning is light, and he expects escalation after the midterms. He advocates being long early-2027 oil contracts."
     },
     {
-     "t": "44:35",
-     "text": "Inflation as an invisible tax feeding populism, unrest and anti-data-center politics; prediction markets missed Brazil's election."
+     "t": "43:28",
+     "text": "They discuss inflation as an invisible tax, voter frustration, protests in Paris, midterm outlooks and unreliable polling, and what a win or loss could mean for markets."
     },
     {
-     "t": "53:48",
-     "text": "The $6.36B Binance hack dents crypto sentiment. Felix is less constructive; Quinn is not long anything and sees no fertile conditions until next year. Bottom-ish signal, but time capitulation first; gold's new lows could be ominous for Bitcoin."
+     "t": "53:42",
+     "text": "The $6B Binance hack makes Felix reconsider his crypto bullishness. Quinn holds no position and expects better conditions next year, likely after gold bottoms."
     }
    ],
-   "summary_by": "claude-opus-5-5 (in-session), written in our own words",
-   "transcript_sha256": "6dd3188e5aad9adb34e949427bf6dc4894b9bb9d321c0acf5c5186173ad12e89",
-   "extraction_sha256": "5a2d79546492a5172e1f9d3f64e4c4f44e303c17725215bee1833c7ed750f937",
-   "model": "claude-opus-5-5 (in-session, Claude Code)",
-   "prompt_version": "quanty.transcript.v1",
-   "duration": "59:13",
+   "summary_by": "anthropic/claude-opus-5.5 (via OpenRouter), in its own words (checked: timestamps inside the episode, length capped)",
+   "transcript_sha256": "ad8a964714c8e71affdbf2aafe700979bc8da693a496fb07f61aacf0cb1bc104",
+   "extraction_sha256": "0341fe21070d862147b6ced0216422a2e1fa5483b77ccf252cb3b325b4818404",
+   "model": "anthropic/claude-opus-5.5 (via OpenRouter)",
+   "prompt_version": "quanty.transcript.v2",
+   "duration": "59:08",
    "chapters": [
     {
      "n": 1,
@@ -65,17 +65,17 @@
     {
      "n": 2,
      "title": "Fed Holds With Two Hawkish Dissents",
-     "t": "2:46"
+     "t": "2:43"
     },
     {
      "n": 3,
      "title": "Lagarde Exits as Central Banks Hike",
-     "t": "8:52"
+     "t": "8:49"
     },
     {
      "n": 4,
      "title": "Fidelity / DAS London",
-     "t": "12:52"
+     "t": "12:46"
     },
     {
      "n": 5,
@@ -85,22 +85,22 @@
     {
      "n": 6,
      "title": "Is the AI Trade Fracturing?",
-     "t": "19:21"
+     "t": "19:19"
     },
     {
      "n": 7,
      "title": "Fidelity / DAS London",
-     "t": "29:36"
+     "t": "29:29"
     },
     {
      "n": 8,
      "title": "What Oil Teaches Us About AI",
-     "t": "30:46"
+     "t": "30:48"
     },
     {
      "n": 9,
      "title": "Midterms, War and Oil Supply",
-     "t": "39:50"
+     "t": "39:48"
     },
     {
      "n": 10,
@@ -120,3037 +120,26 @@
     {
      "n": 13,
      "title": "Gold, Bitcoin and DAS London",
-     "t": "57:39"
+     "t": "57:41"
     }
    ],
    "stances": {
-    "accepted": 26,
+    "accepted": 31,
     "rejected": 0
    },
    "files": {
-    "sources/episodes/forward-guidance-2026-10-30/episode.json": "3f520c1a77145050dbfca8f3a4ec7e408b573130fca3257fc2641370f9e4b56d",
-    "sources/episodes/forward-guidance-2026-10-30/theses.json": "6a4c7b90c580a9e3f7a0f13e058d7925cab1179dec23b4aac3338166c66be652",
-    "sources/episodes/forward-guidance-2026-10-30/verified.json": "7fcd162deaa24ec8a6282cd0c7ffee2864898fe524d1e3e8cbca1787f0310741",
-    "sources/episodes/forward-guidance-2026-10-30/extraction.json": "5a2d79546492a5172e1f9d3f64e4c4f44e303c17725215bee1833c7ed750f937"
+    "sources/episodes/forward-guidance-2026-10-30/episode.json": "4883a2efe1d193f4de2a5cbd528d50c194a1841e622734ec20b05e0d40e77a14",
+    "sources/episodes/forward-guidance-2026-10-30/theses.json": "f42fa6b2b2f449b8abf712f57b3cb6e5b16062f0332b2fb19f628c10376829b3",
+    "sources/episodes/forward-guidance-2026-10-30/verified.json": "c2d4ede4f6a476966ad931b2c1ff883260cff279cd2a16145ce869cfd0f84517",
+    "sources/episodes/forward-guidance-2026-10-30/extraction.json": "0341fe21070d862147b6ced0216422a2e1fa5483b77ccf252cb3b325b4818404"
    },
    "theses": [
-    {
-     "asset": "GOLD",
-     "label": "Gold",
-     "kind": "call",
-     "direction": "neutral",
-     "mentions": 7,
-     "later": "bullish",
-     "first_t": "10:55",
-     "speakers": [
-      "Felix Jauvin",
-      "Quinn Thompson",
-      "both"
-     ],
-     "moments": [
-      {
-       "t": "10:55",
-       "seconds": 655,
-       "kind": "thought",
-       "direction": "bearish",
-       "horizon": "now",
-       "speaker": "Quinn Thompson",
-       "speaker_confidence": "high",
-       "quote": "I think gold is probably getting hit here as you know the energy short nations are trying to defend currency. The dollar's been been super strong.",
-       "reason": "energy-short countries sell gold to defend their currencies while the dollar is strong",
-       "chapter": 3
-      },
-      {
-       "t": "14:29",
-       "seconds": 869,
-       "kind": "thought",
-       "direction": "bearish",
-       "horizon": "now",
-       "speaker": "Felix Jauvin",
-       "speaker_confidence": "medium",
-       "quote": "people are just trying to sell what they can and it sounds like to your point that's also what sovereigns are doing to, you know, defend their currencies amidst this energy shock.",
-       "reason": "gold below 3,900 as funds and central banks sell what they can",
-       "chapter": 5
-      },
-      {
-       "t": "17:33",
-       "seconds": 1053,
-       "kind": "thought",
-       "direction": "bearish",
-       "horizon": "now",
-       "speaker": "Quinn Thompson",
-       "speaker_confidence": "high",
-       "quote": "there's a liquidity crunch. So, you're going to you're going to you're getting tapped on the shoulder whether you're the PM at a pod or a a treasury manager at at a central bank.",
-       "reason": "a liquidity crunch forces holders to sell gold to cover other losses",
-       "chapter": 5
-      },
-      {
-       "t": "17:56",
-       "seconds": 1076,
-       "kind": "thought",
-       "direction": "bullish",
-       "horizon": "long term",
-       "speaker": "Felix Jauvin",
-       "speaker_confidence": "high",
-       "quote": "Yeah, I think that summarizes what we talked about last week, which is that like fundamentally gold is is good here",
-       "reason": "the long-run case for gold is intact",
-       "chapter": 5
-      },
-      {
-       "t": "18:04",
-       "seconds": 1084,
-       "kind": "thought",
-       "direction": "neutral",
-       "horizon": "now",
-       "speaker": "Felix Jauvin",
-       "speaker_confidence": "high",
-       "quote": "but you need to wait out this this bleed in the interim. Um or yeah, you just you have to come in with a trading plan",
-       "reason": "wait out the selling first, or trade it with a plan",
-       "chapter": 5
-      },
-      {
-       "t": "18:54",
-       "seconds": 1134,
-       "kind": "call",
-       "direction": "neutral",
-       "horizon": "now",
-       "speaker": "Quinn Thompson",
-       "speaker_confidence": "high",
-       "quote": "hey, below those summer lows, I' not going to really care. If we if we recover and regain some moving averages",
-       "reason": "stands aside below the summer lows; interested again only if gold reclaims them and the moving averages",
-       "chapter": 5
-      },
-      {
-       "t": "19:03",
-       "seconds": 1143,
-       "kind": "call",
-       "direction": "neutral",
-       "horizon": "now",
-       "speaker": "both",
-       "speaker_confidence": "medium",
-       "quote": "But yeah, like you said, yeah, step aside. Yeah, step aside. Wait it out.",
-       "reason": "both: step aside on gold for now",
-       "chapter": 5
-      }
-     ],
-     "text": "Bearish near term on forced selling by energy-short nations; good long term, but step aside below the summer lows.",
-     "proxy": null,
-     "price": {
-      "source": "yahoo",
-      "symbol": "GC=F",
-      "at_episode": {
-       "at": "2026-10-30T20:00:00Z",
-       "price": 3892.8
-      },
-      "latest": {
-       "at": "2026-10-30T20:00:00Z",
-       "price": 3892.8
-      },
-      "change": null,
-      "with_lean": null
-     },
-     "series": [
-      [
-       "2026-09-29T20:00:00Z",
-       4209.8999
-      ],
-      [
-       "2026-09-29T22:00:00Z",
-       4216.2002
-      ],
-      [
-       "2026-09-29T23:00:00Z",
-       4211.5
-      ],
-      [
-       "2026-09-30T00:00:00Z",
-       4216.7002
-      ],
-      [
-       "2026-09-30T01:00:00Z",
-       4208.2998
-      ],
-      [
-       "2026-09-30T02:00:00Z",
-       4203.5
-      ],
-      [
-       "2026-09-30T03:00:00Z",
-       4211.0
-      ],
-      [
-       "2026-09-30T04:00:00Z",
-       4204.7002
-      ],
-      [
-       "2026-09-30T05:00:00Z",
-       4211.0
-      ],
-      [
-       "2026-09-30T06:00:00Z",
-       4209.7998
-      ],
-      [
-       "2026-09-30T07:00:00Z",
-       4222.6001
-      ],
-      [
-       "2026-09-30T08:00:00Z",
-       4225.6001
-      ],
-      [
-       "2026-09-30T09:00:00Z",
-       4223.3999
-      ],
-      [
-       "2026-09-30T10:00:00Z",
-       4219.3999
-      ],
-      [
-       "2026-09-30T11:00:00Z",
-       4215.8999
-      ],
-      [
-       "2026-09-30T12:00:00Z",
-       4217.8999
-      ],
-      [
-       "2026-09-30T13:00:00Z",
-       4240.2998
-      ],
-      [
-       "2026-09-30T14:00:00Z",
-       4208.7998
-      ],
-      [
-       "2026-09-30T15:00:00Z",
-       4196.6001
-      ],
-      [
-       "2026-09-30T16:00:00Z",
-       4188.6001
-      ],
-      [
-       "2026-09-30T17:00:00Z",
-       4189.2002
-      ],
-      [
-       "2026-09-30T18:00:00Z",
-       4182.3999
-      ],
-      [
-       "2026-09-30T19:00:00Z",
-       4182.7998
-      ],
-      [
-       "2026-09-30T20:00:00Z",
-       4188.0
-      ],
-      [
-       "2026-09-30T22:00:00Z",
-       4190.1001
-      ],
-      [
-       "2026-09-30T23:00:00Z",
-       4184.3999
-      ],
-      [
-       "2026-10-01T00:00:00Z",
-       4186.1001
-      ],
-      [
-       "2026-10-01T01:00:00Z",
-       4175.5
-      ],
-      [
-       "2026-10-01T02:00:00Z",
-       4186.1001
-      ],
-      [
-       "2026-10-01T03:00:00Z",
-       4190.2998
-      ],
-      [
-       "2026-10-01T04:00:00Z",
-       4205.0
-      ],
-      [
-       "2026-10-01T05:00:00Z",
-       4209.8999
-      ],
-      [
-       "2026-10-01T06:00:00Z",
-       4217.6001
-      ],
-      [
-       "2026-10-01T07:00:00Z",
-       4211.5
-      ],
-      [
-       "2026-10-01T08:00:00Z",
-       4193.7998
-      ],
-      [
-       "2026-10-01T09:00:00Z",
-       4182.2998
-      ],
-      [
-       "2026-10-01T10:00:00Z",
-       4184.1001
-      ],
-      [
-       "2026-10-01T11:00:00Z",
-       4206.1001
-      ],
-      [
-       "2026-10-01T12:00:00Z",
-       4212.5
-      ],
-      [
-       "2026-10-01T13:00:00Z",
-       4208.8999
-      ],
-      [
-       "2026-10-01T14:00:00Z",
-       4195.3999
-      ],
-      [
-       "2026-10-01T15:00:00Z",
-       4192.2998
-      ],
-      [
-       "2026-10-01T16:00:00Z",
-       4199.1001
-      ],
-      [
-       "2026-10-01T17:00:00Z",
-       4192.2002
-      ],
-      [
-       "2026-10-01T18:00:00Z",
-       4200.8999
-      ],
-      [
-       "2026-10-01T19:00:00Z",
-       4207.2002
-      ],
-      [
-       "2026-10-01T20:00:00Z",
-       4207.1001
-      ],
-      [
-       "2026-10-01T22:00:00Z",
-       4204.6001
-      ],
-      [
-       "2026-10-01T23:00:00Z",
-       4208.5
-      ],
-      [
-       "2026-10-02T00:00:00Z",
-       4211.3999
-      ],
-      [
-       "2026-10-02T01:00:00Z",
-       4182.5
-      ],
-      [
-       "2026-10-02T02:00:00Z",
-       4180.3999
-      ],
-      [
-       "2026-10-02T03:00:00Z",
-       4195.2998
-      ],
-      [
-       "2026-10-02T04:00:00Z",
-       4207.6001
-      ],
-      [
-       "2026-10-02T05:00:00Z",
-       4214.5
-      ],
-      [
-       "2026-10-02T06:00:00Z",
-       4216.1001
-      ],
-      [
-       "2026-10-02T07:00:00Z",
-       4210.7998
-      ],
-      [
-       "2026-10-02T08:00:00Z",
-       4217.0
-      ],
-      [
-       "2026-10-02T09:00:00Z",
-       4214.3999
-      ],
-      [
-       "2026-10-02T10:00:00Z",
-       4213.8999
-      ],
-      [
-       "2026-10-02T11:00:00Z",
-       4212.6001
-      ],
-      [
-       "2026-10-02T12:00:00Z",
-       4211.5
-      ],
-      [
-       "2026-10-02T13:00:00Z",
-       4248.3999
-      ],
-      [
-       "2026-10-02T14:00:00Z",
-       4220.7002
-      ],
-      [
-       "2026-10-02T15:00:00Z",
-       4188.3999
-      ],
-      [
-       "2026-10-02T16:00:00Z",
-       4156.2002
-      ],
-      [
-       "2026-10-02T17:00:00Z",
-       4168.0
-      ],
-      [
-       "2026-10-02T18:00:00Z",
-       4166.7002
-      ],
-      [
-       "2026-10-02T19:00:00Z",
-       4175.7002
-      ],
-      [
-       "2026-10-02T20:00:00Z",
-       4176.7998
-      ],
-      [
-       "2026-10-04T22:00:00Z",
-       4171.1001
-      ],
-      [
-       "2026-10-04T23:00:00Z",
-       4175.7002
-      ],
-      [
-       "2026-10-05T00:00:00Z",
-       4170.7998
-      ],
-      [
-       "2026-10-05T01:00:00Z",
-       4184.8999
-      ],
-      [
-       "2026-10-05T02:00:00Z",
-       4188.2998
-      ],
-      [
-       "2026-10-05T03:00:00Z",
-       4170.3999
-      ],
-      [
-       "2026-10-05T04:00:00Z",
-       4171.2002
-      ],
-      [
-       "2026-10-05T05:00:00Z",
-       4159.0
-      ],
-      [
-       "2026-10-05T06:00:00Z",
-       4162.1001
-      ],
-      [
-       "2026-10-05T07:00:00Z",
-       4183.7002
-      ],
-      [
-       "2026-10-05T08:00:00Z",
-       4189.0
-      ],
-      [
-       "2026-10-05T09:00:00Z",
-       4195.5
-      ],
-      [
-       "2026-10-05T10:00:00Z",
-       4187.2002
-      ],
-      [
-       "2026-10-05T11:00:00Z",
-       4190.7998
-      ],
-      [
-       "2026-10-05T12:00:00Z",
-       4184.3999
-      ],
-      [
-       "2026-10-05T13:00:00Z",
-       4184.2998
-      ],
-      [
-       "2026-10-05T14:00:00Z",
-       4163.0
-      ],
-      [
-       "2026-10-05T15:00:00Z",
-       4175.2002
-      ],
-      [
-       "2026-10-05T16:00:00Z",
-       4164.7002
-      ],
-      [
-       "2026-10-05T17:00:00Z",
-       4158.2998
-      ],
-      [
-       "2026-10-05T18:00:00Z",
-       4164.3999
-      ],
-      [
-       "2026-10-05T19:00:00Z",
-       4170.6001
-      ],
-      [
-       "2026-10-05T20:00:00Z",
-       4168.3999
-      ],
-      [
-       "2026-10-05T21:00:00Z",
-       4167.6001
-      ],
-      [
-       "2026-10-05T22:00:00Z",
-       4169.2002
-      ],
-      [
-       "2026-10-05T23:00:00Z",
-       4168.0
-      ],
-      [
-       "2026-10-06T00:00:00Z",
-       4161.2002
-      ],
-      [
-       "2026-10-06T01:00:00Z",
-       4178.1001
-      ],
-      [
-       "2026-10-06T02:00:00Z",
-       4157.0
-      ],
-      [
-       "2026-10-06T03:00:00Z",
-       4157.6001
-      ],
-      [
-       "2026-10-06T04:00:00Z",
-       4155.7998
-      ],
-      [
-       "2026-10-06T05:00:00Z",
-       4147.8999
-      ],
-      [
-       "2026-10-06T06:00:00Z",
-       4146.6001
-      ],
-      [
-       "2026-10-06T07:00:00Z",
-       4159.0
-      ],
-      [
-       "2026-10-06T08:00:00Z",
-       4167.5
-      ],
-      [
-       "2026-10-06T09:00:00Z",
-       4182.6001
-      ],
-      [
-       "2026-10-06T10:00:00Z",
-       4179.8999
-      ],
-      [
-       "2026-10-06T11:00:00Z",
-       4186.5
-      ],
-      [
-       "2026-10-06T12:00:00Z",
-       4201.7002
-      ],
-      [
-       "2026-10-06T13:00:00Z",
-       4198.2002
-      ],
-      [
-       "2026-10-06T14:00:00Z",
-       4180.1001
-      ],
-      [
-       "2026-10-06T15:00:00Z",
-       4184.3999
-      ],
-      [
-       "2026-10-06T16:00:00Z",
-       4192.7002
-      ],
-      [
-       "2026-10-06T17:00:00Z",
-       4184.2002
-      ],
-      [
-       "2026-10-06T18:00:00Z",
-       4192.2002
-      ],
-      [
-       "2026-10-06T19:00:00Z",
-       4203.3999
-      ],
-      [
-       "2026-10-06T20:00:00Z",
-       4197.1001
-      ],
-      [
-       "2026-10-06T22:00:00Z",
-       4195.0
-      ],
-      [
-       "2026-10-06T23:00:00Z",
-       4190.7998
-      ],
-      [
-       "2026-10-07T00:00:00Z",
-       4193.2002
-      ],
-      [
-       "2026-10-07T01:00:00Z",
-       4183.7998
-      ],
-      [
-       "2026-10-07T02:00:00Z",
-       4174.2998
-      ],
-      [
-       "2026-10-07T03:00:00Z",
-       4168.8999
-      ],
-      [
-       "2026-10-07T04:00:00Z",
-       4169.8999
-      ],
-      [
-       "2026-10-07T05:00:00Z",
-       4161.7002
-      ],
-      [
-       "2026-10-07T06:00:00Z",
-       4154.7998
-      ],
-      [
-       "2026-10-07T07:00:00Z",
-       4156.7002
-      ],
-      [
-       "2026-10-07T08:00:00Z",
-       4159.1001
-      ],
-      [
-       "2026-10-07T09:00:00Z",
-       4149.7002
-      ],
-      [
-       "2026-10-07T10:00:00Z",
-       4145.7002
-      ],
-      [
-       "2026-10-07T11:00:00Z",
-       4143.1001
-      ],
-      [
-       "2026-10-07T12:00:00Z",
-       4147.3999
-      ],
-      [
-       "2026-10-07T13:00:00Z",
-       4112.6001
-      ],
-      [
-       "2026-10-07T14:00:00Z",
-       4124.0
-      ],
-      [
-       "2026-10-07T15:00:00Z",
-       4130.3999
-      ],
-      [
-       "2026-10-07T16:00:00Z",
-       4131.1001
-      ],
-      [
-       "2026-10-07T17:00:00Z",
-       4135.0
-      ],
-      [
-       "2026-10-07T18:00:00Z",
-       4136.5
-      ],
-      [
-       "2026-10-07T19:00:00Z",
-       4135.6001
-      ],
-      [
-       "2026-10-07T20:00:00Z",
-       4127.7002
-      ],
-      [
-       "2026-10-07T22:00:00Z",
-       4139.8999
-      ],
-      [
-       "2026-10-07T23:00:00Z",
-       4131.2002
-      ],
-      [
-       "2026-10-08T00:00:00Z",
-       4133.0
-      ],
-      [
-       "2026-10-08T01:00:00Z",
-       4141.5
-      ],
-      [
-       "2026-10-08T02:00:00Z",
-       4156.6001
-      ],
-      [
-       "2026-10-08T03:00:00Z",
-       4157.0
-      ],
-      [
-       "2026-10-08T04:00:00Z",
-       4159.7998
-      ],
-      [
-       "2026-10-08T05:00:00Z",
-       4157.5
-      ],
-      [
-       "2026-10-08T06:00:00Z",
-       4141.8999
-      ],
-      [
-       "2026-10-08T07:00:00Z",
-       4145.7002
-      ],
-      [
-       "2026-10-08T08:00:00Z",
-       4144.3999
-      ],
-      [
-       "2026-10-08T09:00:00Z",
-       4151.1001
-      ],
-      [
-       "2026-10-08T10:00:00Z",
-       4148.0
-      ],
-      [
-       "2026-10-08T11:00:00Z",
-       4146.1001
-      ],
-      [
-       "2026-10-08T12:00:00Z",
-       4148.7002
-      ],
-      [
-       "2026-10-08T13:00:00Z",
-       4142.8999
-      ],
-      [
-       "2026-10-08T14:00:00Z",
-       4154.6001
-      ],
-      [
-       "2026-10-08T15:00:00Z",
-       4148.8999
-      ],
-      [
-       "2026-10-08T16:00:00Z",
-       4135.7998
-      ],
-      [
-       "2026-10-08T17:00:00Z",
-       4148.2002
-      ],
-      [
-       "2026-10-08T18:00:00Z",
-       4157.5
-      ],
-      [
-       "2026-10-08T19:00:00Z",
-       4151.5
-      ],
-      [
-       "2026-10-08T20:00:00Z",
-       4158.1001
-      ],
-      [
-       "2026-10-08T22:00:00Z",
-       4159.7002
-      ],
-      [
-       "2026-10-08T23:00:00Z",
-       4163.2998
-      ],
-      [
-       "2026-10-09T00:00:00Z",
-       4169.3999
-      ],
-      [
-       "2026-10-09T01:00:00Z",
-       4167.8999
-      ],
-      [
-       "2026-10-09T02:00:00Z",
-       4199.7002
-      ],
-      [
-       "2026-10-09T03:00:00Z",
-       4202.6001
-      ],
-      [
-       "2026-10-09T04:00:00Z",
-       4202.1001
-      ],
-      [
-       "2026-10-09T05:00:00Z",
-       4206.3999
-      ],
-      [
-       "2026-10-09T06:00:00Z",
-       4218.0
-      ],
-      [
-       "2026-10-09T07:00:00Z",
-       4220.7002
-      ],
-      [
-       "2026-10-09T08:00:00Z",
-       4219.2998
-      ],
-      [
-       "2026-10-09T09:00:00Z",
-       4213.1001
-      ],
-      [
-       "2026-10-09T10:00:00Z",
-       4211.0
-      ],
-      [
-       "2026-10-09T11:00:00Z",
-       4204.0
-      ],
-      [
-       "2026-10-09T12:00:00Z",
-       4207.7998
-      ],
-      [
-       "2026-10-09T13:00:00Z",
-       4200.5
-      ],
-      [
-       "2026-10-09T14:00:00Z",
-       4215.1001
-      ],
-      [
-       "2026-10-09T15:00:00Z",
-       4206.8999
-      ],
-      [
-       "2026-10-09T16:00:00Z",
-       4213.2998
-      ],
-      [
-       "2026-10-09T17:00:00Z",
-       4215.8999
-      ],
-      [
-       "2026-10-09T18:00:00Z",
-       4220.7998
-      ],
-      [
-       "2026-10-09T19:00:00Z",
-       4224.6001
-      ],
-      [
-       "2026-10-09T20:00:00Z",
-       4220.2002
-      ],
-      [
-       "2026-10-11T22:00:00Z",
-       4216.7002
-      ],
-      [
-       "2026-10-11T23:00:00Z",
-       4211.1001
-      ],
-      [
-       "2026-10-12T00:00:00Z",
-       4215.5
-      ],
-      [
-       "2026-10-12T01:00:00Z",
-       4233.7998
-      ],
-      [
-       "2026-10-12T02:00:00Z",
-       4235.8999
-      ],
-      [
-       "2026-10-12T03:00:00Z",
-       4228.7002
-      ],
-      [
-       "2026-10-12T04:00:00Z",
-       4227.3999
-      ],
-      [
-       "2026-10-12T05:00:00Z",
-       4218.5
-      ],
-      [
-       "2026-10-12T06:00:00Z",
-       4215.2002
-      ],
-      [
-       "2026-10-12T07:00:00Z",
-       4210.1001
-      ],
-      [
-       "2026-10-12T08:00:00Z",
-       4204.6001
-      ],
-      [
-       "2026-10-12T09:00:00Z",
-       4198.0
-      ],
-      [
-       "2026-10-12T10:00:00Z",
-       4197.7002
-      ],
-      [
-       "2026-10-12T11:00:00Z",
-       4201.7998
-      ],
-      [
-       "2026-10-12T12:00:00Z",
-       4192.7002
-      ],
-      [
-       "2026-10-12T13:00:00Z",
-       4189.0
-      ],
-      [
-       "2026-10-12T14:00:00Z",
-       4195.3999
-      ],
-      [
-       "2026-10-12T15:00:00Z",
-       4188.1001
-      ],
-      [
-       "2026-10-12T16:00:00Z",
-       4188.7002
-      ],
-      [
-       "2026-10-12T17:00:00Z",
-       4188.3999
-      ],
-      [
-       "2026-10-12T18:00:00Z",
-       4194.2002
-      ],
-      [
-       "2026-10-12T19:00:00Z",
-       4192.0
-      ],
-      [
-       "2026-10-12T20:00:00Z",
-       4193.7002
-      ],
-      [
-       "2026-10-12T22:00:00Z",
-       4195.5
-      ],
-      [
-       "2026-10-12T23:00:00Z",
-       4193.3999
-      ],
-      [
-       "2026-10-13T00:00:00Z",
-       4194.7998
-      ],
-      [
-       "2026-10-13T01:00:00Z",
-       4181.7002
-      ],
-      [
-       "2026-10-13T02:00:00Z",
-       4188.1001
-      ],
-      [
-       "2026-10-13T03:00:00Z",
-       4203.7998
-      ],
-      [
-       "2026-10-13T04:00:00Z",
-       4212.6001
-      ],
-      [
-       "2026-10-13T05:00:00Z",
-       4219.8999
-      ],
-      [
-       "2026-10-13T06:00:00Z",
-       4216.7002
-      ],
-      [
-       "2026-10-13T07:00:00Z",
-       4215.6001
-      ],
-      [
-       "2026-10-13T08:00:00Z",
-       4211.6001
-      ],
-      [
-       "2026-10-13T09:00:00Z",
-       4210.6001
-      ],
-      [
-       "2026-10-13T10:00:00Z",
-       4210.7998
-      ],
-      [
-       "2026-10-13T11:00:00Z",
-       4205.5
-      ],
-      [
-       "2026-10-13T12:00:00Z",
-       4208.8999
-      ],
-      [
-       "2026-10-13T13:00:00Z",
-       4203.1001
-      ],
-      [
-       "2026-10-13T14:00:00Z",
-       4192.5
-      ],
-      [
-       "2026-10-13T15:00:00Z",
-       4190.3999
-      ],
-      [
-       "2026-10-13T16:00:00Z",
-       4182.2002
-      ],
-      [
-       "2026-10-13T17:00:00Z",
-       4175.7998
-      ],
-      [
-       "2026-10-13T18:00:00Z",
-       4171.6001
-      ],
-      [
-       "2026-10-13T19:00:00Z",
-       4186.3999
-      ],
-      [
-       "2026-10-13T20:00:00Z",
-       4186.1001
-      ],
-      [
-       "2026-10-13T21:00:00Z",
-       4184.2002
-      ],
-      [
-       "2026-10-13T22:00:00Z",
-       4184.2002
-      ],
-      [
-       "2026-10-13T23:00:00Z",
-       4184.5
-      ],
-      [
-       "2026-10-14T00:00:00Z",
-       4177.8999
-      ],
-      [
-       "2026-10-14T01:00:00Z",
-       4178.0
-      ],
-      [
-       "2026-10-14T02:00:00Z",
-       4178.0
-      ],
-      [
-       "2026-10-14T03:00:00Z",
-       4190.7002
-      ],
-      [
-       "2026-10-14T04:00:00Z",
-       4185.5
-      ],
-      [
-       "2026-10-14T05:00:00Z",
-       4188.8999
-      ],
-      [
-       "2026-10-14T06:00:00Z",
-       4171.1001
-      ],
-      [
-       "2026-10-14T07:00:00Z",
-       4170.5
-      ],
-      [
-       "2026-10-14T08:00:00Z",
-       4172.1001
-      ],
-      [
-       "2026-10-14T09:00:00Z",
-       4165.7002
-      ],
-      [
-       "2026-10-14T10:00:00Z",
-       4166.6001
-      ],
-      [
-       "2026-10-14T11:00:00Z",
-       4163.3999
-      ],
-      [
-       "2026-10-14T12:00:00Z",
-       4161.7998
-      ],
-      [
-       "2026-10-14T13:00:00Z",
-       4120.1001
-      ],
-      [
-       "2026-10-14T14:00:00Z",
-       4110.3999
-      ],
-      [
-       "2026-10-14T15:00:00Z",
-       4115.6001
-      ],
-      [
-       "2026-10-14T16:00:00Z",
-       4102.2002
-      ],
-      [
-       "2026-10-14T17:00:00Z",
-       4105.2002
-      ],
-      [
-       "2026-10-14T18:00:00Z",
-       4105.7002
-      ],
-      [
-       "2026-10-14T19:00:00Z",
-       4118.8999
-      ],
-      [
-       "2026-10-14T20:00:00Z",
-       4122.8999
-      ],
-      [
-       "2026-10-14T22:00:00Z",
-       4128.2998
-      ],
-      [
-       "2026-10-14T23:00:00Z",
-       4128.0
-      ],
-      [
-       "2026-10-15T00:00:00Z",
-       4133.2002
-      ],
-      [
-       "2026-10-15T01:00:00Z",
-       4160.7998
-      ],
-      [
-       "2026-10-15T02:00:00Z",
-       4160.0
-      ],
-      [
-       "2026-10-15T03:00:00Z",
-       4181.2998
-      ],
-      [
-       "2026-10-15T04:00:00Z",
-       4166.6001
-      ],
-      [
-       "2026-10-15T05:00:00Z",
-       4165.7998
-      ],
-      [
-       "2026-10-15T06:00:00Z",
-       4159.0
-      ],
-      [
-       "2026-10-15T07:00:00Z",
-       4157.6001
-      ],
-      [
-       "2026-10-15T08:00:00Z",
-       4167.1001
-      ],
-      [
-       "2026-10-15T09:00:00Z",
-       4172.7998
-      ],
-      [
-       "2026-10-15T10:00:00Z",
-       4178.7002
-      ],
-      [
-       "2026-10-15T11:00:00Z",
-       4176.3999
-      ],
-      [
-       "2026-10-15T12:00:00Z",
-       4166.1001
-      ],
-      [
-       "2026-10-15T13:00:00Z",
-       4173.2998
-      ],
-      [
-       "2026-10-15T14:00:00Z",
-       4175.7002
-      ],
-      [
-       "2026-10-15T15:00:00Z",
-       4179.0
-      ],
-      [
-       "2026-10-15T16:00:00Z",
-       4170.5
-      ],
-      [
-       "2026-10-15T17:00:00Z",
-       4168.3999
-      ],
-      [
-       "2026-10-15T18:00:00Z",
-       4174.2998
-      ],
-      [
-       "2026-10-15T19:00:00Z",
-       4178.7002
-      ],
-      [
-       "2026-10-15T20:00:00Z",
-       4195.8999
-      ],
-      [
-       "2026-10-15T22:00:00Z",
-       4192.1001
-      ],
-      [
-       "2026-10-15T23:00:00Z",
-       4186.0
-      ],
-      [
-       "2026-10-16T00:00:00Z",
-       4176.6001
-      ],
-      [
-       "2026-10-16T01:00:00Z",
-       4177.1001
-      ],
-      [
-       "2026-10-16T02:00:00Z",
-       4173.6001
-      ],
-      [
-       "2026-10-16T03:00:00Z",
-       4197.1001
-      ],
-      [
-       "2026-10-16T04:00:00Z",
-       4205.0
-      ],
-      [
-       "2026-10-16T05:00:00Z",
-       4195.8999
-      ],
-      [
-       "2026-10-16T06:00:00Z",
-       4195.8999
-      ],
-      [
-       "2026-10-16T07:00:00Z",
-       4198.2002
-      ],
-      [
-       "2026-10-16T08:00:00Z",
-       4208.5
-      ],
-      [
-       "2026-10-16T09:00:00Z",
-       4210.0
-      ],
-      [
-       "2026-10-16T10:00:00Z",
-       4198.2002
-      ],
-      [
-       "2026-10-16T11:00:00Z",
-       4195.0
-      ],
-      [
-       "2026-10-16T12:00:00Z",
-       4192.7998
-      ],
-      [
-       "2026-10-16T13:00:00Z",
-       4187.2998
-      ],
-      [
-       "2026-10-16T14:00:00Z",
-       4206.1001
-      ],
-      [
-       "2026-10-16T15:00:00Z",
-       4206.1001
-      ],
-      [
-       "2026-10-16T16:00:00Z",
-       4188.5
-      ],
-      [
-       "2026-10-16T17:00:00Z",
-       4182.2998
-      ],
-      [
-       "2026-10-16T18:00:00Z",
-       4183.7998
-      ],
-      [
-       "2026-10-16T19:00:00Z",
-       4180.3999
-      ],
-      [
-       "2026-10-16T20:00:00Z",
-       4189.7998
-      ],
-      [
-       "2026-10-18T22:00:00Z",
-       4191.2998
-      ],
-      [
-       "2026-10-18T23:00:00Z",
-       4196.3999
-      ],
-      [
-       "2026-10-19T00:00:00Z",
-       4205.5
-      ],
-      [
-       "2026-10-19T01:00:00Z",
-       4194.0
-      ],
-      [
-       "2026-10-19T02:00:00Z",
-       4195.0
-      ],
-      [
-       "2026-10-19T03:00:00Z",
-       4196.7998
-      ],
-      [
-       "2026-10-19T04:00:00Z",
-       4201.2002
-      ],
-      [
-       "2026-10-19T05:00:00Z",
-       4204.7998
-      ],
-      [
-       "2026-10-19T06:00:00Z",
-       4205.0
-      ],
-      [
-       "2026-10-19T07:00:00Z",
-       4204.2998
-      ],
-      [
-       "2026-10-19T08:00:00Z",
-       4193.2002
-      ],
-      [
-       "2026-10-19T09:00:00Z",
-       4190.7002
-      ],
-      [
-       "2026-10-19T10:00:00Z",
-       4187.7998
-      ],
-      [
-       "2026-10-19T11:00:00Z",
-       4190.2998
-      ],
-      [
-       "2026-10-19T12:00:00Z",
-       4181.1001
-      ],
-      [
-       "2026-10-19T13:00:00Z",
-       4181.3999
-      ],
-      [
-       "2026-10-19T14:00:00Z",
-       4174.1001
-      ],
-      [
-       "2026-10-19T15:00:00Z",
-       4165.5
-      ],
-      [
-       "2026-10-19T16:00:00Z",
-       4161.1001
-      ],
-      [
-       "2026-10-19T17:00:00Z",
-       4160.2998
-      ],
-      [
-       "2026-10-19T18:00:00Z",
-       4164.8999
-      ],
-      [
-       "2026-10-19T19:00:00Z",
-       4165.1001
-      ],
-      [
-       "2026-10-19T20:00:00Z",
-       4161.3999
-      ],
-      [
-       "2026-10-19T22:00:00Z",
-       4162.3999
-      ],
-      [
-       "2026-10-19T23:00:00Z",
-       4155.2002
-      ],
-      [
-       "2026-10-20T00:00:00Z",
-       4151.3999
-      ],
-      [
-       "2026-10-20T01:00:00Z",
-       4150.2002
-      ],
-      [
-       "2026-10-20T02:00:00Z",
-       4150.0
-      ],
-      [
-       "2026-10-20T03:00:00Z",
-       4157.7998
-      ],
-      [
-       "2026-10-20T04:00:00Z",
-       4165.2998
-      ],
-      [
-       "2026-10-20T05:00:00Z",
-       4162.8999
-      ],
-      [
-       "2026-10-20T06:00:00Z",
-       4138.3999
-      ],
-      [
-       "2026-10-20T07:00:00Z",
-       4153.5
-      ],
-      [
-       "2026-10-20T08:00:00Z",
-       4143.2998
-      ],
-      [
-       "2026-10-20T09:00:00Z",
-       4138.7002
-      ],
-      [
-       "2026-10-20T10:00:00Z",
-       4131.3999
-      ],
-      [
-       "2026-10-20T11:00:00Z",
-       4139.2998
-      ],
-      [
-       "2026-10-20T12:00:00Z",
-       4142.7002
-      ],
-      [
-       "2026-10-20T13:00:00Z",
-       4137.7002
-      ],
-      [
-       "2026-10-20T14:00:00Z",
-       4146.5
-      ],
-      [
-       "2026-10-20T15:00:00Z",
-       4162.2002
-      ],
-      [
-       "2026-10-20T16:00:00Z",
-       4150.1001
-      ],
-      [
-       "2026-10-20T17:00:00Z",
-       4139.7002
-      ],
-      [
-       "2026-10-20T18:00:00Z",
-       4142.7998
-      ],
-      [
-       "2026-10-20T19:00:00Z",
-       4142.5
-      ],
-      [
-       "2026-10-20T20:00:00Z",
-       4138.7998
-      ],
-      [
-       "2026-10-20T22:00:00Z",
-       4143.3999
-      ],
-      [
-       "2026-10-20T23:00:00Z",
-       4138.3999
-      ],
-      [
-       "2026-10-21T00:00:00Z",
-       4132.2002
-      ],
-      [
-       "2026-10-21T01:00:00Z",
-       4135.2998
-      ],
-      [
-       "2026-10-21T02:00:00Z",
-       4137.0
-      ],
-      [
-       "2026-10-21T03:00:00Z",
-       4135.2998
-      ],
-      [
-       "2026-10-21T04:00:00Z",
-       4135.6001
-      ],
-      [
-       "2026-10-21T05:00:00Z",
-       4132.1001
-      ],
-      [
-       "2026-10-21T06:00:00Z",
-       4135.5
-      ],
-      [
-       "2026-10-21T07:00:00Z",
-       4129.7002
-      ],
-      [
-       "2026-10-21T08:00:00Z",
-       4142.2002
-      ],
-      [
-       "2026-10-21T09:00:00Z",
-       4137.6001
-      ],
-      [
-       "2026-10-21T10:00:00Z",
-       4136.5
-      ],
-      [
-       "2026-10-21T11:00:00Z",
-       4145.2002
-      ],
-      [
-       "2026-10-21T12:00:00Z",
-       4158.7998
-      ],
-      [
-       "2026-10-21T13:00:00Z",
-       4148.0
-      ],
-      [
-       "2026-10-21T14:00:00Z",
-       4147.5
-      ],
-      [
-       "2026-10-21T15:00:00Z",
-       4148.5
-      ],
-      [
-       "2026-10-21T16:00:00Z",
-       4150.2002
-      ],
-      [
-       "2026-10-21T17:00:00Z",
-       4149.7998
-      ],
-      [
-       "2026-10-21T18:00:00Z",
-       4155.0
-      ],
-      [
-       "2026-10-21T19:00:00Z",
-       4131.2998
-      ],
-      [
-       "2026-10-21T20:00:00Z",
-       4152.6001
-      ],
-      [
-       "2026-10-21T22:00:00Z",
-       4159.0
-      ],
-      [
-       "2026-10-21T23:00:00Z",
-       4148.1001
-      ],
-      [
-       "2026-10-22T00:00:00Z",
-       4142.6001
-      ],
-      [
-       "2026-10-22T01:00:00Z",
-       4129.8999
-      ],
-      [
-       "2026-10-22T02:00:00Z",
-       4131.5
-      ],
-      [
-       "2026-10-22T03:00:00Z",
-       4132.6001
-      ],
-      [
-       "2026-10-22T04:00:00Z",
-       4108.0
-      ],
-      [
-       "2026-10-22T05:00:00Z",
-       4107.0
-      ],
-      [
-       "2026-10-22T06:00:00Z",
-       4105.1001
-      ],
-      [
-       "2026-10-22T07:00:00Z",
-       4108.8999
-      ],
-      [
-       "2026-10-22T08:00:00Z",
-       4103.7998
-      ],
-      [
-       "2026-10-22T09:00:00Z",
-       4098.7998
-      ],
-      [
-       "2026-10-22T10:00:00Z",
-       4104.2998
-      ],
-      [
-       "2026-10-22T11:00:00Z",
-       4096.1001
-      ],
-      [
-       "2026-10-22T12:00:00Z",
-       4074.7
-      ],
-      [
-       "2026-10-22T13:00:00Z",
-       4103.7998
-      ],
-      [
-       "2026-10-22T14:00:00Z",
-       4071.6001
-      ],
-      [
-       "2026-10-22T15:00:00Z",
-       4074.8
-      ],
-      [
-       "2026-10-22T16:00:00Z",
-       4067.3
-      ],
-      [
-       "2026-10-22T17:00:00Z",
-       4053.3
-      ],
-      [
-       "2026-10-22T18:00:00Z",
-       4061.8
-      ],
-      [
-       "2026-10-22T19:00:00Z",
-       4046.1001
-      ],
-      [
-       "2026-10-22T20:00:00Z",
-       4044.0
-      ],
-      [
-       "2026-10-22T22:00:00Z",
-       4042.2
-      ],
-      [
-       "2026-10-22T23:00:00Z",
-       4042.8999
-      ],
-      [
-       "2026-10-23T00:00:00Z",
-       4038.3
-      ],
-      [
-       "2026-10-23T01:00:00Z",
-       4045.5
-      ],
-      [
-       "2026-10-23T02:00:00Z",
-       4006.2
-      ],
-      [
-       "2026-10-23T03:00:00Z",
-       4032.1001
-      ],
-      [
-       "2026-10-23T04:00:00Z",
-       4029.8999
-      ],
-      [
-       "2026-10-23T05:00:00Z",
-       4018.8
-      ],
-      [
-       "2026-10-23T06:00:00Z",
-       4035.3999
-      ],
-      [
-       "2026-10-23T07:00:00Z",
-       4026.8999
-      ],
-      [
-       "2026-10-23T08:00:00Z",
-       4025.8
-      ],
-      [
-       "2026-10-23T09:00:00Z",
-       4037.0
-      ],
-      [
-       "2026-10-23T10:00:00Z",
-       4038.2
-      ],
-      [
-       "2026-10-23T11:00:00Z",
-       4037.6001
-      ],
-      [
-       "2026-10-23T12:00:00Z",
-       4038.8
-      ],
-      [
-       "2026-10-23T13:00:00Z",
-       4040.3999
-      ],
-      [
-       "2026-10-23T14:00:00Z",
-       4037.0
-      ],
-      [
-       "2026-10-23T15:00:00Z",
-       4014.1001
-      ],
-      [
-       "2026-10-23T16:00:00Z",
-       4017.2
-      ],
-      [
-       "2026-10-23T17:00:00Z",
-       4014.7
-      ],
-      [
-       "2026-10-23T18:00:00Z",
-       4013.8
-      ],
-      [
-       "2026-10-23T19:00:00Z",
-       4012.2
-      ],
-      [
-       "2026-10-23T20:00:00Z",
-       4013.1001
-      ],
-      [
-       "2026-10-25T22:00:00Z",
-       4010.2
-      ],
-      [
-       "2026-10-25T23:00:00Z",
-       4014.1001
-      ],
-      [
-       "2026-10-26T00:00:00Z",
-       4010.6001
-      ],
-      [
-       "2026-10-26T01:00:00Z",
-       3998.8999
-      ],
-      [
-       "2026-10-26T02:00:00Z",
-       4002.3
-      ],
-      [
-       "2026-10-26T03:00:00Z",
-       4012.7
-      ],
-      [
-       "2026-10-26T04:00:00Z",
-       4020.3999
-      ],
-      [
-       "2026-10-26T05:00:00Z",
-       4029.3
-      ],
-      [
-       "2026-10-26T06:00:00Z",
-       4027.5
-      ],
-      [
-       "2026-10-26T07:00:00Z",
-       4019.1001
-      ],
-      [
-       "2026-10-26T08:00:00Z",
-       4022.6001
-      ],
-      [
-       "2026-10-26T09:00:00Z",
-       4030.8999
-      ],
-      [
-       "2026-10-26T10:00:00Z",
-       4031.5
-      ],
-      [
-       "2026-10-26T11:00:00Z",
-       4028.8999
-      ],
-      [
-       "2026-10-26T12:00:00Z",
-       4030.2
-      ],
-      [
-       "2026-10-26T13:00:00Z",
-       4029.0
-      ],
-      [
-       "2026-10-26T14:00:00Z",
-       4006.6001
-      ],
-      [
-       "2026-10-26T15:00:00Z",
-       4037.6001
-      ],
-      [
-       "2026-10-26T16:00:00Z",
-       4030.2
-      ],
-      [
-       "2026-10-26T17:00:00Z",
-       4035.0
-      ],
-      [
-       "2026-10-26T18:00:00Z",
-       4034.3999
-      ],
-      [
-       "2026-10-26T19:00:00Z",
-       4026.2
-      ],
-      [
-       "2026-10-26T20:00:00Z",
-       4027.1001
-      ],
-      [
-       "2026-10-26T22:00:00Z",
-       4032.8
-      ],
-      [
-       "2026-10-26T23:00:00Z",
-       4026.7
-      ],
-      [
-       "2026-10-27T00:00:00Z",
-       4018.8
-      ],
-      [
-       "2026-10-27T01:00:00Z",
-       4022.6001
-      ],
-      [
-       "2026-10-27T02:00:00Z",
-       4023.7
-      ],
-      [
-       "2026-10-27T03:00:00Z",
-       4022.2
-      ],
-      [
-       "2026-10-27T04:00:00Z",
-       4030.6001
-      ],
-      [
-       "2026-10-27T05:00:00Z",
-       4023.6001
-      ],
-      [
-       "2026-10-27T06:00:00Z",
-       4021.6001
-      ],
-      [
-       "2026-10-27T07:00:00Z",
-       4013.1001
-      ],
-      [
-       "2026-10-27T08:00:00Z",
-       4010.7
-      ],
-      [
-       "2026-10-27T09:00:00Z",
-       4007.3999
-      ],
-      [
-       "2026-10-27T10:00:00Z",
-       4015.2
-      ],
-      [
-       "2026-10-27T11:00:00Z",
-       4021.3
-      ],
-      [
-       "2026-10-27T12:00:00Z",
-       4025.7
-      ],
-      [
-       "2026-10-27T13:00:00Z",
-       4036.3999
-      ],
-      [
-       "2026-10-27T14:00:00Z",
-       4043.8
-      ],
-      [
-       "2026-10-27T15:00:00Z",
-       4066.5
-      ],
-      [
-       "2026-10-27T16:00:00Z",
-       4077.3999
-      ],
-      [
-       "2026-10-27T17:00:00Z",
-       4072.5
-      ],
-      [
-       "2026-10-27T18:00:00Z",
-       4070.2
-      ],
-      [
-       "2026-10-27T19:00:00Z",
-       4070.3999
-      ],
-      [
-       "2026-10-27T20:00:00Z",
-       4074.7
-      ],
-      [
-       "2026-10-27T22:00:00Z",
-       4073.6001
-      ],
-      [
-       "2026-10-27T23:00:00Z",
-       4077.0
-      ],
-      [
-       "2026-10-28T00:00:00Z",
-       4075.3999
-      ],
-      [
-       "2026-10-28T01:00:00Z",
-       4075.8999
-      ],
-      [
-       "2026-10-28T02:00:00Z",
-       4062.5
-      ],
-      [
-       "2026-10-28T03:00:00Z",
-       4060.2
-      ],
-      [
-       "2026-10-28T04:00:00Z",
-       4056.2
-      ],
-      [
-       "2026-10-28T05:00:00Z",
-       4049.8
-      ],
-      [
-       "2026-10-28T06:00:00Z",
-       4043.3
-      ],
-      [
-       "2026-10-28T07:00:00Z",
-       4043.0
-      ],
-      [
-       "2026-10-28T08:00:00Z",
-       4057.7
-      ],
-      [
-       "2026-10-28T09:00:00Z",
-       4066.3999
-      ],
-      [
-       "2026-10-28T10:00:00Z",
-       4068.7
-      ],
-      [
-       "2026-10-28T11:00:00Z",
-       4058.5
-      ],
-      [
-       "2026-10-28T12:00:00Z",
-       4058.8
-      ],
-      [
-       "2026-10-28T13:00:00Z",
-       4067.1001
-      ],
-      [
-       "2026-10-28T14:00:00Z",
-       4062.7
-      ],
-      [
-       "2026-10-28T15:00:00Z",
-       4054.3999
-      ],
-      [
-       "2026-10-28T16:00:00Z",
-       4054.5
-      ],
-      [
-       "2026-10-28T17:00:00Z",
-       4055.2
-      ],
-      [
-       "2026-10-28T18:00:00Z",
-       4054.7
-      ],
-      [
-       "2026-10-28T19:00:00Z",
-       4046.3999
-      ],
-      [
-       "2026-10-28T20:00:00Z",
-       4089.1001
-      ],
-      [
-       "2026-10-28T22:00:00Z",
-       4081.3999
-      ],
-      [
-       "2026-10-28T23:00:00Z",
-       4064.3
-      ],
-      [
-       "2026-10-29T00:00:00Z",
-       4067.0
-      ],
-      [
-       "2026-10-29T01:00:00Z",
-       4048.3
-      ],
-      [
-       "2026-10-29T02:00:00Z",
-       4074.6001
-      ],
-      [
-       "2026-10-29T03:00:00Z",
-       4059.5
-      ],
-      [
-       "2026-10-29T04:00:00Z",
-       4049.8999
-      ],
-      [
-       "2026-10-29T05:00:00Z",
-       4049.3999
-      ],
-      [
-       "2026-10-29T06:00:00Z",
-       4036.1001
-      ],
-      [
-       "2026-10-29T07:00:00Z",
-       4046.3999
-      ],
-      [
-       "2026-10-29T08:00:00Z",
-       4034.3
-      ],
-      [
-       "2026-10-29T09:00:00Z",
-       4035.2
-      ],
-      [
-       "2026-10-29T10:00:00Z",
-       4040.6001
-      ],
-      [
-       "2026-10-29T11:00:00Z",
-       4042.8
-      ],
-      [
-       "2026-10-29T12:00:00Z",
-       4030.5
-      ],
-      [
-       "2026-10-29T13:00:00Z",
-       4031.5
-      ],
-      [
-       "2026-10-29T14:00:00Z",
-       4034.6001
-      ],
-      [
-       "2026-10-29T15:00:00Z",
-       4038.3
-      ],
-      [
-       "2026-10-29T16:00:00Z",
-       4035.0
-      ],
-      [
-       "2026-10-29T17:00:00Z",
-       4029.6001
-      ],
-      [
-       "2026-10-29T18:00:00Z",
-       4018.2
-      ],
-      [
-       "2026-10-29T19:00:00Z",
-       4023.6001
-      ],
-      [
-       "2026-10-29T20:00:00Z",
-       4034.2
-      ],
-      [
-       "2026-10-29T22:00:00Z",
-       4033.6001
-      ],
-      [
-       "2026-10-29T23:00:00Z",
-       4033.6001
-      ],
-      [
-       "2026-10-30T00:00:00Z",
-       4019.8
-      ],
-      [
-       "2026-10-30T01:00:00Z",
-       4016.7
-      ],
-      [
-       "2026-10-30T02:00:00Z",
-       4018.2
-      ],
-      [
-       "2026-10-30T03:00:00Z",
-       4007.8999
-      ],
-      [
-       "2026-10-30T04:00:00Z",
-       4003.8
-      ],
-      [
-       "2026-10-30T05:00:00Z",
-       4006.5
-      ],
-      [
-       "2026-10-30T06:00:00Z",
-       4001.3
-      ],
-      [
-       "2026-10-30T07:00:00Z",
-       3992.3
-      ],
-      [
-       "2026-10-30T08:00:00Z",
-       3984.3
-      ],
-      [
-       "2026-10-30T09:00:00Z",
-       4007.1001
-      ],
-      [
-       "2026-10-30T10:00:00Z",
-       4001.7
-      ],
-      [
-       "2026-10-30T11:00:00Z",
-       3989.6001
-      ],
-      [
-       "2026-10-30T12:00:00Z",
-       3976.1001
-      ],
-      [
-       "2026-10-30T13:00:00Z",
-       3963.6001
-      ],
-      [
-       "2026-10-30T14:00:00Z",
-       3929.5
-      ],
-      [
-       "2026-10-30T15:00:00Z",
-       3926.8999
-      ],
-      [
-       "2026-10-30T16:00:00Z",
-       3907.7
-      ],
-      [
-       "2026-10-30T17:00:00Z",
-       3905.7
-      ],
-      [
-       "2026-10-30T18:00:00Z",
-       3893.0
-      ],
-      [
-       "2026-10-30T19:00:00Z",
-       3889.3
-      ],
-      [
-       "2026-10-30T20:00:00Z",
-       3892.8
-      ]
-     ]
-    },
-    {
-     "asset": "SEMIS",
-     "label": "AI trade / semis (SMH)",
-     "kind": "call",
-     "direction": "bearish",
-     "mentions": 7,
-     "later": "bullish",
-     "first_t": "19:54",
-     "speakers": [
-      "Felix Jauvin",
-      "Quinn Thompson"
-     ],
-     "moments": [
-      {
-       "t": "19:54",
-       "seconds": 1194,
-       "kind": "thought",
-       "direction": "bearish",
-       "horizon": "months",
-       "speaker": "Felix Jauvin",
-       "speaker_confidence": "high",
-       "quote": "the capex guidance is below the estimate to me that that's that's the you know show's over",
-       "reason": "hyperscaler capex guidance missed estimates twice this week (MSFT 38B vs 45B, GOOGL 51B vs 55B)",
-       "chapter": 6
-      },
-      {
-       "t": "27:14",
-       "seconds": 1634,
-       "kind": "call",
-       "direction": "bearish",
-       "horizon": "months",
-       "speaker": "Quinn Thompson",
-       "speaker_confidence": "high",
-       "quote": "So I just think that like from from my investment perspective like this stuff is interesting on pops and to short",
-       "reason": "leveraged bubble unwinding; sells rallies, expects a long bleed like past bubbles",
-       "chapter": 6
-      },
-      {
-       "t": "28:42",
-       "seconds": 1722,
-       "kind": "thought",
-       "direction": "bearish",
-       "horizon": "months",
-       "speaker": "Felix Jauvin",
-       "speaker_confidence": "high",
-       "quote": "I guess just equity issuance is kind of your main leg right now and that's just why would you want to own that?",
-       "reason": "credit window shut for neoclouds; equity issuance dilutes holders",
-       "chapter": 6
-      },
-      {
-       "t": "37:21",
-       "seconds": 2241,
-       "kind": "thought",
-       "direction": "bearish",
-       "horizon": "long term",
-       "speaker": "Quinn Thompson",
-       "speaker_confidence": "high",
-       "quote": "And we're seeing it with open models. But it's very very very bearish from a investment perspective",
-       "reason": "compute becoming a commodity means margins go to zero",
-       "chapter": 8
-      },
-      {
-       "t": "38:02",
-       "seconds": 2282,
-       "kind": "thought",
-       "direction": "neutral",
-       "horizon": "now",
-       "speaker": "Quinn Thompson",
-       "speaker_confidence": "high",
-       "quote": "I don't think we're at the buying point yet, but we will be at some point.",
-       "reason": "not yet time to buy the AI/semis selloff",
-       "chapter": 8
-      },
-      {
-       "t": "38:10",
-       "seconds": 2290,
-       "kind": "thought",
-       "direction": "bullish",
-       "horizon": "next year",
-       "speaker": "Quinn Thompson",
-       "speaker_confidence": "high",
-       "quote": "And then maybe I'll say my first bullish thing about semi semiconductors [laughter] in 2027.",
-       "reason": "possible turn to bullish on semis in 2027",
-       "chapter": 8
-      },
-      {
-       "t": "39:03",
-       "seconds": 2343,
-       "kind": "thought",
-       "direction": "bearish",
-       "horizon": "months",
-       "speaker": "Felix Jauvin",
-       "speaker_confidence": "high",
-       "quote": "what's concerning now is that we're back at those those similar lows of that leverage wash out but now it's about the fundamental story.",
-       "reason": "back at the July lows, but now capex misses make it fundamental, not just leverage",
-       "chapter": 8
-      }
-     ],
-     "text": "The AI capex cycle has turned (capex misses, shut credit window): short the pops, no buy before 2027.",
-     "proxy": "the AI infrastructure trade, priced with the VanEck semiconductor ETF",
-     "price": {
-      "source": "yahoo",
-      "symbol": "SMH",
-      "at_episode": {
-       "at": "2026-10-30T20:00:00Z",
-       "price": 522.49
-      },
-      "latest": {
-       "at": "2026-10-30T20:00:00Z",
-       "price": 522.49
-      },
-      "change": null,
-      "with_lean": null
-     },
-     "series": [
-      [
-       "2026-09-30T13:30:00Z",
-       609.13
-      ],
-      [
-       "2026-09-30T14:30:00Z",
-       607.94
-      ],
-      [
-       "2026-09-30T15:30:00Z",
-       609.11
-      ],
-      [
-       "2026-09-30T16:30:00Z",
-       607.53
-      ],
-      [
-       "2026-09-30T17:30:00Z",
-       607.8425
-      ],
-      [
-       "2026-09-30T18:30:00Z",
-       610.035
-      ],
-      [
-       "2026-09-30T19:30:00Z",
-       610.72
-      ],
-      [
-       "2026-10-01T13:30:00Z",
-       610.79
-      ],
-      [
-       "2026-10-01T14:30:00Z",
-       609.725
-      ],
-      [
-       "2026-10-01T15:30:00Z",
-       612.05
-      ],
-      [
-       "2026-10-01T16:30:00Z",
-       611.82
-      ],
-      [
-       "2026-10-01T17:30:00Z",
-       618.15
-      ],
-      [
-       "2026-10-01T18:30:00Z",
-       617.99
-      ],
-      [
-       "2026-10-01T19:30:00Z",
-       617.94
-      ],
-      [
-       "2026-10-02T13:30:00Z",
-       632.5
-      ],
-      [
-       "2026-10-02T14:30:00Z",
-       635.56
-      ],
-      [
-       "2026-10-02T15:30:00Z",
-       631.975
-      ],
-      [
-       "2026-10-02T16:30:00Z",
-       632.98
-      ],
-      [
-       "2026-10-02T17:30:00Z",
-       628.605
-      ],
-      [
-       "2026-10-02T18:30:00Z",
-       629.96
-      ],
-      [
-       "2026-10-02T19:30:00Z",
-       630.77
-      ],
-      [
-       "2026-10-05T13:30:00Z",
-       631.31
-      ],
-      [
-       "2026-10-05T14:30:00Z",
-       630.91
-      ],
-      [
-       "2026-10-05T15:30:00Z",
-       631.5
-      ],
-      [
-       "2026-10-05T16:30:00Z",
-       630.58
-      ],
-      [
-       "2026-10-05T17:30:00Z",
-       631.805
-      ],
-      [
-       "2026-10-05T18:30:00Z",
-       633.78
-      ],
-      [
-       "2026-10-05T19:30:00Z",
-       633.88
-      ],
-      [
-       "2026-10-06T13:30:00Z",
-       638.0
-      ],
-      [
-       "2026-10-06T14:30:00Z",
-       636.11
-      ],
-      [
-       "2026-10-06T15:30:00Z",
-       636.73
-      ],
-      [
-       "2026-10-06T16:30:00Z",
-       635.45
-      ],
-      [
-       "2026-10-06T17:30:00Z",
-       635.47
-      ],
-      [
-       "2026-10-06T18:30:00Z",
-       635.07
-      ],
-      [
-       "2026-10-06T19:30:00Z",
-       633.95
-      ],
-      [
-       "2026-10-07T13:30:00Z",
-       621.11
-      ],
-      [
-       "2026-10-07T14:30:00Z",
-       624.18
-      ],
-      [
-       "2026-10-07T15:30:00Z",
-       622.18
-      ],
-      [
-       "2026-10-07T16:30:00Z",
-       622.46
-      ],
-      [
-       "2026-10-07T17:30:00Z",
-       624.08
-      ],
-      [
-       "2026-10-07T18:30:00Z",
-       623.75
-      ],
-      [
-       "2026-10-07T19:30:00Z",
-       623.46
-      ],
-      [
-       "2026-10-08T13:30:00Z",
-       615.7
-      ],
-      [
-       "2026-10-08T14:30:00Z",
-       622.72
-      ],
-      [
-       "2026-10-08T15:30:00Z",
-       618.75
-      ],
-      [
-       "2026-10-08T16:30:00Z",
-       618.74
-      ],
-      [
-       "2026-10-08T17:30:00Z",
-       602.51
-      ],
-      [
-       "2026-10-08T18:30:00Z",
-       608.85
-      ],
-      [
-       "2026-10-08T19:30:00Z",
-       604.8
-      ],
-      [
-       "2026-10-09T13:30:00Z",
-       615.14
-      ],
-      [
-       "2026-10-09T14:30:00Z",
-       604.84
-      ],
-      [
-       "2026-10-09T15:30:00Z",
-       602.8
-      ],
-      [
-       "2026-10-09T16:30:00Z",
-       602.755
-      ],
-      [
-       "2026-10-09T17:30:00Z",
-       603.45
-      ],
-      [
-       "2026-10-09T18:30:00Z",
-       604.0207
-      ],
-      [
-       "2026-10-09T19:30:00Z",
-       603.6582
-      ],
-      [
-       "2026-10-12T13:30:00Z",
-       598.445
-      ],
-      [
-       "2026-10-12T14:30:00Z",
-       590.22
-      ],
-      [
-       "2026-10-12T15:30:00Z",
-       589.89
-      ],
-      [
-       "2026-10-12T16:30:00Z",
-       592.68
-      ],
-      [
-       "2026-10-12T17:30:00Z",
-       591.375
-      ],
-      [
-       "2026-10-12T18:30:00Z",
-       591.26
-      ],
-      [
-       "2026-10-12T19:30:00Z",
-       591.2025
-      ],
-      [
-       "2026-10-13T13:30:00Z",
-       578.0099
-      ],
-      [
-       "2026-10-13T14:30:00Z",
-       582.135
-      ],
-      [
-       "2026-10-13T15:30:00Z",
-       577.94
-      ],
-      [
-       "2026-10-13T16:30:00Z",
-       585.115
-      ],
-      [
-       "2026-10-13T17:30:00Z",
-       582.0009
-      ],
-      [
-       "2026-10-13T18:30:00Z",
-       585.98
-      ],
-      [
-       "2026-10-13T19:30:00Z",
-       585.97
-      ],
-      [
-       "2026-10-14T13:30:00Z",
-       576.22
-      ],
-      [
-       "2026-10-14T14:30:00Z",
-       575.24
-      ],
-      [
-       "2026-10-14T15:30:00Z",
-       572.03
-      ],
-      [
-       "2026-10-14T16:30:00Z",
-       566.8
-      ],
-      [
-       "2026-10-14T17:30:00Z",
-       567.03
-      ],
-      [
-       "2026-10-14T18:30:00Z",
-       566.32
-      ],
-      [
-       "2026-10-14T19:30:00Z",
-       566.59
-      ],
-      [
-       "2026-10-15T13:30:00Z",
-       546.38
-      ],
-      [
-       "2026-10-15T14:30:00Z",
-       546.28
-      ],
-      [
-       "2026-10-15T15:30:00Z",
-       552.9729
-      ],
-      [
-       "2026-10-15T16:30:00Z",
-       550.8
-      ],
-      [
-       "2026-10-15T17:30:00Z",
-       553.335
-      ],
-      [
-       "2026-10-15T18:30:00Z",
-       552.3
-      ],
-      [
-       "2026-10-15T19:30:00Z",
-       558.57
-      ],
-      [
-       "2026-10-16T13:30:00Z",
-       551.0
-      ],
-      [
-       "2026-10-16T14:30:00Z",
-       550.26
-      ],
-      [
-       "2026-10-16T15:30:00Z",
-       548.45
-      ],
-      [
-       "2026-10-16T16:30:00Z",
-       550.03
-      ],
-      [
-       "2026-10-16T17:30:00Z",
-       546.0
-      ],
-      [
-       "2026-10-16T18:30:00Z",
-       543.47
-      ],
-      [
-       "2026-10-16T19:30:00Z",
-       544.05
-      ],
-      [
-       "2026-10-19T13:30:00Z",
-       556.605
-      ],
-      [
-       "2026-10-19T14:30:00Z",
-       553.58
-      ],
-      [
-       "2026-10-19T15:30:00Z",
-       557.605
-      ],
-      [
-       "2026-10-19T16:30:00Z",
-       554.545
-      ],
-      [
-       "2026-10-19T17:30:00Z",
-       551.18
-      ],
-      [
-       "2026-10-19T18:30:00Z",
-       548.73
-      ],
-      [
-       "2026-10-19T19:30:00Z",
-       551.53
-      ],
-      [
-       "2026-10-20T13:30:00Z",
-       541.248
-      ],
-      [
-       "2026-10-20T14:30:00Z",
-       552.47
-      ],
-      [
-       "2026-10-20T15:30:00Z",
-       548.745
-      ],
-      [
-       "2026-10-20T16:30:00Z",
-       549.85
-      ],
-      [
-       "2026-10-20T17:30:00Z",
-       548.98
-      ],
-      [
-       "2026-10-20T18:30:00Z",
-       549.62
-      ],
-      [
-       "2026-10-20T19:30:00Z",
-       547.565
-      ],
-      [
-       "2026-10-21T13:30:00Z",
-       558.5
-      ],
-      [
-       "2026-10-21T14:30:00Z",
-       552.19
-      ],
-      [
-       "2026-10-21T15:30:00Z",
-       554.09
-      ],
-      [
-       "2026-10-21T16:30:00Z",
-       555.22
-      ],
-      [
-       "2026-10-21T17:30:00Z",
-       558.185
-      ],
-      [
-       "2026-10-21T18:30:00Z",
-       558.04
-      ],
-      [
-       "2026-10-21T19:30:00Z",
-       557.19
-      ],
-      [
-       "2026-10-22T13:30:00Z",
-       536.515
-      ],
-      [
-       "2026-10-22T14:30:00Z",
-       532.89
-      ],
-      [
-       "2026-10-22T15:30:00Z",
-       527.88
-      ],
-      [
-       "2026-10-22T16:30:00Z",
-       529.38
-      ],
-      [
-       "2026-10-22T17:30:00Z",
-       526.7272
-      ],
-      [
-       "2026-10-22T18:30:00Z",
-       524.74
-      ],
-      [
-       "2026-10-22T19:30:00Z",
-       525.34
-      ],
-      [
-       "2026-10-23T13:30:00Z",
-       522.545
-      ],
-      [
-       "2026-10-23T14:30:00Z",
-       527.73
-      ],
-      [
-       "2026-10-23T15:30:00Z",
-       529.48
-      ],
-      [
-       "2026-10-23T16:30:00Z",
-       529.74
-      ],
-      [
-       "2026-10-23T17:30:00Z",
-       527.265
-      ],
-      [
-       "2026-10-23T18:30:00Z",
-       529.05
-      ],
-      [
-       "2026-10-23T19:30:00Z",
-       527.45
-      ],
-      [
-       "2026-10-26T13:30:00Z",
-       531.48
-      ],
-      [
-       "2026-10-26T14:30:00Z",
-       534.14
-      ],
-      [
-       "2026-10-26T15:30:00Z",
-       543.94
-      ],
-      [
-       "2026-10-26T16:30:00Z",
-       542.21
-      ],
-      [
-       "2026-10-26T17:30:00Z",
-       543.78
-      ],
-      [
-       "2026-10-26T18:30:00Z",
-       543.94
-      ],
-      [
-       "2026-10-26T19:30:00Z",
-       544.39
-      ],
-      [
-       "2026-10-27T13:30:00Z",
-       548.76
-      ],
-      [
-       "2026-10-27T14:30:00Z",
-       550.69
-      ],
-      [
-       "2026-10-27T15:30:00Z",
-       554.68
-      ],
-      [
-       "2026-10-27T16:30:00Z",
-       557.44
-      ],
-      [
-       "2026-10-27T17:30:00Z",
-       556.6325
-      ],
-      [
-       "2026-10-27T18:30:00Z",
-       557.07
-      ],
-      [
-       "2026-10-27T19:30:00Z",
-       556.875
-      ],
-      [
-       "2026-10-28T13:30:00Z",
-       564.388
-      ],
-      [
-       "2026-10-28T14:30:00Z",
-       565.165
-      ],
-      [
-       "2026-10-28T15:30:00Z",
-       564.445
-      ],
-      [
-       "2026-10-28T16:30:00Z",
-       565.075
-      ],
-      [
-       "2026-10-28T17:30:00Z",
-       564.23
-      ],
-      [
-       "2026-10-28T18:30:00Z",
-       566.015
-      ],
-      [
-       "2026-10-28T19:30:00Z",
-       565.77
-      ],
-      [
-       "2026-10-29T13:30:00Z",
-       559.091
-      ],
-      [
-       "2026-10-29T14:30:00Z",
-       560.59
-      ],
-      [
-       "2026-10-29T15:30:00Z",
-       563.8
-      ],
-      [
-       "2026-10-29T16:30:00Z",
-       562.29
-      ],
-      [
-       "2026-10-29T17:30:00Z",
-       561.16
-      ],
-      [
-       "2026-10-29T18:30:00Z",
-       558.44
-      ],
-      [
-       "2026-10-29T19:30:00Z",
-       558.83
-      ],
-      [
-       "2026-10-30T13:30:00Z",
-       532.58
-      ],
-      [
-       "2026-10-30T14:30:00Z",
-       527.745
-      ],
-      [
-       "2026-10-30T15:30:00Z",
-       525.8
-      ],
-      [
-       "2026-10-30T16:30:00Z",
-       522.25
-      ],
-      [
-       "2026-10-30T17:30:00Z",
-       518.94
-      ],
-      [
-       "2026-10-30T18:30:00Z",
-       513.54
-      ],
-      [
-       "2026-10-30T19:30:00Z",
-       518.1
-      ],
-      [
-       "2026-10-30T20:00:00Z",
-       522.49
-      ]
-     ]
-    },
     {
      "asset": "BTC",
      "label": "Bitcoin",
      "kind": "call",
      "direction": "neutral",
-     "mentions": 5,
+     "mentions": 8,
      "later": "bullish",
      "first_t": "54:42",
      "speakers": [
@@ -3163,11 +152,11 @@
        "seconds": 3282,
        "kind": "thought",
        "direction": "neutral",
-       "horizon": "weeks",
+       "horizon": "months",
        "speaker": "Felix Jauvin",
        "speaker_confidence": "high",
-       "quote": "So, I'm I'm reevaluating a little bit that that that fundamental bullishness.",
-       "reason": "the $6.36B Binance hack hurts sentiment; less constructive on crypto",
+       "quote": "like I don't know, man. That does something fundamentally. So, I'm I'm reevaluating a little bit that that that fundamental bullishness.",
+       "reason": "The $6B Binance hack hurts sentiment and the appetite of newcomers.",
        "chapter": 12
       },
       {
@@ -3177,49 +166,85 @@
        "direction": "neutral",
        "horizon": "now",
        "speaker": "Quinn Thompson",
+       "speaker_confidence": "high",
+       "quote": "Um, for me, nothing's changed cuz I'm I'm not long anything. And this is a",
+       "reason": "He has no position; it is a bear market.",
+       "chapter": 12
+      },
+      {
+       "t": "55:32",
+       "seconds": 3332,
+       "kind": "thought",
+       "direction": "neutral",
+       "horizon": "months",
+       "speaker": "Felix Jauvin",
        "speaker_confidence": "medium",
-       "quote": "for me, nothing's changed cuz I'm I'm not long anything. And this is a also what happens in bare markets.",
-       "reason": "not long anything; treats the hack as bear-market behaviour",
+       "quote": "Yeah, it's definitely a bit of a bottom signal. I just think it it might prolong the period of the the the consolidation chop kind of thing.",
+       "reason": "The hack looks like a bottom signal but likely extends the chop.",
        "chapter": 12
       },
       {
        "t": "55:50",
        "seconds": 3350,
        "kind": "thought",
+       "direction": "bullish",
+       "horizon": "next year",
+       "speaker": "Quinn Thompson",
+       "speaker_confidence": "high",
+       "quote": "Yeah. I mean, my base case is that we don't it's not really fertile conditions until sometime next year. Could be mid,",
+       "reason": "He expects better conditions for crypto sometime next year.",
+       "chapter": 12
+      },
+      {
+       "t": "55:57",
+       "seconds": 3357,
+       "kind": "call",
+       "direction": "neutral",
+       "horizon": "now",
+       "speaker": "Quinn Thompson",
+       "speaker_confidence": "high",
+       "quote": "But anyways, um, so I think remaining patient is very good cuz you're right, like we just deviated range highs and got smoked below",
+       "reason": "A failed breakout, possible liquidity issues and bad macro argue for patience.",
+       "chapter": 12
+      },
+      {
+       "t": "56:34",
+       "seconds": 3394,
+       "kind": "thought",
+       "direction": "neutral",
+       "horizon": "months",
+       "speaker": "Felix Jauvin",
+       "speaker_confidence": "high",
+       "quote": "I think it's just time capitulation. Like I think it's, you know, we Yeah, we've seen some some recent lows in Bitcoin price, but but really it's just a time capitulation thing.",
+       "reason": "A leverage-driven chop is wearing holders down; the bottoming process is still underway.",
+       "chapter": 12
+      },
+      {
+       "t": "57:10",
+       "seconds": 3430,
+       "kind": "thought",
        "direction": "neutral",
        "horizon": "months",
        "speaker": "Quinn Thompson",
        "speaker_confidence": "medium",
-       "quote": "my base case is that we don't it's not really fertile conditions until sometime next year.",
-       "reason": "conditions not right for crypto until sometime next year; stay patient",
+       "quote": "I think you have to see analog gold bottom before you're going to get their ability on the crypto.",
+       "reason": "Gold needs to bottom before Bitcoin can turn.",
        "chapter": 12
       },
       {
-       "t": "56:59",
-       "seconds": 3419,
-       "kind": "thought",
-       "direction": "bullish",
-       "horizon": "long term",
-       "speaker": "Felix Jauvin",
-       "speaker_confidence": "medium",
-       "quote": "But uh yeah, it is more of a bottomy signal than a top one, that's for sure.",
-       "reason": "time capitulation; the hack looks more like a bottom signal",
-       "chapter": 12
-      },
-      {
-       "t": "57:39",
-       "seconds": 3459,
+       "t": "57:41",
+       "seconds": 3461,
        "kind": "thought",
        "direction": "bearish",
        "horizon": "weeks",
        "speaker": "Quinn Thompson",
        "speaker_confidence": "medium",
-       "quote": "gold's now completely retraced and set new lows. could be ominous sign uh for for Bitcoin as well",
-       "reason": "gold and BTC rallied for the same reasons; gold's new lows may lead BTC lower",
+       "quote": "Um, and gold's now completely retraced and set new lows. could be ominous sign uh for for Bitcoin as well",
+       "reason": "Gold rallied for the same reasons as Bitcoin and has fully retraced, a warning sign for Bitcoin.",
        "chapter": 13
       }
      ],
-     "text": "Not long; the Binance hack and gold's new lows point to more chop, conditions improve sometime next year.",
+     "text": "No position; the Binance hack and gold weakness argue for patience, with better conditions likely next year.",
      "proxy": null,
      "price": {
       "source": "binance",
@@ -6235,14 +3260,3037 @@
      ]
     },
     {
+     "asset": "SEMIS",
+     "label": "AI trade / semis (SMH)",
+     "kind": "call",
+     "direction": "bearish",
+     "mentions": 8,
+     "later": "bullish",
+     "first_t": "19:57",
+     "speakers": [
+      "Felix Jauvin",
+      "Quinn Thompson"
+     ],
+     "moments": [
+      {
+       "t": "19:57",
+       "seconds": 1197,
+       "kind": "thought",
+       "direction": "bearish",
+       "horizon": "months",
+       "speaker": "Felix Jauvin",
+       "speaker_confidence": "high",
+       "quote": "day that you see a hyperscalers earning where the capex estimates are or the the cap yeah the capex guidance is below the estimate to me that that's that's the you know show's over. Um, and we got that twice this week",
+       "reason": "Microsoft and Google capex guidance missed estimates.",
+       "chapter": 6
+      },
+      {
+       "t": "27:14",
+       "seconds": 1634,
+       "kind": "call",
+       "direction": "bearish",
+       "horizon": "long term",
+       "speaker": "Quinn Thompson",
+       "speaker_confidence": "high",
+       "quote": "the bubble was being blown. So I just think that like from from my investment perspective like this stuff is interesting on pops and to short",
+       "reason": "Cyclical overinvestment takes as long to clear as the bubble took to form, so he would short rallies.",
+       "chapter": 6
+      },
+      {
+       "t": "28:40",
+       "seconds": 1720,
+       "kind": "thought",
+       "direction": "bearish",
+       "horizon": "months",
+       "speaker": "Felix Jauvin",
+       "speaker_confidence": "high",
+       "quote": "so so what do you do? I guess just equity issuance is kind of your main leg right now and that's just why would you want to own that?",
+       "reason": "With the credit window closed, AI builders must issue equity, diluting holders.",
+       "chapter": 6
+      },
+      {
+       "t": "32:50",
+       "seconds": 1970,
+       "kind": "thought",
+       "direction": "bearish",
+       "horizon": "long term",
+       "speaker": "Quinn Thompson",
+       "speaker_confidence": "high",
+       "quote": "we need to keep every every dollar of operating margin we can get.\" So, it prolongs the supply glut basically. Um, yeah. So, that's just kind of dynamic of why they usually take longer.",
+       "reason": "Indebted producers keep supplying as demand falls, which drags out the glut.",
+       "chapter": 8
+      },
+      {
+       "t": "37:31",
+       "seconds": 2251,
+       "kind": "thought",
+       "direction": "bearish",
+       "horizon": "long term",
+       "speaker": "Quinn Thompson",
+       "speaker_confidence": "high",
+       "quote": "seeing it with open models. But it's very very very bearish from a investment perspective because like anything when profits boom, competition arrives",
+       "reason": "Compute becoming a commodity pushes margins toward zero.",
+       "chapter": 8
+      },
+      {
+       "t": "38:11",
+       "seconds": 2291,
+       "kind": "thought",
+       "direction": "neutral",
+       "horizon": "now",
+       "speaker": "Quinn Thompson",
+       "speaker_confidence": "high",
+       "quote": "and buying when I don't think we're at the buying point yet, but we will be at some point.",
+       "reason": "It is not yet time to buy.",
+       "chapter": 8
+      },
+      {
+       "t": "38:11",
+       "seconds": 2291,
+       "kind": "thought",
+       "direction": "bullish",
+       "horizon": "next year",
+       "speaker": "Quinn Thompson",
+       "speaker_confidence": "high",
+       "quote": "And then maybe I'll say my first bullish thing about semi semiconductors [laughter] in 2027.",
+       "reason": "He sees a possible buying point in 2027 once the cycle has cleared.",
+       "chapter": 8
+      },
+      {
+       "t": "39:08",
+       "seconds": 2348,
+       "kind": "thought",
+       "direction": "bearish",
+       "horizon": "months",
+       "speaker": "Felix Jauvin",
+       "speaker_confidence": "high",
+       "quote": "just a leverage wash out. I think what's what's concerning now is that we're back at those those similar lows of that leverage wash out but now it's about the fundamental story.",
+       "reason": "The weakness is now fundamental (capex misses), not just a leverage flush.",
+       "chapter": 8
+      }
+     ],
+     "text": "The AI trade is fracturing on capex misses, credit stress and commoditization; short the rallies, with a possible buy in 2027.",
+     "proxy": "the AI infrastructure trade, priced with the VanEck semiconductor ETF",
+     "price": {
+      "source": "yahoo",
+      "symbol": "SMH",
+      "at_episode": {
+       "at": "2026-10-30T20:00:00Z",
+       "price": 522.49
+      },
+      "latest": {
+       "at": "2026-10-30T20:00:00Z",
+       "price": 522.49
+      },
+      "change": null,
+      "with_lean": null
+     },
+     "series": [
+      [
+       "2026-09-30T13:30:00Z",
+       609.13
+      ],
+      [
+       "2026-09-30T14:30:00Z",
+       607.94
+      ],
+      [
+       "2026-09-30T15:30:00Z",
+       609.11
+      ],
+      [
+       "2026-09-30T16:30:00Z",
+       607.53
+      ],
+      [
+       "2026-09-30T17:30:00Z",
+       607.8425
+      ],
+      [
+       "2026-09-30T18:30:00Z",
+       610.035
+      ],
+      [
+       "2026-09-30T19:30:00Z",
+       610.72
+      ],
+      [
+       "2026-10-01T13:30:00Z",
+       610.79
+      ],
+      [
+       "2026-10-01T14:30:00Z",
+       609.725
+      ],
+      [
+       "2026-10-01T15:30:00Z",
+       612.05
+      ],
+      [
+       "2026-10-01T16:30:00Z",
+       611.82
+      ],
+      [
+       "2026-10-01T17:30:00Z",
+       618.15
+      ],
+      [
+       "2026-10-01T18:30:00Z",
+       617.99
+      ],
+      [
+       "2026-10-01T19:30:00Z",
+       617.94
+      ],
+      [
+       "2026-10-02T13:30:00Z",
+       632.5
+      ],
+      [
+       "2026-10-02T14:30:00Z",
+       635.56
+      ],
+      [
+       "2026-10-02T15:30:00Z",
+       631.975
+      ],
+      [
+       "2026-10-02T16:30:00Z",
+       632.98
+      ],
+      [
+       "2026-10-02T17:30:00Z",
+       628.605
+      ],
+      [
+       "2026-10-02T18:30:00Z",
+       629.96
+      ],
+      [
+       "2026-10-02T19:30:00Z",
+       630.77
+      ],
+      [
+       "2026-10-05T13:30:00Z",
+       631.31
+      ],
+      [
+       "2026-10-05T14:30:00Z",
+       630.91
+      ],
+      [
+       "2026-10-05T15:30:00Z",
+       631.5
+      ],
+      [
+       "2026-10-05T16:30:00Z",
+       630.58
+      ],
+      [
+       "2026-10-05T17:30:00Z",
+       631.805
+      ],
+      [
+       "2026-10-05T18:30:00Z",
+       633.78
+      ],
+      [
+       "2026-10-05T19:30:00Z",
+       633.88
+      ],
+      [
+       "2026-10-06T13:30:00Z",
+       638.0
+      ],
+      [
+       "2026-10-06T14:30:00Z",
+       636.11
+      ],
+      [
+       "2026-10-06T15:30:00Z",
+       636.73
+      ],
+      [
+       "2026-10-06T16:30:00Z",
+       635.45
+      ],
+      [
+       "2026-10-06T17:30:00Z",
+       635.47
+      ],
+      [
+       "2026-10-06T18:30:00Z",
+       635.07
+      ],
+      [
+       "2026-10-06T19:30:00Z",
+       633.95
+      ],
+      [
+       "2026-10-07T13:30:00Z",
+       621.11
+      ],
+      [
+       "2026-10-07T14:30:00Z",
+       624.18
+      ],
+      [
+       "2026-10-07T15:30:00Z",
+       622.18
+      ],
+      [
+       "2026-10-07T16:30:00Z",
+       622.46
+      ],
+      [
+       "2026-10-07T17:30:00Z",
+       624.08
+      ],
+      [
+       "2026-10-07T18:30:00Z",
+       623.75
+      ],
+      [
+       "2026-10-07T19:30:00Z",
+       623.46
+      ],
+      [
+       "2026-10-08T13:30:00Z",
+       615.7
+      ],
+      [
+       "2026-10-08T14:30:00Z",
+       622.72
+      ],
+      [
+       "2026-10-08T15:30:00Z",
+       618.75
+      ],
+      [
+       "2026-10-08T16:30:00Z",
+       618.74
+      ],
+      [
+       "2026-10-08T17:30:00Z",
+       602.51
+      ],
+      [
+       "2026-10-08T18:30:00Z",
+       608.85
+      ],
+      [
+       "2026-10-08T19:30:00Z",
+       604.8
+      ],
+      [
+       "2026-10-09T13:30:00Z",
+       615.14
+      ],
+      [
+       "2026-10-09T14:30:00Z",
+       604.84
+      ],
+      [
+       "2026-10-09T15:30:00Z",
+       602.8
+      ],
+      [
+       "2026-10-09T16:30:00Z",
+       602.755
+      ],
+      [
+       "2026-10-09T17:30:00Z",
+       603.45
+      ],
+      [
+       "2026-10-09T18:30:00Z",
+       604.0207
+      ],
+      [
+       "2026-10-09T19:30:00Z",
+       603.6582
+      ],
+      [
+       "2026-10-12T13:30:00Z",
+       598.445
+      ],
+      [
+       "2026-10-12T14:30:00Z",
+       590.22
+      ],
+      [
+       "2026-10-12T15:30:00Z",
+       589.89
+      ],
+      [
+       "2026-10-12T16:30:00Z",
+       592.68
+      ],
+      [
+       "2026-10-12T17:30:00Z",
+       591.375
+      ],
+      [
+       "2026-10-12T18:30:00Z",
+       591.26
+      ],
+      [
+       "2026-10-12T19:30:00Z",
+       591.2025
+      ],
+      [
+       "2026-10-13T13:30:00Z",
+       578.0099
+      ],
+      [
+       "2026-10-13T14:30:00Z",
+       582.135
+      ],
+      [
+       "2026-10-13T15:30:00Z",
+       577.94
+      ],
+      [
+       "2026-10-13T16:30:00Z",
+       585.115
+      ],
+      [
+       "2026-10-13T17:30:00Z",
+       582.0009
+      ],
+      [
+       "2026-10-13T18:30:00Z",
+       585.98
+      ],
+      [
+       "2026-10-13T19:30:00Z",
+       585.97
+      ],
+      [
+       "2026-10-14T13:30:00Z",
+       576.22
+      ],
+      [
+       "2026-10-14T14:30:00Z",
+       575.24
+      ],
+      [
+       "2026-10-14T15:30:00Z",
+       572.03
+      ],
+      [
+       "2026-10-14T16:30:00Z",
+       566.8
+      ],
+      [
+       "2026-10-14T17:30:00Z",
+       567.03
+      ],
+      [
+       "2026-10-14T18:30:00Z",
+       566.32
+      ],
+      [
+       "2026-10-14T19:30:00Z",
+       566.59
+      ],
+      [
+       "2026-10-15T13:30:00Z",
+       546.38
+      ],
+      [
+       "2026-10-15T14:30:00Z",
+       546.28
+      ],
+      [
+       "2026-10-15T15:30:00Z",
+       552.9729
+      ],
+      [
+       "2026-10-15T16:30:00Z",
+       550.8
+      ],
+      [
+       "2026-10-15T17:30:00Z",
+       553.335
+      ],
+      [
+       "2026-10-15T18:30:00Z",
+       552.3
+      ],
+      [
+       "2026-10-15T19:30:00Z",
+       558.57
+      ],
+      [
+       "2026-10-16T13:30:00Z",
+       551.0
+      ],
+      [
+       "2026-10-16T14:30:00Z",
+       550.26
+      ],
+      [
+       "2026-10-16T15:30:00Z",
+       548.45
+      ],
+      [
+       "2026-10-16T16:30:00Z",
+       550.03
+      ],
+      [
+       "2026-10-16T17:30:00Z",
+       546.0
+      ],
+      [
+       "2026-10-16T18:30:00Z",
+       543.47
+      ],
+      [
+       "2026-10-16T19:30:00Z",
+       544.05
+      ],
+      [
+       "2026-10-19T13:30:00Z",
+       556.605
+      ],
+      [
+       "2026-10-19T14:30:00Z",
+       553.58
+      ],
+      [
+       "2026-10-19T15:30:00Z",
+       557.605
+      ],
+      [
+       "2026-10-19T16:30:00Z",
+       554.545
+      ],
+      [
+       "2026-10-19T17:30:00Z",
+       551.18
+      ],
+      [
+       "2026-10-19T18:30:00Z",
+       548.73
+      ],
+      [
+       "2026-10-19T19:30:00Z",
+       551.53
+      ],
+      [
+       "2026-10-20T13:30:00Z",
+       541.248
+      ],
+      [
+       "2026-10-20T14:30:00Z",
+       552.47
+      ],
+      [
+       "2026-10-20T15:30:00Z",
+       548.745
+      ],
+      [
+       "2026-10-20T16:30:00Z",
+       549.85
+      ],
+      [
+       "2026-10-20T17:30:00Z",
+       548.98
+      ],
+      [
+       "2026-10-20T18:30:00Z",
+       549.62
+      ],
+      [
+       "2026-10-20T19:30:00Z",
+       547.565
+      ],
+      [
+       "2026-10-21T13:30:00Z",
+       558.5
+      ],
+      [
+       "2026-10-21T14:30:00Z",
+       552.19
+      ],
+      [
+       "2026-10-21T15:30:00Z",
+       554.09
+      ],
+      [
+       "2026-10-21T16:30:00Z",
+       555.22
+      ],
+      [
+       "2026-10-21T17:30:00Z",
+       558.185
+      ],
+      [
+       "2026-10-21T18:30:00Z",
+       558.04
+      ],
+      [
+       "2026-10-21T19:30:00Z",
+       557.19
+      ],
+      [
+       "2026-10-22T13:30:00Z",
+       536.515
+      ],
+      [
+       "2026-10-22T14:30:00Z",
+       532.89
+      ],
+      [
+       "2026-10-22T15:30:00Z",
+       527.88
+      ],
+      [
+       "2026-10-22T16:30:00Z",
+       529.38
+      ],
+      [
+       "2026-10-22T17:30:00Z",
+       526.7272
+      ],
+      [
+       "2026-10-22T18:30:00Z",
+       524.74
+      ],
+      [
+       "2026-10-22T19:30:00Z",
+       525.34
+      ],
+      [
+       "2026-10-23T13:30:00Z",
+       522.545
+      ],
+      [
+       "2026-10-23T14:30:00Z",
+       527.73
+      ],
+      [
+       "2026-10-23T15:30:00Z",
+       529.48
+      ],
+      [
+       "2026-10-23T16:30:00Z",
+       529.74
+      ],
+      [
+       "2026-10-23T17:30:00Z",
+       527.265
+      ],
+      [
+       "2026-10-23T18:30:00Z",
+       529.05
+      ],
+      [
+       "2026-10-23T19:30:00Z",
+       527.45
+      ],
+      [
+       "2026-10-26T13:30:00Z",
+       531.48
+      ],
+      [
+       "2026-10-26T14:30:00Z",
+       534.14
+      ],
+      [
+       "2026-10-26T15:30:00Z",
+       543.94
+      ],
+      [
+       "2026-10-26T16:30:00Z",
+       542.21
+      ],
+      [
+       "2026-10-26T17:30:00Z",
+       543.78
+      ],
+      [
+       "2026-10-26T18:30:00Z",
+       543.94
+      ],
+      [
+       "2026-10-26T19:30:00Z",
+       544.39
+      ],
+      [
+       "2026-10-27T13:30:00Z",
+       548.76
+      ],
+      [
+       "2026-10-27T14:30:00Z",
+       550.69
+      ],
+      [
+       "2026-10-27T15:30:00Z",
+       554.68
+      ],
+      [
+       "2026-10-27T16:30:00Z",
+       557.44
+      ],
+      [
+       "2026-10-27T17:30:00Z",
+       556.6325
+      ],
+      [
+       "2026-10-27T18:30:00Z",
+       557.07
+      ],
+      [
+       "2026-10-27T19:30:00Z",
+       556.875
+      ],
+      [
+       "2026-10-28T13:30:00Z",
+       564.388
+      ],
+      [
+       "2026-10-28T14:30:00Z",
+       565.165
+      ],
+      [
+       "2026-10-28T15:30:00Z",
+       564.445
+      ],
+      [
+       "2026-10-28T16:30:00Z",
+       565.075
+      ],
+      [
+       "2026-10-28T17:30:00Z",
+       564.23
+      ],
+      [
+       "2026-10-28T18:30:00Z",
+       566.015
+      ],
+      [
+       "2026-10-28T19:30:00Z",
+       565.77
+      ],
+      [
+       "2026-10-29T13:30:00Z",
+       559.091
+      ],
+      [
+       "2026-10-29T14:30:00Z",
+       560.59
+      ],
+      [
+       "2026-10-29T15:30:00Z",
+       563.8
+      ],
+      [
+       "2026-10-29T16:30:00Z",
+       562.29
+      ],
+      [
+       "2026-10-29T17:30:00Z",
+       561.16
+      ],
+      [
+       "2026-10-29T18:30:00Z",
+       558.44
+      ],
+      [
+       "2026-10-29T19:30:00Z",
+       558.83
+      ],
+      [
+       "2026-10-30T13:30:00Z",
+       532.58
+      ],
+      [
+       "2026-10-30T14:30:00Z",
+       527.745
+      ],
+      [
+       "2026-10-30T15:30:00Z",
+       525.8
+      ],
+      [
+       "2026-10-30T16:30:00Z",
+       522.25
+      ],
+      [
+       "2026-10-30T17:30:00Z",
+       518.94
+      ],
+      [
+       "2026-10-30T18:30:00Z",
+       513.54
+      ],
+      [
+       "2026-10-30T19:30:00Z",
+       518.1
+      ],
+      [
+       "2026-10-30T20:00:00Z",
+       522.49
+      ]
+     ]
+    },
+    {
+     "asset": "GOLD",
+     "label": "Gold",
+     "kind": "call",
+     "direction": "neutral",
+     "mentions": 7,
+     "later": "bullish",
+     "first_t": "11:00",
+     "speakers": [
+      "Felix Jauvin",
+      "Quinn Thompson"
+     ],
+     "moments": [
+      {
+       "t": "11:00",
+       "seconds": 660,
+       "kind": "thought",
+       "direction": "bearish",
+       "horizon": "weeks",
+       "speaker": "Quinn Thompson",
+       "speaker_confidence": "high",
+       "quote": "gold is probably getting hit here as you know the energy short nations are trying to defend currency. The dollar's been been super strong.",
+       "reason": "Energy-short countries are selling gold to defend their currencies while the dollar is strong.",
+       "chapter": 3
+      },
+      {
+       "t": "17:46",
+       "seconds": 1066,
+       "kind": "thought",
+       "direction": "bearish",
+       "horizon": "weeks",
+       "speaker": "Quinn Thompson",
+       "speaker_confidence": "medium",
+       "quote": "liquidity crunch. So, you're going to you're going to you're getting tapped on the shoulder whether you're the PM at a pod or a a treasury manager at at a central bank.",
+       "reason": "A liquidity crunch is forcing holders to sell what they can, including gold.",
+       "chapter": 5
+      },
+      {
+       "t": "18:10",
+       "seconds": 1090,
+       "kind": "call",
+       "direction": "neutral",
+       "horizon": "now",
+       "speaker": "Felix Jauvin",
+       "speaker_confidence": "high",
+       "quote": "in the interim. Um or yeah, you just you have to come in with a trading plan because it's it's getting caught up in things.",
+       "reason": "Gold is caught up in cross-asset selling, so wait out the bleed.",
+       "chapter": 5
+      },
+      {
+       "t": "18:16",
+       "seconds": 1096,
+       "kind": "thought",
+       "direction": "bullish",
+       "horizon": "long term",
+       "speaker": "Felix Jauvin",
+       "speaker_confidence": "high",
+       "quote": "things. Um even though we know where this will go eventually, I don't know when that eventually will specifically be and it can be very painful in the interim",
+       "reason": "The fundamentals for gold are good over the long run.",
+       "chapter": 5
+      },
+      {
+       "t": "18:52",
+       "seconds": 1132,
+       "kind": "thought",
+       "direction": "neutral",
+       "horizon": "months",
+       "speaker": "Quinn Thompson",
+       "speaker_confidence": "high",
+       "quote": "a just very simple validation invalidation level you could say like, hey, below those summer lows, I' not going to really care.",
+       "reason": "Gold is below the summer lows; he would only re-engage if it recovers them.",
+       "chapter": 5
+      },
+      {
+       "t": "19:06",
+       "seconds": 1146,
+       "kind": "call",
+       "direction": "neutral",
+       "horizon": "now",
+       "speaker": "Quinn Thompson",
+       "speaker_confidence": "high",
+       "quote": "things, you know, come to fruition, then then probably start to care again. But yeah, like you said, yeah, step aside.",
+       "reason": "He wants a recovery of the moving averages and better catalysts before getting involved.",
+       "chapter": 5
+      },
+      {
+       "t": "19:13",
+       "seconds": 1153,
+       "kind": "call",
+       "direction": "neutral",
+       "horizon": "now",
+       "speaker": "Felix Jauvin",
+       "speaker_confidence": "high",
+       "quote": "Yeah, step aside. Wait it out. Um, wait till it all blows over.",
+       "reason": "He agrees with staying out until the selling passes.",
+       "chapter": 5
+      }
+     ],
+     "text": "Fundamentally bullish long term, but caught in liquidity-driven selling; step aside until it regains the summer lows.",
+     "proxy": null,
+     "price": {
+      "source": "yahoo",
+      "symbol": "GC=F",
+      "at_episode": {
+       "at": "2026-10-30T20:00:00Z",
+       "price": 3892.8
+      },
+      "latest": {
+       "at": "2026-10-30T20:00:00Z",
+       "price": 3892.8
+      },
+      "change": null,
+      "with_lean": null
+     },
+     "series": [
+      [
+       "2026-09-29T20:00:00Z",
+       4209.8999
+      ],
+      [
+       "2026-09-29T22:00:00Z",
+       4216.2002
+      ],
+      [
+       "2026-09-29T23:00:00Z",
+       4211.5
+      ],
+      [
+       "2026-09-30T00:00:00Z",
+       4216.7002
+      ],
+      [
+       "2026-09-30T01:00:00Z",
+       4208.2998
+      ],
+      [
+       "2026-09-30T02:00:00Z",
+       4203.5
+      ],
+      [
+       "2026-09-30T03:00:00Z",
+       4211.0
+      ],
+      [
+       "2026-09-30T04:00:00Z",
+       4204.7002
+      ],
+      [
+       "2026-09-30T05:00:00Z",
+       4211.0
+      ],
+      [
+       "2026-09-30T06:00:00Z",
+       4209.7998
+      ],
+      [
+       "2026-09-30T07:00:00Z",
+       4222.6001
+      ],
+      [
+       "2026-09-30T08:00:00Z",
+       4225.6001
+      ],
+      [
+       "2026-09-30T09:00:00Z",
+       4223.3999
+      ],
+      [
+       "2026-09-30T10:00:00Z",
+       4219.3999
+      ],
+      [
+       "2026-09-30T11:00:00Z",
+       4215.8999
+      ],
+      [
+       "2026-09-30T12:00:00Z",
+       4217.8999
+      ],
+      [
+       "2026-09-30T13:00:00Z",
+       4240.2998
+      ],
+      [
+       "2026-09-30T14:00:00Z",
+       4208.7998
+      ],
+      [
+       "2026-09-30T15:00:00Z",
+       4196.6001
+      ],
+      [
+       "2026-09-30T16:00:00Z",
+       4188.6001
+      ],
+      [
+       "2026-09-30T17:00:00Z",
+       4189.2002
+      ],
+      [
+       "2026-09-30T18:00:00Z",
+       4182.3999
+      ],
+      [
+       "2026-09-30T19:00:00Z",
+       4182.7998
+      ],
+      [
+       "2026-09-30T20:00:00Z",
+       4188.0
+      ],
+      [
+       "2026-09-30T22:00:00Z",
+       4190.1001
+      ],
+      [
+       "2026-09-30T23:00:00Z",
+       4184.3999
+      ],
+      [
+       "2026-10-01T00:00:00Z",
+       4186.1001
+      ],
+      [
+       "2026-10-01T01:00:00Z",
+       4175.5
+      ],
+      [
+       "2026-10-01T02:00:00Z",
+       4186.1001
+      ],
+      [
+       "2026-10-01T03:00:00Z",
+       4190.2998
+      ],
+      [
+       "2026-10-01T04:00:00Z",
+       4205.0
+      ],
+      [
+       "2026-10-01T05:00:00Z",
+       4209.8999
+      ],
+      [
+       "2026-10-01T06:00:00Z",
+       4217.6001
+      ],
+      [
+       "2026-10-01T07:00:00Z",
+       4211.5
+      ],
+      [
+       "2026-10-01T08:00:00Z",
+       4193.7998
+      ],
+      [
+       "2026-10-01T09:00:00Z",
+       4182.2998
+      ],
+      [
+       "2026-10-01T10:00:00Z",
+       4184.1001
+      ],
+      [
+       "2026-10-01T11:00:00Z",
+       4206.1001
+      ],
+      [
+       "2026-10-01T12:00:00Z",
+       4212.5
+      ],
+      [
+       "2026-10-01T13:00:00Z",
+       4208.8999
+      ],
+      [
+       "2026-10-01T14:00:00Z",
+       4195.3999
+      ],
+      [
+       "2026-10-01T15:00:00Z",
+       4192.2998
+      ],
+      [
+       "2026-10-01T16:00:00Z",
+       4199.1001
+      ],
+      [
+       "2026-10-01T17:00:00Z",
+       4192.2002
+      ],
+      [
+       "2026-10-01T18:00:00Z",
+       4200.8999
+      ],
+      [
+       "2026-10-01T19:00:00Z",
+       4207.2002
+      ],
+      [
+       "2026-10-01T20:00:00Z",
+       4207.1001
+      ],
+      [
+       "2026-10-01T22:00:00Z",
+       4204.6001
+      ],
+      [
+       "2026-10-01T23:00:00Z",
+       4208.5
+      ],
+      [
+       "2026-10-02T00:00:00Z",
+       4211.3999
+      ],
+      [
+       "2026-10-02T01:00:00Z",
+       4182.5
+      ],
+      [
+       "2026-10-02T02:00:00Z",
+       4180.3999
+      ],
+      [
+       "2026-10-02T03:00:00Z",
+       4195.2998
+      ],
+      [
+       "2026-10-02T04:00:00Z",
+       4207.6001
+      ],
+      [
+       "2026-10-02T05:00:00Z",
+       4214.5
+      ],
+      [
+       "2026-10-02T06:00:00Z",
+       4216.1001
+      ],
+      [
+       "2026-10-02T07:00:00Z",
+       4210.7998
+      ],
+      [
+       "2026-10-02T08:00:00Z",
+       4217.0
+      ],
+      [
+       "2026-10-02T09:00:00Z",
+       4214.3999
+      ],
+      [
+       "2026-10-02T10:00:00Z",
+       4213.8999
+      ],
+      [
+       "2026-10-02T11:00:00Z",
+       4212.6001
+      ],
+      [
+       "2026-10-02T12:00:00Z",
+       4211.5
+      ],
+      [
+       "2026-10-02T13:00:00Z",
+       4248.3999
+      ],
+      [
+       "2026-10-02T14:00:00Z",
+       4220.7002
+      ],
+      [
+       "2026-10-02T15:00:00Z",
+       4188.3999
+      ],
+      [
+       "2026-10-02T16:00:00Z",
+       4156.2002
+      ],
+      [
+       "2026-10-02T17:00:00Z",
+       4168.0
+      ],
+      [
+       "2026-10-02T18:00:00Z",
+       4166.7002
+      ],
+      [
+       "2026-10-02T19:00:00Z",
+       4175.7002
+      ],
+      [
+       "2026-10-02T20:00:00Z",
+       4176.7998
+      ],
+      [
+       "2026-10-04T22:00:00Z",
+       4171.1001
+      ],
+      [
+       "2026-10-04T23:00:00Z",
+       4175.7002
+      ],
+      [
+       "2026-10-05T00:00:00Z",
+       4170.7998
+      ],
+      [
+       "2026-10-05T01:00:00Z",
+       4184.8999
+      ],
+      [
+       "2026-10-05T02:00:00Z",
+       4188.2998
+      ],
+      [
+       "2026-10-05T03:00:00Z",
+       4170.3999
+      ],
+      [
+       "2026-10-05T04:00:00Z",
+       4171.2002
+      ],
+      [
+       "2026-10-05T05:00:00Z",
+       4159.0
+      ],
+      [
+       "2026-10-05T06:00:00Z",
+       4162.1001
+      ],
+      [
+       "2026-10-05T07:00:00Z",
+       4183.7002
+      ],
+      [
+       "2026-10-05T08:00:00Z",
+       4189.0
+      ],
+      [
+       "2026-10-05T09:00:00Z",
+       4195.5
+      ],
+      [
+       "2026-10-05T10:00:00Z",
+       4187.2002
+      ],
+      [
+       "2026-10-05T11:00:00Z",
+       4190.7998
+      ],
+      [
+       "2026-10-05T12:00:00Z",
+       4184.3999
+      ],
+      [
+       "2026-10-05T13:00:00Z",
+       4184.2998
+      ],
+      [
+       "2026-10-05T14:00:00Z",
+       4163.0
+      ],
+      [
+       "2026-10-05T15:00:00Z",
+       4175.2002
+      ],
+      [
+       "2026-10-05T16:00:00Z",
+       4164.7002
+      ],
+      [
+       "2026-10-05T17:00:00Z",
+       4158.2998
+      ],
+      [
+       "2026-10-05T18:00:00Z",
+       4164.3999
+      ],
+      [
+       "2026-10-05T19:00:00Z",
+       4170.6001
+      ],
+      [
+       "2026-10-05T20:00:00Z",
+       4168.3999
+      ],
+      [
+       "2026-10-05T21:00:00Z",
+       4167.6001
+      ],
+      [
+       "2026-10-05T22:00:00Z",
+       4169.2002
+      ],
+      [
+       "2026-10-05T23:00:00Z",
+       4168.0
+      ],
+      [
+       "2026-10-06T00:00:00Z",
+       4161.2002
+      ],
+      [
+       "2026-10-06T01:00:00Z",
+       4178.1001
+      ],
+      [
+       "2026-10-06T02:00:00Z",
+       4157.0
+      ],
+      [
+       "2026-10-06T03:00:00Z",
+       4157.6001
+      ],
+      [
+       "2026-10-06T04:00:00Z",
+       4155.7998
+      ],
+      [
+       "2026-10-06T05:00:00Z",
+       4147.8999
+      ],
+      [
+       "2026-10-06T06:00:00Z",
+       4146.6001
+      ],
+      [
+       "2026-10-06T07:00:00Z",
+       4159.0
+      ],
+      [
+       "2026-10-06T08:00:00Z",
+       4167.5
+      ],
+      [
+       "2026-10-06T09:00:00Z",
+       4182.6001
+      ],
+      [
+       "2026-10-06T10:00:00Z",
+       4179.8999
+      ],
+      [
+       "2026-10-06T11:00:00Z",
+       4186.5
+      ],
+      [
+       "2026-10-06T12:00:00Z",
+       4201.7002
+      ],
+      [
+       "2026-10-06T13:00:00Z",
+       4198.2002
+      ],
+      [
+       "2026-10-06T14:00:00Z",
+       4180.1001
+      ],
+      [
+       "2026-10-06T15:00:00Z",
+       4184.3999
+      ],
+      [
+       "2026-10-06T16:00:00Z",
+       4192.7002
+      ],
+      [
+       "2026-10-06T17:00:00Z",
+       4184.2002
+      ],
+      [
+       "2026-10-06T18:00:00Z",
+       4192.2002
+      ],
+      [
+       "2026-10-06T19:00:00Z",
+       4203.3999
+      ],
+      [
+       "2026-10-06T20:00:00Z",
+       4197.1001
+      ],
+      [
+       "2026-10-06T22:00:00Z",
+       4195.0
+      ],
+      [
+       "2026-10-06T23:00:00Z",
+       4190.7998
+      ],
+      [
+       "2026-10-07T00:00:00Z",
+       4193.2002
+      ],
+      [
+       "2026-10-07T01:00:00Z",
+       4183.7998
+      ],
+      [
+       "2026-10-07T02:00:00Z",
+       4174.2998
+      ],
+      [
+       "2026-10-07T03:00:00Z",
+       4168.8999
+      ],
+      [
+       "2026-10-07T04:00:00Z",
+       4169.8999
+      ],
+      [
+       "2026-10-07T05:00:00Z",
+       4161.7002
+      ],
+      [
+       "2026-10-07T06:00:00Z",
+       4154.7998
+      ],
+      [
+       "2026-10-07T07:00:00Z",
+       4156.7002
+      ],
+      [
+       "2026-10-07T08:00:00Z",
+       4159.1001
+      ],
+      [
+       "2026-10-07T09:00:00Z",
+       4149.7002
+      ],
+      [
+       "2026-10-07T10:00:00Z",
+       4145.7002
+      ],
+      [
+       "2026-10-07T11:00:00Z",
+       4143.1001
+      ],
+      [
+       "2026-10-07T12:00:00Z",
+       4147.3999
+      ],
+      [
+       "2026-10-07T13:00:00Z",
+       4112.6001
+      ],
+      [
+       "2026-10-07T14:00:00Z",
+       4124.0
+      ],
+      [
+       "2026-10-07T15:00:00Z",
+       4130.3999
+      ],
+      [
+       "2026-10-07T16:00:00Z",
+       4131.1001
+      ],
+      [
+       "2026-10-07T17:00:00Z",
+       4135.0
+      ],
+      [
+       "2026-10-07T18:00:00Z",
+       4136.5
+      ],
+      [
+       "2026-10-07T19:00:00Z",
+       4135.6001
+      ],
+      [
+       "2026-10-07T20:00:00Z",
+       4127.7002
+      ],
+      [
+       "2026-10-07T22:00:00Z",
+       4139.8999
+      ],
+      [
+       "2026-10-07T23:00:00Z",
+       4131.2002
+      ],
+      [
+       "2026-10-08T00:00:00Z",
+       4133.0
+      ],
+      [
+       "2026-10-08T01:00:00Z",
+       4141.5
+      ],
+      [
+       "2026-10-08T02:00:00Z",
+       4156.6001
+      ],
+      [
+       "2026-10-08T03:00:00Z",
+       4157.0
+      ],
+      [
+       "2026-10-08T04:00:00Z",
+       4159.7998
+      ],
+      [
+       "2026-10-08T05:00:00Z",
+       4157.5
+      ],
+      [
+       "2026-10-08T06:00:00Z",
+       4141.8999
+      ],
+      [
+       "2026-10-08T07:00:00Z",
+       4145.7002
+      ],
+      [
+       "2026-10-08T08:00:00Z",
+       4144.3999
+      ],
+      [
+       "2026-10-08T09:00:00Z",
+       4151.1001
+      ],
+      [
+       "2026-10-08T10:00:00Z",
+       4148.0
+      ],
+      [
+       "2026-10-08T11:00:00Z",
+       4146.1001
+      ],
+      [
+       "2026-10-08T12:00:00Z",
+       4148.7002
+      ],
+      [
+       "2026-10-08T13:00:00Z",
+       4142.8999
+      ],
+      [
+       "2026-10-08T14:00:00Z",
+       4154.6001
+      ],
+      [
+       "2026-10-08T15:00:00Z",
+       4148.8999
+      ],
+      [
+       "2026-10-08T16:00:00Z",
+       4135.7998
+      ],
+      [
+       "2026-10-08T17:00:00Z",
+       4148.2002
+      ],
+      [
+       "2026-10-08T18:00:00Z",
+       4157.5
+      ],
+      [
+       "2026-10-08T19:00:00Z",
+       4151.5
+      ],
+      [
+       "2026-10-08T20:00:00Z",
+       4158.1001
+      ],
+      [
+       "2026-10-08T22:00:00Z",
+       4159.7002
+      ],
+      [
+       "2026-10-08T23:00:00Z",
+       4163.2998
+      ],
+      [
+       "2026-10-09T00:00:00Z",
+       4169.3999
+      ],
+      [
+       "2026-10-09T01:00:00Z",
+       4167.8999
+      ],
+      [
+       "2026-10-09T02:00:00Z",
+       4199.7002
+      ],
+      [
+       "2026-10-09T03:00:00Z",
+       4202.6001
+      ],
+      [
+       "2026-10-09T04:00:00Z",
+       4202.1001
+      ],
+      [
+       "2026-10-09T05:00:00Z",
+       4206.3999
+      ],
+      [
+       "2026-10-09T06:00:00Z",
+       4218.0
+      ],
+      [
+       "2026-10-09T07:00:00Z",
+       4220.7002
+      ],
+      [
+       "2026-10-09T08:00:00Z",
+       4219.2998
+      ],
+      [
+       "2026-10-09T09:00:00Z",
+       4213.1001
+      ],
+      [
+       "2026-10-09T10:00:00Z",
+       4211.0
+      ],
+      [
+       "2026-10-09T11:00:00Z",
+       4204.0
+      ],
+      [
+       "2026-10-09T12:00:00Z",
+       4207.7998
+      ],
+      [
+       "2026-10-09T13:00:00Z",
+       4200.5
+      ],
+      [
+       "2026-10-09T14:00:00Z",
+       4215.1001
+      ],
+      [
+       "2026-10-09T15:00:00Z",
+       4206.8999
+      ],
+      [
+       "2026-10-09T16:00:00Z",
+       4213.2998
+      ],
+      [
+       "2026-10-09T17:00:00Z",
+       4215.8999
+      ],
+      [
+       "2026-10-09T18:00:00Z",
+       4220.7998
+      ],
+      [
+       "2026-10-09T19:00:00Z",
+       4224.6001
+      ],
+      [
+       "2026-10-09T20:00:00Z",
+       4220.2002
+      ],
+      [
+       "2026-10-11T22:00:00Z",
+       4216.7002
+      ],
+      [
+       "2026-10-11T23:00:00Z",
+       4211.1001
+      ],
+      [
+       "2026-10-12T00:00:00Z",
+       4215.5
+      ],
+      [
+       "2026-10-12T01:00:00Z",
+       4233.7998
+      ],
+      [
+       "2026-10-12T02:00:00Z",
+       4235.8999
+      ],
+      [
+       "2026-10-12T03:00:00Z",
+       4228.7002
+      ],
+      [
+       "2026-10-12T04:00:00Z",
+       4227.3999
+      ],
+      [
+       "2026-10-12T05:00:00Z",
+       4218.5
+      ],
+      [
+       "2026-10-12T06:00:00Z",
+       4215.2002
+      ],
+      [
+       "2026-10-12T07:00:00Z",
+       4210.1001
+      ],
+      [
+       "2026-10-12T08:00:00Z",
+       4204.6001
+      ],
+      [
+       "2026-10-12T09:00:00Z",
+       4198.0
+      ],
+      [
+       "2026-10-12T10:00:00Z",
+       4197.7002
+      ],
+      [
+       "2026-10-12T11:00:00Z",
+       4201.7998
+      ],
+      [
+       "2026-10-12T12:00:00Z",
+       4192.7002
+      ],
+      [
+       "2026-10-12T13:00:00Z",
+       4189.0
+      ],
+      [
+       "2026-10-12T14:00:00Z",
+       4195.3999
+      ],
+      [
+       "2026-10-12T15:00:00Z",
+       4188.1001
+      ],
+      [
+       "2026-10-12T16:00:00Z",
+       4188.7002
+      ],
+      [
+       "2026-10-12T17:00:00Z",
+       4188.3999
+      ],
+      [
+       "2026-10-12T18:00:00Z",
+       4194.2002
+      ],
+      [
+       "2026-10-12T19:00:00Z",
+       4192.0
+      ],
+      [
+       "2026-10-12T20:00:00Z",
+       4193.7002
+      ],
+      [
+       "2026-10-12T22:00:00Z",
+       4195.5
+      ],
+      [
+       "2026-10-12T23:00:00Z",
+       4193.3999
+      ],
+      [
+       "2026-10-13T00:00:00Z",
+       4194.7998
+      ],
+      [
+       "2026-10-13T01:00:00Z",
+       4181.7002
+      ],
+      [
+       "2026-10-13T02:00:00Z",
+       4188.1001
+      ],
+      [
+       "2026-10-13T03:00:00Z",
+       4203.7998
+      ],
+      [
+       "2026-10-13T04:00:00Z",
+       4212.6001
+      ],
+      [
+       "2026-10-13T05:00:00Z",
+       4219.8999
+      ],
+      [
+       "2026-10-13T06:00:00Z",
+       4216.7002
+      ],
+      [
+       "2026-10-13T07:00:00Z",
+       4215.6001
+      ],
+      [
+       "2026-10-13T08:00:00Z",
+       4211.6001
+      ],
+      [
+       "2026-10-13T09:00:00Z",
+       4210.6001
+      ],
+      [
+       "2026-10-13T10:00:00Z",
+       4210.7998
+      ],
+      [
+       "2026-10-13T11:00:00Z",
+       4205.5
+      ],
+      [
+       "2026-10-13T12:00:00Z",
+       4208.8999
+      ],
+      [
+       "2026-10-13T13:00:00Z",
+       4203.1001
+      ],
+      [
+       "2026-10-13T14:00:00Z",
+       4192.5
+      ],
+      [
+       "2026-10-13T15:00:00Z",
+       4190.3999
+      ],
+      [
+       "2026-10-13T16:00:00Z",
+       4182.2002
+      ],
+      [
+       "2026-10-13T17:00:00Z",
+       4175.7998
+      ],
+      [
+       "2026-10-13T18:00:00Z",
+       4171.6001
+      ],
+      [
+       "2026-10-13T19:00:00Z",
+       4186.3999
+      ],
+      [
+       "2026-10-13T20:00:00Z",
+       4186.1001
+      ],
+      [
+       "2026-10-13T21:00:00Z",
+       4184.2002
+      ],
+      [
+       "2026-10-13T22:00:00Z",
+       4184.2002
+      ],
+      [
+       "2026-10-13T23:00:00Z",
+       4184.5
+      ],
+      [
+       "2026-10-14T00:00:00Z",
+       4177.8999
+      ],
+      [
+       "2026-10-14T01:00:00Z",
+       4178.0
+      ],
+      [
+       "2026-10-14T02:00:00Z",
+       4178.0
+      ],
+      [
+       "2026-10-14T03:00:00Z",
+       4190.7002
+      ],
+      [
+       "2026-10-14T04:00:00Z",
+       4185.5
+      ],
+      [
+       "2026-10-14T05:00:00Z",
+       4188.8999
+      ],
+      [
+       "2026-10-14T06:00:00Z",
+       4171.1001
+      ],
+      [
+       "2026-10-14T07:00:00Z",
+       4170.5
+      ],
+      [
+       "2026-10-14T08:00:00Z",
+       4172.1001
+      ],
+      [
+       "2026-10-14T09:00:00Z",
+       4165.7002
+      ],
+      [
+       "2026-10-14T10:00:00Z",
+       4166.6001
+      ],
+      [
+       "2026-10-14T11:00:00Z",
+       4163.3999
+      ],
+      [
+       "2026-10-14T12:00:00Z",
+       4161.7998
+      ],
+      [
+       "2026-10-14T13:00:00Z",
+       4120.1001
+      ],
+      [
+       "2026-10-14T14:00:00Z",
+       4110.3999
+      ],
+      [
+       "2026-10-14T15:00:00Z",
+       4115.6001
+      ],
+      [
+       "2026-10-14T16:00:00Z",
+       4102.2002
+      ],
+      [
+       "2026-10-14T17:00:00Z",
+       4105.2002
+      ],
+      [
+       "2026-10-14T18:00:00Z",
+       4105.7002
+      ],
+      [
+       "2026-10-14T19:00:00Z",
+       4118.8999
+      ],
+      [
+       "2026-10-14T20:00:00Z",
+       4122.8999
+      ],
+      [
+       "2026-10-14T22:00:00Z",
+       4128.2998
+      ],
+      [
+       "2026-10-14T23:00:00Z",
+       4128.0
+      ],
+      [
+       "2026-10-15T00:00:00Z",
+       4133.2002
+      ],
+      [
+       "2026-10-15T01:00:00Z",
+       4160.7998
+      ],
+      [
+       "2026-10-15T02:00:00Z",
+       4160.0
+      ],
+      [
+       "2026-10-15T03:00:00Z",
+       4181.2998
+      ],
+      [
+       "2026-10-15T04:00:00Z",
+       4166.6001
+      ],
+      [
+       "2026-10-15T05:00:00Z",
+       4165.7998
+      ],
+      [
+       "2026-10-15T06:00:00Z",
+       4159.0
+      ],
+      [
+       "2026-10-15T07:00:00Z",
+       4157.6001
+      ],
+      [
+       "2026-10-15T08:00:00Z",
+       4167.1001
+      ],
+      [
+       "2026-10-15T09:00:00Z",
+       4172.7998
+      ],
+      [
+       "2026-10-15T10:00:00Z",
+       4178.7002
+      ],
+      [
+       "2026-10-15T11:00:00Z",
+       4176.3999
+      ],
+      [
+       "2026-10-15T12:00:00Z",
+       4166.1001
+      ],
+      [
+       "2026-10-15T13:00:00Z",
+       4173.2998
+      ],
+      [
+       "2026-10-15T14:00:00Z",
+       4175.7002
+      ],
+      [
+       "2026-10-15T15:00:00Z",
+       4179.0
+      ],
+      [
+       "2026-10-15T16:00:00Z",
+       4170.5
+      ],
+      [
+       "2026-10-15T17:00:00Z",
+       4168.3999
+      ],
+      [
+       "2026-10-15T18:00:00Z",
+       4174.2998
+      ],
+      [
+       "2026-10-15T19:00:00Z",
+       4178.7002
+      ],
+      [
+       "2026-10-15T20:00:00Z",
+       4195.8999
+      ],
+      [
+       "2026-10-15T22:00:00Z",
+       4192.1001
+      ],
+      [
+       "2026-10-15T23:00:00Z",
+       4186.0
+      ],
+      [
+       "2026-10-16T00:00:00Z",
+       4176.6001
+      ],
+      [
+       "2026-10-16T01:00:00Z",
+       4177.1001
+      ],
+      [
+       "2026-10-16T02:00:00Z",
+       4173.6001
+      ],
+      [
+       "2026-10-16T03:00:00Z",
+       4197.1001
+      ],
+      [
+       "2026-10-16T04:00:00Z",
+       4205.0
+      ],
+      [
+       "2026-10-16T05:00:00Z",
+       4195.8999
+      ],
+      [
+       "2026-10-16T06:00:00Z",
+       4195.8999
+      ],
+      [
+       "2026-10-16T07:00:00Z",
+       4198.2002
+      ],
+      [
+       "2026-10-16T08:00:00Z",
+       4208.5
+      ],
+      [
+       "2026-10-16T09:00:00Z",
+       4210.0
+      ],
+      [
+       "2026-10-16T10:00:00Z",
+       4198.2002
+      ],
+      [
+       "2026-10-16T11:00:00Z",
+       4195.0
+      ],
+      [
+       "2026-10-16T12:00:00Z",
+       4192.7998
+      ],
+      [
+       "2026-10-16T13:00:00Z",
+       4187.2998
+      ],
+      [
+       "2026-10-16T14:00:00Z",
+       4206.1001
+      ],
+      [
+       "2026-10-16T15:00:00Z",
+       4206.1001
+      ],
+      [
+       "2026-10-16T16:00:00Z",
+       4188.5
+      ],
+      [
+       "2026-10-16T17:00:00Z",
+       4182.2998
+      ],
+      [
+       "2026-10-16T18:00:00Z",
+       4183.7998
+      ],
+      [
+       "2026-10-16T19:00:00Z",
+       4180.3999
+      ],
+      [
+       "2026-10-16T20:00:00Z",
+       4189.7998
+      ],
+      [
+       "2026-10-18T22:00:00Z",
+       4191.2998
+      ],
+      [
+       "2026-10-18T23:00:00Z",
+       4196.3999
+      ],
+      [
+       "2026-10-19T00:00:00Z",
+       4205.5
+      ],
+      [
+       "2026-10-19T01:00:00Z",
+       4194.0
+      ],
+      [
+       "2026-10-19T02:00:00Z",
+       4195.0
+      ],
+      [
+       "2026-10-19T03:00:00Z",
+       4196.7998
+      ],
+      [
+       "2026-10-19T04:00:00Z",
+       4201.2002
+      ],
+      [
+       "2026-10-19T05:00:00Z",
+       4204.7998
+      ],
+      [
+       "2026-10-19T06:00:00Z",
+       4205.0
+      ],
+      [
+       "2026-10-19T07:00:00Z",
+       4204.2998
+      ],
+      [
+       "2026-10-19T08:00:00Z",
+       4193.2002
+      ],
+      [
+       "2026-10-19T09:00:00Z",
+       4190.7002
+      ],
+      [
+       "2026-10-19T10:00:00Z",
+       4187.7998
+      ],
+      [
+       "2026-10-19T11:00:00Z",
+       4190.2998
+      ],
+      [
+       "2026-10-19T12:00:00Z",
+       4181.1001
+      ],
+      [
+       "2026-10-19T13:00:00Z",
+       4181.3999
+      ],
+      [
+       "2026-10-19T14:00:00Z",
+       4174.1001
+      ],
+      [
+       "2026-10-19T15:00:00Z",
+       4165.5
+      ],
+      [
+       "2026-10-19T16:00:00Z",
+       4161.1001
+      ],
+      [
+       "2026-10-19T17:00:00Z",
+       4160.2998
+      ],
+      [
+       "2026-10-19T18:00:00Z",
+       4164.8999
+      ],
+      [
+       "2026-10-19T19:00:00Z",
+       4165.1001
+      ],
+      [
+       "2026-10-19T20:00:00Z",
+       4161.3999
+      ],
+      [
+       "2026-10-19T22:00:00Z",
+       4162.3999
+      ],
+      [
+       "2026-10-19T23:00:00Z",
+       4155.2002
+      ],
+      [
+       "2026-10-20T00:00:00Z",
+       4151.3999
+      ],
+      [
+       "2026-10-20T01:00:00Z",
+       4150.2002
+      ],
+      [
+       "2026-10-20T02:00:00Z",
+       4150.0
+      ],
+      [
+       "2026-10-20T03:00:00Z",
+       4157.7998
+      ],
+      [
+       "2026-10-20T04:00:00Z",
+       4165.2998
+      ],
+      [
+       "2026-10-20T05:00:00Z",
+       4162.8999
+      ],
+      [
+       "2026-10-20T06:00:00Z",
+       4138.3999
+      ],
+      [
+       "2026-10-20T07:00:00Z",
+       4153.5
+      ],
+      [
+       "2026-10-20T08:00:00Z",
+       4143.2998
+      ],
+      [
+       "2026-10-20T09:00:00Z",
+       4138.7002
+      ],
+      [
+       "2026-10-20T10:00:00Z",
+       4131.3999
+      ],
+      [
+       "2026-10-20T11:00:00Z",
+       4139.2998
+      ],
+      [
+       "2026-10-20T12:00:00Z",
+       4142.7002
+      ],
+      [
+       "2026-10-20T13:00:00Z",
+       4137.7002
+      ],
+      [
+       "2026-10-20T14:00:00Z",
+       4146.5
+      ],
+      [
+       "2026-10-20T15:00:00Z",
+       4162.2002
+      ],
+      [
+       "2026-10-20T16:00:00Z",
+       4150.1001
+      ],
+      [
+       "2026-10-20T17:00:00Z",
+       4139.7002
+      ],
+      [
+       "2026-10-20T18:00:00Z",
+       4142.7998
+      ],
+      [
+       "2026-10-20T19:00:00Z",
+       4142.5
+      ],
+      [
+       "2026-10-20T20:00:00Z",
+       4138.7998
+      ],
+      [
+       "2026-10-20T22:00:00Z",
+       4143.3999
+      ],
+      [
+       "2026-10-20T23:00:00Z",
+       4138.3999
+      ],
+      [
+       "2026-10-21T00:00:00Z",
+       4132.2002
+      ],
+      [
+       "2026-10-21T01:00:00Z",
+       4135.2998
+      ],
+      [
+       "2026-10-21T02:00:00Z",
+       4137.0
+      ],
+      [
+       "2026-10-21T03:00:00Z",
+       4135.2998
+      ],
+      [
+       "2026-10-21T04:00:00Z",
+       4135.6001
+      ],
+      [
+       "2026-10-21T05:00:00Z",
+       4132.1001
+      ],
+      [
+       "2026-10-21T06:00:00Z",
+       4135.5
+      ],
+      [
+       "2026-10-21T07:00:00Z",
+       4129.7002
+      ],
+      [
+       "2026-10-21T08:00:00Z",
+       4142.2002
+      ],
+      [
+       "2026-10-21T09:00:00Z",
+       4137.6001
+      ],
+      [
+       "2026-10-21T10:00:00Z",
+       4136.5
+      ],
+      [
+       "2026-10-21T11:00:00Z",
+       4145.2002
+      ],
+      [
+       "2026-10-21T12:00:00Z",
+       4158.7998
+      ],
+      [
+       "2026-10-21T13:00:00Z",
+       4148.0
+      ],
+      [
+       "2026-10-21T14:00:00Z",
+       4147.5
+      ],
+      [
+       "2026-10-21T15:00:00Z",
+       4148.5
+      ],
+      [
+       "2026-10-21T16:00:00Z",
+       4150.2002
+      ],
+      [
+       "2026-10-21T17:00:00Z",
+       4149.7998
+      ],
+      [
+       "2026-10-21T18:00:00Z",
+       4155.0
+      ],
+      [
+       "2026-10-21T19:00:00Z",
+       4131.2998
+      ],
+      [
+       "2026-10-21T20:00:00Z",
+       4152.6001
+      ],
+      [
+       "2026-10-21T22:00:00Z",
+       4159.0
+      ],
+      [
+       "2026-10-21T23:00:00Z",
+       4148.1001
+      ],
+      [
+       "2026-10-22T00:00:00Z",
+       4142.6001
+      ],
+      [
+       "2026-10-22T01:00:00Z",
+       4129.8999
+      ],
+      [
+       "2026-10-22T02:00:00Z",
+       4131.5
+      ],
+      [
+       "2026-10-22T03:00:00Z",
+       4132.6001
+      ],
+      [
+       "2026-10-22T04:00:00Z",
+       4108.0
+      ],
+      [
+       "2026-10-22T05:00:00Z",
+       4107.0
+      ],
+      [
+       "2026-10-22T06:00:00Z",
+       4105.1001
+      ],
+      [
+       "2026-10-22T07:00:00Z",
+       4108.8999
+      ],
+      [
+       "2026-10-22T08:00:00Z",
+       4103.7998
+      ],
+      [
+       "2026-10-22T09:00:00Z",
+       4098.7998
+      ],
+      [
+       "2026-10-22T10:00:00Z",
+       4104.2998
+      ],
+      [
+       "2026-10-22T11:00:00Z",
+       4096.1001
+      ],
+      [
+       "2026-10-22T12:00:00Z",
+       4074.7
+      ],
+      [
+       "2026-10-22T13:00:00Z",
+       4103.7998
+      ],
+      [
+       "2026-10-22T14:00:00Z",
+       4071.6001
+      ],
+      [
+       "2026-10-22T15:00:00Z",
+       4074.8
+      ],
+      [
+       "2026-10-22T16:00:00Z",
+       4067.3
+      ],
+      [
+       "2026-10-22T17:00:00Z",
+       4053.3
+      ],
+      [
+       "2026-10-22T18:00:00Z",
+       4061.8
+      ],
+      [
+       "2026-10-22T19:00:00Z",
+       4046.1001
+      ],
+      [
+       "2026-10-22T20:00:00Z",
+       4044.0
+      ],
+      [
+       "2026-10-22T22:00:00Z",
+       4042.2
+      ],
+      [
+       "2026-10-22T23:00:00Z",
+       4042.8999
+      ],
+      [
+       "2026-10-23T00:00:00Z",
+       4038.3
+      ],
+      [
+       "2026-10-23T01:00:00Z",
+       4045.5
+      ],
+      [
+       "2026-10-23T02:00:00Z",
+       4006.2
+      ],
+      [
+       "2026-10-23T03:00:00Z",
+       4032.1001
+      ],
+      [
+       "2026-10-23T04:00:00Z",
+       4029.8999
+      ],
+      [
+       "2026-10-23T05:00:00Z",
+       4018.8
+      ],
+      [
+       "2026-10-23T06:00:00Z",
+       4035.3999
+      ],
+      [
+       "2026-10-23T07:00:00Z",
+       4026.8999
+      ],
+      [
+       "2026-10-23T08:00:00Z",
+       4025.8
+      ],
+      [
+       "2026-10-23T09:00:00Z",
+       4037.0
+      ],
+      [
+       "2026-10-23T10:00:00Z",
+       4038.2
+      ],
+      [
+       "2026-10-23T11:00:00Z",
+       4037.6001
+      ],
+      [
+       "2026-10-23T12:00:00Z",
+       4038.8
+      ],
+      [
+       "2026-10-23T13:00:00Z",
+       4040.3999
+      ],
+      [
+       "2026-10-23T14:00:00Z",
+       4037.0
+      ],
+      [
+       "2026-10-23T15:00:00Z",
+       4014.1001
+      ],
+      [
+       "2026-10-23T16:00:00Z",
+       4017.2
+      ],
+      [
+       "2026-10-23T17:00:00Z",
+       4014.7
+      ],
+      [
+       "2026-10-23T18:00:00Z",
+       4013.8
+      ],
+      [
+       "2026-10-23T19:00:00Z",
+       4012.2
+      ],
+      [
+       "2026-10-23T20:00:00Z",
+       4013.1001
+      ],
+      [
+       "2026-10-25T22:00:00Z",
+       4010.2
+      ],
+      [
+       "2026-10-25T23:00:00Z",
+       4014.1001
+      ],
+      [
+       "2026-10-26T00:00:00Z",
+       4010.6001
+      ],
+      [
+       "2026-10-26T01:00:00Z",
+       3998.8999
+      ],
+      [
+       "2026-10-26T02:00:00Z",
+       4002.3
+      ],
+      [
+       "2026-10-26T03:00:00Z",
+       4012.7
+      ],
+      [
+       "2026-10-26T04:00:00Z",
+       4020.3999
+      ],
+      [
+       "2026-10-26T05:00:00Z",
+       4029.3
+      ],
+      [
+       "2026-10-26T06:00:00Z",
+       4027.5
+      ],
+      [
+       "2026-10-26T07:00:00Z",
+       4019.1001
+      ],
+      [
+       "2026-10-26T08:00:00Z",
+       4022.6001
+      ],
+      [
+       "2026-10-26T09:00:00Z",
+       4030.8999
+      ],
+      [
+       "2026-10-26T10:00:00Z",
+       4031.5
+      ],
+      [
+       "2026-10-26T11:00:00Z",
+       4028.8999
+      ],
+      [
+       "2026-10-26T12:00:00Z",
+       4030.2
+      ],
+      [
+       "2026-10-26T13:00:00Z",
+       4029.0
+      ],
+      [
+       "2026-10-26T14:00:00Z",
+       4006.6001
+      ],
+      [
+       "2026-10-26T15:00:00Z",
+       4037.6001
+      ],
+      [
+       "2026-10-26T16:00:00Z",
+       4030.2
+      ],
+      [
+       "2026-10-26T17:00:00Z",
+       4035.0
+      ],
+      [
+       "2026-10-26T18:00:00Z",
+       4034.3999
+      ],
+      [
+       "2026-10-26T19:00:00Z",
+       4026.2
+      ],
+      [
+       "2026-10-26T20:00:00Z",
+       4027.1001
+      ],
+      [
+       "2026-10-26T22:00:00Z",
+       4032.8
+      ],
+      [
+       "2026-10-26T23:00:00Z",
+       4026.7
+      ],
+      [
+       "2026-10-27T00:00:00Z",
+       4018.8
+      ],
+      [
+       "2026-10-27T01:00:00Z",
+       4022.6001
+      ],
+      [
+       "2026-10-27T02:00:00Z",
+       4023.7
+      ],
+      [
+       "2026-10-27T03:00:00Z",
+       4022.2
+      ],
+      [
+       "2026-10-27T04:00:00Z",
+       4030.6001
+      ],
+      [
+       "2026-10-27T05:00:00Z",
+       4023.6001
+      ],
+      [
+       "2026-10-27T06:00:00Z",
+       4021.6001
+      ],
+      [
+       "2026-10-27T07:00:00Z",
+       4013.1001
+      ],
+      [
+       "2026-10-27T08:00:00Z",
+       4010.7
+      ],
+      [
+       "2026-10-27T09:00:00Z",
+       4007.3999
+      ],
+      [
+       "2026-10-27T10:00:00Z",
+       4015.2
+      ],
+      [
+       "2026-10-27T11:00:00Z",
+       4021.3
+      ],
+      [
+       "2026-10-27T12:00:00Z",
+       4025.7
+      ],
+      [
+       "2026-10-27T13:00:00Z",
+       4036.3999
+      ],
+      [
+       "2026-10-27T14:00:00Z",
+       4043.8
+      ],
+      [
+       "2026-10-27T15:00:00Z",
+       4066.5
+      ],
+      [
+       "2026-10-27T16:00:00Z",
+       4077.3999
+      ],
+      [
+       "2026-10-27T17:00:00Z",
+       4072.5
+      ],
+      [
+       "2026-10-27T18:00:00Z",
+       4070.2
+      ],
+      [
+       "2026-10-27T19:00:00Z",
+       4070.3999
+      ],
+      [
+       "2026-10-27T20:00:00Z",
+       4074.7
+      ],
+      [
+       "2026-10-27T22:00:00Z",
+       4073.6001
+      ],
+      [
+       "2026-10-27T23:00:00Z",
+       4077.0
+      ],
+      [
+       "2026-10-28T00:00:00Z",
+       4075.3999
+      ],
+      [
+       "2026-10-28T01:00:00Z",
+       4075.8999
+      ],
+      [
+       "2026-10-28T02:00:00Z",
+       4062.5
+      ],
+      [
+       "2026-10-28T03:00:00Z",
+       4060.2
+      ],
+      [
+       "2026-10-28T04:00:00Z",
+       4056.2
+      ],
+      [
+       "2026-10-28T05:00:00Z",
+       4049.8
+      ],
+      [
+       "2026-10-28T06:00:00Z",
+       4043.3
+      ],
+      [
+       "2026-10-28T07:00:00Z",
+       4043.0
+      ],
+      [
+       "2026-10-28T08:00:00Z",
+       4057.7
+      ],
+      [
+       "2026-10-28T09:00:00Z",
+       4066.3999
+      ],
+      [
+       "2026-10-28T10:00:00Z",
+       4068.7
+      ],
+      [
+       "2026-10-28T11:00:00Z",
+       4058.5
+      ],
+      [
+       "2026-10-28T12:00:00Z",
+       4058.8
+      ],
+      [
+       "2026-10-28T13:00:00Z",
+       4067.1001
+      ],
+      [
+       "2026-10-28T14:00:00Z",
+       4062.7
+      ],
+      [
+       "2026-10-28T15:00:00Z",
+       4054.3999
+      ],
+      [
+       "2026-10-28T16:00:00Z",
+       4054.5
+      ],
+      [
+       "2026-10-28T17:00:00Z",
+       4055.2
+      ],
+      [
+       "2026-10-28T18:00:00Z",
+       4054.7
+      ],
+      [
+       "2026-10-28T19:00:00Z",
+       4046.3999
+      ],
+      [
+       "2026-10-28T20:00:00Z",
+       4089.1001
+      ],
+      [
+       "2026-10-28T22:00:00Z",
+       4081.3999
+      ],
+      [
+       "2026-10-28T23:00:00Z",
+       4064.3
+      ],
+      [
+       "2026-10-29T00:00:00Z",
+       4067.0
+      ],
+      [
+       "2026-10-29T01:00:00Z",
+       4048.3
+      ],
+      [
+       "2026-10-29T02:00:00Z",
+       4074.6001
+      ],
+      [
+       "2026-10-29T03:00:00Z",
+       4059.5
+      ],
+      [
+       "2026-10-29T04:00:00Z",
+       4049.8999
+      ],
+      [
+       "2026-10-29T05:00:00Z",
+       4049.3999
+      ],
+      [
+       "2026-10-29T06:00:00Z",
+       4036.1001
+      ],
+      [
+       "2026-10-29T07:00:00Z",
+       4046.3999
+      ],
+      [
+       "2026-10-29T08:00:00Z",
+       4034.3
+      ],
+      [
+       "2026-10-29T09:00:00Z",
+       4035.2
+      ],
+      [
+       "2026-10-29T10:00:00Z",
+       4040.6001
+      ],
+      [
+       "2026-10-29T11:00:00Z",
+       4042.8
+      ],
+      [
+       "2026-10-29T12:00:00Z",
+       4030.5
+      ],
+      [
+       "2026-10-29T13:00:00Z",
+       4031.5
+      ],
+      [
+       "2026-10-29T14:00:00Z",
+       4034.6001
+      ],
+      [
+       "2026-10-29T15:00:00Z",
+       4038.3
+      ],
+      [
+       "2026-10-29T16:00:00Z",
+       4035.0
+      ],
+      [
+       "2026-10-29T17:00:00Z",
+       4029.6001
+      ],
+      [
+       "2026-10-29T18:00:00Z",
+       4018.2
+      ],
+      [
+       "2026-10-29T19:00:00Z",
+       4023.6001
+      ],
+      [
+       "2026-10-29T20:00:00Z",
+       4034.2
+      ],
+      [
+       "2026-10-29T22:00:00Z",
+       4033.6001
+      ],
+      [
+       "2026-10-29T23:00:00Z",
+       4033.6001
+      ],
+      [
+       "2026-10-30T00:00:00Z",
+       4019.8
+      ],
+      [
+       "2026-10-30T01:00:00Z",
+       4016.7
+      ],
+      [
+       "2026-10-30T02:00:00Z",
+       4018.2
+      ],
+      [
+       "2026-10-30T03:00:00Z",
+       4007.8999
+      ],
+      [
+       "2026-10-30T04:00:00Z",
+       4003.8
+      ],
+      [
+       "2026-10-30T05:00:00Z",
+       4006.5
+      ],
+      [
+       "2026-10-30T06:00:00Z",
+       4001.3
+      ],
+      [
+       "2026-10-30T07:00:00Z",
+       3992.3
+      ],
+      [
+       "2026-10-30T08:00:00Z",
+       3984.3
+      ],
+      [
+       "2026-10-30T09:00:00Z",
+       4007.1001
+      ],
+      [
+       "2026-10-30T10:00:00Z",
+       4001.7
+      ],
+      [
+       "2026-10-30T11:00:00Z",
+       3989.6001
+      ],
+      [
+       "2026-10-30T12:00:00Z",
+       3976.1001
+      ],
+      [
+       "2026-10-30T13:00:00Z",
+       3963.6001
+      ],
+      [
+       "2026-10-30T14:00:00Z",
+       3929.5
+      ],
+      [
+       "2026-10-30T15:00:00Z",
+       3926.8999
+      ],
+      [
+       "2026-10-30T16:00:00Z",
+       3907.7
+      ],
+      [
+       "2026-10-30T17:00:00Z",
+       3905.7
+      ],
+      [
+       "2026-10-30T18:00:00Z",
+       3893.0
+      ],
+      [
+       "2026-10-30T19:00:00Z",
+       3889.3
+      ],
+      [
+       "2026-10-30T20:00:00Z",
+       3892.8
+      ]
+     ]
+    },
+    {
      "asset": "OIL",
      "label": "Oil (WTI)",
      "kind": "call",
      "direction": "bullish",
-     "mentions": 4,
+     "mentions": 5,
      "later": null,
      "first_t": "7:25",
      "speakers": [
+      "Felix Jauvin",
       "Quinn Thompson"
      ],
      "moments": [
@@ -6254,20 +6302,20 @@
        "horizon": "weeks",
        "speaker": "Quinn Thompson",
        "speaker_confidence": "high",
-       "quote": "there's a record energy crisis in oil supply and prices might, you know, go to 150 soon",
-       "reason": "record supply crisis; sees oil possibly going to 150 soon",
+       "quote": "there's a record energy crisis in oil supply and prices might, you know, go to 150 soon and then growth in stocks are going to get smoked.",
+       "reason": "A record oil supply crisis could push prices toward $150.",
        "chapter": 2
       },
       {
-       "t": "41:10",
-       "seconds": 2470,
+       "t": "41:07",
+       "seconds": 2467,
        "kind": "call",
        "direction": "bullish",
        "horizon": "months",
        "speaker": "Quinn Thompson",
        "speaker_confidence": "high",
-       "quote": "If you look out at any of the experies in early 27, which is what we've been advocating for longing",
-       "reason": "long oil futures expiring early 2027; up and to the right even during peace",
+       "quote": "if you look at the chart of oil over the last two, three months, it's straight up and to the right and has barely sniffed its daily trend. If you look out at any of the experies in early 27, which is what we've been advocating for longing",
+       "reason": "There is a strong uptrend, and he advocates longing early-2027 contracts.",
        "chapter": 9
       },
       {
@@ -6279,23 +6327,35 @@
        "speaker": "Quinn Thompson",
        "speaker_confidence": "high",
        "quote": "the supply disruption is so great that the US has to has to unblock it like this it will just be a one-way train higher if they don't rectify it.",
-       "reason": "supply disruption forces US action; otherwise a one-way move higher",
+       "reason": "The supply disruption forces US action, and prices keep rising until it is fixed.",
        "chapter": 9
       },
       {
-       "t": "42:37",
-       "seconds": 2557,
+       "t": "42:15",
+       "seconds": 2535,
+       "kind": "thought",
+       "direction": "bullish",
+       "horizon": "weeks",
+       "speaker": "Felix Jauvin",
+       "speaker_confidence": "medium",
+       "quote": "Yeah. The only way out is through, like we said last week.",
+       "reason": "He agrees that escalation is needed to resolve the supply problem.",
+       "chapter": 9
+      },
+      {
+       "t": "42:33",
+       "seconds": 2553,
        "kind": "thought",
        "direction": "bullish",
        "horizon": "weeks",
        "speaker": "Quinn Thompson",
        "speaker_confidence": "high",
-       "quote": "And there's no positioning. Price rises every day in this asset. And futures positioning is falling.",
-       "reason": "price rising while positioning falls; nobody is long",
+       "quote": "And there's no positioning. Price rises every day in this asset. And futures positioning is falling. Volume is low.",
+       "reason": "Light positioning while price rises leaves room for more upside, and escalation looks likely after the midterms.",
        "chapter": 9
       }
      ],
-     "text": "Long oil into 2027: supply disruption is forcing action after the midterms and almost nobody is positioned.",
+     "text": "Strongly bullish: the supply disruption forces escalation, positioning is light, and the hosts are long early-2027 contracts.",
      "proxy": "front-month WTI futures; calls on later expiries move with it but not 1:1",
      "price": {
       "source": "yahoo",
@@ -8445,37 +8505,37 @@
      "direction": "bearish",
      "mentions": 2,
      "later": null,
-     "first_t": "11:18",
+     "first_t": "11:16",
      "speakers": [
       "Quinn Thompson"
      ],
      "moments": [
       {
-       "t": "11:18",
-       "seconds": 678,
+       "t": "11:16",
+       "seconds": 676,
        "kind": "thought",
        "direction": "bearish",
        "horizon": "months",
        "speaker": "Quinn Thompson",
        "speaker_confidence": "high",
-       "quote": "but the dollar should probably start peeking out when when the market catches on to, you know, the emptiness of the Fed's promises",
-       "reason": "the market will see through the Fed's hawkish talk; dollar likely peaks",
+       "quote": "takes a week, maybe it takes 3 months, but the dollar should probably start peeking out when when the market catches on to, you know, the emptiness of the Fed's promises",
+       "reason": "Markets will see the Fed's hawkish talk as empty.",
        "chapter": 3
       },
       {
-       "t": "11:52",
-       "seconds": 712,
+       "t": "11:48",
+       "seconds": 708,
        "kind": "thought",
        "direction": "bearish",
        "horizon": "months",
        "speaker": "Quinn Thompson",
        "speaker_confidence": "high",
-       "quote": "I think that will end up, you know, kind of dampening this dollar a cent and eventually getting it to roll over, but it could, like I said, take months.",
-       "reason": "AI unwind + oil hit demand, Fed forced to ease, dollar rolls over (could take months)",
+       "quote": "than they otherwise would like to be probably given where inflation is. And I think that will end up, you know, kind of dampening this dollar a cent and eventually getting it to roll over, but it could, like I said, take months.",
+       "reason": "The AI unwind and the oil hit to demand force the Fed to be more accommodative.",
        "chapter": 3
       }
      ],
-     "text": "The dollar is near a peak and should roll over over the coming months as the Fed is forced to ease.",
+     "text": "The dollar is strong for now but should peak and roll over within weeks to months as the Fed is forced to ease.",
      "proxy": null,
      "price": {
       "source": "yahoo",
@@ -10706,12 +10766,12 @@
        "horizon": "months",
        "speaker": "Quinn Thompson",
        "speaker_confidence": "high",
-       "quote": "go to 150 soon and then growth in stocks are going to get smoked",
-       "reason": "an oil spike plus the AI unwind hits growth stocks; the Fed cannot help",
+       "quote": "there's a record energy crisis in oil supply and prices might, you know, go to 150 soon and then growth in stocks are going to get smoked.",
+       "reason": "An oil shock and the AI unwind would hit growth and stocks.",
        "chapter": 2
       }
      ],
-     "text": "An oil spike on top of the AI unwind hits growth stocks.",
+     "text": "Growth and stocks are at risk from the AI capex slowdown and the oil shock.",
      "proxy": null,
      "price": {
       "source": "yahoo",
