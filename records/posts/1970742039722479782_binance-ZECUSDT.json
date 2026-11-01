@@ -22,10 +22,10 @@
   "price": 54.49
  },
  "latest": {
-  "at": "2026-10-31T17:00:00Z",
-  "price": 1281.54
+  "at": "2026-11-01T00:00:00Z",
+  "price": 1251.48
  },
- "change_since_post": 22.518810790970818,
+ "change_since_post": 21.96714993576803,
  "exits": {
   "1": {
    "at": "2025-09-25T07:00:00Z",
@@ -38682,11 +38682,39 @@
   [
    "2026-10-31T17:00:00Z",
    1281.54
+  ],
+  [
+   "2026-10-31T18:00:00Z",
+   1283.56
+  ],
+  [
+   "2026-10-31T19:00:00Z",
+   1279.02
+  ],
+  [
+   "2026-10-31T20:00:00Z",
+   1273.75
+  ],
+  [
+   "2026-10-31T21:00:00Z",
+   1269.33
+  ],
+  [
+   "2026-10-31T22:00:00Z",
+   1276.2
+  ],
+  [
+   "2026-10-31T23:00:00Z",
+   1251.09
+  ],
+  [
+   "2026-11-01T00:00:00Z",
+   1251.48
   ]
  ],
  "resolved_with": {
   "prices": "live:binance+yahoo",
-  "last_bar_at": "2026-10-31T17:00:00Z",
+  "last_bar_at": "2026-11-01T00:00:00Z",
   "max_lag_days": 2,
   "session_lag_days": 2
  },
@@ -38696,11 +38724,6 @@
   "30": 3.7463754817397685
  },
  "asset_choice": {
-  "method": "manual",
-  "terms": [],
-  "reason": "his own post \"I am irresponsibly long ZEC\" (2025-09-24); his 2025-09-29 \"did you fade\" post with a ZEC/USDT chart at $68 confirms it was his call"
- },
- "side_choice": {
   "method": "manual",
   "terms": [],
   "reason": "his own post \"I am irresponsibly long ZEC\" (2025-09-24); his 2025-09-29 \"did you fade\" post with a ZEC/USDT chart at $68 confirms it was his call"

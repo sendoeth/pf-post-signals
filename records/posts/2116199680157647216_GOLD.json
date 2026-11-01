@@ -21,10 +21,10 @@
   "price": 3905.7
  },
  "latest": {
-  "at": "2026-10-30T20:59:59Z",
-  "price": 3884.8999
+  "at": "2026-10-30T20:00:00Z",
+  "price": 3892.8
  },
- "change_since_post": -0.005325575441022079,
+ "change_since_post": -0.003302865043398051,
  "exits": {
   "1": null,
   "7": null,
@@ -56,15 +56,11 @@
   [
    "2026-10-30T20:00:00Z",
    3892.8
-  ],
-  [
-   "2026-10-30T20:59:59Z",
-   3884.8999
   ]
  ],
  "resolved_with": {
   "prices": "live:binance+yahoo",
-  "last_bar_at": "2026-10-30T20:59:59Z",
+  "last_bar_at": "2026-10-30T20:00:00Z",
   "max_lag_days": 2,
   "session_lag_days": 4
  }

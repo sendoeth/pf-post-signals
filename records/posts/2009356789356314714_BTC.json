@@ -6,7 +6,7 @@
   "author": "BobLoukas",
   "posted_at": "2026-01-08T20:09:25Z",
   "posted_at_source": "receipt",
-  "text": "Yes I\u2019ve been bearish on Bitcoin of late.  \n\nBut that is opinion on where we stand for the near future. \n\nWhat gets forgotten or not mentioned enough, I\u2019m always a massive bull long term.   \n\nI\u2019m always and consistently stacking, even if one strategy is selling.",
+  "text": "Yes I’ve been bearish on Bitcoin of late.  \n\nBut that is opinion on where we stand for the near future. \n\nWhat gets forgotten or not mentioned enough, I’m always a massive bull long term.   \n\nI’m always and consistently stacking, even if one strategy is selling.",
   "receipt_sha256": "bfde7b8d0bb4301ba4f9c0c467c008282b2448d9c1527bbac5227ce9c9dbf3e6"
  },
  "asset": {
@@ -22,10 +22,10 @@
   "price": 90927.63
  },
  "latest": {
-  "at": "2026-10-31T04:00:00Z",
-  "price": 77170.74
+  "at": "2026-11-01T00:00:00Z",
+  "price": 77582.02
  },
- "change_since_post": -0.15129493642361513,
+ "change_since_post": -0.146771778831143,
  "exits": {
   "1": {
    "at": "2026-01-09T21:00:00Z",
@@ -28398,11 +28398,91 @@
   [
    "2026-10-31T04:00:00Z",
    77170.74
+  ],
+  [
+   "2026-10-31T05:00:00Z",
+   77193.46
+  ],
+  [
+   "2026-10-31T06:00:00Z",
+   77270.0
+  ],
+  [
+   "2026-10-31T07:00:00Z",
+   77388.86
+  ],
+  [
+   "2026-10-31T08:00:00Z",
+   77356.0
+  ],
+  [
+   "2026-10-31T09:00:00Z",
+   77358.27
+  ],
+  [
+   "2026-10-31T10:00:00Z",
+   77473.27
+  ],
+  [
+   "2026-10-31T11:00:00Z",
+   77424.17
+  ],
+  [
+   "2026-10-31T12:00:00Z",
+   77618.97
+  ],
+  [
+   "2026-10-31T13:00:00Z",
+   77557.45
+  ],
+  [
+   "2026-10-31T14:00:00Z",
+   77543.01
+  ],
+  [
+   "2026-10-31T15:00:00Z",
+   77440.01
+  ],
+  [
+   "2026-10-31T16:00:00Z",
+   77622.01
+  ],
+  [
+   "2026-10-31T17:00:00Z",
+   77626.28
+  ],
+  [
+   "2026-10-31T18:00:00Z",
+   77718.9
+  ],
+  [
+   "2026-10-31T19:00:00Z",
+   77635.25
+  ],
+  [
+   "2026-10-31T20:00:00Z",
+   77588.83
+  ],
+  [
+   "2026-10-31T21:00:00Z",
+   77565.87
+  ],
+  [
+   "2026-10-31T22:00:00Z",
+   77682.0
+  ],
+  [
+   "2026-10-31T23:00:00Z",
+   77548.01
+  ],
+  [
+   "2026-11-01T00:00:00Z",
+   77582.02
   ]
  ],
  "resolved_with": {
   "prices": "live:binance+yahoo",
-  "last_bar_at": "2026-10-31T04:00:00Z",
+  "last_bar_at": "2026-11-01T00:00:00Z",
   "max_lag_days": 2,
   "session_lag_days": 2
  },
@@ -28415,13 +28495,6 @@
   "method": "detector",
   "terms": [
    "bitcoin"
-  ],
-  "reason": null
- },
- "side_choice": {
-  "method": "detector",
-  "terms": [
-   "bearish on"
   ],
   "reason": null
  }

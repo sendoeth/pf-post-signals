@@ -6,7 +6,7 @@
   "author": "DrProfitCrypto",
   "posted_at": "2026-10-25T23:02:23Z",
   "posted_at_source": "receipt",
-  "text": "#Bitcoin \u2013 What\u2019s Next?\n\nThe Big Sunday Report: All We Need to Know\n\nTA / LCA / Psychological Breakdown\n\nI have finished building the long positions I announced and entered between $80K and $81K. My average entry is now $80,400 for the longs, while my average spot entry is",
+  "text": "#Bitcoin – What’s Next?\n\nThe Big Sunday Report: All We Need to Know\n\nTA / LCA / Psychological Breakdown\n\nI have finished building the long positions I announced and entered between $80K and $81K. My average entry is now $80,400 for the longs, while my average spot entry is",
   "receipt_sha256": "2bef9d604088b32a5a748795ba79ff281bdd8e48ddba04184fbe4d7d47965731"
  },
  "asset": {
@@ -22,10 +22,10 @@
   "price": 80154.09
  },
  "latest": {
-  "at": "2026-10-31T02:00:00Z",
-  "price": 77405.98
+  "at": "2026-11-01T00:00:00Z",
+  "price": 77582.02
  },
- "change_since_post": -0.034285337154972395,
+ "change_since_post": -0.03208906744496742,
  "exits": {
   "1": {
    "at": "2026-10-27T00:00:00Z",
@@ -535,11 +535,99 @@
   [
    "2026-10-31T02:00:00Z",
    77405.98
+  ],
+  [
+   "2026-10-31T03:00:00Z",
+   77452.0
+  ],
+  [
+   "2026-10-31T04:00:00Z",
+   77170.74
+  ],
+  [
+   "2026-10-31T05:00:00Z",
+   77193.46
+  ],
+  [
+   "2026-10-31T06:00:00Z",
+   77270.0
+  ],
+  [
+   "2026-10-31T07:00:00Z",
+   77388.86
+  ],
+  [
+   "2026-10-31T08:00:00Z",
+   77356.0
+  ],
+  [
+   "2026-10-31T09:00:00Z",
+   77358.27
+  ],
+  [
+   "2026-10-31T10:00:00Z",
+   77473.27
+  ],
+  [
+   "2026-10-31T11:00:00Z",
+   77424.17
+  ],
+  [
+   "2026-10-31T12:00:00Z",
+   77618.97
+  ],
+  [
+   "2026-10-31T13:00:00Z",
+   77557.45
+  ],
+  [
+   "2026-10-31T14:00:00Z",
+   77543.01
+  ],
+  [
+   "2026-10-31T15:00:00Z",
+   77440.01
+  ],
+  [
+   "2026-10-31T16:00:00Z",
+   77622.01
+  ],
+  [
+   "2026-10-31T17:00:00Z",
+   77626.28
+  ],
+  [
+   "2026-10-31T18:00:00Z",
+   77718.9
+  ],
+  [
+   "2026-10-31T19:00:00Z",
+   77635.25
+  ],
+  [
+   "2026-10-31T20:00:00Z",
+   77588.83
+  ],
+  [
+   "2026-10-31T21:00:00Z",
+   77565.87
+  ],
+  [
+   "2026-10-31T22:00:00Z",
+   77682.0
+  ],
+  [
+   "2026-10-31T23:00:00Z",
+   77548.01
+  ],
+  [
+   "2026-11-01T00:00:00Z",
+   77582.02
   ]
  ],
  "resolved_with": {
   "prices": "live:binance+yahoo",
-  "last_bar_at": "2026-10-31T02:00:00Z",
+  "last_bar_at": "2026-11-01T00:00:00Z",
   "max_lag_days": 2,
   "session_lag_days": 2
  },
@@ -552,15 +640,6 @@
   "method": "detector",
   "terms": [
    "bitcoin"
-  ],
-  "reason": null
- },
- "side_choice": {
-  "method": "detector",
-  "terms": [
-   "building the long",
-   "long positions",
-   "the longs"
   ],
   "reason": null
  }
