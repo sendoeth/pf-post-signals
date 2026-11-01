@@ -178,6 +178,22 @@ class AddWithoutAsset(unittest.TestCase):
         self.root = tempfile.mkdtemp(prefix="quanty-legs-")
         for d in ("records", "sources", "web", "data", "schema"):
             shutil.copytree(os.path.join(HERE, d), os.path.join(self.root, d))
+        # the scratch site is as it was before this post was added: no HYPE / LIT records, tickers or receipts,
+        # and the add tool reads the scratch registry (not the live one)
+        for f in __import__("glob").glob(os.path.join(self.root, "records", "posts", "2116898993435463783_*.json")):
+            os.remove(f)
+        reg_path = os.path.join(self.root, "data", "tickers.json")
+        if os.path.exists(reg_path):
+            reg = json.load(open(reg_path))
+            for t in ("HYPE", "LIT"):
+                reg["tickers"].pop(t, None)
+                if os.path.exists(os.path.join(self.root, "sources", "tickers", f"{t}.json")):
+                    os.remove(os.path.join(self.root, "sources", "tickers", f"{t}.json"))
+            json.dump(reg, open(reg_path, "w"), indent=1)
+        import build_chart
+        json.dump(build_chart.build(os.path.join(self.root, "records")), open(os.path.join(self.root, "web", "data", "charts.json"), "w"), indent=1)
+        self._reg = resolve.registered_tickers
+        resolve.registered_tickers = lambda path=None: self._reg(path or reg_path)
         self.embed = {"__typename": "Tweet", "id_str": "2116898993435463783", "created_at": "2026-11-01T14:23:44.000Z", "text": POST,
                       "display_text_range": [0, len(POST)], "entities": {"symbols": [{"text": "LIT"}]}, "conversation_id_str": "2116898993435463783",
                       "user": {"screen_name": "koolkrypto223"}}
@@ -194,6 +210,7 @@ class AddWithoutAsset(unittest.TestCase):
         self.url = "https://x.com/koolkrypto223/status/2116898993435463783"
 
     def tearDown(self):
+        resolve.registered_tickers = self._reg
         shutil.rmtree(self.root)
 
     def test_two_coins_need_a_leg_then_lit_is_lighter(self):
@@ -248,13 +265,8 @@ class CodexRepros(AddWithoutAsset):
         reg = {"schema": tickers.REGISTRY_SCHEMA, "tickers": {"LIT": {"coingecko_id": "lighter", "name": "Lighter", "source": "binance", "symbol": "LITUSDT",
                                                                       "receipt": "x", "receipt_sha256": "0" * 64, "added_at": "x"}}}
         json.dump(reg, open(os.path.join(self.root, "data", "tickers.json"), "w"))
-        orig = resolve.registered_tickers
-        resolve.registered_tickers = lambda path=None: reg["tickers"]
-        try:
-            with self.assertRaises(self.ac.Refused) as c:
-                self.run_text("I am buying $LIT calls", net=FakeNet())
-        finally:
-            resolve.registered_tickers = orig
+        with self.assertRaises(self.ac.Refused) as c:
+            self.run_text("I am buying $LIT calls", net=FakeNet())
         self.assertIn("failed today's check", str(c.exception))
         self.assertIn("hyperliquid:LIT passed", str(c.exception))
 
