@@ -14,7 +14,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "2Z": {
    "coingecko_id": "doublezero",
@@ -29,7 +29,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "AAVE": {
    "coingecko_id": "aave",
@@ -44,7 +44,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "ACE": {
    "coingecko_id": "endurance",
@@ -59,7 +59,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "ADA": {
    "coingecko_id": "cardano",
@@ -74,7 +74,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "AERO": {
    "coingecko_id": "aerodrome-finance",
@@ -90,7 +90,7 @@
    "in_top": true,
    "hl_perp": true,
    "also_us_stock": "Grupo Aeromexico, S.A.B. de C.V. American Depositary Shares (each representing t",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "AIXBT": {
    "coingecko_id": "aixbt",
@@ -100,12 +100,12 @@
    "receipt": "sources/tickers/AIXBT.json",
    "receipt_sha256": "e0016ff83e99f5a81fd93ed72a21e22baf60d796f14a3c1bc0ee2c54f77f44b8",
    "added_at": "2026-11-01T23:51:00Z",
-   "rank": 950,
+   "rank": 949,
    "seed": "sources/tickers/seed/2026-11-02.json",
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "ALGO": {
    "coingecko_id": "algorand",
@@ -120,7 +120,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "ALT": {
    "coingecko_id": "altlayer",
@@ -130,13 +130,13 @@
    "receipt": "sources/tickers/ALT.json",
    "receipt_sha256": "9fe8480f7b61abde371bfcbdba29dd59734556cf6d56d6bc20621a83bd085605",
    "added_at": "2026-11-01T23:51:00Z",
-   "rank": 494,
+   "rank": 492,
    "seed": "sources/tickers/seed/2026-11-02.json",
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": "Altimmune, Inc. - Common Stock",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "APE": {
    "coingecko_id": "apecoin",
@@ -151,7 +151,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "APEX": {
    "coingecko_id": "apex-token-2",
@@ -166,7 +166,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "APT": {
    "coingecko_id": "aptos",
@@ -182,7 +182,7 @@
    "in_top": true,
    "hl_perp": true,
    "also_us_stock": "Alpha Pro Tech, Ltd. Common Stock",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "AR": {
    "coingecko_id": "arweave",
@@ -198,7 +198,7 @@
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": "Antero Resources Corporation Common Stock",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "ARB": {
    "coingecko_id": "arbitrum",
@@ -214,7 +214,7 @@
    "in_top": true,
    "hl_perp": true,
    "also_us_stock": "AltShares Merger Arbitrage ETF",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "ASTER": {
    "coingecko_id": "aster-2",
@@ -229,7 +229,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "ATOM": {
    "coingecko_id": "cosmos",
@@ -245,7 +245,7 @@
    "in_top": true,
    "hl_perp": true,
    "also_us_stock": "Atomera Incorporated - Common Stock",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "AVAX": {
    "coingecko_id": "avalanche-2",
@@ -260,7 +260,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "AVNT": {
    "coingecko_id": "avantis",
@@ -276,7 +276,7 @@
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": "Avient Corporation Common Stock",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "AXS": {
    "coingecko_id": "axie-infinity",
@@ -286,13 +286,13 @@
    "receipt": "sources/tickers/AXS.json",
    "receipt_sha256": "942774cf7beb52ee8216a5018479fa0bc0e2231340263bc2054b4cd1fecf210b",
    "added_at": "2026-11-01T23:51:00Z",
-   "rank": 206,
+   "rank": 205,
    "seed": "sources/tickers/seed/2026-11-02.json",
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": "Axis Capital Holdings Limited Common Stock",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "AZTEC": {
    "coingecko_id": "aztec",
@@ -307,7 +307,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "BABY": {
    "coingecko_id": "babylon",
@@ -322,7 +322,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "BCH": {
    "coingecko_id": "bitcoin-cash",
@@ -338,7 +338,7 @@
    "in_top": true,
    "hl_perp": true,
    "also_us_stock": "Banco De Chile ADS",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "BDX": {
    "coingecko_id": "beldex",
@@ -354,7 +354,7 @@
    "in_top": true,
    "hl_perp": false,
    "also_us_stock": "Becton, Dickinson and Company Common Stock",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "BERA": {
    "coingecko_id": "berachain-bera",
@@ -369,7 +369,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "BIGTIME": {
    "coingecko_id": "big-time",
@@ -384,7 +384,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "BIO": {
    "coingecko_id": "bio-protocol",
@@ -394,13 +394,13 @@
    "receipt": "sources/tickers/BIO.json",
    "receipt_sha256": "d96be626cca0316143b25e2e99dad1b9dd2050f9dfaffa27753be20b57b6ee4d",
    "added_at": "2026-11-01T23:51:00Z",
-   "rank": 471,
+   "rank": 470,
    "seed": "sources/tickers/seed/2026-11-02.json",
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": "Bio-Rad Laboratories, Inc. Class A Common Stock",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "BLUR": {
    "coingecko_id": "blur",
@@ -415,7 +415,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "BNB": {
    "coingecko_id": "binancecoin",
@@ -430,7 +430,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "BOME": {
    "coingecko_id": "book-of-meme",
@@ -445,7 +445,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "BONK": {
    "coingecko_id": "bonk",
@@ -460,7 +460,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "BRETT": {
    "coingecko_id": "based-brett",
@@ -470,12 +470,12 @@
    "receipt": "sources/tickers/BRETT.json",
    "receipt_sha256": "1b17f023fbccdfa047387606ed4e203503a783e3cc5eb74b4352a2b958510d57",
    "added_at": "2026-11-01T23:51:00Z",
-   "rank": 497,
+   "rank": 498,
    "seed": "sources/tickers/seed/2026-11-02.json",
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "BSV": {
    "coingecko_id": "bitcoin-cash-sv",
@@ -485,13 +485,13 @@
    "receipt": "sources/tickers/BSV.json",
    "receipt_sha256": "3dd37f666bb512c30702b8b45c00b08aafedd0f4331d8a217b9d0b7beac6841e",
    "added_at": "2026-11-01T23:51:00Z",
-   "rank": 125,
+   "rank": 124,
    "seed": "sources/tickers/seed/2026-11-02.json",
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": true,
    "also_us_stock": "Vanguard Short-Term Bond ETF",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "BTC": {
    "coingecko_id": "bitcoin",
@@ -507,7 +507,7 @@
    "in_top": true,
    "hl_perp": true,
    "also_us_stock": "Grayscale Bitcoin Mini Trust (BTC)",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "BTT": {
    "coingecko_id": "bittorrent",
@@ -523,7 +523,7 @@
    "in_top": true,
    "hl_perp": false,
    "also_us_stock": "BlackRock Municipal 2030 Target Term Trust",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "BTW": {
    "coingecko_id": "bitway",
@@ -538,7 +538,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": false,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "CAKE": {
    "coingecko_id": "pancakeswap-token",
@@ -554,7 +554,7 @@
    "in_top": true,
    "hl_perp": true,
    "also_us_stock": "The Cheesecake Factory Incorporated - Common Stock",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "CASHCAT": {
    "coingecko_id": "cash-cat",
@@ -564,12 +564,12 @@
    "receipt": "sources/tickers/CASHCAT.json",
    "receipt_sha256": "87788297fa130809974fb0d50becb8627e6c3660e18579e7d2fc4e849dc0b57d",
    "added_at": "2026-11-01T23:51:00Z",
-   "rank": 287,
+   "rank": 286,
    "seed": "sources/tickers/seed/2026-11-02.json",
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "CC": {
    "coingecko_id": "canton-network",
@@ -585,7 +585,7 @@
    "in_top": true,
    "hl_perp": true,
    "also_us_stock": "Chemours Company (The) Common Stock",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "CELO": {
    "coingecko_id": "celo",
@@ -600,7 +600,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "CFX": {
    "coingecko_id": "conflux-token",
@@ -615,7 +615,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "CHIP": {
    "coingecko_id": "chip-2",
@@ -631,7 +631,7 @@
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": "REX AI Chipmaking ETF",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "COMP": {
    "coingecko_id": "compound-governance-token",
@@ -647,7 +647,7 @@
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": "Compass, Inc. Class A Common Stock",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "CRO": {
    "coingecko_id": "crypto-com-chain",
@@ -662,7 +662,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": false,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "CRV": {
    "coingecko_id": "curve-dao-token",
@@ -677,7 +677,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "DASH": {
    "coingecko_id": "dash",
@@ -693,7 +693,7 @@
    "in_top": true,
    "hl_perp": true,
    "also_us_stock": "DoorDash, Inc. - Common Stock",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "DOGE": {
    "coingecko_id": "dogecoin",
@@ -708,7 +708,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "DOT": {
    "coingecko_id": "polkadot",
@@ -723,7 +723,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "DRV": {
    "coingecko_id": "derive",
@@ -733,13 +733,13 @@
    "receipt": "sources/tickers/DRV.json",
    "receipt_sha256": "bc838114f8dffad2395f7a386c5dfddc3f4b7c0e71edb5d70b802ae615e73d25",
    "added_at": "2026-11-01T23:51:00Z",
-   "rank": 124,
+   "rank": 125,
    "seed": "sources/tickers/seed/2026-11-02.json",
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": false,
    "also_us_stock": "Direxion Daily Real Estate Bear 3X ETF",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "DYDX": {
    "coingecko_id": "dydx-chain",
@@ -754,7 +754,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "EIGEN": {
    "coingecko_id": "eigenlayer",
@@ -769,7 +769,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "ENA": {
    "coingecko_id": "ethena",
@@ -784,7 +784,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "ENS": {
    "coingecko_id": "ethereum-name-service",
@@ -800,7 +800,7 @@
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": "EnerSys Common Stock",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "ETC": {
    "coingecko_id": "ethereum-classic",
@@ -815,7 +815,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "ETH": {
    "coingecko_id": "ethereum",
@@ -831,7 +831,7 @@
    "in_top": true,
    "hl_perp": true,
    "also_us_stock": "Grayscale Ethereum Staking Mini ETF Shares",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "ETHFI": {
    "coingecko_id": "ether-fi",
@@ -846,7 +846,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "FARTCOIN": {
    "coingecko_id": "fartcoin",
@@ -861,7 +861,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "FET": {
    "coingecko_id": "fetch-ai",
@@ -877,7 +877,7 @@
    "in_top": true,
    "hl_perp": true,
    "also_us_stock": "Forum Energy Technologies, Inc. Common Stock",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "FF": {
    "coingecko_id": "falcon-finance-ff",
@@ -893,7 +893,7 @@
    "in_top": true,
    "hl_perp": false,
    "also_us_stock": "FutureFuel Corp.  Common shares",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "FIL": {
    "coingecko_id": "filecoin",
@@ -908,7 +908,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "FLOKI": {
    "coingecko_id": "floki",
@@ -923,7 +923,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "FLR": {
    "coingecko_id": "flare-networks",
@@ -939,7 +939,7 @@
    "in_top": true,
    "hl_perp": false,
    "also_us_stock": "Fluor Corporation Common Stock",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "GALA": {
    "coingecko_id": "gala",
@@ -954,7 +954,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "GAS": {
    "coingecko_id": "gas",
@@ -969,7 +969,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "GMT": {
    "coingecko_id": "stepn",
@@ -979,12 +979,12 @@
    "receipt": "sources/tickers/GMT.json",
    "receipt_sha256": "be008d4af762486a1abe10165867ae16034de672cb03214c0893f05fc6adf890",
    "added_at": "2026-11-01T23:51:00Z",
-   "rank": 841,
+   "rank": 840,
    "seed": "sources/tickers/seed/2026-11-02.json",
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "GMX": {
    "coingecko_id": "gmx",
@@ -999,7 +999,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "GRAM": {
    "coingecko_id": "the-open-network",
@@ -1014,7 +1014,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "GRASS": {
    "coingecko_id": "grass",
@@ -1029,7 +1029,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "GT": {
    "coingecko_id": "gatechain-token",
@@ -1045,7 +1045,7 @@
    "in_top": true,
    "hl_perp": false,
    "also_us_stock": "The Goodyear Tire & Rubber Company - Common Stock",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "HBAR": {
    "coingecko_id": "hedera-hashgraph",
@@ -1060,7 +1060,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "HEMI": {
    "coingecko_id": "hemi",
@@ -1070,13 +1070,13 @@
    "receipt": "sources/tickers/HEMI.json",
    "receipt_sha256": "48f97698e633f6496250023e0e5aa73625f95b8b8c66d8201e3dc46186c92797",
    "added_at": "2026-11-01T23:51:00Z",
-   "rank": 836,
+   "rank": 835,
    "seed": "sources/tickers/seed/2026-11-02.json",
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": "Hartford Equity Premium Income ETF",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "HTX": {
    "coingecko_id": "htx-dao",
@@ -1091,7 +1091,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": false,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "HYPE": {
    "coingecko_id": "hyperliquid",
@@ -1106,7 +1106,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "HYPER": {
    "coingecko_id": "hyperlane",
@@ -1116,12 +1116,12 @@
    "receipt": "sources/tickers/HYPER.json",
    "receipt_sha256": "2be65487313669eb08ac51dd61f902ee316ff13a3de6a02cfd27f9451fbec51e",
    "added_at": "2026-11-01T23:51:00Z",
-   "rank": 845,
+   "rank": 844,
    "seed": "sources/tickers/seed/2026-11-02.json",
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "ICP": {
    "coingecko_id": "internet-computer",
@@ -1136,7 +1136,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "IMX": {
    "coingecko_id": "immutable-x",
@@ -1151,7 +1151,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "INIT": {
    "coingecko_id": "initia",
@@ -1161,12 +1161,12 @@
    "receipt": "sources/tickers/INIT.json",
    "receipt_sha256": "eb1582d5b75e7fc9c162dc9d1a24b7de7e7c59aa6ac55e155c8c297d06d6ace6",
    "added_at": "2026-11-01T23:51:00Z",
-   "rank": 532,
+   "rank": 531,
    "seed": "sources/tickers/seed/2026-11-02.json",
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "INJ": {
    "coingecko_id": "injective-protocol",
@@ -1181,7 +1181,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "IO": {
    "coingecko_id": "io",
@@ -1191,12 +1191,12 @@
    "receipt": "sources/tickers/IO.json",
    "receipt_sha256": "2322960b54638f23fd7e1519818f1d6693297246e1507660173942c0486dcb87",
    "added_at": "2026-11-01T23:51:00Z",
-   "rank": 409,
+   "rank": 410,
    "seed": "sources/tickers/seed/2026-11-02.json",
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "IOTA": {
    "coingecko_id": "iota",
@@ -1211,7 +1211,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "JST": {
    "coingecko_id": "just",
@@ -1226,7 +1226,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": false,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "JTO": {
    "coingecko_id": "jito-governance-token",
@@ -1241,7 +1241,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "JUP": {
    "coingecko_id": "jupiter-exchange-solana",
@@ -1256,7 +1256,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "KAITO": {
    "coingecko_id": "kaito",
@@ -1271,7 +1271,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "KAS": {
    "coingecko_id": "kaspa",
@@ -1286,7 +1286,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "KITE": {
    "coingecko_id": "kite-2",
@@ -1301,7 +1301,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": false,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "LDO": {
    "coingecko_id": "lido-dao",
@@ -1316,7 +1316,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "LEO": {
    "coingecko_id": "leo-token",
@@ -1332,7 +1332,7 @@
    "in_top": true,
    "hl_perp": false,
    "also_us_stock": "BNY Mellon Strategic Municipals, Inc. Common Stock",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "LINEA": {
    "coingecko_id": "linea",
@@ -1342,12 +1342,12 @@
    "receipt": "sources/tickers/LINEA.json",
    "receipt_sha256": "2a5eb9577671c1577f80f40b27952f41514b7e2cbf1a6c0a021999f8e4fbe428",
    "added_at": "2026-11-01T23:51:00Z",
-   "rank": 400,
+   "rank": 399,
    "seed": "sources/tickers/seed/2026-11-02.json",
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "LINK": {
    "coingecko_id": "chainlink",
@@ -1363,7 +1363,7 @@
    "in_top": true,
    "hl_perp": true,
    "also_us_stock": "Interlink Electronics, Inc. - Common Stock",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "LIT": {
    "coingecko_id": "lighter",
@@ -1379,7 +1379,7 @@
    "in_top": true,
    "hl_perp": true,
    "also_us_stock": "Global X Lithium & Battery Tech ETF",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "LTC": {
    "coingecko_id": "litecoin",
@@ -1395,7 +1395,7 @@
    "in_top": true,
    "hl_perp": true,
    "also_us_stock": "LTC Properties, Inc. Common Stock",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "LUNC": {
    "coingecko_id": "terra-luna",
@@ -1411,7 +1411,7 @@
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": "Longnook Uncommon Compounders ETF",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "M": {
    "coingecko_id": "memecore",
@@ -1427,7 +1427,7 @@
    "in_top": true,
    "hl_perp": false,
    "also_us_stock": "Macy's Inc Common Stock",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "MANTA": {
    "coingecko_id": "manta-network",
@@ -1437,12 +1437,12 @@
    "receipt": "sources/tickers/MANTA.json",
    "receipt_sha256": "b4a8ba9a11a98b07f6afc28e0e81abce9025f6998cc0425c622d7a1525d6f976",
    "added_at": "2026-11-01T23:51:00Z",
-   "rank": 689,
+   "rank": 688,
    "seed": "sources/tickers/seed/2026-11-02.json",
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "ME": {
    "coingecko_id": "magic-eden",
@@ -1452,12 +1452,12 @@
    "receipt": "sources/tickers/ME.json",
    "receipt_sha256": "2bb9489872949f7bee3b3b09a02fd1c1e511d8285aa16c080bf394227890d943",
    "added_at": "2026-11-01T23:51:00Z",
-   "rank": 597,
+   "rank": 596,
    "seed": "sources/tickers/seed/2026-11-02.json",
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "MEGA": {
    "coingecko_id": "megaeth",
@@ -1472,7 +1472,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "MELANIA": {
    "coingecko_id": "melania-meme",
@@ -1487,7 +1487,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "MERL": {
    "coingecko_id": "merlin-chain",
@@ -1502,7 +1502,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "MET": {
    "coingecko_id": "meteora",
@@ -1518,7 +1518,7 @@
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": "MetLife, Inc. Common Stock",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "MINA": {
    "coingecko_id": "mina-protocol",
@@ -1533,7 +1533,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "MNT": {
    "coingecko_id": "mantle",
@@ -1548,7 +1548,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "MON": {
    "coingecko_id": "monad",
@@ -1563,7 +1563,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "MOODENG": {
    "coingecko_id": "moo-deng",
@@ -1578,7 +1578,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "MORPHO": {
    "coingecko_id": "morpho",
@@ -1593,7 +1593,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "MOVE": {
    "coingecko_id": "movement",
@@ -1609,7 +1609,7 @@
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": "Corvex, Inc. - Common Stock",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "NEAR": {
    "coingecko_id": "near",
@@ -1625,7 +1625,7 @@
    "in_top": true,
    "hl_perp": true,
    "also_us_stock": "iShares Short Duration Bond Active ETF",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "NEIRO": {
    "coingecko_id": "neiro-3",
@@ -1640,7 +1640,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "NEO": {
    "coingecko_id": "neo",
@@ -1656,7 +1656,7 @@
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": "NeoGenomics, Inc. - Common Stock",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "NEXO": {
    "coingecko_id": "nexo",
@@ -1671,7 +1671,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": false,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "NIGHT": {
    "coingecko_id": "midnight-3",
@@ -1681,12 +1681,12 @@
    "receipt": "sources/tickers/NIGHT.json",
    "receipt_sha256": "b9fda07ecac701242fed78e68abee6acf68feb9ee93d75c723177aae1bd4a861",
    "added_at": "2026-11-01T23:51:00Z",
-   "rank": 88,
+   "rank": 89,
    "seed": "sources/tickers/seed/2026-11-02.json",
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": false,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "NIL": {
    "coingecko_id": "nillion",
@@ -1696,12 +1696,12 @@
    "receipt": "sources/tickers/NIL.json",
    "receipt_sha256": "310c2e051871aec5d391179e42be768e9ec59a4449652728657c86e9080302b5",
    "added_at": "2026-11-01T23:51:00Z",
-   "rank": 566,
+   "rank": 568,
    "seed": "sources/tickers/seed/2026-11-02.json",
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "NOT": {
    "coingecko_id": "notcoin",
@@ -1716,7 +1716,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "NXPC": {
    "coingecko_id": "nexpace",
@@ -1726,12 +1726,12 @@
    "receipt": "sources/tickers/NXPC.json",
    "receipt_sha256": "094c233ae7cf33480b2dfca7f1a8590722b3aeaa03e0fcf85fda3c4174b98793",
    "added_at": "2026-11-01T23:51:00Z",
-   "rank": 423,
+   "rank": 424,
    "seed": "sources/tickers/seed/2026-11-02.json",
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "OKB": {
    "coingecko_id": "okb",
@@ -1746,7 +1746,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": false,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "ONDO": {
    "coingecko_id": "ondo-finance",
@@ -1761,7 +1761,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "OP": {
    "coingecko_id": "optimism",
@@ -1776,7 +1776,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "ORDI": {
    "coingecko_id": "ordinals",
@@ -1791,7 +1791,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "PEARL": {
    "coingecko_id": "pearl-2",
@@ -1806,7 +1806,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": false,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "PENDLE": {
    "coingecko_id": "pendle",
@@ -1821,7 +1821,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "PENGU": {
    "coingecko_id": "pudgy-penguins",
@@ -1836,7 +1836,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "PEOPLE": {
    "coingecko_id": "constitutiondao",
@@ -1846,12 +1846,12 @@
    "receipt": "sources/tickers/PEOPLE.json",
    "receipt_sha256": "206eb8d242cc866e90b6e284b6fed75bfa9b0e250a9b924ce0286ff04302c46c",
    "added_at": "2026-11-01T23:51:00Z",
-   "rank": 613,
+   "rank": 612,
    "seed": "sources/tickers/seed/2026-11-02.json",
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "PEPE": {
    "coingecko_id": "pepe",
@@ -1866,7 +1866,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": false,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "PI": {
    "coingecko_id": "pi-network",
@@ -1882,7 +1882,7 @@
    "in_top": true,
    "hl_perp": false,
    "also_us_stock": "Impinj, Inc. - Common Stock",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "PNUT": {
    "coingecko_id": "peanut-the-squirrel",
@@ -1892,12 +1892,12 @@
    "receipt": "sources/tickers/PNUT.json",
    "receipt_sha256": "bc56a248cb6ce19a017a7b17cf9e800ae6da252bcb65b702013662f24e402be6",
    "added_at": "2026-11-01T23:51:00Z",
-   "rank": 529,
+   "rank": 530,
    "seed": "sources/tickers/seed/2026-11-02.json",
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "POL": {
    "coingecko_id": "polygon-ecosystem-token",
@@ -1912,7 +1912,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "POLYX": {
    "coingecko_id": "polymesh",
@@ -1922,12 +1922,12 @@
    "receipt": "sources/tickers/POLYX.json",
    "receipt_sha256": "b406a030794f59500d29a7ce770d800631f40f7bccddc4bb6d17740f05f0cba9",
    "added_at": "2026-11-01T23:51:00Z",
-   "rank": 496,
+   "rank": 495,
    "seed": "sources/tickers/seed/2026-11-02.json",
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "PONS": {
    "coingecko_id": "pons",
@@ -1937,12 +1937,12 @@
    "receipt": "sources/tickers/PONS.json",
    "receipt_sha256": "61322e9c2996f5cb12574a4fca18ec0db0f60e2ff36faa584024e83e008fd43a",
    "added_at": "2026-11-01T23:51:00Z",
-   "rank": 196,
+   "rank": 195,
    "seed": "sources/tickers/seed/2026-11-02.json",
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "POPCAT": {
    "coingecko_id": "popcat",
@@ -1957,7 +1957,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "PROVE": {
    "coingecko_id": "succinct",
@@ -1967,12 +1967,12 @@
    "receipt": "sources/tickers/PROVE.json",
    "receipt_sha256": "226246ace40c15bce533b7f99c519758d111b991e08f9895ee6305670793584d",
    "added_at": "2026-11-01T23:51:00Z",
-   "rank": 540,
+   "rank": 539,
    "seed": "sources/tickers/seed/2026-11-02.json",
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "PUMP": {
    "coingecko_id": "pump-fun",
@@ -1988,7 +1988,7 @@
    "in_top": true,
    "hl_perp": true,
    "also_us_stock": "ProPetro Holding Corp. Common Stock",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "PURR": {
    "coingecko_id": "purr-2",
@@ -2004,7 +2004,7 @@
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": "Hyperliquid Strategies Inc - Common Stock",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "PYTH": {
    "coingecko_id": "pyth-network",
@@ -2019,7 +2019,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "QNT": {
    "coingecko_id": "quant-network",
@@ -2035,7 +2035,7 @@
    "in_top": true,
    "hl_perp": false,
    "also_us_stock": "Quantinuum Inc. - Class A Common Stock",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "RAIN": {
    "coingecko_id": "rain",
@@ -2051,7 +2051,7 @@
    "in_top": true,
    "hl_perp": false,
    "also_us_stock": "Rain Enhancement Technologies Holdco, Inc. - Class A Common Stock",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "RAY": {
    "coingecko_id": "raydium",
@@ -2066,7 +2066,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": false,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "RENDER": {
    "coingecko_id": "render-token",
@@ -2081,7 +2081,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "REZ": {
    "coingecko_id": "renzo",
@@ -2091,13 +2091,13 @@
    "receipt": "sources/tickers/REZ.json",
    "receipt_sha256": "492aad1a7bd9806fcb0d0d4cdac7a42cf3c0c61ade563ca365fd7607e3ca4669",
    "added_at": "2026-11-01T23:51:00Z",
-   "rank": 547,
+   "rank": 546,
    "seed": "sources/tickers/seed/2026-11-02.json",
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": "iShares Residential and Multisector Real Estate ETF",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "RSR": {
    "coingecko_id": "reserve-rights-token",
@@ -2107,12 +2107,12 @@
    "receipt": "sources/tickers/RSR.json",
    "receipt_sha256": "7591213ab9fd5d26c362ab63deb8eca5146155e8f324b832c8072bf84ae130df",
    "added_at": "2026-11-01T23:51:00Z",
-   "rank": 292,
+   "rank": 293,
    "seed": "sources/tickers/seed/2026-11-02.json",
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "RUNE": {
    "coingecko_id": "thorchain",
@@ -2122,12 +2122,12 @@
    "receipt": "sources/tickers/RUNE.json",
    "receipt_sha256": "f5ec005fd6fd5623398ba9b6a92ec3ef8f218e6b7dff764252f587f8be9d1239",
    "added_at": "2026-11-01T23:51:00Z",
-   "rank": 192,
+   "rank": 191,
    "seed": "sources/tickers/seed/2026-11-02.json",
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "S": {
    "coingecko_id": "sonic-3",
@@ -2143,7 +2143,7 @@
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": "SentinelOne, Inc. Class A Common Stock",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "SAND": {
    "coingecko_id": "the-sandbox",
@@ -2158,7 +2158,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "SEI": {
    "coingecko_id": "sei-network",
@@ -2174,7 +2174,7 @@
    "in_top": true,
    "hl_perp": true,
    "also_us_stock": "Solaris Energy Infrastructure, Inc. Class A Common Stock",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "SHIB": {
    "coingecko_id": "shiba-inu",
@@ -2189,7 +2189,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": false,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "SKR": {
    "coingecko_id": "seeker",
@@ -2204,7 +2204,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "SKY": {
    "coingecko_id": "sky",
@@ -2220,7 +2220,7 @@
    "in_top": true,
    "hl_perp": true,
    "also_us_stock": "Champion Homes, Inc. Common Stock",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "SNX": {
    "coingecko_id": "havven",
@@ -2230,13 +2230,13 @@
    "receipt": "sources/tickers/SNX.json",
    "receipt_sha256": "a9470c27136e0e4c98d48b57eeddc3dafca6a13938a9f9ebe476b552686e47dd",
    "added_at": "2026-11-01T23:51:00Z",
-   "rank": 265,
+   "rank": 266,
    "seed": "sources/tickers/seed/2026-11-02.json",
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": "TD SYNNEX Corporation Common Stock",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "SOL": {
    "coingecko_id": "solana",
@@ -2251,7 +2251,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "STABLE": {
    "coingecko_id": "stable-2",
@@ -2261,12 +2261,12 @@
    "receipt": "sources/tickers/STABLE.json",
    "receipt_sha256": "222f5377b765fdd3fb6788abdbf10f10b7d422791a738441d2982e8994b2f055",
    "added_at": "2026-11-01T23:51:00Z",
-   "rank": 111,
+   "rank": 110,
    "seed": "sources/tickers/seed/2026-11-02.json",
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "STRK": {
    "coingecko_id": "starknet",
@@ -2282,7 +2282,7 @@
    "in_top": true,
    "hl_perp": true,
    "also_us_stock": "Strategy Inc - 8.00% Series A Perpetual Strike Preferred Stock",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "STX": {
    "coingecko_id": "blockstack",
@@ -2298,7 +2298,7 @@
    "in_top": true,
    "hl_perp": true,
    "also_us_stock": "Seagate Technology Holdings PLC - Ordinary Shares (Ireland)",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "SUI": {
    "coingecko_id": "sui",
@@ -2314,7 +2314,7 @@
    "in_top": true,
    "hl_perp": true,
    "also_us_stock": "Sun Communities, Inc. Common Stock",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "SUN": {
    "coingecko_id": "sun-token",
@@ -2330,7 +2330,7 @@
    "in_top": true,
    "hl_perp": false,
    "also_us_stock": "Sunoco LP Common Units representing limited partner interests",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "SUPER": {
    "coingecko_id": "superfarm",
@@ -2340,12 +2340,12 @@
    "receipt": "sources/tickers/SUPER.json",
    "receipt_sha256": "08e71c69ed54814d38ed31b17aa1bd8415f82e9b7de5ec2a0f29150293cc3866",
    "added_at": "2026-11-01T23:51:00Z",
-   "rank": 257,
+   "rank": 256,
    "seed": "sources/tickers/seed/2026-11-02.json",
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "SUSHI": {
    "coingecko_id": "sushi",
@@ -2355,12 +2355,12 @@
    "receipt": "sources/tickers/SUSHI.json",
    "receipt_sha256": "fb822ff9b004bf16281cc300c761a169213d6c72d6c124b80707ccaa595351c7",
    "added_at": "2026-11-01T23:51:00Z",
-   "rank": 412,
+   "rank": 413,
    "seed": "sources/tickers/seed/2026-11-02.json",
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "SYRUP": {
    "coingecko_id": "syrup",
@@ -2375,7 +2375,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "TAO": {
    "coingecko_id": "bittensor",
@@ -2390,7 +2390,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "TIA": {
    "coingecko_id": "celestia",
@@ -2405,7 +2405,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "TNSR": {
    "coingecko_id": "tensor",
@@ -2415,12 +2415,12 @@
    "receipt": "sources/tickers/TNSR.json",
    "receipt_sha256": "efa99ff1f4bdc31a127732c9e07a78e1de500cd92a6f85321821f39893e6c814",
    "added_at": "2026-11-01T23:51:00Z",
-   "rank": 823,
+   "rank": 822,
    "seed": "sources/tickers/seed/2026-11-02.json",
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "TRB": {
    "coingecko_id": "tellor",
@@ -2435,7 +2435,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "TRUMP": {
    "coingecko_id": "official-trump",
@@ -2445,12 +2445,12 @@
    "receipt": "sources/tickers/TRUMP.json",
    "receipt_sha256": "468d1e31725dc4caec65866cf5f99775cc383b4ee1975d8fb583cf552269e44b",
    "added_at": "2026-11-01T23:51:00Z",
-   "rank": 110,
+   "rank": 111,
    "seed": "sources/tickers/seed/2026-11-02.json",
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "TRX": {
    "coingecko_id": "tron",
@@ -2466,7 +2466,7 @@
    "in_top": true,
    "hl_perp": true,
    "also_us_stock": "TRX Gold Corporation Common Stock",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "TURBO": {
    "coingecko_id": "turbo",
@@ -2476,12 +2476,12 @@
    "receipt": "sources/tickers/TURBO.json",
    "receipt_sha256": "fa8156bd24ba5e251aaa0957b0410fcc49fa66d16f7b3c4d5e952506f73dff07",
    "added_at": "2026-11-01T23:51:00Z",
-   "rank": 420,
+   "rank": 419,
    "seed": "sources/tickers/seed/2026-11-02.json",
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "UB": {
    "coingecko_id": "unibase",
@@ -2497,7 +2497,7 @@
    "in_top": true,
    "hl_perp": false,
    "also_us_stock": "Corgi FTSE U.S. Treasury Bond ETF",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "UMA": {
    "coingecko_id": "uma",
@@ -2507,12 +2507,12 @@
    "receipt": "sources/tickers/UMA.json",
    "receipt_sha256": "8fe866241e4fe6ba706fba811dc92df7798ef29626a6ea6395b94e0843a7720b",
    "added_at": "2026-11-01T23:51:00Z",
-   "rank": 639,
+   "rank": 638,
    "seed": "sources/tickers/seed/2026-11-02.json",
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "UNI": {
    "coingecko_id": "uniswap",
@@ -2527,7 +2527,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "USELESS": {
    "coingecko_id": "useless-3",
@@ -2542,7 +2542,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "USUAL": {
    "coingecko_id": "usual",
@@ -2552,12 +2552,12 @@
    "receipt": "sources/tickers/USUAL.json",
    "receipt_sha256": "4b34443f048e8ac7e8f951e45d0a005b0c3b847a7e943844aef4f22bdfeb0dc8",
    "added_at": "2026-11-01T23:51:00Z",
-   "rank": 838,
+   "rank": 837,
    "seed": "sources/tickers/seed/2026-11-02.json",
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "VET": {
    "coingecko_id": "vechain",
@@ -2573,7 +2573,7 @@
    "in_top": true,
    "hl_perp": false,
    "also_us_stock": "Vermilion Energy Inc. Common (Canada)",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "VIRTUAL": {
    "coingecko_id": "virtual-protocol",
@@ -2588,7 +2588,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "VVV": {
    "coingecko_id": "venice-token",
@@ -2604,7 +2604,7 @@
    "in_top": true,
    "hl_perp": true,
    "also_us_stock": "Valvoline Inc. Common Stock",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "W": {
    "coingecko_id": "wormhole",
@@ -2620,7 +2620,7 @@
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": "Wayfair Inc. Class A Common Stock",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "WCT": {
    "coingecko_id": "connect-token-wct",
@@ -2636,7 +2636,7 @@
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": "Wellchange Holdings Company Limited - Class A Ordinary shares",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "WIF": {
    "coingecko_id": "dogwifcoin",
@@ -2651,7 +2651,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "WLD": {
    "coingecko_id": "worldcoin-wld",
@@ -2666,7 +2666,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "WLFI": {
    "coingecko_id": "world-liberty-financial",
@@ -2681,7 +2681,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "XDC": {
    "coingecko_id": "xdce-crowd-sale",
@@ -2696,7 +2696,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": false,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "XLM": {
    "coingecko_id": "stellar",
@@ -2711,7 +2711,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "XMR": {
    "coingecko_id": "monero",
@@ -2726,7 +2726,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "XPL": {
    "coingecko_id": "plasma",
@@ -2742,7 +2742,7 @@
    "in_top": true,
    "hl_perp": true,
    "also_us_stock": "Solitario Resources Corp. Common Stock",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "XRP": {
    "coingecko_id": "ripple",
@@ -2758,7 +2758,7 @@
    "in_top": true,
    "hl_perp": true,
    "also_us_stock": "Bitwise XRP ETF",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "YGG": {
    "coingecko_id": "yield-guild-games",
@@ -2768,12 +2768,12 @@
    "receipt": "sources/tickers/YGG.json",
    "receipt_sha256": "4a22338ac919e70765c199d2c8f8ae0368109b4d649d8b33fe7c7fdaf9bbdab3",
    "added_at": "2026-11-01T23:51:00Z",
-   "rank": 815,
+   "rank": 814,
    "seed": "sources/tickers/seed/2026-11-02.json",
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "ZEC": {
    "coingecko_id": "zcash",
@@ -2788,7 +2788,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "ZEN": {
    "coingecko_id": "zencash",
@@ -2803,7 +2803,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "ZETA": {
    "coingecko_id": "zetachain",
@@ -2819,7 +2819,7 @@
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": "Zeta Global Holdings Corp. Class A Common Stock",
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "ZK": {
    "coingecko_id": "zksync",
@@ -2834,7 +2834,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "ZORA": {
    "coingecko_id": "zora",
@@ -2849,7 +2849,7 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": false,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   },
   "ZRO": {
    "coingecko_id": "layerzero",
@@ -2864,10 +2864,10 @@
    "seed_sha256": "9426725046be36e70a940546e5e7c532a240c6833dfbeeebcac6979605abc85a",
    "in_top": true,
    "hl_perp": true,
-   "checked_at": "2026-11-02T02:22:19Z"
+   "checked_at": "2026-11-02T02:29:47Z"
   }
  },
  "seeded_at": "2026-11-02T02:22:09Z",
  "seed": "sources/tickers/seed/2026-11-02.json",
- "rechecked_at": "2026-11-02T02:22:19Z"
+ "rechecked_at": "2026-11-02T02:29:47Z"
 }
