@@ -1,0 +1,60 @@
+mert x ZEC: found after 57 searches
+  year  2016-01-01 .. 2017-01-01  try 1  empty (searching again) raw 0 confirmed -
+  canary 2026-10-26 .. 2026-11-03  try 1  canary ok              raw 49 confirmed -
+  year  2016-01-01 .. 2017-01-01  try 2  empty (confirmed)      raw 0 confirmed 0
+  year  2017-01-01 .. 2018-01-01  try 1  empty (searching again) raw 0 confirmed -
+  canary 2026-10-26 .. 2026-11-03  try 1  canary ok              raw 90 confirmed -
+  year  2017-01-01 .. 2018-01-01  try 2  empty (confirmed)      raw 0 confirmed 0
+  year  2018-01-01 .. 2019-01-01  try 1  empty (searching again) raw 0 confirmed -
+  canary 2026-10-26 .. 2026-11-03  try 1  canary empty (throttled) raw 0 confirmed -
+  year  2018-01-01 .. 2019-01-01  try 2  empty, canary weak or empty (throttled) raw 0 confirmed -
+  year  2018-01-01 .. 2019-01-01  try 1  empty (searching again) raw 0 confirmed -
+  canary 2026-10-26 .. 2026-11-03  try 1  canary ok              raw 71 confirmed -
+  year  2018-01-01 .. 2019-01-01  try 2  empty (confirmed)      raw 0 confirmed 0
+  year  2019-01-01 .. 2020-01-01  try 1  empty (searching again) raw 0 confirmed -
+  canary 2026-10-26 .. 2026-11-03  try 1  canary ok              raw 90 confirmed -
+  year  2019-01-01 .. 2020-01-01  try 2  empty (confirmed)      raw 0 confirmed 0
+  year  2020-01-01 .. 2021-01-01  try 1  empty (searching again) raw 0 confirmed -
+  canary 2026-10-26 .. 2026-11-03  try 1  canary ok              raw 49 confirmed -
+  year  2020-01-01 .. 2021-01-01  try 2  empty (confirmed)      raw 0 confirmed 0
+  year  2021-01-01 .. 2022-01-01  try 1  empty (searching again) raw 0 confirmed -
+  canary 2026-10-26 .. 2026-11-03  try 1  canary ok              raw 90 confirmed -
+  year  2021-01-01 .. 2022-01-01  try 2  empty (confirmed)      raw 0 confirmed 0
+  year  2022-01-01 .. 2023-01-01  try 1  empty (searching again) raw 0 confirmed -
+  canary 2026-10-26 .. 2026-11-03  try 1  canary ok              raw 90 confirmed -
+  year  2022-01-01 .. 2023-01-01  try 2  empty (confirmed)      raw 0 confirmed 0
+  year  2023-01-01 .. 2024-01-01  try 1  empty (searching again) raw 0 confirmed -
+  canary 2026-10-26 .. 2026-11-03  try 1  canary ok              raw 90 confirmed -
+  year  2023-01-01 .. 2024-01-01  try 2  empty (confirmed)      raw 0 confirmed 0
+  year  2024-01-01 .. 2025-01-01  try 1  empty (searching again) raw 0 confirmed -
+  year  2024-01-01 .. 2025-01-01  try 2  hit                    raw 15 confirmed 12  earliest 2024-08-07T14:15:16.000Z ['zcash']
+  month 2024-01-01 .. 2024-02-01  try 1  empty (searching again) raw 0 confirmed -
+  canary 2026-10-26 .. 2026-11-03  try 1  canary empty (throttled) raw 0 confirmed -
+  month 2024-01-01 .. 2024-02-01  try 2  empty, canary weak or empty (throttled) raw 0 confirmed -
+  month 2024-01-01 .. 2024-02-01  try 1  empty (searching again) raw 0 confirmed -
+  canary 2026-10-26 .. 2026-11-03  try 1  canary ok              raw 73 confirmed -
+  month 2024-01-01 .. 2024-02-01  try 2  empty (confirmed)      raw 0 confirmed 0
+  month 2024-02-01 .. 2024-03-01  try 1  empty (searching again) raw 0 confirmed -
+  canary 2026-10-26 .. 2026-11-03  try 1  canary ok              raw 93 confirmed -
+  month 2024-02-01 .. 2024-03-01  try 2  empty (confirmed)      raw 0 confirmed 0
+  month 2024-03-01 .. 2024-04-01  try 1  empty (searching again) raw 0 confirmed -
+  canary 2026-10-26 .. 2026-11-03  try 1  canary ok              raw 93 confirmed -
+  month 2024-03-01 .. 2024-04-01  try 2  empty (confirmed)      raw 0 confirmed 0
+  month 2024-04-01 .. 2024-05-01  try 1  empty (searching again) raw 0 confirmed -
+  canary 2026-10-26 .. 2026-11-03  try 1  canary ok              raw 93 confirmed -
+  month 2024-04-01 .. 2024-05-01  try 2  empty (confirmed)      raw 0 confirmed 0
+  month 2024-05-01 .. 2024-06-01  try 1  empty (searching again) raw 0 confirmed -
+  canary 2026-10-26 .. 2026-11-03  try 1  canary ok              raw 93 confirmed -
+  month 2024-05-01 .. 2024-06-01  try 2  empty (confirmed)      raw 0 confirmed 0
+  month 2024-06-01 .. 2024-07-01  try 1  empty (searching again) raw 0 confirmed -
+  canary 2026-10-26 .. 2026-11-03  try 1  canary ok              raw 73 confirmed -
+  month 2024-06-01 .. 2024-07-01  try 2  empty (confirmed)      raw 0 confirmed 0
+  month 2024-07-01 .. 2024-08-01  try 1  empty (searching again) raw 0 confirmed -
+  canary 2026-10-26 .. 2026-11-03  try 1  canary empty (throttled) raw 0 confirmed -
+  month 2024-07-01 .. 2024-08-01  try 2  empty, canary weak or empty (throttled) raw 0 confirmed -
+  month 2024-07-01 .. 2024-08-01  try 1  empty (searching again) raw 0 confirmed -
+  canary 2026-10-26 .. 2026-11-03  try 1  canary ok              raw 93 confirmed -
+  month 2024-07-01 .. 2024-08-01  try 2  empty (confirmed)      raw 0 confirmed 0
+  month 2024-08-01 .. 2024-09-01  try 1  hit                    raw 11 confirmed 10  earliest 2024-08-07T14:15:16.000Z ['zcash']
+FIRST 2024-08-07T14:15:16.000Z https://x.com/mert/status/1821188361559978050
+  “I'm pretty sure you could actually add zcash to solana and enable full privacy You'd sacrifice some latency but that'd be worth for the set of users that'd be interested in it”

@@ -1,0 +1,40 @@
+$ python3 tools/guard.py --history
+guard: scanned 92 commits (all added lines + messages) -> 0 hits
+$ python3 tools/guard.py --tree
+guard: scanned 2604 files -> 0 hits
+$ python3 -m unittest -v tests.test_guard
+Ran 7 tests in 0.061s
+
+OK
+$ python3 -m unittest -v tests.test_early
+test_the_recorded_call_is_linked_not_mixed_in (tests.test_early.FirstCall.test_the_recorded_call_is_linked_not_mixed_in) ... ok
+test_mention_position_repost (tests.test_early.Labels.test_mention_position_repost) ... ok
+test_a_busy_month_is_halved_to_the_day (tests.test_early.Narrowing.test_a_busy_month_is_halved_to_the_day) ... <fresh clone>/detect.py:108: ResourceWarning: unclosed file <_io.TextIOWrapper name='<fresh clone>/data/coin_words.json' mode='r' encoding='UTF-8'>
+test_a_full_window_of_word_hits_is_opened_not_skipped (tests.test_early.Narrowing.test_a_full_window_of_word_hits_is_opened_not_skipped) ... ok
+test_a_search_error_stops_and_resumes (tests.test_early.Narrowing.test_a_search_error_stops_and_resumes) ... ok
+test_a_weak_canary_does_not_confirm_an_empty_window (tests.test_early.Narrowing.test_a_weak_canary_does_not_confirm_an_empty_window) ... ok
+test_empty_windows_are_searched_twice (tests.test_early.Narrowing.test_empty_windows_are_searched_twice) ... ok
+test_finds_the_first_real_mention (tests.test_early.Narrowing.test_finds_the_first_real_mention) ... ok
+test_narrow_windows_missing_posts_keep_the_wider_answer (tests.test_early.Narrowing.test_narrow_windows_missing_posts_keep_the_wider_answer) ... ok
+test_nothing_found (tests.test_early.Narrowing.test_nothing_found) ... ok
+test_terms (tests.test_early.Narrowing.test_terms) ... ok
+test_throttling_stops_instead_of_reading_empty (tests.test_early.Narrowing.test_throttling_stops_instead_of_reading_empty) ... ok
+test_word_hits_and_reposts_do_not_count (tests.test_early.Narrowing.test_word_hits_and_reposts_do_not_count) ... ok
+test_block_on_the_caller_and_coins_pages_and_scores_unchanged (tests.test_early.Pages.test_block_on_the_caller_and_coins_pages_and_scores_unchanged) ... <fresh clone>/tests/test_early.py:330: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>/sources/mert/receipts/test.json' mode='w' encoding='UTF-8'>
+test_a_failed_lookup_is_never_priced_as_before_listing (tests.test_early.Pricing.test_a_failed_lookup_is_never_priced_as_before_listing) ... ok
+test_a_source_that_fails_is_listed_and_skipped (tests.test_early.Pricing.test_a_source_that_fails_is_listed_and_skipped) ... ok
+test_a_venue_that_does_not_answer_stops_pricing (tests.test_early.Pricing.test_a_venue_that_does_not_answer_stops_pricing) ... ok
+test_an_older_pair_covers_an_earlier_post_and_its_peak_counts (tests.test_early.Pricing.test_an_older_pair_covers_an_earlier_post_and_its_peak_counts) ... ok
+test_before_listing (tests.test_early.Pricing.test_before_listing) ... ok
+test_the_daily_refresh_never_reads_the_post_day_from_midnight (tests.test_early.Pricing.test_the_daily_refresh_never_reads_the_post_day_from_midnight) ... ok
+test_the_peak_is_never_below_the_then_price (tests.test_early.Pricing.test_the_peak_is_never_below_the_then_price) ... ok
+test_the_post_day_counts_for_the_peak (tests.test_early.Pricing.test_the_post_day_counts_for_the_peak) ... ok
+test_venue_covers_the_post (tests.test_early.Pricing.test_venue_covers_the_post) ... ok
+Ran 23 tests in 4.901s
+OK
+$ python3 -m unittest discover -s tests -t .
+FAILED (nothing written): provider unavailable: api.coingecko.com: HTTP 429
+Ran 239 tests in 101.471s
+OK (skipped=2)
+$ python3 check_bundle.py
+bundle: 57 record files -> 57 drawn, 0 superseded, 0 refused; 171 horizon cells, 57 best-since-post values, 8 caller ratings checked -> ALL MATCH

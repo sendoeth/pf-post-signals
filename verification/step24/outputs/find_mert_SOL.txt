@@ -1,0 +1,62 @@
+mert x SOL: found after 59 searches
+  year  2017-11-01 .. 2018-01-01  try 1  empty (searching again) raw 0 confirmed -
+  canary 2026-10-26 .. 2026-11-03  try 1  canary ok              raw 90 confirmed -
+  year  2017-11-01 .. 2018-01-01  try 2  empty (confirmed)      raw 0 confirmed 0
+  year  2018-01-01 .. 2019-01-01  try 1  empty (searching again) raw 0 confirmed -
+  canary 2026-10-26 .. 2026-11-03  try 1  canary ok              raw 90 confirmed -
+  year  2018-01-01 .. 2019-01-01  try 2  empty (confirmed)      raw 0 confirmed 0
+  year  2019-01-01 .. 2020-01-01  try 1  empty (searching again) raw 0 confirmed -
+  canary 2026-10-26 .. 2026-11-03  try 1  canary ok              raw 90 confirmed -
+  year  2019-01-01 .. 2020-01-01  try 2  empty (confirmed)      raw 0 confirmed 0
+  year  2020-01-01 .. 2021-01-01  try 1  empty (searching again) raw 0 confirmed -
+  canary 2026-10-26 .. 2026-11-03  try 1  canary ok              raw 49 confirmed -
+  year  2020-01-01 .. 2021-01-01  try 2  empty (confirmed)      raw 0 confirmed 0
+  year  2021-01-01 .. 2022-01-01  try 1  hit                    raw 19 confirmed 18  earliest 2021-11-29T19:23:37.000Z ['SOL']
+  month 2021-01-01 .. 2021-02-01  try 1  empty (searching again) raw 0 confirmed -
+  canary 2026-10-26 .. 2026-11-03  try 1  canary ok              raw 71 confirmed -
+  month 2021-01-01 .. 2021-02-01  try 2  empty (confirmed)      raw 0 confirmed 0
+  month 2021-02-01 .. 2021-03-01  try 1  empty (searching again) raw 0 confirmed -
+  canary 2026-10-26 .. 2026-11-03  try 1  canary ok              raw 26 confirmed -
+  month 2021-02-01 .. 2021-03-01  try 2  empty (confirmed)      raw 0 confirmed 0
+  month 2021-03-01 .. 2021-04-01  try 1  empty (searching again) raw 0 confirmed -
+  canary 2026-10-26 .. 2026-11-03  try 1  canary empty (throttled) raw 0 confirmed -
+  month 2021-03-01 .. 2021-04-01  try 2  empty, canary empty too (throttled) raw 0 confirmed -
+  year  2017-11-01 .. 2018-01-01  try 1  empty (searching again) raw 0 confirmed -
+  canary 2026-10-26 .. 2026-11-03  try 1  canary empty (throttled) raw 0 confirmed -
+  year  2017-11-01 .. 2018-01-01  try 2  empty, canary weak or empty (throttled) raw 0 confirmed -
+  year  2017-11-01 .. 2018-01-01  try 1  empty (searching again) raw 0 confirmed -
+  canary 2026-10-26 .. 2026-11-03  try 1  canary ok              raw 49 confirmed -
+  year  2017-11-01 .. 2018-01-01  try 2  empty (confirmed)      raw 0 confirmed 0
+  year  2018-01-01 .. 2019-01-01  try 1  empty (searching again) raw 0 confirmed -
+  canary 2026-10-26 .. 2026-11-03  try 1  canary ok              raw 90 confirmed -
+  year  2018-01-01 .. 2019-01-01  try 2  empty (confirmed)      raw 0 confirmed 0
+  year  2019-01-01 .. 2020-01-01  try 1  empty (searching again) raw 0 confirmed -
+  canary 2026-10-26 .. 2026-11-03  try 1  canary ok              raw 90 confirmed -
+  year  2019-01-01 .. 2020-01-01  try 2  empty (confirmed)      raw 0 confirmed 0
+  year  2020-01-01 .. 2021-01-01  try 1  empty (searching again) raw 0 confirmed -
+  canary 2026-10-26 .. 2026-11-03  try 1  canary ok              raw 71 confirmed -
+  year  2020-01-01 .. 2021-01-01  try 2  empty (confirmed)      raw 0 confirmed 0
+  month 2021-01-01 .. 2021-02-01  try 1  empty (searching again) raw 0 confirmed -
+  canary 2026-10-26 .. 2026-11-03  try 1  canary ok              raw 71 confirmed -
+  month 2021-01-01 .. 2021-02-01  try 2  empty (confirmed)      raw 0 confirmed 0
+  month 2021-02-01 .. 2021-03-01  try 1  empty (searching again) raw 0 confirmed -
+  canary 2026-10-26 .. 2026-11-03  try 1  canary ok              raw 90 confirmed -
+  month 2021-02-01 .. 2021-03-01  try 2  empty (confirmed)      raw 0 confirmed 0
+  month 2021-03-01 .. 2021-04-01  try 1  empty (searching again) raw 0 confirmed -
+  canary 2026-10-26 .. 2026-11-03  try 1  canary weak (26 of 90: throttling) raw 26 confirmed -
+  month 2021-03-01 .. 2021-04-01  try 2  empty, canary weak or empty (throttled) raw 0 confirmed -
+  month 2021-03-01 .. 2021-04-01  try 1  empty (searching again) raw 0 confirmed -
+  canary 2026-10-26 .. 2026-11-03  try 1  canary ok              raw 71 confirmed -
+  month 2021-03-01 .. 2021-04-01  try 2  empty (confirmed)      raw 0 confirmed 0
+  month 2021-04-01 .. 2021-05-01  try 1  empty (searching again) raw 0 confirmed -
+  canary 2026-10-26 .. 2026-11-03  try 1  canary ok              raw 90 confirmed -
+  month 2021-04-01 .. 2021-05-01  try 2  empty (confirmed)      raw 0 confirmed 0
+  month 2021-05-01 .. 2021-06-01  try 1  empty (searching again) raw 0 confirmed -
+  canary 2026-10-26 .. 2026-11-03  try 1  canary ok              raw 90 confirmed -
+  month 2021-05-01 .. 2021-06-01  try 2  empty (confirmed)      raw 0 confirmed 0
+  month 2021-06-01 .. 2021-07-01  try 1  empty (searching again) raw 0 confirmed -
+  canary 2026-10-26 .. 2026-11-03  try 1  canary ok              raw 90 confirmed -
+  month 2021-06-01 .. 2021-07-01  try 2  empty (confirmed)      raw 0 confirmed 0
+  month 2021-07-01 .. 2021-08-01  try 1  hit                    raw 5 confirmed 5  earliest 2021-07-04T17:05:56.000Z ['solana']
+FIRST 2021-07-04T17:05:56.000Z https://x.com/mert/status/1411733026724327429
+  “This tutorial from @Figment_io is absolutely amazing for getting up to speed on @solana development. Would highly recommend: https://learn.figment.io/network-documentation/solana/solana-pathway”

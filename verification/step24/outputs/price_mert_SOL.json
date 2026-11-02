@@ -1,0 +1,29 @@
+{
+ "post": "2021-07-04T17:05:56Z",
+ "label": {
+  "label": "mention",
+  "side": null,
+  "words": []
+ },
+ "then": {
+  "source": "binance",
+  "symbol": "SOLUSDT",
+  "at": "2021-07-04T18:00:00Z",
+  "price": 35.113,
+  "before_listing": false
+ },
+ "now": {
+  "source": "binance",
+  "symbol": "SOLUSDT",
+  "at": "2026-11-02T14:00:00Z",
+  "price": 94.34
+ },
+ "peak": {
+  "source": "binance",
+  "symbol": "SOLUSDT",
+  "day": "2025-01-19",
+  "high": 295.83
+ },
+ "x_now": 2.687,
+ "x_peak": 8.425
+}

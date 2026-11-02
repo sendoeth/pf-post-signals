@@ -1,0 +1,7 @@
+page http://127.0.0.1:36663/
+filter/sort combinations: 21384 set in the page (1206 with rows, 20178 correctly empty), 855 of them also loaded fresh from their URL; author-summary rows checked: 6881; select changes: 44; default-view fields checked against records: 456; without javascript: 57 static rows + 57 static position pages equal the bundle; rows 57; CSP violations 0; console errors 0
+unresolved (test-only fixture copy): sort=return: pending posts 2116212800955576797, 2116304617047007308 at ranks 57, 58 of 58 (last 2 (all pending rows)), return "unresolved", best "–", prices "no entry bar" -> OK
+unresolved (test-only fixture copy): sort=best: pending posts 2116212800955576797, 2116304617047007308 at ranks 57, 58 of 58 (last 2 (all pending rows)), return "unresolved", best "–", prices "no entry bar" -> OK
+unresolved (test-only fixture copy): sort=newest: pending posts 2116212800955576797, 2116304617047007308 at ranks 5, 6 of 58 (by date: after the 4 newer rows), return "unresolved", best "–", prices "no entry bar" -> OK
+ALL PASS
+rc=0
