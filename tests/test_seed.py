@@ -194,6 +194,12 @@ class Words(unittest.TestCase):
         self.assertEqual(self.legs("bought PEPE shares after earnings"), [(None, "review")])
         self.assertEqual(self.legs("bought DASH shares after earnings"), [])                    # 'dash' is a common word: never matched bare
         self.assertEqual(self.legs("long LINK into the upgrade"), [("LINK", "ok")])            # no stock talk: the coin
+        # real post (goodalexander 2026-10-30): "stocks" far from the coins is not stock talk about them
+        self.reg["tickers"]["SOL"]["also_us_stock"] = "Some ETF"
+        got = self.legs("Still like long SOL. sized down LINK am short bunch of single name stocks hedged it with long sui")
+        ok = [a for a, st_ in got if st_ == "ok"]
+        self.assertEqual(ok[:2], ["SOL", "LINK"])                                             # also US stocks, but not talked about as stocks
+        self.assertIn("STOCKS", ok)                                                             # the stocks leg itself
 
     def test_flagged_ticker_goes_to_review(self):
         self.reg["tickers"]["SUI"]["flag"] = {"since": AT, "why": "binance:SUIUSDT is not trading (status BREAK)"}

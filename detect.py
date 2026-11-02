@@ -94,7 +94,12 @@ OPTION = re.compile(r"\b(calls?|puts?)\b", re.I)
 WORDS_PATH = os.path.join(HERE, "data", "coin_words.json")
 US_PATH = os.path.join(HERE, "data", "us_tickers.json")
 STOCK_COIN_RANK = 500        # an unknown cashtag that is also a US stock counts as the coin only up to this market-cap rank
-STOCK_WORDS = re.compile(r"\b(shares?|stocks?|equity|earnings|eps|dividends?|nyse|nasdaq|ipo|guidance|10-?[kq])\b", re.I)
+STOCK_WORDS = re.compile(r"\b(shares?|stock|earnings|eps|dividends?|nyse|nasdaq|ipo|10-?[kq])\b", re.I)
+STOCK_NEAR = 40              # stock talk counts only this close to the coin mention ("single name stocks" elsewhere in a post does not)
+
+
+def stock_talk(text, pos, length):
+    return bool(STOCK_WORDS.search(text[max(0, pos - STOCK_NEAR):pos + length + STOCK_NEAR]))
 _cache = {}
 
 
@@ -140,8 +145,8 @@ def coin_legs(text, amap=None, net=None, registry=None, words=None, us=None):
         e = reg.get("tickers", {}).get(asset)
         if e and e.get("flag"):
             return add(None, via, status="review", reason=f"{asset} ({e['name']}) is flagged by the weekly venue re-check: {e['flag'].get('why')}", pos=pos)
-        if e and e.get("also_us_stock") and STOCK_WORDS.search(text):
-            return add(None, via, status="review", reason=f"{asset} is {e['name']} and the US stock {e['also_us_stock']}; this post talks shares / earnings: pick by hand", pos=pos)
+        if e and e.get("also_us_stock") and stock_talk(text, pos, len(via)):
+            return add(None, via, status="review", reason=f"{asset} is {e['name']} and the US stock {e['also_us_stock']}; the post talks shares / earnings next to it: pick by hand", pos=pos)
         if need_receipt and not receipt:
             return add(None, via, status="review", reason=f"{asset}: its registry receipt is missing or does not match its sha256 (nothing guessed)", pos=pos)
         return add(asset, via, receipt=receipt, pos=pos)
@@ -186,15 +191,15 @@ def coin_legs(text, amap=None, net=None, registry=None, words=None, us=None):
             add(tag, "$" + m.group(1).upper(), pos=m.start())
             continue
         e = reg.get("tickers", {}).get(tag)
-        if e and e.get("also_us_stock") and STOCK_WORDS.search(text):
-            add(None, "$" + tag, status="review", reason=f"${tag} is {e['name']} and the US stock {e['also_us_stock']}; this post talks shares / earnings: pick by hand", pos=m.start())
+        if e and e.get("also_us_stock") and stock_talk(text, m.start(), len(m.group(0))):
+            add(None, "$" + tag, status="review", reason=f"${tag} is {e['name']} and the US stock {e['also_us_stock']}; the post talks shares / earnings next to it: pick by hand", pos=m.start())
             continue
         r = tickers.resolve_ticker(tag, net, registry=reg)
         if not e and tag in us:
             # an unknown cashtag that is also a US-listed ticker: the coin only if it is a real top-500 coin and the
             # post does not talk shares / earnings; otherwise the stock (review, never a tiny token with that symbol)
             rank = ((r.get("coin") or {}).get("rank") or 10 ** 9) if r["status"] == "ok" else 10 ** 9
-            if rank > STOCK_COIN_RANK or STOCK_WORDS.search(text):
+            if rank > STOCK_COIN_RANK or stock_talk(text, m.start(), len(m.group(0))):
                 add(None, "$" + tag, status="review", reason=f"${tag} is a US-listed stock ({us[tag]})"
                     + (f" and only a #{rank} coin" if rank < 10 ** 9 else "") + f": add it with --asset yahoo:{tag} if the stock is the call", pos=m.start())
                 continue
