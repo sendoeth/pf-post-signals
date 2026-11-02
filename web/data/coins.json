@@ -1,10 +1,10 @@
 {
  "schema": "quanty.coins.v1",
- "registry_sha256": "02703c81c647b368afa6500f281493a49238561f053809211f109455e7aa373f",
+ "registry_sha256": "a820f896b57ab6c4a6cb777e07b43dc224c81aa56079cc4626598ba3d5f1e8fc",
  "seed": "sources/tickers/seed/2026-11-02.json",
  "seeded_at": "2026-11-02T02:22:09Z",
  "recheck": "sources/tickers/recheck/2026-11-02.json",
- "rechecked_at": "2026-11-02T02:29:47Z",
+ "rechecked_at": "2026-11-02T02:40:39Z",
  "coverage": {
   "top_listed": 100,
   "top_seeded": 95,
@@ -26,7 +26,7 @@
    "hl_perp": true,
    "also_us_stock": "Grayscale Bitcoin Mini Trust (BTC)",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/BTC.json"
   },
   {
@@ -40,7 +40,7 @@
    "hl_perp": true,
    "also_us_stock": "Grayscale Ethereum Staking Mini ETF Shares",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/ETH.json"
   },
   {
@@ -54,7 +54,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/BNB.json"
   },
   {
@@ -68,7 +68,7 @@
    "hl_perp": true,
    "also_us_stock": "Bitwise XRP ETF",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/XRP.json"
   },
   {
@@ -82,7 +82,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/SOL.json"
   },
   {
@@ -96,7 +96,7 @@
    "hl_perp": true,
    "also_us_stock": "TRX Gold Corporation Common Stock",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/TRX.json"
   },
   {
@@ -110,7 +110,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/ZEC.json"
   },
   {
@@ -124,7 +124,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/HYPE.json"
   },
   {
@@ -138,7 +138,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/DOGE.json"
   },
   {
@@ -152,7 +152,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/XMR.json"
   },
   {
@@ -166,7 +166,7 @@
    "hl_perp": true,
    "also_us_stock": "Interlink Electronics, Inc. - Common Stock",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/LINK.json"
   },
   {
@@ -180,7 +180,7 @@
    "hl_perp": false,
    "also_us_stock": "BNY Mellon Strategic Municipals, Inc. Common Stock",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/LEO.json"
   },
   {
@@ -194,7 +194,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/ADA.json"
   },
   {
@@ -208,7 +208,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/XLM.json"
   },
   {
@@ -222,7 +222,7 @@
    "hl_perp": true,
    "also_us_stock": "Banco De Chile ADS",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/BCH.json"
   },
   {
@@ -236,7 +236,7 @@
    "hl_perp": true,
    "also_us_stock": "iShares Short Duration Bond Active ETF",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/NEAR.json"
   },
   {
@@ -250,7 +250,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/UNI.json"
   },
   {
@@ -264,7 +264,7 @@
    "hl_perp": true,
    "also_us_stock": "LTC Properties, Inc. Common Stock",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/LTC.json"
   },
   {
@@ -278,7 +278,7 @@
    "hl_perp": false,
    "also_us_stock": "Rain Enhancement Technologies Holdco, Inc. - Class A Common Stock",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/RAIN.json"
   },
   {
@@ -292,7 +292,7 @@
    "hl_perp": true,
    "also_us_stock": "Chemours Company (The) Common Stock",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/CC.json"
   },
   {
@@ -306,7 +306,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/AVAX.json"
   },
   {
@@ -320,7 +320,7 @@
    "hl_perp": true,
    "also_us_stock": "Sun Communities, Inc. Common Stock",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/SUI.json"
   },
   {
@@ -334,7 +334,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/GRAM.json"
   },
   {
@@ -348,7 +348,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/HBAR.json"
   },
   {
@@ -362,7 +362,7 @@
    "hl_perp": false,
    "also_us_stock": "Quantinuum Inc. - Class A Common Stock",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/QNT.json"
   },
   {
@@ -376,7 +376,7 @@
    "hl_perp": false,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/SHIB.json"
   },
   {
@@ -390,7 +390,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/TAO.json"
   },
   {
@@ -404,7 +404,7 @@
    "hl_perp": false,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/CRO.json"
   },
   {
@@ -418,7 +418,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/ENA.json"
   },
   {
@@ -432,7 +432,7 @@
    "hl_perp": false,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/OKB.json"
   },
   {
@@ -446,7 +446,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/AAVE.json"
   },
   {
@@ -460,7 +460,7 @@
    "hl_perp": false,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/PEPE.json"
   },
   {
@@ -474,7 +474,7 @@
    "hl_perp": false,
    "also_us_stock": "Macy's Inc Common Stock",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/M.json"
   },
   {
@@ -488,7 +488,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/ONDO.json"
   },
   {
@@ -502,7 +502,7 @@
    "hl_perp": true,
    "also_us_stock": "ProPetro Holding Corp. Common Stock",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/PUMP.json"
   },
   {
@@ -516,7 +516,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/ASTER.json"
   },
   {
@@ -530,7 +530,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/DOT.json"
   },
   {
@@ -544,7 +544,7 @@
    "hl_perp": false,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/BTW.json"
   },
   {
@@ -558,7 +558,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/WLFI.json"
   },
   {
@@ -572,7 +572,7 @@
    "hl_perp": true,
    "also_us_stock": "Champion Homes, Inc. Common Stock",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/SKY.json"
   },
   {
@@ -586,7 +586,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/MNT.json"
   },
   {
@@ -600,7 +600,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/MORPHO.json"
   },
   {
@@ -614,7 +614,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/WLD.json"
   },
   {
@@ -628,7 +628,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/ICP.json"
   },
   {
@@ -642,7 +642,7 @@
    "hl_perp": false,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/HTX.json"
   },
   {
@@ -656,7 +656,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/ETC.json"
   },
   {
@@ -670,36 +670,36 @@
    "hl_perp": true,
    "also_us_stock": "AltShares Merger Arbitrage ETF",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/ARB.json"
-  },
-  {
-   "ticker": "VVV",
-   "name": "Venice Token",
-   "coingecko_id": "venice-token",
-   "rank": 71,
-   "venue": "hyperliquid:VVV",
-   "seed_diff": 0.004348,
-   "in_top": true,
-   "hl_perp": true,
-   "also_us_stock": "Valvoline Inc. Common Stock",
-   "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
-   "receipt": "sources/tickers/VVV.json"
   },
   {
    "ticker": "JST",
    "name": "JUST",
    "coingecko_id": "just",
-   "rank": 72,
+   "rank": 71,
    "venue": "binance:JSTUSDT",
    "seed_diff": 0.001378,
    "in_top": true,
    "hl_perp": false,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/JST.json"
+  },
+  {
+   "ticker": "VVV",
+   "name": "Venice Token",
+   "coingecko_id": "venice-token",
+   "rank": 72,
+   "venue": "hyperliquid:VVV",
+   "seed_diff": 0.004348,
+   "in_top": true,
+   "hl_perp": true,
+   "also_us_stock": "Valvoline Inc. Common Stock",
+   "flag": null,
+   "checked_at": "2026-11-02T02:40:39Z",
+   "receipt": "sources/tickers/VVV.json"
   },
   {
    "ticker": "GT",
@@ -712,7 +712,7 @@
    "hl_perp": false,
    "also_us_stock": "The Goodyear Tire & Rubber Company - Common Stock",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/GT.json"
   },
   {
@@ -726,7 +726,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/POL.json"
   },
   {
@@ -740,7 +740,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/KAS.json"
   },
   {
@@ -754,7 +754,7 @@
    "hl_perp": false,
    "also_us_stock": "Impinj, Inc. - Common Stock",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/PI.json"
   },
   {
@@ -768,7 +768,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/ALGO.json"
   },
   {
@@ -782,7 +782,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/JUP.json"
   },
   {
@@ -796,7 +796,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/RENDER.json"
   },
   {
@@ -810,7 +810,7 @@
    "hl_perp": true,
    "also_us_stock": "Atomera Incorporated - Common Stock",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/ATOM.json"
   },
   {
@@ -824,7 +824,7 @@
    "hl_perp": true,
    "also_us_stock": "Global X Lithium & Battery Tech ETF",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/LIT.json"
   },
   {
@@ -838,7 +838,7 @@
    "hl_perp": false,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/NEXO.json"
   },
   {
@@ -852,7 +852,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/FIL.json"
   },
   {
@@ -866,7 +866,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/ZRO.json"
   },
   {
@@ -880,7 +880,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/INJ.json"
   },
   {
@@ -894,7 +894,7 @@
    "hl_perp": false,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/NIGHT.json"
   },
   {
@@ -908,7 +908,7 @@
    "hl_perp": true,
    "also_us_stock": "The Cheesecake Factory Incorporated - Common Stock",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/CAKE.json"
   },
   {
@@ -922,7 +922,7 @@
    "hl_perp": true,
    "also_us_stock": "Seagate Technology Holdings PLC - Ordinary Shares (Ireland)",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/STX.json"
   },
   {
@@ -936,7 +936,7 @@
    "hl_perp": true,
    "also_us_stock": "DoorDash, Inc. - Common Stock",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/DASH.json"
   },
   {
@@ -950,7 +950,7 @@
    "hl_perp": false,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/XDC.json"
   },
   {
@@ -964,7 +964,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/ETHFI.json"
   },
   {
@@ -978,7 +978,7 @@
    "hl_perp": false,
    "also_us_stock": "Becton, Dickinson and Company Common Stock",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/BDX.json"
   },
   {
@@ -992,7 +992,7 @@
    "hl_perp": true,
    "also_us_stock": "Alpha Pro Tech, Ltd. Common Stock",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/APT.json"
   },
   {
@@ -1006,7 +1006,7 @@
    "hl_perp": false,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/PEARL.json"
   },
   {
@@ -1020,7 +1020,7 @@
    "hl_perp": false,
    "also_us_stock": "Fluor Corporation Common Stock",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/FLR.json"
   },
   {
@@ -1034,7 +1034,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/PYTH.json"
   },
   {
@@ -1048,7 +1048,7 @@
    "hl_perp": true,
    "also_us_stock": "Grupo Aeromexico, S.A.B. de C.V. American Depositary Shares (each representing t",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/AERO.json"
   },
   {
@@ -1062,36 +1062,36 @@
    "hl_perp": false,
    "also_us_stock": "Vermilion Energy Inc. Common (Canada)",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/VET.json"
-  },
-  {
-   "ticker": "STABLE",
-   "name": "\u200b\u200bStable",
-   "coingecko_id": "stable-2",
-   "rank": 110,
-   "venue": "hyperliquid:STABLE",
-   "seed_diff": -0.000851,
-   "in_top": true,
-   "hl_perp": true,
-   "also_us_stock": null,
-   "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
-   "receipt": "sources/tickers/STABLE.json"
   },
   {
    "ticker": "TRUMP",
    "name": "Official Trump",
    "coingecko_id": "official-trump",
-   "rank": 111,
+   "rank": 110,
    "venue": "binance:TRUMPUSDT",
    "seed_diff": -0.000575,
    "in_top": true,
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/TRUMP.json"
+  },
+  {
+   "ticker": "STABLE",
+   "name": "\u200b\u200bStable",
+   "coingecko_id": "stable-2",
+   "rank": 111,
+   "venue": "hyperliquid:STABLE",
+   "seed_diff": -0.000851,
+   "in_top": true,
+   "hl_perp": true,
+   "also_us_stock": null,
+   "flag": null,
+   "checked_at": "2026-11-02T02:40:39Z",
+   "receipt": "sources/tickers/STABLE.json"
   },
   {
    "ticker": "TIA",
@@ -1104,7 +1104,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/TIA.json"
   },
   {
@@ -1118,63 +1118,63 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/PENGU.json"
   },
   {
    "ticker": "CRV",
    "name": "Curve DAO",
    "coingecko_id": "curve-dao-token",
-   "rank": 116,
+   "rank": 115,
    "venue": "binance:CRVUSDT",
    "seed_diff": 3.9e-05,
    "in_top": true,
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/CRV.json"
   },
   {
    "ticker": "RAY",
    "name": "Raydium",
    "coingecko_id": "raydium",
-   "rank": 117,
+   "rank": 116,
    "venue": "binance:RAYUSDT",
    "seed_diff": 0.001296,
    "in_top": true,
    "hl_perp": false,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/RAY.json"
   },
   {
    "ticker": "GRASS",
    "name": "Grass",
    "coingecko_id": "grass",
-   "rank": 118,
+   "rank": 117,
    "venue": "hyperliquid:GRASS",
    "seed_diff": 0.004522,
    "in_top": true,
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/GRASS.json"
   },
   {
    "ticker": "VIRTUAL",
    "name": "Virtuals Protocol",
    "coingecko_id": "virtual-protocol",
-   "rank": 119,
+   "rank": 118,
    "venue": "binance:VIRTUALUSDT",
    "seed_diff": 0.002475,
    "in_top": true,
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/VIRTUAL.json"
   },
   {
@@ -1188,7 +1188,7 @@
    "hl_perp": true,
    "also_us_stock": "Forum Energy Technologies, Inc. Common Stock",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/FET.json"
   },
   {
@@ -1202,7 +1202,7 @@
    "hl_perp": false,
    "also_us_stock": "BlackRock Municipal 2030 Target Term Trust",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/BTT.json"
   },
   {
@@ -1216,7 +1216,7 @@
    "hl_perp": true,
    "also_us_stock": "Vanguard Short-Term Bond ETF",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/BSV.json"
   },
   {
@@ -1230,7 +1230,7 @@
    "hl_perp": false,
    "also_us_stock": "Direxion Daily Real Estate Bear 3X ETF",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/DRV.json"
   },
   {
@@ -1244,7 +1244,7 @@
    "hl_perp": true,
    "also_us_stock": "Solitario Resources Corp. Common Stock",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/XPL.json"
   },
   {
@@ -1258,7 +1258,7 @@
    "hl_perp": true,
    "also_us_stock": "Strategy Inc - 8.00% Series A Perpetual Strike Preferred Stock",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/STRK.json"
   },
   {
@@ -1272,7 +1272,7 @@
    "hl_perp": true,
    "also_us_stock": "Solaris Energy Infrastructure, Inc. Class A Common Stock",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/SEI.json"
   },
   {
@@ -1286,7 +1286,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/PENDLE.json"
   },
   {
@@ -1300,7 +1300,7 @@
    "hl_perp": false,
    "also_us_stock": "FutureFuel Corp.  Common shares",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/FF.json"
   },
   {
@@ -1314,7 +1314,7 @@
    "hl_perp": false,
    "also_us_stock": "Sunoco LP Common Units representing limited partner interests",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/SUN.json"
   },
   {
@@ -1328,7 +1328,7 @@
    "hl_perp": false,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/KITE.json"
   },
   {
@@ -1342,7 +1342,7 @@
    "hl_perp": false,
    "also_us_stock": "Corgi FTSE U.S. Treasury Bond ETF",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/UB.json"
   },
   {
@@ -1356,7 +1356,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/LDO.json"
   },
   {
@@ -1370,7 +1370,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/OP.json"
   },
   {
@@ -1384,7 +1384,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/BONK.json"
   },
   {
@@ -1398,7 +1398,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/CFX.json"
   },
   {
@@ -1412,7 +1412,7 @@
    "hl_perp": true,
    "also_us_stock": "Longnook Uncommon Compounders ETF",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/LUNC.json"
   },
   {
@@ -1426,7 +1426,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/MON.json"
   },
   {
@@ -1440,7 +1440,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/FLOKI.json"
   },
   {
@@ -1454,7 +1454,7 @@
    "hl_perp": true,
    "also_us_stock": "EnerSys Common Stock",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/ENS.json"
   },
   {
@@ -1468,7 +1468,7 @@
    "hl_perp": true,
    "also_us_stock": "Compass, Inc. Class A Common Stock",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/COMP.json"
   },
   {
@@ -1482,7 +1482,7 @@
    "hl_perp": true,
    "also_us_stock": "Antero Resources Corporation Common Stock",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/AR.json"
   },
   {
@@ -1496,7 +1496,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/JTO.json"
   },
   {
@@ -1510,7 +1510,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/EIGEN.json"
   },
   {
@@ -1524,7 +1524,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/SYRUP.json"
   },
   {
@@ -1538,7 +1538,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/IOTA.json"
   },
   {
@@ -1552,21 +1552,21 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/WIF.json"
   },
   {
    "ticker": "RUNE",
    "name": "THORChain",
    "coingecko_id": "thorchain",
-   "rank": 191,
+   "rank": 190,
    "venue": "binance:RUNEUSDT",
    "seed_diff": 0.004411,
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/RUNE.json"
   },
   {
@@ -1580,7 +1580,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/PONS.json"
   },
   {
@@ -1594,7 +1594,7 @@
    "hl_perp": true,
    "also_us_stock": "MetLife, Inc. Common Stock",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/MET.json"
   },
   {
@@ -1608,7 +1608,7 @@
    "hl_perp": true,
    "also_us_stock": "SentinelOne, Inc. Class A Common Stock",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/S.json"
   },
   {
@@ -1622,7 +1622,7 @@
    "hl_perp": true,
    "also_us_stock": "Axis Capital Holdings Limited Common Stock",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/AXS.json"
   },
   {
@@ -1636,7 +1636,7 @@
    "hl_perp": true,
    "also_us_stock": "NeoGenomics, Inc. - Common Stock",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/NEO.json"
   },
   {
@@ -1650,7 +1650,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/SAND.json"
   },
   {
@@ -1664,7 +1664,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/2Z.json"
   },
   {
@@ -1678,7 +1678,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/USELESS.json"
   },
   {
@@ -1692,21 +1692,21 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/FARTCOIN.json"
   },
   {
    "ticker": "ZK",
    "name": "ZKsync",
    "coingecko_id": "zksync",
-   "rank": 246,
+   "rank": 247,
    "venue": "binance:ZKUSDT",
    "seed_diff": 0.001046,
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/ZK.json"
   },
   {
@@ -1720,7 +1720,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/APE.json"
   },
   {
@@ -1734,7 +1734,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/IMX.json"
   },
   {
@@ -1748,35 +1748,35 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/SUPER.json"
   },
   {
    "ticker": "SNX",
    "name": "Synthetix",
    "coingecko_id": "havven",
-   "rank": 266,
+   "rank": 265,
    "venue": "binance:SNXUSDT",
    "seed_diff": 0.002591,
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": "TD SYNNEX Corporation Common Stock",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/SNX.json"
   },
   {
    "ticker": "0G",
    "name": "0G",
    "coingecko_id": "zero-gravity",
-   "rank": 271,
+   "rank": 272,
    "venue": "binance:0GUSDT",
    "seed_diff": 0.001659,
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/0G.json"
   },
   {
@@ -1790,63 +1790,63 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/ZEN.json"
   },
   {
    "ticker": "CASHCAT",
    "name": "Cash Cat",
    "coingecko_id": "cash-cat",
-   "rank": 286,
+   "rank": 285,
    "venue": "hyperliquid:CASHCAT",
    "seed_diff": 0.004025,
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/CASHCAT.json"
-  },
-  {
-   "ticker": "SKR",
-   "name": "Seeker",
-   "coingecko_id": "seeker",
-   "rank": 290,
-   "venue": "hyperliquid:SKR",
-   "seed_diff": 0.002239,
-   "in_top": false,
-   "hl_perp": true,
-   "also_us_stock": null,
-   "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
-   "receipt": "sources/tickers/SKR.json"
   },
   {
    "ticker": "RSR",
    "name": "Reserve Rights",
    "coingecko_id": "reserve-rights-token",
-   "rank": 293,
+   "rank": 290,
    "venue": "binance:RSRUSDT",
    "seed_diff": 0.001261,
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/RSR.json"
+  },
+  {
+   "ticker": "SKR",
+   "name": "Seeker",
+   "coingecko_id": "seeker",
+   "rank": 291,
+   "venue": "hyperliquid:SKR",
+   "seed_diff": 0.002239,
+   "in_top": false,
+   "hl_perp": true,
+   "also_us_stock": null,
+   "flag": null,
+   "checked_at": "2026-11-02T02:40:39Z",
+   "receipt": "sources/tickers/SKR.json"
   },
   {
    "ticker": "DYDX",
    "name": "dYdX",
    "coingecko_id": "dydx-chain",
-   "rank": 295,
+   "rank": 294,
    "venue": "binance:DYDXUSDT",
    "seed_diff": 0.001764,
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/DYDX.json"
   },
   {
@@ -1860,21 +1860,21 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/GALA.json"
   },
   {
    "ticker": "CHIP",
    "name": "USD.AI",
    "coingecko_id": "chip-2",
-   "rank": 298,
+   "rank": 299,
    "venue": "binance:CHIPUSDT",
    "seed_diff": 0.002536,
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": "REX AI Chipmaking ETF",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/CHIP.json"
   },
   {
@@ -1888,21 +1888,21 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/GMX.json"
   },
   {
    "ticker": "MELANIA",
    "name": "Melania Meme",
    "coingecko_id": "melania-meme",
-   "rank": 321,
+   "rank": 320,
    "venue": "hyperliquid:MELANIA",
    "seed_diff": 0.00424,
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/MELANIA.json"
   },
   {
@@ -1916,7 +1916,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/GAS.json"
   },
   {
@@ -1930,7 +1930,7 @@
    "hl_perp": true,
    "also_us_stock": "Wayfair Inc. Class A Common Stock",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/W.json"
   },
   {
@@ -1944,7 +1944,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/MINA.json"
   },
   {
@@ -1958,63 +1958,63 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/ORDI.json"
   },
   {
    "ticker": "PURR",
    "name": "Purr",
    "coingecko_id": "purr-2",
-   "rank": 345,
+   "rank": 344,
    "venue": "hyperliquid:PURR",
    "seed_diff": 0.007944,
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": "Hyperliquid Strategies Inc - Common Stock",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/PURR.json"
-  },
-  {
-   "ticker": "ZETA",
-   "name": "ZetaChain",
-   "coingecko_id": "zetachain",
-   "rank": 378,
-   "venue": "hyperliquid:ZETA",
-   "seed_diff": 0.000688,
-   "in_top": false,
-   "hl_perp": true,
-   "also_us_stock": "Zeta Global Holdings Corp. Class A Common Stock",
-   "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
-   "receipt": "sources/tickers/ZETA.json"
   },
   {
    "ticker": "BABY",
    "name": "Babylon",
    "coingecko_id": "babylon",
-   "rank": 379,
+   "rank": 378,
    "venue": "binance:BABYUSDT",
    "seed_diff": 0.004572,
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/BABY.json"
+  },
+  {
+   "ticker": "ZETA",
+   "name": "ZetaChain",
+   "coingecko_id": "zetachain",
+   "rank": 379,
+   "venue": "hyperliquid:ZETA",
+   "seed_diff": 0.000688,
+   "in_top": false,
+   "hl_perp": true,
+   "also_us_stock": "Zeta Global Holdings Corp. Class A Common Stock",
+   "flag": null,
+   "checked_at": "2026-11-02T02:40:39Z",
+   "receipt": "sources/tickers/ZETA.json"
   },
   {
    "ticker": "LINEA",
    "name": "Linea",
    "coingecko_id": "linea",
-   "rank": 399,
+   "rank": 402,
    "venue": "binance:LINEAUSDT",
    "seed_diff": 0.003367,
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/LINEA.json"
   },
   {
@@ -2028,49 +2028,49 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/KAITO.json"
   },
   {
    "ticker": "IO",
    "name": "io.net",
    "coingecko_id": "io",
-   "rank": 410,
+   "rank": 411,
    "venue": "binance:IOUSDT",
    "seed_diff": 0.00234,
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/IO.json"
   },
   {
    "ticker": "SUSHI",
    "name": "Sushi",
    "coingecko_id": "sushi",
-   "rank": 413,
+   "rank": 414,
    "venue": "binance:SUSHIUSDT",
    "seed_diff": 0.001298,
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/SUSHI.json"
   },
   {
    "ticker": "TURBO",
    "name": "Turbo",
    "coingecko_id": "turbo",
-   "rank": 419,
+   "rank": 421,
    "venue": "binance:TURBOUSDT",
    "seed_diff": 0.000642,
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/TURBO.json"
   },
   {
@@ -2084,7 +2084,7 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/NXPC.json"
   },
   {
@@ -2098,133 +2098,133 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/MEGA.json"
   },
   {
    "ticker": "BERA",
    "name": "Berachain",
    "coingecko_id": "berachain-bera",
-   "rank": 458,
+   "rank": 460,
    "venue": "binance:BERAUSDT",
    "seed_diff": 0.002837,
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/BERA.json"
   },
   {
    "ticker": "TRB",
    "name": "Tellor Tributes",
    "coingecko_id": "tellor",
-   "rank": 467,
+   "rank": 468,
    "venue": "binance:TRBUSDT",
    "seed_diff": 0.002999,
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/TRB.json"
   },
   {
    "ticker": "BIO",
    "name": "Bio Protocol",
    "coingecko_id": "bio-protocol",
-   "rank": 470,
+   "rank": 472,
    "venue": "binance:BIOUSDT",
    "seed_diff": -0.000498,
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": "Bio-Rad Laboratories, Inc. Class A Common Stock",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/BIO.json"
   },
   {
    "ticker": "CELO",
    "name": "Celo",
    "coingecko_id": "celo",
-   "rank": 480,
+   "rank": 479,
    "venue": "binance:CELOUSDT",
    "seed_diff": 0.000469,
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/CELO.json"
   },
   {
    "ticker": "AZTEC",
    "name": "Aztec",
    "coingecko_id": "aztec",
-   "rank": 485,
+   "rank": 484,
    "venue": "hyperliquid:AZTEC",
    "seed_diff": 0.00214,
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/AZTEC.json"
   },
   {
    "ticker": "MERL",
    "name": "Merlin Chain",
    "coingecko_id": "merlin-chain",
-   "rank": 491,
+   "rank": 492,
    "venue": "hyperliquid:MERL",
    "seed_diff": 0.000116,
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/MERL.json"
   },
   {
    "ticker": "ALT",
    "name": "AltLayer",
    "coingecko_id": "altlayer",
-   "rank": 492,
+   "rank": 493,
    "venue": "binance:ALTUSDT",
    "seed_diff": 0.004124,
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": "Altimmune, Inc. - Common Stock",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/ALT.json"
   },
   {
    "ticker": "POLYX",
    "name": "Polymesh",
    "coingecko_id": "polymesh",
-   "rank": 495,
+   "rank": 494,
    "venue": "binance:POLYXUSDT",
    "seed_diff": -0.000713,
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/POLYX.json"
   },
   {
    "ticker": "BRETT",
    "name": "Brett",
    "coingecko_id": "based-brett",
-   "rank": 498,
+   "rank": 499,
    "venue": "hyperliquid:BRETT",
    "seed_diff": 0.007458,
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/BRETT.json"
   },
   {
@@ -2238,63 +2238,63 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/BOME.json"
-  },
-  {
-   "ticker": "POPCAT",
-   "name": "Popcat",
-   "coingecko_id": "popcat",
-   "rank": 528,
-   "venue": "hyperliquid:POPCAT",
-   "seed_diff": 0.001636,
-   "in_top": false,
-   "hl_perp": true,
-   "also_us_stock": null,
-   "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
-   "receipt": "sources/tickers/POPCAT.json"
-  },
-  {
-   "ticker": "PNUT",
-   "name": "Peanut the Squirrel",
-   "coingecko_id": "peanut-the-squirrel",
-   "rank": 530,
-   "venue": "binance:PNUTUSDT",
-   "seed_diff": 0.00392,
-   "in_top": false,
-   "hl_perp": true,
-   "also_us_stock": null,
-   "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
-   "receipt": "sources/tickers/PNUT.json"
   },
   {
    "ticker": "INIT",
    "name": "Initia",
    "coingecko_id": "initia",
-   "rank": 531,
+   "rank": 524,
    "venue": "binance:INITUSDT",
    "seed_diff": 0.005296,
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/INIT.json"
+  },
+  {
+   "ticker": "POPCAT",
+   "name": "Popcat",
+   "coingecko_id": "popcat",
+   "rank": 529,
+   "venue": "hyperliquid:POPCAT",
+   "seed_diff": 0.001636,
+   "in_top": false,
+   "hl_perp": true,
+   "also_us_stock": null,
+   "flag": null,
+   "checked_at": "2026-11-02T02:40:39Z",
+   "receipt": "sources/tickers/POPCAT.json"
+  },
+  {
+   "ticker": "PNUT",
+   "name": "Peanut the Squirrel",
+   "coingecko_id": "peanut-the-squirrel",
+   "rank": 532,
+   "venue": "binance:PNUTUSDT",
+   "seed_diff": 0.00392,
+   "in_top": false,
+   "hl_perp": true,
+   "also_us_stock": null,
+   "flag": null,
+   "checked_at": "2026-11-02T02:40:39Z",
+   "receipt": "sources/tickers/PNUT.json"
   },
   {
    "ticker": "PROVE",
    "name": "Succinct",
    "coingecko_id": "succinct",
-   "rank": 539,
+   "rank": 537,
    "venue": "binance:PROVEUSDT",
    "seed_diff": 0.000392,
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/PROVE.json"
   },
   {
@@ -2308,91 +2308,91 @@
    "hl_perp": true,
    "also_us_stock": "iShares Residential and Multisector Real Estate ETF",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/REZ.json"
   },
   {
    "ticker": "NIL",
    "name": "Nillion",
    "coingecko_id": "nillion",
-   "rank": 568,
+   "rank": 570,
    "venue": "binance:NILUSDT",
    "seed_diff": -0.003763,
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/NIL.json"
-  },
-  {
-   "ticker": "AVNT",
-   "name": "Veranta",
-   "coingecko_id": "avantis",
-   "rank": 585,
-   "venue": "binance:AVNTUSDT",
-   "seed_diff": 0.004588,
-   "in_top": false,
-   "hl_perp": true,
-   "also_us_stock": "Avient Corporation Common Stock",
-   "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
-   "receipt": "sources/tickers/AVNT.json"
   },
   {
    "ticker": "NOT",
    "name": "Notcoin",
    "coingecko_id": "notcoin",
-   "rank": 587,
+   "rank": 584,
    "venue": "binance:NOTUSDT",
    "seed_diff": 0.002681,
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/NOT.json"
+  },
+  {
+   "ticker": "AVNT",
+   "name": "Veranta",
+   "coingecko_id": "avantis",
+   "rank": 586,
+   "venue": "binance:AVNTUSDT",
+   "seed_diff": 0.004588,
+   "in_top": false,
+   "hl_perp": true,
+   "also_us_stock": "Avient Corporation Common Stock",
+   "flag": null,
+   "checked_at": "2026-11-02T02:40:39Z",
+   "receipt": "sources/tickers/AVNT.json"
   },
   {
    "ticker": "MOODENG",
    "name": "Moo Deng",
    "coingecko_id": "moo-deng",
-   "rank": 593,
+   "rank": 595,
    "venue": "hyperliquid:MOODENG",
    "seed_diff": 0.003544,
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/MOODENG.json"
   },
   {
    "ticker": "ME",
    "name": "Magic Eden",
    "coingecko_id": "magic-eden",
-   "rank": 596,
+   "rank": 597,
    "venue": "binance:MEUSDT",
    "seed_diff": 0.002331,
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/ME.json"
   },
   {
    "ticker": "PEOPLE",
    "name": "ConstitutionDAO",
    "coingecko_id": "constitutiondao",
-   "rank": 612,
+   "rank": 616,
    "venue": "binance:PEOPLEUSDT",
    "seed_diff": 0.003667,
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/PEOPLE.json"
   },
   {
@@ -2406,49 +2406,49 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/APEX.json"
   },
   {
    "ticker": "UMA",
    "name": "UMA",
    "coingecko_id": "uma",
-   "rank": 638,
+   "rank": 639,
    "venue": "binance:UMAUSDT",
    "seed_diff": 0.003434,
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/UMA.json"
   },
   {
    "ticker": "MOVE",
    "name": "Movement",
    "coingecko_id": "movement",
-   "rank": 679,
+   "rank": 680,
    "venue": "binance:MOVEUSDT",
    "seed_diff": 0.002277,
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": "Corvex, Inc. - Common Stock",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/MOVE.json"
   },
   {
    "ticker": "MANTA",
    "name": "Manta Network",
    "coingecko_id": "manta-network",
-   "rank": 688,
+   "rank": 687,
    "venue": "binance:MANTAUSDT",
    "seed_diff": 0.001311,
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/MANTA.json"
   },
   {
@@ -2462,175 +2462,175 @@
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/NEIRO.json"
   },
   {
    "ticker": "ZORA",
    "name": "Zora",
    "coingecko_id": "zora",
-   "rank": 727,
+   "rank": 725,
    "venue": "hyperliquid:ZORA",
    "seed_diff": 4.2e-05,
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/ZORA.json"
   },
   {
    "ticker": "BLUR",
    "name": "Blur",
    "coingecko_id": "blur",
-   "rank": 775,
+   "rank": 777,
    "venue": "binance:BLURUSDT",
    "seed_diff": -0.001195,
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/BLUR.json"
   },
   {
    "ticker": "YGG",
    "name": "Yield Guild Games",
    "coingecko_id": "yield-guild-games",
-   "rank": 814,
+   "rank": 813,
    "venue": "binance:YGGUSDT",
    "seed_diff": 0.001124,
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/YGG.json"
   },
   {
    "ticker": "TNSR",
    "name": "Tensor",
    "coingecko_id": "tensor",
-   "rank": 822,
+   "rank": 821,
    "venue": "binance:TNSRUSDT",
    "seed_diff": -0.001296,
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/TNSR.json"
   },
   {
    "ticker": "HEMI",
    "name": "Hemi",
    "coingecko_id": "hemi",
-   "rank": 835,
+   "rank": 834,
    "venue": "binance:HEMIUSDT",
    "seed_diff": 0.00228,
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": "Hartford Equity Premium Income ETF",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/HEMI.json"
   },
   {
    "ticker": "USUAL",
    "name": "Usual",
    "coingecko_id": "usual",
-   "rank": 837,
+   "rank": 838,
    "venue": "binance:USUALUSDT",
    "seed_diff": 0.001106,
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/USUAL.json"
   },
   {
    "ticker": "GMT",
    "name": "GMT",
    "coingecko_id": "stepn",
-   "rank": 840,
+   "rank": 841,
    "venue": "binance:GMTUSDT",
    "seed_diff": 0.001486,
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/GMT.json"
   },
   {
    "ticker": "HYPER",
    "name": "Hyperlane",
    "coingecko_id": "hyperlane",
-   "rank": 844,
+   "rank": 843,
    "venue": "binance:HYPERUSDT",
    "seed_diff": 0.003636,
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/HYPER.json"
   },
   {
    "ticker": "BIGTIME",
    "name": "Big Time",
    "coingecko_id": "big-time",
-   "rank": 868,
+   "rank": 869,
    "venue": "binance:BIGTIMEUSDT",
    "seed_diff": 0.000197,
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/BIGTIME.json"
   },
   {
    "ticker": "WCT",
    "name": "WalletConnect Token",
    "coingecko_id": "connect-token-wct",
-   "rank": 945,
+   "rank": 946,
    "venue": "binance:WCTUSDT",
    "seed_diff": 0.001843,
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": "Wellchange Holdings Company Limited - Class A Ordinary shares",
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/WCT.json"
   },
   {
    "ticker": "AIXBT",
    "name": "aixbt",
    "coingecko_id": "aixbt",
-   "rank": 949,
+   "rank": 951,
    "venue": "binance:AIXBTUSDT",
    "seed_diff": 0.001867,
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/AIXBT.json"
   },
   {
    "ticker": "ACE",
    "name": "Fusionist",
    "coingecko_id": "endurance",
-   "rank": 973,
+   "rank": 974,
    "venue": "binance:ACEUSDT",
    "seed_diff": 0.001964,
    "in_top": false,
    "hl_perp": true,
    "also_us_stock": null,
    "flag": null,
-   "checked_at": "2026-11-02T02:29:47Z",
+   "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/ACE.json"
   }
  ],
