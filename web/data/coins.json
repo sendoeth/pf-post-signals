@@ -1,5 +1,147 @@
 {
  "schema": "quanty.coins.v1",
+ "early_signals": [
+  {
+   "handle": "mert",
+   "asset": "SOL",
+   "post": {
+    "id": "1411733026724327429",
+    "url": "https://x.com/mert/status/1411733026724327429",
+    "posted_at": "2021-07-04T17:05:56Z",
+    "kind": "post",
+    "text": "This tutorial from @Figment_io is absolutely amazing for getting up to speed on @solana development. Would highly recommend: https://t.co/40gz5eEcvi",
+    "matched": [
+     "solana"
+    ],
+    "receipt": "sources/mert/receipts/1411733026724327429.json",
+    "receipt_sha256": "5c00f28ba0112f827266185639b46ceccb7af39f30ed2dcc2952326f5c945ade"
+   },
+   "label": {
+    "label": "mention",
+    "side": null,
+    "words": []
+   },
+   "prices": {
+    "then": {
+     "source": "binance",
+     "symbol": "SOLUSDT",
+     "at": "2021-07-04T18:00:00Z",
+     "price": 35.113,
+     "before_listing": false
+    },
+    "now": {
+     "source": "binance",
+     "symbol": "SOLUSDT",
+     "at": "2026-11-02T16:00:00Z",
+     "price": 93.54
+    },
+    "peak": {
+     "source": "binance",
+     "symbol": "SOLUSDT",
+     "day": "2025-01-19",
+     "high": 295.83
+    },
+    "multiple_now": 2.6639706091760886,
+    "multiple_peak": 8.425084726454589,
+    "sources_tried": [
+     {
+      "source": "binance:SOLUSDT",
+      "history_from": "2020-08-11T06:00:00Z"
+     },
+     {
+      "source": "binance:SOLBUSD",
+      "history_from": "2020-04-10T04:00:00Z"
+     },
+     {
+      "source": "bitfinex:tSOLUSD",
+      "history_from": "2021-02-25T09:00:00Z"
+     }
+    ],
+    "note": "then and peak can come from an older venue than now (all USD / USDT quotes); 'before listing' = the post predates every source's first bar"
+   },
+   "score_neutral": true,
+   "file": "sources/early/mert/SOL.json",
+   "file_sha256": "4ec5c809b3943779bb58b159be0bf56a7871b2246851ef31d30571f51749875c",
+   "searches": 59,
+   "first_call": null
+  },
+  {
+   "handle": "mert",
+   "asset": "ZEC",
+   "post": {
+    "id": "1821188361559978050",
+    "url": "https://x.com/mert/status/1821188361559978050",
+    "posted_at": "2024-08-07T14:15:16Z",
+    "kind": "post",
+    "text": "I'm pretty sure you could actually add  zcash to solana and enable full privacy\n\nYou'd sacrifice some latency but that'd be worth for the set of users that'd be interested in it",
+    "matched": [
+     "zcash"
+    ],
+    "receipt": "sources/mert/receipts/1821188361559978050.json",
+    "receipt_sha256": "22afafe009a3a9445dcd5f88fbbb1ac31a088b15c22c5647b498c18479c6782c"
+   },
+   "label": {
+    "label": "mention",
+    "side": null,
+    "words": []
+   },
+   "prices": {
+    "then": {
+     "source": "binance",
+     "symbol": "ZECUSDT",
+     "at": "2024-08-07T15:00:00Z",
+     "price": 31.62,
+     "before_listing": false
+    },
+    "now": {
+     "source": "binance",
+     "symbol": "ZECUSDT",
+     "at": "2026-11-02T16:00:00Z",
+     "price": 1254.65
+    },
+    "peak": {
+     "source": "binance",
+     "symbol": "ZECUSDT",
+     "day": "2026-09-26",
+     "high": 1698.0
+    },
+    "multiple_now": 39.67900063251107,
+    "multiple_peak": 53.70018975332068,
+    "sources_tried": [
+     {
+      "source": "binance:ZECUSDT",
+      "history_from": "2019-03-21T04:00:00Z"
+     },
+     {
+      "source": "bitfinex:tZECUSD",
+      "history_from": "2016-10-29T07:00:00Z"
+     }
+    ],
+    "note": "then and peak can come from an older venue than now (all USD / USDT quotes); 'before listing' = the post predates every source's first bar"
+   },
+   "score_neutral": true,
+   "file": "sources/early/mert/ZEC.json",
+   "file_sha256": "734a1910fde5eaf965b2910a152766ae877c6a566d2af9348610c3ab187cdfad",
+   "searches": 57,
+   "first_call": {
+    "call": {
+     "record": "records/posts/1970742039722479782_ZEC.json",
+     "url": "https://x.com/mert/status/1970742039722479782",
+     "posted_at": "2025-09-24T06:48:11Z",
+     "side": 1,
+     "entry": {
+      "at": "2025-09-24T07:00:00Z",
+      "price": 54.49
+     },
+     "text": "I am irresponsibly long ZEC"
+    },
+    "days": 412.7,
+    "calls_on_coin": 1,
+    "price_move_before_call": 1.7232764073371285,
+    "after_first_mention": true
+   }
+  }
+ ],
  "registry_sha256": "a820f896b57ab6c4a6cb777e07b43dc224c81aa56079cc4626598ba3d5f1e8fc",
  "seed": "sources/tickers/seed/2026-11-02.json",
  "seeded_at": "2026-11-02T02:22:09Z",

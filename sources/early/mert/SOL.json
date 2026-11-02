@@ -1,0 +1,793 @@
+{
+ "schema": "quanty.early_signal.v1",
+ "handle": "mert",
+ "asset": "SOL",
+ "built_at": "2026-11-02T14:39:30Z",
+ "score_neutral": true,
+ "post": {
+  "id": "1411733026724327429",
+  "url": "https://x.com/mert/status/1411733026724327429",
+  "posted_at": "2021-07-04T17:05:56Z",
+  "kind": "post",
+  "text": "This tutorial from @Figment_io is absolutely amazing for getting up to speed on @solana development. Would highly recommend: https://t.co/40gz5eEcvi",
+  "matched": [
+   "solana"
+  ],
+  "receipt": "sources/mert/receipts/1411733026724327429.json",
+  "receipt_sha256": "5c00f28ba0112f827266185639b46ceccb7af39f30ed2dcc2952326f5c945ade"
+ },
+ "label": {
+  "label": "mention",
+  "side": null,
+  "words": []
+ },
+ "prices": {
+  "then": {
+   "source": "binance",
+   "symbol": "SOLUSDT",
+   "at": "2021-07-04T18:00:00Z",
+   "price": 35.113,
+   "before_listing": false
+  },
+  "now": {
+   "source": "binance",
+   "symbol": "SOLUSDT",
+   "at": "2026-11-02T16:00:00Z",
+   "price": 93.54
+  },
+  "peak": {
+   "source": "binance",
+   "symbol": "SOLUSDT",
+   "day": "2025-01-19",
+   "high": 295.83
+  },
+  "multiple_now": 2.6639706091760886,
+  "multiple_peak": 8.425084726454589,
+  "sources_tried": [
+   {
+    "source": "binance:SOLUSDT",
+    "history_from": "2020-08-11T06:00:00Z"
+   },
+   {
+    "source": "binance:SOLBUSD",
+    "history_from": "2020-04-10T04:00:00Z"
+   },
+   {
+    "source": "bitfinex:tSOLUSD",
+    "history_from": "2021-02-25T09:00:00Z"
+   }
+  ],
+  "note": "then and peak can come from an older venue than now (all USD / USDT quotes); 'before listing' = the post predates every source's first bar"
+ },
+ "search": {
+  "terms": [
+   "$sol",
+   "sol",
+   "solana"
+  ],
+  "searches": 59,
+  "log": [
+   {
+    "level": "year",
+    "since": "2017-11-01",
+    "until": "2018-01-01",
+    "attempt": 1,
+    "result": "empty (searching again)",
+    "raw": 0,
+    "confirmed": null,
+    "run": "2026-11-02T13-38-36Z",
+    "manifest_sha256": "f57686b94b32306af3f9e62f284a5553c77595c4796bd2f6d2af33aeb0c2e63e",
+    "earliest": null
+   },
+   {
+    "level": "canary",
+    "since": "2026-10-26",
+    "until": "2026-11-03",
+    "attempt": 1,
+    "result": "canary ok",
+    "raw": 90,
+    "confirmed": null,
+    "run": "2026-11-02T13-39-03Z",
+    "manifest_sha256": "b3ca81a4995fbcdb9bd298c8680eb63663d88ee2c4fc8708537fcb4b8b0249fd",
+    "earliest": null
+   },
+   {
+    "level": "year",
+    "since": "2017-11-01",
+    "until": "2018-01-01",
+    "attempt": 2,
+    "result": "empty (confirmed)",
+    "raw": 0,
+    "confirmed": 0,
+    "run": "2026-11-02T13-38-49Z",
+    "manifest_sha256": "6dc2234157c713bb9301321e2daae2b44bc9ff9a1c5a54021683cef98e1c0641",
+    "earliest": null
+   },
+   {
+    "level": "year",
+    "since": "2018-01-01",
+    "until": "2019-01-01",
+    "attempt": 1,
+    "result": "empty (searching again)",
+    "raw": 0,
+    "confirmed": null,
+    "run": "2026-11-02T13-39-24Z",
+    "manifest_sha256": "b578f6a2bbf2512ea8e73e6712ed64c0a7b1fb7daedebd37948c5d1e9ad81eb2",
+    "earliest": null
+   },
+   {
+    "level": "canary",
+    "since": "2026-10-26",
+    "until": "2026-11-03",
+    "attempt": 1,
+    "result": "canary ok",
+    "raw": 90,
+    "confirmed": null,
+    "run": "2026-11-02T13-39-53Z",
+    "manifest_sha256": "251a9f4813bffd044fb3947a6958b5ff485f99e7189ca18f187164fe3c14038c",
+    "earliest": null
+   },
+   {
+    "level": "year",
+    "since": "2018-01-01",
+    "until": "2019-01-01",
+    "attempt": 2,
+    "result": "empty (confirmed)",
+    "raw": 0,
+    "confirmed": 0,
+    "run": "2026-11-02T13-39-39Z",
+    "manifest_sha256": "dfe286d21e56971ea9d5494851ca9f76f60f283352240f5e781d32ab614dc005",
+    "earliest": null
+   },
+   {
+    "level": "year",
+    "since": "2019-01-01",
+    "until": "2020-01-01",
+    "attempt": 1,
+    "result": "empty (searching again)",
+    "raw": 0,
+    "confirmed": null,
+    "run": "2026-11-02T13-40-14Z",
+    "manifest_sha256": "6daca13c96a6abfb7149f8cf0e03bd339570877d8d2f3151e6581c6a72fd8202",
+    "earliest": null
+   },
+   {
+    "level": "canary",
+    "since": "2026-10-26",
+    "until": "2026-11-03",
+    "attempt": 1,
+    "result": "canary ok",
+    "raw": 90,
+    "confirmed": null,
+    "run": "2026-11-02T13-40-42Z",
+    "manifest_sha256": "e95f931834b7be60bc19d4556e1beb57f5114ec0edee842b21a8ad305fb4b12b",
+    "earliest": null
+   },
+   {
+    "level": "year",
+    "since": "2019-01-01",
+    "until": "2020-01-01",
+    "attempt": 2,
+    "result": "empty (confirmed)",
+    "raw": 0,
+    "confirmed": 0,
+    "run": "2026-11-02T13-40-28Z",
+    "manifest_sha256": "ef7a1db2931ec4f8a56a9b428990f252c0cf87af000e3a939467036d5c1e6890",
+    "earliest": null
+   },
+   {
+    "level": "year",
+    "since": "2020-01-01",
+    "until": "2021-01-01",
+    "attempt": 1,
+    "result": "empty (searching again)",
+    "raw": 0,
+    "confirmed": null,
+    "run": "2026-11-02T13-41-03Z",
+    "manifest_sha256": "23c1c26505bc6725c586e65846485fbabb4d057b4204d53c57855a6f54da2a3d",
+    "earliest": null
+   },
+   {
+    "level": "canary",
+    "since": "2026-10-26",
+    "until": "2026-11-03",
+    "attempt": 1,
+    "result": "canary ok",
+    "raw": 49,
+    "confirmed": null,
+    "run": "2026-11-02T13-41-30Z",
+    "manifest_sha256": "1d9f69c302d9cd1256e0ae4ce6e238bfedc430f383e9121a1a4843024d4b6e0e",
+    "earliest": null
+   },
+   {
+    "level": "year",
+    "since": "2020-01-01",
+    "until": "2021-01-01",
+    "attempt": 2,
+    "result": "empty (confirmed)",
+    "raw": 0,
+    "confirmed": 0,
+    "run": "2026-11-02T13-41-17Z",
+    "manifest_sha256": "6d3e6d73e9fe56833abf14d8ffe84b33ac9b2906a51494be47fab015a5859e9a",
+    "earliest": null
+   },
+   {
+    "level": "year",
+    "since": "2021-01-01",
+    "until": "2022-01-01",
+    "attempt": 1,
+    "result": "hit",
+    "raw": 19,
+    "confirmed": 18,
+    "run": "2026-11-02T13-41-50Z",
+    "manifest_sha256": "e2e5bea8ef7af6c45993e9c5f6f5a27a1391e6ad36989314d3ef07263f1cc39b",
+    "earliest": {
+     "id": "1465401079387017219",
+     "postedAt": "2021-11-29T19:23:37.000Z",
+     "matched": [
+      "SOL"
+     ]
+    }
+   },
+   {
+    "level": "month",
+    "since": "2021-01-01",
+    "until": "2021-02-01",
+    "attempt": 1,
+    "result": "empty (searching again)",
+    "raw": 0,
+    "confirmed": null,
+    "run": "2026-11-02T13-42-04Z",
+    "manifest_sha256": "85163d90e42f080c9b93214ec554341135225485eed825078e34574c3205cf40",
+    "earliest": null
+   },
+   {
+    "level": "canary",
+    "since": "2026-10-26",
+    "until": "2026-11-03",
+    "attempt": 1,
+    "result": "canary ok",
+    "raw": 71,
+    "confirmed": null,
+    "run": "2026-11-02T13-42-31Z",
+    "manifest_sha256": "a11cfefe3f4b15c8989c31a58f6a1bc937b2ef7011b265d7b92e9aadc1dcc70d",
+    "earliest": null
+   },
+   {
+    "level": "month",
+    "since": "2021-01-01",
+    "until": "2021-02-01",
+    "attempt": 2,
+    "result": "empty (confirmed)",
+    "raw": 0,
+    "confirmed": 0,
+    "run": "2026-11-02T13-42-18Z",
+    "manifest_sha256": "837abc7e199f9ccb6e4a830dfc2427d8bbeb1ae3d44eabae2fbe54689f1bfd83",
+    "earliest": null
+   },
+   {
+    "level": "month",
+    "since": "2021-02-01",
+    "until": "2021-03-01",
+    "attempt": 1,
+    "result": "empty (searching again)",
+    "raw": 0,
+    "confirmed": null,
+    "run": "2026-11-02T13-42-53Z",
+    "manifest_sha256": "b98ddb565ba58e48498628ba667e05bdcfe18b20ef9e7c2ce4df330753afd6f0",
+    "earliest": null
+   },
+   {
+    "level": "canary",
+    "since": "2026-10-26",
+    "until": "2026-11-03",
+    "attempt": 1,
+    "result": "canary ok",
+    "raw": 26,
+    "confirmed": null,
+    "run": "2026-11-02T13-43-20Z",
+    "manifest_sha256": "d06f6037e6dc9544dc27df3c2f1c7b2e434cff222f0789772cace0c399d385ca",
+    "earliest": null
+   },
+   {
+    "level": "month",
+    "since": "2021-02-01",
+    "until": "2021-03-01",
+    "attempt": 2,
+    "result": "empty (confirmed)",
+    "raw": 0,
+    "confirmed": 0,
+    "run": "2026-11-02T13-43-06Z",
+    "manifest_sha256": "2d9b64bc0fa18fec730c223e69549586b148e4f8d0901e19424754a94db959e1",
+    "earliest": null
+   },
+   {
+    "level": "month",
+    "since": "2021-03-01",
+    "until": "2021-04-01",
+    "attempt": 1,
+    "result": "empty (searching again)",
+    "raw": 0,
+    "confirmed": null,
+    "run": "2026-11-02T13-43-36Z",
+    "manifest_sha256": "f2f4cff1155cb687d0e9004b5ee7a0e215fbf98d4e410ab3ba31b7efe6315f89",
+    "earliest": null
+   },
+   {
+    "level": "canary",
+    "since": "2026-10-26",
+    "until": "2026-11-03",
+    "attempt": 1,
+    "result": "canary empty (throttled)",
+    "raw": 0,
+    "confirmed": null,
+    "run": "2026-11-02T13-44-03Z",
+    "manifest_sha256": "62a543524b150e790bb6cef9d137f8b8ffc94c8d2820760f23a259401886cf45",
+    "earliest": null
+   },
+   {
+    "level": "month",
+    "since": "2021-03-01",
+    "until": "2021-04-01",
+    "attempt": 2,
+    "result": "empty, canary empty too (throttled)",
+    "raw": 0,
+    "confirmed": null,
+    "run": "2026-11-02T13-43-50Z",
+    "manifest_sha256": "ae583875bc42223105ccc4fd4440b6fac50e56a5dcc9d82b0188ab464e3d1f84",
+    "earliest": null
+   },
+   {
+    "level": "year",
+    "since": "2017-11-01",
+    "until": "2018-01-01",
+    "attempt": 1,
+    "result": "empty (searching again)",
+    "raw": 0,
+    "confirmed": null,
+    "run": "2026-11-02T13-45-23Z",
+    "manifest_sha256": "c0f1b242de7685390a423b87741920d668047c5d824d8f39f3fe0a4365e6b925",
+    "earliest": null
+   },
+   {
+    "level": "canary",
+    "since": "2026-10-26",
+    "until": "2026-11-03",
+    "attempt": 1,
+    "result": "canary empty (throttled)",
+    "raw": 0,
+    "confirmed": null,
+    "run": "2026-11-02T13-46-04Z",
+    "manifest_sha256": "811c1c4451d4cdaefd3152387c83fba5000c54aee4be78d7e89b681b19886007",
+    "earliest": null
+   },
+   {
+    "level": "year",
+    "since": "2017-11-01",
+    "until": "2018-01-01",
+    "attempt": 2,
+    "result": "empty, canary weak or empty (throttled)",
+    "raw": 0,
+    "confirmed": null,
+    "run": "2026-11-02T13-45-44Z",
+    "manifest_sha256": "f92822e9858a2c1dd28e3df8058663a857d3d3f08df2d380e352e70871346a2a",
+    "earliest": null
+   },
+   {
+    "level": "year",
+    "since": "2017-11-01",
+    "until": "2018-01-01",
+    "attempt": 1,
+    "result": "empty (searching again)",
+    "raw": 0,
+    "confirmed": null,
+    "run": "2026-11-02T14-06-25Z",
+    "manifest_sha256": "b77cb43000138147267fca5eb029972595d84f1e2f726a6e740f23c868a633fa",
+    "earliest": null
+   },
+   {
+    "level": "canary",
+    "since": "2026-10-26",
+    "until": "2026-11-03",
+    "attempt": 1,
+    "result": "canary ok",
+    "raw": 49,
+    "confirmed": null,
+    "run": "2026-11-02T14-07-06Z",
+    "manifest_sha256": "ac8a1592d6da21155dc0442e08115224bfda1282cb1f9272da4840c686f4e326",
+    "earliest": null
+   },
+   {
+    "level": "year",
+    "since": "2017-11-01",
+    "until": "2018-01-01",
+    "attempt": 2,
+    "result": "empty (confirmed)",
+    "raw": 0,
+    "confirmed": 0,
+    "run": "2026-11-02T14-06-46Z",
+    "manifest_sha256": "b979cf7609bee5669ec6e2ecd6ca1c48731bb55ef0cedd14814ab480504e6f51",
+    "earliest": null
+   },
+   {
+    "level": "year",
+    "since": "2018-01-01",
+    "until": "2019-01-01",
+    "attempt": 1,
+    "result": "empty (searching again)",
+    "raw": 0,
+    "confirmed": null,
+    "run": "2026-11-02T14-07-32Z",
+    "manifest_sha256": "da244b7beec28d48699b40dbcfe362d3376c822eeb8c42a5704ed34b7f1f5b75",
+    "earliest": null
+   },
+   {
+    "level": "canary",
+    "since": "2026-10-26",
+    "until": "2026-11-03",
+    "attempt": 1,
+    "result": "canary ok",
+    "raw": 90,
+    "confirmed": null,
+    "run": "2026-11-02T14-08-13Z",
+    "manifest_sha256": "724e81f67270f8e8a33b54fd189ba8d04eec752ea5d2f7f757be676d0d55c344",
+    "earliest": null
+   },
+   {
+    "level": "year",
+    "since": "2018-01-01",
+    "until": "2019-01-01",
+    "attempt": 2,
+    "result": "empty (confirmed)",
+    "raw": 0,
+    "confirmed": 0,
+    "run": "2026-11-02T14-07-53Z",
+    "manifest_sha256": "9896202aad4b3477206fc6a1abfde135b51da9e1338a166c3ada2945795560c0",
+    "earliest": null
+   },
+   {
+    "level": "year",
+    "since": "2019-01-01",
+    "until": "2020-01-01",
+    "attempt": 1,
+    "result": "empty (searching again)",
+    "raw": 0,
+    "confirmed": null,
+    "run": "2026-11-02T14-08-42Z",
+    "manifest_sha256": "a27e429c75c375fc292c884e26065b9cc7d3e0ba5e482f8e65cf5dd7ef9337c9",
+    "earliest": null
+   },
+   {
+    "level": "canary",
+    "since": "2026-10-26",
+    "until": "2026-11-03",
+    "attempt": 1,
+    "result": "canary ok",
+    "raw": 90,
+    "confirmed": null,
+    "run": "2026-11-02T14-09-23Z",
+    "manifest_sha256": "a05acdc09c6893ed4ba2fe8eb9c59e7ff534a71d9b79218fba920001c0bc956c",
+    "earliest": null
+   },
+   {
+    "level": "year",
+    "since": "2019-01-01",
+    "until": "2020-01-01",
+    "attempt": 2,
+    "result": "empty (confirmed)",
+    "raw": 0,
+    "confirmed": 0,
+    "run": "2026-11-02T14-09-02Z",
+    "manifest_sha256": "3f11bda0c1d4faa123f987d48b3df701dc364fe919acc6a55d4cced5582e4bc1",
+    "earliest": null
+   },
+   {
+    "level": "year",
+    "since": "2020-01-01",
+    "until": "2021-01-01",
+    "attempt": 1,
+    "result": "empty (searching again)",
+    "raw": 0,
+    "confirmed": null,
+    "run": "2026-11-02T14-09-52Z",
+    "manifest_sha256": "813b92f0065c134bef7633a1d308aa8f78c0e2ed3fd2a273ac21253ef8cb9838",
+    "earliest": null
+   },
+   {
+    "level": "canary",
+    "since": "2026-10-26",
+    "until": "2026-11-03",
+    "attempt": 1,
+    "result": "canary ok",
+    "raw": 71,
+    "confirmed": null,
+    "run": "2026-11-02T14-10-33Z",
+    "manifest_sha256": "2d7aded5a058f22131772a78b378be5067ada5d7c7cdc1b028e2a369244acc0f",
+    "earliest": null
+   },
+   {
+    "level": "year",
+    "since": "2020-01-01",
+    "until": "2021-01-01",
+    "attempt": 2,
+    "result": "empty (confirmed)",
+    "raw": 0,
+    "confirmed": 0,
+    "run": "2026-11-02T14-10-13Z",
+    "manifest_sha256": "15924cf3f0f1b81aec6b35906d53be7babb90aac15a3d96b436339a4b890dfaf",
+    "earliest": null
+   },
+   {
+    "level": "month",
+    "since": "2021-01-01",
+    "until": "2021-02-01",
+    "attempt": 1,
+    "result": "empty (searching again)",
+    "raw": 0,
+    "confirmed": null,
+    "run": "2026-11-02T14-11-02Z",
+    "manifest_sha256": "9d3146ebb01f28acb3a9058e423658a6fad82bcc470eb63ad5e1d27d401a1d03",
+    "earliest": null
+   },
+   {
+    "level": "canary",
+    "since": "2026-10-26",
+    "until": "2026-11-03",
+    "attempt": 1,
+    "result": "canary ok",
+    "raw": 71,
+    "confirmed": null,
+    "run": "2026-11-02T14-11-43Z",
+    "manifest_sha256": "30121623524c29a311a9537f58759811a1400dbe7ae908baf97a582f61f2bfa5",
+    "earliest": null
+   },
+   {
+    "level": "month",
+    "since": "2021-01-01",
+    "until": "2021-02-01",
+    "attempt": 2,
+    "result": "empty (confirmed)",
+    "raw": 0,
+    "confirmed": 0,
+    "run": "2026-11-02T14-11-22Z",
+    "manifest_sha256": "a7dc80d9225802a76d6fe89b3dfc568bc2cf72f4e090f8c4f03f40da858879c6",
+    "earliest": null
+   },
+   {
+    "level": "month",
+    "since": "2021-02-01",
+    "until": "2021-03-01",
+    "attempt": 1,
+    "result": "empty (searching again)",
+    "raw": 0,
+    "confirmed": null,
+    "run": "2026-11-02T14-12-12Z",
+    "manifest_sha256": "8eb885534d3134eac3ab7f9ef44eb4ec685d3487f3c6abaa5147f8d2df9a92e7",
+    "earliest": null
+   },
+   {
+    "level": "canary",
+    "since": "2026-10-26",
+    "until": "2026-11-03",
+    "attempt": 1,
+    "result": "canary ok",
+    "raw": 90,
+    "confirmed": null,
+    "run": "2026-11-02T14-12-53Z",
+    "manifest_sha256": "f369a57ade971e767bbc229af1e0dd377a92d10632bbdd9ba28ac1907e7d6891",
+    "earliest": null
+   },
+   {
+    "level": "month",
+    "since": "2021-02-01",
+    "until": "2021-03-01",
+    "attempt": 2,
+    "result": "empty (confirmed)",
+    "raw": 0,
+    "confirmed": 0,
+    "run": "2026-11-02T14-12-32Z",
+    "manifest_sha256": "6d48aad83315a5659212b7188f109830f78244d6442f93ae3deb57a56621abc2",
+    "earliest": null
+   },
+   {
+    "level": "month",
+    "since": "2021-03-01",
+    "until": "2021-04-01",
+    "attempt": 1,
+    "result": "empty (searching again)",
+    "raw": 0,
+    "confirmed": null,
+    "run": "2026-11-02T14-13-22Z",
+    "manifest_sha256": "18f9859f02a6191ced9174248fdba1742fa3c1b16be44a6128af727456728da5",
+    "earliest": null
+   },
+   {
+    "level": "canary",
+    "since": "2026-10-26",
+    "until": "2026-11-03",
+    "attempt": 1,
+    "result": "canary weak (26 of 90: throttling)",
+    "raw": 26,
+    "confirmed": null,
+    "run": "2026-11-02T14-14-03Z",
+    "manifest_sha256": "2e427d22da258a875bca3be48ce72f62ca845683843d08498978411a2c23876a",
+    "earliest": null
+   },
+   {
+    "level": "month",
+    "since": "2021-03-01",
+    "until": "2021-04-01",
+    "attempt": 2,
+    "result": "empty, canary weak or empty (throttled)",
+    "raw": 0,
+    "confirmed": null,
+    "run": "2026-11-02T14-13-42Z",
+    "manifest_sha256": "44a0fbf834370f67cf62530aef3fcc11f521fe9c109c3fb6b93fb29904bedbc2",
+    "earliest": null
+   },
+   {
+    "level": "month",
+    "since": "2021-03-01",
+    "until": "2021-04-01",
+    "attempt": 1,
+    "result": "empty (searching again)",
+    "raw": 0,
+    "confirmed": null,
+    "run": "2026-11-02T14-34-26Z",
+    "manifest_sha256": "5e09314266e8ee78e2f1ac4bb6027e640afbef86adb11246fc8416c7c5a83a41",
+    "earliest": null
+   },
+   {
+    "level": "canary",
+    "since": "2026-10-26",
+    "until": "2026-11-03",
+    "attempt": 1,
+    "result": "canary ok",
+    "raw": 71,
+    "confirmed": null,
+    "run": "2026-11-02T14-35-08Z",
+    "manifest_sha256": "6bb05b991f51f03125d087bbe356e0d29f69724d0e210ae34e31b73856abe115",
+    "earliest": null
+   },
+   {
+    "level": "month",
+    "since": "2021-03-01",
+    "until": "2021-04-01",
+    "attempt": 2,
+    "result": "empty (confirmed)",
+    "raw": 0,
+    "confirmed": 0,
+    "run": "2026-11-02T14-34-47Z",
+    "manifest_sha256": "d6b2a76226eed9fa42120da4cb6bc456658ccc69d8550d150a637a32ab514c98",
+    "earliest": null
+   },
+   {
+    "level": "month",
+    "since": "2021-04-01",
+    "until": "2021-05-01",
+    "attempt": 1,
+    "result": "empty (searching again)",
+    "raw": 0,
+    "confirmed": null,
+    "run": "2026-11-02T14-35-37Z",
+    "manifest_sha256": "2aba5c10544d801857f1e0d9a7ab4fa4a0af7122991f548a13c789d7f16ae1d4",
+    "earliest": null
+   },
+   {
+    "level": "canary",
+    "since": "2026-10-26",
+    "until": "2026-11-03",
+    "attempt": 1,
+    "result": "canary ok",
+    "raw": 90,
+    "confirmed": null,
+    "run": "2026-11-02T14-36-18Z",
+    "manifest_sha256": "95c0f993a70d72427f6b38a13c5721fec2f154742cc00e401a414c29e6e06403",
+    "earliest": null
+   },
+   {
+    "level": "month",
+    "since": "2021-04-01",
+    "until": "2021-05-01",
+    "attempt": 2,
+    "result": "empty (confirmed)",
+    "raw": 0,
+    "confirmed": 0,
+    "run": "2026-11-02T14-35-57Z",
+    "manifest_sha256": "c15a0dc8c981a28026390d4943c9e828c09170cf76b0ef3139c6e8fd7b23f768",
+    "earliest": null
+   },
+   {
+    "level": "month",
+    "since": "2021-05-01",
+    "until": "2021-06-01",
+    "attempt": 1,
+    "result": "empty (searching again)",
+    "raw": 0,
+    "confirmed": null,
+    "run": "2026-11-02T14-36-47Z",
+    "manifest_sha256": "d837bbfd53740b952dd8ad31d8b358066765d079a28b6711461d6fffab78b7eb",
+    "earliest": null
+   },
+   {
+    "level": "canary",
+    "since": "2026-10-26",
+    "until": "2026-11-03",
+    "attempt": 1,
+    "result": "canary ok",
+    "raw": 90,
+    "confirmed": null,
+    "run": "2026-11-02T14-37-28Z",
+    "manifest_sha256": "b37947747fe6d53c0b5be274f65812677853fc87ca17ee463ebf89e7696caeff",
+    "earliest": null
+   },
+   {
+    "level": "month",
+    "since": "2021-05-01",
+    "until": "2021-06-01",
+    "attempt": 2,
+    "result": "empty (confirmed)",
+    "raw": 0,
+    "confirmed": 0,
+    "run": "2026-11-02T14-37-08Z",
+    "manifest_sha256": "735f27d208cf3c6fac9740af2c53e54425e44383510f279d4824a1756969b10f",
+    "earliest": null
+   },
+   {
+    "level": "month",
+    "since": "2021-06-01",
+    "until": "2021-07-01",
+    "attempt": 1,
+    "result": "empty (searching again)",
+    "raw": 0,
+    "confirmed": null,
+    "run": "2026-11-02T14-37-57Z",
+    "manifest_sha256": "6ec36c72d83c9ed9007580620da1084746ff61e91d6fd7041aa0aa9d4c1e7e87",
+    "earliest": null
+   },
+   {
+    "level": "canary",
+    "since": "2026-10-26",
+    "until": "2026-11-03",
+    "attempt": 1,
+    "result": "canary ok",
+    "raw": 90,
+    "confirmed": null,
+    "run": "2026-11-02T14-38-37Z",
+    "manifest_sha256": "bc0e62e1d2def9c9ac24bf3ed8638b30d88f945341da68d3a90ac1c654a7c946",
+    "earliest": null
+   },
+   {
+    "level": "month",
+    "since": "2021-06-01",
+    "until": "2021-07-01",
+    "attempt": 2,
+    "result": "empty (confirmed)",
+    "raw": 0,
+    "confirmed": 0,
+    "run": "2026-11-02T14-38-17Z",
+    "manifest_sha256": "9b63558ab3f9cd182d274cab626f398caa0a84ba8d928c401688bb87e3a40fbd",
+    "earliest": null
+   },
+   {
+    "level": "month",
+    "since": "2021-07-01",
+    "until": "2021-08-01",
+    "attempt": 1,
+    "result": "hit",
+    "raw": 5,
+    "confirmed": 5,
+    "run": "2026-11-02T14-39-06Z",
+    "manifest_sha256": "46b551ed8d9e8d7f9066247f60d05a07bf816af4d95d99db72d736dba1bb0eaf",
+    "earliest": {
+     "id": "1411733026724327429",
+     "postedAt": "2021-07-04T17:05:56.000Z",
+     "matched": [
+      "solana"
+     ]
+    }
+   }
+  ],
+  "search_log_file": "intake/early/mert_SOL.json"
+ }
+}

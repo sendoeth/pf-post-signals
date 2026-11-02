@@ -33,6 +33,9 @@ jobs:
         run: python3 -m pip install --quiet jsonschema==4.10.3 pillow==11.3.0 numpy==2.3.4
       - name: refresh records (fresh prices, frozen values kept)
         run: python3 refresh.py
+      - name: early signals - today's price and the peak (the first post and the then-price stay frozen; non-blocking)
+        run: |
+          python3 tools/first_mention.py refresh || echo "early-signal refresh failed, yesterday's values stay"
       - name: rebuild the chart bundle
         run: python3 build_chart.py
       - name: refetch candles + entry-bar check
@@ -50,13 +53,13 @@ jobs:
           python3 check_bundle.py
           python3 validate_records.py
           python3 parity.py
-          python3 -m unittest tests.test_resolve tests.test_ingest_detect tests.test_guard tests.test_refresh tests.test_static tests.test_lifecycle tests.test_history tests.test_rating tests.test_add_call tests.test_scan_caller tests.test_read_images tests.test_call_context tests.test_transcript tests.test_episode_intake tests.test_tickers tests.test_seed
+          python3 -m unittest tests.test_resolve tests.test_ingest_detect tests.test_guard tests.test_refresh tests.test_static tests.test_lifecycle tests.test_history tests.test_rating tests.test_add_call tests.test_scan_caller tests.test_read_images tests.test_call_context tests.test_transcript tests.test_episode_intake tests.test_tickers tests.test_seed tests.test_early
       - name: commit
         id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add records data/refresh_log.json data/tickers.json web sources/episodes sources/tickers
+          git add records data/refresh_log.json data/tickers.json web sources/episodes sources/tickers sources/early
           if git diff --cached --quiet; then echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0; fi
           AS_OF=$(python3 -c 'import json; print(json.load(open("data/refresh_log.json"))["refreshed_at"])')
           git commit -q -m "refresh: prices as of $AS_OF"

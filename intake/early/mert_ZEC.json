@@ -1,0 +1,1071 @@
+{
+ "schema": "quanty.early_signal.v1.search",
+ "handle": "mert",
+ "asset": "ZEC",
+ "status": "found",
+ "terms": [
+  "$zec",
+  "zcash",
+  "zec"
+ ],
+ "notes": [],
+ "rule": "years -> months -> the hit month; a window answering fewer than 15 posts is complete (its earliest post is exact), else it is halved (earlier half first); every empty answer is searched twice and only counts while a canary search (the account's last 7 days) returns posts",
+ "first": {
+  "id": "1821188361559978050",
+  "url": "https://x.com/mert/status/1821188361559978050",
+  "postedAt": "2024-08-07T14:15:16.000Z",
+  "kind": "post",
+  "text": "I'm pretty sure you could actually add  zcash to solana and enable full privacy\n\nYou'd sacrifice some latency but that'd be worth for the set of users that'd be interested in it",
+  "_matched": [
+   "zcash"
+  ]
+ },
+ "searches": 57,
+ "log": [
+  {
+   "level": "year",
+   "since": "2016-01-01",
+   "until": "2017-01-01",
+   "query": "from:mert ($zec OR zcash OR zec) since:2016-01-01 until:2017-01-01",
+   "attempt": 1,
+   "at": "2026-11-02T14:39:32Z",
+   "run": "2026-11-02T14-39-28Z",
+   "manifest_sha256": "ce60443044016e4306409d0a254924458582ae71bf1142977732473efda8943f",
+   "result": "empty (searching again)",
+   "raw": 0
+  },
+  {
+   "level": "canary",
+   "since": "2026-10-26",
+   "until": "2026-11-03",
+   "query": "from:mert since:2026-10-26 until:2026-11-03",
+   "attempt": 1,
+   "at": "2026-11-02T14:40:19Z",
+   "run": "2026-11-02T14-40-09Z",
+   "manifest_sha256": "ef7d735c87cd023753d2cc26a7f9747b203d85295bb0718cbfba85736d3a1184",
+   "raw": 49,
+   "best": 49,
+   "result": "canary ok"
+  },
+  {
+   "level": "year",
+   "since": "2016-01-01",
+   "until": "2017-01-01",
+   "query": "from:mert ($zec OR zcash OR zec) since:2016-01-01 until:2017-01-01",
+   "attempt": 2,
+   "at": "2026-11-02T14:39:53Z",
+   "run": "2026-11-02T14-39-48Z",
+   "manifest_sha256": "2b91ebc961de1ecc28afeed5c62e9f073406ed79b32cea075abc55a2f2ca9f69",
+   "raw": 0,
+   "reposts": 0,
+   "confirmed": 0,
+   "result": "empty (confirmed)",
+   "canary_raw": 49,
+   "canary_best": 49,
+   "earliest": null,
+   "posts": []
+  },
+  {
+   "level": "year",
+   "since": "2017-01-01",
+   "until": "2018-01-01",
+   "query": "from:mert ($zec OR zcash OR zec) since:2017-01-01 until:2018-01-01",
+   "attempt": 1,
+   "at": "2026-11-02T14:40:39Z",
+   "run": "2026-11-02T14-40-35Z",
+   "manifest_sha256": "c0db77b538cb9acd795add1f7461e43aa8a4d1f8450bab9568aa33971acc4998",
+   "result": "empty (searching again)",
+   "raw": 0
+  },
+  {
+   "level": "canary",
+   "since": "2026-10-26",
+   "until": "2026-11-03",
+   "query": "from:mert since:2026-10-26 until:2026-11-03",
+   "attempt": 1,
+   "at": "2026-11-02T14:41:29Z",
+   "run": "2026-11-02T14-41-16Z",
+   "manifest_sha256": "dbf5436853fe00d6052ac43cf263b67031f675433aea447f71573fd85d54b5cc",
+   "raw": 90,
+   "best": 90,
+   "result": "canary ok"
+  },
+  {
+   "level": "year",
+   "since": "2017-01-01",
+   "until": "2018-01-01",
+   "query": "from:mert ($zec OR zcash OR zec) since:2017-01-01 until:2018-01-01",
+   "attempt": 2,
+   "at": "2026-11-02T14:41:00Z",
+   "run": "2026-11-02T14-40-55Z",
+   "manifest_sha256": "e05c35b2de98f4c589a7bca731c5b7e0a5366e8ad7164b4096ace0d336d1791b",
+   "raw": 0,
+   "reposts": 0,
+   "confirmed": 0,
+   "result": "empty (confirmed)",
+   "canary_raw": 90,
+   "canary_best": 90,
+   "earliest": null,
+   "posts": []
+  },
+  {
+   "level": "year",
+   "since": "2018-01-01",
+   "until": "2019-01-01",
+   "query": "from:mert ($zec OR zcash OR zec) since:2018-01-01 until:2019-01-01",
+   "attempt": 1,
+   "at": "2026-11-02T14:41:49Z",
+   "run": "2026-11-02T14-41-44Z",
+   "manifest_sha256": "11f2a0f2ff9ca89f71fd121263b6e25b305b980c9c38f09017f14dd914a6095b",
+   "result": "empty (searching again)",
+   "raw": 0
+  },
+  {
+   "level": "canary",
+   "since": "2026-10-26",
+   "until": "2026-11-03",
+   "query": "from:mert since:2026-10-26 until:2026-11-03",
+   "attempt": 1,
+   "at": "2026-11-02T14:42:30Z",
+   "run": "2026-11-02T14-42-25Z",
+   "manifest_sha256": "99741d826fa05d90087c814a5d6979c2606fdb0f2839b7cea60d76633d7d4365",
+   "raw": 0,
+   "best": 90,
+   "result": "canary empty (throttled)"
+  },
+  {
+   "level": "year",
+   "since": "2018-01-01",
+   "until": "2019-01-01",
+   "query": "from:mert ($zec OR zcash OR zec) since:2018-01-01 until:2019-01-01",
+   "attempt": 2,
+   "at": "2026-11-02T14:42:10Z",
+   "run": "2026-11-02T14-42-05Z",
+   "manifest_sha256": "108379060c8ee6aa7ad1334b57f67f710497904b4118f22b58f899024f68c16c",
+   "result": "empty, canary weak or empty (throttled)",
+   "raw": 0,
+   "canary_raw": 0,
+   "canary_best": 90
+  },
+  {
+   "level": "year",
+   "since": "2018-01-01",
+   "until": "2019-01-01",
+   "query": "from:mert ($zec OR zcash OR zec) since:2018-01-01 until:2019-01-01",
+   "attempt": 1,
+   "at": "2026-11-02T15:02:51Z",
+   "run": "2026-11-02T15-02-46Z",
+   "manifest_sha256": "71ce561e3e81a3d773b382c0486cad64b992c616556e815b429f04c8852b0307",
+   "result": "empty (searching again)",
+   "raw": 0
+  },
+  {
+   "level": "canary",
+   "since": "2026-10-26",
+   "until": "2026-11-03",
+   "query": "from:mert since:2026-10-26 until:2026-11-03",
+   "attempt": 1,
+   "at": "2026-11-02T15:03:40Z",
+   "run": "2026-11-02T15-03-27Z",
+   "manifest_sha256": "d75348cb649ea943faeda8fcdbdf116491e826fc091f257222572f6a0bfd3429",
+   "raw": 71,
+   "best": 90,
+   "result": "canary ok"
+  },
+  {
+   "level": "year",
+   "since": "2018-01-01",
+   "until": "2019-01-01",
+   "query": "from:mert ($zec OR zcash OR zec) since:2018-01-01 until:2019-01-01",
+   "attempt": 2,
+   "at": "2026-11-02T15:03:11Z",
+   "run": "2026-11-02T15-03-07Z",
+   "manifest_sha256": "6ad0e60ba2fa4c23defa3bb00e7952cc9576d13d289473b464892b3d2d89de06",
+   "raw": 0,
+   "reposts": 0,
+   "confirmed": 0,
+   "result": "empty (confirmed)",
+   "canary_raw": 71,
+   "canary_best": 90,
+   "earliest": null,
+   "posts": []
+  },
+  {
+   "level": "year",
+   "since": "2019-01-01",
+   "until": "2020-01-01",
+   "query": "from:mert ($zec OR zcash OR zec) since:2019-01-01 until:2020-01-01",
+   "attempt": 1,
+   "at": "2026-11-02T15:04:01Z",
+   "run": "2026-11-02T15-03-56Z",
+   "manifest_sha256": "ba284534d63f2d5e24ba02967d318b599989f74d89d92dc0db1f43b6f1a3985e",
+   "result": "empty (searching again)",
+   "raw": 0
+  },
+  {
+   "level": "canary",
+   "since": "2026-10-26",
+   "until": "2026-11-03",
+   "query": "from:mert since:2026-10-26 until:2026-11-03",
+   "attempt": 1,
+   "at": "2026-11-02T15:04:51Z",
+   "run": "2026-11-02T15-04-37Z",
+   "manifest_sha256": "d65185067cb2374d20752e10c5ce74bd40d127a9ff922e66660f7d4393d6ec78",
+   "raw": 90,
+   "best": 90,
+   "result": "canary ok"
+  },
+  {
+   "level": "year",
+   "since": "2019-01-01",
+   "until": "2020-01-01",
+   "query": "from:mert ($zec OR zcash OR zec) since:2019-01-01 until:2020-01-01",
+   "attempt": 2,
+   "at": "2026-11-02T15:04:22Z",
+   "run": "2026-11-02T15-04-17Z",
+   "manifest_sha256": "a5bd3748f97fa090fd4b5987d65142a4a912e43b26fd6a231a44f57786884ea7",
+   "raw": 0,
+   "reposts": 0,
+   "confirmed": 0,
+   "result": "empty (confirmed)",
+   "canary_raw": 90,
+   "canary_best": 90,
+   "earliest": null,
+   "posts": []
+  },
+  {
+   "level": "year",
+   "since": "2020-01-01",
+   "until": "2021-01-01",
+   "query": "from:mert ($zec OR zcash OR zec) since:2020-01-01 until:2021-01-01",
+   "attempt": 1,
+   "at": "2026-11-02T15:05:11Z",
+   "run": "2026-11-02T15-05-07Z",
+   "manifest_sha256": "4f6add7793d1a4f2adbc92336cb46957d7be7660502869dd4236deeea6206c2e",
+   "result": "empty (searching again)",
+   "raw": 0
+  },
+  {
+   "level": "canary",
+   "since": "2026-10-26",
+   "until": "2026-11-03",
+   "query": "from:mert since:2026-10-26 until:2026-11-03",
+   "attempt": 1,
+   "at": "2026-11-02T15:05:58Z",
+   "run": "2026-11-02T15-05-48Z",
+   "manifest_sha256": "eb6033404a174b305448c027b4e6097c18be5ebcc19432bfbd4c4bd4f13e077e",
+   "raw": 49,
+   "best": 90,
+   "result": "canary ok"
+  },
+  {
+   "level": "year",
+   "since": "2020-01-01",
+   "until": "2021-01-01",
+   "query": "from:mert ($zec OR zcash OR zec) since:2020-01-01 until:2021-01-01",
+   "attempt": 2,
+   "at": "2026-11-02T15:05:32Z",
+   "run": "2026-11-02T15-05-27Z",
+   "manifest_sha256": "5185cf34175174de21a33e57e5cf17a0f1990b271a715372972a8fb0b05f3574",
+   "raw": 0,
+   "reposts": 0,
+   "confirmed": 0,
+   "result": "empty (confirmed)",
+   "canary_raw": 49,
+   "canary_best": 90,
+   "earliest": null,
+   "posts": []
+  },
+  {
+   "level": "year",
+   "since": "2021-01-01",
+   "until": "2022-01-01",
+   "query": "from:mert ($zec OR zcash OR zec) since:2021-01-01 until:2022-01-01",
+   "attempt": 1,
+   "at": "2026-11-02T15:06:20Z",
+   "run": "2026-11-02T15-06-14Z",
+   "manifest_sha256": "716693d4c98eecd0560a1cdca85f3d954c70266a9b25b747b3cc37dcb30e9279",
+   "result": "empty (searching again)",
+   "raw": 0
+  },
+  {
+   "level": "canary",
+   "since": "2026-10-26",
+   "until": "2026-11-03",
+   "query": "from:mert since:2026-10-26 until:2026-11-03",
+   "attempt": 1,
+   "at": "2026-11-02T15:07:10Z",
+   "run": "2026-11-02T15-06-56Z",
+   "manifest_sha256": "c43b9514a3753c8e3456a2e8c816b7926d77fbff57ffc3a171eb02c600466a94",
+   "raw": 90,
+   "best": 90,
+   "result": "canary ok"
+  },
+  {
+   "level": "year",
+   "since": "2021-01-01",
+   "until": "2022-01-01",
+   "query": "from:mert ($zec OR zcash OR zec) since:2021-01-01 until:2022-01-01",
+   "attempt": 2,
+   "at": "2026-11-02T15:06:40Z",
+   "run": "2026-11-02T15-06-36Z",
+   "manifest_sha256": "97df237ccb0bf2ec764df031956b71d3b4e183ce94a55c10b91d8d823ae67abc",
+   "raw": 0,
+   "reposts": 0,
+   "confirmed": 0,
+   "result": "empty (confirmed)",
+   "canary_raw": 90,
+   "canary_best": 90,
+   "earliest": null,
+   "posts": []
+  },
+  {
+   "level": "year",
+   "since": "2022-01-01",
+   "until": "2023-01-01",
+   "query": "from:mert ($zec OR zcash OR zec) since:2022-01-01 until:2023-01-01",
+   "attempt": 1,
+   "at": "2026-11-02T15:07:31Z",
+   "run": "2026-11-02T15-07-26Z",
+   "manifest_sha256": "3b1e924daa193c95fca0c280fdd70e5647896029e234bee03741bb6ee99b6763",
+   "result": "empty (searching again)",
+   "raw": 0
+  },
+  {
+   "level": "canary",
+   "since": "2026-10-26",
+   "until": "2026-11-03",
+   "query": "from:mert since:2026-10-26 until:2026-11-03",
+   "attempt": 1,
+   "at": "2026-11-02T15:08:20Z",
+   "run": "2026-11-02T15-08-07Z",
+   "manifest_sha256": "357dcdcf803e19a8b27533ba9fce4b173e457f365aaf2cd5cfdcda5da1d0eee8",
+   "raw": 90,
+   "best": 90,
+   "result": "canary ok"
+  },
+  {
+   "level": "year",
+   "since": "2022-01-01",
+   "until": "2023-01-01",
+   "query": "from:mert ($zec OR zcash OR zec) since:2022-01-01 until:2023-01-01",
+   "attempt": 2,
+   "at": "2026-11-02T15:07:51Z",
+   "run": "2026-11-02T15-07-47Z",
+   "manifest_sha256": "a47b3e11102f2f3dfa899bd7964ef0b7e05115985b4f1f40d873ed61811d4ce3",
+   "raw": 0,
+   "reposts": 0,
+   "confirmed": 0,
+   "result": "empty (confirmed)",
+   "canary_raw": 90,
+   "canary_best": 90,
+   "earliest": null,
+   "posts": []
+  },
+  {
+   "level": "year",
+   "since": "2023-01-01",
+   "until": "2024-01-01",
+   "query": "from:mert ($zec OR zcash OR zec) since:2023-01-01 until:2024-01-01",
+   "attempt": 1,
+   "at": "2026-11-02T15:08:40Z",
+   "run": "2026-11-02T15-08-36Z",
+   "manifest_sha256": "a0a9b1f4b94d088a1929625fcf391c0aea6e00ac378152fc69e532b8098003b8",
+   "result": "empty (searching again)",
+   "raw": 0
+  },
+  {
+   "level": "canary",
+   "since": "2026-10-26",
+   "until": "2026-11-03",
+   "query": "from:mert since:2026-10-26 until:2026-11-03",
+   "attempt": 1,
+   "at": "2026-11-02T15:09:30Z",
+   "run": "2026-11-02T15-09-17Z",
+   "manifest_sha256": "85d34cc827e1a72b3c5913fb81246460117075fc5751f281b20a28c9068493f2",
+   "raw": 90,
+   "best": 90,
+   "result": "canary ok"
+  },
+  {
+   "level": "year",
+   "since": "2023-01-01",
+   "until": "2024-01-01",
+   "query": "from:mert ($zec OR zcash OR zec) since:2023-01-01 until:2024-01-01",
+   "attempt": 2,
+   "at": "2026-11-02T15:09:01Z",
+   "run": "2026-11-02T15-08-56Z",
+   "manifest_sha256": "bd2efe58fd7f502af769d82450d7d3034f774f6a9bf0e0a87648cfbecea0e06e",
+   "raw": 0,
+   "reposts": 0,
+   "confirmed": 0,
+   "result": "empty (confirmed)",
+   "canary_raw": 90,
+   "canary_best": 90,
+   "earliest": null,
+   "posts": []
+  },
+  {
+   "level": "year",
+   "since": "2024-01-01",
+   "until": "2025-01-01",
+   "query": "from:mert ($zec OR zcash OR zec) since:2024-01-01 until:2025-01-01",
+   "attempt": 1,
+   "at": "2026-11-02T15:09:50Z",
+   "run": "2026-11-02T15-09-46Z",
+   "manifest_sha256": "1a3f4e8f5d925ceda11dd0aa78db3e8fedaaa31accf1bfbb277e1dcfb67df0b7",
+   "result": "empty (searching again)",
+   "raw": 0
+  },
+  {
+   "level": "year",
+   "since": "2024-01-01",
+   "until": "2025-01-01",
+   "query": "from:mert ($zec OR zcash OR zec) since:2024-01-01 until:2025-01-01",
+   "attempt": 2,
+   "at": "2026-11-02T15:10:13Z",
+   "run": "2026-11-02T15-10-06Z",
+   "manifest_sha256": "e74b06f1024d8398e8be8ba508f6b1a93687fbcf9b72343401a74604c8f81a32",
+   "raw": 15,
+   "reposts": 3,
+   "confirmed": 12,
+   "result": "hit",
+   "canary_raw": null,
+   "canary_best": null,
+   "earliest": {
+    "id": "1821188361559978050",
+    "postedAt": "2024-08-07T14:15:16.000Z",
+    "matched": [
+     "zcash"
+    ]
+   },
+   "posts": [
+    {
+     "id": "1821188361559978050",
+     "url": "https://x.com/mert/status/1821188361559978050",
+     "postedAt": "2024-08-07T14:15:16.000Z",
+     "kind": "post",
+     "text": "I'm pretty sure you could actually add  zcash to solana and enable full privacy\n\nYou'd sacrifice some latency but that'd be worth for the set of users that'd be interested in it",
+     "_matched": [
+      "zcash"
+     ]
+    },
+    {
+     "id": "1821991314700874076",
+     "url": "https://x.com/mert/status/1821991314700874076",
+     "postedAt": "2024-08-09T19:25:55.000Z",
+     "kind": "quote",
+     "text": "spent some time w @zooko in person recently\n\nhe demod @zashi_app to send/receive/bridge zcash\n\nthe tech and protocol are very cool — the wallet/ecosystem infra and scalability could use a lot of work (zashi, I have a ton of feedback), but that's solvable\n\nonce the aimless foundation people are out, I can see zcash making a big comeback\n\nprivate money is extremely important",
+     "_matched": [
+      "zcash"
+     ]
+    },
+    {
+     "id": "1822388260351648201",
+     "url": "https://x.com/mert/status/1822388260351648201",
+     "postedAt": "2024-08-10T21:43:14.000Z",
+     "kind": "post",
+     "text": "Just sent zcash in the UK\n\nanyone know a good lawyer?",
+     "_matched": [
+      "zcash"
+     ]
+    },
+    {
+     "id": "1822948042766442795",
+     "url": "https://x.com/mert/status/1822948042766442795",
+     "postedAt": "2024-08-12T10:47:36.000Z",
+     "kind": "reply",
+     "text": "I was thinking zcash for private",
+     "_matched": [
+      "zcash"
+     ]
+    },
+    {
+     "id": "1823425975977160989",
+     "url": "https://x.com/mert/status/1823425975977160989",
+     "postedAt": "2024-08-13T18:26:44.000Z",
+     "kind": "reply",
+     "text": "zcash/penumbra, cosmos/ethereum roadmap, solana",
+     "_matched": [
+      "zcash"
+     ]
+    },
+    {
+     "id": "1825949474675437950",
+     "url": "https://x.com/mert/status/1825949474675437950",
+     "postedAt": "2024-08-20T17:34:13.000Z",
+     "kind": "post",
+     "text": "enough with crypto pessimism \n\nif you're a nihilist because your favorite coin is down, you're a loser\n\nif you think coins going up/down is the only possible use case of this tech, you're intellectually lazy at best, and a populist sheep at worst\n\nyes, that is obviously a use case and a good one — people should be able to trade/speculate/gamble on whatever they want without your parents in suits allowing what you can or cannot do\n\nbut it takes a special kind of brain rot, arrogance, and lack of imagination to say that's all this is good for\n\nfalse\n\nhivemapper is mapping the world with a decentralized network of drivers and is beating google map\n\nhelium is bootstrapping decentralized mobile networks\n\nfarcaster is building an uncancellable social network\n\nsolana is building nasdaq onchain\n\nzcash is enabling unstoppable private money\n\ncountless others are working on global commerce, payments, RWAs, social networks, physical infrastucture, new creator models, governance systems, hyperstructures, privacy, zk enabled compute, verifiability, digital ownership — a fundamentally better internet\n\nyes, most of these attempts fail — that's because this stuff is hard\n\nand that's exactly why it's worth doing\n\nyou think we just launched rockets in space on the first try and kept improving for decades? not even close\n\nyou think the first computer with a few kb in memory and with no internet was conceived of in a single eureka moment?\n\nthere are no fundamental limits to progress — especially not in a field as novel as crypto (and if there are, go ahead and show them to me)\n\nthe entirety of civilization is about creating new knowledge, progressing, creating technology, and making this place stronger, more abundant, more powerful, more liberating\n\nyou should not be interested in what some resentful cuck who cries at charts in his mediocre condo thinks because he made a few bucks and chooses to spent the rest of his life poisoning himself\n\nown the fact that it will be hard, that you'll have to be relentless, that you'll have to take large risks, that you'll fail a lot — and do it anyway\n\nif not now, when\n\nDeutsch puts it best:\n\n\"We have a duty to be optimistic. Because the future is open, not predetermined and therefore cannot just be accepted: we are all responsible for what it holds. Thus it is our duty to fight for a better world.\"",
+     "_matched": [
+      "zcash"
+     ]
+    },
+    {
+     "id": "1827491905719971954",
+     "url": "https://x.com/mert/status/1827491905719971954",
+     "postedAt": "2024-08-24T23:43:18.000Z",
+     "kind": "post",
+     "text": "You can technically send fully private messages via the zcash memo field on the shielded transactions\n\nI'm typing this from Canada so if I stop tweeting dumb shit, you know whats happened to me",
+     "_matched": [
+      "zcash"
+     ]
+    },
+    {
+     "id": "1829329594312462512",
+     "url": "https://x.com/mert/status/1829329594312462512",
+     "postedAt": "2024-08-30T01:25:37.000Z",
+     "kind": "post",
+     "text": "privacy stack\n\nsignal\nprotonmail \nzcash\nbrave\n\nlooking for best VPN recommendation",
+     "_matched": [
+      "zcash"
+     ]
+    },
+    {
+     "id": "1829339544682197155",
+     "url": "https://x.com/mert/status/1829339544682197155",
+     "postedAt": "2024-08-30T02:05:09.000Z",
+     "kind": "reply",
+     "text": "i like zcash",
+     "_matched": [
+      "zcash"
+     ]
+    },
+    {
+     "id": "1829353293434524094",
+     "url": "https://x.com/mert/status/1829353293434524094",
+     "postedAt": "2024-08-30T02:59:47.000Z",
+     "kind": "reply",
+     "text": "did not use it yet\n\n@ProtonWallet wen solana, zcash, monero",
+     "_matched": [
+      "zcash"
+     ]
+    },
+    {
+     "id": "1848295200713527421",
+     "url": "https://x.com/mert/status/1848295200713527421",
+     "postedAt": "2024-10-21T09:28:10.000Z",
+     "kind": "quote",
+     "text": "there is simply no dumber place to do shady things on earth than a public, open, and transparent global ledger lmao\n\nI will never understand this — mfers youre not on zcash",
+     "_matched": [
+      "zcash"
+     ]
+    },
+    {
+     "id": "1874068012279750973",
+     "url": "https://x.com/mert/status/1874068012279750973",
+     "postedAt": "2024-12-31T12:20:07.000Z",
+     "kind": "post",
+     "text": "the inventor of Solana, the inventor of ZCash, and a legend in the field of ZK and cryptography walk into a bar\n\njk, was not a bar — it was @Lightspeedpodhq \n\nwe talk about how to scale private money, how it works, and what's next\n\nepisode below",
+     "_matched": [
+      "zcash"
+     ]
+    }
+   ]
+  },
+  {
+   "level": "month",
+   "since": "2024-01-01",
+   "until": "2024-02-01",
+   "query": "from:mert ($zec OR zcash OR zec) since:2024-01-01 until:2024-02-01",
+   "attempt": 1,
+   "at": "2026-11-02T15:10:34Z",
+   "run": "2026-11-02T15-10-29Z",
+   "manifest_sha256": "a64f2fb253c714f690ccdef4e2d60b31d4167c389532187b135ef486bb8b3cd9",
+   "result": "empty (searching again)",
+   "raw": 0
+  },
+  {
+   "level": "canary",
+   "since": "2026-10-26",
+   "until": "2026-11-03",
+   "query": "from:mert since:2026-10-26 until:2026-11-03",
+   "attempt": 1,
+   "at": "2026-11-02T15:11:15Z",
+   "run": "2026-11-02T15-11-10Z",
+   "manifest_sha256": "8d84aab88ebf0dd1b30bcba09179b144f0f61e63206eb14ddea430accf8a76a6",
+   "raw": 0,
+   "best": 90,
+   "result": "canary empty (throttled)"
+  },
+  {
+   "level": "month",
+   "since": "2024-01-01",
+   "until": "2024-02-01",
+   "query": "from:mert ($zec OR zcash OR zec) since:2024-01-01 until:2024-02-01",
+   "attempt": 2,
+   "at": "2026-11-02T15:10:55Z",
+   "run": "2026-11-02T15-10-50Z",
+   "manifest_sha256": "5bbd719b18f3595fec7d0ca83ef88168d067a6b1e278497972abb5ca9b060413",
+   "result": "empty, canary weak or empty (throttled)",
+   "raw": 0,
+   "canary_raw": 0,
+   "canary_best": 90
+  },
+  {
+   "level": "month",
+   "since": "2024-01-01",
+   "until": "2024-02-01",
+   "query": "from:mert ($zec OR zcash OR zec) since:2024-01-01 until:2024-02-01",
+   "attempt": 1,
+   "at": "2026-11-02T15:31:36Z",
+   "run": "2026-11-02T15-31-31Z",
+   "manifest_sha256": "b1ee6b156eaf33a55ee407807c995c2fd6bb9ae6ecd10f812eff5ee56210f4a1",
+   "result": "empty (searching again)",
+   "raw": 0
+  },
+  {
+   "level": "canary",
+   "since": "2026-10-26",
+   "until": "2026-11-03",
+   "query": "from:mert since:2026-10-26 until:2026-11-03",
+   "attempt": 1,
+   "at": "2026-11-02T15:32:26Z",
+   "run": "2026-11-02T15-32-12Z",
+   "manifest_sha256": "cba3cf6b9ebfe2c1384d9dad5d6a2a98ecea499fed87dc7f9245d6ec3c36add8",
+   "raw": 73,
+   "best": 90,
+   "result": "canary ok"
+  },
+  {
+   "level": "month",
+   "since": "2024-01-01",
+   "until": "2024-02-01",
+   "query": "from:mert ($zec OR zcash OR zec) since:2024-01-01 until:2024-02-01",
+   "attempt": 2,
+   "at": "2026-11-02T15:31:56Z",
+   "run": "2026-11-02T15-31-52Z",
+   "manifest_sha256": "89ea19cba43087797a31f3bb2362873ba91aa4c77321e3fa61710531970a605e",
+   "raw": 0,
+   "reposts": 0,
+   "confirmed": 0,
+   "result": "empty (confirmed)",
+   "canary_raw": 73,
+   "canary_best": 90,
+   "earliest": null,
+   "posts": []
+  },
+  {
+   "level": "month",
+   "since": "2024-02-01",
+   "until": "2024-03-01",
+   "query": "from:mert ($zec OR zcash OR zec) since:2024-02-01 until:2024-03-01",
+   "attempt": 1,
+   "at": "2026-11-02T15:32:46Z",
+   "run": "2026-11-02T15-32-41Z",
+   "manifest_sha256": "5515fada706f5bca0aead5b1c8401b42af8207f005c3823a73a2562ae363b0e1",
+   "result": "empty (searching again)",
+   "raw": 0
+  },
+  {
+   "level": "canary",
+   "since": "2026-10-26",
+   "until": "2026-11-03",
+   "query": "from:mert since:2026-10-26 until:2026-11-03",
+   "attempt": 1,
+   "at": "2026-11-02T15:33:36Z",
+   "run": "2026-11-02T15-33-22Z",
+   "manifest_sha256": "105dfbccce407c0da1a8e329b6b58f658bdb9005026ae0690323ce0fe0753a4f",
+   "raw": 93,
+   "best": 93,
+   "result": "canary ok"
+  },
+  {
+   "level": "month",
+   "since": "2024-02-01",
+   "until": "2024-03-01",
+   "query": "from:mert ($zec OR zcash OR zec) since:2024-02-01 until:2024-03-01",
+   "attempt": 2,
+   "at": "2026-11-02T15:33:07Z",
+   "run": "2026-11-02T15-33-02Z",
+   "manifest_sha256": "0277bea0be8b84a9675fb88d248f5c0e39a0c574ae927baf6dbd32d2c8815c5e",
+   "raw": 0,
+   "reposts": 0,
+   "confirmed": 0,
+   "result": "empty (confirmed)",
+   "canary_raw": 93,
+   "canary_best": 93,
+   "earliest": null,
+   "posts": []
+  },
+  {
+   "level": "month",
+   "since": "2024-03-01",
+   "until": "2024-04-01",
+   "query": "from:mert ($zec OR zcash OR zec) since:2024-03-01 until:2024-04-01",
+   "attempt": 1,
+   "at": "2026-11-02T15:33:56Z",
+   "run": "2026-11-02T15-33-51Z",
+   "manifest_sha256": "36de6d99a51db28bcc746874622171f7131888ae7fea25139102e66621aeaa44",
+   "result": "empty (searching again)",
+   "raw": 0
+  },
+  {
+   "level": "canary",
+   "since": "2026-10-26",
+   "until": "2026-11-03",
+   "query": "from:mert since:2026-10-26 until:2026-11-03",
+   "attempt": 1,
+   "at": "2026-11-02T15:34:46Z",
+   "run": "2026-11-02T15-34-33Z",
+   "manifest_sha256": "5ae8f714c0ca325dcac2fe4958f902926485852157764f2704a287a220d76e47",
+   "raw": 93,
+   "best": 93,
+   "result": "canary ok"
+  },
+  {
+   "level": "month",
+   "since": "2024-03-01",
+   "until": "2024-04-01",
+   "query": "from:mert ($zec OR zcash OR zec) since:2024-03-01 until:2024-04-01",
+   "attempt": 2,
+   "at": "2026-11-02T15:34:17Z",
+   "run": "2026-11-02T15-34-12Z",
+   "manifest_sha256": "1ddec0cf3c14124e06a3e297bc7bb86fb631dbfa6fefb3742b3485496b6e921a",
+   "raw": 0,
+   "reposts": 0,
+   "confirmed": 0,
+   "result": "empty (confirmed)",
+   "canary_raw": 93,
+   "canary_best": 93,
+   "earliest": null,
+   "posts": []
+  },
+  {
+   "level": "month",
+   "since": "2024-04-01",
+   "until": "2024-05-01",
+   "query": "from:mert ($zec OR zcash OR zec) since:2024-04-01 until:2024-05-01",
+   "attempt": 1,
+   "at": "2026-11-02T15:35:06Z",
+   "run": "2026-11-02T15-35-02Z",
+   "manifest_sha256": "4a6a49917e5989122aed6bb6d78866edb50bba3f510d5234884b679c50274b3f",
+   "result": "empty (searching again)",
+   "raw": 0
+  },
+  {
+   "level": "canary",
+   "since": "2026-10-26",
+   "until": "2026-11-03",
+   "query": "from:mert since:2026-10-26 until:2026-11-03",
+   "attempt": 1,
+   "at": "2026-11-02T15:35:56Z",
+   "run": "2026-11-02T15-35-43Z",
+   "manifest_sha256": "8815c0103af5980817bfca40312158c4fa3e6d3a6756de8389d99c2b49a36776",
+   "raw": 93,
+   "best": 93,
+   "result": "canary ok"
+  },
+  {
+   "level": "month",
+   "since": "2024-04-01",
+   "until": "2024-05-01",
+   "query": "from:mert ($zec OR zcash OR zec) since:2024-04-01 until:2024-05-01",
+   "attempt": 2,
+   "at": "2026-11-02T15:35:27Z",
+   "run": "2026-11-02T15-35-22Z",
+   "manifest_sha256": "c13573a1643d47f6e3bc624c4a98689efa440d6df6cda0f03822dd59e3cff0d8",
+   "raw": 0,
+   "reposts": 0,
+   "confirmed": 0,
+   "result": "empty (confirmed)",
+   "canary_raw": 93,
+   "canary_best": 93,
+   "earliest": null,
+   "posts": []
+  },
+  {
+   "level": "month",
+   "since": "2024-05-01",
+   "until": "2024-06-01",
+   "query": "from:mert ($zec OR zcash OR zec) since:2024-05-01 until:2024-06-01",
+   "attempt": 1,
+   "at": "2026-11-02T15:36:16Z",
+   "run": "2026-11-02T15-36-12Z",
+   "manifest_sha256": "17be4a8749d91e929686fcbbb0e076f7a56bcbfa6e21cedc93d38873538c08da",
+   "result": "empty (searching again)",
+   "raw": 0
+  },
+  {
+   "level": "canary",
+   "since": "2026-10-26",
+   "until": "2026-11-03",
+   "query": "from:mert since:2026-10-26 until:2026-11-03",
+   "attempt": 1,
+   "at": "2026-11-02T15:37:07Z",
+   "run": "2026-11-02T15-36-53Z",
+   "manifest_sha256": "d62795beb6be021cf8b73b428d34198cf0aa2b2588a4e95db4567e24d2148897",
+   "raw": 93,
+   "best": 93,
+   "result": "canary ok"
+  },
+  {
+   "level": "month",
+   "since": "2024-05-01",
+   "until": "2024-06-01",
+   "query": "from:mert ($zec OR zcash OR zec) since:2024-05-01 until:2024-06-01",
+   "attempt": 2,
+   "at": "2026-11-02T15:36:37Z",
+   "run": "2026-11-02T15-36-32Z",
+   "manifest_sha256": "68808ed879d7d885213942aa8a7c455384ab5fb687c0aefb6fd88935640248e9",
+   "raw": 0,
+   "reposts": 0,
+   "confirmed": 0,
+   "result": "empty (confirmed)",
+   "canary_raw": 93,
+   "canary_best": 93,
+   "earliest": null,
+   "posts": []
+  },
+  {
+   "level": "month",
+   "since": "2024-06-01",
+   "until": "2024-07-01",
+   "query": "from:mert ($zec OR zcash OR zec) since:2024-06-01 until:2024-07-01",
+   "attempt": 1,
+   "at": "2026-11-02T15:37:27Z",
+   "run": "2026-11-02T15-37-22Z",
+   "manifest_sha256": "c27b0c146c32803e9e372f4cb9022be608a6478995b61fc81113a33644758812",
+   "result": "empty (searching again)",
+   "raw": 0
+  },
+  {
+   "level": "canary",
+   "since": "2026-10-26",
+   "until": "2026-11-03",
+   "query": "from:mert since:2026-10-26 until:2026-11-03",
+   "attempt": 1,
+   "at": "2026-11-02T15:38:17Z",
+   "run": "2026-11-02T15-38-03Z",
+   "manifest_sha256": "837c5008dde5f20a1f286ff23543284e9f1486324d1ebf58e9ee1e8230d83223",
+   "raw": 73,
+   "best": 93,
+   "result": "canary ok"
+  },
+  {
+   "level": "month",
+   "since": "2024-06-01",
+   "until": "2024-07-01",
+   "query": "from:mert ($zec OR zcash OR zec) since:2024-06-01 until:2024-07-01",
+   "attempt": 2,
+   "at": "2026-11-02T15:37:47Z",
+   "run": "2026-11-02T15-37-43Z",
+   "manifest_sha256": "b07073842f26f89d7e285226910b388d2ce5841815943e77ff90382a9446e86c",
+   "raw": 0,
+   "reposts": 0,
+   "confirmed": 0,
+   "result": "empty (confirmed)",
+   "canary_raw": 73,
+   "canary_best": 93,
+   "earliest": null,
+   "posts": []
+  },
+  {
+   "level": "month",
+   "since": "2024-07-01",
+   "until": "2024-08-01",
+   "query": "from:mert ($zec OR zcash OR zec) since:2024-07-01 until:2024-08-01",
+   "attempt": 1,
+   "at": "2026-11-02T15:38:37Z",
+   "run": "2026-11-02T15-38-32Z",
+   "manifest_sha256": "fd2f2a87eea4c035fd3064b0faf433083745b7350259beaa7256f7eedf2798f4",
+   "result": "empty (searching again)",
+   "raw": 0
+  },
+  {
+   "level": "canary",
+   "since": "2026-10-26",
+   "until": "2026-11-03",
+   "query": "from:mert since:2026-10-26 until:2026-11-03",
+   "attempt": 1,
+   "at": "2026-11-02T15:39:18Z",
+   "run": "2026-11-02T15-39-14Z",
+   "manifest_sha256": "3e06f1125bc6376d6f6a1d8cec7041b855a6ddb2ea16a143426bb9536b11dfdc",
+   "raw": 0,
+   "best": 93,
+   "result": "canary empty (throttled)"
+  },
+  {
+   "level": "month",
+   "since": "2024-07-01",
+   "until": "2024-08-01",
+   "query": "from:mert ($zec OR zcash OR zec) since:2024-07-01 until:2024-08-01",
+   "attempt": 2,
+   "at": "2026-11-02T15:38:58Z",
+   "run": "2026-11-02T15-38-53Z",
+   "manifest_sha256": "7737fc14fe39e36f68a4bcee8fac8dc3348047db7edb7df3097b8d6a2b172a23",
+   "result": "empty, canary weak or empty (throttled)",
+   "raw": 0,
+   "canary_raw": 0,
+   "canary_best": 93
+  },
+  {
+   "level": "month",
+   "since": "2024-07-01",
+   "until": "2024-08-01",
+   "query": "from:mert ($zec OR zcash OR zec) since:2024-07-01 until:2024-08-01",
+   "attempt": 1,
+   "at": "2026-11-02T15:59:39Z",
+   "run": "2026-11-02T15-59-34Z",
+   "manifest_sha256": "98e9d66bf1e393ad010369f971626cdf36a4f0ac84b3af820862da046de1ff13",
+   "result": "empty (searching again)",
+   "raw": 0
+  },
+  {
+   "level": "canary",
+   "since": "2026-10-26",
+   "until": "2026-11-03",
+   "query": "from:mert since:2026-10-26 until:2026-11-03",
+   "attempt": 1,
+   "at": "2026-11-02T16:00:29Z",
+   "run": "2026-11-02T16-00-16Z",
+   "manifest_sha256": "9979e0211d57d33477d2386279ce9ec2eca840a62da08291eae1c34a1c152700",
+   "raw": 93,
+   "best": 93,
+   "result": "canary ok"
+  },
+  {
+   "level": "month",
+   "since": "2024-07-01",
+   "until": "2024-08-01",
+   "query": "from:mert ($zec OR zcash OR zec) since:2024-07-01 until:2024-08-01",
+   "attempt": 2,
+   "at": "2026-11-02T16:00:00Z",
+   "run": "2026-11-02T15-59-55Z",
+   "manifest_sha256": "e38a96f4b85d1582ae4cc6d83cc204e6f39f6d71cd1371794ecdc0834c747c46",
+   "raw": 0,
+   "reposts": 0,
+   "confirmed": 0,
+   "result": "empty (confirmed)",
+   "canary_raw": 93,
+   "canary_best": 93,
+   "earliest": null,
+   "posts": []
+  },
+  {
+   "level": "month",
+   "since": "2024-08-01",
+   "until": "2024-09-01",
+   "query": "from:mert ($zec OR zcash OR zec) since:2024-08-01 until:2024-09-01",
+   "attempt": 1,
+   "at": "2026-11-02T16:00:52Z",
+   "run": "2026-11-02T16-00-45Z",
+   "manifest_sha256": "92ed704f112198e01ad35e01d3ac1307d9f05fd7fc125385903aef6aafa031bb",
+   "raw": 11,
+   "reposts": 1,
+   "confirmed": 10,
+   "result": "hit",
+   "canary_raw": null,
+   "canary_best": null,
+   "earliest": {
+    "id": "1821188361559978050",
+    "postedAt": "2024-08-07T14:15:16.000Z",
+    "matched": [
+     "zcash"
+    ]
+   },
+   "posts": [
+    {
+     "id": "1821188361559978050",
+     "url": "https://x.com/mert/status/1821188361559978050",
+     "postedAt": "2024-08-07T14:15:16.000Z",
+     "kind": "post",
+     "text": "I'm pretty sure you could actually add  zcash to solana and enable full privacy\n\nYou'd sacrifice some latency but that'd be worth for the set of users that'd be interested in it",
+     "_matched": [
+      "zcash"
+     ]
+    },
+    {
+     "id": "1821991314700874076",
+     "url": "https://x.com/mert/status/1821991314700874076",
+     "postedAt": "2024-08-09T19:25:55.000Z",
+     "kind": "quote",
+     "text": "spent some time w @zooko in person recently\n\nhe demod @zashi_app to send/receive/bridge zcash\n\nthe tech and protocol are very cool — the wallet/ecosystem infra and scalability could use a lot of work (zashi, I have a ton of feedback), but that's solvable\n\nonce the aimless foundation people are out, I can see zcash making a big comeback\n\nprivate money is extremely important",
+     "_matched": [
+      "zcash"
+     ]
+    },
+    {
+     "id": "1822388260351648201",
+     "url": "https://x.com/mert/status/1822388260351648201",
+     "postedAt": "2024-08-10T21:43:14.000Z",
+     "kind": "post",
+     "text": "Just sent zcash in the UK\n\nanyone know a good lawyer?",
+     "_matched": [
+      "zcash"
+     ]
+    },
+    {
+     "id": "1822948042766442795",
+     "url": "https://x.com/mert/status/1822948042766442795",
+     "postedAt": "2024-08-12T10:47:36.000Z",
+     "kind": "reply",
+     "text": "I was thinking zcash for private",
+     "_matched": [
+      "zcash"
+     ]
+    },
+    {
+     "id": "1823425975977160989",
+     "url": "https://x.com/mert/status/1823425975977160989",
+     "postedAt": "2024-08-13T18:26:44.000Z",
+     "kind": "reply",
+     "text": "zcash/penumbra, cosmos/ethereum roadmap, solana",
+     "_matched": [
+      "zcash"
+     ]
+    },
+    {
+     "id": "1825949474675437950",
+     "url": "https://x.com/mert/status/1825949474675437950",
+     "postedAt": "2024-08-20T17:34:13.000Z",
+     "kind": "post",
+     "text": "enough with crypto pessimism \n\nif you're a nihilist because your favorite coin is down, you're a loser\n\nif you think coins going up/down is the only possible use case of this tech, you're intellectually lazy at best, and a populist sheep at worst\n\nyes, that is obviously a use case and a good one — people should be able to trade/speculate/gamble on whatever they want without your parents in suits allowing what you can or cannot do\n\nbut it takes a special kind of brain rot, arrogance, and lack of imagination to say that's all this is good for\n\nfalse\n\nhivemapper is mapping the world with a decentralized network of drivers and is beating google map\n\nhelium is bootstrapping decentralized mobile networks\n\nfarcaster is building an uncancellable social network\n\nsolana is building nasdaq onchain\n\nzcash is enabling unstoppable private money\n\ncountless others are working on global commerce, payments, RWAs, social networks, physical infrastucture, new creator models, governance systems, hyperstructures, privacy, zk enabled compute, verifiability, digital ownership — a fundamentally better internet\n\nyes, most of these attempts fail — that's because this stuff is hard\n\nand that's exactly why it's worth doing\n\nyou think we just launched rockets in space on the first try and kept improving for decades? not even close\n\nyou think the first computer with a few kb in memory and with no internet was conceived of in a single eureka moment?\n\nthere are no fundamental limits to progress — especially not in a field as novel as crypto (and if there are, go ahead and show them to me)\n\nthe entirety of civilization is about creating new knowledge, progressing, creating technology, and making this place stronger, more abundant, more powerful, more liberating\n\nyou should not be interested in what some resentful cuck who cries at charts in his mediocre condo thinks because he made a few bucks and chooses to spent the rest of his life poisoning himself\n\nown the fact that it will be hard, that you'll have to be relentless, that you'll have to take large risks, that you'll fail a lot — and do it anyway\n\nif not now, when\n\nDeutsch puts it best:\n\n\"We have a duty to be optimistic. Because the future is open, not predetermined and therefore cannot just be accepted: we are all responsible for what it holds. Thus it is our duty to fight for a better world.\"",
+     "_matched": [
+      "zcash"
+     ]
+    },
+    {
+     "id": "1827491905719971954",
+     "url": "https://x.com/mert/status/1827491905719971954",
+     "postedAt": "2024-08-24T23:43:18.000Z",
+     "kind": "post",
+     "text": "You can technically send fully private messages via the zcash memo field on the shielded transactions\n\nI'm typing this from Canada so if I stop tweeting dumb shit, you know whats happened to me",
+     "_matched": [
+      "zcash"
+     ]
+    },
+    {
+     "id": "1829329594312462512",
+     "url": "https://x.com/mert/status/1829329594312462512",
+     "postedAt": "2024-08-30T01:25:37.000Z",
+     "kind": "post",
+     "text": "privacy stack\n\nsignal\nprotonmail \nzcash\nbrave\n\nlooking for best VPN recommendation",
+     "_matched": [
+      "zcash"
+     ]
+    },
+    {
+     "id": "1829339544682197155",
+     "url": "https://x.com/mert/status/1829339544682197155",
+     "postedAt": "2024-08-30T02:05:09.000Z",
+     "kind": "reply",
+     "text": "i like zcash",
+     "_matched": [
+      "zcash"
+     ]
+    },
+    {
+     "id": "1829353293434524094",
+     "url": "https://x.com/mert/status/1829353293434524094",
+     "postedAt": "2024-08-30T02:59:47.000Z",
+     "kind": "reply",
+     "text": "did not use it yet\n\n@ProtonWallet wen solana, zcash, monero",
+     "_matched": [
+      "zcash"
+     ]
+    }
+   ]
+  }
+ ],
+ "updated_at": "2026-11-02T16:00:52Z"
+}

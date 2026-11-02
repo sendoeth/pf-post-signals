@@ -1,0 +1,1098 @@
+{
+ "schema": "quanty.early_signal.v1.search",
+ "handle": "mert",
+ "asset": "SOL",
+ "status": "found",
+ "terms": [
+  "$sol",
+  "sol",
+  "solana"
+ ],
+ "notes": [],
+ "rule": "years -> months -> the hit month; a window answering fewer than 15 posts is complete (its earliest post is exact), else it is halved (earlier half first); every empty answer is searched twice and only counts while a canary search (the account's last 7 days) returns posts",
+ "first": {
+  "id": "1411733026724327429",
+  "url": "https://x.com/mert/status/1411733026724327429",
+  "postedAt": "2021-07-04T17:05:56.000Z",
+  "kind": "post",
+  "text": "This tutorial from @Figment_io is absolutely amazing for getting up to speed on @solana development. Would highly recommend: https://learn.figment.io/network-documentation/solana/solana-pathway",
+  "_matched": [
+   "solana"
+  ]
+ },
+ "searches": 59,
+ "log": [
+  {
+   "level": "year",
+   "since": "2017-11-01",
+   "until": "2018-01-01",
+   "query": "from:mert ($sol OR sol OR solana) since:2017-11-01 until:2018-01-01",
+   "attempt": 1,
+   "at": "2026-11-02T13:38:40Z",
+   "run": "2026-11-02T13-38-36Z",
+   "manifest_sha256": "f57686b94b32306af3f9e62f284a5553c77595c4796bd2f6d2af33aeb0c2e63e",
+   "result": "empty (searching again)",
+   "raw": 0
+  },
+  {
+   "level": "canary",
+   "since": "2026-10-26",
+   "until": "2026-11-03",
+   "query": "from:mert since:2026-10-26 until:2026-11-03",
+   "attempt": 1,
+   "at": "2026-11-02T13:39:15Z",
+   "run": "2026-11-02T13-39-03Z",
+   "manifest_sha256": "b3ca81a4995fbcdb9bd298c8680eb63663d88ee2c4fc8708537fcb4b8b0249fd",
+   "raw": 90,
+   "result": "canary ok"
+  },
+  {
+   "level": "year",
+   "since": "2017-11-01",
+   "until": "2018-01-01",
+   "query": "from:mert ($sol OR sol OR solana) since:2017-11-01 until:2018-01-01",
+   "attempt": 2,
+   "at": "2026-11-02T13:38:54Z",
+   "run": "2026-11-02T13-38-49Z",
+   "manifest_sha256": "6dc2234157c713bb9301321e2daae2b44bc9ff9a1c5a54021683cef98e1c0641",
+   "raw": 0,
+   "reposts": 0,
+   "confirmed": 0,
+   "result": "empty (confirmed)",
+   "canary": "ok",
+   "earliest": null,
+   "posts": []
+  },
+  {
+   "level": "year",
+   "since": "2018-01-01",
+   "until": "2019-01-01",
+   "query": "from:mert ($sol OR sol OR solana) since:2018-01-01 until:2019-01-01",
+   "attempt": 1,
+   "at": "2026-11-02T13:39:30Z",
+   "run": "2026-11-02T13-39-24Z",
+   "manifest_sha256": "b578f6a2bbf2512ea8e73e6712ed64c0a7b1fb7daedebd37948c5d1e9ad81eb2",
+   "result": "empty (searching again)",
+   "raw": 0
+  },
+  {
+   "level": "canary",
+   "since": "2026-10-26",
+   "until": "2026-11-03",
+   "query": "from:mert since:2026-10-26 until:2026-11-03",
+   "attempt": 1,
+   "at": "2026-11-02T13:40:06Z",
+   "run": "2026-11-02T13-39-53Z",
+   "manifest_sha256": "251a9f4813bffd044fb3947a6958b5ff485f99e7189ca18f187164fe3c14038c",
+   "raw": 90,
+   "result": "canary ok"
+  },
+  {
+   "level": "year",
+   "since": "2018-01-01",
+   "until": "2019-01-01",
+   "query": "from:mert ($sol OR sol OR solana) since:2018-01-01 until:2019-01-01",
+   "attempt": 2,
+   "at": "2026-11-02T13:39:44Z",
+   "run": "2026-11-02T13-39-39Z",
+   "manifest_sha256": "dfe286d21e56971ea9d5494851ca9f76f60f283352240f5e781d32ab614dc005",
+   "raw": 0,
+   "reposts": 0,
+   "confirmed": 0,
+   "result": "empty (confirmed)",
+   "canary": "ok",
+   "earliest": null,
+   "posts": []
+  },
+  {
+   "level": "year",
+   "since": "2019-01-01",
+   "until": "2020-01-01",
+   "query": "from:mert ($sol OR sol OR solana) since:2019-01-01 until:2020-01-01",
+   "attempt": 1,
+   "at": "2026-11-02T13:40:19Z",
+   "run": "2026-11-02T13-40-14Z",
+   "manifest_sha256": "6daca13c96a6abfb7149f8cf0e03bd339570877d8d2f3151e6581c6a72fd8202",
+   "result": "empty (searching again)",
+   "raw": 0
+  },
+  {
+   "level": "canary",
+   "since": "2026-10-26",
+   "until": "2026-11-03",
+   "query": "from:mert since:2026-10-26 until:2026-11-03",
+   "attempt": 1,
+   "at": "2026-11-02T13:40:54Z",
+   "run": "2026-11-02T13-40-42Z",
+   "manifest_sha256": "e95f931834b7be60bc19d4556e1beb57f5114ec0edee842b21a8ad305fb4b12b",
+   "raw": 90,
+   "result": "canary ok"
+  },
+  {
+   "level": "year",
+   "since": "2019-01-01",
+   "until": "2020-01-01",
+   "query": "from:mert ($sol OR sol OR solana) since:2019-01-01 until:2020-01-01",
+   "attempt": 2,
+   "at": "2026-11-02T13:40:33Z",
+   "run": "2026-11-02T13-40-28Z",
+   "manifest_sha256": "ef7a1db2931ec4f8a56a9b428990f252c0cf87af000e3a939467036d5c1e6890",
+   "raw": 0,
+   "reposts": 0,
+   "confirmed": 0,
+   "result": "empty (confirmed)",
+   "canary": "ok",
+   "earliest": null,
+   "posts": []
+  },
+  {
+   "level": "year",
+   "since": "2020-01-01",
+   "until": "2021-01-01",
+   "query": "from:mert ($sol OR sol OR solana) since:2020-01-01 until:2021-01-01",
+   "attempt": 1,
+   "at": "2026-11-02T13:41:08Z",
+   "run": "2026-11-02T13-41-03Z",
+   "manifest_sha256": "23c1c26505bc6725c586e65846485fbabb4d057b4204d53c57855a6f54da2a3d",
+   "result": "empty (searching again)",
+   "raw": 0
+  },
+  {
+   "level": "canary",
+   "since": "2026-10-26",
+   "until": "2026-11-03",
+   "query": "from:mert since:2026-10-26 until:2026-11-03",
+   "attempt": 1,
+   "at": "2026-11-02T13:41:41Z",
+   "run": "2026-11-02T13-41-30Z",
+   "manifest_sha256": "1d9f69c302d9cd1256e0ae4ce6e238bfedc430f383e9121a1a4843024d4b6e0e",
+   "raw": 49,
+   "result": "canary ok"
+  },
+  {
+   "level": "year",
+   "since": "2020-01-01",
+   "until": "2021-01-01",
+   "query": "from:mert ($sol OR sol OR solana) since:2020-01-01 until:2021-01-01",
+   "attempt": 2,
+   "at": "2026-11-02T13:41:22Z",
+   "run": "2026-11-02T13-41-17Z",
+   "manifest_sha256": "6d3e6d73e9fe56833abf14d8ffe84b33ac9b2906a51494be47fab015a5859e9a",
+   "raw": 0,
+   "reposts": 0,
+   "confirmed": 0,
+   "result": "empty (confirmed)",
+   "canary": "ok",
+   "earliest": null,
+   "posts": []
+  },
+  {
+   "level": "year",
+   "since": "2021-01-01",
+   "until": "2022-01-01",
+   "query": "from:mert ($sol OR sol OR solana) since:2021-01-01 until:2022-01-01",
+   "attempt": 1,
+   "at": "2026-11-02T13:41:55Z",
+   "run": "2026-11-02T13-41-50Z",
+   "manifest_sha256": "e2e5bea8ef7af6c45993e9c5f6f5a27a1391e6ad36989314d3ef07263f1cc39b",
+   "raw": 19,
+   "reposts": 0,
+   "confirmed": 18,
+   "result": "hit",
+   "canary": null,
+   "earliest": {
+    "id": "1465401079387017219",
+    "postedAt": "2021-11-29T19:23:37.000Z",
+    "matched": [
+     "SOL"
+    ]
+   },
+   "posts": [
+    {
+     "id": "1465401079387017219",
+     "url": "https://x.com/mert/status/1465401079387017219",
+     "postedAt": "2021-11-29T19:23:37.000Z",
+     "kind": "reply",
+     "text": "If we look at the total revenue for these projects, we get this graph.\n\nWhat does it say?\n\n- @DegenApeAcademy are beasts\n- @BoldBadgers are surprisingly second (mint price was 5 SOL)\n- SMB is top 3 despite having half the supply and less than half the mint price of the others",
+     "_matched": [
+      "SOL"
+     ]
+    },
+    {
+     "id": "1465401090166468619",
+     "url": "https://x.com/mert/status/1465401090166468619",
+     "postedAt": "2021-11-29T19:23:40.000Z",
+     "kind": "reply",
+     "text": "The big caveat here is that the prices are all in SOL and not the equivalent USD value (I did this in a prev post). \n\nThis is hard to account for because the SOL raised could've been converted to USD or just hodled.\n\neg: DAA mint of 6 SOL was actually around ~250$ or 1.2 SOL td",
+     "_matched": [
+      "SOL"
+     ]
+    },
+    {
+     "id": "1469430295439060996",
+     "url": "https://x.com/mert/status/1469430295439060996",
+     "postedAt": "2021-12-10T22:14:17.000Z",
+     "kind": "reply",
+     "text": "\"there is a good reason why blockchains before SOL did not take this route\"\n\nDude, most PoS chains (except Algorand), including ETH2, have pre-determined leaders.\n\nImagine calling SOL investors \"ignorant\" and not knowing that the chain you're shilling has the exact same flaw",
+     "_matched": [
+      "SOL"
+     ]
+    },
+    {
+     "id": "1470072305090977793",
+     "url": "https://x.com/mert/status/1470072305090977793",
+     "postedAt": "2021-12-12T16:45:24.000Z",
+     "kind": "reply",
+     "text": "1) not a DDoS\n2) \"At the time of writing, Solana is handling 2,976 TPS\" - you do realize that this is faster than all other chains right?",
+     "_matched": [
+      "solana"
+     ]
+    },
+    {
+     "id": "1470131546606735362",
+     "url": "https://x.com/mert/status/1470131546606735362",
+     "postedAt": "2021-12-12T20:40:49.000Z",
+     "kind": "post",
+     "text": "There has been an *insane* amount of FUD regarding #solana recently.\n\nWhile it is absolutely fine (and encouraged) to criticize Solana for its various design decisions and tradeoffs - most people have been perpetuating flat out lies.\n\nLet's dispel some myths.🧵",
+     "_matched": [
+      "solana"
+     ]
+    },
+    {
+     "id": "1470131555947499526",
+     "url": "https://x.com/mert/status/1470131555947499526",
+     "postedAt": "2021-12-12T20:40:51.000Z",
+     "kind": "reply",
+     "text": "2. Another tweet claimed that SOL has stopped and is being rebooted.\n\nThis is verifiably bullshit - @murphsicles literally made it up while claiming \"you can't make this shit up\".\n\nThe network slowed down due to an IDO but suffered 0 downtime.",
+     "_matched": [
+      "SOL"
+     ]
+    },
+    {
+     "id": "1470131562893266949",
+     "url": "https://x.com/mert/status/1470131562893266949",
+     "postedAt": "2021-12-12T20:40:52.000Z",
+     "kind": "reply",
+     "text": "For reference, the momentary slow down was still 700 TPS...not bad for being \"DDoSd\" (though not all user txns).\n\nI think it's fair to criticize this bug, SOL is not perfect. But it is encouraging to see how fast a fix was identified and shipped. Engineering is about iteration.",
+     "_matched": [
+      "SOL"
+     ]
+    },
+    {
+     "id": "1470131566605176839",
+     "url": "https://x.com/mert/status/1470131566605176839",
+     "postedAt": "2021-12-12T20:40:53.000Z",
+     "kind": "reply",
+     "text": "My main criticism of the centralization argument is this:\n\nIt took ETH 7 years + a major upgrade to get more decentralized - yet Solana is only 2 years old and is already expected to be as decentralized as ETH.\n\nTo me (and this is just my opinion), this is logically inconsistent.",
+     "_matched": [
+      "solana"
+     ]
+    },
+    {
+     "id": "1470131565237788672",
+     "url": "https://x.com/mert/status/1470131565237788672",
+     "postedAt": "2021-12-12T20:40:53.000Z",
+     "kind": "reply",
+     "text": "It's also quite expensive to run a validator - but I think this issue is also overblown.\n\nSolana has over 1000 validators and a Nakamoto Coefficient of ~19.\n\nFor reference, BTC/ETH historically had an NC of ~4 due to large mining pools (to be fair, ETH2's NC will be a lot higher)",
+     "_matched": [
+      "solana"
+     ]
+    },
+    {
+     "id": "1470131564193398786",
+     "url": "https://x.com/mert/status/1470131564193398786",
+     "postedAt": "2021-12-12T20:40:53.000Z",
+     "kind": "reply",
+     "text": "4. \"Solana is centralized\"\n\nThis is by far the most common criticism of SOL and I think it's mostly fair.\n\nIn terms of token distribution, relatively speaking, SOL is a lot more centralized than ETH. Though it's silly to say it's centralized in a binary fashion, it's a spectrum.",
+     "_matched": [
+      "SOL",
+      "solana"
+     ]
+    },
+    {
+     "id": "1470131570812108804",
+     "url": "https://x.com/mert/status/1470131570812108804",
+     "postedAt": "2021-12-12T20:40:54.000Z",
+     "kind": "reply",
+     "text": "To be clear, I'm a fan of ETH, SOL, AVAX, and LUNA. \n\nI think ETH's L2 approach will succeed and might even scale better than SOL.\n\nAnd while it's fine to criticize Solana, it's very shady to call other L1 investors \"ignorant\" and perpetuate lies while shilling your own bags.",
+     "_matched": [
+      "SOL",
+      "solana"
+     ]
+    },
+    {
+     "id": "1470131568677208075",
+     "url": "https://x.com/mert/status/1470131568677208075",
+     "postedAt": "2021-12-12T20:40:54.000Z",
+     "kind": "reply",
+     "text": "There's no reason that SOL won't also decentralize more in the coming years, just as ETH did. \n\nIt won't be *as* decentralized due to the hardware requirements, but I'm not convinced that decentralization past a certain threshold will bring any more benefits (I could be wrong).",
+     "_matched": [
+      "SOL"
+     ]
+    },
+    {
+     "id": "1471928848250028036",
+     "url": "https://x.com/mert/status/1471928848250028036",
+     "postedAt": "2021-12-17T19:42:39.000Z",
+     "kind": "post",
+     "text": "A lot of new users are coming to #Solana but don't really know what's available to them in the ecosystem.\n\nI've compiled a list of some of the most well-known names in DeFi, NFTs, Gaming, and infra/tools that I'm aware of 🧵.",
+     "_matched": [
+      "solana"
+     ]
+    },
+    {
+     "id": "1471928851773239296",
+     "url": "https://x.com/mert/status/1471928851773239296",
+     "postedAt": "2021-12-17T19:42:40.000Z",
+     "kind": "reply",
+     "text": "Defi Cont'd:\n- @synthetify (synths)\n- @solendprotocol (lend/borrow)\n- @mangomarkets (perps)\n- @bonfida (naming svc + a lot more)\n- @StepFinance_ (SOL zapper)\n- @Sonarwatch (SOL zapper)\n- @InvictusDAO (OHM fork)\n- @BabylonDao (OHM fork)\n- @Oxygen_protocol (prime broker)",
+     "_matched": [
+      "SOL"
+     ]
+    },
+    {
+     "id": "1476397217074319364",
+     "url": "https://x.com/mert/status/1476397217074319364",
+     "postedAt": "2021-12-30T03:38:21.000Z",
+     "kind": "reply",
+     "text": "Why does your name still say \"largest NFT marketplace on Solana\"?",
+     "_matched": [
+      "solana"
+     ]
+    },
+    {
+     "id": "1476613641738858498",
+     "url": "https://x.com/mert/status/1476613641738858498",
+     "postedAt": "2021-12-30T17:58:21.000Z",
+     "kind": "post",
+     "text": "When I first started analyzing #Solana NFTs, there weren't a lot of tools available - I had to do a lot of manual work + scripts.\n\nFortunately, that's starting to change. \n\nHere are 10 tools that I use which will help you make more informed NFT decisions 🧵",
+     "_matched": [
+      "solana"
+     ]
+    },
+    {
+     "id": "1476613646461673476",
+     "url": "https://x.com/mert/status/1476613646461673476",
+     "postedAt": "2021-12-30T17:58:22.000Z",
+     "kind": "reply",
+     "text": "1. @solanalysis - one of the first analysis tools on Solana. You can get a quick overlook of the ecosystem in a dashboard view along with total marketcap, 7 day trading volume, floor prices and more.",
+     "_matched": [
+      "solana"
+     ]
+    },
+    {
+     "id": "1476613661506654216",
+     "url": "https://x.com/mert/status/1476613661506654216",
+     "postedAt": "2021-12-30T17:58:25.000Z",
+     "kind": "reply",
+     "text": "4. @howrareis - The OG NFT analysis platform on Solana founded by @SOLBigBrain. You can get rarities, floor prices, upcoming drops, a list of all holders, and more useful tools. One of my absolute favourites.",
+     "_matched": [
+      "solana"
+     ]
+    }
+   ]
+  },
+  {
+   "level": "month",
+   "since": "2021-01-01",
+   "until": "2021-02-01",
+   "query": "from:mert ($sol OR sol OR solana) since:2021-01-01 until:2021-02-01",
+   "attempt": 1,
+   "at": "2026-11-02T13:42:09Z",
+   "run": "2026-11-02T13-42-04Z",
+   "manifest_sha256": "85163d90e42f080c9b93214ec554341135225485eed825078e34574c3205cf40",
+   "result": "empty (searching again)",
+   "raw": 0
+  },
+  {
+   "level": "canary",
+   "since": "2026-10-26",
+   "until": "2026-11-03",
+   "query": "from:mert since:2026-10-26 until:2026-11-03",
+   "attempt": 1,
+   "at": "2026-11-02T13:42:44Z",
+   "run": "2026-11-02T13-42-31Z",
+   "manifest_sha256": "a11cfefe3f4b15c8989c31a58f6a1bc937b2ef7011b265d7b92e9aadc1dcc70d",
+   "raw": 71,
+   "result": "canary ok"
+  },
+  {
+   "level": "month",
+   "since": "2021-01-01",
+   "until": "2021-02-01",
+   "query": "from:mert ($sol OR sol OR solana) since:2021-01-01 until:2021-02-01",
+   "attempt": 2,
+   "at": "2026-11-02T13:42:22Z",
+   "run": "2026-11-02T13-42-18Z",
+   "manifest_sha256": "837abc7e199f9ccb6e4a830dfc2427d8bbeb1ae3d44eabae2fbe54689f1bfd83",
+   "raw": 0,
+   "reposts": 0,
+   "confirmed": 0,
+   "result": "empty (confirmed)",
+   "canary": "ok",
+   "earliest": null,
+   "posts": []
+  },
+  {
+   "level": "month",
+   "since": "2021-02-01",
+   "until": "2021-03-01",
+   "query": "from:mert ($sol OR sol OR solana) since:2021-02-01 until:2021-03-01",
+   "attempt": 1,
+   "at": "2026-11-02T13:42:57Z",
+   "run": "2026-11-02T13-42-53Z",
+   "manifest_sha256": "b98ddb565ba58e48498628ba667e05bdcfe18b20ef9e7c2ce4df330753afd6f0",
+   "result": "empty (searching again)",
+   "raw": 0
+  },
+  {
+   "level": "canary",
+   "since": "2026-10-26",
+   "until": "2026-11-03",
+   "query": "from:mert since:2026-10-26 until:2026-11-03",
+   "attempt": 1,
+   "at": "2026-11-02T13:43:27Z",
+   "run": "2026-11-02T13-43-20Z",
+   "manifest_sha256": "d06f6037e6dc9544dc27df3c2f1c7b2e434cff222f0789772cace0c399d385ca",
+   "raw": 26,
+   "result": "canary ok"
+  },
+  {
+   "level": "month",
+   "since": "2021-02-01",
+   "until": "2021-03-01",
+   "query": "from:mert ($sol OR sol OR solana) since:2021-02-01 until:2021-03-01",
+   "attempt": 2,
+   "at": "2026-11-02T13:43:11Z",
+   "run": "2026-11-02T13-43-06Z",
+   "manifest_sha256": "2d9b64bc0fa18fec730c223e69549586b148e4f8d0901e19424754a94db959e1",
+   "raw": 0,
+   "reposts": 0,
+   "confirmed": 0,
+   "result": "empty (confirmed)",
+   "canary": "ok",
+   "earliest": null,
+   "posts": []
+  },
+  {
+   "level": "month",
+   "since": "2021-03-01",
+   "until": "2021-04-01",
+   "query": "from:mert ($sol OR sol OR solana) since:2021-03-01 until:2021-04-01",
+   "attempt": 1,
+   "at": "2026-11-02T13:43:41Z",
+   "run": "2026-11-02T13-43-36Z",
+   "manifest_sha256": "f2f4cff1155cb687d0e9004b5ee7a0e215fbf98d4e410ab3ba31b7efe6315f89",
+   "result": "empty (searching again)",
+   "raw": 0
+  },
+  {
+   "level": "canary",
+   "since": "2026-10-26",
+   "until": "2026-11-03",
+   "query": "from:mert since:2026-10-26 until:2026-11-03",
+   "attempt": 1,
+   "at": "2026-11-02T13:44:08Z",
+   "run": "2026-11-02T13-44-03Z",
+   "manifest_sha256": "62a543524b150e790bb6cef9d137f8b8ffc94c8d2820760f23a259401886cf45",
+   "raw": 0,
+   "result": "canary empty (throttled)"
+  },
+  {
+   "level": "month",
+   "since": "2021-03-01",
+   "until": "2021-04-01",
+   "query": "from:mert ($sol OR sol OR solana) since:2021-03-01 until:2021-04-01",
+   "attempt": 2,
+   "at": "2026-11-02T13:43:54Z",
+   "run": "2026-11-02T13-43-50Z",
+   "manifest_sha256": "ae583875bc42223105ccc4fd4440b6fac50e56a5dcc9d82b0188ab464e3d1f84",
+   "result": "empty, canary empty too (throttled)",
+   "raw": 0
+  },
+  {
+   "level": "year",
+   "since": "2017-11-01",
+   "until": "2018-01-01",
+   "query": "from:mert ($sol OR sol OR solana) since:2017-11-01 until:2018-01-01",
+   "attempt": 1,
+   "at": "2026-11-02T13:45:28Z",
+   "run": "2026-11-02T13-45-23Z",
+   "manifest_sha256": "c0f1b242de7685390a423b87741920d668047c5d824d8f39f3fe0a4365e6b925",
+   "result": "empty (searching again)",
+   "raw": 0
+  },
+  {
+   "level": "canary",
+   "since": "2026-10-26",
+   "until": "2026-11-03",
+   "query": "from:mert since:2026-10-26 until:2026-11-03",
+   "attempt": 1,
+   "at": "2026-11-02T13:46:09Z",
+   "run": "2026-11-02T13-46-04Z",
+   "manifest_sha256": "811c1c4451d4cdaefd3152387c83fba5000c54aee4be78d7e89b681b19886007",
+   "raw": 0,
+   "best": 90,
+   "result": "canary empty (throttled)"
+  },
+  {
+   "level": "year",
+   "since": "2017-11-01",
+   "until": "2018-01-01",
+   "query": "from:mert ($sol OR sol OR solana) since:2017-11-01 until:2018-01-01",
+   "attempt": 2,
+   "at": "2026-11-02T13:45:49Z",
+   "run": "2026-11-02T13-45-44Z",
+   "manifest_sha256": "f92822e9858a2c1dd28e3df8058663a857d3d3f08df2d380e352e70871346a2a",
+   "result": "empty, canary weak or empty (throttled)",
+   "raw": 0,
+   "canary_raw": 0,
+   "canary_best": 90
+  },
+  {
+   "level": "year",
+   "since": "2017-11-01",
+   "until": "2018-01-01",
+   "query": "from:mert ($sol OR sol OR solana) since:2017-11-01 until:2018-01-01",
+   "attempt": 1,
+   "at": "2026-11-02T14:06:30Z",
+   "run": "2026-11-02T14-06-25Z",
+   "manifest_sha256": "b77cb43000138147267fca5eb029972595d84f1e2f726a6e740f23c868a633fa",
+   "result": "empty (searching again)",
+   "raw": 0
+  },
+  {
+   "level": "canary",
+   "since": "2026-10-26",
+   "until": "2026-11-03",
+   "query": "from:mert since:2026-10-26 until:2026-11-03",
+   "attempt": 1,
+   "at": "2026-11-02T14:07:16Z",
+   "run": "2026-11-02T14-07-06Z",
+   "manifest_sha256": "ac8a1592d6da21155dc0442e08115224bfda1282cb1f9272da4840c686f4e326",
+   "raw": 49,
+   "best": 90,
+   "result": "canary ok"
+  },
+  {
+   "level": "year",
+   "since": "2017-11-01",
+   "until": "2018-01-01",
+   "query": "from:mert ($sol OR sol OR solana) since:2017-11-01 until:2018-01-01",
+   "attempt": 2,
+   "at": "2026-11-02T14:06:50Z",
+   "run": "2026-11-02T14-06-46Z",
+   "manifest_sha256": "b979cf7609bee5669ec6e2ecd6ca1c48731bb55ef0cedd14814ab480504e6f51",
+   "raw": 0,
+   "reposts": 0,
+   "confirmed": 0,
+   "result": "empty (confirmed)",
+   "canary_raw": 49,
+   "canary_best": 90,
+   "earliest": null,
+   "posts": []
+  },
+  {
+   "level": "year",
+   "since": "2018-01-01",
+   "until": "2019-01-01",
+   "query": "from:mert ($sol OR sol OR solana) since:2018-01-01 until:2019-01-01",
+   "attempt": 1,
+   "at": "2026-11-02T14:07:37Z",
+   "run": "2026-11-02T14-07-32Z",
+   "manifest_sha256": "da244b7beec28d48699b40dbcfe362d3376c822eeb8c42a5704ed34b7f1f5b75",
+   "result": "empty (searching again)",
+   "raw": 0
+  },
+  {
+   "level": "canary",
+   "since": "2026-10-26",
+   "until": "2026-11-03",
+   "query": "from:mert since:2026-10-26 until:2026-11-03",
+   "attempt": 1,
+   "at": "2026-11-02T14:08:26Z",
+   "run": "2026-11-02T14-08-13Z",
+   "manifest_sha256": "724e81f67270f8e8a33b54fd189ba8d04eec752ea5d2f7f757be676d0d55c344",
+   "raw": 90,
+   "best": 90,
+   "result": "canary ok"
+  },
+  {
+   "level": "year",
+   "since": "2018-01-01",
+   "until": "2019-01-01",
+   "query": "from:mert ($sol OR sol OR solana) since:2018-01-01 until:2019-01-01",
+   "attempt": 2,
+   "at": "2026-11-02T14:07:58Z",
+   "run": "2026-11-02T14-07-53Z",
+   "manifest_sha256": "9896202aad4b3477206fc6a1abfde135b51da9e1338a166c3ada2945795560c0",
+   "raw": 0,
+   "reposts": 0,
+   "confirmed": 0,
+   "result": "empty (confirmed)",
+   "canary_raw": 90,
+   "canary_best": 90,
+   "earliest": null,
+   "posts": []
+  },
+  {
+   "level": "year",
+   "since": "2019-01-01",
+   "until": "2020-01-01",
+   "query": "from:mert ($sol OR sol OR solana) since:2019-01-01 until:2020-01-01",
+   "attempt": 1,
+   "at": "2026-11-02T14:08:46Z",
+   "run": "2026-11-02T14-08-42Z",
+   "manifest_sha256": "a27e429c75c375fc292c884e26065b9cc7d3e0ba5e482f8e65cf5dd7ef9337c9",
+   "result": "empty (searching again)",
+   "raw": 0
+  },
+  {
+   "level": "canary",
+   "since": "2026-10-26",
+   "until": "2026-11-03",
+   "query": "from:mert since:2026-10-26 until:2026-11-03",
+   "attempt": 1,
+   "at": "2026-11-02T14:09:36Z",
+   "run": "2026-11-02T14-09-23Z",
+   "manifest_sha256": "a05acdc09c6893ed4ba2fe8eb9c59e7ff534a71d9b79218fba920001c0bc956c",
+   "raw": 90,
+   "best": 90,
+   "result": "canary ok"
+  },
+  {
+   "level": "year",
+   "since": "2019-01-01",
+   "until": "2020-01-01",
+   "query": "from:mert ($sol OR sol OR solana) since:2019-01-01 until:2020-01-01",
+   "attempt": 2,
+   "at": "2026-11-02T14:09:07Z",
+   "run": "2026-11-02T14-09-02Z",
+   "manifest_sha256": "3f11bda0c1d4faa123f987d48b3df701dc364fe919acc6a55d4cced5582e4bc1",
+   "raw": 0,
+   "reposts": 0,
+   "confirmed": 0,
+   "result": "empty (confirmed)",
+   "canary_raw": 90,
+   "canary_best": 90,
+   "earliest": null,
+   "posts": []
+  },
+  {
+   "level": "year",
+   "since": "2020-01-01",
+   "until": "2021-01-01",
+   "query": "from:mert ($sol OR sol OR solana) since:2020-01-01 until:2021-01-01",
+   "attempt": 1,
+   "at": "2026-11-02T14:09:57Z",
+   "run": "2026-11-02T14-09-52Z",
+   "manifest_sha256": "813b92f0065c134bef7633a1d308aa8f78c0e2ed3fd2a273ac21253ef8cb9838",
+   "result": "empty (searching again)",
+   "raw": 0
+  },
+  {
+   "level": "canary",
+   "since": "2026-10-26",
+   "until": "2026-11-03",
+   "query": "from:mert since:2026-10-26 until:2026-11-03",
+   "attempt": 1,
+   "at": "2026-11-02T14:10:46Z",
+   "run": "2026-11-02T14-10-33Z",
+   "manifest_sha256": "2d7aded5a058f22131772a78b378be5067ada5d7c7cdc1b028e2a369244acc0f",
+   "raw": 71,
+   "best": 90,
+   "result": "canary ok"
+  },
+  {
+   "level": "year",
+   "since": "2020-01-01",
+   "until": "2021-01-01",
+   "query": "from:mert ($sol OR sol OR solana) since:2020-01-01 until:2021-01-01",
+   "attempt": 2,
+   "at": "2026-11-02T14:10:17Z",
+   "run": "2026-11-02T14-10-13Z",
+   "manifest_sha256": "15924cf3f0f1b81aec6b35906d53be7babb90aac15a3d96b436339a4b890dfaf",
+   "raw": 0,
+   "reposts": 0,
+   "confirmed": 0,
+   "result": "empty (confirmed)",
+   "canary_raw": 71,
+   "canary_best": 90,
+   "earliest": null,
+   "posts": []
+  },
+  {
+   "level": "month",
+   "since": "2021-01-01",
+   "until": "2021-02-01",
+   "query": "from:mert ($sol OR sol OR solana) since:2021-01-01 until:2021-02-01",
+   "attempt": 1,
+   "at": "2026-11-02T14:11:06Z",
+   "run": "2026-11-02T14-11-02Z",
+   "manifest_sha256": "9d3146ebb01f28acb3a9058e423658a6fad82bcc470eb63ad5e1d27d401a1d03",
+   "result": "empty (searching again)",
+   "raw": 0
+  },
+  {
+   "level": "canary",
+   "since": "2026-10-26",
+   "until": "2026-11-03",
+   "query": "from:mert since:2026-10-26 until:2026-11-03",
+   "attempt": 1,
+   "at": "2026-11-02T14:11:56Z",
+   "run": "2026-11-02T14-11-43Z",
+   "manifest_sha256": "30121623524c29a311a9537f58759811a1400dbe7ae908baf97a582f61f2bfa5",
+   "raw": 71,
+   "best": 90,
+   "result": "canary ok"
+  },
+  {
+   "level": "month",
+   "since": "2021-01-01",
+   "until": "2021-02-01",
+   "query": "from:mert ($sol OR sol OR solana) since:2021-01-01 until:2021-02-01",
+   "attempt": 2,
+   "at": "2026-11-02T14:11:27Z",
+   "run": "2026-11-02T14-11-22Z",
+   "manifest_sha256": "a7dc80d9225802a76d6fe89b3dfc568bc2cf72f4e090f8c4f03f40da858879c6",
+   "raw": 0,
+   "reposts": 0,
+   "confirmed": 0,
+   "result": "empty (confirmed)",
+   "canary_raw": 71,
+   "canary_best": 90,
+   "earliest": null,
+   "posts": []
+  },
+  {
+   "level": "month",
+   "since": "2021-02-01",
+   "until": "2021-03-01",
+   "query": "from:mert ($sol OR sol OR solana) since:2021-02-01 until:2021-03-01",
+   "attempt": 1,
+   "at": "2026-11-02T14:12:16Z",
+   "run": "2026-11-02T14-12-12Z",
+   "manifest_sha256": "8eb885534d3134eac3ab7f9ef44eb4ec685d3487f3c6abaa5147f8d2df9a92e7",
+   "result": "empty (searching again)",
+   "raw": 0
+  },
+  {
+   "level": "canary",
+   "since": "2026-10-26",
+   "until": "2026-11-03",
+   "query": "from:mert since:2026-10-26 until:2026-11-03",
+   "attempt": 1,
+   "at": "2026-11-02T14:13:06Z",
+   "run": "2026-11-02T14-12-53Z",
+   "manifest_sha256": "f369a57ade971e767bbc229af1e0dd377a92d10632bbdd9ba28ac1907e7d6891",
+   "raw": 90,
+   "best": 90,
+   "result": "canary ok"
+  },
+  {
+   "level": "month",
+   "since": "2021-02-01",
+   "until": "2021-03-01",
+   "query": "from:mert ($sol OR sol OR solana) since:2021-02-01 until:2021-03-01",
+   "attempt": 2,
+   "at": "2026-11-02T14:12:37Z",
+   "run": "2026-11-02T14-12-32Z",
+   "manifest_sha256": "6d48aad83315a5659212b7188f109830f78244d6442f93ae3deb57a56621abc2",
+   "raw": 0,
+   "reposts": 0,
+   "confirmed": 0,
+   "result": "empty (confirmed)",
+   "canary_raw": 90,
+   "canary_best": 90,
+   "earliest": null,
+   "posts": []
+  },
+  {
+   "level": "month",
+   "since": "2021-03-01",
+   "until": "2021-04-01",
+   "query": "from:mert ($sol OR sol OR solana) since:2021-03-01 until:2021-04-01",
+   "attempt": 1,
+   "at": "2026-11-02T14:13:26Z",
+   "run": "2026-11-02T14-13-22Z",
+   "manifest_sha256": "18f9859f02a6191ced9174248fdba1742fa3c1b16be44a6128af727456728da5",
+   "result": "empty (searching again)",
+   "raw": 0
+  },
+  {
+   "level": "canary",
+   "since": "2026-10-26",
+   "until": "2026-11-03",
+   "query": "from:mert since:2026-10-26 until:2026-11-03",
+   "attempt": 1,
+   "at": "2026-11-02T14:14:11Z",
+   "run": "2026-11-02T14-14-03Z",
+   "manifest_sha256": "2e427d22da258a875bca3be48ce72f62ca845683843d08498978411a2c23876a",
+   "raw": 26,
+   "best": 90,
+   "result": "canary weak (26 of 90: throttling)"
+  },
+  {
+   "level": "month",
+   "since": "2021-03-01",
+   "until": "2021-04-01",
+   "query": "from:mert ($sol OR sol OR solana) since:2021-03-01 until:2021-04-01",
+   "attempt": 2,
+   "at": "2026-11-02T14:13:47Z",
+   "run": "2026-11-02T14-13-42Z",
+   "manifest_sha256": "44a0fbf834370f67cf62530aef3fcc11f521fe9c109c3fb6b93fb29904bedbc2",
+   "result": "empty, canary weak or empty (throttled)",
+   "raw": 0,
+   "canary_raw": 26,
+   "canary_best": 90
+  },
+  {
+   "level": "month",
+   "since": "2021-03-01",
+   "until": "2021-04-01",
+   "query": "from:mert ($sol OR sol OR solana) since:2021-03-01 until:2021-04-01",
+   "attempt": 1,
+   "at": "2026-11-02T14:34:31Z",
+   "run": "2026-11-02T14-34-26Z",
+   "manifest_sha256": "5e09314266e8ee78e2f1ac4bb6027e640afbef86adb11246fc8416c7c5a83a41",
+   "result": "empty (searching again)",
+   "raw": 0
+  },
+  {
+   "level": "canary",
+   "since": "2026-10-26",
+   "until": "2026-11-03",
+   "query": "from:mert since:2026-10-26 until:2026-11-03",
+   "attempt": 1,
+   "at": "2026-11-02T14:35:21Z",
+   "run": "2026-11-02T14-35-08Z",
+   "manifest_sha256": "6bb05b991f51f03125d087bbe356e0d29f69724d0e210ae34e31b73856abe115",
+   "raw": 71,
+   "best": 90,
+   "result": "canary ok"
+  },
+  {
+   "level": "month",
+   "since": "2021-03-01",
+   "until": "2021-04-01",
+   "query": "from:mert ($sol OR sol OR solana) since:2021-03-01 until:2021-04-01",
+   "attempt": 2,
+   "at": "2026-11-02T14:34:52Z",
+   "run": "2026-11-02T14-34-47Z",
+   "manifest_sha256": "d6b2a76226eed9fa42120da4cb6bc456658ccc69d8550d150a637a32ab514c98",
+   "raw": 0,
+   "reposts": 0,
+   "confirmed": 0,
+   "result": "empty (confirmed)",
+   "canary_raw": 71,
+   "canary_best": 90,
+   "earliest": null,
+   "posts": []
+  },
+  {
+   "level": "month",
+   "since": "2021-04-01",
+   "until": "2021-05-01",
+   "query": "from:mert ($sol OR sol OR solana) since:2021-04-01 until:2021-05-01",
+   "attempt": 1,
+   "at": "2026-11-02T14:35:41Z",
+   "run": "2026-11-02T14-35-37Z",
+   "manifest_sha256": "2aba5c10544d801857f1e0d9a7ab4fa4a0af7122991f548a13c789d7f16ae1d4",
+   "result": "empty (searching again)",
+   "raw": 0
+  },
+  {
+   "level": "canary",
+   "since": "2026-10-26",
+   "until": "2026-11-03",
+   "query": "from:mert since:2026-10-26 until:2026-11-03",
+   "attempt": 1,
+   "at": "2026-11-02T14:36:31Z",
+   "run": "2026-11-02T14-36-18Z",
+   "manifest_sha256": "95c0f993a70d72427f6b38a13c5721fec2f154742cc00e401a414c29e6e06403",
+   "raw": 90,
+   "best": 90,
+   "result": "canary ok"
+  },
+  {
+   "level": "month",
+   "since": "2021-04-01",
+   "until": "2021-05-01",
+   "query": "from:mert ($sol OR sol OR solana) since:2021-04-01 until:2021-05-01",
+   "attempt": 2,
+   "at": "2026-11-02T14:36:02Z",
+   "run": "2026-11-02T14-35-57Z",
+   "manifest_sha256": "c15a0dc8c981a28026390d4943c9e828c09170cf76b0ef3139c6e8fd7b23f768",
+   "raw": 0,
+   "reposts": 0,
+   "confirmed": 0,
+   "result": "empty (confirmed)",
+   "canary_raw": 90,
+   "canary_best": 90,
+   "earliest": null,
+   "posts": []
+  },
+  {
+   "level": "month",
+   "since": "2021-05-01",
+   "until": "2021-06-01",
+   "query": "from:mert ($sol OR sol OR solana) since:2021-05-01 until:2021-06-01",
+   "attempt": 1,
+   "at": "2026-11-02T14:36:52Z",
+   "run": "2026-11-02T14-36-47Z",
+   "manifest_sha256": "d837bbfd53740b952dd8ad31d8b358066765d079a28b6711461d6fffab78b7eb",
+   "result": "empty (searching again)",
+   "raw": 0
+  },
+  {
+   "level": "canary",
+   "since": "2026-10-26",
+   "until": "2026-11-03",
+   "query": "from:mert since:2026-10-26 until:2026-11-03",
+   "attempt": 1,
+   "at": "2026-11-02T14:37:41Z",
+   "run": "2026-11-02T14-37-28Z",
+   "manifest_sha256": "b37947747fe6d53c0b5be274f65812677853fc87ca17ee463ebf89e7696caeff",
+   "raw": 90,
+   "best": 90,
+   "result": "canary ok"
+  },
+  {
+   "level": "month",
+   "since": "2021-05-01",
+   "until": "2021-06-01",
+   "query": "from:mert ($sol OR sol OR solana) since:2021-05-01 until:2021-06-01",
+   "attempt": 2,
+   "at": "2026-11-02T14:37:12Z",
+   "run": "2026-11-02T14-37-08Z",
+   "manifest_sha256": "735f27d208cf3c6fac9740af2c53e54425e44383510f279d4824a1756969b10f",
+   "raw": 0,
+   "reposts": 0,
+   "confirmed": 0,
+   "result": "empty (confirmed)",
+   "canary_raw": 90,
+   "canary_best": 90,
+   "earliest": null,
+   "posts": []
+  },
+  {
+   "level": "month",
+   "since": "2021-06-01",
+   "until": "2021-07-01",
+   "query": "from:mert ($sol OR sol OR solana) since:2021-06-01 until:2021-07-01",
+   "attempt": 1,
+   "at": "2026-11-02T14:38:01Z",
+   "run": "2026-11-02T14-37-57Z",
+   "manifest_sha256": "6ec36c72d83c9ed9007580620da1084746ff61e91d6fd7041aa0aa9d4c1e7e87",
+   "result": "empty (searching again)",
+   "raw": 0
+  },
+  {
+   "level": "canary",
+   "since": "2026-10-26",
+   "until": "2026-11-03",
+   "query": "from:mert since:2026-10-26 until:2026-11-03",
+   "attempt": 1,
+   "at": "2026-11-02T14:38:50Z",
+   "run": "2026-11-02T14-38-37Z",
+   "manifest_sha256": "bc0e62e1d2def9c9ac24bf3ed8638b30d88f945341da68d3a90ac1c654a7c946",
+   "raw": 90,
+   "best": 90,
+   "result": "canary ok"
+  },
+  {
+   "level": "month",
+   "since": "2021-06-01",
+   "until": "2021-07-01",
+   "query": "from:mert ($sol OR sol OR solana) since:2021-06-01 until:2021-07-01",
+   "attempt": 2,
+   "at": "2026-11-02T14:38:22Z",
+   "run": "2026-11-02T14-38-17Z",
+   "manifest_sha256": "9b63558ab3f9cd182d274cab626f398caa0a84ba8d928c401688bb87e3a40fbd",
+   "raw": 0,
+   "reposts": 0,
+   "confirmed": 0,
+   "result": "empty (confirmed)",
+   "canary_raw": 90,
+   "canary_best": 90,
+   "earliest": null,
+   "posts": []
+  },
+  {
+   "level": "month",
+   "since": "2021-07-01",
+   "until": "2021-08-01",
+   "query": "from:mert ($sol OR sol OR solana) since:2021-07-01 until:2021-08-01",
+   "attempt": 1,
+   "at": "2026-11-02T14:39:12Z",
+   "run": "2026-11-02T14-39-06Z",
+   "manifest_sha256": "46b551ed8d9e8d7f9066247f60d05a07bf816af4d95d99db72d736dba1bb0eaf",
+   "raw": 5,
+   "reposts": 0,
+   "confirmed": 5,
+   "result": "hit",
+   "canary_raw": null,
+   "canary_best": null,
+   "earliest": {
+    "id": "1411733026724327429",
+    "postedAt": "2021-07-04T17:05:56.000Z",
+    "matched": [
+     "solana"
+    ]
+   },
+   "posts": [
+    {
+     "id": "1411733026724327429",
+     "url": "https://x.com/mert/status/1411733026724327429",
+     "postedAt": "2021-07-04T17:05:56.000Z",
+     "kind": "post",
+     "text": "This tutorial from @Figment_io is absolutely amazing for getting up to speed on @solana development. Would highly recommend: https://learn.figment.io/network-documentation/solana/solana-pathway",
+     "_matched": [
+      "solana"
+     ]
+    },
+    {
+     "id": "1412242276852633617",
+     "url": "https://x.com/mert/status/1412242276852633617",
+     "postedAt": "2021-07-06T02:49:31.000Z",
+     "kind": "reply",
+     "text": "I'm on the same boat and this tutorial helped me quite a bit on day 1: https://learn.figment.io/network-documentation/solana/solana-pathway",
+     "_matched": [
+      "solana"
+     ]
+    },
+    {
+     "id": "1412845320556449797",
+     "url": "https://x.com/mert/status/1412845320556449797",
+     "postedAt": "2021-07-07T18:45:48.000Z",
+     "kind": "reply",
+     "text": "Just joined the Discord and already found a bunch of great stuff, thanks for sharing! One thing I'd recommend is to consolidate this and put it all on the official Solana dev docs because that would be a much smoother dev experience, as opposed to digging through these",
+     "_matched": [
+      "solana"
+     ]
+    },
+    {
+     "id": "1413182969162907653",
+     "url": "https://x.com/mert/status/1413182969162907653",
+     "postedAt": "2021-07-08T17:07:30.000Z",
+     "kind": "reply",
+     "text": "You already know all of these but here's what I used, in order:\n1. https://docs.solana.com/developing/programming-model/overview\n2. https://github.com/solana-labs/example-helloworld\n3. https://learn.figment.io/network-documentation/solana/solana-pathway\n4. https://learning-rust.github.io/docs/a4.cargo,crates_and_basic_project_structure.html\n5. https://paulx.dev/blog/2021/01/14/programming-on-solana-an-introduction/\n6. https://github.com/solana-labs/solana-program-library\n7. https://solhack.com/\n8. https://brson.github.io/2021/06/08/rust-on-solana",
+     "_matched": [
+      "solana"
+     ]
+    },
+    {
+     "id": "1413651599432556546",
+     "url": "https://x.com/mert/status/1413651599432556546",
+     "postedAt": "2021-07-10T00:09:40.000Z",
+     "kind": "post",
+     "text": "Imagine a web 3.0 version of a Sims like game except you'd *actually* be virtually governing the city through a DAO with real crypto stakes. Simulated/gamified governance. Might try to do something like this on @solana tbh just to mess around",
+     "_matched": [
+      "solana"
+     ]
+    }
+   ]
+  }
+ ],
+ "updated_at": "2026-11-02T14:39:12Z"
+}

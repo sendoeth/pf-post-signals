@@ -1,0 +1,17 @@
+{
+ "authorHandle": "mert",
+ "capturedAt": "2026-11-02T16:00:59.000Z",
+ "cashtags": [],
+ "conversationId": "1821188361559978050",
+ "dataSource": "syndication",
+ "id": "1821188361559978050",
+ "metrics": {
+  "likes": 226,
+  "replies": 30
+ },
+ "postedAt": "2024-08-07T14:15:16.000Z",
+ "replyTo": null,
+ "text": "I'm pretty sure you could actually add  zcash to solana and enable full privacy\n\nYou'd sacrifice some latency but that'd be worth for the set of users that'd be interested in it",
+ "textTruncated": false,
+ "url": "https://x.com/mert/status/1821188361559978050"
+}

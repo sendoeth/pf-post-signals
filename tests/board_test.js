@@ -8,7 +8,7 @@
 //  D. sparklines: point count = bundle bars from entry to latest; unknown URL values -> defaults,
 //     removed from the address bar
 //  F. (local only) a test-only site copy with a pending post: it reads "unresolved" and ranks last
-//     by return and by best, first by newest; it counts in Positions but not in the averages
+//     by return and by best, by its date when sorted newest first; it counts in Positions but not in the averages
 //  E. 0 console errors, 0 CSP violations, no horizontal scroll on a phone; screenshots
 // usage: node tests/board_test.js [--url https://.../web/] [--screenshots DIR]
 const fs = require('fs');
@@ -253,8 +253,12 @@ async function read(page) {
         // so together they form the tail of a return/best sort; newest-first puts a pending post on top
         const pendIdx = g.rows.map((r, i) => (pend.includes(r.id) ? i : -1)).filter(i => i >= 0);
         const tail = pendIdx.length === pend.length && pendIdx.every((i, k) => i === total - pendIdx.length + k);
-        const where = sort === 'newest' ? 'first (newest post)' : `last ${pendIdx.length} (all pending rows)`;
-        const ok = idx >= 0 && (sort === 'newest' ? idx === 0 : tail)
+        // newest-first: a pending post sits by its date, right after every newer post (real posts newer than the fixture exist)
+        const postedOf = Object.fromEntries(pb.assets.flatMap(a => a.posts.map(p => [p.post.id, p.post.posted_at])));
+        const newestPend = pend.map(id => postedOf[id]).sort().reverse()[0];
+        const newerRows = g.rows.filter(r => postedOf[r.id] > newestPend).length;
+        const where = sort === 'newest' ? `by date: after the ${newerRows} newer rows` : `last ${pendIdx.length} (all pending rows)`;
+        const ok = idx >= 0 && (sort === 'newest' ? idx === newerRows : tail)
           && pendIdx.every(i => g.rows[i].f.return.text === 'unresolved' && g.rows[i].f.best.text === '–' && g.rows[i].f.prices.text === 'no entry bar')
           && g.stats.count === total
           && JSON.stringify(g.stats.avg_return) === JSON.stringify(expected(model(pb), { ...DEFAULTS, sort }, pb.prices_as_of || new Date().toISOString()).stats.avg_return);

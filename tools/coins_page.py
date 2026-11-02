@@ -50,7 +50,9 @@ def build(root=HERE):
     rows.sort(key=lambda r: (r["rank"] or 10 ** 6, r["ticker"]))
     top_listed = seed["top_listed"]
     review_top = [r for r in seed["review"] if r["ticker"] in top_listed]
-    data = {"schema": "quanty.coins.v1", "registry_sha256": hashlib.sha256(open(os.path.join(root, "data", "tickers.json"), "rb").read()).hexdigest(),
+    early_p = os.path.join(root, "web", "data", "early.json")
+    early = load(early_p)["signals"] if os.path.exists(early_p) else []
+    data = {"schema": "quanty.coins.v1", "early_signals": early, "registry_sha256": hashlib.sha256(open(os.path.join(root, "data", "tickers.json"), "rb").read()).hexdigest(),
             "seed": os.path.relpath(seed_p, root) if seed_p else None, "seeded_at": seed.get("seeded_at"),
             "recheck": os.path.relpath(re_p, root) if re_p else None, "rechecked_at": rec and rec["checked_at"],
             "coverage": {"top_listed": len(top_listed), "top_seeded": len([t for t in top_listed if t in reg["tickers"]]),
@@ -60,12 +62,17 @@ def build(root=HERE):
     return data
 
 
+def pct_px(p):
+    return "–" if p is None else (f"${p:,.2f}" if p >= 1 else f"${p:.6g}")
+
+
 def page(d):
     c = d["coverage"]
     def pct(x):
         return "–" if x is None else f"{x * 100:+.2f}%"
     trs = "".join(
-        f'<tr data-ticker="{e(r["ticker"])}"{" class=flagged" if r["flag"] else ""}><td>{e(r["rank"] or "–")}</td><td><strong>{e(r["ticker"])}</strong></td>'
+        f'<tr data-ticker="{e(r["ticker"])}"{" class=flagged" if r["flag"] else ""}><td>{e(r["rank"] or "–")}</td><td><strong>{e(r["ticker"])}</strong>'
+        + (f' <a href="#early-{e(r["ticker"])}" class="small">early signal</a>' if r["ticker"] in {x["asset"] for x in d.get("early_signals", [])} else "") + '</td>'
         f'<td>{e(r["name"])} <span class="muted">[{e(r["coingecko_id"])}]</span></td><td>{e(r["venue"])}</td><td>{e(pct(r["seed_diff"]))}</td>'
         f'<td>{"top 100" if r["in_top"] else "perp" if r["hl_perp"] else "added by a post"}</td>'
         f'<td>{"FLAGGED: " + e(r["flag"]["why"]) if r["flag"] else "ok"}{" · also US stock: " + e(r["also_us_stock"]) if r["also_us_stock"] else ""}</td></tr>'
@@ -74,6 +81,24 @@ def page(d):
     exc = "".join(f'<li><strong>{e(r["ticker"])}</strong> {e(r["name"])} (#{e(r["rank"])}): {e(r["why"])}'
                   + (f' → write it as ${e(r["maps_to"])}' if r.get("maps_to") else "") + "</li>" for r in d["excluded"])
     idx = "".join(f"<li><strong>{e(k)}</strong>: {e(v)}</li>" for k, v in d["indexes"].items())
+    early = ""
+    for asset in sorted({x["asset"] for x in d.get("early_signals", [])}):
+        rows = ""
+        for x in sorted((x for x in d["early_signals"] if x["asset"] == asset), key=lambda x: x["post"]["posted_at"]):
+            pr, th = x["prices"], x["prices"]["then"]
+            rows += (f'<li data-handle="{e(x["handle"])}"><strong>@{e(x["handle"])}</strong> first named {e(asset)} on {e(x["post"]["posted_at"][:10])} '
+                     f'({e(x["label"]["label"])}): {e(pct_px(th["price"]))} on {e(th["source"])}:{e(th["symbol"])}'
+                     + (" (before listing)" if th["before_listing"] else "")
+                     + f' → {e(pct_px(pr["now"]["price"]))} now, <strong>{pr["multiple_now"]:,.2f}x</strong>, peak {pr["multiple_peak"]:,.2f}x on {e(pr["peak"]["day"])}. '
+                     f'“{e(" ".join(x["post"]["text"].split())[:200])}” · <a href="{e(x["post"]["url"])}" rel="noopener noreferrer">post</a> · '
+                     f'<a href="caller-{e(x["handle"].lower())}.html#early-{e(asset)}">caller page</a>'
+                     + (f' · first recorded call {e(x["first_call"]["call"]["posted_at"][:10])}, {x["first_call"]["days"]:,.0f} days later, '
+                        f'{x["first_call"]["price_move_before_call"]:,.2f}x the first-post price' if (x.get("first_call") or {}).get("after_first_mention") else "")
+                     + '</li>')
+        early += f'<h3 class="sec" id="early-{e(asset)}">{e(asset)}</h3><ul class="plain">{rows}</ul>'
+    if early:
+        early = ('<h2 class="sec">Early signals</h2><p class="notes">The first post where a tracked account named a coin, priced then and now. '
+                 'Score-neutral: an early signal is not a call and never changes a score.</p>' + early)
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -105,7 +130,7 @@ def page(d):
   <section class="ep-head panel" data-field="coverage">
     <h2>{e(c['top_seeded'])} of the top {e(c['top_listed'])} coins · {e(c['perps_added'])} Hyperliquid perps · {e(c['registered'])} tickers</h2>
     <p>A post naming any of these coins (cashtag, name, or ticker in capitals) is priced at once, without a lookup. Each coin is identified on CoinGecko,
-    and priced on the first venue with hourly bars whose pair is trading and within 5% of the coin's price (Binance, then Hyperliquid, OKX, Bybit, Gate).
+    and priced on the first venue with hourly bars whose pair is trading and within 5% of the coin's price (Binance, then Hyperliquid, OKX, Gate).
     Stablecoins, wrapped / staked copies and tokenized funds, gold and stocks are not coins here and are skipped; the top 100 is counted after them.
     A weekly re-check flags any venue that stops trading or drifts away from the coin's price; a venue is never swapped silently.</p>
     <p class="muted small">Seeded {e(d['seeded_at'] or '–')} ({e(d['seed'] or '–')}) · re-checked {e(d['rechecked_at'] or 'not yet')}
@@ -115,6 +140,7 @@ def page(d):
   <div class="panel tablewrap"><table class="coins">
     <thead><tr><th>Rank</th><th>Ticker</th><th>Coin</th><th>Venue</th><th>Seed check</th><th>Why listed</th><th>Weekly status</th></tr></thead>
     <tbody>{trs}</tbody></table></div>
+  {early}
   <h2 class="sec">To review ({e(len(d['review']))})</h2>
   <p class="notes">Not guessed: each needs a decision (or a venue the site does not use yet).</p>
   <ul class="plain">{rev}</ul>

@@ -1,0 +1,29 @@
+{
+ "schema": "quanty.affiliations.v1",
+ "note": "public, sourced affiliations shown next to a caller; they never change a score",
+ "callers": {
+  "mert": {
+   "name": "Mert Mumtaz",
+   "role": "Co-founder & CEO of Helius (Solana RPC / data infrastructure, founded 2022)",
+   "assets": [
+    "SOL"
+   ],
+   "source": "https://www.helius.dev/about",
+   "evidence": {
+    "name": "Mert Mumtaz",
+    "jobTitle": "Co-founder & CEO",
+    "url": "https://www.helius.dev/about",
+    "sameAs": [
+     "https://www.linkedin.com/in/mertmumtaz/",
+     "https://x.com/mert",
+     "https://www.wikidata.org/wiki/Q139695108"
+    ],
+    "worksFor": {
+     "@id": "https://www.helius.dev/#organization"
+    }
+   },
+   "evidence_sha256": "c90de794ff4c3672f1b7e0deb8c8883caa34ae94f112de25bab67553256000b7",
+   "checked_at": "2026-11-02T13:08:56Z"
+  }
+ }
+}

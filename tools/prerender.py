@@ -208,7 +208,50 @@ def other_calls(r, rows):
             f'<ul class="other-calls">{lis}</ul></section>')
 
 
-def caller_static(name, c, rt, avatars):
+def fmt_px(p):
+    return "–" if p is None else (f"${p:,.2f}" if p >= 1 else f"${p:.6g}")
+
+
+def early_block(name, signals, aff):
+    """Step 24: the affiliation (sourced) and the early signals (first post naming a coin): score-neutral."""
+    out = ""
+    a = (aff or {}).get(name.lower())
+    if a:
+        out += (f'<section class="panel recap early" data-field="affiliation"><h2>Affiliation</h2><p>{e(a["name"])}: {e(a["role"])}. '
+                f'Coins it touches: {e(", ".join(a.get("assets", [])))}. Source: <a href="{e(a["source"])}" rel="noopener noreferrer">{e(a["source"])}</a>'
+                f' (lists {e(a["evidence"].get("name", ""))}, {e(a["evidence"].get("jobTitle", ""))}, with this X account).</p>'
+                f'<p class="notes">Shown for context; it never changes the score.</p></section>')
+    for sig in signals:
+        pr, post, lab = sig["prices"], sig["post"], sig["label"]
+        th, now, pk = pr["then"], pr["now"], pr["peak"]
+        rows = [("First post naming it", f'{fmt_time(post["posted_at"])} · {post["kind"] or "post"}', "early_posted_at", post["posted_at"]),
+                ("Words", " ".join(post["text"].split())[:280], "early_text", None),
+                ("Matched", ", ".join(post.get("matched") or []), "early_matched", None),
+                ("Read as", lab["label"] + (f' ({lab["side"]}: {", ".join(lab["words"])})' if lab.get("side") else ""), "early_label", lab["label"]),
+                ("Price then", f'{fmt_px(th["price"])} · {th["source"]}:{th["symbol"]} @ {fmt_time(th["at"])}'
+                 + (" · before listing: the post predates every price source, priced at the first traded bar" if th["before_listing"] else ""), "early_then", th["price"]),
+                ("Price now", f'{fmt_px(now["price"])} · {now["source"]}:{now["symbol"]} @ {fmt_time(now["at"])}', "early_now", now["price"]),
+                ("Since then", f'{pr["multiple_now"]:,.2f}x', "early_multiple", pr["multiple_now"]),
+                ("Peak since", f'{fmt_px(pk["high"])} on {pk["day"]} ({pr["multiple_peak"]:,.2f}x) · {pk["source"]}:{pk["symbol"]} daily high', "early_peak", pk["high"])]
+        fc = sig.get("first_call")
+        if fc and fc["after_first_mention"]:
+            rows.append(("First recorded call", f'{fmt_time(fc["call"]["posted_at"])} ({fc["days"]:,.0f} days later) at {fmt_px(fc["call"]["entry"]["price"])}: '
+                         f'the price had already moved {fc["price_move_before_call"]:,.2f}x since the first post · {fc["calls_on_coin"]} scored call(s) on {sig["asset"]}',
+                         "early_first_call", fc["days"]))
+        elif fc:
+            rows.append(("First recorded call", f'{fmt_time(fc["call"]["posted_at"])}: before the first post found by search', "early_first_call", fc["days"]))
+        dl = "".join(f'<dt>{e(k)}</dt><dd data-field="{f}" data-raw="{raw(v)}">{e(t)}</dd>' for k, t, f, v in rows)
+        out += (f'<section class="panel recap early" data-field="early_signal" data-asset="{e(sig["asset"])}" id="early-{e(sig["asset"])}">'
+                f'<h2>Early signal: {e(sig["asset"])} · {pr["multiple_now"]:,.1f}x since the first post</h2><dl>{dl}</dl>'
+                f'<p class="notes">Score-neutral: the first time this account named the coin, found by {sig["searches"]} logged X searches (yearly → monthly → daily, '
+                f'empty windows searched twice). It is not a call and never changes the score'
+                + (" (a stated position is also added as a normal call)" if lab["label"] == "stated position" else "")
+                + f'. <a href="{e(post["url"])}" rel="noopener noreferrer">The post</a> · receipt sha256 {e(post["receipt_sha256"][:16])}… · '
+                f'<a href="data/early.json">data/early.json</a></p></section>')
+    return out
+
+
+def caller_static(name, c, rt, avatars, early=None, aff=None):
     """Step 15: one caller's score, every input and every call it read (plain HTML, no script)."""
     f = rt["formula"]
     comp = c["components"]
@@ -243,7 +286,7 @@ def caller_static(name, c, rt, avatars):
     table = (f'<section class="panel recap"><h2>Calls read ({c["calls_total"]})</h2><div class="table-wrap"><table class="calls" data-field="calls">'
              f'<thead><tr><th>Posted</th><th>Asset</th><th>Side</th><th>State</th><th>Result</th><th>A<sub>i</sub></th><th>Counted</th></tr></thead><tbody>{trs}</tbody></table></div>'
              f'<p class="notes">Result = realized return for the side when closed, else the return for the side since the post. A<sub>i</sub> = 50 + 50 tanh(result / {f["scale"]}).</p></section>')
-    return f'<div data-static="1">{head}<section class="panel recap"><h2>Inputs</h2><dl>{dl}</dl></section>{table}</div>'
+    return f'<div data-static="1">{head}{early_block(name, early or [], aff)}<section class="panel recap"><h2>Inputs</h2><dl>{dl}</dl></section>{table}</div>'
 
 
 def position_static(r, asof, avatars, all_rows=(), ratings=None):
@@ -379,6 +422,14 @@ def main(web=None):
         with open(os.path.join(web, name), "w") as f:
             f.write(page)
         keep.add(name)
+    early_by, early_aff = {}, {}
+    early_p = os.path.join(web, "data", "early.json")       # step 24: score-neutral early signals + sourced affiliations
+    if os.path.exists(early_p):
+        with open(early_p) as f:
+            eb = json.load(f)
+        for sgl in eb.get("signals", []):
+            early_by.setdefault(sgl["handle"].lower(), []).append(sgl)
+        early_aff = eb.get("affiliations", {})
     rt = bundle.get("ratings")
     if rt and os.path.exists(os.path.join(web, "caller.html")):
         with open(os.path.join(web, "caller.html")) as f:
@@ -394,7 +445,7 @@ def main(web=None):
                     + (f' ({c["label"]})' if c["label"] else "") + f', rank {c["rank"]} of {len(rt["order"])}.')
             page = re.sub(r"<title>.*?</title>\n<meta name=\"description\" content=\"[^\"]*\">", lambda m: meta_tags(title, desc, f"{SITE}caller-{cs}.html"), ctpl, count=1, flags=re.S)
             page = page.replace("<main>", f'<main data-caller="{e(name)}">', 1)
-            page = fill(page, {"app": caller_static(name, c, rt, avatars)})
+            page = fill(page, {"app": caller_static(name, c, rt, avatars, early_by.get(name.lower(), []), early_aff)})
             fname = f"caller-{cs}.html"
             with open(os.path.join(web, fname), "w") as f:
                 f.write(page)
