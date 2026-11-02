@@ -6,7 +6,7 @@
   "author": "goodalexander",
   "posted_at": "2026-10-30T00:38:15Z",
   "posted_at_source": "receipt",
-  "text": "Still like long XMR. sized down BTC am short bunch of single name stocks \n\nTactically short hacker basket til he\u2019s done (don\u2019t wanna fud and will cut so won\u2019t post tickers) hedged it with long xrp (don\u2019t ask)",
+  "text": "Still like long XMR. sized down BTC am short bunch of single name stocks \n\nTactically short hacker basket til he’s done (don’t wanna fud and will cut so won’t post tickers) hedged it with long xrp (don’t ask)",
   "receipt_sha256": "a886031e78cabaa0c5d3c2292193a6084f957cdef833ab025c3794ad0fb52bc8"
  },
  "asset": {
@@ -22,10 +22,10 @@
   "price": 623.54
  },
  "latest": {
-  "at": "2026-11-02T00:00:00Z",
-  "price": 600.24
+  "at": "2026-11-02T02:00:00Z",
+  "price": 604.8
  },
- "change_since_post": -0.03736728998941519,
+ "change_since_post": -0.030054206626679902,
  "exits": {
   "1": {
    "at": "2026-10-31T01:00:00Z",
@@ -331,11 +331,19 @@
   [
    "2026-11-02T00:00:00Z",
    600.24
+  ],
+  [
+   "2026-11-02T01:00:00Z",
+   601.65
+  ],
+  [
+   "2026-11-02T02:00:00Z",
+   604.8
   ]
  ],
  "resolved_with": {
   "prices": "live:binance+yahoo",
-  "last_bar_at": "2026-11-02T00:00:00Z",
+  "last_bar_at": "2026-11-02T02:00:00Z",
   "max_lag_days": 2,
   "session_lag_days": 2
  },
@@ -368,12 +376,5 @@
    ],
    "words": "long XMR"
   }
- },
- "side_choice": {
-  "method": "detector-leg",
-  "terms": [
-   "long XMR"
-  ],
-  "reason": "'long' before the coin"
  }
 }
