@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "AR",
+ "asked": "seed: Hyperliquid perp AR",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "arweave",
+  "symbol": "AR",
+  "name": "Arweave",
+  "rank": 164,
+  "price": 3.14
+ },
+ "candidates": [
+  {
+   "id": "arweave",
+   "symbol": "AR",
+   "name": "Arweave",
+   "rank": 164
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "ARUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 3.135,
+   "coin_price": 3.14,
+   "diff": -0.001592,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "AR",
+   "listed": true,
+   "status": "trading",
+   "price": 3.1324,
+   "coin_price": 3.14,
+   "diff": -0.00242,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "AR-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 3.135,
+   "coin_price": 3.14,
+   "diff": -0.001592,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "ARUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 3.133,
+   "coin_price": 3.14,
+   "diff": -0.002229,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "AR_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 3.1305,
+   "coin_price": 3.14,
+   "diff": -0.003025,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "ARUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

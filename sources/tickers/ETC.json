@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "ETC",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "ethereum-classic",
+  "symbol": "ETC",
+  "name": "Ethereum Classic",
+  "rank": 70,
+  "price": 7.14
+ },
+ "candidates": [
+  {
+   "id": "ethereum-classic",
+   "symbol": "ETC",
+   "name": "Ethereum Classic",
+   "rank": 70
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "ETCUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 7.15,
+   "coin_price": 7.14,
+   "diff": 0.001401,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "ETC",
+   "listed": true,
+   "status": "trading",
+   "price": 7.1423,
+   "coin_price": 7.14,
+   "diff": 0.000322,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "ETC-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 7.151,
+   "coin_price": 7.14,
+   "diff": 0.001541,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "ETCUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 7.15,
+   "coin_price": 7.14,
+   "diff": 0.001401,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "ETC_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 7.15,
+   "coin_price": 7.14,
+   "diff": 0.001401,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "ETCUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

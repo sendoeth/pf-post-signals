@@ -1,0 +1,86 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "VET",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "vechain",
+  "symbol": "VET",
+  "name": "VeChain",
+  "rank": 106,
+  "price": 0.00578157
+ },
+ "candidates": [
+  {
+   "id": "vechain",
+   "symbol": "VET",
+   "name": "VeChain",
+   "rank": 106
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "VETUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.005792,
+   "coin_price": 0.00578157,
+   "diff": 0.001804,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "listed": false,
+   "ok": false,
+   "why": "no VET market"
+  },
+  {
+   "source": "okx",
+   "listed": false,
+   "ok": false,
+   "why": "no VET market"
+  },
+  {
+   "source": "bybit",
+   "symbol": "VETUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.005786,
+   "coin_price": 0.00578157,
+   "diff": 0.000766,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "VET_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.005788,
+   "coin_price": 0.00578157,
+   "diff": 0.001112,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "VETUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

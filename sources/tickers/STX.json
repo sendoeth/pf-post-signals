@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "STX",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "blockstack",
+  "symbol": "STX",
+  "name": "Stacks",
+  "rank": 94,
+  "price": 0.328019
+ },
+ "candidates": [
+  {
+   "id": "blockstack",
+   "symbol": "STX",
+   "name": "Stacks",
+   "rank": 94
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "STXUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.3297,
+   "coin_price": 0.328019,
+   "diff": 0.005125,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "STX",
+   "listed": true,
+   "status": "trading",
+   "price": 0.32899,
+   "coin_price": 0.328019,
+   "diff": 0.00296,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "STX-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.3294,
+   "coin_price": 0.328019,
+   "diff": 0.00421,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "STXUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.3293,
+   "coin_price": 0.328019,
+   "diff": 0.003905,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "STX_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.3294,
+   "coin_price": 0.328019,
+   "diff": 0.00421,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "STXUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

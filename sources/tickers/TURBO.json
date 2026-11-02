@@ -1,0 +1,91 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "TURBO",
+ "asked": "seed: Hyperliquid perp TURBO",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "turbo",
+  "symbol": "TURBO",
+  "name": "Turbo",
+  "rank": 419,
+  "price": 0.00078093
+ },
+ "candidates": [
+  {
+   "id": "turbo",
+   "symbol": "TURBO",
+   "name": "Turbo",
+   "rank": 419
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "TURBOUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.000782,
+   "coin_price": 0.00078093,
+   "diff": 0.00137,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "TURBO",
+   "listed": true,
+   "status": "trading",
+   "price": 0.000782,
+   "coin_price": 0.00078093,
+   "diff": 0.00137,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "TURBO-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.0007809,
+   "coin_price": 0.00078093,
+   "diff": -3.8e-05,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "listed": false,
+   "ok": false,
+   "why": "no TURBO market"
+  },
+  {
+   "source": "gate",
+   "symbol": "TURBO_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.0007786,
+   "coin_price": 0.00078093,
+   "diff": -0.002984,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "TURBOUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

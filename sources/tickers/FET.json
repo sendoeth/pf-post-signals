@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "FET",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "fetch-ai",
+  "symbol": "FET",
+  "name": "Artificial Superintelligence Alliance",
+  "rank": 120,
+  "price": 0.161668
+ },
+ "candidates": [
+  {
+   "id": "fetch-ai",
+   "symbol": "FET",
+   "name": "Artificial Superintelligence Alliance",
+   "rank": 120
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "FETUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.1619,
+   "coin_price": 0.161668,
+   "diff": 0.001435,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "FET",
+   "listed": true,
+   "status": "trading",
+   "price": 0.162145,
+   "coin_price": 0.161668,
+   "diff": 0.00295,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "FET-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.1621,
+   "coin_price": 0.161668,
+   "diff": 0.002672,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "FETUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.162,
+   "coin_price": 0.161668,
+   "diff": 0.002054,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "FET_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.1619,
+   "coin_price": 0.161668,
+   "diff": 0.001435,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "FETUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

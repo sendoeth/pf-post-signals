@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "POL",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "polygon-ecosystem-token",
+  "symbol": "POL",
+  "name": "POL (ex-MATIC)",
+  "rank": 75,
+  "price": 0.091202
+ },
+ "candidates": [
+  {
+   "id": "polygon-ecosystem-token",
+   "symbol": "POL",
+   "name": "POL (ex-MATIC)",
+   "rank": 75
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "POLUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.09133,
+   "coin_price": 0.091202,
+   "diff": 0.001403,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "POL",
+   "listed": true,
+   "status": "trading",
+   "price": 0.091298,
+   "coin_price": 0.091202,
+   "diff": 0.001053,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "POL-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.0913,
+   "coin_price": 0.091202,
+   "diff": 0.001075,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "POLUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.09129,
+   "coin_price": 0.091202,
+   "diff": 0.000965,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "POL_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.09127,
+   "coin_price": 0.091202,
+   "diff": 0.000746,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "POLUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

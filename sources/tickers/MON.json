@@ -1,0 +1,91 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "MON",
+ "asked": "seed: Hyperliquid perp MON",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "monad",
+  "symbol": "MON",
+  "name": "Monad",
+  "rank": 156,
+  "price": 0.01915657
+ },
+ "candidates": [
+  {
+   "id": "monad",
+   "symbol": "MON",
+   "name": "Monad",
+   "rank": 156
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "listed": false,
+   "ok": false,
+   "why": "no MON market"
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "MON",
+   "listed": true,
+   "status": "trading",
+   "price": 0.019212,
+   "coin_price": 0.01915657,
+   "diff": 0.002894,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "MON-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.01921,
+   "coin_price": 0.01915657,
+   "diff": 0.002789,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "MONUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.0192,
+   "coin_price": 0.01915657,
+   "diff": 0.002267,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "MON_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.01917,
+   "coin_price": 0.01915657,
+   "diff": 0.000701,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "hyperliquid",
+  "symbol": "MON"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

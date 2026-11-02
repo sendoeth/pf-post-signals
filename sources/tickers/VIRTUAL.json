@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "VIRTUAL",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "virtual-protocol",
+  "symbol": "VIRTUAL",
+  "name": "Virtuals Protocol",
+  "rank": 119,
+  "price": 0.596033
+ },
+ "candidates": [
+  {
+   "id": "virtual-protocol",
+   "symbol": "VIRTUAL",
+   "name": "Virtuals Protocol",
+   "rank": 119
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "VIRTUALUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.597,
+   "coin_price": 0.596033,
+   "diff": 0.001622,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "VIRTUAL",
+   "listed": true,
+   "status": "trading",
+   "price": 0.59675,
+   "coin_price": 0.596033,
+   "diff": 0.001203,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "VIRTUAL-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.5966,
+   "coin_price": 0.596033,
+   "diff": 0.000951,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "VIRTUALUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.5966,
+   "coin_price": 0.596033,
+   "diff": 0.000951,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "VIRTUAL_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.5968,
+   "coin_price": 0.596033,
+   "diff": 0.001287,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "VIRTUALUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

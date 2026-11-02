@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "ORDI",
+ "asked": "seed: Hyperliquid perp ORDI",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "ordinals",
+  "symbol": "ORDI",
+  "name": "ORDI",
+  "rank": 338,
+  "price": 3.49
+ },
+ "candidates": [
+  {
+   "id": "ordinals",
+   "symbol": "ORDI",
+   "name": "ORDI",
+   "rank": 338
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "ORDIUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 3.494,
+   "coin_price": 3.49,
+   "diff": 0.001146,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "ORDI",
+   "listed": true,
+   "status": "trading",
+   "price": 3.4951,
+   "coin_price": 3.49,
+   "diff": 0.001461,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "ORDI-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 3.499,
+   "coin_price": 3.49,
+   "diff": 0.002579,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "ORDIUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 3.487,
+   "coin_price": 3.49,
+   "diff": -0.00086,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "ORDI_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 3.495,
+   "coin_price": 3.49,
+   "diff": 0.001433,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "ORDIUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

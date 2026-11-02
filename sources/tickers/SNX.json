@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "SNX",
+ "asked": "seed: Hyperliquid perp SNX",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "havven",
+  "symbol": "SNX",
+  "name": "Synthetix",
+  "rank": 265,
+  "price": 0.180518
+ },
+ "candidates": [
+  {
+   "id": "havven",
+   "symbol": "SNX",
+   "name": "Synthetix",
+   "rank": 265
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "SNXUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.1807,
+   "coin_price": 0.180518,
+   "diff": 0.001008,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "SNX",
+   "listed": true,
+   "status": "trading",
+   "price": 0.18076,
+   "coin_price": 0.180518,
+   "diff": 0.001341,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "SNX-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.181,
+   "coin_price": 0.180518,
+   "diff": 0.00267,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "SNXUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.1806,
+   "coin_price": 0.180518,
+   "diff": 0.000454,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "SNX_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.1794,
+   "coin_price": 0.180518,
+   "diff": -0.006193,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "SNXUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

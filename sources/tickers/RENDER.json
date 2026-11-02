@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "RENDER",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "render-token",
+  "symbol": "RENDER",
+  "name": "Render",
+  "rank": 81,
+  "price": 1.59
+ },
+ "candidates": [
+  {
+   "id": "render-token",
+   "symbol": "RENDER",
+   "name": "Render",
+   "rank": 81
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "RENDERUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 1.587,
+   "coin_price": 1.59,
+   "diff": -0.001887,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "RENDER",
+   "listed": true,
+   "status": "trading",
+   "price": 1.5902,
+   "coin_price": 1.59,
+   "diff": 0.000126,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "RENDER-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 1.588,
+   "coin_price": 1.59,
+   "diff": -0.001258,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "RENDERUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 1.588,
+   "coin_price": 1.59,
+   "diff": -0.001258,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "RENDER_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 1.5867,
+   "coin_price": 1.59,
+   "diff": -0.002075,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "RENDERUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

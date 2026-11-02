@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "EIGEN",
+ "asked": "seed: Hyperliquid perp EIGEN",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "eigenlayer",
+  "symbol": "EIGEN",
+  "name": "EigenCloud (prev. EigenLayer)",
+  "rank": 176,
+  "price": 0.1858
+ },
+ "candidates": [
+  {
+   "id": "eigenlayer",
+   "symbol": "EIGEN",
+   "name": "EigenCloud (prev. EigenLayer)",
+   "rank": 176
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "EIGENUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.1857,
+   "coin_price": 0.1858,
+   "diff": -0.000538,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "EIGEN",
+   "listed": true,
+   "status": "trading",
+   "price": 0.1859,
+   "coin_price": 0.1858,
+   "diff": 0.000538,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "EIGEN-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.1856,
+   "coin_price": 0.1858,
+   "diff": -0.001076,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "EIGENUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.1855,
+   "coin_price": 0.1858,
+   "diff": -0.001615,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "EIGEN_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.1856,
+   "coin_price": 0.1858,
+   "diff": -0.001076,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "EIGENUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

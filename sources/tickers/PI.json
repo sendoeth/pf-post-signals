@@ -1,0 +1,81 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "PI",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "pi-network",
+  "symbol": "PI",
+  "name": "Pi Network",
+  "rank": 78,
+  "price": 0.077583
+ },
+ "candidates": [
+  {
+   "id": "pi-network",
+   "symbol": "PI",
+   "name": "Pi Network",
+   "rank": 78
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "listed": false,
+   "ok": false,
+   "why": "no PI market"
+  },
+  {
+   "source": "hyperliquid",
+   "listed": false,
+   "ok": false,
+   "why": "no PI market"
+  },
+  {
+   "source": "okx",
+   "symbol": "PI-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.07765,
+   "coin_price": 0.077583,
+   "diff": 0.000864,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "listed": false,
+   "ok": false,
+   "why": "no PI market"
+  },
+  {
+   "source": "gate",
+   "symbol": "PI_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.07767,
+   "coin_price": 0.077583,
+   "diff": 0.001121,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "okx",
+  "symbol": "PI-USDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

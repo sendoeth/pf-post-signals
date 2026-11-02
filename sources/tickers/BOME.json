@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "BOME",
+ "asked": "seed: Hyperliquid perp BOME",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "book-of-meme",
+  "symbol": "BOME",
+  "name": "BOOK OF MEME",
+  "rank": 512,
+  "price": 0.00060389
+ },
+ "candidates": [
+  {
+   "id": "book-of-meme",
+   "symbol": "BOME",
+   "name": "BOOK OF MEME",
+   "rank": 512
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "BOMEUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.0006039,
+   "coin_price": 0.00060389,
+   "diff": 1.7e-05,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "BOME",
+   "listed": true,
+   "status": "trading",
+   "price": 0.000603,
+   "coin_price": 0.00060389,
+   "diff": -0.001474,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "BOME-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.000604,
+   "coin_price": 0.00060389,
+   "diff": 0.000182,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "BOMEUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.0006058,
+   "coin_price": 0.00060389,
+   "diff": 0.003163,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "BOME_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.0006045,
+   "coin_price": 0.00060389,
+   "diff": 0.00101,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "BOMEUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

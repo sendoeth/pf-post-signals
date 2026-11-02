@@ -55,3 +55,10 @@ code { overflow-wrap: anywhere; }
   .summary li { grid-template-columns: 44px minmax(0, 1fr); }
   .moment { grid-template-columns: 40px 24px minmax(0, 1fr); gap: 6px; }
 }
+/* coins page (tools/coins_page.py) */
+.tablewrap { overflow-x: auto; }
+table.coins { width: 100%; border-collapse: collapse; font-size: 13px; }
+table.coins th, table.coins td { text-align: left; padding: 6px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+table.coins th { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .04em; }
+table.coins tr.flagged td { color: var(--down); }
+ul.plain { list-style: none; padding: 0; margin: 0 0 8px; display: grid; gap: 4px; font-size: 13px; color: var(--ink-2); }

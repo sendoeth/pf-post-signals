@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "PYTH",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "pyth-network",
+  "symbol": "PYTH",
+  "name": "Pyth Network",
+  "rank": 103,
+  "price": 0.065474
+ },
+ "candidates": [
+  {
+   "id": "pyth-network",
+   "symbol": "PYTH",
+   "name": "Pyth Network",
+   "rank": 103
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "PYTHUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.06558,
+   "coin_price": 0.065474,
+   "diff": 0.001619,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "PYTH",
+   "listed": true,
+   "status": "trading",
+   "price": 0.065544,
+   "coin_price": 0.065474,
+   "diff": 0.001069,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "PYTH-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.06562,
+   "coin_price": 0.065474,
+   "diff": 0.00223,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "PYTHUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.06557,
+   "coin_price": 0.065474,
+   "diff": 0.001466,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "PYTH_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.0656,
+   "coin_price": 0.065474,
+   "diff": 0.001924,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "PYTHUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "PENGU",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "pudgy-penguins",
+  "symbol": "PENGU",
+  "name": "Pudgy Penguins",
+  "rank": 114,
+  "price": 0.00728756
+ },
+ "candidates": [
+  {
+   "id": "pudgy-penguins",
+   "symbol": "PENGU",
+   "name": "Pudgy Penguins",
+   "rank": 114
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "PENGUUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.007284,
+   "coin_price": 0.00728756,
+   "diff": -0.000489,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "PENGU",
+   "listed": true,
+   "status": "trading",
+   "price": 0.007286,
+   "coin_price": 0.00728756,
+   "diff": -0.000214,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "PENGU-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.007289,
+   "coin_price": 0.00728756,
+   "diff": 0.000198,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "PENGUUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.007284,
+   "coin_price": 0.00728756,
+   "diff": -0.000489,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "PENGU_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.007279,
+   "coin_price": 0.00728756,
+   "diff": -0.001175,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "PENGUUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

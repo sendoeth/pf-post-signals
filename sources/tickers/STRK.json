@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "STRK",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "starknet",
+  "symbol": "STRK",
+  "name": "Starknet",
+  "rank": 128,
+  "price": 0.04279549
+ },
+ "candidates": [
+  {
+   "id": "starknet",
+   "symbol": "STRK",
+   "name": "Starknet",
+   "rank": 128
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "STRKUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.04283,
+   "coin_price": 0.04279549,
+   "diff": 0.000806,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "STRK",
+   "listed": true,
+   "status": "trading",
+   "price": 0.04287,
+   "coin_price": 0.04279549,
+   "diff": 0.001741,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "STRK-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.04284,
+   "coin_price": 0.04279549,
+   "diff": 0.00104,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "STRKUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.04283,
+   "coin_price": 0.04279549,
+   "diff": 0.000806,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "STRK_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.04285,
+   "coin_price": 0.04279549,
+   "diff": 0.001274,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "STRKUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

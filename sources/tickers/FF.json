@@ -1,0 +1,86 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "FF",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "falcon-finance-ff",
+  "symbol": "FF",
+  "name": "Falcon Finance",
+  "rank": 133,
+  "price": 0.090298
+ },
+ "candidates": [
+  {
+   "id": "falcon-finance-ff",
+   "symbol": "FF",
+   "name": "Falcon Finance",
+   "rank": 133
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "FFUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.09045,
+   "coin_price": 0.090298,
+   "diff": 0.001683,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "listed": false,
+   "ok": false,
+   "why": "no FF market"
+  },
+  {
+   "source": "okx",
+   "listed": false,
+   "ok": false,
+   "why": "no FF market"
+  },
+  {
+   "source": "bybit",
+   "symbol": "FFUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.09039,
+   "coin_price": 0.090298,
+   "diff": 0.001019,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "FF_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.09032,
+   "coin_price": 0.090298,
+   "diff": 0.000244,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "FFUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

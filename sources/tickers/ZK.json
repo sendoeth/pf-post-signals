@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "ZK",
+ "asked": "seed: Hyperliquid perp ZK",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "zksync",
+  "symbol": "ZK",
+  "name": "ZKsync",
+  "rank": 248,
+  "price": 0.01034284
+ },
+ "candidates": [
+  {
+   "id": "zksync",
+   "symbol": "ZK",
+   "name": "ZKsync",
+   "rank": 248
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "ZKUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.01038,
+   "coin_price": 0.01034284,
+   "diff": 0.003593,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "ZK",
+   "listed": true,
+   "status": "trading",
+   "price": 0.010362,
+   "coin_price": 0.01034284,
+   "diff": 0.001852,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "ZK-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.010378,
+   "coin_price": 0.01034284,
+   "diff": 0.003399,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "ZKUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.010373,
+   "coin_price": 0.01034284,
+   "diff": 0.002916,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "ZK_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.010388,
+   "coin_price": 0.01034284,
+   "diff": 0.004366,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "ZKUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

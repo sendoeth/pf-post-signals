@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "2Z",
+ "asked": "seed: Hyperliquid perp 2Z",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "doublezero",
+  "symbol": "2Z",
+  "name": "DoubleZero",
+  "rank": 225,
+  "price": 0.0253157
+ },
+ "candidates": [
+  {
+   "id": "doublezero",
+   "symbol": "2Z",
+   "name": "DoubleZero",
+   "rank": 225
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "2ZUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.02532,
+   "coin_price": 0.0253157,
+   "diff": 0.00017,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "2Z",
+   "listed": true,
+   "status": "trading",
+   "price": 0.025351,
+   "coin_price": 0.0253157,
+   "diff": 0.001394,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "2Z-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.02534,
+   "coin_price": 0.0253157,
+   "diff": 0.00096,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "2ZUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.02534,
+   "coin_price": 0.0253157,
+   "diff": 0.00096,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "2Z_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.02536,
+   "coin_price": 0.0253157,
+   "diff": 0.00175,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "2ZUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

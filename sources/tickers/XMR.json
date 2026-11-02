@@ -1,0 +1,81 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "XMR",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "monero",
+  "symbol": "XMR",
+  "name": "Monero",
+  "rank": 13,
+  "price": 599.93
+ },
+ "candidates": [
+  {
+   "id": "monero",
+   "symbol": "XMR",
+   "name": "Monero",
+   "rank": 13
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "XMRUSDT",
+   "listed": true,
+   "status": "BREAK",
+   "price": 118.7,
+   "coin_price": 599.93,
+   "diff": -0.802144,
+   "ok": false,
+   "why": "not trading (status BREAK)"
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "XMR",
+   "listed": true,
+   "status": "trading",
+   "price": 601.56,
+   "coin_price": 599.93,
+   "diff": 0.002717,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "listed": false,
+   "ok": false,
+   "why": "no XMR market"
+  },
+  {
+   "source": "bybit",
+   "listed": false,
+   "ok": false,
+   "why": "no XMR market"
+  },
+  {
+   "source": "gate",
+   "listed": false,
+   "ok": false,
+   "why": "no XMR market"
+  }
+ ],
+ "chosen": {
+  "source": "hyperliquid",
+  "symbol": "XMR"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

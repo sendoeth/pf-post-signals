@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "TNSR",
+ "asked": "seed: Hyperliquid perp TNSR",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "tensor",
+  "symbol": "TNSR",
+  "name": "Tensor",
+  "rank": 822,
+  "price": 0.02809682
+ },
+ "candidates": [
+  {
+   "id": "tensor",
+   "symbol": "TNSR",
+   "name": "Tensor",
+   "rank": 822
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "TNSRUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.0281,
+   "coin_price": 0.02809682,
+   "diff": 0.000113,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "TNSR",
+   "listed": true,
+   "status": "trading",
+   "price": 0.02813,
+   "coin_price": 0.02809682,
+   "diff": 0.001181,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "TNSR-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.0281,
+   "coin_price": 0.02809682,
+   "diff": 0.000113,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "TNSRUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.02812,
+   "coin_price": 0.02809682,
+   "diff": 0.000825,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "TNSR_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.02812,
+   "coin_price": 0.02809682,
+   "diff": 0.000825,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "TNSRUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

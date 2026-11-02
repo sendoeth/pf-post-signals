@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "ETH",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "ethereum",
+  "symbol": "ETH",
+  "name": "Ethereum",
+  "rank": 2,
+  "price": 2272.14
+ },
+ "candidates": [
+  {
+   "id": "ethereum",
+   "symbol": "ETH",
+   "name": "Ethereum",
+   "rank": 2
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "ETHUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 2275.62,
+   "coin_price": 2272.14,
+   "diff": 0.001532,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "ETH",
+   "listed": true,
+   "status": "trading",
+   "price": 2274.75,
+   "coin_price": 2272.14,
+   "diff": 0.001149,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "ETH-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 2275.35,
+   "coin_price": 2272.14,
+   "diff": 0.001413,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "ETHUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 2275.51,
+   "coin_price": 2272.14,
+   "diff": 0.001483,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "ETH_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 2275.28,
+   "coin_price": 2272.14,
+   "diff": 0.001382,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "ETHUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

@@ -1,0 +1,91 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "SHIB",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "shiba-inu",
+  "symbol": "SHIB",
+  "name": "Shiba Inu",
+  "rank": 37,
+  "price": 4.7e-06
+ },
+ "candidates": [
+  {
+   "id": "shiba-inu",
+   "symbol": "SHIB",
+   "name": "Shiba Inu",
+   "rank": 37
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "SHIBUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 4.7e-06,
+   "coin_price": 4.7e-06,
+   "diff": 0.0,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "listed": false,
+   "ok": false,
+   "why": "no SHIB market"
+  },
+  {
+   "source": "okx",
+   "symbol": "SHIB-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 4.708e-06,
+   "coin_price": 4.7e-06,
+   "diff": 0.001702,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "SHIBUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 4.706e-06,
+   "coin_price": 4.7e-06,
+   "diff": 0.001277,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "SHIB_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 4.704e-06,
+   "coin_price": 4.7e-06,
+   "diff": 0.000851,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "SHIBUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

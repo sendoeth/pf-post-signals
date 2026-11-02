@@ -1,0 +1,91 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "ACE",
+ "asked": "seed: Hyperliquid perp ACE",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "endurance",
+  "symbol": "ACE",
+  "name": "Fusionist",
+  "rank": 970,
+  "price": 0.135966
+ },
+ "candidates": [
+  {
+   "id": "endurance",
+   "symbol": "ACE",
+   "name": "Fusionist",
+   "rank": 970
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "ACEUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.1362,
+   "coin_price": 0.135966,
+   "diff": 0.001721,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "ACE",
+   "listed": true,
+   "status": "trading",
+   "price": 0.1364,
+   "coin_price": 0.135966,
+   "diff": 0.003192,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "ACE-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.13615,
+   "coin_price": 0.135966,
+   "diff": 0.001353,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "listed": false,
+   "ok": false,
+   "why": "no ACE market"
+  },
+  {
+   "source": "gate",
+   "symbol": "ACE_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.13553,
+   "coin_price": 0.135966,
+   "diff": -0.003207,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "ACEUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

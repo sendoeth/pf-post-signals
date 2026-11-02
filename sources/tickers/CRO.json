@@ -1,0 +1,81 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "CRO",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "crypto-com-chain",
+  "symbol": "CRO",
+  "name": "Cronos",
+  "rank": 39,
+  "price": 0.051165
+ },
+ "candidates": [
+  {
+   "id": "crypto-com-chain",
+   "symbol": "CRO",
+   "name": "Cronos",
+   "rank": 39
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "listed": false,
+   "ok": false,
+   "why": "no CRO market"
+  },
+  {
+   "source": "hyperliquid",
+   "listed": false,
+   "ok": false,
+   "why": "no CRO market"
+  },
+  {
+   "source": "okx",
+   "symbol": "CRO-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.0512,
+   "coin_price": 0.051165,
+   "diff": 0.000684,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "listed": false,
+   "ok": false,
+   "why": "no CRO market"
+  },
+  {
+   "source": "gate",
+   "symbol": "CRO_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.0512,
+   "coin_price": 0.051165,
+   "diff": 0.000684,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "okx",
+  "symbol": "CRO-USDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

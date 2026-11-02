@@ -1,0 +1,91 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "GAS",
+ "asked": "seed: Hyperliquid perp GAS",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "gas",
+  "symbol": "GAS",
+  "name": "Gas",
+  "rank": 320,
+  "price": 1.18
+ },
+ "candidates": [
+  {
+   "id": "gas",
+   "symbol": "GAS",
+   "name": "Gas",
+   "rank": 320
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "GASUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 1.183,
+   "coin_price": 1.18,
+   "diff": 0.002542,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "GAS",
+   "listed": true,
+   "status": "trading",
+   "price": 1.18265,
+   "coin_price": 1.18,
+   "diff": 0.002246,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "GAS-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 1.1824,
+   "coin_price": 1.18,
+   "diff": 0.002034,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "listed": false,
+   "ok": false,
+   "why": "no GAS market"
+  },
+  {
+   "source": "gate",
+   "symbol": "GAS_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 1.1838,
+   "coin_price": 1.18,
+   "diff": 0.00322,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "GASUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

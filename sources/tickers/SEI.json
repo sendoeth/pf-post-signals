@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "SEI",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "sei-network",
+  "symbol": "SEI",
+  "name": "Sei",
+  "rank": 129,
+  "price": 0.04822674
+ },
+ "candidates": [
+  {
+   "id": "sei-network",
+   "symbol": "SEI",
+   "name": "Sei",
+   "rank": 129
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "SEIUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.04834,
+   "coin_price": 0.04822674,
+   "diff": 0.002348,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "SEI",
+   "listed": true,
+   "status": "trading",
+   "price": 0.048303,
+   "coin_price": 0.04822674,
+   "diff": 0.001581,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "SEI-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.0483,
+   "coin_price": 0.04822674,
+   "diff": 0.001519,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "SEIUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.04832,
+   "coin_price": 0.04822674,
+   "diff": 0.001934,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "SEI_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.0484,
+   "coin_price": 0.04822674,
+   "diff": 0.003593,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "SEIUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "WIF",
+ "asked": "seed: Hyperliquid perp WIF",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "dogwifcoin",
+  "symbol": "WIF",
+  "name": "dogwifhat",
+  "rank": 187,
+  "price": 0.177074
+ },
+ "candidates": [
+  {
+   "id": "dogwifcoin",
+   "symbol": "WIF",
+   "name": "dogwifhat",
+   "rank": 187
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "WIFUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.1773,
+   "coin_price": 0.177074,
+   "diff": 0.001276,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "WIF",
+   "listed": true,
+   "status": "trading",
+   "price": 0.1775,
+   "coin_price": 0.177074,
+   "diff": 0.002406,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "WIF-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.1773,
+   "coin_price": 0.177074,
+   "diff": 0.001276,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "WIFUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.1773,
+   "coin_price": 0.177074,
+   "diff": 0.001276,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "WIF_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.1771,
+   "coin_price": 0.177074,
+   "diff": 0.000147,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "WIFUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

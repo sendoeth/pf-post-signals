@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "SUSHI",
+ "asked": "seed: Hyperliquid perp SUSHI",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "sushi",
+  "symbol": "SUSHI",
+  "name": "Sushi",
+  "rank": 412,
+  "price": 0.193203
+ },
+ "candidates": [
+  {
+   "id": "sushi",
+   "symbol": "SUSHI",
+   "name": "Sushi",
+   "rank": 412
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "SUSHIUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.1928,
+   "coin_price": 0.193203,
+   "diff": -0.002086,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "SUSHI",
+   "listed": true,
+   "status": "trading",
+   "price": 0.19244,
+   "coin_price": 0.193203,
+   "diff": -0.003949,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "SUSHI-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.1924,
+   "coin_price": 0.193203,
+   "diff": -0.004156,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "SUSHIUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.1926,
+   "coin_price": 0.193203,
+   "diff": -0.003121,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "SUSHI_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.1923,
+   "coin_price": 0.193203,
+   "diff": -0.004674,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "SUSHIUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

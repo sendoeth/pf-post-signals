@@ -1,0 +1,81 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "APEX",
+ "asked": "seed: Hyperliquid perp APEX",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "apex-token-2",
+  "symbol": "APEX",
+  "name": "APEX",
+  "rank": 629,
+  "price": 0.207025
+ },
+ "candidates": [
+  {
+   "id": "apex-token-2",
+   "symbol": "APEX",
+   "name": "APEX",
+   "rank": 629
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "listed": false,
+   "ok": false,
+   "why": "no APEX market"
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "APEX",
+   "listed": true,
+   "status": "trading",
+   "price": 0.207245,
+   "coin_price": 0.207025,
+   "diff": 0.001063,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "listed": false,
+   "ok": false,
+   "why": "no APEX market"
+  },
+  {
+   "source": "bybit",
+   "symbol": "APEXUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.207,
+   "coin_price": 0.207025,
+   "diff": -0.000121,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "listed": false,
+   "ok": false,
+   "why": "no APEX market"
+  }
+ ],
+ "chosen": {
+  "source": "hyperliquid",
+  "symbol": "APEX"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

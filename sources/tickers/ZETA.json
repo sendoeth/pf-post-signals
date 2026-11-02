@@ -1,0 +1,91 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "ZETA",
+ "asked": "seed: Hyperliquid perp ZETA",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "zetachain",
+  "symbol": "ZETA",
+  "name": "ZetaChain",
+  "rank": 375,
+  "price": 0.03689647
+ },
+ "candidates": [
+  {
+   "id": "zetachain",
+   "symbol": "ZETA",
+   "name": "ZetaChain",
+   "rank": 375
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "listed": false,
+   "ok": false,
+   "why": "no ZETA market"
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "ZETA",
+   "listed": true,
+   "status": "trading",
+   "price": 0.03693,
+   "coin_price": 0.03689647,
+   "diff": 0.000909,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "ZETA-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.03698,
+   "coin_price": 0.03689647,
+   "diff": 0.002264,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "ZETAUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.03696,
+   "coin_price": 0.03689647,
+   "diff": 0.001722,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "ZETA_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.03685,
+   "coin_price": 0.03689647,
+   "diff": -0.001259,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "hyperliquid",
+  "symbol": "ZETA"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

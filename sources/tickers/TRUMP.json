@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "TRUMP",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "official-trump",
+  "symbol": "TRUMP",
+  "name": "Official Trump",
+  "rank": 110,
+  "price": 1.72
+ },
+ "candidates": [
+  {
+   "id": "official-trump",
+   "symbol": "TRUMP",
+   "name": "Official Trump",
+   "rank": 110
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "TRUMPUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 1.718,
+   "coin_price": 1.72,
+   "diff": -0.001163,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "TRUMP",
+   "listed": true,
+   "status": "trading",
+   "price": 1.7168,
+   "coin_price": 1.72,
+   "diff": -0.00186,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "TRUMP-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 1.719,
+   "coin_price": 1.72,
+   "diff": -0.000581,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "TRUMPUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 1.719,
+   "coin_price": 1.72,
+   "diff": -0.000581,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "TRUMP_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 1.7186,
+   "coin_price": 1.72,
+   "diff": -0.000814,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "TRUMPUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

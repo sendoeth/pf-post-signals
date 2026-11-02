@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "MEGA",
+ "asked": "seed: Hyperliquid perp MEGA",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "megaeth",
+  "symbol": "MEGA",
+  "name": "MegaETH",
+  "rank": 447,
+  "price": 0.04395481
+ },
+ "candidates": [
+  {
+   "id": "megaeth",
+   "symbol": "MEGA",
+   "name": "MegaETH",
+   "rank": 447
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "MEGAUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.04392,
+   "coin_price": 0.04395481,
+   "diff": -0.000792,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "MEGA",
+   "listed": true,
+   "status": "trading",
+   "price": 0.044031,
+   "coin_price": 0.04395481,
+   "diff": 0.001733,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "MEGA-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.04392,
+   "coin_price": 0.04395481,
+   "diff": -0.000792,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "MEGAUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.04392,
+   "coin_price": 0.04395481,
+   "diff": -0.000792,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "MEGA_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.04393,
+   "coin_price": 0.04395481,
+   "diff": -0.000564,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "MEGAUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

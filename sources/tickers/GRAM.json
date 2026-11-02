@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "GRAM",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "the-open-network",
+  "symbol": "GRAM",
+  "name": "Gram (prev. Toncoin)",
+  "rank": 31,
+  "price": 1.21
+ },
+ "candidates": [
+  {
+   "id": "the-open-network",
+   "symbol": "GRAM",
+   "name": "Gram (prev. Toncoin)",
+   "rank": 31
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "GRAMUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 1.216,
+   "coin_price": 1.21,
+   "diff": 0.004959,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "GRAM",
+   "listed": true,
+   "status": "trading",
+   "price": 1.2161,
+   "coin_price": 1.21,
+   "diff": 0.005041,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "GRAM-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 1.218,
+   "coin_price": 1.21,
+   "diff": 0.006612,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "GRAMUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 1.217,
+   "coin_price": 1.21,
+   "diff": 0.005785,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "GRAM_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 1.2162,
+   "coin_price": 1.21,
+   "diff": 0.005124,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "GRAMUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

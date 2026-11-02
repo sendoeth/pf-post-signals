@@ -1,0 +1,91 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "MERL",
+ "asked": "seed: Hyperliquid perp MERL",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "merlin-chain",
+  "symbol": "MERL",
+  "name": "Merlin Chain",
+  "rank": 494,
+  "price": 0.03061372
+ },
+ "candidates": [
+  {
+   "id": "merlin-chain",
+   "symbol": "MERL",
+   "name": "Merlin Chain",
+   "rank": 494
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "listed": false,
+   "ok": false,
+   "why": "no MERL market"
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "MERL",
+   "listed": true,
+   "status": "trading",
+   "price": 0.030751,
+   "coin_price": 0.03061372,
+   "diff": 0.004484,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "MERL-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.03067,
+   "coin_price": 0.03061372,
+   "diff": 0.001838,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "MERLUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.03066,
+   "coin_price": 0.03061372,
+   "diff": 0.001512,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "MERL_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.03072,
+   "coin_price": 0.03061372,
+   "diff": 0.003472,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "hyperliquid",
+  "symbol": "MERL"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

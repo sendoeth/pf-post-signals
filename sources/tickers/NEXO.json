@@ -1,0 +1,86 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "NEXO",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "nexo",
+  "symbol": "NEXO",
+  "name": "NEXO",
+  "rank": 84,
+  "price": 0.770022
+ },
+ "candidates": [
+  {
+   "id": "nexo",
+   "symbol": "NEXO",
+   "name": "NEXO",
+   "rank": 84
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "NEXOUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.769,
+   "coin_price": 0.770022,
+   "diff": -0.001327,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "listed": false,
+   "ok": false,
+   "why": "no NEXO market"
+  },
+  {
+   "source": "okx",
+   "listed": false,
+   "ok": false,
+   "why": "no NEXO market"
+  },
+  {
+   "source": "bybit",
+   "symbol": "NEXOUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.7696,
+   "coin_price": 0.770022,
+   "diff": -0.000548,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "NEXO_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.771,
+   "coin_price": 0.770022,
+   "diff": 0.00127,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "NEXOUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

@@ -1,0 +1,91 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "TRB",
+ "asked": "seed: Hyperliquid perp TRB",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "tellor",
+  "symbol": "TRB",
+  "name": "Tellor Tributes",
+  "rank": 467,
+  "price": 16.7
+ },
+ "candidates": [
+  {
+   "id": "tellor",
+   "symbol": "TRB",
+   "name": "Tellor Tributes",
+   "rank": 467
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "TRBUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 16.71,
+   "coin_price": 16.7,
+   "diff": 0.000599,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "TRB",
+   "listed": true,
+   "status": "trading",
+   "price": 16.692,
+   "coin_price": 16.7,
+   "diff": -0.000479,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "TRB-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 16.69,
+   "coin_price": 16.7,
+   "diff": -0.000599,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "listed": false,
+   "ok": false,
+   "why": "no TRB market"
+  },
+  {
+   "source": "gate",
+   "symbol": "TRB_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 16.64,
+   "coin_price": 16.7,
+   "diff": -0.003593,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "TRBUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

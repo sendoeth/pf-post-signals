@@ -1,0 +1,91 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "GRASS",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "grass",
+  "symbol": "GRASS",
+  "name": "Grass",
+  "rank": 118,
+  "price": 0.601984
+ },
+ "candidates": [
+  {
+   "id": "grass",
+   "symbol": "GRASS",
+   "name": "Grass",
+   "rank": 118
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "listed": false,
+   "ok": false,
+   "why": "no GRASS market"
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "GRASS",
+   "listed": true,
+   "status": "trading",
+   "price": 0.60457,
+   "coin_price": 0.601984,
+   "diff": 0.004296,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "GRASS-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.6031,
+   "coin_price": 0.601984,
+   "diff": 0.001854,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "GRASSUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.6035,
+   "coin_price": 0.601984,
+   "diff": 0.002518,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "GRASS_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.6028,
+   "coin_price": 0.601984,
+   "diff": 0.001356,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "hyperliquid",
+  "symbol": "GRASS"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

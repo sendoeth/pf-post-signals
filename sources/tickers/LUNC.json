@@ -1,0 +1,86 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "LUNC",
+ "asked": "seed: Hyperliquid perp kLUNC",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "terra-luna",
+  "symbol": "LUNC",
+  "name": "Terra Luna Classic",
+  "rank": 151,
+  "price": 4.236e-05
+ },
+ "candidates": [
+  {
+   "id": "terra-luna",
+   "symbol": "LUNC",
+   "name": "Terra Luna Classic",
+   "rank": 151
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "LUNCUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 4.241e-05,
+   "coin_price": 4.236e-05,
+   "diff": 0.00118,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "listed": false,
+   "ok": false,
+   "why": "no LUNC market"
+  },
+  {
+   "source": "okx",
+   "listed": false,
+   "ok": false,
+   "why": "no LUNC market"
+  },
+  {
+   "source": "bybit",
+   "symbol": "LUNCUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 4.293e-05,
+   "coin_price": 4.236e-05,
+   "diff": 0.013456,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "LUNC_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 4.24e-05,
+   "coin_price": 4.236e-05,
+   "diff": 0.000944,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "LUNCUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

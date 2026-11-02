@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "GMT",
+ "asked": "seed: Hyperliquid perp GMT",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "stepn",
+  "symbol": "GMT",
+  "name": "GMT",
+  "rank": 837,
+  "price": 0.0065586
+ },
+ "candidates": [
+  {
+   "id": "stepn",
+   "symbol": "GMT",
+   "name": "GMT",
+   "rank": 837
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "GMTUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.00655,
+   "coin_price": 0.0065586,
+   "diff": -0.001311,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "GMT",
+   "listed": true,
+   "status": "trading",
+   "price": 0.006557,
+   "coin_price": 0.0065586,
+   "diff": -0.000244,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "GMT-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.006568,
+   "coin_price": 0.0065586,
+   "diff": 0.001433,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "GMTUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.006565,
+   "coin_price": 0.0065586,
+   "diff": 0.000976,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "GMT_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.00661,
+   "coin_price": 0.0065586,
+   "diff": 0.007837,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "GMTUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

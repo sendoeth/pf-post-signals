@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "AXS",
+ "asked": "seed: Hyperliquid perp AXS",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "axie-infinity",
+  "symbol": "AXS",
+  "name": "Axie Infinity",
+  "rank": 203,
+  "price": 0.857871
+ },
+ "candidates": [
+  {
+   "id": "axie-infinity",
+   "symbol": "AXS",
+   "name": "Axie Infinity",
+   "rank": 203
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "AXSUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.86,
+   "coin_price": 0.857871,
+   "diff": 0.002482,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "AXS",
+   "listed": true,
+   "status": "trading",
+   "price": 0.85892,
+   "coin_price": 0.857871,
+   "diff": 0.001223,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "AXS-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.8597,
+   "coin_price": 0.857871,
+   "diff": 0.002132,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "AXSUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.8594,
+   "coin_price": 0.857871,
+   "diff": 0.001782,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "AXS_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.8575,
+   "coin_price": 0.857871,
+   "diff": -0.000432,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "AXSUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

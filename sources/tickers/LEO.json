@@ -1,0 +1,81 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "LEO",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "leo-token",
+  "symbol": "LEO",
+  "name": "LEO Token",
+  "rank": 17,
+  "price": 9.4
+ },
+ "candidates": [
+  {
+   "id": "leo-token",
+   "symbol": "LEO",
+   "name": "LEO Token",
+   "rank": 17
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "listed": false,
+   "ok": false,
+   "why": "no LEO market"
+  },
+  {
+   "source": "hyperliquid",
+   "listed": false,
+   "ok": false,
+   "why": "no LEO market"
+  },
+  {
+   "source": "okx",
+   "symbol": "LEO-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 9.41,
+   "coin_price": 9.4,
+   "diff": 0.001064,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "listed": false,
+   "ok": false,
+   "why": "no LEO market"
+  },
+  {
+   "source": "gate",
+   "symbol": "LEO_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 9.403,
+   "coin_price": 9.4,
+   "diff": 0.000319,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "okx",
+  "symbol": "LEO-USDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

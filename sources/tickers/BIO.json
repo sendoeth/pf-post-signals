@@ -1,0 +1,91 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "BIO",
+ "asked": "seed: Hyperliquid perp BIO",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "bio-protocol",
+  "symbol": "BIO",
+  "name": "Bio Protocol",
+  "rank": 456,
+  "price": 0.02253011
+ },
+ "candidates": [
+  {
+   "id": "bio-protocol",
+   "symbol": "BIO",
+   "name": "Bio Protocol",
+   "rank": 456
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "BIOUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.02251,
+   "coin_price": 0.02253011,
+   "diff": -0.000893,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "BIO",
+   "listed": true,
+   "status": "trading",
+   "price": 0.022529,
+   "coin_price": 0.02253011,
+   "diff": -4.9e-05,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "BIO-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.02248,
+   "coin_price": 0.02253011,
+   "diff": -0.002224,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "listed": false,
+   "ok": false,
+   "why": "no BIO market"
+  },
+  {
+   "source": "gate",
+   "symbol": "BIO_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.02247,
+   "coin_price": 0.02253011,
+   "diff": -0.002668,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "BIOUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

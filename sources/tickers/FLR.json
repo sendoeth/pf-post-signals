@@ -1,0 +1,86 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "FLR",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "flare-networks",
+  "symbol": "FLR",
+  "name": "Flare",
+  "rank": 101,
+  "price": 0.00605734
+ },
+ "candidates": [
+  {
+   "id": "flare-networks",
+   "symbol": "FLR",
+   "name": "Flare",
+   "rank": 101
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "listed": false,
+   "ok": false,
+   "why": "no FLR market"
+  },
+  {
+   "source": "hyperliquid",
+   "listed": false,
+   "ok": false,
+   "why": "no FLR market"
+  },
+  {
+   "source": "okx",
+   "symbol": "FLR-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.006098,
+   "coin_price": 0.00605734,
+   "diff": 0.006713,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "FLRUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.006094,
+   "coin_price": 0.00605734,
+   "diff": 0.006052,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "FLR_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.0061,
+   "coin_price": 0.00605734,
+   "diff": 0.007043,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "okx",
+  "symbol": "FLR-USDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

@@ -1,0 +1,91 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "PONS",
+ "asked": "seed: Hyperliquid perp PONS",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "pons",
+  "symbol": "PONS",
+  "name": "Pons",
+  "rank": 196,
+  "price": 0.23936
+ },
+ "candidates": [
+  {
+   "id": "pons",
+   "symbol": "PONS",
+   "name": "Pons",
+   "rank": 196
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "listed": false,
+   "ok": false,
+   "why": "no PONS market"
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "PONS",
+   "listed": true,
+   "status": "trading",
+   "price": 0.239635,
+   "coin_price": 0.23936,
+   "diff": 0.001149,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "PONS-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.2392,
+   "coin_price": 0.23936,
+   "diff": -0.000668,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "PONSUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.2392,
+   "coin_price": 0.23936,
+   "diff": -0.000668,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "PONS_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.2386,
+   "coin_price": 0.23936,
+   "diff": -0.003175,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "hyperliquid",
+  "symbol": "PONS"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

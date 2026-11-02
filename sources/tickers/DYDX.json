@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "DYDX",
+ "asked": "seed: Hyperliquid perp DYDX",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "dydx-chain",
+  "symbol": "DYDX",
+  "name": "dYdX",
+  "rank": 295,
+  "price": 0.105079
+ },
+ "candidates": [
+  {
+   "id": "dydx-chain",
+   "symbol": "DYDX",
+   "name": "dYdX",
+   "rank": 295
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "DYDXUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.10514,
+   "coin_price": 0.105079,
+   "diff": 0.000581,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "DYDX",
+   "listed": true,
+   "status": "trading",
+   "price": 0.10517,
+   "coin_price": 0.105079,
+   "diff": 0.000866,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "DYDX-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.10515,
+   "coin_price": 0.105079,
+   "diff": 0.000676,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "DYDXUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.10532,
+   "coin_price": 0.105079,
+   "diff": 0.002294,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "DYDX_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.10523,
+   "coin_price": 0.105079,
+   "diff": 0.001437,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "DYDXUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

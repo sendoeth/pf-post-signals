@@ -1,0 +1,86 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "SKR",
+ "asked": "seed: Hyperliquid perp SKR",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "seeker",
+  "symbol": "SKR",
+  "name": "Seeker",
+  "rank": 290,
+  "price": 0.01257374
+ },
+ "candidates": [
+  {
+   "id": "seeker",
+   "symbol": "SKR",
+   "name": "Seeker",
+   "rank": 290
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "listed": false,
+   "ok": false,
+   "why": "no SKR market"
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "SKR",
+   "listed": true,
+   "status": "trading",
+   "price": 0.012603,
+   "coin_price": 0.01257374,
+   "diff": 0.002327,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "listed": false,
+   "ok": false,
+   "why": "no SKR market"
+  },
+  {
+   "source": "bybit",
+   "symbol": "SKRUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.012592,
+   "coin_price": 0.01257374,
+   "diff": 0.001452,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "SKR_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.012594,
+   "coin_price": 0.01257374,
+   "diff": 0.001611,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "hyperliquid",
+  "symbol": "SKR"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

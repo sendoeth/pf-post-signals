@@ -1,0 +1,86 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "BRETT",
+ "asked": "seed: Hyperliquid perp BRETT",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "based-brett",
+  "symbol": "BRETT",
+  "name": "Brett",
+  "rank": 499,
+  "price": 0.00433948
+ },
+ "candidates": [
+  {
+   "id": "based-brett",
+   "symbol": "BRETT",
+   "name": "Brett",
+   "rank": 499
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "listed": false,
+   "ok": false,
+   "why": "no BRETT market"
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "BRETT",
+   "listed": true,
+   "status": "trading",
+   "price": 0.00436,
+   "coin_price": 0.00433948,
+   "diff": 0.004729,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "listed": false,
+   "ok": false,
+   "why": "no BRETT market"
+  },
+  {
+   "source": "bybit",
+   "symbol": "BRETTUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.004348,
+   "coin_price": 0.00433948,
+   "diff": 0.001963,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "BRETT_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.004336,
+   "coin_price": 0.00433948,
+   "diff": -0.000802,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "hyperliquid",
+  "symbol": "BRETT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "ALGO",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "algorand",
+  "symbol": "ALGO",
+  "name": "Algorand",
+  "rank": 80,
+  "price": 0.093847
+ },
+ "candidates": [
+  {
+   "id": "algorand",
+   "symbol": "ALGO",
+   "name": "Algorand",
+   "rank": 80
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "ALGOUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.094,
+   "coin_price": 0.093847,
+   "diff": 0.00163,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "ALGO",
+   "listed": true,
+   "status": "trading",
+   "price": 0.093922,
+   "coin_price": 0.093847,
+   "diff": 0.000799,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "ALGO-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.09393,
+   "coin_price": 0.093847,
+   "diff": 0.000884,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "ALGOUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.09396,
+   "coin_price": 0.093847,
+   "diff": 0.001204,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "ALGO_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.09388,
+   "coin_price": 0.093847,
+   "diff": 0.000352,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "ALGOUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

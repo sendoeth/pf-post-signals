@@ -117,8 +117,8 @@ def asset_info(name):
     if ":" in raw:
         src, sym = raw.split(":", 1)
         src = src.lower()
-        if src not in ("binance", "yahoo", "hyperliquid") or not re.fullmatch(r"[A-Za-z0-9=.^\-]{1,20}", sym):
-            raise UnknownAssetError(f"unknown asset {name!r}: prefix must be binance:<PAIR>, yahoo:<TICKER> or hyperliquid:<COIN>")
+        if src not in ("binance", "yahoo", "hyperliquid") + EXCHANGES or not re.fullmatch(r"[A-Za-z0-9=.^_\-]{1,20}", sym):
+            raise UnknownAssetError(f"unknown asset {name!r}: prefix must be binance:<PAIR>, yahoo:<TICKER>, hyperliquid:<COIN>, okx:<X-USDT>, bybit:<XUSDT> or gate:<X_USDT>")
         return {"name": f"{src}:{sym.upper()}", "source": src, "symbol": sym.upper(), "price_field": "open"}
     key = raw.upper()
     reg = registered_tickers().get(key)
@@ -216,11 +216,58 @@ def hyperliquid_candles(coin, start, interval="1h", end=None):
     return out
 
 
+EXCHANGES = ("okx", "bybit", "gate")      # step 23: more spot venues for coins Binance / Hyperliquid do not list
+
+
+def exchange_candles(source, symbol, start, now=None):
+    """Hourly [iso, open, high, low, close] candles from `start` to now on OKX / Bybit / Gate spot, oldest first."""
+    now_ms = int((now or dt.datetime.now(dt.timezone.utc)).timestamp() * 1000)
+    s_ms, hour = int(start.timestamp() * 1000), 3_600_000
+    rows = {}
+    try:
+        if source == "okx":                                   # newest first, 100 a page, paged backwards from now
+            after = now_ms + hour
+            while after > s_ms:
+                page = get_json(f"https://www.okx.com/api/v5/market/history-candles?instId={symbol}&bar=1H&after={after}&limit=100").get("data") or []
+                if not page:
+                    break
+                for r in page:
+                    rows[int(r[0])] = [float(r[1]), float(r[2]), float(r[3]), float(r[4])]
+                after = min(int(r[0]) for r in page)
+        elif source == "bybit":                               # newest first, up to 1000 a window, windows forward from start
+            t = s_ms
+            while t <= now_ms:
+                end = min(t + 999 * hour, now_ms)
+                page = (get_json(f"https://api.bybit.com/v5/market/kline?category=spot&symbol={symbol}&interval=60&start={t}&end={end}&limit=1000")
+                        .get("result") or {}).get("list") or []
+                for r in page:
+                    rows[int(r[0])] = [float(r[1]), float(r[2]), float(r[3]), float(r[4])]
+                t = end + hour
+        elif source == "gate":                                # [t, quote vol, close, high, low, open, base vol, closed], 1000-point windows
+            t = s_ms // 1000
+            while t * 1000 <= now_ms:
+                end = min(t + 999 * 3600, now_ms // 1000)
+                page = get_json(f"https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair={symbol}&interval=1h&from={t}&to={end}")
+                for r in page if isinstance(page, list) else []:
+                    rows[int(r[0]) * 1000] = [float(r[5]), float(r[3]), float(r[4]), float(r[2])]
+                t = end + 3600
+        else:
+            raise UnknownAssetError(f"unknown exchange {source}")
+    except urllib.error.HTTPError as e:
+        raise UnknownAssetError(f"no {source} data for {symbol} (HTTP {e.code})") from e
+    out = [[iso(ms / 1000), *rows[ms]] for ms in sorted(rows) if ms >= s_ms]
+    if not out:
+        raise UnknownAssetError(f"no {source} candles for {symbol}")
+    return out
+
+
 def fetch_series(asset, since):
     """Hourly [iso, open] bars from the hour containing `since` to now."""
     start = parse(since).replace(minute=0, second=0, microsecond=0)
     if asset["source"] == "hyperliquid":
         return adjust_for_actions(asset["symbol"], [[iso(c["t"] / 1000), float(c["o"])] for c in hyperliquid_candles(asset["symbol"], start)])
+    if asset["source"] in EXCHANGES:
+        return [b[:2] for b in exchange_candles(asset["source"], asset["symbol"], start)]
     if asset["source"] == "binance":
         out, ms = [], int(start.timestamp() * 1000)
         while True:

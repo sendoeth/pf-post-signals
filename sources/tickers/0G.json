@@ -1,0 +1,91 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "0G",
+ "asked": "seed: Hyperliquid perp 0G",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "zero-gravity",
+  "symbol": "0G",
+  "name": "0G",
+  "rank": 272,
+  "price": 0.167366
+ },
+ "candidates": [
+  {
+   "id": "zero-gravity",
+   "symbol": "0G",
+   "name": "0G",
+   "rank": 272
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "0GUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.1674,
+   "coin_price": 0.167366,
+   "diff": 0.000203,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "0G",
+   "listed": true,
+   "status": "trading",
+   "price": 0.167655,
+   "coin_price": 0.167366,
+   "diff": 0.001727,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "listed": false,
+   "ok": false,
+   "why": "no 0G market"
+  },
+  {
+   "source": "bybit",
+   "symbol": "0GUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.1676,
+   "coin_price": 0.167366,
+   "diff": 0.001398,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "0G_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.1672,
+   "coin_price": 0.167366,
+   "diff": -0.000992,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "0GUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

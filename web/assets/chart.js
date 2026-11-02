@@ -20,7 +20,7 @@ function direction(post) {
 }
 function missing(t0, t1, source) {
   const a = Date.parse(t0), b = Date.parse(t1);
-  if (source === "binance") return b - a > 2 * 3600e3;
+  if (["binance", "okx", "bybit", "gate"].includes(source)) return b - a > 2 * 3600e3;   // 24/7 crypto spot venues
   for (let d = new Date(t0.slice(0, 10) + "T00:00:00Z"); ; ) {
     d.setUTCDate(d.getUTCDate() + 1);
     if (d.getTime() + 864e5 > b) return false;   // only whole days strictly between the bars

@@ -1,0 +1,91 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "MANTA",
+ "asked": "seed: Hyperliquid perp MANTA",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "manta-network",
+  "symbol": "MANTA",
+  "name": "Manta Network",
+  "rank": 684,
+  "price": 0.058907
+ },
+ "candidates": [
+  {
+   "id": "manta-network",
+   "symbol": "MANTA",
+   "name": "Manta Network",
+   "rank": 684
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "MANTAUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.05877,
+   "coin_price": 0.058907,
+   "diff": -0.002326,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "MANTA",
+   "listed": true,
+   "status": "trading",
+   "price": 0.05896,
+   "coin_price": 0.058907,
+   "diff": 0.0009,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "listed": false,
+   "ok": false,
+   "why": "no MANTA market"
+  },
+  {
+   "source": "bybit",
+   "symbol": "MANTAUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.05895,
+   "coin_price": 0.058907,
+   "diff": 0.00073,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "MANTA_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.05897,
+   "coin_price": 0.058907,
+   "diff": 0.001069,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "MANTAUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

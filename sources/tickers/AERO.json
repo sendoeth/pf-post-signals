@@ -1,0 +1,91 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "AERO",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "aerodrome-finance",
+  "symbol": "AERO",
+  "name": "Aerodrome Finance",
+  "rank": 104,
+  "price": 0.627233
+ },
+ "candidates": [
+  {
+   "id": "aerodrome-finance",
+   "symbol": "AERO",
+   "name": "Aerodrome Finance",
+   "rank": 104
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "AEROUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.6251,
+   "coin_price": 0.627233,
+   "diff": -0.003401,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "AERO",
+   "listed": true,
+   "status": "trading",
+   "price": 0.62907,
+   "coin_price": 0.627233,
+   "diff": 0.002929,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "listed": false,
+   "ok": false,
+   "why": "no AERO market"
+  },
+  {
+   "source": "bybit",
+   "symbol": "AEROUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.63,
+   "coin_price": 0.627233,
+   "diff": 0.004411,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "AERO_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.6285,
+   "coin_price": 0.627233,
+   "diff": 0.00202,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "AEROUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "GMX",
+ "asked": "seed: Hyperliquid perp GMX",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "gmx",
+  "symbol": "GMX",
+  "name": "GMX",
+  "rank": 302,
+  "price": 7.97
+ },
+ "candidates": [
+  {
+   "id": "gmx",
+   "symbol": "GMX",
+   "name": "GMX",
+   "rank": 302
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "GMXUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 7.97,
+   "coin_price": 7.97,
+   "diff": 0.0,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "GMX",
+   "listed": true,
+   "status": "trading",
+   "price": 7.985,
+   "coin_price": 7.97,
+   "diff": 0.001882,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "GMX-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 7.969,
+   "coin_price": 7.97,
+   "diff": -0.000125,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "GMXUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 7.982,
+   "coin_price": 7.97,
+   "diff": 0.001506,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "GMX_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 7.985,
+   "coin_price": 7.97,
+   "diff": 0.001882,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "GMXUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

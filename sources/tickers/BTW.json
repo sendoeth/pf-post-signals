@@ -1,0 +1,76 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "BTW",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "bitway",
+  "symbol": "BTW",
+  "name": "Bitway",
+  "rank": 56,
+  "price": 1.079
+ },
+ "candidates": [
+  {
+   "id": "bitway",
+   "symbol": "BTW",
+   "name": "Bitway",
+   "rank": 56
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "listed": false,
+   "ok": false,
+   "why": "no BTW market"
+  },
+  {
+   "source": "hyperliquid",
+   "listed": false,
+   "ok": false,
+   "why": "no BTW market"
+  },
+  {
+   "source": "okx",
+   "listed": false,
+   "ok": false,
+   "why": "no BTW market"
+  },
+  {
+   "source": "bybit",
+   "listed": false,
+   "ok": false,
+   "why": "no BTW market"
+  },
+  {
+   "source": "gate",
+   "symbol": "BTW_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 1.077,
+   "coin_price": 1.079,
+   "diff": -0.001854,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "gate",
+  "symbol": "BTW_USDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

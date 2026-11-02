@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "APT",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "aptos",
+  "symbol": "APT",
+  "name": "Aptos",
+  "rank": 99,
+  "price": 0.629283
+ },
+ "candidates": [
+  {
+   "id": "aptos",
+   "symbol": "APT",
+   "name": "Aptos",
+   "rank": 99
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "APTUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.6302,
+   "coin_price": 0.629283,
+   "diff": 0.001457,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "APT",
+   "listed": true,
+   "status": "trading",
+   "price": 0.6301,
+   "coin_price": 0.629283,
+   "diff": 0.001298,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "APT-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.6303,
+   "coin_price": 0.629283,
+   "diff": 0.001616,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "APTUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.63,
+   "coin_price": 0.629283,
+   "diff": 0.001139,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "APT_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.6298,
+   "coin_price": 0.629283,
+   "diff": 0.000822,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "APTUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

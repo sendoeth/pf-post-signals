@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "ZRO",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "layerzero",
+  "symbol": "ZRO",
+  "name": "LayerZero",
+  "rank": 86,
+  "price": 1.81
+ },
+ "candidates": [
+  {
+   "id": "layerzero",
+   "symbol": "ZRO",
+   "name": "LayerZero",
+   "rank": 86
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "ZROUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 1.814,
+   "coin_price": 1.81,
+   "diff": 0.00221,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "ZRO",
+   "listed": true,
+   "status": "trading",
+   "price": 1.81655,
+   "coin_price": 1.81,
+   "diff": 0.003619,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "ZRO-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 1.8151,
+   "coin_price": 1.81,
+   "diff": 0.002818,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "ZROUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 1.812,
+   "coin_price": 1.81,
+   "diff": 0.001105,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "ZRO_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 1.8125,
+   "coin_price": 1.81,
+   "diff": 0.001381,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "ZROUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

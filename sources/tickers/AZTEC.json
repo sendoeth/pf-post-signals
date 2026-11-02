@@ -1,0 +1,86 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "AZTEC",
+ "asked": "seed: Hyperliquid perp AZTEC",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "aztec",
+  "symbol": "AZTEC",
+  "name": "Aztec",
+  "rank": 485,
+  "price": 0.01482042
+ },
+ "candidates": [
+  {
+   "id": "aztec",
+   "symbol": "AZTEC",
+   "name": "Aztec",
+   "rank": 485
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "listed": false,
+   "ok": false,
+   "why": "no AZTEC market"
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "AZTEC",
+   "listed": true,
+   "status": "trading",
+   "price": 0.014851,
+   "coin_price": 0.01482042,
+   "diff": 0.002063,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "listed": false,
+   "ok": false,
+   "why": "no AZTEC market"
+  },
+  {
+   "source": "bybit",
+   "symbol": "AZTECUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.01483,
+   "coin_price": 0.01482042,
+   "diff": 0.000646,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "AZTEC_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.014813,
+   "coin_price": 0.01482042,
+   "diff": -0.000501,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "hyperliquid",
+  "symbol": "AZTEC"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "CHIP",
+ "asked": "seed: Hyperliquid perp CHIP",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "chip-2",
+  "symbol": "CHIP",
+  "name": "USD.AI",
+  "rank": 296,
+  "price": 0.04352174
+ },
+ "candidates": [
+  {
+   "id": "chip-2",
+   "symbol": "CHIP",
+   "name": "USD.AI",
+   "rank": 296
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "CHIPUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.04344,
+   "coin_price": 0.04352174,
+   "diff": -0.001878,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "CHIP",
+   "listed": true,
+   "status": "trading",
+   "price": 0.043499,
+   "coin_price": 0.04352174,
+   "diff": -0.000522,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "CHIP-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.04348,
+   "coin_price": 0.04352174,
+   "diff": -0.000959,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "CHIPUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.0435,
+   "coin_price": 0.04352174,
+   "diff": -0.0005,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "CHIP_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.0433,
+   "coin_price": 0.04352174,
+   "diff": -0.005095,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "CHIPUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

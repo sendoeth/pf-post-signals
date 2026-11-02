@@ -1,0 +1,81 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "OKB",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "okb",
+  "symbol": "OKB",
+  "name": "OKB",
+  "rank": 43,
+  "price": 113.71
+ },
+ "candidates": [
+  {
+   "id": "okb",
+   "symbol": "OKB",
+   "name": "OKB",
+   "rank": 43
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "listed": false,
+   "ok": false,
+   "why": "no OKB market"
+  },
+  {
+   "source": "hyperliquid",
+   "listed": false,
+   "ok": false,
+   "why": "no OKB market"
+  },
+  {
+   "source": "okx",
+   "symbol": "OKB-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 113.95,
+   "coin_price": 113.71,
+   "diff": 0.002111,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "listed": false,
+   "ok": false,
+   "why": "no OKB market"
+  },
+  {
+   "source": "gate",
+   "symbol": "OKB_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 113.79,
+   "coin_price": 113.71,
+   "diff": 0.000704,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "okx",
+  "symbol": "OKB-USDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

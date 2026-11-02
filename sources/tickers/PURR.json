@@ -1,0 +1,76 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "PURR",
+ "asked": "seed: Hyperliquid perp PURR",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "purr-2",
+  "symbol": "PURR",
+  "name": "Purr",
+  "rank": 349,
+  "price": 0.118212
+ },
+ "candidates": [
+  {
+   "id": "purr-2",
+   "symbol": "PURR",
+   "name": "Purr",
+   "rank": 349
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "listed": false,
+   "ok": false,
+   "why": "no PURR market"
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "PURR",
+   "listed": true,
+   "status": "trading",
+   "price": 0.118705,
+   "coin_price": 0.118212,
+   "diff": 0.00417,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "listed": false,
+   "ok": false,
+   "why": "no PURR market"
+  },
+  {
+   "source": "bybit",
+   "listed": false,
+   "ok": false,
+   "why": "no PURR market"
+  },
+  {
+   "source": "gate",
+   "listed": false,
+   "ok": false,
+   "why": "no PURR market"
+  }
+ ],
+ "chosen": {
+  "source": "hyperliquid",
+  "symbol": "PURR"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

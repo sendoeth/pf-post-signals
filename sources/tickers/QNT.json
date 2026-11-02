@@ -1,0 +1,86 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "QNT",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "quant-network",
+  "symbol": "QNT",
+  "name": "Quant",
+  "rank": 35,
+  "price": 200.99
+ },
+ "candidates": [
+  {
+   "id": "quant-network",
+   "symbol": "QNT",
+   "name": "Quant",
+   "rank": 35
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "QNTUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 201.72,
+   "coin_price": 200.99,
+   "diff": 0.003632,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "listed": false,
+   "ok": false,
+   "why": "no QNT market"
+  },
+  {
+   "source": "okx",
+   "listed": false,
+   "ok": false,
+   "why": "no QNT market"
+  },
+  {
+   "source": "bybit",
+   "symbol": "QNTUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 201.66,
+   "coin_price": 200.99,
+   "diff": 0.003333,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "QNT_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 201.58,
+   "coin_price": 200.99,
+   "diff": 0.002935,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "QNTUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

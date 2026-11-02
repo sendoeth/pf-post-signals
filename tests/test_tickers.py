@@ -57,6 +57,15 @@ class FakeNet:
         b = self.bin.get(t)
         return {"source": "binance", "symbol": f"{t}USDT", "trading": b[0] == "TRADING", "status": b[0], "price": b[1]} if b else None
 
+    def okx(self, t):
+        return None                                   # step 23 venues: not listed unless a test says so
+
+    def bybit(self, t):
+        return None
+
+    def gate(self, t):
+        return None
+
     def hyperliquid(self, t):
         h = self.hl.get(t)
         return {"source": "hyperliquid", "symbol": t, "trading": not h[0], "status": "delisted" if h[0] else "trading", "price": h[1]} if h else None
@@ -88,7 +97,8 @@ class Resolver(unittest.TestCase):
     def test_binance_first_when_it_agrees(self):
         r = tickers.resolve_ticker("HYPE", FakeNet(), registry=EMPTY)
         self.assertEqual(r["chosen"], {"source": "binance", "symbol": "HYPEUSDT"})
-        self.assertTrue(all(v["ok"] for v in r["venues"]))
+        self.assertTrue(all(v["ok"] for v in r["venues"] if v["listed"]))
+        self.assertEqual([v["source"] for v in r["venues"]], list(tickers.VENUES))           # every venue is checked and listed in the receipt
 
     def test_identity_rules(self):
         self.assertEqual(tickers.resolve_ticker("ZEC", FakeNet(), registry=EMPTY)["coin"]["id"], "zcash")   # unranked bridged copies ignored
@@ -194,6 +204,8 @@ class AddWithoutAsset(unittest.TestCase):
         json.dump(build_chart.build(os.path.join(self.root, "records")), open(os.path.join(self.root, "web", "data", "charts.json"), "w"), indent=1)
         self._reg = resolve.registered_tickers
         resolve.registered_tickers = lambda path=None: self._reg(path or reg_path)
+        self._treg, self._there = tickers.REGISTRY, tickers.HERE      # the resolver reads the scratch registry and receipts too
+        tickers.REGISTRY, tickers.HERE = reg_path, self.root
         self.embed = {"__typename": "Tweet", "id_str": "2116898993435463783", "created_at": "2026-11-01T14:23:44.000Z", "text": POST,
                       "display_text_range": [0, len(POST)], "entities": {"symbols": [{"text": "LIT"}]}, "conversation_id_str": "2116898993435463783",
                       "user": {"screen_name": "koolkrypto223"}}
@@ -211,6 +223,7 @@ class AddWithoutAsset(unittest.TestCase):
 
     def tearDown(self):
         resolve.registered_tickers = self._reg
+        tickers.REGISTRY, tickers.HERE = self._treg, self._there
         shutil.rmtree(self.root)
 
     def test_two_coins_need_a_leg_then_lit_is_lighter(self):

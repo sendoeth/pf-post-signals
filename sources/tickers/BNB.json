@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "BNB",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "binancecoin",
+  "symbol": "BNB",
+  "name": "BNB",
+  "rank": 4,
+  "price": 710.65
+ },
+ "candidates": [
+  {
+   "id": "binancecoin",
+   "symbol": "BNB",
+   "name": "BNB",
+   "rank": 4
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "BNBUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 712.72,
+   "coin_price": 710.65,
+   "diff": 0.002913,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "BNB",
+   "listed": true,
+   "status": "trading",
+   "price": 712.565,
+   "coin_price": 710.65,
+   "diff": 0.002695,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "BNB-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 712.75,
+   "coin_price": 710.65,
+   "diff": 0.002955,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "BNBUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 712.72,
+   "coin_price": 710.65,
+   "diff": 0.002913,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "BNB_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 712.8,
+   "coin_price": 710.65,
+   "diff": 0.003025,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "BNBUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

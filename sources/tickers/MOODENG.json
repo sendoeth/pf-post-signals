@@ -1,0 +1,86 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "MOODENG",
+ "asked": "seed: Hyperliquid perp MOODENG",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "moo-deng",
+  "symbol": "MOODENG",
+  "name": "Moo Deng",
+  "rank": 593,
+  "price": 0.0354946
+ },
+ "candidates": [
+  {
+   "id": "moo-deng",
+   "symbol": "MOODENG",
+   "name": "Moo Deng",
+   "rank": 593
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "listed": false,
+   "ok": false,
+   "why": "no MOODENG market"
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "MOODENG",
+   "listed": true,
+   "status": "trading",
+   "price": 0.035585,
+   "coin_price": 0.0354946,
+   "diff": 0.002547,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "MOODENG-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.03562,
+   "coin_price": 0.0354946,
+   "diff": 0.003533,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "listed": false,
+   "ok": false,
+   "why": "no MOODENG market"
+  },
+  {
+   "source": "gate",
+   "symbol": "MOODENG_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.03529,
+   "coin_price": 0.0354946,
+   "diff": -0.005764,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "hyperliquid",
+  "symbol": "MOODENG"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

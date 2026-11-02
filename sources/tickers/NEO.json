@@ -1,0 +1,91 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "NEO",
+ "asked": "seed: Hyperliquid perp NEO",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "neo",
+  "symbol": "NEO",
+  "name": "NEO",
+  "rank": 218,
+  "price": 1.96
+ },
+ "candidates": [
+  {
+   "id": "neo",
+   "symbol": "NEO",
+   "name": "NEO",
+   "rank": 218
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "NEOUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 1.964,
+   "coin_price": 1.96,
+   "diff": 0.002041,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "NEO",
+   "listed": true,
+   "status": "trading",
+   "price": 1.9617,
+   "coin_price": 1.96,
+   "diff": 0.000867,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "NEO-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 1.964,
+   "coin_price": 1.96,
+   "diff": 0.002041,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "listed": false,
+   "ok": false,
+   "why": "no NEO market"
+  },
+  {
+   "source": "gate",
+   "symbol": "NEO_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 1.961,
+   "coin_price": 1.96,
+   "diff": 0.00051,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "NEOUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

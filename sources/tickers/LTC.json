@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "LTC",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "litecoin",
+  "symbol": "LTC",
+  "name": "Litecoin",
+  "rank": 26,
+  "price": 55.54
+ },
+ "candidates": [
+  {
+   "id": "litecoin",
+   "symbol": "LTC",
+   "name": "Litecoin",
+   "rank": 26
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "LTCUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 55.62,
+   "coin_price": 55.54,
+   "diff": 0.00144,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "LTC",
+   "listed": true,
+   "status": "trading",
+   "price": 55.623,
+   "coin_price": 55.54,
+   "diff": 0.001494,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "LTC-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 55.63,
+   "coin_price": 55.54,
+   "diff": 0.00162,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "LTCUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 55.61,
+   "coin_price": 55.54,
+   "diff": 0.00126,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "LTC_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 55.64,
+   "coin_price": 55.54,
+   "diff": 0.001801,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "LTCUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

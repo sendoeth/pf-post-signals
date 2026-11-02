@@ -1,0 +1,91 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "PEPE",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "pepe",
+  "symbol": "PEPE",
+  "name": "Pepe",
+  "rank": 46,
+  "price": 4.9e-06
+ },
+ "candidates": [
+  {
+   "id": "pepe",
+   "symbol": "PEPE",
+   "name": "Pepe",
+   "rank": 46
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "PEPEUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 4.89e-06,
+   "coin_price": 4.9e-06,
+   "diff": -0.002041,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "listed": false,
+   "ok": false,
+   "why": "no PEPE market"
+  },
+  {
+   "source": "okx",
+   "symbol": "PEPE-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 4.8848e-06,
+   "coin_price": 4.9e-06,
+   "diff": -0.003102,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "PEPEUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 4.884e-06,
+   "coin_price": 4.9e-06,
+   "diff": -0.003265,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "PEPE_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 4.885e-06,
+   "coin_price": 4.9e-06,
+   "diff": -0.003061,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "PEPEUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

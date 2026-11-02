@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "COMP",
+ "asked": "seed: Hyperliquid perp COMP",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "compound-governance-token",
+  "symbol": "COMP",
+  "name": "Compound",
+  "rank": 165,
+  "price": 20.38
+ },
+ "candidates": [
+  {
+   "id": "compound-governance-token",
+   "symbol": "COMP",
+   "name": "Compound",
+   "rank": 165
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "COMPUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 20.42,
+   "coin_price": 20.38,
+   "diff": 0.001963,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "COMP",
+   "listed": true,
+   "status": "trading",
+   "price": 20.3995,
+   "coin_price": 20.38,
+   "diff": 0.000957,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "COMP-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 20.4,
+   "coin_price": 20.38,
+   "diff": 0.000981,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "COMPUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 20.41,
+   "coin_price": 20.38,
+   "diff": 0.001472,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "COMP_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 20.41,
+   "coin_price": 20.38,
+   "diff": 0.001472,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "COMPUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

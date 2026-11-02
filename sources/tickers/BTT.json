@@ -1,0 +1,86 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "BTT",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "bittorrent",
+  "symbol": "BTT",
+  "name": "BitTorrent",
+  "rank": 122,
+  "price": 3.62737e-07
+ },
+ "candidates": [
+  {
+   "id": "bittorrent",
+   "symbol": "BTT",
+   "name": "BitTorrent",
+   "rank": 122
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "BTTUSDT",
+   "listed": true,
+   "status": "BREAK",
+   "price": 0.0,
+   "coin_price": 3.62737e-07,
+   "diff": null,
+   "ok": false,
+   "why": "not trading (status BREAK)"
+  },
+  {
+   "source": "hyperliquid",
+   "listed": false,
+   "ok": false,
+   "why": "no BTT market"
+  },
+  {
+   "source": "okx",
+   "listed": false,
+   "ok": false,
+   "why": "no BTT market"
+  },
+  {
+   "source": "bybit",
+   "symbol": "BTTUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 3.646e-07,
+   "coin_price": 3.62737e-07,
+   "diff": 0.005136,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "BTT_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 3.65e-07,
+   "coin_price": 3.62737e-07,
+   "diff": 0.006239,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "bybit",
+  "symbol": "BTTUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

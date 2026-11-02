@@ -1,0 +1,86 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "POPCAT",
+ "asked": "seed: Hyperliquid perp POPCAT",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "popcat",
+  "symbol": "POPCAT",
+  "name": "Popcat",
+  "rank": 526,
+  "price": 0.04079275
+ },
+ "candidates": [
+  {
+   "id": "popcat",
+   "symbol": "POPCAT",
+   "name": "Popcat",
+   "rank": 526
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "listed": false,
+   "ok": false,
+   "why": "no POPCAT market"
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "POPCAT",
+   "listed": true,
+   "status": "trading",
+   "price": 0.040766,
+   "coin_price": 0.04079275,
+   "diff": -0.000656,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "listed": false,
+   "ok": false,
+   "why": "no POPCAT market"
+  },
+  {
+   "source": "bybit",
+   "symbol": "POPCATUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.04073,
+   "coin_price": 0.04079275,
+   "diff": -0.001538,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "POPCAT_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.04071,
+   "coin_price": 0.04079275,
+   "diff": -0.002029,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "hyperliquid",
+  "symbol": "POPCAT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

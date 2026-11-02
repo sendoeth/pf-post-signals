@@ -1,0 +1,86 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "RAY",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "raydium",
+  "symbol": "RAY",
+  "name": "Raydium",
+  "rank": 117,
+  "price": 1.62
+ },
+ "candidates": [
+  {
+   "id": "raydium",
+   "symbol": "RAY",
+   "name": "Raydium",
+   "rank": 117
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "RAYUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 1.6242,
+   "coin_price": 1.62,
+   "diff": 0.002593,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "listed": false,
+   "ok": false,
+   "why": "no RAY market"
+  },
+  {
+   "source": "okx",
+   "symbol": "RAY-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 1.6242,
+   "coin_price": 1.62,
+   "diff": 0.002593,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "listed": false,
+   "ok": false,
+   "why": "no RAY market"
+  },
+  {
+   "source": "gate",
+   "symbol": "RAY_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 1.6255,
+   "coin_price": 1.62,
+   "diff": 0.003395,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "RAYUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

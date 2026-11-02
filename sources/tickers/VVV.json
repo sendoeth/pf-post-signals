@@ -1,0 +1,91 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "VVV",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "venice-token",
+  "symbol": "VVV",
+  "name": "Venice Token",
+  "rank": 71,
+  "price": 22.92
+ },
+ "candidates": [
+  {
+   "id": "venice-token",
+   "symbol": "VVV",
+   "name": "Venice Token",
+   "rank": 71
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "listed": false,
+   "ok": false,
+   "why": "no VVV market"
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "VVV",
+   "listed": true,
+   "status": "trading",
+   "price": 22.959,
+   "coin_price": 22.92,
+   "diff": 0.001702,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "VVV-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 22.93,
+   "coin_price": 22.92,
+   "diff": 0.000436,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "VVVUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 22.916,
+   "coin_price": 22.92,
+   "diff": -0.000175,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "VVV_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 22.926,
+   "coin_price": 22.92,
+   "diff": 0.000262,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "hyperliquid",
+  "symbol": "VVV"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

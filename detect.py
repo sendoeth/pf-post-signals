@@ -85,16 +85,66 @@ def detect_side(text):
 
 # Step 22: every coin a post names (mapped words, any cashtag, X contract tags) resolved to a plain
 # ticker by tickers.py, one leg per coin, and the side each leg's own words give it.
-LEG_VERBS = {"buy": 1, "buying": 1, "bought": 1, "long": 1, "longing": 1, "sell": -1, "selling": -1, "sold": -1, "short": -1, "shorting": -1}
+LEG_VERBS = {"buy": 1, "buying": 1, "bought": 1, "long": 1, "longing": 1, "deployed": 1, "deploying": 1, "added": 1, "adding": 1, "loaded": 1,
+             "loading": 1, "accumulated": 1, "accumulating": 1, "aped": 1,
+             "sell": -1, "selling": -1, "sold": -1, "short": -1, "shorting": -1}
 OPTION = re.compile(r"\b(calls?|puts?)\b", re.I)
 
 
-def coin_legs(text, amap=None, net=None, registry=None):
-    """-> [{"asset", "via", "receipt" (None for a mapped asset), "status", "reason"}] in order of first mention."""
+WORDS_PATH = os.path.join(HERE, "data", "coin_words.json")
+US_PATH = os.path.join(HERE, "data", "us_tickers.json")
+STOCK_COIN_RANK = 500        # an unknown cashtag that is also a US stock counts as the coin only up to this market-cap rank
+STOCK_WORDS = re.compile(r"\b(shares?|stocks?|equity|earnings|eps|dividends?|nyse|nasdaq|ipo|guidance|10-?[kq])\b", re.I)
+_cache = {}
+
+
+def _load(path, empty):
+    if path not in _cache:
+        _cache[path] = json.load(open(path)) if os.path.exists(path) else empty
+    return _cache[path]
+
+
+def coin_words(path=WORDS_PATH):
+    return _load(path, {"names": {}, "bare_blocked": [], "wrapped": {}, "index": {}, "index_phrases": [], "stablecoins": []})
+
+
+def us_tickers(path=US_PATH):
+    return _load(path, {"tickers": {}})["tickers"]
+
+
+def coin_legs(text, amap=None, net=None, registry=None, words=None, us=None):
+    """-> [{"asset", "via", "receipt" (None for a mapped asset), "status", "reason"}] in order of first mention.
+
+    Sources, in this order (a coin named several ways is one leg):
+      market indexes  TOTAL3, BTC.D, USDT.D, "stablecoin dominance" ...: a review leg (an index, not a coin), and
+                      the words are removed first so "BTC.D" is never read as BTC
+      contract tags   hyperliquid:native, <chain>:<address> (tickers.resolve_contract)
+      cashtags        the fixed map; stablecoins ignored; wrapped copies -> the underlying ($WBTC -> BTC);
+                      a seeded / registered coin offline (a US stock ticker too: review only if the post talks
+                      shares / earnings); anything else: tickers.resolve_ticker, and if it is also a US-listed ticker it
+                      counts as the coin only when it is a top-500 coin and the post does not talk shares (else review)
+      words           the fixed term map, then coin names (data/coin_words.json), then bare tickers written in capitals:
+                      fixed-map ones (SOL, LINK) always, registered coins unless the ticker is a common English word
+    """
     import tickers
     amap = amap or load_map()
+    words = words or coin_words()
+    us = us if us is not None else us_tickers()
+    reg = registry or tickers.load_registry()
     text = text or ""
     legs, seen = [], {}
+
+    def coin(asset, via, pos, receipt=None, need_receipt=False):
+        """Every coin found by the map, a name or a bare ticker passes the same checks as a cashtag (Codex review):
+        a flagged ticker, a US-stock ticker in a post about shares, or a missing / untrusted receipt -> review."""
+        e = reg.get("tickers", {}).get(asset)
+        if e and e.get("flag"):
+            return add(None, via, status="review", reason=f"{asset} ({e['name']}) is flagged by the weekly venue re-check: {e['flag'].get('why')}", pos=pos)
+        if e and e.get("also_us_stock") and STOCK_WORDS.search(text):
+            return add(None, via, status="review", reason=f"{asset} is {e['name']} and the US stock {e['also_us_stock']}; this post talks shares / earnings: pick by hand", pos=pos)
+        if need_receipt and not receipt:
+            return add(None, via, status="review", reason=f"{asset}: its registry receipt is missing or does not match its sha256 (nothing guessed)", pos=pos)
+        return add(asset, via, receipt=receipt, pos=pos)
 
     def add(asset, via, receipt=None, status="ok", reason=None, pos=0):
         key = asset or via
@@ -105,26 +155,69 @@ def coin_legs(text, amap=None, net=None, registry=None):
         seen[key] = {"asset": asset, "via": [via], "receipt": receipt, "status": status, "reason": reason, "pos": pos}
         legs.append(seen[key])
 
-    for m in tickers.CONTRACT_TAG.finditer(text):
-        r = tickers.resolve_contract(m.group(1), m.group(2), net, registry)
+    # 1. market indexes (removed before anything else reads the text)
+    rest = text
+    idx_words = sorted(words.get("index", {}), key=len, reverse=True)
+    for w in idx_words:                                # capitals only ("total" / "others" are ordinary words); "total3" is a phrase below
+        pat = r"(?<![\w$.])\$?" + re.escape(w) + r"(?![\w.])"
+        for m in re.finditer(pat, rest):
+            add(None, w.upper(), status="review", reason=f"market index {w.upper()} ({words['index'][w]}): not a coin, no price history source yet", pos=m.start())
+        rest = re.sub(pat, " ", rest)
+    for ph in words.get("index_phrases", []):
+        for m in re.finditer(re.escape(ph), rest, re.I):
+            add(None, ph, status="review", reason=f"market index ({ph}): not a coin, no price history source yet", pos=m.start())
+        rest = re.sub(re.escape(ph), " ", rest, flags=re.I)
+    # 2. contract tags
+    for m in tickers.CONTRACT_TAG.finditer(rest):
+        r = tickers.resolve_contract(m.group(1), m.group(2), net, reg)
         add(r["ticker"] if r["status"] == "ok" else None, m.group(0), r, r["status"], r["reason"], m.start())
-    for m in CASHTAG.finditer(text):
+    # 3. cashtags
+    stable = set(words.get("stablecoins", []))
+    for m in CASHTAG.finditer(rest):
         tag = m.group(1).upper()
+        if tag in stable:
+            continue                                   # a stablecoin is never a call
+        tag = words.get("wrapped", {}).get(tag, tag)
         mapped = amap["cashtags"].get(tag)
         if mapped:
-            add(mapped, "$" + tag, pos=m.start())
+            coin(mapped, "$" + m.group(1).upper(), m.start())
             continue
         if tag in seen or any(l["asset"] == tag for l in legs):
-            add(tag, "$" + tag, pos=m.start())
+            add(tag, "$" + m.group(1).upper(), pos=m.start())
             continue
-        r = tickers.resolve_ticker(tag, net, registry=registry)
+        e = reg.get("tickers", {}).get(tag)
+        if e and e.get("also_us_stock") and STOCK_WORDS.search(text):
+            add(None, "$" + tag, status="review", reason=f"${tag} is {e['name']} and the US stock {e['also_us_stock']}; this post talks shares / earnings: pick by hand", pos=m.start())
+            continue
+        r = tickers.resolve_ticker(tag, net, registry=reg)
+        if not e and tag in us:
+            # an unknown cashtag that is also a US-listed ticker: the coin only if it is a real top-500 coin and the
+            # post does not talk shares / earnings; otherwise the stock (review, never a tiny token with that symbol)
+            rank = ((r.get("coin") or {}).get("rank") or 10 ** 9) if r["status"] == "ok" else 10 ** 9
+            if rank > STOCK_COIN_RANK or STOCK_WORDS.search(text):
+                add(None, "$" + tag, status="review", reason=f"${tag} is a US-listed stock ({us[tag]})"
+                    + (f" and only a #{rank} coin" if rank < 10 ** 9 else "") + f": add it with --asset yahoo:{tag} if the stock is the call", pos=m.start())
+                continue
         add(r["ticker"] if r["status"] == "ok" else None, "$" + tag, r, r["status"], r["reason"], m.start())
-    rest = tickers.CONTRACT_TAG.sub(" ", CASHTAG.sub(" ", text))
+    rest = tickers.CONTRACT_TAG.sub(" ", CASHTAG.sub(" ", rest))
+    # 4. words: the fixed term map, coin names, bare tickers
     for pat, term, asset in amap["terms"]:
         mm = pat.search(rest)
         if mm:
-            add(asset, term, pos=mm.start())
+            coin(asset, term, mm.start())
             rest = pat.sub(" ", rest)
+    for name, t in sorted(words.get("names", {}).items(), key=lambda kv: -len(kv[0])):
+        mm = re.search(r"(?<![\w&])" + re.escape(name).replace(r"\ ", r"\s+") + r"(?![\w&])", rest, re.I)
+        if mm:
+            coin(t, name, mm.start(), receipt=tickers.from_registry(t, reg), need_receipt=True)
+            rest = rest[:mm.start()] + " " * len(mm.group(0)) + rest[mm.end():]
+    blocked = set(words.get("bare_blocked", []))
+    for mm in re.finditer(r"(?<![\w$:])([A-Z][A-Z0-9]{2,11})(?![\w])", rest):
+        t = mm.group(1)
+        if amap["cashtags"].get(t):                    # a fixed-map ticker written bare in capitals (SOL, LINK, ETH): the coin
+            coin(amap["cashtags"][t], t, mm.start())
+        elif t in reg.get("tickers", {}) and t not in blocked:
+            coin(t, t, mm.start(), receipt=tickers.from_registry(t, reg), need_receipt=True)
     legs.sort(key=lambda l: l["pos"])
     return [{k: v for k, v in l.items() if k != "pos"} for l in legs]
 
@@ -140,7 +233,7 @@ def leg_side(text, aliases):
         after = text[m.end():m.end() + 12]
         opt = OPTION.match(after.strip()) if after.strip() else None
         before = text[max(0, m.start() - 60):m.start()]
-        before = re.split(r"[.;\n]|,\s*and\b|\band\b", before)[-1]            # the clause this mention sits in
+        before = re.split(r"[.;\n]|,\s*and\b|,\s*but\b", before)[-1]        # the clause ("into $ETH and $HYPE" shares its verb)
         verbs = [(v.group(0).lower(), v.start()) for v in re.finditer(r"\b(" + "|".join(LEG_VERBS) + r")\b", before, re.I)]
         if not verbs:
             continue

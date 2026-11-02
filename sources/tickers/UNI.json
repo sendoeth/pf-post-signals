@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "UNI",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "uniswap",
+  "symbol": "UNI",
+  "name": "Uniswap",
+  "rank": 24,
+  "price": 7.22
+ },
+ "candidates": [
+  {
+   "id": "uniswap",
+   "symbol": "UNI",
+   "name": "Uniswap",
+   "rank": 24
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "UNIUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 7.218,
+   "coin_price": 7.22,
+   "diff": -0.000277,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "UNI",
+   "listed": true,
+   "status": "trading",
+   "price": 7.2224,
+   "coin_price": 7.22,
+   "diff": 0.000332,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "UNI-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 7.219,
+   "coin_price": 7.22,
+   "diff": -0.000139,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "UNIUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 7.216,
+   "coin_price": 7.22,
+   "diff": -0.000554,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "UNI_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 7.217,
+   "coin_price": 7.22,
+   "diff": -0.000416,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "UNIUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

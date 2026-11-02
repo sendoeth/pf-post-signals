@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "NEAR",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "near",
+  "symbol": "NEAR",
+  "name": "NEAR Protocol",
+  "rank": 21,
+  "price": 4.28
+ },
+ "candidates": [
+  {
+   "id": "near",
+   "symbol": "NEAR",
+   "name": "NEAR Protocol",
+   "rank": 21
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "NEARUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 4.29,
+   "coin_price": 4.28,
+   "diff": 0.002336,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "NEAR",
+   "listed": true,
+   "status": "trading",
+   "price": 4.28805,
+   "coin_price": 4.28,
+   "diff": 0.001881,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "NEAR-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 4.287,
+   "coin_price": 4.28,
+   "diff": 0.001636,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "NEARUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 4.289,
+   "coin_price": 4.28,
+   "diff": 0.002103,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "NEAR_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 4.288,
+   "coin_price": 4.28,
+   "diff": 0.001869,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "NEARUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

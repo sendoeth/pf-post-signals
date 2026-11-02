@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "BERA",
+ "asked": "seed: Hyperliquid perp BERA",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "berachain-bera",
+  "symbol": "BERA",
+  "name": "Berachain",
+  "rank": 458,
+  "price": 0.137313
+ },
+ "candidates": [
+  {
+   "id": "berachain-bera",
+   "symbol": "BERA",
+   "name": "Berachain",
+   "rank": 458
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "BERAUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.1375,
+   "coin_price": 0.137313,
+   "diff": 0.001362,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "BERA",
+   "listed": true,
+   "status": "trading",
+   "price": 0.13725,
+   "coin_price": 0.137313,
+   "diff": -0.000459,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "BERA-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.1373,
+   "coin_price": 0.137313,
+   "diff": -9.5e-05,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "BERAUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.1373,
+   "coin_price": 0.137313,
+   "diff": -9.5e-05,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "BERA_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.1371,
+   "coin_price": 0.137313,
+   "diff": -0.001551,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "BERAUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

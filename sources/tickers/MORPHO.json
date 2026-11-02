@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "MORPHO",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "morpho",
+  "symbol": "MORPHO",
+  "name": "Morpho",
+  "rank": 59,
+  "price": 2.25
+ },
+ "candidates": [
+  {
+   "id": "morpho",
+   "symbol": "MORPHO",
+   "name": "Morpho",
+   "rank": 59
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "MORPHOUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 2.244,
+   "coin_price": 2.25,
+   "diff": -0.002667,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "MORPHO",
+   "listed": true,
+   "status": "trading",
+   "price": 2.2422,
+   "coin_price": 2.25,
+   "diff": -0.003467,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "MORPHO-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 2.2438,
+   "coin_price": 2.25,
+   "diff": -0.002756,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "MORPHOUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 2.242,
+   "coin_price": 2.25,
+   "diff": -0.003556,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "MORPHO_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 2.249,
+   "coin_price": 2.25,
+   "diff": -0.000444,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "MORPHOUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

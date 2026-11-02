@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "S",
+ "asked": "seed: Hyperliquid perp S",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "sonic-3",
+  "symbol": "S",
+  "name": "Sonic",
+  "rank": 201,
+  "price": 0.03946268
+ },
+ "candidates": [
+  {
+   "id": "sonic-3",
+   "symbol": "S",
+   "name": "Sonic",
+   "rank": 201
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "SUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.03957,
+   "coin_price": 0.03946268,
+   "diff": 0.00272,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "S",
+   "listed": true,
+   "status": "trading",
+   "price": 0.039532,
+   "coin_price": 0.03946268,
+   "diff": 0.001757,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "S-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.03955,
+   "coin_price": 0.03946268,
+   "diff": 0.002213,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "SUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.03953,
+   "coin_price": 0.03946268,
+   "diff": 0.001706,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "S_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.03955,
+   "coin_price": 0.03946268,
+   "diff": 0.002213,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "SUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

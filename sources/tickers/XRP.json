@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "XRP",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "ripple",
+  "symbol": "XRP",
+  "name": "XRP",
+  "rank": 5,
+  "price": 1.25
+ },
+ "candidates": [
+  {
+   "id": "ripple",
+   "symbol": "XRP",
+   "name": "XRP",
+   "rank": 5
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "XRPUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 1.2529,
+   "coin_price": 1.25,
+   "diff": 0.00232,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "XRP",
+   "listed": true,
+   "status": "trading",
+   "price": 1.25265,
+   "coin_price": 1.25,
+   "diff": 0.00212,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "XRP-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 1.2529,
+   "coin_price": 1.25,
+   "diff": 0.00232,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "XRPUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 1.2526,
+   "coin_price": 1.25,
+   "diff": 0.00208,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "XRP_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 1.2524,
+   "coin_price": 1.25,
+   "diff": 0.00192,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "XRPUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

@@ -1,0 +1,86 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "POLYX",
+ "asked": "seed: Hyperliquid perp POLYX",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "polymesh",
+  "symbol": "POLYX",
+  "name": "Polymesh",
+  "rank": 497,
+  "price": 0.03247238
+ },
+ "candidates": [
+  {
+   "id": "polymesh",
+   "symbol": "POLYX",
+   "name": "Polymesh",
+   "rank": 497
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "POLYXUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.03254,
+   "coin_price": 0.03247238,
+   "diff": 0.002082,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "POLYX",
+   "listed": true,
+   "status": "trading",
+   "price": 0.032493,
+   "coin_price": 0.03247238,
+   "diff": 0.000635,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "listed": false,
+   "ok": false,
+   "why": "no POLYX market"
+  },
+  {
+   "source": "bybit",
+   "listed": false,
+   "ok": false,
+   "why": "no POLYX market"
+  },
+  {
+   "source": "gate",
+   "symbol": "POLYX_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.03254,
+   "coin_price": 0.03247238,
+   "diff": 0.002082,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "POLYXUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

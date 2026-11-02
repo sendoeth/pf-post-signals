@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "PENDLE",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "pendle",
+  "symbol": "PENDLE",
+  "name": "Pendle",
+  "rank": 130,
+  "price": 1.85
+ },
+ "candidates": [
+  {
+   "id": "pendle",
+   "symbol": "PENDLE",
+   "name": "Pendle",
+   "rank": 130
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "PENDLEUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 1.85,
+   "coin_price": 1.85,
+   "diff": 0.0,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "PENDLE",
+   "listed": true,
+   "status": "trading",
+   "price": 1.85015,
+   "coin_price": 1.85,
+   "diff": 8.1e-05,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "PENDLE-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 1.848,
+   "coin_price": 1.85,
+   "diff": -0.001081,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "PENDLEUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 1.8465,
+   "coin_price": 1.85,
+   "diff": -0.001892,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "PENDLE_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 1.845,
+   "coin_price": 1.85,
+   "diff": -0.002703,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "PENDLEUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

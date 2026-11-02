@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "XPL",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "plasma",
+  "symbol": "XPL",
+  "name": "Plasma",
+  "rank": 126,
+  "price": 0.071348
+ },
+ "candidates": [
+  {
+   "id": "plasma",
+   "symbol": "XPL",
+   "name": "Plasma",
+   "rank": 126
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "XPLUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.07117,
+   "coin_price": 0.071348,
+   "diff": -0.002495,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "XPL",
+   "listed": true,
+   "status": "trading",
+   "price": 0.071135,
+   "coin_price": 0.071348,
+   "diff": -0.002985,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "XPL-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.0712,
+   "coin_price": 0.071348,
+   "diff": -0.002074,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "XPLUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.0712,
+   "coin_price": 0.071348,
+   "diff": -0.002074,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "XPL_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.07115,
+   "coin_price": 0.071348,
+   "diff": -0.002775,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "XPLUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

@@ -1,0 +1,91 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "CAKE",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "pancakeswap-token",
+  "symbol": "CAKE",
+  "name": "PancakeSwap",
+  "rank": 90,
+  "price": 1.91
+ },
+ "candidates": [
+  {
+   "id": "pancakeswap-token",
+   "symbol": "CAKE",
+   "name": "PancakeSwap",
+   "rank": 90
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "CAKEUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 1.919,
+   "coin_price": 1.91,
+   "diff": 0.004712,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "CAKE",
+   "listed": true,
+   "status": "trading",
+   "price": 1.91895,
+   "coin_price": 1.91,
+   "diff": 0.004686,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "listed": false,
+   "ok": false,
+   "why": "no CAKE market"
+  },
+  {
+   "source": "bybit",
+   "symbol": "CAKEUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 1.9194,
+   "coin_price": 1.91,
+   "diff": 0.004921,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "CAKE_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 1.9196,
+   "coin_price": 1.91,
+   "diff": 0.005026,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "CAKEUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

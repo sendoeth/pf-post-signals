@@ -1,0 +1,86 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "NIL",
+ "asked": "seed: Hyperliquid perp NIL",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "nillion",
+  "symbol": "NIL",
+  "name": "Nillion",
+  "rank": 553,
+  "price": 0.070274
+ },
+ "candidates": [
+  {
+   "id": "nillion",
+   "symbol": "NIL",
+   "name": "Nillion",
+   "rank": 553
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "NILUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.07013,
+   "coin_price": 0.070274,
+   "diff": -0.002049,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "NIL",
+   "listed": true,
+   "status": "trading",
+   "price": 0.070047,
+   "coin_price": 0.070274,
+   "diff": -0.00323,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "listed": false,
+   "ok": false,
+   "why": "no NIL market"
+  },
+  {
+   "source": "bybit",
+   "listed": false,
+   "ok": false,
+   "why": "no NIL market"
+  },
+  {
+   "source": "gate",
+   "symbol": "NIL_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.07012,
+   "coin_price": 0.070274,
+   "diff": -0.002191,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "NILUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

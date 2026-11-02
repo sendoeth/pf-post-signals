@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "AVAX",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "avalanche-2",
+  "symbol": "AVAX",
+  "name": "Avalanche",
+  "rank": 29,
+  "price": 8.67
+ },
+ "candidates": [
+  {
+   "id": "avalanche-2",
+   "symbol": "AVAX",
+   "name": "Avalanche",
+   "rank": 29
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "AVAXUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 8.695,
+   "coin_price": 8.67,
+   "diff": 0.002884,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "AVAX",
+   "listed": true,
+   "status": "trading",
+   "price": 8.6959,
+   "coin_price": 8.67,
+   "diff": 0.002987,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "AVAX-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 8.691,
+   "coin_price": 8.67,
+   "diff": 0.002422,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "AVAXUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 8.694,
+   "coin_price": 8.67,
+   "diff": 0.002768,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "AVAX_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 8.693,
+   "coin_price": 8.67,
+   "diff": 0.002653,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "AVAXUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

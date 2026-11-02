@@ -1,0 +1,91 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "ZORA",
+ "asked": "seed: Hyperliquid perp ZORA",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "zora",
+  "symbol": "ZORA",
+  "name": "Zora",
+  "rank": 725,
+  "price": 0.00578811
+ },
+ "candidates": [
+  {
+   "id": "zora",
+   "symbol": "ZORA",
+   "name": "Zora",
+   "rank": 725
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "listed": false,
+   "ok": false,
+   "why": "no ZORA market"
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "ZORA",
+   "listed": true,
+   "status": "trading",
+   "price": 0.0058,
+   "coin_price": 0.00578811,
+   "diff": 0.002054,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "ZORA-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.005794,
+   "coin_price": 0.00578811,
+   "diff": 0.001018,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "ZORAUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.005795,
+   "coin_price": 0.00578811,
+   "diff": 0.00119,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "ZORA_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.005792,
+   "coin_price": 0.00578811,
+   "diff": 0.000672,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "hyperliquid",
+  "symbol": "ZORA"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

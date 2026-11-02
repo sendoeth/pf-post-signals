@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "ETHFI",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "ether-fi",
+  "symbol": "ETHFI",
+  "name": "Ether.fi",
+  "rank": 95,
+  "price": 0.615435
+ },
+ "candidates": [
+  {
+   "id": "ether-fi",
+   "symbol": "ETHFI",
+   "name": "Ether.fi",
+   "rank": 95
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "ETHFIUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.6164,
+   "coin_price": 0.615435,
+   "diff": 0.001568,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "ETHFI",
+   "listed": true,
+   "status": "trading",
+   "price": 0.61717,
+   "coin_price": 0.615435,
+   "diff": 0.002819,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "ETHFI-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.6164,
+   "coin_price": 0.615435,
+   "diff": 0.001568,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "ETHFIUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.6161,
+   "coin_price": 0.615435,
+   "diff": 0.001081,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "ETHFI_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.617,
+   "coin_price": 0.615435,
+   "diff": 0.002543,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "ETHFIUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

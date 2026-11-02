@@ -1,0 +1,81 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "BSV",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "bitcoin-cash-sv",
+  "symbol": "BSV",
+  "name": "Bitcoin SV",
+  "rank": 125,
+  "price": 16.97
+ },
+ "candidates": [
+  {
+   "id": "bitcoin-cash-sv",
+   "symbol": "BSV",
+   "name": "Bitcoin SV",
+   "rank": 125
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "listed": false,
+   "ok": false,
+   "why": "no BSV market"
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "BSV",
+   "listed": true,
+   "status": "trading",
+   "price": 17.033,
+   "coin_price": 16.97,
+   "diff": 0.003712,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "listed": false,
+   "ok": false,
+   "why": "no BSV market"
+  },
+  {
+   "source": "bybit",
+   "listed": false,
+   "ok": false,
+   "why": "no BSV market"
+  },
+  {
+   "source": "gate",
+   "symbol": "BSV_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 16.99,
+   "coin_price": 16.97,
+   "diff": 0.001179,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "hyperliquid",
+  "symbol": "BSV"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

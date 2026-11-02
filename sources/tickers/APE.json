@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "APE",
+ "asked": "seed: Hyperliquid perp APE",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "apecoin",
+  "symbol": "APE",
+  "name": "ApeCoin",
+  "rank": 255,
+  "price": 0.111276
+ },
+ "candidates": [
+  {
+   "id": "apecoin",
+   "symbol": "APE",
+   "name": "ApeCoin",
+   "rank": 255
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "APEUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.1115,
+   "coin_price": 0.111276,
+   "diff": 0.002013,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "APE",
+   "listed": true,
+   "status": "trading",
+   "price": 0.11143,
+   "coin_price": 0.111276,
+   "diff": 0.001384,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "APE-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.11142,
+   "coin_price": 0.111276,
+   "diff": 0.001294,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "APEUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.11138,
+   "coin_price": 0.111276,
+   "diff": 0.000935,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "APE_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.11145,
+   "coin_price": 0.111276,
+   "diff": 0.001564,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "APEUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "CRV",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "curve-dao-token",
+  "symbol": "CRV",
+  "name": "Curve DAO",
+  "rank": 116,
+  "price": 0.279013
+ },
+ "candidates": [
+  {
+   "id": "curve-dao-token",
+   "symbol": "CRV",
+   "name": "Curve DAO",
+   "rank": 116
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "CRVUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.2793,
+   "coin_price": 0.279013,
+   "diff": 0.001029,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "CRV",
+   "listed": true,
+   "status": "trading",
+   "price": 0.27904,
+   "coin_price": 0.279013,
+   "diff": 9.7e-05,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "CRV-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.2792,
+   "coin_price": 0.279013,
+   "diff": 0.00067,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "CRVUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.2792,
+   "coin_price": 0.279013,
+   "diff": 0.00067,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "CRV_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.279,
+   "coin_price": 0.279013,
+   "diff": -4.7e-05,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "CRVUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

@@ -1,0 +1,86 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "NEIRO",
+ "asked": "seed: Hyperliquid perp kNEIRO",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "neiro-3",
+  "symbol": "NEIRO",
+  "name": "Neiro",
+  "rank": 708,
+  "price": 6.364e-05
+ },
+ "candidates": [
+  {
+   "id": "neiro-3",
+   "symbol": "NEIRO",
+   "name": "Neiro",
+   "rank": 708
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "NEIROUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 6.369e-05,
+   "coin_price": 6.364e-05,
+   "diff": 0.000786,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "listed": false,
+   "ok": false,
+   "why": "no NEIRO market"
+  },
+  {
+   "source": "okx",
+   "symbol": "NEIRO-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 6.361e-05,
+   "coin_price": 6.364e-05,
+   "diff": -0.000471,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "listed": false,
+   "ok": false,
+   "why": "no NEIRO market"
+  },
+  {
+   "source": "gate",
+   "symbol": "NEIRO_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 6.374e-05,
+   "coin_price": 6.364e-05,
+   "diff": 0.001571,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "NEIROUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

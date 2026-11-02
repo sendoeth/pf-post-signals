@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "AAVE",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "aave",
+  "symbol": "AAVE",
+  "name": "Aave",
+  "rank": 45,
+  "price": 134.94
+ },
+ "candidates": [
+  {
+   "id": "aave",
+   "symbol": "AAVE",
+   "name": "Aave",
+   "rank": 45
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "AAVEUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 134.86,
+   "coin_price": 134.94,
+   "diff": -0.000593,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "AAVE",
+   "listed": true,
+   "status": "trading",
+   "price": 134.815,
+   "coin_price": 134.94,
+   "diff": -0.000926,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "AAVE-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 134.8,
+   "coin_price": 134.94,
+   "diff": -0.001037,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "AAVEUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 134.88,
+   "coin_price": 134.94,
+   "diff": -0.000445,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "AAVE_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 134.82,
+   "coin_price": 134.94,
+   "diff": -0.000889,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "AAVEUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

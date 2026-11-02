@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "PEOPLE",
+ "asked": "seed: Hyperliquid perp PEOPLE",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "constitutiondao",
+  "symbol": "PEOPLE",
+  "name": "ConstitutionDAO",
+  "rank": 615,
+  "price": 0.00671583
+ },
+ "candidates": [
+  {
+   "id": "constitutiondao",
+   "symbol": "PEOPLE",
+   "name": "ConstitutionDAO",
+   "rank": 615
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "PEOPLEUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.00674,
+   "coin_price": 0.00671583,
+   "diff": 0.003599,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "PEOPLE",
+   "listed": true,
+   "status": "trading",
+   "price": 0.006736,
+   "coin_price": 0.00671583,
+   "diff": 0.003003,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "PEOPLE-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.006727,
+   "coin_price": 0.00671583,
+   "diff": 0.001663,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "PEOPLEUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.006741,
+   "coin_price": 0.00671583,
+   "diff": 0.003748,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "PEOPLE_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.006728,
+   "coin_price": 0.00671583,
+   "diff": 0.001812,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "PEOPLEUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

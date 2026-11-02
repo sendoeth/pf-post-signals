@@ -1,0 +1,91 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "FLOKI",
+ "asked": "seed: Hyperliquid perp kFLOKI",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "floki",
+  "symbol": "FLOKI",
+  "name": "FLOKI",
+  "rank": 157,
+  "price": 2.317e-05
+ },
+ "candidates": [
+  {
+   "id": "floki",
+   "symbol": "FLOKI",
+   "name": "FLOKI",
+   "rank": 157
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "FLOKIUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 2.323e-05,
+   "coin_price": 2.317e-05,
+   "diff": 0.00259,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "listed": false,
+   "ok": false,
+   "why": "no FLOKI market"
+  },
+  {
+   "source": "okx",
+   "symbol": "FLOKI-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 2.314e-05,
+   "coin_price": 2.317e-05,
+   "diff": -0.001295,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "FLOKIUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 2.32e-05,
+   "coin_price": 2.317e-05,
+   "diff": 0.001295,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "FLOKI_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 2.322e-05,
+   "coin_price": 2.317e-05,
+   "diff": 0.002158,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "FLOKIUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

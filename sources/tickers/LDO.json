@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "LDO",
+ "asked": "seed: Hyperliquid perp LDO",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "lido-dao",
+  "symbol": "LDO",
+  "name": "Lido DAO",
+  "rank": 140,
+  "price": 0.34211
+ },
+ "candidates": [
+  {
+   "id": "lido-dao",
+   "symbol": "LDO",
+   "name": "Lido DAO",
+   "rank": 140
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "LDOUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.3422,
+   "coin_price": 0.34211,
+   "diff": 0.000263,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "LDO",
+   "listed": true,
+   "status": "trading",
+   "price": 0.34249,
+   "coin_price": 0.34211,
+   "diff": 0.001111,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "LDO-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.3421,
+   "coin_price": 0.34211,
+   "diff": -2.9e-05,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "LDOUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.3421,
+   "coin_price": 0.34211,
+   "diff": -2.9e-05,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "LDO_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.3418,
+   "coin_price": 0.34211,
+   "diff": -0.000906,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "LDOUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

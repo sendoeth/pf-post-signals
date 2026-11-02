@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "GALA",
+ "asked": "seed: Hyperliquid perp GALA",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "gala",
+  "symbol": "GALA",
+  "name": "GALA",
+  "rank": 297,
+  "price": 0.00170462
+ },
+ "candidates": [
+  {
+   "id": "gala",
+   "symbol": "GALA",
+   "name": "GALA",
+   "rank": 297
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "GALAUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.001705,
+   "coin_price": 0.00170462,
+   "diff": 0.000223,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "GALA",
+   "listed": true,
+   "status": "trading",
+   "price": 0.001703,
+   "coin_price": 0.00170462,
+   "diff": -0.00095,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "GALA-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.001705,
+   "coin_price": 0.00170462,
+   "diff": 0.000223,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "GALAUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.001705,
+   "coin_price": 0.00170462,
+   "diff": 0.000223,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "GALA_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.0017041,
+   "coin_price": 0.00170462,
+   "diff": -0.000305,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "GALAUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

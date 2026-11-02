@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "W",
+ "asked": "seed: Hyperliquid perp W",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "wormhole",
+  "symbol": "W",
+  "name": "Wormhole",
+  "rank": 325,
+  "price": 0.01127705
+ },
+ "candidates": [
+  {
+   "id": "wormhole",
+   "symbol": "W",
+   "name": "Wormhole",
+   "rank": 325
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "WUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.01127,
+   "coin_price": 0.01127705,
+   "diff": -0.000625,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "W",
+   "listed": true,
+   "status": "trading",
+   "price": 0.01129,
+   "coin_price": 0.01127705,
+   "diff": 0.001148,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "W-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.011285,
+   "coin_price": 0.01127705,
+   "diff": 0.000705,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "WUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.011298,
+   "coin_price": 0.01127705,
+   "diff": 0.001858,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "W_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.011274,
+   "coin_price": 0.01127705,
+   "diff": -0.00027,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "WUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

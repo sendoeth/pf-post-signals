@@ -1,0 +1,91 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "INIT",
+ "asked": "seed: Hyperliquid perp INIT",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "initia",
+  "symbol": "INIT",
+  "name": "Initia",
+  "rank": 534,
+  "price": 0.186783
+ },
+ "candidates": [
+  {
+   "id": "initia",
+   "symbol": "INIT",
+   "name": "Initia",
+   "rank": 534
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "INITUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.18734,
+   "coin_price": 0.186783,
+   "diff": 0.002982,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "INIT",
+   "listed": true,
+   "status": "trading",
+   "price": 0.1865,
+   "coin_price": 0.186783,
+   "diff": -0.001515,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "listed": false,
+   "ok": false,
+   "why": "no INIT market"
+  },
+  {
+   "source": "bybit",
+   "symbol": "INITUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.18628,
+   "coin_price": 0.186783,
+   "diff": -0.002693,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "INIT_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.1864,
+   "coin_price": 0.186783,
+   "diff": -0.002051,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "INITUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

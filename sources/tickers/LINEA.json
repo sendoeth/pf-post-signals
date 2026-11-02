@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "LINEA",
+ "asked": "seed: Hyperliquid perp LINEA",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "linea",
+  "symbol": "LINEA",
+  "name": "Linea",
+  "rank": 402,
+  "price": 0.00235874
+ },
+ "candidates": [
+  {
+   "id": "linea",
+   "symbol": "LINEA",
+   "name": "Linea",
+   "rank": 402
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "LINEAUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.002364,
+   "coin_price": 0.00235874,
+   "diff": 0.00223,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "LINEA",
+   "listed": true,
+   "status": "trading",
+   "price": 0.002371,
+   "coin_price": 0.00235874,
+   "diff": 0.005198,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "LINEA-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.002365,
+   "coin_price": 0.00235874,
+   "diff": 0.002654,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "LINEAUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.002366,
+   "coin_price": 0.00235874,
+   "diff": 0.003078,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "LINEA_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.002364,
+   "coin_price": 0.00235874,
+   "diff": 0.00223,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "LINEAUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

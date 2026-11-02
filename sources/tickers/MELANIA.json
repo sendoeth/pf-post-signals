@@ -1,0 +1,81 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "MELANIA",
+ "asked": "seed: Hyperliquid perp MELANIA",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "melania-meme",
+  "symbol": "MELANIA",
+  "name": "Melania Meme",
+  "rank": 321,
+  "price": 0.076939
+ },
+ "candidates": [
+  {
+   "id": "melania-meme",
+   "symbol": "MELANIA",
+   "name": "Melania Meme",
+   "rank": 321
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "listed": false,
+   "ok": false,
+   "why": "no MELANIA market"
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "MELANIA",
+   "listed": true,
+   "status": "trading",
+   "price": 0.07682,
+   "coin_price": 0.076939,
+   "diff": -0.001547,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "listed": false,
+   "ok": false,
+   "why": "no MELANIA market"
+  },
+  {
+   "source": "bybit",
+   "listed": false,
+   "ok": false,
+   "why": "no MELANIA market"
+  },
+  {
+   "source": "gate",
+   "symbol": "MELANIA_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.07696,
+   "coin_price": 0.076939,
+   "diff": 0.000273,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "hyperliquid",
+  "symbol": "MELANIA"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

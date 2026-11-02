@@ -1,0 +1,76 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "RAIN",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "rain",
+  "symbol": "RAIN",
+  "name": "Rain",
+  "rank": 25,
+  "price": 0.00613433
+ },
+ "candidates": [
+  {
+   "id": "rain",
+   "symbol": "RAIN",
+   "name": "Rain",
+   "rank": 25
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "listed": false,
+   "ok": false,
+   "why": "no RAIN market"
+  },
+  {
+   "source": "hyperliquid",
+   "listed": false,
+   "ok": false,
+   "why": "no RAIN market"
+  },
+  {
+   "source": "okx",
+   "listed": false,
+   "ok": false,
+   "why": "no RAIN market"
+  },
+  {
+   "source": "bybit",
+   "listed": false,
+   "ok": false,
+   "why": "no RAIN market"
+  },
+  {
+   "source": "gate",
+   "symbol": "RAIN_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.006107,
+   "coin_price": 0.00613433,
+   "diff": -0.004455,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "gate",
+  "symbol": "RAIN_USDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

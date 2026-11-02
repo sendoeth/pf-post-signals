@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "DOT",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "polkadot",
+  "symbol": "DOT",
+  "name": "Polkadot",
+  "rank": 55,
+  "price": 0.95396
+ },
+ "candidates": [
+  {
+   "id": "polkadot",
+   "symbol": "DOT",
+   "name": "Polkadot",
+   "rank": 55
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "DOTUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.955,
+   "coin_price": 0.95396,
+   "diff": 0.00109,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "DOT",
+   "listed": true,
+   "status": "trading",
+   "price": 0.95395,
+   "coin_price": 0.95396,
+   "diff": -1e-05,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "DOT-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.9546,
+   "coin_price": 0.95396,
+   "diff": 0.000671,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "DOTUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.9546,
+   "coin_price": 0.95396,
+   "diff": 0.000671,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "DOT_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.9541,
+   "coin_price": 0.95396,
+   "diff": 0.000147,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "DOTUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

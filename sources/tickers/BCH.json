@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "BCH",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "bitcoin-cash",
+  "symbol": "BCH",
+  "name": "Bitcoin Cash",
+  "rank": 20,
+  "price": 283.63
+ },
+ "candidates": [
+  {
+   "id": "bitcoin-cash",
+   "symbol": "BCH",
+   "name": "Bitcoin Cash",
+   "rank": 20
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "BCHUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 284.0,
+   "coin_price": 283.63,
+   "diff": 0.001305,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "BCH",
+   "listed": true,
+   "status": "trading",
+   "price": 284.03,
+   "coin_price": 283.63,
+   "diff": 0.00141,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "BCH-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 284.04,
+   "coin_price": 283.63,
+   "diff": 0.001446,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "BCHUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 283.76,
+   "coin_price": 283.63,
+   "diff": 0.000458,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "BCH_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 284.03,
+   "coin_price": 283.63,
+   "diff": 0.00141,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "BCHUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

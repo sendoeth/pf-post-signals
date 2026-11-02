@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "ICP",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "internet-computer",
+  "symbol": "ICP",
+  "name": "Internet Computer",
+  "rank": 64,
+  "price": 2.52
+ },
+ "candidates": [
+  {
+   "id": "internet-computer",
+   "symbol": "ICP",
+   "name": "Internet Computer",
+   "rank": 64
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "ICPUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 2.531,
+   "coin_price": 2.52,
+   "diff": 0.004365,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "ICP",
+   "listed": true,
+   "status": "trading",
+   "price": 2.5309,
+   "coin_price": 2.52,
+   "diff": 0.004325,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "ICP-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 2.532,
+   "coin_price": 2.52,
+   "diff": 0.004762,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "ICPUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 2.53,
+   "coin_price": 2.52,
+   "diff": 0.003968,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "ICP_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 2.529,
+   "coin_price": 2.52,
+   "diff": 0.003571,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "ICPUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

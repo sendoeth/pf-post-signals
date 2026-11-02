@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "ASTER",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "aster-2",
+  "symbol": "ASTER",
+  "name": "Aster",
+  "rank": 53,
+  "price": 0.697815
+ },
+ "candidates": [
+  {
+   "id": "aster-2",
+   "symbol": "ASTER",
+   "name": "Aster",
+   "rank": 53
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "ASTERUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.6981,
+   "coin_price": 0.697815,
+   "diff": 0.000408,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "ASTER",
+   "listed": true,
+   "status": "trading",
+   "price": 0.699325,
+   "coin_price": 0.697815,
+   "diff": 0.002164,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "ASTER-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.6991,
+   "coin_price": 0.697815,
+   "diff": 0.001841,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "ASTERUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.6986,
+   "coin_price": 0.697815,
+   "diff": 0.001125,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "ASTER_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.6986,
+   "coin_price": 0.697815,
+   "diff": 0.001125,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "ASTERUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

@@ -137,12 +137,15 @@
      "enum": [
       "binance",
       "yahoo",
-      "hyperliquid"
+      "hyperliquid",
+      "okx",
+      "bybit",
+      "gate"
      ]
     },
     "symbol": {
      "type": "string",
-     "pattern": "^[A-Za-z0-9=.^:-]{1,20}$"
+     "pattern": "^[A-Za-z0-9=.^:_-]{1,20}$"
     },
     "price_field": {
      "const": "open"
@@ -498,7 +501,10 @@
       "source": {
        "enum": [
         "binance",
-        "hyperliquid"
+        "hyperliquid",
+        "okx",
+        "bybit",
+        "gate"
        ]
       },
       "symbol": {

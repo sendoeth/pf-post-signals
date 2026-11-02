@@ -1,0 +1,86 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "JST",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "just",
+  "symbol": "JST",
+  "name": "JUST",
+  "rank": 72,
+  "price": 0.137943
+ },
+ "candidates": [
+  {
+   "id": "just",
+   "symbol": "JST",
+   "name": "JUST",
+   "rank": 72
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "JSTUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.13814,
+   "coin_price": 0.137943,
+   "diff": 0.001428,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "listed": false,
+   "ok": false,
+   "why": "no JST market"
+  },
+  {
+   "source": "okx",
+   "listed": false,
+   "ok": false,
+   "why": "no JST market"
+  },
+  {
+   "source": "bybit",
+   "symbol": "JSTUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.13798,
+   "coin_price": 0.137943,
+   "diff": 0.000268,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "JST_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.1381,
+   "coin_price": 0.137943,
+   "diff": 0.001138,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "JSTUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

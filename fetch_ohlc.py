@@ -62,6 +62,8 @@ def fetch(source, symbol, since):
                 daily_until = hourly[0][0]
             hourly = daily + hourly
         return resolve.adjust_for_actions(symbol, hourly), daily_until
+    if source in resolve.EXCHANGES:
+        return resolve.exchange_candles(source, symbol, start), None
     if source == "binance":
         out, ms = [], int(start.timestamp() * 1000)
         while True:

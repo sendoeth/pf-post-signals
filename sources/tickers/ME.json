@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "ME",
+ "asked": "seed: Hyperliquid perp ME",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "magic-eden",
+  "symbol": "ME",
+  "name": "Magic Eden",
+  "rank": 592,
+  "price": 0.05521
+ },
+ "candidates": [
+  {
+   "id": "magic-eden",
+   "symbol": "ME",
+   "name": "Magic Eden",
+   "rank": 592
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "MEUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.05527,
+   "coin_price": 0.05521,
+   "diff": 0.001087,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "ME",
+   "listed": true,
+   "status": "trading",
+   "price": 0.05512,
+   "coin_price": 0.05521,
+   "diff": -0.00163,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "ME-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.05536,
+   "coin_price": 0.05521,
+   "diff": 0.002717,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "MEUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.05522,
+   "coin_price": 0.05521,
+   "diff": 0.000181,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "ME_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.05526,
+   "coin_price": 0.05521,
+   "diff": 0.000906,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "MEUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "MINA",
+ "asked": "seed: Hyperliquid perp MINA",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "mina-protocol",
+  "symbol": "MINA",
+  "name": "Mina Protocol",
+  "rank": 330,
+  "price": 0.058262
+ },
+ "candidates": [
+  {
+   "id": "mina-protocol",
+   "symbol": "MINA",
+   "name": "Mina Protocol",
+   "rank": 330
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "MINAUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.0584,
+   "coin_price": 0.058262,
+   "diff": 0.002369,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "MINA",
+   "listed": true,
+   "status": "trading",
+   "price": 0.058294,
+   "coin_price": 0.058262,
+   "diff": 0.000549,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "MINA-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.05828,
+   "coin_price": 0.058262,
+   "diff": 0.000309,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "MINAUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.05844,
+   "coin_price": 0.058262,
+   "diff": 0.003055,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "MINA_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.05843,
+   "coin_price": 0.058262,
+   "diff": 0.002884,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "MINAUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

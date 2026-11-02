@@ -1,0 +1,76 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "PEARL",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "pearl-2",
+  "symbol": "PEARL",
+  "name": "Pearl",
+  "rank": 98,
+  "price": 1.53
+ },
+ "candidates": [
+  {
+   "id": "pearl-2",
+   "symbol": "PEARL",
+   "name": "Pearl",
+   "rank": 98
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "listed": false,
+   "ok": false,
+   "why": "no PEARL market"
+  },
+  {
+   "source": "hyperliquid",
+   "listed": false,
+   "ok": false,
+   "why": "no PEARL market"
+  },
+  {
+   "source": "okx",
+   "listed": false,
+   "ok": false,
+   "why": "no PEARL market"
+  },
+  {
+   "source": "bybit",
+   "listed": false,
+   "ok": false,
+   "why": "no PEARL market"
+  },
+  {
+   "source": "gate",
+   "symbol": "PEARL_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 1.5427,
+   "coin_price": 1.53,
+   "diff": 0.008301,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "gate",
+  "symbol": "PEARL_USDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

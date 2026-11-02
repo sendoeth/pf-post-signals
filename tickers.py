@@ -39,6 +39,7 @@ SCHEMA, REGISTRY_SCHEMA = "quanty.ticker.v1", "quanty.tickers.v1"
 TOLERANCE = 0.05          # a venue's price must be within 5% of the identified coin's price
 AMBIGUOUS_RATIO = 4       # the top coin must rank at least 4x ahead of the next coin with that symbol
 TICKER_RE = re.compile(r"^[A-Z0-9]{1,12}$")
+VENUES = ("binance", "hyperliquid", "okx", "bybit", "gate")     # the order a venue is preferred in (deepest history first)
 CG = "https://api.coingecko.com/api/v3"
 BINANCE = "https://data-api.binance.vision/api/v3"
 HL_INFO = "https://api.hyperliquid.xyz/info"
@@ -124,6 +125,31 @@ class Net:
         return {"source": "binance", "symbol": pair, "trading": status == "TRADING", "status": status,
                 "price": float(px["price"]) if px and px.get("price") else None}
 
+    # step 23: more spot venues (USDT pairs), checked the same way: listed, trading now, price agrees
+    def okx(self, ticker):
+        inst = (self.get(f"https://www.okx.com/api/v5/public/instruments?instType=SPOT&instId={ticker}-USDT") or {}).get("data") or []
+        if not inst:
+            return None
+        px = (self.get(f"https://www.okx.com/api/v5/market/ticker?instId={ticker}-USDT") or {}).get("data") or []
+        return {"source": "okx", "symbol": f"{ticker}-USDT", "trading": inst[0].get("state") == "live", "status": inst[0].get("state"),
+                "price": float(px[0]["last"]) if px and px[0].get("last") else None}
+
+    def bybit(self, ticker):
+        inst = ((self.get(f"https://api.bybit.com/v5/market/instruments-info?category=spot&symbol={ticker}USDT") or {}).get("result") or {}).get("list") or []
+        if not inst:
+            return None
+        px = ((self.get(f"https://api.bybit.com/v5/market/tickers?category=spot&symbol={ticker}USDT") or {}).get("result") or {}).get("list") or []
+        return {"source": "bybit", "symbol": f"{ticker}USDT", "trading": inst[0].get("status") == "Trading", "status": inst[0].get("status"),
+                "price": float(px[0]["lastPrice"]) if px and px[0].get("lastPrice") else None}
+
+    def gate(self, ticker):
+        pair = self.get(f"https://api.gateio.ws/api/v4/spot/currency_pairs/{ticker}_USDT")
+        if not pair or not pair.get("id"):
+            return None
+        px = self.get(f"https://api.gateio.ws/api/v4/spot/tickers?currency_pair={ticker}_USDT") or []
+        return {"source": "gate", "symbol": f"{ticker}_USDT", "trading": pair.get("trade_status") == "tradable", "status": pair.get("trade_status"),
+                "price": float(px[0]["last"]) if px and px[0].get("last") else None}
+
     def hyperliquid(self, ticker):
         if self._hl is None:
             meta = self.post(HL_INFO, {"type": "meta"})
@@ -155,7 +181,7 @@ def identify(symbol, net):
 def check_venues(ticker, coin_price, net):
     """Every venue checked, in order; the first trading venue whose price agrees wins."""
     checks, chosen = [], None
-    for name in ("binance", "hyperliquid"):
+    for name in VENUES:
         v = getattr(net, name)(ticker)
         if v is None:
             checks.append({"source": name, "listed": False, "ok": False, "why": f"no {ticker} market"})
@@ -171,20 +197,46 @@ def check_venues(ticker, coin_price, net):
     return checks, chosen
 
 
-def load_registry(path=REGISTRY):
+def load_registry(path=None):
+    path = path or REGISTRY                            # read at call time (tests point it at a scratch site)
     if not os.path.exists(path):
         return {"schema": REGISTRY_SCHEMA, "tickers": {}}
     with open(path) as f:
         return json.load(f)
 
 
-def resolve_ticker(symbol, net=None, cg_id=None, registry=None, how=None):
-    """-> receipt dict (status ok / review / refused). Writes nothing."""
-    net = net or Net()
+def from_registry(sym, registry, root=None):
+    """step 23: a seeded / registered ticker resolves offline from its stored receipt (no provider call).
+    A ticker the weekly re-check flagged goes to review. -> receipt or None (not registered)."""
+    e = (registry or load_registry()).get("tickers", {}).get(sym)
+    if not e:
+        return None
+    if e.get("flag"):
+        return {"schema": SCHEMA, "ticker": sym, "asked": f"${sym}", "checked_at": e["flag"].get("since"), "status": "review",
+                "reason": f"{sym} ({e['name']}) was flagged by the weekly venue re-check: {e['flag'].get('why')}", "coin": None, "candidates": [], "venues": [], "chosen": None}
+    path = os.path.join(root or HERE, e["receipt"])
+    if not os.path.exists(path):
+        return None
+    with open(path, "rb") as f:
+        blob = f.read()
+    if hashlib.sha256(blob).hexdigest() != e["receipt_sha256"]:
+        return None                                    # a receipt that no longer matches its registry entry is not trusted: look up again
+    r = json.loads(blob)
+    return r if r.get("status") == "ok" and r.get("coin", {}).get("id") == e["coingecko_id"] else None
+
+
+def resolve_ticker(symbol, net=None, cg_id=None, registry=None, how=None, offline_first=True):
+    """-> receipt dict (status ok / review / refused). Writes nothing. A registered ticker answers from its
+    stored receipt without a provider call (step 23); cg_id or offline_first=False always asks the providers."""
     sym = (symbol or "").strip().lstrip("$").upper()
+    if offline_first and not cg_id and TICKER_RE.match(sym):
+        hit = from_registry(sym, registry)
+        if hit:
+            return hit
+    net = net or Net()
     r = {"schema": SCHEMA, "ticker": sym, "asked": how or f"${sym}", "checked_at": now_iso(), "status": None, "reason": None,
          "coin": None, "candidates": [], "venues": [], "chosen": None,
-         "rules": {"tolerance": TOLERANCE, "ambiguous_ratio": AMBIGUOUS_RATIO, "venue_order": ["binance", "hyperliquid"]}}
+         "rules": {"tolerance": TOLERANCE, "ambiguous_ratio": AMBIGUOUS_RATIO, "venue_order": list(VENUES)}}
     if not TICKER_RE.match(sym):
         return {**r, "status": "refused", "reason": f"{symbol!r} is not a ticker"}
     try:

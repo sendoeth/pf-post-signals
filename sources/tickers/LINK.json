@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "LINK",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "chainlink",
+  "symbol": "LINK",
+  "name": "Chainlink",
+  "rank": 16,
+  "price": 11.38
+ },
+ "candidates": [
+  {
+   "id": "chainlink",
+   "symbol": "LINK",
+   "name": "Chainlink",
+   "rank": 16
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "LINKUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 11.415,
+   "coin_price": 11.38,
+   "diff": 0.003076,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "LINK",
+   "listed": true,
+   "status": "trading",
+   "price": 11.4165,
+   "coin_price": 11.38,
+   "diff": 0.003207,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "LINK-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 11.418,
+   "coin_price": 11.38,
+   "diff": 0.003339,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "LINKUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 11.41,
+   "coin_price": 11.38,
+   "diff": 0.002636,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "LINK_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 11.417,
+   "coin_price": 11.38,
+   "diff": 0.003251,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "LINKUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "CELO",
+ "asked": "seed: Hyperliquid perp CELO",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "celo",
+  "symbol": "CELO",
+  "name": "Celo",
+  "rank": 480,
+  "price": 0.074719
+ },
+ "candidates": [
+  {
+   "id": "celo",
+   "symbol": "CELO",
+   "name": "Celo",
+   "rank": 480
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "CELOUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.0748,
+   "coin_price": 0.074719,
+   "diff": 0.001084,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "CELO",
+   "listed": true,
+   "status": "trading",
+   "price": 0.074772,
+   "coin_price": 0.074719,
+   "diff": 0.000709,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "CELO-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.07498,
+   "coin_price": 0.074719,
+   "diff": 0.003493,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "CELOUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.07472,
+   "coin_price": 0.074719,
+   "diff": 1.3e-05,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "CELO_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.07451,
+   "coin_price": 0.074719,
+   "diff": -0.002797,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "CELOUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

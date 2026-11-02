@@ -1,0 +1,86 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "STABLE",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "stable-2",
+  "symbol": "STABLE",
+  "name": "\u200b\u200bStable",
+  "rank": 111,
+  "price": 0.02676864
+ },
+ "candidates": [
+  {
+   "id": "stable-2",
+   "symbol": "STABLE",
+   "name": "\u200b\u200bStable",
+   "rank": 111
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "listed": false,
+   "ok": false,
+   "why": "no STABLE market"
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "STABLE",
+   "listed": true,
+   "status": "trading",
+   "price": 0.02675,
+   "coin_price": 0.02676864,
+   "diff": -0.000696,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "listed": false,
+   "ok": false,
+   "why": "no STABLE market"
+  },
+  {
+   "source": "bybit",
+   "symbol": "STABLEUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.02678,
+   "coin_price": 0.02676864,
+   "diff": 0.000424,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "STABLE_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.026821,
+   "coin_price": 0.02676864,
+   "diff": 0.001956,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "hyperliquid",
+  "symbol": "STABLE"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

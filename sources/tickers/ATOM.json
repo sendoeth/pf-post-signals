@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "ATOM",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "cosmos",
+  "symbol": "ATOM",
+  "name": "Cosmos Hub",
+  "rank": 83,
+  "price": 1.46
+ },
+ "candidates": [
+  {
+   "id": "cosmos",
+   "symbol": "ATOM",
+   "name": "Cosmos Hub",
+   "rank": 83
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "ATOMUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 1.464,
+   "coin_price": 1.46,
+   "diff": 0.00274,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "ATOM",
+   "listed": true,
+   "status": "trading",
+   "price": 1.4645,
+   "coin_price": 1.46,
+   "diff": 0.003082,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "ATOM-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 1.466,
+   "coin_price": 1.46,
+   "diff": 0.00411,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "ATOMUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 1.468,
+   "coin_price": 1.46,
+   "diff": 0.005479,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "ATOM_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 1.465,
+   "coin_price": 1.46,
+   "diff": 0.003425,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "ATOMUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

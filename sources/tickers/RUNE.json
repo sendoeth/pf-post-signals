@@ -1,0 +1,91 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "RUNE",
+ "asked": "seed: Hyperliquid perp RUNE",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "thorchain",
+  "symbol": "RUNE",
+  "name": "THORChain",
+  "rank": 183,
+  "price": 0.553202
+ },
+ "candidates": [
+  {
+   "id": "thorchain",
+   "symbol": "RUNE",
+   "name": "THORChain",
+   "rank": 183
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "RUNEUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.558,
+   "coin_price": 0.553202,
+   "diff": 0.008673,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "RUNE",
+   "listed": true,
+   "status": "trading",
+   "price": 0.55892,
+   "coin_price": 0.553202,
+   "diff": 0.010336,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "listed": false,
+   "ok": false,
+   "why": "no RUNE market"
+  },
+  {
+   "source": "bybit",
+   "symbol": "RUNEUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.5596,
+   "coin_price": 0.553202,
+   "diff": 0.011565,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "RUNE_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.5644,
+   "coin_price": 0.553202,
+   "diff": 0.020242,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "RUNEUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "MET",
+ "asked": "seed: Hyperliquid perp MET",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "meteora",
+  "symbol": "MET",
+  "name": "Meteora",
+  "rank": 197,
+  "price": 0.282901
+ },
+ "candidates": [
+  {
+   "id": "meteora",
+   "symbol": "MET",
+   "name": "Meteora",
+   "rank": 197
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "METUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.2831,
+   "coin_price": 0.282901,
+   "diff": 0.000703,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "MET",
+   "listed": true,
+   "status": "trading",
+   "price": 0.28336,
+   "coin_price": 0.282901,
+   "diff": 0.001622,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "MET-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.2831,
+   "coin_price": 0.282901,
+   "diff": 0.000703,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "METUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.2831,
+   "coin_price": 0.282901,
+   "diff": 0.000703,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "MET_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.28318,
+   "coin_price": 0.282901,
+   "diff": 0.000986,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "METUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

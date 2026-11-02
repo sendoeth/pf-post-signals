@@ -1,0 +1,81 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "CASHCAT",
+ "asked": "seed: Hyperliquid perp CASHCAT",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "cash-cat",
+  "symbol": "CASHCAT",
+  "name": "Cash Cat",
+  "rank": 285,
+  "price": 0.095481
+ },
+ "candidates": [
+  {
+   "id": "cash-cat",
+   "symbol": "CASHCAT",
+   "name": "Cash Cat",
+   "rank": 285
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "listed": false,
+   "ok": false,
+   "why": "no CASHCAT market"
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "CASHCAT",
+   "listed": true,
+   "status": "trading",
+   "price": 0.095474,
+   "coin_price": 0.095481,
+   "diff": -7.3e-05,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "listed": false,
+   "ok": false,
+   "why": "no CASHCAT market"
+  },
+  {
+   "source": "bybit",
+   "listed": false,
+   "ok": false,
+   "why": "no CASHCAT market"
+  },
+  {
+   "source": "gate",
+   "symbol": "CASHCAT_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.09543,
+   "coin_price": 0.095481,
+   "diff": -0.000534,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "hyperliquid",
+  "symbol": "CASHCAT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

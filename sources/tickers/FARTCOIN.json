@@ -1,0 +1,81 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "FARTCOIN",
+ "asked": "seed: Hyperliquid perp FARTCOIN",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "fartcoin",
+  "symbol": "FARTCOIN",
+  "name": "Fartcoin",
+  "rank": 234,
+  "price": 0.122508
+ },
+ "candidates": [
+  {
+   "id": "fartcoin",
+   "symbol": "FARTCOIN",
+   "name": "Fartcoin",
+   "rank": 234
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "listed": false,
+   "ok": false,
+   "why": "no FARTCOIN market"
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "FARTCOIN",
+   "listed": true,
+   "status": "trading",
+   "price": 0.12273,
+   "coin_price": 0.122508,
+   "diff": 0.001812,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "listed": false,
+   "ok": false,
+   "why": "no FARTCOIN market"
+  },
+  {
+   "source": "bybit",
+   "listed": false,
+   "ok": false,
+   "why": "no FARTCOIN market"
+  },
+  {
+   "source": "gate",
+   "symbol": "FARTCOIN_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.1227,
+   "coin_price": 0.122508,
+   "diff": 0.001567,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "hyperliquid",
+  "symbol": "FARTCOIN"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

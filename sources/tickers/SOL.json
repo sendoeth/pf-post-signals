@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "SOL",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "solana",
+  "symbol": "SOL",
+  "name": "Solana",
+  "rank": 7,
+  "price": 94.31
+ },
+ "candidates": [
+  {
+   "id": "solana",
+   "symbol": "SOL",
+   "name": "Solana",
+   "rank": 7
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "SOLUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 94.61,
+   "coin_price": 94.31,
+   "diff": 0.003181,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "SOL",
+   "listed": true,
+   "status": "trading",
+   "price": 94.5625,
+   "coin_price": 94.31,
+   "diff": 0.002677,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "SOL-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 94.59,
+   "coin_price": 94.31,
+   "diff": 0.002969,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "SOLUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 94.59,
+   "coin_price": 94.31,
+   "diff": 0.002969,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "SOL_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 94.58,
+   "coin_price": 94.31,
+   "diff": 0.002863,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "SOLUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

@@ -1,0 +1,86 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "HEMI",
+ "asked": "seed: Hyperliquid perp HEMI",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "hemi",
+  "symbol": "HEMI",
+  "name": "Hemi",
+  "rank": 830,
+  "price": 0.00484837
+ },
+ "candidates": [
+  {
+   "id": "hemi",
+   "symbol": "HEMI",
+   "name": "Hemi",
+   "rank": 830
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "HEMIUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.00487,
+   "coin_price": 0.00484837,
+   "diff": 0.004461,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "HEMI",
+   "listed": true,
+   "status": "trading",
+   "price": 0.004872,
+   "coin_price": 0.00484837,
+   "diff": 0.004874,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "listed": false,
+   "ok": false,
+   "why": "no HEMI market"
+  },
+  {
+   "source": "bybit",
+   "listed": false,
+   "ok": false,
+   "why": "no HEMI market"
+  },
+  {
+   "source": "gate",
+   "symbol": "HEMI_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.004859,
+   "coin_price": 0.00484837,
+   "diff": 0.002192,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "HEMIUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

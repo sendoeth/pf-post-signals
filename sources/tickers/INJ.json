@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "INJ",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "injective-protocol",
+  "symbol": "INJ",
+  "name": "Injective",
+  "rank": 87,
+  "price": 7.19
+ },
+ "candidates": [
+  {
+   "id": "injective-protocol",
+   "symbol": "INJ",
+   "name": "Injective",
+   "rank": 87
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "INJUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 7.2,
+   "coin_price": 7.19,
+   "diff": 0.001391,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "INJ",
+   "listed": true,
+   "status": "trading",
+   "price": 7.193,
+   "coin_price": 7.19,
+   "diff": 0.000417,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "INJ-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 7.2,
+   "coin_price": 7.19,
+   "diff": 0.001391,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "INJUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 7.187,
+   "coin_price": 7.19,
+   "diff": -0.000417,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "INJ_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 7.187,
+   "coin_price": 7.19,
+   "diff": -0.000417,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "INJUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

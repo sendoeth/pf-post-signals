@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "WLFI",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "world-liberty-financial",
+  "symbol": "WLFI",
+  "name": "World Liberty Financial",
+  "rank": 58,
+  "price": 0.05027
+ },
+ "candidates": [
+  {
+   "id": "world-liberty-financial",
+   "symbol": "WLFI",
+   "name": "World Liberty Financial",
+   "rank": 58
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "WLFIUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.0503,
+   "coin_price": 0.05027,
+   "diff": 0.000597,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "WLFI",
+   "listed": true,
+   "status": "trading",
+   "price": 0.050304,
+   "coin_price": 0.05027,
+   "diff": 0.000676,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "WLFI-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.05031,
+   "coin_price": 0.05027,
+   "diff": 0.000796,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "WLFIUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.05034,
+   "coin_price": 0.05027,
+   "diff": 0.001392,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "WLFI_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.05035,
+   "coin_price": 0.05027,
+   "diff": 0.001591,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "WLFIUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

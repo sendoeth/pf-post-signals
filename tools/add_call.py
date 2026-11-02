@@ -164,7 +164,7 @@ def build_item(url, root=HERE, fetch=ingest.fetch_embed, prices=None, bundle=Non
         raise Refused(f"image-inferred call: intake/images/{receipt['id']}.json exists; add it only with --asset, --side and a written --reason")
     d = detect.detect(text, manual=asset)
     coin, legs = None, None
-    if d["status"] not in ("detected", "manual") or leg or (d["status"] == "detected" and tickers.CONTRACT_TAG.search(text)):
+    if d["status"] != "manual":                       # step 23: every coin the post names (seeded names / tickers, indexes, stocks) -> legs
         # step 22: cashtags without a fixed mapping and X contract tags are resolved to plain tickers
         coin, legs = pick_coin(text, leg, net or tickers.Net())
         d = {"status": "detected", "asset": coin["asset"], "matched": [{"asset": coin["asset"], "term": v} for v in coin["via"]], "reason": None}

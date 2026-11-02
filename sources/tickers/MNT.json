@@ -1,0 +1,86 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "MNT",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "mantle",
+  "symbol": "MNT",
+  "name": "Mantle",
+  "rank": 61,
+  "price": 0.475051
+ },
+ "candidates": [
+  {
+   "id": "mantle",
+   "symbol": "MNT",
+   "name": "Mantle",
+   "rank": 61
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "listed": false,
+   "ok": false,
+   "why": "no MNT market"
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "MNT",
+   "listed": true,
+   "status": "trading",
+   "price": 0.47512,
+   "coin_price": 0.475051,
+   "diff": 0.000145,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "listed": false,
+   "ok": false,
+   "why": "no MNT market"
+  },
+  {
+   "source": "bybit",
+   "symbol": "MNTUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.4754,
+   "coin_price": 0.475051,
+   "diff": 0.000735,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "MNT_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.4755,
+   "coin_price": 0.475051,
+   "diff": 0.000945,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "hyperliquid",
+  "symbol": "MNT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

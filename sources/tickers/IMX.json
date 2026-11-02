@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "IMX",
+ "asked": "seed: Hyperliquid perp IMX",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "immutable-x",
+  "symbol": "IMX",
+  "name": "Immutable",
+  "rank": 256,
+  "price": 0.12272
+ },
+ "candidates": [
+  {
+   "id": "immutable-x",
+   "symbol": "IMX",
+   "name": "Immutable",
+   "rank": 256
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "IMXUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.1229,
+   "coin_price": 0.12272,
+   "diff": 0.001467,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "IMX",
+   "listed": true,
+   "status": "trading",
+   "price": 0.12297,
+   "coin_price": 0.12272,
+   "diff": 0.002037,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "IMX-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.123,
+   "coin_price": 0.12272,
+   "diff": 0.002282,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "IMXUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.1228,
+   "coin_price": 0.12272,
+   "diff": 0.000652,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "IMX_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.12289,
+   "coin_price": 0.12272,
+   "diff": 0.001385,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "IMXUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

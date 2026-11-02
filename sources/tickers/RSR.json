@@ -1,0 +1,91 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "RSR",
+ "asked": "seed: Hyperliquid perp RSR",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "reserve-rights-token",
+  "symbol": "RSR",
+  "name": "Reserve Rights",
+  "rank": 289,
+  "price": 0.00147479
+ },
+ "candidates": [
+  {
+   "id": "reserve-rights-token",
+   "symbol": "RSR",
+   "name": "Reserve Rights",
+   "rank": 289
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "RSRUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.001476,
+   "coin_price": 0.00147479,
+   "diff": 0.00082,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "RSR",
+   "listed": true,
+   "status": "trading",
+   "price": 0.001473,
+   "coin_price": 0.00147479,
+   "diff": -0.001214,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "RSR-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.001475,
+   "coin_price": 0.00147479,
+   "diff": 0.000142,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "listed": false,
+   "ok": false,
+   "why": "no RSR market"
+  },
+  {
+   "source": "gate",
+   "symbol": "RSR_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.001475,
+   "coin_price": 0.00147479,
+   "diff": 0.000142,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "RSRUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

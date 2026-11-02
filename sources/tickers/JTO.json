@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "JTO",
+ "asked": "seed: Hyperliquid perp JTO",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "jito-governance-token",
+  "symbol": "JTO",
+  "name": "Jito",
+  "rank": 169,
+  "price": 0.373268
+ },
+ "candidates": [
+  {
+   "id": "jito-governance-token",
+   "symbol": "JTO",
+   "name": "Jito",
+   "rank": 169
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "JTOUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.3734,
+   "coin_price": 0.373268,
+   "diff": 0.000354,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "JTO",
+   "listed": true,
+   "status": "trading",
+   "price": 0.37338,
+   "coin_price": 0.373268,
+   "diff": 0.0003,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "JTO-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.3736,
+   "coin_price": 0.373268,
+   "diff": 0.000889,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "JTOUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.3741,
+   "coin_price": 0.373268,
+   "diff": 0.002229,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "JTO_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.3736,
+   "coin_price": 0.373268,
+   "diff": 0.000889,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "JTOUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

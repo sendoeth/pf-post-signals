@@ -1,0 +1,86 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "KITE",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "kite-2",
+  "symbol": "KITE",
+  "name": "Kite",
+  "rank": 137,
+  "price": 0.122626
+ },
+ "candidates": [
+  {
+   "id": "kite-2",
+   "symbol": "KITE",
+   "name": "Kite",
+   "rank": 137
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "KITEUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.1229,
+   "coin_price": 0.122626,
+   "diff": 0.002234,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "listed": false,
+   "ok": false,
+   "why": "no KITE market"
+  },
+  {
+   "source": "okx",
+   "symbol": "KITE-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.12244,
+   "coin_price": 0.122626,
+   "diff": -0.001517,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "listed": false,
+   "ok": false,
+   "why": "no KITE market"
+  },
+  {
+   "source": "gate",
+   "symbol": "KITE_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.12257,
+   "coin_price": 0.122626,
+   "diff": -0.000457,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "KITEUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

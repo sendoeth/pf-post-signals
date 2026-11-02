@@ -1,0 +1,91 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "HYPER",
+ "asked": "seed: Hyperliquid perp HYPER",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "hyperlane",
+  "symbol": "HYPER",
+  "name": "Hyperlane",
+  "rank": 842,
+  "price": 0.060114
+ },
+ "candidates": [
+  {
+   "id": "hyperlane",
+   "symbol": "HYPER",
+   "name": "Hyperlane",
+   "rank": 842
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "HYPERUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.0602,
+   "coin_price": 0.060114,
+   "diff": 0.001431,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "HYPER",
+   "listed": true,
+   "status": "trading",
+   "price": 0.060141,
+   "coin_price": 0.060114,
+   "diff": 0.000449,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "listed": false,
+   "ok": false,
+   "why": "no HYPER market"
+  },
+  {
+   "source": "bybit",
+   "symbol": "HYPERUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.0599,
+   "coin_price": 0.060114,
+   "diff": -0.00356,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "HYPER_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.06011,
+   "coin_price": 0.060114,
+   "diff": -6.7e-05,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "HYPERUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

@@ -1,0 +1,91 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "ZEN",
+ "asked": "seed: Hyperliquid perp ZEN",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "zencash",
+  "symbol": "ZEN",
+  "name": "Horizen",
+  "rank": 279,
+  "price": 5.3
+ },
+ "candidates": [
+  {
+   "id": "zencash",
+   "symbol": "ZEN",
+   "name": "Horizen",
+   "rank": 279
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "ZENUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 5.304,
+   "coin_price": 5.3,
+   "diff": 0.000755,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "ZEN",
+   "listed": true,
+   "status": "trading",
+   "price": 5.3112,
+   "coin_price": 5.3,
+   "diff": 0.002113,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "ZEN-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 5.313,
+   "coin_price": 5.3,
+   "diff": 0.002453,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "ZENUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 5.317,
+   "coin_price": 5.3,
+   "diff": 0.003208,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "listed": false,
+   "ok": false,
+   "why": "no ZEN market"
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "ZENUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

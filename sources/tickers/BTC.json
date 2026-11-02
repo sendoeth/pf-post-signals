@@ -1,0 +1,96 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "BTC",
+ "asked": "seed: top 100 by market cap",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "bitcoin",
+  "symbol": "BTC",
+  "name": "Bitcoin",
+  "rank": 1,
+  "price": 78183.0
+ },
+ "candidates": [
+  {
+   "id": "bitcoin",
+   "symbol": "BTC",
+   "name": "Bitcoin",
+   "rank": 1
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "BTCUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 78352.01,
+   "coin_price": 78183.0,
+   "diff": 0.002162,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "BTC",
+   "listed": true,
+   "status": "trading",
+   "price": 78328.5,
+   "coin_price": 78183.0,
+   "diff": 0.001861,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "BTC-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 78353.9,
+   "coin_price": 78183.0,
+   "diff": 0.002186,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "symbol": "BTCUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 78342.5,
+   "coin_price": 78183.0,
+   "diff": 0.00204,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "BTC_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 78337.2,
+   "coin_price": 78183.0,
+   "diff": 0.001972,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "BTCUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

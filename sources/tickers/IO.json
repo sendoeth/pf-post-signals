@@ -1,0 +1,91 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "IO",
+ "asked": "seed: Hyperliquid perp IO",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "io",
+  "symbol": "IO",
+  "name": "io.net",
+  "rank": 409,
+  "price": 0.131024
+ },
+ "candidates": [
+  {
+   "id": "io",
+   "symbol": "IO",
+   "name": "io.net",
+   "rank": 409
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "IOUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.1313,
+   "coin_price": 0.131024,
+   "diff": 0.002106,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "IO",
+   "listed": true,
+   "status": "trading",
+   "price": 0.13096,
+   "coin_price": 0.131024,
+   "diff": -0.000488,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "listed": false,
+   "ok": false,
+   "why": "no IO market"
+  },
+  {
+   "source": "bybit",
+   "symbol": "IOUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.131,
+   "coin_price": 0.131024,
+   "diff": -0.000183,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "IO_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.13103,
+   "coin_price": 0.131024,
+   "diff": 4.6e-05,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "IOUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

@@ -1,0 +1,91 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "KAITO",
+ "asked": "seed: Hyperliquid perp KAITO",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "kaito",
+  "symbol": "KAITO",
+  "name": "KAITO",
+  "rank": 404,
+  "price": 0.239099
+ },
+ "candidates": [
+  {
+   "id": "kaito",
+   "symbol": "KAITO",
+   "name": "KAITO",
+   "rank": 404
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "KAITOUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.2393,
+   "coin_price": 0.239099,
+   "diff": 0.000841,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "KAITO",
+   "listed": true,
+   "status": "trading",
+   "price": 0.23918,
+   "coin_price": 0.239099,
+   "diff": 0.000339,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "symbol": "KAITO-USDT",
+   "listed": true,
+   "status": "live",
+   "price": 0.2389,
+   "coin_price": 0.239099,
+   "diff": -0.000832,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "bybit",
+   "listed": false,
+   "ok": false,
+   "why": "no KAITO market"
+  },
+  {
+   "source": "gate",
+   "symbol": "KAITO_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.2398,
+   "coin_price": 0.239099,
+   "diff": 0.002932,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "KAITOUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}

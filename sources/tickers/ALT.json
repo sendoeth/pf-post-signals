@@ -1,0 +1,91 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "ALT",
+ "asked": "seed: Hyperliquid perp ALT",
+ "checked_at": "2026-11-01T23:51:00Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "altlayer",
+  "symbol": "ALT",
+  "name": "AltLayer",
+  "rank": 496,
+  "price": 0.00571578
+ },
+ "candidates": [
+  {
+   "id": "altlayer",
+   "symbol": "ALT",
+   "name": "AltLayer",
+   "rank": 496
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "symbol": "ALTUSDT",
+   "listed": true,
+   "status": "TRADING",
+   "price": 0.00573,
+   "coin_price": 0.00571578,
+   "diff": 0.002488,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "hyperliquid",
+   "symbol": "ALT",
+   "listed": true,
+   "status": "trading",
+   "price": 0.005721,
+   "coin_price": 0.00571578,
+   "diff": 0.000913,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "okx",
+   "listed": false,
+   "ok": false,
+   "why": "no ALT market"
+  },
+  {
+   "source": "bybit",
+   "symbol": "ALTUSDT",
+   "listed": true,
+   "status": "Trading",
+   "price": 0.005728,
+   "coin_price": 0.00571578,
+   "diff": 0.002138,
+   "ok": true,
+   "why": null
+  },
+  {
+   "source": "gate",
+   "symbol": "ALT_USDT",
+   "listed": true,
+   "status": "tradable",
+   "price": 0.005727,
+   "coin_price": 0.00571578,
+   "diff": 0.001963,
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "binance",
+  "symbol": "ALTUSDT"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "bybit",
+   "gate"
+  ],
+  "seed": "quanty.ticker_seed.v1"
+ }
+}
