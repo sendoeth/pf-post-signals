@@ -42,7 +42,13 @@ def coin_prices(bulk, ids):
 
 def recheck(reg, bulk, prices, now):
     results, flagged, recovered = {}, [], []
+    unchecked = []
     for t, e in sorted(reg["tickers"].items()):
+        if e["source"] in getattr(bulk, "unreachable", []):
+            # the venue did not answer this runner: not checked, the flag (or its absence) stays as it was
+            results[t] = {"venue": f"{e['source']}:{e['symbol']}", "ok": None, "why": f"not checked: {e['source']} unreachable from this runner"}
+            unchecked.append(t)
+            continue
         v = bulk.venue(e["source"], e["symbol"])
         cp = prices.get(e["coingecko_id"])
         if not cp:
@@ -69,7 +75,7 @@ def recheck(reg, bulk, prices, now):
         e["checked_at"] = now
         if cp and cp.get("rank"):
             e["rank"] = cp["rank"]
-    return results, flagged, recovered
+    return results, flagged, recovered, unchecked
 
 
 def main(argv=None, root=HERE, bulk=None):
@@ -80,16 +86,19 @@ def main(argv=None, root=HERE, bulk=None):
     reg_path = os.path.join(root, "data", "tickers.json")
     reg = tickers.load_registry(reg_path)
     try:
-        bulk = bulk or seed_tickers.Bulk().load_venues()
+        bulk = bulk or seed_tickers.Bulk().load_venues(strict=False)
         prices = coin_prices(bulk, {e["coingecko_id"] for e in reg["tickers"].values()})
     except (tickers.Unavailable, KeyError, TypeError, ValueError) as e:
         print(f"FAILED (nothing written): provider unavailable: {e}", file=sys.stderr)
         return 3
-    results, flagged, recovered = recheck(reg, bulk, prices, now)
+    results, flagged, recovered, unchecked = recheck(reg, bulk, prices, now)
     doc = {"schema": SCHEMA, "checked_at": now, "calls": bulk.calls, "rule": {"tolerance": tickers.TOLERANCE, "venue_swapped": False},
-           "counts": {"checked": len(results), "ok": sum(r["ok"] for r in results.values()), "flagged": len(flagged), "recovered": len(recovered)},
+           "counts": {"checked": len(results) - len(unchecked), "ok": sum(bool(r["ok"]) for r in results.values()), "flagged": len(flagged),
+                      "recovered": len(recovered), "not_checked": len(unchecked)},
+           "unreachable_venues": getattr(bulk, "unreachable", []),
            "flagged": {t: results[t]["why"] for t in flagged}, "recovered": recovered, "results": results}
-    print(f"re-checked {len(results)} tickers: {doc['counts']['ok']} ok, {len(flagged)} flagged, {len(recovered)} recovered")
+    print(f"re-checked {doc['counts']['checked']} tickers: {doc['counts']['ok']} ok, {len(flagged)} flagged, {len(recovered)} recovered"
+          + (f", {len(unchecked)} not checked ({', '.join(doc['unreachable_venues'])} unreachable)" if unchecked else ""))
     for t in flagged:
         print(f"  FLAG {t}: {results[t]['why']}")
     if a.dry_run:

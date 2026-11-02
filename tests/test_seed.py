@@ -219,18 +219,68 @@ class Recheck(unittest.TestCase):
                       for c in b.markets if c["id"] == e["coingecko_id"]}
             b.bin_status["SOLUSDT"] = "BREAK"                                                  # SOL's pair halts
             b.bin_price["SUIUSDT"] = 3.5                                                       # SUI's pair drifts 46% off
-            res, flagged, recovered = recheck_tickers.recheck(reg, b, prices, AT)
+            res, flagged, recovered, unchecked = recheck_tickers.recheck(reg, b, prices, AT)
             self.assertEqual(sorted(flagged), ["SOL", "SUI"])
             self.assertIn("not trading (status BREAK)", reg["tickers"]["SOL"]["flag"]["why"])
             self.assertEqual(reg["tickers"]["SOL"]["source"], "binance")                       # never swapped to another venue
             b.bin_status["SOLUSDT"] = "TRADING"
-            res, flagged, recovered = recheck_tickers.recheck(reg, b, prices, "2026-11-08T20:00:00Z")
+            res, flagged, recovered, unchecked = recheck_tickers.recheck(reg, b, prices, "2026-11-08T20:00:00Z")
             self.assertEqual(recovered, ["SOL"])
             self.assertNotIn("flag", reg["tickers"]["SOL"])
             self.assertEqual(reg["tickers"]["SUI"]["flag"]["since"], AT)                       # still flagged since the first time
             d = coins_page.build(root) if os.path.exists(os.path.join(root, "web")) else None
         finally:
             shutil.rmtree(root)
+
+    def test_an_unreachable_venue_leaves_its_coins_unchecked(self):
+        b = FakeBulk()
+        p = st.plan(b, top=10, perps=True, registry={"tickers": {}}, at=AT)
+        root = tempfile.mkdtemp()
+        try:
+            os.makedirs(os.path.join(root, "data"))
+            st.write(p, b, root)
+            reg = tickers.load_registry(os.path.join(root, "data", "tickers.json"))
+            reg["tickers"]["LEO"]["flag"] = {"since": AT, "why": "old flag"}
+            prices = {e["coingecko_id"]: {"price": c["current_price"], "rank": c["market_cap_rank"]} for e in reg["tickers"].values()
+                      for c in b.markets if c["id"] == e["coingecko_id"]}
+            b.unreachable = ["okx"]                                                            # e.g. a venue blocking the CI runner
+            res, flagged, recovered, unchecked = recheck_tickers.recheck(reg, b, prices, AT)
+            self.assertEqual(unchecked, ["LEO"])                                               # LEO is priced on OKX
+            self.assertEqual(reg["tickers"]["LEO"]["flag"]["why"], "old flag")                 # not touched either way
+            self.assertTrue(res["SOL"]["ok"])                                                  # everything else still checked
+        finally:
+            shutil.rmtree(root)
+
+    def test_load_venues_tolerates_any_venue_when_not_strict(self):
+        class Net:
+            def __init__(self, down):
+                self.down = down
+
+            def get(self, url):
+                if any(d in url for d in self.down):
+                    raise tickers.Unavailable(f"{url.split('/')[2]}: HTTP 451")
+                if "exchangeInfo" in url:
+                    return {"symbols": [{"symbol": "SOLUSDT", "status": "TRADING"}]}
+                if "ticker/price" in url:
+                    return [{"symbol": "SOLUSDT", "price": "190"}]
+                if "okx.com" in url:
+                    return {"data": []}
+                return []
+
+            def post(self, url, body):
+                if "hyperliquid" in self.down:
+                    raise tickers.Unavailable("hyperliquid: timed out")
+                return {"universe": [{"name": "LIT"}]} if body["type"] == "meta" else {"LIT": "3.2"}
+        for down, gone in ((["binance.vision"], ["binance"]), (["hyperliquid"], ["hyperliquid"]), (["okx.com", "gateio"], ["okx", "gate"])):
+            b = st.Bulk(net=Net(down), sleep=lambda s: None).load_venues(strict=False)
+            self.assertEqual(b.unreachable, gone, down)
+            with self.assertRaises(tickers.Unavailable):                                       # the seed stays strict
+                st.Bulk(net=Net(down), sleep=lambda s: None).load_venues(strict=True)
+        b = st.Bulk(net=Net(["binance.vision"]), sleep=lambda s: None).load_venues(strict=False)
+        self.assertEqual(b.hl_mid, {"LIT": 3.2})                                               # the other venues still loaded
+
+    def test_bybit_is_not_a_venue(self):
+        self.assertNotIn("bybit", tickers.VENUES)                                              # it blocks the CI runners (HTTP 403)
 
     def test_provider_down_writes_nothing(self):
         root = tempfile.mkdtemp()

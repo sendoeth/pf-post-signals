@@ -4,7 +4,7 @@ naming them resolves instantly and offline (no first-post CoinGecko lookups).
 
 Bulk data, a fixed handful of calls:
   CoinGecko   /coins/markets top 1000 by market cap (4 calls) + one call per excluded category
-  Binance     /exchangeInfo (every pair's status) + /ticker/price (every price)
+  Binance     /exchangeInfo (every pair's status) + /ticker/price (every price); OKX + Gate the same (no Bybit: it blocks CI)
   Hyperliquid meta + allMids (every perp and its mid)
   Nasdaq      nasdaqlisted.txt + otherlisted.txt (every US-listed ticker, for stock-vs-coin review)
   english     the 10,000 most common English words (which tickers / names are ordinary words)
@@ -125,18 +125,34 @@ class Bulk:
         self.load_venues()
         return self.load_lists()
 
-    def load_venues(self):
-        """Every venue's pairs, status and prices (Binance, Hyperliquid, OKX, Bybit, Gate): no CoinGecko call."""
-        info = self._get("binance exchangeInfo", URL["binance_info"])
-        self.bin_status = {s["symbol"]: s["status"] for s in info["symbols"]}
-        prices = self._get("binance prices", URL["binance_prices"])
-        self.bin_price = {p["symbol"]: float(p["price"]) for p in prices}
-        self.load_more_venues()
-        meta = self.net.post(tickers.HL_INFO, {"type": "meta"})
-        mids = self.net.post(tickers.HL_INFO, {"type": "allMids"})
-        self.calls.append({"what": "hyperliquid meta + allMids", "sha256": sha([meta, mids]), "at": now_iso()})
-        self.hl = {u["name"]: u for u in meta["universe"]}
-        self.hl_mid = {k: float(v) for k, v in mids.items() if not k.startswith("@")}
+    def load_venues(self, strict=True):
+        """Every venue's pairs, status and prices (Binance, Hyperliquid, OKX, Gate): no CoinGecko call. strict (the
+        seed): any unreachable venue stops the run. not strict (the weekly re-check): an unreachable venue is listed in
+        self.unreachable, its coins are reported as not checked and the other venues are still checked (Codex review)."""
+        self.bin_status, self.bin_price, self.hl, self.hl_mid = {}, {}, {}, {}
+        self.unreachable = []
+
+        def binance():
+            info = self._get("binance exchangeInfo", URL["binance_info"])
+            self.bin_status = {s["symbol"]: s["status"] for s in info["symbols"]}
+            prices = self._get("binance prices", URL["binance_prices"])
+            self.bin_price = {p["symbol"]: float(p["price"]) for p in prices}
+
+        def hyperliquid():
+            meta = self.net.post(tickers.HL_INFO, {"type": "meta"})
+            mids = self.net.post(tickers.HL_INFO, {"type": "allMids"})
+            self.calls.append({"what": "hyperliquid meta + allMids", "sha256": sha([meta, mids]), "at": now_iso()})
+            self.hl = {u["name"]: u for u in meta["universe"]}
+            self.hl_mid = {k: float(v) for k, v in mids.items() if not k.startswith("@")}
+        for name, load in (("binance", binance), ("hyperliquid", hyperliquid)):
+            try:
+                load()
+            except (tickers.Unavailable, KeyError, TypeError, ValueError) as e:
+                if strict:
+                    raise tickers.Unavailable(f"{name}: {e}") from None
+                self.unreachable.append(name)
+                self.calls.append({"what": f"{name} (unreachable)", "error": str(e)[:200]})
+        self.load_more_venues(strict)
         return self
 
     def load_lists(self):
@@ -154,27 +170,33 @@ class Bulk:
         self.words = {w.strip().lower() for w in words.splitlines() if w.strip()}
         return self
 
-    def load_more_venues(self):
-        """OKX, Bybit and Gate spot: every pair's status and last price (step 23 venues)."""
-        okx_i = self._get("okx instruments", "https://www.okx.com/api/v5/public/instruments?instType=SPOT")["data"]
-        okx_t = self._get("okx tickers", "https://www.okx.com/api/v5/market/tickers?instType=SPOT")["data"]
-        self.okx_s = {i["instId"]: i["state"] for i in okx_i}
-        self.okx_p = {t["instId"]: float(t["last"]) for t in okx_t if t.get("last")}
-        byb_i, cursor = [], ""
-        while True:                                       # Bybit pages its instrument list with a cursor
-            r = self._get("bybit instruments", "https://api.bybit.com/v5/market/instruments-info?category=spot&limit=1000"
-                          + (f"&cursor={urllib.parse.quote(cursor)}" if cursor else ""))["result"]
-            byb_i += r["list"]
-            cursor = r.get("nextPageCursor")
-            if not cursor or not r["list"]:
-                break
-        byb_t = self._get("bybit tickers", "https://api.bybit.com/v5/market/tickers?category=spot")["result"]["list"]
-        self.byb_s = {i["symbol"]: i["status"] for i in byb_i}
-        self.byb_p = {t["symbol"]: float(t["lastPrice"]) for t in byb_t if t.get("lastPrice")}
-        gate_i = self._get("gate currency pairs", "https://api.gateio.ws/api/v4/spot/currency_pairs")
-        gate_t = self._get("gate tickers", "https://api.gateio.ws/api/v4/spot/tickers")
-        self.gate_s = {i["id"]: i.get("trade_status") for i in gate_i}
-        self.gate_p = {t["currency_pair"]: float(t["last"]) for t in gate_t if t.get("last")}
+    def load_more_venues(self, strict=True):
+        """OKX and Gate spot: every pair's status and last price (step 23 venues). strict (the seed): an unreachable
+        venue stops the run, so no coin is placed elsewhere by accident. not strict (the weekly re-check): the venue
+        is listed in self.unreachable and its coins are reported as not checked."""
+        self.okx_s, self.okx_p, self.gate_s, self.gate_p = {}, {}, {}, {}
+        self.byb_s, self.byb_p = {}, {}                  # Bybit is not a venue (blocks the GitHub runners)
+        self.unreachable = getattr(self, "unreachable", [])
+
+        def okx():
+            okx_i = self._get("okx instruments", "https://www.okx.com/api/v5/public/instruments?instType=SPOT")["data"]
+            okx_t = self._get("okx tickers", "https://www.okx.com/api/v5/market/tickers?instType=SPOT")["data"]
+            self.okx_s = {i["instId"]: i["state"] for i in okx_i}
+            self.okx_p = {t["instId"]: float(t["last"]) for t in okx_t if t.get("last")}
+
+        def gate():
+            gate_i = self._get("gate currency pairs", "https://api.gateio.ws/api/v4/spot/currency_pairs")
+            gate_t = self._get("gate tickers", "https://api.gateio.ws/api/v4/spot/tickers")
+            self.gate_s = {i["id"]: i.get("trade_status") for i in gate_i}
+            self.gate_p = {t["currency_pair"]: float(t["last"]) for t in gate_t if t.get("last")}
+        for name, load in (("okx", okx), ("gate", gate)):
+            try:
+                load()
+            except (tickers.Unavailable, KeyError, TypeError, ValueError) as e:
+                if strict:
+                    raise tickers.Unavailable(f"{name}: {e}") from None
+                self.unreachable.append(name)
+                self.calls.append({"what": f"{name} (unreachable)", "error": str(e)[:200]})
         return self
 
     # tickers.check_venues interface

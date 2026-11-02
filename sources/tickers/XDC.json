@@ -2,22 +2,22 @@
  "schema": "quanty.ticker.v1",
  "ticker": "XDC",
  "asked": "seed: top 100 by market cap",
- "checked_at": "2026-11-01T23:51:00Z",
+ "checked_at": "2026-11-02T02:22:09Z",
  "status": "ok",
  "reason": null,
  "coin": {
   "id": "xdce-crowd-sale",
   "symbol": "XDC",
   "name": "XDC Network",
-  "rank": 93,
-  "price": 0.03095098
+  "rank": 94,
+  "price": 0.03080142
  },
  "candidates": [
   {
    "id": "xdce-crowd-sale",
    "symbol": "XDC",
    "name": "XDC Network",
-   "rank": 93
+   "rank": 94
   }
  ],
  "venues": [
@@ -40,31 +40,20 @@
    "why": "no XDC market"
   },
   {
-   "source": "bybit",
-   "symbol": "XDCUSDT",
-   "listed": true,
-   "status": "Trading",
-   "price": 0.03074,
-   "coin_price": 0.03095098,
-   "diff": -0.006817,
-   "ok": true,
-   "why": null
-  },
-  {
    "source": "gate",
    "symbol": "XDC_USDT",
    "listed": true,
    "status": "tradable",
-   "price": 0.03066,
-   "coin_price": 0.03095098,
-   "diff": -0.009401,
+   "price": 0.0308,
+   "coin_price": 0.03080142,
+   "diff": -4.6e-05,
    "ok": true,
    "why": null
   }
  ],
  "chosen": {
-  "source": "bybit",
-  "symbol": "XDCUSDT"
+  "source": "gate",
+  "symbol": "XDC_USDT"
  },
  "rules": {
   "tolerance": 0.05,
@@ -73,7 +62,6 @@
    "binance",
    "hyperliquid",
    "okx",
-   "bybit",
    "gate"
   ],
   "seed": "quanty.ticker_seed.v1"

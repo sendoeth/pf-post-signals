@@ -39,7 +39,9 @@ SCHEMA, REGISTRY_SCHEMA = "quanty.ticker.v1", "quanty.tickers.v1"
 TOLERANCE = 0.05          # a venue's price must be within 5% of the identified coin's price
 AMBIGUOUS_RATIO = 4       # the top coin must rank at least 4x ahead of the next coin with that symbol
 TICKER_RE = re.compile(r"^[A-Z0-9]{1,12}$")
-VENUES = ("binance", "hyperliquid", "okx", "bybit", "gate")     # the order a venue is preferred in (deepest history first)
+# the order a venue is preferred in (deepest history first). Bybit is not used: it answers HTTP 403 to the GitHub
+# runners that refresh prices daily, so a Bybit-priced record could never be refreshed (seen 2026-11-02).
+VENUES = ("binance", "hyperliquid", "okx", "gate")
 CG = "https://api.coingecko.com/api/v3"
 BINANCE = "https://data-api.binance.vision/api/v3"
 HL_INFO = "https://api.hyperliquid.xyz/info"

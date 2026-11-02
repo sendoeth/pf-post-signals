@@ -1,6 +1,6 @@
 {
  "schema": "quanty.coin_words.v1",
- "built_at": "2026-11-01T23:51:00Z",
+ "built_at": "2026-11-02T02:22:09Z",
  "note": "built by tools/seed_tickers.py. names: whole-word, case-insensitive -> ticker (never a common English word). bare tickers (no $) count only in capitals and not in bare_blocked (common English words or under 3 letters); fixed-map tickers (SOL, LINK, ETH) always. wrapped: a cashtag of a wrapped / staked copy -> the underlying coin. index: market indexes, never a coin (review: no price history source yet).",
  "names": {
   "aave": "AAVE",
@@ -83,7 +83,6 @@
   "kaito": "KAITO",
   "kaspa": "KAS",
   "kite": "KITE",
-  "kucoin": "KCS",
   "layerzero": "ZRO",
   "leo token": "LEO",
   "lido dao": "LDO",

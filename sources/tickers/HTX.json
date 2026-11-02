@@ -2,7 +2,7 @@
  "schema": "quanty.ticker.v1",
  "ticker": "HTX",
  "asked": "seed: top 100 by market cap",
- "checked_at": "2026-11-01T23:51:00Z",
+ "checked_at": "2026-11-02T02:22:09Z",
  "status": "ok",
  "reason": null,
  "coin": {
@@ -40,31 +40,20 @@
    "why": "no HTX market"
   },
   {
-   "source": "bybit",
-   "symbol": "HTXUSDT",
-   "listed": true,
-   "status": "Trading",
-   "price": 1.548e-06,
-   "coin_price": 1.54e-06,
-   "diff": 0.005195,
-   "ok": true,
-   "why": null
-  },
-  {
    "source": "gate",
    "symbol": "HTX_USDT",
    "listed": true,
    "status": "tradable",
-   "price": 1.5346e-06,
+   "price": 1.5278e-06,
    "coin_price": 1.54e-06,
-   "diff": -0.003506,
+   "diff": -0.007922,
    "ok": true,
    "why": null
   }
  ],
  "chosen": {
-  "source": "bybit",
-  "symbol": "HTXUSDT"
+  "source": "gate",
+  "symbol": "HTX_USDT"
  },
  "rules": {
   "tolerance": 0.05,
@@ -73,7 +62,6 @@
    "binance",
    "hyperliquid",
    "okx",
-   "bybit",
    "gate"
   ],
   "seed": "quanty.ticker_seed.v1"
