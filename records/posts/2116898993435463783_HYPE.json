@@ -21,10 +21,10 @@
   "price": 88.08
  },
  "latest": {
-  "at": "2026-11-01T18:00:00Z",
-  "price": 88.04
+  "at": "2026-11-02T00:00:00Z",
+  "price": 87.85
  },
- "change_since_post": -0.0004541326067211138,
+ "change_since_post": -0.0026112624886467373,
  "exits": {
   "1": null,
   "7": null,
@@ -56,11 +56,35 @@
   [
    "2026-11-01T18:00:00Z",
    88.04
+  ],
+  [
+   "2026-11-01T19:00:00Z",
+   87.42
+  ],
+  [
+   "2026-11-01T20:00:00Z",
+   87.09
+  ],
+  [
+   "2026-11-01T21:00:00Z",
+   87.25
+  ],
+  [
+   "2026-11-01T22:00:00Z",
+   87.78
+  ],
+  [
+   "2026-11-01T23:00:00Z",
+   87.27
+  ],
+  [
+   "2026-11-02T00:00:00Z",
+   87.85
   ]
  ],
  "resolved_with": {
   "prices": "live:binance+yahoo",
-  "last_bar_at": "2026-11-01T18:00:00Z",
+  "last_bar_at": "2026-11-02T00:00:00Z",
   "max_lag_days": 2,
   "session_lag_days": 2
  },
@@ -86,12 +110,5 @@
    ],
    "words": "selling some $100 HYPE calls"
   }
- },
- "side_choice": {
-  "method": "detector-leg",
-  "terms": [
-   "selling some $100 HYPE calls"
-  ],
-  "reason": "selling calls caps the upside; it is not a stated short"
  }
 }

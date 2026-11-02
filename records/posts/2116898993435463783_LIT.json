@@ -22,10 +22,10 @@
   "price": 3.2523
  },
  "latest": {
-  "at": "2026-11-01T18:00:00Z",
-  "price": 3.2262
+  "at": "2026-11-02T00:00:00Z",
+  "price": 3.1585
  },
- "change_since_post": -0.008025089936352758,
+ "change_since_post": -0.028841127817237022,
  "exits": {
   "1": null,
   "7": null,
@@ -57,11 +57,35 @@
   [
    "2026-11-01T18:00:00Z",
    3.2262
+  ],
+  [
+   "2026-11-01T19:00:00Z",
+   3.1801
+  ],
+  [
+   "2026-11-01T20:00:00Z",
+   3.1804
+  ],
+  [
+   "2026-11-01T21:00:00Z",
+   3.1754
+  ],
+  [
+   "2026-11-01T22:00:00Z",
+   3.1775
+  ],
+  [
+   "2026-11-01T23:00:00Z",
+   3.1244
+  ],
+  [
+   "2026-11-02T00:00:00Z",
+   3.1585
   ]
  ],
  "resolved_with": {
   "prices": "live:binance+yahoo",
-  "last_bar_at": "2026-11-01T18:00:00Z",
+  "last_bar_at": "2026-11-02T00:00:00Z",
   "max_lag_days": 2,
   "session_lag_days": 2
  },
@@ -92,12 +116,5 @@
    ],
    "words": "buying ~equal premium of $LIT calls"
   }
- },
- "side_choice": {
-  "method": "detector-leg",
-  "terms": [
-   "buying ~equal premium of $LIT calls"
-  ],
-  "reason": "buying calls"
  }
 }
