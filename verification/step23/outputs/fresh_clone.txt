@@ -1,0 +1,12 @@
+fresh clone c18928400375c15480ecd55f511952d7756bd018
+guard: scanned 90 commits (all added lines + messages) -> 0 hits
+guard: scanned 2563 files -> 0 hits
+FAILED (nothing written): provider unavailable: api.coingecko.com: HTTP 429
+Ran 53 tests in 40.921s
+OK (skipped=1)
+bundle: 57 record files -> 57 drawn, 0 superseded, 0 refused; 171 horizon cells, 57 best-since-post values, 8 caller ratings checked -> ALL MATCH
+records: 57 checked against post_price.v1 -> ALL VALID
+entry bars: 56/56 candle opens equal the record entry price
+offline legs (no provider call): [('XMR', 'ok'), ('BTC', 'ok'), ('STOCKS', 'ok'), ('XRP', 'ok')]
+coins page: 95/100 top, 92 perps, 187 tickers, 0 flagged, 20 review
+rebuild diff lines: 0

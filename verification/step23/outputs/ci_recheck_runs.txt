@@ -1,0 +1,7 @@
+CI refresh run 41376101027 (before the fix):
+FAILED (nothing written): provider unavailable: api.bybit.com: HTTP 403
+ticker re-check failed (provider unavailable): flags unchanged, the refresh continues
+CI refresh run 41377918015 (after dropping Bybit):
+re-checked 187 tickers: 187 ok, 0 flagged, 0 recovered
+wrote sources/tickers/recheck/2026-11-02.json and the flags in data/tickers.json
+CI refresh run 41378871838 (after the carry-over fix): commit c189284, side_choice kept on 25 positions, ZEC renamed_from kept

@@ -1,0 +1,15 @@
+served commit c18928400375c15480ecd55f511952d7756bd018 (CI refresh after the bot publish e467b94d6f188b305272d16e659a7d1d1ad1972f)
+served https://sendoeth.com/pf-post-signals/web/data/charts.json sha256 41323a9855215cb16e3fc6f7cdff3f4bae7200e032e919b5a0b5e995b70a4e2f
+git show c18928400375c15480ecd55f511952d7756bd018:web/data/charts.json sha256 41323a9855215cb16e3fc6f7cdff3f4bae7200e032e919b5a0b5e995b70a4e2f
+pos-2115966476817739790_XMR.html HTTP 200
+pos-2115966476817739790_XRP.html HTTP 200
+pos-2116433840499790164_ETH.html HTTP 200
+pos-2116433840499790164_HYPE.html HTTP 200
+pos-2116091851086393720_INJ.html HTTP 200
+coins.html HTTP 200
+ETH   @Okada_DeFi0x   binance:ETHUSDT    side 1 entry 2244.04 @ 2026-10-31T08:00:00Z coin (fixed map) side_choice detector-leg ['deployed 60% of my portfolio into $ETH']
+HYPE  @Okada_DeFi0x   binance:HYPEUSDT   side 1 entry 88.27 @ 2026-10-31T08:00:00Z coin hyperliquid side_choice detector-leg ['deployed 60% of my portfolio into $ETH and $HYPE']
+INJ   @rosa_onchain   binance:INJUSDT    side 1 entry 7.234 @ 2026-10-30T09:00:00Z coin injective-protocol side_choice detector-leg ['Bought $INJ']
+XMR   @goodalexander  hyperliquid:XMR        side 1 entry 623.54 @ 2026-10-30T01:00:00Z coin monero side_choice detector-leg ['long XMR']
+XRP   @goodalexander  binance:XRPUSDT    side 1 entry 1.2247 @ 2026-10-30T01:00:00Z coin ripple side_choice detector-leg ['long xrp']
+scores {'goodalexander': 52.635, 'Okada_DeFi0x': 51.455, 'rosa_onchain': 48.518}

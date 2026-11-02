@@ -1,0 +1,47 @@
+test_okx_bybit_gate_parsing (tests.test_seed.Candles.test_okx_bybit_gate_parsing) ... ok
+test_coins_page_is_static_and_escaped (tests.test_seed.Page.test_coins_page_is_static_and_escaped) ... /home/postfiat/pf-post-signals/tools/seed_tickers.py:381: ResourceWarning: unclosed file <_io.BufferedReader name='/tmp/tmpu223oqsz/sources/tickers/seed/2026-11-01.json'>
+test_an_unreachable_venue_leaves_its_coins_unchecked (tests.test_seed.Recheck.test_an_unreachable_venue_leaves_its_coins_unchecked) ... /home/postfiat/pf-post-signals/tools/seed_tickers.py:381: ResourceWarning: unclosed file <_io.BufferedReader name='/tmp/tmp4vj76avu/sources/tickers/seed/2026-11-01.json'>
+test_bybit_is_not_a_venue (tests.test_seed.Recheck.test_bybit_is_not_a_venue) ... ok
+test_flags_recovers_and_never_swaps (tests.test_seed.Recheck.test_flags_recovers_and_never_swaps) ... /home/postfiat/pf-post-signals/tools/seed_tickers.py:381: ResourceWarning: unclosed file <_io.BufferedReader name='/tmp/tmpti_wkba_/sources/tickers/seed/2026-11-01.json'>
+test_load_venues_tolerates_any_venue_when_not_strict (tests.test_seed.Recheck.test_load_venues_tolerates_any_venue_when_not_strict) ... ok
+test_provider_down_writes_nothing (tests.test_seed.Recheck.test_provider_down_writes_nothing) ... /home/postfiat/pf-post-signals/tests/test_seed.py:289: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp3cjvmc66/data/tickers.json' mode='w' encoding='UTF-8'>
+FAILED (nothing written): provider unavailable: api.coingecko.com: HTTP 429
+test_coin_words (tests.test_seed.Seed.test_coin_words) ... ok
+test_existing_venue_is_kept (tests.test_seed.Seed.test_existing_venue_is_kept) ... ok
+test_not_coins_are_excluded_with_the_reason (tests.test_seed.Seed.test_not_coins_are_excluded_with_the_reason) ... ok
+test_top_counts_coins_after_exclusions (tests.test_seed.Seed.test_top_counts_coins_after_exclusions) ... ok
+test_venues (tests.test_seed.Seed.test_venues) ... ok
+test_write_registers_and_receipts (tests.test_seed.Seed.test_write_registers_and_receipts) ... /home/postfiat/pf-post-signals/tools/seed_tickers.py:381: ResourceWarning: unclosed file <_io.BufferedReader name='/tmp/tmpl2j5ozfv/sources/tickers/seed/2026-11-01.json'>
+test_codex_repros (tests.test_seed.Words.test_codex_repros) ... /home/postfiat/pf-post-signals/tools/seed_tickers.py:381: ResourceWarning: unclosed file <_io.BufferedReader name='/tmp/tmpucd95hnf/sources/tickers/seed/2026-11-01.json'>
+test_flagged_ticker_goes_to_review (tests.test_seed.Words.test_flagged_ticker_goes_to_review) ... /home/postfiat/pf-post-signals/tools/seed_tickers.py:381: ResourceWarning: unclosed file <_io.BufferedReader name='/tmp/tmp0f49jw8m/sources/tickers/seed/2026-11-01.json'>
+test_indexes_stables_wrapped_stocks (tests.test_seed.Words.test_indexes_stables_wrapped_stocks) ... /home/postfiat/pf-post-signals/tools/seed_tickers.py:381: ResourceWarning: unclosed file <_io.BufferedReader name='/tmp/tmp0_99oamr/sources/tickers/seed/2026-11-01.json'>
+test_names_and_bare_tickers_offline (tests.test_seed.Words.test_names_and_bare_tickers_offline) ... /home/postfiat/pf-post-signals/tools/seed_tickers.py:381: ResourceWarning: unclosed file <_io.BufferedReader name='/tmp/tmp7gozay5j/sources/tickers/seed/2026-11-01.json'>
+test_ordinary_words_are_not_coins (tests.test_seed.Words.test_ordinary_words_are_not_coins) ... /home/postfiat/pf-post-signals/tools/seed_tickers.py:381: ResourceWarning: unclosed file <_io.BufferedReader name='/tmp/tmp2ysoqh8u/sources/tickers/seed/2026-11-01.json'>
+test_hype_leg_has_no_side_and_unknown_coins_are_refused (tests.test_tickers.AddWithoutAsset.test_hype_leg_has_no_side_and_unknown_coins_are_refused) ... /home/postfiat/pf-post-signals/tests/test_tickers.py:197: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/quanty-legs-hr7ak3m5/data/tickers.json' mode='r' encoding='UTF-8'>
+test_two_coins_need_a_leg_then_lit_is_lighter (tests.test_tickers.AddWithoutAsset.test_two_coins_need_a_leg_then_lit_is_lighter) ... /home/postfiat/pf-post-signals/tests/test_tickers.py:197: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/quanty-legs-ntsk0o_7/data/tickers.json' mode='r' encoding='UTF-8'>
+test_a_mapped_cashtag_does_not_hide_a_contract_tag (tests.test_tickers.CodexRepros.test_a_mapped_cashtag_does_not_hide_a_contract_tag) ... /home/postfiat/pf-post-signals/tests/test_tickers.py:197: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/quanty-legs-w9au550r/data/tickers.json' mode='r' encoding='UTF-8'>
+test_a_registered_venue_that_fails_today_is_refused (tests.test_tickers.CodexRepros.test_a_registered_venue_that_fails_today_is_refused) ... /home/postfiat/pf-post-signals/tests/test_tickers.py:197: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/quanty-legs-2qr7mhvz/data/tickers.json' mode='r' encoding='UTF-8'>
+test_buying_puts_on_one_coin_is_short (tests.test_tickers.CodexRepros.test_buying_puts_on_one_coin_is_short) ... /home/postfiat/pf-post-signals/tests/test_tickers.py:197: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/quanty-legs-lvqc3eaq/data/tickers.json' mode='r' encoding='UTF-8'>
+test_hype_leg_has_no_side_and_unknown_coins_are_refused (tests.test_tickers.CodexRepros.test_hype_leg_has_no_side_and_unknown_coins_are_refused) ... /home/postfiat/pf-post-signals/tests/test_tickers.py:197: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/quanty-legs-2yv_uo4_/data/tickers.json' mode='r' encoding='UTF-8'>
+test_two_coins_need_a_leg_then_lit_is_lighter (tests.test_tickers.CodexRepros.test_two_coins_need_a_leg_then_lit_is_lighter) ... /home/postfiat/pf-post-signals/tests/test_tickers.py:197: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/quanty-legs-169njcan/data/tickers.json' mode='r' encoding='UTF-8'>
+test_a_refused_coin_is_listed_not_guessed (tests.test_tickers.Legs.test_a_refused_coin_is_listed_not_guessed) ... ok
+test_mapped_assets_need_no_lookup (tests.test_tickers.Legs.test_mapped_assets_need_no_lookup) ... ok
+test_sides (tests.test_tickers.Legs.test_sides) ... ok
+test_the_koolkrypto_post (tests.test_tickers.Legs.test_the_koolkrypto_post) ... ok
+test_a_rename_changes_no_number_and_keeps_the_old_url (tests.test_tickers.Rename.test_a_rename_changes_no_number_and_keeps_the_old_url) ... /home/postfiat/pf-post-signals/tests/test_tickers.py:311: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/quanty-ren-709u52_j/records/corbanu/skhx-entry_XYZ-SKHX.json' mode='r' encoding='UTF-8'>
+test_a_trading_pair_with_the_wrong_price_is_skipped (tests.test_tickers.Resolver.test_a_trading_pair_with_the_wrong_price_is_skipped) ... ok
+test_binance_first_when_it_agrees (tests.test_tickers.Resolver.test_binance_first_when_it_agrees) ... ok
+test_contract_tags (tests.test_tickers.Resolver.test_contract_tags) ... ok
+test_identity_rules (tests.test_tickers.Resolver.test_identity_rules) ... ok
+test_lit_is_lighter_on_hyperliquid_not_the_halted_binance_pair (tests.test_tickers.Resolver.test_lit_is_lighter_on_hyperliquid_not_the_halted_binance_pair) ... ok
+test_no_agreeing_venue_is_review (tests.test_tickers.Resolver.test_no_agreeing_venue_is_review) ... ok
+test_provider_down_fails_closed (tests.test_tickers.Resolver.test_provider_down_fails_closed) ... ok
+test_rate_limit_waits_then_fails_closed (tests.test_tickers.Resolver.test_rate_limit_waits_then_fails_closed) ... ok
+test_registry (tests.test_tickers.Resolver.test_registry) ... /home/postfiat/pf-post-signals/tickers.py:314: ResourceWarning: unclosed file <_io.BufferedReader name='/tmp/tmpziu_52l8/sources/tickers/LIT.json'>
+test_choices_and_rename_survive (tests.test_refresh.CarryOver.test_choices_and_rename_survive) ... ok
+test_every_optional_field_is_recomputed_or_carried (tests.test_refresh.CarryOver.test_every_optional_field_is_recomputed_or_carried) ... /home/postfiat/pf-post-signals/tests/test_refresh.py:60: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/postfiat/pf-post-signals/schema/post_price.v1.json' mode='r' encoding='UTF-8'>
+test_missing_bar_keeps_frozen_value (tests.test_refresh.Refresh.test_missing_bar_keeps_frozen_value) ... ok
+test_new_horizon_fills_and_latest_moves (tests.test_refresh.Refresh.test_new_horizon_fills_and_latest_moves) ... ok
+test_revision_keeps_frozen_entry_and_exits_and_is_logged (tests.test_refresh.Refresh.test_revision_keeps_frozen_entry_and_exits_and_is_logged) ... ok
+Ran 44 tests in 38.145s
+OK (skipped=1)

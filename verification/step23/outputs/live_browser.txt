@@ -1,0 +1,2 @@
+pos-2115966476817739790_XMR.html errors 0 | Asset: XMR (hyperliquid:XMR) | Coin: Monero [monero] · identity and price checked 2026-11-01 (receipt sources/tickers/XMR.json) | Side: long | Side chosen by: detector-leg ("long XMR"): 'long' before the coin | Entry: 623.54 @ 2026-10-30 01:00 UTC | Latest: 604.8 @ 2026-11-02 02:00 UTC | Asset chosen by: detector (XMR)
+coins.html errors 0 | 

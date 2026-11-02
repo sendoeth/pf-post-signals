@@ -1,0 +1,3 @@
+FAILED (nothing written): provider unavailable: api.coingecko.com: HTTP 429
+Ran 216 tests in 96.041s
+OK (skipped=1)

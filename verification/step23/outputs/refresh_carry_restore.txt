@@ -1,0 +1,4 @@
+caller scores equal: True
+frozen values moved: none
+every position equal except side_choice / renamed_from: True (57 positions)
+side_choice now on 25 positions; ZEC renamed_from: binance:ZECUSDT

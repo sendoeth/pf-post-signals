@@ -1,0 +1,11 @@
+coverage: 95 of the top 100 coins (after exclusions) + 92 Hyperliquid perps = 187 tickers; 20 review, 40 excluded, 0 flagged
+seed sources/tickers/seed/2026-11-02.json 2026-11-02T02:22:09Z | recheck sources/tickers/recheck/2026-11-02.json 2026-11-02T02:40:39Z
+top-100 to review:
+  WBT WhiteBIT Coin #15: no trading venue with hourly bars agrees with WhiteBIT Coin's price
+  BGB Bitget Token #68: no trading venue with hourly bars agrees with Bitget Token's price
+  KCS KuCoin #74: no trading venue with hourly bars agrees with KuCoin's price
+  币安人生 币安人生 (BinanceLife) #102: symbol is not a plain ticker
+  HASH Provenance Blockchain #115: no trading venue with hourly bars agrees with Provenance Blockchain's price
+excluded by reason: {'stablecoin': 25, 'tokenized private credit': 1, 'tokenized gold': 4, 'tokenized treasuries': 6, 'not a coin by name': 1, 'tokenized credit': 1, 'bridged copy': 2}
+perps review sample: [('ANIME', 'Hyperliquid perp ANIME: no CoinGecko coin with this symbol i'), ('BANANA', 'Hyperliquid perp BANANA: no CoinGecko coin with this symbol '), ('DYM', 'Hyperliquid perp DYM: no CoinGecko coin with this symbol in '), ('FOGO', 'Hyperliquid perp FOGO: no CoinGecko coin with this symbol in'), ('GOAT', 'Hyperliquid perp GOAT: no CoinGecko coin with this symbol in'), ('GRIFFAIN', 'Hyperliquid perp GRIFFAIN: no CoinGecko coin with this symbo')]
+venues: {'binance': 146, 'hyperliquid': 25, 'gate': 11, 'okx': 5}
