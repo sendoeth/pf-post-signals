@@ -1,0 +1,802 @@
+{
+ "version": "quanty.context.v1",
+ "url": "https://x.com/Okada_DeFi0x/status/2116433840499790164",
+ "post_id": "2116433840499790164",
+ "author": "Okada_DeFi0x",
+ "posted_at": "2026-10-31T07:35:23Z",
+ "text": "happy weekend, fam!\n\nyesterday, i deployed 60% of my portfolio into $ETH and $HYPE, then moved everything to my personal wallet for long-term holding.\n\nthere's still a scenario where $BTC drops to $70K, but at this point, i don't think it would make much difference to my",
+ "asset": "binance:HYPEUSDT",
+ "words": [
+  "hype",
+  "hyperliquid"
+ ],
+ "analysed_at": "2026-11-02T01:36:02Z",
+ "victory_lap": null,
+ "side_in_post": null,
+ "searches": [
+  {
+   "query": "from:Okada_DeFi0x (hype OR hyperliquid) since:2026-08-02 until:2026-11-01",
+   "posts": 55,
+   "searches": 4,
+   "coverage": [
+    {
+     "since": "2026-08-02",
+     "until": "2026-09-01",
+     "status": "done",
+     "posts": 15,
+     "run": "2026-11-02T01-35-30Z",
+     "manifest_sha256": "aa3db0241e5020c21171577a437a29d4b4ae49d367406a3caf8ca407c3f1b55a"
+    },
+    {
+     "since": "2026-09-01",
+     "until": "2026-10-01",
+     "status": "done",
+     "posts": 20,
+     "run": "2026-11-02T01-35-37Z",
+     "manifest_sha256": "2f45a1e893627c66f5073af2e4f622569051dc3ea74646a5d740f8f79c895c01"
+    },
+    {
+     "since": "2026-10-01",
+     "until": "2026-10-31",
+     "status": "done",
+     "posts": 20,
+     "run": "2026-11-02T01-35-43Z",
+     "manifest_sha256": "195d1027bb848da3aad3f00534f5801d65a182fce0e7e26b35bb171fdf71927c"
+    },
+    {
+     "since": "2026-10-31",
+     "until": "2026-11-01",
+     "status": "done",
+     "posts": 2,
+     "run": "2026-11-02T01-35-50Z",
+     "manifest_sha256": "487329b52f57b161bf19700a7e265caaf22872d304d0e4066ba9950e9a4eac9b"
+    }
+   ],
+   "error": null
+  },
+  {
+   "query": "from:Okada_DeFi0x (hype OR hyperliquid) (sold OR sell OR selling OR exited OR closed OR \"took profit\" OR \"took profits\" OR \"taking profit\" OR profits OR trimmed OR \"out of\" OR rotated OR \"stopped out\" OR holding OR \"still long\" OR \"still holding\" OR \"bought more\" OR added OR flipped OR short) since:2026-10-31 until:2026-11-03",
+   "posts": 1,
+   "searches": 1,
+   "coverage": [
+    {
+     "since": "2026-10-31",
+     "until": "2026-11-03",
+     "status": "done",
+     "posts": 1,
+     "run": "2026-11-02T01-35-56Z",
+     "manifest_sha256": "665ec7840753522c5bc0a558b11b980c32f0bf5bd34ab761b9fdcd564a5d9619"
+    }
+   ],
+   "error": null
+  }
+ ],
+ "before": [
+  {
+   "id": "2084645204230070417",
+   "url": "https://x.com/Okada_DeFi0x/status/2084645204230070417",
+   "posted_at": "2026-08-04T14:18:42Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hype"
+   ],
+   "text": "hype fades"
+  },
+  {
+   "id": "2084645218750795981",
+   "url": "https://x.com/Okada_DeFi0x/status/2084645218750795981",
+   "posted_at": "2026-08-04T14:18:45Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hype"
+   ],
+   "text": "no fade after hype is the tell"
+  },
+  {
+   "id": "2085629801784836126",
+   "url": "https://x.com/Okada_DeFi0x/status/2085629801784836126",
+   "posted_at": "2026-08-07T07:31:08Z",
+   "kind": "post",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hype"
+   ],
+   "text": "Solana airdrops are getting crowded, but I wouldn’t spread capital across every new campaign. If it were me, I would focus on these projects: [1] @xStocksFi RWA is still one of the narratives I expect to attract serious capital this cycle. xStocks gives users exposure to tokenize"
+  },
+  {
+   "id": "2087372963343454329",
+   "url": "https://x.com/OxSimpleFarmer/status/2087372963343454329",
+   "posted_at": "2026-08-12T02:57:50Z",
+   "kind": null,
+   "label": "not theirs",
+   "why": "by @OxSimpleFarmer",
+   "side": null,
+   "words": [
+    "hyperliquid"
+   ],
+   "text": "Why am I bullish on TickerYard? Think Unit on Hyperliquid, but built as a cross-chain infrastructure layer for Robinhood Chain. Yard gives us bridge aggregation while using cross-chain technology to enable permissionless cross-chain token deployment for any token. Projects can"
+  },
+  {
+   "id": "2087379936306946193",
+   "url": "https://x.com/Okada_DeFi0x/status/2087379936306946193",
+   "posted_at": "2026-08-12T03:25:33Z",
+   "kind": "repost",
+   "label": "not theirs",
+   "why": "a repost of someone else's post",
+   "side": null,
+   "words": [
+    "hyperliquid"
+   ],
+   "text": "Why am I bullish on TickerYard? Think Unit on Hyperliquid, but built as a cross-chain infrastructure layer for Robinhood Chain. Yard gives us bridge aggregation while using cross-chain technology to enable permissionless cross-chain token deployment for any token. Projects can de"
+  },
+  {
+   "id": "2088150392509280725",
+   "url": "https://x.com/Okada_DeFi0x/status/2088150392509280725",
+   "posted_at": "2026-08-14T06:27:04Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hype"
+   ],
+   "text": "my screen says HYPE, not illiquids"
+  },
+  {
+   "id": "2088266672625029455",
+   "url": "https://x.com/Okada_DeFi0x/status/2088266672625029455",
+   "posted_at": "2026-08-14T14:09:07Z",
+   "kind": "quote",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hype"
+   ],
+   "text": "Still holding $FRONG. After my last post, there’s another update that makes the thesis more interesting. Today, creator fees from Uniswap employee testing were renounced and redirected into an automated buy + burn contract. $FRONG is included. So instead of creator fees going to "
+  },
+  {
+   "id": "2089344270574706694",
+   "url": "https://x.com/Okada_DeFi0x/status/2089344270574706694",
+   "posted_at": "2026-08-17T13:31:06Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hype"
+   ],
+   "text": "data first, hype later"
+  },
+  {
+   "id": "2089346477080617354",
+   "url": "https://x.com/Okada_DeFi0x/status/2089346477080617354",
+   "posted_at": "2026-08-17T13:39:52Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hype"
+   ],
+   "text": "yeah, retention after hype is the part worth tracking"
+  },
+  {
+   "id": "2091085600397136048",
+   "url": "https://x.com/Okada_DeFi0x/status/2091085600397136048",
+   "posted_at": "2026-08-22T08:50:32Z",
+   "kind": "post",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hyperliquid"
+   ],
+   "text": "Top protocols and venues that let you trade pre-TGE projects. That’s a huge advantage most people ignore, with allocations, points, or synthetic exposure before TGE. FYI, Pre-TGE trading mainly happens in three forms: – Direct OTC of airdrop points or token allocations – Pre-laun"
+  },
+  {
+   "id": "2091535494199083369",
+   "url": "https://x.com/Okada_DeFi0x/status/2091535494199083369",
+   "posted_at": "2026-08-23T14:38:15Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hyperliquid"
+   ],
+   "text": "hyperliquid has been the cleanest for me"
+  },
+  {
+   "id": "2091852325644304537",
+   "url": "https://x.com/Okada_DeFi0x/status/2091852325644304537",
+   "posted_at": "2026-08-24T11:37:13Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hype"
+   ],
+   "text": "Will Unvault's hype survive its next product milestone?"
+  },
+  {
+   "id": "2092631318484177321",
+   "url": "https://x.com/Okada_DeFi0x/status/2092631318484177321",
+   "posted_at": "2026-08-26T15:12:40Z",
+   "kind": "post",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hype",
+    "hyperliquid"
+   ],
+   "text": "In the best case, market already bottomed out this week with majors breaking out after weeks sitting still. I hope market gives us a window to accumulate good coins for at least 3-4 months. Then I’ll hold my bags tight till the end of this cycle no matter how shaky the market get"
+  },
+  {
+   "id": "2094315231451455656",
+   "url": "https://x.com/Okada_DeFi0x/status/2094315231451455656",
+   "posted_at": "2026-08-31T06:43:56Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hype"
+   ],
+   "text": "need context before hype"
+  },
+  {
+   "id": "2094691853694345546",
+   "url": "https://x.com/Okada_DeFi0x/status/2094691853694345546",
+   "posted_at": "2026-09-01T07:40:30Z",
+   "kind": "quote",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hype"
+   ],
+   "text": "Robinhood meme season is getting crowded af. There are now 30+ memes that have managed to break out from the noise: $CASHCAT, $AI, $HMM, $BONER, solana:CTuw8xEE15hKi2yB9n8CoLDq8ZhBLVbh8ydcuN11pump, tendies-2:native, chump-coin:native, $YOLO, solana:61Wj56QgGyyB966T7YsMzEAKRLcMvJp"
+  },
+  {
+   "id": "2100590110714769700",
+   "url": "https://x.com/Okada_DeFi0x/status/2100590110714769700",
+   "posted_at": "2026-09-17T14:18:04Z",
+   "kind": "quote",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hype"
+   ],
+   "text": "Arc Day 1 was messy af on the token side, but the chain numbers are actually pretty wild. @Arc mainnet has only been live, and rn: – TVL: ~$334M – Stablecoins: ~$656M, ~99% dominated by USDC – DEX volume: ~$76M / 24h – App fees: ~$453K / 24h Circle also launched Arc with 100+ app"
+  },
+  {
+   "id": "2100821412139434195",
+   "url": "https://x.com/Okada_DeFi0x/status/2100821412139434195",
+   "posted_at": "2026-09-18T05:37:10Z",
+   "kind": "quote",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hype"
+   ],
+   "text": "Why does everyone want to build a launchpad on a new chain? This isn’t new, but the meta is coming back after launchpads like @ponsdotfamily @ClutchMarkets worked well on Robinhood. IMO, here’s why: [1] One of the easiest products to clone in crypto Meme launchpads using bonding "
+  },
+  {
+   "id": "2101960927847297460",
+   "url": "https://x.com/Okada_DeFi0x/status/2101960927847297460",
+   "posted_at": "2026-09-21T09:05:12Z",
+   "kind": "quote",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hype"
+   ],
+   "text": "Was I wrong, guys? I still agree with most of what I wrote in the previous post, but the market is starting to make me rethink the plan a bit. Even with macro still looking far from clean, there are clearly some alts showing real relative strength and potentially outperforming th"
+  },
+  {
+   "id": "2102060488985366943",
+   "url": "https://x.com/Okada_DeFi0x/status/2102060488985366943",
+   "posted_at": "2026-09-21T15:40:49Z",
+   "kind": "quote",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hype"
+   ],
+   "text": "Looks like users are starting to rotate out of @Arc chain after the initial mainnet FOMO. Current stats: – Total accounts: ~640K – Total addresses: ~2.35M – Total txs: ~26.1M – 24h txs: ~1.23M – Total USDC transfers: ~1.15M – Avg tx fee: only ~$0.007 But the more important part f"
+  },
+  {
+   "id": "2102274245858644072",
+   "url": "https://x.com/Okada_DeFi0x/status/2102274245858644072",
+   "posted_at": "2026-09-22T05:50:13Z",
+   "kind": "quote",
+   "label": "own call",
+   "why": "side words ['short on']",
+   "side": -1,
+   "words": [
+    "hyperliquid"
+   ],
+   "text": "CT dunked on Garrett as the $ZEC giga bear who might actually still be giga long lol. His $ZEC short on Hyperliquid somehow became the unpaid marketing department for the entire Zcash eco too. $ZEC ran to $1.5K+, I think there are 2 different supply sinks fighting over: – ZCSH he"
+  },
+  {
+   "id": "2102369302724915601",
+   "url": "https://x.com/Okada_DeFi0x/status/2102369302724915601",
+   "posted_at": "2026-09-22T12:07:56Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hype"
+   ],
+   "text": "hype"
+  },
+  {
+   "id": "2102630675572744267",
+   "url": "https://x.com/Okada_DeFi0x/status/2102630675572744267",
+   "posted_at": "2026-09-23T05:26:32Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hype"
+   ],
+   "text": "finally moving away from gambling on hype towards actual performance metrics"
+  },
+  {
+   "id": "2102685928615784832",
+   "url": "https://x.com/Okada_DeFi0x/status/2102685928615784832",
+   "posted_at": "2026-09-23T09:06:06Z",
+   "kind": "post",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hype"
+   ],
+   "text": "2025–2026, imo, is the period that showed the clearest value of tokens backed by real revenue and real value capture. Thousands of projects disappeared when attention and liquidity moved elsewhere. But protocols with real products, real users and real revenue are still here. And "
+  },
+  {
+   "id": "2103041587060380150",
+   "url": "https://x.com/Okada_DeFi0x/status/2103041587060380150",
+   "posted_at": "2026-09-24T08:39:21Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hype"
+   ],
+   "text": "still good time to buy $HYPE?"
+  },
+  {
+   "id": "2103372086047809982",
+   "url": "https://x.com/Okada_DeFi0x/status/2103372086047809982",
+   "posted_at": "2026-09-25T06:32:38Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hype"
+   ],
+   "text": "the burn mechanism is the real story here, people focus on the mcap but ignore the supply pressure dropping while volume builds. smart play by the team to prioritize that over just chasing hype."
+  },
+  {
+   "id": "2103725126441418811",
+   "url": "https://x.com/Okada_DeFi0x/status/2103725126441418811",
+   "posted_at": "2026-09-26T05:55:30Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hype"
+   ],
+   "text": "habits are better distribution than hype"
+  },
+  {
+   "id": "2103732584048177179",
+   "url": "https://x.com/Okada_DeFi0x/status/2103732584048177179",
+   "posted_at": "2026-09-26T06:25:08Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hype"
+   ],
+   "text": "moving agents across chains is the only way to tap into real liquidity. the infra layer is finally separating from the hype cycle. focus is shifting from simple agent launches to actual utility for capital management. heavy rotation coming."
+  },
+  {
+   "id": "2103733287659393319",
+   "url": "https://x.com/Okada_DeFi0x/status/2103733287659393319",
+   "posted_at": "2026-09-26T06:27:55Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hype"
+   ],
+   "text": "Exactly. Seeing how they are scaling the infrastructure to support these agents is what makes the long term potential for $VIRTUAL so much more compelling than just the initial hype."
+  },
+  {
+   "id": "2103734312583758020",
+   "url": "https://x.com/Okada_DeFi0x/status/2103734312583758020",
+   "posted_at": "2026-09-26T06:32:00Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hype"
+   ],
+   "text": "Plain gacha feels like a fad that fades when the hype cycle ends. The ones adding yield and liquidity layers are the only ones building real moats."
+  },
+  {
+   "id": "2104434847301460003",
+   "url": "https://x.com/Okada_DeFi0x/status/2104434847301460003",
+   "posted_at": "2026-09-28T04:55:40Z",
+   "kind": "quote",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hype"
+   ],
+   "text": "A few people asked me whether $PAID still has upside from here. I still like the idea behind @UsePaid, but I think we need to separate the potential of the protocol from the value of the $PAID token itself. UsePaid has a pretty unique product: turn meme token creator fees into re"
+  },
+  {
+   "id": "2104438979705831682",
+   "url": "https://x.com/Okada_DeFi0x/status/2104438979705831682",
+   "posted_at": "2026-09-28T05:12:06Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hype"
+   ],
+   "text": "people focus way too much on the token price and ignore the actual utility of the dVPN and messenger. stuff that actually works is the only thing that lasts when the hype cycles die down. smart take on the quantum angle too"
+  },
+  {
+   "id": "2105179460228325549",
+   "url": "https://x.com/Okada_DeFi0x/status/2105179460228325549",
+   "posted_at": "2026-09-30T06:14:30Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hype"
+   ],
+   "text": "the token tease is a bold move right before the reveal, hope the mechanics match the hype"
+  },
+  {
+   "id": "2105183234959220811",
+   "url": "https://x.com/Okada_DeFi0x/status/2105183234959220811",
+   "posted_at": "2026-09-30T06:29:30Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hype"
+   ],
+   "text": "extending the lockup to 2028 is the real signal here, team putting their skin in the game for the long haul matters more than the hype cycles"
+  },
+  {
+   "id": "2105551156663755015",
+   "url": "https://x.com/Okada_DeFi0x/status/2105551156663755015",
+   "posted_at": "2026-10-01T06:51:29Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hype"
+   ],
+   "text": "An honest audit of the gaps usually gets ignored by the hype crowd. You are stripping away the veneer and pointing to the actual work left to do. Which part comes next then"
+  },
+  {
+   "id": "2105646622055203252",
+   "url": "https://x.com/Okada_DeFi0x/status/2105646622055203252",
+   "posted_at": "2026-10-01T13:10:50Z",
+   "kind": "quote",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hype"
+   ],
+   "text": "$STONK is still one of the launchpad tokens I'm watching closely. One reason is the \"pair with anything\" model. Tokens launched through StonkFun can be paired with $ZEC, $WBTC, $HYPE, $NEAR, $STONK, tokenized stocks like $NVDA, $DKNG, $SPCX, and even pre-IPO assets like Anthropic"
+  },
+  {
+   "id": "2112154259089510485",
+   "url": "https://x.com/Okada_DeFi0x/status/2112154259089510485",
+   "posted_at": "2026-10-19T12:09:51Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hype"
+   ],
+   "text": "agreed, execution speaks louder than hype in this market"
+  },
+  {
+   "id": "2112904140288614739",
+   "url": "https://x.com/Okada_DeFi0x/status/2112904140288614739",
+   "posted_at": "2026-10-21T13:49:37Z",
+   "kind": "quote",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hype",
+    "hyperliquid"
+   ],
+   "text": "Papertrade just showed how a perp protocol can print $1T+ in notional volume without building a traditional order book. But the more interesting part is what this tells us about where perp DEX design is heading. And ngl, some of the implications are pretty wild. 1/ @GMX_IO and @d"
+  },
+  {
+   "id": "2113271326576427144",
+   "url": "https://x.com/Okada_DeFi0x/status/2113271326576427144",
+   "posted_at": "2026-10-22T14:08:41Z",
+   "kind": "post",
+   "label": "own call",
+   "why": "side words ['long positions']",
+   "side": 1,
+   "words": [
+    "hype",
+    "hyperliquid"
+   ],
+   "text": "kinetiq:native + Elysium, the next growth catalyst for Hyperliquid? i think @Enter_Elysium could bring a new wave of opportunities to the Hyperliquid ecosystem, especially for kinetiq:native and early-stage dapps. with more projects already building on Elysium testnet, there's a "
+  },
+  {
+   "id": "2113611381937471866",
+   "url": "https://x.com/Okada_DeFi0x/status/2113611381937471866",
+   "posted_at": "2026-10-23T12:39:57Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hype"
+   ],
+   "text": "exactly, liquidity concentrates right there once the hype fades out"
+  },
+  {
+   "id": "2114580801996341390",
+   "url": "https://x.com/Okada_DeFi0x/status/2114580801996341390",
+   "posted_at": "2026-10-26T04:52:04Z",
+   "kind": "quote",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hype"
+   ],
+   "text": "► onchain season is coming back? $PONS & $STONK worth watching lately, i've been seeing more discussions on CT about a potential onchain season comeback, especially around launchpads and renewed activity across the Robinhood ecosystem after weeks of cooling down. personally, i th"
+  },
+  {
+   "id": "2115038672492060691",
+   "url": "https://x.com/Okada_DeFi0x/status/2115038672492060691",
+   "posted_at": "2026-10-27T11:11:29Z",
+   "kind": "quote",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hype",
+    "hyperliquid"
+   ],
+   "text": "► $HYPE is only one part of the Hyperliquid opportunity here's where i'm looking next i still think @HyperliquidX has one of the more interesting ecosystems in crypto rn. we've already seen $HYPE establish itself as a major asset, but the ecosystem is expanding into several busin"
+  },
+  {
+   "id": "2115304877249404937",
+   "url": "https://x.com/Okada_DeFi0x/status/2115304877249404937",
+   "posted_at": "2026-10-28T04:49:17Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hype"
+   ],
+   "text": "$HYPE looks outperform any other coins"
+  },
+  {
+   "id": "2115307719569924458",
+   "url": "https://x.com/Okada_DeFi0x/status/2115307719569924458",
+   "posted_at": "2026-10-28T05:00:35Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hype"
+   ],
+   "text": "exactly, token price gets the hype but the apps underneath are building real staying power"
+  },
+  {
+   "id": "2115709025371185483",
+   "url": "https://x.com/Okada_DeFi0x/status/2115709025371185483",
+   "posted_at": "2026-10-29T07:35:14Z",
+   "kind": "quote",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hype"
+   ],
+   "text": "Elysium mainnet is coming on Nov 9. Time to hunt for early opportunities? after my previous post about kinetiq:native and @Enter_Elysium, i've been digging deeper into the early projects and tokens appearing across the ecosystem. with mainnet scheduled for Nov 9, i think this is "
+  },
+  {
+   "id": "2115736542283252077",
+   "url": "https://x.com/Okada_DeFi0x/status/2115736542283252077",
+   "posted_at": "2026-10-29T09:24:34Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hype"
+   ],
+   "text": "$HYPE looks good here"
+  },
+  {
+   "id": "2115800009169842227",
+   "url": "https://x.com/Okada_DeFi0x/status/2115800009169842227",
+   "posted_at": "2026-10-29T13:36:46Z",
+   "kind": "quote",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hype",
+    "hyperliquid"
+   ],
+   "text": "$HYPE is pumping like there's no tomorrow. Is a Hyperliquid season coming? The parent company of the NYSE, Intercontinental Exchange (ICE), has officially partnered with @tradexyz to bring 24/7 perpetual futures to the US using Hyperliquid infrastructure. This is a pretty big dea"
+  },
+  {
+   "id": "2116023413424988401",
+   "url": "https://x.com/Okada_DeFi0x/status/2116023413424988401",
+   "posted_at": "2026-10-30T04:24:30Z",
+   "kind": "quote",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hype"
+   ],
+   "text": "what should you do in the current crypto market? with $BTC dropping below $80K and another wave of panic hitting the market, i think this is a good time to rethink our strategies. after years in crypto, i've learned one thing: surviving the market matters more than catching every"
+  },
+  {
+   "id": "2116139967374356806",
+   "url": "https://x.com/Okada_DeFi0x/status/2116139967374356806",
+   "posted_at": "2026-10-30T12:07:38Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hype"
+   ],
+   "text": "exactly, cash flow matters way more when hype dies down"
+  },
+  {
+   "id": "2116140149222613209",
+   "url": "https://x.com/Okada_DeFi0x/status/2116140149222613209",
+   "posted_at": "2026-10-30T12:08:22Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hype"
+   ],
+   "text": "exactly, cashflow talks when hype dies down"
+  },
+  {
+   "id": "2116141689727500337",
+   "url": "https://x.com/Okada_DeFi0x/status/2116141689727500337",
+   "posted_at": "2026-10-30T12:14:29Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hype"
+   ],
+   "text": "exactly, revenue speaks louder than hype when volume dries up"
+  },
+  {
+   "id": "2116150995474616411",
+   "url": "https://x.com/Okada_DeFi0x/status/2116150995474616411",
+   "posted_at": "2026-10-30T12:51:28Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hype"
+   ],
+   "text": "silver dropping back to fifty after all that hype is brutal"
+  },
+  {
+   "id": "2116157692100411446",
+   "url": "https://x.com/Okada_DeFi0x/status/2116157692100411446",
+   "posted_at": "2026-10-30T13:18:04Z",
+   "kind": "quote",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hype",
+    "hyperliquid"
+   ],
+   "text": "If I were running a perp DEX, I'd probably be asking why I'm giving away millions in future tokens to people whose entire strategy is generating volume and dumping the airdrop. Farmers have been using delta-neutral strategies across venues for ages, farming volume and OI with alm"
+  },
+  {
+   "id": "2116169428954124517",
+   "url": "https://x.com/Okada_DeFi0x/status/2116169428954124517",
+   "posted_at": "2026-10-30T14:04:43Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hype"
+   ],
+   "text": "$HYPE looks really strong"
+  },
+  {
+   "id": "2116407839535292846",
+   "url": "https://x.com/Okada_DeFi0x/status/2116407839535292846",
+   "posted_at": "2026-10-31T05:52:04Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "hype"
+   ],
+   "text": "$HYPE is starting to look like a bet on global trading infra rather than just crypto perps. stocks, commodities, pre-IPO markets all in one place? pretty wild if this scales lol"
+  }
+ ],
+ "suggested_call": {
+  "id": "2102274245858644072",
+  "url": "https://x.com/Okada_DeFi0x/status/2102274245858644072",
+  "posted_at": "2026-09-22T05:50:13Z",
+  "kind": "quote",
+  "label": "own call",
+  "why": "side words ['short on']",
+  "side": -1,
+  "words": [
+   "hyperliquid"
+  ],
+  "text": "CT dunked on Garrett as the $ZEC giga bear who might actually still be giga long lol. His $ZEC short on Hyperliquid somehow became the unpaid marketing department for the entire Zcash eco too. $ZEC ran to $1.5K+, I think there are 2 different supply sinks fighting over: – ZCSH he"
+ },
+ "after": [],
+ "others_after": 0,
+ "state": "open: nothing disclosed after the call",
+ "side": -1,
+ "after_raw": {}
+}

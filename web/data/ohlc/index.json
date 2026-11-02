@@ -3,11 +3,11 @@
  "files": {
   "BTC": {
    "file": "BTC.json",
-   "sha256": "a8c75565badf526471a668168b6a9a86c6e244bf6eeacb467e240940686bc205",
-   "fetched_at": "2026-11-02T00:51:03Z",
-   "bars": 17337,
+   "sha256": "e10b749ecf68e66b6a6806b80a2d547516c82ff8e764f980c1db3646ed8500d5",
+   "fetched_at": "2026-11-02T02:05:38Z",
+   "bars": 17339,
    "first": "2024-11-09T16:00:00Z",
-   "last": "2026-11-02T00:00:00Z",
+   "last": "2026-11-02T02:00:00Z",
    "daily_until": null,
    "lookback": {
     "days": 360,
@@ -19,11 +19,11 @@
   },
   "COPPER": {
    "file": "COPPER.json",
-   "sha256": "11f67f6f4e32161bc081333f0ec3aeaf121c38ab7fdbd1f27dcf2e390acb1c51",
-   "fetched_at": "2026-11-02T00:51:18Z",
-   "bars": 6256,
+   "sha256": "0886afed42f7f4b8869f57f0e7bb9ddae5af4cde517da6b6e1b40a0d2561e57e",
+   "fetched_at": "2026-11-02T02:05:47Z",
+   "bars": 6350,
    "first": "2025-09-23T16:00:00Z",
-   "last": "2026-11-02T00:40:48Z",
+   "last": "2026-11-02T01:55:41Z",
    "daily_until": null,
    "lookback": {
     "days": 90,
@@ -35,9 +35,9 @@
   },
   "COPX": {
    "file": "COPX.json",
-   "sha256": "e941a10b74c9b7398e81147c758db981cff164d0faaa2358468576efa38fdb71",
-   "fetched_at": "2026-11-02T00:51:18Z",
-   "bars": 687,
+   "sha256": "33e6e4fc7a1084344398312a2686c17e81698df0c3e673717733f71900756f1e",
+   "fetched_at": "2026-11-02T02:05:49Z",
+   "bars": 708,
    "first": "2026-06-09T13:30:00Z",
    "last": "2026-10-30T20:00:00Z",
    "daily_until": null,
@@ -49,13 +49,29 @@
     "starts_at_listing": false
    }
   },
+  "ETH": {
+   "file": "ETH.json",
+   "sha256": "afb42b2039c03a2672ff471c8b50e70f6321e916aa5a6b3066e9454698c44775",
+   "fetched_at": "2026-11-02T02:05:50Z",
+   "bars": 2203,
+   "first": "2026-08-02T08:00:00Z",
+   "last": "2026-11-02T02:00:00Z",
+   "daily_until": null,
+   "lookback": {
+    "days": 90,
+    "start": "2026-08-02T08:00:00Z",
+    "first_call": "2026-10-31T08:00:00Z",
+    "first_bar": "2026-08-02T08:00:00Z",
+    "starts_at_listing": false
+   }
+  },
   "GOLD": {
    "file": "GOLD.json",
-   "sha256": "df75bd6f98428479b7a91bc8fef40e3f302b2f65a6e49f35ab69f10c8a751a7e",
-   "fetched_at": "2026-11-02T00:51:19Z",
-   "bars": 9834,
+   "sha256": "2fb7c78c65d1e821caa490f3a90bbc7be28f97e9d6be785412295e37f081eec8",
+   "fetched_at": "2026-11-02T02:05:51Z",
+   "bars": 9929,
    "first": "2025-02-11T15:00:00Z",
-   "last": "2026-11-02T00:41:09Z",
+   "last": "2026-11-02T01:55:50Z",
    "daily_until": null,
    "lookback": {
     "days": 313,
@@ -67,27 +83,43 @@
   },
   "HYPE": {
    "file": "HYPE.json",
-   "sha256": "9619e4b5908a1e69b6f17464fa110dd2a4ae5be09e6c6787f6611a3cf7b7b75a",
-   "fetched_at": "2026-11-02T00:51:19Z",
-   "bars": 926,
+   "sha256": "bd69ecc4d78c7f9d6d7a0dd0e7a06b6aff90928f916df04cd681bf65ea256177",
+   "fetched_at": "2026-11-02T02:05:53Z",
+   "bars": 928,
    "first": "2026-09-24T11:00:00Z",
-   "last": "2026-11-02T00:00:00Z",
+   "last": "2026-11-02T02:00:00Z",
    "daily_until": null,
    "lookback": {
     "days": 90,
-    "start": "2026-08-03T15:00:00Z",
-    "first_call": "2026-11-01T15:00:00Z",
+    "start": "2026-08-02T08:00:00Z",
+    "first_call": "2026-10-31T08:00:00Z",
     "first_bar": "2026-09-24T11:00:00Z",
     "starts_at_listing": true
    }
   },
+  "INJ": {
+   "file": "INJ.json",
+   "sha256": "868a1d17a979678b45cabf2915b6dd7a13d76e080a8b0535c403377806deb0c4",
+   "fetched_at": "2026-11-02T02:05:53Z",
+   "bars": 2226,
+   "first": "2026-08-01T09:00:00Z",
+   "last": "2026-11-02T02:00:00Z",
+   "daily_until": null,
+   "lookback": {
+    "days": 90,
+    "start": "2026-08-01T09:00:00Z",
+    "first_call": "2026-10-30T09:00:00Z",
+    "first_bar": "2026-08-01T09:00:00Z",
+    "starts_at_listing": false
+   }
+  },
   "LIT": {
    "file": "LIT.json",
-   "sha256": "7137cd6af64094eef0a03972ff880e3272b6a123d2b3a08f072217e9d4fadb72",
-   "fetched_at": "2026-11-02T00:51:20Z",
-   "bars": 2170,
+   "sha256": "7485eeebae645a4b657b0f9dbbd97ac812a5f38a5093240416f8655c5a0b6377",
+   "fetched_at": "2026-11-02T02:05:55Z",
+   "bars": 2172,
    "first": "2026-08-03T15:00:00Z",
-   "last": "2026-11-02T00:00:00Z",
+   "last": "2026-11-02T02:00:00Z",
    "daily_until": null,
    "lookback": {
     "days": 90,
@@ -99,12 +131,12 @@
   },
   "SILVER": {
    "file": "SILVER.json",
-   "sha256": "98ebf989de0e69c1eaabd76e59282c8c83cbc97086f5afaa2bd04194135893a9",
-   "fetched_at": "2026-11-02T00:51:20Z",
-   "bars": 12088,
+   "sha256": "1fbf208b65b9fea9c958d5480155bebd692158cac8b7b6735a168940233e1f28",
+   "fetched_at": "2026-11-02T02:05:55Z",
+   "bars": 12185,
    "first": "2021-09-21T04:00:00Z",
-   "last": "2026-11-02T00:41:11Z",
-   "daily_until": "2024-11-06T00:00:00Z",
+   "last": "2026-11-02T01:55:52Z",
+   "daily_until": "2024-11-06T02:00:00Z",
    "lookback": {
     "days": 929,
     "start": "2021-09-22T04:00:00Z",
@@ -115,8 +147,8 @@
   },
   "SOXL": {
    "file": "SOXL.json",
-   "sha256": "187a17978e7c5efffec95afb1e9d9a3cbb677c08ee670bee7a51912cc6c798fc",
-   "fetched_at": "2026-11-02T00:51:21Z",
+   "sha256": "cf5eb987f0ce8e986b9e6fc33f33dc08967855daac3cc63bc84f6e241c2c5188",
+   "fetched_at": "2026-11-02T02:05:58Z",
    "bars": 449,
    "first": "2026-08-03T13:30:00Z",
    "last": "2026-10-30T20:00:00Z",
@@ -131,9 +163,9 @@
   },
   "STOCKS": {
    "file": "STOCKS.json",
-   "sha256": "bee3cba03915282f9a9851eb413638b1a330c82d1d247a9e835a5267cd899eb5",
-   "fetched_at": "2026-11-02T00:51:21Z",
-   "bars": 3097,
+   "sha256": "6834113060f447860e43a923455fb3a8545398a25a3cd819bddc43be7a51b923",
+   "fetched_at": "2026-11-02T02:05:59Z",
+   "bars": 3128,
    "first": "2025-01-21T14:30:00Z",
    "last": "2026-10-30T20:00:00Z",
    "daily_until": null,
@@ -145,13 +177,45 @@
     "starts_at_listing": false
    }
   },
+  "XMR": {
+   "file": "XMR.json",
+   "sha256": "101d76c13ced3e7b3ce43cf59d3c89968ed0c397e57a3a791b641330ffc88616",
+   "fetched_at": "2026-11-02T02:06:01Z",
+   "bars": 2234,
+   "first": "2026-08-01T01:00:00Z",
+   "last": "2026-11-02T02:00:00Z",
+   "daily_until": null,
+   "lookback": {
+    "days": 90,
+    "start": "2026-08-01T01:00:00Z",
+    "first_call": "2026-10-30T01:00:00Z",
+    "first_bar": "2026-08-01T01:00:00Z",
+    "starts_at_listing": false
+   }
+  },
+  "XRP": {
+   "file": "XRP.json",
+   "sha256": "5fd4cf6e0d78c1e3e991b7b306e8865bab5fdf0e505383e866f0d11f0d866750",
+   "fetched_at": "2026-11-02T02:06:01Z",
+   "bars": 2234,
+   "first": "2026-08-01T01:00:00Z",
+   "last": "2026-11-02T02:00:00Z",
+   "daily_until": null,
+   "lookback": {
+    "days": 90,
+    "start": "2026-08-01T01:00:00Z",
+    "first_call": "2026-10-30T01:00:00Z",
+    "first_bar": "2026-08-01T01:00:00Z",
+    "starts_at_listing": false
+   }
+  },
   "XYZ:AAPL": {
    "file": "XYZ:AAPL.json",
-   "sha256": "2a0c25abc6464a79600ab6cd340c2e1a6034ae5ac739782ecb944009e8333e9f",
-   "fetched_at": "2026-11-02T00:51:21Z",
-   "bars": 3003,
+   "sha256": "3acf447d5b3ba470367db0567154e41f9a87ccc830cfb020764df0a00ade72bf",
+   "fetched_at": "2026-11-02T02:06:02Z",
+   "bars": 3005,
    "first": "2026-06-29T22:00:00Z",
-   "last": "2026-11-02T00:00:00Z",
+   "last": "2026-11-02T02:00:00Z",
    "daily_until": null,
    "lookback": {
     "days": 90,
@@ -163,11 +227,11 @@
   },
   "XYZ:CBRS": {
    "file": "XYZ:CBRS.json",
-   "sha256": "faf2e5dcc5c727020cb0ccd5f85ea76abff60dcb7e961953dbc2bc55cdaf1a5a",
-   "fetched_at": "2026-11-02T00:51:22Z",
-   "bars": 3556,
+   "sha256": "cd72fcfe9706576654b5bb2077ea6c9a5d94e23c14e2fa62a6caa9d5a8e7e23d",
+   "fetched_at": "2026-11-02T02:06:03Z",
+   "bars": 3558,
    "first": "2026-06-06T21:00:00Z",
-   "last": "2026-11-02T00:00:00Z",
+   "last": "2026-11-02T02:00:00Z",
    "daily_until": null,
    "lookback": {
     "days": 90,
@@ -179,11 +243,11 @@
   },
   "XYZ:CXMT": {
    "file": "XYZ:CXMT.json",
-   "sha256": "f8b5859d33951d5bac9f17cc62b84d3accc62da7f7526e6150235d77902bba3c",
-   "fetched_at": "2026-11-02T00:51:23Z",
-   "bars": 2640,
+   "sha256": "131f0a4e9b8126f222b30538e2dc31163c119d93b192ed393f998ef903184360",
+   "fetched_at": "2026-11-02T02:06:03Z",
+   "bars": 2642,
    "first": "2026-07-15T01:00:00Z",
-   "last": "2026-11-02T00:00:00Z",
+   "last": "2026-11-02T02:00:00Z",
    "daily_until": null,
    "lookback": {
     "days": 90,
@@ -195,11 +259,11 @@
   },
   "XYZ:JP225": {
    "file": "XYZ:JP225.json",
-   "sha256": "763c60270e1353bb50e5ad7f17fc619bc6a5cc958004487a268f7f12c2d3cef2",
-   "fetched_at": "2026-11-02T00:51:24Z",
-   "bars": 3289,
+   "sha256": "8c5bdc222c37490ffad3edd9c32e34a4e6b38f6aa92f24361501b5467c336852",
+   "fetched_at": "2026-11-02T02:06:04Z",
+   "bars": 3291,
    "first": "2026-06-18T00:00:00Z",
-   "last": "2026-11-02T00:00:00Z",
+   "last": "2026-11-02T02:00:00Z",
    "daily_until": null,
    "lookback": {
     "days": 90,
@@ -211,11 +275,11 @@
   },
   "XYZ:KIOXIA": {
    "file": "XYZ:KIOXIA.json",
-   "sha256": "fa9e439a047bfa07f76eb39bcd1bcd206a1f20356f0af783070726994c514964",
-   "fetched_at": "2026-11-02T00:51:24Z",
-   "bars": 3121,
+   "sha256": "2008a10e4f0b5d1b16f68c006a099c270a1be12b50ba95cf031c6c517a72dfc7",
+   "fetched_at": "2026-11-02T02:06:04Z",
+   "bars": 3123,
    "first": "2026-06-25T00:00:00Z",
-   "last": "2026-11-02T00:00:00Z",
+   "last": "2026-11-02T02:00:00Z",
    "daily_until": null,
    "lookback": {
     "days": 90,
@@ -227,11 +291,11 @@
   },
   "XYZ:ORCL": {
    "file": "XYZ:ORCL.json",
-   "sha256": "94b1bec807f6ef9ea6243807f8ef26ded87fa887dd375da429c620d92c2d5f0a",
-   "fetched_at": "2026-11-02T00:51:25Z",
-   "bars": 3025,
+   "sha256": "f01d0d5ad8a4842474bd086ee1460228e147b443fb708a54b479d7449af09b70",
+   "fetched_at": "2026-11-02T02:06:05Z",
+   "bars": 3027,
    "first": "2026-06-29T00:00:00Z",
-   "last": "2026-11-02T00:00:00Z",
+   "last": "2026-11-02T02:00:00Z",
    "daily_until": null,
    "lookback": {
     "days": 90,
@@ -243,11 +307,11 @@
   },
   "XYZ:SKHX": {
    "file": "XYZ:SKHX.json",
-   "sha256": "7fffd032b936678a80e00616ec3dfbad7937e359ddacfe50b9c959d1cddc04f2",
-   "fetched_at": "2026-11-02T00:51:26Z",
-   "bars": 3003,
+   "sha256": "6acc2792629daa3a918f7c69522258da0a1ce7209dadd94174884c9bf9380344",
+   "fetched_at": "2026-11-02T02:06:05Z",
+   "bars": 3005,
    "first": "2026-06-29T22:00:00Z",
-   "last": "2026-11-02T00:00:00Z",
+   "last": "2026-11-02T02:00:00Z",
    "daily_until": null,
    "lookback": {
     "days": 90,
@@ -259,11 +323,11 @@
   },
   "ZEC": {
    "file": "ZEC.json",
-   "sha256": "f6724e5191c0b73137ccdc972d7ed4182da9017d94d419003f433d7f75657cc1",
-   "fetched_at": "2026-11-02T00:51:26Z",
-   "bars": 11850,
+   "sha256": "df92da5b4f67ea6716547a5ba15ebcf549e6c823dbcb6a55b1325d0b9cdc3fd6",
+   "fetched_at": "2026-11-02T02:06:05Z",
+   "bars": 11852,
    "first": "2025-06-26T07:00:00Z",
-   "last": "2026-11-02T00:00:00Z",
+   "last": "2026-11-02T02:00:00Z",
    "daily_until": null,
    "lookback": {
     "days": 90,

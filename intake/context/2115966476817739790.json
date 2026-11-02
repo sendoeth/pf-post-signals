@@ -1,0 +1,199 @@
+{
+ "version": "quanty.context.v1",
+ "url": "https://x.com/goodalexander/status/2115966476817739790",
+ "post_id": "2115966476817739790",
+ "author": "goodalexander",
+ "posted_at": "2026-10-30T00:38:15Z",
+ "text": "Still like long XMR. sized down BTC am short bunch of single name stocks \n\nTactically short hacker basket til he’s done (don’t wanna fud and will cut so won’t post tickers) hedged it with long xrp (don’t ask)",
+ "asset": "binance:XRPUSDT",
+ "words": [
+  "xrp",
+  "ripple"
+ ],
+ "analysed_at": "2026-11-02T02:05:12Z",
+ "victory_lap": null,
+ "side_in_post": null,
+ "searches": [
+  {
+   "query": "from:goodalexander (xrp OR ripple) since:2026-08-01 until:2026-10-31",
+   "posts": 10,
+   "searches": 4,
+   "coverage": [
+    {
+     "since": "2026-08-01",
+     "until": "2026-08-31",
+     "status": "done",
+     "posts": 2,
+     "run": "2026-11-02T02-04-41Z",
+     "manifest_sha256": "488a148e81998b859992c1789a10b68733a57ea35bd0b9668d6c074006fde0c9"
+    },
+    {
+     "since": "2026-08-31",
+     "until": "2026-09-30",
+     "status": "done",
+     "posts": 5,
+     "run": "2026-11-02T02-04-47Z",
+     "manifest_sha256": "7a31045ddd1e5348d5459b6c67395c1a68e62c3e271716a0e7e4bd0b2944c776"
+    },
+    {
+     "since": "2026-09-30",
+     "until": "2026-10-30",
+     "status": "done",
+     "posts": 3,
+     "run": "2026-11-02T02-04-54Z",
+     "manifest_sha256": "a3227fe8b7cb69db15c48c6fab1df82e802cf1c0fb19af25245f7caa9d44d361"
+    },
+    {
+     "since": "2026-10-30",
+     "until": "2026-10-31",
+     "status": "done",
+     "posts": 1,
+     "run": "2026-11-02T02-05-00Z",
+     "manifest_sha256": "436fc20cc298bf42a3d73a04eae6538d492a94ba173d6d5f9d1773a0c09c2f77"
+    }
+   ],
+   "error": null
+  },
+  {
+   "query": "from:goodalexander (xrp OR ripple) (sold OR sell OR selling OR exited OR closed OR \"took profit\" OR \"took profits\" OR \"taking profit\" OR profits OR trimmed OR \"out of\" OR rotated OR \"stopped out\" OR holding OR \"still long\" OR \"still holding\" OR \"bought more\" OR added OR flipped OR short) since:2026-10-30 until:2026-11-03",
+   "posts": 1,
+   "searches": 1,
+   "coverage": [
+    {
+     "since": "2026-10-30",
+     "until": "2026-11-03",
+     "status": "done",
+     "posts": 1,
+     "run": "2026-11-02T02-05-07Z",
+     "manifest_sha256": "0c08c5679ce8a10aa1341b15373dea0280c31cc8c5d0dc01fee41affec8b1dd1"
+    }
+   ],
+   "error": null
+  }
+ ],
+ "before": [
+  {
+   "id": "2090616614739722343",
+   "url": "https://x.com/goodalexander/status/2090616614739722343",
+   "posted_at": "2026-08-21T01:46:57Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "xrp"
+   ],
+   "text": "What if I told you there was quantum resistant private xrp"
+  },
+  {
+   "id": "2090818633794457990",
+   "url": "https://x.com/goodalexander/status/2090818633794457990",
+   "posted_at": "2026-08-21T15:09:42Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "xrp"
+   ],
+   "text": "Never try to outtrade plumbers They’re simply going to sell xrp at $3 and buy pontoon boats for their families and there’s not much guys like you and me can do about it"
+  },
+  {
+   "id": "2095686688815075342",
+   "url": "https://x.com/goodalexander/status/2095686688815075342",
+   "posted_at": "2026-09-04T01:33:37Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "xrp"
+   ],
+   "text": "*making a private quantum resistant xrp that facilitates cross chain and cross asset portfolio swaps"
+  },
+  {
+   "id": "2099726522844160146",
+   "url": "https://x.com/goodalexander/status/2099726522844160146",
+   "posted_at": "2026-09-15T05:06:28Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "xrp"
+   ],
+   "text": "there was a point in time when it seemed likely we wanted to go the regulated 'banks on the blockchain' route not the 'more crime on Tron' route at which point XRP would be the lindy, US based settlement layer w no natural network inflation that world died"
+  },
+  {
+   "id": "2099739524188266633",
+   "url": "https://x.com/goodalexander/status/2099739524188266633",
+   "posted_at": "2026-09-15T05:58:08Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "xrp"
+   ],
+   "text": "My big bet and how I spend almost all my time is on Post Fiat Private, quantum resistant XRP that makes private portfolio swaps across the deluge of on chain assets (spot and perp) cheap and trustless"
+  },
+  {
+   "id": "2100262862635589939",
+   "url": "https://x.com/goodalexander/status/2100262862635589939",
+   "posted_at": "2026-09-16T16:37:42Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "xrp"
+   ],
+   "text": "Quantum resistant private xrp with proper on chain governance focused on portfolio swaps"
+  },
+  {
+   "id": "2102824301867274332",
+   "url": "https://x.com/goodalexander/status/2102824301867274332",
+   "posted_at": "2026-09-23T18:15:56Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "xrp"
+   ],
+   "text": "Xrp is secretly powering this right?"
+  },
+  {
+   "id": "2109688694043254918",
+   "url": "https://x.com/goodalexander/status/2109688694043254918",
+   "posted_at": "2026-10-12T16:52:35Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "xrp"
+   ],
+   "text": "What % of xrp supply do you think will be burned in 12 months due to RWA transactions"
+  },
+  {
+   "id": "2111148358098375078",
+   "url": "https://x.com/goodalexander/status/2111148358098375078",
+   "posted_at": "2026-10-16T17:32:46Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "xrp"
+   ],
+   "text": "XRP bull case"
+  }
+ ],
+ "suggested_call": null,
+ "after": [],
+ "others_after": 0,
+ "state": "open: nothing disclosed after the call",
+ "side": null,
+ "after_raw": {}
+}

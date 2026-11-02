@@ -1,0 +1,125 @@
+{
+ "version": "quanty.intake.v1",
+ "added_at": "2026-11-02T00:45:35Z",
+ "records": [
+  {
+   "record_file": "records/posts/2115966476817739790_XMR.json",
+   "record_sha256": "dadde2a8e6fb0056b11b683dfd02ae945766eb4a44cb2ca043daf82b0d74128c",
+   "receipt": {
+    "file": "sources/goodalexander/receipts/2115966476817739790.json",
+    "sha256": "a886031e78cabaa0c5d3c2292193a6084f957cdef833ab025c3794ad0fb52bc8",
+    "created": false,
+    "text_truncated": false
+   }
+  }
+ ],
+ "bundle_sha256_before": "8591d74a2f3d7e8066a904fc2d07756ae5cacc0649b486d2263087a2be7a2421",
+ "bundle_sha256_after": "f32d634adfae4c4dc7a631d27544c7e6872d7e3a16c3e9554573c66f4c939768",
+ "avatar": "kept",
+ "candles": "candles refetched (fetch_ohlc.py): entry bars: 52/52 candle opens equal the record entry price",
+ "tickers_registered": [
+  {
+   "ticker": "XMR",
+   "coingecko_id": "monero",
+   "venue": "hyperliquid:XMR",
+   "receipt": "sources/tickers/XMR.json"
+  }
+ ],
+ "scores_previewed": {
+  "goodalexander": {
+   "score": 50.37421658441536,
+   "display": "50.4",
+   "rank": 3,
+   "label": "small sample",
+   "scored": 5,
+   "calls_total": 6,
+   "with_entry": 5,
+   "raw": 51.12264975324608,
+   "weight": 0.3333333333333333,
+   "of": 6
+  }
+ },
+ "scores_after_add": {
+  "goodalexander": {
+   "score": 50.37421658441536,
+   "display": "50.4",
+   "rank": 3,
+   "label": "small sample",
+   "scored": 5,
+   "calls_total": 6,
+   "with_entry": 5,
+   "raw": 51.12264975324608,
+   "weight": 0.3333333333333333,
+   "of": 6
+  }
+ },
+ "scores_before": {
+  "goodalexander": {
+   "score": 51.98266087588089,
+   "display": "52.0",
+   "rank": 2,
+   "label": "small sample",
+   "scored": 4,
+   "calls_total": 5,
+   "with_entry": 4,
+   "raw": 56.93931306558311,
+   "weight": 0.2857142857142857,
+   "of": 6
+  }
+ },
+ "other_callers_unchanged": [
+  "BobLoukas",
+  "Corbanu",
+  "DrProfitCrypto",
+  "koolkrypto223",
+  "mert"
+ ],
+ "frozen_values_checked": 52,
+ "matches_preview": true,
+ "problems": [],
+ "url": "https://x.com/goodalexander/status/2115966476817739790",
+ "record_file": "records/posts/2115966476817739790_XMR.json",
+ "record_sha256": "dadde2a8e6fb0056b11b683dfd02ae945766eb4a44cb2ca043daf82b0d74128c",
+ "receipt": {
+  "file": "sources/goodalexander/receipts/2115966476817739790.json",
+  "sha256": "a886031e78cabaa0c5d3c2292193a6084f957cdef833ab025c3794ad0fb52bc8",
+  "created": false,
+  "text_truncated": false
+ },
+ "score_previewed": {
+  "score": 50.37421658441536,
+  "display": "50.4",
+  "rank": 3,
+  "label": "small sample",
+  "scored": 5,
+  "calls_total": 6,
+  "with_entry": 5,
+  "raw": 51.12264975324608,
+  "weight": 0.3333333333333333,
+  "of": 6
+ },
+ "score_after_add": {
+  "score": 50.37421658441536,
+  "display": "50.4",
+  "rank": 3,
+  "label": "small sample",
+  "scored": 5,
+  "calls_total": 6,
+  "with_entry": 5,
+  "raw": 51.12264975324608,
+  "weight": 0.3333333333333333,
+  "of": 6
+ },
+ "score_before": {
+  "score": 51.98266087588089,
+  "display": "52.0",
+  "rank": 2,
+  "label": "small sample",
+  "scored": 4,
+  "calls_total": 5,
+  "with_entry": 4,
+  "raw": 56.93931306558311,
+  "weight": 0.2857142857142857,
+  "of": 6
+ }
+}

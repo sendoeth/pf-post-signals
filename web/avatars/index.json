@@ -28,5 +28,17 @@
   "source": "https://pbs.twimg.com/profile_images/1975912876243095552/YlVLO4Oz_200x200.jpg",
   "sha256": "56a67eebe730af930357195de192342b5ed29affc25dbc1b69f233d29993c6c5",
   "saved_at": "2026-10-31T17:58:37Z"
+ },
+ "okada_defi0x": {
+  "file": "okada_defi0x.jpg",
+  "source": "https://pbs.twimg.com/profile_images/2041033330813243392/6nVokmhu_200x200.jpg",
+  "sha256": "25ab8a185c12e9cdc2b6aa644e0a3aaf6bdea0be2f4bce46bbbc110d0e87d19c",
+  "saved_at": "2026-11-02T01:34:41Z"
+ },
+ "rosa_onchain": {
+  "file": "rosa_onchain.jpg",
+  "source": "https://pbs.twimg.com/profile_images/2116197416127107073/Dc8dmMa8_200x200.jpg",
+  "sha256": "6dc1670535dc26c35a296cc6cc2bc6bc2d119de13688aa098686415d6598b0a9",
+  "saved_at": "2026-11-02T01:41:30Z"
  }
 }

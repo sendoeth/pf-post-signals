@@ -1,0 +1,127 @@
+{
+ "version": "quanty.intake.v1",
+ "added_at": "2026-11-02T02:06:11Z",
+ "records": [
+  {
+   "record_file": "records/posts/2115966476817739790_XRP.json",
+   "record_sha256": "bb1bca9a2fad352aec1c9ae8e53aaca530fd398c5d9ef41e7a02a0e96fb951a4",
+   "receipt": {
+    "file": "sources/goodalexander/receipts/2115966476817739790.json",
+    "sha256": "a886031e78cabaa0c5d3c2292193a6084f957cdef833ab025c3794ad0fb52bc8",
+    "created": false,
+    "text_truncated": false
+   }
+  }
+ ],
+ "bundle_sha256_before": "f448a80744495dca06798e94bfea56dd1f4574ec7da65b99c35dd58de5dfe709",
+ "bundle_sha256_after": "9e1eae259162792349bacab1835db25737b1f7fe09ec0e7fa25ee41239e4b111",
+ "avatar": "kept",
+ "candles": "candles refetched (fetch_ohlc.py): entry bars: 56/56 candle opens equal the record entry price",
+ "tickers_registered": [
+  {
+   "ticker": "XRP",
+   "coingecko_id": "ripple",
+   "venue": "binance:XRPUSDT",
+   "receipt": "sources/tickers/XRP.json"
+  }
+ ],
+ "scores_previewed": {
+  "goodalexander": {
+   "score": 52.599654787849644,
+   "display": "52.6",
+   "rank": 3,
+   "label": "small sample",
+   "scored": 6,
+   "calls_total": 7,
+   "with_entry": 6,
+   "raw": 56.93241276759905,
+   "weight": 0.375,
+   "of": 8
+  }
+ },
+ "scores_after_add": {
+  "goodalexander": {
+   "score": 52.599654787849644,
+   "display": "52.6",
+   "rank": 3,
+   "label": "small sample",
+   "scored": 6,
+   "calls_total": 7,
+   "with_entry": 6,
+   "raw": 56.93241276759905,
+   "weight": 0.375,
+   "of": 8
+  }
+ },
+ "scores_before": {
+  "goodalexander": {
+   "score": 50.44045258961667,
+   "display": "50.4",
+   "rank": 4,
+   "label": "small sample",
+   "scored": 5,
+   "calls_total": 6,
+   "with_entry": 5,
+   "raw": 51.32135776885001,
+   "weight": 0.3333333333333333,
+   "of": 8
+  }
+ },
+ "other_callers_unchanged": [
+  "BobLoukas",
+  "Corbanu",
+  "DrProfitCrypto",
+  "Okada_DeFi0x",
+  "koolkrypto223",
+  "mert",
+  "rosa_onchain"
+ ],
+ "frozen_values_checked": 56,
+ "matches_preview": true,
+ "problems": [],
+ "url": "https://x.com/goodalexander/status/2115966476817739790",
+ "record_file": "records/posts/2115966476817739790_XRP.json",
+ "record_sha256": "bb1bca9a2fad352aec1c9ae8e53aaca530fd398c5d9ef41e7a02a0e96fb951a4",
+ "receipt": {
+  "file": "sources/goodalexander/receipts/2115966476817739790.json",
+  "sha256": "a886031e78cabaa0c5d3c2292193a6084f957cdef833ab025c3794ad0fb52bc8",
+  "created": false,
+  "text_truncated": false
+ },
+ "score_previewed": {
+  "score": 52.599654787849644,
+  "display": "52.6",
+  "rank": 3,
+  "label": "small sample",
+  "scored": 6,
+  "calls_total": 7,
+  "with_entry": 6,
+  "raw": 56.93241276759905,
+  "weight": 0.375,
+  "of": 8
+ },
+ "score_after_add": {
+  "score": 52.599654787849644,
+  "display": "52.6",
+  "rank": 3,
+  "label": "small sample",
+  "scored": 6,
+  "calls_total": 7,
+  "with_entry": 6,
+  "raw": 56.93241276759905,
+  "weight": 0.375,
+  "of": 8
+ },
+ "score_before": {
+  "score": 50.44045258961667,
+  "display": "50.4",
+  "rank": 4,
+  "label": "small sample",
+  "scored": 5,
+  "calls_total": 6,
+  "with_entry": 5,
+  "raw": 51.32135776885001,
+  "weight": 0.3333333333333333,
+  "of": 8
+ }
+}

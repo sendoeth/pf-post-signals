@@ -1,0 +1,488 @@
+{
+ "version": "quanty.context.v1",
+ "url": "https://x.com/rosa_onchain/status/2116091851086393720",
+ "post_id": "2116091851086393720",
+ "author": "rosa_onchain",
+ "posted_at": "2026-10-30T08:56:27Z",
+ "text": "We are not bearish enough. 📉\n\nA little more, My buy orders are still waiting to get filled!  Once again, for those who missed it: \n\n> Will buy $NEAR at $3 \n> Will buy $HYPE at $60  \n> Will buy $SOL at $70  \n> Bought $INJ at $4    \n\n> Accumulated more $INJ at $7.  \n\nI'm ready to ",
+ "asset": "binance:INJUSDT",
+ "words": [
+  "inj",
+  "injective"
+ ],
+ "analysed_at": "2026-11-02T01:41:20Z",
+ "victory_lap": null,
+ "side_in_post": null,
+ "searches": [
+  {
+   "query": "from:rosa_onchain (inj OR injective) since:2026-08-01 until:2026-10-31",
+   "posts": 185,
+   "searches": 12,
+   "coverage": [
+    {
+     "since": "2026-08-01",
+     "until": "2026-08-31",
+     "status": "split",
+     "posts": 140
+    },
+    {
+     "since": "2026-08-01",
+     "until": "2026-08-16",
+     "status": "done",
+     "posts": 20,
+     "run": "2026-11-02T01-39-42Z",
+     "manifest_sha256": "f2c3178b83948305edb26c53a8deaa31825ce588338a913d1b41bd5e11e3e8dd"
+    },
+    {
+     "since": "2026-08-16",
+     "until": "2026-08-31",
+     "status": "split",
+     "posts": 80
+    },
+    {
+     "since": "2026-08-16",
+     "until": "2026-08-23",
+     "status": "done",
+     "posts": 100,
+     "run": "2026-11-02T01-40-00Z",
+     "manifest_sha256": "b3ed72794f17a423d4c03e77bec55b22dd5ecd007ff416d02f1db2261cabd7f3"
+    },
+    {
+     "since": "2026-08-23",
+     "until": "2026-08-31",
+     "status": "done",
+     "posts": 70,
+     "run": "2026-11-02T01-40-13Z",
+     "manifest_sha256": "267b5d71cafb7ce258971d9782ae8e7f0dc2b924a897105b3f8461b368e23bd6"
+    },
+    {
+     "since": "2026-08-31",
+     "until": "2026-09-30",
+     "status": "done",
+     "posts": 0
+    },
+    {
+     "since": "2026-09-30",
+     "until": "2026-10-30",
+     "status": "split",
+     "posts": 60
+    },
+    {
+     "since": "2026-09-30",
+     "until": "2026-10-15",
+     "status": "split",
+     "posts": 40
+    },
+    {
+     "since": "2026-09-30",
+     "until": "2026-10-07",
+     "status": "split",
+     "posts": 40
+    },
+    {
+     "since": "2026-09-30",
+     "until": "2026-10-03",
+     "status": "not searched"
+    },
+    {
+     "since": "2026-10-03",
+     "until": "2026-10-07",
+     "status": "not searched"
+    },
+    {
+     "since": "2026-10-07",
+     "until": "2026-10-15",
+     "status": "not searched"
+    },
+    {
+     "since": "2026-10-15",
+     "until": "2026-10-30",
+     "status": "not searched"
+    },
+    {
+     "since": "2026-10-30",
+     "until": "2026-10-31",
+     "status": "not searched"
+    }
+   ],
+   "error": "throttled: 3 empty pages in a row from 2026-09-30"
+  },
+  {
+   "query": "from:rosa_onchain (inj OR injective) (sold OR sell OR selling OR exited OR closed OR \"took profit\" OR \"took profits\" OR \"taking profit\" OR profits OR trimmed OR \"out of\" OR rotated OR \"stopped out\" OR holding OR \"still long\" OR \"still holding\" OR \"bought more\" OR added OR flipped OR short) since:2026-10-30 until:2026-11-03",
+   "posts": 0,
+   "searches": 1,
+   "coverage": [
+    {
+     "since": "2026-10-30",
+     "until": "2026-11-03",
+     "status": "done",
+     "posts": 0,
+     "note": "empty (at the end of the range)"
+    }
+   ],
+   "error": null
+  }
+ ],
+ "before": [
+  {
+   "id": "2088254235481940001",
+   "url": "https://x.com/rosa_onchain/status/2088254235481940001",
+   "posted_at": "2026-08-14T13:19:42Z",
+   "kind": "post",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "inj"
+   ],
+   "text": "Are we in bottom? Market condition doesn't look good right now. We broke below $63k last night, and BTC is currently trading below all the major EMAs in 4H. My $INJ entry was at $5.60, and INJ is currently around $4.40, my SL is getting close. For now, I'm hoping for a relief bou"
+  },
+  {
+   "id": "2088263514226041152",
+   "url": "https://x.com/rosa_onchain/status/2088263514226041152",
+   "posted_at": "2026-08-14T13:56:34Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "inj"
+   ],
+   "text": "For INJ or BTC?"
+  },
+  {
+   "id": "2088626190974353707",
+   "url": "https://x.com/rosa_onchain/status/2088626190974353707",
+   "posted_at": "2026-08-15T13:57:43Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "inj"
+   ],
+   "text": "Thought it’s INJ, ggs tho."
+  },
+  {
+   "id": "2088689547588853877",
+   "url": "https://x.com/rosa_onchain/status/2088689547588853877",
+   "posted_at": "2026-08-15T18:09:28Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "inj"
+   ],
+   "text": "Me love INJ , really have nothing else to say."
+  },
+  {
+   "id": "2089280112990769385",
+   "url": "https://x.com/rosa_onchain/status/2089280112990769385",
+   "posted_at": "2026-08-17T09:16:10Z",
+   "kind": "quote",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "inj",
+    "injective"
+   ],
+   "text": "A date, but made it cross-chain! 👀 Met @InjectiveQuants discussing how moving assets across chains is smooth now! With Injective × LiFi, INJ and native USDC can move easily across 60+ chains. @lifiprotocol is a cross chain routing layer, means it can find routes across different "
+  },
+  {
+   "id": "2089356771303575751",
+   "url": "https://x.com/rosa_onchain/status/2089356771303575751",
+   "posted_at": "2026-08-17T14:20:47Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "injective"
+   ],
+   "text": "Injective quants 😂"
+  },
+  {
+   "id": "2089669460571635888",
+   "url": "https://x.com/rosa_onchain/status/2089669460571635888",
+   "posted_at": "2026-08-18T11:03:18Z",
+   "kind": "post",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "inj"
+   ],
+   "text": "This is the girl who bought $1,000 worth of $INJ at a $4.60 average price and now $INJ is sitting around $4.00. We HODL until $5. What do you think cooked or we will cook."
+  },
+  {
+   "id": "2089679766547026192",
+   "url": "https://x.com/rosa_onchain/status/2089679766547026192",
+   "posted_at": "2026-08-18T11:44:15Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "inj"
+   ],
+   "text": "I am on spot, will be needing this INJ for buyback too, so gotta hold anyway. Also check the charts at 1day time frame"
+  },
+  {
+   "id": "2090026457997430825",
+   "url": "https://x.com/rosa_onchain/status/2090026457997430825",
+   "posted_at": "2026-08-19T10:41:53Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "injective"
+   ],
+   "text": "Injective cooking 🔥"
+  },
+  {
+   "id": "2090101171793076231",
+   "url": "https://x.com/rosa_onchain/status/2090101171793076231",
+   "posted_at": "2026-08-19T15:38:46Z",
+   "kind": "quote",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "inj"
+   ],
+   "text": "$70K LOADING! $BTC is pumping, with a solid 6% move already captured. Meanwhile, $INJ is up 8.2% today! 🔥 I’m already out of the loss zone, and now it’s time to book some profits from this move. Higher $BTC, higher $INJ!"
+  },
+  {
+   "id": "2090102204023841060",
+   "url": "https://x.com/rosa_onchain/status/2090102204023841060",
+   "posted_at": "2026-08-19T15:42:52Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "inj"
+   ],
+   "text": "Yeah, $BTC pumped so INJ followed."
+  },
+  {
+   "id": "2090481499602891020",
+   "url": "https://x.com/rosa_onchain/status/2090481499602891020",
+   "posted_at": "2026-08-20T16:50:03Z",
+   "kind": "quote",
+   "label": "own call",
+   "why": "side words ['still bullish']",
+   "side": 1,
+   "words": [
+    "inj",
+    "injective"
+   ],
+   "text": "Push $INJ to $6 so your sister can book some solid 3 figs. I think $BTC can pump up to $77k - $82K, so I wouldn’t recommend shorting here. If BTC keeps moving, $INJ could easily catch another leg up too $6-$7. @injective is up 8% today only, and i am still bullish. (NFA btw)"
+  },
+  {
+   "id": "2090717670174072947",
+   "url": "https://x.com/rosa_onchain/status/2090717670174072947",
+   "posted_at": "2026-08-21T08:28:30Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "inj"
+   ],
+   "text": "Yeah holding INJ for $6"
+  },
+  {
+   "id": "2090726600275091520",
+   "url": "https://x.com/rosa_onchain/status/2090726600275091520",
+   "posted_at": "2026-08-21T09:03:59Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "inj"
+   ],
+   "text": "Wo deal INJ trade pe hui thi 👀 But InshaAllah soon."
+  },
+  {
+   "id": "2091098746851602655",
+   "url": "https://x.com/rosa_onchain/status/2091098746851602655",
+   "posted_at": "2026-08-22T09:42:46Z",
+   "kind": "quote",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "inj"
+   ],
+   "text": "Market is brutal! Closed my $INJ position, bought at $4.6 and sold at $5.1. - They say the harder something moves up, the harder it can fall down too. Let’s see if that plays out for $BTC👀 For now, I’ll be keeping an eye out for short setups. Btw Happy Weekend 🩶"
+  },
+  {
+   "id": "2091882880800809001",
+   "url": "https://x.com/rosa_onchain/status/2091882880800809001",
+   "posted_at": "2026-08-24T13:38:38Z",
+   "kind": "post",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "injective"
+   ],
+   "text": "Still confused about the Buyback and Ambassador Program by @injective? Watch me break down some of the most frequently asked questions! And yes, 20% + ROI is reall, all you gotta do is DYOR."
+  },
+  {
+   "id": "2091945619074224283",
+   "url": "https://x.com/rosa_onchain/status/2091945619074224283",
+   "posted_at": "2026-08-24T17:47:56Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "inj"
+   ],
+   "text": "30 to 50 INJ tokens."
+  },
+  {
+   "id": "2091946494689685599",
+   "url": "https://x.com/rosa_onchain/status/2091946494689685599",
+   "posted_at": "2026-08-24T17:51:25Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "inj"
+   ],
+   "text": "20% + roi usually, means if u commit 100 INJ you will get 20 more INJ within 6 days. Will explain in VC too."
+  },
+  {
+   "id": "2092301521832772021",
+   "url": "https://x.com/rosa_onchain/status/2092301521832772021",
+   "posted_at": "2026-08-25T17:22:10Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "injective"
+   ],
+   "text": "injective not coming slow"
+  },
+  {
+   "id": "2092529537057993084",
+   "url": "https://x.com/rosa_onchain/status/2092529537057993084",
+   "posted_at": "2026-08-26T08:28:13Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "inj"
+   ],
+   "text": "Motion on INJ just launched is this the same one?"
+  },
+  {
+   "id": "2092675940686119220",
+   "url": "https://x.com/rosa_onchain/status/2092675940686119220",
+   "posted_at": "2026-08-26T18:09:58Z",
+   "kind": "post",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "inj",
+    "injective"
+   ],
+   "text": "Today was Injective buyback program: I made it through! the basket filled within just a few seconds. > My average buying: $5.5 per $INJ > Committed100 $INJ tokens > Expected ROI this time: 20% Lets see how much profit we will make this month!"
+  },
+  {
+   "id": "2092912167221891381",
+   "url": "https://x.com/rosa_onchain/status/2092912167221891381",
+   "posted_at": "2026-08-27T09:48:39Z",
+   "kind": "post",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "inj"
+   ],
+   "text": "Just a reminder that within the last 8 days: $BTC +30% $HYPE +47% $INJ +53% $BNB +23% $SOL +40% $ETH +37% Even a $1000 invested in any of these would already have turned into $1300–$1500 in just 8 days. The market is giving endless opportunities to make money. But we’re too distr"
+  },
+  {
+   "id": "2092944693088907525",
+   "url": "https://x.com/rosa_onchain/status/2092944693088907525",
+   "posted_at": "2026-08-27T11:57:54Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "inj"
+   ],
+   "text": "Committed to INJ 🩵"
+  },
+  {
+   "id": "2093996902136389722",
+   "url": "https://x.com/rosa_onchain/status/2093996902136389722",
+   "posted_at": "2026-08-30T09:39:00Z",
+   "kind": "post",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "injective"
+   ],
+   "text": "Airdrop season on Injective is LIVE! > Users with around $100 + NinjaPass received upto 4-figure airdrop from @motionismxyz. > Shroom holders also received 2–3 figure airdrops. Next potential targets could include users holding: • NinjaPass • Anon ( just bought one) • Quant • May"
+  },
+  {
+   "id": "2093999135615832205",
+   "url": "https://x.com/rosa_onchain/status/2093999135615832205",
+   "posted_at": "2026-08-30T09:47:53Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "injective"
+   ],
+   "text": "yes memecoins on Injective chain"
+  },
+  {
+   "id": "2094005924042268752",
+   "url": "https://x.com/rosa_onchain/status/2094005924042268752",
+   "posted_at": "2026-08-30T10:14:51Z",
+   "kind": "reply",
+   "label": "own mention",
+   "why": "no side words",
+   "side": null,
+   "words": [
+    "injective"
+   ],
+   "text": "On Injective onliiii"
+  }
+ ],
+ "suggested_call": {
+  "id": "2090481499602891020",
+  "url": "https://x.com/rosa_onchain/status/2090481499602891020",
+  "posted_at": "2026-08-20T16:50:03Z",
+  "kind": "quote",
+  "label": "own call",
+  "why": "side words ['still bullish']",
+  "side": 1,
+  "words": [
+   "inj",
+   "injective"
+  ],
+  "text": "Push $INJ to $6 so your sister can book some solid 3 figs. I think $BTC can pump up to $77k - $82K, so I wouldn’t recommend shorting here. If BTC keeps moving, $INJ could easily catch another leg up too $6-$7. @injective is up 8% today only, and i am still bullish. (NFA btw)"
+ },
+ "after": [],
+ "others_after": 0,
+ "state": "open: nothing disclosed after the call",
+ "side": 1,
+ "after_raw": {}
+}

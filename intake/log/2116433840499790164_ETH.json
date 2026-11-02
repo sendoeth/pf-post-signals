@@ -1,0 +1,97 @@
+{
+ "version": "quanty.intake.v1",
+ "added_at": "2026-11-02T01:35:14Z",
+ "records": [
+  {
+   "record_file": "records/posts/2116433840499790164_ETH.json",
+   "record_sha256": "1bf11407eff18cdeb30a3fde555e6979594f5e5b1acd19c71ccbd689c7e0a126",
+   "receipt": {
+    "file": "sources/okada_defi0x/receipts/2116433840499790164.json",
+    "sha256": "079a1fef820ffee61987e1b30f3b5d73ba2be844da9eb2e0d0ee4044a0359fd9",
+    "created": false,
+    "text_truncated": true
+   }
+  }
+ ],
+ "bundle_sha256_before": "f32d634adfae4c4dc7a631d27544c7e6872d7e3a16c3e9554573c66f4c939768",
+ "bundle_sha256_after": "6c5ae0205984e96995e32956333cae6f1d67b136ce119710b55f16407ce5bd12",
+ "avatar": "saved web/avatars/okada_defi0x.jpg",
+ "candles": "candles refetched (fetch_ohlc.py): entry bars: 53/53 candle opens equal the record entry price",
+ "tickers_registered": [],
+ "scores_previewed": {
+  "Okada_DeFi0x": {
+   "score": 52.96237338030403,
+   "display": "53.0",
+   "rank": 2,
+   "label": "small sample",
+   "scored": 1,
+   "calls_total": 1,
+   "with_entry": 1,
+   "raw": 82.58610718334431,
+   "weight": 0.09090909090909091,
+   "of": 7
+  }
+ },
+ "scores_after_add": {
+  "Okada_DeFi0x": {
+   "score": 52.96237338030403,
+   "display": "53.0",
+   "rank": 2,
+   "label": "small sample",
+   "scored": 1,
+   "calls_total": 1,
+   "with_entry": 1,
+   "raw": 82.58610718334431,
+   "weight": 0.09090909090909091,
+   "of": 7
+  }
+ },
+ "scores_before": {
+  "Okada_DeFi0x": null
+ },
+ "other_callers_unchanged": [
+  "BobLoukas",
+  "Corbanu",
+  "DrProfitCrypto",
+  "goodalexander",
+  "koolkrypto223",
+  "mert"
+ ],
+ "frozen_values_checked": 53,
+ "matches_preview": true,
+ "problems": [],
+ "url": "https://x.com/Okada_DeFi0x/status/2116433840499790164",
+ "record_file": "records/posts/2116433840499790164_ETH.json",
+ "record_sha256": "1bf11407eff18cdeb30a3fde555e6979594f5e5b1acd19c71ccbd689c7e0a126",
+ "receipt": {
+  "file": "sources/okada_defi0x/receipts/2116433840499790164.json",
+  "sha256": "079a1fef820ffee61987e1b30f3b5d73ba2be844da9eb2e0d0ee4044a0359fd9",
+  "created": false,
+  "text_truncated": true
+ },
+ "score_previewed": {
+  "score": 52.96237338030403,
+  "display": "53.0",
+  "rank": 2,
+  "label": "small sample",
+  "scored": 1,
+  "calls_total": 1,
+  "with_entry": 1,
+  "raw": 82.58610718334431,
+  "weight": 0.09090909090909091,
+  "of": 7
+ },
+ "score_after_add": {
+  "score": 52.96237338030403,
+  "display": "53.0",
+  "rank": 2,
+  "label": "small sample",
+  "scored": 1,
+  "calls_total": 1,
+  "with_entry": 1,
+  "raw": 82.58610718334431,
+  "weight": 0.09090909090909091,
+  "of": 7
+ },
+ "score_before": null
+}

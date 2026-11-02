@@ -1,0 +1,105 @@
+{
+ "version": "quanty.intake.v1",
+ "added_at": "2026-11-02T01:42:04Z",
+ "records": [
+  {
+   "record_file": "records/posts/2116091851086393720_INJ.json",
+   "record_sha256": "21408a1b0c8249d396d4d03202a95576cd0875d9bb79b1cf96faac41a840d074",
+   "receipt": {
+    "file": "sources/rosa_onchain/receipts/2116091851086393720.json",
+    "sha256": "96f9feb84443ffb818d73b8d60a277671342ae3e1934c70d6c78ff6a2cf47dbb",
+    "created": false,
+    "text_truncated": true
+   }
+  }
+ ],
+ "bundle_sha256_before": "446bb8006b92b2cb1e06069ef926d5c1a031cab8ab504ac467230221ef8abe03",
+ "bundle_sha256_after": "1fd3de4d0443a993e85dad78834556c229f85a1f4b59f3bd775b7bd9ce6008ca",
+ "avatar": "saved web/avatars/rosa_onchain.jpg",
+ "candles": "candles refetched (fetch_ohlc.py): entry bars: 55/55 candle opens equal the record entry price",
+ "tickers_registered": [
+  {
+   "ticker": "INJ",
+   "coingecko_id": "injective-protocol",
+   "venue": "binance:INJUSDT",
+   "receipt": "sources/tickers/INJ.json"
+  }
+ ],
+ "scores_previewed": {
+  "rosa_onchain": {
+   "score": 48.43362612169461,
+   "display": "48.4",
+   "rank": 6,
+   "label": "small sample",
+   "scored": 1,
+   "calls_total": 1,
+   "with_entry": 1,
+   "raw": 32.76988733864067,
+   "weight": 0.09090909090909091,
+   "of": 8
+  }
+ },
+ "scores_after_add": {
+  "rosa_onchain": {
+   "score": 48.43362612169461,
+   "display": "48.4",
+   "rank": 6,
+   "label": "small sample",
+   "scored": 1,
+   "calls_total": 1,
+   "with_entry": 1,
+   "raw": 32.76988733864067,
+   "weight": 0.09090909090909091,
+   "of": 8
+  }
+ },
+ "scores_before": {
+  "rosa_onchain": null
+ },
+ "other_callers_unchanged": [
+  "BobLoukas",
+  "Corbanu",
+  "DrProfitCrypto",
+  "Okada_DeFi0x",
+  "goodalexander",
+  "koolkrypto223",
+  "mert"
+ ],
+ "frozen_values_checked": 55,
+ "matches_preview": true,
+ "problems": [],
+ "url": "https://x.com/rosa_onchain/status/2116091851086393720",
+ "record_file": "records/posts/2116091851086393720_INJ.json",
+ "record_sha256": "21408a1b0c8249d396d4d03202a95576cd0875d9bb79b1cf96faac41a840d074",
+ "receipt": {
+  "file": "sources/rosa_onchain/receipts/2116091851086393720.json",
+  "sha256": "96f9feb84443ffb818d73b8d60a277671342ae3e1934c70d6c78ff6a2cf47dbb",
+  "created": false,
+  "text_truncated": true
+ },
+ "score_previewed": {
+  "score": 48.43362612169461,
+  "display": "48.4",
+  "rank": 6,
+  "label": "small sample",
+  "scored": 1,
+  "calls_total": 1,
+  "with_entry": 1,
+  "raw": 32.76988733864067,
+  "weight": 0.09090909090909091,
+  "of": 8
+ },
+ "score_after_add": {
+  "score": 48.43362612169461,
+  "display": "48.4",
+  "rank": 6,
+  "label": "small sample",
+  "scored": 1,
+  "calls_total": 1,
+  "with_entry": 1,
+  "raw": 32.76988733864067,
+  "weight": 0.09090909090909091,
+  "of": 8
+ },
+ "score_before": null
+}
