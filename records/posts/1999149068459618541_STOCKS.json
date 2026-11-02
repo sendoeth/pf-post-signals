@@ -6169,5 +6169,10 @@
    "stocks"
   ],
   "reason": "reviewed: expects 'a good 6-8 Week run higher' for stocks and names a stop (the Nov 17th candle)"
+ },
+ "side_choice": {
+  "method": "manual",
+  "terms": [],
+  "reason": "reviewed: expects 'a good 6-8 Week run higher' for stocks and names a stop (the Nov 17th candle)"
  }
 }

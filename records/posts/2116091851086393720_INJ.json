@@ -6,7 +6,7 @@
   "author": "rosa_onchain",
   "posted_at": "2026-10-30T08:56:27Z",
   "posted_at_source": "receipt",
-  "text": "We are not bearish enough. 📉\n\nA little more, My buy orders are still waiting to get filled!  Once again, for those who missed it: \n\n> Will buy $NEAR at $3 \n> Will buy $HYPE at $60  \n> Will buy $SOL at $70  \n> Bought $INJ at $4    \n\n> Accumulated more $INJ at $7.  \n\nI'm ready to ",
+  "text": "We are not bearish enough. \ud83d\udcc9\n\nA little more, My buy orders are still waiting to get filled!  Once again, for those who missed it: \n\n> Will buy $NEAR at $3 \n> Will buy $HYPE at $60  \n> Will buy $SOL at $70  \n> Bought $INJ at $4    \n\n> Accumulated more $INJ at $7.  \n\nI'm ready to ",
   "receipt_sha256": "96f9feb84443ffb818d73b8d60a277671342ae3e1934c70d6c78ff6a2cf47dbb"
  },
  "asset": {
@@ -344,5 +344,12 @@
    ],
    "words": "Bought $INJ"
   }
+ },
+ "side_choice": {
+  "method": "detector-leg",
+  "terms": [
+   "Bought $INJ"
+  ],
+  "reason": "'bought' before the coin"
  }
 }

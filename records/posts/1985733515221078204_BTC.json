@@ -34861,5 +34861,14 @@
    "bitcoin"
   ],
   "reason": null
+ },
+ "side_choice": {
+  "method": "detector",
+  "terms": [
+   "we're still long",
+   "still long",
+   "We bought"
+  ],
+  "reason": null
  }
 }

@@ -4745,5 +4745,13 @@
    "stocks"
   ],
   "reason": null
+ },
+ "side_choice": {
+  "method": "detector",
+  "terms": [
+   "I'm still long",
+   "still long"
+  ],
+  "reason": null
  }
 }

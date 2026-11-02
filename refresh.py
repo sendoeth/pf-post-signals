@@ -59,6 +59,24 @@ def patched(series, frozen, revisions, label):
     return sorted(bars.items())
 
 
+# fields a refresh cannot recompute from prices: carried from the old record as they are. Every optional field
+# of the record schema must be recomputed by resolve / lifecycle or listed here (tests.test_refresh checks it):
+# side_choice was dropped by every refresh from step 16 until 2026-11-02, renamed_from from step 22.
+CARRY_TOP = ("trade", "asset_choice", "side_choice")
+CARRY_ASSET = ("stand_in", "adjustments", "renamed_from")
+RECOMPUTED_BY_LIFECYCLE = ("lifecycle", "closed")
+
+
+def carry_over(old, new):
+    for k in CARRY_TOP:
+        if k in old:
+            new[k] = old[k]
+    for k in CARRY_ASSET:
+        if k in old.get("asset", {}):
+            new["asset"][k] = old["asset"][k]
+    return new
+
+
 def main():
     started = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     v = resolve.validator()
@@ -120,15 +138,13 @@ def main():
             else:                                       # ledger trades: the published post itself never changes
                 post = dict(old["post"])
             asset = resolve.asset_info(old["asset"]["name"])
-            for k in ("stand_in", "adjustments"):        # labels the page shows
+            for k in CARRY_ASSET:                        # labels the page shows, and a rename (step 22)
                 if k in old["asset"]:
                     asset[k] = old["asset"][k]
             new = resolve.resolve(post, asset, shared[asset["name"]], prices.label, old.get("side"))
             until = prices.daily_until(asset, post["posted_at"])
             resolve.label_daily(new, until)
-            for k in ("trade", "asset_choice"):          # the ledger's own values and how the asset was chosen
-                if k in old:
-                    new[k] = old[k]
+            carry_over(old, new)
             key = f'{new["post"]["id"]}|{new["asset"]["name"]}'
             if key in life_cfg:                           # follow-up posts: trims / closes / flips (step 13)
                 lifecycle.apply(new, life_cfg[key], shared[asset["name"]], until)

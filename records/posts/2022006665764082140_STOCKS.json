@@ -5037,5 +5037,10 @@
    "stocks"
   ],
   "reason": "reviewed: 'Still leaning and positioned on the bull side' for stocks: his own positioning, 15 days after the last added stocks call"
+ },
+ "side_choice": {
+  "method": "manual",
+  "terms": [],
+  "reason": "reviewed: 'Still leaning and positioned on the bull side' for stocks: his own positioning, 15 days after the last added stocks call"
  }
 }

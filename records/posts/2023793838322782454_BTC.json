@@ -24777,5 +24777,10 @@
    "bitcoin"
   ],
   "reason": "reviewed: 'Bitcoin price action remains horrendous ... has to reclaim $72k to even consider a counter-trend move': a bearish stance, 18 days after the last added bitcoin call"
+ },
+ "side_choice": {
+  "method": "manual",
+  "terms": [],
+  "reason": "reviewed: 'Bitcoin price action remains horrendous ... has to reclaim $72k to even consider a counter-trend move': a bearish stance, 18 days after the last added bitcoin call"
  }
 }

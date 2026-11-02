@@ -251,5 +251,12 @@
    ],
    "words": "deployed 60% of my portfolio into $ETH and $HYPE"
   }
+ },
+ "side_choice": {
+  "method": "detector-leg",
+  "terms": [
+   "deployed 60% of my portfolio into $ETH and $HYPE"
+  ],
+  "reason": "'deployed' before the coin"
  }
 }

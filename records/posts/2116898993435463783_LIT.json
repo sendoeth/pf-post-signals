@@ -124,5 +124,12 @@
    ],
    "words": "buying ~equal premium of $LIT calls"
   }
+ },
+ "side_choice": {
+  "method": "detector-leg",
+  "terms": [
+   "buying ~equal premium of $LIT calls"
+  ],
+  "reason": "buying calls"
  }
 }

@@ -9369,5 +9369,13 @@
    "gold"
   ],
   "reason": null
+ },
+ "side_choice": {
+  "method": "detector",
+  "terms": [
+   "we're looking at reaccumulation of long",
+   "long positions"
+  ],
+  "reason": null
  }
 }

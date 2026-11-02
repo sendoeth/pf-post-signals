@@ -18193,5 +18193,12 @@
    "copper"
   ],
   "reason": null
+ },
+ "side_choice": {
+  "method": "detector",
+  "terms": [
+   "I'm long"
+  ],
+  "reason": null
  }
 }

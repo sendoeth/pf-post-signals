@@ -34876,6 +34876,15 @@
       ],
       "reason": null
      },
+     "side_choice": {
+      "method": "detector",
+      "terms": [
+       "we're still long",
+       "still long",
+       "We bought"
+      ],
+      "reason": null
+     },
      "best": {
       "at": "2025-11-11T03:00:00Z",
       "price": 106655.02,
@@ -34884,7 +34893,7 @@
       "for_call": 0.03350871953473078
      },
      "record_file": "records/posts/1985733515221078204_BTC.json",
-     "record_sha256": "5d4adbc5c19c721e35651530217a7340971163aa6da937ce33fad9a897231436"
+     "record_sha256": "32dc17cb009ce67819345b4b78c2261b0ba629f55feabfb23ece42b012f1f225"
     },
     {
      "schema": "post_price.v1",
@@ -34952,6 +34961,13 @@
       ],
       "reason": null
      },
+     "side_choice": {
+      "method": "detector",
+      "terms": [
+       "bearish on"
+      ],
+      "reason": null
+     },
      "best": {
       "at": "2026-06-25T14:00:00Z",
       "price": 58291.7,
@@ -34960,7 +34976,7 @@
       "for_call": 0.35892203502939657
      },
      "record_file": "records/posts/2009356789356314714_BTC.json",
-     "record_sha256": "b119f23698238cff6de6c8e972ea5fb15684876a5867041958f2da9c9bec05ae"
+     "record_sha256": "dc45d01459abbf12905ba9c537da97079440d2534a1a97779cc53e6baa0235d8"
     },
     {
      "schema": "post_price.v1",
@@ -35028,6 +35044,11 @@
       ],
       "reason": "reviewed: the 4-year cycle update says the move to $98k was the counter-trend move and the declining phase is on ('I hate being bearish any asset, especially bitcoin'); the detector's 'very bullish on' is about fundamentals in general, so the side is set by hand"
      },
+     "side_choice": {
+      "method": "manual",
+      "terms": [],
+      "reason": "reviewed: the 4-year cycle update says the move to $98k was the counter-trend move and the declining phase is on ('I hate being bearish any asset, especially bitcoin'); the detector's 'very bullish on' is about fundamentals in general, so the side is set by hand"
+     },
      "best": {
       "at": "2026-06-25T14:00:00Z",
       "price": 58291.7,
@@ -35036,7 +35057,7 @@
       "for_call": 0.29669760350876007
      },
      "record_file": "records/posts/2017256982743339269_BTC.json",
-     "record_sha256": "e0e741448ed96f3c73b7c60341130f9f387b855608a62a170b5346f971853d96"
+     "record_sha256": "346f5a71369dc86b8835c6220ae03799836f5473f90304e2aa401d613c91a887"
     },
     {
      "schema": "post_price.v1",
@@ -35104,6 +35125,11 @@
       ],
       "reason": "reviewed: 'Bitcoin price action remains horrendous ... has to reclaim $72k to even consider a counter-trend move': a bearish stance, 18 days after the last added bitcoin call"
      },
+     "side_choice": {
+      "method": "manual",
+      "terms": [],
+      "reason": "reviewed: 'Bitcoin price action remains horrendous ... has to reclaim $72k to even consider a counter-trend move': a bearish stance, 18 days after the last added bitcoin call"
+     },
      "best": {
       "at": "2026-06-25T14:00:00Z",
       "price": 58291.7,
@@ -35112,7 +35138,7 @@
       "for_call": 0.13664130232580185
      },
      "record_file": "records/posts/2023793838322782454_BTC.json",
-     "record_sha256": "426a62c42f6e6ff3946bfc5b626d8de36de87aee941c95b0a2c35c8d4c76dee1"
+     "record_sha256": "026f8a5be0c0b86ffbf6ff9c1f0bb0bb712eb03e9ed63532fe16566d7510cc99"
     },
     {
      "schema": "post_price.v1",
@@ -35181,6 +35207,11 @@
       ],
       "reason": "reviewed: the 4 Year Cycle Model Portfolio 'made its first buy in 3.5yrs. Picking up 10BTC at $65,000': a stated buy"
      },
+     "side_choice": {
+      "method": "manual",
+      "terms": [],
+      "reason": "reviewed: the 4 Year Cycle Model Portfolio 'made its first buy in 3.5yrs. Picking up 10BTC at $65,000': a stated buy"
+     },
      "best": {
       "at": "2026-09-23T05:00:00Z",
       "price": 87166.94,
@@ -35189,7 +35220,7 @@
       "for_call": 0.3408798738971812
      },
      "record_file": "records/posts/2062277523288068152_BTC.json",
-     "record_sha256": "2df2c2b09acdd72e086a6c78e34c00e2eb8693bf79e9b66cb38afb58a65ff4cb"
+     "record_sha256": "6dd68ea74de6ce8ce1c1072bbf1d87541ad19833de9c234fff1eb2694bfa86f2"
     },
     {
      "schema": "post_price.v1",
@@ -35880,6 +35911,15 @@
       ],
       "reason": null
      },
+     "side_choice": {
+      "method": "detector",
+      "terms": [
+       "building the long",
+       "long positions",
+       "the longs"
+      ],
+      "reason": null
+     },
      "best": {
       "at": "2026-10-29T16:00:00Z",
       "price": 81778.01,
@@ -35888,7 +35928,7 @@
       "for_call": 0.020259976752277975
      },
      "record_file": "records/posts/2114492799794254164_BTC.json",
-     "record_sha256": "70bf430ad1300d403c008f8755e0547a119304817b3e0d771c20e7137562f5cc"
+     "record_sha256": "8115e865c334ceff09f438928b88a7cdd017706ecb3ec7756f833e418a502dc1"
     },
     {
      "schema": "post_price.v1",
@@ -55256,6 +55296,11 @@
       ],
       "reason": "reviewed: industrial metals 'starting their big bull legs', suggests rotating into them and posts the copper chart: long copper"
      },
+     "side_choice": {
+      "method": "manual",
+      "terms": [],
+      "reason": "reviewed: industrial metals 'starting their big bull legs', suggests rotating into them and posts the copper chart: long copper"
+     },
      "best": {
       "at": "2026-09-22T20:00:00Z",
       "price": 6.908,
@@ -55264,7 +55309,7 @@
       "for_call": 0.2424460431654678
      },
      "record_file": "records/posts/2003490330650575038_COPPER.json",
-     "record_sha256": "3183885c5db31a50d0c6e6e5c8ea24c94b35368d5f1a00d3f05810a1077f222a"
+     "record_sha256": "6b6ae6940b848f1650f77401cd4b1e5724f78f5f161dccc675937136ccfd43e0"
     },
     {
      "schema": "post_price.v1",
@@ -55332,6 +55377,13 @@
       ],
       "reason": null
      },
+     "side_choice": {
+      "method": "detector",
+      "terms": [
+       "I'm long"
+      ],
+      "reason": null
+     },
      "best": {
       "at": "2026-09-22T20:00:00Z",
       "price": 6.908,
@@ -55340,7 +55392,7 @@
       "for_call": 0.14646087461621438
      },
      "record_file": "records/posts/2011110630338535867_COPPER.json",
-     "record_sha256": "9cd9d25adc0235bece9171d0a8719e60b7b7525e72834ebfd5778e45a9363559"
+     "record_sha256": "e096e45286e983ffaa228913fb4963e7eccf6566d80051b736752e46fd799f60"
     }
    ]
   },
@@ -56832,6 +56884,13 @@
        "words": "deployed 60% of my portfolio into $ETH"
       }
      },
+     "side_choice": {
+      "method": "detector-leg",
+      "terms": [
+       "deployed 60% of my portfolio into $ETH"
+      ],
+      "reason": "'deployed' before the coin"
+     },
      "best": {
       "at": "2026-11-02T02:00:00Z",
       "price": 2289.77,
@@ -56840,7 +56899,7 @@
       "for_call": 0.020378424627012004
      },
      "record_file": "records/posts/2116433840499790164_ETH.json",
-     "record_sha256": "4fe7deb31bbcae8806c842bddf8bbe0e9d5bb5665b9434529b81054006562d84"
+     "record_sha256": "465b1caced3414eb510add7b6e72422f9a1c65e20f7fe3218292f3b64be1c0a3"
     }
    ]
   },
@@ -76261,6 +76320,11 @@
       ],
       "reason": "reviewed: 'No quit in this gold bull ... the cleanest chart you could ever hope to ride': a long stance on gold"
      },
+     "side_choice": {
+      "method": "manual",
+      "terms": [],
+      "reason": "reviewed: 'No quit in this gold bull ... the cleanest chart you could ever hope to ride': a long stance on gold"
+     },
      "best": {
       "at": "2026-01-29T06:00:00Z",
       "price": 5591.1001,
@@ -76269,7 +76333,7 @@
       "for_call": 0.2550732582864892
      },
      "record_file": "records/posts/2003111794072801304_GOLD.json",
-     "record_sha256": "6335ecafd4dfb8cd3add2e5665791e6d75f4efefff0f8012c41ce832ced64950"
+     "record_sha256": "c37abbe0d18c9f90456735d2a0b8c3a07264ad09a83a7a53a3ca1a19a9a5545b"
     },
     {
      "schema": "post_price.v1",
@@ -76337,6 +76401,11 @@
       ],
       "reason": "reviewed: 'Now targeting $5,800 ... Just got to keep holding on': holding the gold long with a target, 22 days after the last added gold call"
      },
+     "side_choice": {
+      "method": "manual",
+      "terms": [],
+      "reason": "reviewed: 'Now targeting $5,800 ... Just got to keep holding on': holding the gold long with a target, 22 days after the last added gold call"
+     },
      "best": {
       "at": "2026-01-29T06:00:00Z",
       "price": 5591.1001,
@@ -76345,7 +76414,7 @@
       "for_call": 0.20818113930543714
      },
      "record_file": "records/posts/2011105173104705981_GOLD.json",
-     "record_sha256": "3c4dd10dd56545f1667d0ccf6738ee09d908ae5fedfce4ba770b7704c5858ccc"
+     "record_sha256": "f975dc40e36f09853086ccd088da4438439629018a7573589abd14594ebce7d2"
     },
     {
      "schema": "post_price.v1",
@@ -76413,6 +76482,14 @@
       ],
       "reason": null
      },
+     "side_choice": {
+      "method": "detector",
+      "terms": [
+       "we're looking at reaccumulation of long",
+       "long positions"
+      ],
+      "reason": null
+     },
      "best": {
       "at": "2026-08-25T01:00:00Z",
       "price": 4740.7998,
@@ -76421,7 +76498,7 @@
       "for_call": 0.05236518129958889
      },
      "record_file": "records/posts/2062554209212358962_GOLD.json",
-     "record_sha256": "64454e5a53a2bf3307fb1621db2703b57649e0ce3e24d44394ee1ffb158a69b6"
+     "record_sha256": "7ad0e9d54133094dd739128d4b1f7e92721b607e5ebbf65875c9ecff8068619f"
     },
     {
      "schema": "post_price.v1",
@@ -76886,6 +76963,13 @@
        "words": "deployed 60% of my portfolio into $ETH and $HYPE"
       }
      },
+     "side_choice": {
+      "method": "detector-leg",
+      "terms": [
+       "deployed 60% of my portfolio into $ETH and $HYPE"
+      ],
+      "reason": "'deployed' before the coin"
+     },
      "best": {
       "at": "2026-11-01T02:00:00Z",
       "price": 88.46,
@@ -76894,7 +76978,7 @@
       "for_call": 0.002152486688569155
      },
      "record_file": "records/posts/2116433840499790164_HYPE.json",
-     "record_sha256": "ef53fab5194fd3e589a5f72087b8e6c8e8081c3e7942ab7d47153425fde6f0ad"
+     "record_sha256": "b8869a064962efa75f9ea9b3754846cde0b3b04834feb82b6085e1b85de0a8a3"
     },
     {
      "schema": "post_price.v1",
@@ -76967,6 +77051,13 @@
        "words": "selling some $100 HYPE calls"
       }
      },
+     "side_choice": {
+      "method": "detector-leg",
+      "terms": [
+       "selling some $100 HYPE calls"
+      ],
+      "reason": "selling calls caps the upside; it is not a stated short"
+     },
      "best": {
       "at": "2026-11-01T17:00:00Z",
       "price": 88.2,
@@ -76974,7 +77065,7 @@
       "basis": "highest price"
      },
      "record_file": "records/posts/2116898993435463783_HYPE.json",
-     "record_sha256": "fe29c75d0dad96a7dbfbb2da6f8b392a4db5e030bb4aea953963e346815ae3c3"
+     "record_sha256": "3bf19aafc32b530295a389d8e0fd085feffb5eac3e77beb0e5d58cc2ac1aeb50"
     }
    ]
   },
@@ -77330,6 +77421,13 @@
        "words": "Bought $INJ"
       }
      },
+     "side_choice": {
+      "method": "detector-leg",
+      "terms": [
+       "Bought $INJ"
+      ],
+      "reason": "'bought' before the coin"
+     },
      "best": {
       "at": "2026-10-31T16:00:00Z",
       "price": 7.486,
@@ -77338,7 +77436,7 @@
       "for_call": 0.03483549903234717
      },
      "record_file": "records/posts/2116091851086393720_INJ.json",
-     "record_sha256": "81207e5fe7c70cd527903f31c363addbb88c9a5d516fa36c8f149c17690ca984"
+     "record_sha256": "812f5a9cfc814ad0a23371fab803bda0b486741eb104bd3af83edc9c308e6d4b"
     }
    ]
   },
@@ -77474,6 +77572,13 @@
        "words": "buying ~equal premium of $LIT calls"
       }
      },
+     "side_choice": {
+      "method": "detector-leg",
+      "terms": [
+       "buying ~equal premium of $LIT calls"
+      ],
+      "reason": "buying calls"
+     },
      "best": {
       "at": "2026-11-01T15:00:00Z",
       "price": 3.2523,
@@ -77482,7 +77587,7 @@
       "for_call": 0.0
      },
      "record_file": "records/posts/2116898993435463783_LIT.json",
-     "record_sha256": "77df1c8bc658539969619f5e03e833b12419600e4eaabd9c614b5dafc253d100"
+     "record_sha256": "b632a8710f10b3e7d1a56e1a8750dcb2d2c1cb17a16ec579fa98224f0dcfaebc"
     }
    ]
   },
@@ -123536,6 +123641,11 @@
       ],
       "reason": "reviewed: calls the silver pause 'a refueling for another big continuation of the bull market', expected 'as soon as Jan': a long view in his own words"
      },
+     "side_choice": {
+      "method": "manual",
+      "terms": [],
+      "reason": "reviewed: calls the silver pause 'a refueling for another big continuation of the bull market', expected 'as soon as Jan': a long view in his own words"
+     },
      "best": {
       "at": "2026-01-29T14:00:00Z",
       "price": 119.4,
@@ -123544,7 +123654,7 @@
       "for_call": 1.2751524390243905
      },
      "record_file": "records/posts/1993658195982876720_SILVER.json",
-     "record_sha256": "76d8fb6da962a53cbcdb36ada08b74387719f1b8731b0cb1dbcfe79aa180d363"
+     "record_sha256": "47479f652a08777d47de3afb58905d3fdfb50f90bb1618c1c61b72ca6c13b9f2"
     },
     {
      "schema": "post_price.v1",
@@ -123821,9 +123931,14 @@
        "suggested": "SOXL"
       }
      },
+     "side_choice": {
+      "method": "manual",
+      "terms": [],
+      "reason": "goodalexander's 'solid support here' image is a crop (score 0.823, shared label 6.89) of the weekly SOXL chart he replied to ('Direxion Daily Semiconductor Bull 3X Shares'); 6.89 is the 2025 low, 91% below SOXL's 77.05 at post time, so 'solid support' is a joke that SOXL could fall all the way back, in line with his short stance on semis"
+     },
      "best": null,
      "record_file": "records/posts/2116304617047007308_SOXL.json",
-     "record_sha256": "34881c4e4580b6d54218999b4b27713866bcb86ab9e64a535b7af1ddad02f5bf"
+     "record_sha256": "fdb8fe8dfb07979bc657ef76c332ad2a9a34ba8c11e289589972ca93b27b34b9"
     }
    ]
   },
@@ -130004,6 +130119,11 @@
       ],
       "reason": "reviewed: expects 'a good 6-8 Week run higher' for stocks and names a stop (the Nov 17th candle)"
      },
+     "side_choice": {
+      "method": "manual",
+      "terms": [],
+      "reason": "reviewed: expects 'a good 6-8 Week run higher' for stocks and names a stop (the Nov 17th candle)"
+     },
      "best": {
       "at": "2026-10-06T15:30:00Z",
       "price": 781.34,
@@ -130012,7 +130132,7 @@
       "for_call": 0.14129212252231205
      },
      "record_file": "records/posts/1999149068459618541_STOCKS.json",
-     "record_sha256": "c265f4fd16002763f6d4f85a7080305a4a5ad005db0488ffc23782b96e69292a"
+     "record_sha256": "37c5f820728ade6fda0b8877723ab6bf8428742bbedb348c44e5f6b6a6c333bc"
     },
     {
      "schema": "post_price.v1",
@@ -130080,6 +130200,11 @@
       ],
       "reason": "reviewed: 'Very strong signal on Stocks here', new all-time highs and a clean stop at the Daily Cycle Low"
      },
+     "side_choice": {
+      "method": "manual",
+      "terms": [],
+      "reason": "reviewed: 'Very strong signal on Stocks here', new all-time highs and a clean stop at the Daily Cycle Low"
+     },
      "best": {
       "at": "2026-10-06T15:30:00Z",
       "price": 781.34,
@@ -130088,7 +130213,7 @@
       "for_call": 0.12177683340033307
      },
      "record_file": "records/posts/2016523209500131511_STOCKS.json",
-     "record_sha256": "afe74844e53650d702abc72e77f4b9ec02bc2153eb2f3324811be258c894efb5"
+     "record_sha256": "3b12435a24c3a29882f8b9b9a4ba9538c206e03c145c886d4a5605c60094597c"
     },
     {
      "schema": "post_price.v1",
@@ -130156,6 +130281,11 @@
       ],
       "reason": "reviewed: 'Still leaning and positioned on the bull side' for stocks: his own positioning, 15 days after the last added stocks call"
      },
+     "side_choice": {
+      "method": "manual",
+      "terms": [],
+      "reason": "reviewed: 'Still leaning and positioned on the bull side' for stocks: his own positioning, 15 days after the last added stocks call"
+     },
      "best": {
       "at": "2026-10-06T15:30:00Z",
       "price": 781.34,
@@ -130164,7 +130294,7 @@
       "for_call": 0.1437061324862956
      },
      "record_file": "records/posts/2022006665764082140_STOCKS.json",
-     "record_sha256": "e96e28c1db86b367ddd296747f8bdf64f03ad3f1d8feae5557c4a2fa83b8e905"
+     "record_sha256": "f9dba3e128afdc7076420c6d3aaa96a9b9d5fa61af0332f2ea32c969c6db8874"
     },
     {
      "schema": "post_price.v1",
@@ -130232,6 +130362,14 @@
       ],
       "reason": null
      },
+     "side_choice": {
+      "method": "detector",
+      "terms": [
+       "I'm still long",
+       "still long"
+      ],
+      "reason": null
+     },
      "best": {
       "at": "2026-10-06T15:30:00Z",
       "price": 781.34,
@@ -130240,7 +130378,7 @@
       "for_call": 0.15123029320760284
      },
      "record_file": "records/posts/2028472872604209602_STOCKS.json",
-     "record_sha256": "db0a3542dcaea308b9d3dba20195490f9b05635cc571e21ba024fe64e56f5f72"
+     "record_sha256": "28d9a6937dd0e324adbd91dcd8b733b2f48e78216e847f214053565eb000c669"
     },
     {
      "schema": "post_price.v1",
@@ -130308,6 +130446,11 @@
       ],
       "reason": "reviewed: says stocks have likely peaked for the 4-year cycle, moved his active portfolios defensive (33% cash) with 'further selling to come': a change from long to defensive"
      },
+     "side_choice": {
+      "method": "manual",
+      "terms": [],
+      "reason": "reviewed: says stocks have likely peaked for the 4-year cycle, moved his active portfolios defensive (33% cash) with 'further selling to come': a change from long to defensive"
+     },
      "best": {
       "at": "2026-03-30T19:30:00Z",
       "price": 629.585,
@@ -130316,7 +130459,7 @@
       "for_call": 0.0688540834738367
      },
      "record_file": "records/posts/2031739333057659161_STOCKS.json",
-     "record_sha256": "5ee2b609b0ebdb0ca4a1211ac7ac8903335a9f0527dd20c1b8db38f5feb4f5b2"
+     "record_sha256": "bf218996c7c5c64c432ebde1f6df57a3dc7af693e622e0b512a74c29ad480987"
     },
     {
      "schema": "post_price.v1",
@@ -130912,6 +131055,13 @@
        "words": "long XMR"
       }
      },
+     "side_choice": {
+      "method": "detector-leg",
+      "terms": [
+       "long XMR"
+      ],
+      "reason": "'long' before the coin"
+     },
      "best": {
       "at": "2026-10-30T01:00:00Z",
       "price": 623.54,
@@ -130920,7 +131070,7 @@
       "for_call": 0.0
      },
      "record_file": "records/posts/2115966476817739790_XMR.json",
-     "record_sha256": "0686c0a24ca5f5f68c6207c9f669259f8a55dacb0974f661d25ce4ff37edf86c"
+     "record_sha256": "0d7f7e8278ce0f920a0fc15f56d81dcb0e5741a0ec3ad2b8966bda4b7cfbfe6e"
     }
    ]
   },
@@ -131308,6 +131458,13 @@
        "words": "long xrp"
       }
      },
+     "side_choice": {
+      "method": "detector-leg",
+      "terms": [
+       "long xrp"
+      ],
+      "reason": "'long' before the coin"
+     },
      "best": {
       "at": "2026-10-30T07:00:00Z",
       "price": 1.2676,
@@ -131316,7 +131473,7 @@
       "for_call": 0.03502898669061816
      },
      "record_file": "records/posts/2115966476817739790_XRP.json",
-     "record_sha256": "1668f28bb81a40fe7d6c7f57ff788c525bb5555e4a0da5e8baa2ca7e6e2b635a"
+     "record_sha256": "bb1bca9a2fad352aec1c9ae8e53aaca530fd398c5d9ef41e7a02a0e96fb951a4"
     }
    ]
   },
@@ -201427,7 +201584,8 @@
       "name": "ZEC",
       "source": "binance",
       "symbol": "ZECUSDT",
-      "price_field": "open"
+      "price_field": "open",
+      "renamed_from": "binance:ZECUSDT"
      },
      "side": 1,
      "status": "resolved",
@@ -201484,7 +201642,7 @@
       "for_call": 29.915764360433105
      },
      "record_file": "records/posts/1970742039722479782_ZEC.json",
-     "record_sha256": "967426e6d90c8dcb5f216d6393c7d1b6843a96213147bac22ae901713dd17814"
+     "record_sha256": "f7698b4a88a4bd0c3888d0daee40e9a286c71a846bf2c4b515e6bf01ba8d4ed5"
     }
    ]
   }

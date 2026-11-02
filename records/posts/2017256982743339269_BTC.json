@@ -26509,5 +26509,10 @@
    "bitcoin"
   ],
   "reason": "reviewed: the 4-year cycle update says the move to $98k was the counter-trend move and the declining phase is on ('I hate being bearish any asset, especially bitcoin'); the detector's 'very bullish on' is about fundamentals in general, so the side is set by hand"
+ },
+ "side_choice": {
+  "method": "manual",
+  "terms": [],
+  "reason": "reviewed: the 4-year cycle update says the move to $98k was the counter-trend move and the declining phase is on ('I hate being bearish any asset, especially bitcoin'); the detector's 'very bullish on' is about fundamentals in general, so the side is set by hand"
  }
 }

@@ -13,7 +13,8 @@
   "name": "ZEC",
   "source": "binance",
   "symbol": "ZECUSDT",
-  "price_field": "open"
+  "price_field": "open",
+  "renamed_from": "binance:ZECUSDT"
  },
  "side": 1,
  "status": "resolved",

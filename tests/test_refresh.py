@@ -52,5 +52,27 @@ class Refresh(unittest.TestCase):
         self.assertEqual(new["change_since_post"], new["latest"]["price"] / new["entry"]["price"] - 1)
 
 
+class CarryOver(unittest.TestCase):
+    """A refresh recomputes prices; everything it cannot recompute must survive it (side_choice was dropped by
+    every refresh from step 16 until 2026-11-02, asset.renamed_from from step 22)."""
+    def test_every_optional_field_is_recomputed_or_carried(self):
+        import json
+        schema = json.load(open(os.path.join(HERE, "schema", "post_price.v1.json")))
+        fresh = resolved(hourly("2026-09-01T00:00:00Z", "2026-09-20T00:00:00Z"))
+        top = set(schema["properties"]) - set(fresh) - set(refresh.CARRY_TOP) - set(refresh.RECOMPUTED_BY_LIFECYCLE)
+        self.assertEqual(top, set(), "record fields a refresh would drop")
+        asset = set(schema["properties"]["asset"]["properties"]) - set(fresh["asset"]) - set(refresh.CARRY_ASSET)
+        self.assertEqual(asset, set(), "asset fields a refresh would drop")
+
+    def test_choices_and_rename_survive(self):
+        old = resolved(hourly("2026-09-01T00:00:00Z", "2026-09-20T00:00:00Z"))
+        old["side_choice"] = {"method": "detector-leg", "terms": ["Bought $INJ"], "reason": "'bought' before the coin"}
+        old["asset_choice"] = {"method": "detector", "terms": ["$INJ"], "reason": None}
+        old["asset"]["renamed_from"] = "binance:BTCUSDT"
+        new = refresh.carry_over(old, resolved(hourly("2026-09-01T00:00:00Z", "2026-10-10T00:00:00Z")))
+        self.assertEqual((new["side_choice"], new["asset_choice"], new["asset"]["renamed_from"]),
+                         (old["side_choice"], old["asset_choice"], "binance:BTCUSDT"))
+
+
 if __name__ == "__main__":
     unittest.main()

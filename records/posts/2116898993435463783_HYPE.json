@@ -118,5 +118,12 @@
    ],
    "words": "selling some $100 HYPE calls"
   }
+ },
+ "side_choice": {
+  "method": "detector-leg",
+  "terms": [
+   "selling some $100 HYPE calls"
+  ],
+  "reason": "selling calls caps the upside; it is not a stated short"
  }
 }

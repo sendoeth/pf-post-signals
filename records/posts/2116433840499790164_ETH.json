@@ -242,5 +242,12 @@
    ],
    "words": "deployed 60% of my portfolio into $ETH"
   }
+ },
+ "side_choice": {
+  "method": "detector-leg",
+  "terms": [
+   "deployed 60% of my portfolio into $ETH"
+  ],
+  "reason": "'deployed' before the coin"
  }
 }

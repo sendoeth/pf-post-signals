@@ -5317,5 +5317,10 @@
    "stocks"
   ],
   "reason": "reviewed: 'Very strong signal on Stocks here', new all-time highs and a clean stop at the Daily Cycle Low"
+ },
+ "side_choice": {
+  "method": "manual",
+  "terms": [],
+  "reason": "reviewed: 'Very strong signal on Stocks here', new all-time highs and a clean stop at the Daily Cycle Low"
  }
 }

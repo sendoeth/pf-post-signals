@@ -6,7 +6,7 @@
   "author": "BobLoukas",
   "posted_at": "2026-01-08T20:09:25Z",
   "posted_at_source": "receipt",
-  "text": "Yes I’ve been bearish on Bitcoin of late.  \n\nBut that is opinion on where we stand for the near future. \n\nWhat gets forgotten or not mentioned enough, I’m always a massive bull long term.   \n\nI’m always and consistently stacking, even if one strategy is selling.",
+  "text": "Yes I\u2019ve been bearish on Bitcoin of late.  \n\nBut that is opinion on where we stand for the near future. \n\nWhat gets forgotten or not mentioned enough, I\u2019m always a massive bull long term.   \n\nI\u2019m always and consistently stacking, even if one strategy is selling.",
   "receipt_sha256": "bfde7b8d0bb4301ba4f9c0c467c008282b2448d9c1527bbac5227ce9c9dbf3e6"
  },
  "asset": {
@@ -28599,6 +28599,13 @@
   "method": "detector",
   "terms": [
    "bitcoin"
+  ],
+  "reason": null
+ },
+ "side_choice": {
+  "method": "detector",
+  "terms": [
+   "bearish on"
   ],
   "reason": null
  }
