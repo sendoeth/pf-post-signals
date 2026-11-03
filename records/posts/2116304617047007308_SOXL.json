@@ -16,34 +16,75 @@
   "price_field": "open"
  },
  "side": -1,
- "status": "pending",
- "entry": null,
- "latest": null,
- "change_since_post": null,
+ "status": "partial",
+ "entry": {
+  "at": "2026-11-02T14:30:00Z",
+  "price": 79.445
+ },
+ "latest": {
+  "at": "2026-11-02T21:00:00Z",
+  "price": 68.17
+ },
+ "change_since_post": -0.14192208446094778,
  "exits": {
-  "1": null,
+  "1": {
+   "at": "2026-11-02T14:30:00Z",
+   "price": 79.445
+  },
   "7": null,
   "30": null
  },
  "moves": {
-  "1": null,
+  "1": 0.0,
   "7": null,
   "30": null
  },
  "unresolved": {
-  "1": "no bar at or after the post yet",
-  "7": "no bar at or after the post yet",
-  "30": "no bar at or after the post yet"
+  "7": "horizon not yet reached",
+  "30": "horizon not yet reached"
  },
- "series": [],
+ "series": [
+  [
+   "2026-11-02T14:30:00Z",
+   79.445
+  ],
+  [
+   "2026-11-02T15:30:00Z",
+   80.8801
+  ],
+  [
+   "2026-11-02T16:30:00Z",
+   75.72
+  ],
+  [
+   "2026-11-02T17:30:00Z",
+   75.02
+  ],
+  [
+   "2026-11-02T18:30:00Z",
+   73.56
+  ],
+  [
+   "2026-11-02T19:30:00Z",
+   70.57
+  ],
+  [
+   "2026-11-02T20:30:00Z",
+   69.835
+  ],
+  [
+   "2026-11-02T21:00:00Z",
+   68.17
+  ]
+ ],
  "resolved_with": {
   "prices": "live:binance+yahoo",
-  "last_bar_at": "2026-10-30T20:00:00Z",
+  "last_bar_at": "2026-11-02T21:00:00Z",
   "max_lag_days": 2,
   "session_lag_days": 4
  },
  "signed_returns": {
-  "1": null,
+  "1": -0.0,
   "7": null,
   "30": null
  },
