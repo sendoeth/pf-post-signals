@@ -32,8 +32,8 @@
   "now": {
    "source": "binance",
    "symbol": "ZECUSDT",
-   "at": "2026-11-03T02:00:00Z",
-   "price": 1144.49
+   "at": "2026-11-04T01:00:00Z",
+   "price": 1216.62
   },
   "peak": {
    "source": "binance",
@@ -41,7 +41,7 @@
    "day": "2026-09-26",
    "high": 1698.0
   },
-  "multiple_now": 36.195129664769134,
+  "multiple_now": 38.476280834914604,
   "multiple_peak": 53.70018975332068,
   "sources_tried": [
    {
