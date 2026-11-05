@@ -1,0 +1,10 @@
+[Unit]
+Description=Quanty Quants caller watcher every 10 minutes (budget: 12 searches per rolling hour)
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=10min
+AccuracySec=30s
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,11 @@
+[Unit]
+Description=Quanty Quants caller watcher: one cycle (read-only X search, queues candidates for the owner's Telegram review)
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/pf-post-signals
+Environment=QUANTY_WATCH_BUDGET=12
+ExecStart=/usr/bin/python3 tools/watch_callers.py cycle
+TimeoutStartSec=900
+Nice=10
+UMask=0077
