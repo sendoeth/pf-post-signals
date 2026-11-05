@@ -43,7 +43,11 @@ def build(root=HERE):
     for t, x in reg["tickers"].items():
         sc = seed["coins"].get(t, {})
         chosen = next((v for v in sc.get("venues", []) if v.get("ok") and (v["source"], v.get("symbol")) == (x["source"], x["symbol"])), None)
-        rows.append({"ticker": t, "name": x["name"], "coingecko_id": x["coingecko_id"], "rank": x.get("rank"), "venue": f'{x["source"]}:{x["symbol"]}',
+        if not chosen and os.path.exists(os.path.join(root, x["receipt"])):        # added by a post: the check from its own receipt
+            chosen = next((v for v in load(os.path.join(root, x["receipt"])).get("venues", [])
+                           if v.get("ok") and (v["source"], v.get("symbol")) == (x["source"], x["symbol"])), None)
+        rows.append({"ticker": t, "name": x["name"], "coingecko_id": x["coingecko_id"], "rank": x.get("rank"),
+                     "venue": f'{x["source"]}:{x["symbol"]}' + (f' ({x["pair"]})' if x.get("pair") else ""),
                      "seed_diff": chosen and chosen.get("diff"), "in_top": t in seed["top"], "hl_perp": bool(x.get("hl_perp")),
                      "also_us_stock": x.get("also_us_stock"), "flag": x.get("flag"), "checked_at": x.get("checked_at") or x.get("added_at"),
                      "receipt": x["receipt"]})
@@ -130,7 +134,9 @@ def page(d):
   <section class="ep-head panel" data-field="coverage">
     <h2>{e(c['top_seeded'])} of the top {e(c['top_listed'])} coins · {e(c['perps_added'])} Hyperliquid perps · {e(c['registered'])} tickers</h2>
     <p>A post naming any of these coins (cashtag, name, or ticker in capitals) is priced at once, without a lookup. Each coin is identified on CoinGecko,
-    and priced on the first venue with hourly bars whose pair is trading and within 5% of the coin's price (Binance, then Hyperliquid, OKX, Gate).
+    and priced on the first venue with hourly bars whose pair is trading and within 5% of the coin's price (Binance, then Hyperliquid, OKX, Gate,
+    then Hyperliquid spot: a pair quoted in a USD stablecoin with trades in the last 24 hours; last, a DEX pool found through the coin's own
+    contract, with at least $100,000 of liquidity and current hourly candles). A ticker two coins share is never guessed: the owner picks the coin.
     Stablecoins, wrapped / staked copies and tokenized funds, gold and stocks are not coins here and are skipped; the top 100 is counted after them.
     A weekly re-check flags any venue that stops trading or drifts away from the coin's price; a venue is never swapped silently.</p>
     <p class="muted small">Seeded {e(d['seeded_at'] or '–')} ({e(d['seed'] or '–')}) · re-checked {e(d['rechecked_at'] or 'not yet')}

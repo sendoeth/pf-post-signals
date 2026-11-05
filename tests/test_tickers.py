@@ -60,6 +60,13 @@ class FakeNet:
     def okx(self, t):
         return None                                   # step 23 venues: not listed unless a test says so
 
+    def hlspot(self, t):                        # step 26: no Hyperliquid spot pair in these older scenarios
+        self.calls.append(("hlspot", t))
+        return []
+
+    def cg_platforms(self, cg_id):              # step 26: no contract on a supported chain -> no DEX pool
+        return {}
+
     def bybit(self, t):
         return None
 
@@ -95,10 +102,12 @@ class Resolver(unittest.TestCase):
         self.assertIn("no trading venue", r["reason"])
 
     def test_binance_first_when_it_agrees(self):
-        r = tickers.resolve_ticker("HYPE", FakeNet(), registry=EMPTY)
+        net = FakeNet()
+        r = tickers.resolve_ticker("HYPE", net, registry=EMPTY)
         self.assertEqual(r["chosen"], {"source": "binance", "symbol": "HYPEUSDT"})
         self.assertTrue(all(v["ok"] for v in r["venues"] if v["listed"]))
-        self.assertEqual([v["source"] for v in r["venues"]], list(tickers.VENUES))           # every venue is checked and listed in the receipt
+        self.assertEqual([v["source"] for v in r["venues"]], ["binance", "hyperliquid", "okx", "gate"])   # every exchange venue is checked and listed
+        self.assertNotIn(("hlspot", "HYPE"), net.calls)                                     # step 26: spot / DEX only when no exchange passed
 
     def test_identity_rules(self):
         self.assertEqual(tickers.resolve_ticker("ZEC", FakeNet(), registry=EMPTY)["coin"]["id"], "zcash")   # unranked bridged copies ignored
