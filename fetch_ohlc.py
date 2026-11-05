@@ -62,6 +62,10 @@ def fetch(source, symbol, since):
                 daily_until = hourly[0][0]
             hourly = daily + hourly
         return resolve.adjust_for_actions(symbol, hourly), daily_until
+    if source == "hlspot":                                   # step 26: a Hyperliquid spot pair ('@334'), hourly since its listing
+        return [ohlc(c) for c in resolve.hyperliquid_candles(symbol, start)], None
+    if source == "dex":                                      # step 26: a DEX pool ('network:pool') via GeckoTerminal
+        return resolve.geckoterminal_candles(symbol, start), None
     if source in resolve.EXCHANGES:
         return resolve.exchange_candles(source, symbol, start), None
     if source == "binance":

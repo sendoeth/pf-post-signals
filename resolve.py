@@ -117,6 +117,10 @@ def asset_info(name):
     if ":" in raw:
         src, sym = raw.split(":", 1)
         src = src.lower()
+        if src == "hlspot" and re.fullmatch(r"@\d{1,6}", sym):           # step 26: a Hyperliquid spot pair, e.g. hlspot:@334
+            return {"name": f"hlspot:{sym}", "source": "hlspot", "symbol": sym, "price_field": "open"}
+        if src == "dex" and re.fullmatch(r"[a-z0-9_]{2,20}:(0x[0-9a-fA-F]{40}|[1-9A-HJ-NP-Za-km-z]{32,44})", sym):
+            return {"name": f"dex:{sym}", "source": "dex", "symbol": sym, "price_field": "open"}   # step 26: network:pool, case kept
         if src not in ("binance", "yahoo", "hyperliquid") + EXCHANGES or not re.fullmatch(r"[A-Za-z0-9=.^_\-]{1,20}", sym):
             raise UnknownAssetError(f"unknown asset {name!r}: prefix must be binance:<PAIR>, yahoo:<TICKER>, hyperliquid:<COIN>, okx:<X-USDT>, bybit:<XUSDT> or gate:<X_USDT>")
         return {"name": f"{src}:{sym.upper()}", "source": src, "symbol": sym.upper(), "price_field": "open"}
@@ -217,6 +221,37 @@ def hyperliquid_candles(coin, start, interval="1h", end=None):
 
 
 EXCHANGES = ("okx", "bybit", "gate")      # step 23: more spot venues for coins Binance / Hyperliquid do not list
+GECKOTERMINAL = "https://api.geckoterminal.com/api/v2"
+
+
+def geckoterminal_candles(symbol, start, now=None, sleep=None):
+    """step 26: hourly [iso, open, high, low, close] candles of a DEX pool ('network:pool') from `start` to now,
+    oldest first. GeckoTerminal pages newest first (1000 a page, before_timestamp); its free tier allows
+    30 calls a minute, so pages are spaced. An hour without a trade has no candle (the lag rules handle gaps)."""
+    import time
+    sleep = sleep or time.sleep
+    network, _, pool = symbol.partition(":")
+    s = int(start.timestamp())
+    before = int((now or dt.datetime.now(dt.timezone.utc)).timestamp()) + 3600
+    rows = {}
+    for page in range(60):
+        if page:
+            sleep(2.5)
+        try:
+            d = get_json(f"{GECKOTERMINAL}/networks/{network}/pools/{pool}/ohlcv/hour?aggregate=1&limit=1000"
+                         f"&before_timestamp={before}&currency=usd&token=base")
+        except urllib.error.HTTPError as e:
+            raise UnknownAssetError(f"no dex data for {symbol} (HTTP {e.code})") from e
+        lst = ((d.get("data") or {}).get("attributes") or {}).get("ohlcv_list") or []
+        for r in lst:
+            rows[int(r[0])] = [float(r[1]), float(r[2]), float(r[3]), float(r[4])]
+        if len(lst) < 1000 or min(int(r[0]) for r in lst) <= s:
+            break
+        before = min(int(r[0]) for r in lst)
+    out = [[iso(t), *rows[t]] for t in sorted(rows) if t >= s]
+    if not out:
+        raise UnknownAssetError(f"no dex candles for {symbol}")
+    return out
 
 
 def exchange_candles(source, symbol, start, now=None):
@@ -266,6 +301,10 @@ def fetch_series(asset, since):
     start = parse(since).replace(minute=0, second=0, microsecond=0)
     if asset["source"] == "hyperliquid":
         return adjust_for_actions(asset["symbol"], [[iso(c["t"] / 1000), float(c["o"])] for c in hyperliquid_candles(asset["symbol"], start)])
+    if asset["source"] == "hlspot":                       # step 26: a spot pair ('@334'): same candle API as the perps
+        return [[iso(c["t"] / 1000), float(c["o"])] for c in hyperliquid_candles(asset["symbol"], start)]
+    if asset["source"] == "dex":
+        return [b[:2] for b in geckoterminal_candles(asset["symbol"], start)]
     if asset["source"] in EXCHANGES:
         return [b[:2] for b in exchange_candles(asset["source"], asset["symbol"], start)]
     if asset["source"] == "binance":

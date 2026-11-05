@@ -90,6 +90,7 @@ class Bulk:
     applies exactly the step 22 venue rule without one call per coin."""
     def __init__(self, net=None, pause=6.0, sleep=time.sleep, fetch_text=None):
         self.net, self.pause, self.sleep, self.calls = net or tickers.Net(), pause, sleep, []
+        self.hls = []                                     # step 26: Hyperliquid spot pairs, filled by load_venues
         self.fetch_text = fetch_text or self._text
 
     def _text(self, url):
@@ -144,7 +145,12 @@ class Bulk:
             self.calls.append({"what": "hyperliquid meta + allMids", "sha256": sha([meta, mids]), "at": now_iso()})
             self.hl = {u["name"]: u for u in meta["universe"]}
             self.hl_mid = {k: float(v) for k, v in mids.items() if not k.startswith("@")}
-        for name, load in (("binance", binance), ("hyperliquid", hyperliquid)):
+        def hlspot():                                  # step 26: Hyperliquid spot pairs (one call)
+            ans = self.net.post(tickers.HL_INFO, {"type": "spotMetaAndAssetCtxs"})
+            self.calls.append({"what": "hyperliquid spotMetaAndAssetCtxs", "sha256": sha(ans), "at": now_iso()})
+            self.hls = tickers.parse_spot(ans)
+        self.hls = []
+        for name, load in (("binance", binance), ("hyperliquid", hyperliquid), ("hlspot", hlspot)):
             try:
                 load()
             except (tickers.Unavailable, KeyError, TypeError, ValueError) as e:
@@ -207,8 +213,25 @@ class Bulk:
         st = self.bin_status[pair]
         return {"source": "binance", "symbol": pair, "trading": st == "TRADING", "status": st, "price": self.bin_price.get(pair)}
 
+    def hlspot(self, ticker):
+        return [v for v in self.hls if (v["base"] or "").upper() == ticker]
+
     def venue(self, source, symbol):
         """status + price of exactly this registered pair (the weekly re-check never looks elsewhere)."""
+        if source == "hlspot":                        # step 26: the same pair, still traded (24h volume) with a mid price
+            v = next((x for x in self.hls if x["symbol"] == symbol), None)
+            if not v:
+                return None
+            live = v["price"] is not None and v["volume"] >= tickers.MIN_SPOT_VOLUME
+            return {"source": "hlspot", "symbol": symbol, "trading": live, "status": f"24h volume ${v['volume']:,.0f}", "price": v["price"]}
+        if source == "dex":                           # step 26: the same pool, still deep enough
+            network, _, pool = symbol.partition(":")
+            p = self.net.gt_pool(network, pool)
+            self.calls.append({"what": f"geckoterminal pool {symbol}", "sha256": sha(p), "at": now_iso()})
+            if not p:
+                return None
+            return {"source": "dex", "symbol": symbol, "trading": p["liquidity"] >= tickers.MIN_DEX_LIQUIDITY,
+                    "status": f"liquidity ${p['liquidity']:,.0f}", "price": p["price"]}
         if source == "binance":
             return self._spot("binance", symbol, self.bin_status, self.bin_price, "TRADING")
         if source == "hyperliquid":

@@ -27,6 +27,7 @@ import glob
 import hashlib
 import json
 import os
+import re
 import shutil
 import subprocess
 import sys
@@ -121,6 +122,11 @@ def legs_message(legs, text):
     for l in legs:
         if l["status"] != "ok":
             lines.append(f"REVIEW {' / '.join(l['via'])}: {l['reason']}")
+            # step 26: an ambiguous ticker lists its candidates (machine-readable for the bot's pick buttons)
+            for c in sorted((l.get("receipt") or {}).get("candidates") or [], key=lambda c: c.get("rank") or 10 ** 9)[:3]:
+                if l["status"] == "review" and "pick one by hand" in (l["reason"] or "") and re.fullmatch(r"[a-z0-9-]{1,80}", c["id"]):
+                    where = ", ".join(f"{k}:{v}" for k, v in sorted((c.get("platforms") or {}).items())) or "no contract listed"
+                    lines.append(f"CANDIDATE {l['via'][0].lstrip('$')} {c['id']} {c['name']} #{c.get('rank') or '-'} {where}")
             continue
         s, why, words = detect.leg_side(text, [l["asset"]] + [v.lstrip("$") for v in l["via"]])
         side = {1: "long", -1: "short"}.get(s, "none")
@@ -129,10 +135,10 @@ def legs_message(legs, text):
     return "\n".join(lines)
 
 
-def pick_coin(text, leg, net):
+def pick_coin(text, leg, net, picks=None):
     """No mapped asset: resolve every coin the post names (tickers.py). One ok coin -> it; several ->
-    the chosen --leg; anything else -> Refused with the legs listed."""
-    legs = detect.coin_legs(text, net=net)
+    the chosen --leg; anything else -> Refused with the legs listed. `picks` = the owner's {TICKER: coingecko id}."""
+    legs = detect.coin_legs(text, net=net, picks=picks)
     ok = [l for l in legs if l["status"] == "ok"]
     if leg:
         hit = next((l for l in ok if l["asset"] == leg.upper()), None)
@@ -149,7 +155,7 @@ def pick_coin(text, leg, net):
 
 
 def build_item(url, root=HERE, fetch=ingest.fetch_embed, prices=None, bundle=None, asset=None, side=None, reason=None, now=None, allow_pending=False,
-               leg=None, net=None):
+               leg=None, net=None, picks=None):
     """One post -> {url, receipt, record_file, record, revisions, detected}. Writes only the receipt."""
     if asset and not reason:
         raise Refused("--asset needs --reason: an asset chosen by hand is always explained")
@@ -166,7 +172,7 @@ def build_item(url, root=HERE, fetch=ingest.fetch_embed, prices=None, bundle=Non
     coin, legs = None, None
     if d["status"] != "manual":                       # step 23: every coin the post names (seeded names / tickers, indexes, stocks) -> legs
         # step 22: cashtags without a fixed mapping and X contract tags are resolved to plain tickers
-        coin, legs = pick_coin(text, leg, net or tickers.Net())
+        coin, legs = pick_coin(text, leg, net or tickers.Net(), picks)
         d = {"status": "detected", "asset": coin["asset"], "matched": [{"asset": coin["asset"], "term": v} for v in coin["via"]], "reason": None}
     try:
         info = resolve.asset_info(d["asset"])
@@ -269,10 +275,11 @@ def load_bundle(root):
     return blob, json.loads(blob)
 
 
-def preview(url, root=HERE, fetch=ingest.fetch_embed, prices=None, asset=None, side=None, reason=None, now=None, allow_pending=False, leg=None, net=None):
+def preview(url, root=HERE, fetch=ingest.fetch_embed, prices=None, asset=None, side=None, reason=None, now=None, allow_pending=False, leg=None, net=None,
+            picks=None):
     """-> the pending intake (also written to intake/pending/). Writes only the receipt and the pending file."""
     blob, bundle = load_bundle(root)
-    it = build_item(url, root, fetch, prices or resolve.Prices(), bundle, asset, side, reason, now, allow_pending, leg=leg, net=net)
+    it = build_item(url, root, fetch, prices or resolve.Prices(), bundle, asset, side, reason, now, allow_pending, leg=leg, net=net, picks=picks)
     return project([it], root, blob, os.path.basename(it["record_file"]), now)
 
 
@@ -454,10 +461,19 @@ def main():
     ap.add_argument("--add", action="store_true", help="apply the pending preview for this post")
     ap.add_argument("--pending", action="store_true", help="allow a post with no price after it yet (market closed): the daily refresh fills the entry")
     ap.add_argument("--leg", help="for a post naming several coins: the coin (ticker) to add; each leg is its own record")
+    ap.add_argument("--coin", action="append", default=[], metavar="TICKER=COINGECKO_ID",
+                    help="step 26: the owner's pick for an ambiguous ticker (two coins share it), e.g. NEST=nest-2; repeatable")
     a = ap.parse_args()
+    picks = {}
+    for c in a.coin:
+        mm = re.fullmatch(r"([A-Za-z0-9]{1,12})=([a-z0-9-]{1,80})", c)
+        if not mm:
+            print(f"REFUSED   --coin {c!r}: write TICKER=coingecko-id, e.g. NEST=nest-2")
+            sys.exit(2)
+        picks[mm.group(1).upper()] = mm.group(2)
     try:
         if not a.add:
-            p = preview(a.url, asset=a.asset, side=a.side, reason=a.reason, allow_pending=a.pending, leg=a.leg)
+            p = preview(a.url, asset=a.asset, side=a.side, reason=a.reason, allow_pending=a.pending, leg=a.leg, picks=picks)
             print_preview(p)
             print("PREVIEW ONLY: nothing under web/ or records/ changed. Rerun with --add to publish it.")
             return

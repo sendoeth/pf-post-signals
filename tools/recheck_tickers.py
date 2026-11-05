@@ -49,7 +49,12 @@ def recheck(reg, bulk, prices, now):
             results[t] = {"venue": f"{e['source']}:{e['symbol']}", "ok": None, "why": f"not checked: {e['source']} unreachable from this runner"}
             unchecked.append(t)
             continue
-        v = bulk.venue(e["source"], e["symbol"])
+        try:
+            v = bulk.venue(e["source"], e["symbol"])
+        except tickers.Unavailable as err:             # step 26: a per-pool lookup that fails is "not checked", never a flag
+            results[t] = {"venue": f"{e['source']}:{e['symbol']}", "ok": None, "why": f"not checked: {err}"}
+            unchecked.append(t)
+            continue
         cp = prices.get(e["coingecko_id"])
         if not cp:
             ok, why, diff = False, f"CoinGecko has no current price for {e['coingecko_id']}", None

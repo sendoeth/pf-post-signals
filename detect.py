@@ -117,7 +117,7 @@ def us_tickers(path=US_PATH):
     return _load(path, {"tickers": {}})["tickers"]
 
 
-def coin_legs(text, amap=None, net=None, registry=None, words=None, us=None):
+def coin_legs(text, amap=None, net=None, registry=None, words=None, us=None, picks=None):
     """-> [{"asset", "via", "receipt" (None for a mapped asset), "status", "reason"}] in order of first mention.
 
     Sources, in this order (a coin named several ways is one leg):
@@ -130,7 +130,10 @@ def coin_legs(text, amap=None, net=None, registry=None, words=None, us=None):
                       counts as the coin only when it is a top-500 coin and the post does not talk shares (else review)
       words           the fixed term map, then coin names (data/coin_words.json), then bare tickers written in capitals:
                       fixed-map ones (SOL, LINK) always, registered coins unless the ticker is a common English word
+    picks             step 26: {TICKER: coingecko id} the owner chose for an ambiguous cashtag; that coin is resolved by
+                      its id (never by the ticker alone) and the receipt records the pick
     """
+    picks = {k.upper(): v for k, v in (picks or {}).items()}
     import tickers
     amap = amap or load_map()
     words = words or coin_words()
@@ -193,6 +196,10 @@ def coin_legs(text, amap=None, net=None, registry=None, words=None, us=None):
         e = reg.get("tickers", {}).get(tag)
         if e and e.get("also_us_stock") and stock_talk(text, m.start(), len(m.group(0))):
             add(None, "$" + tag, status="review", reason=f"${tag} is {e['name']} and the US stock {e['also_us_stock']}; the post talks shares / earnings next to it: pick by hand", pos=m.start())
+            continue
+        if tag in picks:                               # step 26: the owner's explicit choice of coin for this ticker
+            r = tickers.resolve_ticker(tag, net, cg_id=picks[tag], registry=reg, how=f"${tag} = {picks[tag]} (owner pick)")
+            add(r["ticker"] if r["status"] == "ok" else None, "$" + tag, r, r["status"], r["reason"], m.start())
             continue
         r = tickers.resolve_ticker(tag, net, registry=reg)
         if not e and tag in us:

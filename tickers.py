@@ -9,9 +9,19 @@ two separate checks, and both must pass:
             two comparable coins go to review. A contract tag names its coin directly (native gas
             tokens by chain, contracts via CoinGecko's platform lookup).
   venue     where its hourly prices come from: Binance spot <TICKER>USDT, then the Hyperliquid perp
-            <TICKER>. A venue counts only if the pair is trading now AND its price agrees with the
-            identified coin's price within TOLERANCE. A ticker collision (an old coin with the same
-            symbol on an exchange, a halted pair with a stale price) fails this check and is skipped.
+            <TICKER>, OKX, Gate, then (step 26) Hyperliquid spot and, last, a DEX pool. A venue counts only if
+            the pair is trading now AND its price agrees with the identified coin's price within TOLERANCE.
+            A ticker collision (an old coin with the same symbol on an exchange, a halted pair with a stale
+            price) fails this check and is skipped.
+  step 26   Hyperliquid spot: every pair of the token is checked; only pairs quoted in a USD stablecoin, traded
+            in the last 24h (>= MIN_SPOT_VOLUME) and agreeing on price count; the choice is deterministic
+            (a USDC quote first, then the most volume), so a stale pair (no trades, an old mark) is never chosen.
+            DEX (last resort): the pool is found through the identified coin's own contract (CoinGecko id ->
+            platforms), never by a ticker symbol: its pools on GeckoTerminal, deepest first; a pool counts only
+            if the coin is its base token, its metadata names the same CoinGecko id, it holds >= MIN_DEX_LIQUIDITY,
+            its price agrees and its hourly candles are current.
+            Ambiguous ticker (two comparable coins): review, with every candidate's chain and contract listed;
+            only the owner's explicit pick (a CoinGecko id) resolves it.
 
 Every answer is a receipt (schema quanty.ticker.v1): the candidates, the coin, every venue checked
 with both prices and the difference, and the choice or the reason there is none. Any provider
@@ -41,7 +51,13 @@ AMBIGUOUS_RATIO = 4       # the top coin must rank at least 4x ahead of the next
 TICKER_RE = re.compile(r"^[A-Z0-9]{1,12}$")
 # the order a venue is preferred in (deepest history first). Bybit is not used: it answers HTTP 403 to the GitHub
 # runners that refresh prices daily, so a Bybit-priced record could never be refreshed (seen 2026-11-02).
-VENUES = ("binance", "hyperliquid", "okx", "gate")
+VENUES = ("binance", "hyperliquid", "okx", "gate", "hlspot", "dex")
+MIN_SPOT_VOLUME = 10_000          # USD traded in 24h: a Hyperliquid spot pair below this is stale, not a venue
+MIN_DEX_LIQUIDITY = 100_000       # USD in the pool: a thinner pool is too easy to move to be a price source
+STABLE_QUOTES = ("USDC", "USDH", "USDT0", "USDE", "USDHL")   # Hyperliquid spot quotes priced as $1; USDC preferred, then volume
+GT = "https://api.geckoterminal.com/api/v2"
+GT_NETWORK = {"hyperevm": "hyperevm", "ethereum": "eth", "base": "base", "arbitrum-one": "arbitrum", "solana": "solana",
+              "binance-smart-chain": "bsc", "optimistic-ethereum": "optimism", "polygon-pos": "polygon_pos", "avalanche": "avax"}
 CG = "https://api.coingecko.com/api/v3"
 BINANCE = "https://data-api.binance.vision/api/v3"
 HL_INFO = "https://api.hyperliquid.xyz/info"
@@ -112,6 +128,11 @@ class Net:
             raise Unavailable(f"coingecko: no price for {cg_id}")
         return {"id": c["id"], "symbol": c["symbol"].upper(), "name": c["name"], "rank": c.get("market_cap_rank"), "price": float(c["current_price"])}
 
+    def cg_platforms(self, cg_id):
+        """step 26: {platform: contract} of a coin (where its DEX pools are)."""
+        d = self.get(f"{CG}/coins/{urllib.parse.quote(cg_id)}?localization=false&tickers=false&market_data=false&community_data=false&developer_data=false")
+        return {k: v for k, v in ((d or {}).get("platforms") or {}).items() if k and v}
+
     def cg_contract(self, platform, address):
         d = self.get(f"{CG}/coins/{platform}/contract/{address}")
         return d["id"] if d and d.get("id") else None
@@ -152,6 +173,45 @@ class Net:
         return {"source": "gate", "symbol": f"{ticker}_USDT", "trading": pair.get("trade_status") == "tradable", "status": pair.get("trade_status"),
                 "price": float(px[0]["last"]) if px and px[0].get("last") else None}
 
+    def hlspot(self, ticker):
+        """step 26: every Hyperliquid spot pair whose base token is `ticker` -> [{symbol '@N', pair, quote, price, volume}]."""
+        if getattr(self, "_hls", None) is None:
+            self._hls = parse_spot(self.post(HL_INFO, {"type": "spotMetaAndAssetCtxs"}))
+        return [v for v in self._hls if (v["base"] or "").upper() == ticker]
+
+    def gt_pool(self, network, pool):
+        """step 26 (weekly re-check): one pool's liquidity and price now."""
+        d = self.get(f"{GT}/networks/{network}/pools/{pool}")
+        if not d or "data" not in d:
+            return None
+        a = d["data"]["attributes"]
+        return {"liquidity": float(a.get("reserve_in_usd") or 0), "price": float(a["base_token_price_usd"]) if a.get("base_token_price_usd") else None}
+
+    def gt_pools(self, network, address):
+        """step 26: GeckoTerminal pools of a token, deepest first."""
+        d = self.get(f"{GT}/networks/{network}/tokens/{address}/pools?page=1")
+        if d is None:
+            return []
+        if "data" not in d:
+            raise Unavailable("geckoterminal: no pools answer")
+        out = []
+        for p in d["data"]:
+            a, r = p["attributes"], p["relationships"]
+            bid = r["base_token"]["data"]["id"]          # '<network>_<address>': strip exactly the network, keep the case (Solana)
+            out.append({"pool": a["address"], "name": a["name"], "dex": r["dex"]["data"]["id"],
+                        "base": bid[len(network) + 1:] if bid.startswith(network + "_") else None,
+                        "liquidity": float(a.get("reserve_in_usd") or 0), "price": float(a["base_token_price_usd"]) if a.get("base_token_price_usd") else None,
+                        "volume_24h": float((a.get("volume_usd") or {}).get("h24") or 0)})
+        return sorted(out, key=lambda p: -p["liquidity"])
+
+    def gt_last(self, network, pool):
+        """step 26: the newest hourly candle of a pool and the CoinGecko id its metadata names for the base token."""
+        d = self.get(f"{GT}/networks/{network}/pools/{pool}/ohlcv/hour?aggregate=1&limit=3&currency=usd&token=base")
+        if not d or "data" not in d:
+            raise Unavailable("geckoterminal: no candles answer")
+        rows = d["data"]["attributes"]["ohlcv_list"]
+        return {"last": int(rows[0][0]) if rows else None, "base_cg_id": ((d.get("meta") or {}).get("base") or {}).get("coingecko_coin_id")}
+
     def hyperliquid(self, ticker):
         if self._hl is None:
             meta = self.post(HL_INFO, {"type": "meta"})
@@ -163,6 +223,20 @@ class Net:
             return None
         return {"source": "hyperliquid", "symbol": ticker, "trading": not u.get("isDelisted", False),
                 "status": "delisted" if u.get("isDelisted") else "trading", "price": float(mids[ticker]) if ticker in mids else None}
+
+
+def parse_spot(answer):
+    """Hyperliquid spotMetaAndAssetCtxs -> [{symbol '@N', base, quote, pair, price (mid), mark, volume (24h USD)}]."""
+    meta, ctxs = answer
+    names = {t["index"]: t["name"] for t in meta["tokens"]}
+    out = []
+    for u in meta["universe"]:
+        c = ctxs[u["index"]] if u["index"] < len(ctxs) else {}
+        base, quote = names.get(u["tokens"][0]), names.get(u["tokens"][1])
+        px = c.get("midPx") or None
+        out.append({"symbol": u["name"], "base": base, "quote": quote, "pair": f"{base}/{quote}", "price": float(px) if px else None,
+                    "mark": float(c["markPx"]) if c.get("markPx") else None, "volume": float(c.get("dayNtlVlm") or 0)})
+    return out
 
 
 def identify(symbol, net):
@@ -180,10 +254,83 @@ def identify(symbol, net):
     return top, cands, "ok", None
 
 
-def check_venues(ticker, coin_price, net):
-    """Every venue checked, in order; the first trading venue whose price agrees wins."""
+def check_hlspot(ticker, coin_price, net):
+    """step 26: every Hyperliquid spot pair of the token, each with why it is or is not usable; the pick is deterministic."""
+    checks = []
+    for v in net.hlspot(ticker):
+        diff = (v["price"] / coin_price - 1) if v["price"] and coin_price else None
+        why = ("quote " + str(v["quote"]) + " is not a USD stablecoin" if v["quote"] not in STABLE_QUOTES else
+               f"no trades in 24h (volume ${v['volume']:,.0f}, mark {v['mark']}): a stale pair" if v["volume"] < MIN_SPOT_VOLUME or v["price"] is None else
+               f"price {v['price']} is {diff:+.1%} from the coin's {coin_price}" if abs(diff) > TOLERANCE else None)
+        checks.append({"source": "hlspot", "symbol": v["symbol"], "pair": v["pair"], "listed": True, "status": "trading" if v["volume"] else "no trades",
+                       "price": v["price"], "mark": v["mark"], "volume_24h": round(v["volume"], 2), "coin_price": coin_price,
+                       "diff": None if diff is None else round(diff, 6), "ok": why is None, "why": why})
+    if not checks:
+        return [{"source": "hlspot", "listed": False, "ok": False, "why": f"no {ticker} spot pair on Hyperliquid"}], None
+    ok = sorted((c for c in checks if c["ok"]), key=lambda c: (c["pair"].split("/")[1] != "USDC", -c["volume_24h"], c["symbol"]))   # USDC, then volume
+    for c in checks:
+        c["chosen"] = bool(ok) and c is ok[0]
+    return checks, ({"source": "hlspot", "symbol": ok[0]["symbol"], "pair": ok[0]["pair"]} if ok else None)
+
+
+def check_dex(coin, net, now=None):
+    """step 26: the coin's own contract(s) -> GeckoTerminal pools, deepest first; the first pool passing every check wins."""
+    import time
+    now = now or time.time()
+    checks = []
+    plats = net.cg_platforms(coin["id"])
+    usable = [(pl, addr) for pl, addr in sorted(plats.items()) if pl in GT_NETWORK]
+    if not usable:
+        return [{"source": "dex", "listed": False, "ok": False, "why": f"no contract on a supported chain ({', '.join(sorted(plats)) or 'none'})"}], None
+    for pl, addr in usable:
+        net_id = GT_NETWORK[pl]
+        for p in net.gt_pools(net_id, addr.lower() if addr.startswith("0x") else addr)[:5]:
+            c = {"source": "dex", "symbol": f"{net_id}:{p['pool']}", "pool": p["pool"], "name": p["name"], "dex": p["dex"], "network": net_id,
+                 "contract": addr, "liquidity": round(p["liquidity"], 2), "volume_24h": round(p["volume_24h"], 2), "price": p["price"],
+                 "coin_price": coin["price"], "listed": True, "status": "pool"}
+            diff = (p["price"] / coin["price"] - 1) if p["price"] and coin["price"] else None
+            c["diff"] = None if diff is None else round(diff, 6)
+            why = None
+            same = (lambda a, b: a.lower() == b.lower()) if addr.startswith("0x") else (lambda a, b: a == b)   # hex: any case; base58: exact
+            if not p["base"] or not same(p["base"], addr):
+                why = "the coin is not this pool's base token"
+            elif p["liquidity"] < MIN_DEX_LIQUIDITY:
+                why = f"thin pool: ${p['liquidity']:,.0f} liquidity (minimum ${MIN_DEX_LIQUIDITY:,})"
+            elif diff is None or abs(diff) > TOLERANCE:
+                why = "no price" if diff is None else f"price {p['price']} is {diff:+.1%} from the coin's {coin['price']}"
+            else:
+                last = net.gt_last(net_id, p["pool"])
+                c["last_candle"] = last["last"]
+                c["pool_base_coingecko_id"] = last["base_cg_id"]
+                if last["base_cg_id"] != coin["id"]:           # missing counts as a mismatch: identity is never assumed
+                    why = f"the pool names its base token {last['base_cg_id'] or 'nothing'}, not {coin['id']}"
+                elif not last["last"] or now - last["last"] > 3 * 3600:
+                    why = "no hourly candle in the last 3 hours"
+            c.update(ok=why is None, why=why)
+            checks.append(c)
+            if why is None:
+                return checks, {"source": "dex", "symbol": c["symbol"], "pair": p["name"]}
+    return checks, None
+
+
+def check_venues(ticker, coin_price, net, coin=None):
+    """Every venue checked, in order; the first trading venue whose price agrees wins. Hyperliquid spot and
+    DEX pools are only tried when no exchange venue passed (existing coins keep their venue); a DEX pool is
+    found through the identified coin's contract (`coin`), never by the ticker."""
     checks, chosen = [], None
     for name in VENUES:
+        if name == "hlspot":
+            if not chosen:
+                c, ch = check_hlspot(ticker, coin_price, net)
+                checks += c
+                chosen = ch
+            continue
+        if name == "dex":
+            if not chosen and coin:
+                c, ch = check_dex(coin, net)
+                checks += c
+                chosen = ch
+            continue
         v = getattr(net, name)(ticker)
         if v is None:
             checks.append({"source": name, "listed": False, "ok": False, "why": f"no {ticker} market"})
@@ -238,7 +385,8 @@ def resolve_ticker(symbol, net=None, cg_id=None, registry=None, how=None, offlin
     net = net or Net()
     r = {"schema": SCHEMA, "ticker": sym, "asked": how or f"${sym}", "checked_at": now_iso(), "status": None, "reason": None,
          "coin": None, "candidates": [], "venues": [], "chosen": None,
-         "rules": {"tolerance": TOLERANCE, "ambiguous_ratio": AMBIGUOUS_RATIO, "venue_order": list(VENUES)}}
+         "rules": {"tolerance": TOLERANCE, "ambiguous_ratio": AMBIGUOUS_RATIO, "venue_order": list(VENUES),
+                   "min_spot_volume": MIN_SPOT_VOLUME, "min_dex_liquidity": MIN_DEX_LIQUIDITY}}
     if not TICKER_RE.match(sym):
         return {**r, "status": "refused", "reason": f"{symbol!r} is not a ticker"}
     try:
@@ -253,6 +401,13 @@ def resolve_ticker(symbol, net=None, cg_id=None, registry=None, how=None, offlin
             top, cands, status, why = identify(sym, net)
             r["candidates"] = cands[:10]
             if not top:
+                if status == "review":
+                    # step 26: the owner picks among them: show where each coin lives (chain + contract), top 3 by rank
+                    for c in sorted(r["candidates"], key=lambda c: c["rank"] or 10 ** 9)[:3]:
+                        try:
+                            c["platforms"] = net.cg_platforms(c["id"])
+                        except Unavailable:
+                            c["platforms"] = None
                 return {**r, "status": status, "reason": why}
             coin = net.cg_coin(top["id"])
             if not coin:
@@ -261,7 +416,7 @@ def resolve_ticker(symbol, net=None, cg_id=None, registry=None, how=None, offlin
         reg = (registry or load_registry())["tickers"].get(sym)
         if reg and reg["coingecko_id"] != coin["id"]:
             return {**r, "status": "review", "reason": f"{sym} is already {reg['name']} ({reg['coingecko_id']}) on the site, this is {coin['name']} ({coin['id']})"}
-        r["venues"], r["chosen"] = check_venues(sym, coin["price"], net)
+        r["venues"], r["chosen"] = check_venues(sym, coin["price"], net, coin=coin)
     except Unavailable as e:
         return {**r, "status": "refused", "reason": f"provider unavailable, nothing guessed: {e}"}
     if not r["chosen"]:
@@ -312,6 +467,8 @@ def register(receipt, root=HERE):
     entry = {"coingecko_id": receipt["coin"]["id"], "name": receipt["coin"]["name"], "source": receipt["chosen"]["source"],
              "symbol": receipt["chosen"]["symbol"], "receipt": os.path.relpath(rpath, root),
              "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+    if receipt["chosen"].get("pair"):                  # step 26: '@334' / a pool address are not readable: keep the pair name
+        entry["pair"] = receipt["chosen"]["pair"]
     reg["tickers"][t] = entry
     reg["tickers"] = dict(sorted(reg["tickers"].items()))
     os.makedirs(os.path.dirname(reg_path), exist_ok=True)
@@ -329,7 +486,7 @@ def show(r):
     for c in r.get("candidates", [])[1:4]:
         lines.append(f"  also   {c['name']} [{c['id']}] rank #{c['rank']}")
     for v in r.get("venues", []):
-        lines.append(f"  venue  {v['source']}:{v.get('symbol', '-')} " + ("OK" if v["ok"] else "skip")
+        lines.append(f"  venue  {v['source']}:{v.get('symbol', '-')}" + (f" ({v['pair']})" if v.get("pair") else "") + " " + ("OK" if v["ok"] else "skip")
                      + (f" price {v['price']} vs {v['coin_price']} ({v['diff']:+.2%})" if v.get("diff") is not None else "")
                      + (f" - {v['why']}" if v.get("why") else ""))
     if r.get("chosen"):

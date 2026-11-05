@@ -270,14 +270,18 @@ class Recheck(unittest.TestCase):
             def post(self, url, body):
                 if "hyperliquid" in self.down:
                     raise tickers.Unavailable("hyperliquid: timed out")
+                if body["type"] == "spotMetaAndAssetCtxs":                                   # step 26: the spot pairs (one call)
+                    return [{"tokens": [{"index": 0, "name": "KNTQ"}, {"index": 1, "name": "USDC"}], "universe": [{"name": "@334", "index": 0, "tokens": [0, 1]}]},
+                            [{"midPx": "0.46", "markPx": "0.46", "dayNtlVlm": "3300000"}]]
                 return {"universe": [{"name": "LIT"}]} if body["type"] == "meta" else {"LIT": "3.2"}
-        for down, gone in ((["binance.vision"], ["binance"]), (["hyperliquid"], ["hyperliquid"]), (["okx.com", "gateio"], ["okx", "gate"])):
+        for down, gone in ((["binance.vision"], ["binance"]), (["hyperliquid"], ["hyperliquid", "hlspot"]), (["okx.com", "gateio"], ["okx", "gate"])):
             b = st.Bulk(net=Net(down), sleep=lambda s: None).load_venues(strict=False)
             self.assertEqual(b.unreachable, gone, down)
             with self.assertRaises(tickers.Unavailable):                                       # the seed stays strict
                 st.Bulk(net=Net(down), sleep=lambda s: None).load_venues(strict=True)
         b = st.Bulk(net=Net(["binance.vision"]), sleep=lambda s: None).load_venues(strict=False)
         self.assertEqual(b.hl_mid, {"LIT": 3.2})                                               # the other venues still loaded
+        self.assertEqual([v["symbol"] for v in b.hlspot("KNTQ")], ["@334"])
 
     def test_bybit_is_not_a_venue(self):
         self.assertNotIn("bybit", tickers.VENUES)                                              # it blocks the CI runners (HTTP 403)
