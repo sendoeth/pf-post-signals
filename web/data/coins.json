@@ -142,7 +142,7 @@
    }
   }
  ],
- "registry_sha256": "a820f896b57ab6c4a6cb777e07b43dc224c81aa56079cc4626598ba3d5f1e8fc",
+ "registry_sha256": "5b329885ff0f3a22d8c73ca1b3b3820e9592cba9f93a319bdd176da517fe6ed8",
  "seed": "sources/tickers/seed/2026-11-02.json",
  "seeded_at": "2026-11-02T02:22:09Z",
  "recheck": "sources/tickers/recheck/2026-11-02.json",
@@ -151,7 +151,7 @@
   "top_listed": 100,
   "top_seeded": 95,
   "perps_added": 92,
-  "registered": 187,
+  "registered": 189,
   "flagged": 0,
   "review": 20,
   "excluded": 40
@@ -2774,6 +2774,34 @@
    "flag": null,
    "checked_at": "2026-11-02T02:40:39Z",
    "receipt": "sources/tickers/ACE.json"
+  },
+  {
+   "ticker": "KNTQ",
+   "name": "Kinetiq",
+   "coingecko_id": "kinetiq",
+   "rank": null,
+   "venue": "hlspot:@334 (KNTQ/USDC)",
+   "seed_diff": 0.001221,
+   "in_top": false,
+   "hl_perp": false,
+   "also_us_stock": null,
+   "flag": null,
+   "checked_at": "2026-11-06T14:25:07Z",
+   "receipt": "sources/tickers/KNTQ.json"
+  },
+  {
+   "ticker": "NEST",
+   "name": "NEST",
+   "coingecko_id": "nest-2",
+   "rank": null,
+   "venue": "dex:hyperevm:0x535f30f50ebda33575242c38b976e681d13db6fa (NEST / WHYPE 2%)",
+   "seed_diff": -0.024821,
+   "in_top": false,
+   "hl_perp": false,
+   "also_us_stock": null,
+   "flag": null,
+   "checked_at": "2026-11-06T14:23:01Z",
+   "receipt": "sources/tickers/NEST.json"
   }
  ],
  "review": [
