@@ -1,0 +1,48 @@
+$ git log -1
+21614fea3e0d179d1e6a281e82caa7b6ad370a93 step 26: the single-asset candle test uses an asset with no candle file (NEST has one since the add)
+$ python3 tools/guard.py --history
+guard: scanned 106 commits (all added lines + messages) -> 0 hits
+$ python3 tools/guard.py --tree
+guard: scanned 2650 files -> 0 hits
+$ python3 -m unittest tests.test_guard
+OK
+$ python3 -m unittest -v tests.test_spot_dex
+test_a_pick_for_another_ticker_is_refused ... ok
+test_an_ambiguous_ticker_is_never_guessed_and_lists_its_candidates ... ok
+test_the_pick_flows_through_the_post_reader ... ok
+test_the_refusal_lists_candidates_for_the_bot ... ok
+test_a_pool_without_a_coingecko_id_is_refused ... ok
+test_after_usdc_volume_decides ... ok
+test_pool_base_addresses_keep_their_case_and_lose_only_the_network ... ok
+test_a_pool_where_the_coin_is_not_the_base_or_names_another_coin_is_refused ... ok
+test_a_pool_without_current_candles_or_with_a_wrong_price_is_refused ... ok
+test_a_thin_pool_is_refused ... ok
+test_no_supported_chain_no_dex ... ok
+test_the_owners_pick_prices_on_the_deepest_pool_found_by_contract ... ok
+test_a_coin_with_an_exchange_venue_never_looks_at_spot_or_dex ... ok
+test_a_non_stable_quote_or_a_disagreeing_price_is_not_a_venue ... ok
+test_the_choice_is_deterministic_usdc_first_then_volume ... ok
+test_the_traded_usdc_pair_is_chosen_and_the_stale_pair_rejected ... ok
+test_a_record_on_a_new_source_validates_and_old_ones_still_do ... ok
+test_asset_info_for_the_new_sources ... ok
+test_geckoterminal_candles_page_back_oldest_first ... ok
+test_a_pool_that_thins_out_is_flagged_and_an_outage_is_not ... ok
+test_a_spot_pair_that_stops_trading_is_flagged_never_swapped ... ok
+test_every_registered_coin_keeps_its_venue_and_the_scores_their_values ... ok
+Ran 22 tests in 5.313s
+OK
+$ python3 -m unittest tests.test_add_call tests.test_history tests.test_tickers tests.test_seed
+Ran 61 tests in 82.297s
+OK (skipped=1)
+OK   ZEC     1970742039722479782 entry 2025-09-24T07:00:00Z record 54.49 candle open 54.49
+$ python3 -m unittest discover -s tests -t .
+Ran 283 tests in 123.858s
+OK (skipped=2)
+OK   ZEC     1970742039722479782 entry 2025-09-24T07:00:00Z record 54.49 candle open 54.49
+$ python3 check_bundle.py
+bundle: 59 record files -> 59 drawn, 0 superseded, 0 refused; 177 horizon cells, 59 best-since-post values, 8 caller ratings checked -> ALL MATCH
+$ python3 validate_records.py
+records: 59 checked against post_price.v1 -> ALL VALID
+$ python3 fetch_ohlc.py --check-only
+OK   ZEC     1970742039722479782 entry 2025-09-24T07:00:00Z record 54.49 candle open 54.49
+entry bars: 59/59 candle opens equal the record entry price

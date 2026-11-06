@@ -1,0 +1,14 @@
+charts.json 8fc78f8 sha256 2c3ba19f7fe8a68f2c7d30006bf9a1cadaa0d1c627560736a62133b89ca85a7e
+charts.json 21614fe sha256 ef9205c629c8b40f894c5c53417880fe0d13194254f77b1320f74584feda1ccf
+positions before 57, after 59; new: [('2118181656398090718', 'KNTQ'), ('2118181656398090718', 'NEST')]; removed: []
+pre-existing positions with the same entry price/time, side and status: 57/57
+score @BobLoukas: 50.877997 unchanged
+score @Corbanu: 49.461511 unchanged
+score @DrProfitCrypto: 47.829717 unchanged
+score @Okada_DeFi0x: 49.886732 unchanged
+score @goodalexander: 55.173035 unchanged
+score @koolkrypto223: 53.290027 -> 48.787341 (the 2 new calls: NEST + KNTQ, both long)
+score @mert: 54.545455 unchanged
+score @rosa_onchain: 54.382245 unchanged
+tickers before 187, after 189; added ['KNTQ', 'NEST']; every earlier ticker's entry identical: True
+sources of all tickers before: ['binance', 'gate', 'hyperliquid', 'okx'] after: ['binance', 'dex', 'gate', 'hlspot', 'hyperliquid', 'okx']

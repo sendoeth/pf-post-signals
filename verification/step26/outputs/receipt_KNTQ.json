@@ -1,0 +1,98 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "KNTQ",
+ "asked": "$KNTQ",
+ "checked_at": "2026-11-06T14:25:07Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "kinetiq",
+  "symbol": "KNTQ",
+  "name": "Kinetiq",
+  "rank": 207,
+  "price": 0.447309
+ },
+ "candidates": [
+  {
+   "id": "kinetiq",
+   "symbol": "KNTQ",
+   "name": "Kinetiq",
+   "rank": 207
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "listed": false,
+   "ok": false,
+   "why": "no KNTQ market"
+  },
+  {
+   "source": "hyperliquid",
+   "listed": false,
+   "ok": false,
+   "why": "no KNTQ market"
+  },
+  {
+   "source": "okx",
+   "listed": false,
+   "ok": false,
+   "why": "no KNTQ market"
+  },
+  {
+   "source": "gate",
+   "listed": false,
+   "ok": false,
+   "why": "no KNTQ market"
+  },
+  {
+   "source": "hlspot",
+   "symbol": "@254",
+   "pair": "KNTQ/USDH",
+   "listed": true,
+   "status": "no trades",
+   "price": null,
+   "mark": 0.20712,
+   "volume_24h": 0.0,
+   "coin_price": 0.447309,
+   "diff": null,
+   "ok": false,
+   "why": "no trades in 24h (volume $0, mark 0.20712): a stale pair",
+   "chosen": false
+  },
+  {
+   "source": "hlspot",
+   "symbol": "@334",
+   "pair": "KNTQ/USDC",
+   "listed": true,
+   "status": "trading",
+   "price": 0.447855,
+   "mark": 0.44778,
+   "volume_24h": 8864624.73,
+   "coin_price": 0.447309,
+   "diff": 0.001221,
+   "ok": true,
+   "why": null,
+   "chosen": true
+  }
+ ],
+ "chosen": {
+  "source": "hlspot",
+  "symbol": "@334",
+  "pair": "KNTQ/USDC"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "gate",
+   "hlspot",
+   "dex"
+  ],
+  "min_spot_volume": 10000,
+  "min_dex_liquidity": 100000
+ }
+}

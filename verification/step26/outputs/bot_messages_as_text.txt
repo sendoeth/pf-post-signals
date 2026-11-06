@@ -1,0 +1,40 @@
+(Telegram, owner's private chat; times are the owner's clock, UTC+1)
+
+[06.11.2026 15:20] QuantyQuants: 🪙 One ticker, several coins: pick the coin this post means (nothing is guessed):
+the coin(s) of this post could not be confirmed (nothing guessed)
+REVIEW $NEST: two comparable coins named NEST: NEST (#1458) and Nest (#3680): pick one by hand
+CANDIDATE NEST nest-2 NEST #1458 hyperevm:0x07c57e32a3c29d5659bda1d3efc2e7bf004e3035
+CANDIDATE NEST nest-3 Nest #3680 solana:68Nq68CrtLVpyvK5Un7UADiNczaGf39hBbj3diRsYj6D
+CANDIDATE NEST nest-4 Nest #12325 robinhood:0x8e859dbdfbfd2df6a99870e2871eaa58e8784e05
+LEG KNTQ side none: no side words next to this coin via $KNTQ = Kinetiq [kinetiq] on hlspot:@334
+[🪙 NEST = NEST #1458 hyperevm:0x07c5…3035] [🪙 NEST = Nest #3680 solana:68Nq68CrtLVpyvK5U…] [🪙 NEST = Nest #12325 robinhood:0x8e85…4e05] [❌ Cancel]
+
+(owner pressed NEST #1458 hyperevm)
+[06.11.2026 15:22] QuantyQuants: 🪙 Several coins in this post, each is added on its own:
+LEG NEST side none: no side words next to this coin via $NEST = NEST [nest-2] on dex:hyperevm:0x535f30f50ebda33575242c38b976e681d13db6fa
+LEG KNTQ side none: no side words next to this coin via $KNTQ = Kinetiq [kinetiq] on hlspot:@334
+
+(owner, after ✏️ Change on the NEST leg) NEST long reply to 0xLcrgs portfolio screenshot (BTC 94.9%, NEST 0.6%, no KNTQ): "More $NEST and $KNTQ" = add both
+[06.11.2026 15:23] QuantyQuants: 📌 POST 2026-11-05 03:20 UTC · @koolkrypto223  “More $NEST and $KNTQ”  NEST LONG @ 0.026565305221382396 (2026-11-05 04:00)
+coin      NEST [nest-2] priced on dex:hyperevm:0x535f30f50ebda33575242c38b976e681d13db6fa (identity + price checked by tickers.py, asked as $NEST = nest-2 (owner pick), receipt sha256 200bfa645e690733…)
+side      LONG by manual [] reason: reply to 0xLcrgs portfolio screenshot (BTC 94.9%, NEST 0.6%, no KNTQ): "More $NEST and $KNTQ" = add both
+[06.11.2026 15:24] QuantyQuants: ✅ added records/posts/2118181656398090718_NEST.json sha256 b0f9af671163a6769246fb56c00344829792fc2422203dea9c73ecd8d306dfe5
+candles   candles fetched for NEST (fetch_ohlc.py --assets): entry bars: 1/1 candle opens equal the record entry price
+checks    score = preview: yes; frozen values of every other position unchanged: yes
+
+(owner, after ✏️ Change on the KNTQ leg) KNTQ long reply to 0xLcrgs portfolio screenshot (BTC 94.9%, NEST 0.6%, no KNTQ): "More $NEST and $KNTQ" = add both
+[06.11.2026 15:25] QuantyQuants: 📌 … KNTQ LONG @ 0.45938 (2026-11-05 04:00)
+coin      Kinetiq [kinetiq] priced on hlspot:@334 (identity + price checked by tickers.py, asked as $KNTQ, receipt sha256 25b05ef462d931e6…)
+[06.11.2026 15:25] QuantyQuants: ✅ added records/posts/2118181656398090718_KNTQ.json sha256 c6a394be6230f32fe876d997e5d3d6bffd687a345b16f2d9a4fc85be1b9222ef
+candles   candles fetched for KNTQ (fetch_ohlc.py --assets): entry bars: 1/1 candle opens equal the record entry price
+bundle    d609f335… -> ef9205c629c8b40f894c5c53417880fe0d13194254f77b1320f74584feda1ccf
+checks    score = preview: yes; frozen values of every other position unchanged: yes
+[06.11.2026 15:25] /publish -> 🚀 Published 11479ce45ad610284dc4ca7da583ef868fbed94f
+✅ check_bundle.py: 59 record files -> ALL MATCH   ✅ validate_records.py: 59 -> ALL VALID   ✅ fetch_ohlc.py --check-only: 59/59 entry bars
+✅ tools/guard.py --tree: 2638 files -> 0 hits   ✅ unittest tests.test_static tests.test_rating tests.test_history tests.test_lifecycle tests.test_transcript: OK
+
+Earlier the same day (first attempt, 15:10-15:11): the NEST add wrote its record, then the FULL candle refetch failed its entry-bar check on an
+unrelated SOXL call (Yahoo had revised the 2026-11-02 14:30 bar after the call; the daily refresh logs such revisions but had not run yet):
+"REFUSED fetch_ohlc failed after the add: ... SOXL 2116304617047007308: candle open at 2026-11-02T14:30:00Z is 78.655, record entry 79.445".
+Nothing was published. Fixed in 8fc78f8 (Codex GO): an add fetches and checks only its own asset (fetch_ohlc.py --assets) and rolls back
+everything it wrote on any failure (tests: Rollback.test_a_failed_candle_fetch_leaves_nothing_behind, history.OnlyAssets).

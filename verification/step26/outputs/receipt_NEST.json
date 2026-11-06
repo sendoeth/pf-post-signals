@@ -1,0 +1,94 @@
+{
+ "schema": "quanty.ticker.v1",
+ "ticker": "NEST",
+ "asked": "$NEST = nest-2 (owner pick)",
+ "checked_at": "2026-11-06T14:23:01Z",
+ "status": "ok",
+ "reason": null,
+ "coin": {
+  "id": "nest-2",
+  "symbol": "NEST",
+  "name": "NEST",
+  "rank": 1458,
+  "price": 0.02350826
+ },
+ "candidates": [
+  {
+   "id": "nest-2",
+   "symbol": "NEST",
+   "name": "NEST",
+   "rank": 1458
+  }
+ ],
+ "venues": [
+  {
+   "source": "binance",
+   "listed": false,
+   "ok": false,
+   "why": "no NEST market"
+  },
+  {
+   "source": "hyperliquid",
+   "listed": false,
+   "ok": false,
+   "why": "no NEST market"
+  },
+  {
+   "source": "okx",
+   "listed": false,
+   "ok": false,
+   "why": "no NEST market"
+  },
+  {
+   "source": "gate",
+   "listed": false,
+   "ok": false,
+   "why": "no NEST market"
+  },
+  {
+   "source": "hlspot",
+   "listed": false,
+   "ok": false,
+   "why": "no NEST spot pair on Hyperliquid"
+  },
+  {
+   "source": "dex",
+   "symbol": "hyperevm:0x535f30f50ebda33575242c38b976e681d13db6fa",
+   "pool": "0x535f30f50ebda33575242c38b976e681d13db6fa",
+   "name": "NEST / WHYPE 2%",
+   "dex": "nest",
+   "network": "hyperevm",
+   "contract": "0x07c57e32a3c29d5659bda1d3efc2e7bf004e3035",
+   "liquidity": 1101105.12,
+   "volume_24h": 203894.82,
+   "price": 0.02292475134,
+   "coin_price": 0.02350826,
+   "listed": true,
+   "status": "pool",
+   "diff": -0.024821,
+   "last_candle": 1793970000,
+   "pool_base_coingecko_id": "nest-2",
+   "ok": true,
+   "why": null
+  }
+ ],
+ "chosen": {
+  "source": "dex",
+  "symbol": "hyperevm:0x535f30f50ebda33575242c38b976e681d13db6fa",
+  "pair": "NEST / WHYPE 2%"
+ },
+ "rules": {
+  "tolerance": 0.05,
+  "ambiguous_ratio": 4,
+  "venue_order": [
+   "binance",
+   "hyperliquid",
+   "okx",
+   "gate",
+   "hlspot",
+   "dex"
+  ],
+  "min_spot_volume": 10000,
+  "min_dex_liquidity": 100000
+ }
+}

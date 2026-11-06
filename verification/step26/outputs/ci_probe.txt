@@ -1,0 +1,8 @@
+GitHub Actions run 42038213605 (workflow probe26, branch step26, commit a15bb9f, removed before the merge), ubuntu runner:
+spotMetaAndAssetCtxs HTTP 200
+candles @334 25 0.46097
+pools HTTP 200
+ohlcv 24 [1793883600, 0.0267346802578989, 0.0267346802578989, 0.0255786794483647, 0.0255786794483647]
+pool HTTP 200
+coins/nest-2 HTTP 200
+(step 23 lesson: Bybit answered this server but HTTP 403 to the runners, so every new source is probed from the runners first)
