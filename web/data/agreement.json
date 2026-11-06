@@ -1,12 +1,12 @@
 {
  "schema": "quanty.agreement.v1",
- "built_at": "2026-11-06T16:03:02Z",
- "labels": 68,
- "labels_sha256": "52eb1f4ed0119e8caf742e9f1abb6ae61665c3a5cd5b5619f4bcdb38d2d3b623",
+ "built_at": "2026-11-06T16:18:23Z",
+ "labels": 69,
+ "labels_sha256": "c285e83a578bd54d5c2db451146ad0c02e36bc3c003eabfabfe20a8514285640",
  "by_source": {
   "record": 51,
   "scan": 26,
-  "watcher": 4
+  "watcher": 5
  },
  "overall": {
   "base": {
@@ -40,7 +40,7 @@
    "agree_now": 1
   },
   "Okada_DeFi0x": {
-   "labels": 2,
+   "labels": 3,
    "gating": 2,
    "agree_base": 2,
    "agree_now": 2
@@ -114,7 +114,7 @@
    "agree_now": 0
   },
   "skipped (no stated reason to read it as no side)": {
-   "labels": 1,
+   "labels": 2,
    "gating": 0,
    "agree_base": 0,
    "agree_now": 0
@@ -4158,6 +4158,47 @@
    "first_read": {
     "call": false,
     "asset": "BTC",
+    "side": "none",
+    "from": "the watcher card"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": null,
+   "agree_now": null,
+   "sources": [
+    "watcher"
+   ]
+  },
+  {
+   "id": "2118727055173091775|-",
+   "author": "Okada_DeFi0x",
+   "url": "https://x.com/Okada_DeFi0x/status/2118727055173091775",
+   "posted_at": "2026-11-06T15:27:48Z",
+   "text": "wait over 1M $PROS in season rewards? will join for sure",
+   "kind": "skipped (no stated reason to read it as no side)",
+   "gating": false,
+   "skip_basis": null,
+   "owner": {
+    "decision": "skip",
+    "asset": null,
+    "side": null,
+    "method": "watcher",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "PROS",
     "side": "none",
     "from": "the watcher card"
    },

@@ -1,8 +1,8 @@
 {
  "schema": "quanty.rules.v1",
  "gated_at": "2026-11-06T16:01:47Z",
- "labels_sha256": "52eb1f4ed0119e8caf742e9f1abb6ae61665c3a5cd5b5619f4bcdb38d2d3b623",
- "label_count": 68,
+ "labels_sha256": "c285e83a578bd54d5c2db451146ad0c02e36bc3c003eabfabfe20a8514285640",
+ "label_count": 69,
  "kept": [
   "more_cashtag",
   "positioned_side",
@@ -12,19 +12,19 @@
  "bindings": {
   "more_cashtag": {
    "code_sha256": "18ef061dbd15c1531cd8342855b9a38fcaf8c7548d831701615034106b8d1212",
-   "verified_labels_sha256": "52eb1f4ed0119e8caf742e9f1abb6ae61665c3a5cd5b5619f4bcdb38d2d3b623"
+   "verified_labels_sha256": "c285e83a578bd54d5c2db451146ad0c02e36bc3c003eabfabfe20a8514285640"
   },
   "positioned_side": {
    "code_sha256": "82ba7a33e5203f352baaf14df65b3c9a20e548b1e40da09e8ddad4bc85053409",
-   "verified_labels_sha256": "52eb1f4ed0119e8caf742e9f1abb6ae61665c3a5cd5b5619f4bcdb38d2d3b623"
+   "verified_labels_sha256": "c285e83a578bd54d5c2db451146ad0c02e36bc3c003eabfabfe20a8514285640"
   },
   "picking_up_quantity": {
    "code_sha256": "d39ad460d15532e78eb2bcf3445b46b2cd1eb79aef12215d1d829b1458b82d2e",
-   "verified_labels_sha256": "52eb1f4ed0119e8caf742e9f1abb6ae61665c3a5cd5b5619f4bcdb38d2d3b623"
+   "verified_labels_sha256": "c285e83a578bd54d5c2db451146ad0c02e36bc3c003eabfabfe20a8514285640"
   },
   "targeting_price": {
    "code_sha256": "2560bf13ffcf3baaa44675c0936545331225b816189fae2b65dde0d5fb43dbc8",
-   "verified_labels_sha256": "52eb1f4ed0119e8caf742e9f1abb6ae61665c3a5cd5b5619f4bcdb38d2d3b623"
+   "verified_labels_sha256": "c285e83a578bd54d5c2db451146ad0c02e36bc3c003eabfabfe20a8514285640"
   }
  },
  "gate": [
@@ -157,5 +157,5 @@
    "why": "agreement 30/58 -> 31/58, no label worse"
   }
  ],
- "verified_at": "2026-11-06T16:01:47Z"
+ "verified_at": "2026-11-06T16:18:23Z"
 }

@@ -1,6 +1,6 @@
 {
  "schema": "quanty.labels.v1",
- "count": 68,
+ "count": 69,
  "labels": [
   {
    "schema": "quanty.label.v1",
@@ -3489,6 +3489,125 @@
    "kind": "skipped (no stated reason to read it as no side)",
    "pinned_sha256": "e5ed2f0343a960a6e4e2d18184c28bdb6579f19817fdfa9236e31de2b8a6b3f5",
    "labelled_at": "2026-11-06T16:01:47Z"
+  },
+  {
+   "schema": "quanty.label.v1",
+   "id": "2118727055173091775|-",
+   "post": {
+    "id": "2118727055173091775",
+    "url": "https://x.com/Okada_DeFi0x/status/2118727055173091775",
+    "author": "Okada_DeFi0x",
+    "posted_at": "2026-11-06T15:27:48Z",
+    "text": "wait over 1M $PROS in season rewards? will join for sure"
+   },
+   "aliases": [
+    "PROS",
+    "PROS"
+   ],
+   "multi": false,
+   "owner": {
+    "decision": "skip",
+    "asset": null,
+    "side": null,
+    "method": "watcher",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "PROS",
+    "side": "none",
+    "from": "the watcher card"
+   },
+   "source": {
+    "type": "watcher",
+    "copy": {
+     "card": {
+      "url": "https://x.com/Okada_DeFi0x/status/2118727055173091775",
+      "handle": "Okada_DeFi0x",
+      "posted_at": "2026-11-06T15:27:48Z",
+      "sent_at": "2026-11-06T15:37:24Z",
+      "decision": "skip",
+      "decided_at": "2026-11-06T16:18:23Z"
+     },
+     "candidate": {
+      "id": "2118727055173091775",
+      "url": "https://x.com/Okada_DeFi0x/status/2118727055173091775",
+      "handle": "Okada_DeFi0x",
+      "posted_at": "2026-11-06T15:27:48Z",
+      "text": "wait over 1M $PROS in season rewards? will join for sure",
+      "kind": "reply",
+      "parent": {
+       "type": "reply",
+       "id": "2118726843331441130",
+       "handle": "Tanaka_L2"
+      },
+      "legs": [
+       {
+        "asset": null,
+        "via": [
+         "$PROS"
+        ],
+        "status": "refused",
+        "flag": "provider unavailable, nothing guessed: the watcher does not look up new tickers: it is checked when the post is added",
+        "side": "none",
+        "side_words": null,
+        "side_reason": null
+       }
+      ],
+      "found_at": "2026-11-06T15:37:01Z"
+     }
+    },
+    "copy_sha256": "6fd09a97d56467984c4e5e3ce44e50c6b6ac5af276ddc58fb72fd3c236e1b661"
+   },
+   "sources": [
+    {
+     "type": "watcher",
+     "copy": {
+      "card": {
+       "url": "https://x.com/Okada_DeFi0x/status/2118727055173091775",
+       "handle": "Okada_DeFi0x",
+       "posted_at": "2026-11-06T15:27:48Z",
+       "sent_at": "2026-11-06T15:37:24Z",
+       "decision": "skip",
+       "decided_at": "2026-11-06T16:18:23Z"
+      },
+      "candidate": {
+       "id": "2118727055173091775",
+       "url": "https://x.com/Okada_DeFi0x/status/2118727055173091775",
+       "handle": "Okada_DeFi0x",
+       "posted_at": "2026-11-06T15:27:48Z",
+       "text": "wait over 1M $PROS in season rewards? will join for sure",
+       "kind": "reply",
+       "parent": {
+        "type": "reply",
+        "id": "2118726843331441130",
+        "handle": "Tanaka_L2"
+       },
+       "legs": [
+        {
+         "asset": null,
+         "via": [
+          "$PROS"
+         ],
+         "status": "refused",
+         "flag": "provider unavailable, nothing guessed: the watcher does not look up new tickers: it is checked when the post is added",
+         "side": "none",
+         "side_words": null,
+         "side_reason": null
+        }
+       ],
+       "found_at": "2026-11-06T15:37:01Z"
+      }
+     },
+     "copy_sha256": "6fd09a97d56467984c4e5e3ce44e50c6b6ac5af276ddc58fb72fd3c236e1b661"
+    }
+   ],
+   "gating": false,
+   "skip_basis": null,
+   "kind": "skipped (no stated reason to read it as no side)",
+   "pinned_sha256": "0e327d46c89ec1d37e7aedc6757d1f14e417d05fa0406d8c418243fdcea9f715",
+   "labelled_at": "2026-11-06T16:18:23Z"
   }
  ]
 }
