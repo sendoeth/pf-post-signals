@@ -43,6 +43,7 @@ import ingest  # noqa: E402
 import prerender  # noqa: E402
 import rate  # noqa: E402
 import resolve  # noqa: E402
+import reader  # noqa: E402
 import tickers  # noqa: E402
 
 VERSION = "quanty.intake.v1"
@@ -199,6 +200,14 @@ def build_item(url, root=HERE, fetch=ingest.fetch_embed, prices=None, bundle=Non
         side_choice = {"method": "detector-leg", "terms": [words[:80]] if words else [], "reason": why}
     else:
         s, side_choice = choose_side(text, side, reason)
+    if side is None and s is None:
+        # step 27: no side from the words /add has always read: a rule learned from the owner's corrections may read one
+        # (only rules the gate kept and that are still bound to their code and the current labels: tools/reader.py)
+        r = reader.read(text, aliases, multi=multi)
+        if r["method"] == "rule":
+            s = r["side"]
+            side_choice = {"method": "rule", "terms": [r["words"][:80]],
+                           "reason": f"learned rule {r['rule']} (kept by the gate on the owner's labels, data/rules.json)"}
     post = resolve.load_post(receipt=rpath)
     series, revisions = shared_series(prices.series(info, post["posted_at"]), bundle, info["name"])
     rec = resolve.label_daily(resolve.resolve(post, info, series, prices.label, s), prices.daily_until(info, post["posted_at"]))

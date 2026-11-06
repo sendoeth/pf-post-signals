@@ -43,6 +43,7 @@ HERE = os.path.dirname(TOOLS)
 sys.path[:0] = [HERE, TOOLS]
 import detect   # noqa: E402
 import tickers  # noqa: E402
+import reader  # noqa: E402
 
 SCHEMA = "quanty.watch.v1"
 DIR = os.environ.get("QUANTY_WATCH_DIR", os.path.expanduser("~/.quanty-watch"))
@@ -118,6 +119,10 @@ def classify(p, reg=None, amap=None, words=None):
     if kind != "repost":
         for l in detect.coin_legs(text, amap=amap, net=OfflineNet(), registry=reg, words=words):
             side, why, sw = detect.leg_side(text, l["via"]) if l["asset"] else (None, None, None)
+            if side is None and l["asset"]:                # step 27: a rule learned from the owner's corrections (kept, bound)
+                r = reader.read(text, [l["asset"]] + [v.lstrip("$") for v in l["via"]], multi=True)
+                if r["method"] == "rule":
+                    side, why, sw = r["side"], f"learned rule {r['rule']}", r["words"]
             legs.append({"asset": l["asset"], "via": l["via"], "status": l["status"],
                          "flag": None if l["status"] == "ok" else (l["reason"] or "needs review"),
                          "side": {1: "long", -1: "short"}.get(side, "none"), "side_words": sw, "side_reason": why})

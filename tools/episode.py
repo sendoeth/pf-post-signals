@@ -222,6 +222,7 @@ def head(title, desc, url):
       <a href="chart.html">Chart</a>
       <a href="episodes.html"{{CUR}}>Episodes</a>
       <a href="coins.html">Coins</a>
+      <a href="agreement.html">Agreement</a>
     </nav>
   </header>
 """

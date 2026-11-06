@@ -1,0 +1,4183 @@
+{
+ "schema": "quanty.agreement.v1",
+ "built_at": "2026-11-06T16:03:02Z",
+ "labels": 68,
+ "labels_sha256": "52eb1f4ed0119e8caf742e9f1abb6ae61665c3a5cd5b5619f4bcdb38d2d3b623",
+ "by_source": {
+  "record": 51,
+  "scan": 26,
+  "watcher": 4
+ },
+ "overall": {
+  "base": {
+   "n": 58,
+   "agree": 26,
+   "rate": 0.4483
+  },
+  "with_kept_rules": {
+   "n": 58,
+   "agree": 31,
+   "rate": 0.5345
+  }
+ },
+ "kept_rules": [
+  "more_cashtag",
+  "positioned_side",
+  "picking_up_quantity",
+  "targeting_price"
+ ],
+ "per_caller": {
+  "BobLoukas": {
+   "labels": 50,
+   "gating": 42,
+   "agree_base": 15,
+   "agree_now": 18
+  },
+  "DrProfitCrypto": {
+   "labels": 1,
+   "gating": 1,
+   "agree_base": 1,
+   "agree_now": 1
+  },
+  "Okada_DeFi0x": {
+   "labels": 2,
+   "gating": 2,
+   "agree_base": 2,
+   "agree_now": 2
+  },
+  "goodalexander": {
+   "labels": 7,
+   "gating": 7,
+   "agree_base": 4,
+   "agree_now": 4
+  },
+  "koolkrypto223": {
+   "labels": 5,
+   "gating": 4,
+   "agree_base": 2,
+   "agree_now": 4
+  },
+  "mert": {
+   "labels": 1,
+   "gating": 1,
+   "agree_base": 1,
+   "agree_now": 1
+  },
+  "rosa_onchain": {
+   "labels": 2,
+   "gating": 1,
+   "agree_base": 1,
+   "agree_now": 1
+  }
+ },
+ "per_kind": {
+  "add_refused": {
+   "labels": 1,
+   "gating": 0,
+   "agree_base": 0,
+   "agree_now": 0
+  },
+  "agree": {
+   "labels": 20,
+   "gating": 20,
+   "agree_base": 19,
+   "agree_now": 19
+  },
+  "agree_no_side": {
+   "labels": 6,
+   "gating": 6,
+   "agree_base": 6,
+   "agree_now": 6
+  },
+  "false_call": {
+   "labels": 1,
+   "gating": 1,
+   "agree_base": 1,
+   "agree_now": 1
+  },
+  "side_added": {
+   "labels": 30,
+   "gating": 30,
+   "agree_base": 0,
+   "agree_now": 5
+  },
+  "side_flipped": {
+   "labels": 1,
+   "gating": 1,
+   "agree_base": 0,
+   "agree_now": 0
+  },
+  "skip_repeat_or_other": {
+   "labels": 8,
+   "gating": 0,
+   "agree_base": 0,
+   "agree_now": 0
+  },
+  "skipped (no stated reason to read it as no side)": {
+   "labels": 1,
+   "gating": 0,
+   "agree_base": 0,
+   "agree_now": 0
+  }
+ },
+ "changed_by_rules": [
+  "1995532011818106902|-",
+  "2011105173104705981|GOLD",
+  "2022006665764082140|STOCKS",
+  "2062277523288068152|BTC",
+  "2118181656398090718|KNTQ",
+  "2118181656398090718|NEST"
+ ],
+ "disagreements": [
+  {
+   "id": "1993658195982876720|SILVER",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/1993658195982876720",
+   "posted_at": "2025-11-26T12:28:48Z",
+   "text": "Silver continues to act really well.  \n\nThis is a refueling for another big continuation of the bull market.  As soon as Jan too by the looks of it.",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "SILVER",
+    "side": "long",
+    "method": "changed",
+    "reason": "reviewed: calls the silver pause 'a refueling for another big continuation of the bull market', expected 'as soon as Jan': a long view in his own words",
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "SILVER",
+    "side": "none",
+    "from": "the scan's stored read"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record",
+    "scan"
+   ]
+  },
+  {
+   "id": "1999149068459618541|STOCKS",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/1999149068459618541",
+   "posted_at": "2025-12-11T16:07:34Z",
+   "text": "Still believe Stocks are setup here for a good 6-8 Week run higher.  So far a constructive eight week pause before the next Cycle confirms.  \nHave to give it a little wiggle room until it breaks resistance.  Nov 17th candle is a stop.",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "STOCKS",
+    "side": "long",
+    "method": "changed",
+    "reason": "reviewed: expects 'a good 6-8 Week run higher' for stocks and names a stop (the Nov 17th candle)",
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "STOCKS",
+    "side": "none",
+    "from": "the scan's stored read"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record",
+    "scan"
+   ]
+  },
+  {
+   "id": "2003111794072801304|GOLD",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2003111794072801304",
+   "posted_at": "2025-12-22T14:34:02Z",
+   "text": "No quit in this gold bull.  22 months straight up since the breakout, with very little drawdown.  The cleanest chart you could ever hope to ride.",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "GOLD",
+    "side": "long",
+    "method": "changed",
+    "reason": "reviewed: 'No quit in this gold bull ... the cleanest chart you could ever hope to ride': a long stance on gold",
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "GOLD",
+    "side": "none",
+    "from": "the scan's stored read"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record",
+    "scan"
+   ]
+  },
+  {
+   "id": "2003490330650575038|COPPER",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2003490330650575038",
+   "posted_at": "2025-12-23T15:38:12Z",
+   "text": "Seems like Industrial Metals are really starting their big bull legs. Some rotation from Precious Metals allocations not a bad idea.\n\nHere is copper and miners.",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "COPPER",
+    "side": "long",
+    "method": "changed",
+    "reason": "reviewed: industrial metals 'starting their big bull legs', suggests rotating into them and posts the copper chart: long copper",
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "COPPER",
+    "side": "none",
+    "from": "the scan's stored read"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record",
+    "scan"
+   ]
+  },
+  {
+   "id": "2016523209500131511|STOCKS",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2016523209500131511",
+   "posted_at": "2026-01-28T14:46:12Z",
+   "text": "Very strong signal on Stocks here.  Week 10 of the Cycle, new ATH's, and recently left behind a very clean stop with the recent Daily Cycle Low.",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "STOCKS",
+    "side": "long",
+    "method": "changed",
+    "reason": "reviewed: 'Very strong signal on Stocks here', new all-time highs and a clean stop at the Daily Cycle Low",
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "STOCKS",
+    "side": "none",
+    "from": "the scan's stored read"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record",
+    "scan"
+   ]
+  },
+  {
+   "id": "2017256982743339269|BTC",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2017256982743339269",
+   "posted_at": "2026-01-30T15:21:58Z",
+   "text": "Bitcoin 4 Yr Cycle update.  \n\nOn month 38 of 48(avg).  Closing 3rd month below the 10ma.  About to close 4 red months in a row, not seen since 2018.  Looking like the recent move to $98k was the counter-trend move.  Clear divergence from all other assets.\n\nI hate being bearish any asset, especially bitcoin.  I rarely short markets or believe any decent asset class stays down for long.  I always want to be a bull in general.  But this \"currently\" is a perfect 4yr cycle and mirrors all priors.  Remember you can be very bullish on the fundamentals, but also realize that everything is cyclical and respecting there is a time and place.  \n\nOfc, markets can change in a heartbeat, every strategy is breakable, and it's our job not to get hung up on any narrative or bias.  In that regard, on the positive, Bitcoin's declining phase is likely accelerated now, as sentiment has been repeatedly killed.  Cycle declines are ALL about sentiment clearing events, and on that front we could be looking at an earlier (month 44?) low as a result.   \n\nBut many of the bulls on X are just selling services, funds/DAT's, clout, etc, choosing personal gain/bias over reality and price action.  Shifting narratives to keep the hope alive. They're human after-all. \n\nI think that if this consistent historical structure were to change, then we would see a close back over the 10ma and i would want to quickly start to shift focus to the bull side.  If such a change is structure were to happen, then I believe it would be signaling something massive afoot.  I'll never say it can't happen here, I have strong convictions that I want to constantly challenge.  I also think you're not giving up (besides some upside) being defensive and risk adverse here, even if this reverses and goes on to new highs.  \n\nLastly, I also think most investors are still better off socking bitcoin away and ignoring all the volatility. And just use long drawdown period to aggressively accumulate.",
+   "kind": "agree",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "BTC",
+    "side": "short",
+    "method": "changed",
+    "reason": "reviewed: the 4-year cycle update says the move to $98k was the counter-trend move and the declining phase is on ('I hate being bearish any asset, especially bitcoin'); the detector's 'very bullish on' is about fundamentals in general, so the side is set by hand",
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": true,
+    "asset": "BTC",
+    "side": "short",
+    "from": "the scan's stored read"
+   },
+   "read_base": {
+    "side": "long",
+    "method": "detector",
+    "rule": null,
+    "words": "very bullish, bullish on"
+   },
+   "read_now": {
+    "side": "long",
+    "method": "detector",
+    "rule": null,
+    "words": "very bullish, bullish on"
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record",
+    "scan"
+   ]
+  },
+  {
+   "id": "2023793838322782454|BTC",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2023793838322782454",
+   "posted_at": "2026-02-17T16:17:05Z",
+   "text": "Bitcoin price action remains horrendous.  Very weak.  \n\nAfter the recent flush out, a natural, sharp counter trend bounce would be expected, but was not forthcoming. \n\nHas to reclaim $72k to even consider a counter-trend move. \n\nJust bear market things.",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "BTC",
+    "side": "short",
+    "method": "changed",
+    "reason": "reviewed: 'Bitcoin price action remains horrendous ... has to reclaim $72k to even consider a counter-trend move': a bearish stance, 18 days after the last added bitcoin call",
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "BTC",
+    "side": "none",
+    "from": "the scan's stored read"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record",
+    "scan"
+   ]
+  },
+  {
+   "id": "2031739333057659161|STOCKS",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2031739333057659161",
+   "posted_at": "2026-03-11T14:29:39Z",
+   "text": "I believe there is a good chance that Stocks have peaked for its 4 Year Cycle. Last week my 'active' portfolios went into more defensive positions, cash to 33%.  Further selling to come on more confirmation.\n\nSeeing the signs of the breakdown on the Daily Cycle currently.  The weekly Cycle has NOT yet confirmed this, so it's early days on this view.  \n\nA top would bring the Oct timeframe into focus for a bottom. Given the AI capex and fiscal stimulus, this more likely to be a relatively mild cyclical bear, a shakeout, setting up for a really explosive rally for 2027-2029.",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "STOCKS",
+    "side": "short",
+    "method": "changed",
+    "reason": "reviewed: says stocks have likely peaked for the 4-year cycle, moved his active portfolios defensive (33% cash) with 'further selling to come': a change from long to defensive",
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "STOCKS",
+    "side": "none",
+    "from": "the scan's stored read"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record",
+    "scan"
+   ]
+  },
+  {
+   "id": "2094827036812435935|BTC",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2094827036812435935",
+   "posted_at": "2026-09-01T16:37:40Z",
+   "text": "The transition from a bear to bull phase can be tricky to position for, especially when you don't get capitulation deep into a Cycles timing band.\n\nThis is the case for Bitcoin currently. There are clear signs of a bottom with some confirming elements, but not definitive confirmation of a bottom yet. And even with a price low in place, the likelihood of chop or a retest of the lower regions is real. Investors who rode out the bear can still give a lot back as a market transitions.\n\nBased on what I'm seeing here, if I had a gun to head, I would say the price lows are in for Bitcoin. But it probably won't be as easy as that, meaning the market will likely need to shake out some of this early exuberance we're seeing on the feed.\n\nI'll record the next 4yr Cycle video later this week to discuss how I'm thinking about deploying the last tranche.",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "BTC",
+    "side": "long",
+    "method": "curated",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "BTC",
+    "side": "none",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2097324043334451439|COPX",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2097324043334451439",
+   "posted_at": "2026-09-08T13:59:52Z",
+   "text": "$COPX  after an 8 month pause is looking to break out again.  \n\nStill deserves a small allocation in long term accounts",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "COPX",
+    "side": "long",
+    "method": "curated",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "COPX",
+    "side": "none",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2100953898630443447|BTC",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2100953898630443447",
+   "posted_at": "2026-09-18T14:23:37Z",
+   "text": "Very good setup here for Bitcoin to smash through the May highs and confirm a new bull market.  \n\nMore importantly, the recent 4-week consolidation means any solid push through the highs is very likely a fresh new move that has legs (vs a trap) that might not look back until the $90's.  \n\nFailure to break through sets up a move back to the lows of the range.",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "BTC",
+    "side": "long",
+    "method": "curated",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "BTC",
+    "side": "none",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2102014028855820403|BTC",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2102014028855820403",
+   "posted_at": "2026-09-21T12:36:12Z",
+   "text": "Really solid Bitcoin push here to break the intermediate trend and resume the secular bull trend.  \nAs is common in any new move, a nasty shakeout is likely, but I’d suspect it doesn’t come until later and from higher.",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "BTC",
+    "side": "long",
+    "method": "curated",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "BTC",
+    "side": "none",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2102024327075877097|BTC",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2102024327075877097",
+   "posted_at": "2026-09-21T13:17:07Z",
+   "text": "You can't trade opinions and tweets mate.  Positions matter, and we've scaled in longs from the very bottom.",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "BTC",
+    "side": "long",
+    "method": "curated",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "BTC",
+    "side": "none",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2104977267109896477|SILVER",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2104977267109896477",
+   "posted_at": "2026-09-29T16:51:03Z",
+   "text": "Don’t like silver until 2027",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "SILVER",
+    "side": "short",
+    "method": "curated",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "SILVER",
+    "side": "none",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2105699317004583026|BTC",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2105699317004583026",
+   "posted_at": "2026-10-01T16:40:13Z",
+   "text": "With the Sept monthly close, the remaining confirming factors for a new Bitcoin Cycle are now in. \n\nThe slightly early Cycle Low (44 months vs 47), and lack of deeper move in June/July sets up a possibility of a Cycle that could well (upside) surprise. Versus say the diminishing return idea.\n\nBut, don't forget that new Cycles (in all assets) generally have one major shakeout, the type to give bears hope, one more time.",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "BTC",
+    "side": "long",
+    "method": "curated",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "BTC",
+    "side": "none",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2106744910896312646|SILVER",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2106744910896312646",
+   "posted_at": "2026-10-04T13:55:02Z",
+   "text": "To my long time silver friends, why Silver is more likely heading to $46 before turning bullish again.  \n\nSilver blow-off moves take a lot of time to retrace and rebuild a base.  And often the last weekly cycle from the blowoff phase has to be retraced, in this case to $46.  \n\nFrom a trend perspective, this remains an intermediate time frame retracement from the January blow-off move. The arrows show the corresponding gold Cycle highs/low, which are in decline.  And the next weekly cycle low is not due until the end of 2026.\n\nFrom past experience, Silver in a bull market offers one of the best opportunities to post significant portfolio gains. It's because when it goes into a parabolic advance, it's generally just one relentless and straight move up, allowing for good positions to sit tight in. But those parabolic moves are short-lived (6 to 12 months) and then it takes a long time for another such environment to build.  \n\nI feel strongly that Silver will go through another such environment in the near future, but know that it's always a process.",
+   "kind": "side_flipped",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "SILVER",
+    "side": "short",
+    "method": "curated",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": true,
+    "asset": "SILVER",
+    "side": "long",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "long",
+    "method": "detector",
+    "rule": null,
+    "words": "turning bullish"
+   },
+   "read_now": {
+    "side": "long",
+    "method": "detector",
+    "rule": null,
+    "words": "turning bullish"
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2106750657877434407|COPX",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2106750657877434407",
+   "posted_at": "2026-10-04T14:17:53Z",
+   "text": "I’ve been bullish it for a while and hold a decent COPX position.",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "COPX",
+    "side": "long",
+    "method": "curated",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "COPX",
+    "side": "none",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2107063137958564197|STOCKS",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2107063137958564197",
+   "posted_at": "2026-10-05T10:59:34Z",
+   "text": "Interesting market.  Stocks deep in their timing for a weekly cycle low, without being reflected in the index. \n\nTech has held the index up. While most sectors have seen real selloffs (Financials, homebuilders, Consumer, transports etc) to Cycle Low Levels.  \n\nSentiment hit March Low levels!\n\nThis is a setup for a big new advance higher.",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "STOCKS",
+    "side": "long",
+    "method": "curated",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "STOCKS",
+    "side": "none",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2107475725573906895|STOCKS",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2107475725573906895",
+   "posted_at": "2026-10-06T14:19:02Z",
+   "text": "Stocks at all time highs with many of the sectors recently near bear territory is an extremely bullish setup.\n\nThe only interpretation now is this just Week 4 of the Cycle coming off sentiment levels matching the March lows.\n\nNo move is ever guaranteed but if we're looking at another Right Translated Cycle then it could be a big Q4.",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "STOCKS",
+    "side": "long",
+    "method": "curated",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "STOCKS",
+    "side": "none",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2110764348981612915|BTC",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2110764348981612915",
+   "posted_at": "2026-10-15T16:06:51Z",
+   "text": "Bitcoin held up well and looking to put in a 60-day cycle low.",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "BTC",
+    "side": "long",
+    "method": "curated",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "BTC",
+    "side": "none",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector-leg",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector-leg",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2112915214479798344|BTC",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2112915214479798344",
+   "posted_at": "2026-10-21T14:33:37Z",
+   "text": "Bitcoin appears to be confirming the new cycle here. These events provide a really clear and clean setup. \n\nThe upside target is around 30 to 45 days, room for a good advance.  It is however not guarantee of a major upside move, but provides an excellent anchoring point because a loss of the recent lows ($79,600) is a level where you would want to get very defensive.",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "BTC",
+    "side": "long",
+    "method": "curated",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "BTC",
+    "side": "none",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2112919830357577753|BTC",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2112919830357577753",
+   "posted_at": "2026-10-21T14:51:58Z",
+   "text": "Currently long bitcoin - short gold futures.\nBoth Cycle positions align well into Dec.   \nThe rest is out of my control.",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "BTC",
+    "side": "long",
+    "method": "curated",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "BTC",
+    "side": "none",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "ambiguous",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "ambiguous",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2112919830357577753|GOLD",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2112919830357577753",
+   "posted_at": "2026-10-21T14:51:58Z",
+   "text": "Currently long bitcoin - short gold futures.\nBoth Cycle positions align well into Dec.   \nThe rest is out of my control.",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "GOLD",
+    "side": "short",
+    "method": "curated",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "GOLD",
+    "side": "none",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "ambiguous",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "ambiguous",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2113279842636419392|BTC",
+   "author": "goodalexander",
+   "url": "https://x.com/goodalexander/status/2113279842636419392",
+   "posted_at": "2026-10-22T14:42:31Z",
+   "text": "Long BTC \n\nUnfortunately where we are headed there will likely be corn 🌽 perpetual swaps so want to be clear",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "BTC",
+    "side": "long",
+    "method": "curated",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "BTC",
+    "side": "none",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2113613893662588966|SILVER",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2113613893662588966",
+   "posted_at": "2026-10-23T12:49:55Z",
+   "text": "Very clean Silver Cycles that are now in a failed weekly state.  Week 14, so potentially another 2 months remain where damage can be done.",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "SILVER",
+    "side": "short",
+    "method": "curated",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "SILVER",
+    "side": "none",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2116203980111933911|STOCKS",
+   "author": "goodalexander",
+   "url": "https://x.com/goodalexander/status/2116203980111933911",
+   "posted_at": "2026-10-30T16:22:00Z",
+   "text": "Golden retriever version 🐕\n\nShort S&P 500 futures. Intel just flipped AI spending from \"paid for by cash flow\" to \"needs debt and stock sales.\" Memory prices are wrecking PC and consumer demand. Oil up and EURCHF down say Iran and Ukraine are heating up into the midterms.\n\nNot",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "STOCKS",
+    "side": "short",
+    "method": "curated",
+    "reason": "the post opens with 'Short S&P 500 futures'; oil is mentioned only as macro context ('Oil up and EURCHF down say Iran and Ukraine are heating up'), not as a position",
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "STOCKS",
+    "side": "none",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2116304617047007308|SOXL",
+   "author": "goodalexander",
+   "url": "https://x.com/goodalexander/status/2116304617047007308",
+   "posted_at": "2026-10-30T23:01:54Z",
+   "text": "solid support here",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "SOXL",
+    "side": "short",
+    "method": "changed",
+    "reason": "goodalexander's 'solid support here' image is a crop (score 0.823, shared label 6.89) of the weekly SOXL chart he replied to ('Direxion Daily Semiconductor Bull 3X Shares'); 6.89 is the 2025 low, 91% below SOXL's 77.05 at post time, so 'solid support' is a joke that SOXL could fall all the way back, in line with his short stance on semis",
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "SOXL",
+    "side": "none",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record"
+   ]
+  }
+ ],
+ "gate": [
+  {
+   "rule": "more_cashtag",
+   "doc": "'More $NEST and $KNTQ': 'more' directly before a list of cashtags that contains this asset = add more = long.",
+   "code_sha256": "18ef061dbd15c1531cd8342855b9a38fcaf8c7548d831701615034106b8d1212",
+   "before": {
+    "n": 58,
+    "agree": 26,
+    "rate": 0.4483
+   },
+   "after": {
+    "n": 58,
+    "agree": 28,
+    "rate": 0.4828
+   },
+   "fixed": [
+    "2118181656398090718|KNTQ",
+    "2118181656398090718|NEST"
+   ],
+   "worsened": [],
+   "fires_on": [
+    "2118181656398090718|KNTQ",
+    "2118181656398090718|NEST"
+   ],
+   "decision": "kept",
+   "why": "agreement 26/58 -> 28/58, no label worse"
+  },
+  {
+   "rule": "positioned_side",
+   "doc": "'Still leaning and positioned on the bull side' (for this asset's post): the author's stated positioning.",
+   "code_sha256": "82ba7a33e5203f352baaf14df65b3c9a20e548b1e40da09e8ddad4bc85053409",
+   "before": {
+    "n": 58,
+    "agree": 28,
+    "rate": 0.4828
+   },
+   "after": {
+    "n": 58,
+    "agree": 29,
+    "rate": 0.5
+   },
+   "fixed": [
+    "2022006665764082140|STOCKS"
+   ],
+   "worsened": [],
+   "fires_on": [
+    "2022006665764082140|STOCKS"
+   ],
+   "decision": "kept",
+   "why": "agreement 28/58 -> 29/58, no label worse"
+  },
+  {
+   "rule": "picking_up_quantity",
+   "doc": "'Picking up 10BTC at $65,000': picking up a stated quantity of this asset = a buy.",
+   "code_sha256": "d39ad460d15532e78eb2bcf3445b46b2cd1eb79aef12215d1d829b1458b82d2e",
+   "before": {
+    "n": 58,
+    "agree": 29,
+    "rate": 0.5
+   },
+   "after": {
+    "n": 58,
+    "agree": 30,
+    "rate": 0.5172
+   },
+   "fixed": [
+    "2062277523288068152|BTC"
+   ],
+   "worsened": [],
+   "fires_on": [
+    "2062277523288068152|BTC"
+   ],
+   "decision": "kept",
+   "why": "agreement 29/58 -> 30/58, no label worse"
+  },
+  {
+   "rule": "bullish_anywhere",
+   "doc": "Broad: the word 'bullish' anywhere = long (expected to be rejected: shorts say 'before turning bullish').",
+   "code_sha256": "559f1caf1b251624fafd9c703fc772618db85147548f2786f8af67708afb86b8",
+   "before": {
+    "n": 58,
+    "agree": 30,
+    "rate": 0.5172
+   },
+   "after": {
+    "n": 58,
+    "agree": 31,
+    "rate": 0.5345
+   },
+   "fixed": [
+    "2106750657877434407|COPX",
+    "2107475725573906895|STOCKS"
+   ],
+   "worsened": [
+    "2091161059801391206|-"
+   ],
+   "fires_on": [
+    "2091161059801391206|-",
+    "2106750657877434407|COPX",
+    "2107475725573906895|STOCKS"
+   ],
+   "decision": "rejected",
+   "why": "1 label(s) that agreed would disagree"
+  },
+  {
+   "rule": "targeting_price",
+   "doc": "Broad: 'targeting $X' = long (a target can also be a downside one).",
+   "code_sha256": "2560bf13ffcf3baaa44675c0936545331225b816189fae2b65dde0d5fb43dbc8",
+   "before": {
+    "n": 58,
+    "agree": 30,
+    "rate": 0.5172
+   },
+   "after": {
+    "n": 58,
+    "agree": 31,
+    "rate": 0.5345
+   },
+   "fixed": [
+    "2011105173104705981|GOLD"
+   ],
+   "worsened": [],
+   "fires_on": [
+    "1995532011818106902|-",
+    "2011105173104705981|GOLD"
+   ],
+   "decision": "kept",
+   "why": "agreement 30/58 -> 31/58, no label worse"
+  }
+ ],
+ "rules_file": "data/rules.json",
+ "labels_file": "data/labels.json",
+ "rows": [
+  {
+   "id": "1776235528741937435|SILVER",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/1776235528741937435",
+   "posted_at": "2024-04-05T13:08:45Z",
+   "text": "So bullish on silver here.  \n\nBuilt a position over last few months to hopefully hold/roll over next few years. As long as it holds $24.30\n\nLoaded to the gills.",
+   "kind": "agree",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "SILVER",
+    "side": "long",
+    "method": "curated",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": true,
+    "asset": "SILVER",
+    "side": "long",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "long",
+    "method": "detector",
+    "rule": null,
+    "words": "bullish on"
+   },
+   "read_now": {
+    "side": "long",
+    "method": "detector",
+    "rule": null,
+    "words": "bullish on"
+   },
+   "agree_base": true,
+   "agree_now": true,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "1970742039722479782|ZEC",
+   "author": "mert",
+   "url": "https://x.com/mert/status/1970742039722479782",
+   "posted_at": "2025-09-24T06:48:11Z",
+   "text": "I am irresponsibly long ZEC",
+   "kind": "agree",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "ZEC",
+    "side": "long",
+    "method": "curated",
+    "reason": "his own post \"I am irresponsibly long ZEC\" (2025-09-24); his 2025-09-29 \"did you fade\" post with a ZEC/USDT chart at $68 confirms it was his call",
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": true,
+    "asset": "ZEC",
+    "side": "long",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "long",
+    "method": "detector",
+    "rule": null,
+    "words": "I am irresponsibly long"
+   },
+   "read_now": {
+    "side": "long",
+    "method": "detector",
+    "rule": null,
+    "words": "I am irresponsibly long"
+   },
+   "agree_base": true,
+   "agree_now": true,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "1985730433510973908|-",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/1985730433510973908",
+   "posted_at": "2025-11-04T15:26:43.000Z",
+   "text": "The bull case for Bitcoin. Incoming (here or soon) weekly Cycle Low on extremely negative sentiment. Mirroring prior two cycles.",
+   "kind": "skip_repeat_or_other",
+   "gating": false,
+   "skip_basis": null,
+   "owner": {
+    "decision": "skip",
+    "asset": null,
+    "side": null,
+    "method": "review",
+    "reason": "same day as the 'still long bitcoin' call already counted: a repeat",
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": null,
+    "side": "none",
+    "from": "the scan's stored read"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": null,
+   "agree_now": null,
+   "sources": [
+    "scan"
+   ]
+  },
+  {
+   "id": "1985733515221078204|BTC",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/1985733515221078204",
+   "posted_at": "2025-11-04T15:38:57Z",
+   "text": "Take responsibility for your own foolish decisions.\n\nWe bought the pico bottom and we're still long bitcoin.",
+   "kind": "agree",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "BTC",
+    "side": "long",
+    "method": "as read",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": true,
+    "asset": "BTC",
+    "side": "long",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "long",
+    "method": "detector",
+    "rule": null,
+    "words": "we're still long, still long, We bought"
+   },
+   "read_now": {
+    "side": "long",
+    "method": "detector",
+    "rule": null,
+    "words": "we're still long, still long, We bought"
+   },
+   "agree_base": true,
+   "agree_now": true,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "1989334671289967046|-",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/1989334671289967046",
+   "posted_at": "2025-11-14T14:08:40.000Z",
+   "text": "Up until this point the monthly (4Yr Cycle) has remained intact. But now odds Bitcoin 4yr Cycle peaked exceed 50% IMO. Suspect we're very soon going to see a sharp rally form from here. The reaction will be key and the last chance for bulls to right this ship to another high.",
+   "kind": "skip_repeat_or_other",
+   "gating": false,
+   "skip_basis": null,
+   "owner": {
+    "decision": "skip",
+    "asset": null,
+    "side": null,
+    "method": "review",
+    "reason": "a sharp rally expected, 10 days after the bitcoin long already counted: a repeat",
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": null,
+    "side": "none",
+    "from": "the scan's stored read"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": null,
+   "agree_now": null,
+   "sources": [
+    "scan"
+   ]
+  },
+  {
+   "id": "1990611589800640686|-",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/1990611589800640686",
+   "posted_at": "2025-11-18T02:42:41.000Z",
+   "text": "Bitcoin has been crushed. Technical and sentiment. It’s time for a strong rally now. But one that is likely to fail by Jan.",
+   "kind": "skip_repeat_or_other",
+   "gating": false,
+   "skip_basis": null,
+   "owner": {
+    "decision": "skip",
+    "asset": null,
+    "side": null,
+    "method": "review",
+    "reason": "'time for a strong rally now', 14 days after the bitcoin long already counted: a repeat",
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": null,
+    "side": "none",
+    "from": "the scan's stored read"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": null,
+   "agree_now": null,
+   "sources": [
+    "scan"
+   ]
+  },
+  {
+   "id": "1992280862252212723|-",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/1992280862252212723",
+   "posted_at": "2025-11-22T17:15:47.000Z",
+   "text": "It’s easy to get drowned in negativity when Bitcoin is this beaten down. But no matter how the broader four year cycle unfolds, this market will see a meaningful rally soon, one that can carry us well into January. Usual disclaimer: IMO.",
+   "kind": "skip_repeat_or_other",
+   "gating": false,
+   "skip_basis": null,
+   "owner": {
+    "decision": "skip",
+    "asset": null,
+    "side": null,
+    "method": "review",
+    "reason": "'a meaningful rally soon', a repeat of the bitcoin rally view",
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": null,
+    "side": "none",
+    "from": "the scan's stored read"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": null,
+   "agree_now": null,
+   "sources": [
+    "scan"
+   ]
+  },
+  {
+   "id": "1993658195982876720|SILVER",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/1993658195982876720",
+   "posted_at": "2025-11-26T12:28:48Z",
+   "text": "Silver continues to act really well.  \n\nThis is a refueling for another big continuation of the bull market.  As soon as Jan too by the looks of it.",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "SILVER",
+    "side": "long",
+    "method": "changed",
+    "reason": "reviewed: calls the silver pause 'a refueling for another big continuation of the bull market', expected 'as soon as Jan': a long view in his own words",
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "SILVER",
+    "side": "none",
+    "from": "the scan's stored read"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record",
+    "scan"
+   ]
+  },
+  {
+   "id": "1995532011818106902|-",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/1995532011818106902",
+   "posted_at": "2025-12-01T16:34:41.000Z",
+   "text": "Silver back in a runaway, lockout move. The recent 6 week pause the midpoint of the total move, targeting $80. Similar to prior runaway moves, like 2004 + 2011.",
+   "kind": "skip_repeat_or_other",
+   "gating": false,
+   "skip_basis": null,
+   "owner": {
+    "decision": "skip",
+    "asset": null,
+    "side": null,
+    "method": "review",
+    "reason": "silver targeting $80, 5 days after the silver long added: a repeat",
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": null,
+    "side": "none",
+    "from": "the scan's stored read"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "long",
+    "method": "rule",
+    "rule": "targeting_price",
+    "words": "targeting $80."
+   },
+   "agree_base": null,
+   "agree_now": null,
+   "sources": [
+    "scan"
+   ]
+  },
+  {
+   "id": "1998434220868247562|-",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/1998434220868247562",
+   "posted_at": "2025-12-09T16:47:02.000Z",
+   "text": "$60 on Silver, trade of the year, easily. In the parabolic phase and will very likely top by end of year or Jan. Could see $80.",
+   "kind": "agree_no_side",
+   "gating": true,
+   "skip_basis": "no clear side",
+   "owner": {
+    "decision": "skip",
+    "asset": null,
+    "side": null,
+    "method": "review",
+    "reason": "'trade of the year' looking back, with a likely top 'by end of year or Jan': hedged timing, no clear side going forward",
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": null,
+    "side": "none",
+    "from": "the scan's stored read"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": true,
+   "agree_now": true,
+   "sources": [
+    "scan"
+   ]
+  },
+  {
+   "id": "1999149068459618541|STOCKS",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/1999149068459618541",
+   "posted_at": "2025-12-11T16:07:34Z",
+   "text": "Still believe Stocks are setup here for a good 6-8 Week run higher.  So far a constructive eight week pause before the next Cycle confirms.  \nHave to give it a little wiggle room until it breaks resistance.  Nov 17th candle is a stop.",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "STOCKS",
+    "side": "long",
+    "method": "changed",
+    "reason": "reviewed: expects 'a good 6-8 Week run higher' for stocks and names a stop (the Nov 17th candle)",
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "STOCKS",
+    "side": "none",
+    "from": "the scan's stored read"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record",
+    "scan"
+   ]
+  },
+  {
+   "id": "2003111794072801304|GOLD",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2003111794072801304",
+   "posted_at": "2025-12-22T14:34:02Z",
+   "text": "No quit in this gold bull.  22 months straight up since the breakout, with very little drawdown.  The cleanest chart you could ever hope to ride.",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "GOLD",
+    "side": "long",
+    "method": "changed",
+    "reason": "reviewed: 'No quit in this gold bull ... the cleanest chart you could ever hope to ride': a long stance on gold",
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "GOLD",
+    "side": "none",
+    "from": "the scan's stored read"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record",
+    "scan"
+   ]
+  },
+  {
+   "id": "2003490330650575038|COPPER",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2003490330650575038",
+   "posted_at": "2025-12-23T15:38:12Z",
+   "text": "Seems like Industrial Metals are really starting their big bull legs. Some rotation from Precious Metals allocations not a bad idea.\n\nHere is copper and miners.",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "COPPER",
+    "side": "long",
+    "method": "changed",
+    "reason": "reviewed: industrial metals 'starting their big bull legs', suggests rotating into them and posts the copper chart: long copper",
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "COPPER",
+    "side": "none",
+    "from": "the scan's stored read"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record",
+    "scan"
+   ]
+  },
+  {
+   "id": "2005330899899121670|-",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2005330899899121670",
+   "posted_at": "2025-12-28T17:31:58.000Z",
+   "text": "Have very mixed feeling on Bitcoin currently. Sentiment is in the gutter and we could argue overdue some type of strong countertrend rally. Yet, I really dislike the price action, the tape feel (for me) is one wanting to start another big leg lower.",
+   "kind": "agree_no_side",
+   "gating": true,
+   "skip_basis": "no side",
+   "owner": {
+    "decision": "skip",
+    "asset": null,
+    "side": null,
+    "method": "review",
+    "reason": "'very mixed feeling on Bitcoin': no side",
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": null,
+    "side": "none",
+    "from": "the scan's stored read"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": true,
+   "agree_now": true,
+   "sources": [
+    "scan"
+   ]
+  },
+  {
+   "id": "2009291616217903397|-",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2009291616217903397",
+   "posted_at": "2026-01-08T15:50:26.000Z",
+   "text": "Spent the last 4 months with a team training an AI model off my last 10 yrs of work. Still a LOT of tweaking and correcting to do, but taking shape. I asked it - \"Give me the probability that bitcoin has topped or not for the 4 year cycle on the following assumptions. We're on Mo",
+   "kind": "false_call",
+   "gating": true,
+   "skip_basis": "takes no position",
+   "owner": {
+    "decision": "skip",
+    "asset": null,
+    "side": null,
+    "method": "review",
+    "reason": "the matched 'still bullish' is inside a quoted AI-model answer; the post weighs a 55% chance the cycle topped and takes no position",
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": true,
+    "asset": "BTC",
+    "side": "long",
+    "from": "the scan's stored read"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": true,
+   "agree_now": true,
+   "sources": [
+    "scan"
+   ]
+  },
+  {
+   "id": "2009356789356314714|BTC",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2009356789356314714",
+   "posted_at": "2026-01-08T20:09:25Z",
+   "text": "Yes I’ve been bearish on Bitcoin of late.  \n\nBut that is opinion on where we stand for the near future. \n\nWhat gets forgotten or not mentioned enough, I’m always a massive bull long term.   \n\nI’m always and consistently stacking, even if one strategy is selling.",
+   "kind": "agree",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "BTC",
+    "side": "short",
+    "method": "as read",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": true,
+    "asset": "BTC",
+    "side": "short",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "short",
+    "method": "detector",
+    "rule": null,
+    "words": "bearish on"
+   },
+   "read_now": {
+    "side": "short",
+    "method": "detector",
+    "rule": null,
+    "words": "bearish on"
+   },
+   "agree_base": true,
+   "agree_now": true,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2011105173104705981|GOLD",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2011105173104705981",
+   "posted_at": "2026-01-13T15:56:52Z",
+   "text": "Formidable, but controlled appetite for gold remains.  Now targeting $5,800 for this (maybe) new cycle.\n\nJust got to keep holding on.",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "GOLD",
+    "side": "long",
+    "method": "changed",
+    "reason": "reviewed: 'Now targeting $5,800 ... Just got to keep holding on': holding the gold long with a target, 22 days after the last added gold call",
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "GOLD",
+    "side": "none",
+    "from": "the scan's stored read"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "long",
+    "method": "rule",
+    "rule": "targeting_price",
+    "words": "targeting $5,800"
+   },
+   "agree_base": false,
+   "agree_now": true,
+   "sources": [
+    "record",
+    "scan"
+   ]
+  },
+  {
+   "id": "2011110630338535867|COPPER",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2011110630338535867",
+   "posted_at": "2026-01-13T16:18:33Z",
+   "text": "Yes I'm long copper.",
+   "kind": "agree",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "COPPER",
+    "side": "long",
+    "method": "as read",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": true,
+    "asset": "COPPER",
+    "side": "long",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "long",
+    "method": "detector",
+    "rule": null,
+    "words": "I'm long"
+   },
+   "read_now": {
+    "side": "long",
+    "method": "detector",
+    "rule": null,
+    "words": "I'm long"
+   },
+   "agree_base": true,
+   "agree_now": true,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2016523209500131511|STOCKS",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2016523209500131511",
+   "posted_at": "2026-01-28T14:46:12Z",
+   "text": "Very strong signal on Stocks here.  Week 10 of the Cycle, new ATH's, and recently left behind a very clean stop with the recent Daily Cycle Low.",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "STOCKS",
+    "side": "long",
+    "method": "changed",
+    "reason": "reviewed: 'Very strong signal on Stocks here', new all-time highs and a clean stop at the Daily Cycle Low",
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "STOCKS",
+    "side": "none",
+    "from": "the scan's stored read"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record",
+    "scan"
+   ]
+  },
+  {
+   "id": "2017256982743339269|BTC",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2017256982743339269",
+   "posted_at": "2026-01-30T15:21:58Z",
+   "text": "Bitcoin 4 Yr Cycle update.  \n\nOn month 38 of 48(avg).  Closing 3rd month below the 10ma.  About to close 4 red months in a row, not seen since 2018.  Looking like the recent move to $98k was the counter-trend move.  Clear divergence from all other assets.\n\nI hate being bearish any asset, especially bitcoin.  I rarely short markets or believe any decent asset class stays down for long.  I always want to be a bull in general.  But this \"currently\" is a perfect 4yr cycle and mirrors all priors.  Remember you can be very bullish on the fundamentals, but also realize that everything is cyclical and respecting there is a time and place.  \n\nOfc, markets can change in a heartbeat, every strategy is breakable, and it's our job not to get hung up on any narrative or bias.  In that regard, on the positive, Bitcoin's declining phase is likely accelerated now, as sentiment has been repeatedly killed.  Cycle declines are ALL about sentiment clearing events, and on that front we could be looking at an earlier (month 44?) low as a result.   \n\nBut many of the bulls on X are just selling services, funds/DAT's, clout, etc, choosing personal gain/bias over reality and price action.  Shifting narratives to keep the hope alive. They're human after-all. \n\nI think that if this consistent historical structure were to change, then we would see a close back over the 10ma and i would want to quickly start to shift focus to the bull side.  If such a change is structure were to happen, then I believe it would be signaling something massive afoot.  I'll never say it can't happen here, I have strong convictions that I want to constantly challenge.  I also think you're not giving up (besides some upside) being defensive and risk adverse here, even if this reverses and goes on to new highs.  \n\nLastly, I also think most investors are still better off socking bitcoin away and ignoring all the volatility. And just use long drawdown period to aggressively accumulate.",
+   "kind": "agree",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "BTC",
+    "side": "short",
+    "method": "changed",
+    "reason": "reviewed: the 4-year cycle update says the move to $98k was the counter-trend move and the declining phase is on ('I hate being bearish any asset, especially bitcoin'); the detector's 'very bullish on' is about fundamentals in general, so the side is set by hand",
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": true,
+    "asset": "BTC",
+    "side": "short",
+    "from": "the scan's stored read"
+   },
+   "read_base": {
+    "side": "long",
+    "method": "detector",
+    "rule": null,
+    "words": "very bullish, bullish on"
+   },
+   "read_now": {
+    "side": "long",
+    "method": "detector",
+    "rule": null,
+    "words": "very bullish, bullish on"
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record",
+    "scan"
+   ]
+  },
+  {
+   "id": "2022006665764082140|STOCKS",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2022006665764082140",
+   "posted_at": "2026-02-12T17:55:30Z",
+   "text": "Week 12 for Stocks, in the middle of the Cycle. \n\nStill leaning and positioned on the bull side as it holds the primary trend.  As long as the Feb 5th lows hold no damage.\n\nBut not loving the repeated failed attempts to break higher through 7k. The longer it takes brings a rounded top possibility into play.",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "STOCKS",
+    "side": "long",
+    "method": "changed",
+    "reason": "reviewed: 'Still leaning and positioned on the bull side' for stocks: his own positioning, 15 days after the last added stocks call",
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "STOCKS",
+    "side": "none",
+    "from": "the scan's stored read"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "long",
+    "method": "rule",
+    "rule": "positioned_side",
+    "words": "positioned on the bull side"
+   },
+   "agree_base": false,
+   "agree_now": true,
+   "sources": [
+    "record",
+    "scan"
+   ]
+  },
+  {
+   "id": "2023793838322782454|BTC",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2023793838322782454",
+   "posted_at": "2026-02-17T16:17:05Z",
+   "text": "Bitcoin price action remains horrendous.  Very weak.  \n\nAfter the recent flush out, a natural, sharp counter trend bounce would be expected, but was not forthcoming. \n\nHas to reclaim $72k to even consider a counter-trend move. \n\nJust bear market things.",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "BTC",
+    "side": "short",
+    "method": "changed",
+    "reason": "reviewed: 'Bitcoin price action remains horrendous ... has to reclaim $72k to even consider a counter-trend move': a bearish stance, 18 days after the last added bitcoin call",
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "BTC",
+    "side": "none",
+    "from": "the scan's stored read"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record",
+    "scan"
+   ]
+  },
+  {
+   "id": "2027043531185943019|-",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2027043531185943019",
+   "posted_at": "2026-02-26T15:30:13.000Z",
+   "text": "If Bitcoin sees no counter-trend relief rally, and instead continues the downtrend to sub $50k (into March/April), the possibility this type of action induces an early 4 Year Cycle low is real. Again just possibilities, but extreme price action can/does force premature ends to cy",
+   "kind": "agree_no_side",
+   "gating": true,
+   "skip_basis": "conditional",
+   "owner": {
+    "decision": "skip",
+    "asset": null,
+    "side": null,
+    "method": "review",
+    "reason": "a conditional ('If Bitcoin sees no counter-trend relief rally ...'), possibilities only",
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": null,
+    "side": "none",
+    "from": "the scan's stored read"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": true,
+   "agree_now": true,
+   "sources": [
+    "scan"
+   ]
+  },
+  {
+   "id": "2028472872604209602|STOCKS",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2028472872604209602",
+   "posted_at": "2026-03-02T14:09:54Z",
+   "text": "Week 15 for stocks and still no resolution of the range.  Bollinger bands are tightening hard, and the longer it continues implies a breakdown possibility is rising.\n\nAlso deep in the timing band for the 4Yr Cycle peak.  Most resembling the peak into the 2015 4yr high here. \n\nI'm still long a core position stocks...for now.",
+   "kind": "agree",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "STOCKS",
+    "side": "long",
+    "method": "as read",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": true,
+    "asset": "STOCKS",
+    "side": "long",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "long",
+    "method": "detector",
+    "rule": null,
+    "words": "I'm still long, still long"
+   },
+   "read_now": {
+    "side": "long",
+    "method": "detector",
+    "rule": null,
+    "words": "I'm still long, still long"
+   },
+   "agree_base": true,
+   "agree_now": true,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2028473753022136453|-",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2028473753022136453",
+   "posted_at": "2026-03-02T14:13:24.000Z",
+   "text": "As deeply oversold as Bitcoin is, this weekly chart remains horrendous and from a purely visual perspective, feels like it's hanging on by a thread and readying for another big leg lower.",
+   "kind": "skip_repeat_or_other",
+   "gating": false,
+   "skip_basis": null,
+   "owner": {
+    "decision": "skip",
+    "asset": null,
+    "side": null,
+    "method": "review",
+    "reason": "'readying for another big leg lower', 13 days after the bitcoin short added: a repeat",
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": null,
+    "side": "none",
+    "from": "the scan's stored read"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": null,
+   "agree_now": null,
+   "sources": [
+    "scan"
+   ]
+  },
+  {
+   "id": "2031739333057659161|STOCKS",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2031739333057659161",
+   "posted_at": "2026-03-11T14:29:39Z",
+   "text": "I believe there is a good chance that Stocks have peaked for its 4 Year Cycle. Last week my 'active' portfolios went into more defensive positions, cash to 33%.  Further selling to come on more confirmation.\n\nSeeing the signs of the breakdown on the Daily Cycle currently.  The weekly Cycle has NOT yet confirmed this, so it's early days on this view.  \n\nA top would bring the Oct timeframe into focus for a bottom. Given the AI capex and fiscal stimulus, this more likely to be a relatively mild cyclical bear, a shakeout, setting up for a really explosive rally for 2027-2029.",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "STOCKS",
+    "side": "short",
+    "method": "changed",
+    "reason": "reviewed: says stocks have likely peaked for the 4-year cycle, moved his active portfolios defensive (33% cash) with 'further selling to come': a change from long to defensive",
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "STOCKS",
+    "side": "none",
+    "from": "the scan's stored read"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record",
+    "scan"
+   ]
+  },
+  {
+   "id": "2034586449551507627|-",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2034586449551507627",
+   "posted_at": "2026-03-19T11:03:05.000Z",
+   "text": "Stocks are in the early stages of a cyclical bear market. October timeframe lows.",
+   "kind": "skip_repeat_or_other",
+   "gating": false,
+   "skip_basis": null,
+   "owner": {
+    "decision": "skip",
+    "asset": null,
+    "side": null,
+    "method": "review",
+    "reason": "'early stages of a cyclical bear market', 8 days after the stocks short added: a repeat",
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": null,
+    "side": "none",
+    "from": "the scan's stored read"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": null,
+   "agree_now": null,
+   "sources": [
+    "scan"
+   ]
+  },
+  {
+   "id": "2051627961724305706|-",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2051627961724305706",
+   "posted_at": "2026-05-05T11:39:58.000Z",
+   "text": "Bitcoin - Getting close now to the end of a natural counter trend move in a bear market. $85-$88k area. However, there is a difference to this move. Counter trend moves are typically stronger (impulse) and shorter duration, this move is more consistent with base building over a l",
+   "kind": "agree_no_side",
+   "gating": true,
+   "skip_basis": "hedged",
+   "owner": {
+    "decision": "skip",
+    "asset": null,
+    "side": null,
+    "method": "review",
+    "reason": "end of a counter-trend move in a bear market, but then 'more of a time based Cycle Low ... We shall have to see': hedged both ways",
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": null,
+    "side": "none",
+    "from": "the scan's stored read"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": true,
+   "agree_now": true,
+   "sources": [
+    "scan"
+   ]
+  },
+  {
+   "id": "2062277523288068152|BTC",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2062277523288068152",
+   "posted_at": "2026-06-03T20:57:31Z",
+   "text": "The Bitcoin 4 Year Cycle Journey ‘Model Portfolio’ has made its first buy in 3.5yrs.  Picking up 10BTC at $65,000.  Moving up to around a 60% BTC allocation. \n\nThe model can always be found here >> https://bitcoin.live/4yearcycle\n\nA new 4 YR Cycle video will be published tomorrow morning.  \n\nFYI - I very much doubt the 4 Yr Cycle has bottomed, however at this level it makes sense to begin some re accumulation, as the possibility of only a retest of the Feb lows to mark the 4yr cycle low is possible.  That would be the best Bull Case.  Dry powder remains for a more tradition Cycle Low around the Q3 period.\n\nReminder - The 4 Year Model is not designed to trade often, intends to always have solid allocation to Bitcoin (even when a top is defined), does not try to time tops, but rather waits for trend breakdown on a monthly timeframe, and is ultimately designed as a HODL strategy with strategic (well defined HTF) trades to add Bitcoin over time.  As evident by only 8 trades in 8 years.\nIf you're looking for more aggressive Spot positioning over the Weekly and 4 year Cycles that content is published on the Bitcoin Live website.",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "BTC",
+    "side": "long",
+    "method": "changed",
+    "reason": "reviewed: the 4 Year Cycle Model Portfolio 'made its first buy in 3.5yrs. Picking up 10BTC at $65,000': a stated buy",
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "BTC",
+    "side": "none",
+    "from": "the scan's stored read"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "long",
+    "method": "rule",
+    "rule": "picking_up_quantity",
+    "words": "Picking up 10BTC"
+   },
+   "agree_base": false,
+   "agree_now": true,
+   "sources": [
+    "record",
+    "scan"
+   ]
+  },
+  {
+   "id": "2062554209212358962|GOLD",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2062554209212358962",
+   "posted_at": "2026-06-04T15:16:58Z",
+   "text": "18 weeks since the gold blow-off, gold is going through a normal rebasing period.  Speculative interest moved on 12-18 weeks ago.  \n\nBut this is remains a secular bull market, so we're looking at reaccumulation of long positions from underweight to overweight over the coming 4 months.  The bull goes again in 2027.",
+   "kind": "agree",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "GOLD",
+    "side": "long",
+    "method": "as read",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": true,
+    "asset": "GOLD",
+    "side": "long",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "long",
+    "method": "detector",
+    "rule": null,
+    "words": "we're looking at reaccumulation of long, long positions"
+   },
+   "read_now": {
+    "side": "long",
+    "method": "detector",
+    "rule": null,
+    "words": "we're looking at reaccumulation of long, long positions"
+   },
+   "agree_base": true,
+   "agree_now": true,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2091161059801391206|-",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2091161059801391206",
+   "posted_at": "2026-08-22T13:50:23.000Z",
+   "text": "Markets got me off the beach. :) Nice move by #Bitcoin and crypto. Similar moves in metals. Obviously a lot of short covering off a 2 month consolidation, but bullish nonetheless. Little more work to do before a bear market bottom can be confirmed, and a new 4Yr cycle start. Clos",
+   "kind": "agree_no_side",
+   "gating": true,
+   "skip_basis": "hedged",
+   "owner": {
+    "decision": "skip",
+    "asset": null,
+    "side": null,
+    "method": "review",
+    "reason": "'bullish nonetheless' on a short-covering move but 'a little more work to do before a bear market bottom can be confirmed': hedged",
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": null,
+    "side": "none",
+    "from": "the scan's stored read"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": true,
+   "agree_now": true,
+   "sources": [
+    "scan"
+   ]
+  },
+  {
+   "id": "2094827036812435935|BTC",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2094827036812435935",
+   "posted_at": "2026-09-01T16:37:40Z",
+   "text": "The transition from a bear to bull phase can be tricky to position for, especially when you don't get capitulation deep into a Cycles timing band.\n\nThis is the case for Bitcoin currently. There are clear signs of a bottom with some confirming elements, but not definitive confirmation of a bottom yet. And even with a price low in place, the likelihood of chop or a retest of the lower regions is real. Investors who rode out the bear can still give a lot back as a market transitions.\n\nBased on what I'm seeing here, if I had a gun to head, I would say the price lows are in for Bitcoin. But it probably won't be as easy as that, meaning the market will likely need to shake out some of this early exuberance we're seeing on the feed.\n\nI'll record the next 4yr Cycle video later this week to discuss how I'm thinking about deploying the last tranche.",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "BTC",
+    "side": "long",
+    "method": "curated",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "BTC",
+    "side": "none",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2097324043334451439|COPX",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2097324043334451439",
+   "posted_at": "2026-09-08T13:59:52Z",
+   "text": "$COPX  after an 8 month pause is looking to break out again.  \n\nStill deserves a small allocation in long term accounts",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "COPX",
+    "side": "long",
+    "method": "curated",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "COPX",
+    "side": "none",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2099903031760310305|-",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2099903031760310305",
+   "posted_at": "2026-09-15T16:47:51.000Z",
+   "text": "Equities are likely in the decline phase of the weekly cycle, especially if it closes the week out below the 10wma. Within the context of a bull trend, decline should be contained and any dip bought.",
+   "kind": "agree_no_side",
+   "gating": true,
+   "skip_basis": "conditional",
+   "owner": {
+    "decision": "skip",
+    "asset": null,
+    "side": null,
+    "method": "review",
+    "reason": "stocks in a decline phase 'especially if it closes below the 10wma', dip to be bought: conditional, both directions",
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": null,
+    "side": "none",
+    "from": "the scan's stored read"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": true,
+   "agree_now": true,
+   "sources": [
+    "scan"
+   ]
+  },
+  {
+   "id": "2100953898630443447|BTC",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2100953898630443447",
+   "posted_at": "2026-09-18T14:23:37Z",
+   "text": "Very good setup here for Bitcoin to smash through the May highs and confirm a new bull market.  \n\nMore importantly, the recent 4-week consolidation means any solid push through the highs is very likely a fresh new move that has legs (vs a trap) that might not look back until the $90's.  \n\nFailure to break through sets up a move back to the lows of the range.",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "BTC",
+    "side": "long",
+    "method": "curated",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "BTC",
+    "side": "none",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2102014028855820403|BTC",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2102014028855820403",
+   "posted_at": "2026-09-21T12:36:12Z",
+   "text": "Really solid Bitcoin push here to break the intermediate trend and resume the secular bull trend.  \nAs is common in any new move, a nasty shakeout is likely, but I’d suspect it doesn’t come until later and from higher.",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "BTC",
+    "side": "long",
+    "method": "curated",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "BTC",
+    "side": "none",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2102024327075877097|BTC",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2102024327075877097",
+   "posted_at": "2026-09-21T13:17:07Z",
+   "text": "You can't trade opinions and tweets mate.  Positions matter, and we've scaled in longs from the very bottom.",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "BTC",
+    "side": "long",
+    "method": "curated",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "BTC",
+    "side": "none",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2104977267109896477|SILVER",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2104977267109896477",
+   "posted_at": "2026-09-29T16:51:03Z",
+   "text": "Don’t like silver until 2027",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "SILVER",
+    "side": "short",
+    "method": "curated",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "SILVER",
+    "side": "none",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2105699317004583026|BTC",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2105699317004583026",
+   "posted_at": "2026-10-01T16:40:13Z",
+   "text": "With the Sept monthly close, the remaining confirming factors for a new Bitcoin Cycle are now in. \n\nThe slightly early Cycle Low (44 months vs 47), and lack of deeper move in June/July sets up a possibility of a Cycle that could well (upside) surprise. Versus say the diminishing return idea.\n\nBut, don't forget that new Cycles (in all assets) generally have one major shakeout, the type to give bears hope, one more time.",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "BTC",
+    "side": "long",
+    "method": "curated",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "BTC",
+    "side": "none",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2106744910896312646|SILVER",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2106744910896312646",
+   "posted_at": "2026-10-04T13:55:02Z",
+   "text": "To my long time silver friends, why Silver is more likely heading to $46 before turning bullish again.  \n\nSilver blow-off moves take a lot of time to retrace and rebuild a base.  And often the last weekly cycle from the blowoff phase has to be retraced, in this case to $46.  \n\nFrom a trend perspective, this remains an intermediate time frame retracement from the January blow-off move. The arrows show the corresponding gold Cycle highs/low, which are in decline.  And the next weekly cycle low is not due until the end of 2026.\n\nFrom past experience, Silver in a bull market offers one of the best opportunities to post significant portfolio gains. It's because when it goes into a parabolic advance, it's generally just one relentless and straight move up, allowing for good positions to sit tight in. But those parabolic moves are short-lived (6 to 12 months) and then it takes a long time for another such environment to build.  \n\nI feel strongly that Silver will go through another such environment in the near future, but know that it's always a process.",
+   "kind": "side_flipped",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "SILVER",
+    "side": "short",
+    "method": "curated",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": true,
+    "asset": "SILVER",
+    "side": "long",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "long",
+    "method": "detector",
+    "rule": null,
+    "words": "turning bullish"
+   },
+   "read_now": {
+    "side": "long",
+    "method": "detector",
+    "rule": null,
+    "words": "turning bullish"
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2106750657877434407|COPX",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2106750657877434407",
+   "posted_at": "2026-10-04T14:17:53Z",
+   "text": "I’ve been bullish it for a while and hold a decent COPX position.",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "COPX",
+    "side": "long",
+    "method": "curated",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "COPX",
+    "side": "none",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2107063137958564197|STOCKS",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2107063137958564197",
+   "posted_at": "2026-10-05T10:59:34Z",
+   "text": "Interesting market.  Stocks deep in their timing for a weekly cycle low, without being reflected in the index. \n\nTech has held the index up. While most sectors have seen real selloffs (Financials, homebuilders, Consumer, transports etc) to Cycle Low Levels.  \n\nSentiment hit March Low levels!\n\nThis is a setup for a big new advance higher.",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "STOCKS",
+    "side": "long",
+    "method": "curated",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "STOCKS",
+    "side": "none",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2107475725573906895|STOCKS",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2107475725573906895",
+   "posted_at": "2026-10-06T14:19:02Z",
+   "text": "Stocks at all time highs with many of the sectors recently near bear territory is an extremely bullish setup.\n\nThe only interpretation now is this just Week 4 of the Cycle coming off sentiment levels matching the March lows.\n\nNo move is ever guaranteed but if we're looking at another Right Translated Cycle then it could be a big Q4.",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "STOCKS",
+    "side": "long",
+    "method": "curated",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "STOCKS",
+    "side": "none",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2110764348981612915|BTC",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2110764348981612915",
+   "posted_at": "2026-10-15T16:06:51Z",
+   "text": "Bitcoin held up well and looking to put in a 60-day cycle low.",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "BTC",
+    "side": "long",
+    "method": "curated",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "BTC",
+    "side": "none",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector-leg",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector-leg",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2112915214479798344|BTC",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2112915214479798344",
+   "posted_at": "2026-10-21T14:33:37Z",
+   "text": "Bitcoin appears to be confirming the new cycle here. These events provide a really clear and clean setup. \n\nThe upside target is around 30 to 45 days, room for a good advance.  It is however not guarantee of a major upside move, but provides an excellent anchoring point because a loss of the recent lows ($79,600) is a level where you would want to get very defensive.",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "BTC",
+    "side": "long",
+    "method": "curated",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "BTC",
+    "side": "none",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2112919830357577753|BTC",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2112919830357577753",
+   "posted_at": "2026-10-21T14:51:58Z",
+   "text": "Currently long bitcoin - short gold futures.\nBoth Cycle positions align well into Dec.   \nThe rest is out of my control.",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "BTC",
+    "side": "long",
+    "method": "curated",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "BTC",
+    "side": "none",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "ambiguous",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "ambiguous",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2112919830357577753|GOLD",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2112919830357577753",
+   "posted_at": "2026-10-21T14:51:58Z",
+   "text": "Currently long bitcoin - short gold futures.\nBoth Cycle positions align well into Dec.   \nThe rest is out of my control.",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "GOLD",
+    "side": "short",
+    "method": "curated",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "GOLD",
+    "side": "none",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "ambiguous",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "ambiguous",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2113279842636419392|BTC",
+   "author": "goodalexander",
+   "url": "https://x.com/goodalexander/status/2113279842636419392",
+   "posted_at": "2026-10-22T14:42:31Z",
+   "text": "Long BTC \n\nUnfortunately where we are headed there will likely be corn 🌽 perpetual swaps so want to be clear",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "BTC",
+    "side": "long",
+    "method": "curated",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "BTC",
+    "side": "none",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2113602987008356795|GOLD",
+   "author": "goodalexander",
+   "url": "https://x.com/goodalexander/status/2113602987008356795",
+   "posted_at": "2026-10-23T12:06:35Z",
+   "text": "I am short Gold, this is part of the reason. I think it's got a high bar to work trading extremely above production cost. It's always been a narrative driven asset. \n\nObviously nuclear fusion supply doesn't come on in the near term. But people allocating to gold are doing so on",
+   "kind": "agree",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "GOLD",
+    "side": "short",
+    "method": "curated",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": true,
+    "asset": "GOLD",
+    "side": "short",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "short",
+    "method": "detector",
+    "rule": null,
+    "words": "I am short"
+   },
+   "read_now": {
+    "side": "short",
+    "method": "detector",
+    "rule": null,
+    "words": "I am short"
+   },
+   "agree_base": true,
+   "agree_now": true,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2113613893662588966|SILVER",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2113613893662588966",
+   "posted_at": "2026-10-23T12:49:55Z",
+   "text": "Very clean Silver Cycles that are now in a failed weekly state.  Week 14, so potentially another 2 months remain where damage can be done.",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "SILVER",
+    "side": "short",
+    "method": "curated",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "SILVER",
+    "side": "none",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2114492799794254164|BTC",
+   "author": "DrProfitCrypto",
+   "url": "https://x.com/DrProfitCrypto/status/2114492799794254164",
+   "posted_at": "2026-10-25T23:02:23Z",
+   "text": "#Bitcoin – What’s Next?\n\nThe Big Sunday Report: All We Need to Know\n\nTA / LCA / Psychological Breakdown\n\nI have finished building the long positions I announced and entered between $80K and $81K. My average entry is now $80,400 for the longs, while my average spot entry is",
+   "kind": "agree",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "BTC",
+    "side": "long",
+    "method": "as read",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": true,
+    "asset": "BTC",
+    "side": "long",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "long",
+    "method": "detector",
+    "rule": null,
+    "words": "building the long, long positions, the longs"
+   },
+   "read_now": {
+    "side": "long",
+    "method": "detector",
+    "rule": null,
+    "words": "building the long, long positions, the longs"
+   },
+   "agree_base": true,
+   "agree_now": true,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2115550350832996432|XYZ:AAPL",
+   "author": "goodalexander",
+   "url": "https://x.com/goodalexander/status/2115550350832996432",
+   "posted_at": "2026-10-28T21:04:43Z",
+   "text": "This helps! Still short too much aapl and started going after Cheesecake Factory today \n\nPray for my soul",
+   "kind": "agree",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "XYZ:AAPL",
+    "side": "short",
+    "method": "curated",
+    "reason": "post names aapl (the asset map has no single-stock terms); the same author says he shorts stocks via perps on TradeXYZ (https://x.com/goodalexander/status/2115843393557324078), so the Hyperliquid xyz:AAPL perp",
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": true,
+    "asset": "XYZ:AAPL",
+    "side": "short",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "short",
+    "method": "detector",
+    "rule": null,
+    "words": "Still short"
+   },
+   "read_now": {
+    "side": "short",
+    "method": "detector",
+    "rule": null,
+    "words": "Still short"
+   },
+   "agree_base": true,
+   "agree_now": true,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2115823513915290059|BTC",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2115823513915290059",
+   "posted_at": "2026-10-29T15:10:10Z",
+   "text": "Bitcoin has to get moving here.  \n\nIn any solid uptrend, three red weekly candles typically is a short reset and a quick continuation of the trend resumes.  We need to see that quickly imo.",
+   "kind": "agree",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "BTC",
+    "side": "none",
+    "method": "curated",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "BTC",
+    "side": "none",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": true,
+   "agree_now": true,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2115826344118632837|-",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2115826344118632837",
+   "posted_at": "2026-10-29T15:21:25.000Z",
+   "text": "Same theme for gold, in the grasp of an intermediate timeframe cycle decline. Gold is still 9 weeks away from a typical weekly cycle low. Gold bulls can hope it holds the summer lows, but I'm not confident.",
+   "kind": "skip_repeat_or_other",
+   "gating": false,
+   "skip_basis": null,
+   "owner": {
+    "decision": "skip",
+    "asset": null,
+    "side": null,
+    "method": "review",
+    "reason": "gold in a cycle decline, 8 days after the tracked gold short (2026-10-21): a repeat",
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": null,
+    "side": "none",
+    "from": "the scan's stored read"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": null,
+   "agree_now": null,
+   "sources": [
+    "scan"
+   ]
+  },
+  {
+   "id": "2115966476817739790|XMR",
+   "author": "goodalexander",
+   "url": "https://x.com/goodalexander/status/2115966476817739790",
+   "posted_at": "2026-10-30T00:38:15Z",
+   "text": "Still like long XMR. sized down BTC am short bunch of single name stocks \n\nTactically short hacker basket til he’s done (don’t wanna fud and will cut so won’t post tickers) hedged it with long xrp (don’t ask)",
+   "kind": "agree",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "XMR",
+    "side": "long",
+    "method": "as read",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": true,
+    "asset": "XMR",
+    "side": "long",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "long",
+    "method": "detector-leg",
+    "rule": null,
+    "words": "long XMR"
+   },
+   "read_now": {
+    "side": "long",
+    "method": "detector-leg",
+    "rule": null,
+    "words": "long XMR"
+   },
+   "agree_base": true,
+   "agree_now": true,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2115966476817739790|XRP",
+   "author": "goodalexander",
+   "url": "https://x.com/goodalexander/status/2115966476817739790",
+   "posted_at": "2026-10-30T00:38:15Z",
+   "text": "Still like long XMR. sized down BTC am short bunch of single name stocks \n\nTactically short hacker basket til he’s done (don’t wanna fud and will cut so won’t post tickers) hedged it with long xrp (don’t ask)",
+   "kind": "agree",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "XRP",
+    "side": "long",
+    "method": "as read",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": true,
+    "asset": "XRP",
+    "side": "long",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "long",
+    "method": "detector-leg",
+    "rule": null,
+    "words": "long xrp"
+   },
+   "read_now": {
+    "side": "long",
+    "method": "detector-leg",
+    "rule": null,
+    "words": "long xrp"
+   },
+   "agree_base": true,
+   "agree_now": true,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2116091851086393720|INJ",
+   "author": "rosa_onchain",
+   "url": "https://x.com/rosa_onchain/status/2116091851086393720",
+   "posted_at": "2026-10-30T08:56:27Z",
+   "text": "We are not bearish enough. 📉\n\nA little more, My buy orders are still waiting to get filled!  Once again, for those who missed it: \n\n> Will buy $NEAR at $3 \n> Will buy $HYPE at $60  \n> Will buy $SOL at $70  \n> Bought $INJ at $4    \n\n> Accumulated more $INJ at $7.  \n\nI'm ready to ",
+   "kind": "agree",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "INJ",
+    "side": "long",
+    "method": "as read",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": true,
+    "asset": "INJ",
+    "side": "long",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "long",
+    "method": "detector-leg",
+    "rule": null,
+    "words": "Bought $INJ"
+   },
+   "read_now": {
+    "side": "long",
+    "method": "detector-leg",
+    "rule": null,
+    "words": "Bought $INJ"
+   },
+   "agree_base": true,
+   "agree_now": true,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2116199680157647216|GOLD",
+   "author": "BobLoukas",
+   "url": "https://x.com/BobLoukas/status/2116199680157647216",
+   "posted_at": "2026-10-30T16:04:55Z",
+   "text": "End of December Gold will be a screaming buy again.  A 1-year correction/reset, and the midpoint of the 8 yr cycle. \n\nStill believe it’s a secular bull market.",
+   "kind": "agree",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "GOLD",
+    "side": "none",
+    "method": "curated",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "GOLD",
+    "side": "none",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": true,
+   "agree_now": true,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2116203980111933911|STOCKS",
+   "author": "goodalexander",
+   "url": "https://x.com/goodalexander/status/2116203980111933911",
+   "posted_at": "2026-10-30T16:22:00Z",
+   "text": "Golden retriever version 🐕\n\nShort S&P 500 futures. Intel just flipped AI spending from \"paid for by cash flow\" to \"needs debt and stock sales.\" Memory prices are wrecking PC and consumer demand. Oil up and EURCHF down say Iran and Ukraine are heating up into the midterms.\n\nNot",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "STOCKS",
+    "side": "short",
+    "method": "curated",
+    "reason": "the post opens with 'Short S&P 500 futures'; oil is mentioned only as macro context ('Oil up and EURCHF down say Iran and Ukraine are heating up'), not as a position",
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "STOCKS",
+    "side": "none",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2116304617047007308|SOXL",
+   "author": "goodalexander",
+   "url": "https://x.com/goodalexander/status/2116304617047007308",
+   "posted_at": "2026-10-30T23:01:54Z",
+   "text": "solid support here",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "SOXL",
+    "side": "short",
+    "method": "changed",
+    "reason": "goodalexander's 'solid support here' image is a crop (score 0.823, shared label 6.89) of the weekly SOXL chart he replied to ('Direxion Daily Semiconductor Bull 3X Shares'); 6.89 is the 2025 low, 91% below SOXL's 77.05 at post time, so 'solid support' is a joke that SOXL could fall all the way back, in line with his short stance on semis",
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "SOXL",
+    "side": "none",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": false,
+   "agree_now": false,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2116433840499790164|ETH",
+   "author": "Okada_DeFi0x",
+   "url": "https://x.com/Okada_DeFi0x/status/2116433840499790164",
+   "posted_at": "2026-10-31T07:35:23Z",
+   "text": "happy weekend, fam!\n\nyesterday, i deployed 60% of my portfolio into $ETH and $HYPE, then moved everything to my personal wallet for long-term holding.\n\nthere's still a scenario where $BTC drops to $70K, but at this point, i don't think it would make much difference to my",
+   "kind": "agree",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "ETH",
+    "side": "long",
+    "method": "as read",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": true,
+    "asset": "ETH",
+    "side": "long",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "long",
+    "method": "detector-leg",
+    "rule": null,
+    "words": "deployed 60% of my portfolio into $ETH"
+   },
+   "read_now": {
+    "side": "long",
+    "method": "detector-leg",
+    "rule": null,
+    "words": "deployed 60% of my portfolio into $ETH"
+   },
+   "agree_base": true,
+   "agree_now": true,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2116433840499790164|HYPE",
+   "author": "Okada_DeFi0x",
+   "url": "https://x.com/Okada_DeFi0x/status/2116433840499790164",
+   "posted_at": "2026-10-31T07:35:23Z",
+   "text": "happy weekend, fam!\n\nyesterday, i deployed 60% of my portfolio into $ETH and $HYPE, then moved everything to my personal wallet for long-term holding.\n\nthere's still a scenario where $BTC drops to $70K, but at this point, i don't think it would make much difference to my",
+   "kind": "agree",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "HYPE",
+    "side": "long",
+    "method": "as read",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": true,
+    "asset": "HYPE",
+    "side": "long",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "long",
+    "method": "detector-leg",
+    "rule": null,
+    "words": "deployed 60% of my portfolio into $ETH and $HYPE"
+   },
+   "read_now": {
+    "side": "long",
+    "method": "detector-leg",
+    "rule": null,
+    "words": "deployed 60% of my portfolio into $ETH and $HYPE"
+   },
+   "agree_base": true,
+   "agree_now": true,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2116898993435463783|HYPE",
+   "author": "koolkrypto223",
+   "url": "https://x.com/koolkrypto223/status/2116898993435463783",
+   "posted_at": "2026-11-01T14:23:44Z",
+   "text": "Probably best trade to capture my view towards hyperliquid:native and $LIT right now is selling some $100 HYPE calls for Dec25, and buying ~equal premium of $LIT calls.\n\nOn @DeriveXYZ that'd look something like:\n\nDeposit 1000 hyperliquid:native \nSell 1000x$100C hyperliquid:native",
+   "kind": "agree",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "HYPE",
+    "side": "none",
+    "method": "as read",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "HYPE",
+    "side": "none",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector-leg",
+    "rule": null,
+    "words": "selling some $100 HYPE calls"
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector-leg",
+    "rule": null,
+    "words": "selling some $100 HYPE calls"
+   },
+   "agree_base": true,
+   "agree_now": true,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2116898993435463783|LIT",
+   "author": "koolkrypto223",
+   "url": "https://x.com/koolkrypto223/status/2116898993435463783",
+   "posted_at": "2026-11-01T14:23:44Z",
+   "text": "Probably best trade to capture my view towards hyperliquid:native and $LIT right now is selling some $100 HYPE calls for Dec25, and buying ~equal premium of $LIT calls.\n\nOn @DeriveXYZ that'd look something like:\n\nDeposit 1000 hyperliquid:native \nSell 1000x$100C hyperliquid:native",
+   "kind": "agree",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "LIT",
+    "side": "long",
+    "method": "as read",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": true,
+    "asset": "LIT",
+    "side": "long",
+    "from": "the base reader when the label was made"
+   },
+   "read_base": {
+    "side": "long",
+    "method": "detector-leg",
+    "rule": null,
+    "words": "buying ~equal premium of $LIT calls"
+   },
+   "read_now": {
+    "side": "long",
+    "method": "detector-leg",
+    "rule": null,
+    "words": "buying ~equal premium of $LIT calls"
+   },
+   "agree_base": true,
+   "agree_now": true,
+   "sources": [
+    "record"
+   ]
+  },
+  {
+   "id": "2118167587637096933|KNTQ",
+   "author": "koolkrypto223",
+   "url": "https://x.com/koolkrypto223/status/2118167587637096933",
+   "posted_at": "2026-11-05T02:24:41Z",
+   "text": "$KNTQ is the token",
+   "kind": "add_refused",
+   "gating": false,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "KNTQ",
+    "side": null,
+    "method": "watcher",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "KNTQ",
+    "side": "none",
+    "from": "the watcher card"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": null,
+   "agree_now": null,
+   "sources": [
+    "watcher"
+   ]
+  },
+  {
+   "id": "2118181656398090718|KNTQ",
+   "author": "koolkrypto223",
+   "url": "https://x.com/koolkrypto223/status/2118181656398090718",
+   "posted_at": "2026-11-05T03:20:35Z",
+   "text": "More $NEST and $KNTQ",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "KNTQ",
+    "side": "long",
+    "method": "changed",
+    "reason": "reply to 0xLcrgs portfolio screenshot (BTC 94.9%, NEST 0.6%, no KNTQ): \"More $NEST and $KNTQ\" = add both",
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "KNTQ",
+    "side": "none",
+    "from": "the watcher card"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector-leg",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "long",
+    "method": "rule",
+    "rule": "more_cashtag",
+    "words": "More $NEST and $KNTQ"
+   },
+   "agree_base": false,
+   "agree_now": true,
+   "sources": [
+    "watcher",
+    "record"
+   ]
+  },
+  {
+   "id": "2118181656398090718|NEST",
+   "author": "koolkrypto223",
+   "url": "https://x.com/koolkrypto223/status/2118181656398090718",
+   "posted_at": "2026-11-05T03:20:35Z",
+   "text": "More $NEST and $KNTQ",
+   "kind": "side_added",
+   "gating": true,
+   "skip_basis": null,
+   "owner": {
+    "decision": "add",
+    "asset": "NEST",
+    "side": "long",
+    "method": "changed",
+    "reason": "reply to 0xLcrgs portfolio screenshot (BTC 94.9%, NEST 0.6%, no KNTQ): \"More $NEST and $KNTQ\" = add both",
+    "asset_pick": "nest-2"
+   },
+   "first_read": {
+    "call": false,
+    "asset": "NEST",
+    "side": "none",
+    "from": "the watcher card"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector-leg",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "long",
+    "method": "rule",
+    "rule": "more_cashtag",
+    "words": "More $NEST"
+   },
+   "agree_base": false,
+   "agree_now": true,
+   "sources": [
+    "watcher",
+    "record"
+   ]
+  },
+  {
+   "id": "2118672055420039460|-",
+   "author": "rosa_onchain",
+   "url": "https://x.com/rosa_onchain/status/2118672055420039460",
+   "posted_at": "2026-11-06T11:49:15Z",
+   "text": "It’s officially time for a reintroduction. \n\nHi, I’m Rosa!\n\n> Web3 video content creator\n> BitgetWallet Official creator\n> Part time trader, Full time roaster\n> Open to paid collabs only\n> based in Pakistan\n> I’m on Instagram too!\n\nI love food, Bitcoin and hard takes. \n\nLet’s connect! 🩵",
+   "kind": "skipped (no stated reason to read it as no side)",
+   "gating": false,
+   "skip_basis": null,
+   "owner": {
+    "decision": "skip",
+    "asset": null,
+    "side": null,
+    "method": "watcher",
+    "reason": null,
+    "asset_pick": null
+   },
+   "first_read": {
+    "call": false,
+    "asset": "BTC",
+    "side": "none",
+    "from": "the watcher card"
+   },
+   "read_base": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "read_now": {
+    "side": "none",
+    "method": "detector",
+    "rule": null,
+    "words": null
+   },
+   "agree_base": null,
+   "agree_now": null,
+   "sources": [
+    "watcher"
+   ]
+  }
+ ]
+}

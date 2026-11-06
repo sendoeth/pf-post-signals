@@ -726,7 +726,8 @@
       "detector",
       "manual",
       "none",
-      "detector-leg"
+      "detector-leg",
+      "rule"
      ]
     },
     "terms": {
