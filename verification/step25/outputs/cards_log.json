@@ -358,7 +358,8 @@
   "sent_at": "2026-11-06T11:57:21Z",
   "latency_s": 487,
   "late": false,
-  "decision": null
+  "decision": "skip",
+  "decided_at": "2026-11-06T13:53:16Z"
  },
  "2118687566442660273": {
   "url": "https://x.com/mert/status/2118687566442660273",

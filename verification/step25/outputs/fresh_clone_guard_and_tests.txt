@@ -1,0 +1,35 @@
+$ git log -1
+afd26f23c9586116a81c121509507eddb8607f9b step 25: 24-hour live run evidence; report leaves pre-start posts out of the latency
+$ python3 tools/guard.py --history
+guard: scanned 99 commits (all added lines + messages) -> 0 hits
+$ python3 tools/guard.py --tree
+guard: scanned 2633 files -> 0 hits
+$ python3 -m unittest tests.test_guard
+OK
+$ python3 -m unittest -v tests.test_watch
+test_every_search_is_reserved_and_the_hourly_cap_holds ... ok
+test_one_cycle_at_a_time ... ok
+test_an_unknown_ticker_is_flagged_without_any_provider_call ... ok
+The thread that started this step, classified as it was posted (texts from the public embed). ... ok
+test_a_partial_catch_up_answer_never_closes_a_window ... ok
+test_a_real_quiet_day_recovers_through_the_canary ... ok
+test_a_stale_instance_cannot_overwrite_a_newer_cycle ... ok
+test_a_torn_line_from_a_crash_is_skipped_and_still_counted ... ok
+test_a_new_post_is_found_exactly_once ... ok
+test_one_combined_search_and_a_quiet_baseline ... ok
+test_reply_and_quote_parents_are_kept ... ok
+test_reposts_recorded_calls_and_chatter_make_no_card ... ok
+test_a_crash_after_the_candidate_is_written_never_loses_or_repeats_it ... ok
+test_a_search_error_marks_nothing ... ok
+test_a_throttled_cycle_marks_nothing_and_the_post_is_found_later ... ok
+test_a_weak_answer_does_not_advance_coverage ... ok
+test_a_burst_that_pushes_posts_out_is_caught_up_per_caller ... ok
+test_a_day_too_busy_to_cover_is_flagged_not_dropped ... ok
+test_posts_from_before_the_start_are_not_a_latency ... ok
+Ran 19 tests in 0.285s
+OK
+$ python3 -m unittest discover -s tests -t .
+Ran 258 tests in 106.827s
+OK (skipped=2)
+$ python3 check_bundle.py
+bundle: 57 record files -> 57 drawn, 0 superseded, 0 refused; 171 horizon cells, 57 best-since-post values, 8 caller ratings checked -> ALL MATCH
