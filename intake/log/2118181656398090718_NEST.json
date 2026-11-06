@@ -1,0 +1,127 @@
+{
+ "version": "quanty.intake.v1",
+ "added_at": "2026-11-06T14:24:03Z",
+ "records": [
+  {
+   "record_file": "records/posts/2118181656398090718_NEST.json",
+   "record_sha256": "b0f9af671163a6769246fb56c00344829792fc2422203dea9c73ecd8d306dfe5",
+   "receipt": {
+    "file": "sources/koolkrypto223/receipts/2118181656398090718.json",
+    "sha256": "f41b7a8e911c44f1f12d4e435ad09c549c64a08a0cb0e3a8a1d9eac7918e206a",
+    "created": false,
+    "text_truncated": false
+   }
+  }
+ ],
+ "bundle_sha256_before": "2c3ba19f7fe8a68f2c7d30006bf9a1cadaa0d1c627560736a62133b89ca85a7e",
+ "bundle_sha256_after": "d609f33596eb373188ce4e7ee0a23afa77d368a77eef3516dc6a5872ffd54ed1",
+ "avatar": "kept",
+ "candles": "candles fetched for NEST (fetch_ohlc.py --assets): entry bars: 1/1 candle opens equal the record entry price",
+ "tickers_registered": [
+  {
+   "ticker": "NEST",
+   "coingecko_id": "nest-2",
+   "venue": "dex:hyperevm:0x535f30f50ebda33575242c38b976e681d13db6fa",
+   "receipt": "sources/tickers/NEST.json"
+  }
+ ],
+ "scores_previewed": {
+  "koolkrypto223": {
+   "score": 50.30663233120325,
+   "display": "50.3",
+   "rank": 5,
+   "label": "small sample",
+   "scored": 2,
+   "calls_total": 3,
+   "with_entry": 3,
+   "raw": 51.83979398721946,
+   "weight": 0.16666666666666666,
+   "of": 8
+  }
+ },
+ "scores_after_add": {
+  "koolkrypto223": {
+   "score": 50.30663233120325,
+   "display": "50.3",
+   "rank": 5,
+   "label": "small sample",
+   "scored": 2,
+   "calls_total": 3,
+   "with_entry": 3,
+   "raw": 51.83979398721946,
+   "weight": 0.16666666666666666,
+   "of": 8
+  }
+ },
+ "scores_before": {
+  "koolkrypto223": {
+   "score": 53.29002746160087,
+   "display": "53.3",
+   "rank": 4,
+   "label": "small sample",
+   "scored": 1,
+   "calls_total": 2,
+   "with_entry": 2,
+   "raw": 86.1903020776096,
+   "weight": 0.09090909090909091,
+   "of": 8
+  }
+ },
+ "other_callers_unchanged": [
+  "BobLoukas",
+  "Corbanu",
+  "DrProfitCrypto",
+  "Okada_DeFi0x",
+  "goodalexander",
+  "mert",
+  "rosa_onchain"
+ ],
+ "frozen_values_checked": 57,
+ "matches_preview": true,
+ "problems": [],
+ "url": "https://x.com/koolkrypto223/status/2118181656398090718",
+ "record_file": "records/posts/2118181656398090718_NEST.json",
+ "record_sha256": "b0f9af671163a6769246fb56c00344829792fc2422203dea9c73ecd8d306dfe5",
+ "receipt": {
+  "file": "sources/koolkrypto223/receipts/2118181656398090718.json",
+  "sha256": "f41b7a8e911c44f1f12d4e435ad09c549c64a08a0cb0e3a8a1d9eac7918e206a",
+  "created": false,
+  "text_truncated": false
+ },
+ "score_previewed": {
+  "score": 50.30663233120325,
+  "display": "50.3",
+  "rank": 5,
+  "label": "small sample",
+  "scored": 2,
+  "calls_total": 3,
+  "with_entry": 3,
+  "raw": 51.83979398721946,
+  "weight": 0.16666666666666666,
+  "of": 8
+ },
+ "score_after_add": {
+  "score": 50.30663233120325,
+  "display": "50.3",
+  "rank": 5,
+  "label": "small sample",
+  "scored": 2,
+  "calls_total": 3,
+  "with_entry": 3,
+  "raw": 51.83979398721946,
+  "weight": 0.16666666666666666,
+  "of": 8
+ },
+ "score_before": {
+  "score": 53.29002746160087,
+  "display": "53.3",
+  "rank": 4,
+  "label": "small sample",
+  "scored": 1,
+  "calls_total": 2,
+  "with_entry": 2,
+  "raw": 86.1903020776096,
+  "weight": 0.09090909090909091,
+  "of": 8
+ }
+}

@@ -1,0 +1,127 @@
+{
+ "version": "quanty.intake.v1",
+ "added_at": "2026-11-06T14:25:18Z",
+ "records": [
+  {
+   "record_file": "records/posts/2118181656398090718_KNTQ.json",
+   "record_sha256": "c6a394be6230f32fe876d997e5d3d6bffd687a345b16f2d9a4fc85be1b9222ef",
+   "receipt": {
+    "file": "sources/koolkrypto223/receipts/2118181656398090718.json",
+    "sha256": "f41b7a8e911c44f1f12d4e435ad09c549c64a08a0cb0e3a8a1d9eac7918e206a",
+    "created": false,
+    "text_truncated": false
+   }
+  }
+ ],
+ "bundle_sha256_before": "d609f33596eb373188ce4e7ee0a23afa77d368a77eef3516dc6a5872ffd54ed1",
+ "bundle_sha256_after": "ef9205c629c8b40f894c5c53417880fe0d13194254f77b1320f74584feda1ccf",
+ "avatar": "kept",
+ "candles": "candles fetched for KNTQ (fetch_ohlc.py --assets): entry bars: 1/1 candle opens equal the record entry price",
+ "tickers_registered": [
+  {
+   "ticker": "KNTQ",
+   "coingecko_id": "kinetiq",
+   "venue": "hlspot:@334",
+   "receipt": "sources/tickers/KNTQ.json"
+  }
+ ],
+ "scores_previewed": {
+  "koolkrypto223": {
+   "score": 48.787341148412054,
+   "display": "48.8",
+   "rank": 7,
+   "label": "small sample",
+   "scored": 3,
+   "calls_total": 4,
+   "with_entry": 4,
+   "raw": 44.745144976452245,
+   "weight": 0.23076923076923078,
+   "of": 8
+  }
+ },
+ "scores_after_add": {
+  "koolkrypto223": {
+   "score": 48.787341148412054,
+   "display": "48.8",
+   "rank": 7,
+   "label": "small sample",
+   "scored": 3,
+   "calls_total": 4,
+   "with_entry": 4,
+   "raw": 44.745144976452245,
+   "weight": 0.23076923076923078,
+   "of": 8
+  }
+ },
+ "scores_before": {
+  "koolkrypto223": {
+   "score": 50.30663233120325,
+   "display": "50.3",
+   "rank": 5,
+   "label": "small sample",
+   "scored": 2,
+   "calls_total": 3,
+   "with_entry": 3,
+   "raw": 51.83979398721946,
+   "weight": 0.16666666666666666,
+   "of": 8
+  }
+ },
+ "other_callers_unchanged": [
+  "BobLoukas",
+  "Corbanu",
+  "DrProfitCrypto",
+  "Okada_DeFi0x",
+  "goodalexander",
+  "mert",
+  "rosa_onchain"
+ ],
+ "frozen_values_checked": 58,
+ "matches_preview": true,
+ "problems": [],
+ "url": "https://x.com/koolkrypto223/status/2118181656398090718",
+ "record_file": "records/posts/2118181656398090718_KNTQ.json",
+ "record_sha256": "c6a394be6230f32fe876d997e5d3d6bffd687a345b16f2d9a4fc85be1b9222ef",
+ "receipt": {
+  "file": "sources/koolkrypto223/receipts/2118181656398090718.json",
+  "sha256": "f41b7a8e911c44f1f12d4e435ad09c549c64a08a0cb0e3a8a1d9eac7918e206a",
+  "created": false,
+  "text_truncated": false
+ },
+ "score_previewed": {
+  "score": 48.787341148412054,
+  "display": "48.8",
+  "rank": 7,
+  "label": "small sample",
+  "scored": 3,
+  "calls_total": 4,
+  "with_entry": 4,
+  "raw": 44.745144976452245,
+  "weight": 0.23076923076923078,
+  "of": 8
+ },
+ "score_after_add": {
+  "score": 48.787341148412054,
+  "display": "48.8",
+  "rank": 7,
+  "label": "small sample",
+  "scored": 3,
+  "calls_total": 4,
+  "with_entry": 4,
+  "raw": 44.745144976452245,
+  "weight": 0.23076923076923078,
+  "of": 8
+ },
+ "score_before": {
+  "score": 50.30663233120325,
+  "display": "50.3",
+  "rank": 5,
+  "label": "small sample",
+  "scored": 2,
+  "calls_total": 3,
+  "with_entry": 3,
+  "raw": 51.83979398721946,
+  "weight": 0.16666666666666666,
+  "of": 8
+ }
+}

@@ -336,6 +336,38 @@
     "first_bar": "2025-06-26T07:00:00Z",
     "starts_at_listing": false
    }
+  },
+  "NEST": {
+   "file": "NEST.json",
+   "sha256": "7df611ced14b1a3d4e47a5ca29050818f653fdddaff20d8831c8e030de988fc1",
+   "fetched_at": "2026-11-06T14:23:36Z",
+   "bars": 2160,
+   "first": "2026-08-07T04:00:00Z",
+   "last": "2026-11-06T13:00:00Z",
+   "daily_until": null,
+   "lookback": {
+    "days": 90,
+    "start": "2026-08-07T04:00:00Z",
+    "first_call": "2026-11-05T04:00:00Z",
+    "first_bar": "2026-08-07T04:00:00Z",
+    "starts_at_listing": false
+   }
+  },
+  "KNTQ": {
+   "file": "KNTQ.json",
+   "sha256": "c067a66626e0b65626524f85422e9f1d7215d550af8cbcdcffc7321a058b437b",
+   "fetched_at": "2026-11-06T14:25:17Z",
+   "bars": 2195,
+   "first": "2026-08-07T04:00:00Z",
+   "last": "2026-11-06T14:00:00Z",
+   "daily_until": null,
+   "lookback": {
+    "days": 90,
+    "start": "2026-08-07T04:00:00Z",
+    "first_call": "2026-11-05T04:00:00Z",
+    "first_bar": "2026-08-07T04:00:00Z",
+    "starts_at_listing": false
+   }
   }
  }
 }

@@ -1,9 +1,9 @@
 {
  "schema": "pf-post-signals.charts.v1",
  "record_schema": "post_price.v1",
- "records_scanned": 57,
+ "records_scanned": 59,
  "prices_as_of": "2026-11-06T01:37:25Z",
- "posts_drawn": 57,
+ "posts_drawn": 59,
  "refused": [],
  "superseded": [],
  "assets": [
@@ -79806,6 +79806,249 @@
    ]
   },
   {
+   "name": "KNTQ",
+   "source": "hlspot",
+   "symbol": "@334",
+   "series": [
+    [
+     "2026-11-05T04:00:00Z",
+     0.45938
+    ],
+    [
+     "2026-11-05T05:00:00Z",
+     0.45801
+    ],
+    [
+     "2026-11-05T06:00:00Z",
+     0.45599
+    ],
+    [
+     "2026-11-05T07:00:00Z",
+     0.45679
+    ],
+    [
+     "2026-11-05T08:00:00Z",
+     0.45992
+    ],
+    [
+     "2026-11-05T09:00:00Z",
+     0.46332
+    ],
+    [
+     "2026-11-05T10:00:00Z",
+     0.46182
+    ],
+    [
+     "2026-11-05T11:00:00Z",
+     0.46594
+    ],
+    [
+     "2026-11-05T12:00:00Z",
+     0.47438
+    ],
+    [
+     "2026-11-05T13:00:00Z",
+     0.45708
+    ],
+    [
+     "2026-11-05T14:00:00Z",
+     0.4597
+    ],
+    [
+     "2026-11-05T15:00:00Z",
+     0.45103
+    ],
+    [
+     "2026-11-05T16:00:00Z",
+     0.42036
+    ],
+    [
+     "2026-11-05T17:00:00Z",
+     0.41041
+    ],
+    [
+     "2026-11-05T18:00:00Z",
+     0.38705
+    ],
+    [
+     "2026-11-05T19:00:00Z",
+     0.37588
+    ],
+    [
+     "2026-11-05T20:00:00Z",
+     0.3945
+    ],
+    [
+     "2026-11-05T21:00:00Z",
+     0.39653
+    ],
+    [
+     "2026-11-05T22:00:00Z",
+     0.39061
+    ],
+    [
+     "2026-11-05T23:00:00Z",
+     0.39448
+    ],
+    [
+     "2026-11-06T00:00:00Z",
+     0.39499
+    ],
+    [
+     "2026-11-06T01:00:00Z",
+     0.40518
+    ],
+    [
+     "2026-11-06T02:00:00Z",
+     0.40628
+    ],
+    [
+     "2026-11-06T03:00:00Z",
+     0.4169
+    ],
+    [
+     "2026-11-06T04:00:00Z",
+     0.42294
+    ],
+    [
+     "2026-11-06T05:00:00Z",
+     0.43192
+    ],
+    [
+     "2026-11-06T06:00:00Z",
+     0.43365
+    ],
+    [
+     "2026-11-06T07:00:00Z",
+     0.42651
+    ],
+    [
+     "2026-11-06T08:00:00Z",
+     0.42844
+    ],
+    [
+     "2026-11-06T09:00:00Z",
+     0.43218
+    ],
+    [
+     "2026-11-06T10:00:00Z",
+     0.4221
+    ],
+    [
+     "2026-11-06T11:00:00Z",
+     0.42399
+    ],
+    [
+     "2026-11-06T12:00:00Z",
+     0.44723
+    ],
+    [
+     "2026-11-06T13:00:00Z",
+     0.4456
+    ],
+    [
+     "2026-11-06T14:00:00Z",
+     0.45198
+    ]
+   ],
+   "posts": [
+    {
+     "schema": "post_price.v1",
+     "post": {
+      "id": "2118181656398090718",
+      "url": "https://x.com/koolkrypto223/status/2118181656398090718",
+      "author": "koolkrypto223",
+      "posted_at": "2026-11-05T03:20:35Z",
+      "posted_at_source": "receipt",
+      "text": "More $NEST and $KNTQ",
+      "receipt_sha256": "f41b7a8e911c44f1f12d4e435ad09c549c64a08a0cb0e3a8a1d9eac7918e206a"
+     },
+     "asset": {
+      "name": "KNTQ",
+      "source": "hlspot",
+      "symbol": "@334",
+      "price_field": "open"
+     },
+     "side": 1,
+     "status": "partial",
+     "entry": {
+      "at": "2026-11-05T04:00:00Z",
+      "price": 0.45938
+     },
+     "latest": {
+      "at": "2026-11-06T14:00:00Z",
+      "price": 0.45198
+     },
+     "change_since_post": -0.01610866820497192,
+     "exits": {
+      "1": {
+       "at": "2026-11-06T04:00:00Z",
+       "price": 0.42294
+      },
+      "7": null,
+      "30": null
+     },
+     "moves": {
+      "1": -0.07932430667421309,
+      "7": null,
+      "30": null
+     },
+     "unresolved": {
+      "7": "horizon not yet reached",
+      "30": "horizon not yet reached"
+     },
+     "resolved_with": {
+      "prices": "live:binance+yahoo",
+      "last_bar_at": "2026-11-06T14:00:00Z",
+      "max_lag_days": 2,
+      "session_lag_days": 2
+     },
+     "signed_returns": {
+      "1": -0.07932430667421309,
+      "7": null,
+      "30": null
+     },
+     "asset_choice": {
+      "method": "detector",
+      "terms": [
+       "$KNTQ"
+      ],
+      "reason": null,
+      "ticker": {
+       "coingecko_id": "kinetiq",
+       "name": "Kinetiq",
+       "source": "hlspot",
+       "symbol": "@334",
+       "receipt_sha256": "25b05ef462d931e61f9f0db9ad5182e521be05b236c662203d97d6d06b667630",
+       "checked_at": "2026-11-06T14:25:07Z",
+       "asked": "$KNTQ"
+      },
+      "leg": {
+       "of": [
+        "NEST",
+        "KNTQ"
+       ],
+       "words": null
+      }
+     },
+     "side_choice": {
+      "method": "manual",
+      "terms": [],
+      "reason": "reply to 0xLcrgs portfolio screenshot (BTC 94.9%, NEST 0.6%, no KNTQ): \"More $NEST and $KNTQ\" = add both"
+     },
+     "best": {
+      "at": "2026-11-05T12:00:00Z",
+      "price": 0.47438,
+      "move": 0.03265270582088897,
+      "basis": "call side",
+      "for_call": 0.03265270582088897
+     },
+     "record_file": "records/posts/2118181656398090718_KNTQ.json",
+     "record_sha256": "c6a394be6230f32fe876d997e5d3d6bffd687a345b16f2d9a4fc85be1b9222ef"
+    }
+   ]
+  },
+  {
    "name": "LIT",
    "source": "hyperliquid",
    "symbol": "LIT",
@@ -80335,6 +80578,241 @@
      },
      "record_file": "records/posts/2116898993435463783_LIT.json",
      "record_sha256": "e9e7d800bb1810cb59dac170d5c131fa4cae0af380196e0531961cab7b5f0ae8"
+    }
+   ]
+  },
+  {
+   "name": "NEST",
+   "source": "dex",
+   "symbol": "hyperevm:0x535f30f50ebda33575242c38b976e681d13db6fa",
+   "series": [
+    [
+     "2026-11-05T04:00:00Z",
+     0.026565305221382396
+    ],
+    [
+     "2026-11-05T05:00:00Z",
+     0.0265200759817779
+    ],
+    [
+     "2026-11-05T06:00:00Z",
+     0.0253255196133246
+    ],
+    [
+     "2026-11-05T07:00:00Z",
+     0.026436940484394898
+    ],
+    [
+     "2026-11-05T08:00:00Z",
+     0.0261183312192246
+    ],
+    [
+     "2026-11-05T09:00:00Z",
+     0.0263193051080395
+    ],
+    [
+     "2026-11-05T10:00:00Z",
+     0.0261893904271041
+    ],
+    [
+     "2026-11-05T11:00:00Z",
+     0.026957096681307798
+    ],
+    [
+     "2026-11-05T12:00:00Z",
+     0.026955372955876196
+    ],
+    [
+     "2026-11-05T13:00:00Z",
+     0.0267346802578989
+    ],
+    [
+     "2026-11-05T14:00:00Z",
+     0.026707073638476096
+    ],
+    [
+     "2026-11-05T15:00:00Z",
+     0.026191299686318097
+    ],
+    [
+     "2026-11-05T16:00:00Z",
+     0.0234864852309324
+    ],
+    [
+     "2026-11-05T17:00:00Z",
+     0.024274521713597997
+    ],
+    [
+     "2026-11-05T18:00:00Z",
+     0.023137763588504598
+    ],
+    [
+     "2026-11-05T19:00:00Z",
+     0.023115404306923697
+    ],
+    [
+     "2026-11-05T20:00:00Z",
+     0.0230941297815239
+    ],
+    [
+     "2026-11-05T21:00:00Z",
+     0.0229825996184546
+    ],
+    [
+     "2026-11-05T22:00:00Z",
+     0.023808484000312498
+    ],
+    [
+     "2026-11-05T23:00:00Z",
+     0.0234756287461281
+    ],
+    [
+     "2026-11-06T00:00:00Z",
+     0.0224370803265482
+    ],
+    [
+     "2026-11-06T01:00:00Z",
+     0.023529856781539498
+    ],
+    [
+     "2026-11-06T02:00:00Z",
+     0.022657505559421698
+    ],
+    [
+     "2026-11-06T03:00:00Z",
+     0.0226684488013377
+    ],
+    [
+     "2026-11-06T04:00:00Z",
+     0.022704192313259396
+    ],
+    [
+     "2026-11-06T05:00:00Z",
+     0.0228492020402115
+    ],
+    [
+     "2026-11-06T06:00:00Z",
+     0.0237029179773294
+    ],
+    [
+     "2026-11-06T08:00:00Z",
+     0.022776799881380098
+    ],
+    [
+     "2026-11-06T09:00:00Z",
+     0.022772351510792696
+    ],
+    [
+     "2026-11-06T10:00:00Z",
+     0.0238560644107668
+    ],
+    [
+     "2026-11-06T11:00:00Z",
+     0.022856041017124098
+    ],
+    [
+     "2026-11-06T12:00:00Z",
+     0.023061212883356698
+    ],
+    [
+     "2026-11-06T13:00:00Z",
+     0.023977364538508
+    ]
+   ],
+   "posts": [
+    {
+     "schema": "post_price.v1",
+     "post": {
+      "id": "2118181656398090718",
+      "url": "https://x.com/koolkrypto223/status/2118181656398090718",
+      "author": "koolkrypto223",
+      "posted_at": "2026-11-05T03:20:35Z",
+      "posted_at_source": "receipt",
+      "text": "More $NEST and $KNTQ",
+      "receipt_sha256": "f41b7a8e911c44f1f12d4e435ad09c549c64a08a0cb0e3a8a1d9eac7918e206a"
+     },
+     "asset": {
+      "name": "NEST",
+      "source": "dex",
+      "symbol": "hyperevm:0x535f30f50ebda33575242c38b976e681d13db6fa",
+      "price_field": "open"
+     },
+     "side": 1,
+     "status": "partial",
+     "entry": {
+      "at": "2026-11-05T04:00:00Z",
+      "price": 0.026565305221382396
+     },
+     "latest": {
+      "at": "2026-11-06T13:00:00Z",
+      "price": 0.023977364538508
+     },
+     "change_since_post": -0.09741806696018551,
+     "exits": {
+      "1": {
+       "at": "2026-11-06T04:00:00Z",
+       "price": 0.022704192313259396
+      },
+      "7": null,
+      "30": null
+     },
+     "moves": {
+      "1": -0.14534419521802422,
+      "7": null,
+      "30": null
+     },
+     "unresolved": {
+      "7": "horizon not yet reached",
+      "30": "horizon not yet reached"
+     },
+     "resolved_with": {
+      "prices": "live:binance+yahoo",
+      "last_bar_at": "2026-11-06T13:00:00Z",
+      "max_lag_days": 2,
+      "session_lag_days": 2
+     },
+     "signed_returns": {
+      "1": -0.14534419521802422,
+      "7": null,
+      "30": null
+     },
+     "asset_choice": {
+      "method": "detector",
+      "terms": [
+       "$NEST"
+      ],
+      "reason": null,
+      "ticker": {
+       "coingecko_id": "nest-2",
+       "name": "NEST",
+       "source": "dex",
+       "symbol": "hyperevm:0x535f30f50ebda33575242c38b976e681d13db6fa",
+       "receipt_sha256": "200bfa645e6907331a0caf72b2da7b5d5e71ea0cba882da162ceec99cd246e4c",
+       "checked_at": "2026-11-06T14:23:01Z",
+       "asked": "$NEST = nest-2 (owner pick)"
+      },
+      "leg": {
+       "of": [
+        "NEST",
+        "KNTQ"
+       ],
+       "words": null
+      }
+     },
+     "side_choice": {
+      "method": "manual",
+      "terms": [],
+      "reason": "reply to 0xLcrgs portfolio screenshot (BTC 94.9%, NEST 0.6%, no KNTQ): \"More $NEST and $KNTQ\" = add both"
+     },
+     "best": {
+      "at": "2026-11-05T11:00:00Z",
+      "price": 0.026957096681307798,
+      "move": 0.014748238601454133,
+      "basis": "call side",
+      "for_call": 0.014748238601454133
+     },
+     "record_file": "records/posts/2118181656398090718_NEST.json",
+     "record_sha256": "b0f9af671163a6769246fb56c00344829792fc2422203dea9c73ecd8d306dfe5"
     }
    ]
   },
@@ -208580,10 +209058,10 @@
    "goodalexander",
    "mert",
    "rosa_onchain",
-   "koolkrypto223",
    "BobLoukas",
    "Okada_DeFi0x",
    "Corbanu",
+   "koolkrypto223",
    "DrProfitCrypto"
   ],
   "callers": {
@@ -208988,7 +209466,7 @@
     "raw": 51.14405690189446,
     "weight": 0.7674418604651163,
     "score": 50.87799715726784,
-    "rank": 5,
+    "rank": 4,
     "display": "50.9"
    },
    "Corbanu": {
@@ -209097,7 +209575,7 @@
     "raw": 48.7883997811404,
     "weight": 0.4444444444444444,
     "score": 49.46151101384018,
-    "rank": 7,
+    "rank": 6,
     "display": "49.5"
    },
    "DrProfitCrypto": {
@@ -209231,9 +209709,9 @@
     "display": "55.2"
    },
    "koolkrypto223": {
-    "calls_total": 2,
-    "with_entry": 2,
-    "scored": 1,
+    "calls_total": 4,
+    "with_entry": 4,
+    "scored": 3,
     "calls": [
      {
       "post_id": "2116898993435463783",
@@ -209255,22 +209733,44 @@
       "counted": true,
       "why": "return for the side since the post (open)",
       "quality": 84.22575519402402
+     },
+     {
+      "post_id": "2118181656398090718",
+      "asset": "KNTQ",
+      "posted_at": "2026-11-05T03:20:35Z",
+      "side": "long",
+      "state": "open",
+      "result": -0.01610866820497192,
+      "counted": true,
+      "why": "return for the side since the post (open)",
+      "quality": 42.014617387294564
+     },
+     {
+      "post_id": "2118181656398090718",
+      "asset": "NEST",
+      "posted_at": "2026-11-05T03:20:35Z",
+      "side": "long",
+      "state": "open",
+      "result": -0.09741806696018551,
+      "counted": true,
+      "why": "return for the side since the post (open)",
+      "quality": 12.473214742073267
      }
     ],
     "label": "small sample",
     "wins": 1,
-    "hit_rate": 1.0,
-    "avg_result": 0.08375611105986547,
+    "hit_rate": 0.3333333333333333,
+    "avg_result": -0.009923541368430655,
     "components": {
-     "hit": 100.0,
-     "quality": 84.22575519402402,
-     "clarity": 50.0
+     "hit": 33.333333333333336,
+     "quality": 46.23786244113061,
+     "clarity": 75.0
     },
-    "raw": 86.1903020776096,
-    "weight": 0.09090909090909091,
-    "score": 53.29002746160087,
-    "rank": 4,
-    "display": "53.3"
+    "raw": 44.745144976452245,
+    "weight": 0.23076923076923078,
+    "score": 48.787341148412054,
+    "rank": 7,
+    "display": "48.8"
    },
    "mert": {
     "calls_total": 1,
@@ -209344,7 +209844,7 @@
     "raw": 49.320393188694965,
     "weight": 0.16666666666666666,
     "score": 49.88673219811583,
-    "rank": 6,
+    "rank": 5,
     "display": "49.9"
    },
    "rosa_onchain": {

@@ -1303,6 +1303,16 @@
    "hl_perp": false,
    "checked_at": "2026-11-02T02:40:39Z"
   },
+  "KNTQ": {
+   "coingecko_id": "kinetiq",
+   "name": "Kinetiq",
+   "source": "hlspot",
+   "symbol": "@334",
+   "receipt": "sources/tickers/KNTQ.json",
+   "receipt_sha256": "25b05ef462d931e61f9f0db9ad5182e521be05b236c662203d97d6d06b667630",
+   "added_at": "2026-11-06T14:25:07Z",
+   "pair": "KNTQ/USDC"
+  },
   "LDO": {
    "coingecko_id": "lido-dao",
    "name": "Lido DAO",
@@ -1657,6 +1667,16 @@
    "hl_perp": true,
    "also_us_stock": "NeoGenomics, Inc. - Common Stock",
    "checked_at": "2026-11-02T02:40:39Z"
+  },
+  "NEST": {
+   "coingecko_id": "nest-2",
+   "name": "NEST",
+   "source": "dex",
+   "symbol": "hyperevm:0x535f30f50ebda33575242c38b976e681d13db6fa",
+   "receipt": "sources/tickers/NEST.json",
+   "receipt_sha256": "200bfa645e6907331a0caf72b2da7b5d5e71ea0cba882da162ceec99cd246e4c",
+   "added_at": "2026-11-06T14:23:01Z",
+   "pair": "NEST / WHYPE 2%"
   },
   "NEXO": {
    "coingecko_id": "nexo",
