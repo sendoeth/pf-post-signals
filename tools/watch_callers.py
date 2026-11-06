@@ -434,14 +434,18 @@ def report(wdir=DIR, cards=CARDS, hours=None):
     per_hour = {}
     for b in bud:
         per_hour[b["at"][:13]] = per_hour.get(b["at"][:13], 0) + 1
-    lat = sorted(c["latency_s"] for c in cd.values() if c.get("latency_s") is not None and not c.get("late"))
+    start = cyc[0]["started"] if cyc else None              # posts from before the watcher started are not a latency
+    early = [c for c in cd.values() if start and c.get("posted_at") and c["posted_at"] < start]
+    lat = sorted(c["latency_s"] for c in cd.values() if c.get("latency_s") is not None and not c.get("late") and c not in early)
     return {"cycles": len(cyc), "first": cyc[0]["started"] if cyc else None, "last": cyc[-1]["started"] if cyc else None,
             "results": {r: sum(1 for c in cyc if c.get("result", "").split(" ")[0] == r) for r in sorted({c.get("result", "").split(" ")[0] for c in cyc})},
             "throttled_cycles": [c["started"] for c in cyc if c.get("result", "").startswith("throttled")],
             "searches_per_hour": per_hour, "max_searches_in_an_hour": max(per_hour.values(), default=0),
             "candidates": len(w.rows("candidates.jsonl")), "cards_sent": len(cd),
             "decisions": {d: sum(1 for c in cd.values() if c.get("decision") == d) for d in ("add", "skip")},
-            "latency_s": {"n": len(lat), "min": lat[0] if lat else None, "median": statistics.median(lat) if lat else None, "max": lat[-1] if lat else None}}
+            "cards_for_posts_before_the_start": len(early),
+            "latency_s": {"n": len(lat), "min": lat[0] if lat else None, "median": statistics.median(lat) if lat else None, "max": lat[-1] if lat else None,
+                          "within_11_min": sum(1 for x in lat if x <= 660)}}
 
 
 def main(argv=None):

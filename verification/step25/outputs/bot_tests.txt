@@ -1,0 +1,14 @@
+$ python3 -W ignore -m unittest -v tests.test_bot   (private admin bot; step 25 = class Watcher)
+test_a_card_is_sent_once_with_the_post_and_its_latency ... ok
+test_a_failed_send_stays_pending ... ok
+test_a_forged_parent_never_becomes_a_link ... ok
+test_a_torn_line_never_stalls_delivery ... ok
+test_add_opens_the_normal_preview_for_the_exact_url_and_publishes_nothing ... ok
+test_context_runs_the_watcher_tool ... ok
+test_more_than_a_batch_waits_for_the_next_poll ... ok
+test_skip_is_remembered ... ok
+test_strangers_cannot_press_card_buttons ... ok
+test_throttling_is_reported_once_and_recovery_too ... ok
+test_unknown_or_forged_card_does_nothing ... ok
+Ran 62 tests in 0.141s
+OK

@@ -1,0 +1,383 @@
+{
+ "2118167587637096933": {
+  "url": "https://x.com/koolkrypto223/status/2118167587637096933",
+  "handle": "koolkrypto223",
+  "posted_at": "2026-11-05T02:24:41Z",
+  "found_at": "2026-11-05T13:15:30Z",
+  "sent_at": "2026-11-05T13:15:45Z",
+  "latency_s": 39065,
+  "late": false,
+  "decision": "add",
+  "decided_at": "2026-11-05T13:27:50Z"
+ },
+ "2118181656398090718": {
+  "url": "https://x.com/koolkrypto223/status/2118181656398090718",
+  "handle": "koolkrypto223",
+  "posted_at": "2026-11-05T03:20:35Z",
+  "found_at": "2026-11-05T13:15:30Z",
+  "sent_at": "2026-11-05T13:15:46Z",
+  "latency_s": 35711,
+  "late": false,
+  "decision": null
+ },
+ "2118200318932521208": {
+  "url": "https://x.com/koolkrypto223/status/2118200318932521208",
+  "handle": "koolkrypto223",
+  "posted_at": "2026-11-05T04:34:44Z",
+  "found_at": "2026-11-05T13:15:30Z",
+  "sent_at": "2026-11-05T13:15:46Z",
+  "latency_s": 31263,
+  "late": false,
+  "decision": null
+ },
+ "2118204037254512705": {
+  "url": "https://x.com/Okada_DeFi0x/status/2118204037254512705",
+  "handle": "Okada_DeFi0x",
+  "posted_at": "2026-11-05T04:49:31Z",
+  "found_at": "2026-11-05T13:15:30Z",
+  "sent_at": "2026-11-05T13:15:47Z",
+  "latency_s": 30376,
+  "late": false,
+  "decision": null
+ },
+ "2118336994602533324": {
+  "url": "https://x.com/Okada_DeFi0x/status/2118336994602533324",
+  "handle": "Okada_DeFi0x",
+  "posted_at": "2026-11-05T13:37:50Z",
+  "found_at": "2026-11-05T13:46:15Z",
+  "sent_at": "2026-11-05T13:46:26Z",
+  "latency_s": 516,
+  "late": false,
+  "decision": null
+ },
+ "2118349972110500182": {
+  "url": "https://x.com/rosa_onchain/status/2118349972110500182",
+  "handle": "rosa_onchain",
+  "posted_at": "2026-11-05T14:29:25Z",
+  "found_at": "2026-11-05T14:36:25Z",
+  "sent_at": "2026-11-05T14:36:28Z",
+  "latency_s": 423,
+  "late": false,
+  "decision": null
+ },
+ "2118350303598960841": {
+  "url": "https://x.com/rosa_onchain/status/2118350303598960841",
+  "handle": "rosa_onchain",
+  "posted_at": "2026-11-05T14:30:44Z",
+  "found_at": "2026-11-05T14:36:25Z",
+  "sent_at": "2026-11-05T14:36:28Z",
+  "latency_s": 345,
+  "late": false,
+  "decision": null
+ },
+ "2118350392962736477": {
+  "url": "https://x.com/Okada_DeFi0x/status/2118350392962736477",
+  "handle": "Okada_DeFi0x",
+  "posted_at": "2026-11-05T14:31:05Z",
+  "found_at": "2026-11-05T14:36:25Z",
+  "sent_at": "2026-11-05T14:36:29Z",
+  "latency_s": 325,
+  "late": false,
+  "decision": null
+ },
+ "2118364428504539464": {
+  "url": "https://x.com/BobLoukas/status/2118364428504539464",
+  "handle": "BobLoukas",
+  "posted_at": "2026-11-05T15:26:51Z",
+  "found_at": "2026-11-05T15:36:28Z",
+  "sent_at": "2026-11-05T15:36:48Z",
+  "latency_s": 597,
+  "late": false,
+  "decision": null
+ },
+ "2118396069449265635": {
+  "url": "https://x.com/BobLoukas/status/2118396069449265635",
+  "handle": "BobLoukas",
+  "posted_at": "2026-11-05T17:32:35Z",
+  "found_at": "2026-11-05T17:36:17Z",
+  "sent_at": "2026-11-05T17:36:25Z",
+  "latency_s": 231,
+  "late": false,
+  "decision": null
+ },
+ "2118412561255153842": {
+  "url": "https://x.com/BobLoukas/status/2118412561255153842",
+  "handle": "BobLoukas",
+  "posted_at": "2026-11-05T18:38:07Z",
+  "found_at": "2026-11-05T18:46:19Z",
+  "sent_at": "2026-11-05T18:46:35Z",
+  "latency_s": 508,
+  "late": false,
+  "decision": null
+ },
+ "2118430013813080127": {
+  "url": "https://x.com/goodalexander/status/2118430013813080127",
+  "handle": "goodalexander",
+  "posted_at": "2026-11-05T19:47:28Z",
+  "found_at": "2026-11-05T19:56:16Z",
+  "sent_at": "2026-11-05T19:56:19Z",
+  "latency_s": 532,
+  "late": false,
+  "decision": null
+ },
+ "2118433030075236587": {
+  "url": "https://x.com/goodalexander/status/2118433030075236587",
+  "handle": "goodalexander",
+  "posted_at": "2026-11-05T19:59:27Z",
+  "found_at": "2026-11-05T20:06:17Z",
+  "sent_at": "2026-11-05T20:06:32Z",
+  "latency_s": 425,
+  "late": false,
+  "decision": null
+ },
+ "2118434624963739985": {
+  "url": "https://x.com/koolkrypto223/status/2118434624963739985",
+  "handle": "koolkrypto223",
+  "posted_at": "2026-11-05T20:05:47Z",
+  "found_at": "2026-11-05T20:06:17Z",
+  "sent_at": "2026-11-05T20:06:33Z",
+  "latency_s": 47,
+  "late": false,
+  "decision": null
+ },
+ "2118438033041096873": {
+  "url": "https://x.com/koolkrypto223/status/2118438033041096873",
+  "handle": "koolkrypto223",
+  "posted_at": "2026-11-05T20:19:20Z",
+  "found_at": "2026-11-05T20:26:17Z",
+  "sent_at": "2026-11-05T20:26:32Z",
+  "latency_s": 432,
+  "late": false,
+  "decision": null
+ },
+ "2118443752717218124": {
+  "url": "https://x.com/koolkrypto223/status/2118443752717218124",
+  "handle": "koolkrypto223",
+  "posted_at": "2026-11-05T20:42:04Z",
+  "found_at": "2026-11-05T20:46:26Z",
+  "sent_at": "2026-11-05T20:46:31Z",
+  "latency_s": 267,
+  "late": false,
+  "decision": null
+ },
+ "2118455140609147385": {
+  "url": "https://x.com/mert/status/2118455140609147385",
+  "handle": "mert",
+  "posted_at": "2026-11-05T21:27:19Z",
+  "found_at": "2026-11-05T21:36:28Z",
+  "sent_at": "2026-11-05T21:36:42Z",
+  "latency_s": 564,
+  "late": false,
+  "decision": null
+ },
+ "2118455320074924400": {
+  "url": "https://x.com/koolkrypto223/status/2118455320074924400",
+  "handle": "koolkrypto223",
+  "posted_at": "2026-11-05T21:28:01Z",
+  "found_at": "2026-11-05T21:36:28Z",
+  "sent_at": "2026-11-05T21:36:43Z",
+  "latency_s": 522,
+  "late": false,
+  "decision": null
+ },
+ "2118458829960601946": {
+  "url": "https://x.com/koolkrypto223/status/2118458829960601946",
+  "handle": "koolkrypto223",
+  "posted_at": "2026-11-05T21:41:58Z",
+  "found_at": "2026-11-05T21:46:21Z",
+  "sent_at": "2026-11-05T21:46:29Z",
+  "latency_s": 272,
+  "late": false,
+  "decision": null
+ },
+ "2118485658927047155": {
+  "url": "https://x.com/DrProfitCrypto/status/2118485658927047155",
+  "handle": "DrProfitCrypto",
+  "posted_at": "2026-11-05T23:28:35Z",
+  "found_at": "2026-11-05T23:36:23Z",
+  "sent_at": "2026-11-05T23:36:34Z",
+  "latency_s": 479,
+  "late": false,
+  "decision": null
+ },
+ "2118497643987177946": {
+  "url": "https://x.com/koolkrypto223/status/2118497643987177946",
+  "handle": "koolkrypto223",
+  "posted_at": "2026-11-06T00:16:12Z",
+  "found_at": "2026-11-06T00:26:34Z",
+  "sent_at": "2026-11-06T00:26:44Z",
+  "latency_s": 632,
+  "late": false,
+  "decision": null
+ },
+ "2118509203081884092": {
+  "url": "https://x.com/koolkrypto223/status/2118509203081884092",
+  "handle": "koolkrypto223",
+  "posted_at": "2026-11-06T01:02:08Z",
+  "found_at": "2026-11-06T01:06:31Z",
+  "sent_at": "2026-11-06T01:06:41Z",
+  "latency_s": 274,
+  "late": false,
+  "decision": null
+ },
+ "2118514330652336391": {
+  "url": "https://x.com/koolkrypto223/status/2118514330652336391",
+  "handle": "koolkrypto223",
+  "posted_at": "2026-11-06T01:22:31Z",
+  "found_at": "2026-11-06T01:26:31Z",
+  "sent_at": "2026-11-06T01:26:40Z",
+  "latency_s": 250,
+  "late": false,
+  "decision": null
+ },
+ "2118518766015488501": {
+  "url": "https://x.com/koolkrypto223/status/2118518766015488501",
+  "handle": "koolkrypto223",
+  "posted_at": "2026-11-06T01:40:08Z",
+  "found_at": "2026-11-06T01:46:32Z",
+  "sent_at": "2026-11-06T01:46:40Z",
+  "latency_s": 392,
+  "late": false,
+  "decision": null
+ },
+ "2118522378313670896": {
+  "url": "https://x.com/koolkrypto223/status/2118522378313670896",
+  "handle": "koolkrypto223",
+  "posted_at": "2026-11-06T01:54:29Z",
+  "found_at": "2026-11-06T01:56:32Z",
+  "sent_at": "2026-11-06T01:56:52Z",
+  "latency_s": 144,
+  "late": false,
+  "decision": null
+ },
+ "2118525026886701067": {
+  "url": "https://x.com/koolkrypto223/status/2118525026886701067",
+  "handle": "koolkrypto223",
+  "posted_at": "2026-11-06T02:05:01Z",
+  "found_at": "2026-11-06T02:06:32Z",
+  "sent_at": "2026-11-06T02:06:39Z",
+  "latency_s": 99,
+  "late": false,
+  "decision": null
+ },
+ "2118554989572297115": {
+  "url": "https://x.com/koolkrypto223/status/2118554989572297115",
+  "handle": "koolkrypto223",
+  "posted_at": "2026-11-06T04:04:05Z",
+  "found_at": "2026-11-06T04:06:32Z",
+  "sent_at": "2026-11-06T04:06:56Z",
+  "latency_s": 172,
+  "late": false,
+  "decision": null
+ },
+ "2118564458998210944": {
+  "url": "https://x.com/Okada_DeFi0x/status/2118564458998210944",
+  "handle": "Okada_DeFi0x",
+  "posted_at": "2026-11-06T04:41:42Z",
+  "found_at": "2026-11-06T04:46:35Z",
+  "sent_at": "2026-11-06T04:46:54Z",
+  "latency_s": 312,
+  "late": false,
+  "decision": null
+ },
+ "2118567259379757504": {
+  "url": "https://x.com/Okada_DeFi0x/status/2118567259379757504",
+  "handle": "Okada_DeFi0x",
+  "posted_at": "2026-11-06T04:52:50Z",
+  "found_at": "2026-11-06T04:56:34Z",
+  "sent_at": "2026-11-06T04:56:41Z",
+  "latency_s": 232,
+  "late": false,
+  "decision": null
+ },
+ "2118575518589333535": {
+  "url": "https://x.com/Okada_DeFi0x/status/2118575518589333535",
+  "handle": "Okada_DeFi0x",
+  "posted_at": "2026-11-06T05:25:39Z",
+  "found_at": "2026-11-06T05:26:36Z",
+  "sent_at": "2026-11-06T05:26:55Z",
+  "latency_s": 77,
+  "late": false,
+  "decision": null
+ },
+ "2118598439600816380": {
+  "url": "https://x.com/rosa_onchain/status/2118598439600816380",
+  "handle": "rosa_onchain",
+  "posted_at": "2026-11-06T06:56:44Z",
+  "found_at": "2026-11-06T07:06:40Z",
+  "sent_at": "2026-11-06T07:06:52Z",
+  "latency_s": 608,
+  "late": false,
+  "decision": null
+ },
+ "2118609520985583999": {
+  "url": "https://x.com/Okada_DeFi0x/status/2118609520985583999",
+  "handle": "Okada_DeFi0x",
+  "posted_at": "2026-11-06T07:40:46Z",
+  "found_at": "2026-11-06T07:46:44Z",
+  "sent_at": "2026-11-06T07:46:51Z",
+  "latency_s": 366,
+  "late": false,
+  "decision": null
+ },
+ "2118627949545160918": {
+  "url": "https://x.com/rosa_onchain/status/2118627949545160918",
+  "handle": "rosa_onchain",
+  "posted_at": "2026-11-06T08:54:00Z",
+  "found_at": "2026-11-06T08:56:44Z",
+  "sent_at": "2026-11-06T08:57:06Z",
+  "latency_s": 187,
+  "late": false,
+  "decision": null
+ },
+ "2118630596142571644": {
+  "url": "https://x.com/rosa_onchain/status/2118630596142571644",
+  "handle": "rosa_onchain",
+  "posted_at": "2026-11-06T09:04:31Z",
+  "found_at": "2026-11-06T09:06:46Z",
+  "sent_at": "2026-11-06T09:06:59Z",
+  "latency_s": 148,
+  "late": false,
+  "decision": null
+ },
+ "2118662663442178485": {
+  "url": "https://x.com/mert/status/2118662663442178485",
+  "handle": "mert",
+  "posted_at": "2026-11-06T11:11:56Z",
+  "found_at": "2026-11-06T11:16:51Z",
+  "sent_at": "2026-11-06T11:17:20Z",
+  "latency_s": 325,
+  "late": false,
+  "decision": null
+ },
+ "2118672055420039460": {
+  "url": "https://x.com/rosa_onchain/status/2118672055420039460",
+  "handle": "rosa_onchain",
+  "posted_at": "2026-11-06T11:49:15Z",
+  "found_at": "2026-11-06T11:56:55Z",
+  "sent_at": "2026-11-06T11:57:21Z",
+  "latency_s": 487,
+  "late": false,
+  "decision": null
+ },
+ "2118687566442660273": {
+  "url": "https://x.com/mert/status/2118687566442660273",
+  "handle": "mert",
+  "posted_at": "2026-11-06T12:50:53Z",
+  "found_at": "2026-11-06T12:56:51Z",
+  "sent_at": "2026-11-06T12:57:00Z",
+  "latency_s": 368,
+  "late": false,
+  "decision": null
+ },
+ "2118690413171429773": {
+  "url": "https://x.com/mert/status/2118690413171429773",
+  "handle": "mert",
+  "posted_at": "2026-11-06T13:02:12Z",
+  "found_at": "2026-11-06T13:06:52Z",
+  "sent_at": "2026-11-06T13:07:13Z",
+  "latency_s": 301,
+  "late": false,
+  "decision": null
+ }
+}

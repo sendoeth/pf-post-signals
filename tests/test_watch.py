@@ -334,3 +334,17 @@ class CodexReview(Base):
         self.assertEqual([c["id"] for c in self.candidates()], ["81"])
         with open(os.path.join(self.dir, "candidates.jsonl"), "rb") as f:
             self.assertEqual(json.loads(f.read().splitlines()[-1])["id"], "81")   # appended on its own line
+
+
+class Report(Base):
+    def test_posts_from_before_the_start_are_not_a_latency(self):
+        self.run_cycle()
+        cards = os.path.join(self.dir, "cards.json")
+        start = self.watch().rows("cycles.jsonl")[0]["started"]
+        with open(cards, "w") as f:
+            json.dump({"cards": {"1": {"posted_at": "2026-11-05T02:00:00Z", "latency_s": 39000, "late": False},
+                                 "2": {"posted_at": "2026-11-05T13:00:00Z", "latency_s": 300, "late": False}}}, f)
+        self.assertLess("2026-11-05T02:00:00Z", start)
+        r = wc.report(self.dir, cards)
+        self.assertEqual(r["cards_for_posts_before_the_start"], 1)
+        self.assertEqual((r["latency_s"]["n"], r["latency_s"]["max"], r["latency_s"]["within_11_min"]), (1, 300, 1))

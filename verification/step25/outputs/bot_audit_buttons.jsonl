@@ -1,0 +1,3 @@
+{"at": "2026-11-05T13:22:22Z", "event": "watch_button", "kind": "ctx", "post": "2118181656398090718", "ok": true}
+{"at": "2026-11-05T13:27:50Z", "event": "watch_button", "kind": "add", "post": "2118167587637096933", "ok": true}
+{"at": "2026-11-05T13:27:53Z", "event": "tool", "argv": ["python3", "tools/add_call.py", "https://x.com/koolkrypto223/status/2118167587637096933"], "code": 2, "tail": "REFUSED   the coin(s) of this post could not be confirmed (nothing guessed)\nREVIEW $KNTQ: no trading venue with hourly bars agrees with Kinetiq's price"}
