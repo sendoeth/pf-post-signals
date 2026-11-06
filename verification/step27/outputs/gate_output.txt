@@ -1,0 +1,6 @@
+KEPT     more_cashtag         26/58 -> 28/58  fixed ['2118181656398090718|KNTQ', '2118181656398090718|NEST']  worsened -  fires on ['2118181656398090718|KNTQ', '2118181656398090718|NEST']  (agreement 26/58 -> 28/58, no label worse)  code 18ef061dbd15
+KEPT     positioned_side      28/58 -> 29/58  fixed ['2022006665764082140|STOCKS']  worsened -  fires on ['2022006665764082140|STOCKS']  (agreement 28/58 -> 29/58, no label worse)  code 82ba7a33e520
+KEPT     picking_up_quantity  29/58 -> 30/58  fixed ['2062277523288068152|BTC']  worsened -  fires on ['2062277523288068152|BTC']  (agreement 29/58 -> 30/58, no label worse)  code d39ad460d155
+REJECTED bullish_anywhere     30/58 -> 31/58  fixed ['2106750657877434407|COPX', '2107475725573906895|STOCKS']  worsened ['2091161059801391206|-']  fires on ['2091161059801391206|-', '2106750657877434407|COPX', '2107475725573906895|STOCKS']  (1 label(s) that agreed would disagree)  code 559f1caf1b25
+KEPT     targeting_price      30/58 -> 31/58  fixed ['2011105173104705981|GOLD']  worsened -  fires on ['1995532011818106902|-', '2011105173104705981|GOLD']  (agreement 30/58 -> 31/58, no label worse)  code 2560bf13ffcf
+kept: ['more_cashtag', 'positioned_side', 'picking_up_quantity', 'targeting_price']; labels_sha256 c285e83a578bd54d5c2db451146ad0c02e36bc3c003eabfabfe20a8514285640; label_count 69

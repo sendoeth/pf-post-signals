@@ -1,0 +1,3 @@
+labels 69 (source mentions: {'record': 51, 'scan': 26, 'watcher': 5}); gating 58
+by kind: {'agree': 20, 'skip_repeat_or_other': 8, 'side_added': 30, 'agree_no_side': 6, 'false_call': 1, 'side_flipped': 1, 'add_refused': 1, 'skipped (no stated reason to read it as no side)': 2}
+agreement base {'n': 58, 'agree': 26, 'rate': 0.4483} with kept rules {'n': 58, 'agree': 31, 'rate': 0.5345}

@@ -1,0 +1,48 @@
+$ git log -1
+aadafaeeefc7cc3621cf2f10096beaa96d725cc8 admin bot: publish 0 record(s) [2026-11-06T16:18:58Z]
+$ python3 tools/guard.py --history
+guard: scanned 109 commits (all added lines + messages) -> 0 hits
+$ python3 tools/guard.py --tree
+guard: scanned 2677 files -> 0 hits
+$ python3 -m unittest tests.test_guard
+OK
+$ python3 -m unittest -v tests.test_labels
+test_bound_rules_apply ... ok
+test_edited_code_is_not_applied ... ok
+test_new_labels_switch_rules_off_until_verified_and_a_breaking_label_drops_the_rule ... ok
+test_an_edited_label_switches_the_rules_off_even_with_its_old_pin ... ok
+test_different_texts_stop_the_merge_and_a_cut_off_copy_does_not ... ok
+test_skip_reasons_need_explicit_no_side_words ... ok
+test_the_code_binding_covers_the_helpers_and_the_base_read ... ok
+test_each_label_reads_as_the_report_recorded_and_no_agreed_label_breaks ... ok
+test_each_label_still_hashes_to_its_pin ... ok
+test_the_reads_owners_accepted_as_read_are_what_the_base_reader_gives ... ok
+test_the_rebuild_is_stable ... ok
+test_a_rule_that_breaks_an_agreed_label_is_rejected_even_if_it_fixes_another ... ok
+test_a_rule_that_changes_nothing_is_rejected ... ok
+test_a_rule_that_only_fixes_is_kept_and_bound ... ok
+test_an_edited_source_stops_the_build_and_writes_nothing ... ok
+test_two_sources_disagreeing_stop_the_build ... ok
+test_ratings_are_the_served_ones ... ok
+test_nest_and_kntq ... ok
+test_skips_count_only_with_a_stated_no_side_reason ... ok
+test_the_gate_kept_and_rejected ... ok
+Ran 20 tests in 2.982s
+OK
+$ python3 -m unittest tests.test_add_call tests.test_watch tests.test_spot_dex
+Ran 54 tests in 46.118s
+OK
+$ python3 -m unittest discover -s tests -t .
+Ran 303 tests in 122.726s
+OK (skipped=2)
+OK   ZEC     1970742039722479782 entry 2025-09-24T07:00:00Z record 54.49 candle open 54.49
+$ python3 check_bundle.py
+bundle: 59 record files -> 59 drawn, 0 superseded, 0 refused; 177 horizon cells, 59 best-since-post values, 8 caller ratings checked -> ALL MATCH
+$ python3 tools/labels.py gate   (re-run on the committed labels: same decisions)
+KEPT     more_cashtag           26/58 -> 28/58  fixed ['2118181656398090718|KNTQ', '2118181656398090718|NEST']  worsened -  (agreement 26/58 -> 28/58, no label worse)
+KEPT     positioned_side        28/58 -> 29/58  fixed ['2022006665764082140|STOCKS']  worsened -  (agreement 28/58 -> 29/58, no label worse)
+KEPT     picking_up_quantity    29/58 -> 30/58  fixed ['2062277523288068152|BTC']  worsened -  (agreement 29/58 -> 30/58, no label worse)
+REJECTED bullish_anywhere       30/58 -> 31/58  fixed ['2106750657877434407|COPX', '2107475725573906895|STOCKS']  worsened ['2091161059801391206|-']  (1 label(s) that agreed would disagree)
+KEPT     targeting_price        30/58 -> 31/58  fixed ['2011105173104705981|GOLD']  worsened -  (agreement 30/58 -> 31/58, no label worse)
+kept: ['more_cashtag', 'positioned_side', 'picking_up_quantity', 'targeting_price']
+ 1 file changed, 2 insertions(+), 3 deletions(-)

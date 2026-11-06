@@ -1,0 +1,200 @@
+[
+ {
+  "schema": "quanty.label.v1",
+  "id": "2118181656398090718|KNTQ",
+  "post": {
+   "id": "2118181656398090718",
+   "url": "https://x.com/koolkrypto223/status/2118181656398090718",
+   "author": "koolkrypto223",
+   "posted_at": "2026-11-05T03:20:35Z",
+   "text": "More $NEST and $KNTQ"
+  },
+  "aliases": [
+   "KNTQ",
+   "KNTQ"
+  ],
+  "multi": true,
+  "owner": {
+   "decision": "add",
+   "asset": "KNTQ",
+   "side": "long",
+   "method": "changed",
+   "reason": "reply to 0xLcrgs portfolio screenshot (BTC 94.9%, NEST 0.6%, no KNTQ): \"More $NEST and $KNTQ\" = add both",
+   "asset_pick": null
+  },
+  "first_read": {
+   "call": false,
+   "asset": "KNTQ",
+   "side": "none",
+   "from": "the watcher card"
+  },
+  "source": {
+   "type": "record",
+   "file": "records/posts/2118181656398090718_KNTQ.json",
+   "decision_sha256": "130e49c7e70e6f72f618d1a1eb0925f2082659688a9e804f7864e063a544a386"
+  },
+  "sources": [
+   {
+    "copy": {
+     "candidate": {
+      "found_at": "2026-11-05T13:15:30Z",
+      "handle": "koolkrypto223",
+      "id": "2118181656398090718",
+      "kind": "reply",
+      "legs": [
+       {
+        "asset": null,
+        "flag": "provider unavailable, nothing guessed: the watcher does not look up new tickers: it is checked when the post is added",
+        "side": "none",
+        "side_reason": null,
+        "side_words": null,
+        "status": "refused",
+        "via": [
+         "$NEST"
+        ]
+       },
+       {
+        "asset": null,
+        "flag": "provider unavailable, nothing guessed: the watcher does not look up new tickers: it is checked when the post is added",
+        "side": "none",
+        "side_reason": null,
+        "side_words": null,
+        "status": "refused",
+        "via": [
+         "$KNTQ"
+        ]
+       }
+      ],
+      "parent": {
+       "handle": "0xLcrgs",
+       "id": "2118071502960492654",
+       "type": "reply"
+      },
+      "posted_at": "2026-11-05T03:20:35Z",
+      "text": "More $NEST and $KNTQ",
+      "url": "https://x.com/koolkrypto223/status/2118181656398090718"
+     },
+     "card": {
+      "decided_at": "2026-11-06T14:19:28Z",
+      "decision": "add",
+      "handle": "koolkrypto223",
+      "posted_at": "2026-11-05T03:20:35Z",
+      "sent_at": "2026-11-05T13:15:46Z",
+      "url": "https://x.com/koolkrypto223/status/2118181656398090718"
+     }
+    },
+    "copy_sha256": "5f2f102ee21d9d5898aa153d503224388624b342cee3facf6e1da1395fd2317b",
+    "type": "watcher"
+   },
+   {
+    "decision_sha256": "130e49c7e70e6f72f618d1a1eb0925f2082659688a9e804f7864e063a544a386",
+    "file": "records/posts/2118181656398090718_KNTQ.json",
+    "type": "record"
+   }
+  ],
+  "gating": true,
+  "skip_basis": null,
+  "kind": "side_added",
+  "pinned_sha256": "2b01dd68f2f53c737028f89bdecfc22ee2aefdb9eea77f0090c718b979d5c1ea",
+  "labelled_at": "2026-11-06T16:01:47Z"
+ },
+ {
+  "schema": "quanty.label.v1",
+  "id": "2118181656398090718|NEST",
+  "post": {
+   "id": "2118181656398090718",
+   "url": "https://x.com/koolkrypto223/status/2118181656398090718",
+   "author": "koolkrypto223",
+   "posted_at": "2026-11-05T03:20:35Z",
+   "text": "More $NEST and $KNTQ"
+  },
+  "aliases": [
+   "NEST",
+   "NEST"
+  ],
+  "multi": true,
+  "owner": {
+   "decision": "add",
+   "asset": "NEST",
+   "side": "long",
+   "method": "changed",
+   "reason": "reply to 0xLcrgs portfolio screenshot (BTC 94.9%, NEST 0.6%, no KNTQ): \"More $NEST and $KNTQ\" = add both",
+   "asset_pick": "nest-2"
+  },
+  "first_read": {
+   "call": false,
+   "asset": "NEST",
+   "side": "none",
+   "from": "the watcher card"
+  },
+  "source": {
+   "type": "record",
+   "file": "records/posts/2118181656398090718_NEST.json",
+   "decision_sha256": "fa99ce62e62429a2ed91dba92be96db77af1bbc408974ff880b257aa82276025"
+  },
+  "sources": [
+   {
+    "copy": {
+     "candidate": {
+      "found_at": "2026-11-05T13:15:30Z",
+      "handle": "koolkrypto223",
+      "id": "2118181656398090718",
+      "kind": "reply",
+      "legs": [
+       {
+        "asset": null,
+        "flag": "provider unavailable, nothing guessed: the watcher does not look up new tickers: it is checked when the post is added",
+        "side": "none",
+        "side_reason": null,
+        "side_words": null,
+        "status": "refused",
+        "via": [
+         "$NEST"
+        ]
+       },
+       {
+        "asset": null,
+        "flag": "provider unavailable, nothing guessed: the watcher does not look up new tickers: it is checked when the post is added",
+        "side": "none",
+        "side_reason": null,
+        "side_words": null,
+        "status": "refused",
+        "via": [
+         "$KNTQ"
+        ]
+       }
+      ],
+      "parent": {
+       "handle": "0xLcrgs",
+       "id": "2118071502960492654",
+       "type": "reply"
+      },
+      "posted_at": "2026-11-05T03:20:35Z",
+      "text": "More $NEST and $KNTQ",
+      "url": "https://x.com/koolkrypto223/status/2118181656398090718"
+     },
+     "card": {
+      "decided_at": "2026-11-06T14:19:28Z",
+      "decision": "add",
+      "handle": "koolkrypto223",
+      "posted_at": "2026-11-05T03:20:35Z",
+      "sent_at": "2026-11-05T13:15:46Z",
+      "url": "https://x.com/koolkrypto223/status/2118181656398090718"
+     }
+    },
+    "copy_sha256": "5f2f102ee21d9d5898aa153d503224388624b342cee3facf6e1da1395fd2317b",
+    "type": "watcher"
+   },
+   {
+    "decision_sha256": "fa99ce62e62429a2ed91dba92be96db77af1bbc408974ff880b257aa82276025",
+    "file": "records/posts/2118181656398090718_NEST.json",
+    "type": "record"
+   }
+  ],
+  "gating": true,
+  "skip_basis": null,
+  "kind": "side_added",
+  "pinned_sha256": "73aaf78571fffa9517c5e562199c574415408c068c401293d6ef202b0f79ea80",
+  "labelled_at": "2026-11-06T16:01:47Z"
+ }
+]
