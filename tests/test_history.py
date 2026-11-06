@@ -100,3 +100,42 @@ class FrozenValues(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class OnlyAssets(unittest.TestCase):
+    """Step 26: fetch_ohlc.py --assets X rewrites and checks only X; every other candle file and index entry stays."""
+    def test_one_asset_is_fetched_and_checked_the_rest_untouched(self):
+        import hashlib
+        import shutil
+        import tempfile
+        root = tempfile.mkdtemp(prefix="quanty-ohlc-")
+        try:
+            shutil.copytree(os.path.join(HERE, "web"), os.path.join(root, "web"))
+            out = os.path.join(root, "web", "data", "ohlc")
+            with open(os.path.join(root, "web", "data", "charts.json")) as f:
+                bundle = json.load(f)
+            name = "ZEC"
+            entry = next(p["entry"] for a in bundle["assets"] if a["name"] == name for p in a["posts"] if p["entry"])
+            before = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+            calls = []
+            real = (fetch_ohlc.HERE, fetch_ohlc.OUT, fetch_ohlc.fetch, sys.argv)
+            fetch_ohlc.HERE, fetch_ohlc.OUT = root, out
+            fetch_ohlc.fetch = lambda src, sym, since: (calls.append(sym), ([[entry["at"], entry["price"], 1, 1, 1]], None))[1]
+            sys.argv = ["fetch_ohlc.py", "--assets", name]
+            try:
+                with self.assertRaises(SystemExit) as e:
+                    fetch_ohlc.main()
+            finally:
+                fetch_ohlc.HERE, fetch_ohlc.OUT, fetch_ohlc.fetch, sys.argv = real
+            self.assertEqual(e.exception.code, 0)                              # only ZEC's own entries are checked
+            self.assertEqual(calls, ["ZECUSDT"])
+            after = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+            changed = {f for f in after if after[f] != before.get(f)}
+            self.assertEqual(changed, {"ZEC.json", "index.json"})
+            with open(os.path.join(out, "index.json")) as f:
+                idx = json.load(f)["files"]
+            with open(os.path.join(HERE, "web", "data", "ohlc", "index.json")) as f:
+                old = json.load(f)["files"]
+            self.assertEqual({k: v for k, v in idx.items() if k != name}, {k: v for k, v in old.items() if k != name})
+        finally:
+            shutil.rmtree(root)

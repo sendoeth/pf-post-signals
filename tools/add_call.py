@@ -292,10 +292,47 @@ def default_ohlc(root, asset_name, entry_at):
             meta = json.load(f)["files"].get(asset_name) or {}
     if meta and meta["first"] <= entry_at <= meta["last"]:
         return "candles already cover the entry bar"
-    r = subprocess.run([sys.executable, os.path.join(root, "fetch_ohlc.py")], cwd=root, capture_output=True, text=True)
+    # step 26: only this asset's candles are fetched and checked; the other files stay as they are
+    r = subprocess.run([sys.executable, os.path.join(root, "fetch_ohlc.py"), "--assets", asset_name], cwd=root, capture_output=True, text=True)
     if r.returncode:
-        raise Refused(f"fetch_ohlc failed after the add:\n{r.stdout[-2000:]}{r.stderr[-2000:]}")
-    return "candles refetched (fetch_ohlc.py): " + r.stdout.strip().splitlines()[-1]
+        raise Refused(f"not added: fetching {asset_name}'s candles failed, everything was put back:\n{r.stdout[-2000:]}{r.stderr[-2000:]}")
+    return f"candles fetched for {asset_name} (fetch_ohlc.py --assets): " + r.stdout.strip().splitlines()[-1]
+
+
+
+def snapshot(root, record_files):
+    """web/, data/tickers.json and the ticker receipts as they are before an add; the record files it will create."""
+    tmp = tempfile.mkdtemp(prefix="quanty-add-")
+    shutil.copytree(os.path.join(root, "web"), os.path.join(tmp, "web"), symlinks=True)
+    reg = os.path.join(root, "data", "tickers.json")
+    had_reg = os.path.exists(reg)
+    if had_reg:
+        shutil.copy2(reg, os.path.join(tmp, "tickers.json"))
+    tdir = os.path.join(root, "sources", "tickers")
+    receipts = set(os.listdir(tdir)) if os.path.isdir(tdir) else set()
+    return {"tmp": tmp, "had_reg": had_reg, "receipts": receipts, "records": [f for f in record_files if not os.path.exists(os.path.join(root, f))]}
+
+
+def restore(root, snap):
+    """Put back what snapshot() saw: web/, the registry, no new ticker receipts, no new record files."""
+    web = os.path.join(root, "web")
+    shutil.rmtree(web)
+    shutil.copytree(os.path.join(snap["tmp"], "web"), web, symlinks=True)
+    reg = os.path.join(root, "data", "tickers.json")
+    if snap["had_reg"]:
+        shutil.copy2(os.path.join(snap["tmp"], "tickers.json"), reg)
+    elif os.path.exists(reg):
+        os.remove(reg)
+    tdir = os.path.join(root, "sources", "tickers")
+    if os.path.isdir(tdir):
+        for f in set(os.listdir(tdir)) - snap["receipts"]:
+            p = os.path.join(tdir, f)
+            if os.path.isfile(p):
+                os.remove(p)
+    for f in snap["records"]:
+        if os.path.exists(os.path.join(root, f)):
+            os.remove(os.path.join(root, f))
+    shutil.rmtree(snap["tmp"], ignore_errors=True)
 
 
 def add(pending_file, root=HERE, fetch=ingest.fetch_embed, save_avatar=True, ohlc=default_ohlc, now=None):
@@ -317,90 +354,103 @@ def add(pending_file, root=HERE, fetch=ingest.fetch_embed, save_avatar=True, ohl
             raise Refused(f"duplicate: post {rec['post']['id']} on {rec['asset']['name']} is already recorded in {dup}")
     with open(charts) as f:
         old = json.load(f)
-    registered = []
-    for it in items:                                  # step 22: keep the coin identity + checked venue of a new ticker
-        tr = it.get("ticker_receipt")
-        if tr:
-            if receipt_sha(tr) != it["record"]["asset_choice"]["ticker"]["receipt_sha256"]:
-                raise Refused(f"the ticker receipt for {tr['ticker']} does not match its record; rerun the preview")
-            have = resolve.registered_tickers(os.path.join(root, "data", "tickers.json")).get(tr["ticker"])
-            if have and (have["source"], have["symbol"]) != (it["record"]["asset"]["source"], it["record"]["asset"]["symbol"]):
-                raise Refused(f"{tr['ticker']} is registered on {have['source']}:{have['symbol']}, the preview priced it elsewhere; rerun the preview")
-            try:
-                entry = tickers.register(tr, root)
-            except ValueError as e:
-                raise Refused(f"ticker {tr['ticker']}: {e}") from e
-            registered.append({"ticker": tr["ticker"], "coingecko_id": entry["coingecko_id"], "venue": f"{entry['source']}:{entry['symbol']}", "receipt": entry["receipt"]})
-    written = []
-    for it in items:
-        path = os.path.join(root, it["record_file"])
-        os.makedirs(os.path.dirname(path), exist_ok=True)
-        with open(path, "w") as f:
-            json.dump(it["record"], f, indent=1)
+    # step 26: an add that fails after it started writing (a candle fetch, a check) leaves nothing behind:
+    # everything it can touch is snapshotted first and put back on any failure
+    snap = snapshot(root, [it["record_file"] for it in items])
+
+    def apply():
+        registered = []
+        for it in items:                                  # step 22: keep the coin identity + checked venue of a new ticker
+            tr = it.get("ticker_receipt")
+            if tr:
+                if receipt_sha(tr) != it["record"]["asset_choice"]["ticker"]["receipt_sha256"]:
+                    raise Refused(f"the ticker receipt for {tr['ticker']} does not match its record; rerun the preview")
+                have = resolve.registered_tickers(os.path.join(root, "data", "tickers.json")).get(tr["ticker"])
+                if have and (have["source"], have["symbol"]) != (it["record"]["asset"]["source"], it["record"]["asset"]["symbol"]):
+                    raise Refused(f"{tr['ticker']} is registered on {have['source']}:{have['symbol']}, the preview priced it elsewhere; rerun the preview")
+                try:
+                    entry = tickers.register(tr, root)
+                except ValueError as e:
+                    raise Refused(f"ticker {tr['ticker']}: {e}") from e
+                registered.append({"ticker": tr["ticker"], "coingecko_id": entry["coingecko_id"], "venue": f"{entry['source']}:{entry['symbol']}", "receipt": entry["receipt"]})
+        written = []
+        for it in items:
+            path = os.path.join(root, it["record_file"])
+            os.makedirs(os.path.dirname(path), exist_ok=True)
+            with open(path, "w") as f:
+                json.dump(it["record"], f, indent=1)
+                f.write("\n")
+            written.append({"record_file": it["record_file"], "record_sha256": sha256_file(path), "receipt": it["receipt"]})
+        avatars, avatar = os.path.join(root, "web", "avatars"), {}
+        for a in pending["authors"]:
+            avatar[a] = "kept"
+            if save_avatar and not os.path.exists(os.path.join(avatars, a.lower() + ".jpg")):
+                first = next(it for it in items if it["record"]["post"]["author"] == a)
+                try:
+                    saved = ingest.save_avatar(fetch(first["record"]["post"]["id"]), avatars)
+                    avatar[a] = "saved " + os.path.relpath(saved, root) if saved else "none (no profile picture in the embed): the pages show the initials"
+                except (ingest.IngestError, OSError, ValueError) as e:
+                    avatar[a] = f"none ({e.__class__.__name__}): the pages show the initials"
+        bundle = build_chart.build(os.path.join(root, "records"))
+        with open(charts, "w") as f:
+            json.dump(bundle, f, indent=1)
             f.write("\n")
-        written.append({"record_file": it["record_file"], "record_sha256": sha256_file(path), "receipt": it["receipt"]})
-    avatars, avatar = os.path.join(root, "web", "avatars"), {}
-    for a in pending["authors"]:
-        avatar[a] = "kept"
-        if save_avatar and not os.path.exists(os.path.join(avatars, a.lower() + ".jpg")):
-            first = next(it for it in items if it["record"]["post"]["author"] == a)
-            try:
-                saved = ingest.save_avatar(fetch(first["record"]["post"]["id"]), avatars)
-                avatar[a] = "saved " + os.path.relpath(saved, root) if saved else "none (no profile picture in the embed): the pages show the initials"
-            except (ingest.IngestError, OSError, ValueError) as e:
-                avatar[a] = f"none ({e.__class__.__name__}): the pages show the initials"
-    bundle = build_chart.build(os.path.join(root, "records"))
-    with open(charts, "w") as f:
-        json.dump(bundle, f, indent=1)
-        f.write("\n")
-    prerender.main(os.path.join(root, "web"))
-    candles = {}
-    for it in items:
-        name = it["record"]["asset"]["name"]
-        if ohlc and name not in candles:
-            first = min((x["record"]["entry"] or {"at": x["record"]["post"]["posted_at"]})["at"] for x in items if x["record"]["asset"]["name"] == name)
-            candles[name] = ohlc(root, name, first)
-    after = {a: caller_view(bundle["ratings"], a) for a in pending["authors"]}
-    problems = []
-    for a in pending["authors"]:
-        if after[a] != pending["scores_after"][a]:
-            problems.append(f"@{a}: score after the add {after[a]} != previewed {pending['scores_after'][a]}")
-    if bundle["ratings"]["order"] != pending["order_after"]:
-        problems.append(f"order after the add {bundle['ratings']['order']} != previewed {pending['order_after']}")
-    others = {n: c["score"] for n, c in old["ratings"]["callers"].items() if n not in pending["authors"]}
-    for n, sc in others.items():
-        if bundle["ratings"]["callers"][n]["score"] != sc:
-            problems.append(f"@{n} is not in this intake but its score moved: {sc} -> {bundle['ratings']['callers'][n]['score']}")
-    moved = frozen_values.compare(frozen_values.frozen(old), frozen_values.frozen(bundle))
-    problems += [f"frozen value moved: {m}" for m in moved]
-    now_keys = frozen_values.frozen(bundle)
-    for it in items:
-        key = f"{it['record']['post']['id']}|{it['record']['asset']['name']}"
-        if key not in now_keys:
-            problems.append(f"{key} is not in the rebuilt bundle")
-    log = {"version": VERSION, "added_at": now or dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-           "records": written, "bundle_sha256_before": pending["bundle_sha256"], "bundle_sha256_after": sha256_file(charts),
-           "avatar": avatar, "candles": candles or "skipped", "tickers_registered": registered, "scores_previewed": pending["scores_after"], "scores_after_add": after,
-           "scores_before": pending["scores_before"], "other_callers_unchanged": sorted(others), "frozen_values_checked": len(frozen_values.frozen(old)),
-           "matches_preview": not problems, "problems": problems}
-    if len(items) == 1:      # the step 16 log fields
-        a = pending["authors"][0]
-        log.update(url=items[0]["url"], record_file=written[0]["record_file"], record_sha256=written[0]["record_sha256"], receipt=items[0]["receipt"],
-                   avatar=avatar[a], candles=next(iter(candles.values()), "skipped"),
-                   score_previewed=pending["scores_after"][a], score_after_add=after[a], score_before=pending["scores_before"][a])
-    for k in ("scan", "review_file"):
-        if k in pending:
-            log[k] = pending[k]
-    out = os.path.join(root, "intake", "log", os.path.basename(pending_file))
-    os.makedirs(os.path.dirname(out), exist_ok=True)
-    with open(out, "w") as f:
-        json.dump(log, f, indent=1, ensure_ascii=False)
-        f.write("\n")
-    if problems:
-        raise Refused("added, but the checks failed:\n - " + "\n - ".join(problems))
-    os.remove(os.path.join(root, pending_file))
-    log["log_file"] = os.path.relpath(out, root)
-    return log
+        prerender.main(os.path.join(root, "web"))
+        candles = {}
+        for it in items:
+            name = it["record"]["asset"]["name"]
+            if ohlc and name not in candles:
+                first = min((x["record"]["entry"] or {"at": x["record"]["post"]["posted_at"]})["at"] for x in items if x["record"]["asset"]["name"] == name)
+                candles[name] = ohlc(root, name, first)
+        after = {a: caller_view(bundle["ratings"], a) for a in pending["authors"]}
+        problems = []
+        for a in pending["authors"]:
+            if after[a] != pending["scores_after"][a]:
+                problems.append(f"@{a}: score after the add {after[a]} != previewed {pending['scores_after'][a]}")
+        if bundle["ratings"]["order"] != pending["order_after"]:
+            problems.append(f"order after the add {bundle['ratings']['order']} != previewed {pending['order_after']}")
+        others = {n: c["score"] for n, c in old["ratings"]["callers"].items() if n not in pending["authors"]}
+        for n, sc in others.items():
+            if bundle["ratings"]["callers"][n]["score"] != sc:
+                problems.append(f"@{n} is not in this intake but its score moved: {sc} -> {bundle['ratings']['callers'][n]['score']}")
+        moved = frozen_values.compare(frozen_values.frozen(old), frozen_values.frozen(bundle))
+        problems += [f"frozen value moved: {m}" for m in moved]
+        now_keys = frozen_values.frozen(bundle)
+        for it in items:
+            key = f"{it['record']['post']['id']}|{it['record']['asset']['name']}"
+            if key not in now_keys:
+                problems.append(f"{key} is not in the rebuilt bundle")
+        log = {"version": VERSION, "added_at": now or dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+               "records": written, "bundle_sha256_before": pending["bundle_sha256"], "bundle_sha256_after": sha256_file(charts),
+               "avatar": avatar, "candles": candles or "skipped", "tickers_registered": registered, "scores_previewed": pending["scores_after"], "scores_after_add": after,
+               "scores_before": pending["scores_before"], "other_callers_unchanged": sorted(others), "frozen_values_checked": len(frozen_values.frozen(old)),
+               "matches_preview": not problems, "problems": problems}
+        if len(items) == 1:      # the step 16 log fields
+            a = pending["authors"][0]
+            log.update(url=items[0]["url"], record_file=written[0]["record_file"], record_sha256=written[0]["record_sha256"], receipt=items[0]["receipt"],
+                       avatar=avatar[a], candles=next(iter(candles.values()), "skipped"),
+                       score_previewed=pending["scores_after"][a], score_after_add=after[a], score_before=pending["scores_before"][a])
+        for k in ("scan", "review_file"):
+            if k in pending:
+                log[k] = pending[k]
+        out = os.path.join(root, "intake", "log", os.path.basename(pending_file))
+        os.makedirs(os.path.dirname(out), exist_ok=True)
+        with open(out, "w") as f:
+            json.dump(log, f, indent=1, ensure_ascii=False)
+            f.write("\n")
+        if problems:
+            raise Refused("not added: the checks after writing it failed, everything was put back:\n - " + "\n - ".join(problems))
+        os.remove(os.path.join(root, pending_file))
+        log["log_file"] = os.path.relpath(out, root)
+        return log
+
+    try:
+        out = apply()
+    except BaseException:
+        restore(root, snap)
+        raise
+    shutil.rmtree(snap["tmp"], ignore_errors=True)
+    return out
 
 
 def show_score(v):

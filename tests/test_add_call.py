@@ -159,6 +159,34 @@ class Fixtures(Scratch):
             self.assertIn("&lt;script&gt;window.__pwned=1&lt;/script&gt;", f.read())
 
 
+class Rollback(Scratch):
+    """Step 26: an add that fails after it started writing (e.g. the candle fetch, 2026-11-06: another asset's
+    unlogged provider revision) puts everything back: web/, the registry, no record file."""
+    def test_a_failed_candle_fetch_leaves_nothing_behind(self):
+        p = self.preview("new_caller")
+        web0, rec0 = tree_hash(self.root, "web"), tree_hash(self.root, "records")
+
+        def broken(root, name, first):
+            raise add_call.Refused(f"not added: fetching {name}'s candles failed, everything was put back")
+        with self.assertRaisesRegex(add_call.Refused, "everything was put back"):
+            add_call.add(p["pending_file"], root=self.root, fetch=self.fetch, save_avatar=True, ohlc=broken, now="2026-10-31T00:00:00Z")
+        self.assertEqual((tree_hash(self.root, "web"), tree_hash(self.root, "records")), (web0, rec0))
+        self.assertFalse(os.path.exists(os.path.join(self.root, p["record_file"])))
+        self.assertTrue(os.path.exists(os.path.join(self.root, p["pending_file"])))       # the preview stays: add again later
+        log = self.add(p)                                                                   # and it then adds normally
+        self.assertTrue(log["matches_preview"])
+
+    def test_the_add_fetches_only_its_own_asset(self):
+        seen = []
+        real = add_call.subprocess.run
+        add_call.subprocess.run = lambda argv, **kw: (seen.append(argv), type("R", (), {"returncode": 0, "stdout": "entry bars: 1/1", "stderr": ""})())[1]
+        try:
+            add_call.default_ohlc(self.root, "NEST", "2026-11-05T04:00:00Z")
+        finally:
+            add_call.subprocess.run = real
+        self.assertEqual(seen[0][-2:], ["--assets", "NEST"])
+
+
 class Tags(html.parser.HTMLParser):
     def __init__(self):
         super().__init__()

@@ -120,6 +120,17 @@ def main():
         bundle = json.load(f)
     os.makedirs(OUT, exist_ok=True)
     candles, index = {}, {"schema": "pf-post-signals.ohlc_index.v1", "files": {}}
+    only = None
+    if "--assets" in sys.argv:
+        # step 26: an add refetches and checks only its own asset; every other candle file and index entry is
+        # left exactly as it is (another asset's provider revision is the daily refresh's job, not the add's)
+        only = set(sys.argv[sys.argv.index("--assets") + 1].split(","))
+        with open(os.path.join(OUT, "index.json")) as f:
+            index = json.load(f)
+        unknown = only - {a["name"] for a in bundle["assets"]}
+        if unknown:
+            print(f"no such asset in the bundle: {', '.join(sorted(unknown))}", file=sys.stderr)
+            sys.exit(2)
     if "--check-only" in sys.argv:
         with open(os.path.join(OUT, "index.json")) as f:
             index = json.load(f)
@@ -128,6 +139,8 @@ def main():
                 candles[name] = json.load(f)["candles"]
     else:
         for a in bundle["assets"]:
+            if only is not None and a["name"] not in only:
+                continue
             days, since = lookback(a["posts"])
             fetched_at = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
             c, daily_until = fetch(a["source"], a["symbol"], since)
@@ -153,7 +166,7 @@ def main():
         with open(os.path.join(OUT, "index.json"), "w") as f:
             json.dump(index, f, indent=1)
             f.write("\n")
-    rows, fails = check(bundle, candles)
+    rows, fails = check({**bundle, "assets": [a for a in bundle["assets"] if only is None or a["name"] in only]}, candles)
     for name, pid, at, want, got, ok in rows:
         print(f"{'OK  ' if ok else 'DIFF'} {name:<7} {pid} entry {at} record {want} candle open {got}")
     print(f"entry bars: {sum(r[5] for r in rows)}/{len(rows)} candle opens equal the record entry price")
