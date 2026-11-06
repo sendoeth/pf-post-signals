@@ -181,10 +181,10 @@ class Rollback(Scratch):
         real = add_call.subprocess.run
         add_call.subprocess.run = lambda argv, **kw: (seen.append(argv), type("R", (), {"returncode": 0, "stdout": "entry bars: 1/1", "stderr": ""})())[1]
         try:
-            add_call.default_ohlc(self.root, "NEST", "2026-11-05T04:00:00Z")
+            add_call.default_ohlc(self.root, "ZZNOFILE", "2026-11-05T04:00:00Z")      # an asset with no candle file yet
         finally:
             add_call.subprocess.run = real
-        self.assertEqual(seen[0][-2:], ["--assets", "NEST"])
+        self.assertEqual(seen[0][-2:], ["--assets", "ZZNOFILE"])
 
 
 class Tags(html.parser.HTMLParser):
