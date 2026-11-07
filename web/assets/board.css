@@ -22,7 +22,7 @@ a { color: var(--focus); }
 .top { display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
 h1 { font-size: 24px; margin: 0; letter-spacing: -0.01em; }
 .sub { color: var(--muted); margin: 2px 0 0; font-size: 13px; }
-.nav { display: flex; gap: 4px; }
+.nav { display: flex; flex-wrap: wrap; gap: 4px; }
 .nav a { text-decoration: none; color: var(--ink-2); font-weight: 600; font-size: 14px; padding: 6px 10px; border-radius: 8px; border: 1px solid var(--border); background: var(--card); }
 .nav a[aria-current="page"] { background: var(--ink); color: var(--surface); border-color: var(--ink); }
 .filters { display: flex; flex-wrap: wrap; gap: 8px 12px; margin: 0 0 12px; }

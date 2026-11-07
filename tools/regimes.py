@@ -433,15 +433,15 @@ def caller_section(name, d):
         return ""
     mine = [c for c in d["calls"] if c["author"] == name]
     trs = "".join(f'<tr data-regime-row="{k}"><td>{k}</td>{cell(r.get(k), k)}</tr>' for k in REGIMES + ("unknown",) if r.get(k) or k != "unknown")
-    lst = "".join(f'<li data-post-id="{e(c["post_id"])}" data-asset="{e(c["asset"])}" data-regime="{e(c["regime"] or "unknown")}">{e(c["posted_at"][:10])} {e(c["asset"])}: '
-                  f'<strong>{e(c["regime"] or "unknown")}</strong>{" · high vol" if c["vol_tag"] == "high" else ""} '
-                  f'<span class="muted small">(BTC bar {e(c["bar_day"])}, closed {e(c["bar_close_time"])})</span></li>' for c in mine)
+    lst = "".join(f'<tr data-post-id="{e(c["post_id"])}" data-asset="{e(c["asset"])}" data-regime="{e(c["regime"] or "unknown")}"><td>{e(c["posted_at"][:16].replace("T", " "))} UTC</td>'
+                  f'<td>{e(c["asset"])}</td><td><strong>{e(c["regime"] or "unknown")}</strong>{" · high vol" if c["vol_tag"] == "high" else ""}</td>'
+                  f'<td class="why">BTC bar {e(c["bar_day"] or "–")}, closed {e((c["bar_close_time"] or "–").replace("T", " "))}</td></tr>' for c in mine)
     return (f'<section class="panel recap regimes" data-field="by_regime"><h2>By market regime</h2>'
             f'<p class="notes">Score-neutral: the score above does not change. The same rules (hit rate, return quality, clarity, shrinkage toward 50) on only the calls made '
             f'in each BTC regime. * under 10 scored calls (small sample), † under 30 (limited sample). Regime at each call from the last BTC daily bar closed before it: '
             f'<a href="regimes.html">how regimes are labelled</a> · <a href="data/regimes.json">data/regimes.json</a></p>'
             f'<div class="table-wrap"><table class="calls"><thead><tr><th>Regime</th><th>Score in regime</th></tr></thead><tbody>{trs}</tbody></table></div>'
-            f'<ul class="plain small">{lst}</ul></section>')
+            f'<h3>Each call\'s regime</h3><div class="table-wrap"><table class="calls" data-field="call_regimes"><thead><tr><th>Posted</th><th>Asset</th><th>Regime</th><th>Label from</th></tr></thead><tbody>{lst}</tbody></table></div></section>')
 
 
 def page(d, labels):
