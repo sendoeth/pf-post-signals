@@ -1,0 +1,87 @@
+RULE quanty.regime.v1
+bull: close > SMA200 and SMA50 > SMA200; bear: close < SMA200 and SMA50 < SMA200; chop: otherwise; a regime (the first one included) needs the same raw state on 3 consecutive days; vol high when 30d realized vol (pstdev of log returns x sqrt 365) > 1.5x the median of the previous 365 days' vols (no tag until 182 of them exist); a call takes the label of the last bar closed at or before its time, none when the data does not reach it
+PARAMS {"sma_fast": 50, "sma_slow": 200, "confirm": 3, "vol_window": 30, "vol_lookback": 365, "vol_mult": 1.5}
+GRID {"sma_slow": [180, 220], "sma_fast": [40, 60], "confirm": [2, 4, 5], "vol_mult": [1.3, 1.7]}
+DATA Binance BTCUSDT 1d 3193 bars 2018-02-09 -> 2026-11-06 sha256 a042bf9748af473ee22c67633141cab73521eceb0134adc5ed6e7c0bb3cfbcde
+BOUND charts.json sha256 6c2d78c96472c58f1f63f972a2e88b04198c09b79bbe33b609eb5f29b0ebe73e prices_as_of 2026-11-07T00:59:15Z
+NOW 2026-11-06 bull vol normal close 75,844 SMA50 82,050 SMA200 73,243
+
+TRANSITIONS (daily, row=from)        to bull         to chop        to bear
+  bull    1431 ( 99.1%)     13 (  0.9%)      0 (  0.0%)
+  chop      14 (  3.4%)    391 ( 94.2%)     10 (  2.4%)
+  bear       0 (  0.0%)     11 (  1.0%)   1121 ( 99.0%)
+RUNS bear: 11 runs, mean 103d, median 35d · chop: 24 runs, mean 17d, median 16d · bull: 14 runs, mean 103d, median 68d · 48 switches (5.86/yr), first label 2018-08-29
+
+STABILITY (daily labels since 2019 / call labels unchanged)
+  sma_slow  200 -> 180    95.6% of 2867 days   58/59 calls
+  sma_slow  200 -> 220    94.1% of 2867 days   59/59 calls
+  sma_fast  50 -> 40     97.2% of 2867 days   58/59 calls
+  sma_fast  50 -> 60     97.0% of 2867 days   57/59 calls
+  confirm   3 -> 2      97.9% of 2867 days   59/59 calls
+  confirm   3 -> 4      97.7% of 2867 days   59/59 calls
+  confirm   3 -> 5      96.0% of 2867 days   59/59 calls
+  vol_mult  1.5 -> 1.3   100.0% of 2867 days   59/59 calls
+  vol_mult  1.5 -> 1.7   100.0% of 2867 days   59/59 calls
+
+FORWARD CHECK (BTC next 30d return by label, since 2019-01-01; evaluation only)
+  bull  days  1415  mean +5.4%  median +0.4%  up 51%
+  chop  days   415  mean +4.6%  median +3.5%  up 62%
+  bear  days  1007  mean +4.8%  median +3.9%  up 63%
+
+FLIPS (lag at turns)
+  2019-04-04 left bear -> chop: 110d after the low 3,212 (2018-12-15), moved +52.5%
+  2019-09-28 left bull -> chop: 94d after the high 13,094 (2019-06-26), moved -37.4%
+  2020-01-30 left bear -> chop: 44d after the low 6,624 (2019-12-17), moved +43.6%
+  2020-03-01 left bull -> chop: 7d after the high 9,936 (2020-02-23), moved -14.1%
+  2020-03-10 left bull -> chop: 4d after the high 9,132 (2020-03-06), moved -13.6%
+  2020-05-01 left bear -> chop: 33d after the low 5,881 (2020-03-29), moved +50.1%
+  2021-05-23 left bull -> chop: 40d after the high 63,575 (2021-04-13), moved -45.5%
+  2021-08-11 left bear -> chop: 22d after the low 29,790 (2021-07-20), moved +52.8%
+  2021-09-22 left bull -> chop: 4d after the high 48,293 (2021-09-18), moved -9.8%
+  2021-12-19 left bull -> chop: 41d after the high 67,526 (2021-11-08), moved -30.9%
+  2021-12-30 left bull -> chop: 7d after the high 50,839 (2021-12-23), moved -7.3%
+  2023-01-15 left bear -> chop: 55d after the low 15,781 (2022-11-21), moved +32.2%
+  2023-08-19 left bull -> chop: 37d after the high 31,454 (2023-07-13), moved -17.0%
+  2023-10-18 left bear -> chop: 22d after the low 26,222 (2023-09-26), moved +8.0%
+  2024-07-06 left bull -> chop: 115d after the high 73,072 (2024-03-13), moved -20.3%
+  2024-08-05 left bull -> chop: 8d after the high 68,250 (2024-07-28), moved -20.8%
+  2024-08-25 left bear -> chop: 10d after the low 57,541 (2024-08-15), moved +11.6%
+  2024-09-28 left bear -> chop: 22d after the low 53,963 (2024-09-06), moved +22.0%
+  2024-10-16 left bear -> chop: 6d after the low 60,326 (2024-10-10), moved +12.1%
+  2025-03-11 left bull -> chop: 49d after the high 106,144 (2025-01-21), moved -21.9%
+  2025-03-30 left bull -> chop: 5d after the high 87,393 (2025-03-25), moved -5.7%
+  2025-04-24 left bear -> chop: 14d after the low 79,607 (2025-04-10), moved +18.1%
+  2025-11-05 left bull -> chop: 30d after the high 124,659 (2025-10-06), moved -16.7%
+  2026-08-21 left bear -> chop: 52d after the low 58,625 (2026-06-30), moved +33.6%
+WHIPSAWS (16 runs <=30d between two runs of the same regime)
+  2020-02-20 bull 10d between chop
+  2020-03-01 chop 3d between bull
+  2020-03-04 bull 6d between chop
+  2021-09-17 bull 5d between chop
+  2021-09-22 chop 11d between bull
+  2021-12-19 chop 4d between bull
+  2021-12-23 bull 7d between chop
+  2024-07-06 chop 9d between bull
+  2024-07-15 bull 21d between chop
+  2024-08-12 bear 13d between chop
+  2024-08-25 chop 3d between bear
+  2024-09-28 chop 4d between bear
+  2024-10-02 bear 14d between chop
+  2025-03-11 chop 14d between bull
+  2025-03-25 bull 5d between chop
+  2025-04-09 bear 15d between chop
+
+PER CALLER PER REGIME (score shrunk to 50 · hit · avg · n scored of calls; * <10 small, † <30 limited)  calls: bull 40, bear 15, chop 4; unknown 0; not crypto 24
+  caller          bull                                  chop                                  bear
+  BobLoukas       44.8† hit 31% avg +6.4% n=16/18       45.5* hit 0% avg -13.8% n=2/2         59.1† hit 60% avg +2.4% n=15/15
+  Corbanu         48.4* hit 33% avg -6.9% n=6/6         51.3* hit 50% avg +14.7% n=2/2        –
+  DrProfitCrypto  47.7* hit 0% avg -5.4% n=1/1          –                                     –
+  goodalexander   51.9* hit 43% avg +4.5% n=7/7         –                                     –
+  koolkrypto223   52.1* hit 67% avg -1.8% n=3/4         –                                     –
+  mert            54.5* hit 100% avg +2327.8% n=1/1     –                                     –
+  Okada_DeFi0x    46.1* hit 0% avg -5.6% n=2/2          –                                     –
+  rosa_onchain    54.4* hit 100% avg +14.7% n=1/1       –                                     –
+  all callers     48.3 hit 38% avg +65.2% n=37/40       47.2* hit 25% avg +0.5% n=4/4         59.1† hit 60% avg +2.4% n=15/15
+
+LONG/SHORT BY REGIME (all callers): bull: long 26 (5/26 won), short 11 (9/11 won) · chop: long 3 (0/3 won), short 1 (1/1 won) · bear: long 11 (7/11 won), short 4 (2/4 won)
+BY VOL (all callers): normal: 50.1 hit 40% avg +43.4% n=52/55 · high: 57.5* hit 75% avg +48.0% n=4/4
