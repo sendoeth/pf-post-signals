@@ -26,6 +26,8 @@ HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HZ = ("1", "7", "30")
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from rate import caller_slug  # noqa: E402
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import regimes  # noqa: E402
 AUTHOR_COLORS = ["#2a78d6", "#eb6834", "#4a3aa7", "#d55181", "#5b6475", "#8a5a2b"]
 SITE = "https://sendoeth.com/pf-post-signals/web/"
 
@@ -251,7 +253,7 @@ def early_block(name, signals, aff):
     return out
 
 
-def caller_static(name, c, rt, avatars, early=None, aff=None):
+def caller_static(name, c, rt, avatars, early=None, aff=None, regimes_doc=None):
     """Step 15: one caller's score, every input and every call it read (plain HTML, no script)."""
     f = rt["formula"]
     comp = c["components"]
@@ -286,7 +288,7 @@ def caller_static(name, c, rt, avatars, early=None, aff=None):
     table = (f'<section class="panel recap"><h2>Calls read ({c["calls_total"]})</h2><div class="table-wrap"><table class="calls" data-field="calls">'
              f'<thead><tr><th>Posted</th><th>Asset</th><th>Side</th><th>State</th><th>Result</th><th>A<sub>i</sub></th><th>Counted</th></tr></thead><tbody>{trs}</tbody></table></div>'
              f'<p class="notes">Result = realized return for the side when closed, else the return for the side since the post. A<sub>i</sub> = 50 + 50 tanh(result / {f["scale"]}).</p></section>')
-    return f'<div data-static="1">{head}{early_block(name, early or [], aff)}<section class="panel recap"><h2>Inputs</h2><dl>{dl}</dl></section>{table}</div>'
+    return f'<div data-static="1">{head}{early_block(name, early or [], aff)}<section class="panel recap"><h2>Inputs</h2><dl>{dl}</dl></section>{table}{regimes.caller_section(name, regimes_doc)}</div>'
 
 
 def position_static(r, asof, avatars, all_rows=(), ratings=None):
@@ -430,6 +432,7 @@ def main(web=None):
         for sgl in eb.get("signals", []):
             early_by.setdefault(sgl["handle"].lower(), []).append(sgl)
         early_aff = eb.get("affiliations", {})
+    regimes_doc = regimes.build_web(web)      # step 28: BTC regime at each call (data/btc_daily.json next to web/), score-neutral
     rt = bundle.get("ratings")
     if rt and os.path.exists(os.path.join(web, "caller.html")):
         with open(os.path.join(web, "caller.html")) as f:
@@ -445,7 +448,7 @@ def main(web=None):
                     + (f' ({c["label"]})' if c["label"] else "") + f', rank {c["rank"]} of {len(rt["order"])}.')
             page = re.sub(r"<title>.*?</title>\n<meta name=\"description\" content=\"[^\"]*\">", lambda m: meta_tags(title, desc, f"{SITE}caller-{cs}.html"), ctpl, count=1, flags=re.S)
             page = page.replace("<main>", f'<main data-caller="{e(name)}">', 1)
-            page = fill(page, {"app": caller_static(name, c, rt, avatars, early_by.get(name.lower(), []), early_aff)})
+            page = fill(page, {"app": caller_static(name, c, rt, avatars, early_by.get(name.lower(), []), early_aff, regimes_doc)})
             fname = f"caller-{cs}.html"
             with open(os.path.join(web, fname), "w") as f:
                 f.write(page)

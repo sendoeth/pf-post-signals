@@ -130,6 +130,7 @@ def page(d):
       <a href="episodes.html">Episodes</a>
       <a href="coins.html" aria-current="page">Coins</a>
       <a href="agreement.html">Agreement</a>
+      <a href="regimes.html">Regimes</a>
     </nav>
   </header>
   <section class="ep-head panel" data-field="coverage">

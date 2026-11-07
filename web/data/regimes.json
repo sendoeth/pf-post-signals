@@ -1,0 +1,1863 @@
+{
+ "schema": "quanty.regime.v1",
+ "params": {
+  "sma_fast": 50,
+  "sma_slow": 200,
+  "confirm": 3,
+  "vol_window": 30,
+  "vol_lookback": 365,
+  "vol_mult": 1.5
+ },
+ "grid": {
+  "sma_slow": [
+   180,
+   220
+  ],
+  "sma_fast": [
+   40,
+   60
+  ],
+  "confirm": [
+   2,
+   4,
+   5
+  ],
+  "vol_mult": [
+   1.3,
+   1.7
+  ]
+ },
+ "rule": "bull: close > SMA200 and SMA50 > SMA200; bear: close < SMA200 and SMA50 < SMA200; chop: otherwise; a regime (the first one included) needs the same raw state on 3 consecutive days; vol high when 30d realized vol (pstdev of log returns x sqrt 365) > 1.5x the median of the previous 365 days' vols (no tag until 182 of them exist); a call takes the label of the last bar closed at or before its time, none when the data does not reach it",
+ "source": "https://data-api.binance.vision/api/v3/klines?symbol=BTCUSDT&interval=1d",
+ "bars": {
+  "count": 3193,
+  "first": "2018-02-09",
+  "last": "2026-11-06",
+  "sha256": "a042bf9748af473ee22c67633141cab73521eceb0134adc5ed6e7c0bb3cfbcde"
+ },
+ "charts_sha256": "6c2d78c96472c58f1f63f972a2e88b04198c09b79bbe33b609eb5f29b0ebe73e",
+ "prices_as_of": "2026-11-07T00:59:15Z",
+ "current": {
+  "day": "2026-11-06",
+  "regime": "bull",
+  "vol_tag": "normal",
+  "close": 75844.0,
+  "sma_fast": 82049.92160000022,
+  "sma_slow": 73242.53194999976,
+  "vol": 0.3535309380758096
+ },
+ "runs": [
+  {
+   "regime": "bear",
+   "start": "2018-08-29",
+   "end": "2019-04-03",
+   "days": 218
+  },
+  {
+   "regime": "chop",
+   "start": "2019-04-04",
+   "end": "2019-04-25",
+   "days": 22
+  },
+  {
+   "regime": "bull",
+   "start": "2019-04-26",
+   "end": "2019-09-27",
+   "days": 155
+  },
+  {
+   "regime": "chop",
+   "start": "2019-09-28",
+   "end": "2019-11-09",
+   "days": 43
+  },
+  {
+   "regime": "bear",
+   "start": "2019-11-10",
+   "end": "2020-01-29",
+   "days": 81
+  },
+  {
+   "regime": "chop",
+   "start": "2020-01-30",
+   "end": "2020-02-19",
+   "days": 21
+  },
+  {
+   "regime": "bull",
+   "start": "2020-02-20",
+   "end": "2020-02-29",
+   "days": 10
+  },
+  {
+   "regime": "chop",
+   "start": "2020-03-01",
+   "end": "2020-03-03",
+   "days": 3
+  },
+  {
+   "regime": "bull",
+   "start": "2020-03-04",
+   "end": "2020-03-09",
+   "days": 6
+  },
+  {
+   "regime": "chop",
+   "start": "2020-03-10",
+   "end": "2020-03-26",
+   "days": 17
+  },
+  {
+   "regime": "bear",
+   "start": "2020-03-27",
+   "end": "2020-04-30",
+   "days": 35
+  },
+  {
+   "regime": "chop",
+   "start": "2020-05-01",
+   "end": "2020-05-22",
+   "days": 22
+  },
+  {
+   "regime": "bull",
+   "start": "2020-05-23",
+   "end": "2021-05-22",
+   "days": 365
+  },
+  {
+   "regime": "chop",
+   "start": "2021-05-23",
+   "end": "2021-06-20",
+   "days": 29
+  },
+  {
+   "regime": "bear",
+   "start": "2021-06-21",
+   "end": "2021-08-10",
+   "days": 51
+  },
+  {
+   "regime": "chop",
+   "start": "2021-08-11",
+   "end": "2021-09-16",
+   "days": 37
+  },
+  {
+   "regime": "bull",
+   "start": "2021-09-17",
+   "end": "2021-09-21",
+   "days": 5
+  },
+  {
+   "regime": "chop",
+   "start": "2021-09-22",
+   "end": "2021-10-02",
+   "days": 11
+  },
+  {
+   "regime": "bull",
+   "start": "2021-10-03",
+   "end": "2021-12-18",
+   "days": 77
+  },
+  {
+   "regime": "chop",
+   "start": "2021-12-19",
+   "end": "2021-12-22",
+   "days": 4
+  },
+  {
+   "regime": "bull",
+   "start": "2021-12-23",
+   "end": "2021-12-29",
+   "days": 7
+  },
+  {
+   "regime": "chop",
+   "start": "2021-12-30",
+   "end": "2022-01-15",
+   "days": 17
+  },
+  {
+   "regime": "bear",
+   "start": "2022-01-16",
+   "end": "2023-01-14",
+   "days": 364
+  },
+  {
+   "regime": "chop",
+   "start": "2023-01-15",
+   "end": "2023-02-08",
+   "days": 25
+  },
+  {
+   "regime": "bull",
+   "start": "2023-02-09",
+   "end": "2023-08-18",
+   "days": 191
+  },
+  {
+   "regime": "chop",
+   "start": "2023-08-19",
+   "end": "2023-09-13",
+   "days": 26
+  },
+  {
+   "regime": "bear",
+   "start": "2023-09-14",
+   "end": "2023-10-17",
+   "days": 34
+  },
+  {
+   "regime": "chop",
+   "start": "2023-10-18",
+   "end": "2023-10-31",
+   "days": 14
+  },
+  {
+   "regime": "bull",
+   "start": "2023-11-01",
+   "end": "2024-07-05",
+   "days": 248
+  },
+  {
+   "regime": "chop",
+   "start": "2024-07-06",
+   "end": "2024-07-14",
+   "days": 9
+  },
+  {
+   "regime": "bull",
+   "start": "2024-07-15",
+   "end": "2024-08-04",
+   "days": 21
+  },
+  {
+   "regime": "chop",
+   "start": "2024-08-05",
+   "end": "2024-08-11",
+   "days": 7
+  },
+  {
+   "regime": "bear",
+   "start": "2024-08-12",
+   "end": "2024-08-24",
+   "days": 13
+  },
+  {
+   "regime": "chop",
+   "start": "2024-08-25",
+   "end": "2024-08-27",
+   "days": 3
+  },
+  {
+   "regime": "bear",
+   "start": "2024-08-28",
+   "end": "2024-09-27",
+   "days": 31
+  },
+  {
+   "regime": "chop",
+   "start": "2024-09-28",
+   "end": "2024-10-01",
+   "days": 4
+  },
+  {
+   "regime": "bear",
+   "start": "2024-10-02",
+   "end": "2024-10-15",
+   "days": 14
+  },
+  {
+   "regime": "chop",
+   "start": "2024-10-16",
+   "end": "2024-10-29",
+   "days": 14
+  },
+  {
+   "regime": "bull",
+   "start": "2024-10-30",
+   "end": "2025-03-10",
+   "days": 132
+  },
+  {
+   "regime": "chop",
+   "start": "2025-03-11",
+   "end": "2025-03-24",
+   "days": 14
+  },
+  {
+   "regime": "bull",
+   "start": "2025-03-25",
+   "end": "2025-03-29",
+   "days": 5
+  },
+  {
+   "regime": "chop",
+   "start": "2025-03-30",
+   "end": "2025-04-08",
+   "days": 10
+  },
+  {
+   "regime": "bear",
+   "start": "2025-04-09",
+   "end": "2025-04-23",
+   "days": 15
+  },
+  {
+   "regime": "chop",
+   "start": "2025-04-24",
+   "end": "2025-05-23",
+   "days": 30
+  },
+  {
+   "regime": "bull",
+   "start": "2025-05-24",
+   "end": "2025-11-04",
+   "days": 165
+  },
+  {
+   "regime": "chop",
+   "start": "2025-11-05",
+   "end": "2025-11-17",
+   "days": 13
+  },
+  {
+   "regime": "bear",
+   "start": "2025-11-18",
+   "end": "2026-08-20",
+   "days": 276
+  },
+  {
+   "regime": "chop",
+   "start": "2026-08-21",
+   "end": "2026-09-09",
+   "days": 20
+  },
+  {
+   "regime": "bull",
+   "start": "2026-09-10",
+   "end": "2026-11-06",
+   "days": 58
+  }
+ ],
+ "transitions": {
+  "counts": {
+   "bull": {
+    "bull": 1431,
+    "chop": 13,
+    "bear": 0
+   },
+   "chop": {
+    "bull": 14,
+    "chop": 391,
+    "bear": 10
+   },
+   "bear": {
+    "bull": 0,
+    "chop": 11,
+    "bear": 1121
+   }
+  },
+  "probabilities": {
+   "bull": {
+    "bull": 0.9909972299168975,
+    "chop": 0.009002770083102494,
+    "bear": 0.0
+   },
+   "chop": {
+    "bull": 0.033734939759036145,
+    "chop": 0.9421686746987952,
+    "bear": 0.024096385542168676
+   },
+   "bear": {
+    "bull": 0.0,
+    "chop": 0.009717314487632508,
+    "bear": 0.9902826855123675
+   }
+  }
+ },
+ "forward": {
+  "horizon_days": 30,
+  "since": "2019-01-01",
+  "by_regime": {
+   "bull": {
+    "days": 1415,
+    "mean": 0.0541,
+    "median": 0.0039,
+    "share_up": 0.5102
+   },
+   "chop": {
+    "days": 415,
+    "mean": 0.0459,
+    "median": 0.0352,
+    "share_up": 0.6169
+   },
+   "bear": {
+    "days": 1007,
+    "mean": 0.0477,
+    "median": 0.0392,
+    "share_up": 0.6276
+   }
+  }
+ },
+ "stability": [
+  {
+   "param": "sma_slow",
+   "value": 180,
+   "base": 200,
+   "days_compared": 2867,
+   "days_same": 2742,
+   "days_same_share": 0.9564,
+   "calls_same": 58,
+   "calls": 59
+  },
+  {
+   "param": "sma_slow",
+   "value": 220,
+   "base": 200,
+   "days_compared": 2867,
+   "days_same": 2697,
+   "days_same_share": 0.9407,
+   "calls_same": 59,
+   "calls": 59
+  },
+  {
+   "param": "sma_fast",
+   "value": 40,
+   "base": 50,
+   "days_compared": 2867,
+   "days_same": 2787,
+   "days_same_share": 0.9721,
+   "calls_same": 58,
+   "calls": 59
+  },
+  {
+   "param": "sma_fast",
+   "value": 60,
+   "base": 50,
+   "days_compared": 2867,
+   "days_same": 2780,
+   "days_same_share": 0.9697,
+   "calls_same": 57,
+   "calls": 59
+  },
+  {
+   "param": "confirm",
+   "value": 2,
+   "base": 3,
+   "days_compared": 2867,
+   "days_same": 2808,
+   "days_same_share": 0.9794,
+   "calls_same": 59,
+   "calls": 59
+  },
+  {
+   "param": "confirm",
+   "value": 4,
+   "base": 3,
+   "days_compared": 2867,
+   "days_same": 2801,
+   "days_same_share": 0.977,
+   "calls_same": 59,
+   "calls": 59
+  },
+  {
+   "param": "confirm",
+   "value": 5,
+   "base": 3,
+   "days_compared": 2867,
+   "days_same": 2753,
+   "days_same_share": 0.9602,
+   "calls_same": 59,
+   "calls": 59
+  },
+  {
+   "param": "vol_mult",
+   "value": 1.3,
+   "base": 1.5,
+   "days_compared": 2867,
+   "days_same": 2867,
+   "days_same_share": 1.0,
+   "calls_same": 59,
+   "calls": 59
+  },
+  {
+   "param": "vol_mult",
+   "value": 1.7,
+   "base": 1.5,
+   "days_compared": 2867,
+   "days_same": 2867,
+   "days_same_share": 1.0,
+   "calls_same": 59,
+   "calls": 59
+  }
+ ],
+ "degradation": {
+  "flips": [
+   {
+    "kind": "left bear",
+    "to": "chop",
+    "extreme_day": "2018-12-15",
+    "extreme_close": 3211.72,
+    "flip_day": "2019-04-04",
+    "flip_close": 4898.66,
+    "days_after_extreme": 110,
+    "move_since_extreme": 0.5252
+   },
+   {
+    "kind": "left bull",
+    "to": "chop",
+    "extreme_day": "2019-06-26",
+    "extreme_close": 13093.8,
+    "flip_day": "2019-09-28",
+    "flip_close": 8198.81,
+    "days_after_extreme": 94,
+    "move_since_extreme": -0.3738
+   },
+   {
+    "kind": "left bear",
+    "to": "chop",
+    "extreme_day": "2019-12-17",
+    "extreme_close": 6623.82,
+    "flip_day": "2020-01-30",
+    "flip_close": 9513.21,
+    "days_after_extreme": 44,
+    "move_since_extreme": 0.4362
+   },
+   {
+    "kind": "left bull",
+    "to": "chop",
+    "extreme_day": "2020-02-23",
+    "extreme_close": 9936.4,
+    "flip_day": "2020-03-01",
+    "flip_close": 8531.88,
+    "days_after_extreme": 7,
+    "move_since_extreme": -0.1414
+   },
+   {
+    "kind": "left bull",
+    "to": "chop",
+    "extreme_day": "2020-03-06",
+    "extreme_close": 9131.88,
+    "flip_day": "2020-03-10",
+    "flip_close": 7894.56,
+    "days_after_extreme": 4,
+    "move_since_extreme": -0.1355
+   },
+   {
+    "kind": "left bear",
+    "to": "chop",
+    "extreme_day": "2020-03-29",
+    "extreme_close": 5881.42,
+    "flip_day": "2020-05-01",
+    "flip_close": 8826.96,
+    "days_after_extreme": 33,
+    "move_since_extreme": 0.5008
+   },
+   {
+    "kind": "left bull",
+    "to": "chop",
+    "extreme_day": "2021-04-13",
+    "extreme_close": 63575.0,
+    "flip_day": "2021-05-23",
+    "flip_close": 34655.25,
+    "days_after_extreme": 40,
+    "move_since_extreme": -0.4549
+   },
+   {
+    "kind": "left bear",
+    "to": "chop",
+    "extreme_day": "2021-07-20",
+    "extreme_close": 29790.35,
+    "flip_day": "2021-08-11",
+    "flip_close": 45511.0,
+    "days_after_extreme": 22,
+    "move_since_extreme": 0.5277
+   },
+   {
+    "kind": "left bull",
+    "to": "chop",
+    "extreme_day": "2021-09-18",
+    "extreme_close": 48292.74,
+    "flip_day": "2021-09-22",
+    "flip_close": 43543.61,
+    "days_after_extreme": 4,
+    "move_since_extreme": -0.0983
+   },
+   {
+    "kind": "left bull",
+    "to": "chop",
+    "extreme_day": "2021-11-08",
+    "extreme_close": 67525.83,
+    "flip_day": "2021-12-19",
+    "flip_close": 46681.23,
+    "days_after_extreme": 41,
+    "move_since_extreme": -0.3087
+   },
+   {
+    "kind": "left bull",
+    "to": "chop",
+    "extreme_day": "2021-12-23",
+    "extreme_close": 50838.81,
+    "flip_day": "2021-12-30",
+    "flip_close": 47120.87,
+    "days_after_extreme": 7,
+    "move_since_extreme": -0.0731
+   },
+   {
+    "kind": "left bear",
+    "to": "chop",
+    "extreme_day": "2022-11-21",
+    "extreme_close": 15781.29,
+    "flip_day": "2023-01-15",
+    "flip_close": 20871.5,
+    "days_after_extreme": 55,
+    "move_since_extreme": 0.3225
+   },
+   {
+    "kind": "left bull",
+    "to": "chop",
+    "extreme_day": "2023-07-13",
+    "extreme_close": 31454.23,
+    "flip_day": "2023-08-19",
+    "flip_close": 26100.01,
+    "days_after_extreme": 37,
+    "move_since_extreme": -0.1702
+   },
+   {
+    "kind": "left bear",
+    "to": "chop",
+    "extreme_day": "2023-09-26",
+    "extreme_close": 26221.67,
+    "flip_day": "2023-10-18",
+    "flip_close": 28320.0,
+    "days_after_extreme": 22,
+    "move_since_extreme": 0.08
+   },
+   {
+    "kind": "left bull",
+    "to": "chop",
+    "extreme_day": "2024-03-13",
+    "extreme_close": 73072.41,
+    "flip_day": "2024-07-06",
+    "flip_close": 58230.13,
+    "days_after_extreme": 115,
+    "move_since_extreme": -0.2031
+   },
+   {
+    "kind": "left bull",
+    "to": "chop",
+    "extreme_day": "2024-07-28",
+    "extreme_close": 68249.88,
+    "flip_day": "2024-08-05",
+    "flip_close": 54018.81,
+    "days_after_extreme": 8,
+    "move_since_extreme": -0.2085
+   },
+   {
+    "kind": "left bear",
+    "to": "chop",
+    "extreme_day": "2024-08-15",
+    "extreme_close": 57541.06,
+    "flip_day": "2024-08-25",
+    "flip_close": 64220.0,
+    "days_after_extreme": 10,
+    "move_since_extreme": 0.1161
+   },
+   {
+    "kind": "left bear",
+    "to": "chop",
+    "extreme_day": "2024-09-06",
+    "extreme_close": 53962.97,
+    "flip_day": "2024-09-28",
+    "flip_close": 65858.0,
+    "days_after_extreme": 22,
+    "move_since_extreme": 0.2204
+   },
+   {
+    "kind": "left bear",
+    "to": "chop",
+    "extreme_day": "2024-10-10",
+    "extreme_close": 60326.39,
+    "flip_day": "2024-10-16",
+    "flip_close": 67620.01,
+    "days_after_extreme": 6,
+    "move_since_extreme": 0.1209
+   },
+   {
+    "kind": "left bull",
+    "to": "chop",
+    "extreme_day": "2025-01-21",
+    "extreme_close": 106143.82,
+    "flip_day": "2025-03-11",
+    "flip_close": 82932.99,
+    "days_after_extreme": 49,
+    "move_since_extreme": -0.2187
+   },
+   {
+    "kind": "left bull",
+    "to": "chop",
+    "extreme_day": "2025-03-25",
+    "extreme_close": 87392.87,
+    "flip_day": "2025-03-30",
+    "flip_close": 82389.99,
+    "days_after_extreme": 5,
+    "move_since_extreme": -0.0572
+   },
+   {
+    "kind": "left bear",
+    "to": "chop",
+    "extreme_day": "2025-04-10",
+    "extreme_close": 79607.3,
+    "flip_day": "2025-04-24",
+    "flip_close": 93980.47,
+    "days_after_extreme": 14,
+    "move_since_extreme": 0.1806
+   },
+   {
+    "kind": "left bull",
+    "to": "chop",
+    "extreme_day": "2025-10-06",
+    "extreme_close": 124658.54,
+    "flip_day": "2025-11-05",
+    "flip_close": 103885.16,
+    "days_after_extreme": 30,
+    "move_since_extreme": -0.1666
+   },
+   {
+    "kind": "left bear",
+    "to": "chop",
+    "extreme_day": "2026-06-30",
+    "extreme_close": 58624.71,
+    "flip_day": "2026-08-21",
+    "flip_close": 78338.03,
+    "days_after_extreme": 52,
+    "move_since_extreme": 0.3363
+   }
+  ],
+  "whipsaws": [
+   {
+    "regime": "bull",
+    "start": "2020-02-20",
+    "days": 10,
+    "between": "chop"
+   },
+   {
+    "regime": "chop",
+    "start": "2020-03-01",
+    "days": 3,
+    "between": "bull"
+   },
+   {
+    "regime": "bull",
+    "start": "2020-03-04",
+    "days": 6,
+    "between": "chop"
+   },
+   {
+    "regime": "bull",
+    "start": "2021-09-17",
+    "days": 5,
+    "between": "chop"
+   },
+   {
+    "regime": "chop",
+    "start": "2021-09-22",
+    "days": 11,
+    "between": "bull"
+   },
+   {
+    "regime": "chop",
+    "start": "2021-12-19",
+    "days": 4,
+    "between": "bull"
+   },
+   {
+    "regime": "bull",
+    "start": "2021-12-23",
+    "days": 7,
+    "between": "chop"
+   },
+   {
+    "regime": "chop",
+    "start": "2024-07-06",
+    "days": 9,
+    "between": "bull"
+   },
+   {
+    "regime": "bull",
+    "start": "2024-07-15",
+    "days": 21,
+    "between": "chop"
+   },
+   {
+    "regime": "bear",
+    "start": "2024-08-12",
+    "days": 13,
+    "between": "chop"
+   },
+   {
+    "regime": "chop",
+    "start": "2024-08-25",
+    "days": 3,
+    "between": "bear"
+   },
+   {
+    "regime": "chop",
+    "start": "2024-09-28",
+    "days": 4,
+    "between": "bear"
+   },
+   {
+    "regime": "bear",
+    "start": "2024-10-02",
+    "days": 14,
+    "between": "chop"
+   },
+   {
+    "regime": "chop",
+    "start": "2025-03-11",
+    "days": 14,
+    "between": "bull"
+   },
+   {
+    "regime": "bull",
+    "start": "2025-03-25",
+    "days": 5,
+    "between": "chop"
+   },
+   {
+    "regime": "bear",
+    "start": "2025-04-09",
+    "days": 15,
+    "between": "chop"
+   }
+  ],
+  "switches": 48,
+  "switches_per_year": 5.86
+ },
+ "per_regime": {
+  "BobLoukas": {
+   "bull": {
+    "calls": 18,
+    "scored": 16,
+    "hit_rate": 0.3125,
+    "avg_result": 0.06411397576782876,
+    "score": 44.80549277279299,
+    "display": "44.8",
+    "label": "limited sample",
+    "weight": 0.6153846153846154
+   },
+   "chop": {
+    "calls": 2,
+    "scored": 2,
+    "hit_rate": 0.0,
+    "avg_result": -0.13750900881830602,
+    "score": 45.48454405979657,
+    "display": "45.5",
+    "label": "small sample",
+    "weight": 0.16666666666666666
+   },
+   "bear": {
+    "calls": 15,
+    "scored": 15,
+    "hit_rate": 0.6,
+    "avg_result": 0.023595980438255445,
+    "score": 59.06808358495381,
+    "display": "59.1",
+    "label": "limited sample",
+    "weight": 0.6
+   },
+   "unknown": null
+  },
+  "Corbanu": {
+   "bull": {
+    "calls": 6,
+    "scored": 6,
+    "hit_rate": 0.3333333333333333,
+    "avg_result": -0.06894597454673056,
+    "score": 48.389113221440944,
+    "display": "48.4",
+    "label": "small sample",
+    "weight": 0.375
+   },
+   "chop": {
+    "calls": 2,
+    "scored": 2,
+    "hit_rate": 0.5,
+    "avg_result": 0.14655503862968688,
+    "score": 51.262831885085745,
+    "display": "51.3",
+    "label": "small sample",
+    "weight": 0.16666666666666666
+   },
+   "bear": null,
+   "unknown": null
+  },
+  "DrProfitCrypto": {
+   "bull": {
+    "calls": 1,
+    "scored": 1,
+    "hit_rate": 0.0,
+    "avg_result": -0.05377255234261902,
+    "score": 47.74315574061294,
+    "display": "47.7",
+    "label": "small sample",
+    "weight": 0.09090909090909091
+   },
+   "chop": null,
+   "bear": null,
+   "unknown": null
+  },
+  "goodalexander": {
+   "bull": {
+    "calls": 7,
+    "scored": 7,
+    "hit_rate": 0.42857142857142855,
+    "avg_result": 0.045462150527804036,
+    "score": 51.86860566973054,
+    "display": "51.9",
+    "label": "small sample",
+    "weight": 0.4117647058823529
+   },
+   "chop": null,
+   "bear": null,
+   "unknown": null
+  },
+  "koolkrypto223": {
+   "bull": {
+    "calls": 4,
+    "scored": 3,
+    "hit_rate": 0.6666666666666666,
+    "avg_result": -0.018272561960380407,
+    "score": 52.089443308257266,
+    "display": "52.1",
+    "label": "small sample",
+    "weight": 0.23076923076923078
+   },
+   "chop": null,
+   "bear": null,
+   "unknown": null
+  },
+  "mert": {
+   "bull": {
+    "calls": 1,
+    "scored": 1,
+    "hit_rate": 1.0,
+    "avg_result": 23.2776656267205,
+    "score": 54.54545454545455,
+    "display": "54.5",
+    "label": "small sample",
+    "weight": 0.09090909090909091
+   },
+   "chop": null,
+   "bear": null,
+   "unknown": null
+  },
+  "Okada_DeFi0x": {
+   "bull": {
+    "calls": 2,
+    "scored": 2,
+    "hit_rate": 0.0,
+    "avg_result": -0.056257074578550004,
+    "score": 46.12518700316923,
+    "display": "46.1",
+    "label": "small sample",
+    "weight": 0.16666666666666666
+   },
+   "chop": null,
+   "bear": null,
+   "unknown": null
+  },
+  "rosa_onchain": {
+   "bull": {
+    "calls": 1,
+    "scored": 1,
+    "hit_rate": 1.0,
+    "avg_result": 0.14666850981476354,
+    "score": 54.36171493201684,
+    "display": "54.4",
+    "label": "small sample",
+    "weight": 0.09090909090909091
+   },
+   "chop": null,
+   "bear": null,
+   "unknown": null
+  },
+  "all callers": {
+   "bull": {
+    "calls": 40,
+    "scored": 37,
+    "hit_rate": 0.3783783783783784,
+    "avg_result": 0.6522597991311866,
+    "score": 48.32011002408641,
+    "display": "48.3",
+    "label": null,
+    "weight": 0.7872340425531915
+   },
+   "chop": {
+    "calls": 4,
+    "scored": 4,
+    "hit_rate": 0.25,
+    "avg_result": 0.004523014905690431,
+    "score": 47.21203652418484,
+    "display": "47.2",
+    "label": "small sample",
+    "weight": 0.2857142857142857
+   },
+   "bear": {
+    "calls": 15,
+    "scored": 15,
+    "hit_rate": 0.6,
+    "avg_result": 0.023595980438255445,
+    "score": 59.06808358495381,
+    "display": "59.1",
+    "label": "limited sample",
+    "weight": 0.6
+   },
+   "unknown": null
+  }
+ },
+ "per_vol": {
+  "BobLoukas": {
+   "normal": {
+    "calls": 31,
+    "scored": 29,
+    "hit_rate": 0.3793103448275862,
+    "avg_result": -0.028044276515469042,
+    "score": 48.24166851092397,
+    "display": "48.2",
+    "label": "limited sample",
+    "weight": 0.7435897435897436
+   },
+   "high": {
+    "calls": 4,
+    "scored": 4,
+    "hit_rate": 0.75,
+    "avg_result": 0.4795073300427705,
+    "score": 57.4740363604015,
+    "display": "57.5",
+    "label": "small sample",
+    "weight": 0.2857142857142857
+   }
+  },
+  "Corbanu": {
+   "normal": {
+    "calls": 8,
+    "scored": 8,
+    "hit_rate": 0.375,
+    "avg_result": -0.015070721252626193,
+    "score": 49.40998856467134,
+    "display": "49.4",
+    "label": "small sample",
+    "weight": 0.4444444444444444
+   },
+   "high": null
+  },
+  "DrProfitCrypto": {
+   "normal": {
+    "calls": 1,
+    "scored": 1,
+    "hit_rate": 0.0,
+    "avg_result": -0.05377255234261902,
+    "score": 47.74315574061294,
+    "display": "47.7",
+    "label": "small sample",
+    "weight": 0.09090909090909091
+   },
+   "high": null
+  },
+  "goodalexander": {
+   "normal": {
+    "calls": 7,
+    "scored": 7,
+    "hit_rate": 0.42857142857142855,
+    "avg_result": 0.045462150527804036,
+    "score": 51.86860566973054,
+    "display": "51.9",
+    "label": "small sample",
+    "weight": 0.4117647058823529
+   },
+   "high": null
+  },
+  "koolkrypto223": {
+   "normal": {
+    "calls": 4,
+    "scored": 3,
+    "hit_rate": 0.6666666666666666,
+    "avg_result": -0.018272561960380407,
+    "score": 52.089443308257266,
+    "display": "52.1",
+    "label": "small sample",
+    "weight": 0.23076923076923078
+   },
+   "high": null
+  },
+  "mert": {
+   "normal": {
+    "calls": 1,
+    "scored": 1,
+    "hit_rate": 1.0,
+    "avg_result": 23.2776656267205,
+    "score": 54.54545454545455,
+    "display": "54.5",
+    "label": "small sample",
+    "weight": 0.09090909090909091
+   },
+   "high": null
+  },
+  "Okada_DeFi0x": {
+   "normal": {
+    "calls": 2,
+    "scored": 2,
+    "hit_rate": 0.0,
+    "avg_result": -0.056257074578550004,
+    "score": 46.12518700316923,
+    "display": "46.1",
+    "label": "small sample",
+    "weight": 0.16666666666666666
+   },
+   "high": null
+  },
+  "rosa_onchain": {
+   "normal": {
+    "calls": 1,
+    "scored": 1,
+    "hit_rate": 1.0,
+    "avg_result": 0.14666850981476354,
+    "score": 54.36171493201684,
+    "display": "54.4",
+    "label": "small sample",
+    "weight": 0.09090909090909091
+   },
+   "high": null
+  },
+  "all callers": {
+   "normal": {
+    "calls": 55,
+    "scored": 52,
+    "hit_rate": 0.40384615384615385,
+    "avg_result": 0.4343772118053734,
+    "score": 50.05094852424869,
+    "display": "50.1",
+    "label": null,
+    "weight": 0.8387096774193549
+   },
+   "high": {
+    "calls": 4,
+    "scored": 4,
+    "hit_rate": 0.75,
+    "avg_result": 0.4795073300427705,
+    "score": 57.4740363604015,
+    "display": "57.5",
+    "label": "small sample",
+    "weight": 0.2857142857142857
+   }
+  }
+ },
+ "sides": {
+  "bull": {
+   "long": {
+    "calls": 26,
+    "scored": 26,
+    "wins": 5
+   },
+   "short": {
+    "calls": 11,
+    "scored": 11,
+    "wins": 9
+   }
+  },
+  "chop": {
+   "long": {
+    "calls": 3,
+    "scored": 3,
+    "wins": 0
+   },
+   "short": {
+    "calls": 1,
+    "scored": 1,
+    "wins": 1
+   }
+  },
+  "bear": {
+   "long": {
+    "calls": 11,
+    "scored": 11,
+    "wins": 7
+   },
+   "short": {
+    "calls": 4,
+    "scored": 4,
+    "wins": 2
+   }
+  },
+  "unknown": {
+   "long": {
+    "calls": 0,
+    "scored": 0,
+    "wins": 0
+   },
+   "short": {
+    "calls": 0,
+    "scored": 0,
+    "wins": 0
+   }
+  }
+ },
+ "calls": [
+  {
+   "author": "BobLoukas",
+   "asset": "SILVER",
+   "post_id": "1776235528741937435",
+   "posted_at": "2024-04-05T13:08:45Z",
+   "regime": "bull",
+   "vol_tag": "high",
+   "bar_day": "2024-04-04",
+   "bar_close_time": "2024-04-04T23:59:59Z",
+   "crypto": false
+  },
+  {
+   "author": "mert",
+   "asset": "ZEC",
+   "post_id": "1970742039722479782",
+   "posted_at": "2025-09-24T06:48:11Z",
+   "regime": "bull",
+   "vol_tag": "normal",
+   "bar_day": "2025-09-23",
+   "bar_close_time": "2025-09-23T23:59:59Z",
+   "crypto": true
+  },
+  {
+   "author": "BobLoukas",
+   "asset": "BTC",
+   "post_id": "1985733515221078204",
+   "posted_at": "2025-11-04T15:38:57Z",
+   "regime": "bull",
+   "vol_tag": "normal",
+   "bar_day": "2025-11-03",
+   "bar_close_time": "2025-11-03T23:59:59Z",
+   "crypto": true
+  },
+  {
+   "author": "BobLoukas",
+   "asset": "SILVER",
+   "post_id": "1993658195982876720",
+   "posted_at": "2025-11-26T12:28:48Z",
+   "regime": "bear",
+   "vol_tag": "normal",
+   "bar_day": "2025-11-25",
+   "bar_close_time": "2025-11-25T23:59:59Z",
+   "crypto": false
+  },
+  {
+   "author": "BobLoukas",
+   "asset": "STOCKS",
+   "post_id": "1999149068459618541",
+   "posted_at": "2025-12-11T16:07:34Z",
+   "regime": "bear",
+   "vol_tag": "normal",
+   "bar_day": "2025-12-10",
+   "bar_close_time": "2025-12-10T23:59:59Z",
+   "crypto": false
+  },
+  {
+   "author": "BobLoukas",
+   "asset": "GOLD",
+   "post_id": "2003111794072801304",
+   "posted_at": "2025-12-22T14:34:02Z",
+   "regime": "bear",
+   "vol_tag": "normal",
+   "bar_day": "2025-12-21",
+   "bar_close_time": "2025-12-21T23:59:59Z",
+   "crypto": false
+  },
+  {
+   "author": "BobLoukas",
+   "asset": "COPPER",
+   "post_id": "2003490330650575038",
+   "posted_at": "2025-12-23T15:38:12Z",
+   "regime": "bear",
+   "vol_tag": "normal",
+   "bar_day": "2025-12-22",
+   "bar_close_time": "2025-12-22T23:59:59Z",
+   "crypto": false
+  },
+  {
+   "author": "BobLoukas",
+   "asset": "BTC",
+   "post_id": "2009356789356314714",
+   "posted_at": "2026-01-08T20:09:25Z",
+   "regime": "bear",
+   "vol_tag": "normal",
+   "bar_day": "2026-01-07",
+   "bar_close_time": "2026-01-07T23:59:59Z",
+   "crypto": true
+  },
+  {
+   "author": "BobLoukas",
+   "asset": "GOLD",
+   "post_id": "2011105173104705981",
+   "posted_at": "2026-01-13T15:56:52Z",
+   "regime": "bear",
+   "vol_tag": "normal",
+   "bar_day": "2026-01-12",
+   "bar_close_time": "2026-01-12T23:59:59Z",
+   "crypto": false
+  },
+  {
+   "author": "BobLoukas",
+   "asset": "COPPER",
+   "post_id": "2011110630338535867",
+   "posted_at": "2026-01-13T16:18:33Z",
+   "regime": "bear",
+   "vol_tag": "normal",
+   "bar_day": "2026-01-12",
+   "bar_close_time": "2026-01-12T23:59:59Z",
+   "crypto": false
+  },
+  {
+   "author": "BobLoukas",
+   "asset": "STOCKS",
+   "post_id": "2016523209500131511",
+   "posted_at": "2026-01-28T14:46:12Z",
+   "regime": "bear",
+   "vol_tag": "normal",
+   "bar_day": "2026-01-27",
+   "bar_close_time": "2026-01-27T23:59:59Z",
+   "crypto": false
+  },
+  {
+   "author": "BobLoukas",
+   "asset": "BTC",
+   "post_id": "2017256982743339269",
+   "posted_at": "2026-01-30T15:21:58Z",
+   "regime": "bear",
+   "vol_tag": "normal",
+   "bar_day": "2026-01-29",
+   "bar_close_time": "2026-01-29T23:59:59Z",
+   "crypto": true
+  },
+  {
+   "author": "BobLoukas",
+   "asset": "STOCKS",
+   "post_id": "2022006665764082140",
+   "posted_at": "2026-02-12T17:55:30Z",
+   "regime": "bear",
+   "vol_tag": "high",
+   "bar_day": "2026-02-11",
+   "bar_close_time": "2026-02-11T23:59:59Z",
+   "crypto": false
+  },
+  {
+   "author": "BobLoukas",
+   "asset": "BTC",
+   "post_id": "2023793838322782454",
+   "posted_at": "2026-02-17T16:17:05Z",
+   "regime": "bear",
+   "vol_tag": "high",
+   "bar_day": "2026-02-16",
+   "bar_close_time": "2026-02-16T23:59:59Z",
+   "crypto": true
+  },
+  {
+   "author": "BobLoukas",
+   "asset": "STOCKS",
+   "post_id": "2028472872604209602",
+   "posted_at": "2026-03-02T14:09:54Z",
+   "regime": "bear",
+   "vol_tag": "high",
+   "bar_day": "2026-03-01",
+   "bar_close_time": "2026-03-01T23:59:59Z",
+   "crypto": false
+  },
+  {
+   "author": "BobLoukas",
+   "asset": "STOCKS",
+   "post_id": "2031739333057659161",
+   "posted_at": "2026-03-11T14:29:39Z",
+   "regime": "bear",
+   "vol_tag": "normal",
+   "bar_day": "2026-03-10",
+   "bar_close_time": "2026-03-10T23:59:59Z",
+   "crypto": false
+  },
+  {
+   "author": "BobLoukas",
+   "asset": "BTC",
+   "post_id": "2062277523288068152",
+   "posted_at": "2026-06-03T20:57:31Z",
+   "regime": "bear",
+   "vol_tag": "normal",
+   "bar_day": "2026-06-02",
+   "bar_close_time": "2026-06-02T23:59:59Z",
+   "crypto": true
+  },
+  {
+   "author": "BobLoukas",
+   "asset": "GOLD",
+   "post_id": "2062554209212358962",
+   "posted_at": "2026-06-04T15:16:58Z",
+   "regime": "bear",
+   "vol_tag": "normal",
+   "bar_day": "2026-06-03",
+   "bar_close_time": "2026-06-03T23:59:59Z",
+   "crypto": false
+  },
+  {
+   "author": "BobLoukas",
+   "asset": "BTC",
+   "post_id": "2094827036812435935",
+   "posted_at": "2026-09-01T16:37:40Z",
+   "regime": "chop",
+   "vol_tag": "normal",
+   "bar_day": "2026-08-31",
+   "bar_close_time": "2026-08-31T23:59:59Z",
+   "crypto": true
+  },
+  {
+   "author": "Corbanu",
+   "asset": "XYZ:CBRS",
+   "post_id": "corbanu:cbrs-entry",
+   "posted_at": "2026-09-04T20:09:40Z",
+   "regime": "chop",
+   "vol_tag": "normal",
+   "bar_day": "2026-09-03",
+   "bar_close_time": "2026-09-03T23:59:59Z",
+   "crypto": true
+  },
+  {
+   "author": "Corbanu",
+   "asset": "XYZ:CXMT",
+   "post_id": "corbanu:cxmt-entry",
+   "posted_at": "2026-09-04T20:09:40Z",
+   "regime": "chop",
+   "vol_tag": "normal",
+   "bar_day": "2026-09-03",
+   "bar_close_time": "2026-09-03T23:59:59Z",
+   "crypto": true
+  },
+  {
+   "author": "BobLoukas",
+   "asset": "COPX",
+   "post_id": "2097324043334451439",
+   "posted_at": "2026-09-08T13:59:52Z",
+   "regime": "chop",
+   "vol_tag": "normal",
+   "bar_day": "2026-09-07",
+   "bar_close_time": "2026-09-07T23:59:59Z",
+   "crypto": false
+  },
+  {
+   "author": "Corbanu",
+   "asset": "XYZ:JP225",
+   "post_id": "corbanu:jp225-entry",
+   "posted_at": "2026-09-16T00:00:00Z",
+   "regime": "bull",
+   "vol_tag": "normal",
+   "bar_day": "2026-09-15",
+   "bar_close_time": "2026-09-15T23:59:59Z",
+   "crypto": true
+  },
+  {
+   "author": "Corbanu",
+   "asset": "XYZ:KIOXIA",
+   "post_id": "corbanu:kioxia-entry",
+   "posted_at": "2026-09-16T00:00:00Z",
+   "regime": "bull",
+   "vol_tag": "normal",
+   "bar_day": "2026-09-15",
+   "bar_close_time": "2026-09-15T23:59:59Z",
+   "crypto": true
+  },
+  {
+   "author": "BobLoukas",
+   "asset": "BTC",
+   "post_id": "2100953898630443447",
+   "posted_at": "2026-09-18T14:23:37Z",
+   "regime": "bull",
+   "vol_tag": "normal",
+   "bar_day": "2026-09-17",
+   "bar_close_time": "2026-09-17T23:59:59Z",
+   "crypto": true
+  },
+  {
+   "author": "BobLoukas",
+   "asset": "BTC",
+   "post_id": "2102014028855820403",
+   "posted_at": "2026-09-21T12:36:12Z",
+   "regime": "bull",
+   "vol_tag": "normal",
+   "bar_day": "2026-09-20",
+   "bar_close_time": "2026-09-20T23:59:59Z",
+   "crypto": true
+  },
+  {
+   "author": "BobLoukas",
+   "asset": "BTC",
+   "post_id": "2102024327075877097",
+   "posted_at": "2026-09-21T13:17:07Z",
+   "regime": "bull",
+   "vol_tag": "normal",
+   "bar_day": "2026-09-20",
+   "bar_close_time": "2026-09-20T23:59:59Z",
+   "crypto": true
+  },
+  {
+   "author": "Corbanu",
+   "asset": "XYZ:ORCL",
+   "post_id": "corbanu:orcl-entry",
+   "posted_at": "2026-09-26T23:10:53Z",
+   "regime": "bull",
+   "vol_tag": "normal",
+   "bar_day": "2026-09-25",
+   "bar_close_time": "2026-09-25T23:59:59Z",
+   "crypto": true
+  },
+  {
+   "author": "Corbanu",
+   "asset": "XYZ:AAPL",
+   "post_id": "corbanu:aapl-entry",
+   "posted_at": "2026-09-27T21:27:41Z",
+   "regime": "bull",
+   "vol_tag": "normal",
+   "bar_day": "2026-09-26",
+   "bar_close_time": "2026-09-26T23:59:59Z",
+   "crypto": true
+  },
+  {
+   "author": "Corbanu",
+   "asset": "XYZ:SKHX",
+   "post_id": "corbanu:skhx-entry",
+   "posted_at": "2026-09-27T21:27:41Z",
+   "regime": "bull",
+   "vol_tag": "normal",
+   "bar_day": "2026-09-26",
+   "bar_close_time": "2026-09-26T23:59:59Z",
+   "crypto": true
+  },
+  {
+   "author": "BobLoukas",
+   "asset": "SILVER",
+   "post_id": "2104977267109896477",
+   "posted_at": "2026-09-29T16:51:03Z",
+   "regime": "bull",
+   "vol_tag": "normal",
+   "bar_day": "2026-09-28",
+   "bar_close_time": "2026-09-28T23:59:59Z",
+   "crypto": false
+  },
+  {
+   "author": "Corbanu",
+   "asset": "XYZ:CBRS",
+   "post_id": "corbanu:cbrs-add",
+   "posted_at": "2026-09-30T03:33:23Z",
+   "regime": "bull",
+   "vol_tag": "normal",
+   "bar_day": "2026-09-29",
+   "bar_close_time": "2026-09-29T23:59:59Z",
+   "crypto": true
+  },
+  {
+   "author": "BobLoukas",
+   "asset": "BTC",
+   "post_id": "2105699317004583026",
+   "posted_at": "2026-10-01T16:40:13Z",
+   "regime": "bull",
+   "vol_tag": "normal",
+   "bar_day": "2026-09-30",
+   "bar_close_time": "2026-09-30T23:59:59Z",
+   "crypto": true
+  },
+  {
+   "author": "BobLoukas",
+   "asset": "SILVER",
+   "post_id": "2106744910896312646",
+   "posted_at": "2026-10-04T13:55:02Z",
+   "regime": "bull",
+   "vol_tag": "normal",
+   "bar_day": "2026-10-03",
+   "bar_close_time": "2026-10-03T23:59:59Z",
+   "crypto": false
+  },
+  {
+   "author": "BobLoukas",
+   "asset": "COPX",
+   "post_id": "2106750657877434407",
+   "posted_at": "2026-10-04T14:17:53Z",
+   "regime": "bull",
+   "vol_tag": "normal",
+   "bar_day": "2026-10-03",
+   "bar_close_time": "2026-10-03T23:59:59Z",
+   "crypto": false
+  },
+  {
+   "author": "BobLoukas",
+   "asset": "STOCKS",
+   "post_id": "2107063137958564197",
+   "posted_at": "2026-10-05T10:59:34Z",
+   "regime": "bull",
+   "vol_tag": "normal",
+   "bar_day": "2026-10-04",
+   "bar_close_time": "2026-10-04T23:59:59Z",
+   "crypto": false
+  },
+  {
+   "author": "BobLoukas",
+   "asset": "STOCKS",
+   "post_id": "2107475725573906895",
+   "posted_at": "2026-10-06T14:19:02Z",
+   "regime": "bull",
+   "vol_tag": "normal",
+   "bar_day": "2026-10-05",
+   "bar_close_time": "2026-10-05T23:59:59Z",
+   "crypto": false
+  },
+  {
+   "author": "BobLoukas",
+   "asset": "BTC",
+   "post_id": "2110764348981612915",
+   "posted_at": "2026-10-15T16:06:51Z",
+   "regime": "bull",
+   "vol_tag": "normal",
+   "bar_day": "2026-10-14",
+   "bar_close_time": "2026-10-14T23:59:59Z",
+   "crypto": true
+  },
+  {
+   "author": "BobLoukas",
+   "asset": "BTC",
+   "post_id": "2112915214479798344",
+   "posted_at": "2026-10-21T14:33:37Z",
+   "regime": "bull",
+   "vol_tag": "normal",
+   "bar_day": "2026-10-20",
+   "bar_close_time": "2026-10-20T23:59:59Z",
+   "crypto": true
+  },
+  {
+   "author": "BobLoukas",
+   "asset": "BTC",
+   "post_id": "2112919830357577753",
+   "posted_at": "2026-10-21T14:51:58Z",
+   "regime": "bull",
+   "vol_tag": "normal",
+   "bar_day": "2026-10-20",
+   "bar_close_time": "2026-10-20T23:59:59Z",
+   "crypto": true
+  },
+  {
+   "author": "BobLoukas",
+   "asset": "GOLD",
+   "post_id": "2112919830357577753",
+   "posted_at": "2026-10-21T14:51:58Z",
+   "regime": "bull",
+   "vol_tag": "normal",
+   "bar_day": "2026-10-20",
+   "bar_close_time": "2026-10-20T23:59:59Z",
+   "crypto": false
+  },
+  {
+   "author": "goodalexander",
+   "asset": "BTC",
+   "post_id": "2113279842636419392",
+   "posted_at": "2026-10-22T14:42:31Z",
+   "regime": "bull",
+   "vol_tag": "normal",
+   "bar_day": "2026-10-21",
+   "bar_close_time": "2026-10-21T23:59:59Z",
+   "crypto": true
+  },
+  {
+   "author": "goodalexander",
+   "asset": "GOLD",
+   "post_id": "2113602987008356795",
+   "posted_at": "2026-10-23T12:06:35Z",
+   "regime": "bull",
+   "vol_tag": "normal",
+   "bar_day": "2026-10-22",
+   "bar_close_time": "2026-10-22T23:59:59Z",
+   "crypto": false
+  },
+  {
+   "author": "BobLoukas",
+   "asset": "SILVER",
+   "post_id": "2113613893662588966",
+   "posted_at": "2026-10-23T12:49:55Z",
+   "regime": "bull",
+   "vol_tag": "normal",
+   "bar_day": "2026-10-22",
+   "bar_close_time": "2026-10-22T23:59:59Z",
+   "crypto": false
+  },
+  {
+   "author": "DrProfitCrypto",
+   "asset": "BTC",
+   "post_id": "2114492799794254164",
+   "posted_at": "2026-10-25T23:02:23Z",
+   "regime": "bull",
+   "vol_tag": "normal",
+   "bar_day": "2026-10-24",
+   "bar_close_time": "2026-10-24T23:59:59Z",
+   "crypto": true
+  },
+  {
+   "author": "goodalexander",
+   "asset": "XYZ:AAPL",
+   "post_id": "2115550350832996432",
+   "posted_at": "2026-10-28T21:04:43Z",
+   "regime": "bull",
+   "vol_tag": "normal",
+   "bar_day": "2026-10-27",
+   "bar_close_time": "2026-10-27T23:59:59Z",
+   "crypto": true
+  },
+  {
+   "author": "BobLoukas",
+   "asset": "BTC",
+   "post_id": "2115823513915290059",
+   "posted_at": "2026-10-29T15:10:10Z",
+   "regime": "bull",
+   "vol_tag": "normal",
+   "bar_day": "2026-10-28",
+   "bar_close_time": "2026-10-28T23:59:59Z",
+   "crypto": true
+  },
+  {
+   "author": "goodalexander",
+   "asset": "XMR",
+   "post_id": "2115966476817739790",
+   "posted_at": "2026-10-30T00:38:15Z",
+   "regime": "bull",
+   "vol_tag": "normal",
+   "bar_day": "2026-10-29",
+   "bar_close_time": "2026-10-29T23:59:59Z",
+   "crypto": true
+  },
+  {
+   "author": "goodalexander",
+   "asset": "XRP",
+   "post_id": "2115966476817739790",
+   "posted_at": "2026-10-30T00:38:15Z",
+   "regime": "bull",
+   "vol_tag": "normal",
+   "bar_day": "2026-10-29",
+   "bar_close_time": "2026-10-29T23:59:59Z",
+   "crypto": true
+  },
+  {
+   "author": "rosa_onchain",
+   "asset": "INJ",
+   "post_id": "2116091851086393720",
+   "posted_at": "2026-10-30T08:56:27Z",
+   "regime": "bull",
+   "vol_tag": "normal",
+   "bar_day": "2026-10-29",
+   "bar_close_time": "2026-10-29T23:59:59Z",
+   "crypto": true
+  },
+  {
+   "author": "BobLoukas",
+   "asset": "GOLD",
+   "post_id": "2116199680157647216",
+   "posted_at": "2026-10-30T16:04:55Z",
+   "regime": "bull",
+   "vol_tag": "normal",
+   "bar_day": "2026-10-29",
+   "bar_close_time": "2026-10-29T23:59:59Z",
+   "crypto": false
+  },
+  {
+   "author": "goodalexander",
+   "asset": "STOCKS",
+   "post_id": "2116203980111933911",
+   "posted_at": "2026-10-30T16:22:00Z",
+   "regime": "bull",
+   "vol_tag": "normal",
+   "bar_day": "2026-10-29",
+   "bar_close_time": "2026-10-29T23:59:59Z",
+   "crypto": false
+  },
+  {
+   "author": "goodalexander",
+   "asset": "SOXL",
+   "post_id": "2116304617047007308",
+   "posted_at": "2026-10-30T23:01:54Z",
+   "regime": "bull",
+   "vol_tag": "normal",
+   "bar_day": "2026-10-29",
+   "bar_close_time": "2026-10-29T23:59:59Z",
+   "crypto": false
+  },
+  {
+   "author": "Okada_DeFi0x",
+   "asset": "ETH",
+   "post_id": "2116433840499790164",
+   "posted_at": "2026-10-31T07:35:23Z",
+   "regime": "bull",
+   "vol_tag": "normal",
+   "bar_day": "2026-10-30",
+   "bar_close_time": "2026-10-30T23:59:59Z",
+   "crypto": true
+  },
+  {
+   "author": "Okada_DeFi0x",
+   "asset": "HYPE",
+   "post_id": "2116433840499790164",
+   "posted_at": "2026-10-31T07:35:23Z",
+   "regime": "bull",
+   "vol_tag": "normal",
+   "bar_day": "2026-10-30",
+   "bar_close_time": "2026-10-30T23:59:59Z",
+   "crypto": true
+  },
+  {
+   "author": "koolkrypto223",
+   "asset": "HYPE",
+   "post_id": "2116898993435463783",
+   "posted_at": "2026-11-01T14:23:44Z",
+   "regime": "bull",
+   "vol_tag": "normal",
+   "bar_day": "2026-10-31",
+   "bar_close_time": "2026-10-31T23:59:59Z",
+   "crypto": true
+  },
+  {
+   "author": "koolkrypto223",
+   "asset": "LIT",
+   "post_id": "2116898993435463783",
+   "posted_at": "2026-11-01T14:23:44Z",
+   "regime": "bull",
+   "vol_tag": "normal",
+   "bar_day": "2026-10-31",
+   "bar_close_time": "2026-10-31T23:59:59Z",
+   "crypto": true
+  },
+  {
+   "author": "koolkrypto223",
+   "asset": "KNTQ",
+   "post_id": "2118181656398090718",
+   "posted_at": "2026-11-05T03:20:35Z",
+   "regime": "bull",
+   "vol_tag": "normal",
+   "bar_day": "2026-11-04",
+   "bar_close_time": "2026-11-04T23:59:59Z",
+   "crypto": true
+  },
+  {
+   "author": "koolkrypto223",
+   "asset": "NEST",
+   "post_id": "2118181656398090718",
+   "posted_at": "2026-11-05T03:20:35Z",
+   "regime": "bull",
+   "vol_tag": "normal",
+   "bar_day": "2026-11-04",
+   "bar_close_time": "2026-11-04T23:59:59Z",
+   "crypto": true
+  }
+ ],
+ "unknown_calls": 0,
+ "non_crypto_calls": 24
+}
