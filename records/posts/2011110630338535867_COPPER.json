@@ -22,10 +22,10 @@
   "price": 6.0255
  },
  "latest": {
-  "at": "2026-11-06T21:59:48Z",
-  "price": 6.26
+  "at": "2026-11-06T21:00:00Z",
+  "price": 6.2605
  },
- "change_since_post": 0.0389179321218156,
+ "change_since_post": 0.03900091278732054,
  "exits": {
   "1": {
    "at": "2026-01-14T17:00:00Z",
@@ -18866,15 +18866,11 @@
   [
    "2026-11-06T21:00:00Z",
    6.2605
-  ],
-  [
-   "2026-11-06T21:59:48Z",
-   6.26
   ]
  ],
  "resolved_with": {
   "prices": "live:binance+yahoo",
-  "last_bar_at": "2026-11-06T21:59:48Z",
+  "last_bar_at": "2026-11-06T21:00:00Z",
   "max_lag_days": 2,
   "session_lag_days": 4
  },
