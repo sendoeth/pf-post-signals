@@ -1,0 +1,26 @@
+ok   pos-1970742039722479782_ZEC.html: reply context (complete) kept after rendering
+ok   pos-1985733515221078204_BTC.html: reply context (complete) kept after rendering
+ok   pos-2011110630338535867_COPPER.html: reply context (complete) kept after rendering
+ok   pos-2016523209500131511_STOCKS.html: reply context (complete) kept after rendering
+ok   pos-2062554209212358962_GOLD.html: reply context (complete) kept after rendering
+ok   pos-2097324043334451439_COPX.html: reply context (complete) kept after rendering
+ok   pos-2102014028855820403_BTC.html: reply context (complete) kept after rendering
+ok   pos-2102024327075877097_BTC.html: reply context (complete) kept after rendering
+ok   pos-2104977267109896477_SILVER.html: reply context (complete) kept after rendering
+ok   pos-2106750657877434407_COPX.html: reply context (complete) kept after rendering
+ok   pos-2107063137958564197_STOCKS.html: reply context (complete) kept after rendering
+ok   pos-2112915214479798344_BTC.html: reply context (complete) kept after rendering
+ok   pos-2113279842636419392_BTC.html: reply context (complete) kept after rendering
+ok   pos-2113602987008356795_GOLD.html: reply context (complete) kept after rendering
+ok   pos-2113613893662588966_SILVER.html: reply context (complete) kept after rendering
+ok   pos-2115550350832996432_XYZ-AAPL.html: reply context (complete) kept after rendering
+ok   pos-2115823513915290059_BTC.html: reply context (complete) kept after rendering
+ok   pos-2115966476817739790_XMR.html: reply context (unavailable) kept after rendering
+ok   pos-2115966476817739790_XRP.html: reply context (unavailable) kept after rendering
+ok   pos-2116199680157647216_GOLD.html: reply context (complete) kept after rendering
+ok   pos-2116203980111933911_STOCKS.html: reply context (complete) kept after rendering
+ok   pos-2116304617047007308_SOXL.html: reply context (complete) kept after rendering
+ok   pos-2118181656398090718_KNTQ.html: reply context (complete) kept after rendering
+ok   pos-2118181656398090718_NEST.html: reply context (complete) kept after rendering
+ok   context.html: 27 contexts, 27 agreement rows
+ALL PASS: 24 position pages kept their reply context; context.html complete

@@ -1,0 +1,30 @@
+CONTEXT 27 stored contexts (sources/context/*.json); limits {"max_depth": 4, "max_images": 8, "max_image_bytes": 8388608, "max_pixels": 40000000}
+STATUS {'complete': 25, 'unavailable': 1, 'truncated': 1}
+AGREEMENT (step 27 owner labels, 58 gating, 27 on replies/quotes with a stored context)
+  asset found (added calls): own words 48/51 -> with context 50/51
+  side agreement:            before 31/58 -> after 31/58   (context never sets a side)
+CHANGED ROWS
+  2102024327075877097|BTC: owner add BTC long; own words -; context ['BTC']; asset found False -> True; side none -> none (none: the caller's words state no position (none))
+  2116304617047007308|SOXL: owner add SOXL short; own words -; context ['SOXL']; asset found False -> True; side none -> none (none: the caller's words state no position (none))
+ACCEPTANCE koolkrypto223 2118181656398090718
+  caller @koolkrypto223 2026-11-05T03:20:35Z: 'More $NEST and $KNTQ' receipt sources/koolkrypto223/receipts/2118181656398090718.json  status complete  pin ab6344039af4dff3e8b6d4b0c59162bd887dcc772b7315180e248ccf3245d077
+  parent: @0xLcrgs 2026-11-04T20:02:52Z https://x.com/0xLcrgs/status/2118071502960492654 link=reply receipt sources/0xlcrgs/receipts/2118071502960492654.json text_sha256 166a1e4613177fa48958c9a07e257757bba7c30a692f1c4fa3a471216fc26d2c truncated=False used=True
+    image sources/0xlcrgs/media/2118071502960492654_0.png sha256 a1a1c4d37424b2a4e9fb2c766831b7a97c70db64734945778ad0398f575dc908 37132 bytes
+  root: @gregory_raymond 2026-11-04T06:21:55Z https://x.com/gregory_raymond/status/2117864901108432999 link=quote receipt sources/gregory_raymond/receipts/2117864901108432999.json text_sha256 60e671d9abf87f05c6ea55d687f4564307e35842933d2edc55596bfbe1e01f34 truncated=True used=True
+    image sources/gregory_raymond/media/2117864901108432999_0.jpg sha256 95d7ce6733c586c3a6f5e72858123020862789b25901215d9b4ecec2f49e8223 55670 bytes
+    image sources/gregory_raymond/media/2117864901108432999_1.jpg sha256 584573a570b314221aab89e8a11b9d9bd4c8b915056e7c35cb0566972fc12f12 251270 bytes
+  candidate ETH: parent_image image a1a1c4d37424b2a4.. matched 'ETH' ocr '% ® NEST 0.60% ® usDc 2.26% ® ETH 0.010% ® Other & rounding 0.0'
+  candidate ETH: root_image image 584573a570b31422.. matched 'ETH' ocr '21 USDC (21 transfers) 16,085 ETH (transfers) mfp ee 2,200 ETH'
+  candidate HYPE: parent_text {'words': ['HYPE']}
+  candidate HYPE: parent_image image a1a1c4d37424b2a4.. matched 'HYPE' ocr '- Allocation © usTC 94.90% ® HYPE 2.22% ® NEST 0.60% ® usDc 2.2'
+  candidate NEST: parent_image image a1a1c4d37424b2a4.. matched 'NEST' ocr '© usTC 94.90% ® HYPE 2.22% ® NEST 0.60% ® usDc 2.26% ® ETH 0.01'
+  candidate None: root_text {'unread': "the embed cuts this post's text short: its words are not used"}
+  read NEST: side long (own words) rule more_cashtag asset from ['own words', 'parent_image']
+  read KNTQ: side long (own words) rule more_cashtag asset from ['own words']
+  read ETH: side none (none: the caller names other assets) rule None asset from ['parent_image', 'root_image']
+  read HYPE: side none (none: the caller names other assets) rule None asset from ['parent_image', 'parent_text']
+FAIL-CLOSED CASES
+  2115966476817739790 @goodalexander: unavailable: post 2115965415587467525 unavailable (This Post was deleted by the Post author. Learn more); candidates []
+  2118167587637096933 @koolkrypto223: truncated: more than 4 parents: the root is not known; candidates ['HYPE', 'KNTQ']
+POTENTIAL CALLERS 14: @0xLcrgs, @0xMiaWallace, @7N8Nine, @aBlock0, @based16z, @bidorder, @gainzy222, @Harmand66836704, @IamNobody_1234, @LinusCaldwell5, @liquidated_hl, @Nsosnsisnsnskx, @Tanaka_L2, @vt_georgi (all: potential (unscored, pending owner promotion))
+charts.json sha256 bound 8bdf9a369ed31953c85a5209ff83850ca862079dbbe068cb1d11b826829263da
