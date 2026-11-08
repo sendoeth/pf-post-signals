@@ -143,3 +143,5 @@ table.calls tr[data-counted="false"] td { opacity: .7; }
 
 /* step 29: reply context: long words (paths, URLs, hashes) wrap instead of widening a phone screen */
 .context { overflow-wrap: anywhere; }
+/* a DEX pool contract in the candle source line (step 26) wraps too */
+.attribution { overflow-wrap: anywhere; }
