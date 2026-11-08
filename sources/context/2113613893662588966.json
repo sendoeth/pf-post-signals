@@ -1,0 +1,57 @@
+{
+ "schema": "quanty.context.v1",
+ "caller": {
+  "id": "2113613893662588966",
+  "url": "https://x.com/BobLoukas/status/2113613893662588966",
+  "author": "BobLoukas",
+  "posted_at": "2026-10-23T12:49:55Z",
+  "text": "Very clean Silver Cycles that are now in a failed weekly state.  Week 14, so potentially another 2 months remain where damage can be done.",
+  "text_sha256": "97c4a8ed67f7f03dc33c6dc8e7edf0459252c4a38fd0ee18c7961b8a01939322",
+  "link": null,
+  "receipt": "sources/bobloukas/receipts/2113613893662588966.json",
+  "receipt_sha256": "935a01d66a7c4ac365765cb390e996f3f9c0899c991a7bac9ae54ca000babc3c"
+ },
+ "status": "complete",
+ "reason": null,
+ "chain": [
+  {
+   "id": "2106744910896312646",
+   "author": "BobLoukas",
+   "posted_at": "2026-10-04T13:55:02Z",
+   "link": "quote",
+   "text_sha256": "d40cb54d8e0573fc5cac7554f1ede9b90de4cd9907825a81ba52b72943c10cef"
+  }
+ ],
+ "limits": {
+  "max_depth": 4,
+  "max_images": 8,
+  "max_image_bytes": 8388608
+ },
+ "parent": {
+  "id": "2106744910896312646",
+  "url": "https://x.com/BobLoukas/status/2106744910896312646",
+  "author": "BobLoukas",
+  "posted_at": "2026-10-04T13:55:02Z",
+  "text": "To my long time silver friends, why Silver is more likely heading to $46 before turning bullish again.  \n\nSilver blow-off moves take a lot of time to retrace and rebuild a base.  And often the last weekly cycle from the blowoff phase has to be retraced, in this case to $46.  \n\nFrom a trend perspective, this remains an intermediate time frame retracement from the January blow-off move. The arrows show the corresponding gold Cycle highs/low, which are in decline.  And the next weekly cycle low is not due until the end of 2026.\n\nFrom past experience, Silver in a bull market offers one of the best opportunities to post significant portfolio gains. It's because when it goes into a parabolic advance, it's generally just one relentless and straight move up, allowing for good positions to sit tight in. But those parabolic moves are short-lived (6 to 12 months) and then it takes a long time for another such environment to build.  \n\nI feel strongly that Silver will go through another such environment in the near future, but know that it's always a process.",
+  "text_sha256": "1dd8d5883fa238b3c1a3ba153971a45e20a6635f9221d5f502d27fc2decdb504",
+  "link": "quote",
+  "receipt": "sources/bobloukas/receipts/2106744910896312646.json",
+  "receipt_sha256": "493e87826968e43e9388a94722d40e2f2580d3addad27378e94ab203e9b47ebb",
+  "text_truncated": false,
+  "images": [
+   {
+    "file": "sources/bobloukas/media/2106744910896312646_0.png",
+    "sha256": "0c8dd846e8cff892c425a3087ab19980fc4801b9a64df7b5ce5b80394254454d",
+    "bytes": 159889,
+    "source": "https://pbs.twimg.com/media/HTym3e5XsAAlhvt",
+    "ocr": {
+     "text": "© Silver / U.S. Dollar - 1W- ICE El = 064.2600 H64.2600 L59.6910 C60.4470 ~3.8090 (-5.93%) LC ous.\n50.4470 50.5050\n- ’ uo\n— Cepafreeeees\n\nSMA © 64.2618 116.0000\nw ®\n\nee 108.0000\nsa @\n\n~ 102.0000\n\n58.0000\n\n54.0000\n\n$ 86.0000\n\n82.0000\n\n78.0000\n\n0 1 $ 74.0000\n\ni 70.0000\n\nA IL s6.0000\n\n62.0000\n\n[| | \" i.\n\n54.0000\n\n51.0000\n\ni 48.5000\n\n| po\n\n| * 44.5000\n\nn 42.5000\n\n-n J\n\n+1 u somo\n\n[fal] bs ®\n\nDS 87.8742 78.6607 +a |g 1000000\n\n50.0000\n\n60.0000\n\n40.0000\n\n20.0000\n\n17 - + <TH 0.0000\nMay Jun Jul Avg Sep Oct Nov. Dec 2026 Feb Mar Aor May Jun Jul Avg Sep Oct Nov. Dec 2027 Feb @®",
+     "sha256": "47e11c6fdda069f83aebff573309228f2a74a697a53e87d0bc569062c92465dd"
+    }
+   }
+  ]
+ },
+ "root_is_parent": true,
+ "walked_at": "2026-11-08T12:30:15Z",
+ "pin_sha256": "a78385216d49beba9ef9ad77dabdfaa87f765b40c024450bf26a6b6951bb11fd"
+}

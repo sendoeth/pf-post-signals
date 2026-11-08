@@ -1,0 +1,46 @@
+{
+ "schema": "quanty.context.v1",
+ "caller": {
+  "id": "1970742039722479782",
+  "url": "https://x.com/mert/status/1970742039722479782",
+  "author": "mert",
+  "posted_at": "2025-09-24T06:48:11Z",
+  "text": "I am irresponsibly long ZEC",
+  "text_sha256": "9bb868f8f98d933ee500da2488df622b4a9fa3cab51a8223fcfdac7bd201a858",
+  "link": null,
+  "receipt": "sources/mert/receipts/1970742039722479782.json",
+  "receipt_sha256": "6784432be29f42e94d6890850b964fa64a57f2113ae880b86018f5fbc11afa8a"
+ },
+ "status": "complete",
+ "reason": null,
+ "chain": [
+  {
+   "id": "1970741420677083372",
+   "author": "gainzy222",
+   "posted_at": "2025-09-24T06:45:43Z",
+   "link": "reply",
+   "text_sha256": "41ccf06adac0e146335a16baea5e9c0aad997723824a1a16356cdf66ff73d0ed"
+  }
+ ],
+ "limits": {
+  "max_depth": 4,
+  "max_images": 8,
+  "max_image_bytes": 8388608
+ },
+ "parent": {
+  "id": "1970741420677083372",
+  "url": "https://x.com/gainzy222/status/1970741420677083372",
+  "author": "gainzy222",
+  "posted_at": "2025-09-24T06:45:43Z",
+  "text": "the long zec short eth trade is real",
+  "text_sha256": "41ccf06adac0e146335a16baea5e9c0aad997723824a1a16356cdf66ff73d0ed",
+  "link": "reply",
+  "receipt": "sources/gainzy222/receipts/1970741420677083372.json",
+  "receipt_sha256": "21df21a7bdbbdd9cc9bd5e555bfaddae89b67e094f08816262f3f11890a34caa",
+  "text_truncated": false,
+  "images": []
+ },
+ "root_is_parent": true,
+ "walked_at": "2026-11-08T12:29:33Z",
+ "pin_sha256": "75c03cd3dd3f737bf2f5d1379839f3834979604d77dc845afc2d185a686fc873"
+}

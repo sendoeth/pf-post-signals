@@ -1,0 +1,57 @@
+{
+ "schema": "quanty.context.v1",
+ "caller": {
+  "id": "1998434220868247562",
+  "url": "https://x.com/BobLoukas/status/1998434220868247562",
+  "author": "BobLoukas",
+  "posted_at": "2025-12-09T16:47:02Z",
+  "text": "$60 on Silver, trade of the year, easily.  In the parabolic phase and will very likely top by end of year or Jan.  Could see $80.",
+  "text_sha256": "b2c7a7dc06744a9182b03b03f978d96ed3251bc53f66e366ee3a49e6f2d85622",
+  "link": null,
+  "receipt": "sources/bobloukas/receipts/1998434220868247562.json",
+  "receipt_sha256": "a4d30171a27b3610fff04ae2d35c72de80d50e1b8ad80b809dc8f14bc9006a62"
+ },
+ "status": "complete",
+ "reason": null,
+ "chain": [
+  {
+   "id": "1935014920002879983",
+   "author": "BobLoukas",
+   "posted_at": "2025-06-17T16:41:22Z",
+   "link": "quote",
+   "text_sha256": "023bf7a68421825e8c95fe1245eb4fb7fea321dd1409f217badaa1eb976f13c5"
+  }
+ ],
+ "limits": {
+  "max_depth": 4,
+  "max_images": 8,
+  "max_image_bytes": 8388608
+ },
+ "parent": {
+  "id": "1935014920002879983",
+  "url": "https://x.com/BobLoukas/status/1935014920002879983",
+  "author": "BobLoukas",
+  "posted_at": "2025-06-17T16:41:22Z",
+  "text": "I've posted about Silver a little too much this year.  :)  \n\nSilver is the classic disappointment asset, it always screws you.  It's like the boy who cries wolf.\n\nBut I think Silver is possibly already in a lockout up-only phase gearing up towards a parabolic move.",
+  "text_sha256": "023bf7a68421825e8c95fe1245eb4fb7fea321dd1409f217badaa1eb976f13c5",
+  "link": "quote",
+  "receipt": "sources/bobloukas/receipts/1935014920002879983.json",
+  "receipt_sha256": "aa801ff94c8c5f2a10c52ec16503afbb0015dcc298fc28f558dcc64694bd8132",
+  "text_truncated": false,
+  "images": [
+   {
+    "file": "sources/bobloukas/media/1935014920002879983_0.png",
+    "sha256": "548f96200baa49cbf787d639a387c3b388c64567b22839091ed3a142b8943b73",
+    "bytes": 358086,
+    "source": "https://pbs.twimg.com/media/GtqNnG9XEAAGu0C",
+    "ocr": {
+     "text": "QXxAGUSD (HW [8 af Indicators ~ 83 (0) Alert Replay © LU = 7&3 AZ TI Wi = = pe |®]\nSilver / U.S. Dollar - 1W-FX_IDC BE ® 036.2992 H37.2490 L36.0780 C37.2400 +0.9490 (+2.61%) n Usp ~\nSELL BUY 48.0000\nVol @&\nSMA 33.8580 46.0000 |\nEE)\nI) #40000\n~ 42.0000\n40.0000\n38.0000\n37.2400 J\n| 3d'5h\n. 36.0000 |\n| il 34.0000\nmEsssssssssssssssaEEEaan . f as i | 32.5000\nFR. fl I 30.5000\nI FLY FOIE) SN REP FP PU PU FY FURY UPR ASTRON LI LL wy 29.5000\nA I 28.5000\nCL | 1 7m |\nBE SSCL LITT LT TT TTT 10 0 1\nI TTT ;\n| f N 0 | I 24.5000 |\nhi | f 1 : 235000 |\n: i L. |\na Me i\nI ! Leet er 21.9000\n[ vo ye -\nJRTTt 20.3000\n| ER 19.5000\n: : eet 18.9000\n| ret 18.3000\nPRT 17.7000\n- + << > 17.1500\n17 @ 16.6300\nMar May Jul Sep Nov 2023 Mar May Jul Sep Nov 2024 Mar May Jul Sep Nov 2025 Mar May Jul Sep Nov 2026 ®",
+     "sha256": "f286d7edba8c4c90cb12622e58738876b0c8af577e15e0d2b6e60d48c544f5c8"
+    }
+   }
+  ]
+ },
+ "root_is_parent": true,
+ "walked_at": "2026-11-08T12:29:37Z",
+ "pin_sha256": "982987fda3254cab7ac2ac6ac8a976205b0e0fbd71ff998de5fdd3acbda13b87"
+}

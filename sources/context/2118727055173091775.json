@@ -1,0 +1,57 @@
+{
+ "schema": "quanty.context.v1",
+ "caller": {
+  "id": "2118727055173091775",
+  "url": "https://x.com/Okada_DeFi0x/status/2118727055173091775",
+  "author": "Okada_DeFi0x",
+  "posted_at": "2026-11-06T15:27:48Z",
+  "text": "wait over 1M $PROS in season rewards? will join for sure",
+  "text_sha256": "3bf4fc5cd04b67348ed1e413fa4e905b88aa72181e7e43c2b8a59cafab73bc9b",
+  "link": null,
+  "receipt": "sources/okada_defi0x/receipts/2118727055173091775.json",
+  "receipt_sha256": "e2e166cc4554c262433801a5834617ebf17f16600bf4a0644dceea9047ce9d92"
+ },
+ "status": "complete",
+ "reason": null,
+ "chain": [
+  {
+   "id": "2118726843331441130",
+   "author": "Tanaka_L2",
+   "posted_at": "2026-11-06T15:26:58Z",
+   "link": "reply",
+   "text_sha256": "481fcdcba896fd8a15d0f8ab8b62df3359ba74c2f533dc45ebc33e46eca09fdb"
+  }
+ ],
+ "limits": {
+  "max_depth": 4,
+  "max_images": 8,
+  "max_image_bytes": 8388608
+ },
+ "parent": {
+  "id": "2118726843331441130",
+  "url": "https://x.com/Tanaka_L2/status/2118726843331441130",
+  "author": "Tanaka_L2",
+  "posted_at": "2026-11-06T15:26:58Z",
+  "text": "just joined @ProsperTicker genesis season round 2 after spending some time looking into it.\n\ngenesis season round 2 (genesis unlock) goes live today, and i've already jumped in.\n\nProsper is an onchain strategy and trading market on @pharos_network, with p{VAULT}s serving as the",
+  "text_sha256": "481fcdcba896fd8a15d0f8ab8b62df3359ba74c2f533dc45ebc33e46eca09fdb",
+  "link": "reply",
+  "receipt": "sources/tanaka_l2/receipts/2118726843331441130.json",
+  "receipt_sha256": "3721b1bac72dd9704aa653c4966ffaab16c858820e9e0f1482a6acf8a8266eb9",
+  "text_truncated": true,
+  "images": [
+   {
+    "file": "sources/tanaka_l2/media/2118726843331441130_0.jpg",
+    "sha256": "ac035547fd171be83625cc284a073a51f6c29cf72fc023537cf57806da54678e",
+    "bytes": 217880,
+    "source": "https://pbs.twimg.com/media/HWc6n5takAAA0SP",
+    "ocr": {
+     "text": "7\n= Prosper ———— Ve. .\n° ° ° 7 bi\nhow to join prosper genesis season round 2 ~\n{ 1,000,000 PROS in season rewards ]\n7 Prosper Genesis Seaggn i - 01 - Get gas Voyager Badge\n\"1,000,000 PROS in Season Rewards 02 - Bridge to Pharos biden | © NOT EARNED\n\" Phase 2is LIVE! y 03 - Trade >= 10 PROS in p{VAULT} View ALL Tasks 7\nts ie ee ai\n01 | (52) = 03 )  foay\n) PE d\n& 5 2) 3 0 i >) ©\nget PROS bridge to pharos trade p{VAULT} complete min volume\nbuy or prepare PROS for gas move funds to pharos network trade eligible p{VAULT} markets trade >= 10 PROS to get started\n— ee, eee\ne core trading pool: 100,000 PROS\nreward ~ ® season rewards: 1,000,000+ PROS\nmechanics e qualified volume = inner-curve net buys x 5 + approved external volume x 1\n— (7 open launchpad and track tasks in the campaign dashboard _— Pi",
+     "sha256": "b8aa4dd2f0a7f581024ddef2a2a49b80be615d8eaea74d7158a2e509c9da50a3"
+    }
+   }
+  ]
+ },
+ "root_is_parent": true,
+ "walked_at": "2026-11-08T12:30:35Z",
+ "pin_sha256": "f5a71d5305290e8273bd274b8b7425d4e91d79491eb3657d37976760198d4578"
+}

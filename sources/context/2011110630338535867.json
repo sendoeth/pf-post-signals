@@ -1,0 +1,76 @@
+{
+ "schema": "quanty.context.v1",
+ "caller": {
+  "id": "2011110630338535867",
+  "url": "https://x.com/BobLoukas/status/2011110630338535867",
+  "author": "BobLoukas",
+  "posted_at": "2026-01-13T16:18:33Z",
+  "text": "Yes I'm long copper.",
+  "text_sha256": "a488f7311cbfd09b760bba6fa37f50adb91bbcfca78ae45a28b6e4973fd32755",
+  "link": null,
+  "receipt": "sources/bobloukas/receipts/2011110630338535867.json",
+  "receipt_sha256": "e62dcf1884ce96cc6105e1ce902ea5a305e48378560dbbf7f7eebcc1998f4514"
+ },
+ "status": "complete",
+ "reason": null,
+ "chain": [
+  {
+   "id": "2011110454026776937",
+   "author": "LinusCaldwell5",
+   "posted_at": "2026-01-13T16:17:51Z",
+   "link": "reply",
+   "text_sha256": "618e668f08b556480a0affc37ca413af0c1d57978b0a2cb179714034f811f164"
+  },
+  {
+   "id": "2011105173104705981",
+   "author": "BobLoukas",
+   "posted_at": "2026-01-13T15:56:52Z",
+   "link": "reply",
+   "text_sha256": "d7751059900d1401ce41d44e439c1822bb6205bd591fbf1b2ce7cfa75d83ba72"
+  }
+ ],
+ "limits": {
+  "max_depth": 4,
+  "max_images": 8,
+  "max_image_bytes": 8388608
+ },
+ "parent": {
+  "id": "2011110454026776937",
+  "url": "https://x.com/LinusCaldwell5/status/2011110454026776937",
+  "author": "LinusCaldwell5",
+  "posted_at": "2026-01-13T16:17:51Z",
+  "text": "You like copper bob?",
+  "text_sha256": "618e668f08b556480a0affc37ca413af0c1d57978b0a2cb179714034f811f164",
+  "link": "reply",
+  "receipt": "sources/linuscaldwell5/receipts/2011110454026776937.json",
+  "receipt_sha256": "e489f9743134b21f8f870663e6f766179911a0edf9dee84da45e28c9420caaff",
+  "text_truncated": false,
+  "images": []
+ },
+ "root": {
+  "id": "2011105173104705981",
+  "url": "https://x.com/BobLoukas/status/2011105173104705981",
+  "author": "BobLoukas",
+  "posted_at": "2026-01-13T15:56:52Z",
+  "text": "Formidable, but controlled appetite for gold remains.  Now targeting $5,800 for this (maybe) new cycle.\n\nJust got to keep holding on.",
+  "text_sha256": "d7751059900d1401ce41d44e439c1822bb6205bd591fbf1b2ce7cfa75d83ba72",
+  "link": "reply",
+  "receipt": "sources/bobloukas/receipts/2011105173104705981.json",
+  "receipt_sha256": "7ac0a65fcf844cee4714d36a0620d13fdb407a01d68ad109b2b875bc7e4b6565",
+  "text_truncated": false,
+  "images": [
+   {
+    "file": "sources/bobloukas/media/2011105173104705981_0.jpg",
+    "sha256": "6de7a688b73791f8eb5d3bfe9c3b8d10cda04443015df0f6f08d31c707566937",
+    "bytes": 393164,
+    "source": "https://pbs.twimg.com/media/G-jhYIuXwAAOQEv",
+    "ocr": {
+     "text": "Po ~ ° —o SR — —\nQxawusd  @v B® Ww (8 4] Indicators ~ 83 (3) Alert dq Replay © AIA Is IT==/0= O\n@ Gold Spot / U.S. Dollar - 1W- ICE EK ® 02,071.920 H2,146.792 L1,994.690 C2,004.250 -67.700 (-3.27%) v usp\n- |\noil BUY; | 5,800.000\nol @ |\nB [\n| 5,400.000\nBB 1,945.650 2,055.697 1,835.603 |\nSMA 1,974.102 : 5,200.000\nBD : 5,000.000\n~ |\n| 18 4,800.000\n; 4,615.867\n| i 3d 7h\n| PU “AIK 4,400.000\n| A 4,200,000\n: by Ja 4,000.000\n| 3,800.000\n: AT: i\n! k 4 3,600.000\n; i ] 3,400.000\nE\n. 3.250.000\n4 3,100.000\n| 20 0 2,950.000\n. L 4 2,830.000\n. 2,710.000\n: 14 153 2,590.000\n: ; ! 28 2,470.000\n: 2,370.000\n| 2,270.000\n9 112 j 17 2,170.000\n¥ 14 — 2,090.000\n|\naT\niy i= § LE : = 1,930.000\n| 0\n\" ! 1,860.000\narian elle: los RR fae Le of fy Soh oS, Sn SL 1,790.000\n16 31 1,720.000\n! f+] I>] 10 1,656.000\nZy | A RE CR I | SR SO .\n! @ 1,596.000\nMar May Jul Sep fl on 04 Dec 23 1 Mar May Jul Sep Nov 2025 Mar May Jul Sep Nov 2026 Mar May Jul Sep ®",
+     "sha256": "6211580a1de120973201c0c6bcc0a497807dec3b8efd7706d86d4f7d74a8f40a"
+    }
+   }
+  ]
+ },
+ "walked_at": "2026-11-08T12:29:42Z",
+ "pin_sha256": "7870aba946a6287f7fef836cdd40f37eada53e64e79568f4a21517acfd4646d1"
+}

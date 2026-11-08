@@ -1,0 +1,66 @@
+{
+ "schema": "quanty.context.v1",
+ "caller": {
+  "id": "2118167587637096933",
+  "url": "https://x.com/koolkrypto223/status/2118167587637096933",
+  "author": "koolkrypto223",
+  "posted_at": "2026-11-05T02:24:41Z",
+  "text": "$KNTQ is the token",
+  "text_sha256": "5ce1ce81401583c1429ec4bf70409048ae27383b9f1f8f74ebfe23e3d597f965",
+  "link": null,
+  "receipt": "sources/koolkrypto223/receipts/2118167587637096933.json",
+  "receipt_sha256": "12f5435d5267de2fd574b5cb59f245bb8150834eacb475f3d62e31a85b745c5a"
+ },
+ "status": "truncated",
+ "reason": "more than 4 parents: the root is not known",
+ "chain": [
+  {
+   "id": "2118166336119676990",
+   "author": "liquidated_hl",
+   "posted_at": "2026-11-05T02:19:42Z",
+   "link": "reply",
+   "text_sha256": "cc3221eec8687b0aaa6b86acd6503ccccd2438077361f590829d1d3dfcd771b9"
+  },
+  {
+   "id": "2118165186179715330",
+   "author": "CryptoTomYT",
+   "posted_at": "2026-11-05T02:15:08Z",
+   "link": "quote",
+   "text_sha256": "690268d2b8b2bc5d5472067fac704c3cab02d0b64ea5595162edf0c0f6a83902"
+  },
+  {
+   "id": "2118161975977087229",
+   "author": "0xdoraelong",
+   "posted_at": "2026-11-05T02:02:23Z",
+   "link": "quote",
+   "text_sha256": "5b12d3e2b0e277627b4ecbd9897423f5eb4e8a07fd9a20bc736a5cd504539f6c"
+  },
+  {
+   "id": "2118157220491706534",
+   "author": "CryptoTomYT",
+   "posted_at": "2026-11-05T01:43:29Z",
+   "link": "quote",
+   "text_sha256": "4672e4cf798350f606a77ca3ffbd0b874857732e29ccc12bd67ed624784ff448"
+  }
+ ],
+ "limits": {
+  "max_depth": 4,
+  "max_images": 8,
+  "max_image_bytes": 8388608
+ },
+ "parent": {
+  "id": "2118166336119676990",
+  "url": "https://x.com/liquidated_hl/status/2118166336119676990",
+  "author": "liquidated_hl",
+  "posted_at": "2026-11-05T02:19:42Z",
+  "text": "Having talked to Tommy, I wanted to long ascend, but than my dumbass forgot that THEY HAVE NO TOKEN \nASCEND IS FULLY KNTQ/HYPE ALIGNED",
+  "text_sha256": "cc3221eec8687b0aaa6b86acd6503ccccd2438077361f590829d1d3dfcd771b9",
+  "link": "reply",
+  "receipt": "sources/liquidated_hl/receipts/2118166336119676990.json",
+  "receipt_sha256": "4b6a0616e374d79642132462e5bcfbf8cec681069aded06cb3dae169f1f1a8a8",
+  "text_truncated": false,
+  "images": []
+ },
+ "walked_at": "2026-11-08T12:30:31Z",
+ "pin_sha256": "3ff5c31e41c3b21858578264d3179bf60198c8dcd44c763717c4a3dc0ea7c186"
+}

@@ -1,0 +1,46 @@
+{
+ "schema": "quanty.context.v1",
+ "caller": {
+  "id": "2115550350832996432",
+  "url": "https://x.com/goodalexander/status/2115550350832996432",
+  "author": "goodalexander",
+  "posted_at": "2026-10-28T21:04:43Z",
+  "text": "This helps! Still short too much aapl and started going after Cheesecake Factory today \n\nPray for my soul",
+  "text_sha256": "e232905feaa6597194a21b29963c8b81fad9122420fe9f342cf3b0d9e4a8c8bf",
+  "link": null,
+  "receipt": "sources/goodalexander/receipts/2115550350832996432.json",
+  "receipt_sha256": "e920aeec8652fed089a367ab30f17d02681f2dd53da9922263695af9d9c68f02"
+ },
+ "status": "complete",
+ "reason": null,
+ "chain": [
+  {
+   "id": "2115549738720223406",
+   "author": "Nsosnsisnsnskx",
+   "posted_at": "2026-10-28T21:02:17Z",
+   "link": "reply",
+   "text_sha256": "1b18ffbe2cecfef6d248cfeb6294814d272e84a050d3265ef2138988d2bb8887"
+  }
+ ],
+ "limits": {
+  "max_depth": 4,
+  "max_images": 8,
+  "max_image_bytes": 8388608
+ },
+ "parent": {
+  "id": "2115549738720223406",
+  "url": "https://x.com/Nsosnsisnsnskx/status/2115549738720223406",
+  "author": "Nsosnsisnsnskx",
+  "posted_at": "2026-10-28T21:02:17Z",
+  "text": "Wait people were actually bullish Google? Xd @goodalexander hope you held that Google short brother",
+  "text_sha256": "1b18ffbe2cecfef6d248cfeb6294814d272e84a050d3265ef2138988d2bb8887",
+  "link": "reply",
+  "receipt": "sources/nsosnsisnsnskx/receipts/2115549738720223406.json",
+  "receipt_sha256": "8a789dd3976f88698caf804f52b14c31f5c58865ce2596888281a77eaaa4aa6c",
+  "text_truncated": false,
+  "images": []
+ },
+ "root_is_parent": true,
+ "walked_at": "2026-11-08T12:30:17Z",
+ "pin_sha256": "8ff2e9d985775c9149fa5a94d0dad759938cac2106b5110e188800ae397e85a5"
+}

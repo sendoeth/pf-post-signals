@@ -1,0 +1,72 @@
+{
+ "schema": "quanty.context.v1",
+ "caller": {
+  "id": "2113602987008356795",
+  "url": "https://x.com/goodalexander/status/2113602987008356795",
+  "author": "goodalexander",
+  "posted_at": "2026-10-23T12:06:35Z",
+  "text": "I am short Gold, this is part of the reason. I think it's got a high bar to work trading extremely above production cost. It's always been a narrative driven asset. \n\nObviously nuclear fusion supply doesn't come on in the near term. But people allocating to gold are doing so on",
+  "text_sha256": "bfd147a3cb8b6de837539dd1109bd359644de120753ee0ff12df6becabefc8be",
+  "link": null,
+  "receipt": "sources/goodalexander/receipts/2113602987008356795.json",
+  "receipt_sha256": "595060bc4139fc30cd5481460884e56e12fb60b76babf86f8144e3a8ce6d1448"
+ },
+ "status": "complete",
+ "reason": null,
+ "chain": [
+  {
+   "id": "2113599439218635204",
+   "author": "7N8Nine",
+   "posted_at": "2026-10-23T11:52:29Z",
+   "link": "reply",
+   "text_sha256": "95f8564f75e848a2dd02a32d30c9f17fd1e995792e23482ef42bc55ada7771bf"
+  },
+  {
+   "id": "2113276618118770771",
+   "author": "goodalexander",
+   "posted_at": "2026-10-22T14:29:43Z",
+   "link": "quote",
+   "text_sha256": "3d7df6456a9eb3b8a096ac092cd1cbe4722ceb496b85ab3fdb3355cb50be7a5d"
+  },
+  {
+   "id": "2113001073019662481",
+   "author": "MarathonFusion",
+   "posted_at": "2026-10-21T20:14:48Z",
+   "link": "quote",
+   "text_sha256": "2592b9a693a9094e5c73bf0e384e2999c77b1a8c9f2a3e8f252229b5a12805e0"
+  }
+ ],
+ "limits": {
+  "max_depth": 4,
+  "max_images": 8,
+  "max_image_bytes": 8388608
+ },
+ "parent": {
+  "id": "2113599439218635204",
+  "url": "https://x.com/7N8Nine/status/2113599439218635204",
+  "author": "7N8Nine",
+  "posted_at": "2026-10-23T11:52:29Z",
+  "text": "it posts like this that remind me the difference between myself and most big accounts. My initial reaction is \"this guy must be a retard to think this is true\" but he isn't retarded, hes actually a smart guy he just has low levels of integrity. This is true for most big accounts,",
+  "text_sha256": "95f8564f75e848a2dd02a32d30c9f17fd1e995792e23482ef42bc55ada7771bf",
+  "link": "reply",
+  "receipt": "sources/7n8nine/receipts/2113599439218635204.json",
+  "receipt_sha256": "48ffa00bf5aa446f691b433e875ef2fc86689fbd211e642b6e840bd05e394c9c",
+  "text_truncated": true,
+  "images": []
+ },
+ "root": {
+  "id": "2113001073019662481",
+  "url": "https://x.com/MarathonFusion/status/2113001073019662481",
+  "author": "MarathonFusion",
+  "posted_at": "2026-10-21T20:14:48Z",
+  "text": "Last month, we demonstrated high-rate alchemy: turning mercury into real, stable gold, beating CERN’s record by a factor of 10.\n\nLast week, we enriched isotopes in the world’s most powerful plasma centrifuge, beating the Soviet record that stood for 40 years.\n\nNow, we’re building",
+  "text_sha256": "2592b9a693a9094e5c73bf0e384e2999c77b1a8c9f2a3e8f252229b5a12805e0",
+  "link": "quote",
+  "receipt": "sources/marathonfusion/receipts/2113001073019662481.json",
+  "receipt_sha256": "01c97d881cde093c960203e0ef0c4fba6e617228da454ccc382155f9847d567d",
+  "text_truncated": true,
+  "images": []
+ },
+ "walked_at": "2026-11-08T12:30:13Z",
+ "pin_sha256": "35a98377028019760d458d08d270dde105dc5992c7c00d6ae041671ac3829712"
+}

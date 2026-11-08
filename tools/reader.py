@@ -139,3 +139,40 @@ def read(text, aliases, multi=False, rules=None):
             if hit:
                 return {"side": hit[0], "words": hit[1], "method": "rule", "rule": rid}
     return {"side": s, "words": words, "method": method, "rule": None}
+
+
+def read_in_context(text, own, context, rules=None):
+    """Step 29: a reply or quote read with its parent. Sides come ONLY from the caller's own words.
+      own      the caller's own legs: [{"asset", "aliases", "multi"}] (what the post itself names)
+      context  parents.candidates(): assets the parent / root name in text or images, with provenance, no sides
+    -> [{"asset", "side", "method", "words", "rule", "provenance", "side_from"}]
+      an own asset         read exactly as without context (read()); context that names it is added as provenance
+      a context-only asset no side when the caller names assets of their own (their words are about those) or when
+                           the context names several assets (which one is meant is not known); with exactly one,
+                           the caller's own first-person position words (detect.detect_side on the caller's text)
+    Nothing from the parent or the root is ever passed to a side function."""
+    rules = kept_rules() if rules is None else rules
+    by_asset = {c["asset"]: c["sources"] for c in context if c.get("asset")}
+    out = []
+    own_assets = []
+    for leg in own:
+        r = read(text, leg["aliases"], multi=leg.get("multi", False), rules=rules)
+        own_assets.append(leg["asset"])
+        out.append(dict(r, asset=leg["asset"], provenance=["own words"] + sorted({s["source"] for s in by_asset.get(leg["asset"], [])}),
+                        side_from="own words" if r["side"] is not None else "none"))
+    extra = [a for a in sorted(by_asset) if a not in own_assets]
+    for asset in extra:
+        prov = sorted({s["source"] for s in by_asset[asset]})
+        if own_assets:
+            side, words, why = None, None, "none: the caller names other assets"
+        elif len(extra) > 1:
+            side, words, why = None, None, "none: the context names several assets"
+        else:
+            d = detect.detect_side(text)
+            side = d["side"] if d["status"] == "detected" else None
+            words = ", ".join((d["terms"][1] + d["terms"][-1])[:3]) if side is not None else None
+            why = f"own words: {words}" if side is not None else f"none: the caller's words state no position ({d['status']})"
+        out.append({"asset": asset, "side": side, "method": "context", "words": words, "rule": None,
+                    "provenance": prov, "side_from": why})
+    return out
+

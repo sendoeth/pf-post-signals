@@ -1,6 +1,6 @@
 {
  "schema": "quanty.agreement.v1",
- "built_at": "2026-11-07T14:47:03Z",
+ "built_at": "2026-11-08T12:24:37Z",
  "labels": 69,
  "labels_sha256": "c285e83a578bd54d5c2db451146ad0c02e36bc3c003eabfabfe20a8514285640",
  "by_source": {
@@ -1249,7 +1249,7 @@
   {
    "rule": "more_cashtag",
    "doc": "'More $NEST and $KNTQ': 'more' directly before a list of cashtags that contains this asset = add more = long.",
-   "code_sha256": "18ef061dbd15c1531cd8342855b9a38fcaf8c7548d831701615034106b8d1212",
+   "code_sha256": "e6b27670294728fb403d4edddbe12b3a939a595a2a20b982139d8dcad495cbb2",
    "before": {
     "n": 58,
     "agree": 26,
@@ -1275,7 +1275,7 @@
   {
    "rule": "positioned_side",
    "doc": "'Still leaning and positioned on the bull side' (for this asset's post): the author's stated positioning.",
-   "code_sha256": "82ba7a33e5203f352baaf14df65b3c9a20e548b1e40da09e8ddad4bc85053409",
+   "code_sha256": "320d672beecbb3057b3e8fc05ed6aea087d423e33d2c84c09673898393324cc5",
    "before": {
     "n": 58,
     "agree": 28,
@@ -1299,7 +1299,7 @@
   {
    "rule": "picking_up_quantity",
    "doc": "'Picking up 10BTC at $65,000': picking up a stated quantity of this asset = a buy.",
-   "code_sha256": "d39ad460d15532e78eb2bcf3445b46b2cd1eb79aef12215d1d829b1458b82d2e",
+   "code_sha256": "8355e707f456e47699e5abaf1fe0998a8536bc88b65771eeeb6657d8e5269944",
    "before": {
     "n": 58,
     "agree": 29,
@@ -1323,7 +1323,7 @@
   {
    "rule": "bullish_anywhere",
    "doc": "Broad: the word 'bullish' anywhere = long (expected to be rejected: shorts say 'before turning bullish').",
-   "code_sha256": "559f1caf1b251624fafd9c703fc772618db85147548f2786f8af67708afb86b8",
+   "code_sha256": "afc18f83cd0cb9fa301563a2441c497916b68c55c4d735edc14f9fb9547f3b5b",
    "before": {
     "n": 58,
     "agree": 30,
@@ -1352,7 +1352,7 @@
   {
    "rule": "targeting_price",
    "doc": "Broad: 'targeting $X' = long (a target can also be a downside one).",
-   "code_sha256": "2560bf13ffcf3baaa44675c0936545331225b816189fae2b65dde0d5fb43dbc8",
+   "code_sha256": "36c729a7337fe3829b25024c16229789af860caee4b35d11c77b5c4d855214cd",
    "before": {
     "n": 58,
     "agree": 30,

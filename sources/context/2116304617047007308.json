@@ -1,0 +1,57 @@
+{
+ "schema": "quanty.context.v1",
+ "caller": {
+  "id": "2116304617047007308",
+  "url": "https://x.com/goodalexander/status/2116304617047007308",
+  "author": "goodalexander",
+  "posted_at": "2026-10-30T23:01:54Z",
+  "text": "solid support here",
+  "text_sha256": "70e01a2ed94b487aa71cb73da464822bc5741f81aafb3f53e7cac2ffda8c7b9b",
+  "link": null,
+  "receipt": "sources/goodalexander/receipts/2116304617047007308.json",
+  "receipt_sha256": "b883b4f302806ae9bc0918f685d98e82f40792c4af079027f74dc924a1387b26"
+ },
+ "status": "complete",
+ "reason": null,
+ "chain": [
+  {
+   "id": "2116217175962776030",
+   "author": "based16z",
+   "posted_at": "2026-10-30T17:14:26Z",
+   "link": "reply",
+   "text_sha256": "96b6d94323a063ff6f5f89d69d7eae73f421d7623114c5e7b48d0234ace271c8"
+  }
+ ],
+ "limits": {
+  "max_depth": 4,
+  "max_images": 8,
+  "max_image_bytes": 8388608
+ },
+ "parent": {
+  "id": "2116217175962776030",
+  "url": "https://x.com/based16z/status/2116217175962776030",
+  "author": "based16z",
+  "posted_at": "2026-10-30T17:14:26Z",
+  "text": "https://t.co/S4AyJV1Ctb",
+  "text_sha256": "96b6d94323a063ff6f5f89d69d7eae73f421d7623114c5e7b48d0234ace271c8",
+  "link": "reply",
+  "receipt": "sources/based16z/receipts/2116217175962776030.json",
+  "receipt_sha256": "081dd54c6378d694247ce47e95f188f19b607ba5a48c62e11f9fc80de9cb2917",
+  "text_truncated": false,
+  "images": [
+   {
+    "file": "sources/based16z/media/2116217175962776030_0.jpg",
+    "sha256": "1490ecfc2f3e38aa4f4afd95392971b7619248e0da3ea690fa2500e3e46389ee",
+    "bytes": 105764,
+    "source": "https://pbs.twimg.com/media/HV5QTifWwAAPIbW",
+    "ocr": {
+     "text": "X Direxion Daily Semiconductor Bull 3X Shares - 1w - AMEX 400.0000\n360.0000\n302.0000 320.0000\nLd\n\n280.0000\n| 240.0000\n200.0000\n\n169.8500\n\nL 4\n| fl 160.0000\n| Ly | 120.0000\nihe \\ 86.2100 1+ [744500]\n“a ah R ily 74.1000\n= ol font hp 40.0000\nhl La Lamesa\nWH et\n4 0.0000\n6.8900\nA Otree.news 1 = L | = - ae\nles HENENES a = | | Le HI | i | of] [1] LIT [Lf]\nApr Jul Oct 2026 Apr Jul Oct",
+     "sha256": "e6a9c49e4d268c31d42c77b69b2d6e0c73936ff4b57846dae4b4d58c7ec0d035"
+    }
+   }
+  ]
+ },
+ "root_is_parent": true,
+ "walked_at": "2026-11-08T12:30:27Z",
+ "pin_sha256": "120483deceed425672193d57d9ca803ac41854b671a2f5e902f4be34a728ac0e"
+}

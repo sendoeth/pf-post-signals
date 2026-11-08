@@ -1,0 +1,57 @@
+{
+ "schema": "quanty.context.v1",
+ "caller": {
+  "id": "2102014028855820403",
+  "url": "https://x.com/BobLoukas/status/2102014028855820403",
+  "author": "BobLoukas",
+  "posted_at": "2026-09-21T12:36:12Z",
+  "text": "Really solid Bitcoin push here to break the intermediate trend and resume the secular bull trend.  \nAs is common in any new move, a nasty shakeout is likely, but I’d suspect it doesn’t come until later and from higher.",
+  "text_sha256": "95c61b38c07e38116ac2fbe36c011954f5fa657c71a99cd07cffd322b24af448",
+  "link": null,
+  "receipt": "sources/bobloukas/receipts/2102014028855820403.json",
+  "receipt_sha256": "2dc8ead57b64b2985af309f5890b9eac2f9518f5a215e0f3c84aa1ef076948ef"
+ },
+ "status": "complete",
+ "reason": null,
+ "chain": [
+  {
+   "id": "2100953898630443447",
+   "author": "BobLoukas",
+   "posted_at": "2026-09-18T14:23:37Z",
+   "link": "quote",
+   "text_sha256": "703be7365f713f55b11184ae72289eb8439b1e115965882ff34dae965cdc38b0"
+  }
+ ],
+ "limits": {
+  "max_depth": 4,
+  "max_images": 8,
+  "max_image_bytes": 8388608
+ },
+ "parent": {
+  "id": "2100953898630443447",
+  "url": "https://x.com/BobLoukas/status/2100953898630443447",
+  "author": "BobLoukas",
+  "posted_at": "2026-09-18T14:23:37Z",
+  "text": "Very good setup here for Bitcoin to smash through the May highs and confirm a new bull market.  \n\nMore importantly, the recent 4-week consolidation means any solid push through the highs is very likely a fresh new move that has legs (vs a trap) that might not look back until the $90's.  \n\nFailure to break through sets up a move back to the lows of the range.",
+  "text_sha256": "8860d27e6118cb904812f53978a32f31d3c9ced93ecd78e59b96a1fa85737124",
+  "link": "quote",
+  "receipt": "sources/bobloukas/receipts/2100953898630443447.json",
+  "receipt_sha256": "47ea1bf2dba4ab09fde0871855ee34b6d2017d59d89998792246094d177649d7",
+  "text_truncated": false,
+  "images": [
+   {
+    "file": "sources/bobloukas/media/2100953898630443447_0.png",
+    "sha256": "43ebaf41d0882fa5963706e39c921ca6e19194ca6d408779073e18d91d3c26db",
+    "bytes": 147006,
+    "source": "https://pbs.twimg.com/media/HSgV9T2WQAAqgDb",
+    "ocr": {
+     "text": "© Bitcoin / U.S. Dollar - 1W - Bitstamp E ® 098,389 H102,760 L91,215 C94,497 -3,830 (-3.90%) @ uv\nEN Buy | 26\nwl 3 130,000\nSMA © 95,269 | CF FE [FP (FI\n= BD | 1000\nee l 1200\nsn ® | '\n~ : 116,000\n15 's Ad |\n3 | | rom |\n| 108,000\n| t+ 0\n8 |\n0 A FE SU FU BU DR RO 00000\nl + 50000\nAg! ud -\nHE |\nlet sso\n[. | 24100\n| ry f | 000\n| + zw 75,000\nPs \" 72,000\nTh JUN | 31W\nE— : £9,000\nTr — d ron\ny 65,000\n| if ono\n| | BF 61,000\n| 36W 57.000\ni 57,000\n| 55,000\n| 5225\n1 51,650\n+ | wo\n32W i\n| - + <> 48,550\nkv & a1\nre sen LENE or 06 Jon 25 TS for May un Wo Am se Oct Nov Dec 02 Feb Mar for May un Fr So Oct Nov Dec 2027 Feb Mar or ®",
+     "sha256": "ecdd5add9cb24a8cfb6cdaff5e39a364b05b50b54afa801f783daac4265ed4cf"
+    }
+   }
+  ]
+ },
+ "root_is_parent": true,
+ "walked_at": "2026-11-08T12:29:55Z",
+ "pin_sha256": "ba6597d3cf6fb53ce91fa37e5f02202b3fd6ec10d9c71ac01ebcd9b2b64e9312"
+}

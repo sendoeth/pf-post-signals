@@ -1,0 +1,245 @@
+{
+ "schema": "quanty.potential_callers.v1",
+ "note": "accounts tracked callers replied to or quoted; never scored (rate.py reads records only) until the owner promotes one and adds a call of theirs",
+ "count": 14,
+ "accounts": [
+  {
+   "handle": "0xLcrgs",
+   "status": "potential (unscored, pending owner promotion)",
+   "interactions": [
+    {
+     "caller": "koolkrypto223",
+     "caller_post": "2118181656398090718",
+     "caller_url": "https://x.com/koolkrypto223/status/2118181656398090718",
+     "role": "parent",
+     "link": "reply",
+     "post": "2118071502960492654",
+     "post_url": "https://x.com/0xLcrgs/status/2118071502960492654",
+     "posted_at": "2026-11-04T20:02:52Z",
+     "receipt": "sources/0xlcrgs/receipts/2118071502960492654.json"
+    }
+   ]
+  },
+  {
+   "handle": "0xMiaWallace",
+   "status": "potential (unscored, pending owner promotion)",
+   "interactions": [
+    {
+     "caller": "goodalexander",
+     "caller_post": "2116203980111933911",
+     "caller_url": "https://x.com/goodalexander/status/2116203980111933911",
+     "role": "parent",
+     "link": "reply",
+     "post": "2116196021751750688",
+     "post_url": "https://x.com/0xMiaWallace/status/2116196021751750688",
+     "posted_at": "2026-10-30T15:50:23Z",
+     "receipt": "sources/0xmiawallace/receipts/2116196021751750688.json"
+    }
+   ]
+  },
+  {
+   "handle": "7N8Nine",
+   "status": "potential (unscored, pending owner promotion)",
+   "interactions": [
+    {
+     "caller": "goodalexander",
+     "caller_post": "2113602987008356795",
+     "caller_url": "https://x.com/goodalexander/status/2113602987008356795",
+     "role": "parent",
+     "link": "reply",
+     "post": "2113599439218635204",
+     "post_url": "https://x.com/7N8Nine/status/2113599439218635204",
+     "posted_at": "2026-10-23T11:52:29Z",
+     "receipt": "sources/7n8nine/receipts/2113599439218635204.json"
+    }
+   ]
+  },
+  {
+   "handle": "aBlock0",
+   "status": "potential (unscored, pending owner promotion)",
+   "interactions": [
+    {
+     "caller": "BobLoukas",
+     "caller_post": "2102024327075877097",
+     "caller_url": "https://x.com/BobLoukas/status/2102024327075877097",
+     "role": "parent",
+     "link": "reply",
+     "post": "2102021656537649217",
+     "post_url": "https://x.com/aBlock0/status/2102021656537649217",
+     "posted_at": "2026-09-21T13:06:31Z",
+     "receipt": "sources/ablock0/receipts/2102021656537649217.json"
+    }
+   ]
+  },
+  {
+   "handle": "based16z",
+   "status": "potential (unscored, pending owner promotion)",
+   "interactions": [
+    {
+     "caller": "goodalexander",
+     "caller_post": "2116304617047007308",
+     "caller_url": "https://x.com/goodalexander/status/2116304617047007308",
+     "role": "parent",
+     "link": "reply",
+     "post": "2116217175962776030",
+     "post_url": "https://x.com/based16z/status/2116217175962776030",
+     "posted_at": "2026-10-30T17:14:26Z",
+     "receipt": "sources/based16z/receipts/2116217175962776030.json"
+    }
+   ]
+  },
+  {
+   "handle": "bidorder",
+   "status": "potential (unscored, pending owner promotion)",
+   "interactions": [
+    {
+     "caller": "goodalexander",
+     "caller_post": "2113279842636419392",
+     "caller_url": "https://x.com/goodalexander/status/2113279842636419392",
+     "role": "parent",
+     "link": "reply",
+     "post": "2113279292188786733",
+     "post_url": "https://x.com/bidorder/status/2113279292188786733",
+     "posted_at": "2026-10-22T14:40:20Z",
+     "receipt": "sources/bidorder/receipts/2113279292188786733.json"
+    }
+   ]
+  },
+  {
+   "handle": "gainzy222",
+   "status": "potential (unscored, pending owner promotion)",
+   "interactions": [
+    {
+     "caller": "mert",
+     "caller_post": "1970742039722479782",
+     "caller_url": "https://x.com/mert/status/1970742039722479782",
+     "role": "parent",
+     "link": "reply",
+     "post": "1970741420677083372",
+     "post_url": "https://x.com/gainzy222/status/1970741420677083372",
+     "posted_at": "2025-09-24T06:45:43Z",
+     "receipt": "sources/gainzy222/receipts/1970741420677083372.json"
+    }
+   ]
+  },
+  {
+   "handle": "Harmand66836704",
+   "status": "potential (unscored, pending owner promotion)",
+   "interactions": [
+    {
+     "caller": "BobLoukas",
+     "caller_post": "2104977267109896477",
+     "caller_url": "https://x.com/BobLoukas/status/2104977267109896477",
+     "role": "parent",
+     "link": "reply",
+     "post": "2104976532552999012",
+     "post_url": "https://x.com/Harmand66836704/status/2104976532552999012",
+     "posted_at": "2026-09-29T16:48:08Z",
+     "receipt": "sources/harmand66836704/receipts/2104976532552999012.json"
+    }
+   ]
+  },
+  {
+   "handle": "IamNobody_1234",
+   "status": "potential (unscored, pending owner promotion)",
+   "interactions": [
+    {
+     "caller": "BobLoukas",
+     "caller_post": "2106750657877434407",
+     "caller_url": "https://x.com/BobLoukas/status/2106750657877434407",
+     "role": "parent",
+     "link": "reply",
+     "post": "2106748463711182984",
+     "post_url": "https://x.com/IamNobody_1234/status/2106748463711182984",
+     "posted_at": "2026-10-04T14:09:09Z",
+     "receipt": "sources/iamnobody_1234/receipts/2106748463711182984.json"
+    }
+   ]
+  },
+  {
+   "handle": "LinusCaldwell5",
+   "status": "potential (unscored, pending owner promotion)",
+   "interactions": [
+    {
+     "caller": "BobLoukas",
+     "caller_post": "2011110630338535867",
+     "caller_url": "https://x.com/BobLoukas/status/2011110630338535867",
+     "role": "parent",
+     "link": "reply",
+     "post": "2011110454026776937",
+     "post_url": "https://x.com/LinusCaldwell5/status/2011110454026776937",
+     "posted_at": "2026-01-13T16:17:51Z",
+     "receipt": "sources/linuscaldwell5/receipts/2011110454026776937.json"
+    }
+   ]
+  },
+  {
+   "handle": "liquidated_hl",
+   "status": "potential (unscored, pending owner promotion)",
+   "interactions": [
+    {
+     "caller": "koolkrypto223",
+     "caller_post": "2118167587637096933",
+     "caller_url": "https://x.com/koolkrypto223/status/2118167587637096933",
+     "role": "parent",
+     "link": "reply",
+     "post": "2118166336119676990",
+     "post_url": "https://x.com/liquidated_hl/status/2118166336119676990",
+     "posted_at": "2026-11-05T02:19:42Z",
+     "receipt": "sources/liquidated_hl/receipts/2118166336119676990.json"
+    }
+   ]
+  },
+  {
+   "handle": "Nsosnsisnsnskx",
+   "status": "potential (unscored, pending owner promotion)",
+   "interactions": [
+    {
+     "caller": "goodalexander",
+     "caller_post": "2115550350832996432",
+     "caller_url": "https://x.com/goodalexander/status/2115550350832996432",
+     "role": "parent",
+     "link": "reply",
+     "post": "2115549738720223406",
+     "post_url": "https://x.com/Nsosnsisnsnskx/status/2115549738720223406",
+     "posted_at": "2026-10-28T21:02:17Z",
+     "receipt": "sources/nsosnsisnsnskx/receipts/2115549738720223406.json"
+    }
+   ]
+  },
+  {
+   "handle": "Tanaka_L2",
+   "status": "potential (unscored, pending owner promotion)",
+   "interactions": [
+    {
+     "caller": "Okada_DeFi0x",
+     "caller_post": "2118727055173091775",
+     "caller_url": "https://x.com/Okada_DeFi0x/status/2118727055173091775",
+     "role": "parent",
+     "link": "reply",
+     "post": "2118726843331441130",
+     "post_url": "https://x.com/Tanaka_L2/status/2118726843331441130",
+     "posted_at": "2026-11-06T15:26:58Z",
+     "receipt": "sources/tanaka_l2/receipts/2118726843331441130.json"
+    }
+   ]
+  },
+  {
+   "handle": "vt_georgi",
+   "status": "potential (unscored, pending owner promotion)",
+   "interactions": [
+    {
+     "caller": "BobLoukas",
+     "caller_post": "1985733515221078204",
+     "caller_url": "https://x.com/BobLoukas/status/1985733515221078204",
+     "role": "parent",
+     "link": "reply",
+     "post": "1985730652483043573",
+     "post_url": "https://x.com/vt_georgi/status/1985730652483043573",
+     "posted_at": "2025-11-04T15:27:35Z",
+     "receipt": "sources/vt_georgi/receipts/1985730652483043573.json"
+    }
+   ]
+  }
+ ]
+}

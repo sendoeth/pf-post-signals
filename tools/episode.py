@@ -224,6 +224,7 @@ def head(title, desc, url):
       <a href="coins.html">Coins</a>
       <a href="agreement.html">Agreement</a>
       <a href="regimes.html">Regimes</a>
+      <a href="context.html">Context</a>
     </nav>
   </header>
 """

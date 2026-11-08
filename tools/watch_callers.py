@@ -6,6 +6,7 @@ the normal /add preview.
 
 usage: python3 tools/watch_callers.py cycle              (one cycle; the systemd user timer runs this)
        python3 tools/watch_callers.py context <post id>  (the post and its parents, from the public embed; no search)
+       python3 tools/watch_callers.py preview <post id>  (step 29: the card row for one post, with its stored parent context)
        python3 tools/watch_callers.py replay <url> ...   (classify posts fetched from the public embed)
        python3 tools/watch_callers.py report [--hours N]
        python3 tools/watch_callers.py export <dir>
@@ -44,6 +45,7 @@ sys.path[:0] = [HERE, TOOLS]
 import detect   # noqa: E402
 import tickers  # noqa: E402
 import reader  # noqa: E402
+import parents  # noqa: E402
 
 SCHEMA = "quanty.watch.v1"
 DIR = os.environ.get("QUANTY_WATCH_DIR", os.path.expanduser("~/.quanty-watch"))
@@ -54,6 +56,7 @@ WEAK_SHARE = 0.5             # an answer under half the usual size (median of re
 CANARY_MIN_SHARE = 0.5       # step 24
 SEEN_DAYS = 10
 CARD_HOURS = 72              # a gap post older than this is still queued, marked late
+CONTEXT_PER_TAKE = 6         # step 29: parent chains walked per batch of new posts (each bounded by tools/parents.py)
 
 
 class Stop(Exception):
@@ -95,7 +98,35 @@ def callers(root=HERE):
         u = (r.get("post") or {}).get("url") or ""
         if r.get("schema") == "post_price.v1" and u.startswith(("https://x.com/", "https://twitter.com/")):
             out.add(r["post"]["author"])
+    have = {h.lower() for h in out}
+    out |= {h for h in parents.promoted_list(root) if h.lower() not in have}   # step 29: watched, unscored until a call is added
     return sorted(out, key=str.lower)
+
+
+SIDE_NAME = {1: "long", -1: "short", None: "none"}
+
+
+def with_context(text, c, doc, cands):
+    """Step 29: the classified post plus its parent context. The caller's own legs keep their side (provenance is
+    added); assets only the context names become legs flagged for review, with a side only from the caller's own
+    words (reader.read_in_context), and only when the caller names no asset of their own (else they are listed on
+    the card's context line, never as a leg to add). -> (classification, card context summary)."""
+    own = [{"asset": l["asset"], "aliases": [l["asset"]] + [v.lstrip("$") for v in l["via"]], "multi": True} for l in c["legs"] if l["asset"]]
+    reads = {r["asset"]: r for r in reader.read_in_context(text, own, cands)}
+    legs = [dict(l, provenance=(reads.get(l["asset"]) or {}).get("provenance", ["own words"])) for l in c["legs"]]
+    for a, r in reads.items():
+        if r["method"] == "context" and not own:     # the caller names assets: context ones stay on the context line
+            legs.append({"asset": a, "via": [], "status": "ok", "flag": "asset from the post it answers: check it",
+                         "side": SIDE_NAME[r["side"]], "side_words": r["words"], "side_reason": r["side_from"], "provenance": r["provenance"]})
+    c = dict(c, legs=legs, candidate=c["kind"] != "repost" and bool(legs))
+    show = lambda v: {"author": v["author"], "id": v["id"], "url": v["url"], "posted_at": v["posted_at"],
+                      "text": " ".join(v["text"].split())[:280], "images": len(v.get("images") or [])}
+    usable = dict(parents.usable_roles(doc))
+    ctx = {"status": doc["status"], "reason": doc.get("reason"),
+           "parent": show(doc["parent"]) if doc.get("parent") else None,
+           "root": show(usable["root"]) if "root" in usable else None,
+           "candidates": [{"asset": x["asset"], "sources": sorted({s["source"] for s in x["sources"]})} for x in cands if x.get("asset")]}
+    return c, ctx
 
 
 def recorded_ids(root=HERE):
@@ -130,8 +161,9 @@ def classify(p, reg=None, amap=None, words=None):
 
 
 class Watch:
-    def __init__(self, root=HERE, wdir=DIR, search=None, clock=time.time, budget=BUDGET, handles=None):
+    def __init__(self, root=HERE, wdir=DIR, search=None, clock=time.time, budget=BUDGET, handles=None, context=None):
         self.root, self.dir, self.clock, self.budget = root, wdir, clock, budget
+        self.context_fn = context or self.walk_context
         self.search_fn = search or harness_search
         os.makedirs(self.dir, mode=0o700, exist_ok=True)
         self.p = lambda name: os.path.join(self.dir, name)
@@ -216,6 +248,11 @@ class Watch:
                     "usual": usual, "ok": ok}
 
     # ---- posts ---------------------------------------------------------------------------------
+    def walk_context(self, pid):
+        """-> (stored context, candidates); a failure is an unavailable context (no candidates), never an error."""
+        doc = parents.build(pid, root=self.root)
+        return doc, parents.candidates(doc, root=self.root)
+
     def take(self, posts, cycle, recorded, baseline=False):
         """New posts -> candidates (appended first) -> seen. Returns counts."""
         known = {c["id"] for c in self.rows("candidates.jsonl")}
@@ -230,6 +267,13 @@ class Watch:
             if baseline:
                 continue
             c = classify(p, reg=reg)
+            ctx = None
+            if c["kind"] in ("reply", "quote") and p["id"] not in recorded and p["id"] not in known and n.setdefault("contexts", 0) < CONTEXT_PER_TAKE:
+                n["contexts"] += 1
+                try:
+                    c, ctx = with_context(p.get("text") or "", c, *self.context_fn(p["id"]))
+                except Exception as e:  # noqa: BLE001 - fail closed: the card says the context could not be read
+                    ctx = {"status": "unavailable", "reason": f"{type(e).__name__}: {e}"[:300], "parent": None, "root": None, "candidates": []}
             if c["kind"] == "repost":
                 n["reposts"] += 1
             elif p["id"] in recorded:
@@ -240,7 +284,7 @@ class Watch:
                 found = self.clock()
                 self.append("candidates.jsonl", {
                     "schema": SCHEMA, "id": p["id"], "url": f"https://x.com/{p['authorHandle']}/status/{p['id']}", "handle": p["authorHandle"],
-                    "posted_at": p["postedAt"].replace(".000Z", "Z"), "text": p.get("text") or "", **{k: c[k] for k in ("kind", "parent", "legs")},
+                    "posted_at": p["postedAt"].replace(".000Z", "Z"), "text": p.get("text") or "", **{k: c[k] for k in ("kind", "parent", "legs")}, "context": ctx,
                     "found_at": now_iso(found), "found_after_s": round(found - parse(p["postedAt"])), "cycle": cycle,
                     "late": found - parse(p["postedAt"]) > CARD_HOURS * 3600, "run": p.get("_run"), "manifest_sha256": p.get("_sha")})
                 known.add(p["id"])
@@ -417,6 +461,26 @@ def embed_post(pid, fetch=None):
     return p
 
 
+def preview(pid, root=HERE, fetch=None, context_fn=None):
+    """Step 29: the card row the watcher would queue for one post (bot /context), with its parent context. Read-only
+    for records: it stores the post's receipts and context only (sources/), never a record."""
+    p = embed_post(pid, fetch)
+    c = classify(p, reg=tickers.load_registry())
+    ctx = None
+    if c["kind"] in ("reply", "quote"):
+        try:
+            if context_fn:
+                c, ctx = with_context(p.get("text") or "", c, *context_fn(pid))
+            else:
+                doc = parents.build(pid, root=root)
+                c, ctx = with_context(p.get("text") or "", c, doc, parents.candidates(doc, root=root))
+        except Exception as e:  # noqa: BLE001 - fail closed, said on the card
+            ctx = {"status": "unavailable", "reason": f"{type(e).__name__}: {e}"[:300], "parent": None, "root": None, "candidates": []}
+    return {"schema": SCHEMA, "id": p["id"], "url": f"https://x.com/{p['authorHandle']}/status/{p['id']}", "handle": p["authorHandle"],
+            "posted_at": p["postedAt"].replace(".000Z", "Z"), "text": p.get("text") or "", "kind": c["kind"], "parent": c["parent"],
+            "legs": c["legs"], "context": ctx, "preview": True}
+
+
 def context(pid, fetch=None, depth=3):
     chain, cur = [], pid
     while cur and len(chain) <= depth:
@@ -455,7 +519,7 @@ def report(wdir=DIR, cards=CARDS, hours=None):
 
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
-    ap.add_argument("cmd", choices=["cycle", "context", "replay", "report", "export"])
+    ap.add_argument("cmd", choices=["cycle", "context", "preview", "replay", "report", "export"])
     ap.add_argument("args", nargs="*")
     a = ap.parse_args(argv)
     if a.cmd == "cycle":
@@ -466,6 +530,9 @@ def main(argv=None):
         for i, p in enumerate(context(a.args[0])):
             print(("  " * i) + f"{'↳ ' if i else ''}@{p['authorHandle']} {p['postedAt']} ({p['kind']}): {' '.join(p['text'].split())[:400]}\n"
                   + ("  " * i) + f"  https://x.com/{p['authorHandle']}/status/{p['id']}")
+        return 0
+    if a.cmd == "preview":
+        print(json.dumps(preview(a.args[0]), ensure_ascii=False))
         return 0
     if a.cmd == "replay":
         import resolve

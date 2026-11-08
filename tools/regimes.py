@@ -502,6 +502,7 @@ def page(d, labels):
       <a href="coins.html">Coins</a>
       <a href="agreement.html">Agreement</a>
       <a href="regimes.html" aria-current="page">Regimes</a>
+      <a href="context.html">Context</a>
     </nav>
   </header>
   <section class="ep-head panel" data-field="regime-now">

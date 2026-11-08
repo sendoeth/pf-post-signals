@@ -1,0 +1,90 @@
+{
+ "schema": "quanty.context.v1",
+ "caller": {
+  "id": "2102024327075877097",
+  "url": "https://x.com/BobLoukas/status/2102024327075877097",
+  "author": "BobLoukas",
+  "posted_at": "2026-09-21T13:17:07Z",
+  "text": "You can't trade opinions and tweets mate.  Positions matter, and we've scaled in longs from the very bottom.",
+  "text_sha256": "fde8a3f6e563ce14d47e4b179c05d5a4cebb844e40148a617e548d8aa3eb9499",
+  "link": null,
+  "receipt": "sources/bobloukas/receipts/2102024327075877097.json",
+  "receipt_sha256": "0e371561350026fffa6fb67dbba2ea2367b46562206d1b291e46571b46207dac"
+ },
+ "status": "complete",
+ "reason": null,
+ "chain": [
+  {
+   "id": "2102021656537649217",
+   "author": "aBlock0",
+   "posted_at": "2026-09-21T13:06:31Z",
+   "link": "reply",
+   "text_sha256": "3ec25c74b5640d26e5373e5e2ddd32584e19c112dd4f613be73ded5637ec1dd8"
+  },
+  {
+   "id": "2102016029119357424",
+   "author": "Innerdevcrypto",
+   "posted_at": "2026-09-21T12:44:09Z",
+   "link": "reply",
+   "text_sha256": "5b5058642e2446d611754f2a354cc3d94c0bc130a170fdadd3e5d07205ed09df"
+  },
+  {
+   "id": "2102014028855820403",
+   "author": "BobLoukas",
+   "posted_at": "2026-09-21T12:36:12Z",
+   "link": "reply",
+   "text_sha256": "95c61b38c07e38116ac2fbe36c011954f5fa657c71a99cd07cffd322b24af448"
+  },
+  {
+   "id": "2100953898630443447",
+   "author": "BobLoukas",
+   "posted_at": "2026-09-18T14:23:37Z",
+   "link": "quote",
+   "text_sha256": "703be7365f713f55b11184ae72289eb8439b1e115965882ff34dae965cdc38b0"
+  }
+ ],
+ "limits": {
+  "max_depth": 4,
+  "max_images": 8,
+  "max_image_bytes": 8388608
+ },
+ "parent": {
+  "id": "2102021656537649217",
+  "url": "https://x.com/aBlock0/status/2102021656537649217",
+  "author": "aBlock0",
+  "posted_at": "2026-09-21T13:06:31Z",
+  "text": "is it? Last few months countetrading him was the right move.",
+  "text_sha256": "3ec25c74b5640d26e5373e5e2ddd32584e19c112dd4f613be73ded5637ec1dd8",
+  "link": "reply",
+  "receipt": "sources/ablock0/receipts/2102021656537649217.json",
+  "receipt_sha256": "65ce3ae9cbb3a579f7e25dab8dbb338c97db83570e09788b1237426bda5c8138",
+  "text_truncated": false,
+  "images": []
+ },
+ "root": {
+  "id": "2100953898630443447",
+  "url": "https://x.com/BobLoukas/status/2100953898630443447",
+  "author": "BobLoukas",
+  "posted_at": "2026-09-18T14:23:37Z",
+  "text": "Very good setup here for Bitcoin to smash through the May highs and confirm a new bull market.  \n\nMore importantly, the recent 4-week consolidation means any solid push through the highs is very likely a fresh new move that has legs (vs a trap) that might not look back until the $90's.  \n\nFailure to break through sets up a move back to the lows of the range.",
+  "text_sha256": "8860d27e6118cb904812f53978a32f31d3c9ced93ecd78e59b96a1fa85737124",
+  "link": "quote",
+  "receipt": "sources/bobloukas/receipts/2100953898630443447.json",
+  "receipt_sha256": "47ea1bf2dba4ab09fde0871855ee34b6d2017d59d89998792246094d177649d7",
+  "text_truncated": false,
+  "images": [
+   {
+    "file": "sources/bobloukas/media/2100953898630443447_0.png",
+    "sha256": "43ebaf41d0882fa5963706e39c921ca6e19194ca6d408779073e18d91d3c26db",
+    "bytes": 147006,
+    "source": "https://pbs.twimg.com/media/HSgV9T2WQAAqgDb",
+    "ocr": {
+     "text": "© Bitcoin / U.S. Dollar - 1W - Bitstamp E ® 098,389 H102,760 L91,215 C94,497 -3,830 (-3.90%) @ uv\nEN Buy | 26\nwl 3 130,000\nSMA © 95,269 | CF FE [FP (FI\n= BD | 1000\nee l 1200\nsn ® | '\n~ : 116,000\n15 's Ad |\n3 | | rom |\n| 108,000\n| t+ 0\n8 |\n0 A FE SU FU BU DR RO 00000\nl + 50000\nAg! ud -\nHE |\nlet sso\n[. | 24100\n| ry f | 000\n| + zw 75,000\nPs \" 72,000\nTh JUN | 31W\nE— : £9,000\nTr — d ron\ny 65,000\n| if ono\n| | BF 61,000\n| 36W 57.000\ni 57,000\n| 55,000\n| 5225\n1 51,650\n+ | wo\n32W i\n| - + <> 48,550\nkv & a1\nre sen LENE or 06 Jon 25 TS for May un Wo Am se Oct Nov Dec 02 Feb Mar for May un Fr So Oct Nov Dec 2027 Feb Mar or ®",
+     "sha256": "ecdd5add9cb24a8cfb6cdaff5e39a364b05b50b54afa801f783daac4265ed4cf"
+    }
+   }
+  ]
+ },
+ "walked_at": "2026-11-08T12:29:58Z",
+ "pin_sha256": "d80869572cfbd27d15a5770e5c63f2442fff33417a73d20fba157f156d5c7c0b"
+}

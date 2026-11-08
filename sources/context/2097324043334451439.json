@@ -1,0 +1,57 @@
+{
+ "schema": "quanty.context.v1",
+ "caller": {
+  "id": "2097324043334451439",
+  "url": "https://x.com/BobLoukas/status/2097324043334451439",
+  "author": "BobLoukas",
+  "posted_at": "2026-09-08T13:59:52Z",
+  "text": "$COPX  after an 8 month pause is looking to break out again.  \n\nStill deserves a small allocation in long term accounts",
+  "text_sha256": "0f7678ffa8cb8d8b47a052039ea04d77bb5306f7839e5a4e2e514edb48d0b5d3",
+  "link": null,
+  "receipt": "sources/bobloukas/receipts/2097324043334451439.json",
+  "receipt_sha256": "e55c047918506b8861d388289b6baf5756fb8212988404bb4e5ba7e59b549d44"
+ },
+ "status": "complete",
+ "reason": null,
+ "chain": [
+  {
+   "id": "1535324793175678976",
+   "author": "BobLoukas",
+   "posted_at": "2022-06-10T18:15:30Z",
+   "link": "quote",
+   "text_sha256": "50fe81dc4c0d6ded568f8e696ef32b98d729d67b2b6f5d11792bb6ac174a085d"
+  }
+ ],
+ "limits": {
+  "max_depth": 4,
+  "max_images": 8,
+  "max_image_bytes": 8388608
+ },
+ "parent": {
+  "id": "1535324793175678976",
+  "url": "https://x.com/BobLoukas/status/1535324793175678976",
+  "author": "BobLoukas",
+  "posted_at": "2022-06-10T18:15:30Z",
+  "text": "Some smart people talk about a massive copper shortage and not enough supply in development. \n\nThen this multi-decade chart supports the view we could see >$10 price.\n\nWorth a small allocation to Copper miners for the long term folks.  Cash some of the energy positions.",
+  "text_sha256": "50fe81dc4c0d6ded568f8e696ef32b98d729d67b2b6f5d11792bb6ac174a085d",
+  "link": "quote",
+  "receipt": "sources/bobloukas/receipts/1535324793175678976.json",
+  "receipt_sha256": "b28b4ed4a9cdbf905d69fb93469801e5cc96e70ef10696fe1007f3ff6e25cd19",
+  "text_truncated": false,
+  "images": [
+   {
+    "file": "sources/bobloukas/media/1535324793175678976_0.png",
+    "sha256": "0ea1482e9848ee0a7e966f5b23f5b3e47e3cc4a529045e02b239a1032670b44d",
+    "bytes": 78913,
+    "source": "https://pbs.twimg.com/media/FU6Q4MeX0AAn5qv",
+    "ocr": {
+     "text": "Copper Futures - 1M COMEX TradingView ® D 03.3500 H3.4300 L2.9750 C3.1955 0.1500 (-4.48%) ® hs M\n\ncoon ; ann\n\nVol 185.842K : 5.0000\nMa 3.1869 :\n\nx) 7.5000\n\nB 6.5000\n\ni fhe\n\nTY / |\n\nPi Ig i Lal n i.\n\n! h m i i h (; Th ot 287%\n\nL I, no\n\n| | hy i :\nFo lo we\nMo ! oo\n) | :\n\nfl} | Laas\n\ni : ! 1.4375\n\n[la : 1.2500\n\n| Lo\n\n| os\n\n| st, =\n\nFR —— I | il Il li li | I oe\n\n2005 2009 2011 2013 2015 2017 2019 2021 2023 Ir",
+     "sha256": "e552d383a6732f15a24b910181051c7d99a0f6b565c965d87a0d1c6ff74de293"
+    }
+   }
+  ]
+ },
+ "root_is_parent": true,
+ "walked_at": "2026-11-08T12:29:53Z",
+ "pin_sha256": "018e57992fb22f940799e1c2e9842520d6be44194f39b2b806d95dbb333d3685"
+}

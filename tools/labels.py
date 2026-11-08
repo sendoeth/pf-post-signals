@@ -438,6 +438,7 @@ def page(d):
       <a href="coins.html">Coins</a>
       <a href="agreement.html" aria-current="page">Agreement</a>
       <a href="regimes.html">Regimes</a>
+      <a href="context.html">Context</a>
     </nav>
   </header>
   <section class="ep-head panel" data-field="agreement">

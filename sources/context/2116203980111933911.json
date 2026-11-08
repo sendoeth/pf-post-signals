@@ -1,0 +1,65 @@
+{
+ "schema": "quanty.context.v1",
+ "caller": {
+  "id": "2116203980111933911",
+  "url": "https://x.com/goodalexander/status/2116203980111933911",
+  "author": "goodalexander",
+  "posted_at": "2026-10-30T16:22:00Z",
+  "text": "Golden retriever version 🐕\n\nShort S&P 500 futures. Intel just flipped AI spending from \"paid for by cash flow\" to \"needs debt and stock sales.\" Memory prices are wrecking PC and consumer demand. Oil up and EURCHF down say Iran and Ukraine are heating up into the midterms.\n\nNot",
+  "text_sha256": "2c07b32a7b14ae28363674cbb35eea87e9ab9b612cb2a9adb209e6a0b1143b6b",
+  "link": null,
+  "receipt": "sources/goodalexander/receipts/2116203980111933911.json",
+  "receipt_sha256": "dac1f9d52bc7c0b899ef19b638f8620254e511ee9cb4db938a7dd7489543d4e4"
+ },
+ "status": "complete",
+ "reason": null,
+ "chain": [
+  {
+   "id": "2116196021751750688",
+   "author": "0xMiaWallace",
+   "posted_at": "2026-10-30T15:50:23Z",
+   "link": "reply",
+   "text_sha256": "0368ba89b01b55420c6c4e95b2960e15117f047d15c931f51228e5cf69c2beec"
+  },
+  {
+   "id": "2116181465092264424",
+   "author": "goodalexander",
+   "posted_at": "2026-10-30T14:52:32Z",
+   "link": "reply",
+   "text_sha256": "9790342c0f0042ff31f851236c27bd9ee634d08f29d49fe3cf825f7e86274f2c"
+  }
+ ],
+ "limits": {
+  "max_depth": 4,
+  "max_images": 8,
+  "max_image_bytes": 8388608
+ },
+ "parent": {
+  "id": "2116196021751750688",
+  "url": "https://x.com/0xMiaWallace/status/2116196021751750688",
+  "author": "0xMiaWallace",
+  "posted_at": "2026-10-30T15:50:23Z",
+  "text": "hey @grok give me TLDR positioning and reason",
+  "text_sha256": "0368ba89b01b55420c6c4e95b2960e15117f047d15c931f51228e5cf69c2beec",
+  "link": "reply",
+  "receipt": "sources/0xmiawallace/receipts/2116196021751750688.json",
+  "receipt_sha256": "13bb2e41f792800608870b6d08801291205815dd5b061f46dc8d06a0f20c65d2",
+  "text_truncated": false,
+  "images": []
+ },
+ "root": {
+  "id": "2116181465092264424",
+  "url": "https://x.com/goodalexander/status/2116181465092264424",
+  "author": "goodalexander",
+  "posted_at": "2026-10-30T14:52:32Z",
+  "text": "https://t.co/JEUi47Hmjx",
+  "text_sha256": "9790342c0f0042ff31f851236c27bd9ee634d08f29d49fe3cf825f7e86274f2c",
+  "link": "reply",
+  "receipt": "sources/goodalexander/receipts/2116181465092264424.json",
+  "receipt_sha256": "5d934ed70ebbbc6194d35f13c323456a640a76b57e73fc7d76acb2d6f36c569a",
+  "text_truncated": false,
+  "images": []
+ },
+ "walked_at": "2026-11-08T12:30:26Z",
+ "pin_sha256": "a6329e61c9965b0f97a2ccd542caff27c82915909aca749b9480344babebf307"
+}

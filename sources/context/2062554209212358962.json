@@ -1,0 +1,57 @@
+{
+ "schema": "quanty.context.v1",
+ "caller": {
+  "id": "2062554209212358962",
+  "url": "https://x.com/BobLoukas/status/2062554209212358962",
+  "author": "BobLoukas",
+  "posted_at": "2026-06-04T15:16:58Z",
+  "text": "18 weeks since the gold blow-off, gold is going through a normal rebasing period.  Speculative interest moved on 12-18 weeks ago.  \n\nBut this is remains a secular bull market, so we're looking at reaccumulation of long positions from underweight to overweight over the coming 4 months.  The bull goes again in 2027.",
+  "text_sha256": "15a18f9071d59bb2afec7fe59c48876494f3e89e1257b191d7c76f6613031204",
+  "link": null,
+  "receipt": "sources/bobloukas/receipts/2062554209212358962.json",
+  "receipt_sha256": "4f4e96ce5f3c7733aa986c1ed634ca3ae0d0dcfd190143197313f7eb9d1bc802"
+ },
+ "status": "complete",
+ "reason": null,
+ "chain": [
+  {
+   "id": "2047316895838118342",
+   "author": "BobLoukas",
+   "posted_at": "2026-04-23T14:09:19Z",
+   "link": "quote",
+   "text_sha256": "d0224db7a6a721a7710e242b181a6cb7a075c9a53de4627d0319ec3a8d5b0977"
+  }
+ ],
+ "limits": {
+  "max_depth": 4,
+  "max_images": 8,
+  "max_image_bytes": 8388608
+ },
+ "parent": {
+  "id": "2047316895838118342",
+  "url": "https://x.com/BobLoukas/status/2047316895838118342",
+  "author": "BobLoukas",
+  "posted_at": "2026-04-23T14:09:19Z",
+  "text": "40 months into the Gold bull market, a mid-cycle pause and consolidation is likely developing.  48 months marks the midpoint which is towards the Nov window.  Lot of confluence in that area across many asset classes.",
+  "text_sha256": "d0224db7a6a721a7710e242b181a6cb7a075c9a53de4627d0319ec3a8d5b0977",
+  "link": "quote",
+  "receipt": "sources/bobloukas/receipts/2047316895838118342.json",
+  "receipt_sha256": "53c9c92ba49bb44dd4c8fe513c503bfceaa52252bad4ce22074c55bbe8d9bccc",
+  "text_truncated": false,
+  "images": [
+   {
+    "file": "sources/bobloukas/media/2047316895838118342_0.png",
+    "sha256": "33ab095d7f9259853baaaa6986058273ee59fccfdb8e35852e14a99fe738f2f8",
+    "bytes": 114432,
+    "source": "https://pbs.twimg.com/media/HGmHvsbWAAA7HYC",
+    "ocr": {
+     "text": "© Gold Spot / U.S. Dollar - 1M- ICE E ® 01,095.30 H1,170.130 L1,081.210 C1,134.350 +39.340 (+3.59%) v @ uD.\nDTI, [4721557\nSELL BUY. 7,200,000\nSMA 1,180,668\n6,450.000\n®\nSMA 1,223.776 5,950.000\n[2]\n5,350.000\n» —- —-—=\n~ 4,950.000\n: 41.107\n| | 7d 7m\n| * AN 4,150.00\ni 3,750.000\n; |\ni pi 3,350.00\n1 | 3,050.00\n: m) 2.750.000 |\ni 3 2,250.00\n: 1 i 2,050.00\nI\" PTOI | ONL i pe.\n: i\" i 1,730.00\n| J |\n: [1 1,450.000\n: i 83\n: HL 1,0 \" 1,330,000\n. Hl nn 1,230.000\n- + < >\nin ! ° iso\ngil! ®\n2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 ®",
+     "sha256": "5c106bfccb2e91a627103217f6593691dec1a3abb4fab89a123ff486aeb6890f"
+    }
+   }
+  ]
+ },
+ "root_is_parent": true,
+ "walked_at": "2026-11-08T12:29:49Z",
+ "pin_sha256": "c7d5dfa1df797c76f5403a710d5f833600e2124873f2851eba0c2191ebea2b16"
+}

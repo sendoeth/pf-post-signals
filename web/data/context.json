@@ -1,0 +1,3787 @@
+{
+ "schema": "quanty.context_page.v1",
+ "limits": {
+  "max_depth": 4,
+  "max_images": 8,
+  "max_image_bytes": 8388608,
+  "max_pixels": 40000000
+ },
+ "contexts": 27,
+ "agreement": {
+  "labels": 58,
+  "labels_with_context": 27,
+  "side_agree_before": 31,
+  "side_agree_after": 31,
+  "adds": 51,
+  "asset_found_before": 48,
+  "asset_found_after": 50
+ },
+ "agreement_rows": [
+  {
+   "id": "1970742039722479782|ZEC",
+   "post": "1970742039722479782",
+   "author": "mert",
+   "owner": {
+    "decision": "add",
+    "asset": "ZEC",
+    "side": "long"
+   },
+   "own_assets": [
+    "ZEC"
+   ],
+   "context_assets": [
+    "ETH"
+   ],
+   "asset_found_before": true,
+   "asset_found_after": true,
+   "side_before": "long",
+   "side_after": "long",
+   "side_after_from": "own words (unchanged)",
+   "agree_before": true,
+   "agree_after": true
+  },
+  {
+   "id": "1985733515221078204|BTC",
+   "post": "1985733515221078204",
+   "author": "BobLoukas",
+   "owner": {
+    "decision": "add",
+    "asset": "BTC",
+    "side": "long"
+   },
+   "own_assets": [
+    "BTC"
+   ],
+   "context_assets": [
+    "BTC"
+   ],
+   "asset_found_before": true,
+   "asset_found_after": true,
+   "side_before": "long",
+   "side_after": "long",
+   "side_after_from": "own words (unchanged)",
+   "agree_before": true,
+   "agree_after": true
+  },
+  {
+   "id": "1998434220868247562|-",
+   "post": "1998434220868247562",
+   "author": "BobLoukas",
+   "owner": {
+    "decision": "skip",
+    "asset": null,
+    "side": null
+   },
+   "own_assets": [
+    "SILVER"
+   ],
+   "context_assets": [
+    "SILVER"
+   ],
+   "asset_found_before": null,
+   "asset_found_after": null,
+   "side_before": "none",
+   "side_after": "none",
+   "side_after_from": "own words (unchanged)",
+   "agree_before": true,
+   "agree_after": true
+  },
+  {
+   "id": "2011110630338535867|COPPER",
+   "post": "2011110630338535867",
+   "author": "BobLoukas",
+   "owner": {
+    "decision": "add",
+    "asset": "COPPER",
+    "side": "long"
+   },
+   "own_assets": [
+    "COPPER"
+   ],
+   "context_assets": [
+    "COPPER",
+    "GOLD",
+    "OIL"
+   ],
+   "asset_found_before": true,
+   "asset_found_after": true,
+   "side_before": "long",
+   "side_after": "long",
+   "side_after_from": "own words (unchanged)",
+   "agree_before": true,
+   "agree_after": true
+  },
+  {
+   "id": "2016523209500131511|STOCKS",
+   "post": "2016523209500131511",
+   "author": "BobLoukas",
+   "owner": {
+    "decision": "add",
+    "asset": "STOCKS",
+    "side": "long"
+   },
+   "own_assets": [
+    "STOCKS"
+   ],
+   "context_assets": [
+    "BTC",
+    "STOCKS"
+   ],
+   "asset_found_before": true,
+   "asset_found_after": true,
+   "side_before": "none",
+   "side_after": "none",
+   "side_after_from": "own words (unchanged)",
+   "agree_before": false,
+   "agree_after": false
+  },
+  {
+   "id": "2051627961724305706|-",
+   "post": "2051627961724305706",
+   "author": "BobLoukas",
+   "owner": {
+    "decision": "skip",
+    "asset": null,
+    "side": null
+   },
+   "own_assets": [
+    "BTC"
+   ],
+   "context_assets": [
+    "BTC"
+   ],
+   "asset_found_before": null,
+   "asset_found_after": null,
+   "side_before": "none",
+   "side_after": "none",
+   "side_after_from": "own words (unchanged)",
+   "agree_before": true,
+   "agree_after": true
+  },
+  {
+   "id": "2062554209212358962|GOLD",
+   "post": "2062554209212358962",
+   "author": "BobLoukas",
+   "owner": {
+    "decision": "add",
+    "asset": "GOLD",
+    "side": "long"
+   },
+   "own_assets": [
+    "GOLD"
+   ],
+   "context_assets": [
+    "GOLD"
+   ],
+   "asset_found_before": true,
+   "asset_found_after": true,
+   "side_before": "long",
+   "side_after": "long",
+   "side_after_from": "own words (unchanged)",
+   "agree_before": true,
+   "agree_after": true
+  },
+  {
+   "id": "2091161059801391206|-",
+   "post": "2091161059801391206",
+   "author": "BobLoukas",
+   "owner": {
+    "decision": "skip",
+    "asset": null,
+    "side": null
+   },
+   "own_assets": [
+    "BTC"
+   ],
+   "context_assets": [],
+   "asset_found_before": null,
+   "asset_found_after": null,
+   "side_before": "none",
+   "side_after": "none",
+   "side_after_from": "own words (unchanged)",
+   "agree_before": true,
+   "agree_after": true
+  },
+  {
+   "id": "2097324043334451439|COPX",
+   "post": "2097324043334451439",
+   "author": "BobLoukas",
+   "owner": {
+    "decision": "add",
+    "asset": "COPX",
+    "side": "long"
+   },
+   "own_assets": [
+    "COPX"
+   ],
+   "context_assets": [
+    "COPPER",
+    "COPX"
+   ],
+   "asset_found_before": true,
+   "asset_found_after": true,
+   "side_before": "none",
+   "side_after": "none",
+   "side_after_from": "own words (unchanged)",
+   "agree_before": false,
+   "agree_after": false
+  },
+  {
+   "id": "2102014028855820403|BTC",
+   "post": "2102014028855820403",
+   "author": "BobLoukas",
+   "owner": {
+    "decision": "add",
+    "asset": "BTC",
+    "side": "long"
+   },
+   "own_assets": [
+    "BTC"
+   ],
+   "context_assets": [
+    "BTC"
+   ],
+   "asset_found_before": true,
+   "asset_found_after": true,
+   "side_before": "none",
+   "side_after": "none",
+   "side_after_from": "own words (unchanged)",
+   "agree_before": false,
+   "agree_after": false
+  },
+  {
+   "id": "2102024327075877097|BTC",
+   "post": "2102024327075877097",
+   "author": "BobLoukas",
+   "owner": {
+    "decision": "add",
+    "asset": "BTC",
+    "side": "long"
+   },
+   "own_assets": [],
+   "context_assets": [
+    "BTC"
+   ],
+   "asset_found_before": false,
+   "asset_found_after": true,
+   "side_before": "none",
+   "side_after": "none",
+   "side_after_from": "none: the caller's words state no position (none)",
+   "agree_before": false,
+   "agree_after": false
+  },
+  {
+   "id": "2104977267109896477|SILVER",
+   "post": "2104977267109896477",
+   "author": "BobLoukas",
+   "owner": {
+    "decision": "add",
+    "asset": "SILVER",
+    "side": "short"
+   },
+   "own_assets": [
+    "SILVER"
+   ],
+   "context_assets": [
+    "OIL",
+    "SILVER"
+   ],
+   "asset_found_before": true,
+   "asset_found_after": true,
+   "side_before": "none",
+   "side_after": "none",
+   "side_after_from": "own words (unchanged)",
+   "agree_before": false,
+   "agree_after": false
+  },
+  {
+   "id": "2106750657877434407|COPX",
+   "post": "2106750657877434407",
+   "author": "BobLoukas",
+   "owner": {
+    "decision": "add",
+    "asset": "COPX",
+    "side": "long"
+   },
+   "own_assets": [
+    "COPX"
+   ],
+   "context_assets": [
+    "COPPER",
+    "GOLD",
+    "SILVER"
+   ],
+   "asset_found_before": true,
+   "asset_found_after": true,
+   "side_before": "none",
+   "side_after": "none",
+   "side_after_from": "own words (unchanged)",
+   "agree_before": false,
+   "agree_after": false
+  },
+  {
+   "id": "2107063137958564197|STOCKS",
+   "post": "2107063137958564197",
+   "author": "BobLoukas",
+   "owner": {
+    "decision": "add",
+    "asset": "STOCKS",
+    "side": "long"
+   },
+   "own_assets": [
+    "STOCKS"
+   ],
+   "context_assets": [
+    "OIL",
+    "STOCKS"
+   ],
+   "asset_found_before": true,
+   "asset_found_after": true,
+   "side_before": "none",
+   "side_after": "none",
+   "side_after_from": "own words (unchanged)",
+   "agree_before": false,
+   "agree_after": false
+  },
+  {
+   "id": "2112915214479798344|BTC",
+   "post": "2112915214479798344",
+   "author": "BobLoukas",
+   "owner": {
+    "decision": "add",
+    "asset": "BTC",
+    "side": "long"
+   },
+   "own_assets": [
+    "BTC"
+   ],
+   "context_assets": [
+    "BTC"
+   ],
+   "asset_found_before": true,
+   "asset_found_after": true,
+   "side_before": "none",
+   "side_after": "none",
+   "side_after_from": "own words (unchanged)",
+   "agree_before": false,
+   "agree_after": false
+  },
+  {
+   "id": "2113279842636419392|BTC",
+   "post": "2113279842636419392",
+   "author": "goodalexander",
+   "owner": {
+    "decision": "add",
+    "asset": "BTC",
+    "side": "long"
+   },
+   "own_assets": [
+    "BTC"
+   ],
+   "context_assets": [],
+   "asset_found_before": true,
+   "asset_found_after": true,
+   "side_before": "none",
+   "side_after": "none",
+   "side_after_from": "own words (unchanged)",
+   "agree_before": false,
+   "agree_after": false
+  },
+  {
+   "id": "2113602987008356795|GOLD",
+   "post": "2113602987008356795",
+   "author": "goodalexander",
+   "owner": {
+    "decision": "add",
+    "asset": "GOLD",
+    "side": "short"
+   },
+   "own_assets": [
+    "GOLD"
+   ],
+   "context_assets": [],
+   "asset_found_before": true,
+   "asset_found_after": true,
+   "side_before": "short",
+   "side_after": "short",
+   "side_after_from": "own words (unchanged)",
+   "agree_before": true,
+   "agree_after": true
+  },
+  {
+   "id": "2113613893662588966|SILVER",
+   "post": "2113613893662588966",
+   "author": "BobLoukas",
+   "owner": {
+    "decision": "add",
+    "asset": "SILVER",
+    "side": "short"
+   },
+   "own_assets": [
+    "SILVER"
+   ],
+   "context_assets": [
+    "GOLD",
+    "SILVER"
+   ],
+   "asset_found_before": true,
+   "asset_found_after": true,
+   "side_before": "none",
+   "side_after": "none",
+   "side_after_from": "own words (unchanged)",
+   "agree_before": false,
+   "agree_after": false
+  },
+  {
+   "id": "2115550350832996432|XYZ:AAPL",
+   "post": "2115550350832996432",
+   "author": "goodalexander",
+   "owner": {
+    "decision": "add",
+    "asset": "XYZ:AAPL",
+    "side": "short"
+   },
+   "own_assets": [],
+   "context_assets": [],
+   "asset_found_before": false,
+   "asset_found_after": false,
+   "side_before": "short",
+   "side_after": "short",
+   "side_after_from": "own words (unchanged)",
+   "agree_before": true,
+   "agree_after": true
+  },
+  {
+   "id": "2115823513915290059|BTC",
+   "post": "2115823513915290059",
+   "author": "BobLoukas",
+   "owner": {
+    "decision": "add",
+    "asset": "BTC",
+    "side": "none"
+   },
+   "own_assets": [
+    "BTC"
+   ],
+   "context_assets": [
+    "BTC"
+   ],
+   "asset_found_before": true,
+   "asset_found_after": true,
+   "side_before": "none",
+   "side_after": "none",
+   "side_after_from": "own words (unchanged)",
+   "agree_before": true,
+   "agree_after": true
+  },
+  {
+   "id": "2115966476817739790|XMR",
+   "post": "2115966476817739790",
+   "author": "goodalexander",
+   "owner": {
+    "decision": "add",
+    "asset": "XMR",
+    "side": "long"
+   },
+   "own_assets": [
+    "BTC",
+    "STOCKS",
+    "XMR",
+    "XRP"
+   ],
+   "context_assets": [],
+   "asset_found_before": true,
+   "asset_found_after": true,
+   "side_before": "long",
+   "side_after": "long",
+   "side_after_from": "own words (unchanged)",
+   "agree_before": true,
+   "agree_after": true
+  },
+  {
+   "id": "2115966476817739790|XRP",
+   "post": "2115966476817739790",
+   "author": "goodalexander",
+   "owner": {
+    "decision": "add",
+    "asset": "XRP",
+    "side": "long"
+   },
+   "own_assets": [
+    "BTC",
+    "STOCKS",
+    "XMR",
+    "XRP"
+   ],
+   "context_assets": [],
+   "asset_found_before": true,
+   "asset_found_after": true,
+   "side_before": "long",
+   "side_after": "long",
+   "side_after_from": "own words (unchanged)",
+   "agree_before": true,
+   "agree_after": true
+  },
+  {
+   "id": "2116199680157647216|GOLD",
+   "post": "2116199680157647216",
+   "author": "BobLoukas",
+   "owner": {
+    "decision": "add",
+    "asset": "GOLD",
+    "side": "none"
+   },
+   "own_assets": [
+    "GOLD"
+   ],
+   "context_assets": [
+    "GOLD"
+   ],
+   "asset_found_before": true,
+   "asset_found_after": true,
+   "side_before": "none",
+   "side_after": "none",
+   "side_after_from": "own words (unchanged)",
+   "agree_before": true,
+   "agree_after": true
+  },
+  {
+   "id": "2116203980111933911|STOCKS",
+   "post": "2116203980111933911",
+   "author": "goodalexander",
+   "owner": {
+    "decision": "add",
+    "asset": "STOCKS",
+    "side": "short"
+   },
+   "own_assets": [
+    "OIL",
+    "STOCKS"
+   ],
+   "context_assets": [],
+   "asset_found_before": true,
+   "asset_found_after": true,
+   "side_before": "none",
+   "side_after": "none",
+   "side_after_from": "own words (unchanged)",
+   "agree_before": false,
+   "agree_after": false
+  },
+  {
+   "id": "2116304617047007308|SOXL",
+   "post": "2116304617047007308",
+   "author": "goodalexander",
+   "owner": {
+    "decision": "add",
+    "asset": "SOXL",
+    "side": "short"
+   },
+   "own_assets": [],
+   "context_assets": [
+    "SOXL"
+   ],
+   "asset_found_before": false,
+   "asset_found_after": true,
+   "side_before": "none",
+   "side_after": "none",
+   "side_after_from": "none: the caller's words state no position (none)",
+   "agree_before": false,
+   "agree_after": false
+  },
+  {
+   "id": "2118181656398090718|KNTQ",
+   "post": "2118181656398090718",
+   "author": "koolkrypto223",
+   "owner": {
+    "decision": "add",
+    "asset": "KNTQ",
+    "side": "long"
+   },
+   "own_assets": [
+    "KNTQ",
+    "NEST"
+   ],
+   "context_assets": [
+    "ETH",
+    "HYPE",
+    "NEST"
+   ],
+   "asset_found_before": true,
+   "asset_found_after": true,
+   "side_before": "long",
+   "side_after": "long",
+   "side_after_from": "own words (unchanged)",
+   "agree_before": true,
+   "agree_after": true
+  },
+  {
+   "id": "2118181656398090718|NEST",
+   "post": "2118181656398090718",
+   "author": "koolkrypto223",
+   "owner": {
+    "decision": "add",
+    "asset": "NEST",
+    "side": "long"
+   },
+   "own_assets": [
+    "KNTQ",
+    "NEST"
+   ],
+   "context_assets": [
+    "ETH",
+    "HYPE",
+    "NEST"
+   ],
+   "asset_found_before": true,
+   "asset_found_after": true,
+   "side_before": "long",
+   "side_after": "long",
+   "side_after_from": "own words (unchanged)",
+   "agree_before": true,
+   "agree_after": true
+  }
+ ],
+ "entries": [
+  {
+   "post": "1970742039722479782",
+   "url": "https://x.com/mert/status/1970742039722479782",
+   "author": "mert",
+   "posted_at": "2025-09-24T06:48:11Z",
+   "text": "I am irresponsibly long ZEC",
+   "receipt": "sources/mert/receipts/1970742039722479782.json",
+   "status": "complete",
+   "reason": null,
+   "pin_sha256": "75c03cd3dd3f737bf2f5d1379839f3834979604d77dc845afc2d185a686fc873",
+   "chain": [
+    {
+     "id": "1970741420677083372",
+     "author": "gainzy222",
+     "posted_at": "2025-09-24T06:45:43Z",
+     "link": "reply",
+     "text_sha256": "41ccf06adac0e146335a16baea5e9c0aad997723824a1a16356cdf66ff73d0ed"
+    }
+   ],
+   "posts": {
+    "parent": {
+     "id": "1970741420677083372",
+     "url": "https://x.com/gainzy222/status/1970741420677083372",
+     "author": "gainzy222",
+     "posted_at": "2025-09-24T06:45:43Z",
+     "text": "the long zec short eth trade is real",
+     "text_sha256": "41ccf06adac0e146335a16baea5e9c0aad997723824a1a16356cdf66ff73d0ed",
+     "receipt": "sources/gainzy222/receipts/1970741420677083372.json",
+     "link": "reply",
+     "text_truncated": false,
+     "images": [],
+     "used": true
+    }
+   },
+   "candidates": [
+    {
+     "asset": "ETH",
+     "sources": [
+      {
+       "source": "parent_text",
+       "post_id": "1970741420677083372",
+       "author": "gainzy222",
+       "evidence": {
+        "words": [
+         "eth"
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "reads": [
+    {
+     "asset": "ZEC",
+     "side": "long",
+     "method": "detector-leg",
+     "rule": null,
+     "provenance": [
+      "own words"
+     ],
+     "side_from": "own words"
+    },
+    {
+     "asset": "ETH",
+     "side": "none",
+     "method": "context",
+     "rule": null,
+     "provenance": [
+      "parent_text"
+     ],
+     "side_from": "none: the caller names other assets"
+    }
+   ],
+   "recorded": [
+    {
+     "asset": "ZEC",
+     "side": "long"
+    }
+   ]
+  },
+  {
+   "post": "1985733515221078204",
+   "url": "https://x.com/BobLoukas/status/1985733515221078204",
+   "author": "BobLoukas",
+   "posted_at": "2025-11-04T15:38:57Z",
+   "text": "Take responsibility for your own foolish decisions.\n\nWe bought the pico bottom and we're still long bitcoin.",
+   "receipt": "sources/bobloukas/receipts/1985733515221078204.json",
+   "status": "complete",
+   "reason": null,
+   "pin_sha256": "ab41fd1eeb48cbe9690f1d2def9a6afc488673b9e26e8aa9c1ba6555e2d05792",
+   "chain": [
+    {
+     "id": "1985730652483043573",
+     "author": "vt_georgi",
+     "posted_at": "2025-11-04T15:27:35Z",
+     "link": "reply",
+     "text_sha256": "5f2711dda75bd4086619c41e39118eb70354afb0182406900ef587ae27965ce5"
+    },
+    {
+     "id": "1985730433510973908",
+     "author": "BobLoukas",
+     "posted_at": "2025-11-04T15:26:43Z",
+     "link": "reply",
+     "text_sha256": "fed1f129829740b15326d9680d621637ce72875ef1c0aea222a9bf87fa2eaf85"
+    }
+   ],
+   "posts": {
+    "parent": {
+     "id": "1985730652483043573",
+     "url": "https://x.com/vt_georgi/status/1985730652483043573",
+     "author": "vt_georgi",
+     "posted_at": "2025-11-04T15:27:35Z",
+     "text": "You are what Plan B was last cycle.",
+     "text_sha256": "5f2711dda75bd4086619c41e39118eb70354afb0182406900ef587ae27965ce5",
+     "receipt": "sources/vt_georgi/receipts/1985730652483043573.json",
+     "link": "reply",
+     "text_truncated": false,
+     "images": [],
+     "used": true
+    },
+    "root": {
+     "id": "1985730433510973908",
+     "url": "https://x.com/BobLoukas/status/1985730433510973908",
+     "author": "BobLoukas",
+     "posted_at": "2025-11-04T15:26:43Z",
+     "text": "The bull case for Bitcoin.  \nIncoming (here or soon) weekly Cycle Low on extremely negative sentiment.  Mirroring prior two cycles.",
+     "text_sha256": "fed1f129829740b15326d9680d621637ce72875ef1c0aea222a9bf87fa2eaf85",
+     "receipt": "sources/bobloukas/receipts/1985730433510973908.json",
+     "link": "reply",
+     "text_truncated": false,
+     "images": [
+      {
+       "file": "sources/bobloukas/media/1985730433510973908_0.png",
+       "sha256": "159333be8aa3a5c51004fb264e3482eabd6648d9f1607a173fbd97cece9f4b6d",
+       "bytes": 380871
+      }
+     ],
+     "used": true
+    }
+   },
+   "candidates": [
+    {
+     "asset": "BTC",
+     "sources": [
+      {
+       "source": "root_text",
+       "post_id": "1985730433510973908",
+       "author": "BobLoukas",
+       "evidence": {
+        "words": [
+         "bitcoin"
+        ]
+       }
+      },
+      {
+       "source": "root_image",
+       "post_id": "1985730433510973908",
+       "author": "BobLoukas",
+       "evidence": {
+        "image_sha256": "159333be8aa3a5c51004fb264e3482eabd6648d9f1607a173fbd97cece9f4b6d",
+        "file": "sources/bobloukas/media/1985730433510973908_0.png",
+        "matched": "Bitcoin / U.S. Dollar",
+        "ocr_excerpt": "4d Replay © HU BAH TEs /0O= © Bitcoin / U.S. Dollar - 1W - Bitstamp KE ® 0110,524"
+       }
+      },
+      {
+       "source": "root_image",
+       "post_id": "1985730433510973908",
+       "author": "BobLoukas",
+       "evidence": {
+        "image_sha256": "159333be8aa3a5c51004fb264e3482eabd6648d9f1607a173fbd97cece9f4b6d",
+        "file": "sources/bobloukas/media/1985730433510973908_0.png",
+        "matched": "BTC",
+        "ocr_excerpt": "QBTCUSD (® W [6 af Indicators ~ 33"
+       }
+      }
+     ]
+    }
+   ],
+   "reads": [
+    {
+     "asset": "BTC",
+     "side": "long",
+     "method": "detector-leg",
+     "rule": null,
+     "provenance": [
+      "own words",
+      "root_image",
+      "root_text"
+     ],
+     "side_from": "own words"
+    }
+   ],
+   "recorded": [
+    {
+     "asset": "BTC",
+     "side": "long"
+    }
+   ]
+  },
+  {
+   "post": "1998434220868247562",
+   "url": "https://x.com/BobLoukas/status/1998434220868247562",
+   "author": "BobLoukas",
+   "posted_at": "2025-12-09T16:47:02Z",
+   "text": "$60 on Silver, trade of the year, easily.  In the parabolic phase and will very likely top by end of year or Jan.  Could see $80.",
+   "receipt": "sources/bobloukas/receipts/1998434220868247562.json",
+   "status": "complete",
+   "reason": null,
+   "pin_sha256": "982987fda3254cab7ac2ac6ac8a976205b0e0fbd71ff998de5fdd3acbda13b87",
+   "chain": [
+    {
+     "id": "1935014920002879983",
+     "author": "BobLoukas",
+     "posted_at": "2025-06-17T16:41:22Z",
+     "link": "quote",
+     "text_sha256": "023bf7a68421825e8c95fe1245eb4fb7fea321dd1409f217badaa1eb976f13c5"
+    }
+   ],
+   "posts": {
+    "parent": {
+     "id": "1935014920002879983",
+     "url": "https://x.com/BobLoukas/status/1935014920002879983",
+     "author": "BobLoukas",
+     "posted_at": "2025-06-17T16:41:22Z",
+     "text": "I've posted about Silver a little too much this year.  :)  \n\nSilver is the classic disappointment asset, it always screws you.  It's like the boy who cries wolf.\n\nBut I think Silver is possibly already in a lockout up-only phase gearing up towards a parabolic move.",
+     "text_sha256": "023bf7a68421825e8c95fe1245eb4fb7fea321dd1409f217badaa1eb976f13c5",
+     "receipt": "sources/bobloukas/receipts/1935014920002879983.json",
+     "link": "quote",
+     "text_truncated": false,
+     "images": [
+      {
+       "file": "sources/bobloukas/media/1935014920002879983_0.png",
+       "sha256": "548f96200baa49cbf787d639a387c3b388c64567b22839091ed3a142b8943b73",
+       "bytes": 358086
+      }
+     ],
+     "used": true
+    }
+   },
+   "candidates": [
+    {
+     "asset": "SILVER",
+     "sources": [
+      {
+       "source": "parent_text",
+       "post_id": "1935014920002879983",
+       "author": "BobLoukas",
+       "evidence": {
+        "words": [
+         "silver"
+        ]
+       }
+      },
+      {
+       "source": "parent_image",
+       "post_id": "1935014920002879983",
+       "author": "BobLoukas",
+       "evidence": {
+        "image_sha256": "548f96200baa49cbf787d639a387c3b388c64567b22839091ed3a142b8943b73",
+        "file": "sources/bobloukas/media/1935014920002879983_0.png",
+        "matched": "SILVER",
+        "ocr_excerpt": "LU = 7&3 AZ TI Wi = = pe |®] Silver / U.S. Dollar - 1W-FX_IDC BE"
+       }
+      }
+     ]
+    }
+   ],
+   "reads": [
+    {
+     "asset": "SILVER",
+     "side": "none",
+     "method": "detector-leg",
+     "rule": null,
+     "provenance": [
+      "own words",
+      "parent_image",
+      "parent_text"
+     ],
+     "side_from": "none"
+    }
+   ],
+   "recorded": []
+  },
+  {
+   "post": "2011110630338535867",
+   "url": "https://x.com/BobLoukas/status/2011110630338535867",
+   "author": "BobLoukas",
+   "posted_at": "2026-01-13T16:18:33Z",
+   "text": "Yes I'm long copper.",
+   "receipt": "sources/bobloukas/receipts/2011110630338535867.json",
+   "status": "complete",
+   "reason": null,
+   "pin_sha256": "7870aba946a6287f7fef836cdd40f37eada53e64e79568f4a21517acfd4646d1",
+   "chain": [
+    {
+     "id": "2011110454026776937",
+     "author": "LinusCaldwell5",
+     "posted_at": "2026-01-13T16:17:51Z",
+     "link": "reply",
+     "text_sha256": "618e668f08b556480a0affc37ca413af0c1d57978b0a2cb179714034f811f164"
+    },
+    {
+     "id": "2011105173104705981",
+     "author": "BobLoukas",
+     "posted_at": "2026-01-13T15:56:52Z",
+     "link": "reply",
+     "text_sha256": "d7751059900d1401ce41d44e439c1822bb6205bd591fbf1b2ce7cfa75d83ba72"
+    }
+   ],
+   "posts": {
+    "parent": {
+     "id": "2011110454026776937",
+     "url": "https://x.com/LinusCaldwell5/status/2011110454026776937",
+     "author": "LinusCaldwell5",
+     "posted_at": "2026-01-13T16:17:51Z",
+     "text": "You like copper bob?",
+     "text_sha256": "618e668f08b556480a0affc37ca413af0c1d57978b0a2cb179714034f811f164",
+     "receipt": "sources/linuscaldwell5/receipts/2011110454026776937.json",
+     "link": "reply",
+     "text_truncated": false,
+     "images": [],
+     "used": true
+    },
+    "root": {
+     "id": "2011105173104705981",
+     "url": "https://x.com/BobLoukas/status/2011105173104705981",
+     "author": "BobLoukas",
+     "posted_at": "2026-01-13T15:56:52Z",
+     "text": "Formidable, but controlled appetite for gold remains.  Now targeting $5,800 for this (maybe) new cycle.\n\nJust got to keep holding on.",
+     "text_sha256": "d7751059900d1401ce41d44e439c1822bb6205bd591fbf1b2ce7cfa75d83ba72",
+     "receipt": "sources/bobloukas/receipts/2011105173104705981.json",
+     "link": "reply",
+     "text_truncated": false,
+     "images": [
+      {
+       "file": "sources/bobloukas/media/2011105173104705981_0.jpg",
+       "sha256": "6de7a688b73791f8eb5d3bfe9c3b8d10cda04443015df0f6f08d31c707566937",
+       "bytes": 393164
+      }
+     ],
+     "used": true
+    }
+   },
+   "candidates": [
+    {
+     "asset": "COPPER",
+     "sources": [
+      {
+       "source": "parent_text",
+       "post_id": "2011110454026776937",
+       "author": "LinusCaldwell5",
+       "evidence": {
+        "words": [
+         "copper"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "asset": "GOLD",
+     "sources": [
+      {
+       "source": "root_text",
+       "post_id": "2011105173104705981",
+       "author": "BobLoukas",
+       "evidence": {
+        "words": [
+         "gold"
+        ]
+       }
+      },
+      {
+       "source": "root_image",
+       "post_id": "2011105173104705981",
+       "author": "BobLoukas",
+       "evidence": {
+        "image_sha256": "6de7a688b73791f8eb5d3bfe9c3b8d10cda04443015df0f6f08d31c707566937",
+        "file": "sources/bobloukas/media/2011105173104705981_0.jpg",
+        "matched": "Gold Spot",
+        "ocr_excerpt": "q Replay © AIA Is IT==/0= O @ Gold Spot / U.S. Dollar - 1W- ICE EK ®"
+       }
+      },
+      {
+       "source": "root_image",
+       "post_id": "2011105173104705981",
+       "author": "BobLoukas",
+       "evidence": {
+        "image_sha256": "6de7a688b73791f8eb5d3bfe9c3b8d10cda04443015df0f6f08d31c707566937",
+        "file": "sources/bobloukas/media/2011105173104705981_0.jpg",
+        "matched": "GOLD",
+        "ocr_excerpt": "q Replay © AIA Is IT==/0= O @ Gold Spot / U.S. Dollar - 1W- ICE"
+       }
+      }
+     ]
+    },
+    {
+     "asset": "OIL",
+     "sources": [
+      {
+       "source": "root_image",
+       "post_id": "2011105173104705981",
+       "author": "BobLoukas",
+       "evidence": {
+        "image_sha256": "6de7a688b73791f8eb5d3bfe9c3b8d10cda04443015df0f6f08d31c707566937",
+        "file": "sources/bobloukas/media/2011105173104705981_0.jpg",
+        "matched": "OIL",
+        "ocr_excerpt": "50 -67.700 (-3.27%) v usp - | oil BUY; | 5,800.000 ol @ | B [ |"
+       }
+      }
+     ]
+    }
+   ],
+   "reads": [
+    {
+     "asset": "COPPER",
+     "side": "long",
+     "method": "detector-leg",
+     "rule": null,
+     "provenance": [
+      "own words",
+      "parent_text"
+     ],
+     "side_from": "own words"
+    },
+    {
+     "asset": "GOLD",
+     "side": "none",
+     "method": "context",
+     "rule": null,
+     "provenance": [
+      "root_image",
+      "root_text"
+     ],
+     "side_from": "none: the caller names other assets"
+    },
+    {
+     "asset": "OIL",
+     "side": "none",
+     "method": "context",
+     "rule": null,
+     "provenance": [
+      "root_image"
+     ],
+     "side_from": "none: the caller names other assets"
+    }
+   ],
+   "recorded": [
+    {
+     "asset": "COPPER",
+     "side": "long"
+    }
+   ]
+  },
+  {
+   "post": "2016523209500131511",
+   "url": "https://x.com/BobLoukas/status/2016523209500131511",
+   "author": "BobLoukas",
+   "posted_at": "2026-01-28T14:46:12Z",
+   "text": "Very strong signal on Stocks here.  Week 10 of the Cycle, new ATH's, and recently left behind a very clean stop with the recent Daily Cycle Low.",
+   "receipt": "sources/bobloukas/receipts/2016523209500131511.json",
+   "status": "complete",
+   "reason": null,
+   "pin_sha256": "86c596d74e453f3c4aefcff0787cf9f27d663960a53d117c020d4c84eec79b82",
+   "chain": [
+    {
+     "id": "2008233015290613962",
+     "author": "BobLoukas",
+     "posted_at": "2026-01-05T17:43:56Z",
+     "link": "quote",
+     "text_sha256": "9e003efc807057a2cd0204bc5a4251037fcc953670b4afc3c2fd2a405bdc9d2a"
+    }
+   ],
+   "posts": {
+    "parent": {
+     "id": "2008233015290613962",
+     "url": "https://x.com/BobLoukas/status/2008233015290613962",
+     "author": "BobLoukas",
+     "posted_at": "2026-01-05T17:43:56Z",
+     "text": "Week 7 of the Cycle for Stocks, sitting at the prior Weekly Cycle high.  Feeling like it's working through some overhead resistance, before a new big move higher.  Bitcoin catching some of the love.",
+     "text_sha256": "9e003efc807057a2cd0204bc5a4251037fcc953670b4afc3c2fd2a405bdc9d2a",
+     "receipt": "sources/bobloukas/receipts/2008233015290613962.json",
+     "link": "quote",
+     "text_truncated": false,
+     "images": [
+      {
+       "file": "sources/bobloukas/media/2008233015290613962_0.png",
+       "sha256": "b7d889f7921616f6a62768075cde2ab569b2d46c9352b42cd7010a84d9e3cb5e",
+       "bytes": 281892
+      }
+     ],
+     "used": true
+    }
+   },
+   "candidates": [
+    {
+     "asset": "BTC",
+     "sources": [
+      {
+       "source": "parent_text",
+       "post_id": "2008233015290613962",
+       "author": "BobLoukas",
+       "evidence": {
+        "words": [
+         "bitcoin"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "asset": "STOCKS",
+     "sources": [
+      {
+       "source": "parent_text",
+       "post_id": "2008233015290613962",
+       "author": "BobLoukas",
+       "evidence": {
+        "words": [
+         "stocks"
+        ]
+       }
+      },
+      {
+       "source": "parent_image",
+       "post_id": "2008233015290613962",
+       "author": "BobLoukas",
+       "evidence": {
+        "image_sha256": "b7d889f7921616f6a62768075cde2ab569b2d46c9352b42cd7010a84d9e3cb5e",
+        "file": "sources/bobloukas/media/2008233015290613962_0.png",
+        "matched": "S&P 500",
+        "ocr_excerpt": "A = 1 fob = go pe jo = [0] @) S&P 500 Index - TW - SPCFD KE ® 06,89"
+       }
+      },
+      {
+       "source": "parent_image",
+       "post_id": "2008233015290613962",
+       "author": "BobLoukas",
+       "evidence": {
+        "image_sha256": "b7d889f7921616f6a62768075cde2ab569b2d46c9352b42cd7010a84d9e3cb5e",
+        "file": "sources/bobloukas/media/2008233015290613962_0.png",
+        "matched": "STOCKS",
+        "ocr_excerpt": null
+       }
+      }
+     ]
+    }
+   ],
+   "reads": [
+    {
+     "asset": "STOCKS",
+     "side": "none",
+     "method": "detector-leg",
+     "rule": null,
+     "provenance": [
+      "own words",
+      "parent_image",
+      "parent_text"
+     ],
+     "side_from": "none"
+    },
+    {
+     "asset": "BTC",
+     "side": "none",
+     "method": "context",
+     "rule": null,
+     "provenance": [
+      "parent_text"
+     ],
+     "side_from": "none: the caller names other assets"
+    }
+   ],
+   "recorded": [
+    {
+     "asset": "STOCKS",
+     "side": "long"
+    }
+   ]
+  },
+  {
+   "post": "2051627961724305706",
+   "url": "https://x.com/BobLoukas/status/2051627961724305706",
+   "author": "BobLoukas",
+   "posted_at": "2026-05-05T11:39:58Z",
+   "text": "Bitcoin - Getting close now to the end of a natural counter trend move in a bear market.  $85-$88k area.   \n\nHowever, there is a difference to this move.  Counter trend moves are typically stronger (impulse) and shorter duration, this move is more consistent with base building over a longer period.  For example, it has been 88 days since the low, no counter trend move to a local high took anywhere near this long. \n\nIt means we could be looking at more of a time based Cycle Low developing over 2026.  In that scenario, the next big pullback could be more of a retest of the bear range.  We shall have to see.",
+   "receipt": "sources/bobloukas/receipts/2051627961724305706.json",
+   "status": "complete",
+   "reason": null,
+   "pin_sha256": "165b863f88d05b7ccd7b4cf90b908f3c7c33a13b5f8024061c4cc52e61595f6d",
+   "chain": [
+    {
+     "id": "2047315362807435656",
+     "author": "BobLoukas",
+     "posted_at": "2026-04-23T14:03:14Z",
+     "link": "quote",
+     "text_sha256": "dcbd9c7ccd2bf229fea8eb1c190e2b84821f9c5ebea3d783807f2ea06393edbb"
+    }
+   ],
+   "posts": {
+    "parent": {
+     "id": "2047315362807435656",
+     "url": "https://x.com/BobLoukas/status/2047315362807435656",
+     "author": "BobLoukas",
+     "posted_at": "2026-04-23T14:03:14Z",
+     "text": "Typical script for Bitcoin in the declining phase is around the $85k level before resumption of the trend.",
+     "text_sha256": "dcbd9c7ccd2bf229fea8eb1c190e2b84821f9c5ebea3d783807f2ea06393edbb",
+     "receipt": "sources/bobloukas/receipts/2047315362807435656.json",
+     "link": "quote",
+     "text_truncated": false,
+     "images": [
+      {
+       "file": "sources/bobloukas/media/2047315362807435656_0.png",
+       "sha256": "ab89d48aeada2cae85817129fb3b4298385377fe43d0598c5abfd4e9e73b9fca",
+       "bytes": 115255
+      }
+     ],
+     "used": true
+    }
+   },
+   "candidates": [
+    {
+     "asset": "BTC",
+     "sources": [
+      {
+       "source": "parent_text",
+       "post_id": "2047315362807435656",
+       "author": "BobLoukas",
+       "evidence": {
+        "words": [
+         "bitcoin"
+        ]
+       }
+      },
+      {
+       "source": "parent_image",
+       "post_id": "2047315362807435656",
+       "author": "BobLoukas",
+       "evidence": {
+        "image_sha256": "ab89d48aeada2cae85817129fb3b4298385377fe43d0598c5abfd4e9e73b9fca",
+        "file": "sources/bobloukas/media/2047315362807435656_0.png",
+        "matched": "Bitcoin / U.S. Dollar",
+        "ocr_excerpt": "© Bitcoin / U.S. Dollar - 1W - Bitstamp K ® 051,738 H"
+       }
+      },
+      {
+       "source": "parent_image",
+       "post_id": "2047315362807435656",
+       "author": "BobLoukas",
+       "evidence": {
+        "image_sha256": "ab89d48aeada2cae85817129fb3b4298385377fe43d0598c5abfd4e9e73b9fca",
+        "file": "sources/bobloukas/media/2047315362807435656_0.png",
+        "matched": "BTC",
+        "ocr_excerpt": null
+       }
+      }
+     ]
+    }
+   ],
+   "reads": [
+    {
+     "asset": "BTC",
+     "side": "none",
+     "method": "detector-leg",
+     "rule": null,
+     "provenance": [
+      "own words",
+      "parent_image",
+      "parent_text"
+     ],
+     "side_from": "none"
+    }
+   ],
+   "recorded": []
+  },
+  {
+   "post": "2062554209212358962",
+   "url": "https://x.com/BobLoukas/status/2062554209212358962",
+   "author": "BobLoukas",
+   "posted_at": "2026-06-04T15:16:58Z",
+   "text": "18 weeks since the gold blow-off, gold is going through a normal rebasing period.  Speculative interest moved on 12-18 weeks ago.  \n\nBut this is remains a secular bull market, so we're looking at reaccumulation of long positions from underweight to overweight over the coming 4 months.  The bull goes again in 2027.",
+   "receipt": "sources/bobloukas/receipts/2062554209212358962.json",
+   "status": "complete",
+   "reason": null,
+   "pin_sha256": "c7d5dfa1df797c76f5403a710d5f833600e2124873f2851eba0c2191ebea2b16",
+   "chain": [
+    {
+     "id": "2047316895838118342",
+     "author": "BobLoukas",
+     "posted_at": "2026-04-23T14:09:19Z",
+     "link": "quote",
+     "text_sha256": "d0224db7a6a721a7710e242b181a6cb7a075c9a53de4627d0319ec3a8d5b0977"
+    }
+   ],
+   "posts": {
+    "parent": {
+     "id": "2047316895838118342",
+     "url": "https://x.com/BobLoukas/status/2047316895838118342",
+     "author": "BobLoukas",
+     "posted_at": "2026-04-23T14:09:19Z",
+     "text": "40 months into the Gold bull market, a mid-cycle pause and consolidation is likely developing.  48 months marks the midpoint which is towards the Nov window.  Lot of confluence in that area across many asset classes.",
+     "text_sha256": "d0224db7a6a721a7710e242b181a6cb7a075c9a53de4627d0319ec3a8d5b0977",
+     "receipt": "sources/bobloukas/receipts/2047316895838118342.json",
+     "link": "quote",
+     "text_truncated": false,
+     "images": [
+      {
+       "file": "sources/bobloukas/media/2047316895838118342_0.png",
+       "sha256": "33ab095d7f9259853baaaa6986058273ee59fccfdb8e35852e14a99fe738f2f8",
+       "bytes": 114432
+      }
+     ],
+     "used": true
+    }
+   },
+   "candidates": [
+    {
+     "asset": "GOLD",
+     "sources": [
+      {
+       "source": "parent_text",
+       "post_id": "2047316895838118342",
+       "author": "BobLoukas",
+       "evidence": {
+        "words": [
+         "gold"
+        ]
+       }
+      },
+      {
+       "source": "parent_image",
+       "post_id": "2047316895838118342",
+       "author": "BobLoukas",
+       "evidence": {
+        "image_sha256": "33ab095d7f9259853baaaa6986058273ee59fccfdb8e35852e14a99fe738f2f8",
+        "file": "sources/bobloukas/media/2047316895838118342_0.png",
+        "matched": "Gold Spot",
+        "ocr_excerpt": "© Gold Spot / U.S. Dollar - 1M- ICE E ® 0"
+       }
+      },
+      {
+       "source": "parent_image",
+       "post_id": "2047316895838118342",
+       "author": "BobLoukas",
+       "evidence": {
+        "image_sha256": "33ab095d7f9259853baaaa6986058273ee59fccfdb8e35852e14a99fe738f2f8",
+        "file": "sources/bobloukas/media/2047316895838118342_0.png",
+        "matched": "GOLD",
+        "ocr_excerpt": "© Gold Spot / U.S. Dollar - 1M- ICE"
+       }
+      }
+     ]
+    }
+   ],
+   "reads": [
+    {
+     "asset": "GOLD",
+     "side": "none",
+     "method": "detector-leg",
+     "rule": null,
+     "provenance": [
+      "own words",
+      "parent_image",
+      "parent_text"
+     ],
+     "side_from": "none"
+    }
+   ],
+   "recorded": [
+    {
+     "asset": "GOLD",
+     "side": "long"
+    }
+   ]
+  },
+  {
+   "post": "2091161059801391206",
+   "url": "https://x.com/BobLoukas/status/2091161059801391206",
+   "author": "BobLoukas",
+   "posted_at": "2026-08-22T13:50:23Z",
+   "text": "Markets got me off the beach. :) \n\nNice move by #Bitcoin and crypto. Similar moves in metals.  Obviously a lot of short covering off a 2 month consolidation, but bullish nonetheless.  \n\nLittle more work to do before a bear market bottom can be confirmed, and a new 4Yr cycle start. Closing out the month strong above (10 month MA) $74k first step, then a weekly close above the $82.8k highs swings the high TF trends back to bullish.  \n\nEither way, very close now.  Excited to get back to the desk in Sept.",
+   "receipt": "sources/bobloukas/receipts/2091161059801391206.json",
+   "status": "complete",
+   "reason": null,
+   "pin_sha256": "df847b8ca7620673ee6691536f5df4b273da15f8e03faa0a0c8a434aa371d7ca",
+   "chain": [
+    {
+     "id": "2070586583829401819",
+     "author": "BobLoukas",
+     "posted_at": "2026-06-26T19:14:45Z",
+     "link": "quote",
+     "text_sha256": "07fb243791135af216742312ed348b5f6c3c9172336aa3984e032e6c2ae1afa6"
+    }
+   ],
+   "posts": {
+    "parent": {
+     "id": "2070586583829401819",
+     "url": "https://x.com/BobLoukas/status/2070586583829401819",
+     "author": "BobLoukas",
+     "posted_at": "2026-06-26T19:14:45Z",
+     "text": "Taking the rest of summer off from all media. \n\nTime for a full recharge and overhaul.  \n\nSee you all in Sept.  Wishing you well. 💪🧠☀️🙏",
+     "text_sha256": "07fb243791135af216742312ed348b5f6c3c9172336aa3984e032e6c2ae1afa6",
+     "receipt": "sources/bobloukas/receipts/2070586583829401819.json",
+     "link": "quote",
+     "text_truncated": false,
+     "images": [],
+     "used": true
+    }
+   },
+   "candidates": [],
+   "reads": [
+    {
+     "asset": "BTC",
+     "side": "none",
+     "method": "detector-leg",
+     "rule": null,
+     "provenance": [
+      "own words"
+     ],
+     "side_from": "none"
+    }
+   ],
+   "recorded": []
+  },
+  {
+   "post": "2097324043334451439",
+   "url": "https://x.com/BobLoukas/status/2097324043334451439",
+   "author": "BobLoukas",
+   "posted_at": "2026-09-08T13:59:52Z",
+   "text": "$COPX  after an 8 month pause is looking to break out again.  \n\nStill deserves a small allocation in long term accounts",
+   "receipt": "sources/bobloukas/receipts/2097324043334451439.json",
+   "status": "complete",
+   "reason": null,
+   "pin_sha256": "018e57992fb22f940799e1c2e9842520d6be44194f39b2b806d95dbb333d3685",
+   "chain": [
+    {
+     "id": "1535324793175678976",
+     "author": "BobLoukas",
+     "posted_at": "2022-06-10T18:15:30Z",
+     "link": "quote",
+     "text_sha256": "50fe81dc4c0d6ded568f8e696ef32b98d729d67b2b6f5d11792bb6ac174a085d"
+    }
+   ],
+   "posts": {
+    "parent": {
+     "id": "1535324793175678976",
+     "url": "https://x.com/BobLoukas/status/1535324793175678976",
+     "author": "BobLoukas",
+     "posted_at": "2022-06-10T18:15:30Z",
+     "text": "Some smart people talk about a massive copper shortage and not enough supply in development. \n\nThen this multi-decade chart supports the view we could see >$10 price.\n\nWorth a small allocation to Copper miners for the long term folks.  Cash some of the energy positions.",
+     "text_sha256": "50fe81dc4c0d6ded568f8e696ef32b98d729d67b2b6f5d11792bb6ac174a085d",
+     "receipt": "sources/bobloukas/receipts/1535324793175678976.json",
+     "link": "quote",
+     "text_truncated": false,
+     "images": [
+      {
+       "file": "sources/bobloukas/media/1535324793175678976_0.png",
+       "sha256": "0ea1482e9848ee0a7e966f5b23f5b3e47e3cc4a529045e02b239a1032670b44d",
+       "bytes": 78913
+      }
+     ],
+     "used": true
+    }
+   },
+   "candidates": [
+    {
+     "asset": "COPPER",
+     "sources": [
+      {
+       "source": "parent_text",
+       "post_id": "1535324793175678976",
+       "author": "BobLoukas",
+       "evidence": {
+        "words": [
+         "copper"
+        ]
+       }
+      },
+      {
+       "source": "parent_image",
+       "post_id": "1535324793175678976",
+       "author": "BobLoukas",
+       "evidence": {
+        "image_sha256": "0ea1482e9848ee0a7e966f5b23f5b3e47e3cc4a529045e02b239a1032670b44d",
+        "file": "sources/bobloukas/media/1535324793175678976_0.png",
+        "matched": "Copper Futures",
+        "ocr_excerpt": "Copper Futures - 1M COMEX TradingView ® D 03"
+       }
+      },
+      {
+       "source": "parent_image",
+       "post_id": "1535324793175678976",
+       "author": "BobLoukas",
+       "evidence": {
+        "image_sha256": "0ea1482e9848ee0a7e966f5b23f5b3e47e3cc4a529045e02b239a1032670b44d",
+        "file": "sources/bobloukas/media/1535324793175678976_0.png",
+        "matched": "COPPER",
+        "ocr_excerpt": "Copper Futures - 1M COMEX TradingVie"
+       }
+      }
+     ]
+    },
+    {
+     "asset": "COPX",
+     "sources": [
+      {
+       "source": "parent_text",
+       "post_id": "1535324793175678976",
+       "author": "BobLoukas",
+       "evidence": {
+        "words": [
+         "copper miners"
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "reads": [
+    {
+     "asset": "COPX",
+     "side": "none",
+     "method": "detector-leg",
+     "rule": null,
+     "provenance": [
+      "own words",
+      "parent_text"
+     ],
+     "side_from": "none"
+    },
+    {
+     "asset": "COPPER",
+     "side": "none",
+     "method": "context",
+     "rule": null,
+     "provenance": [
+      "parent_image",
+      "parent_text"
+     ],
+     "side_from": "none: the caller names other assets"
+    }
+   ],
+   "recorded": [
+    {
+     "asset": "COPX",
+     "side": "long"
+    }
+   ]
+  },
+  {
+   "post": "2102014028855820403",
+   "url": "https://x.com/BobLoukas/status/2102014028855820403",
+   "author": "BobLoukas",
+   "posted_at": "2026-09-21T12:36:12Z",
+   "text": "Really solid Bitcoin push here to break the intermediate trend and resume the secular bull trend.  \nAs is common in any new move, a nasty shakeout is likely, but I’d suspect it doesn’t come until later and from higher.",
+   "receipt": "sources/bobloukas/receipts/2102014028855820403.json",
+   "status": "complete",
+   "reason": null,
+   "pin_sha256": "ba6597d3cf6fb53ce91fa37e5f02202b3fd6ec10d9c71ac01ebcd9b2b64e9312",
+   "chain": [
+    {
+     "id": "2100953898630443447",
+     "author": "BobLoukas",
+     "posted_at": "2026-09-18T14:23:37Z",
+     "link": "quote",
+     "text_sha256": "703be7365f713f55b11184ae72289eb8439b1e115965882ff34dae965cdc38b0"
+    }
+   ],
+   "posts": {
+    "parent": {
+     "id": "2100953898630443447",
+     "url": "https://x.com/BobLoukas/status/2100953898630443447",
+     "author": "BobLoukas",
+     "posted_at": "2026-09-18T14:23:37Z",
+     "text": "Very good setup here for Bitcoin to smash through the May highs and confirm a new bull market.  \n\nMore importantly, the recent 4-week consolidation means any solid push through the highs is very likely a fresh new move that has legs (vs a trap) that might not look back until the $90's.  \n\nFailure to break through sets up a move back to the lows of the range.",
+     "text_sha256": "8860d27e6118cb904812f53978a32f31d3c9ced93ecd78e59b96a1fa85737124",
+     "receipt": "sources/bobloukas/receipts/2100953898630443447.json",
+     "link": "quote",
+     "text_truncated": false,
+     "images": [
+      {
+       "file": "sources/bobloukas/media/2100953898630443447_0.png",
+       "sha256": "43ebaf41d0882fa5963706e39c921ca6e19194ca6d408779073e18d91d3c26db",
+       "bytes": 147006
+      }
+     ],
+     "used": true
+    }
+   },
+   "candidates": [
+    {
+     "asset": "BTC",
+     "sources": [
+      {
+       "source": "parent_text",
+       "post_id": "2100953898630443447",
+       "author": "BobLoukas",
+       "evidence": {
+        "words": [
+         "bitcoin"
+        ]
+       }
+      },
+      {
+       "source": "parent_image",
+       "post_id": "2100953898630443447",
+       "author": "BobLoukas",
+       "evidence": {
+        "image_sha256": "43ebaf41d0882fa5963706e39c921ca6e19194ca6d408779073e18d91d3c26db",
+        "file": "sources/bobloukas/media/2100953898630443447_0.png",
+        "matched": "Bitcoin / U.S. Dollar",
+        "ocr_excerpt": "© Bitcoin / U.S. Dollar - 1W - Bitstamp E ® 098,389 H"
+       }
+      },
+      {
+       "source": "parent_image",
+       "post_id": "2100953898630443447",
+       "author": "BobLoukas",
+       "evidence": {
+        "image_sha256": "43ebaf41d0882fa5963706e39c921ca6e19194ca6d408779073e18d91d3c26db",
+        "file": "sources/bobloukas/media/2100953898630443447_0.png",
+        "matched": "BTC",
+        "ocr_excerpt": null
+       }
+      }
+     ]
+    }
+   ],
+   "reads": [
+    {
+     "asset": "BTC",
+     "side": "none",
+     "method": "detector-leg",
+     "rule": null,
+     "provenance": [
+      "own words",
+      "parent_image",
+      "parent_text"
+     ],
+     "side_from": "none"
+    }
+   ],
+   "recorded": [
+    {
+     "asset": "BTC",
+     "side": "long"
+    }
+   ]
+  },
+  {
+   "post": "2102024327075877097",
+   "url": "https://x.com/BobLoukas/status/2102024327075877097",
+   "author": "BobLoukas",
+   "posted_at": "2026-09-21T13:17:07Z",
+   "text": "You can't trade opinions and tweets mate.  Positions matter, and we've scaled in longs from the very bottom.",
+   "receipt": "sources/bobloukas/receipts/2102024327075877097.json",
+   "status": "complete",
+   "reason": null,
+   "pin_sha256": "d80869572cfbd27d15a5770e5c63f2442fff33417a73d20fba157f156d5c7c0b",
+   "chain": [
+    {
+     "id": "2102021656537649217",
+     "author": "aBlock0",
+     "posted_at": "2026-09-21T13:06:31Z",
+     "link": "reply",
+     "text_sha256": "3ec25c74b5640d26e5373e5e2ddd32584e19c112dd4f613be73ded5637ec1dd8"
+    },
+    {
+     "id": "2102016029119357424",
+     "author": "Innerdevcrypto",
+     "posted_at": "2026-09-21T12:44:09Z",
+     "link": "reply",
+     "text_sha256": "5b5058642e2446d611754f2a354cc3d94c0bc130a170fdadd3e5d07205ed09df"
+    },
+    {
+     "id": "2102014028855820403",
+     "author": "BobLoukas",
+     "posted_at": "2026-09-21T12:36:12Z",
+     "link": "reply",
+     "text_sha256": "95c61b38c07e38116ac2fbe36c011954f5fa657c71a99cd07cffd322b24af448"
+    },
+    {
+     "id": "2100953898630443447",
+     "author": "BobLoukas",
+     "posted_at": "2026-09-18T14:23:37Z",
+     "link": "quote",
+     "text_sha256": "703be7365f713f55b11184ae72289eb8439b1e115965882ff34dae965cdc38b0"
+    }
+   ],
+   "posts": {
+    "parent": {
+     "id": "2102021656537649217",
+     "url": "https://x.com/aBlock0/status/2102021656537649217",
+     "author": "aBlock0",
+     "posted_at": "2026-09-21T13:06:31Z",
+     "text": "is it? Last few months countetrading him was the right move.",
+     "text_sha256": "3ec25c74b5640d26e5373e5e2ddd32584e19c112dd4f613be73ded5637ec1dd8",
+     "receipt": "sources/ablock0/receipts/2102021656537649217.json",
+     "link": "reply",
+     "text_truncated": false,
+     "images": [],
+     "used": true
+    },
+    "root": {
+     "id": "2100953898630443447",
+     "url": "https://x.com/BobLoukas/status/2100953898630443447",
+     "author": "BobLoukas",
+     "posted_at": "2026-09-18T14:23:37Z",
+     "text": "Very good setup here for Bitcoin to smash through the May highs and confirm a new bull market.  \n\nMore importantly, the recent 4-week consolidation means any solid push through the highs is very likely a fresh new move that has legs (vs a trap) that might not look back until the $90's.  \n\nFailure to break through sets up a move back to the lows of the range.",
+     "text_sha256": "8860d27e6118cb904812f53978a32f31d3c9ced93ecd78e59b96a1fa85737124",
+     "receipt": "sources/bobloukas/receipts/2100953898630443447.json",
+     "link": "quote",
+     "text_truncated": false,
+     "images": [
+      {
+       "file": "sources/bobloukas/media/2100953898630443447_0.png",
+       "sha256": "43ebaf41d0882fa5963706e39c921ca6e19194ca6d408779073e18d91d3c26db",
+       "bytes": 147006
+      }
+     ],
+     "used": true
+    }
+   },
+   "candidates": [
+    {
+     "asset": "BTC",
+     "sources": [
+      {
+       "source": "root_text",
+       "post_id": "2100953898630443447",
+       "author": "BobLoukas",
+       "evidence": {
+        "words": [
+         "bitcoin"
+        ]
+       }
+      },
+      {
+       "source": "root_image",
+       "post_id": "2100953898630443447",
+       "author": "BobLoukas",
+       "evidence": {
+        "image_sha256": "43ebaf41d0882fa5963706e39c921ca6e19194ca6d408779073e18d91d3c26db",
+        "file": "sources/bobloukas/media/2100953898630443447_0.png",
+        "matched": "Bitcoin / U.S. Dollar",
+        "ocr_excerpt": "© Bitcoin / U.S. Dollar - 1W - Bitstamp E ® 098,389 H"
+       }
+      },
+      {
+       "source": "root_image",
+       "post_id": "2100953898630443447",
+       "author": "BobLoukas",
+       "evidence": {
+        "image_sha256": "43ebaf41d0882fa5963706e39c921ca6e19194ca6d408779073e18d91d3c26db",
+        "file": "sources/bobloukas/media/2100953898630443447_0.png",
+        "matched": "BTC",
+        "ocr_excerpt": null
+       }
+      }
+     ]
+    }
+   ],
+   "reads": [
+    {
+     "asset": "BTC",
+     "side": "none",
+     "method": "context",
+     "rule": null,
+     "provenance": [
+      "root_image",
+      "root_text"
+     ],
+     "side_from": "none: the caller's words state no position (none)"
+    }
+   ],
+   "recorded": [
+    {
+     "asset": "BTC",
+     "side": "long"
+    }
+   ]
+  },
+  {
+   "post": "2104977267109896477",
+   "url": "https://x.com/BobLoukas/status/2104977267109896477",
+   "author": "BobLoukas",
+   "posted_at": "2026-09-29T16:51:03Z",
+   "text": "Don’t like silver until 2027",
+   "receipt": "sources/bobloukas/receipts/2104977267109896477.json",
+   "status": "complete",
+   "reason": null,
+   "pin_sha256": "01d0b163c92a4792eafccce2622b24cc0cb6e434d090e6fd8c8c6e2dcda17b96",
+   "chain": [
+    {
+     "id": "2104976532552999012",
+     "author": "Harmand66836704",
+     "posted_at": "2026-09-29T16:48:08Z",
+     "link": "reply",
+     "text_sha256": "d33794b46f28dfeaf247215d681bce0bba27bb4772d0c3ff21628386442c0439"
+    },
+    {
+     "id": "2104972378186875141",
+     "author": "BobLoukas",
+     "posted_at": "2026-09-29T16:31:38Z",
+     "link": "reply",
+     "text_sha256": "773cb056a834ed5435728a016e68eee9abc0671ed4d191aee5a398fb9ec29162"
+    }
+   ],
+   "posts": {
+    "parent": {
+     "id": "2104976532552999012",
+     "url": "https://x.com/Harmand66836704/status/2104976532552999012",
+     "author": "Harmand66836704",
+     "posted_at": "2026-09-29T16:48:08Z",
+     "text": "Hey bob what u think of silver from here",
+     "text_sha256": "d33794b46f28dfeaf247215d681bce0bba27bb4772d0c3ff21628386442c0439",
+     "receipt": "sources/harmand66836704/receipts/2104976532552999012.json",
+     "link": "reply",
+     "text_truncated": false,
+     "images": [],
+     "used": true
+    },
+    "root": {
+     "id": "2104972378186875141",
+     "url": "https://x.com/BobLoukas/status/2104972378186875141",
+     "author": "BobLoukas",
+     "posted_at": "2026-09-29T16:31:38Z",
+     "text": "Such an odd market. There are big nuggets for both perma bulls and bears to latch onto, a perfect environment for fitting the market to your bias. (AI, Capex, Growth, Rates, Oil, Breadth)\n\nI like to approach markets like this with the fundamental belief that we simply cannot know what lies ahead, more so now than ever.  Embrace the unknown and trust the trend for as long as it holds, but be quick to hunker down the moment it’s lost.\n\nAnd that might mean getting trapped occasionally. That’s the price of refusing to predict (and blindly hold to) what comes next.",
+     "text_sha256": "b297991adee9385fd02fa0db62371eb8dfa55179108a3365764f77ca95bd75b4",
+     "receipt": "sources/bobloukas/receipts/2104972378186875141.json",
+     "link": "reply",
+     "text_truncated": false,
+     "images": [],
+     "used": true
+    }
+   },
+   "candidates": [
+    {
+     "asset": "OIL",
+     "sources": [
+      {
+       "source": "root_text",
+       "post_id": "2104972378186875141",
+       "author": "BobLoukas",
+       "evidence": {
+        "words": [
+         "oil"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "asset": "SILVER",
+     "sources": [
+      {
+       "source": "parent_text",
+       "post_id": "2104976532552999012",
+       "author": "Harmand66836704",
+       "evidence": {
+        "words": [
+         "silver"
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "reads": [
+    {
+     "asset": "SILVER",
+     "side": "none",
+     "method": "detector-leg",
+     "rule": null,
+     "provenance": [
+      "own words",
+      "parent_text"
+     ],
+     "side_from": "none"
+    },
+    {
+     "asset": "OIL",
+     "side": "none",
+     "method": "context",
+     "rule": null,
+     "provenance": [
+      "root_text"
+     ],
+     "side_from": "none: the caller names other assets"
+    }
+   ],
+   "recorded": [
+    {
+     "asset": "SILVER",
+     "side": "short"
+    }
+   ]
+  },
+  {
+   "post": "2106750657877434407",
+   "url": "https://x.com/BobLoukas/status/2106750657877434407",
+   "author": "BobLoukas",
+   "posted_at": "2026-10-04T14:17:53Z",
+   "text": "I’ve been bullish it for a while and hold a decent COPX position.",
+   "receipt": "sources/bobloukas/receipts/2106750657877434407.json",
+   "status": "complete",
+   "reason": null,
+   "pin_sha256": "624f9a166db8cdf7b1ebdf5c3881f9d24c1fcc46d579c2b6ad787d78dac007a7",
+   "chain": [
+    {
+     "id": "2106748463711182984",
+     "author": "IamNobody_1234",
+     "posted_at": "2026-10-04T14:09:09Z",
+     "link": "reply",
+     "text_sha256": "4edd4cf1c786b890829737f64e5be25b6b93ef9b24a6a08d1a9c624980a72ef9"
+    },
+    {
+     "id": "2106744910896312646",
+     "author": "BobLoukas",
+     "posted_at": "2026-10-04T13:55:02Z",
+     "link": "reply",
+     "text_sha256": "d40cb54d8e0573fc5cac7554f1ede9b90de4cd9907825a81ba52b72943c10cef"
+    }
+   ],
+   "posts": {
+    "parent": {
+     "id": "2106748463711182984",
+     "url": "https://x.com/IamNobody_1234/status/2106748463711182984",
+     "author": "IamNobody_1234",
+     "posted_at": "2026-10-04T14:09:09Z",
+     "text": "Would be interested in your take on Copper? Bit of an outlier since it's industry linked. Obviously narratives are quite positive (demand) but the chart also looks ready to explode up in the medium to long term 🤔 (some short term downside likely)",
+     "text_sha256": "4edd4cf1c786b890829737f64e5be25b6b93ef9b24a6a08d1a9c624980a72ef9",
+     "receipt": "sources/iamnobody_1234/receipts/2106748463711182984.json",
+     "link": "reply",
+     "text_truncated": false,
+     "images": [],
+     "used": true
+    },
+    "root": {
+     "id": "2106744910896312646",
+     "url": "https://x.com/BobLoukas/status/2106744910896312646",
+     "author": "BobLoukas",
+     "posted_at": "2026-10-04T13:55:02Z",
+     "text": "To my long time silver friends, why Silver is more likely heading to $46 before turning bullish again.  \n\nSilver blow-off moves take a lot of time to retrace and rebuild a base.  And often the last weekly cycle from the blowoff phase has to be retraced, in this case to $46.  \n\nFrom a trend perspective, this remains an intermediate time frame retracement from the January blow-off move. The arrows show the corresponding gold Cycle highs/low, which are in decline.  And the next weekly cycle low is not due until the end of 2026.\n\nFrom past experience, Silver in a bull market offers one of the best opportunities to post significant portfolio gains. It's because when it goes into a parabolic advance, it's generally just one relentless and straight move up, allowing for good positions to sit tight in. But those parabolic moves are short-lived (6 to 12 months) and then it takes a long time for another such environment to build.  \n\nI feel strongly that Silver will go through another such environment in the near future, but know that it's always a process.",
+     "text_sha256": "1dd8d5883fa238b3c1a3ba153971a45e20a6635f9221d5f502d27fc2decdb504",
+     "receipt": "sources/bobloukas/receipts/2106744910896312646.json",
+     "link": "reply",
+     "text_truncated": false,
+     "images": [
+      {
+       "file": "sources/bobloukas/media/2106744910896312646_0.png",
+       "sha256": "0c8dd846e8cff892c425a3087ab19980fc4801b9a64df7b5ce5b80394254454d",
+       "bytes": 159889
+      }
+     ],
+     "used": true
+    }
+   },
+   "candidates": [
+    {
+     "asset": "COPPER",
+     "sources": [
+      {
+       "source": "parent_text",
+       "post_id": "2106748463711182984",
+       "author": "IamNobody_1234",
+       "evidence": {
+        "words": [
+         "copper"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "asset": "GOLD",
+     "sources": [
+      {
+       "source": "root_text",
+       "post_id": "2106744910896312646",
+       "author": "BobLoukas",
+       "evidence": {
+        "words": [
+         "gold"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "asset": "SILVER",
+     "sources": [
+      {
+       "source": "root_text",
+       "post_id": "2106744910896312646",
+       "author": "BobLoukas",
+       "evidence": {
+        "words": [
+         "silver"
+        ]
+       }
+      },
+      {
+       "source": "root_image",
+       "post_id": "2106744910896312646",
+       "author": "BobLoukas",
+       "evidence": {
+        "image_sha256": "0c8dd846e8cff892c425a3087ab19980fc4801b9a64df7b5ce5b80394254454d",
+        "file": "sources/bobloukas/media/2106744910896312646_0.png",
+        "matched": "SILVER",
+        "ocr_excerpt": "© Silver / U.S. Dollar - 1W- ICE El ="
+       }
+      }
+     ]
+    }
+   ],
+   "reads": [
+    {
+     "asset": "COPX",
+     "side": "none",
+     "method": "detector-leg",
+     "rule": null,
+     "provenance": [
+      "own words"
+     ],
+     "side_from": "none"
+    },
+    {
+     "asset": "COPPER",
+     "side": "none",
+     "method": "context",
+     "rule": null,
+     "provenance": [
+      "parent_text"
+     ],
+     "side_from": "none: the caller names other assets"
+    },
+    {
+     "asset": "GOLD",
+     "side": "none",
+     "method": "context",
+     "rule": null,
+     "provenance": [
+      "root_text"
+     ],
+     "side_from": "none: the caller names other assets"
+    },
+    {
+     "asset": "SILVER",
+     "side": "none",
+     "method": "context",
+     "rule": null,
+     "provenance": [
+      "root_image",
+      "root_text"
+     ],
+     "side_from": "none: the caller names other assets"
+    }
+   ],
+   "recorded": [
+    {
+     "asset": "COPX",
+     "side": "long"
+    }
+   ]
+  },
+  {
+   "post": "2107063137958564197",
+   "url": "https://x.com/BobLoukas/status/2107063137958564197",
+   "author": "BobLoukas",
+   "posted_at": "2026-10-05T10:59:34Z",
+   "text": "Interesting market.  Stocks deep in their timing for a weekly cycle low, without being reflected in the index. \n\nTech has held the index up. While most sectors have seen real selloffs (Financials, homebuilders, Consumer, transports etc) to Cycle Low Levels.  \n\nSentiment hit March Low levels!\n\nThis is a setup for a big new advance higher.",
+   "receipt": "sources/bobloukas/receipts/2107063137958564197.json",
+   "status": "complete",
+   "reason": null,
+   "pin_sha256": "fd4716ac6d3d5f2665bacba9c9f95515c3d381eb3237f8c2cca59acc0a69a9a8",
+   "chain": [
+    {
+     "id": "2103845537120124990",
+     "author": "BobLoukas",
+     "posted_at": "2026-09-26T13:53:58Z",
+     "link": "quote",
+     "text_sha256": "96f8441006949148e03d425ef27f52ee9b42359bce3be8f9f7397986f36ec754"
+    }
+   ],
+   "posts": {
+    "parent": {
+     "id": "2103845537120124990",
+     "url": "https://x.com/BobLoukas/status/2103845537120124990",
+     "author": "BobLoukas",
+     "posted_at": "2026-09-26T13:53:58Z",
+     "text": "Stocks are or should be in their declining phase of the weekly cycle. \n\nYet it remains extremely resilient, especially given weak seasonality (and mid term elections), yields and oil up too.  \n\nType of environment where you have to really fight a desire to have a bearish bias.",
+     "text_sha256": "96f8441006949148e03d425ef27f52ee9b42359bce3be8f9f7397986f36ec754",
+     "receipt": "sources/bobloukas/receipts/2103845537120124990.json",
+     "link": "quote",
+     "text_truncated": false,
+     "images": [],
+     "used": true
+    }
+   },
+   "candidates": [
+    {
+     "asset": "OIL",
+     "sources": [
+      {
+       "source": "parent_text",
+       "post_id": "2103845537120124990",
+       "author": "BobLoukas",
+       "evidence": {
+        "words": [
+         "oil"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "asset": "STOCKS",
+     "sources": [
+      {
+       "source": "parent_text",
+       "post_id": "2103845537120124990",
+       "author": "BobLoukas",
+       "evidence": {
+        "words": [
+         "stocks"
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "reads": [
+    {
+     "asset": "STOCKS",
+     "side": "none",
+     "method": "detector-leg",
+     "rule": null,
+     "provenance": [
+      "own words",
+      "parent_text"
+     ],
+     "side_from": "none"
+    },
+    {
+     "asset": "OIL",
+     "side": "none",
+     "method": "context",
+     "rule": null,
+     "provenance": [
+      "parent_text"
+     ],
+     "side_from": "none: the caller names other assets"
+    }
+   ],
+   "recorded": [
+    {
+     "asset": "STOCKS",
+     "side": "long"
+    }
+   ]
+  },
+  {
+   "post": "2112915214479798344",
+   "url": "https://x.com/BobLoukas/status/2112915214479798344",
+   "author": "BobLoukas",
+   "posted_at": "2026-10-21T14:33:37Z",
+   "text": "Bitcoin appears to be confirming the new cycle here. These events provide a really clear and clean setup. \n\nThe upside target is around 30 to 45 days, room for a good advance.  It is however not guarantee of a major upside move, but provides an excellent anchoring point because a loss of the recent lows ($79,600) is a level where you would want to get very defensive.",
+   "receipt": "sources/bobloukas/receipts/2112915214479798344.json",
+   "status": "complete",
+   "reason": null,
+   "pin_sha256": "f1a6a4427e6f5c3205875cc1d3b0acfddc99800fa512ccac6d7ae1d0ec5bf916",
+   "chain": [
+    {
+     "id": "2110764348981612915",
+     "author": "BobLoukas",
+     "posted_at": "2026-10-15T16:06:51Z",
+     "link": "quote",
+     "text_sha256": "2d1fa31fa36e5464a40061c2d7f1dfb69d1e9f059afee04dccd06b29ff6350dc"
+    }
+   ],
+   "posts": {
+    "parent": {
+     "id": "2110764348981612915",
+     "url": "https://x.com/BobLoukas/status/2110764348981612915",
+     "author": "BobLoukas",
+     "posted_at": "2026-10-15T16:06:51Z",
+     "text": "Bitcoin held up well and looking to put in a 60-day cycle low.",
+     "text_sha256": "2d1fa31fa36e5464a40061c2d7f1dfb69d1e9f059afee04dccd06b29ff6350dc",
+     "receipt": "sources/bobloukas/receipts/2110764348981612915.json",
+     "link": "quote",
+     "text_truncated": false,
+     "images": [],
+     "used": true
+    }
+   },
+   "candidates": [
+    {
+     "asset": "BTC",
+     "sources": [
+      {
+       "source": "parent_text",
+       "post_id": "2110764348981612915",
+       "author": "BobLoukas",
+       "evidence": {
+        "words": [
+         "bitcoin"
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "reads": [
+    {
+     "asset": "BTC",
+     "side": "none",
+     "method": "detector-leg",
+     "rule": null,
+     "provenance": [
+      "own words",
+      "parent_text"
+     ],
+     "side_from": "none"
+    }
+   ],
+   "recorded": [
+    {
+     "asset": "BTC",
+     "side": "long"
+    }
+   ]
+  },
+  {
+   "post": "2113279842636419392",
+   "url": "https://x.com/goodalexander/status/2113279842636419392",
+   "author": "goodalexander",
+   "posted_at": "2026-10-22T14:42:31Z",
+   "text": "Long BTC \n\nUnfortunately where we are headed there will likely be corn 🌽 perpetual swaps so want to be clear",
+   "receipt": "sources/goodalexander/receipts/2113279842636419392.json",
+   "status": "complete",
+   "reason": null,
+   "pin_sha256": "c4cf537055f7fd946a2c1658b4c600670ff76c03f4118cc11ef7cb5c418e5457",
+   "chain": [
+    {
+     "id": "2113279292188786733",
+     "author": "bidorder",
+     "posted_at": "2026-10-22T14:40:20Z",
+     "link": "reply",
+     "text_sha256": "5e024df4954a4afc5bd934cb22263f385e9b65cd1890d6273150390ce463e247"
+    },
+    {
+     "id": "2113276618118770771",
+     "author": "goodalexander",
+     "posted_at": "2026-10-22T14:29:43Z",
+     "link": "reply",
+     "text_sha256": "3d7df6456a9eb3b8a096ac092cd1cbe4722ceb496b85ab3fdb3355cb50be7a5d"
+    },
+    {
+     "id": "2113001073019662481",
+     "author": "MarathonFusion",
+     "posted_at": "2026-10-21T20:14:48Z",
+     "link": "quote",
+     "text_sha256": "2592b9a693a9094e5c73bf0e384e2999c77b1a8c9f2a3e8f252229b5a12805e0"
+    }
+   ],
+   "posts": {
+    "parent": {
+     "id": "2113279292188786733",
+     "url": "https://x.com/bidorder/status/2113279292188786733",
+     "author": "bidorder",
+     "posted_at": "2026-10-22T14:40:20Z",
+     "text": "so long corn?",
+     "text_sha256": "5e024df4954a4afc5bd934cb22263f385e9b65cd1890d6273150390ce463e247",
+     "receipt": "sources/bidorder/receipts/2113279292188786733.json",
+     "link": "reply",
+     "text_truncated": false,
+     "images": [],
+     "used": true
+    },
+    "root": {
+     "id": "2113001073019662481",
+     "url": "https://x.com/MarathonFusion/status/2113001073019662481",
+     "author": "MarathonFusion",
+     "posted_at": "2026-10-21T20:14:48Z",
+     "text": "Last month, we demonstrated high-rate alchemy: turning mercury into real, stable gold, beating CERN’s record by a factor of 10.\n\nLast week, we enriched isotopes in the world’s most powerful plasma centrifuge, beating the Soviet record that stood for 40 years.\n\nNow, we’re building",
+     "text_sha256": "2592b9a693a9094e5c73bf0e384e2999c77b1a8c9f2a3e8f252229b5a12805e0",
+     "receipt": "sources/marathonfusion/receipts/2113001073019662481.json",
+     "link": "quote",
+     "text_truncated": true,
+     "images": [],
+     "used": true
+    }
+   },
+   "candidates": [
+    {
+     "asset": null,
+     "sources": [
+      {
+       "source": "root_text",
+       "post_id": "2113001073019662481",
+       "author": "MarathonFusion",
+       "evidence": {
+        "unread": "the embed cuts this post's text short: its words are not used"
+       }
+      }
+     ]
+    }
+   ],
+   "reads": [
+    {
+     "asset": "BTC",
+     "side": "long",
+     "method": "detector-leg",
+     "rule": null,
+     "provenance": [
+      "own words"
+     ],
+     "side_from": "own words"
+    }
+   ],
+   "recorded": [
+    {
+     "asset": "BTC",
+     "side": "long"
+    }
+   ]
+  },
+  {
+   "post": "2113602987008356795",
+   "url": "https://x.com/goodalexander/status/2113602987008356795",
+   "author": "goodalexander",
+   "posted_at": "2026-10-23T12:06:35Z",
+   "text": "I am short Gold, this is part of the reason. I think it's got a high bar to work trading extremely above production cost. It's always been a narrative driven asset. \n\nObviously nuclear fusion supply doesn't come on in the near term. But people allocating to gold are doing so on",
+   "receipt": "sources/goodalexander/receipts/2113602987008356795.json",
+   "status": "complete",
+   "reason": null,
+   "pin_sha256": "35a98377028019760d458d08d270dde105dc5992c7c00d6ae041671ac3829712",
+   "chain": [
+    {
+     "id": "2113599439218635204",
+     "author": "7N8Nine",
+     "posted_at": "2026-10-23T11:52:29Z",
+     "link": "reply",
+     "text_sha256": "95f8564f75e848a2dd02a32d30c9f17fd1e995792e23482ef42bc55ada7771bf"
+    },
+    {
+     "id": "2113276618118770771",
+     "author": "goodalexander",
+     "posted_at": "2026-10-22T14:29:43Z",
+     "link": "quote",
+     "text_sha256": "3d7df6456a9eb3b8a096ac092cd1cbe4722ceb496b85ab3fdb3355cb50be7a5d"
+    },
+    {
+     "id": "2113001073019662481",
+     "author": "MarathonFusion",
+     "posted_at": "2026-10-21T20:14:48Z",
+     "link": "quote",
+     "text_sha256": "2592b9a693a9094e5c73bf0e384e2999c77b1a8c9f2a3e8f252229b5a12805e0"
+    }
+   ],
+   "posts": {
+    "parent": {
+     "id": "2113599439218635204",
+     "url": "https://x.com/7N8Nine/status/2113599439218635204",
+     "author": "7N8Nine",
+     "posted_at": "2026-10-23T11:52:29Z",
+     "text": "it posts like this that remind me the difference between myself and most big accounts. My initial reaction is \"this guy must be a retard to think this is true\" but he isn't retarded, hes actually a smart guy he just has low levels of integrity. This is true for most big accounts,",
+     "text_sha256": "95f8564f75e848a2dd02a32d30c9f17fd1e995792e23482ef42bc55ada7771bf",
+     "receipt": "sources/7n8nine/receipts/2113599439218635204.json",
+     "link": "reply",
+     "text_truncated": true,
+     "images": [],
+     "used": true
+    },
+    "root": {
+     "id": "2113001073019662481",
+     "url": "https://x.com/MarathonFusion/status/2113001073019662481",
+     "author": "MarathonFusion",
+     "posted_at": "2026-10-21T20:14:48Z",
+     "text": "Last month, we demonstrated high-rate alchemy: turning mercury into real, stable gold, beating CERN’s record by a factor of 10.\n\nLast week, we enriched isotopes in the world’s most powerful plasma centrifuge, beating the Soviet record that stood for 40 years.\n\nNow, we’re building",
+     "text_sha256": "2592b9a693a9094e5c73bf0e384e2999c77b1a8c9f2a3e8f252229b5a12805e0",
+     "receipt": "sources/marathonfusion/receipts/2113001073019662481.json",
+     "link": "quote",
+     "text_truncated": true,
+     "images": [],
+     "used": true
+    }
+   },
+   "candidates": [
+    {
+     "asset": null,
+     "sources": [
+      {
+       "source": "parent_text",
+       "post_id": "2113599439218635204",
+       "author": "7N8Nine",
+       "evidence": {
+        "unread": "the embed cuts this post's text short: its words are not used"
+       }
+      },
+      {
+       "source": "root_text",
+       "post_id": "2113001073019662481",
+       "author": "MarathonFusion",
+       "evidence": {
+        "unread": "the embed cuts this post's text short: its words are not used"
+       }
+      }
+     ]
+    }
+   ],
+   "reads": [
+    {
+     "asset": "GOLD",
+     "side": "short",
+     "method": "detector-leg",
+     "rule": null,
+     "provenance": [
+      "own words"
+     ],
+     "side_from": "own words"
+    }
+   ],
+   "recorded": [
+    {
+     "asset": "GOLD",
+     "side": "short"
+    }
+   ]
+  },
+  {
+   "post": "2113613893662588966",
+   "url": "https://x.com/BobLoukas/status/2113613893662588966",
+   "author": "BobLoukas",
+   "posted_at": "2026-10-23T12:49:55Z",
+   "text": "Very clean Silver Cycles that are now in a failed weekly state.  Week 14, so potentially another 2 months remain where damage can be done.",
+   "receipt": "sources/bobloukas/receipts/2113613893662588966.json",
+   "status": "complete",
+   "reason": null,
+   "pin_sha256": "a78385216d49beba9ef9ad77dabdfaa87f765b40c024450bf26a6b6951bb11fd",
+   "chain": [
+    {
+     "id": "2106744910896312646",
+     "author": "BobLoukas",
+     "posted_at": "2026-10-04T13:55:02Z",
+     "link": "quote",
+     "text_sha256": "d40cb54d8e0573fc5cac7554f1ede9b90de4cd9907825a81ba52b72943c10cef"
+    }
+   ],
+   "posts": {
+    "parent": {
+     "id": "2106744910896312646",
+     "url": "https://x.com/BobLoukas/status/2106744910896312646",
+     "author": "BobLoukas",
+     "posted_at": "2026-10-04T13:55:02Z",
+     "text": "To my long time silver friends, why Silver is more likely heading to $46 before turning bullish again.  \n\nSilver blow-off moves take a lot of time to retrace and rebuild a base.  And often the last weekly cycle from the blowoff phase has to be retraced, in this case to $46.  \n\nFrom a trend perspective, this remains an intermediate time frame retracement from the January blow-off move. The arrows show the corresponding gold Cycle highs/low, which are in decline.  And the next weekly cycle low is not due until the end of 2026.\n\nFrom past experience, Silver in a bull market offers one of the best opportunities to post significant portfolio gains. It's because when it goes into a parabolic advance, it's generally just one relentless and straight move up, allowing for good positions to sit tight in. But those parabolic moves are short-lived (6 to 12 months) and then it takes a long time for another such environment to build.  \n\nI feel strongly that Silver will go through another such environment in the near future, but know that it's always a process.",
+     "text_sha256": "1dd8d5883fa238b3c1a3ba153971a45e20a6635f9221d5f502d27fc2decdb504",
+     "receipt": "sources/bobloukas/receipts/2106744910896312646.json",
+     "link": "quote",
+     "text_truncated": false,
+     "images": [
+      {
+       "file": "sources/bobloukas/media/2106744910896312646_0.png",
+       "sha256": "0c8dd846e8cff892c425a3087ab19980fc4801b9a64df7b5ce5b80394254454d",
+       "bytes": 159889
+      }
+     ],
+     "used": true
+    }
+   },
+   "candidates": [
+    {
+     "asset": "GOLD",
+     "sources": [
+      {
+       "source": "parent_text",
+       "post_id": "2106744910896312646",
+       "author": "BobLoukas",
+       "evidence": {
+        "words": [
+         "gold"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "asset": "SILVER",
+     "sources": [
+      {
+       "source": "parent_text",
+       "post_id": "2106744910896312646",
+       "author": "BobLoukas",
+       "evidence": {
+        "words": [
+         "silver"
+        ]
+       }
+      },
+      {
+       "source": "parent_image",
+       "post_id": "2106744910896312646",
+       "author": "BobLoukas",
+       "evidence": {
+        "image_sha256": "0c8dd846e8cff892c425a3087ab19980fc4801b9a64df7b5ce5b80394254454d",
+        "file": "sources/bobloukas/media/2106744910896312646_0.png",
+        "matched": "SILVER",
+        "ocr_excerpt": "© Silver / U.S. Dollar - 1W- ICE El ="
+       }
+      }
+     ]
+    }
+   ],
+   "reads": [
+    {
+     "asset": "SILVER",
+     "side": "none",
+     "method": "detector-leg",
+     "rule": null,
+     "provenance": [
+      "own words",
+      "parent_image",
+      "parent_text"
+     ],
+     "side_from": "none"
+    },
+    {
+     "asset": "GOLD",
+     "side": "none",
+     "method": "context",
+     "rule": null,
+     "provenance": [
+      "parent_text"
+     ],
+     "side_from": "none: the caller names other assets"
+    }
+   ],
+   "recorded": [
+    {
+     "asset": "SILVER",
+     "side": "short"
+    }
+   ]
+  },
+  {
+   "post": "2115550350832996432",
+   "url": "https://x.com/goodalexander/status/2115550350832996432",
+   "author": "goodalexander",
+   "posted_at": "2026-10-28T21:04:43Z",
+   "text": "This helps! Still short too much aapl and started going after Cheesecake Factory today \n\nPray for my soul",
+   "receipt": "sources/goodalexander/receipts/2115550350832996432.json",
+   "status": "complete",
+   "reason": null,
+   "pin_sha256": "8ff2e9d985775c9149fa5a94d0dad759938cac2106b5110e188800ae397e85a5",
+   "chain": [
+    {
+     "id": "2115549738720223406",
+     "author": "Nsosnsisnsnskx",
+     "posted_at": "2026-10-28T21:02:17Z",
+     "link": "reply",
+     "text_sha256": "1b18ffbe2cecfef6d248cfeb6294814d272e84a050d3265ef2138988d2bb8887"
+    }
+   ],
+   "posts": {
+    "parent": {
+     "id": "2115549738720223406",
+     "url": "https://x.com/Nsosnsisnsnskx/status/2115549738720223406",
+     "author": "Nsosnsisnsnskx",
+     "posted_at": "2026-10-28T21:02:17Z",
+     "text": "Wait people were actually bullish Google? Xd @goodalexander hope you held that Google short brother",
+     "text_sha256": "1b18ffbe2cecfef6d248cfeb6294814d272e84a050d3265ef2138988d2bb8887",
+     "receipt": "sources/nsosnsisnsnskx/receipts/2115549738720223406.json",
+     "link": "reply",
+     "text_truncated": false,
+     "images": [],
+     "used": true
+    }
+   },
+   "candidates": [],
+   "reads": [],
+   "recorded": [
+    {
+     "asset": "XYZ:AAPL",
+     "side": "short"
+    }
+   ]
+  },
+  {
+   "post": "2115823513915290059",
+   "url": "https://x.com/BobLoukas/status/2115823513915290059",
+   "author": "BobLoukas",
+   "posted_at": "2026-10-29T15:10:10Z",
+   "text": "Bitcoin has to get moving here.  \n\nIn any solid uptrend, three red weekly candles typically is a short reset and a quick continuation of the trend resumes.  We need to see that quickly imo.",
+   "receipt": "sources/bobloukas/receipts/2115823513915290059.json",
+   "status": "complete",
+   "reason": null,
+   "pin_sha256": "096e5d589e09ea906816680c8ea71d5bcd4caf57b9497fbcda20cf7fbb2bbefa",
+   "chain": [
+    {
+     "id": "2112915214479798344",
+     "author": "BobLoukas",
+     "posted_at": "2026-10-21T14:33:37Z",
+     "link": "quote",
+     "text_sha256": "b48348f7b13a852b22b013049897db26b9a3c53bbb3ff555494670cda07d4c22"
+    },
+    {
+     "id": "2110764348981612915",
+     "author": "BobLoukas",
+     "posted_at": "2026-10-15T16:06:51Z",
+     "link": "quote",
+     "text_sha256": "2d1fa31fa36e5464a40061c2d7f1dfb69d1e9f059afee04dccd06b29ff6350dc"
+    }
+   ],
+   "posts": {
+    "parent": {
+     "id": "2112915214479798344",
+     "url": "https://x.com/BobLoukas/status/2112915214479798344",
+     "author": "BobLoukas",
+     "posted_at": "2026-10-21T14:33:37Z",
+     "text": "Bitcoin appears to be confirming the new cycle here. These events provide a really clear and clean setup. \n\nThe upside target is around 30 to 45 days, room for a good advance.  It is however not guarantee of a major upside move, but provides an excellent anchoring point because a loss of the recent lows ($79,600) is a level where you would want to get very defensive.",
+     "text_sha256": "a8b07e00050319ec44957454fa6144d229eee3c3e0782a050a3aba4a1d33181c",
+     "receipt": "sources/bobloukas/receipts/2112915214479798344.json",
+     "link": "quote",
+     "text_truncated": false,
+     "images": [
+      {
+       "file": "sources/bobloukas/media/2112915214479798344_0.png",
+       "sha256": "45f051f599f8b9c80d15425c739c51158d7561ce5566ae3328a2b362344978d3",
+       "bytes": 347963
+      }
+     ],
+     "used": true
+    },
+    "root": {
+     "id": "2110764348981612915",
+     "url": "https://x.com/BobLoukas/status/2110764348981612915",
+     "author": "BobLoukas",
+     "posted_at": "2026-10-15T16:06:51Z",
+     "text": "Bitcoin held up well and looking to put in a 60-day cycle low.",
+     "text_sha256": "2d1fa31fa36e5464a40061c2d7f1dfb69d1e9f059afee04dccd06b29ff6350dc",
+     "receipt": "sources/bobloukas/receipts/2110764348981612915.json",
+     "link": "quote",
+     "text_truncated": false,
+     "images": [],
+     "used": true
+    }
+   },
+   "candidates": [
+    {
+     "asset": "BTC",
+     "sources": [
+      {
+       "source": "parent_text",
+       "post_id": "2112915214479798344",
+       "author": "BobLoukas",
+       "evidence": {
+        "words": [
+         "bitcoin"
+        ]
+       }
+      },
+      {
+       "source": "parent_image",
+       "post_id": "2112915214479798344",
+       "author": "BobLoukas",
+       "evidence": {
+        "image_sha256": "45f051f599f8b9c80d15425c739c51158d7561ce5566ae3328a2b362344978d3",
+        "file": "sources/bobloukas/media/2112915214479798344_0.png",
+        "matched": "Bitcoin / U.S. Dollar",
+        "ocr_excerpt": "© Bitcoin / U.S. Dollar - 1D - Bitstamp KE ® 082,946"
+       }
+      },
+      {
+       "source": "parent_image",
+       "post_id": "2112915214479798344",
+       "author": "BobLoukas",
+       "evidence": {
+        "image_sha256": "45f051f599f8b9c80d15425c739c51158d7561ce5566ae3328a2b362344978d3",
+        "file": "sources/bobloukas/media/2112915214479798344_0.png",
+        "matched": "BTC",
+        "ocr_excerpt": null
+       }
+      },
+      {
+       "source": "root_text",
+       "post_id": "2110764348981612915",
+       "author": "BobLoukas",
+       "evidence": {
+        "words": [
+         "bitcoin"
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "reads": [
+    {
+     "asset": "BTC",
+     "side": "none",
+     "method": "detector-leg",
+     "rule": null,
+     "provenance": [
+      "own words",
+      "parent_image",
+      "parent_text",
+      "root_text"
+     ],
+     "side_from": "none"
+    }
+   ],
+   "recorded": [
+    {
+     "asset": "BTC",
+     "side": "none"
+    }
+   ]
+  },
+  {
+   "post": "2115966476817739790",
+   "url": "https://x.com/goodalexander/status/2115966476817739790",
+   "author": "goodalexander",
+   "posted_at": "2026-10-30T00:38:15Z",
+   "text": "Still like long XMR. sized down BTC am short bunch of single name stocks \n\nTactically short hacker basket til he’s done (don’t wanna fud and will cut so won’t post tickers) hedged it with long xrp (don’t ask)",
+   "receipt": "sources/goodalexander/receipts/2115966476817739790.json",
+   "status": "unavailable",
+   "reason": "post 2115965415587467525 unavailable (This Post was deleted by the Post author. Learn more)",
+   "pin_sha256": "4ca8705e1f1cae3f3f85baf487157bfe3ebfc773520a9f734dda930d7ce6296f",
+   "chain": [],
+   "posts": {},
+   "candidates": [],
+   "reads": [
+    {
+     "asset": "XMR",
+     "side": "long",
+     "method": "detector-leg",
+     "rule": null,
+     "provenance": [
+      "own words"
+     ],
+     "side_from": "own words"
+    },
+    {
+     "asset": "BTC",
+     "side": "none",
+     "method": "detector-leg",
+     "rule": null,
+     "provenance": [
+      "own words"
+     ],
+     "side_from": "none"
+    },
+    {
+     "asset": "STOCKS",
+     "side": "short",
+     "method": "detector-leg",
+     "rule": null,
+     "provenance": [
+      "own words"
+     ],
+     "side_from": "own words"
+    },
+    {
+     "asset": "XRP",
+     "side": "long",
+     "method": "detector-leg",
+     "rule": null,
+     "provenance": [
+      "own words"
+     ],
+     "side_from": "own words"
+    }
+   ],
+   "recorded": [
+    {
+     "asset": "XMR",
+     "side": "long"
+    },
+    {
+     "asset": "XRP",
+     "side": "long"
+    }
+   ]
+  },
+  {
+   "post": "2116199680157647216",
+   "url": "https://x.com/BobLoukas/status/2116199680157647216",
+   "author": "BobLoukas",
+   "posted_at": "2026-10-30T16:04:55Z",
+   "text": "End of December Gold will be a screaming buy again.  A 1-year correction/reset, and the midpoint of the 8 yr cycle. \n\nStill believe it’s a secular bull market.",
+   "receipt": "sources/bobloukas/receipts/2116199680157647216.json",
+   "status": "complete",
+   "reason": null,
+   "pin_sha256": "980032739eb879e4cfd5f07304044b573c8c1948b5d9f071639acc99dae216b6",
+   "chain": [
+    {
+     "id": "2062554209212358962",
+     "author": "BobLoukas",
+     "posted_at": "2026-06-04T15:16:58Z",
+     "link": "quote",
+     "text_sha256": "05df116392b92c9b16afa482025ce554058a5fddab1abd9fcd3980cbcc4e0379"
+    },
+    {
+     "id": "2047316895838118342",
+     "author": "BobLoukas",
+     "posted_at": "2026-04-23T14:09:19Z",
+     "link": "quote",
+     "text_sha256": "d0224db7a6a721a7710e242b181a6cb7a075c9a53de4627d0319ec3a8d5b0977"
+    }
+   ],
+   "posts": {
+    "parent": {
+     "id": "2062554209212358962",
+     "url": "https://x.com/BobLoukas/status/2062554209212358962",
+     "author": "BobLoukas",
+     "posted_at": "2026-06-04T15:16:58Z",
+     "text": "18 weeks since the gold blow-off, gold is going through a normal rebasing period.  Speculative interest moved on 12-18 weeks ago.  \n\nBut this is remains a secular bull market, so we're looking at reaccumulation of long positions from underweight to overweight over the coming 4 months.  The bull goes again in 2027.",
+     "text_sha256": "15a18f9071d59bb2afec7fe59c48876494f3e89e1257b191d7c76f6613031204",
+     "receipt": "sources/bobloukas/receipts/2062554209212358962.json",
+     "link": "quote",
+     "text_truncated": false,
+     "images": [
+      {
+       "file": "sources/bobloukas/media/2062554209212358962_0.png",
+       "sha256": "11610a22371f7a7dea20ddaaf9b0ef9ed5968dacf317ac909e7bd18bdc6d309d",
+       "bytes": 276736
+      }
+     ],
+     "used": true
+    },
+    "root": {
+     "id": "2047316895838118342",
+     "url": "https://x.com/BobLoukas/status/2047316895838118342",
+     "author": "BobLoukas",
+     "posted_at": "2026-04-23T14:09:19Z",
+     "text": "40 months into the Gold bull market, a mid-cycle pause and consolidation is likely developing.  48 months marks the midpoint which is towards the Nov window.  Lot of confluence in that area across many asset classes.",
+     "text_sha256": "d0224db7a6a721a7710e242b181a6cb7a075c9a53de4627d0319ec3a8d5b0977",
+     "receipt": "sources/bobloukas/receipts/2047316895838118342.json",
+     "link": "quote",
+     "text_truncated": false,
+     "images": [
+      {
+       "file": "sources/bobloukas/media/2047316895838118342_0.png",
+       "sha256": "33ab095d7f9259853baaaa6986058273ee59fccfdb8e35852e14a99fe738f2f8",
+       "bytes": 114432
+      }
+     ],
+     "used": true
+    }
+   },
+   "candidates": [
+    {
+     "asset": "GOLD",
+     "sources": [
+      {
+       "source": "parent_text",
+       "post_id": "2062554209212358962",
+       "author": "BobLoukas",
+       "evidence": {
+        "words": [
+         "gold"
+        ]
+       }
+      },
+      {
+       "source": "parent_image",
+       "post_id": "2062554209212358962",
+       "author": "BobLoukas",
+       "evidence": {
+        "image_sha256": "11610a22371f7a7dea20ddaaf9b0ef9ed5968dacf317ac909e7bd18bdc6d309d",
+        "file": "sources/bobloukas/media/2062554209212358962_0.png",
+        "matched": "Gold Spot",
+        "ocr_excerpt": "- oo 0 oo os a TTT © Gold Spot / U.S. Dollar- IW ICE I ® 03,"
+       }
+      },
+      {
+       "source": "parent_image",
+       "post_id": "2062554209212358962",
+       "author": "BobLoukas",
+       "evidence": {
+        "image_sha256": "11610a22371f7a7dea20ddaaf9b0ef9ed5968dacf317ac909e7bd18bdc6d309d",
+        "file": "sources/bobloukas/media/2062554209212358962_0.png",
+        "matched": "GOLD",
+        "ocr_excerpt": "- oo 0 oo os a TTT © Gold Spot / U.S. Dollar- IW ICE I"
+       }
+      },
+      {
+       "source": "root_text",
+       "post_id": "2047316895838118342",
+       "author": "BobLoukas",
+       "evidence": {
+        "words": [
+         "gold"
+        ]
+       }
+      },
+      {
+       "source": "root_image",
+       "post_id": "2047316895838118342",
+       "author": "BobLoukas",
+       "evidence": {
+        "image_sha256": "33ab095d7f9259853baaaa6986058273ee59fccfdb8e35852e14a99fe738f2f8",
+        "file": "sources/bobloukas/media/2047316895838118342_0.png",
+        "matched": "Gold Spot",
+        "ocr_excerpt": "© Gold Spot / U.S. Dollar - 1M- ICE E ® 0"
+       }
+      },
+      {
+       "source": "root_image",
+       "post_id": "2047316895838118342",
+       "author": "BobLoukas",
+       "evidence": {
+        "image_sha256": "33ab095d7f9259853baaaa6986058273ee59fccfdb8e35852e14a99fe738f2f8",
+        "file": "sources/bobloukas/media/2047316895838118342_0.png",
+        "matched": "GOLD",
+        "ocr_excerpt": "© Gold Spot / U.S. Dollar - 1M- ICE"
+       }
+      }
+     ]
+    }
+   ],
+   "reads": [
+    {
+     "asset": "GOLD",
+     "side": "none",
+     "method": "detector-leg",
+     "rule": null,
+     "provenance": [
+      "own words",
+      "parent_image",
+      "parent_text",
+      "root_image",
+      "root_text"
+     ],
+     "side_from": "none"
+    }
+   ],
+   "recorded": [
+    {
+     "asset": "GOLD",
+     "side": "none"
+    }
+   ]
+  },
+  {
+   "post": "2116203980111933911",
+   "url": "https://x.com/goodalexander/status/2116203980111933911",
+   "author": "goodalexander",
+   "posted_at": "2026-10-30T16:22:00Z",
+   "text": "Golden retriever version 🐕\n\nShort S&P 500 futures. Intel just flipped AI spending from \"paid for by cash flow\" to \"needs debt and stock sales.\" Memory prices are wrecking PC and consumer demand. Oil up and EURCHF down say Iran and Ukraine are heating up into the midterms.\n\nNot",
+   "receipt": "sources/goodalexander/receipts/2116203980111933911.json",
+   "status": "complete",
+   "reason": null,
+   "pin_sha256": "a6329e61c9965b0f97a2ccd542caff27c82915909aca749b9480344babebf307",
+   "chain": [
+    {
+     "id": "2116196021751750688",
+     "author": "0xMiaWallace",
+     "posted_at": "2026-10-30T15:50:23Z",
+     "link": "reply",
+     "text_sha256": "0368ba89b01b55420c6c4e95b2960e15117f047d15c931f51228e5cf69c2beec"
+    },
+    {
+     "id": "2116181465092264424",
+     "author": "goodalexander",
+     "posted_at": "2026-10-30T14:52:32Z",
+     "link": "reply",
+     "text_sha256": "9790342c0f0042ff31f851236c27bd9ee634d08f29d49fe3cf825f7e86274f2c"
+    }
+   ],
+   "posts": {
+    "parent": {
+     "id": "2116196021751750688",
+     "url": "https://x.com/0xMiaWallace/status/2116196021751750688",
+     "author": "0xMiaWallace",
+     "posted_at": "2026-10-30T15:50:23Z",
+     "text": "hey @grok give me TLDR positioning and reason",
+     "text_sha256": "0368ba89b01b55420c6c4e95b2960e15117f047d15c931f51228e5cf69c2beec",
+     "receipt": "sources/0xmiawallace/receipts/2116196021751750688.json",
+     "link": "reply",
+     "text_truncated": false,
+     "images": [],
+     "used": true
+    },
+    "root": {
+     "id": "2116181465092264424",
+     "url": "https://x.com/goodalexander/status/2116181465092264424",
+     "author": "goodalexander",
+     "posted_at": "2026-10-30T14:52:32Z",
+     "text": "https://t.co/JEUi47Hmjx",
+     "text_sha256": "9790342c0f0042ff31f851236c27bd9ee634d08f29d49fe3cf825f7e86274f2c",
+     "receipt": "sources/goodalexander/receipts/2116181465092264424.json",
+     "link": "reply",
+     "text_truncated": false,
+     "images": [],
+     "used": true
+    }
+   },
+   "candidates": [],
+   "reads": [
+    {
+     "asset": "STOCKS",
+     "side": "short",
+     "method": "detector-leg",
+     "rule": null,
+     "provenance": [
+      "own words"
+     ],
+     "side_from": "own words"
+    },
+    {
+     "asset": "OIL",
+     "side": "none",
+     "method": "detector-leg",
+     "rule": null,
+     "provenance": [
+      "own words"
+     ],
+     "side_from": "none"
+    }
+   ],
+   "recorded": [
+    {
+     "asset": "STOCKS",
+     "side": "short"
+    }
+   ]
+  },
+  {
+   "post": "2116304617047007308",
+   "url": "https://x.com/goodalexander/status/2116304617047007308",
+   "author": "goodalexander",
+   "posted_at": "2026-10-30T23:01:54Z",
+   "text": "solid support here",
+   "receipt": "sources/goodalexander/receipts/2116304617047007308.json",
+   "status": "complete",
+   "reason": null,
+   "pin_sha256": "120483deceed425672193d57d9ca803ac41854b671a2f5e902f4be34a728ac0e",
+   "chain": [
+    {
+     "id": "2116217175962776030",
+     "author": "based16z",
+     "posted_at": "2026-10-30T17:14:26Z",
+     "link": "reply",
+     "text_sha256": "96b6d94323a063ff6f5f89d69d7eae73f421d7623114c5e7b48d0234ace271c8"
+    }
+   ],
+   "posts": {
+    "parent": {
+     "id": "2116217175962776030",
+     "url": "https://x.com/based16z/status/2116217175962776030",
+     "author": "based16z",
+     "posted_at": "2026-10-30T17:14:26Z",
+     "text": "https://t.co/S4AyJV1Ctb",
+     "text_sha256": "96b6d94323a063ff6f5f89d69d7eae73f421d7623114c5e7b48d0234ace271c8",
+     "receipt": "sources/based16z/receipts/2116217175962776030.json",
+     "link": "reply",
+     "text_truncated": false,
+     "images": [
+      {
+       "file": "sources/based16z/media/2116217175962776030_0.jpg",
+       "sha256": "1490ecfc2f3e38aa4f4afd95392971b7619248e0da3ea690fa2500e3e46389ee",
+       "bytes": 105764
+      }
+     ],
+     "used": true
+    }
+   },
+   "candidates": [
+    {
+     "asset": "SOXL",
+     "sources": [
+      {
+       "source": "parent_image",
+       "post_id": "2116217175962776030",
+       "author": "based16z",
+       "evidence": {
+        "image_sha256": "1490ecfc2f3e38aa4f4afd95392971b7619248e0da3ea690fa2500e3e46389ee",
+        "file": "sources/based16z/media/2116217175962776030_0.jpg",
+        "matched": "Direxion Daily Semiconductor Bull 3X Shares",
+        "ocr_excerpt": "X Direxion Daily Semiconductor Bull 3X Shares - 1w - AMEX 400.0000 360.0000"
+       }
+      }
+     ]
+    }
+   ],
+   "reads": [
+    {
+     "asset": "SOXL",
+     "side": "none",
+     "method": "context",
+     "rule": null,
+     "provenance": [
+      "parent_image"
+     ],
+     "side_from": "none: the caller's words state no position (none)"
+    }
+   ],
+   "recorded": [
+    {
+     "asset": "SOXL",
+     "side": "short"
+    }
+   ]
+  },
+  {
+   "post": "2118167587637096933",
+   "url": "https://x.com/koolkrypto223/status/2118167587637096933",
+   "author": "koolkrypto223",
+   "posted_at": "2026-11-05T02:24:41Z",
+   "text": "$KNTQ is the token",
+   "receipt": "sources/koolkrypto223/receipts/2118167587637096933.json",
+   "status": "truncated",
+   "reason": "more than 4 parents: the root is not known",
+   "pin_sha256": "3ff5c31e41c3b21858578264d3179bf60198c8dcd44c763717c4a3dc0ea7c186",
+   "chain": [
+    {
+     "id": "2118166336119676990",
+     "author": "liquidated_hl",
+     "posted_at": "2026-11-05T02:19:42Z",
+     "link": "reply",
+     "text_sha256": "cc3221eec8687b0aaa6b86acd6503ccccd2438077361f590829d1d3dfcd771b9"
+    },
+    {
+     "id": "2118165186179715330",
+     "author": "CryptoTomYT",
+     "posted_at": "2026-11-05T02:15:08Z",
+     "link": "quote",
+     "text_sha256": "690268d2b8b2bc5d5472067fac704c3cab02d0b64ea5595162edf0c0f6a83902"
+    },
+    {
+     "id": "2118161975977087229",
+     "author": "0xdoraelong",
+     "posted_at": "2026-11-05T02:02:23Z",
+     "link": "quote",
+     "text_sha256": "5b12d3e2b0e277627b4ecbd9897423f5eb4e8a07fd9a20bc736a5cd504539f6c"
+    },
+    {
+     "id": "2118157220491706534",
+     "author": "CryptoTomYT",
+     "posted_at": "2026-11-05T01:43:29Z",
+     "link": "quote",
+     "text_sha256": "4672e4cf798350f606a77ca3ffbd0b874857732e29ccc12bd67ed624784ff448"
+    }
+   ],
+   "posts": {
+    "parent": {
+     "id": "2118166336119676990",
+     "url": "https://x.com/liquidated_hl/status/2118166336119676990",
+     "author": "liquidated_hl",
+     "posted_at": "2026-11-05T02:19:42Z",
+     "text": "Having talked to Tommy, I wanted to long ascend, but than my dumbass forgot that THEY HAVE NO TOKEN \nASCEND IS FULLY KNTQ/HYPE ALIGNED",
+     "text_sha256": "cc3221eec8687b0aaa6b86acd6503ccccd2438077361f590829d1d3dfcd771b9",
+     "receipt": "sources/liquidated_hl/receipts/2118166336119676990.json",
+     "link": "reply",
+     "text_truncated": false,
+     "images": [],
+     "used": true
+    }
+   },
+   "candidates": [
+    {
+     "asset": "HYPE",
+     "sources": [
+      {
+       "source": "parent_text",
+       "post_id": "2118166336119676990",
+       "author": "liquidated_hl",
+       "evidence": {
+        "words": [
+         "HYPE"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "asset": "KNTQ",
+     "sources": [
+      {
+       "source": "parent_text",
+       "post_id": "2118166336119676990",
+       "author": "liquidated_hl",
+       "evidence": {
+        "words": [
+         "KNTQ"
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "reads": [
+    {
+     "asset": "KNTQ",
+     "side": "none",
+     "method": "detector-leg",
+     "rule": null,
+     "provenance": [
+      "own words",
+      "parent_text"
+     ],
+     "side_from": "none"
+    },
+    {
+     "asset": "HYPE",
+     "side": "none",
+     "method": "context",
+     "rule": null,
+     "provenance": [
+      "parent_text"
+     ],
+     "side_from": "none: the caller names other assets"
+    }
+   ],
+   "recorded": []
+  },
+  {
+   "post": "2118181656398090718",
+   "url": "https://x.com/koolkrypto223/status/2118181656398090718",
+   "author": "koolkrypto223",
+   "posted_at": "2026-11-05T03:20:35Z",
+   "text": "More $NEST and $KNTQ",
+   "receipt": "sources/koolkrypto223/receipts/2118181656398090718.json",
+   "status": "complete",
+   "reason": null,
+   "pin_sha256": "ab6344039af4dff3e8b6d4b0c59162bd887dcc772b7315180e248ccf3245d077",
+   "chain": [
+    {
+     "id": "2118071502960492654",
+     "author": "0xLcrgs",
+     "posted_at": "2026-11-04T20:02:52Z",
+     "link": "reply",
+     "text_sha256": "166a1e4613177fa48958c9a07e257757bba7c30a692f1c4fa3a471216fc26d2c"
+    },
+    {
+     "id": "2117889577503596561",
+     "author": "loraclexyz",
+     "posted_at": "2026-11-04T07:59:58Z",
+     "link": "quote",
+     "text_sha256": "2b6d20a2719057d908d2e5061b4aa50cd7699be84c39c42bc3945d5074e6c766"
+    },
+    {
+     "id": "2117864901108432999",
+     "author": "gregory_raymond",
+     "posted_at": "2026-11-04T06:21:55Z",
+     "link": "quote",
+     "text_sha256": "60e671d9abf87f05c6ea55d687f4564307e35842933d2edc55596bfbe1e01f34"
+    }
+   ],
+   "posts": {
+    "parent": {
+     "id": "2118071502960492654",
+     "url": "https://x.com/0xLcrgs/status/2118071502960492654",
+     "author": "0xLcrgs",
+     "posted_at": "2026-11-04T20:02:52Z",
+     "text": "rate my portfolio\n\nyes i know i don't have enough HYPE, but no one ever will have enough HYPE",
+     "text_sha256": "166a1e4613177fa48958c9a07e257757bba7c30a692f1c4fa3a471216fc26d2c",
+     "receipt": "sources/0xlcrgs/receipts/2118071502960492654.json",
+     "link": "reply",
+     "text_truncated": false,
+     "images": [
+      {
+       "file": "sources/0xlcrgs/media/2118071502960492654_0.png",
+       "sha256": "a1a1c4d37424b2a4e9fb2c766831b7a97c70db64734945778ad0398f575dc908",
+       "bytes": 37132
+      }
+     ],
+     "used": true
+    },
+    "root": {
+     "id": "2117864901108432999",
+     "url": "https://x.com/gregory_raymond/status/2117864901108432999",
+     "author": "gregory_raymond",
+     "posted_at": "2026-11-04T06:21:55Z",
+     "text": "🔴 Grosse info : Crédit Mutuel Arkéa (@cmarkea) victime d’une fraude d'au moins 133 millions de dollars, blanchis en cryptos\n\nL'information a été révélée dans la nuit par l'enquêteur onchain @ZachXBT\n\n👉 Je travaille sur cette affaire depuis hier, voici ce que j'ai réuni : h",
+     "text_sha256": "60e671d9abf87f05c6ea55d687f4564307e35842933d2edc55596bfbe1e01f34",
+     "receipt": "sources/gregory_raymond/receipts/2117864901108432999.json",
+     "link": "quote",
+     "text_truncated": true,
+     "images": [
+      {
+       "file": "sources/gregory_raymond/media/2117864901108432999_0.jpg",
+       "sha256": "95d7ce6733c586c3a6f5e72858123020862789b25901215d9b4ecec2f49e8223",
+       "bytes": 55670
+      },
+      {
+       "file": "sources/gregory_raymond/media/2117864901108432999_1.jpg",
+       "sha256": "584573a570b314221aab89e8a11b9d9bd4c8b915056e7c35cb0566972fc12f12",
+       "bytes": 251270
+      }
+     ],
+     "used": true
+    }
+   },
+   "candidates": [
+    {
+     "asset": "ETH",
+     "sources": [
+      {
+       "source": "parent_image",
+       "post_id": "2118071502960492654",
+       "author": "0xLcrgs",
+       "evidence": {
+        "image_sha256": "a1a1c4d37424b2a4e9fb2c766831b7a97c70db64734945778ad0398f575dc908",
+        "file": "sources/0xlcrgs/media/2118071502960492654_0.png",
+        "matched": "ETH",
+        "ocr_excerpt": "% ® NEST 0.60% ® usDc 2.26% ® ETH 0.010% ® Other & rounding 0.0"
+       }
+      },
+      {
+       "source": "root_image",
+       "post_id": "2117864901108432999",
+       "author": "gregory_raymond",
+       "evidence": {
+        "image_sha256": "584573a570b314221aab89e8a11b9d9bd4c8b915056e7c35cb0566972fc12f12",
+        "file": "sources/gregory_raymond/media/2117864901108432999_1.jpg",
+        "matched": "ETH",
+        "ocr_excerpt": "21 USDC (21 transfers) 16,085 ETH (transfers) mfp ee 2,200 ETH"
+       }
+      }
+     ]
+    },
+    {
+     "asset": "HYPE",
+     "sources": [
+      {
+       "source": "parent_text",
+       "post_id": "2118071502960492654",
+       "author": "0xLcrgs",
+       "evidence": {
+        "words": [
+         "HYPE"
+        ]
+       }
+      },
+      {
+       "source": "parent_image",
+       "post_id": "2118071502960492654",
+       "author": "0xLcrgs",
+       "evidence": {
+        "image_sha256": "a1a1c4d37424b2a4e9fb2c766831b7a97c70db64734945778ad0398f575dc908",
+        "file": "sources/0xlcrgs/media/2118071502960492654_0.png",
+        "matched": "HYPE",
+        "ocr_excerpt": "- Allocation © usTC 94.90% ® HYPE 2.22% ® NEST 0.60% ® usDc 2.2"
+       }
+      }
+     ]
+    },
+    {
+     "asset": "NEST",
+     "sources": [
+      {
+       "source": "parent_image",
+       "post_id": "2118071502960492654",
+       "author": "0xLcrgs",
+       "evidence": {
+        "image_sha256": "a1a1c4d37424b2a4e9fb2c766831b7a97c70db64734945778ad0398f575dc908",
+        "file": "sources/0xlcrgs/media/2118071502960492654_0.png",
+        "matched": "NEST",
+        "ocr_excerpt": "© usTC 94.90% ® HYPE 2.22% ® NEST 0.60% ® usDc 2.26% ® ETH 0.01"
+       }
+      }
+     ]
+    },
+    {
+     "asset": null,
+     "sources": [
+      {
+       "source": "root_text",
+       "post_id": "2117864901108432999",
+       "author": "gregory_raymond",
+       "evidence": {
+        "unread": "the embed cuts this post's text short: its words are not used"
+       }
+      }
+     ]
+    }
+   ],
+   "reads": [
+    {
+     "asset": "NEST",
+     "side": "long",
+     "method": "rule",
+     "rule": "more_cashtag",
+     "provenance": [
+      "own words",
+      "parent_image"
+     ],
+     "side_from": "own words"
+    },
+    {
+     "asset": "KNTQ",
+     "side": "long",
+     "method": "rule",
+     "rule": "more_cashtag",
+     "provenance": [
+      "own words"
+     ],
+     "side_from": "own words"
+    },
+    {
+     "asset": "ETH",
+     "side": "none",
+     "method": "context",
+     "rule": null,
+     "provenance": [
+      "parent_image",
+      "root_image"
+     ],
+     "side_from": "none: the caller names other assets"
+    },
+    {
+     "asset": "HYPE",
+     "side": "none",
+     "method": "context",
+     "rule": null,
+     "provenance": [
+      "parent_image",
+      "parent_text"
+     ],
+     "side_from": "none: the caller names other assets"
+    }
+   ],
+   "recorded": [
+    {
+     "asset": "KNTQ",
+     "side": "long"
+    },
+    {
+     "asset": "NEST",
+     "side": "long"
+    }
+   ]
+  },
+  {
+   "post": "2118727055173091775",
+   "url": "https://x.com/Okada_DeFi0x/status/2118727055173091775",
+   "author": "Okada_DeFi0x",
+   "posted_at": "2026-11-06T15:27:48Z",
+   "text": "wait over 1M $PROS in season rewards? will join for sure",
+   "receipt": "sources/okada_defi0x/receipts/2118727055173091775.json",
+   "status": "complete",
+   "reason": null,
+   "pin_sha256": "f5a71d5305290e8273bd274b8b7425d4e91d79491eb3657d37976760198d4578",
+   "chain": [
+    {
+     "id": "2118726843331441130",
+     "author": "Tanaka_L2",
+     "posted_at": "2026-11-06T15:26:58Z",
+     "link": "reply",
+     "text_sha256": "481fcdcba896fd8a15d0f8ab8b62df3359ba74c2f533dc45ebc33e46eca09fdb"
+    }
+   ],
+   "posts": {
+    "parent": {
+     "id": "2118726843331441130",
+     "url": "https://x.com/Tanaka_L2/status/2118726843331441130",
+     "author": "Tanaka_L2",
+     "posted_at": "2026-11-06T15:26:58Z",
+     "text": "just joined @ProsperTicker genesis season round 2 after spending some time looking into it.\n\ngenesis season round 2 (genesis unlock) goes live today, and i've already jumped in.\n\nProsper is an onchain strategy and trading market on @pharos_network, with p{VAULT}s serving as the",
+     "text_sha256": "481fcdcba896fd8a15d0f8ab8b62df3359ba74c2f533dc45ebc33e46eca09fdb",
+     "receipt": "sources/tanaka_l2/receipts/2118726843331441130.json",
+     "link": "reply",
+     "text_truncated": true,
+     "images": [
+      {
+       "file": "sources/tanaka_l2/media/2118726843331441130_0.jpg",
+       "sha256": "ac035547fd171be83625cc284a073a51f6c29cf72fc023537cf57806da54678e",
+       "bytes": 217880
+      }
+     ],
+     "used": true
+    }
+   },
+   "candidates": [
+    {
+     "asset": null,
+     "sources": [
+      {
+       "source": "parent_text",
+       "post_id": "2118726843331441130",
+       "author": "Tanaka_L2",
+       "evidence": {
+        "unread": "the embed cuts this post's text short: its words are not used"
+       }
+      }
+     ]
+    }
+   ],
+   "reads": [],
+   "recorded": []
+  }
+ ],
+ "potential_callers": [
+  {
+   "handle": "0xLcrgs",
+   "status": "potential (unscored, pending owner promotion)",
+   "interactions": [
+    {
+     "caller": "koolkrypto223",
+     "caller_post": "2118181656398090718",
+     "caller_url": "https://x.com/koolkrypto223/status/2118181656398090718",
+     "role": "parent",
+     "link": "reply",
+     "post": "2118071502960492654",
+     "post_url": "https://x.com/0xLcrgs/status/2118071502960492654",
+     "posted_at": "2026-11-04T20:02:52Z",
+     "receipt": "sources/0xlcrgs/receipts/2118071502960492654.json"
+    }
+   ]
+  },
+  {
+   "handle": "0xMiaWallace",
+   "status": "potential (unscored, pending owner promotion)",
+   "interactions": [
+    {
+     "caller": "goodalexander",
+     "caller_post": "2116203980111933911",
+     "caller_url": "https://x.com/goodalexander/status/2116203980111933911",
+     "role": "parent",
+     "link": "reply",
+     "post": "2116196021751750688",
+     "post_url": "https://x.com/0xMiaWallace/status/2116196021751750688",
+     "posted_at": "2026-10-30T15:50:23Z",
+     "receipt": "sources/0xmiawallace/receipts/2116196021751750688.json"
+    }
+   ]
+  },
+  {
+   "handle": "7N8Nine",
+   "status": "potential (unscored, pending owner promotion)",
+   "interactions": [
+    {
+     "caller": "goodalexander",
+     "caller_post": "2113602987008356795",
+     "caller_url": "https://x.com/goodalexander/status/2113602987008356795",
+     "role": "parent",
+     "link": "reply",
+     "post": "2113599439218635204",
+     "post_url": "https://x.com/7N8Nine/status/2113599439218635204",
+     "posted_at": "2026-10-23T11:52:29Z",
+     "receipt": "sources/7n8nine/receipts/2113599439218635204.json"
+    }
+   ]
+  },
+  {
+   "handle": "aBlock0",
+   "status": "potential (unscored, pending owner promotion)",
+   "interactions": [
+    {
+     "caller": "BobLoukas",
+     "caller_post": "2102024327075877097",
+     "caller_url": "https://x.com/BobLoukas/status/2102024327075877097",
+     "role": "parent",
+     "link": "reply",
+     "post": "2102021656537649217",
+     "post_url": "https://x.com/aBlock0/status/2102021656537649217",
+     "posted_at": "2026-09-21T13:06:31Z",
+     "receipt": "sources/ablock0/receipts/2102021656537649217.json"
+    }
+   ]
+  },
+  {
+   "handle": "based16z",
+   "status": "potential (unscored, pending owner promotion)",
+   "interactions": [
+    {
+     "caller": "goodalexander",
+     "caller_post": "2116304617047007308",
+     "caller_url": "https://x.com/goodalexander/status/2116304617047007308",
+     "role": "parent",
+     "link": "reply",
+     "post": "2116217175962776030",
+     "post_url": "https://x.com/based16z/status/2116217175962776030",
+     "posted_at": "2026-10-30T17:14:26Z",
+     "receipt": "sources/based16z/receipts/2116217175962776030.json"
+    }
+   ]
+  },
+  {
+   "handle": "bidorder",
+   "status": "potential (unscored, pending owner promotion)",
+   "interactions": [
+    {
+     "caller": "goodalexander",
+     "caller_post": "2113279842636419392",
+     "caller_url": "https://x.com/goodalexander/status/2113279842636419392",
+     "role": "parent",
+     "link": "reply",
+     "post": "2113279292188786733",
+     "post_url": "https://x.com/bidorder/status/2113279292188786733",
+     "posted_at": "2026-10-22T14:40:20Z",
+     "receipt": "sources/bidorder/receipts/2113279292188786733.json"
+    }
+   ]
+  },
+  {
+   "handle": "gainzy222",
+   "status": "potential (unscored, pending owner promotion)",
+   "interactions": [
+    {
+     "caller": "mert",
+     "caller_post": "1970742039722479782",
+     "caller_url": "https://x.com/mert/status/1970742039722479782",
+     "role": "parent",
+     "link": "reply",
+     "post": "1970741420677083372",
+     "post_url": "https://x.com/gainzy222/status/1970741420677083372",
+     "posted_at": "2025-09-24T06:45:43Z",
+     "receipt": "sources/gainzy222/receipts/1970741420677083372.json"
+    }
+   ]
+  },
+  {
+   "handle": "Harmand66836704",
+   "status": "potential (unscored, pending owner promotion)",
+   "interactions": [
+    {
+     "caller": "BobLoukas",
+     "caller_post": "2104977267109896477",
+     "caller_url": "https://x.com/BobLoukas/status/2104977267109896477",
+     "role": "parent",
+     "link": "reply",
+     "post": "2104976532552999012",
+     "post_url": "https://x.com/Harmand66836704/status/2104976532552999012",
+     "posted_at": "2026-09-29T16:48:08Z",
+     "receipt": "sources/harmand66836704/receipts/2104976532552999012.json"
+    }
+   ]
+  },
+  {
+   "handle": "IamNobody_1234",
+   "status": "potential (unscored, pending owner promotion)",
+   "interactions": [
+    {
+     "caller": "BobLoukas",
+     "caller_post": "2106750657877434407",
+     "caller_url": "https://x.com/BobLoukas/status/2106750657877434407",
+     "role": "parent",
+     "link": "reply",
+     "post": "2106748463711182984",
+     "post_url": "https://x.com/IamNobody_1234/status/2106748463711182984",
+     "posted_at": "2026-10-04T14:09:09Z",
+     "receipt": "sources/iamnobody_1234/receipts/2106748463711182984.json"
+    }
+   ]
+  },
+  {
+   "handle": "LinusCaldwell5",
+   "status": "potential (unscored, pending owner promotion)",
+   "interactions": [
+    {
+     "caller": "BobLoukas",
+     "caller_post": "2011110630338535867",
+     "caller_url": "https://x.com/BobLoukas/status/2011110630338535867",
+     "role": "parent",
+     "link": "reply",
+     "post": "2011110454026776937",
+     "post_url": "https://x.com/LinusCaldwell5/status/2011110454026776937",
+     "posted_at": "2026-01-13T16:17:51Z",
+     "receipt": "sources/linuscaldwell5/receipts/2011110454026776937.json"
+    }
+   ]
+  },
+  {
+   "handle": "liquidated_hl",
+   "status": "potential (unscored, pending owner promotion)",
+   "interactions": [
+    {
+     "caller": "koolkrypto223",
+     "caller_post": "2118167587637096933",
+     "caller_url": "https://x.com/koolkrypto223/status/2118167587637096933",
+     "role": "parent",
+     "link": "reply",
+     "post": "2118166336119676990",
+     "post_url": "https://x.com/liquidated_hl/status/2118166336119676990",
+     "posted_at": "2026-11-05T02:19:42Z",
+     "receipt": "sources/liquidated_hl/receipts/2118166336119676990.json"
+    }
+   ]
+  },
+  {
+   "handle": "Nsosnsisnsnskx",
+   "status": "potential (unscored, pending owner promotion)",
+   "interactions": [
+    {
+     "caller": "goodalexander",
+     "caller_post": "2115550350832996432",
+     "caller_url": "https://x.com/goodalexander/status/2115550350832996432",
+     "role": "parent",
+     "link": "reply",
+     "post": "2115549738720223406",
+     "post_url": "https://x.com/Nsosnsisnsnskx/status/2115549738720223406",
+     "posted_at": "2026-10-28T21:02:17Z",
+     "receipt": "sources/nsosnsisnsnskx/receipts/2115549738720223406.json"
+    }
+   ]
+  },
+  {
+   "handle": "Tanaka_L2",
+   "status": "potential (unscored, pending owner promotion)",
+   "interactions": [
+    {
+     "caller": "Okada_DeFi0x",
+     "caller_post": "2118727055173091775",
+     "caller_url": "https://x.com/Okada_DeFi0x/status/2118727055173091775",
+     "role": "parent",
+     "link": "reply",
+     "post": "2118726843331441130",
+     "post_url": "https://x.com/Tanaka_L2/status/2118726843331441130",
+     "posted_at": "2026-11-06T15:26:58Z",
+     "receipt": "sources/tanaka_l2/receipts/2118726843331441130.json"
+    }
+   ]
+  },
+  {
+   "handle": "vt_georgi",
+   "status": "potential (unscored, pending owner promotion)",
+   "interactions": [
+    {
+     "caller": "BobLoukas",
+     "caller_post": "1985733515221078204",
+     "caller_url": "https://x.com/BobLoukas/status/1985733515221078204",
+     "role": "parent",
+     "link": "reply",
+     "post": "1985730652483043573",
+     "post_url": "https://x.com/vt_georgi/status/1985730652483043573",
+     "posted_at": "2025-11-04T15:27:35Z",
+     "receipt": "sources/vt_georgi/receipts/1985730652483043573.json"
+    }
+   ]
+  }
+ ],
+ "kept_rules": [
+  "more_cashtag",
+  "positioned_side",
+  "picking_up_quantity",
+  "targeting_price"
+ ],
+ "charts_sha256": "8bdf9a369ed31953c85a5209ff83850ca862079dbbe068cb1d11b826829263da"
+}

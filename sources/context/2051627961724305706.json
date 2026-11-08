@@ -1,0 +1,57 @@
+{
+ "schema": "quanty.context.v1",
+ "caller": {
+  "id": "2051627961724305706",
+  "url": "https://x.com/BobLoukas/status/2051627961724305706",
+  "author": "BobLoukas",
+  "posted_at": "2026-05-05T11:39:58Z",
+  "text": "Bitcoin - Getting close now to the end of a natural counter trend move in a bear market.  $85-$88k area.   \n\nHowever, there is a difference to this move.  Counter trend moves are typically stronger (impulse) and shorter duration, this move is more consistent with base building over a longer period.  For example, it has been 88 days since the low, no counter trend move to a local high took anywhere near this long. \n\nIt means we could be looking at more of a time based Cycle Low developing over 2026.  In that scenario, the next big pullback could be more of a retest of the bear range.  We shall have to see.",
+  "text_sha256": "e4675a6e765b0ae1cd6c01d6f2df45372353f22be5309184da86104e16335e53",
+  "link": null,
+  "receipt": "sources/bobloukas/receipts/2051627961724305706.json",
+  "receipt_sha256": "95908419e3aee24a3cdaee0d23c72a0c74a97d96cbd7ebe95bc4c0aec8cc5a33"
+ },
+ "status": "complete",
+ "reason": null,
+ "chain": [
+  {
+   "id": "2047315362807435656",
+   "author": "BobLoukas",
+   "posted_at": "2026-04-23T14:03:14Z",
+   "link": "quote",
+   "text_sha256": "dcbd9c7ccd2bf229fea8eb1c190e2b84821f9c5ebea3d783807f2ea06393edbb"
+  }
+ ],
+ "limits": {
+  "max_depth": 4,
+  "max_images": 8,
+  "max_image_bytes": 8388608
+ },
+ "parent": {
+  "id": "2047315362807435656",
+  "url": "https://x.com/BobLoukas/status/2047315362807435656",
+  "author": "BobLoukas",
+  "posted_at": "2026-04-23T14:03:14Z",
+  "text": "Typical script for Bitcoin in the declining phase is around the $85k level before resumption of the trend.",
+  "text_sha256": "dcbd9c7ccd2bf229fea8eb1c190e2b84821f9c5ebea3d783807f2ea06393edbb",
+  "link": "quote",
+  "receipt": "sources/bobloukas/receipts/2047315362807435656.json",
+  "receipt_sha256": "1f67cb20dc1c02b37611103a3756af0f27b0b6e5eb17e3dc9671102dde98098d",
+  "text_truncated": false,
+  "images": [
+   {
+    "file": "sources/bobloukas/media/2047315362807435656_0.png",
+    "sha256": "ab89d48aeada2cae85817129fb3b4298385377fe43d0598c5abfd4e9e73b9fca",
+    "bytes": 115255,
+    "source": "https://pbs.twimg.com/media/HGmGXMBWIAAtGhe",
+    "ocr": {
+     "text": "© Bitcoin / U.S. Dollar - 1W - Bitstamp K ® 051,738 H64,000 L50,909 C63,142 +11,420 (+22.08%) : v @ uv\n(zr) (a) Fa nan\nSma 46,938 15 3 h ’ 115,000\n°. E 8 $ J) I 111,000\no | RL Ng I.\n3 ah I — wo\n[RN NEE ET 4 pw -\n| a *\n\nIn .\ni -\n17 + + 54,000\n/ 32W 7,00\n\\ 44,000\n\n| |\n| 41,000\n| 38,50\n+ 36,100\n\now\n: 1,700\n: - + <> O 31,700\nLL & 50\n2 ay mM sep Nov 05 har Hay sul sep Nov 026 Mar May mM sep Nov wr we ©",
+     "sha256": "d994663e2ebf85bcd88d3b231e50b0fec6b48386588552c19a846cc3640ffbe9"
+    }
+   }
+  ]
+ },
+ "root_is_parent": true,
+ "walked_at": "2026-11-08T12:29:47Z",
+ "pin_sha256": "165b863f88d05b7ccd7b4cf90b908f3c7c33a13b5f8024061c4cc52e61595f6d"
+}

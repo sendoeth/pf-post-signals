@@ -1,0 +1,46 @@
+{
+ "schema": "quanty.context.v1",
+ "caller": {
+  "id": "2091161059801391206",
+  "url": "https://x.com/BobLoukas/status/2091161059801391206",
+  "author": "BobLoukas",
+  "posted_at": "2026-08-22T13:50:23Z",
+  "text": "Markets got me off the beach. :) \n\nNice move by #Bitcoin and crypto. Similar moves in metals.  Obviously a lot of short covering off a 2 month consolidation, but bullish nonetheless.  \n\nLittle more work to do before a bear market bottom can be confirmed, and a new 4Yr cycle start. Closing out the month strong above (10 month MA) $74k first step, then a weekly close above the $82.8k highs swings the high TF trends back to bullish.  \n\nEither way, very close now.  Excited to get back to the desk in Sept.",
+  "text_sha256": "426bc5d1a15bb22383660354d913d1da89345752cb324e9c6fd2a9f872ca8704",
+  "link": null,
+  "receipt": "sources/bobloukas/receipts/2091161059801391206.json",
+  "receipt_sha256": "89670673d32d6f2d0c29464be5c88e3237eb21e6c01b222ea5700372f1d34c34"
+ },
+ "status": "complete",
+ "reason": null,
+ "chain": [
+  {
+   "id": "2070586583829401819",
+   "author": "BobLoukas",
+   "posted_at": "2026-06-26T19:14:45Z",
+   "link": "quote",
+   "text_sha256": "07fb243791135af216742312ed348b5f6c3c9172336aa3984e032e6c2ae1afa6"
+  }
+ ],
+ "limits": {
+  "max_depth": 4,
+  "max_images": 8,
+  "max_image_bytes": 8388608
+ },
+ "parent": {
+  "id": "2070586583829401819",
+  "url": "https://x.com/BobLoukas/status/2070586583829401819",
+  "author": "BobLoukas",
+  "posted_at": "2026-06-26T19:14:45Z",
+  "text": "Taking the rest of summer off from all media. \n\nTime for a full recharge and overhaul.  \n\nSee you all in Sept.  Wishing you well. 💪🧠☀️🙏",
+  "text_sha256": "07fb243791135af216742312ed348b5f6c3c9172336aa3984e032e6c2ae1afa6",
+  "link": "quote",
+  "receipt": "sources/bobloukas/receipts/2070586583829401819.json",
+  "receipt_sha256": "d5f0be7d458870ac94c172e6f53d2a1efa11d5420500dc01e3b7d2818ff1614a",
+  "text_truncated": false,
+  "images": []
+ },
+ "root_is_parent": true,
+ "walked_at": "2026-11-08T12:29:51Z",
+ "pin_sha256": "df847b8ca7620673ee6691536f5df4b273da15f8e03faa0a0c8a434aa371d7ca"
+}

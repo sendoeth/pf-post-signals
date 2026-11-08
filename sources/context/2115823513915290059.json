@@ -1,0 +1,76 @@
+{
+ "schema": "quanty.context.v1",
+ "caller": {
+  "id": "2115823513915290059",
+  "url": "https://x.com/BobLoukas/status/2115823513915290059",
+  "author": "BobLoukas",
+  "posted_at": "2026-10-29T15:10:10Z",
+  "text": "Bitcoin has to get moving here.  \n\nIn any solid uptrend, three red weekly candles typically is a short reset and a quick continuation of the trend resumes.  We need to see that quickly imo.",
+  "text_sha256": "bad72bb015358e7364411b04602c57c62cd84e86ee25bb24ff5954b10efa7612",
+  "link": null,
+  "receipt": "sources/bobloukas/receipts/2115823513915290059.json",
+  "receipt_sha256": "b4d10d784737cee51c832dc0fa5e2eaeddd9258abe07c1e327f341d745061766"
+ },
+ "status": "complete",
+ "reason": null,
+ "chain": [
+  {
+   "id": "2112915214479798344",
+   "author": "BobLoukas",
+   "posted_at": "2026-10-21T14:33:37Z",
+   "link": "quote",
+   "text_sha256": "b48348f7b13a852b22b013049897db26b9a3c53bbb3ff555494670cda07d4c22"
+  },
+  {
+   "id": "2110764348981612915",
+   "author": "BobLoukas",
+   "posted_at": "2026-10-15T16:06:51Z",
+   "link": "quote",
+   "text_sha256": "2d1fa31fa36e5464a40061c2d7f1dfb69d1e9f059afee04dccd06b29ff6350dc"
+  }
+ ],
+ "limits": {
+  "max_depth": 4,
+  "max_images": 8,
+  "max_image_bytes": 8388608
+ },
+ "parent": {
+  "id": "2112915214479798344",
+  "url": "https://x.com/BobLoukas/status/2112915214479798344",
+  "author": "BobLoukas",
+  "posted_at": "2026-10-21T14:33:37Z",
+  "text": "Bitcoin appears to be confirming the new cycle here. These events provide a really clear and clean setup. \n\nThe upside target is around 30 to 45 days, room for a good advance.  It is however not guarantee of a major upside move, but provides an excellent anchoring point because a loss of the recent lows ($79,600) is a level where you would want to get very defensive.",
+  "text_sha256": "a8b07e00050319ec44957454fa6144d229eee3c3e0782a050a3aba4a1d33181c",
+  "link": "quote",
+  "receipt": "sources/bobloukas/receipts/2112915214479798344.json",
+  "receipt_sha256": "5235d777cb59fc79ea3615dd546f323de56d1872833f331e4f25f4fa2bc33756",
+  "text_truncated": false,
+  "images": [
+   {
+    "file": "sources/bobloukas/media/2112915214479798344_0.png",
+    "sha256": "45f051f599f8b9c80d15425c739c51158d7561ce5566ae3328a2b362344978d3",
+    "bytes": 347963,
+    "source": "https://pbs.twimg.com/media/HVKU_gHWIAA74az",
+    "ocr": {
+     "text": "© Bitcoin / U.S. Dollar - 1D - Bitstamp KE ® 082,946 H84,071 L82,553 C83,916 +970 (+1.17%) lL SC usb\nUF A SU, 98,000\nne 82,213 56,000\nBD 94,000\n(2) 92,000\n= 50 90,000\n4 88,000\nH (AY i\n» TR -\nJ iy aly : -\ni a 74,000\nI “| | 72,000\n| 10 roe\nL 2 68,500\n°o Mm I / oe\n| hore Wf) oe\nII ! LTT LLL Flac\nI\" Lf ose\nHS i\n® i\nja) ; EN Za A 2 ns wa\nNAV AVARVYANWAN\nN ANS A EN NN 7 »\n17 - + << > 0\nMay Jun Jul Aug Sep Oct Nov Dec 2027 ©",
+     "sha256": "7297ad566ef8fe10b1cc1f4b8383649a8149f149ba3565a7d93d6842f016ff54"
+    }
+   }
+  ]
+ },
+ "root": {
+  "id": "2110764348981612915",
+  "url": "https://x.com/BobLoukas/status/2110764348981612915",
+  "author": "BobLoukas",
+  "posted_at": "2026-10-15T16:06:51Z",
+  "text": "Bitcoin held up well and looking to put in a 60-day cycle low.",
+  "text_sha256": "2d1fa31fa36e5464a40061c2d7f1dfb69d1e9f059afee04dccd06b29ff6350dc",
+  "link": "quote",
+  "receipt": "sources/bobloukas/receipts/2110764348981612915.json",
+  "receipt_sha256": "458b98f4bcbf6f35729d854511df11a27b2de7fa046a5ff57129da56dc4426ef",
+  "text_truncated": false,
+  "images": []
+ },
+ "walked_at": "2026-11-08T12:30:19Z",
+ "pin_sha256": "096e5d589e09ea906816680c8ea71d5bcd4caf57b9497fbcda20cf7fbb2bbefa"
+}

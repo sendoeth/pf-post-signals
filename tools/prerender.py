@@ -28,6 +28,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from rate import caller_slug  # noqa: E402
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import regimes  # noqa: E402
+import context_page  # noqa: E402
 AUTHOR_COLORS = ["#2a78d6", "#eb6834", "#4a3aa7", "#d55181", "#5b6475", "#8a5a2b"]
 SITE = "https://sendoeth.com/pf-post-signals/web/"
 
@@ -291,7 +292,7 @@ def caller_static(name, c, rt, avatars, early=None, aff=None, regimes_doc=None):
     return f'<div data-static="1">{head}{early_block(name, early or [], aff)}<section class="panel recap"><h2>Inputs</h2><dl>{dl}</dl></section>{table}{regimes.caller_section(name, regimes_doc)}</div>'
 
 
-def position_static(r, asof, avatars, all_rows=(), ratings=None):
+def position_static(r, asof, avatars, all_rows=(), ratings=None, context=None):
     p = r["p"]
     side = r["side"]
     rows = [("Asset", f'{r["asset"]} ({p["asset"]["source"]}:{p["asset"]["symbol"]})', "asset", None),
@@ -348,7 +349,7 @@ def position_static(r, asof, avatars, all_rows=(), ratings=None):
             f'<a href="{e(p["post"]["url"])}" rel="noopener noreferrer" data-field="url">{link}</a></span></div></div>{text}</section>'
             f'<section class="panel recap"><h2>{e(r["asset"])} · {"NO SIDE" if side == "none" else side.upper()}</h2><dl>{dl}</dl>'
             f'<p class="notes">Prices as of {e(fmt_time(asof)) if asof else "–"}. Record {e(p["record_file"])} · sha256 {e(p["record_sha256"])}</p></section>'
-            f"{other_calls(r, all_rows)}</div>")
+            f"{context_page.context_block(context) if context else ''}{other_calls(r, all_rows)}</div>")
 
 
 def meta_tags(title, desc, url):
@@ -408,6 +409,11 @@ def main(web=None):
         f.write(fill(template, {"app": f'<div data-static="1"><p class="notes">All positions (open one for its chart):</p><ul class="static-list">{listing}</ul></div>'}))
     keep = set()
     asof = bundle.get("prices_as_of")
+    contexts = {}
+    ctx_p = os.path.join(web, "data", "context.json")          # step 29: reply context (tools/context_page.py), score-neutral
+    if os.path.exists(ctx_p):
+        with open(ctx_p) as f:
+            contexts = {en["post"]: en for en in json.load(f).get("entries", [])}
     for r in rows:
         p, s = r["p"], slug(r["p"]["post"]["id"], r["asset"])
         side = "NO SIDE" if r["side"] == "none" else r["side"].upper()
@@ -419,7 +425,7 @@ def main(web=None):
                 + (f' “{" ".join(p["post"]["text"].split())[:140]}”' if p["post"].get("text") else ""))
         page = re.sub(r"<title>.*?</title>\n<meta name=\"description\" content=\"[^\"]*\">", lambda m: meta_tags(title, desc, f"{SITE}pos-{s}.html"), template, count=1, flags=re.S)
         page = page.replace("<main>", f'<main data-post="{e(p["post"]["id"])}" data-asset="{e(r["asset"])}">', 1)
-        page = fill(page, {"app": position_static(r, asof, avatars, rows, bundle.get("ratings"))})
+        page = fill(page, {"app": position_static(r, asof, avatars, rows, bundle.get("ratings"), contexts.get(p["post"]["id"]))})
         name = f"pos-{s}.html"
         with open(os.path.join(web, name), "w") as f:
             f.write(page)

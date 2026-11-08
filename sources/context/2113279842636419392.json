@@ -1,0 +1,72 @@
+{
+ "schema": "quanty.context.v1",
+ "caller": {
+  "id": "2113279842636419392",
+  "url": "https://x.com/goodalexander/status/2113279842636419392",
+  "author": "goodalexander",
+  "posted_at": "2026-10-22T14:42:31Z",
+  "text": "Long BTC \n\nUnfortunately where we are headed there will likely be corn 🌽 perpetual swaps so want to be clear",
+  "text_sha256": "900591d4faaae68eb621857f8c3f648beaa3f5385e4e3ff60dbe84f9d117b4a3",
+  "link": null,
+  "receipt": "sources/goodalexander/receipts/2113279842636419392.json",
+  "receipt_sha256": "ae97de337adb6b9db94bde95530dfd19e31577155f13232d0f9bed398b5e2de1"
+ },
+ "status": "complete",
+ "reason": null,
+ "chain": [
+  {
+   "id": "2113279292188786733",
+   "author": "bidorder",
+   "posted_at": "2026-10-22T14:40:20Z",
+   "link": "reply",
+   "text_sha256": "5e024df4954a4afc5bd934cb22263f385e9b65cd1890d6273150390ce463e247"
+  },
+  {
+   "id": "2113276618118770771",
+   "author": "goodalexander",
+   "posted_at": "2026-10-22T14:29:43Z",
+   "link": "reply",
+   "text_sha256": "3d7df6456a9eb3b8a096ac092cd1cbe4722ceb496b85ab3fdb3355cb50be7a5d"
+  },
+  {
+   "id": "2113001073019662481",
+   "author": "MarathonFusion",
+   "posted_at": "2026-10-21T20:14:48Z",
+   "link": "quote",
+   "text_sha256": "2592b9a693a9094e5c73bf0e384e2999c77b1a8c9f2a3e8f252229b5a12805e0"
+  }
+ ],
+ "limits": {
+  "max_depth": 4,
+  "max_images": 8,
+  "max_image_bytes": 8388608
+ },
+ "parent": {
+  "id": "2113279292188786733",
+  "url": "https://x.com/bidorder/status/2113279292188786733",
+  "author": "bidorder",
+  "posted_at": "2026-10-22T14:40:20Z",
+  "text": "so long corn?",
+  "text_sha256": "5e024df4954a4afc5bd934cb22263f385e9b65cd1890d6273150390ce463e247",
+  "link": "reply",
+  "receipt": "sources/bidorder/receipts/2113279292188786733.json",
+  "receipt_sha256": "82529d8f7fdd6ee512217a9dd91c04cdec4f0501d7cf69528827093821daf7ca",
+  "text_truncated": false,
+  "images": []
+ },
+ "root": {
+  "id": "2113001073019662481",
+  "url": "https://x.com/MarathonFusion/status/2113001073019662481",
+  "author": "MarathonFusion",
+  "posted_at": "2026-10-21T20:14:48Z",
+  "text": "Last month, we demonstrated high-rate alchemy: turning mercury into real, stable gold, beating CERN’s record by a factor of 10.\n\nLast week, we enriched isotopes in the world’s most powerful plasma centrifuge, beating the Soviet record that stood for 40 years.\n\nNow, we’re building",
+  "text_sha256": "2592b9a693a9094e5c73bf0e384e2999c77b1a8c9f2a3e8f252229b5a12805e0",
+  "link": "quote",
+  "receipt": "sources/marathonfusion/receipts/2113001073019662481.json",
+  "receipt_sha256": "01c97d881cde093c960203e0ef0c4fba6e617228da454ccc382155f9847d567d",
+  "text_truncated": true,
+  "images": []
+ },
+ "walked_at": "2026-11-08T12:30:11Z",
+ "pin_sha256": "c4cf537055f7fd946a2c1658b4c600670ff76c03f4118cc11ef7cb5c418e5457"
+}

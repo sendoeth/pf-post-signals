@@ -28,6 +28,11 @@ def post(pid, handle, t, text, kind="post", **kw):
     return {"id": str(pid), "authorHandle": handle, "postedAt": iso(t), "text": text, "kind": kind, **kw}
 
 
+
+def offline_context(pid):
+    """Step 29: these tests never fetch a parent (tests/test_context.py covers that); a reply's context fails closed."""
+    raise RuntimeError("offline test: no parent fetched")
+
 class Clock:
     def __init__(self, t=T0):
         self.t = t
@@ -72,7 +77,7 @@ class Base(unittest.TestCase):
         shutil.rmtree(self.dir)
 
     def watch(self, budget=8):
-        return wc.Watch(root=HERE, wdir=self.dir, search=self.x, clock=self.clock, budget=budget, handles=CALLERS)
+        return wc.Watch(root=HERE, wdir=self.dir, search=self.x, clock=self.clock, budget=budget, handles=CALLERS, context=offline_context)
 
     def run_cycle(self, minutes=10, budget=8):
         self.clock.t += minutes * 60

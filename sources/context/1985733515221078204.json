@@ -1,0 +1,76 @@
+{
+ "schema": "quanty.context.v1",
+ "caller": {
+  "id": "1985733515221078204",
+  "url": "https://x.com/BobLoukas/status/1985733515221078204",
+  "author": "BobLoukas",
+  "posted_at": "2025-11-04T15:38:57Z",
+  "text": "Take responsibility for your own foolish decisions.\n\nWe bought the pico bottom and we're still long bitcoin.",
+  "text_sha256": "ad8469a64713055a9f30c19a18e9f8e6ff5c9481404f01469fa413bb47a108c6",
+  "link": null,
+  "receipt": "sources/bobloukas/receipts/1985733515221078204.json",
+  "receipt_sha256": "fb1ba58cde3444da54ad7d54111adc991f2f6201c9f609c8cc110b11797fac7e"
+ },
+ "status": "complete",
+ "reason": null,
+ "chain": [
+  {
+   "id": "1985730652483043573",
+   "author": "vt_georgi",
+   "posted_at": "2025-11-04T15:27:35Z",
+   "link": "reply",
+   "text_sha256": "5f2711dda75bd4086619c41e39118eb70354afb0182406900ef587ae27965ce5"
+  },
+  {
+   "id": "1985730433510973908",
+   "author": "BobLoukas",
+   "posted_at": "2025-11-04T15:26:43Z",
+   "link": "reply",
+   "text_sha256": "fed1f129829740b15326d9680d621637ce72875ef1c0aea222a9bf87fa2eaf85"
+  }
+ ],
+ "limits": {
+  "max_depth": 4,
+  "max_images": 8,
+  "max_image_bytes": 8388608
+ },
+ "parent": {
+  "id": "1985730652483043573",
+  "url": "https://x.com/vt_georgi/status/1985730652483043573",
+  "author": "vt_georgi",
+  "posted_at": "2025-11-04T15:27:35Z",
+  "text": "You are what Plan B was last cycle.",
+  "text_sha256": "5f2711dda75bd4086619c41e39118eb70354afb0182406900ef587ae27965ce5",
+  "link": "reply",
+  "receipt": "sources/vt_georgi/receipts/1985730652483043573.json",
+  "receipt_sha256": "72a2a0ac61946c07268c5a160f4e00f9941da78004a264a496ae6206feb6048d",
+  "text_truncated": false,
+  "images": []
+ },
+ "root": {
+  "id": "1985730433510973908",
+  "url": "https://x.com/BobLoukas/status/1985730433510973908",
+  "author": "BobLoukas",
+  "posted_at": "2025-11-04T15:26:43Z",
+  "text": "The bull case for Bitcoin.  \nIncoming (here or soon) weekly Cycle Low on extremely negative sentiment.  Mirroring prior two cycles.",
+  "text_sha256": "fed1f129829740b15326d9680d621637ce72875ef1c0aea222a9bf87fa2eaf85",
+  "link": "reply",
+  "receipt": "sources/bobloukas/receipts/1985730433510973908.json",
+  "receipt_sha256": "41ac02a0e290133dd8d8ffb065188f4af87880021c38addcc5d6389377509190",
+  "text_truncated": false,
+  "images": [
+   {
+    "file": "sources/bobloukas/media/1985730433510973908_0.png",
+    "sha256": "159333be8aa3a5c51004fb264e3482eabd6648d9f1607a173fbd97cece9f4b6d",
+    "bytes": 380871,
+    "source": "https://pbs.twimg.com/media/G467NGNWoAAd-TL",
+    "ocr": {
+     "text": "QBTCUSD (® W [6 af Indicators ~ 33 @) Alert 4d Replay © HU BAH TEs /0O=\n© Bitcoin / U.S. Dollar - 1W - Bitstamp KE ® 0110,524 H110,730 L102,876 C104,680 5,850 (-5.29%) Lo usp ~\n104,679 4 104,680 : 144,000\nSELL BUY\n(2) J 136,000\n26\nSMA © 103,026 3 .\n[3] L 2 128,000\n@ .\nSMA 113,104 ca 120,000\n$ L 2 h 112,000\n. 107,000\n4+ . 104,680\n. Hr esssassassaaanas 5d 9h\nI | t+ 30W? 96,000\n92,000\n+ 88,000\nI \" 84,000\n80,000\n7\n4 9 76,000\nIT + oe\n[ ERRRERCTEPPRR I 31W 69,000\ni 66,000\ni 2 63,000\nI 60,000\n1 57,500\n+ 55,100\n17 : ry 52,700\nHi | FR Cg 50.450\n32W 48,250\nDS 7 11 Tyg xX S100\n80\n60\n40\n20\nL —\n17 - + <C>) 0\n% Above/Below SMA -8 To fo)\noct Nov Dec 2024 Feb Mar Apr May Jun Jul Aug Sep oct Nov Dec 2025 Feb Mar Apr May Jun Jul Aug Sep oct Nov Dec 2026 Feb Mar Apr May Jun ®",
+     "sha256": "386802d72035fbe43aa603c131eb8145fc4456283f235cf8a211f4b8d42eac80"
+    }
+   }
+  ]
+ },
+ "walked_at": "2026-11-08T12:29:35Z",
+ "pin_sha256": "ab41fd1eeb48cbe9690f1d2def9a6afc488673b9e26e8aa9c1ba6555e2d05792"
+}

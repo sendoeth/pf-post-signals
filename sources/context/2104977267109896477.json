@@ -1,0 +1,65 @@
+{
+ "schema": "quanty.context.v1",
+ "caller": {
+  "id": "2104977267109896477",
+  "url": "https://x.com/BobLoukas/status/2104977267109896477",
+  "author": "BobLoukas",
+  "posted_at": "2026-09-29T16:51:03Z",
+  "text": "Don’t like silver until 2027",
+  "text_sha256": "11b44927faa7ba36765252f9f761321411a940dc3b9a3fe6cb72cd773ea4eae3",
+  "link": null,
+  "receipt": "sources/bobloukas/receipts/2104977267109896477.json",
+  "receipt_sha256": "b7b0f1d74e742b64feca58ac7bb2202c021af26313c4b3c29536ec92162bc5d8"
+ },
+ "status": "complete",
+ "reason": null,
+ "chain": [
+  {
+   "id": "2104976532552999012",
+   "author": "Harmand66836704",
+   "posted_at": "2026-09-29T16:48:08Z",
+   "link": "reply",
+   "text_sha256": "d33794b46f28dfeaf247215d681bce0bba27bb4772d0c3ff21628386442c0439"
+  },
+  {
+   "id": "2104972378186875141",
+   "author": "BobLoukas",
+   "posted_at": "2026-09-29T16:31:38Z",
+   "link": "reply",
+   "text_sha256": "773cb056a834ed5435728a016e68eee9abc0671ed4d191aee5a398fb9ec29162"
+  }
+ ],
+ "limits": {
+  "max_depth": 4,
+  "max_images": 8,
+  "max_image_bytes": 8388608
+ },
+ "parent": {
+  "id": "2104976532552999012",
+  "url": "https://x.com/Harmand66836704/status/2104976532552999012",
+  "author": "Harmand66836704",
+  "posted_at": "2026-09-29T16:48:08Z",
+  "text": "Hey bob what u think of silver from here",
+  "text_sha256": "d33794b46f28dfeaf247215d681bce0bba27bb4772d0c3ff21628386442c0439",
+  "link": "reply",
+  "receipt": "sources/harmand66836704/receipts/2104976532552999012.json",
+  "receipt_sha256": "ac5c65cb214f42ff5d5582dbead2d12a11cdddc0cda9fcf73bbf853599ee1edb",
+  "text_truncated": false,
+  "images": []
+ },
+ "root": {
+  "id": "2104972378186875141",
+  "url": "https://x.com/BobLoukas/status/2104972378186875141",
+  "author": "BobLoukas",
+  "posted_at": "2026-09-29T16:31:38Z",
+  "text": "Such an odd market. There are big nuggets for both perma bulls and bears to latch onto, a perfect environment for fitting the market to your bias. (AI, Capex, Growth, Rates, Oil, Breadth)\n\nI like to approach markets like this with the fundamental belief that we simply cannot know what lies ahead, more so now than ever.  Embrace the unknown and trust the trend for as long as it holds, but be quick to hunker down the moment it’s lost.\n\nAnd that might mean getting trapped occasionally. That’s the price of refusing to predict (and blindly hold to) what comes next.",
+  "text_sha256": "b297991adee9385fd02fa0db62371eb8dfa55179108a3365764f77ca95bd75b4",
+  "link": "reply",
+  "receipt": "sources/bobloukas/receipts/2104972378186875141.json",
+  "receipt_sha256": "9a06360fe81c3621f193df2aa2785fe87c71c26d9379a2db26e5a7c97209331e",
+  "text_truncated": false,
+  "images": []
+ },
+ "walked_at": "2026-11-08T12:30:00Z",
+ "pin_sha256": "01d0b163c92a4792eafccce2622b24cc0cb6e434d090e6fd8c8c6e2dcda17b96"
+}

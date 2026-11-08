@@ -1,0 +1,24 @@
+{
+ "schema": "quanty.context.v1",
+ "caller": {
+  "id": "2115966476817739790",
+  "url": "https://x.com/goodalexander/status/2115966476817739790",
+  "author": "goodalexander",
+  "posted_at": "2026-10-30T00:38:15Z",
+  "text": "Still like long XMR. sized down BTC am short bunch of single name stocks \n\nTactically short hacker basket til he’s done (don’t wanna fud and will cut so won’t post tickers) hedged it with long xrp (don’t ask)",
+  "text_sha256": "d75391a17c29ce18cf987ef36fc355f98148d32cd328ce12144a748e4f6d7086",
+  "link": null,
+  "receipt": "sources/goodalexander/receipts/2115966476817739790.json",
+  "receipt_sha256": "a886031e78cabaa0c5d3c2292193a6084f957cdef833ab025c3794ad0fb52bc8"
+ },
+ "status": "unavailable",
+ "reason": "post 2115965415587467525 unavailable (This Post was deleted by the Post author. Learn more)",
+ "chain": [],
+ "limits": {
+  "max_depth": 4,
+  "max_images": 8,
+  "max_image_bytes": 8388608
+ },
+ "walked_at": "2026-11-08T12:30:21Z",
+ "pin_sha256": "4ca8705e1f1cae3f3f85baf487157bfe3ebfc773520a9f734dda930d7ce6296f"
+}

@@ -1,0 +1,46 @@
+{
+ "schema": "quanty.context.v1",
+ "caller": {
+  "id": "2112915214479798344",
+  "url": "https://x.com/BobLoukas/status/2112915214479798344",
+  "author": "BobLoukas",
+  "posted_at": "2026-10-21T14:33:37Z",
+  "text": "Bitcoin appears to be confirming the new cycle here. These events provide a really clear and clean setup. \n\nThe upside target is around 30 to 45 days, room for a good advance.  It is however not guarantee of a major upside move, but provides an excellent anchoring point because a loss of the recent lows ($79,600) is a level where you would want to get very defensive.",
+  "text_sha256": "a8b07e00050319ec44957454fa6144d229eee3c3e0782a050a3aba4a1d33181c",
+  "link": null,
+  "receipt": "sources/bobloukas/receipts/2112915214479798344.json",
+  "receipt_sha256": "5235d777cb59fc79ea3615dd546f323de56d1872833f331e4f25f4fa2bc33756"
+ },
+ "status": "complete",
+ "reason": null,
+ "chain": [
+  {
+   "id": "2110764348981612915",
+   "author": "BobLoukas",
+   "posted_at": "2026-10-15T16:06:51Z",
+   "link": "quote",
+   "text_sha256": "2d1fa31fa36e5464a40061c2d7f1dfb69d1e9f059afee04dccd06b29ff6350dc"
+  }
+ ],
+ "limits": {
+  "max_depth": 4,
+  "max_images": 8,
+  "max_image_bytes": 8388608
+ },
+ "parent": {
+  "id": "2110764348981612915",
+  "url": "https://x.com/BobLoukas/status/2110764348981612915",
+  "author": "BobLoukas",
+  "posted_at": "2026-10-15T16:06:51Z",
+  "text": "Bitcoin held up well and looking to put in a 60-day cycle low.",
+  "text_sha256": "2d1fa31fa36e5464a40061c2d7f1dfb69d1e9f059afee04dccd06b29ff6350dc",
+  "link": "quote",
+  "receipt": "sources/bobloukas/receipts/2110764348981612915.json",
+  "receipt_sha256": "458b98f4bcbf6f35729d854511df11a27b2de7fa046a5ff57129da56dc4426ef",
+  "text_truncated": false,
+  "images": []
+ },
+ "root_is_parent": true,
+ "walked_at": "2026-11-08T12:30:07Z",
+ "pin_sha256": "f1a6a4427e6f5c3205875cc1d3b0acfddc99800fa512ccac6d7ae1d0ec5bf916"
+}
