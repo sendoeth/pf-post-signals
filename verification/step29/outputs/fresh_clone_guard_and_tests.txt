@@ -1,0 +1,1230 @@
+$ git clone https://github.com/sendoeth/pf-post-signals.git && git checkout 79fe689ddc00f948419b2bba77119e0e08ee6f39
+79fe689ddc00f948419b2bba77119e0e08ee6f39
+$ python3 tools/guard.py --history
+guard: scanned 120 commits (all added lines + messages) -> 0 hits
+[exit 0]
+$ python3 tools/guard.py --tree
+guard: scanned 2797 files -> 0 hits
+[exit 0]
+$ python3 -m unittest tests.test_guard
+.......
+----------------------------------------------------------------------
+Ran 7 tests in 0.063s
+
+OK
+[exit 0]
+$ python3 -m unittest -v tests.test_context
+test_koolkrypto223_more_nest_and_kntq (tests.test_context.Acceptance.test_koolkrypto223_more_nest_and_kntq) ... fresh29b/detect.py:108: ResourceWarning: unclosed file <_io.TextIOWrapper name='fresh29b/data/coin_words.json' mode='r' encoding='UTF-8'>
+  _cache[path] = json.load(open(path)) if os.path.exists(path) else empty
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/detect.py:108: ResourceWarning: unclosed file <_io.TextIOWrapper name='fresh29b/data/us_tickers.json' mode='r' encoding='UTF-8'>
+  _cache[path] = json.load(open(path)) if os.path.exists(path) else empty
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_the_deleted_parent_fails_closed (tests.test_context.Acceptance.test_the_deleted_parent_fails_closed) ... ok
+test_a_cycle_stops_the_walk (tests.test_context.ChainBounds.test_a_cycle_stops_the_walk) ... ok
+test_a_reply_to_a_post_without_parent_is_complete_and_the_parent_is_the_root (tests.test_context.ChainBounds.test_a_reply_to_a_post_without_parent_is_complete_and_the_parent_is_the_root) ... ok
+test_a_text_cut_short_in_the_embed_gives_no_words (tests.test_context.ChainBounds.test_a_text_cut_short_in_the_embed_gives_no_words) ... ok
+test_deleted_protected_or_mismatched_parents_give_no_context (tests.test_context.ChainBounds.test_deleted_protected_or_mismatched_parents_give_no_context) ... ok
+test_embed_and_image_bodies_are_read_with_a_byte_cap (tests.test_context.ChainBounds.test_embed_and_image_bodies_are_read_with_a_byte_cap) ... ok
+test_image_downloads_are_inside_the_deadline (tests.test_context.ChainBounds.test_image_downloads_are_inside_the_deadline) ... ok
+test_images_are_capped_per_post_and_per_chain (tests.test_context.ChainBounds.test_images_are_capped_per_post_and_per_chain) ... ok
+test_images_over_the_pixel_cap_are_not_ocrd (tests.test_context.ChainBounds.test_images_over_the_pixel_cap_are_not_ocrd) ... ok
+test_more_than_max_depth_parents_is_truncated_and_names_no_root (tests.test_context.ChainBounds.test_more_than_max_depth_parents_is_truncated_and_names_no_root) ... ok
+test_the_caller_post_itself_must_be_readable (tests.test_context.ChainBounds.test_the_caller_post_itself_must_be_readable) ... ok
+test_the_walk_has_a_deadline (tests.test_context.ChainBounds.test_the_walk_has_a_deadline) ... ok
+test_a_stored_context_is_never_rewritten (tests.test_context.Pins.test_a_stored_context_is_never_rewritten) ... ok
+test_a_stored_context_is_verified_on_every_read (tests.test_context.Pins.test_a_stored_context_is_verified_on_every_read) ... ok
+test_an_edited_context_receipt_or_image_is_refused (tests.test_context.Pins.test_an_edited_context_receipt_or_image_is_refused) ... ok
+test_the_ocr_text_is_pinned_with_the_context (tests.test_context.Pins.test_the_ocr_text_is_pinned_with_the_context) ... ok
+test_building_context_writes_no_record_and_no_score (tests.test_context.ScoreNeutral.test_building_context_writes_no_record_and_no_score) ... ok
+test_context_never_changes_a_side_agreement_and_finds_more_assets (tests.test_context.ScoreNeutral.test_context_never_changes_a_side_agreement_and_finds_more_assets) ... ok
+test_each_position_page_of_a_reply_shows_its_stored_context (tests.test_context.ScoreNeutral.test_each_position_page_of_a_reply_shows_its_stored_context) ... ok
+test_potential_callers_are_never_scored (tests.test_context.ScoreNeutral.test_potential_callers_are_never_scored) ... ok
+test_promotion_watches_an_account_but_scores_nothing (tests.test_context.ScoreNeutral.test_promotion_watches_an_account_but_scores_nothing) ... ok
+test_the_main_scores_are_the_rating_of_the_records (tests.test_context.ScoreNeutral.test_the_main_scores_are_the_rating_of_the_records) ... ok
+test_the_page_does_not_depend_on_file_order (tests.test_context.ScoreNeutral.test_the_page_does_not_depend_on_file_order) ... ok
+test_the_page_is_deterministic_and_the_served_one_is_a_rebuild (tests.test_context.ScoreNeutral.test_the_page_is_deterministic_and_the_served_one_is_a_rebuild) ... ok
+test_a_context_only_asset_takes_no_side_from_the_parent (tests.test_context.SidesOnlyFromTheCallersWords.test_a_context_only_asset_takes_no_side_from_the_parent) ... ok
+test_a_reply_naming_no_asset_becomes_a_card_with_the_context_asset_and_no_side (tests.test_context.SidesOnlyFromTheCallersWords.test_a_reply_naming_no_asset_becomes_a_card_with_the_context_asset_and_no_side) ... ok
+test_an_own_asset_reads_exactly_as_without_context (tests.test_context.SidesOnlyFromTheCallersWords.test_an_own_asset_reads_exactly_as_without_context) ... ok
+test_candidates_never_carry_a_side (tests.test_context.SidesOnlyFromTheCallersWords.test_candidates_never_carry_a_side) ... ok
+test_no_side_when_the_caller_names_other_assets_or_the_context_names_several (tests.test_context.SidesOnlyFromTheCallersWords.test_no_side_when_the_caller_names_other_assets_or_the_context_names_several) ... ok
+test_the_callers_own_words_give_a_context_only_asset_its_side (tests.test_context.SidesOnlyFromTheCallersWords.test_the_callers_own_words_give_a_context_only_asset_its_side) ... ok
+test_the_parent_text_never_reaches_a_side_function (tests.test_context.SidesOnlyFromTheCallersWords.test_the_parent_text_never_reaches_a_side_function) ... ok
+test_the_watcher_lists_context_assets_without_legs_when_the_caller_names_assets (tests.test_context.SidesOnlyFromTheCallersWords.test_the_watcher_lists_context_assets_without_legs_when_the_caller_names_assets) ... ok
+
+----------------------------------------------------------------------
+Ran 33 tests in 1.908s
+
+OK
+[exit 0]
+$ python3 -m unittest tests.test_watch tests.test_labels tests.test_regimes tests.test_rating
+.fresh29b/tests/test_watch.py:230: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='a' encoding='UTF-8'>
+  self.assertEqual(w.cycle()["result"], "skipped: another cycle is running")
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.fresh29b/detect.py:108: ResourceWarning: unclosed file <_io.TextIOWrapper name='fresh29b/data/coin_words.json' mode='r' encoding='UTF-8'>
+  _cache[path] = json.load(open(path)) if os.path.exists(path) else empty
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/detect.py:108: ResourceWarning: unclosed file <_io.TextIOWrapper name='fresh29b/data/us_tickers.json' mode='r' encoding='UTF-8'>
+  _cache[path] = json.load(open(path)) if os.path.exists(path) else empty
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+..................fresh29b/tests/test_labels.py:144: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  d = json.load(open(self.rp))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_labels.py:146: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump(d, open(self.rp, "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.fresh29b/tests/test_labels.py:150: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  d = json.load(open(self.lp))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_labels.py:155: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump(d, open(self.lp, "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.fresh29b/tests/test_labels.py:224: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  d = json.load(open(self.lp))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_labels.py:227: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump(d, open(self.lp, "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_labels.py:230: ResourceWarning: unclosed file <_io.TextIOWrapper name='fresh29b/data/labels.json' mode='r' encoding='UTF-8'>
+  d = json.load(open(os.path.join(HERE, "data", "labels.json")))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_labels.py:232: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump(d, open(self.lp, "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.fresh29b/tests/test_labels.py:253: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump({"cards": {}}, open(cards, "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_labels.py:256: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  rep = json.load(open(f))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_labels.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump(rep, open(f, "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+..fresh29b/tests/test_labels.py:236: ResourceWarning: unclosed file <_io.TextIOWrapper name='fresh29b/tools/reader.py' mode='r' encoding='UTF-8'>
+  src = open(reader.__file__).read()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_labels.py:238: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  open(tmp, "w").write(src.replace('return r"\\$?(?:"', 'return r"\\$*(?:"'))       # a change inside alias_re only
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+....fresh29b/tests/test_labels.py:53: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump(copy_cards, open(p, "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.fresh29b/tests/test_labels.py:104: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump({"labels": labels}, open(os.path.join(root, "data", "labels.json"), "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.fresh29b/tests/test_labels.py:104: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump({"labels": labels}, open(os.path.join(root, "data", "labels.json"), "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.fresh29b/tests/test_labels.py:104: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump({"labels": labels}, open(os.path.join(root, "data", "labels.json"), "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.fresh29b/tests/test_labels.py:169: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump({"cards": {}}, open(p, "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_labels.py:176: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  r = json.load(open(f))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_labels.py:178: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump(r, open(f, "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_labels.py:179: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  before = open(os.path.join(root, "data", "labels.json"), "rb").read()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_labels.py:182: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  self.assertEqual(open(os.path.join(root, "data", "labels.json"), "rb").read(), before)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.fresh29b/tests/test_labels.py:169: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump({"cards": {}}, open(p, "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_labels.py:190: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  rep = json.load(open(f))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_labels.py:193: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump(rep, open(f, "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.fresh29b/tests/test_labels.py:203: ResourceWarning: unclosed file <_io.TextIOWrapper name='fresh29b/web/data/charts.json' mode='r' encoding='UTF-8'>
+  served = json.load(open(os.path.join(HERE, "web", "data", "charts.json")))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+...fresh29b/tests/test_labels.py:77: ResourceWarning: unclosed file <_io.TextIOWrapper name='fresh29b/data/rules.json' mode='r' encoding='UTF-8'>
+  g = {x["rule"]: x for x in json.load(open(os.path.join(HERE, "data", "rules.json")))["gate"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+...................................
+----------------------------------------------------------------------
+Ran 73 tests in 25.903s
+
+OK
+[exit 0]
+$ python3 tools/context_page.py
+context: 27 stored contexts; asset found 48/51 -> 50/51; side agreement 31/58 -> 31/58; potential callers 14
+[exit 0]
+$ python3 check_bundle.py
+bundle: 59 record files -> 59 drawn, 0 superseded, 0 refused; 177 horizon cells, 59 best-since-post values, 8 caller ratings checked -> ALL MATCH
+[exit 0]
+$ python3 -m unittest discover -s tests -t .
+fresh29b/detect.py:108: ResourceWarning: unclosed file <_io.TextIOWrapper name='fresh29b/data/coin_words.json' mode='r' encoding='UTF-8'>
+  _cache[path] = json.load(open(path)) if os.path.exists(path) else empty
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/detect.py:108: ResourceWarning: unclosed file <_io.TextIOWrapper name='fresh29b/data/us_tickers.json' mode='r' encoding='UTF-8'>
+  _cache[path] = json.load(open(path)) if os.path.exists(path) else empty
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+..................fresh29b/tools/call_context.py:370: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  hits = [h for h in hits if json.load(open(h))["asset"]["name"] == c["asset"]]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tools/call_context.py:374: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  rec = json.load(open(rec_path))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tools/call_context.py:387: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  cfg = json.load(open(cfg_path)) if os.path.exists(cfg_path) else {"schema": "pf-post-signals.lifecycle.v1", "positions": {}}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.fresh29b/tools/call_context.py:370: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  hits = [h for h in hits if json.load(open(h))["asset"]["name"] == c["asset"]]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tools/call_context.py:374: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  rec = json.load(open(rec_path))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+......................................................fresh29b/tests/test_early.py:330: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump({"text": "solana is the only chain that can scale like this <script>x</script>"}, open(receipt, "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_early.py:331: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  doc = fm.cmd_price("mert", "SOL", root=root, sources=FakeSources(), fetch_receipt=lambda url: (receipt, json.load(open(receipt)), True))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_early.py:333: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump({"schema": "quanty.affiliations.v1", "callers": {"mert": {"name": "Mert Mumtaz", "role": "Co-founder & CEO of Helius", "assets": ["SOL"],
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_early.py:338: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump(before, open(os.path.join(web, "data", "charts.json"), "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tools/coins_page.py:59: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  data = {"schema": "quanty.coins.v1", "early_signals": early, "registry_sha256": hashlib.sha256(open(os.path.join(root, "data", "tickers.json"), "rb").read()).hexdigest(),
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_early.py:341: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  page = open(os.path.join(web, "caller-mert.html")).read()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_early.py:347: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  coins = open(os.path.join(web, "coins.html")).read()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.............fresh29b/tests/test_episode_intake.py:145: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  open(self.txt, "w").write(SAMPLE)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tools/episode_intake.py:111: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  ex_sha = tr.sha256(open(os.path.join(priv_dir, "extraction.json"), "rb").read())
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_episode_intake.py:208: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='a' encoding='UTF-8'>
+  open(self.txt, "a").write("41:2041 minutes, 20 secondsmore words here\n")
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tools/episode_intake.py:98: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  if os.path.exists(priv_txt) and tr.sha256(open(priv_txt, "rb").read()) != sha and not replace:
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.fresh29b/tests/test_episode_intake.py:145: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  open(self.txt, "w").write(SAMPLE)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tools/episode_intake.py:111: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  ex_sha = tr.sha256(open(os.path.join(priv_dir, "extraction.json"), "rb").read())
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_episode_intake.py:183: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  d = json.load(open(path))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_episode_intake.py:185: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump(d, open(path, "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tools/episode_intake.py:98: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  if os.path.exists(priv_txt) and tr.sha256(open(priv_txt, "rb").read()) != sha and not replace:
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_episode_intake.py:183: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  d = json.load(open(path))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_episode_intake.py:185: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump(d, open(path, "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_episode_intake.py:183: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  d = json.load(open(path))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_episode_intake.py:185: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump(d, open(path, "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_episode_intake.py:183: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  d = json.load(open(path))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_episode_intake.py:185: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump(d, open(path, "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.fresh29b/tests/test_episode_intake.py:145: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  open(self.txt, "w").write(SAMPLE)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.fresh29b/tests/test_episode_intake.py:145: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  open(self.txt, "w").write(SAMPLE)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tools/episode_intake.py:111: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  ex_sha = tr.sha256(open(os.path.join(priv_dir, "extraction.json"), "rb").read())
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tools/episode_intake.py:160: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  th = json.load(open(os.path.join(priv_dir, "theses.json")))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tools/episode_intake.py:174: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  sha = hashlib.sha256(open(os.path.join(web or os.path.join(root, "web"), "data", "episodes.json"), "rb").read()).hexdigest()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_episode_intake.py:170: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  self.assertEqual(tr.sha256(open(os.path.join(pub, "extraction.json"), "rb").read()), r["extraction_sha"])
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_episode_intake.py:172: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  meta = json.load(open(os.path.join(pub, "episode.json")))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_episode_intake.py:175: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='utf-8'>
+  page = open(os.path.join(self.root, "web", "episode-forward-guidance-2026-10-30.html"), encoding="utf-8").read()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.fresh29b/tests/test_episode_intake.py:145: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  open(self.txt, "w").write(SAMPLE)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tools/episode_intake.py:111: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  ex_sha = tr.sha256(open(os.path.join(priv_dir, "extraction.json"), "rb").read())
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tools/episode_intake.py:160: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  th = json.load(open(os.path.join(priv_dir, "theses.json")))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.fresh29b/tests/test_episode_intake.py:145: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  open(self.txt, "w").write(SAMPLE)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+....fresh29b/tests/test_episode_intake.py:99: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  open(os.path.join(d, "k"), "w").write("\n")
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_episode_intake.py:102: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  open(os.path.join(d, "k"), "w").write(KEY + "\n")
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+................fresh29b/tests/test_history.py:119: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>:CXMT.json'>
+  before = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_history.py:119: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>:KIOXIA.json'>
+  before = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_history.py:119: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>:JP225.json'>
+  before = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_history.py:119: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  before = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_history.py:119: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  before = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_history.py:119: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>:ORCL.json'>
+  before = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_history.py:119: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>:CBRS.json'>
+  before = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_history.py:119: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  before = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_history.py:119: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  before = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_history.py:119: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>:AAPL.json'>
+  before = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_history.py:119: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  before = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_history.py:119: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  before = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_history.py:119: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  before = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_history.py:119: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  before = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_history.py:119: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  before = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_history.py:119: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  before = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_history.py:119: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  before = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_history.py:119: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  before = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_history.py:119: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  before = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_history.py:119: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>:SKHX.json'>
+  before = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_history.py:119: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  before = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_history.py:119: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  before = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_history.py:119: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  before = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_history.py:119: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  before = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_history.py:132: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>:CXMT.json'>
+  after = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_history.py:132: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>:KIOXIA.json'>
+  after = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_history.py:132: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>:JP225.json'>
+  after = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_history.py:132: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  after = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_history.py:132: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  after = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_history.py:132: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>:ORCL.json'>
+  after = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_history.py:132: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>:CBRS.json'>
+  after = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_history.py:132: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  after = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_history.py:132: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  after = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_history.py:132: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>:AAPL.json'>
+  after = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_history.py:132: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  after = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_history.py:132: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  after = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_history.py:132: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  after = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_history.py:132: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  after = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_history.py:132: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  after = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_history.py:132: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  after = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_history.py:132: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  after = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_history.py:132: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  after = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_history.py:132: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  after = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_history.py:132: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>:SKHX.json'>
+  after = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_history.py:132: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  after = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_history.py:132: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  after = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_history.py:132: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  after = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_history.py:132: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  after = {f: hashlib.sha256(open(os.path.join(out, f), "rb").read()).hexdigest() for f in os.listdir(out)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+......................fresh29b/tests/test_labels.py:144: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  d = json.load(open(self.rp))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_labels.py:146: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump(d, open(self.rp, "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.fresh29b/tests/test_labels.py:150: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  d = json.load(open(self.lp))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_labels.py:155: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump(d, open(self.lp, "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.fresh29b/tests/test_labels.py:224: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  d = json.load(open(self.lp))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_labels.py:227: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump(d, open(self.lp, "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_labels.py:230: ResourceWarning: unclosed file <_io.TextIOWrapper name='fresh29b/data/labels.json' mode='r' encoding='UTF-8'>
+  d = json.load(open(os.path.join(HERE, "data", "labels.json")))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_labels.py:232: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump(d, open(self.lp, "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.fresh29b/tests/test_labels.py:253: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump({"cards": {}}, open(cards, "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_labels.py:256: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  rep = json.load(open(f))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_labels.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump(rep, open(f, "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+..fresh29b/tests/test_labels.py:236: ResourceWarning: unclosed file <_io.TextIOWrapper name='fresh29b/tools/reader.py' mode='r' encoding='UTF-8'>
+  src = open(reader.__file__).read()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_labels.py:238: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  open(tmp, "w").write(src.replace('return r"\\$?(?:"', 'return r"\\$*(?:"'))       # a change inside alias_re only
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+....fresh29b/tests/test_labels.py:53: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump(copy_cards, open(p, "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.fresh29b/tests/test_labels.py:104: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump({"labels": labels}, open(os.path.join(root, "data", "labels.json"), "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.fresh29b/tests/test_labels.py:104: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump({"labels": labels}, open(os.path.join(root, "data", "labels.json"), "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.fresh29b/tests/test_labels.py:104: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump({"labels": labels}, open(os.path.join(root, "data", "labels.json"), "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.fresh29b/tests/test_labels.py:169: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump({"cards": {}}, open(p, "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_labels.py:176: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  r = json.load(open(f))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_labels.py:178: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump(r, open(f, "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_labels.py:179: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  before = open(os.path.join(root, "data", "labels.json"), "rb").read()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_labels.py:182: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  self.assertEqual(open(os.path.join(root, "data", "labels.json"), "rb").read(), before)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.fresh29b/tests/test_labels.py:169: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump({"cards": {}}, open(p, "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_labels.py:190: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  rep = json.load(open(f))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_labels.py:193: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump(rep, open(f, "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.fresh29b/tests/test_labels.py:203: ResourceWarning: unclosed file <_io.TextIOWrapper name='fresh29b/web/data/charts.json' mode='r' encoding='UTF-8'>
+  served = json.load(open(os.path.join(HERE, "web", "data", "charts.json")))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+...fresh29b/tests/test_labels.py:77: ResourceWarning: unclosed file <_io.TextIOWrapper name='fresh29b/data/rules.json' mode='r' encoding='UTF-8'>
+  g = {x["rule"]: x for x in json.load(open(os.path.join(HERE, "data", "rules.json")))["gate"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+..........................................fresh29b/tests/test_refresh.py:60: ResourceWarning: unclosed file <_io.TextIOWrapper name='fresh29b/schema/post_price.v1.json' mode='r' encoding='UTF-8'>
+  schema = json.load(open(os.path.join(HERE, "schema", "post_price.v1.json")))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.......................................................fresh29b/tools/seed_tickers.py:404: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  seed_sha = hashlib.sha256(open(os.path.join(root, seed_rel), "rb").read()).hexdigest()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tools/coins_page.py:59: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  data = {"schema": "quanty.coins.v1", "early_signals": early, "registry_sha256": hashlib.sha256(open(os.path.join(root, "data", "tickers.json"), "rb").read()).hexdigest(),
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_seed.py:344: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  page = open(os.path.join(root, "web", "coins.html")).read()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_seed.py:349: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  d = json.load(open(os.path.join(root, "web", "data", "coins.json")))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.fresh29b/tools/seed_tickers.py:404: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  seed_sha = hashlib.sha256(open(os.path.join(root, seed_rel), "rb").read()).hexdigest()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+..fresh29b/tools/seed_tickers.py:404: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  seed_sha = hashlib.sha256(open(os.path.join(root, seed_rel), "rb").read()).hexdigest()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+..fresh29b/tests/test_seed.py:293: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump({"schema": tickers.REGISTRY_SCHEMA, "tickers": {"SOL": {"coingecko_id": "solana", "name": "Solana", "source": "binance", "symbol": "SOLUSDT"}}},
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+FAILED (nothing written): provider unavailable: api.coingecko.com: HTTP 429
+......fresh29b/tools/seed_tickers.py:404: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  seed_sha = hashlib.sha256(open(os.path.join(root, seed_rel), "rb").read()).hexdigest()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_seed.py:112: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  reg = json.load(open(os.path.join(root, "data", "tickers.json")))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_seed.py:118: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  seed = json.load(open(os.path.join(root, "sources", "tickers", "seed", "2026-11-01.json")))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_seed.py:122: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='a' encoding='UTF-8'>
+  open(os.path.join(root, lit["receipt"]), "a").write(" ")
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.fresh29b/tools/seed_tickers.py:404: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  seed_sha = hashlib.sha256(open(os.path.join(root, seed_rel), "rb").read()).hexdigest()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_seed.py:135: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  self.reg = json.load(open(os.path.join(self.root, "data", "tickers.json")))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_seed.py:136: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  self.words = json.load(open(os.path.join(self.root, "data", "coin_words.json")))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.fresh29b/tools/seed_tickers.py:404: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  seed_sha = hashlib.sha256(open(os.path.join(root, seed_rel), "rb").read()).hexdigest()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_seed.py:135: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  self.reg = json.load(open(os.path.join(self.root, "data", "tickers.json")))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_seed.py:136: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  self.words = json.load(open(os.path.join(self.root, "data", "coin_words.json")))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.fresh29b/tools/seed_tickers.py:404: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  seed_sha = hashlib.sha256(open(os.path.join(root, seed_rel), "rb").read()).hexdigest()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_seed.py:135: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  self.reg = json.load(open(os.path.join(self.root, "data", "tickers.json")))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_seed.py:136: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  self.words = json.load(open(os.path.join(self.root, "data", "coin_words.json")))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.fresh29b/tools/seed_tickers.py:404: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  seed_sha = hashlib.sha256(open(os.path.join(root, seed_rel), "rb").read()).hexdigest()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_seed.py:135: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  self.reg = json.load(open(os.path.join(self.root, "data", "tickers.json")))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_seed.py:136: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  self.words = json.load(open(os.path.join(self.root, "data", "coin_words.json")))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.fresh29b/tools/seed_tickers.py:404: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  seed_sha = hashlib.sha256(open(os.path.join(root, seed_rel), "rb").read()).hexdigest()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_seed.py:135: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  self.reg = json.load(open(os.path.join(self.root, "data", "tickers.json")))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_seed.py:136: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  self.words = json.load(open(os.path.join(self.root, "data", "coin_words.json")))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+................................fresh29b/tests/test_tickers.py:206: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  reg = json.load(open(reg_path))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:211: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump(reg, open(reg_path, "w"), indent=1)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:213: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump(build_chart.build(os.path.join(self.root, "records")), open(os.path.join(self.root, "web", "data", "charts.json"), "w"), indent=1)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.fresh29b/tests/test_tickers.py:206: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  reg = json.load(open(reg_path))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:211: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump(reg, open(reg_path, "w"), indent=1)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:213: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump(build_chart.build(os.path.join(self.root, "records")), open(os.path.join(self.root, "web", "data", "charts.json"), "w"), indent=1)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:255: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  self.assertFalse(os.path.exists(os.path.join(self.root, "data", "tickers.json")) and "LIT" in json.load(open(os.path.join(self.root, "data", "tickers.json")))["tickers"])
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  reg = json.load(open(os.path.join(self.root, "data", "tickers.json")))["tickers"]["LIT"]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.fresh29b/tests/test_tickers.py:206: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  reg = json.load(open(reg_path))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:211: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump(reg, open(reg_path, "w"), indent=1)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:213: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump(build_chart.build(os.path.join(self.root, "records")), open(os.path.join(self.root, "web", "data", "charts.json"), "w"), indent=1)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.fresh29b/tests/test_tickers.py:206: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  reg = json.load(open(reg_path))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:211: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump(reg, open(reg_path, "w"), indent=1)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:213: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump(build_chart.build(os.path.join(self.root, "records")), open(os.path.join(self.root, "web", "data", "charts.json"), "w"), indent=1)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:289: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump(reg, open(os.path.join(self.root, "data", "tickers.json"), "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.fresh29b/tests/test_tickers.py:206: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  reg = json.load(open(reg_path))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:211: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump(reg, open(reg_path, "w"), indent=1)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:213: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump(build_chart.build(os.path.join(self.root, "records")), open(os.path.join(self.root, "web", "data", "charts.json"), "w"), indent=1)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.fresh29b/tests/test_tickers.py:206: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  reg = json.load(open(reg_path))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:211: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump(reg, open(reg_path, "w"), indent=1)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:213: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump(build_chart.build(os.path.join(self.root, "records")), open(os.path.join(self.root, "web", "data", "charts.json"), "w"), indent=1)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.fresh29b/tests/test_tickers.py:206: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  reg = json.load(open(reg_path))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:211: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump(reg, open(reg_path, "w"), indent=1)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:213: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump(build_chart.build(os.path.join(self.root, "records")), open(os.path.join(self.root, "web", "data", "charts.json"), "w"), indent=1)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:255: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  self.assertFalse(os.path.exists(os.path.join(self.root, "data", "tickers.json")) and "LIT" in json.load(open(os.path.join(self.root, "data", "tickers.json")))["tickers"])
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  reg = json.load(open(os.path.join(self.root, "data", "tickers.json")))["tickers"]["LIT"]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.....fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_tickers.py:320: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  names = {json.load(open(f))["asset"]["name"] for f in __import__("glob").glob(os.path.join(root, "records", "**", "*.json"), recursive=True)}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+s........fresh29b/tickers.py:469: ResourceWarning: unclosed file <_io.BufferedReader name='<tmp>'>
+  "receipt_sha256": hashlib.sha256(open(rpath, "rb").read()).hexdigest(), "added_at": receipt["checked_at"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+..fresh29b/tests/test_transcript.py:265: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='utf-8'>
+  page = open(os.path.join(self.web, "episode-forward-guidance-2026-10-30.html"), encoding="utf-8").read()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_transcript.py:281: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='utf-8'>
+  lst = open(os.path.join(self.web, "episodes.html"), encoding="utf-8").read()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+..fresh29b/tests/test_transcript.py:303: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='UTF-8'>
+  m = json.load(open(p))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_transcript.py:305: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump(m, open(p, "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_transcript.py:308: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='r' encoding='utf-8'>
+  page = open(os.path.join(self.web, "episode-forward-guidance-2026-10-30.html"), encoding="utf-8").read()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_transcript.py:313: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='w' encoding='UTF-8'>
+  json.dump(m, open(p, "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.........fresh29b/tests/test_transcript.py:209: ResourceWarning: unclosed file <_io.TextIOWrapper name='fresh29b/sources/episodes/forward-guidance-2026-10-30/extraction.json' mode='r' encoding='UTF-8'>
+  for s in json.load(open(os.path.join(EP, "extraction.json")))["stances"]:
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.fresh29b/tests/test_transcript.py:175: ResourceWarning: unclosed file <_io.TextIOWrapper name='fresh29b/sources/episodes/forward-guidance-2026-10-30/theses.json' mode='r' encoding='UTF-8'>
+  th, ver = (json.load(open(os.path.join(EP, n))) for n in ("theses.json", "verified.json"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_transcript.py:175: ResourceWarning: unclosed file <_io.TextIOWrapper name='fresh29b/sources/episodes/forward-guidance-2026-10-30/verified.json' mode='r' encoding='UTF-8'>
+  th, ver = (json.load(open(os.path.join(EP, n))) for n in ("theses.json", "verified.json"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_transcript.py:176: ResourceWarning: unclosed file <_io.TextIOWrapper name='fresh29b/sources/episodes/forward-guidance-2026-10-30/extraction.json' mode='r' encoding='UTF-8'>
+  ex = json.load(open(os.path.join(EP, "extraction.json")))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+fresh29b/tests/test_transcript.py:179: ResourceWarning: unclosed file <_io.BufferedReader name='fresh29b/sources/episodes/forward-guidance-2026-10-30/extraction.json'>
+  self.assertEqual(th["extraction_sha256"], tr.sha256(open(os.path.join(EP, "extraction.json"), "rb").read()))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+..s....fresh29b/tests/test_watch.py:230: ResourceWarning: unclosed file <_io.TextIOWrapper name='<tmp>' mode='a' encoding='UTF-8'>
+  self.assertEqual(w.cycle()["result"], "skipped: another cycle is running")
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+..................
+----------------------------------------------------------------------
+Ran 355 tests in 162.719s
+
+OK (skipped=2)
+prerender: index.html (60 rows, 8 authors), position.html list, 60 position pages, 8 caller pages
+prerender: index.html (60 rows, 9 authors), position.html list, 60 position pages, 9 caller pages
+prerender: index.html (60 rows, 9 authors), position.html list, 60 position pages, 9 caller pages
+prerender: index.html (60 rows, 9 authors), position.html list, 60 position pages, 9 caller pages
+prerender: index.html (60 rows, 8 authors), position.html list, 60 position pages, 8 caller pages
+prerender: index.html (60 rows, 9 authors), position.html list, 60 position pages, 9 caller pages
+prerender: index.html (60 rows, 9 authors), position.html list, 60 position pages, 9 caller pages
+prerender: index.html (59 rows, 8 authors), position.html list, 60 position pages, 8 caller pages
+prerender: index.html (59 rows, 8 authors), position.html list, 60 position pages, 8 caller pages
+coins page: 95/100 top, 92 perps, 189 tickers, 0 flagged, 20 review
+ZEC        binance:ZECUSDT     1 candles 2025-09-24T07:00:00Z -> 2025-09-24T07:00:00Z lookback 90d from 2025-06-26T07:00:00Z (market listed later: starts at its first bar) sha256 797d84f014edf6eeb3c523b196bbf51c7320282044083d0509d7abde5aec7bf9
+OK   ZEC     1970742039722479782 entry 2025-09-24T07:00:00Z record 54.49 candle open 54.49
+entry bars: 1/1 candle opens equal the record entry price
+prerender: index.html (60 rows, 9 authors), position.html list, 60 position pages, 9 caller pages
+prerender: index.html (61 rows, 9 authors), position.html list, 61 position pages, 9 caller pages
+coins page: 12/14 top, 0 perps, 12 tickers, 0 flagged, 3 review
+prerender: index.html (2 rows, 1 authors), position.html list, 2 position pages, 1 caller pages
+prerender: index.html (59 rows, 8 authors), position.html list, 59 position pages, 8 caller pages
+prerender: index.html (58 rows, 8 authors), position.html list, 59 position pages, 8 caller pages
+prerender: index.html (58 rows, 8 authors), position.html list, 59 position pages, 8 caller pages
+[exit 0]
+$ node tests/context_test.js   # local server on this clone
+ok   pos-2118181656398090718_NEST.html: reply context (complete) kept after rendering
+ok   context.html: 27 contexts, 27 agreement rows
+ALL PASS: 24 position pages kept their reply context; context.html complete
+[exit 0]
+$ git status --short
+$ sha256sum
+8bdf9a369ed31953c85a5209ff83850ca862079dbbe068cb1d11b826829263da  web/data/charts.json
+afb6b2dd906ba570b09bb7e4e08b0179e5ab7a55ae72f272b25a4a5a2ac39d45  web/data/context.json
+eea068dcd0920f8b4ac679f47fc2786aaef371cba93e89941e6e8818c933dcc3  web/context.html
+b38991e20b6a6bdae604f732fb0403cca4e2d979d86ea56ecb56ceaa00ee85a7  data/potential_callers.json
+32e8dd8ea58aa879cee591dd1376255d87547c8ee1a7186c86bb97e2b011711c  sources/context/2118181656398090718.json
