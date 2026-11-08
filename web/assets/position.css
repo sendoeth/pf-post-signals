@@ -140,3 +140,6 @@ table.calls tr[data-counted="false"] td { opacity: .7; }
 .call-card[data-card="close"] { border-left: 4px solid var(--ink); }
 .nfa { margin: 18px 0 0; padding: 10px 12px; border: 1px solid var(--border); border-radius: 10px; color: var(--ink-2); font-size: 12.5px; line-height: 1.5; background: var(--surface); }
 .nfa strong { color: var(--ink); }
+
+/* step 29: reply context: long words (paths, URLs, hashes) wrap instead of widening a phone screen */
+.context { overflow-wrap: anywhere; }
