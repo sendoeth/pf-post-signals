@@ -103,6 +103,8 @@ async function main() {
 
 function render(asset, p, ohlc, avatars, bundle) {
   const app = document.getElementById("app");
+  // step 29: the reply context is prerendered from data/context.json (stored copies, never a side): keep it
+  const context = app.querySelector('[data-field="reply_context"]');
   app.replaceChildren();
   app.setAttribute("data-post-id", p.post.id);
   app.setAttribute("data-asset", p.asset.name);
@@ -127,6 +129,7 @@ function render(asset, p, ohlc, avatars, bundle) {
   post.append(p.post.text ? el("p", { class: "text", "data-field": "text" }, p.post.text)
                           : el("p", { class: "text notes", "data-field": "text" }, "Post text not saved: open it on X."));
   app.append(post);
+  if (context) app.append(context);
 
   // position header + chart
   const pos = el("section", { class: "panel pos" });
