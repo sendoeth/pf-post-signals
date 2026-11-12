@@ -32,8 +32,8 @@
   "now": {
    "source": "binance",
    "symbol": "SOLUSDT",
-   "at": "2026-11-11T01:00:00Z",
-   "price": 83.15
+   "at": "2026-11-12T02:00:00Z",
+   "price": 83.14
   },
   "peak": {
    "source": "binance",
@@ -41,7 +41,7 @@
    "day": "2025-01-19",
    "high": 295.83
   },
-  "multiple_now": 2.368068806424971,
+  "multiple_now": 2.3677840116196283,
   "multiple_peak": 8.425084726454589,
   "sources_tried": [
    {
