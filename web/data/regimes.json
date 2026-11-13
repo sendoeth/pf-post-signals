@@ -30,21 +30,21 @@
  "rule": "bull: close > SMA200 and SMA50 > SMA200; bear: close < SMA200 and SMA50 < SMA200; chop: otherwise; a regime (the first one included) needs the same raw state on 3 consecutive days; vol high when 30d realized vol (pstdev of log returns x sqrt 365) > 1.5x the median of the previous 365 days' vols (no tag until 182 of them exist); a call takes the label of the last bar closed at or before its time, none when the data does not reach it",
  "source": "https://data-api.binance.vision/api/v3/klines?symbol=BTCUSDT&interval=1d",
  "bars": {
-  "count": 3198,
+  "count": 3199,
   "first": "2018-02-09",
-  "last": "2026-11-11",
-  "sha256": "04e56a6a29ce52ea0d9d8118b8c0a637937e07d8ea740fbfaa6e78272041f0df"
+  "last": "2026-11-12",
+  "sha256": "fe316387b47211adf0368b5180a5be8d9b76cd9ea8e87e8d4d43017192b5c9b9"
  },
- "charts_sha256": "abafd8b072640a47af9d5534910df2457d9990bd3d4d1e5110380100ffb8b7fe",
- "prices_as_of": "2026-11-12T02:19:00Z",
+ "charts_sha256": "8c6fe569f8572b488c6f6efd141d2dfbe2621f2351f14bf4b1c64b06a979b129",
+ "prices_as_of": "2026-11-13T01:55:36Z",
  "current": {
-  "day": "2026-11-11",
+  "day": "2026-11-12",
   "regime": "bull",
   "vol_tag": "normal",
-  "close": 74015.19,
-  "sma_fast": 81205.08700000023,
-  "sma_slow": 73172.85544999974,
-  "vol": 0.3451412594711234
+  "close": 71460.0,
+  "sma_fast": 80946.33500000024,
+  "sma_slow": 73136.86769999974,
+  "vol": 0.3546810357099091
  },
  "runs": [
   {
@@ -338,14 +338,14 @@
   {
    "regime": "bull",
    "start": "2026-09-10",
-   "end": "2026-11-11",
-   "days": 63
+   "end": "2026-11-12",
+   "days": 64
   }
  ],
  "transitions": {
   "counts": {
    "bull": {
-    "bull": 1436,
+    "bull": 1437,
     "chop": 13,
     "bear": 0
    },
@@ -362,8 +362,8 @@
   },
   "probabilities": {
    "bull": {
-    "bull": 0.9910282953761215,
-    "chop": 0.008971704623878536,
+    "bull": 0.9910344827586207,
+    "chop": 0.00896551724137931,
     "bear": 0.0
    },
    "chop": {
@@ -383,10 +383,10 @@
   "since": "2019-01-01",
   "by_regime": {
    "bull": {
-    "days": 1420,
-    "mean": 0.0536,
-    "median": 0.0031,
-    "share_up": 0.5085
+    "days": 1421,
+    "mean": 0.0535,
+    "median": 0.0028,
+    "share_up": 0.5081
    },
    "chop": {
     "days": 415,
@@ -407,8 +407,8 @@
    "param": "sma_slow",
    "value": 180,
    "base": 200,
-   "days_compared": 2872,
-   "days_same": 2747,
+   "days_compared": 2873,
+   "days_same": 2748,
    "days_same_share": 0.9565,
    "calls_same": 58,
    "calls": 59
@@ -417,8 +417,8 @@
    "param": "sma_slow",
    "value": 220,
    "base": 200,
-   "days_compared": 2872,
-   "days_same": 2702,
+   "days_compared": 2873,
+   "days_same": 2703,
    "days_same_share": 0.9408,
    "calls_same": 59,
    "calls": 59
@@ -427,9 +427,9 @@
    "param": "sma_fast",
    "value": 40,
    "base": 50,
-   "days_compared": 2872,
-   "days_same": 2792,
-   "days_same_share": 0.9721,
+   "days_compared": 2873,
+   "days_same": 2793,
+   "days_same_share": 0.9722,
    "calls_same": 58,
    "calls": 59
   },
@@ -437,8 +437,8 @@
    "param": "sma_fast",
    "value": 60,
    "base": 50,
-   "days_compared": 2872,
-   "days_same": 2785,
+   "days_compared": 2873,
+   "days_same": 2786,
    "days_same_share": 0.9697,
    "calls_same": 57,
    "calls": 59
@@ -447,8 +447,8 @@
    "param": "confirm",
    "value": 2,
    "base": 3,
-   "days_compared": 2872,
-   "days_same": 2813,
+   "days_compared": 2873,
+   "days_same": 2814,
    "days_same_share": 0.9795,
    "calls_same": 59,
    "calls": 59
@@ -457,8 +457,8 @@
    "param": "confirm",
    "value": 4,
    "base": 3,
-   "days_compared": 2872,
-   "days_same": 2806,
+   "days_compared": 2873,
+   "days_same": 2807,
    "days_same_share": 0.977,
    "calls_same": 59,
    "calls": 59
@@ -467,8 +467,8 @@
    "param": "confirm",
    "value": 5,
    "base": 3,
-   "days_compared": 2872,
-   "days_same": 2758,
+   "days_compared": 2873,
+   "days_same": 2759,
    "days_same_share": 0.9603,
    "calls_same": 59,
    "calls": 59
@@ -477,8 +477,8 @@
    "param": "vol_mult",
    "value": 1.3,
    "base": 1.5,
-   "days_compared": 2872,
-   "days_same": 2872,
+   "days_compared": 2873,
+   "days_same": 2873,
    "days_same_share": 1.0,
    "calls_same": 59,
    "calls": 59
@@ -487,8 +487,8 @@
    "param": "vol_mult",
    "value": 1.7,
    "base": 1.5,
-   "days_compared": 2872,
-   "days_same": 2872,
+   "days_compared": 2873,
+   "days_same": 2873,
    "days_same_share": 1.0,
    "calls_same": 59,
    "calls": 59
@@ -844,9 +844,9 @@
     "calls": 18,
     "scored": 16,
     "hit_rate": 0.3125,
-    "avg_result": 0.059544637367566926,
-    "score": 44.94412236439908,
-    "display": "44.9",
+    "avg_result": 0.04702650269573057,
+    "score": 44.73603171914738,
+    "display": "44.7",
     "label": "limited sample",
     "weight": 0.6153846153846154
    },
@@ -854,9 +854,9 @@
     "calls": 2,
     "scored": 2,
     "hit_rate": 0.0,
-    "avg_result": -0.13984616999471933,
-    "score": 45.096255301549824,
-    "display": "45.1",
+    "avg_result": -0.16918083332584893,
+    "score": 44.71581609650531,
+    "display": "44.7",
     "label": "small sample",
     "weight": 0.16666666666666666
    },
@@ -864,9 +864,9 @@
     "calls": 15,
     "scored": 15,
     "hit_rate": 0.6,
-    "avg_result": 0.029705974327463542,
-    "score": 59.45983552689689,
-    "display": "59.5",
+    "avg_result": 0.027052226698210228,
+    "score": 59.253828691619695,
+    "display": "59.3",
     "label": "limited sample",
     "weight": 0.6
    },
@@ -877,9 +877,9 @@
     "calls": 6,
     "scored": 6,
     "hit_rate": 0.3333333333333333,
-    "avg_result": -0.05834505420938283,
-    "score": 47.73842592736329,
-    "display": "47.7",
+    "avg_result": -0.07239367804710954,
+    "score": 47.8724176229829,
+    "display": "47.9",
     "label": "small sample",
     "weight": 0.375
    },
@@ -887,8 +887,8 @@
     "calls": 2,
     "scored": 2,
     "hit_rate": 0.5,
-    "avg_result": 0.14494531300000263,
-    "score": 51.2827158149568,
+    "avg_result": 0.09611059848678216,
+    "score": 51.26973487468845,
     "display": "51.3",
     "label": "small sample",
     "weight": 0.16666666666666666
@@ -901,9 +901,9 @@
     "calls": 1,
     "scored": 1,
     "hit_rate": 0.0,
-    "avg_result": -0.08033888227038688,
-    "score": 47.42558718512893,
-    "display": "47.4",
+    "avg_result": -0.11265688375976823,
+    "score": 47.16392421420155,
+    "display": "47.2",
     "label": "small sample",
     "weight": 0.09090909090909091
    },
@@ -915,10 +915,10 @@
    "bull": {
     "calls": 7,
     "scored": 7,
-    "hit_rate": 0.2857142857142857,
-    "avg_result": -0.024463064243922323,
-    "score": 47.27525074640032,
-    "display": "47.3",
+    "hit_rate": 0.42857142857142855,
+    "avg_result": -0.03396236174134532,
+    "score": 49.79479574379114,
+    "display": "49.8",
     "label": "small sample",
     "weight": 0.4117647058823529
    },
@@ -930,10 +930,10 @@
    "bull": {
     "calls": 4,
     "scored": 3,
-    "hit_rate": 0.3333333333333333,
-    "avg_result": -0.25116569011668494,
-    "score": 46.18232749037357,
-    "display": "46.2",
+    "hit_rate": 0.0,
+    "avg_result": -0.2739734352911767,
+    "score": 42.57914672314657,
+    "display": "42.6",
     "label": "small sample",
     "weight": 0.23076923076923078
    },
@@ -946,7 +946,7 @@
     "calls": 1,
     "scored": 1,
     "hit_rate": 1.0,
-    "avg_result": 17.182785832262798,
+    "avg_result": 16.68397871169022,
     "score": 54.54545454545455,
     "display": "54.5",
     "label": "small sample",
@@ -961,9 +961,9 @@
     "calls": 2,
     "scored": 2,
     "hit_rate": 0.0,
-    "avg_result": -0.1355539830393816,
-    "score": 44.75399575491991,
-    "display": "44.8",
+    "avg_result": -0.13700595926894515,
+    "score": 44.64617406271832,
+    "display": "44.6",
     "label": "small sample",
     "weight": 0.16666666666666666
    },
@@ -976,8 +976,8 @@
     "calls": 1,
     "scored": 1,
     "hit_rate": 1.0,
-    "avg_result": 0.033453137959635004,
-    "score": 53.31379368563847,
+    "avg_result": 0.031794304672380536,
+    "score": 53.28662878290047,
     "display": "53.3",
     "label": "small sample",
     "weight": 0.09090909090909091
@@ -991,9 +991,9 @@
     "calls": 40,
     "scored": 37,
     "hit_rate": 0.32432432432432434,
-    "avg_result": 0.4470999317416363,
-    "score": 44.21030471659569,
-    "display": "44.2",
+    "avg_result": 0.42128403650948715,
+    "score": 43.96037829996429,
+    "display": "44.0",
     "label": null,
     "weight": 0.7872340425531915
    },
@@ -1001,9 +1001,9 @@
     "calls": 4,
     "scored": 4,
     "hit_rate": 0.25,
-    "avg_result": 0.002549571502641651,
-    "score": 46.89626095700568,
-    "display": "46.9",
+    "avg_result": -0.036535117419533386,
+    "score": 46.55904368959465,
+    "display": "46.6",
     "label": "small sample",
     "weight": 0.2857142857142857
    },
@@ -1011,9 +1011,9 @@
     "calls": 15,
     "scored": 15,
     "hit_rate": 0.6,
-    "avg_result": 0.029705974327463542,
-    "score": 59.45983552689689,
-    "display": "59.5",
+    "avg_result": 0.027052226698210228,
+    "score": 59.253828691619695,
+    "display": "59.3",
     "label": "limited sample",
     "weight": 0.6
    },
@@ -1026,9 +1026,9 @@
     "calls": 31,
     "scored": 29,
     "hit_rate": 0.3793103448275862,
-    "avg_result": -0.0311371056138749,
-    "score": 48.24334578500895,
-    "display": "48.2",
+    "avg_result": -0.042489912723725445,
+    "score": 47.748013973077875,
+    "display": "47.7",
     "label": "limited sample",
     "weight": 0.7435897435897436
    },
@@ -1036,9 +1036,9 @@
     "calls": 4,
     "scored": 4,
     "hit_rate": 0.75,
-    "avg_result": 0.5053968839014893,
-    "score": 58.09355701340582,
-    "display": "58.1",
+    "avg_result": 0.5130133114852957,
+    "score": 58.39299576671323,
+    "display": "58.4",
     "label": "small sample",
     "weight": 0.2857142857142857
    }
@@ -1048,9 +1048,9 @@
     "calls": 8,
     "scored": 8,
     "hit_rate": 0.375,
-    "avg_result": -0.007522462407036468,
-    "score": 48.8448558120719,
-    "display": "48.8",
+    "avg_result": -0.030267608913636612,
+    "score": 48.95530558133266,
+    "display": "49.0",
     "label": "small sample",
     "weight": 0.4444444444444444
    },
@@ -1061,9 +1061,9 @@
     "calls": 1,
     "scored": 1,
     "hit_rate": 0.0,
-    "avg_result": -0.08033888227038688,
-    "score": 47.42558718512893,
-    "display": "47.4",
+    "avg_result": -0.11265688375976823,
+    "score": 47.16392421420155,
+    "display": "47.2",
     "label": "small sample",
     "weight": 0.09090909090909091
    },
@@ -1073,10 +1073,10 @@
    "normal": {
     "calls": 7,
     "scored": 7,
-    "hit_rate": 0.2857142857142857,
-    "avg_result": -0.024463064243922323,
-    "score": 47.27525074640032,
-    "display": "47.3",
+    "hit_rate": 0.42857142857142855,
+    "avg_result": -0.03396236174134532,
+    "score": 49.79479574379114,
+    "display": "49.8",
     "label": "small sample",
     "weight": 0.4117647058823529
    },
@@ -1086,10 +1086,10 @@
    "normal": {
     "calls": 4,
     "scored": 3,
-    "hit_rate": 0.3333333333333333,
-    "avg_result": -0.25116569011668494,
-    "score": 46.18232749037357,
-    "display": "46.2",
+    "hit_rate": 0.0,
+    "avg_result": -0.2739734352911767,
+    "score": 42.57914672314657,
+    "display": "42.6",
     "label": "small sample",
     "weight": 0.23076923076923078
    },
@@ -1100,7 +1100,7 @@
     "calls": 1,
     "scored": 1,
     "hit_rate": 1.0,
-    "avg_result": 17.182785832262798,
+    "avg_result": 16.68397871169022,
     "score": 54.54545454545455,
     "display": "54.5",
     "label": "small sample",
@@ -1113,9 +1113,9 @@
     "calls": 2,
     "scored": 2,
     "hit_rate": 0.0,
-    "avg_result": -0.1355539830393816,
-    "score": 44.75399575491991,
-    "display": "44.8",
+    "avg_result": -0.13700595926894515,
+    "score": 44.64617406271832,
+    "display": "44.6",
     "label": "small sample",
     "weight": 0.16666666666666666
    },
@@ -1126,8 +1126,8 @@
     "calls": 1,
     "scored": 1,
     "hit_rate": 1.0,
-    "avg_result": 0.033453137959635004,
-    "score": 53.31379368563847,
+    "avg_result": 0.031794304672380536,
+    "score": 53.28662878290047,
     "display": "53.3",
     "label": "small sample",
     "weight": 0.09090909090909091
@@ -1139,9 +1139,9 @@
     "calls": 55,
     "scored": 52,
     "hit_rate": 0.36538461538461536,
-    "avg_result": 0.28801726614917517,
-    "score": 46.8822195244736,
-    "display": "46.9",
+    "avg_result": 0.2652903660712474,
+    "score": 46.465930867156445,
+    "display": "46.5",
     "label": null,
     "weight": 0.8387096774193549
    },
@@ -1149,9 +1149,9 @@
     "calls": 4,
     "scored": 4,
     "hit_rate": 0.75,
-    "avg_result": 0.5053968839014893,
-    "score": 58.09355701340582,
-    "display": "58.1",
+    "avg_result": 0.5130133114852957,
+    "score": 58.39299576671323,
+    "display": "58.4",
     "label": "small sample",
     "weight": 0.2857142857142857
    }
@@ -1162,12 +1162,12 @@
    "long": {
     "calls": 26,
     "scored": 26,
-    "wins": 4
+    "wins": 3
    },
    "short": {
     "calls": 11,
     "scored": 11,
-    "wins": 8
+    "wins": 9
    }
   },
   "chop": {

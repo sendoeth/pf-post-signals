@@ -1,33 +1,41 @@
 {
  "schema": "pf-post-signals.refresh_log.v1",
- "refreshed_at": "2026-11-12T02:19:00Z",
- "started_at": "2026-11-12T02:18:23Z",
+ "refreshed_at": "2026-11-13T01:55:36Z",
+ "started_at": "2026-11-13T01:55:11Z",
  "records": 59,
  "refreshed": 59,
  "failures": [],
  "revisions": [
   {
+   "record": "records/posts/2062554209212358962_GOLD.json",
+   "bar": "2026-06-05T16:00:00Z",
+   "what": "1d exit",
+   "frozen": 4360.2998,
+   "fetched": 4360.2002,
+   "note": "provider revision; frozen value kept"
+  },
+  {
+   "record": "records/posts/2062554209212358962_GOLD.json",
+   "bar": "2026-06-11T16:00:00Z",
+   "what": "7d exit",
+   "frozen": 4110.2002,
+   "fetched": 4110.0,
+   "note": "provider revision; frozen value kept"
+  },
+  {
+   "record": "records/posts/2062554209212358962_GOLD.json",
+   "bar": "2026-07-05T22:00:00Z",
+   "what": "30d exit",
+   "frozen": 4187.5,
+   "fetched": 4192.5,
+   "note": "provider revision; frozen value kept"
+  },
+  {
    "record": "records/bobloukas/2112919830357577753_GOLD.json",
    "bar": "2026-10-22T15:00:00Z",
    "what": "1d exit",
    "frozen": 4074.8,
-   "fetched": 4074.8999,
-   "note": "provider revision; frozen value kept"
-  },
-  {
-   "record": "records/posts/2113602987008356795_GOLD.json",
-   "bar": "2026-10-23T13:00:00Z",
-   "what": "entry",
-   "frozen": 4040.3999,
-   "fetched": 4040.3,
-   "note": "provider revision; frozen value kept"
-  },
-  {
-   "record": "records/posts/2113602987008356795_GOLD.json",
-   "bar": "2026-10-30T13:00:00Z",
-   "what": "7d exit",
-   "frozen": 3963.6001,
-   "fetched": 3963.3,
+   "fetched": 4074.7,
    "note": "provider revision; frozen value kept"
   },
   {
@@ -35,23 +43,15 @@
    "bar": "2026-10-30T17:00:00Z",
    "what": "entry",
    "frozen": 3905.7,
-   "fetched": 3905.6001,
+   "fetched": 3905.5,
    "note": "provider revision; frozen value kept"
   },
   {
-   "record": "records/bobloukas/2106744910896312646_SILVER.json",
-   "bar": "2026-10-05T14:00:00Z",
-   "what": "1d exit",
-   "frozen": 61.405,
-   "fetched": 61.41,
-   "note": "provider revision; frozen value kept"
-  },
-  {
-   "record": "records/bobloukas/2113613893662588966_SILVER.json",
-   "bar": "2026-10-30T13:00:00Z",
+   "record": "records/posts/2116199680157647216_GOLD.json",
+   "bar": "2026-11-06T17:00:00Z",
    "what": "7d exit",
-   "frozen": 50.055,
-   "fetched": 50.06,
+   "frozen": 4075.8,
+   "fetched": 4076.0,
    "note": "provider revision; frozen value kept"
   },
   {
@@ -61,32 +61,24 @@
    "frozen": 691.33,
    "fetched": 690.68,
    "note": "provider revision; frozen value kept"
-  },
-  {
-   "record": "records/bobloukas/2107063137958564197_STOCKS.json",
-   "bar": "2026-10-06T13:30:00Z",
-   "what": "1d exit",
-   "frozen": 778.15,
-   "fetched": 778.17,
-   "note": "provider revision; frozen value kept"
   }
  ],
- "horizons_filled": 0,
+ "horizons_filled": 2,
  "changes": [
   {
    "record": "records/posts/1776235528741937435_SILVER.json",
    "post_id": "1776235528741937435",
    "asset": "SILVER",
    "latest_before": {
-    "at": "2026-11-11T01:08:08Z",
-    "price": 51.48
-   },
-   "latest_after": {
     "at": "2026-11-12T02:08:16Z",
     "price": 51.67
    },
-   "since_post_before": 0.8514655637475272,
-   "since_post_after": 0.8582988671102321,
+   "latest_after": {
+    "at": "2026-11-13T01:45:18Z",
+    "price": 50.56
+   },
+   "since_post_before": 0.8582988671102321,
+   "since_post_after": 0.8183779895702212,
    "horizons_filled": [],
    "status": "closed -> closed"
   },
@@ -95,15 +87,15 @@
    "post_id": "1970742039722479782",
    "asset": "ZEC",
    "latest_before": {
-    "at": "2026-11-11T01:00:00Z",
-    "price": 1033.18
-   },
-   "latest_after": {
     "at": "2026-11-12T02:00:00Z",
     "price": 990.78
    },
-   "since_post_before": 17.960910258763075,
-   "since_post_after": 17.182785832262798,
+   "latest_after": {
+    "at": "2026-11-13T01:00:00Z",
+    "price": 963.6
+   },
+   "since_post_before": 17.182785832262798,
+   "since_post_after": 16.68397871169022,
    "horizons_filled": [],
    "status": "resolved -> resolved"
   },
@@ -112,15 +104,15 @@
    "post_id": "1985733515221078204",
    "asset": "BTC",
    "latest_before": {
-    "at": "2026-11-11T01:00:00Z",
-    "price": 73537.68
-   },
-   "latest_after": {
     "at": "2026-11-12T02:00:00Z",
     "price": 73714.6
    },
-   "since_post_before": -0.2874050045243556,
-   "since_post_after": -0.28569061393439454,
+   "latest_after": {
+    "at": "2026-11-13T01:00:00Z",
+    "price": 71124.18
+   },
+   "since_post_before": -0.28569061393439454,
+   "since_post_after": -0.31079230776237543,
    "horizons_filled": [],
    "status": "resolved -> resolved"
   },
@@ -129,15 +121,15 @@
    "post_id": "1993658195982876720",
    "asset": "SILVER",
    "latest_before": {
-    "at": "2026-11-11T01:08:08Z",
-    "price": 51.48
-   },
-   "latest_after": {
     "at": "2026-11-12T02:08:16Z",
     "price": 51.67
    },
-   "since_post_before": -0.019054878048780477,
-   "since_post_after": -0.015434451219512146,
+   "latest_after": {
+    "at": "2026-11-13T01:45:18Z",
+    "price": 50.56
+   },
+   "since_post_before": -0.015434451219512146,
+   "since_post_after": -0.03658536585365846,
    "horizons_filled": [],
    "status": "resolved -> resolved"
   },
@@ -146,15 +138,15 @@
    "post_id": "1999149068459618541",
    "asset": "STOCKS",
    "latest_before": {
-    "at": "2026-11-10T21:00:00Z",
-    "price": 749.92
-   },
-   "latest_after": {
     "at": "2026-11-11T21:00:00Z",
     "price": 759.81
    },
-   "since_post_before": 0.0953973795299512,
-   "since_post_after": 0.10984356056733025,
+   "latest_after": {
+    "at": "2026-11-12T21:00:00Z",
+    "price": 757.12
+   },
+   "since_post_before": 0.10984356056733025,
+   "since_post_after": 0.1059143161800149,
    "horizons_filled": [],
    "status": "resolved -> resolved"
   },
@@ -163,15 +155,15 @@
    "post_id": "2003111794072801304",
    "asset": "GOLD",
    "latest_before": {
-    "at": "2026-11-11T01:08:05Z",
-    "price": 4037.7
-   },
-   "latest_after": {
     "at": "2026-11-12T02:08:26Z",
     "price": 3990.0
    },
-   "since_post_before": -0.09362930293747429,
-   "since_post_after": -0.10433685482341981,
+   "latest_after": {
+    "at": "2026-11-13T01:45:17Z",
+    "price": 3910.8999
+   },
+   "since_post_before": -0.10433685482341981,
+   "since_post_after": -0.12209300628953068,
    "horizons_filled": [],
    "status": "resolved -> resolved"
   },
@@ -180,15 +172,15 @@
    "post_id": "2003490330650575038",
    "asset": "COPPER",
    "latest_before": {
-    "at": "2026-11-11T01:08:04Z",
-    "price": 6.2795
-   },
-   "latest_after": {
     "at": "2026-11-12T02:08:16Z",
     "price": 6.2655
    },
-   "since_post_before": 0.129406474820144,
-   "since_post_after": 0.12688848920863327,
+   "latest_after": {
+    "at": "2026-11-13T01:45:16Z",
+    "price": 6.2285
+   },
+   "since_post_before": 0.12688848920863327,
+   "since_post_after": 0.12023381294964053,
    "horizons_filled": [],
    "status": "resolved -> resolved"
   },
@@ -197,15 +189,15 @@
    "post_id": "2009356789356314714",
    "asset": "BTC",
    "latest_before": {
-    "at": "2026-11-11T01:00:00Z",
-    "price": 73537.68
-   },
-   "latest_after": {
     "at": "2026-11-12T02:00:00Z",
     "price": 73714.6
    },
-   "since_post_before": -0.19125044829607907,
-   "since_post_after": -0.18930472508741292,
+   "latest_after": {
+    "at": "2026-11-13T01:00:00Z",
+    "price": 71124.18
+   },
+   "since_post_before": -0.18930472508741292,
+   "since_post_after": -0.21779353536433332,
    "horizons_filled": [],
    "status": "resolved -> resolved"
   },
@@ -214,15 +206,15 @@
    "post_id": "2011105173104705981",
    "asset": "GOLD",
    "latest_before": {
-    "at": "2026-11-11T01:08:05Z",
-    "price": 4037.7
-   },
-   "latest_after": {
     "at": "2026-11-12T02:08:26Z",
     "price": 3990.0
    },
-   "since_post_before": -0.12749317684840522,
-   "since_post_after": -0.13780067256733708,
+   "latest_after": {
+    "at": "2026-11-13T01:45:17Z",
+    "price": 3910.8999
+   },
+   "since_post_before": -0.13780067256733708,
+   "since_post_after": -0.15489341768509557,
    "horizons_filled": [],
    "status": "resolved -> resolved"
   },
@@ -231,15 +223,15 @@
    "post_id": "2011110630338535867",
    "asset": "COPPER",
    "latest_before": {
-    "at": "2026-11-11T01:08:04Z",
-    "price": 6.2795
-   },
-   "latest_after": {
     "at": "2026-11-12T02:08:16Z",
     "price": 6.2655
    },
-   "since_post_before": 0.04215417807650801,
-   "since_post_after": 0.03983071944236993,
+   "latest_after": {
+    "at": "2026-11-13T01:45:16Z",
+    "price": 6.2285
+   },
+   "since_post_before": 0.03983071944236993,
+   "since_post_after": 0.03369015019500465,
    "horizons_filled": [],
    "status": "resolved -> resolved"
   },
@@ -248,15 +240,15 @@
    "post_id": "2016523209500131511",
    "asset": "STOCKS",
    "latest_before": {
-    "at": "2026-11-10T21:00:00Z",
-    "price": 749.92
-   },
-   "latest_after": {
     "at": "2026-11-11T21:00:00Z",
     "price": 759.81
    },
-   "since_post_before": 0.07666685809452711,
-   "since_post_after": 0.09086601964049845,
+   "latest_after": {
+    "at": "2026-11-12T21:00:00Z",
+    "price": 757.12
+   },
+   "since_post_before": 0.09086601964049845,
+   "since_post_after": 0.0870039625567105,
    "horizons_filled": [],
    "status": "resolved -> resolved"
   },
@@ -265,15 +257,15 @@
    "post_id": "2017256982743339269",
    "asset": "BTC",
    "latest_before": {
-    "at": "2026-11-11T01:00:00Z",
-    "price": 73537.68
-   },
-   "latest_after": {
     "at": "2026-11-12T02:00:00Z",
     "price": 73714.6
    },
-   "since_post_before": -0.11275144529313919,
-   "since_post_after": -0.11061686592785658,
+   "latest_after": {
+    "at": "2026-11-13T01:00:00Z",
+    "price": 71124.18
+   },
+   "since_post_before": -0.11061686592785658,
+   "since_post_after": -0.14187086253318548,
    "horizons_filled": [],
    "status": "resolved -> resolved"
   },
@@ -282,15 +274,15 @@
    "post_id": "2022006665764082140",
    "asset": "STOCKS",
    "latest_before": {
-    "at": "2026-11-10T21:00:00Z",
-    "price": 749.92
-   },
-   "latest_after": {
     "at": "2026-11-11T21:00:00Z",
     "price": 759.81
    },
-   "since_post_before": 0.09771431498979011,
-   "since_post_after": 0.11219105194206369,
+   "latest_after": {
+    "at": "2026-11-12T21:00:00Z",
+    "price": 757.12
+   },
+   "since_post_before": 0.11219105194206369,
+   "since_post_after": 0.10825349659306327,
    "horizons_filled": [],
    "status": "resolved -> resolved"
   },
@@ -299,15 +291,15 @@
    "post_id": "2023793838322782454",
    "asset": "BTC",
    "latest_before": {
-    "at": "2026-11-11T01:00:00Z",
-    "price": 73537.68
-   },
-   "latest_after": {
     "at": "2026-11-12T02:00:00Z",
     "price": 73714.6
    },
-   "since_post_before": 0.08916699349619117,
-   "since_post_after": 0.09178735661465454,
+   "latest_after": {
+    "at": "2026-11-13T01:00:00Z",
+    "price": 71124.18
+   },
+   "since_post_before": 0.09178735661465454,
+   "since_post_after": 0.05342063137539732,
    "horizons_filled": [],
    "status": "resolved -> resolved"
   },
@@ -316,15 +308,15 @@
    "post_id": "2028472872604209602",
    "asset": "STOCKS",
    "latest_before": {
-    "at": "2026-11-10T21:00:00Z",
-    "price": 749.92
-   },
-   "latest_after": {
     "at": "2026-11-11T21:00:00Z",
     "price": 759.81
    },
-   "since_post_before": 0.10493590688080134,
-   "since_post_after": 0.11950788271695867,
+   "latest_after": {
+    "at": "2026-11-12T21:00:00Z",
+    "price": 757.12
+   },
+   "since_post_before": 0.11950788271695867,
+   "since_post_after": 0.11554442316192715,
    "horizons_filled": [],
    "status": "resolved -> resolved"
   },
@@ -333,15 +325,15 @@
    "post_id": "2031739333057659161",
    "asset": "STOCKS",
    "latest_before": {
-    "at": "2026-11-10T21:00:00Z",
-    "price": 749.92
-   },
-   "latest_after": {
     "at": "2026-11-11T21:00:00Z",
     "price": 759.81
    },
-   "since_post_before": 0.10911941313929074,
-   "since_post_after": 0.1237465613630313,
+   "latest_after": {
+    "at": "2026-11-12T21:00:00Z",
+    "price": 757.12
+   },
+   "since_post_before": 0.1237465613630313,
+   "since_post_after": 0.11976809536486521,
    "horizons_filled": [],
    "status": "resolved -> resolved"
   },
@@ -350,15 +342,15 @@
    "post_id": "2062277523288068152",
    "asset": "BTC",
    "latest_before": {
-    "at": "2026-11-11T01:00:00Z",
-    "price": 73537.68
-   },
-   "latest_after": {
     "at": "2026-11-12T02:00:00Z",
     "price": 73714.6
    },
-   "since_post_before": 0.13122240020231568,
-   "since_post_after": 0.13394394196218373,
+   "latest_after": {
+    "at": "2026-11-13T01:00:00Z",
+    "price": 71124.18
+   },
+   "since_post_before": 0.13394394196218373,
+   "since_post_after": 0.09409578344083669,
    "horizons_filled": [],
    "status": "resolved -> resolved"
   },
@@ -367,15 +359,15 @@
    "post_id": "2062554209212358962",
    "asset": "GOLD",
    "latest_before": {
-    "at": "2026-11-11T01:08:05Z",
-    "price": 4037.7
-   },
-   "latest_after": {
     "at": "2026-11-12T02:08:26Z",
     "price": 3990.0
    },
-   "since_post_before": -0.10370927442805122,
-   "since_post_after": -0.11429774499539946,
+   "latest_after": {
+    "at": "2026-11-13T01:45:17Z",
+    "price": 3910.8999
+   },
+   "since_post_before": -0.11429774499539946,
+   "since_post_after": -0.13185642593301583,
    "horizons_filled": [],
    "status": "resolved -> resolved"
   },
@@ -384,15 +376,15 @@
    "post_id": "2094827036812435935",
    "asset": "BTC",
    "latest_before": {
-    "at": "2026-11-11T01:00:00Z",
-    "price": 73537.68
-   },
-   "latest_after": {
     "at": "2026-11-12T02:00:00Z",
     "price": 73714.6
    },
-   "since_post_before": -0.052300756185788444,
-   "since_post_after": -0.050020742045886024,
+   "latest_after": {
+    "at": "2026-11-13T01:00:00Z",
+    "price": 71124.18
+   },
+   "since_post_before": -0.050020742045886024,
+   "since_post_after": -0.08340415956954494,
    "horizons_filled": [],
    "status": "resolved -> resolved"
   },
@@ -401,15 +393,15 @@
    "post_id": "corbanu:cbrs-entry",
    "asset": "XYZ:CBRS",
    "latest_before": {
-    "at": "2026-11-11T01:00:00Z",
-    "price": 95.401
-   },
-   "latest_after": {
     "at": "2026-11-12T02:00:00Z",
     "price": 100.32
    },
-   "since_post_before": -0.5439504756441513,
-   "since_post_after": -0.5204359673024523,
+   "latest_after": {
+    "at": "2026-11-13T01:00:00Z",
+    "price": 115.62
+   },
+   "since_post_before": -0.5204359673024523,
+   "since_post_after": -0.44729671590420195,
    "horizons_filled": [],
    "status": "resolved -> resolved"
   },
@@ -418,15 +410,15 @@
    "post_id": "corbanu:cxmt-entry",
    "asset": "XYZ:CXMT",
    "latest_before": {
-    "at": "2026-11-11T01:00:00Z",
-    "price": 6.0758
-   },
-   "latest_after": {
     "at": "2026-11-12T02:00:00Z",
     "price": 6.4241
    },
-   "since_post_before": -0.27226341194648396,
-   "since_post_after": -0.23054534130244708,
+   "latest_after": {
+    "at": "2026-11-13T01:00:00Z",
+    "price": 6.2193
+   },
+   "since_post_before": -0.23054534130244708,
+   "since_post_after": -0.2550755189306376,
    "horizons_filled": [],
    "status": "resolved -> resolved"
   },
@@ -435,15 +427,15 @@
    "post_id": "2097324043334451439",
    "asset": "COPX",
    "latest_before": {
-    "at": "2026-11-10T21:00:00Z",
-    "price": 72.87
-   },
-   "latest_after": {
     "at": "2026-11-11T21:00:00Z",
     "price": 73.42
    },
-   "since_post_before": -0.2354422411079634,
-   "since_post_after": -0.22967159794355263,
+   "latest_after": {
+    "at": "2026-11-12T21:00:00Z",
+    "price": 71.01
+   },
+   "since_post_before": -0.22967159794355263,
+   "since_post_after": -0.2549575070821529,
    "horizons_filled": [],
    "status": "resolved -> resolved"
   },
@@ -452,15 +444,15 @@
    "post_id": "corbanu:jp225-entry",
    "asset": "XYZ:JP225",
    "latest_before": {
-    "at": "2026-11-11T01:00:00Z",
-    "price": 60890.0
-   },
-   "latest_after": {
     "at": "2026-11-12T02:00:00Z",
     "price": 61584.0
    },
-   "since_post_before": -0.04297120583427638,
-   "since_post_after": -0.032063372312334915,
+   "latest_after": {
+    "at": "2026-11-13T01:00:00Z",
+    "price": 61548.0
+   },
+   "since_post_before": -0.032063372312334915,
+   "since_post_after": -0.03262919652961149,
    "horizons_filled": [],
    "status": "resolved -> resolved"
   },
@@ -469,15 +461,15 @@
    "post_id": "corbanu:kioxia-entry",
    "asset": "XYZ:KIOXIA",
    "latest_before": {
-    "at": "2026-11-11T01:00:00Z",
-    "price": 58.304
-   },
-   "latest_after": {
     "at": "2026-11-12T02:00:00Z",
     "price": 61.942
    },
-   "since_post_before": -0.46936868610259985,
-   "since_post_after": -0.4362588356642296,
+   "latest_after": {
+    "at": "2026-11-13T01:00:00Z",
+    "price": 59.816
+   },
+   "since_post_before": -0.4362588356642296,
+   "since_post_after": -0.45560780268786216,
    "horizons_filled": [],
    "status": "resolved -> resolved"
   },
@@ -486,15 +478,15 @@
    "post_id": "2100953898630443447",
    "asset": "BTC",
    "latest_before": {
-    "at": "2026-11-11T01:00:00Z",
-    "price": 73537.68
-   },
-   "latest_after": {
     "at": "2026-11-12T02:00:00Z",
     "price": 73714.6
    },
-   "since_post_before": -0.09143005192998144,
-   "since_post_after": -0.0892441766723916,
+   "latest_after": {
+    "at": "2026-11-13T01:00:00Z",
+    "price": 71124.18
+   },
+   "since_post_before": -0.0892441766723916,
+   "since_post_after": -0.12124923536991306,
    "horizons_filled": [],
    "status": "resolved -> resolved"
   },
@@ -503,15 +495,15 @@
    "post_id": "2102014028855820403",
    "asset": "BTC",
    "latest_before": {
-    "at": "2026-11-11T01:00:00Z",
-    "price": 73537.68
-   },
-   "latest_after": {
     "at": "2026-11-12T02:00:00Z",
     "price": 73714.6
    },
-   "since_post_before": -0.13812594493864505,
-   "since_post_after": -0.13605241259683787,
+   "latest_after": {
+    "at": "2026-11-13T01:00:00Z",
+    "price": 71124.18
+   },
+   "since_post_before": -0.13605241259683787,
+   "since_post_after": -0.16641257339756,
    "horizons_filled": [],
    "status": "resolved -> resolved"
   },
@@ -520,15 +512,15 @@
    "post_id": "2102024327075877097",
    "asset": "BTC",
    "latest_before": {
-    "at": "2026-11-11T01:00:00Z",
-    "price": 73537.68
-   },
-   "latest_after": {
     "at": "2026-11-12T02:00:00Z",
     "price": 73714.6
    },
-   "since_post_before": -0.139571538974111,
-   "since_post_after": -0.1375014845023802,
+   "latest_after": {
+    "at": "2026-11-13T01:00:00Z",
+    "price": 71124.18
+   },
+   "since_post_before": -0.1375014845023802,
+   "since_post_after": -0.16781072316765622,
    "horizons_filled": [],
    "status": "resolved -> resolved"
   },
@@ -537,15 +529,15 @@
    "post_id": "corbanu:orcl-entry",
    "asset": "XYZ:ORCL",
    "latest_before": {
-    "at": "2026-11-11T01:00:00Z",
-    "price": 120.57
-   },
-   "latest_after": {
     "at": "2026-11-12T02:00:00Z",
     "price": 125.89
    },
-   "since_post_before": -0.12592431491953027,
-   "since_post_after": -0.08735682180658255,
+   "latest_after": {
+    "at": "2026-11-13T01:00:00Z",
+    "price": 128.02
+   },
+   "since_post_before": -0.08735682180658255,
+   "since_post_after": -0.07191532550384216,
    "horizons_filled": [],
    "status": "resolved -> resolved"
   },
@@ -554,15 +546,15 @@
    "post_id": "corbanu:aapl-entry",
    "asset": "XYZ:AAPL",
    "latest_before": {
-    "at": "2026-11-11T01:00:00Z",
-    "price": 348.69
-   },
-   "latest_after": {
     "at": "2026-11-12T02:00:00Z",
     "price": 355.63
    },
-   "since_post_before": 0.024624606975992558,
-   "since_post_after": 0.045017777908377576,
+   "latest_after": {
+    "at": "2026-11-13T01:00:00Z",
+    "price": 354.96
+   },
+   "since_post_before": 0.045017777908377576,
+   "since_post_after": 0.04304898474919927,
    "horizons_filled": [],
    "status": "resolved -> resolved"
   },
@@ -571,15 +563,15 @@
    "post_id": "corbanu:skhx-entry",
    "asset": "XYZ:SKHX",
    "latest_before": {
-    "at": "2026-11-11T01:00:00Z",
-    "price": 914.22
-   },
-   "latest_after": {
     "at": "2026-11-12T02:00:00Z",
     "price": 965.16
    },
-   "since_post_before": -0.33019268810901903,
-   "since_post_after": -0.2928712726207049,
+   "latest_after": {
+    "at": "2026-11-13T01:00:00Z",
+    "price": 960.36
+   },
+   "since_post_before": -0.2928712726207049,
+   "since_post_after": -0.2963880137739029,
    "horizons_filled": [],
    "status": "resolved -> resolved"
   },
@@ -588,15 +580,15 @@
    "post_id": "2104977267109896477",
    "asset": "SILVER",
    "latest_before": {
-    "at": "2026-11-11T01:08:08Z",
-    "price": 51.48
-   },
-   "latest_after": {
     "at": "2026-11-12T02:08:16Z",
     "price": 51.67
    },
-   "since_post_before": -0.15751575157515751,
-   "since_post_after": -0.15440634972588163,
+   "latest_after": {
+    "at": "2026-11-13T01:45:18Z",
+    "price": 50.56
+   },
+   "since_post_before": -0.15440634972588163,
+   "since_post_after": -0.17257180263480887,
    "horizons_filled": [],
    "status": "resolved -> resolved"
   },
@@ -605,15 +597,15 @@
    "post_id": "corbanu:cbrs-add",
    "asset": "XYZ:CBRS",
    "latest_before": {
-    "at": "2026-11-11T01:00:00Z",
-    "price": 95.401
-   },
-   "latest_after": {
     "at": "2026-11-12T02:00:00Z",
     "price": 100.32
    },
-   "since_post_before": -0.5048990606673933,
-   "since_post_after": -0.47937101043126273,
+   "latest_after": {
+    "at": "2026-11-13T01:00:00Z",
+    "price": 115.62
+   },
+   "since_post_before": -0.47937101043126273,
+   "since_post_after": -0.3999688619025378,
    "horizons_filled": [],
    "status": "resolved -> resolved"
   },
@@ -622,15 +614,15 @@
    "post_id": "2105699317004583026",
    "asset": "BTC",
    "latest_before": {
-    "at": "2026-11-11T01:00:00Z",
-    "price": 73537.68
-   },
-   "latest_after": {
     "at": "2026-11-12T02:00:00Z",
     "price": 73714.6
    },
-   "since_post_before": -0.12665162347687708,
-   "since_post_after": -0.12455048573668082,
+   "latest_after": {
+    "at": "2026-11-13T01:00:00Z",
+    "price": 71124.18
+   },
+   "since_post_before": -0.12455048573668082,
+   "since_post_after": -0.15531483812736047,
    "horizons_filled": [],
    "status": "resolved -> resolved"
   },
@@ -639,15 +631,15 @@
    "post_id": "2106744910896312646",
    "asset": "SILVER",
    "latest_before": {
-    "at": "2026-11-11T01:08:08Z",
-    "price": 51.48
-   },
-   "latest_after": {
     "at": "2026-11-12T02:08:16Z",
     "price": 51.67
    },
-   "since_post_before": -0.15689485751719623,
-   "since_post_after": -0.15378316410088433,
+   "latest_after": {
+    "at": "2026-11-13T01:45:18Z",
+    "price": 50.56
+   },
+   "since_post_before": -0.15378316410088433,
+   "since_post_after": -0.17196200458565347,
    "horizons_filled": [],
    "status": "resolved -> resolved"
   },
@@ -656,15 +648,15 @@
    "post_id": "2106750657877434407",
    "asset": "COPX",
    "latest_before": {
-    "at": "2026-11-10T21:00:00Z",
-    "price": 72.87
-   },
-   "latest_after": {
     "at": "2026-11-11T21:00:00Z",
     "price": 73.42
    },
-   "since_post_before": -0.15267441860465114,
-   "since_post_after": -0.14627906976744187,
+   "latest_after": {
+    "at": "2026-11-12T21:00:00Z",
+    "price": 71.01
+   },
+   "since_post_before": -0.14627906976744187,
+   "since_post_after": -0.17430232558139525,
    "horizons_filled": [],
    "status": "resolved -> resolved"
   },
@@ -673,15 +665,15 @@
    "post_id": "2107063137958564197",
    "asset": "STOCKS",
    "latest_before": {
-    "at": "2026-11-10T21:00:00Z",
-    "price": 749.92
-   },
-   "latest_after": {
     "at": "2026-11-11T21:00:00Z",
     "price": 759.81
    },
-   "since_post_before": -0.025685665657602552,
-   "since_post_after": -0.012836336706986029,
+   "latest_after": {
+    "at": "2026-11-12T21:00:00Z",
+    "price": 757.12
+   },
+   "since_post_before": -0.012836336706986029,
+   "since_post_after": -0.0163312502436046,
    "horizons_filled": [],
    "status": "resolved -> resolved"
   },
@@ -690,15 +682,15 @@
    "post_id": "2107475725573906895",
    "asset": "STOCKS",
    "latest_before": {
-    "at": "2026-11-10T21:00:00Z",
-    "price": 749.92
-   },
-   "latest_after": {
     "at": "2026-11-11T21:00:00Z",
     "price": 759.81
    },
-   "since_post_before": -0.037144507928355996,
-   "since_post_after": -0.02444629903062212,
+   "latest_after": {
+    "at": "2026-11-12T21:00:00Z",
+    "price": 757.12
+   },
+   "since_post_before": -0.02444629903062212,
+   "since_post_after": -0.02790010913526353,
    "horizons_filled": [],
    "status": "resolved -> resolved"
   },
@@ -707,15 +699,15 @@
    "post_id": "2110764348981612915",
    "asset": "BTC",
    "latest_before": {
-    "at": "2026-11-11T01:00:00Z",
-    "price": 73537.68
-   },
-   "latest_after": {
     "at": "2026-11-12T02:00:00Z",
     "price": 73714.6
    },
-   "since_post_before": -0.10437873235510153,
-   "since_post_after": -0.10222400956983357,
+   "latest_after": {
+    "at": "2026-11-13T01:00:00Z",
+    "price": 71124.18
+   },
+   "since_post_before": -0.10222400956983357,
+   "since_post_after": -0.1337729412757659,
    "horizons_filled": [],
    "status": "partial -> partial"
   },
@@ -724,15 +716,15 @@
    "post_id": "2112915214479798344",
    "asset": "BTC",
    "latest_before": {
-    "at": "2026-11-11T01:00:00Z",
-    "price": 73537.68
-   },
-   "latest_after": {
     "at": "2026-11-12T02:00:00Z",
     "price": 73714.6
    },
-   "since_post_before": -0.13051063952049602,
-   "since_post_after": -0.12841878596112288,
+   "latest_after": {
+    "at": "2026-11-13T01:00:00Z",
+    "price": 71124.18
+   },
+   "since_post_before": -0.12841878596112288,
+   "since_post_after": -0.15904720161379682,
    "horizons_filled": [],
    "status": "partial -> partial"
   },
@@ -741,15 +733,15 @@
    "post_id": "2112919830357577753",
    "asset": "BTC",
    "latest_before": {
-    "at": "2026-11-11T01:00:00Z",
-    "price": 73537.68
-   },
-   "latest_after": {
     "at": "2026-11-12T02:00:00Z",
     "price": 73714.6
    },
-   "since_post_before": -0.13051063952049602,
-   "since_post_after": -0.12841878596112288,
+   "latest_after": {
+    "at": "2026-11-13T01:00:00Z",
+    "price": 71124.18
+   },
+   "since_post_before": -0.12841878596112288,
+   "since_post_after": -0.15904720161379682,
    "horizons_filled": [],
    "status": "partial -> partial"
   },
@@ -758,15 +750,15 @@
    "post_id": "2112919830357577753",
    "asset": "GOLD",
    "latest_before": {
-    "at": "2026-11-11T01:08:05Z",
-    "price": 4037.7
-   },
-   "latest_after": {
     "at": "2026-11-12T02:08:26Z",
     "price": 3990.0
    },
-   "since_post_before": -0.026708448836929022,
-   "since_post_after": -0.03820658069181637,
+   "latest_after": {
+    "at": "2026-11-13T01:45:17Z",
+    "price": 3910.8999
+   },
+   "since_post_before": -0.03820658069181637,
+   "since_post_after": -0.05727373749548037,
    "horizons_filled": [],
    "status": "partial -> partial"
   },
@@ -775,15 +767,15 @@
    "post_id": "2113279842636419392",
    "asset": "BTC",
    "latest_before": {
-    "at": "2026-11-11T01:00:00Z",
-    "price": 73537.68
-   },
-   "latest_after": {
     "at": "2026-11-12T02:00:00Z",
     "price": 73714.6
    },
-   "since_post_before": -0.10190664614933698,
-   "since_post_after": -0.09974597591656276,
+   "latest_after": {
+    "at": "2026-11-13T01:00:00Z",
+    "price": 71124.18
+   },
+   "since_post_before": -0.09974597591656276,
+   "since_post_after": -0.1313819887154687,
    "horizons_filled": [],
    "status": "partial -> partial"
   },
@@ -792,15 +784,15 @@
    "post_id": "2113602987008356795",
    "asset": "GOLD",
    "latest_before": {
-    "at": "2026-11-11T01:08:05Z",
-    "price": 4037.7
-   },
-   "latest_after": {
     "at": "2026-11-12T02:08:26Z",
     "price": 3990.0
    },
-   "since_post_before": -0.0006682259347645658,
-   "since_post_after": -0.012473988032719263,
+   "latest_after": {
+    "at": "2026-11-13T01:45:17Z",
+    "price": 3910.8999
+   },
+   "since_post_before": -0.012473988032719263,
+   "since_post_after": -0.032051282844552054,
    "horizons_filled": [],
    "status": "partial -> partial"
   },
@@ -809,15 +801,15 @@
    "post_id": "2113613893662588966",
    "asset": "SILVER",
    "latest_before": {
-    "at": "2026-11-11T01:08:08Z",
-    "price": 51.48
-   },
-   "latest_after": {
     "at": "2026-11-12T02:08:16Z",
     "price": 51.67
    },
-   "since_post_before": -0.04383358098068357,
-   "since_post_after": -0.0403046062407133,
+   "latest_after": {
+    "at": "2026-11-13T01:45:18Z",
+    "price": 50.56
+   },
+   "since_post_before": -0.0403046062407133,
+   "since_post_after": -0.06092124814264488,
    "horizons_filled": [],
    "status": "partial -> partial"
   },
@@ -826,15 +818,15 @@
    "post_id": "2114492799794254164",
    "asset": "BTC",
    "latest_before": {
-    "at": "2026-11-11T01:00:00Z",
-    "price": 73537.68
-   },
-   "latest_after": {
     "at": "2026-11-12T02:00:00Z",
     "price": 73714.6
    },
-   "since_post_before": -0.08254613083374784,
-   "since_post_after": -0.08033888227038688,
+   "latest_after": {
+    "at": "2026-11-13T01:00:00Z",
+    "price": 71124.18
+   },
+   "since_post_before": -0.08033888227038688,
+   "since_post_after": -0.11265688375976823,
    "horizons_filled": [],
    "status": "partial -> partial"
   },
@@ -843,15 +835,15 @@
    "post_id": "2115550350832996432",
    "asset": "XYZ:AAPL",
    "latest_before": {
-    "at": "2026-11-11T01:00:00Z",
-    "price": 348.69
-   },
-   "latest_after": {
     "at": "2026-11-12T02:00:00Z",
     "price": 355.63
    },
-   "since_post_before": 0.012045045568003676,
-   "since_post_after": 0.032187844662448395,
+   "latest_after": {
+    "at": "2026-11-13T01:00:00Z",
+    "price": 354.96
+   },
+   "since_post_before": 0.032187844662448395,
+   "since_post_after": 0.030243222847855078,
    "horizons_filled": [],
    "status": "partial -> partial"
   },
@@ -860,15 +852,15 @@
    "post_id": "2115823513915290059",
    "asset": "BTC",
    "latest_before": {
-    "at": "2026-11-11T01:00:00Z",
-    "price": 73537.68
-   },
-   "latest_after": {
     "at": "2026-11-12T02:00:00Z",
     "price": 73714.6
    },
-   "since_post_before": -0.1007646187526452,
-   "since_post_after": -0.09860120098300251,
+   "latest_after": {
+    "at": "2026-11-13T01:00:00Z",
+    "price": 71124.18
+   },
+   "since_post_before": -0.09860120098300251,
+   "since_post_after": -0.130277442554545,
    "horizons_filled": [],
    "status": "partial -> partial"
   },
@@ -877,15 +869,15 @@
    "post_id": "2115966476817739790",
    "asset": "XMR",
    "latest_before": {
-    "at": "2026-11-11T01:00:00Z",
-    "price": 560.43
-   },
-   "latest_after": {
     "at": "2026-11-12T02:00:00Z",
     "price": 577.32
    },
-   "since_post_before": -0.10121243224171672,
-   "since_post_after": -0.07412515636526917,
+   "latest_after": {
+    "at": "2026-11-13T01:00:00Z",
+    "price": 542.95
+   },
+   "since_post_before": -0.07412515636526917,
+   "since_post_after": -0.12924591846553535,
    "horizons_filled": [],
    "status": "partial -> partial"
   },
@@ -894,15 +886,15 @@
    "post_id": "2115966476817739790",
    "asset": "XRP",
    "latest_before": {
-    "at": "2026-11-11T01:00:00Z",
-    "price": 1.0518
-   },
-   "latest_after": {
     "at": "2026-11-12T02:00:00Z",
     "price": 1.0489
    },
-   "since_post_before": -0.1411774312076426,
-   "since_post_after": -0.14354535804686863,
+   "latest_after": {
+    "at": "2026-11-13T01:00:00Z",
+    "price": 1.0353
+   },
+   "since_post_before": -0.14354535804686863,
+   "since_post_after": -0.1546501183963418,
    "horizons_filled": [],
    "status": "partial -> partial"
   },
@@ -911,15 +903,15 @@
    "post_id": "2116091851086393720",
    "asset": "INJ",
    "latest_before": {
-    "at": "2026-11-11T01:00:00Z",
-    "price": 8.061
-   },
-   "latest_after": {
     "at": "2026-11-12T02:00:00Z",
     "price": 7.476
    },
-   "since_post_before": 0.1143212607132984,
-   "since_post_after": 0.033453137959635004,
+   "latest_after": {
+    "at": "2026-11-13T01:00:00Z",
+    "price": 7.464
+   },
+   "since_post_before": 0.033453137959635004,
+   "since_post_after": 0.031794304672380536,
    "horizons_filled": [],
    "status": "partial -> partial"
   },
@@ -928,15 +920,15 @@
    "post_id": "2116199680157647216",
    "asset": "GOLD",
    "latest_before": {
-    "at": "2026-11-11T01:08:05Z",
-    "price": 4037.7
-   },
-   "latest_after": {
     "at": "2026-11-12T02:08:26Z",
     "price": 3990.0
    },
-   "since_post_before": 0.03379675858360853,
-   "since_post_after": 0.02158383900453198,
+   "latest_after": {
+    "at": "2026-11-13T01:45:17Z",
+    "price": 3910.8999
+   },
+   "since_post_before": 0.02158383900453198,
+   "since_post_after": 0.0013313618557493356,
    "horizons_filled": [],
    "status": "partial -> partial"
   },
@@ -945,15 +937,15 @@
    "post_id": "2116203980111933911",
    "asset": "STOCKS",
    "latest_before": {
-    "at": "2026-11-10T21:00:00Z",
-    "price": 749.92
-   },
-   "latest_after": {
     "at": "2026-11-11T21:00:00Z",
     "price": 759.81
    },
-   "since_post_before": -0.010085009768203146,
-   "since_post_after": 0.0029700617772849824,
+   "latest_after": {
+    "at": "2026-11-12T21:00:00Z",
+    "price": 757.12
+   },
+   "since_post_before": 0.0029700617772849824,
+   "since_post_after": -0.0005808120808912243,
    "horizons_filled": [],
    "status": "partial -> partial"
   },
@@ -962,15 +954,15 @@
    "post_id": "2116304617047007308",
    "asset": "SOXL",
    "latest_before": {
-    "at": "2026-11-10T21:00:00Z",
-    "price": 56.06
-   },
-   "latest_after": {
     "at": "2026-11-11T21:00:00Z",
     "price": 66.03
    },
-   "since_post_before": -0.2943545849329724,
-   "since_post_after": -0.16885895902825843,
+   "latest_after": {
+    "at": "2026-11-12T21:00:00Z",
+    "price": 65.53
+   },
+   "since_post_before": -0.16885895902825843,
+   "since_post_after": -0.17515262131034037,
    "horizons_filled": [],
    "status": "partial -> partial"
   },
@@ -979,15 +971,15 @@
    "post_id": "2116433840499790164",
    "asset": "ETH",
    "latest_before": {
-    "at": "2026-11-11T01:00:00Z",
-    "price": 2050.1
-   },
-   "latest_after": {
     "at": "2026-11-12T02:00:00Z",
     "price": 2051.32
    },
-   "since_post_before": -0.08642448441204265,
-   "since_post_after": -0.08588082208873271,
+   "latest_after": {
+    "at": "2026-11-13T01:00:00Z",
+    "price": 2011.5
+   },
+   "since_post_before": -0.08588082208873271,
+   "since_post_after": -0.10362560382167874,
    "horizons_filled": [],
    "status": "partial -> partial"
   },
@@ -996,15 +988,15 @@
    "post_id": "2116433840499790164",
    "asset": "HYPE",
    "latest_before": {
-    "at": "2026-11-11T01:00:00Z",
-    "price": 71.97
-   },
-   "latest_after": {
     "at": "2026-11-12T02:00:00Z",
     "price": 71.92
    },
-   "since_post_before": -0.18466070012461766,
-   "since_post_after": -0.18522714399003049,
+   "latest_after": {
+    "at": "2026-11-13T01:00:00Z",
+    "price": 73.23
+   },
+   "since_post_before": -0.18522714399003049,
+   "since_post_after": -0.17038631471621157,
    "horizons_filled": [],
    "status": "partial -> partial"
   },
@@ -1013,15 +1005,15 @@
    "post_id": "2116898993435463783",
    "asset": "HYPE",
    "latest_before": {
-    "at": "2026-11-11T01:00:00Z",
-    "price": 71.97
-   },
-   "latest_after": {
     "at": "2026-11-12T02:00:00Z",
     "price": 71.92
    },
-   "since_post_before": -0.18290190735694822,
-   "since_post_after": -0.18346957311534962,
+   "latest_after": {
+    "at": "2026-11-13T01:00:00Z",
+    "price": 73.23
+   },
+   "since_post_before": -0.18346957311534962,
+   "since_post_after": -0.16859673024523159,
    "horizons_filled": [],
    "status": "partial -> partial"
   },
@@ -1030,15 +1022,15 @@
    "post_id": "2116898993435463783",
    "asset": "LIT",
    "latest_before": {
-    "at": "2026-11-11T01:00:00Z",
-    "price": 3.4621
-   },
-   "latest_after": {
     "at": "2026-11-12T02:00:00Z",
     "price": 3.2772
    },
-   "since_post_before": 0.06450819420102705,
-   "since_post_after": 0.007656120284106782,
+   "latest_after": {
+    "at": "2026-11-13T01:00:00Z",
+    "price": 3.248
+   },
+   "since_post_before": 0.007656120284106782,
+   "since_post_after": -0.0013221412538817479,
    "horizons_filled": [],
    "status": "partial -> partial"
   },
@@ -1047,16 +1039,18 @@
    "post_id": "2118181656398090718",
    "asset": "KNTQ",
    "latest_before": {
-    "at": "2026-11-11T01:00:00Z",
-    "price": 0.32543
-   },
-   "latest_after": {
     "at": "2026-11-12T02:00:00Z",
     "price": 0.31876
    },
-   "since_post_before": -0.291588662980539,
-   "since_post_after": -0.306108232835561,
-   "horizons_filled": [],
+   "latest_after": {
+    "at": "2026-11-13T01:00:00Z",
+    "price": 0.30095
+   },
+   "since_post_before": -0.306108232835561,
+   "since_post_after": -0.3448778788802299,
+   "horizons_filled": [
+    "7"
+   ],
    "status": "partial -> partial"
   },
   {
@@ -1064,16 +1058,18 @@
    "post_id": "2118181656398090718",
    "asset": "NEST",
    "latest_before": {
-    "at": "2026-11-11T00:00:00Z",
-    "price": 0.015354903155459398
-   },
-   "latest_after": {
     "at": "2026-11-12T02:00:00Z",
     "price": 0.014476897028011498
    },
-   "since_post_before": -0.4219940999172015,
-   "since_post_after": -0.45504495779860066,
-   "horizons_filled": [],
+   "latest_after": {
+    "at": "2026-11-13T01:00:00Z",
+    "price": 0.013927650630711498
+   },
+   "since_post_before": -0.45504495779860066,
+   "since_post_after": -0.4757202857394184,
+   "horizons_filled": [
+    "7"
+   ],
    "status": "partial -> partial"
   }
  ]
