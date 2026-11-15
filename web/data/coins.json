@@ -32,8 +32,8 @@
     "now": {
      "source": "binance",
      "symbol": "SOLUSDT",
-     "at": "2026-11-14T01:00:00Z",
-     "price": 77.71
+     "at": "2026-11-15T01:00:00Z",
+     "price": 69.39
     },
     "peak": {
      "source": "binance",
@@ -41,7 +41,7 @@
      "day": "2025-01-19",
      "high": 295.83
     },
-    "multiple_now": 2.2131404323185144,
+    "multiple_now": 1.9761911542733461,
     "multiple_peak": 8.425084726454589,
     "sources_tried": [
      {
@@ -61,7 +61,7 @@
    },
    "score_neutral": true,
    "file": "sources/early/mert/SOL.json",
-   "file_sha256": "603075f1e925b7532feac88759a37668a12b082b02b9ae6217667844e364125e",
+   "file_sha256": "461917541f5c04d3414e054a6fabc2fc705816d0b69277a3b3d208ae29eb9ded",
    "searches": 59,
    "first_call": null
   },
@@ -96,8 +96,8 @@
     "now": {
      "source": "binance",
      "symbol": "ZECUSDT",
-     "at": "2026-11-14T01:00:00Z",
-     "price": 934.08
+     "at": "2026-11-15T01:00:00Z",
+     "price": 856.47
     },
     "peak": {
      "source": "binance",
@@ -105,7 +105,7 @@
      "day": "2026-09-26",
      "high": 1698.0
     },
-    "multiple_now": 29.54079696394687,
+    "multiple_now": 27.086337760910816,
     "multiple_peak": 53.70018975332068,
     "sources_tried": [
      {
@@ -121,7 +121,7 @@
    },
    "score_neutral": true,
    "file": "sources/early/mert/ZEC.json",
-   "file_sha256": "bbc8ff35562139ec4d831ac245c8028b3517ccbccc83f6240e70969f5612e945",
+   "file_sha256": "6d2ac1b2fb9a3d565376b3dfdf351fda44dc5978e45d3b4a9ceb64a5c88d80b4",
    "searches": 57,
    "first_call": {
     "call": {
