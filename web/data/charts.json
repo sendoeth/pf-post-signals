@@ -2,7 +2,7 @@
  "schema": "pf-post-signals.charts.v1",
  "record_schema": "post_price.v1",
  "records_scanned": 59,
- "prices_as_of": "2026-11-21T02:27:38Z",
+ "prices_as_of": "2026-11-22T01:25:39Z",
  "posts_drawn": 59,
  "refused": [],
  "superseded": [],
@@ -36631,6 +36631,98 @@
     [
      "2026-11-21T02:00:00Z",
      59030.84
+    ],
+    [
+     "2026-11-21T03:00:00Z",
+     58589.23
+    ],
+    [
+     "2026-11-21T04:00:00Z",
+     56740.43
+    ],
+    [
+     "2026-11-21T05:00:00Z",
+     56300.89
+    ],
+    [
+     "2026-11-21T06:00:00Z",
+     55792.83
+    ],
+    [
+     "2026-11-21T07:00:00Z",
+     58066.71
+    ],
+    [
+     "2026-11-21T08:00:00Z",
+     57997.0
+    ],
+    [
+     "2026-11-21T09:00:00Z",
+     57805.51
+    ],
+    [
+     "2026-11-21T10:00:00Z",
+     58029.59
+    ],
+    [
+     "2026-11-21T11:00:00Z",
+     57932.99
+    ],
+    [
+     "2026-11-21T12:00:00Z",
+     58206.1
+    ],
+    [
+     "2026-11-21T13:00:00Z",
+     58865.52
+    ],
+    [
+     "2026-11-21T14:00:00Z",
+     60558.42
+    ],
+    [
+     "2026-11-21T15:00:00Z",
+     60339.99
+    ],
+    [
+     "2026-11-21T16:00:00Z",
+     59940.17
+    ],
+    [
+     "2026-11-21T17:00:00Z",
+     60057.11
+    ],
+    [
+     "2026-11-21T18:00:00Z",
+     60083.0
+    ],
+    [
+     "2026-11-21T19:00:00Z",
+     60165.07
+    ],
+    [
+     "2026-11-21T20:00:00Z",
+     60364.02
+    ],
+    [
+     "2026-11-21T21:00:00Z",
+     60460.16
+    ],
+    [
+     "2026-11-21T22:00:00Z",
+     60479.08
+    ],
+    [
+     "2026-11-21T23:00:00Z",
+     60149.58
+    ],
+    [
+     "2026-11-22T00:00:00Z",
+     60215.78
+    ],
+    [
+     "2026-11-22T01:00:00Z",
+     60210.05
     ]
    ],
    "posts": [
@@ -36658,10 +36750,10 @@
       "price": 103197.02
      },
      "latest": {
-      "at": "2026-11-21T02:00:00Z",
-      "price": 59030.84
+      "at": "2026-11-22T01:00:00Z",
+      "price": 60210.05
      },
-     "change_since_post": -0.4279792187797672,
+     "change_since_post": -0.4165524353319505,
      "exits": {
       "1": {
        "at": "2025-11-05T16:00:00Z",
@@ -36684,7 +36776,7 @@
      "unresolved": {},
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-11-21T02:00:00Z",
+      "last_bar_at": "2026-11-22T01:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 2
      },
@@ -36717,7 +36809,7 @@
       "for_call": 0.03350871953473078
      },
      "record_file": "records/posts/1985733515221078204_BTC.json",
-     "record_sha256": "f7555d9fe94b85bfa5d8d1dd3cdb65c322975f27b74e31c7419a7ebc93eaebfd"
+     "record_sha256": "5ebb18e4b6d2eed51473c62e22e740ee910ae0e6f47fec76a8139de7c5ddc610"
     },
     {
      "schema": "post_price.v1",
@@ -36743,10 +36835,10 @@
       "price": 90927.63
      },
      "latest": {
-      "at": "2026-11-21T02:00:00Z",
-      "price": 59030.84
+      "at": "2026-11-22T01:00:00Z",
+      "price": 60210.05
      },
-     "change_since_post": -0.35079315275235934,
+     "change_since_post": -0.3378244874522739,
      "exits": {
       "1": {
        "at": "2026-01-09T21:00:00Z",
@@ -36769,7 +36861,7 @@
      "unresolved": {},
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-11-21T02:00:00Z",
+      "last_bar_at": "2026-11-22T01:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 2
      },
@@ -36793,14 +36885,14 @@
       "reason": null
      },
      "best": {
-      "at": "2026-06-25T14:00:00Z",
-      "price": 58291.7,
-      "move": -0.35892203502939657,
+      "at": "2026-11-21T06:00:00Z",
+      "price": 55792.83,
+      "move": -0.3864040006321511,
       "basis": "call side",
-      "for_call": 0.35892203502939657
+      "for_call": 0.3864040006321511
      },
      "record_file": "records/posts/2009356789356314714_BTC.json",
-     "record_sha256": "c409ade16e4bbbff1c76052c4838006ebf94cdc838c81de8a7b7b1060fb8ebc0"
+     "record_sha256": "bcff21621b1bf3eb247c20412a50e9bef1cb1d01ea7739a09184e0e5c345ef83"
     },
     {
      "schema": "post_price.v1",
@@ -36826,10 +36918,10 @@
       "price": 82882.84
      },
      "latest": {
-      "at": "2026-11-21T02:00:00Z",
-      "price": 59030.84
+      "at": "2026-11-22T01:00:00Z",
+      "price": 60210.05
      },
-     "change_since_post": -0.287779714112113,
+     "change_since_post": -0.27355228175096313,
      "exits": {
       "1": {
        "at": "2026-01-31T16:00:00Z",
@@ -36852,7 +36944,7 @@
      "unresolved": {},
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-11-21T02:00:00Z",
+      "last_bar_at": "2026-11-22T01:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 2
      },
@@ -36874,14 +36966,14 @@
       "reason": "reviewed: the 4-year cycle update says the move to $98k was the counter-trend move and the declining phase is on ('I hate being bearish any asset, especially bitcoin'); the detector's 'very bullish on' is about fundamentals in general, so the side is set by hand"
      },
      "best": {
-      "at": "2026-06-25T14:00:00Z",
-      "price": 58291.7,
-      "move": -0.29669760350876007,
+      "at": "2026-11-21T06:00:00Z",
+      "price": 55792.83,
+      "move": -0.3268470288904193,
       "basis": "call side",
-      "for_call": 0.29669760350876007
+      "for_call": 0.3268470288904193
      },
      "record_file": "records/posts/2017256982743339269_BTC.json",
-     "record_sha256": "069ef2d23ec7b1212e3fd135b2078495ab5930080311777e5500363eef1d35cf"
+     "record_sha256": "a8550c9bc426a906e6e81e4fad7d5ac08936dfaeec93e8fb6e34d8077bdf87d1"
     },
     {
      "schema": "post_price.v1",
@@ -36907,10 +36999,10 @@
       "price": 67517.36
      },
      "latest": {
-      "at": "2026-11-21T02:00:00Z",
-      "price": 59030.84
+      "at": "2026-11-22T01:00:00Z",
+      "price": 60210.05
      },
-     "change_since_post": -0.12569389561440203,
+     "change_since_post": -0.10822860964942937,
      "exits": {
       "1": {
        "at": "2026-02-18T17:00:00Z",
@@ -36933,7 +37025,7 @@
      "unresolved": {},
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-11-21T02:00:00Z",
+      "last_bar_at": "2026-11-22T01:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 2
      },
@@ -36955,14 +37047,14 @@
       "reason": "reviewed: 'Bitcoin price action remains horrendous ... has to reclaim $72k to even consider a counter-trend move': a bearish stance, 18 days after the last added bitcoin call"
      },
      "best": {
-      "at": "2026-06-25T14:00:00Z",
-      "price": 58291.7,
-      "move": -0.13664130232580185,
+      "at": "2026-11-21T06:00:00Z",
+      "price": 55792.83,
+      "move": -0.1736520799983885,
       "basis": "call side",
-      "for_call": 0.13664130232580185
+      "for_call": 0.1736520799983885
      },
      "record_file": "records/posts/2023793838322782454_BTC.json",
-     "record_sha256": "610b1d1e931b4e768202c1bdf830716559951cb4020af8631c0c7a16c0a45d7f"
+     "record_sha256": "45da6f58fd1edaf9ca358081899c0da2093d98f5772a3751cb70fdb2de7ff653"
     },
     {
      "schema": "post_price.v1",
@@ -36988,10 +37080,10 @@
       "price": 65007.27
      },
      "latest": {
-      "at": "2026-11-21T02:00:00Z",
-      "price": 59030.84
+      "at": "2026-11-22T01:00:00Z",
+      "price": 60210.05
      },
-     "change_since_post": -0.09193479436992202,
+     "change_since_post": -0.07379513091381928,
      "exits": {
       "1": {
        "at": "2026-06-04T21:00:00Z",
@@ -37014,7 +37106,7 @@
      "unresolved": {},
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-11-21T02:00:00Z",
+      "last_bar_at": "2026-11-22T01:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 2
      },
@@ -37044,7 +37136,7 @@
       "for_call": 0.3408798738971812
      },
      "record_file": "records/posts/2062277523288068152_BTC.json",
-     "record_sha256": "55da34ee97c0cb3fc56709a8db5aece42e29b342157adcd05cfac2fb58f0e811"
+     "record_sha256": "25f2025e9b0037d51d23a8de0fae690efe596ef233fe5c05612336946c34165f"
     },
     {
      "schema": "post_price.v1",
@@ -37070,10 +37162,10 @@
       "price": 77596.01
      },
      "latest": {
-      "at": "2026-11-21T02:00:00Z",
-      "price": 59030.84
+      "at": "2026-11-22T01:00:00Z",
+      "price": 60210.05
      },
-     "change_since_post": -0.23925418330143522,
+     "change_since_post": -0.22405739676563252,
      "exits": {
       "1": {
        "at": "2026-09-02T17:00:00Z",
@@ -37096,7 +37188,7 @@
      "unresolved": {},
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-11-21T02:00:00Z",
+      "last_bar_at": "2026-11-22T01:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 2
      },
@@ -37113,7 +37205,7 @@
       "for_call": 0.12334306879954271
      },
      "record_file": "records/bobloukas/2094827036812435935_BTC.json",
-     "record_sha256": "1ee5743efbbc2dec7f13dcaf253b3102579e1dc185cfbbc0baf0663cb6bbe60a"
+     "record_sha256": "6317eb48803a2bb3c25b52fe98e6bf920cac9b7a26cd7287cfe122875c006272"
     },
     {
      "schema": "post_price.v1",
@@ -37139,10 +37231,10 @@
       "price": 80937.83
      },
      "latest": {
-      "at": "2026-11-21T02:00:00Z",
-      "price": 59030.84
+      "at": "2026-11-22T01:00:00Z",
+      "price": 60210.05
      },
-     "change_since_post": -0.27066440995514707,
+     "change_since_post": -0.2560950793961242,
      "exits": {
       "1": {
        "at": "2026-09-19T15:00:00Z",
@@ -37165,7 +37257,7 @@
      "unresolved": {},
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-11-21T02:00:00Z",
+      "last_bar_at": "2026-11-22T01:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 2
      },
@@ -37182,7 +37274,7 @@
       "for_call": 0.07696166304433905
      },
      "record_file": "records/bobloukas/2100953898630443447_BTC.json",
-     "record_sha256": "6cc3b3c180bf1e2f26b3799924084bd57f052da40a93d23ed16d697e88d2f2c6"
+     "record_sha256": "01e496988a294f03a64255ff972b6e2ead12c145a93340e144ce56805676046b"
     },
     {
      "schema": "post_price.v1",
@@ -37208,10 +37300,10 @@
       "price": 85323.0
      },
      "latest": {
-      "at": "2026-11-21T02:00:00Z",
-      "price": 59030.84
+      "at": "2026-11-22T01:00:00Z",
+      "price": 60210.05
      },
-     "change_since_post": -0.30814856486527664,
+     "change_since_post": -0.2943280240966679,
      "exits": {
       "1": {
        "at": "2026-09-22T13:00:00Z",
@@ -37234,7 +37326,7 @@
      "unresolved": {},
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-11-21T02:00:00Z",
+      "last_bar_at": "2026-11-22T01:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 2
      },
@@ -37251,7 +37343,7 @@
       "for_call": 0.021611288867011247
      },
      "record_file": "records/bobloukas/2102014028855820403_BTC.json",
-     "record_sha256": "28a53d87afa2dcfe4e8e5ede363e41cb566480a46868d99cbd6339bc00b8e630"
+     "record_sha256": "78ebe6298d391d523d0cd1f24edb6098072ae7eb37badc8eed69af35d2c9bb05"
     },
     {
      "schema": "post_price.v1",
@@ -37277,10 +37369,10 @@
       "price": 85466.35
      },
      "latest": {
-      "at": "2026-11-21T02:00:00Z",
-      "price": 59030.84
+      "at": "2026-11-22T01:00:00Z",
+      "price": 60210.05
      },
-     "change_since_post": -0.3093089853492048,
+     "change_since_post": -0.2955116253355853,
      "exits": {
       "1": {
        "at": "2026-09-22T14:00:00Z",
@@ -37303,7 +37395,7 @@
      "unresolved": {},
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-11-21T02:00:00Z",
+      "last_bar_at": "2026-11-22T01:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 2
      },
@@ -37320,7 +37412,7 @@
       "for_call": 0.019897772632152755
      },
      "record_file": "records/bobloukas/2102024327075877097_BTC.json",
-     "record_sha256": "dc89e02cceefe43d2afe9f3203542c1411196959b95c8b0586d7e5db2be3a5fd"
+     "record_sha256": "fc71862b1736596d867e720bcf418980305fb19e6f81a0cb4c96a41779a38d11"
     },
     {
      "schema": "post_price.v1",
@@ -37346,10 +37438,10 @@
       "price": 84202.0
      },
      "latest": {
-      "at": "2026-11-21T02:00:00Z",
-      "price": 59030.84
+      "at": "2026-11-22T01:00:00Z",
+      "price": 60210.05
      },
-     "change_since_post": -0.2989377924514858,
+     "change_since_post": -0.2849332557421439,
      "exits": {
       "1": {
        "at": "2026-10-02T17:00:00Z",
@@ -37372,7 +37464,7 @@
      "unresolved": {},
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-11-21T02:00:00Z",
+      "last_bar_at": "2026-11-22T01:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 2
      },
@@ -37389,7 +37481,7 @@
       "for_call": 0.0309732547920476
      },
      "record_file": "records/bobloukas/2105699317004583026_BTC.json",
-     "record_sha256": "41da8a1366205a89551ac8bfcdb60b9e2173935b8b60dde19bf252f270b3b9d8"
+     "record_sha256": "c5921faa4b1cfc340c151b9b045510bd87a8298692c0f38573999486915f289b"
     },
     {
      "schema": "post_price.v1",
@@ -37415,10 +37507,10 @@
       "price": 82108.01
      },
      "latest": {
-      "at": "2026-11-21T02:00:00Z",
-      "price": 59030.84
+      "at": "2026-11-22T01:00:00Z",
+      "price": 60210.05
      },
-     "change_since_post": -0.2810586932992286,
+     "change_since_post": -0.2666970006945728,
      "exits": {
       "1": {
        "at": "2026-10-16T17:00:00Z",
@@ -37441,7 +37533,7 @@
      "unresolved": {},
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-11-21T02:00:00Z",
+      "last_bar_at": "2026-11-22T01:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 2
      },
@@ -37458,7 +37550,7 @@
       "for_call": 0.03331843019944114
      },
      "record_file": "records/bobloukas/2110764348981612915_BTC.json",
-     "record_sha256": "cd99afdc4bffd8627c0e1ee60d9c2e45794abb3305eb9ea10b63604b601d64e8"
+     "record_sha256": "30a62a5b71025b5fd76dce3493372fd87b201e37a24bf4f4383230362dac38ec"
     },
     {
      "schema": "post_price.v1",
@@ -37484,10 +37576,10 @@
       "price": 84575.71
      },
      "latest": {
-      "at": "2026-11-21T02:00:00Z",
-      "price": 59030.84
+      "at": "2026-11-22T01:00:00Z",
+      "price": 60210.05
      },
-     "change_since_post": -0.3020355371536344,
+     "change_since_post": -0.2880928815140896,
      "exits": {
       "1": {
        "at": "2026-10-22T15:00:00Z",
@@ -37510,7 +37602,7 @@
      "unresolved": {},
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-11-21T02:00:00Z",
+      "last_bar_at": "2026-11-22T01:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 2
      },
@@ -37527,7 +37619,7 @@
       "for_call": 0.0031688767377773264
      },
      "record_file": "records/bobloukas/2112915214479798344_BTC.json",
-     "record_sha256": "1d4c39df334c981f326c22e04fa240dfbdc35fb326329372e2b895db0c9ffaab"
+     "record_sha256": "2cac49a92cd77c476f821f36c33ab3ce50a12919e6b864aad2c64fdd684457e9"
     },
     {
      "schema": "post_price.v1",
@@ -37553,10 +37645,10 @@
       "price": 84575.71
      },
      "latest": {
-      "at": "2026-11-21T02:00:00Z",
-      "price": 59030.84
+      "at": "2026-11-22T01:00:00Z",
+      "price": 60210.05
      },
-     "change_since_post": -0.3020355371536344,
+     "change_since_post": -0.2880928815140896,
      "exits": {
       "1": {
        "at": "2026-10-22T15:00:00Z",
@@ -37579,7 +37671,7 @@
      "unresolved": {},
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-11-21T02:00:00Z",
+      "last_bar_at": "2026-11-22T01:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 2
      },
@@ -37596,7 +37688,7 @@
       "for_call": 0.0031688767377773264
      },
      "record_file": "records/bobloukas/2112919830357577753_BTC.json",
-     "record_sha256": "0b96c828e18fbc2365d5fa35ac795989ae4749ee7c6f220e80d2559518cad2db"
+     "record_sha256": "6d2f54b98ac014773002682685a3dabfb27420df7aa1f0058e0c41dad26fd837"
     },
     {
      "schema": "post_price.v1",
@@ -37616,16 +37708,16 @@
       "price_field": "open"
      },
      "side": 1,
-     "status": "partial",
+     "status": "resolved",
      "entry": {
       "at": "2026-10-22T15:00:00Z",
       "price": 81882.0
      },
      "latest": {
-      "at": "2026-11-21T02:00:00Z",
-      "price": 59030.84
+      "at": "2026-11-22T01:00:00Z",
+      "price": 60210.05
      },
-     "change_since_post": -0.2790742776190128,
+     "change_since_post": -0.2646729439925747,
      "exits": {
       "1": {
        "at": "2026-10-23T15:00:00Z",
@@ -37635,26 +37727,27 @@
        "at": "2026-10-29T15:00:00Z",
        "price": 81178.31
       },
-      "30": null
+      "30": {
+       "at": "2026-11-21T15:00:00Z",
+       "price": 60339.99
+      }
      },
      "moves": {
       "1": -0.0011968442392711331,
       "7": -0.008593952272782812,
-      "30": null
+      "30": -0.2630860262328717
      },
-     "unresolved": {
-      "30": "horizon not yet reached"
-     },
+     "unresolved": {},
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-11-21T02:00:00Z",
+      "last_bar_at": "2026-11-22T01:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 2
      },
      "signed_returns": {
       "1": -0.0011968442392711331,
       "7": -0.008593952272782812,
-      "30": null
+      "30": -0.2630860262328717
      },
      "asset_choice": {
       "method": "detector",
@@ -37671,7 +37764,7 @@
       "for_call": 0.0015502796707458355
      },
      "record_file": "records/posts/2113279842636419392_BTC.json",
-     "record_sha256": "db30fbcc01ff7b7b01a62a9a2081772d9bca2ad11a190d31e3143c1c0547d18e"
+     "record_sha256": "17ca959148fcc37a8340af1fea4a7797a6b3fba22991261f085f5ecfb62ac533"
     },
     {
      "schema": "post_price.v1",
@@ -37697,10 +37790,10 @@
       "price": 80154.09
      },
      "latest": {
-      "at": "2026-11-21T02:00:00Z",
-      "price": 59030.84
+      "at": "2026-11-22T01:00:00Z",
+      "price": 60210.05
      },
-     "change_since_post": -0.26353302744750773,
+     "change_since_post": -0.2488212391906638,
      "exits": {
       "1": {
        "at": "2026-10-27T00:00:00Z",
@@ -37722,7 +37815,7 @@
      },
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-11-21T02:00:00Z",
+      "last_bar_at": "2026-11-22T01:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 2
      },
@@ -37755,7 +37848,7 @@
       "for_call": 0.020259976752277975
      },
      "record_file": "records/posts/2114492799794254164_BTC.json",
-     "record_sha256": "e5b95998dc067e9acffdf873f2fa49a0a48f04872ccb2bdce2149a1db28314d9"
+     "record_sha256": "d08131e51c00e567745c9eee50a89a2e5273d3878786661b2d746cb0089e9211"
     },
     {
      "schema": "post_price.v1",
@@ -37780,10 +37873,10 @@
       "price": 81778.01
      },
      "latest": {
-      "at": "2026-11-21T02:00:00Z",
-      "price": 59030.84
+      "at": "2026-11-22T01:00:00Z",
+      "price": 60210.05
      },
-     "change_since_post": -0.27815753892764083,
+     "change_since_post": -0.2637378923747349,
      "exits": {
       "1": {
        "at": "2026-10-30T16:00:00Z",
@@ -37805,7 +37898,7 @@
      },
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-11-21T02:00:00Z",
+      "last_bar_at": "2026-11-22T01:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 2
      },
@@ -37816,7 +37909,7 @@
       "basis": "highest price"
      },
      "record_file": "records/posts/2115823513915290059_BTC.json",
-     "record_sha256": "56e2f7ba163c9fa101211e72b0fa7b6b8f40bef7dee85bac2602a5eb75fa84e7"
+     "record_sha256": "711b6a3a2f81f36e2d51312f1c877a7de2e24c802711cf6689e3899b8bb8610d"
     }
    ]
   },
@@ -58672,10 +58765,6 @@
     [
      "2026-11-20T21:00:00Z",
      5.461
-    ],
-    [
-     "2026-11-20T21:59:55Z",
-     5.465
     ]
    ],
    "posts": [
@@ -58703,10 +58792,10 @@
       "price": 5.56
      },
      "latest": {
-      "at": "2026-11-20T21:59:55Z",
-      "price": 5.465
+      "at": "2026-11-20T21:00:00Z",
+      "price": 5.461
      },
-     "change_since_post": -0.017086330935251803,
+     "change_since_post": -0.017805755395683298,
      "exits": {
       "1": {
        "at": "2025-12-24T16:30:00Z",
@@ -58729,7 +58818,7 @@
      "unresolved": {},
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-11-20T21:59:55Z",
+      "last_bar_at": "2026-11-20T21:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 4
      },
@@ -58758,7 +58847,7 @@
       "for_call": 0.2424460431654678
      },
      "record_file": "records/posts/2003490330650575038_COPPER.json",
-     "record_sha256": "ae8b5cd8182807559953ef1c7af74ce201bb55b3f8967a39d064b30726fbf4ae"
+     "record_sha256": "9dd3e2855aecff7c0b81e263aa6a7846635c47c44523418b57c8efb351507330"
     },
     {
      "schema": "post_price.v1",
@@ -58784,10 +58873,10 @@
       "price": 6.0255
      },
      "latest": {
-      "at": "2026-11-20T21:59:55Z",
-      "price": 5.465
+      "at": "2026-11-20T21:00:00Z",
+      "price": 5.461
      },
-     "change_since_post": -0.09302132603103486,
+     "change_since_post": -0.09368517135507426,
      "exits": {
       "1": {
        "at": "2026-01-14T17:00:00Z",
@@ -58810,7 +58899,7 @@
      "unresolved": {},
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-11-20T21:59:55Z",
+      "last_bar_at": "2026-11-20T21:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 4
      },
@@ -58841,7 +58930,7 @@
       "for_call": 0.14646087461621438
      },
      "record_file": "records/posts/2011110630338535867_COPPER.json",
-     "record_sha256": "f9afb9f14eb835fce359a15e40d81f38eb76febc3d7a5b9334c5c3c1e98cac5f"
+     "record_sha256": "37cb670a9e681df3da046bd538f0d4389ccadedd3a9a6bb6e80d7f181a4611b9"
     }
    ]
   },
@@ -62504,6 +62593,98 @@
     [
      "2026-11-21T02:00:00Z",
      1626.12
+    ],
+    [
+     "2026-11-21T03:00:00Z",
+     1620.33
+    ],
+    [
+     "2026-11-21T04:00:00Z",
+     1572.28
+    ],
+    [
+     "2026-11-21T05:00:00Z",
+     1561.12
+    ],
+    [
+     "2026-11-21T06:00:00Z",
+     1562.18
+    ],
+    [
+     "2026-11-21T07:00:00Z",
+     1640.53
+    ],
+    [
+     "2026-11-21T08:00:00Z",
+     1630.94
+    ],
+    [
+     "2026-11-21T09:00:00Z",
+     1628.32
+    ],
+    [
+     "2026-11-21T10:00:00Z",
+     1639.08
+    ],
+    [
+     "2026-11-21T11:00:00Z",
+     1640.85
+    ],
+    [
+     "2026-11-21T12:00:00Z",
+     1652.67
+    ],
+    [
+     "2026-11-21T13:00:00Z",
+     1663.73
+    ],
+    [
+     "2026-11-21T14:00:00Z",
+     1701.76
+    ],
+    [
+     "2026-11-21T15:00:00Z",
+     1691.05
+    ],
+    [
+     "2026-11-21T16:00:00Z",
+     1684.61
+    ],
+    [
+     "2026-11-21T17:00:00Z",
+     1683.95
+    ],
+    [
+     "2026-11-21T18:00:00Z",
+     1682.0
+    ],
+    [
+     "2026-11-21T19:00:00Z",
+     1682.93
+    ],
+    [
+     "2026-11-21T20:00:00Z",
+     1687.33
+    ],
+    [
+     "2026-11-21T21:00:00Z",
+     1686.64
+    ],
+    [
+     "2026-11-21T22:00:00Z",
+     1688.69
+    ],
+    [
+     "2026-11-21T23:00:00Z",
+     1680.99
+    ],
+    [
+     "2026-11-22T00:00:00Z",
+     1685.62
+    ],
+    [
+     "2026-11-22T01:00:00Z",
+     1684.49
     ]
    ],
    "posts": [
@@ -62531,10 +62712,10 @@
       "price": 2244.04
      },
      "latest": {
-      "at": "2026-11-21T02:00:00Z",
-      "price": 1626.12
+      "at": "2026-11-22T01:00:00Z",
+      "price": 1684.49
      },
-     "change_since_post": -0.27536051050783417,
+     "change_since_post": -0.249349387711449,
      "exits": {
       "1": {
        "at": "2026-11-01T08:00:00Z",
@@ -62556,7 +62737,7 @@
      },
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-11-21T02:00:00Z",
+      "last_bar_at": "2026-11-22T01:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 2
      },
@@ -62595,7 +62776,7 @@
       "for_call": 0.0856624659096985
      },
      "record_file": "records/posts/2116433840499790164_ETH.json",
-     "record_sha256": "502b3c6ba99a71c02472411dd8c0dbcd1b0c165fcdd6f81bd66341b2aa361a08"
+     "record_sha256": "9a58570de3eb3f1dbc97545f545d2c962cf48d8331940e4d2919de79454ea508"
     }
    ]
   },
@@ -83567,10 +83748,6 @@
     [
      "2026-11-20T21:00:00Z",
      3526.3999
-    ],
-    [
-     "2026-11-20T21:59:57Z",
-     3539.0
     ]
    ],
    "posts": [
@@ -83598,10 +83775,10 @@
       "price": 4454.7998
      },
      "latest": {
-      "at": "2026-11-20T21:59:57Z",
-      "price": 3539.0
+      "at": "2026-11-20T21:00:00Z",
+      "price": 3526.3999
      },
-     "change_since_post": -0.20557597223560975,
+     "change_since_post": -0.20840440461544418,
      "exits": {
       "1": {
        "at": "2025-12-23T15:00:00Z",
@@ -83624,7 +83801,7 @@
      "unresolved": {},
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-11-20T21:59:57Z",
+      "last_bar_at": "2026-11-20T21:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 4
      },
@@ -83653,7 +83830,7 @@
       "for_call": 0.2550732582864892
      },
      "record_file": "records/posts/2003111794072801304_GOLD.json",
-     "record_sha256": "f483279c0c39b226b0b3573f4309673d47c983cb6aa2ff340be240d987920beb"
+     "record_sha256": "1a04c544ab0b645f75777a5092703b4908d38f93777da71931991053c109c5ec"
     },
     {
      "schema": "post_price.v1",
@@ -83679,10 +83856,10 @@
       "price": 4627.7002
      },
      "latest": {
-      "at": "2026-11-20T21:59:57Z",
-      "price": 3539.0
+      "at": "2026-11-20T21:00:00Z",
+      "price": 3526.3999
      },
-     "change_since_post": -0.2352572882746381,
+     "change_since_post": -0.23798004460185218,
      "exits": {
       "1": {
        "at": "2026-01-14T16:00:00Z",
@@ -83705,7 +83882,7 @@
      "unresolved": {},
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-11-20T21:59:57Z",
+      "last_bar_at": "2026-11-20T21:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 4
      },
@@ -83734,7 +83911,7 @@
       "for_call": 0.20818113930543714
      },
      "record_file": "records/posts/2011105173104705981_GOLD.json",
-     "record_sha256": "fadc326e311634b358da49043a0549f558e8bfa4d8fc8f64ad2e8d20c733e89e"
+     "record_sha256": "709f3c97909ee0edb15edba552ee42f83861e2cdc5066e44830441739bf7e6cd"
     },
     {
      "schema": "post_price.v1",
@@ -83760,10 +83937,10 @@
       "price": 4504.8999
      },
      "latest": {
-      "at": "2026-11-20T21:59:57Z",
-      "price": 3539.0
+      "at": "2026-11-20T21:00:00Z",
+      "price": 3526.3999
      },
-     "change_since_post": -0.2144109572778743,
+     "change_since_post": -0.21720793396541405,
      "exits": {
       "1": {
        "at": "2026-06-05T16:00:00Z",
@@ -83786,7 +83963,7 @@
      "unresolved": {},
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-11-20T21:59:57Z",
+      "last_bar_at": "2026-11-20T21:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 4
      },
@@ -83818,7 +83995,7 @@
       "for_call": 0.05236518129958889
      },
      "record_file": "records/posts/2062554209212358962_GOLD.json",
-     "record_sha256": "cb6a2a3b3b38b2332a825b802ef7d2008b96c6eed0ab5cf5ad8d6a6d5615ffbc"
+     "record_sha256": "e03c2e40bce6743851c8e45f772d2663bbc2279c8f2cac1e40b247490a118b3b"
     },
     {
      "schema": "post_price.v1",
@@ -83844,10 +84021,10 @@
       "price": 4148.5
      },
      "latest": {
-      "at": "2026-11-20T21:59:57Z",
-      "price": 3539.0
+      "at": "2026-11-20T21:00:00Z",
+      "price": 3526.3999
      },
-     "change_since_post": -0.14692057370133782,
+     "change_since_post": -0.1499578401831988,
      "exits": {
       "1": {
        "at": "2026-10-22T15:00:00Z",
@@ -83870,7 +84047,7 @@
      "unresolved": {},
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-11-20T21:59:57Z",
+      "last_bar_at": "2026-11-20T21:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 4
      },
@@ -83887,7 +84064,7 @@
       "for_call": 0.15039168374111123
      },
      "record_file": "records/bobloukas/2112919830357577753_GOLD.json",
-     "record_sha256": "39f564ede8613b2c7826a39d0e11447d39aac654d37485a8cc8540b0e1f4ca2a"
+     "record_sha256": "0b7597c137fe1b67292d012b3fd99e7c10a290bbd0e8360911d04032a6949328"
     },
     {
      "schema": "post_price.v1",
@@ -83913,10 +84090,10 @@
       "price": 4040.3999
      },
      "latest": {
-      "at": "2026-11-20T21:59:57Z",
-      "price": 3539.0
+      "at": "2026-11-20T21:00:00Z",
+      "price": 3526.3999
      },
-     "change_since_post": -0.12409660241799325,
+     "change_since_post": -0.1272151303637048,
      "exits": {
       "1": {
        "at": "2026-10-25T22:00:00Z",
@@ -83938,7 +84115,7 @@
      },
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-11-20T21:59:57Z",
+      "last_bar_at": "2026-11-20T21:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 4
      },
@@ -83962,7 +84139,7 @@
       "for_call": 0.12766058132018065
      },
      "record_file": "records/posts/2113602987008356795_GOLD.json",
-     "record_sha256": "4a970f7fc05d7769af0cffd141f8c456f8c8d51c4ba4b838108a817b8193e084"
+     "record_sha256": "bc8c7806036d313f8e0adb3360bb1a3a7d174c031929c3bff71d6c53f3f42d04"
     },
     {
      "schema": "post_price.v1",
@@ -83987,10 +84164,10 @@
       "price": 3905.7
      },
      "latest": {
-      "at": "2026-11-20T21:59:57Z",
-      "price": 3539.0
+      "at": "2026-11-20T21:00:00Z",
+      "price": 3526.3999
      },
-     "change_since_post": -0.09388841948946403,
+     "change_since_post": -0.0971144993215044,
      "exits": {
       "1": {
        "at": "2026-11-01T23:00:00Z",
@@ -84012,7 +84189,7 @@
      },
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-11-20T21:59:57Z",
+      "last_bar_at": "2026-11-20T21:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 4
      },
@@ -84023,7 +84200,7 @@
       "basis": "highest price"
      },
      "record_file": "records/posts/2116199680157647216_GOLD.json",
-     "record_sha256": "7e90ac6518d11775acc15af710af78fc43c977624e6a5c63b2ad3885f1b09034"
+     "record_sha256": "9976902ecb9db4d38378c43c65e2128cf9051e0efc0e0c3477a923bff4f71210"
     }
    ]
   },
@@ -86027,6 +86204,98 @@
     [
      "2026-11-21T02:00:00Z",
      60.57
+    ],
+    [
+     "2026-11-21T03:00:00Z",
+     59.32
+    ],
+    [
+     "2026-11-21T04:00:00Z",
+     56.99
+    ],
+    [
+     "2026-11-21T05:00:00Z",
+     56.69
+    ],
+    [
+     "2026-11-21T06:00:00Z",
+     56.55
+    ],
+    [
+     "2026-11-21T07:00:00Z",
+     58.6
+    ],
+    [
+     "2026-11-21T08:00:00Z",
+     58.08
+    ],
+    [
+     "2026-11-21T09:00:00Z",
+     58.0
+    ],
+    [
+     "2026-11-21T10:00:00Z",
+     58.6
+    ],
+    [
+     "2026-11-21T11:00:00Z",
+     58.5
+    ],
+    [
+     "2026-11-21T12:00:00Z",
+     59.47
+    ],
+    [
+     "2026-11-21T13:00:00Z",
+     59.66
+    ],
+    [
+     "2026-11-21T14:00:00Z",
+     61.2
+    ],
+    [
+     "2026-11-21T15:00:00Z",
+     61.24
+    ],
+    [
+     "2026-11-21T16:00:00Z",
+     60.77
+    ],
+    [
+     "2026-11-21T17:00:00Z",
+     60.87
+    ],
+    [
+     "2026-11-21T18:00:00Z",
+     60.72
+    ],
+    [
+     "2026-11-21T19:00:00Z",
+     60.97
+    ],
+    [
+     "2026-11-21T20:00:00Z",
+     61.27
+    ],
+    [
+     "2026-11-21T21:00:00Z",
+     61.84
+    ],
+    [
+     "2026-11-21T22:00:00Z",
+     61.64
+    ],
+    [
+     "2026-11-21T23:00:00Z",
+     61.11
+    ],
+    [
+     "2026-11-22T00:00:00Z",
+     61.38
+    ],
+    [
+     "2026-11-22T01:00:00Z",
+     61.39
     ]
    ],
    "posts": [
@@ -86054,10 +86323,10 @@
       "price": 88.27
      },
      "latest": {
-      "at": "2026-11-21T02:00:00Z",
-      "price": 60.57
+      "at": "2026-11-22T01:00:00Z",
+      "price": 61.39
      },
-     "change_since_post": -0.3138099014387674,
+     "change_since_post": -0.30452022204599516,
      "exits": {
       "1": {
        "at": "2026-11-01T08:00:00Z",
@@ -86079,7 +86348,7 @@
      },
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-11-21T02:00:00Z",
+      "last_bar_at": "2026-11-22T01:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 2
      },
@@ -86127,7 +86396,7 @@
       "for_call": 0.004078395830973136
      },
      "record_file": "records/posts/2116433840499790164_HYPE.json",
-     "record_sha256": "310c599b8fac4e1312b007516c58d1bf3b053ce3e0bd7f68e2ddac408ee05dd0"
+     "record_sha256": "9611c9093158cae7aae9a6acf839ec57afb52b65039344456eb01c9b95a813af"
     },
     {
      "schema": "post_price.v1",
@@ -86152,10 +86421,10 @@
       "price": 88.08
      },
      "latest": {
-      "at": "2026-11-21T02:00:00Z",
-      "price": 60.57
+      "at": "2026-11-22T01:00:00Z",
+      "price": 61.39
      },
-     "change_since_post": -0.3123297002724795,
+     "change_since_post": -0.3030199818346957,
      "exits": {
       "1": {
        "at": "2026-11-02T15:00:00Z",
@@ -86177,7 +86446,7 @@
      },
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-11-21T02:00:00Z",
+      "last_bar_at": "2026-11-22T01:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 2
      },
@@ -86218,7 +86487,7 @@
       "basis": "highest price"
      },
      "record_file": "records/posts/2116898993435463783_HYPE.json",
-     "record_sha256": "42bd7b98dd273b7b7b26b21417c5c7790dea4007b3bd12d4a693ada5ebb1321b"
+     "record_sha256": "1a0a07c1eadaaac404096d7bb759d39a597087779b315a3377e7b99709a48b0d"
     }
    ]
   },
@@ -88314,6 +88583,98 @@
     [
      "2026-11-21T02:00:00Z",
      6.334
+    ],
+    [
+     "2026-11-21T03:00:00Z",
+     6.285
+    ],
+    [
+     "2026-11-21T04:00:00Z",
+     6.089
+    ],
+    [
+     "2026-11-21T05:00:00Z",
+     6.024
+    ],
+    [
+     "2026-11-21T06:00:00Z",
+     5.918
+    ],
+    [
+     "2026-11-21T07:00:00Z",
+     6.154
+    ],
+    [
+     "2026-11-21T08:00:00Z",
+     6.036
+    ],
+    [
+     "2026-11-21T09:00:00Z",
+     6.01
+    ],
+    [
+     "2026-11-21T10:00:00Z",
+     6.073
+    ],
+    [
+     "2026-11-21T11:00:00Z",
+     6.076
+    ],
+    [
+     "2026-11-21T12:00:00Z",
+     6.068
+    ],
+    [
+     "2026-11-21T13:00:00Z",
+     6.093
+    ],
+    [
+     "2026-11-21T14:00:00Z",
+     6.338
+    ],
+    [
+     "2026-11-21T15:00:00Z",
+     6.24
+    ],
+    [
+     "2026-11-21T16:00:00Z",
+     6.12
+    ],
+    [
+     "2026-11-21T17:00:00Z",
+     6.112
+    ],
+    [
+     "2026-11-21T18:00:00Z",
+     6.162
+    ],
+    [
+     "2026-11-21T19:00:00Z",
+     6.092
+    ],
+    [
+     "2026-11-21T20:00:00Z",
+     6.086
+    ],
+    [
+     "2026-11-21T21:00:00Z",
+     6.084
+    ],
+    [
+     "2026-11-21T22:00:00Z",
+     6.038
+    ],
+    [
+     "2026-11-21T23:00:00Z",
+     5.957
+    ],
+    [
+     "2026-11-22T00:00:00Z",
+     5.986
+    ],
+    [
+     "2026-11-22T01:00:00Z",
+     5.951
     ]
    ],
    "posts": [
@@ -88341,10 +88702,10 @@
       "price": 7.234
      },
      "latest": {
-      "at": "2026-11-21T02:00:00Z",
-      "price": 6.334
+      "at": "2026-11-22T01:00:00Z",
+      "price": 5.951
      },
-     "change_since_post": -0.12441249654409736,
+     "change_since_post": -0.17735692562897432,
      "exits": {
       "1": {
        "at": "2026-10-31T09:00:00Z",
@@ -88366,7 +88727,7 @@
      },
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-11-21T02:00:00Z",
+      "last_bar_at": "2026-11-22T01:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 2
      },
@@ -88415,7 +88776,7 @@
       "for_call": 0.16643627315454812
      },
      "record_file": "records/posts/2116091851086393720_INJ.json",
-     "record_sha256": "e4a64cee966ef2a2f224d447c233a17aee730c19aecce267b892fceabc049bed"
+     "record_sha256": "55d6ad1a66469a38c0b531658ef8f428f3193e6a3096fe2521b67210d72a3cdf"
     }
    ]
   },
@@ -89955,6 +90316,98 @@
     [
      "2026-11-21T02:00:00Z",
      0.1913
+    ],
+    [
+     "2026-11-21T03:00:00Z",
+     0.19102
+    ],
+    [
+     "2026-11-21T04:00:00Z",
+     0.17495
+    ],
+    [
+     "2026-11-21T05:00:00Z",
+     0.15326
+    ],
+    [
+     "2026-11-21T06:00:00Z",
+     0.15112
+    ],
+    [
+     "2026-11-21T07:00:00Z",
+     0.1563
+    ],
+    [
+     "2026-11-21T08:00:00Z",
+     0.1548
+    ],
+    [
+     "2026-11-21T09:00:00Z",
+     0.15577
+    ],
+    [
+     "2026-11-21T10:00:00Z",
+     0.15567
+    ],
+    [
+     "2026-11-21T11:00:00Z",
+     0.1557
+    ],
+    [
+     "2026-11-21T12:00:00Z",
+     0.16102
+    ],
+    [
+     "2026-11-21T13:00:00Z",
+     0.16275
+    ],
+    [
+     "2026-11-21T14:00:00Z",
+     0.1676
+    ],
+    [
+     "2026-11-21T15:00:00Z",
+     0.17285
+    ],
+    [
+     "2026-11-21T16:00:00Z",
+     0.16486
+    ],
+    [
+     "2026-11-21T17:00:00Z",
+     0.16383
+    ],
+    [
+     "2026-11-21T18:00:00Z",
+     0.16458
+    ],
+    [
+     "2026-11-21T19:00:00Z",
+     0.16502
+    ],
+    [
+     "2026-11-21T20:00:00Z",
+     0.166
+    ],
+    [
+     "2026-11-21T21:00:00Z",
+     0.16652
+    ],
+    [
+     "2026-11-21T22:00:00Z",
+     0.16651
+    ],
+    [
+     "2026-11-21T23:00:00Z",
+     0.16495
+    ],
+    [
+     "2026-11-22T00:00:00Z",
+     0.16414
+    ],
+    [
+     "2026-11-22T01:00:00Z",
+     0.17144
     ]
    ],
    "posts": [
@@ -89982,10 +90435,10 @@
       "price": 0.45938
      },
      "latest": {
-      "at": "2026-11-21T02:00:00Z",
-      "price": 0.1913
+      "at": "2026-11-22T01:00:00Z",
+      "price": 0.17144
      },
-     "change_since_post": -0.5835691584309286,
+     "change_since_post": -0.6268013409377857,
      "exits": {
       "1": {
        "at": "2026-11-06T04:00:00Z",
@@ -90007,7 +90460,7 @@
      },
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-11-21T02:00:00Z",
+      "last_bar_at": "2026-11-22T01:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 2
      },
@@ -90052,7 +90505,7 @@
       "for_call": 0.11559057860594724
      },
      "record_file": "records/posts/2118181656398090718_KNTQ.json",
-     "record_sha256": "1938e72c9309ae8d4f0e3d5665e1188fc027ca9ccb75a012bbec7c2414b84c4f"
+     "record_sha256": "c55bce81844767ceb098cf1b07b7adfa93b40638fc4195275233b581214e939c"
     }
    ]
   },
@@ -91932,6 +92385,98 @@
     [
      "2026-11-21T02:00:00Z",
      2.2996
+    ],
+    [
+     "2026-11-21T03:00:00Z",
+     2.2616
+    ],
+    [
+     "2026-11-21T04:00:00Z",
+     2.1936
+    ],
+    [
+     "2026-11-21T05:00:00Z",
+     2.2103
+    ],
+    [
+     "2026-11-21T06:00:00Z",
+     2.2134
+    ],
+    [
+     "2026-11-21T07:00:00Z",
+     2.3439
+    ],
+    [
+     "2026-11-21T08:00:00Z",
+     2.2833
+    ],
+    [
+     "2026-11-21T09:00:00Z",
+     2.2976
+    ],
+    [
+     "2026-11-21T10:00:00Z",
+     2.2942
+    ],
+    [
+     "2026-11-21T11:00:00Z",
+     2.3057
+    ],
+    [
+     "2026-11-21T12:00:00Z",
+     2.3205
+    ],
+    [
+     "2026-11-21T13:00:00Z",
+     2.3099
+    ],
+    [
+     "2026-11-21T14:00:00Z",
+     2.3817
+    ],
+    [
+     "2026-11-21T15:00:00Z",
+     2.3983
+    ],
+    [
+     "2026-11-21T16:00:00Z",
+     2.3617
+    ],
+    [
+     "2026-11-21T17:00:00Z",
+     2.3697
+    ],
+    [
+     "2026-11-21T18:00:00Z",
+     2.3925
+    ],
+    [
+     "2026-11-21T19:00:00Z",
+     2.3684
+    ],
+    [
+     "2026-11-21T20:00:00Z",
+     2.367
+    ],
+    [
+     "2026-11-21T21:00:00Z",
+     2.3812
+    ],
+    [
+     "2026-11-21T22:00:00Z",
+     2.3837
+    ],
+    [
+     "2026-11-21T23:00:00Z",
+     2.3351
+    ],
+    [
+     "2026-11-22T00:00:00Z",
+     2.3365
+    ],
+    [
+     "2026-11-22T01:00:00Z",
+     2.3268
     ]
    ],
    "posts": [
@@ -91959,10 +92504,10 @@
       "price": 3.2523
      },
      "latest": {
-      "at": "2026-11-21T02:00:00Z",
-      "price": 2.2996
+      "at": "2026-11-22T01:00:00Z",
+      "price": 2.3268
      },
-     "change_since_post": -0.2929311564123851,
+     "change_since_post": -0.28456784429480675,
      "exits": {
       "1": {
        "at": "2026-11-02T15:00:00Z",
@@ -91984,7 +92529,7 @@
      },
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-11-21T02:00:00Z",
+      "last_bar_at": "2026-11-22T01:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 2
      },
@@ -92031,7 +92576,7 @@
       "for_call": 0.09457922085908432
      },
      "record_file": "records/posts/2116898993435463783_LIT.json",
-     "record_sha256": "453610566f15701575a0e1417f18b92733db7a7c9bf1cee1cd0843d072a9a183"
+     "record_sha256": "58df21be1dbc4a3c80794d1498362da7b99bf084f662e4a58e110667dc06d1ef"
     }
    ]
   },
@@ -93515,6 +94060,94 @@
     [
      "2026-11-21T02:00:00Z",
      0.0102150878967061
+    ],
+    [
+     "2026-11-21T03:00:00Z",
+     0.010060684955567098
+    ],
+    [
+     "2026-11-21T04:00:00Z",
+     0.009606483203588348
+    ],
+    [
+     "2026-11-21T05:00:00Z",
+     0.009590487334453009
+    ],
+    [
+     "2026-11-21T06:00:00Z",
+     0.009174869583249678
+    ],
+    [
+     "2026-11-21T07:00:00Z",
+     0.009505297897614859
+    ],
+    [
+     "2026-11-21T08:00:00Z",
+     0.00958921537581153
+    ],
+    [
+     "2026-11-21T09:00:00Z",
+     0.009371185433193789
+    ],
+    [
+     "2026-11-21T10:00:00Z",
+     0.00948099402298031
+    ],
+    [
+     "2026-11-21T11:00:00Z",
+     0.009536473567498158
+    ],
+    [
+     "2026-11-21T12:00:00Z",
+     0.00957579723357205
+    ],
+    [
+     "2026-11-21T13:00:00Z",
+     0.009714508650452699
+    ],
+    [
+     "2026-11-21T14:00:00Z",
+     0.009888445228011359
+    ],
+    [
+     "2026-11-21T15:00:00Z",
+     0.009892946031902619
+    ],
+    [
+     "2026-11-21T16:00:00Z",
+     0.009819102834033169
+    ],
+    [
+     "2026-11-21T17:00:00Z",
+     0.010205989045086098
+    ],
+    [
+     "2026-11-21T18:00:00Z",
+     0.010230897440372798
+    ],
+    [
+     "2026-11-21T19:00:00Z",
+     0.00986442406141346
+    ],
+    [
+     "2026-11-21T20:00:00Z",
+     0.0103191526694391
+    ],
+    [
+     "2026-11-21T21:00:00Z",
+     0.010388761401614599
+    ],
+    [
+     "2026-11-21T22:00:00Z",
+     0.0103728107488967
+    ],
+    [
+     "2026-11-21T23:00:00Z",
+     0.0103020972123076
+    ],
+    [
+     "2026-11-22T00:00:00Z",
+     0.010330581835595298
     ]
    ],
    "posts": [
@@ -93542,10 +94175,10 @@
       "price": 0.026565305221382396
      },
      "latest": {
-      "at": "2026-11-21T02:00:00Z",
-      "price": 0.0102150878967061
+      "at": "2026-11-22T00:00:00Z",
+      "price": 0.010330581835595298
      },
-     "change_since_post": -0.615472594364021,
+     "change_since_post": -0.6111250463901985,
      "exits": {
       "1": {
        "at": "2026-11-06T04:00:00Z",
@@ -93567,7 +94200,7 @@
      },
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-11-21T02:00:00Z",
+      "last_bar_at": "2026-11-22T00:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 2
      },
@@ -93612,7 +94245,7 @@
       "for_call": 0.014748238601454133
      },
      "record_file": "records/posts/2118181656398090718_NEST.json",
-     "record_sha256": "e836932eb8e69b7e8d0ef7ef6543d93ed3842b65e507ef5a66d7e65c566b11bb"
+     "record_sha256": "2fd1eac2e03e811b4de4ed7e81ef84e244787e6d6eb8ccf431cdd08c4b1e0481"
     }
    ]
   },
@@ -94266,92 +94899,8 @@
      31.3
     ],
     [
-     "2024-11-25T02:00:00Z",
-     31.14
-    ],
-    [
-     "2024-11-25T03:00:00Z",
-     31.005
-    ],
-    [
-     "2024-11-25T04:00:00Z",
-     30.88
-    ],
-    [
      "2024-11-25T05:00:00Z",
      30.815
-    ],
-    [
-     "2024-11-25T06:00:00Z",
-     30.7
-    ],
-    [
-     "2024-11-25T07:00:00Z",
-     30.76
-    ],
-    [
-     "2024-11-25T08:00:00Z",
-     30.73
-    ],
-    [
-     "2024-11-25T09:00:00Z",
-     30.845
-    ],
-    [
-     "2024-11-25T10:00:00Z",
-     30.855
-    ],
-    [
-     "2024-11-25T11:00:00Z",
-     30.85
-    ],
-    [
-     "2024-11-25T12:00:00Z",
-     30.87
-    ],
-    [
-     "2024-11-25T13:00:00Z",
-     30.795
-    ],
-    [
-     "2024-11-25T14:00:00Z",
-     30.825
-    ],
-    [
-     "2024-11-25T15:00:00Z",
-     30.405
-    ],
-    [
-     "2024-11-25T16:00:00Z",
-     30.16
-    ],
-    [
-     "2024-11-25T17:00:00Z",
-     30.205
-    ],
-    [
-     "2024-11-25T18:00:00Z",
-     30.215
-    ],
-    [
-     "2024-11-25T19:00:00Z",
-     30.31
-    ],
-    [
-     "2024-11-25T20:00:00Z",
-     30.425
-    ],
-    [
-     "2024-11-25T21:00:00Z",
-     30.38
-    ],
-    [
-     "2024-11-25T23:00:00Z",
-     30.345
-    ],
-    [
-     "2024-11-26T00:00:00Z",
-     30.15
     ],
     [
      "2024-11-26T01:00:00Z",
@@ -139900,10 +140449,6 @@
     [
      "2026-11-20T21:00:00Z",
      40.795
-    ],
-    [
-     "2026-11-20T21:59:58Z",
-     41.08
     ]
    ],
    "posts": [
@@ -139932,10 +140477,10 @@
       "interval": "1d"
      },
      "latest": {
-      "at": "2026-11-20T21:59:58Z",
-      "price": 41.08
+      "at": "2026-11-20T21:00:00Z",
+      "price": 40.795
      },
-     "change_since_post": 0.47743211652580464,
+     "change_since_post": 0.46718216148174796,
      "exits": {
       "1": {
        "at": "2024-04-08T04:00:00Z",
@@ -139961,10 +140506,10 @@
      "unresolved": {},
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-11-20T21:59:58Z",
+      "last_bar_at": "2026-11-20T21:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 4,
-      "daily_until": "2024-11-26T02:00:00Z"
+      "daily_until": "2024-11-27T01:00:00Z"
      },
      "signed_returns": {
       "1": 0.0,
@@ -140081,7 +140626,7 @@
       "for_call": 1.9597194749145839
      },
      "record_file": "records/posts/1776235528741937435_SILVER.json",
-     "record_sha256": "bafd6b2cd3e36d719c3b520fbb067b8896ae329936e5d624990037417a904ee4"
+     "record_sha256": "5f6aa59f268aeaed976f55d2f9d240e51bf809cdc95ecaba0763f27d1c5bc567"
     },
     {
      "schema": "post_price.v1",
@@ -140107,10 +140652,10 @@
       "price": 52.48
      },
      "latest": {
-      "at": "2026-11-20T21:59:58Z",
-      "price": 41.08
+      "at": "2026-11-20T21:00:00Z",
+      "price": 40.795
      },
-     "change_since_post": -0.2172256097560975,
+     "change_since_post": -0.2226562499999999,
      "exits": {
       "1": {
        "at": "2025-11-28T14:30:00Z",
@@ -140133,10 +140678,10 @@
      "unresolved": {},
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-11-20T21:59:58Z",
+      "last_bar_at": "2026-11-20T21:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 4,
-      "daily_until": "2024-11-26T02:00:00Z"
+      "daily_until": "2024-11-27T01:00:00Z"
      },
      "signed_returns": {
       "1": 0.04573170731707332,
@@ -140163,7 +140708,7 @@
       "for_call": 1.2751524390243905
      },
      "record_file": "records/posts/1993658195982876720_SILVER.json",
-     "record_sha256": "e4d9f0aecd37422b62e8eeb1d3fdf564568f8c6cb019f03263b21073c0475c08"
+     "record_sha256": "25b99b60f6fb0cffcede1b2f346dda3ede1d842c534d3fcaf914c5c87800fbaa"
     },
     {
      "schema": "post_price.v1",
@@ -140189,10 +140734,10 @@
       "price": 61.105
      },
      "latest": {
-      "at": "2026-11-20T21:59:58Z",
-      "price": 41.08
+      "at": "2026-11-20T21:00:00Z",
+      "price": 40.795
      },
-     "change_since_post": -0.32771458964078226,
+     "change_since_post": -0.332378692414696,
      "exits": {
       "1": {
        "at": "2026-09-30T17:00:00Z",
@@ -140215,10 +140760,10 @@
      "unresolved": {},
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-11-20T21:59:58Z",
+      "last_bar_at": "2026-11-20T21:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 4,
-      "daily_until": "2024-11-26T02:00:00Z"
+      "daily_until": "2024-11-27T01:00:00Z"
      },
      "signed_returns": {
       "1": 0.008346289174371968,
@@ -140233,7 +140778,7 @@
       "for_call": 0.332378692414696
      },
      "record_file": "records/bobloukas/2104977267109896477_SILVER.json",
-     "record_sha256": "5f4b4e6bdf1fdb935852a8e8b76fffb23caa30ff46349e959d429ead1a592bbf"
+     "record_sha256": "5dfd787463b71d44414042fd9789b7c922d653ff521df5a707c293ec7b571fc5"
     },
     {
      "schema": "post_price.v1",
@@ -140259,10 +140804,10 @@
       "price": 61.06
      },
      "latest": {
-      "at": "2026-11-20T21:59:58Z",
-      "price": 41.08
+      "at": "2026-11-20T21:00:00Z",
+      "price": 40.795
      },
-     "change_since_post": -0.32721912872584347,
+     "change_since_post": -0.33188666885031115,
      "exits": {
       "1": {
        "at": "2026-10-05T14:00:00Z",
@@ -140285,10 +140830,10 @@
      "unresolved": {},
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-11-20T21:59:58Z",
+      "last_bar_at": "2026-11-20T21:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 4,
-      "daily_until": "2024-11-26T02:00:00Z"
+      "daily_until": "2024-11-27T01:00:00Z"
      },
      "signed_returns": {
       "1": -0.005650180150671424,
@@ -140303,7 +140848,7 @@
       "for_call": 0.33188666885031115
      },
      "record_file": "records/bobloukas/2106744910896312646_SILVER.json",
-     "record_sha256": "6a8a796c700215addd6a9edb04287243bbfdd44c7e1c9b0ec145421354e15430"
+     "record_sha256": "a00798849af0107a1c91e90e9bef7f638530de34a6e541361f461e146910fb0d"
     },
     {
      "schema": "post_price.v1",
@@ -140329,10 +140874,10 @@
       "price": 53.84
      },
      "latest": {
-      "at": "2026-11-20T21:59:58Z",
-      "price": 41.08
+      "at": "2026-11-20T21:00:00Z",
+      "price": 40.795
      },
-     "change_since_post": -0.236998514115899,
+     "change_since_post": -0.2422919762258544,
      "exits": {
       "1": {
        "at": "2026-10-25T22:00:00Z",
@@ -140354,10 +140899,10 @@
      },
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-11-20T21:59:58Z",
+      "last_bar_at": "2026-11-20T21:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 4,
-      "daily_until": "2024-11-26T02:00:00Z"
+      "daily_until": "2024-11-27T01:00:00Z"
      },
      "signed_returns": {
       "1": -0.007336552748885561,
@@ -140372,7 +140917,7 @@
       "for_call": 0.2422919762258544
      },
      "record_file": "records/bobloukas/2113613893662588966_SILVER.json",
-     "record_sha256": "d9ef14231f42f1fc2ca5b9d56431df5c10d3717f471ba3a29fbb4fff7b7ecc05"
+     "record_sha256": "5674a5f44ac5c543bf3f424511e82201631d50d18a454d4d0c12e7d9aa8eba7a"
     }
    ]
   },
@@ -150256,6 +150801,98 @@
     [
      "2026-11-21T02:00:00Z",
      453.71
+    ],
+    [
+     "2026-11-21T03:00:00Z",
+     448.92
+    ],
+    [
+     "2026-11-21T04:00:00Z",
+     432.97
+    ],
+    [
+     "2026-11-21T05:00:00Z",
+     430.71
+    ],
+    [
+     "2026-11-21T06:00:00Z",
+     428.19
+    ],
+    [
+     "2026-11-21T07:00:00Z",
+     440.39
+    ],
+    [
+     "2026-11-21T08:00:00Z",
+     445.35
+    ],
+    [
+     "2026-11-21T09:00:00Z",
+     449.74
+    ],
+    [
+     "2026-11-21T10:00:00Z",
+     464.39
+    ],
+    [
+     "2026-11-21T11:00:00Z",
+     471.26
+    ],
+    [
+     "2026-11-21T12:00:00Z",
+     474.7
+    ],
+    [
+     "2026-11-21T13:00:00Z",
+     470.87
+    ],
+    [
+     "2026-11-21T14:00:00Z",
+     475.49
+    ],
+    [
+     "2026-11-21T15:00:00Z",
+     475.72
+    ],
+    [
+     "2026-11-21T16:00:00Z",
+     478.1
+    ],
+    [
+     "2026-11-21T17:00:00Z",
+     483.1
+    ],
+    [
+     "2026-11-21T18:00:00Z",
+     481.3
+    ],
+    [
+     "2026-11-21T19:00:00Z",
+     487.06
+    ],
+    [
+     "2026-11-21T20:00:00Z",
+     485.98
+    ],
+    [
+     "2026-11-21T21:00:00Z",
+     492.55
+    ],
+    [
+     "2026-11-21T22:00:00Z",
+     492.62
+    ],
+    [
+     "2026-11-21T23:00:00Z",
+     489.41
+    ],
+    [
+     "2026-11-22T00:00:00Z",
+     492.65
+    ],
+    [
+     "2026-11-22T01:00:00Z",
+     493.04
     ]
    ],
    "posts": [
@@ -150283,10 +150920,10 @@
       "price": 623.54
      },
      "latest": {
-      "at": "2026-11-21T02:00:00Z",
-      "price": 453.71
+      "at": "2026-11-22T01:00:00Z",
+      "price": 493.04
      },
-     "change_since_post": -0.2723642428713474,
+     "change_since_post": -0.20928889886775504,
      "exits": {
       "1": {
        "at": "2026-10-31T01:00:00Z",
@@ -150308,7 +150945,7 @@
      },
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-11-21T02:00:00Z",
+      "last_bar_at": "2026-11-22T01:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 2
      },
@@ -150357,7 +150994,7 @@
       "for_call": 0.03486544568111105
      },
      "record_file": "records/posts/2115966476817739790_XMR.json",
-     "record_sha256": "2074f35af09fa0844b7ae7385e5b388a5b25794d34cd256e7b0a7de45d8f9563"
+     "record_sha256": "c6fe98f0e4087fc94bab2d06d115d649429134ae48093776d58207d13b6f609e"
     }
    ]
   },
@@ -152485,6 +153122,98 @@
     [
      "2026-11-21T02:00:00Z",
      0.911
+    ],
+    [
+     "2026-11-21T03:00:00Z",
+     0.9025
+    ],
+    [
+     "2026-11-21T04:00:00Z",
+     0.8814
+    ],
+    [
+     "2026-11-21T05:00:00Z",
+     0.8763
+    ],
+    [
+     "2026-11-21T06:00:00Z",
+     0.8723
+    ],
+    [
+     "2026-11-21T07:00:00Z",
+     0.9007
+    ],
+    [
+     "2026-11-21T08:00:00Z",
+     0.8916
+    ],
+    [
+     "2026-11-21T09:00:00Z",
+     0.8866
+    ],
+    [
+     "2026-11-21T10:00:00Z",
+     0.8954
+    ],
+    [
+     "2026-11-21T11:00:00Z",
+     0.8961
+    ],
+    [
+     "2026-11-21T12:00:00Z",
+     0.9036
+    ],
+    [
+     "2026-11-21T13:00:00Z",
+     0.9051
+    ],
+    [
+     "2026-11-21T14:00:00Z",
+     0.9315
+    ],
+    [
+     "2026-11-21T15:00:00Z",
+     0.9308
+    ],
+    [
+     "2026-11-21T16:00:00Z",
+     0.9239
+    ],
+    [
+     "2026-11-21T17:00:00Z",
+     0.93
+    ],
+    [
+     "2026-11-21T18:00:00Z",
+     0.934
+    ],
+    [
+     "2026-11-21T19:00:00Z",
+     0.9357
+    ],
+    [
+     "2026-11-21T20:00:00Z",
+     0.9373
+    ],
+    [
+     "2026-11-21T21:00:00Z",
+     0.9336
+    ],
+    [
+     "2026-11-21T22:00:00Z",
+     0.9312
+    ],
+    [
+     "2026-11-21T23:00:00Z",
+     0.9272
+    ],
+    [
+     "2026-11-22T00:00:00Z",
+     0.932
+    ],
+    [
+     "2026-11-22T01:00:00Z",
+     0.9304
     ]
    ],
    "posts": [
@@ -152512,10 +153241,10 @@
       "price": 1.2247
      },
      "latest": {
-      "at": "2026-11-21T02:00:00Z",
-      "price": 0.911
+      "at": "2026-11-22T01:00:00Z",
+      "price": 0.9304
      },
-     "change_since_post": -0.25614436188454304,
+     "change_since_post": -0.2403037478566179,
      "exits": {
       "1": {
        "at": "2026-10-31T01:00:00Z",
@@ -152537,7 +153266,7 @@
      },
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-11-21T02:00:00Z",
+      "last_bar_at": "2026-11-22T01:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 2
      },
@@ -152586,7 +153315,7 @@
       "for_call": 0.08140769167959516
      },
      "record_file": "records/posts/2115966476817739790_XRP.json",
-     "record_sha256": "8869d0453c43835be5a2aa0751a628508617ffb8f2b4232eb5572083000cf159"
+     "record_sha256": "d151a13e6ac3b3d84f0e29465af51fe1f449d5d8b8543b7656c1d77ea6104ba0"
     }
    ]
   },
@@ -157798,6 +158527,98 @@
     [
      "2026-11-21T02:00:00Z",
      345.26
+    ],
+    [
+     "2026-11-21T03:00:00Z",
+     344.54
+    ],
+    [
+     "2026-11-21T04:00:00Z",
+     343.74
+    ],
+    [
+     "2026-11-21T05:00:00Z",
+     344.54
+    ],
+    [
+     "2026-11-21T06:00:00Z",
+     344.02
+    ],
+    [
+     "2026-11-21T07:00:00Z",
+     345.37
+    ],
+    [
+     "2026-11-21T08:00:00Z",
+     344.87
+    ],
+    [
+     "2026-11-21T09:00:00Z",
+     345.06
+    ],
+    [
+     "2026-11-21T10:00:00Z",
+     345.09
+    ],
+    [
+     "2026-11-21T11:00:00Z",
+     345.25
+    ],
+    [
+     "2026-11-21T12:00:00Z",
+     345.28
+    ],
+    [
+     "2026-11-21T13:00:00Z",
+     346.02
+    ],
+    [
+     "2026-11-21T14:00:00Z",
+     348.52
+    ],
+    [
+     "2026-11-21T15:00:00Z",
+     348.29
+    ],
+    [
+     "2026-11-21T16:00:00Z",
+     348.09
+    ],
+    [
+     "2026-11-21T17:00:00Z",
+     348.05
+    ],
+    [
+     "2026-11-21T18:00:00Z",
+     348.07
+    ],
+    [
+     "2026-11-21T19:00:00Z",
+     348.08
+    ],
+    [
+     "2026-11-21T20:00:00Z",
+     349.65
+    ],
+    [
+     "2026-11-21T21:00:00Z",
+     349.43
+    ],
+    [
+     "2026-11-21T22:00:00Z",
+     349.45
+    ],
+    [
+     "2026-11-21T23:00:00Z",
+     349.01
+    ],
+    [
+     "2026-11-22T00:00:00Z",
+     349.1
+    ],
+    [
+     "2026-11-22T01:00:00Z",
+     350.01
     ]
    ],
    "posts": [
@@ -157826,10 +158647,10 @@
       "price": 340.31
      },
      "latest": {
-      "at": "2026-11-21T02:00:00Z",
-      "price": 345.26
+      "at": "2026-11-22T01:00:00Z",
+      "price": 350.01
      },
-     "change_since_post": 0.014545561399900153,
+     "change_since_post": 0.028503423349299117,
      "exits": {
       "1": {
        "at": "2026-09-28T22:00:00Z",
@@ -157852,7 +158673,7 @@
      "unresolved": {},
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-11-21T02:00:00Z",
+      "last_bar_at": "2026-11-22T01:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 2
      },
@@ -157888,7 +158709,7 @@
       "for_call": 0.048837824336634306
      },
      "record_file": "records/corbanu/aapl-entry_XYZ-AAPL.json",
-     "record_sha256": "53747e5d7546bb5a35d8a1535dc39f3c0a0d139621fc02236da71000e29cba8c"
+     "record_sha256": "3b393219ad68db0b88abfcf0ea96054b4f41c6957a4d280aa47993b94981bf42"
     },
     {
      "schema": "post_price.v1",
@@ -157914,10 +158735,10 @@
       "price": 344.54
      },
      "latest": {
-      "at": "2026-11-21T02:00:00Z",
-      "price": 345.26
+      "at": "2026-11-22T01:00:00Z",
+      "price": 350.01
      },
-     "change_since_post": 0.0020897428455330935,
+     "change_since_post": 0.015876240784814533,
      "exits": {
       "1": {
        "at": "2026-10-29T22:00:00Z",
@@ -157939,7 +158760,7 @@
      },
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-11-21T02:00:00Z",
+      "last_bar_at": "2026-11-22T01:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 2
      },
@@ -157961,7 +158782,7 @@
       "for_call": 0.06051546990189827
      },
      "record_file": "records/posts/2115550350832996432_XYZ-AAPL.json",
-     "record_sha256": "068e01cab895eeb87870bcf3a5ec29a39c2116ba4641b32ec6ec43236be9ba4f"
+     "record_sha256": "7b3568cb1e29dcecad62957d632e94ffc2b5050059182d8deab07aa3cc955748"
     }
    ]
   },
@@ -165385,6 +166206,98 @@
     [
      "2026-11-21T02:00:00Z",
      85.405
+    ],
+    [
+     "2026-11-21T03:00:00Z",
+     85.316
+    ],
+    [
+     "2026-11-21T04:00:00Z",
+     84.075
+    ],
+    [
+     "2026-11-21T05:00:00Z",
+     83.755
+    ],
+    [
+     "2026-11-21T06:00:00Z",
+     83.805
+    ],
+    [
+     "2026-11-21T07:00:00Z",
+     84.816
+    ],
+    [
+     "2026-11-21T08:00:00Z",
+     84.559
+    ],
+    [
+     "2026-11-21T09:00:00Z",
+     84.336
+    ],
+    [
+     "2026-11-21T10:00:00Z",
+     84.466
+    ],
+    [
+     "2026-11-21T11:00:00Z",
+     84.282
+    ],
+    [
+     "2026-11-21T12:00:00Z",
+     84.462
+    ],
+    [
+     "2026-11-21T13:00:00Z",
+     84.546
+    ],
+    [
+     "2026-11-21T14:00:00Z",
+     85.553
+    ],
+    [
+     "2026-11-21T15:00:00Z",
+     85.446
+    ],
+    [
+     "2026-11-21T16:00:00Z",
+     85.404
+    ],
+    [
+     "2026-11-21T17:00:00Z",
+     85.516
+    ],
+    [
+     "2026-11-21T18:00:00Z",
+     85.426
+    ],
+    [
+     "2026-11-21T19:00:00Z",
+     85.562
+    ],
+    [
+     "2026-11-21T20:00:00Z",
+     85.416
+    ],
+    [
+     "2026-11-21T21:00:00Z",
+     85.639
+    ],
+    [
+     "2026-11-21T22:00:00Z",
+     85.674
+    ],
+    [
+     "2026-11-21T23:00:00Z",
+     85.47
+    ],
+    [
+     "2026-11-22T00:00:00Z",
+     85.627
+    ],
+    [
+     "2026-11-22T01:00:00Z",
+     85.763
     ]
    ],
    "posts": [
@@ -165413,10 +166326,10 @@
       "price": 209.19
      },
      "latest": {
-      "at": "2026-11-21T02:00:00Z",
-      "price": 85.405
+      "at": "2026-11-22T01:00:00Z",
+      "price": 85.763
      },
-     "change_since_post": -0.5917347865576748,
+     "change_since_post": -0.5900234236818203,
      "exits": {
       "1": {
        "at": "2026-09-05T21:00:00Z",
@@ -165439,7 +166352,7 @@
      "unresolved": {},
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-11-21T02:00:00Z",
+      "last_bar_at": "2026-11-22T01:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 2
      },
@@ -165475,7 +166388,7 @@
       "for_call": 0.6213442325158947
      },
      "record_file": "records/corbanu/cbrs-entry_XYZ-CBRS.json",
-     "record_sha256": "41df03efda99beb94ae57dd77818414a48c24079b66bda94b783c42b7b79255e"
+     "record_sha256": "c7cc2f5193cb23405d53b22cec6175a07416cbf251e79664254910befd0420cc"
     },
     {
      "schema": "post_price.v1",
@@ -165502,10 +166415,10 @@
       "price": 192.69
      },
      "latest": {
-      "at": "2026-11-21T02:00:00Z",
-      "price": 85.405
+      "at": "2026-11-22T01:00:00Z",
+      "price": 85.763
      },
-     "change_since_post": -0.5567751310394935,
+     "change_since_post": -0.5549172245575795,
      "exits": {
       "1": {
        "at": "2026-10-01T04:00:00Z",
@@ -165528,7 +166441,7 @@
      "unresolved": {},
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-11-21T02:00:00Z",
+      "last_bar_at": "2026-11-22T01:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 2
      },
@@ -165564,7 +166477,7 @@
       "for_call": 0.5889200269863512
      },
      "record_file": "records/corbanu/cbrs-add_XYZ-CBRS.json",
-     "record_sha256": "3053193df623b99ba73e69544c82587073dee0680d7639d72bc5fbb7905efca5"
+     "record_sha256": "72f6a58bdf63ad8f788680f2bb99536a10b4594ada278d6c337859575cdbca9a"
     }
    ]
   },
@@ -172988,6 +173901,98 @@
     [
      "2026-11-21T02:00:00Z",
      4.9536
+    ],
+    [
+     "2026-11-21T03:00:00Z",
+     4.9538
+    ],
+    [
+     "2026-11-21T04:00:00Z",
+     4.9245
+    ],
+    [
+     "2026-11-21T05:00:00Z",
+     4.8881
+    ],
+    [
+     "2026-11-21T06:00:00Z",
+     4.8759
+    ],
+    [
+     "2026-11-21T07:00:00Z",
+     4.9317
+    ],
+    [
+     "2026-11-21T08:00:00Z",
+     4.9259
+    ],
+    [
+     "2026-11-21T09:00:00Z",
+     4.9329
+    ],
+    [
+     "2026-11-21T10:00:00Z",
+     4.9345
+    ],
+    [
+     "2026-11-21T11:00:00Z",
+     4.9228
+    ],
+    [
+     "2026-11-21T12:00:00Z",
+     4.9301
+    ],
+    [
+     "2026-11-21T13:00:00Z",
+     4.948
+    ],
+    [
+     "2026-11-21T14:00:00Z",
+     4.9819
+    ],
+    [
+     "2026-11-21T15:00:00Z",
+     4.9586
+    ],
+    [
+     "2026-11-21T16:00:00Z",
+     4.9644
+    ],
+    [
+     "2026-11-21T17:00:00Z",
+     4.9648
+    ],
+    [
+     "2026-11-21T18:00:00Z",
+     4.9706
+    ],
+    [
+     "2026-11-21T19:00:00Z",
+     4.9757
+    ],
+    [
+     "2026-11-21T20:00:00Z",
+     4.9619
+    ],
+    [
+     "2026-11-21T21:00:00Z",
+     4.9663
+    ],
+    [
+     "2026-11-21T22:00:00Z",
+     4.9667
+    ],
+    [
+     "2026-11-21T23:00:00Z",
+     4.9685
+    ],
+    [
+     "2026-11-22T00:00:00Z",
+     4.9781
+    ],
+    [
+     "2026-11-22T01:00:00Z",
+     4.9778
     ]
    ],
    "posts": [
@@ -173016,10 +174021,10 @@
       "price": 8.3489
      },
      "latest": {
-      "at": "2026-11-21T02:00:00Z",
-      "price": 4.9536
+      "at": "2026-11-22T01:00:00Z",
+      "price": 4.9778
      },
-     "change_since_post": -0.4066763286181414,
+     "change_since_post": -0.40377774317574766,
      "exits": {
       "1": {
        "at": "2026-09-05T21:00:00Z",
@@ -173042,7 +174047,7 @@
      "unresolved": {},
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-11-21T02:00:00Z",
+      "last_bar_at": "2026-11-22T01:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 2
      },
@@ -173078,7 +174083,7 @@
       "for_call": 0.059061672795218456
      },
      "record_file": "records/corbanu/cxmt-entry_XYZ-CXMT.json",
-     "record_sha256": "cbd3479f670ef8dca479faeaf8180cde06b2aa0855f46cf6ab6f447f79292f5e"
+     "record_sha256": "a75ba0a7d523f3373a62ebc2077cb8972c9cd515664a856f064a322ea4167011"
     }
    ]
   },
@@ -179434,6 +180439,98 @@
     [
      "2026-11-21T02:00:00Z",
      55106.0
+    ],
+    [
+     "2026-11-21T03:00:00Z",
+     55032.0
+    ],
+    [
+     "2026-11-21T04:00:00Z",
+     54793.0
+    ],
+    [
+     "2026-11-21T05:00:00Z",
+     54829.0
+    ],
+    [
+     "2026-11-21T06:00:00Z",
+     54830.0
+    ],
+    [
+     "2026-11-21T07:00:00Z",
+     54979.0
+    ],
+    [
+     "2026-11-21T08:00:00Z",
+     54945.0
+    ],
+    [
+     "2026-11-21T09:00:00Z",
+     54942.0
+    ],
+    [
+     "2026-11-21T10:00:00Z",
+     54945.0
+    ],
+    [
+     "2026-11-21T11:00:00Z",
+     55107.0
+    ],
+    [
+     "2026-11-21T12:00:00Z",
+     55149.0
+    ],
+    [
+     "2026-11-21T13:00:00Z",
+     54966.0
+    ],
+    [
+     "2026-11-21T14:00:00Z",
+     55336.0
+    ],
+    [
+     "2026-11-21T15:00:00Z",
+     55292.0
+    ],
+    [
+     "2026-11-21T16:00:00Z",
+     55250.0
+    ],
+    [
+     "2026-11-21T17:00:00Z",
+     55211.0
+    ],
+    [
+     "2026-11-21T18:00:00Z",
+     55209.0
+    ],
+    [
+     "2026-11-21T19:00:00Z",
+     55209.0
+    ],
+    [
+     "2026-11-21T20:00:00Z",
+     55258.0
+    ],
+    [
+     "2026-11-21T21:00:00Z",
+     55260.0
+    ],
+    [
+     "2026-11-21T22:00:00Z",
+     55397.0
+    ],
+    [
+     "2026-11-21T23:00:00Z",
+     55213.0
+    ],
+    [
+     "2026-11-22T00:00:00Z",
+     55279.0
+    ],
+    [
+     "2026-11-22T01:00:00Z",
+     55234.0
     ]
    ],
    "posts": [
@@ -179462,10 +180559,10 @@
       "price": 63624.0
      },
      "latest": {
-      "at": "2026-11-21T02:00:00Z",
-      "price": 55106.0
+      "at": "2026-11-22T01:00:00Z",
+      "price": 55234.0
      },
-     "change_since_post": -0.13388029674336732,
+     "change_since_post": -0.13186847730416196,
      "exits": {
       "1": {
        "at": "2026-09-17T00:00:00Z",
@@ -179488,7 +180585,7 @@
      "unresolved": {},
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-11-21T02:00:00Z",
+      "last_bar_at": "2026-11-22T01:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 2
      },
@@ -179524,7 +180621,7 @@
       "for_call": 0.1426191374324154
      },
      "record_file": "records/corbanu/jp225-entry_XYZ-JP225.json",
-     "record_sha256": "b5116760bd2b0aac5c5530e67deebf5401e897b391e33222a79455b9a745024d"
+     "record_sha256": "36f80c050673b35b9b82620578b195ba137a900f9ef7c2fec3361dff02431444"
     }
    ]
   },
@@ -185880,6 +186977,98 @@
     [
      "2026-11-21T02:00:00Z",
      41.197
+    ],
+    [
+     "2026-11-21T03:00:00Z",
+     40.929
+    ],
+    [
+     "2026-11-21T04:00:00Z",
+     40.37
+    ],
+    [
+     "2026-11-21T05:00:00Z",
+     40.094
+    ],
+    [
+     "2026-11-21T06:00:00Z",
+     40.414
+    ],
+    [
+     "2026-11-21T07:00:00Z",
+     41.225
+    ],
+    [
+     "2026-11-21T08:00:00Z",
+     40.865
+    ],
+    [
+     "2026-11-21T09:00:00Z",
+     40.648
+    ],
+    [
+     "2026-11-21T10:00:00Z",
+     40.806
+    ],
+    [
+     "2026-11-21T11:00:00Z",
+     40.592
+    ],
+    [
+     "2026-11-21T12:00:00Z",
+     40.9
+    ],
+    [
+     "2026-11-21T13:00:00Z",
+     40.855
+    ],
+    [
+     "2026-11-21T14:00:00Z",
+     41.593
+    ],
+    [
+     "2026-11-21T15:00:00Z",
+     41.303
+    ],
+    [
+     "2026-11-21T16:00:00Z",
+     41.245
+    ],
+    [
+     "2026-11-21T17:00:00Z",
+     41.323
+    ],
+    [
+     "2026-11-21T18:00:00Z",
+     41.34
+    ],
+    [
+     "2026-11-21T19:00:00Z",
+     41.37
+    ],
+    [
+     "2026-11-21T20:00:00Z",
+     41.317
+    ],
+    [
+     "2026-11-21T21:00:00Z",
+     41.363
+    ],
+    [
+     "2026-11-21T22:00:00Z",
+     41.452
+    ],
+    [
+     "2026-11-21T23:00:00Z",
+     41.366
+    ],
+    [
+     "2026-11-22T00:00:00Z",
+     41.398
+    ],
+    [
+     "2026-11-22T01:00:00Z",
+     41.476
     ]
    ],
    "posts": [
@@ -185915,10 +187104,10 @@
       "price": 109.87666666666667
      },
      "latest": {
-      "at": "2026-11-21T02:00:00Z",
-      "price": 41.197
+      "at": "2026-11-22T01:00:00Z",
+      "price": 41.476
      },
-     "change_since_post": -0.6250614325152444,
+     "change_since_post": -0.622522221885144,
      "exits": {
       "1": {
        "at": "2026-09-17T00:00:00Z",
@@ -185941,7 +187130,7 @@
      "unresolved": {},
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-11-21T02:00:00Z",
+      "last_bar_at": "2026-11-22T01:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 2
      },
@@ -185977,7 +187166,7 @@
       "for_call": 0.19922337165913317
      },
      "record_file": "records/corbanu/kioxia-entry_XYZ-KIOXIA.json",
-     "record_sha256": "c5ecb0012ee0764ec6d6a69cd3bca3e4426c12d75c986fd6b60a4e4f0728785d"
+     "record_sha256": "bb2e960191f948a9f186ae6986c039c55d5591c8231180ac52ca07f5d83260e9"
     }
    ]
   },
@@ -191277,6 +192466,98 @@
     [
      "2026-11-21T02:00:00Z",
      103.35
+    ],
+    [
+     "2026-11-21T03:00:00Z",
+     103.14
+    ],
+    [
+     "2026-11-21T04:00:00Z",
+     102.29
+    ],
+    [
+     "2026-11-21T05:00:00Z",
+     101.86
+    ],
+    [
+     "2026-11-21T06:00:00Z",
+     101.89
+    ],
+    [
+     "2026-11-21T07:00:00Z",
+     102.73
+    ],
+    [
+     "2026-11-21T08:00:00Z",
+     102.61
+    ],
+    [
+     "2026-11-21T09:00:00Z",
+     102.56
+    ],
+    [
+     "2026-11-21T10:00:00Z",
+     102.74
+    ],
+    [
+     "2026-11-21T11:00:00Z",
+     102.59
+    ],
+    [
+     "2026-11-21T12:00:00Z",
+     102.71
+    ],
+    [
+     "2026-11-21T13:00:00Z",
+     102.93
+    ],
+    [
+     "2026-11-21T14:00:00Z",
+     103.65
+    ],
+    [
+     "2026-11-21T15:00:00Z",
+     103.47
+    ],
+    [
+     "2026-11-21T16:00:00Z",
+     103.61
+    ],
+    [
+     "2026-11-21T17:00:00Z",
+     103.62
+    ],
+    [
+     "2026-11-21T18:00:00Z",
+     103.53
+    ],
+    [
+     "2026-11-21T19:00:00Z",
+     103.61
+    ],
+    [
+     "2026-11-21T20:00:00Z",
+     103.7
+    ],
+    [
+     "2026-11-21T21:00:00Z",
+     103.98
+    ],
+    [
+     "2026-11-21T22:00:00Z",
+     104.08
+    ],
+    [
+     "2026-11-21T23:00:00Z",
+     103.99
+    ],
+    [
+     "2026-11-22T00:00:00Z",
+     104.02
+    ],
+    [
+     "2026-11-22T01:00:00Z",
+     104.11
     ]
    ],
    "posts": [
@@ -191309,10 +192590,10 @@
       "price": 137.94
      },
      "latest": {
-      "at": "2026-11-21T02:00:00Z",
-      "price": 103.35
+      "at": "2026-11-22T01:00:00Z",
+      "price": 104.11
      },
-     "change_since_post": -0.25076120052196615,
+     "change_since_post": -0.24525155864868786,
      "exits": {
       "1": {
        "at": "2026-09-28T00:00:00Z",
@@ -191335,7 +192616,7 @@
      "unresolved": {},
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-11-21T02:00:00Z",
+      "last_bar_at": "2026-11-22T01:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 2
      },
@@ -191371,7 +192652,7 @@
       "for_call": 0.0712628679135856
      },
      "record_file": "records/corbanu/orcl-entry_XYZ-ORCL.json",
-     "record_sha256": "55f6ef0f80bafd7607ba0adacc47f795cc19f6c6284a0c5f29dd79780d5de68d"
+     "record_sha256": "1816c071102da8409ebf2bac2539c390aad291fa645e8a42790456074f7bafdb"
     }
    ]
   },
@@ -196583,6 +197864,98 @@
     [
      "2026-11-21T02:00:00Z",
      755.27
+    ],
+    [
+     "2026-11-21T03:00:00Z",
+     752.45
+    ],
+    [
+     "2026-11-21T04:00:00Z",
+     741.5
+    ],
+    [
+     "2026-11-21T05:00:00Z",
+     737.46
+    ],
+    [
+     "2026-11-21T06:00:00Z",
+     740.51
+    ],
+    [
+     "2026-11-21T07:00:00Z",
+     754.92
+    ],
+    [
+     "2026-11-21T08:00:00Z",
+     750.84
+    ],
+    [
+     "2026-11-21T09:00:00Z",
+     749.19
+    ],
+    [
+     "2026-11-21T10:00:00Z",
+     752.02
+    ],
+    [
+     "2026-11-21T11:00:00Z",
+     748.59
+    ],
+    [
+     "2026-11-21T12:00:00Z",
+     751.9
+    ],
+    [
+     "2026-11-21T13:00:00Z",
+     751.58
+    ],
+    [
+     "2026-11-21T14:00:00Z",
+     763.2
+    ],
+    [
+     "2026-11-21T15:00:00Z",
+     760.04
+    ],
+    [
+     "2026-11-21T16:00:00Z",
+     759.76
+    ],
+    [
+     "2026-11-21T17:00:00Z",
+     762.05
+    ],
+    [
+     "2026-11-21T18:00:00Z",
+     761.74
+    ],
+    [
+     "2026-11-21T19:00:00Z",
+     764.27
+    ],
+    [
+     "2026-11-21T20:00:00Z",
+     763.79
+    ],
+    [
+     "2026-11-21T21:00:00Z",
+     765.14
+    ],
+    [
+     "2026-11-21T22:00:00Z",
+     765.29
+    ],
+    [
+     "2026-11-21T23:00:00Z",
+     764.58
+    ],
+    [
+     "2026-11-22T00:00:00Z",
+     764.94
+    ],
+    [
+     "2026-11-22T01:00:00Z",
+     766.66
     ]
    ],
    "posts": [
@@ -196611,10 +197984,10 @@
       "price": 1364.9
      },
      "latest": {
-      "at": "2026-11-21T02:00:00Z",
-      "price": 755.27
+      "at": "2026-11-22T01:00:00Z",
+      "price": 766.66
      },
-     "change_since_post": -0.44664810608835814,
+     "change_since_post": -0.43830317239358196,
      "exits": {
       "1": {
        "at": "2026-09-28T22:00:00Z",
@@ -196637,7 +198010,7 @@
      "unresolved": {},
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-11-21T02:00:00Z",
+      "last_bar_at": "2026-11-22T01:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 2
      },
@@ -196673,7 +198046,7 @@
       "for_call": 0.013700637409333805
      },
      "record_file": "records/corbanu/skhx-entry_XYZ-SKHX.json",
-     "record_sha256": "83a77d71bb742e328c4ad13bd15980eed8198707c31be90834d8b94c7693310e"
+     "record_sha256": "5fa5fa4c9064fddc3e63f90a127512b8ddfb2706412e244a676b8da4bee590d2"
     }
    ]
   },
@@ -237273,6 +238646,98 @@
     [
      "2026-11-21T02:00:00Z",
      749.46
+    ],
+    [
+     "2026-11-21T03:00:00Z",
+     708.46
+    ],
+    [
+     "2026-11-21T04:00:00Z",
+     690.39
+    ],
+    [
+     "2026-11-21T05:00:00Z",
+     699.07
+    ],
+    [
+     "2026-11-21T06:00:00Z",
+     693.11
+    ],
+    [
+     "2026-11-21T07:00:00Z",
+     736.29
+    ],
+    [
+     "2026-11-21T08:00:00Z",
+     725.2
+    ],
+    [
+     "2026-11-21T09:00:00Z",
+     729.2
+    ],
+    [
+     "2026-11-21T10:00:00Z",
+     743.02
+    ],
+    [
+     "2026-11-21T11:00:00Z",
+     745.74
+    ],
+    [
+     "2026-11-21T12:00:00Z",
+     761.9
+    ],
+    [
+     "2026-11-21T13:00:00Z",
+     769.01
+    ],
+    [
+     "2026-11-21T14:00:00Z",
+     800.82
+    ],
+    [
+     "2026-11-21T15:00:00Z",
+     793.53
+    ],
+    [
+     "2026-11-21T16:00:00Z",
+     788.85
+    ],
+    [
+     "2026-11-21T17:00:00Z",
+     786.79
+    ],
+    [
+     "2026-11-21T18:00:00Z",
+     786.6
+    ],
+    [
+     "2026-11-21T19:00:00Z",
+     789.43
+    ],
+    [
+     "2026-11-21T20:00:00Z",
+     792.06
+    ],
+    [
+     "2026-11-21T21:00:00Z",
+     793.31
+    ],
+    [
+     "2026-11-21T22:00:00Z",
+     791.98
+    ],
+    [
+     "2026-11-21T23:00:00Z",
+     782.92
+    ],
+    [
+     "2026-11-22T00:00:00Z",
+     779.94
+    ],
+    [
+     "2026-11-22T01:00:00Z",
+     780.09
     ]
    ],
    "posts": [
@@ -237301,10 +238766,10 @@
       "price": 54.49
      },
      "latest": {
-      "at": "2026-11-21T02:00:00Z",
-      "price": 749.46
+      "at": "2026-11-22T01:00:00Z",
+      "price": 780.09
      },
-     "change_since_post": 12.754083318040008,
+     "change_since_post": 13.316204808221691,
      "exits": {
       "1": {
        "at": "2025-09-25T07:00:00Z",
@@ -237327,7 +238792,7 @@
      "unresolved": {},
      "resolved_with": {
       "prices": "live:binance+yahoo",
-      "last_bar_at": "2026-11-21T02:00:00Z",
+      "last_bar_at": "2026-11-22T01:00:00Z",
       "max_lag_days": 2,
       "session_lag_days": 2
      },
@@ -237349,14 +238814,14 @@
       "for_call": 29.915764360433105
      },
      "record_file": "records/posts/1970742039722479782_ZEC.json",
-     "record_sha256": "05c66e43470d52c16dcdfd3580f752189aace42e18b5cb034ecebccf5adee560"
+     "record_sha256": "7f3e659500c39d78298e66078bb7673cb568a82cf94d1045530f81fff908ea6f"
     }
    ]
   }
  ],
  "ratings": {
   "version": "quanty.rating.v1",
-  "as_of": "2026-11-21T02:27:38Z",
+  "as_of": "2026-11-22T01:25:39Z",
   "formula": {
    "k": 10,
    "weights": {
@@ -237403,10 +238868,10 @@
       "posted_at": "2025-11-04T15:38:57Z",
       "side": "long",
       "state": "open",
-      "result": -0.4279792187797672,
+      "result": -0.4165524353319505,
       "counted": true,
       "why": "return for the side since the post (open)",
-      "quality": 0.019166221040322284
+      "quality": 0.02408612306172131
      },
      {
       "post_id": "1993658195982876720",
@@ -237414,10 +238879,10 @@
       "posted_at": "2025-11-26T12:28:48Z",
       "side": "long",
       "state": "open",
-      "result": -0.2172256097560975,
+      "result": -0.2226562499999999,
       "counted": true,
       "why": "return for the side since the post (open)",
-      "quality": 1.2811570873254183
+      "quality": 1.150814906430341
      },
      {
       "post_id": "1999149068459618541",
@@ -237436,10 +238901,10 @@
       "posted_at": "2025-12-22T14:34:02Z",
       "side": "long",
       "state": "open",
-      "result": -0.20557597223560975,
+      "result": -0.20840440461544418,
       "counted": true,
       "why": "return for the side since the post (open)",
-      "quality": 1.611879081327146
+      "quality": 1.524579878826863
      },
      {
       "post_id": "2003490330650575038",
@@ -237447,10 +238912,10 @@
       "posted_at": "2025-12-23T15:38:12Z",
       "side": "long",
       "state": "open",
-      "result": -0.017086330935251803,
+      "result": -0.017805755395683298,
       "counted": true,
       "why": "return for the side since the post (open)",
-      "quality": 41.53901218016802
+      "quality": 41.19003129987324
      },
      {
       "post_id": "2009356789356314714",
@@ -237458,10 +238923,10 @@
       "posted_at": "2026-01-08T20:09:25Z",
       "side": "short",
       "state": "open",
-      "result": 0.35079315275235934,
+      "result": 0.3378244874522739,
       "counted": true,
       "why": "return for the side since the post (open)",
-      "quality": 99.91032739804012
+      "quality": 99.88380461977464
      },
      {
       "post_id": "2011105173104705981",
@@ -237469,10 +238934,10 @@
       "posted_at": "2026-01-13T15:56:52Z",
       "side": "long",
       "state": "open",
-      "result": -0.2352572882746381,
+      "result": -0.23798004460185218,
       "counted": true,
       "why": "return for the side since the post (open)",
-      "quality": 0.8967452303426882
+      "quality": 0.8496224293041053
      },
      {
       "post_id": "2011110630338535867",
@@ -237480,10 +238945,10 @@
       "posted_at": "2026-01-13T16:18:33Z",
       "side": "long",
       "state": "open",
-      "result": -0.09302132603103486,
+      "result": -0.09368517135507426,
       "counted": true,
       "why": "return for the side since the post (open)",
-      "quality": 13.465334524730622
+      "quality": 13.31137864280209
      },
      {
       "post_id": "2016523209500131511",
@@ -237502,10 +238967,10 @@
       "posted_at": "2026-01-30T15:21:58Z",
       "side": "short",
       "state": "open",
-      "result": 0.287779714112113,
+      "result": 0.27355228175096313,
       "counted": true,
       "why": "return for the side since the post (open)",
-      "quality": 99.68449606450369
+      "quality": 99.58107922417054
      },
      {
       "post_id": "2022006665764082140",
@@ -237524,10 +238989,10 @@
       "posted_at": "2026-02-17T16:17:05Z",
       "side": "short",
       "state": "open",
-      "result": 0.12569389561440203,
+      "result": 0.10822860964942937,
       "counted": true,
       "why": "return for the side since the post (open)",
-      "quality": 92.51090046398275
+      "quality": 89.70226630751495
      },
      {
       "post_id": "2028472872604209602",
@@ -237557,10 +239022,10 @@
       "posted_at": "2026-06-03T20:57:31Z",
       "side": "long",
       "state": "open",
-      "result": -0.09193479436992202,
+      "result": -0.07379513091381928,
       "counted": true,
       "why": "return for the side since the post (open)",
-      "quality": 13.720560068827275
+      "quality": 18.604710245031477
      },
      {
       "post_id": "2062554209212358962",
@@ -237568,10 +239033,10 @@
       "posted_at": "2026-06-04T15:16:58Z",
       "side": "long",
       "state": "open",
-      "result": -0.2144109572778743,
+      "result": -0.21720793396541405,
       "counted": true,
       "why": "return for the side since the post (open)",
-      "quality": 1.3543411238804666
+      "quality": 1.2816042711493978
      },
      {
       "post_id": "2094827036812435935",
@@ -237579,10 +239044,10 @@
       "posted_at": "2026-09-01T16:37:40Z",
       "side": "long",
       "state": "open",
-      "result": -0.23925418330143522,
+      "result": -0.22405739676563252,
       "counted": true,
       "why": "return for the side since the post (open)",
-      "quality": 0.828422318524737
+      "quality": 1.119369338874776
      },
      {
       "post_id": "2097324043334451439",
@@ -237601,10 +239066,10 @@
       "posted_at": "2026-09-18T14:23:37Z",
       "side": "long",
       "state": "open",
-      "result": -0.27066440995514707,
+      "result": -0.2560950793961242,
       "counted": true,
       "why": "return for the side since the post (open)",
-      "quality": 0.44371843594166194
+      "quality": 0.5929303423132097
      },
      {
       "post_id": "2102014028855820403",
@@ -237612,10 +239077,10 @@
       "posted_at": "2026-09-21T12:36:12Z",
       "side": "long",
       "state": "open",
-      "result": -0.30814856486527664,
+      "result": -0.2943280240966679,
       "counted": true,
       "why": "return for the side since the post (open)",
-      "quality": 0.21015605960295858
+      "quality": 0.27688224853640975
      },
      {
       "post_id": "2102024327075877097",
@@ -237623,10 +239088,10 @@
       "posted_at": "2026-09-21T13:17:07Z",
       "side": "long",
       "state": "open",
-      "result": -0.3093089853492048,
+      "result": -0.2955116253355853,
       "counted": true,
       "why": "return for the side since the post (open)",
-      "quality": 0.20534473469287207
+      "quality": 0.270422370405484
      },
      {
       "post_id": "2104977267109896477",
@@ -237634,10 +239099,10 @@
       "posted_at": "2026-09-29T16:51:03Z",
       "side": "short",
       "state": "open",
-      "result": 0.32771458964078226,
+      "result": 0.332378692414696,
       "counted": true,
       "why": "return for the side since the post (open)",
-      "quality": 99.85780338763169
+      "quality": 99.870451504734
      },
      {
       "post_id": "2105699317004583026",
@@ -237645,10 +239110,10 @@
       "posted_at": "2026-10-01T16:40:13Z",
       "side": "long",
       "state": "open",
-      "result": -0.2989377924514858,
+      "result": -0.2849332557421439,
       "counted": true,
       "why": "return for the side since the post (open)",
-      "quality": 0.25255797883247766
+      "quality": 0.3339246989822655
      },
      {
       "post_id": "2106744910896312646",
@@ -237656,10 +239121,10 @@
       "posted_at": "2026-10-04T13:55:02Z",
       "side": "short",
       "state": "open",
-      "result": 0.32721912872584347,
+      "result": 0.33188666885031115,
       "counted": true,
       "why": "return for the side since the post (open)",
-      "quality": 99.85638935952856
+      "quality": 99.86917206950598
      },
      {
       "post_id": "2106750657877434407",
@@ -237700,10 +239165,10 @@
       "posted_at": "2026-10-15T16:06:51Z",
       "side": "long",
       "state": "open",
-      "result": -0.2810586932992286,
+      "result": -0.2666970006945728,
       "counted": true,
       "why": "return for the side since the post (open)",
-      "quality": 0.3607328829635392
+      "quality": 0.4801852813955918
      },
      {
       "post_id": "2112915214479798344",
@@ -237711,10 +239176,10 @@
       "posted_at": "2026-10-21T14:33:37Z",
       "side": "long",
       "state": "open",
-      "result": -0.3020355371536344,
+      "result": -0.2880928815140896,
       "counted": true,
       "why": "return for the side since the post (open)",
-      "quality": 0.23742165193415588
+      "quality": 0.31354017671436907
      },
      {
       "post_id": "2112919830357577753",
@@ -237722,10 +239187,10 @@
       "posted_at": "2026-10-21T14:51:58Z",
       "side": "long",
       "state": "open",
-      "result": -0.3020355371536344,
+      "result": -0.2880928815140896,
       "counted": true,
       "why": "return for the side since the post (open)",
-      "quality": 0.23742165193415588
+      "quality": 0.31354017671436907
      },
      {
       "post_id": "2112919830357577753",
@@ -237733,10 +239198,10 @@
       "posted_at": "2026-10-21T14:51:58Z",
       "side": "short",
       "state": "open",
-      "result": 0.14692057370133782,
+      "result": 0.1499578401831988,
       "counted": true,
       "why": "return for the side since the post (open)",
-      "quality": 94.97129156940736
+      "quality": 95.25360194886363
      },
      {
       "post_id": "2113613893662588966",
@@ -237744,10 +239209,10 @@
       "posted_at": "2026-10-23T12:49:55Z",
       "side": "short",
       "state": "open",
-      "result": 0.236998514115899,
+      "result": 0.2422919762258544,
       "counted": true,
       "why": "return for the side since the post (open)",
-      "quality": 99.13368009990624
+      "quality": 99.22002984035433
      },
      {
       "post_id": "2115823513915290059",
@@ -237755,7 +239220,7 @@
       "posted_at": "2026-10-29T15:10:10Z",
       "side": "none",
       "state": "open",
-      "result": -0.27815753892764083,
+      "result": -0.2637378923747349,
       "counted": false,
       "why": "no side stated: counts against clarity only"
      },
@@ -237765,7 +239230,7 @@
       "posted_at": "2026-10-30T16:04:55Z",
       "side": "none",
       "state": "open",
-      "result": -0.09388841948946403,
+      "result": -0.0971144993215044,
       "counted": false,
       "why": "no side stated: counts against clarity only"
      }
@@ -237773,15 +239238,15 @@
     "label": null,
     "wins": 11,
     "hit_rate": 0.3333333333333333,
-    "avg_result": -0.03325408383162669,
+    "avg_result": -0.03019223783723006,
     "components": {
      "hit": 33.333333333333336,
-     "quality": 34.3959749317077,
+     "quality": 34.469586094443,
      "clarity": 94.28571428571429
     },
-    "raw": 42.90124711554023,
+    "raw": 42.930691580634345,
     "weight": 0.7674418604651163,
-    "score": 44.552119879368085,
+    "score": 44.57471679444031,
     "rank": 6,
     "display": "44.6"
    },
@@ -237796,10 +239261,10 @@
       "posted_at": "2026-09-04T20:09:40Z",
       "side": "short",
       "state": "open",
-      "result": 0.5917347865576748,
+      "result": 0.5900234236818203,
       "counted": true,
       "why": "return for the side since the post (open)",
-      "quality": 99.99927514055712
+      "quality": 99.99924990132143
      },
      {
       "post_id": "corbanu:cxmt-entry",
@@ -237807,10 +239272,10 @@
       "posted_at": "2026-09-04T20:09:40Z",
       "side": "long",
       "state": "open",
-      "result": -0.4066763286181414,
+      "result": -0.40377774317574766,
       "counted": true,
       "why": "return for the side since the post (open)",
-      "quality": 0.029344507901818417
+      "quality": 0.031095390699817926
      },
      {
       "post_id": "corbanu:jp225-entry",
@@ -237818,10 +239283,10 @@
       "posted_at": "2026-09-16T00:00:00Z",
       "side": "short",
       "state": "open",
-      "result": 0.13388029674336732,
+      "result": 0.13186847730416196,
       "counted": true,
       "why": "return for the side since the post (open)",
-      "quality": 93.5692217383071
+      "quality": 93.32282388530378
      },
      {
       "post_id": "corbanu:kioxia-entry",
@@ -237829,10 +239294,10 @@
       "posted_at": "2026-09-16T00:00:00Z",
       "side": "long",
       "state": "open",
-      "result": -0.6250614325152444,
+      "result": -0.622522221885144,
       "counted": true,
       "why": "return for the side since the post (open)",
-      "quality": 0.00037220633763723754
+      "quality": 0.00039159666343380195
      },
      {
       "post_id": "corbanu:orcl-entry",
@@ -237840,10 +239305,10 @@
       "posted_at": "2026-09-26T23:10:53Z",
       "side": "long",
       "state": "open",
-      "result": -0.25076120052196615,
+      "result": -0.24525155864868786,
       "counted": true,
       "why": "return for the side since the post (open)",
-      "quality": 0.659239719915
+      "quality": 0.7354719435814729
      },
      {
       "post_id": "corbanu:aapl-entry",
@@ -237851,10 +239316,10 @@
       "posted_at": "2026-09-27T21:27:41Z",
       "side": "short",
       "state": "open",
-      "result": -0.014545561399900153,
+      "result": -0.028503423349299117,
       "counted": true,
       "why": "return for the side since the post (open)",
-      "quality": 42.778079801736766
+      "quality": 36.12210266015571
      },
      {
       "post_id": "corbanu:skhx-entry",
@@ -237862,10 +239327,10 @@
       "posted_at": "2026-09-27T21:27:41Z",
       "side": "long",
       "state": "open",
-      "result": -0.44664810608835814,
+      "result": -0.43830317239358196,
       "counted": true,
       "why": "return for the side since the post (open)",
-      "quality": 0.013194913116628015
+      "quality": 0.015591191276797645
      },
      {
       "post_id": "corbanu:cbrs-add",
@@ -237873,26 +239338,26 @@
       "posted_at": "2026-09-30T03:33:23Z",
       "side": "short",
       "state": "open",
-      "result": 0.5567751310394935,
+      "result": 0.5549172245575795,
       "counted": true,
       "why": "return for the side since the post (open)",
-      "quality": 99.99854150036644
+      "quality": 99.998486286601
      }
     ],
     "label": "small sample",
     "wins": 3,
     "hit_rate": 0.375,
-    "avg_result": -0.05766280185038433,
+    "avg_result": -0.05769362423861235,
     "components": {
      "hit": 37.5,
-     "quality": 42.130908691029816,
+     "quality": 41.27815160695043,
      "clarity": 100.0
     },
-    "raw": 48.727363476411924,
+    "raw": 48.38626064278017,
     "weight": 0.4444444444444444,
-    "score": 49.434383767294186,
+    "score": 49.2827825079023,
     "rank": 3,
-    "display": "49.4"
+    "display": "49.3"
    },
    "DrProfitCrypto": {
     "calls_total": 1,
@@ -237905,24 +239370,24 @@
       "posted_at": "2026-10-25T23:02:23Z",
       "side": "long",
       "state": "open",
-      "result": -0.26353302744750773,
+      "result": -0.2488212391906638,
       "counted": true,
       "why": "return for the side since the post (open)",
-      "quality": 0.5113927406659471
+      "quality": 0.6851417049374078
      }
     ],
     "label": "small sample",
     "wins": 0,
     "hit_rate": 0.0,
-    "avg_result": -0.26353302744750773,
+    "avg_result": -0.2488212391906638,
     "components": {
      "hit": 0.0,
-     "quality": 0.5113927406659471,
+     "quality": 0.6851417049374078,
      "clarity": 100.0
     },
-    "raw": 15.20455709626638,
+    "raw": 15.274056681974963,
     "weight": 0.09090909090909091,
-    "score": 46.8367779178424,
+    "score": 46.84309606199773,
     "rank": 5,
     "display": "46.8"
    },
@@ -237937,10 +239402,10 @@
       "posted_at": "2026-10-22T14:42:31Z",
       "side": "long",
       "state": "open",
-      "result": -0.2790742776190128,
+      "result": -0.2646729439925747,
       "counted": true,
       "why": "return for the side since the post (open)",
-      "quality": 0.37528285607190526
+      "quality": 0.49992336341856713
      },
      {
       "post_id": "2113602987008356795",
@@ -237948,10 +239413,10 @@
       "posted_at": "2026-10-23T12:06:35Z",
       "side": "short",
       "state": "open",
-      "result": 0.12409660241799325,
+      "result": 0.1272151303637048,
       "counted": true,
       "why": "return for the side since the post (open)",
-      "quality": 92.28654427854485
+      "quality": 92.7189825076178
      },
      {
       "post_id": "2115550350832996432",
@@ -237959,10 +239424,10 @@
       "posted_at": "2026-10-28T21:04:43Z",
       "side": "short",
       "state": "open",
-      "result": -0.0020897428455330935,
+      "result": -0.015876240784814533,
       "counted": true,
       "why": "return for the side since the post (open)",
-      "quality": 48.95528064999571
+      "quality": 42.12790873863999
      },
      {
       "post_id": "2115966476817739790",
@@ -237970,10 +239435,10 @@
       "posted_at": "2026-10-30T00:38:15Z",
       "side": "long",
       "state": "open",
-      "result": -0.2723642428713474,
+      "result": -0.20928889886775504,
       "counted": true,
       "why": "return for the side since the post (open)",
-      "quality": 0.4289506488769561
+      "quality": 1.4982478996488595
      },
      {
       "post_id": "2115966476817739790",
@@ -237981,10 +239446,10 @@
       "posted_at": "2026-10-30T00:38:15Z",
       "side": "long",
       "state": "open",
-      "result": -0.25614436188454304,
+      "result": -0.2403037478566179,
       "counted": true,
       "why": "return for the side since the post (open)",
-      "quality": 0.5923496686958032
+      "quality": 0.8113535307515392
      },
      {
       "post_id": "2116203980111933911",
@@ -238012,17 +239477,17 @@
     "label": "small sample",
     "wins": 3,
     "hit_rate": 0.42857142857142855,
-    "avg_result": 0.0021656078341239743,
+    "avg_result": 0.013972653786179083,
     "components": {
      "hit": 42.857142857142854,
-     "quality": 46.901989892214246,
+     "quality": 46.190276740484464,
      "clarity": 100.0
     },
-    "raw": 53.04651024259998,
+    "raw": 52.76182498190807,
     "weight": 0.4117647058823529,
-    "score": 51.25444539401175,
+    "score": 51.13722205137391,
     "rank": 2,
-    "display": "51.3"
+    "display": "51.1"
    },
    "koolkrypto223": {
     "calls_total": 4,
@@ -238035,7 +239500,7 @@
       "posted_at": "2026-11-01T14:23:44Z",
       "side": "none",
       "state": "open",
-      "result": -0.3123297002724795,
+      "result": -0.3030199818346957,
       "counted": false,
       "why": "no side stated: counts against clarity only"
      },
@@ -238045,10 +239510,10 @@
       "posted_at": "2026-11-01T14:23:44Z",
       "side": "long",
       "state": "open",
-      "result": -0.2929311564123851,
+      "result": -0.28456784429480675,
       "counted": true,
       "why": "return for the side since the post (open)",
-      "quality": 0.28470433843892096
+      "quality": 0.33636579765773433
      },
      {
       "post_id": "2118181656398090718",
@@ -238056,10 +239521,10 @@
       "posted_at": "2026-11-05T03:20:35Z",
       "side": "long",
       "state": "open",
-      "result": -0.5835691584309286,
+      "result": -0.6268013409377857,
       "counted": true,
       "why": "return for the side since the post (open)",
-      "quality": 0.0008534517773739481
+      "quality": 0.0003594770478301257
      },
      {
       "post_id": "2118181656398090718",
@@ -238067,24 +239532,24 @@
       "posted_at": "2026-11-05T03:20:35Z",
       "side": "long",
       "state": "open",
-      "result": -0.615472594364021,
+      "result": -0.6111250463901985,
       "counted": true,
       "why": "return for the side since the post (open)",
-      "quality": 0.00045089042403390067
+      "quality": 0.0004918505438240572
      }
     ],
     "label": "small sample",
     "wins": 0,
     "hit_rate": 0.0,
-    "avg_result": -0.49732430306911163,
+    "avg_result": -0.507498077207597,
     "components": {
      "hit": 0.0,
-     "quality": 0.0953362268801096,
+     "quality": 0.11240570841646284,
      "clarity": 75.0
     },
-    "raw": 11.288134490752045,
+    "raw": 11.294962283366585,
     "weight": 0.23076923076923078,
-    "score": 41.06649257478893,
+    "score": 41.06806821923844,
     "rank": 8,
     "display": "41.1"
    },
@@ -238099,7 +239564,7 @@
       "posted_at": "2025-09-24T06:48:11Z",
       "side": "long",
       "state": "open",
-      "result": 12.754083318040008,
+      "result": 13.316204808221691,
       "counted": true,
       "why": "return for the side since the post (open)",
       "quality": 100.0
@@ -238108,7 +239573,7 @@
     "label": "small sample",
     "wins": 1,
     "hit_rate": 1.0,
-    "avg_result": 12.754083318040008,
+    "avg_result": 13.316204808221691,
     "components": {
      "hit": 100.0,
      "quality": 100.0,
@@ -238131,10 +239596,10 @@
       "posted_at": "2026-10-31T07:35:23Z",
       "side": "long",
       "state": "open",
-      "result": -0.27536051050783417,
+      "result": -0.249349387711449,
       "counted": true,
       "why": "return for the side since the post (open)",
-      "quality": 0.40410148745070984
+      "quality": 0.6779914708508201
      },
      {
       "post_id": "2116433840499790164",
@@ -238142,24 +239607,24 @@
       "posted_at": "2026-10-31T07:35:23Z",
       "side": "long",
       "state": "open",
-      "result": -0.3138099014387674,
+      "result": -0.30452022204599516,
       "counted": true,
       "why": "return for the side since the post (open)",
-      "quality": 0.1877006985890688
+      "quality": 0.22593765339378535
      }
     ],
     "label": "small sample",
     "wins": 0,
     "hit_rate": 0.0,
-    "avg_result": -0.2945852059733008,
+    "avg_result": -0.2769348048787221,
     "components": {
      "hit": 0.0,
-     "quality": 0.2959010930198893,
+     "quality": 0.45196456212230274,
      "clarity": 100.0
     },
-    "raw": 15.118360437207956,
+    "raw": 15.180785824848922,
     "weight": 0.16666666666666666,
-    "score": 44.186393406201326,
+    "score": 44.19679763747482,
     "rank": 7,
     "display": "44.2"
    },
@@ -238174,26 +239639,26 @@
       "posted_at": "2026-10-30T08:56:27Z",
       "side": "long",
       "state": "open",
-      "result": -0.12441249654409736,
+      "result": -0.17735692562897432,
       "counted": true,
       "why": "return for the side since the post (open)",
-      "quality": 7.668601971263342
+      "quality": 2.800034786900234
      }
     ],
     "label": "small sample",
     "wins": 0,
     "hit_rate": 0.0,
-    "avg_result": -0.12441249654409736,
+    "avg_result": -0.17735692562897432,
     "components": {
      "hit": 0.0,
-     "quality": 7.668601971263342,
+     "quality": 2.800034786900234,
      "clarity": 100.0
     },
-    "raw": 18.067440788505337,
+    "raw": 16.120013914760094,
     "weight": 0.09090909090909091,
-    "score": 47.0970400716823,
+    "score": 46.92000126497819,
     "rank": 4,
-    "display": "47.1"
+    "display": "46.9"
    }
   }
  }
