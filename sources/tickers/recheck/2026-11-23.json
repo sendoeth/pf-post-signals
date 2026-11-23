@@ -1,0 +1,1780 @@
+{
+ "schema": "quanty.ticker_recheck.v1",
+ "checked_at": "2026-11-23T01:50:51Z",
+ "calls": [
+  {
+   "what": "binance exchangeInfo",
+   "url": "https://data-api.binance.vision/api/v3/exchangeInfo?permissions=SPOT",
+   "sha256": "f35e7b3e0cc53cbea4f3664899b518420b0c5c0aef2e57d5a23394a6116c2685",
+   "at": "2026-11-23T01:50:53Z"
+  },
+  {
+   "what": "binance prices",
+   "url": "https://data-api.binance.vision/api/v3/ticker/price",
+   "sha256": "5b9b4d4b38ffe21dfdd5a80da8bf31c89ec8e3b6cf53e7cc53ed86a9ef080ec4",
+   "at": "2026-11-23T01:50:53Z"
+  },
+  {
+   "what": "hyperliquid meta + allMids",
+   "sha256": "8bbde99603142a10e2072b4a0b096d42c9a7b569f13a43fa1f94b6e796b4a348",
+   "at": "2026-11-23T01:50:54Z"
+  },
+  {
+   "what": "hyperliquid spotMetaAndAssetCtxs",
+   "sha256": "ba5b7404abc0577c6940f5fd8c3ff5c90b43f71e84c5ad61887d3c0d24ec1874",
+   "at": "2026-11-23T01:50:54Z"
+  },
+  {
+   "what": "okx instruments",
+   "url": "https://www.okx.com/api/v5/public/instruments?instType=SPOT",
+   "sha256": "9f5d68a410227870c0294ef602a304c008f7573073c85a24b4e147befa8d8839",
+   "at": "2026-11-23T01:50:54Z"
+  },
+  {
+   "what": "okx tickers",
+   "url": "https://www.okx.com/api/v5/market/tickers?instType=SPOT",
+   "sha256": "e76cef67940f91a72780e0c03ff3c585e2f62b58040d1304a00303b63d38d1a2",
+   "at": "2026-11-23T01:50:54Z"
+  },
+  {
+   "what": "gate currency pairs",
+   "url": "https://api.gateio.ws/api/v4/spot/currency_pairs",
+   "sha256": "ab2cddec0a6662f5b4e383b69854a54cc9482019c777f73b6d869d40a1360042",
+   "at": "2026-11-23T01:50:55Z"
+  },
+  {
+   "what": "gate tickers",
+   "url": "https://api.gateio.ws/api/v4/spot/tickers",
+   "sha256": "982ce48ad5c11b0197ba1ca4126e1299ddc51d117ed8fb61dcb83fee27d7d694",
+   "at": "2026-11-23T01:50:57Z"
+  },
+  {
+   "what": "coingecko prices 1",
+   "url": "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&per_page=250&ids=aave,aerodrome-finance,aixbt,algorand,altlayer,apecoin,apex-token-2,aptos,arbitrum,arweave,aster-2,avalanche-2,avantis,axie-infinity,aztec,babylon,based-brett,beldex,berachain-bera,big-time,binancecoin,bio-protocol,bitcoin,bitcoin-cash,bitcoin-cash-sv,bittensor,bittorrent,bitway,blockstack,blur,bonk,book-of-meme,canton-network,cardano,cash-cat,celestia,celo,chainlink,chip-2,compound-governance-token,conflux-token,connect-token-wct,constitutiondao,cosmos,crypto-com-chain,curve-dao-token,dash,derive,dogecoin,dogwifcoin,doublezero,dydx-chain,eigenlayer,endurance,ethena,ether-fi,ethereum,ethereum-classic,ethereum-name-service,falcon-finance-ff,fartcoin,fetch-ai,filecoin,flare-networks,floki,gala,gas,gatechain-token,gmx,grass,havven,hedera-hashgraph,hemi,htx-dao,hyperlane,hyperliquid,immutable-x,initia,injective-protocol,internet-computer,io,iota,jito-governance-token,jupiter-exchange-solana,just,kaito,kaspa,kinetiq,kite-2,layerzero,leo-token,lido-dao,lighter,linea,litecoin,magic-eden,manta-network,mantle,megaeth,melania-meme,memecore,merlin-chain,meteora,midnight-3,mina-protocol,monad,monero,moo-deng,morpho,movement,near,neiro-3,neo,nest-2,nexo,nexpace,nillion,notcoin,official-trump,okb,ondo-finance,optimism,ordinals,pancakeswap-token,peanut-the-squirrel,pearl-2,pendle,pepe,pi-network,plasma,polkadot,polygon-ecosystem-token,polymesh,pons,popcat,pudgy-penguins,pump-fun,purr-2,pyth-network,quant-network,rain,raydium,render-token,renzo,reserve-rights-token,ripple,seeker,sei-network,shiba-inu,sky,solana,sonic-3,stable-2,starknet,stellar,stepn,succinct,sui,sun-token,superfarm,sushi,syrup,tellor,tensor,terra-luna,the-open-network,the-sandbox,thorchain,tron,turbo,uma,unibase,uniswap,useless-3,usual,vechain,venice-token,virtual-protocol,world-liberty-financial,worldcoin-wld,wormhole,xdce-crowd-sale,yield-guild-games,zcash,zencash,zero-gravity,zetachain,zksync,zora",
+   "sha256": "fd8d2fb16564871609c62b1935f170b0ed2979ebb9c68e392d9a33808c3c4dc0",
+   "at": "2026-11-23T01:51:03Z"
+  },
+  {
+   "what": "geckoterminal pool hyperevm:0x535f30f50ebda33575242c38b976e681d13db6fa",
+   "sha256": "8e63536777aafd4406b42ed827f722a46c0ba28a3ed93bb51867f9a77b8dcf19",
+   "at": "2026-11-23T01:51:03Z"
+  }
+ ],
+ "rule": {
+  "tolerance": 0.05,
+  "venue_swapped": false
+ },
+ "counts": {
+  "checked": 189,
+  "ok": 189,
+  "flagged": 0,
+  "recovered": 0,
+  "not_checked": 0
+ },
+ "unreachable_venues": [],
+ "flagged": {},
+ "recovered": [],
+ "results": {
+  "0G": {
+   "venue": "binance:0GUSDT",
+   "ok": true,
+   "why": null,
+   "diff": -0.000849,
+   "venue_price": 0.1071,
+   "coin_price": 0.107191,
+   "rank_now": 319
+  },
+  "2Z": {
+   "venue": "binance:2ZUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000545,
+   "venue_price": 0.01545,
+   "coin_price": 0.01544159,
+   "rank_now": 268
+  },
+  "AAVE": {
+   "venue": "binance:AAVEUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000207,
+   "venue_price": 96.46,
+   "coin_price": 96.44,
+   "rank_now": 50
+  },
+  "ACE": {
+   "venue": "binance:ACEUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.002783,
+   "venue_price": 0.0825,
+   "coin_price": 0.082271,
+   "rank_now": 1120
+  },
+  "ADA": {
+   "venue": "binance:ADAUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000972,
+   "venue_price": 0.1431,
+   "coin_price": 0.142961,
+   "rank_now": 18
+  },
+  "AERO": {
+   "venue": "binance:AEROUSDT",
+   "ok": true,
+   "why": null,
+   "diff": -0.000536,
+   "venue_price": 0.4216,
+   "coin_price": 0.421826,
+   "rank_now": 241
+  },
+  "AIXBT": {
+   "venue": "binance:AIXBTUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.001623,
+   "venue_price": 0.01178,
+   "coin_price": 0.01176091,
+   "rank_now": 999
+  },
+  "ALGO": {
+   "venue": "binance:ALGOUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000815,
+   "venue_price": 0.0749,
+   "coin_price": 0.074839,
+   "rank_now": 85
+  },
+  "ALT": {
+   "venue": "binance:ALTUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.00081,
+   "venue_price": 0.00425,
+   "coin_price": 0.00424656,
+   "rank_now": 523
+  },
+  "APE": {
+   "venue": "binance:APEUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000237,
+   "venue_price": 0.0718,
+   "coin_price": 0.071783,
+   "rank_now": 307
+  },
+  "APEX": {
+   "venue": "hyperliquid:APEX",
+   "ok": true,
+   "why": null,
+   "diff": -0.002906,
+   "venue_price": 0.12766,
+   "coin_price": 0.128032,
+   "rank_now": 735
+  },
+  "APT": {
+   "venue": "binance:APTUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000129,
+   "venue_price": 0.3791,
+   "coin_price": 0.379051,
+   "rank_now": 118
+  },
+  "AR": {
+   "venue": "binance:ARUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.002193,
+   "venue_price": 2.285,
+   "coin_price": 2.28,
+   "rank_now": 179
+  },
+  "ARB": {
+   "venue": "binance:ARBUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.001372,
+   "venue_price": 0.1139,
+   "coin_price": 0.113744,
+   "rank_now": 78
+  },
+  "ASTER": {
+   "venue": "binance:ASTERUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.002639,
+   "venue_price": 0.503,
+   "coin_price": 0.501676,
+   "rank_now": 58
+  },
+  "ATOM": {
+   "venue": "binance:ATOMUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.003448,
+   "venue_price": 1.164,
+   "coin_price": 1.16,
+   "rank_now": 87
+  },
+  "AVAX": {
+   "venue": "binance:AVAXUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.00121,
+   "venue_price": 6.618,
+   "coin_price": 6.61,
+   "rank_now": 26
+  },
+  "AVNT": {
+   "venue": "binance:AVNTUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000729,
+   "venue_price": 0.0604,
+   "coin_price": 0.060356,
+   "rank_now": 662
+  },
+  "AXS": {
+   "venue": "binance:AXSUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.00223,
+   "venue_price": 0.614,
+   "coin_price": 0.612634,
+   "rank_now": 230
+  },
+  "AZTEC": {
+   "venue": "hyperliquid:AZTEC",
+   "ok": true,
+   "why": null,
+   "diff": 0.001326,
+   "venue_price": 0.009079,
+   "coin_price": 0.00906698,
+   "rank_now": 489
+  },
+  "BABY": {
+   "venue": "binance:BABYUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000833,
+   "venue_price": 0.00769,
+   "coin_price": 0.0076836,
+   "rank_now": 451
+  },
+  "BCH": {
+   "venue": "binance:BCHUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000101,
+   "venue_price": 197.1,
+   "coin_price": 197.08,
+   "rank_now": 22
+  },
+  "BDX": {
+   "venue": "gate:BDX_USDT",
+   "ok": true,
+   "why": null,
+   "diff": -0.036304,
+   "venue_price": 0.06899,
+   "coin_price": 0.071589,
+   "rank_now": 92
+  },
+  "BERA": {
+   "venue": "binance:BERAUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.001189,
+   "venue_price": 0.08,
+   "coin_price": 0.079905,
+   "rank_now": 570
+  },
+  "BIGTIME": {
+   "venue": "binance:BIGTIMEUSDT",
+   "ok": true,
+   "why": null,
+   "diff": -0.000905,
+   "venue_price": 0.00392,
+   "coin_price": 0.00392355,
+   "rank_now": 1016
+  },
+  "BIO": {
+   "venue": "binance:BIOUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000488,
+   "venue_price": 0.01503,
+   "coin_price": 0.01502267,
+   "rank_now": 525
+  },
+  "BLUR": {
+   "venue": "binance:BLURUSDT",
+   "ok": true,
+   "why": null,
+   "diff": -0.000132,
+   "venue_price": 0.00742,
+   "coin_price": 0.00742098,
+   "rank_now": 696
+  },
+  "BNB": {
+   "venue": "binance:BNBUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.001456,
+   "venue_price": 557.22,
+   "coin_price": 556.41,
+   "rank_now": 4
+  },
+  "BOME": {
+   "venue": "binance:BOMEUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000365,
+   "venue_price": 0.0004653,
+   "coin_price": 0.00046513,
+   "rank_now": 527
+  },
+  "BONK": {
+   "venue": "binance:BONKUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.0,
+   "venue_price": 2.05e-06,
+   "coin_price": 2.05e-06,
+   "rank_now": 157
+  },
+  "BRETT": {
+   "venue": "hyperliquid:BRETT",
+   "ok": true,
+   "why": null,
+   "diff": -0.001063,
+   "venue_price": 0.003093,
+   "coin_price": 0.00309629,
+   "rank_now": 549
+  },
+  "BSV": {
+   "venue": "hyperliquid:BSV",
+   "ok": true,
+   "why": null,
+   "diff": 0.002884,
+   "venue_price": 13.91,
+   "coin_price": 13.87,
+   "rank_now": 127
+  },
+  "BTC": {
+   "venue": "binance:BTCUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.001593,
+   "venue_price": 60911.89,
+   "coin_price": 60815.0,
+   "rank_now": 1
+  },
+  "BTT": {
+   "venue": "gate:BTT_USDT",
+   "ok": true,
+   "why": null,
+   "diff": -0.000542,
+   "venue_price": 3.025e-07,
+   "coin_price": 3.02664e-07,
+   "rank_now": 123
+  },
+  "BTW": {
+   "venue": "gate:BTW_USDT",
+   "ok": true,
+   "why": null,
+   "diff": -0.001157,
+   "venue_price": 0.719,
+   "coin_price": 0.719833,
+   "rank_now": 65
+  },
+  "CAKE": {
+   "venue": "binance:CAKEUSDT",
+   "ok": true,
+   "why": null,
+   "diff": -0.000658,
+   "venue_price": 1.519,
+   "coin_price": 1.52,
+   "rank_now": 95
+  },
+  "CASHCAT": {
+   "venue": "hyperliquid:CASHCAT",
+   "ok": true,
+   "why": null,
+   "diff": -0.006566,
+   "venue_price": 0.042829,
+   "coin_price": 0.04311206,
+   "rank_now": 433
+  },
+  "CC": {
+   "venue": "hyperliquid:CC",
+   "ok": true,
+   "why": null,
+   "diff": -0.000881,
+   "venue_price": 0.073741,
+   "coin_price": 0.073806,
+   "rank_now": 25
+  },
+  "CELO": {
+   "venue": "binance:CELOUSDT",
+   "ok": true,
+   "why": null,
+   "diff": -0.000982,
+   "venue_price": 0.0539,
+   "coin_price": 0.053953,
+   "rank_now": 517
+  },
+  "CFX": {
+   "venue": "binance:CFXUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.001922,
+   "venue_price": 0.03082,
+   "coin_price": 0.03076088,
+   "rank_now": 170
+  },
+  "CHIP": {
+   "venue": "binance:CHIPUSDT",
+   "ok": true,
+   "why": null,
+   "diff": -0.000151,
+   "venue_price": 0.02641,
+   "coin_price": 0.026414,
+   "rank_now": 370
+  },
+  "COMP": {
+   "venue": "binance:COMPUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.001172,
+   "venue_price": 17.09,
+   "coin_price": 17.07,
+   "rank_now": 166
+  },
+  "CRO": {
+   "venue": "okx:CRO-USDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000128,
+   "venue_price": 0.04031,
+   "coin_price": 0.04030484,
+   "rank_now": 40
+  },
+  "CRV": {
+   "venue": "binance:CRVUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000652,
+   "venue_price": 0.1795,
+   "coin_price": 0.179383,
+   "rank_now": 125
+  },
+  "DASH": {
+   "venue": "binance:DASHUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.001137,
+   "venue_price": 35.23,
+   "coin_price": 35.19,
+   "rank_now": 103
+  },
+  "DOGE": {
+   "venue": "binance:DOGEUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.001425,
+   "venue_price": 0.05482,
+   "coin_price": 0.054742,
+   "rank_now": 13
+  },
+  "DOT": {
+   "venue": "binance:DOTUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000319,
+   "venue_price": 0.653,
+   "coin_price": 0.652792,
+   "rank_now": 62
+  },
+  "DRV": {
+   "venue": "gate:DRV_USDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.001273,
+   "venue_price": 0.38552,
+   "coin_price": 0.38503,
+   "rank_now": 108
+  },
+  "DYDX": {
+   "venue": "binance:DYDXUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000492,
+   "venue_price": 0.06917,
+   "coin_price": 0.069136,
+   "rank_now": 349
+  },
+  "EIGEN": {
+   "venue": "binance:EIGENUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000232,
+   "venue_price": 0.1163,
+   "coin_price": 0.116273,
+   "rank_now": 210
+  },
+  "ENA": {
+   "venue": "binance:ENAUSDT",
+   "ok": true,
+   "why": null,
+   "diff": -0.001078,
+   "venue_price": 0.1001,
+   "coin_price": 0.100208,
+   "rank_now": 55
+  },
+  "ENS": {
+   "venue": "binance:ENSUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.0,
+   "venue_price": 3.64,
+   "coin_price": 3.64,
+   "rank_now": 175
+  },
+  "ETC": {
+   "venue": "binance:ETCUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.0,
+   "venue_price": 5.69,
+   "coin_price": 5.69,
+   "rank_now": 71
+  },
+  "ETH": {
+   "venue": "binance:ETHUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.001667,
+   "venue_price": 1712.76,
+   "coin_price": 1709.91,
+   "rank_now": 2
+  },
+  "ETHFI": {
+   "venue": "binance:ETHFIUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000573,
+   "venue_price": 0.4955,
+   "coin_price": 0.495216,
+   "rank_now": 97
+  },
+  "FARTCOIN": {
+   "venue": "hyperliquid:FARTCOIN",
+   "ok": true,
+   "why": null,
+   "diff": 0.000426,
+   "venue_price": 0.07744,
+   "coin_price": 0.077407,
+   "rank_now": 280
+  },
+  "FET": {
+   "venue": "binance:FETUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000141,
+   "venue_price": 0.1067,
+   "coin_price": 0.106685,
+   "rank_now": 137
+  },
+  "FF": {
+   "venue": "binance:FFUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.001326,
+   "venue_price": 0.10344,
+   "coin_price": 0.103303,
+   "rank_now": 114
+  },
+  "FIL": {
+   "venue": "binance:FILUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000935,
+   "venue_price": 0.5276,
+   "coin_price": 0.527107,
+   "rank_now": 104
+  },
+  "FLOKI": {
+   "venue": "binance:FLOKIUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.001239,
+   "venue_price": 1.616e-05,
+   "coin_price": 1.614e-05,
+   "rank_now": 173
+  },
+  "FLR": {
+   "venue": "okx:FLR-USDT",
+   "ok": true,
+   "why": null,
+   "diff": -0.000536,
+   "venue_price": 0.005107,
+   "coin_price": 0.00510974,
+   "rank_now": 105
+  },
+  "GALA": {
+   "venue": "binance:GALAUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000627,
+   "venue_price": 0.001277,
+   "coin_price": 0.0012762,
+   "rank_now": 324
+  },
+  "GAS": {
+   "venue": "binance:GASUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.001563,
+   "venue_price": 0.909,
+   "coin_price": 0.907581,
+   "rank_now": 346
+  },
+  "GMT": {
+   "venue": "binance:GMTUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.001888,
+   "venue_price": 0.00502,
+   "coin_price": 0.00501054,
+   "rank_now": 866
+  },
+  "GMX": {
+   "venue": "binance:GMXUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.001368,
+   "venue_price": 7.32,
+   "coin_price": 7.31,
+   "rank_now": 277
+  },
+  "GRAM": {
+   "venue": "binance:GRAMUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.001814,
+   "venue_price": 0.969,
+   "coin_price": 0.967245,
+   "rank_now": 31
+  },
+  "GRASS": {
+   "venue": "hyperliquid:GRASS",
+   "ok": true,
+   "why": null,
+   "diff": 0.000908,
+   "venue_price": 0.37917,
+   "coin_price": 0.378826,
+   "rank_now": 129
+  },
+  "GT": {
+   "venue": "gate:GT_USDT",
+   "ok": true,
+   "why": null,
+   "diff": -0.001524,
+   "venue_price": 6.55,
+   "coin_price": 6.56,
+   "rank_now": 83
+  },
+  "HBAR": {
+   "venue": "binance:HBARUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.001003,
+   "venue_price": 0.05089,
+   "coin_price": 0.050839,
+   "rank_now": 37
+  },
+  "HEMI": {
+   "venue": "binance:HEMIUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.001861,
+   "venue_price": 0.00323,
+   "coin_price": 0.003224,
+   "rank_now": 923
+  },
+  "HTX": {
+   "venue": "gate:HTX_USDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.001712,
+   "venue_price": 1.4625e-06,
+   "coin_price": 1.46e-06,
+   "rank_now": 57
+  },
+  "HYPE": {
+   "venue": "binance:HYPEUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.002255,
+   "venue_price": 62.23,
+   "coin_price": 62.09,
+   "rank_now": 10
+  },
+  "HYPER": {
+   "venue": "binance:HYPERUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000717,
+   "venue_price": 0.042,
+   "coin_price": 0.0419699,
+   "rank_now": 914
+  },
+  "ICP": {
+   "venue": "binance:ICPUSDT",
+   "ok": true,
+   "why": null,
+   "diff": -0.000513,
+   "venue_price": 1.949,
+   "coin_price": 1.95,
+   "rank_now": 64
+  },
+  "IMX": {
+   "venue": "binance:IMXUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.001247,
+   "venue_price": 0.0867,
+   "coin_price": 0.086592,
+   "rank_now": 278
+  },
+  "INIT": {
+   "venue": "binance:INITUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.003987,
+   "venue_price": 0.08637,
+   "coin_price": 0.086027,
+   "rank_now": 764
+  },
+  "INJ": {
+   "venue": "binance:INJUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000813,
+   "venue_price": 6.155,
+   "coin_price": 6.15,
+   "rank_now": 89
+  },
+  "IO": {
+   "venue": "binance:IOUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000854,
+   "venue_price": 0.0996,
+   "coin_price": 0.099515,
+   "rank_now": 429
+  },
+  "IOTA": {
+   "venue": "binance:IOTAUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.003681,
+   "venue_price": 0.0299,
+   "coin_price": 0.02979033,
+   "rank_now": 187
+  },
+  "JST": {
+   "venue": "binance:JSTUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 5.5e-05,
+   "venue_price": 0.14563,
+   "coin_price": 0.145622,
+   "rank_now": 61
+  },
+  "JTO": {
+   "venue": "binance:JTOUSDT",
+   "ok": true,
+   "why": null,
+   "diff": -0.001223,
+   "venue_price": 0.232,
+   "coin_price": 0.232284,
+   "rank_now": 201
+  },
+  "JUP": {
+   "venue": "binance:JUPUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.001235,
+   "venue_price": 0.2261,
+   "coin_price": 0.225821,
+   "rank_now": 79
+  },
+  "KAITO": {
+   "venue": "binance:KAITOUSDT",
+   "ok": true,
+   "why": null,
+   "diff": -0.000119,
+   "venue_price": 0.1599,
+   "coin_price": 0.159919,
+   "rank_now": 465
+  },
+  "KAS": {
+   "venue": "hyperliquid:KAS",
+   "ok": true,
+   "why": null,
+   "diff": -0.002212,
+   "venue_price": 0.025628,
+   "coin_price": 0.02568482,
+   "rank_now": 81
+  },
+  "KITE": {
+   "venue": "binance:KITEUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.001094,
+   "venue_price": 0.1428,
+   "coin_price": 0.142644,
+   "rank_now": 116
+  },
+  "KNTQ": {
+   "venue": "hlspot:@334",
+   "ok": true,
+   "why": null,
+   "diff": -0.001045,
+   "venue_price": 0.16724,
+   "coin_price": 0.167415,
+   "rank_now": 365
+  },
+  "LDO": {
+   "venue": "binance:LDOUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000844,
+   "venue_price": 0.2348,
+   "coin_price": 0.234602,
+   "rank_now": 151
+  },
+  "LEO": {
+   "venue": "okx:LEO-USDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.008691,
+   "venue_price": 9.169,
+   "coin_price": 9.09,
+   "rank_now": 14
+  },
+  "LINEA": {
+   "venue": "binance:LINEAUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000605,
+   "venue_price": 0.00167,
+   "coin_price": 0.00166899,
+   "rank_now": 442
+  },
+  "LINK": {
+   "venue": "binance:LINKUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000455,
+   "venue_price": 8.804,
+   "coin_price": 8.8,
+   "rank_now": 16
+  },
+  "LIT": {
+   "venue": "hyperliquid:LIT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000855,
+   "venue_price": 2.342,
+   "coin_price": 2.34,
+   "rank_now": 91
+  },
+  "LTC": {
+   "venue": "binance:LTCUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.001006,
+   "venue_price": 39.8,
+   "coin_price": 39.76,
+   "rank_now": 24
+  },
+  "LUNC": {
+   "venue": "binance:LUNCUSDT",
+   "ok": true,
+   "why": null,
+   "diff": -0.000773,
+   "venue_price": 3.88e-05,
+   "coin_price": 3.883e-05,
+   "rank_now": 148
+  },
+  "M": {
+   "venue": "gate:M_USDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.002084,
+   "venue_price": 0.7463,
+   "coin_price": 0.744748,
+   "rank_now": 45
+  },
+  "MANTA": {
+   "venue": "binance:MANTAUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000624,
+   "venue_price": 0.03939,
+   "coin_price": 0.03936543,
+   "rank_now": 759
+  },
+  "ME": {
+   "venue": "binance:MEUSDT",
+   "ok": true,
+   "why": null,
+   "diff": -0.000112,
+   "venue_price": 0.03499,
+   "coin_price": 0.03499393,
+   "rank_now": 680
+  },
+  "MEGA": {
+   "venue": "binance:MEGAUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.002128,
+   "venue_price": 0.0451,
+   "coin_price": 0.04500424,
+   "rank_now": 381
+  },
+  "MELANIA": {
+   "venue": "hyperliquid:MELANIA",
+   "ok": true,
+   "why": null,
+   "diff": -0.005302,
+   "venue_price": 0.04638,
+   "coin_price": 0.04662724,
+   "rank_now": 405
+  },
+  "MERL": {
+   "venue": "hyperliquid:MERL",
+   "ok": true,
+   "why": null,
+   "diff": -0.000194,
+   "venue_price": 0.026591,
+   "coin_price": 0.02659616,
+   "rank_now": 460
+  },
+  "MET": {
+   "venue": "binance:METUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000467,
+   "venue_price": 0.225,
+   "coin_price": 0.224895,
+   "rank_now": 200
+  },
+  "MINA": {
+   "venue": "binance:MINAUSDT",
+   "ok": true,
+   "why": null,
+   "diff": -0.001316,
+   "venue_price": 0.0404,
+   "coin_price": 0.04045323,
+   "rank_now": 374
+  },
+  "MNT": {
+   "venue": "hyperliquid:MNT",
+   "ok": true,
+   "why": null,
+   "diff": -0.000385,
+   "venue_price": 0.38726,
+   "coin_price": 0.387409,
+   "rank_now": 60
+  },
+  "MON": {
+   "venue": "hyperliquid:MON",
+   "ok": true,
+   "why": null,
+   "diff": -0.000501,
+   "venue_price": 0.012336,
+   "coin_price": 0.01234218,
+   "rank_now": 184
+  },
+  "MOODENG": {
+   "venue": "hyperliquid:MOODENG",
+   "ok": true,
+   "why": null,
+   "diff": -0.000362,
+   "venue_price": 0.025078,
+   "coin_price": 0.02508709,
+   "rank_now": 646
+  },
+  "MORPHO": {
+   "venue": "binance:MORPHOUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.003846,
+   "venue_price": 1.566,
+   "coin_price": 1.56,
+   "rank_now": 63
+  },
+  "MOVE": {
+   "venue": "binance:MOVEUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000917,
+   "venue_price": 0.004497,
+   "coin_price": 0.00449288,
+   "rank_now": 699
+  },
+  "NEAR": {
+   "venue": "binance:NEARUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000673,
+   "venue_price": 2.972,
+   "coin_price": 2.97,
+   "rank_now": 23
+  },
+  "NEIRO": {
+   "venue": "binance:NEIROUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.001066,
+   "venue_price": 4.695e-05,
+   "coin_price": 4.69e-05,
+   "rank_now": 744
+  },
+  "NEO": {
+   "venue": "binance:NEOUSDT",
+   "ok": true,
+   "why": null,
+   "diff": -0.004575,
+   "venue_price": 1.523,
+   "coin_price": 1.53,
+   "rank_now": 231
+  },
+  "NEST": {
+   "venue": "dex:hyperevm:0x535f30f50ebda33575242c38b976e681d13db6fa",
+   "ok": true,
+   "why": null,
+   "diff": -0.004188,
+   "venue_price": 0.0101900209013522,
+   "coin_price": 0.01023288,
+   "rank_now": 1824
+  },
+  "NEXO": {
+   "venue": "binance:NEXOUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.001586,
+   "venue_price": 0.634,
+   "coin_price": 0.632996,
+   "rank_now": 86
+  },
+  "NIGHT": {
+   "venue": "binance:NIGHTUSDT",
+   "ok": true,
+   "why": null,
+   "diff": -0.000324,
+   "venue_price": 0.0484,
+   "coin_price": 0.04841571,
+   "rank_now": 77
+  },
+  "NIL": {
+   "venue": "binance:NILUSDT",
+   "ok": true,
+   "why": null,
+   "diff": -0.001461,
+   "venue_price": 0.04578,
+   "coin_price": 0.04584699,
+   "rank_now": 630
+  },
+  "NOT": {
+   "venue": "binance:NOTUSDT",
+   "ok": true,
+   "why": null,
+   "diff": -0.00028,
+   "venue_price": 0.000286,
+   "coin_price": 0.00028608,
+   "rank_now": 581
+  },
+  "NXPC": {
+   "venue": "binance:NXPCUSDT",
+   "ok": true,
+   "why": null,
+   "diff": -0.000388,
+   "venue_price": 0.1314,
+   "coin_price": 0.131451,
+   "rank_now": 434
+  },
+  "OKB": {
+   "venue": "okx:OKB-USDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.001584,
+   "venue_price": 82.19,
+   "coin_price": 82.06,
+   "rank_now": 44
+  },
+  "ONDO": {
+   "venue": "binance:ONDOUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.001633,
+   "venue_price": 0.2803,
+   "coin_price": 0.279843,
+   "rank_now": 54
+  },
+  "OP": {
+   "venue": "binance:OPUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.001489,
+   "venue_price": 0.0706,
+   "coin_price": 0.070495,
+   "rank_now": 171
+  },
+  "ORDI": {
+   "venue": "binance:ORDIUSDT",
+   "ok": true,
+   "why": null,
+   "diff": -0.001581,
+   "venue_price": 2.526,
+   "coin_price": 2.53,
+   "rank_now": 368
+  },
+  "PEARL": {
+   "venue": "gate:PEARL_USDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.007019,
+   "venue_price": 2.0946,
+   "coin_price": 2.08,
+   "rank_now": 75
+  },
+  "PENDLE": {
+   "venue": "binance:PENDLEUSDT",
+   "ok": true,
+   "why": null,
+   "diff": -0.00155,
+   "venue_price": 1.288,
+   "coin_price": 1.29,
+   "rank_now": 145
+  },
+  "PENGU": {
+   "venue": "binance:PENGUUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000161,
+   "venue_price": 0.004234,
+   "coin_price": 0.00423332,
+   "rank_now": 130
+  },
+  "PEOPLE": {
+   "venue": "binance:PEOPLEUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.001126,
+   "venue_price": 0.00473,
+   "coin_price": 0.00472468,
+   "rank_now": 661
+  },
+  "PEPE": {
+   "venue": "binance:PEPEUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.002985,
+   "venue_price": 3.36e-06,
+   "coin_price": 3.35e-06,
+   "rank_now": 52
+  },
+  "PI": {
+   "venue": "okx:PI-USDT",
+   "ok": true,
+   "why": null,
+   "diff": -0.002245,
+   "venue_price": 0.05421,
+   "coin_price": 0.054332,
+   "rank_now": 88
+  },
+  "PNUT": {
+   "venue": "binance:PNUTUSDT",
+   "ok": true,
+   "why": null,
+   "diff": -0.001872,
+   "venue_price": 0.0259,
+   "coin_price": 0.02594858,
+   "rank_now": 621
+  },
+  "POL": {
+   "venue": "binance:POLUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000928,
+   "venue_price": 0.07549,
+   "coin_price": 0.07542,
+   "rank_now": 76
+  },
+  "POLYX": {
+   "venue": "binance:POLYXUSDT",
+   "ok": true,
+   "why": null,
+   "diff": -0.003798,
+   "venue_price": 0.02428,
+   "coin_price": 0.02437257,
+   "rank_now": 519
+  },
+  "PONS": {
+   "venue": "hyperliquid:PONS",
+   "ok": true,
+   "why": null,
+   "diff": 0.000898,
+   "venue_price": 0.093628,
+   "coin_price": 0.093544,
+   "rank_now": 334
+  },
+  "POPCAT": {
+   "venue": "hyperliquid:POPCAT",
+   "ok": true,
+   "why": null,
+   "diff": -0.001142,
+   "venue_price": 0.024151,
+   "coin_price": 0.02417862,
+   "rank_now": 666
+  },
+  "PROVE": {
+   "venue": "binance:PROVEUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.00049,
+   "venue_price": 0.1306,
+   "coin_price": 0.130536,
+   "rank_now": 633
+  },
+  "PUMP": {
+   "venue": "binance:PUMPUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.001248,
+   "venue_price": 0.002552,
+   "coin_price": 0.00254882,
+   "rank_now": 72
+  },
+  "PURR": {
+   "venue": "hyperliquid:PURR",
+   "ok": true,
+   "why": null,
+   "diff": -0.001955,
+   "venue_price": 0.071984,
+   "coin_price": 0.072125,
+   "rank_now": 428
+  },
+  "PYTH": {
+   "venue": "binance:PYTHUSDT",
+   "ok": true,
+   "why": null,
+   "diff": -9.8e-05,
+   "venue_price": 0.05101,
+   "coin_price": 0.051015,
+   "rank_now": 109
+  },
+  "QNT": {
+   "venue": "binance:QNTUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.002325,
+   "venue_price": 142.28,
+   "coin_price": 141.95,
+   "rank_now": 41
+  },
+  "RAIN": {
+   "venue": "gate:RAIN_USDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.002861,
+   "venue_price": 0.003263,
+   "coin_price": 0.00325369,
+   "rank_now": 35
+  },
+  "RAY": {
+   "venue": "binance:RAYUSDT",
+   "ok": true,
+   "why": null,
+   "diff": -0.000308,
+   "venue_price": 1.2996,
+   "coin_price": 1.3,
+   "rank_now": 115
+  },
+  "RENDER": {
+   "venue": "binance:RENDERUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.0,
+   "venue_price": 1.32,
+   "coin_price": 1.32,
+   "rank_now": 80
+  },
+  "REZ": {
+   "venue": "binance:REZUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.002157,
+   "venue_price": 0.002407,
+   "coin_price": 0.00240182,
+   "rank_now": 681
+  },
+  "RSR": {
+   "venue": "binance:RSRUSDT",
+   "ok": true,
+   "why": null,
+   "diff": -0.000385,
+   "venue_price": 0.001246,
+   "coin_price": 0.00124648,
+   "rank_now": 279
+  },
+  "RUNE": {
+   "venue": "binance:RUNEUSDT",
+   "ok": true,
+   "why": null,
+   "diff": -0.000529,
+   "venue_price": 0.503,
+   "coin_price": 0.503266,
+   "rank_now": 168
+  },
+  "S": {
+   "venue": "binance:SUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000389,
+   "venue_price": 0.02736,
+   "coin_price": 0.02734936,
+   "rank_now": 208
+  },
+  "SAND": {
+   "venue": "binance:SANDUSDT",
+   "ok": true,
+   "why": null,
+   "diff": -1.3e-05,
+   "venue_price": 0.03323,
+   "coin_price": 0.03323043,
+   "rank_now": 242
+  },
+  "SEI": {
+   "venue": "binance:SEIUSDT",
+   "ok": true,
+   "why": null,
+   "diff": -0.00071,
+   "venue_price": 0.03408,
+   "coin_price": 0.03410422,
+   "rank_now": 140
+  },
+  "SHIB": {
+   "venue": "binance:SHIBUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.0,
+   "venue_price": 3.57e-06,
+   "coin_price": 3.57e-06,
+   "rank_now": 39
+  },
+  "SKR": {
+   "venue": "hyperliquid:SKR",
+   "ok": true,
+   "why": null,
+   "diff": -0.000944,
+   "venue_price": 0.009503,
+   "coin_price": 0.00951198,
+   "rank_now": 313
+  },
+  "SKY": {
+   "venue": "binance:SKYUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000472,
+   "venue_price": 0.04113,
+   "coin_price": 0.04111061,
+   "rank_now": 70
+  },
+  "SNX": {
+   "venue": "binance:SNXUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.001837,
+   "venue_price": 0.1407,
+   "coin_price": 0.140442,
+   "rank_now": 272
+  },
+  "SOL": {
+   "venue": "binance:SOLUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.001279,
+   "venue_price": 70.46,
+   "coin_price": 70.37,
+   "rank_now": 7
+  },
+  "STABLE": {
+   "venue": "hyperliquid:STABLE",
+   "ok": true,
+   "why": null,
+   "diff": 0.002366,
+   "venue_price": 0.023036,
+   "coin_price": 0.02298162,
+   "rank_now": 107
+  },
+  "STRK": {
+   "venue": "binance:STRKUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000268,
+   "venue_price": 0.03131,
+   "coin_price": 0.0313016,
+   "rank_now": 138
+  },
+  "STX": {
+   "venue": "binance:STXUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000909,
+   "venue_price": 0.2522,
+   "coin_price": 0.251971,
+   "rank_now": 99
+  },
+  "SUI": {
+   "venue": "binance:SUIUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000881,
+   "venue_price": 0.6486,
+   "coin_price": 0.648029,
+   "rank_now": 32
+  },
+  "SUN": {
+   "venue": "binance:SUNUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000755,
+   "venue_price": 0.01463,
+   "coin_price": 0.01461896,
+   "rank_now": 126
+  },
+  "SUPER": {
+   "venue": "binance:SUPERUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000168,
+   "venue_price": 0.113,
+   "coin_price": 0.112981,
+   "rank_now": 296
+  },
+  "SUSHI": {
+   "venue": "binance:SUSHIUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000822,
+   "venue_price": 0.1486,
+   "coin_price": 0.148478,
+   "rank_now": 431
+  },
+  "SYRUP": {
+   "venue": "binance:SYRUPUSDT",
+   "ok": true,
+   "why": null,
+   "diff": -0.001801,
+   "venue_price": 0.0887,
+   "coin_price": 0.08886,
+   "rank_now": 235
+  },
+  "TAO": {
+   "venue": "binance:TAOUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.00037,
+   "venue_price": 189.5,
+   "coin_price": 189.43,
+   "rank_now": 38
+  },
+  "TIA": {
+   "venue": "binance:TIAUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000771,
+   "venue_price": 0.3298,
+   "coin_price": 0.329546,
+   "rank_now": 119
+  },
+  "TNSR": {
+   "venue": "binance:TNSRUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.003445,
+   "venue_price": 0.0191,
+   "coin_price": 0.01903443,
+   "rank_now": 915
+  },
+  "TRB": {
+   "venue": "binance:TRBUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.00083,
+   "venue_price": 12.06,
+   "coin_price": 12.05,
+   "rank_now": 502
+  },
+  "TRUMP": {
+   "venue": "binance:TRUMPUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000662,
+   "venue_price": 0.878,
+   "coin_price": 0.877419,
+   "rank_now": 135
+  },
+  "TRX": {
+   "venue": "binance:TRXUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.001203,
+   "venue_price": 0.3045,
+   "coin_price": 0.304134,
+   "rank_now": 8
+  },
+  "TURBO": {
+   "venue": "binance:TURBOUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.003062,
+   "venue_price": 0.000547,
+   "coin_price": 0.00054533,
+   "rank_now": 473
+  },
+  "UB": {
+   "venue": "gate:UB_USDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.004779,
+   "venue_price": 0.10114,
+   "coin_price": 0.100659,
+   "rank_now": 134
+  },
+  "UMA": {
+   "venue": "binance:UMAUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.005543,
+   "venue_price": 0.236,
+   "coin_price": 0.234699,
+   "rank_now": 703
+  },
+  "UNI": {
+   "venue": "binance:UNIUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.001282,
+   "venue_price": 4.686,
+   "coin_price": 4.68,
+   "rank_now": 30
+  },
+  "USELESS": {
+   "venue": "hyperliquid:USELESS",
+   "ok": true,
+   "why": null,
+   "diff": -0.003483,
+   "venue_price": 0.081261,
+   "coin_price": 0.081545,
+   "rank_now": 273
+  },
+  "USUAL": {
+   "venue": "binance:USUALUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.001205,
+   "venue_price": 0.01107,
+   "coin_price": 0.01105668,
+   "rank_now": 689
+  },
+  "VET": {
+   "venue": "binance:VETUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000228,
+   "venue_price": 0.004606,
+   "coin_price": 0.00460495,
+   "rank_now": 110
+  },
+  "VIRTUAL": {
+   "venue": "binance:VIRTUALUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000166,
+   "venue_price": 0.3743,
+   "coin_price": 0.374238,
+   "rank_now": 136
+  },
+  "VVV": {
+   "venue": "hyperliquid:VVV",
+   "ok": true,
+   "why": null,
+   "diff": 0.003507,
+   "venue_price": 26.322,
+   "coin_price": 26.23,
+   "rank_now": 59
+  },
+  "W": {
+   "venue": "binance:WUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 1.3e-05,
+   "venue_price": 0.0083,
+   "coin_price": 0.00829989,
+   "rank_now": 359
+  },
+  "WCT": {
+   "venue": "binance:WCTUSDT",
+   "ok": true,
+   "why": null,
+   "diff": -0.000163,
+   "venue_price": 0.02901,
+   "coin_price": 0.02901474,
+   "rank_now": 917
+  },
+  "WIF": {
+   "venue": "binance:WIFUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000595,
+   "venue_price": 0.1193,
+   "coin_price": 0.119229,
+   "rank_now": 209
+  },
+  "WLD": {
+   "venue": "binance:WLDUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.002032,
+   "venue_price": 0.2342,
+   "coin_price": 0.233725,
+   "rank_now": 73
+  },
+  "WLFI": {
+   "venue": "binance:WLFIUSDT",
+   "ok": true,
+   "why": null,
+   "diff": -0.000433,
+   "venue_price": 0.0435,
+   "coin_price": 0.04351885,
+   "rank_now": 53
+  },
+  "XDC": {
+   "venue": "gate:XDC_USDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000455,
+   "venue_price": 0.0259,
+   "coin_price": 0.02588821,
+   "rank_now": 94
+  },
+  "XLM": {
+   "venue": "binance:XLMUSDT",
+   "ok": true,
+   "why": null,
+   "diff": -0.002196,
+   "venue_price": 0.1263,
+   "coin_price": 0.126578,
+   "rank_now": 20
+  },
+  "XMR": {
+   "venue": "hyperliquid:XMR",
+   "ok": true,
+   "why": null,
+   "diff": 0.002148,
+   "venue_price": 492.205,
+   "coin_price": 491.15,
+   "rank_now": 12
+  },
+  "XPL": {
+   "venue": "binance:XPLUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000118,
+   "venue_price": 0.0444,
+   "coin_price": 0.04439476,
+   "rank_now": 149
+  },
+  "XRP": {
+   "venue": "binance:XRPUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.00115,
+   "venue_price": 0.9182,
+   "coin_price": 0.917145,
+   "rank_now": 6
+  },
+  "YGG": {
+   "venue": "binance:YGGUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.001275,
+   "venue_price": 0.01951,
+   "coin_price": 0.01948516,
+   "rank_now": 797
+  },
+  "ZEC": {
+   "venue": "binance:ZECUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.001055,
+   "venue_price": 787.89,
+   "coin_price": 787.06,
+   "rank_now": 11
+  },
+  "ZEN": {
+   "venue": "binance:ZENUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.000274,
+   "venue_price": 3.651,
+   "coin_price": 3.65,
+   "rank_now": 318
+  },
+  "ZETA": {
+   "venue": "hyperliquid:ZETA",
+   "ok": true,
+   "why": null,
+   "diff": -0.000753,
+   "venue_price": 0.0263,
+   "coin_price": 0.02631982,
+   "rank_now": 418
+  },
+  "ZK": {
+   "venue": "binance:ZKUSDT",
+   "ok": true,
+   "why": null,
+   "diff": -0.001367,
+   "venue_price": 0.0067,
+   "coin_price": 0.00670917,
+   "rank_now": 287
+  },
+  "ZORA": {
+   "venue": "hyperliquid:ZORA",
+   "ok": true,
+   "why": null,
+   "diff": -0.000614,
+   "venue_price": 0.004313,
+   "coin_price": 0.00431565,
+   "rank_now": 754
+  },
+  "ZRO": {
+   "venue": "binance:ZROUSDT",
+   "ok": true,
+   "why": null,
+   "diff": 0.001709,
+   "venue_price": 1.172,
+   "coin_price": 1.17,
+   "rank_now": 102
+  }
+ }
+}
