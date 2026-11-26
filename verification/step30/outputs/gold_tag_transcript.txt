@@ -1,0 +1,41 @@
+# /sector tag GOLD metals: one membership change end to end (2026-11-26, UTC). Source: the private admin bot's audit log (~/.quanty-admin/audit.jsonl), Telegram user/chat ids removed; quanty_admin.py cmd_sector / do_sector.
+
+## raw audit lines
+{"at": "2026-11-26T14:58:23Z", "event": "command", "text": "/sector tag GOLD metals https://en.wikipedia.org/wiki/Gold_as_an_investment"}
+{"at": "2026-11-26T14:58:23Z", "event": "tool", "argv": ["python3", "tools/sectors.py", "tag", "GOLD", "metals", "https://en.wikipedia.org/wiki/Gold_as_an_investment"], "code": 0, "tail": "tag GOLD -> metals (Metals)\nsource: https://en.wikipedia.org/wiki/Gold_as_an_investment\nnothing changes in any record, price or score\npreview token: 420767d0a2c6ea01 (when 2026-11-26T14:58:23Z)"}
+{"at": "2026-11-26T14:58:26Z", "event": "button", "kind": "sector", "ok": true, "why": null}
+{"at": "2026-11-26T14:58:27Z", "event": "tool", "argv": ["python3", "tools/sectors.py", "tag", "GOLD", "metals", "https://en.wikipedia.org/wiki/Gold_as_an_investment", "--confirm", "420767d0a2c6ea01"], "code": 0, "tail": "written: metals \"Metals\" proxy COPX: GOLD"}
+{"at": "2026-11-26T14:58:28Z", "event": "tool", "argv": ["python3", "tools/prerender.py"], "code": 0, "tail": "prerender: index.html (59 rows, 8 authors), position.html list, 60 position pages, 8 caller pages"}
+
+## resulting data/sectors.json at 05de224, sector metals
+{
+ "id": "metals",
+ "name": "Metals",
+ "proxy": "COPX",
+ "created_at": "2026-11-26T14:57:58Z",
+ "members": [
+  {
+   "asset": "COPPER",
+   "source": "https://en.wikipedia.org/wiki/Copper",
+   "added_at": "2026-11-26T14:58:39Z"
+  },
+  {
+   "asset": "COPX",
+   "source": "https://www.globalxetfs.com/funds/copx/",
+   "added_at": "2026-11-26T14:58:48Z"
+  },
+  {
+   "asset": "GOLD",
+   "source": "https://en.wikipedia.org/wiki/Gold_as_an_investment",
+   "added_at": "2026-11-26T14:58:23Z"
+  },
+  {
+   "asset": "SILVER",
+   "source": "https://en.wikipedia.org/wiki/Silver_as_an_investment",
+   "added_at": "2026-11-26T14:58:30Z"
+  }
+ ]
+}
+
+## live https://sendoeth.com/pf-post-signals/web/data/sectors.json by_asset.GOLD
+[{"id": "metals", "name": "Metals"}]
