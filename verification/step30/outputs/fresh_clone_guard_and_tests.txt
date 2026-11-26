@@ -1,0 +1,122 @@
+$ git clone https://github.com/sendoeth/pf-post-signals.git fresh30 && cd fresh30 && git rev-parse HEAD
+05de22472cadb01127107c8d73b2e40058c09325
+
+$ python3 -m venv venv && pip install jsonschema==4.10.3 pillow==11.3.0 numpy==2.3.4   # same pins as .github/workflows/guard.yml
+
+$ python3 tools/guard.py --history
+guard: scanned 139 commits (all added lines + messages) -> 0 hits
+exit 0
+
+$ python3 tools/guard.py --tree
+guard: scanned 2807 files -> 0 hits
+exit 0
+
+$ python3 -m unittest tests.test_guard
+.......
+----------------------------------------------------------------------
+Ran 7 tests in 0.064s
+
+OK
+exit 0
+
+$ python3 -m unittest -v tests.test_sectors
+test_a_preview_never_writes (tests.test_sectors.ConfirmBeforeWrite.test_a_preview_never_writes) ... ok
+test_a_stale_preview_is_refused_after_another_change (tests.test_sectors.ConfirmBeforeWrite.test_a_stale_preview_is_refused_after_another_change) ... ok
+test_an_edited_preview_is_refused (tests.test_sectors.ConfirmBeforeWrite.test_an_edited_preview_is_refused) ... ok
+test_cli_confirm_needs_the_preview_time (tests.test_sectors.ConfirmBeforeWrite.test_cli_confirm_needs_the_preview_time) ... refused: --confirm needs the preview's time (QUANTY_SECTOR_WHEN), so the same change is written
+ok
+test_only_the_previews_token_writes (tests.test_sectors.ConfirmBeforeWrite.test_only_the_previews_token_writes) ... ok
+test_refused_changes_write_nothing (tests.test_sectors.ConfirmBeforeWrite.test_refused_changes_write_nothing) ... refused: sector metals: unknown ticker 'NOTACOIN' (not in data/tickers.json or the records)
+refused: no sector 'nosuch' (add it first: /sector add nosuch <name>)
+refused: GOLD is not in metals
+refused: sector 'metals' exists
+refused: sector metals: source for GOLD must be an https link or null
+ok
+test_the_committed_sectors_file_is_valid (tests.test_sectors.RepoFile.test_the_committed_sectors_file_is_valid) ... ok
+test_a_record_asset_that_is_not_a_coin_is_known (tests.test_sectors.Schema.test_a_record_asset_that_is_not_a_coin_is_known) ... ok
+test_a_valid_document_passes (tests.test_sectors.Schema.test_a_valid_document_passes) ... ok
+test_bad_id_name_proxy_source_and_extra_keys_are_refused (tests.test_sectors.Schema.test_bad_id_name_proxy_source_and_extra_keys_are_refused) ... ok
+test_duplicate_json_keys_are_refused (tests.test_sectors.Schema.test_duplicate_json_keys_are_refused) ... ok
+test_duplicate_sector_id_is_refused (tests.test_sectors.Schema.test_duplicate_sector_id_is_refused) ... ok
+test_member_listed_twice_is_refused (tests.test_sectors.Schema.test_member_listed_twice_is_refused) ... ok
+test_unknown_ticker_is_refused (tests.test_sectors.Schema.test_unknown_ticker_is_refused) ... ok
+test_results_on_the_sectors_page_match_the_leaderboard (tests.test_sectors.Site.test_results_on_the_sectors_page_match_the_leaderboard) ... ok
+test_sectors_never_change_scores (tests.test_sectors.Site.test_sectors_never_change_scores) ... ok
+test_tags_show_on_rows_positions_callers_and_the_sectors_page (tests.test_sectors.Site.test_tags_show_on_rows_positions_callers_and_the_sectors_page) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 8.664s
+
+OK
+add sector metals "Metals"
+nothing changes in any record, price or score
+preview token: e6d0a772fd767274 (when 2026-11-26T15:09:29Z)
+prerender: index.html (59 rows, 8 authors), position.html list, 60 position pages, 8 caller pages
+prerender: index.html (59 rows, 8 authors), position.html list, 60 position pages, 8 caller pages
+prerender: index.html (59 rows, 8 authors), position.html list, 60 position pages, 8 caller pages
+prerender: index.html (59 rows, 8 authors), position.html list, 60 position pages, 8 caller pages
+exit 0
+
+$ python3 -m unittest tests.test_resolve tests.test_ingest_detect tests.test_static tests.test_lifecycle tests.test_history tests.test_rating tests.test_add_call tests.test_scan_caller tests.test_read_images tests.test_call_context tests.test_transcript tests.test_episode_intake tests.test_tickers tests.test_seed tests.test_early tests.test_watch tests.test_spot_dex tests.test_labels tests.test_regimes tests.test_context tests.test_sectors
+  g = {x["rule"]: x for x in json.load(open(os.path.join(HERE, "data", "rules.json")))["gate"]}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+........................................................refused: --confirm needs the preview's time (QUANTY_SECTOR_WHEN), so the same change is written
+..refused: sector metals: unknown ticker 'NOTACOIN' (not in data/tickers.json or the records)
+refused: no sector 'nosuch' (add it first: /sector add nosuch <name>)
+refused: GOLD is not in metals
+refused: sector 'metals' exists
+refused: sector metals: source for GOLD must be an https link or null
+............
+----------------------------------------------------------------------
+Ran 360 tests in 184.144s
+
+OK (skipped=2)
+prerender: index.html (2 rows, 1 authors), position.html list, 2 position pages, 1 caller pages
+prerender: index.html (59 rows, 8 authors), position.html list, 59 position pages, 8 caller pages
+ZEC        binance:ZECUSDT     1 candles 2025-09-24T07:00:00Z -> 2025-09-24T07:00:00Z lookback 90d from 2025-06-26T07:00:00Z (market listed later: starts at its first bar) sha256 828ce295d2777ce04a2abc20d1e77fa75d72d93f73f27a56fbb3ee1bb5ef1e85
+OK   ZEC     1970742039722479782 entry 2025-09-24T07:00:00Z record 54.49 candle open 54.49
+entry bars: 1/1 candle opens equal the record entry price
+prerender: index.html (60 rows, 8 authors), position.html list, 60 position pages, 8 caller pages
+prerender: index.html (60 rows, 9 authors), position.html list, 60 position pages, 9 caller pages
+prerender: index.html (60 rows, 9 authors), position.html list, 60 position pages, 9 caller pages
+prerender: index.html (60 rows, 9 authors), position.html list, 60 position pages, 9 caller pages
+prerender: index.html (60 rows, 8 authors), position.html list, 60 position pages, 8 caller pages
+prerender: index.html (60 rows, 9 authors), position.html list, 60 position pages, 9 caller pages
+prerender: index.html (60 rows, 9 authors), position.html list, 60 position pages, 9 caller pages
+prerender: index.html (61 rows, 9 authors), position.html list, 61 position pages, 9 caller pages
+prerender: index.html (60 rows, 9 authors), position.html list, 60 position pages, 9 caller pages
+prerender: index.html (59 rows, 8 authors), position.html list, 60 position pages, 8 caller pages
+prerender: index.html (58 rows, 8 authors), position.html list, 59 position pages, 8 caller pages
+prerender: index.html (58 rows, 8 authors), position.html list, 59 position pages, 8 caller pages
+coins page: 12/14 top, 0 perps, 12 tickers, 0 flagged, 3 review
+prerender: index.html (59 rows, 8 authors), position.html list, 60 position pages, 8 caller pages
+coins page: 95/100 top, 92 perps, 189 tickers, 0 flagged, 20 review
+add sector metals "Metals"
+nothing changes in any record, price or score
+preview token: 47dd179201b67096 (when 2026-11-26T15:12:32Z)
+prerender: index.html (59 rows, 8 authors), position.html list, 60 position pages, 8 caller pages
+prerender: index.html (59 rows, 8 authors), position.html list, 60 position pages, 8 caller pages
+prerender: index.html (59 rows, 8 authors), position.html list, 60 position pages, 8 caller pages
+prerender: index.html (59 rows, 8 authors), position.html list, 60 position pages, 8 caller pages
+exit 0
+
+$ python3 check_bundle.py
+bundle: 59 record files -> 59 drawn, 0 superseded, 0 refused; 177 horizon cells, 59 best-since-post values, 8 caller ratings checked -> ALL MATCH
+exit 0
+
+$ python3 tools/sectors.py check
+sectors: ok, 2 sector(s)
+exit 0
+
+$ python3 tools/sectors.py list
+metals "Metals" proxy COPX: COPPER, COPX, GOLD, SILVER
+semis "Semiconductors" proxy SOXX: SOXL, XYZ:CXMT, XYZ:KIOXIA, XYZ:SKHX
+exit 0
+
+$ git status --short   # empty: the tests wrote nothing into the clone
+
+$ sha256sum web/data/charts.json data/sectors.json web/data/sectors.json web/sectors.html
+88dc1f5a5b6eeadf8e4825421a8093bbdddb269fda68916995c4d46f0e25c0c2  web/data/charts.json
+d4cca828e16951a8e3f99a1763a30a80ba3a74d62b4051bf76107ef4503431c4  data/sectors.json
+43eea4f88c103adbf95ed6e0c0b728e19fae373c8a0893e1b3f343ac2834059a  web/data/sectors.json
+b61f23fe3b5a4b61a9ee7803daf2e5f0bc37372523d278c9fb1cc17dd5621c52  web/sectors.html

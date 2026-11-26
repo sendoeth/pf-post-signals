@@ -1,0 +1,30 @@
+ok   leaderboard: 2 COPPER row(s) tagged metals after board.js
+ok   leaderboard: 2 COPX row(s) tagged metals after board.js
+ok   leaderboard: 6 GOLD row(s) tagged metals after board.js
+ok   leaderboard: 5 SILVER row(s) tagged metals after board.js
+ok   leaderboard: 1 SOXL row(s) tagged semis after board.js
+ok   leaderboard: 1 XYZ:CXMT row(s) tagged semis after board.js
+ok   leaderboard: 1 XYZ:KIOXIA row(s) tagged semis after board.js
+ok   leaderboard: 1 XYZ:SKHX row(s) tagged semis after board.js
+ok   pos-2011110630338535867_COPPER.html keeps the metals tag after position.js
+ok   pos-2003490330650575038_COPPER.html keeps the metals tag after position.js
+ok   pos-2106750657877434407_COPX.html keeps the metals tag after position.js
+ok   pos-2097324043334451439_COPX.html keeps the metals tag after position.js
+ok   pos-2116199680157647216_GOLD.html keeps the metals tag after position.js
+ok   pos-2113602987008356795_GOLD.html keeps the metals tag after position.js
+ok   pos-2112919830357577753_GOLD.html keeps the metals tag after position.js
+ok   pos-2062554209212358962_GOLD.html keeps the metals tag after position.js
+ok   pos-2011105173104705981_GOLD.html keeps the metals tag after position.js
+ok   pos-2003111794072801304_GOLD.html keeps the metals tag after position.js
+ok   pos-2113613893662588966_SILVER.html keeps the metals tag after position.js
+ok   pos-2106744910896312646_SILVER.html keeps the metals tag after position.js
+ok   pos-2104977267109896477_SILVER.html keeps the metals tag after position.js
+ok   pos-1993658195982876720_SILVER.html keeps the metals tag after position.js
+ok   pos-1776235528741937435_SILVER.html keeps the metals tag after position.js
+ok   pos-2116304617047007308_SOXL.html keeps the semis tag after position.js
+ok   pos-corbanu-cxmt-entry_XYZ-CXMT.html keeps the semis tag after position.js
+ok   pos-corbanu-kioxia-entry_XYZ-KIOXIA.html keeps the semis tag after position.js
+ok   pos-corbanu-skhx-entry_XYZ-SKHX.html keeps the semis tag after position.js
+ok   sectors.html#metals: 4 asset(s), 15 call(s)
+ok   sectors.html#semis: 4 asset(s), 4 call(s)
+OK: 29 checks, 0 failures (https://sendoeth.com/pf-post-signals/web/)
