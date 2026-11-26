@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; frame-src 'none'; worker-src 'none'; manifest-src 'none'; media-src 'none'; font-src 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="no-referrer">
+<script src="assets/frame-guard.js"></script>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sectors · Quanty Quants</title>
+<meta name="description" content="Calls grouped by theme: owner-set sectors, each asset with its source and every tracked call on it.">
+<link rel="stylesheet" href="assets/board.css">
+<link rel="stylesheet" href="assets/episode.css">
+<link rel="stylesheet" href="assets/position.css">
+</head>
+<body>
+<main>
+  <header class="top">
+    <div>
+      <h1>Quanty Quants</h1>
+      <p class="sub">Calls by sector</p>
+    </div>
+    <nav class="nav" aria-label="Views">
+      <a href="./">Leaderboard</a>
+      <a href="chart.html">Chart</a>
+      <a href="episodes.html">Episodes</a>
+      <a href="coins.html">Coins</a>
+      <a href="regimes.html">Regimes</a>
+      <a href="context.html">Context</a>
+      <a href="sectors.html" aria-current="page">Sectors</a>
+    </nav>
+  </header>
+  <section class="ep-head panel" data-field="sector-rule">
+    <p>A sector is a theme the owner names and the assets the owner puts in it, each with the source given for it. Nothing is detected: every change is previewed and only written after the owner confirms it. A proxy is a label only and is never priced. Sectors never change a record, a price or a score.</p>
+  </section>
+  <p class="notes">No sectors yet.</p>
+  <p class="muted small">Data: <a href="data/sectors.json">data/sectors.json</a> · charts.json sha256 88dc1f5a5b6eeadf…</p>
+  <p class="nfa" id="nfa" data-field="nfa"><strong>Not financial advice.</strong> The calls are public posts by their authors, tracked and priced for analysis. Nothing here is a recommendation to buy, sell or hold anything.</p>
+</main>
+</body>
+</html>

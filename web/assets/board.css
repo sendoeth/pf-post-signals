@@ -118,3 +118,11 @@ html[data-framed] body { display: none; }
 /* step 20: not-financial-advice notice */
 .nfa { margin: 18px 0 0; padding: 10px 12px; border: 1px solid var(--border); border-radius: 10px; color: var(--ink-2); font-size: 12.5px; line-height: 1.5; background: var(--surface); }
 .nfa strong { color: var(--ink); }
+
+/* step 30: owner-set sector tags (solid, the focus colour; a link outside the leaderboard rows) */
+.tag.sector { font: 600 10px/1 ui-monospace, monospace; padding: 3px 5px; border-radius: 5px; border: 1px solid var(--focus, #2a78d6); color: var(--focus, #2a78d6); cursor: default; text-decoration: none; white-space: nowrap; }
+a.tag.sector:hover { text-decoration: underline; cursor: pointer; }
+.panel.sectors { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; padding: 10px 18px; }
+section.panel[data-sector] { padding: 14px 18px; }
+section.panel[data-sector] h2 { margin-top: 0; }
+.sector-asset h3 { font-size: 15px; margin: 12px 0 4px; }

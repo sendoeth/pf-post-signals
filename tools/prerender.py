@@ -29,6 +29,7 @@ from rate import caller_slug  # noqa: E402
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import regimes  # noqa: E402
 import context_page  # noqa: E402
+import sectors  # noqa: E402
 AUTHOR_COLORS = ["#2a78d6", "#eb6834", "#4a3aa7", "#d55181", "#5b6475", "#8a5a2b"]
 SITE = "https://sendoeth.com/pf-post-signals/web/"
 
@@ -121,7 +122,7 @@ def raw(v):
     return e(json.dumps(v))
 
 
-def board_blocks(bundle, avatars):
+def board_blocks(bundle, avatars, sectors_doc=None):
     rows = rows_of(bundle)
     authors = sorted({r["p"]["post"]["author"] for r in rows})
     asof = bundle.get("prices_as_of")
@@ -135,7 +136,8 @@ def board_blocks(bundle, avatars):
         prices = f'{fmt_price(p["entry"]["price"])} → {end}' if p.get("entry") else "no entry bar"
         tags = (' <span class="tag closed" data-field="closed_tag">closed</span>' if p.get("closed") else "") + \
                (' <span class="tag" data-field="stand_in">stand-in</span>' if p["asset"].get("stand_in") else "") + \
-               (' <span class="tag" data-field="adjusted">split-adj.</span>' if p["asset"].get("adjustments") else "")
+               (' <span class="tag" data-field="adjusted">split-adj.</span>' if p["asset"].get("adjustments") else "") + \
+               sectors.tags_html(r["asset"], sectors_doc, link=False)        # step 30: owner-set sectors, score-neutral
         out.append(
             f'<li data-static="1" data-post-id="{e(p["post"]["id"])}" data-asset="{e(r["asset"])}" data-rank="{i}">'
             f'<a class="row" href="pos-{e(s)}.html"><span class="rank" data-field="rank">{i}</span>'
@@ -254,7 +256,7 @@ def early_block(name, signals, aff):
     return out
 
 
-def caller_static(name, c, rt, avatars, early=None, aff=None, regimes_doc=None):
+def caller_static(name, c, rt, avatars, early=None, aff=None, regimes_doc=None, sectors_doc=None):
     """Step 15: one caller's score, every input and every call it read (plain HTML, no script)."""
     f = rt["formula"]
     comp = c["components"]
@@ -281,7 +283,7 @@ def caller_static(name, c, rt, avatars, early=None, aff=None, regimes_doc=None):
     dl = "".join(f'<dt>{e(k)}</dt><dd data-field="{fld}" data-raw="{raw(v)}">{e(t)}</dd>' for k, t, fld, v in rows)
     trs = "".join(
         f'<tr data-post-id="{e(x["post_id"])}" data-asset="{e(x["asset"])}" data-counted="{str(x["counted"]).lower()}">'
-        f'<td>{e(fmt_time(x["posted_at"]))}</td><td><a href="pos-{e(slug(x["post_id"], x["asset"]))}.html">{e(x["asset"])}</a></td>'
+        f'<td>{e(fmt_time(x["posted_at"]))}</td><td><a href="pos-{e(slug(x["post_id"], x["asset"]))}.html">{e(x["asset"])}</a>{sectors.tags_html(x["asset"], sectors_doc)}</td>'
         f'<td>{x["side"].upper() if x["side"] != "none" else "NO SIDE"}</td><td>{x["state"]}</td>'
         f'<td class="{cls(x["result"])}" data-field="call_result" data-raw="{raw(x["result"])}">{"–" if x["result"] is None else fmt_pct(x["result"])}</td>'
         f'<td data-field="call_quality" data-raw="{raw(x.get("quality"))}">{num(x.get("quality"), 3) if x["counted"] else "–"}</td>'
@@ -292,7 +294,7 @@ def caller_static(name, c, rt, avatars, early=None, aff=None, regimes_doc=None):
     return f'<div data-static="1">{head}{early_block(name, early or [], aff)}<section class="panel recap"><h2>Inputs</h2><dl>{dl}</dl></section>{table}{regimes.caller_section(name, regimes_doc)}</div>'
 
 
-def position_static(r, asof, avatars, all_rows=(), ratings=None, context=None):
+def position_static(r, asof, avatars, all_rows=(), ratings=None, context=None, sectors_doc=None):
     p = r["p"]
     side = r["side"]
     rows = [("Asset", f'{r["asset"]} ({p["asset"]["source"]}:{p["asset"]["symbol"]})', "asset", None),
@@ -343,10 +345,13 @@ def position_static(r, asof, avatars, all_rows=(), ratings=None, context=None):
                  + f' class="{cls(v) if f in numeric or f.startswith("move_") else ""}">{e(t)}</dd>'
                  for k, t, f, v in rows)
     link = "read the article" if p["post"].get("source") == "corbanu" else "open on X"
+    tags = sectors.tags_html(r["asset"], sectors_doc)      # step 30: owner-set sectors, score-neutral
+    sector_section = f'<section class="panel sectors" data-field="sector_tags"><span class="small muted">Sector:</span>{tags}</section>' if tags else ""
     text = f'<p class="text" data-field="text">{e(p["post"]["text"])}</p>' if p["post"].get("text") else '<p class="text notes" data-field="text">Post text not saved: open it on X.</p>'
     return (f'<div data-static="1"><section class="panel post"><div class="who">{avatar_html(p["post"]["author"], avatars)}<div>'
             f'<strong data-field="author">@{e(p["post"]["author"])}</strong><span class="meta"><span data-field="posted_at">{e(fmt_time(p["post"]["posted_at"]))}</span> · '
             f'<a href="{e(p["post"]["url"])}" rel="noopener noreferrer" data-field="url">{link}</a></span></div></div>{text}</section>'
+            f'{sector_section}'
             f'<section class="panel recap"><h2>{e(r["asset"])} · {"NO SIDE" if side == "none" else side.upper()}</h2><dl>{dl}</dl>'
             f'<p class="notes">Prices as of {e(fmt_time(asof)) if asof else "–"}. Record {e(p["record_file"])} · sha256 {e(p["record_sha256"])}</p></section>'
             f"{context_page.context_block(context) if context else ''}{other_calls(r, all_rows)}</div>")
@@ -394,7 +399,8 @@ def main(web=None):
     if os.path.exists(os.path.join(web, "avatars", "index.json")):
         with open(os.path.join(web, "avatars", "index.json")) as f:
             avatars = json.load(f)
-    blocks, rows = board_blocks(bundle, avatars)
+    sectors_doc = sectors.build_web(web)          # step 30: owner-set sectors (data/sectors.json next to web/), score-neutral
+    blocks, rows = board_blocks(bundle, avatars, sectors_doc)
     index_path = os.path.join(web, "index.html")
     with open(index_path) as f:
         index = f.read()
@@ -425,7 +431,7 @@ def main(web=None):
                 + (f' “{" ".join(p["post"]["text"].split())[:140]}”' if p["post"].get("text") else ""))
         page = re.sub(r"<title>.*?</title>\n<meta name=\"description\" content=\"[^\"]*\">", lambda m: meta_tags(title, desc, f"{SITE}pos-{s}.html"), template, count=1, flags=re.S)
         page = page.replace("<main>", f'<main data-post="{e(p["post"]["id"])}" data-asset="{e(r["asset"])}">', 1)
-        page = fill(page, {"app": position_static(r, asof, avatars, rows, bundle.get("ratings"), contexts.get(p["post"]["id"]))})
+        page = fill(page, {"app": position_static(r, asof, avatars, rows, bundle.get("ratings"), contexts.get(p["post"]["id"]), sectors_doc)})
         name = f"pos-{s}.html"
         with open(os.path.join(web, name), "w") as f:
             f.write(page)
@@ -454,7 +460,7 @@ def main(web=None):
                     + (f' ({c["label"]})' if c["label"] else "") + f', rank {c["rank"]} of {len(rt["order"])}.')
             page = re.sub(r"<title>.*?</title>\n<meta name=\"description\" content=\"[^\"]*\">", lambda m: meta_tags(title, desc, f"{SITE}caller-{cs}.html"), ctpl, count=1, flags=re.S)
             page = page.replace("<main>", f'<main data-caller="{e(name)}">', 1)
-            page = fill(page, {"app": caller_static(name, c, rt, avatars, early_by.get(name.lower(), []), early_aff, regimes_doc)})
+            page = fill(page, {"app": caller_static(name, c, rt, avatars, early_by.get(name.lower(), []), early_aff, regimes_doc, sectors_doc)})
             fname = f"caller-{cs}.html"
             with open(os.path.join(web, fname), "w") as f:
                 f.write(page)

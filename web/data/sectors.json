@@ -1,0 +1,7 @@
+{
+ "schema": "quanty.sectors_page.v1",
+ "sectors": [],
+ "by_asset": {},
+ "charts_sha256": "88dc1f5a5b6eeadf8e4825421a8093bbdddb269fda68916995c4d46f0e25c0c2",
+ "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

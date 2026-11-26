@@ -284,6 +284,16 @@ For accounts with a long history, the oldest call is often not the first time th
 - **Mert**: SOL first named 2021-07-04 ("…getting up to speed on @solana development", 59 logged searches, 2017-11 to 2021-06 confirmed empty): $35.11 → 2.7x now, peak 8.4x (2025-01-19). ZEC first named 2024-08-07 ("you could actually add zcash to solana and enable full privacy", 57 searches, 2016 to 2024-07 confirmed empty): $31.62 → 39.7x now, peak 53.7x (2026-09-26); his first recorded call ("I am irresponsibly long ZEC", 2025-09-24, $54.49) came 413 days later, 1.72x above the first-post price. Both are mentions, so no call is added.
 - Tests: `tests/test_early.py` (the first real mention, a busy month halved to the day, narrow windows that miss posts keep the wider answer, empty windows searched twice, a weak or empty canary stops instead of confirming, resume, word hits and reposts not counted, a window full of word hits opened, mention vs stated position vs repost, venue / older pair / before-listing pricing, failing sources, the post day in the peak, the refresh never re-reading the post day, the recorded call linked, the pages and unchanged ratings).
 
+## Step 30: sector tags (owner-set, score-neutral)
+
+The owner groups assets into themes (metals, semis, solar, L1…) in `data/sectors.json`; the site shows them as tags and on `web/sectors.html`.
+
+- **Owner-set only.** The private bot's `/sector add <id> <name> [proxy=LABEL]`, `/sector tag <TICKER> <id> [source url]`, `/sector untag <TICKER> <id>` and `/sector list` show a preview first. A change is written only with that preview's token (`tools/sectors.py … --confirm <token>`, bound to the file it was made from), so a stale or edited preview cannot write. Nothing is detected automatically.
+- **Schema-checked.** Ids are lowercase slugs; names are 1–40 characters; a member must be a ticker in `data/tickers.json` or an asset the records already use (metals, xyz stocks); a source must be an https link; duplicate ids, duplicate keys and extra fields are refused. A proxy (an ETF or index) is a label only and is never priced.
+- **On the site.** Tags show on leaderboard rows (also after `board.js` renders), position pages (kept after `position.js` renders) and caller pages. `sectors.html` is static: each sector, its assets with their sources, and every tracked call on them with its result (the same number as the leaderboard).
+- **Score-neutral.** Sectors never read into or write a record, price or rating; `charts.json` and the ratings stay byte-identical (`tests/test_sectors.py`).
+- Tests: `python3 -m unittest tests.test_sectors` (schema refusals, confirm-before-write, tags on every page type, unchanged scores) and `node tests/sectors_test.js [--url …]` (Chromium: tags after the page scripts run).
+
 ## Reproduce step 2
 
 ```bash

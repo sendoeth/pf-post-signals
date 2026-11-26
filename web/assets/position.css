@@ -145,3 +145,11 @@ table.calls tr[data-counted="false"] td { opacity: .7; }
 .context { overflow-wrap: anywhere; }
 /* a DEX pool contract in the candle source line (step 26) wraps too */
 .attribution { overflow-wrap: anywhere; }
+
+/* step 30: owner-set sector tags (solid, the focus colour; a link outside the leaderboard rows) */
+.tag.sector { font: 600 10px/1 ui-monospace, monospace; padding: 3px 5px; border-radius: 5px; border: 1px solid var(--focus, #2a78d6); color: var(--focus, #2a78d6); cursor: default; text-decoration: none; white-space: nowrap; }
+a.tag.sector:hover { text-decoration: underline; cursor: pointer; }
+.panel.sectors { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; padding: 10px 18px; }
+section.panel[data-sector] { padding: 14px 18px; }
+section.panel[data-sector] h2 { margin-top: 0; }
+.sector-asset h3 { font-size: 15px; margin: 12px 0 4px; }

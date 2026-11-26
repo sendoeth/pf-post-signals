@@ -186,7 +186,7 @@ function renderAuthors(summary, selected, avatars, ratings, asort) {
   }
 }
 
-function renderRows(rows, asOf, avatars) {
+function renderRows(rows, asOf, avatars, sectors) {
   const list = document.getElementById("rows");
   list.replaceChildren();
   rows.forEach((r, i) => {
@@ -203,6 +203,8 @@ function renderRows(rows, asOf, avatars) {
     if (p.closed) line1.append(el("span", { class: "tag closed", "data-field": "closed_tag", title: PFPS.statusTip(p) }, "closed"));
     if (p.asset.stand_in) line1.append(el("span", { class: "tag", "data-field": "stand_in", title: p.asset.stand_in.reason }, "stand-in"));
     if (p.asset.adjustments && p.asset.adjustments.length) line1.append(el("span", { class: "tag", "data-field": "adjusted", title: p.asset.adjustments.map(a => `${a.kind} on ${fmtTime(a.at)}`).join("; ") }, "split-adj."));
+    // step 30: owner-set sector tags (data/sectors.json), score-neutral; a span, the row is already a link
+    for (const sec of ((sectors && sectors.by_asset) || {})[r.assetName] || []) line1.append(el("span", { class: "tag sector", "data-field": "sector", "data-sector": sec.id }, sec.name));
     meta.append(line1);
     const line2 = el("span", { class: "line2" });
     line2.append(el("span", { "data-field": "author" }, "@" + r.author), " · ");
@@ -235,7 +237,8 @@ function fillSelect(id, values) {
 
 async function main() {
   const getJson = u => fetch(u).then(r => { if (!r.ok) throw new Error(u + " HTTP " + r.status); return r.json(); });
-  const [bundle, avatars] = await Promise.all([getJson("data/charts.json"), getJson("avatars/index.json").catch(() => ({}))]);
+  const [bundle, avatars, sectors] = await Promise.all([getJson("data/charts.json"), getJson("avatars/index.json").catch(() => ({})),
+    getJson("data/sectors.json").catch(() => ({}))]);
   const asOf = bundle.prices_as_of || new Date().toISOString().slice(0, 19) + "Z";
   const all = rowsFrom(bundle);
   document.getElementById("asof").textContent =
@@ -260,7 +263,7 @@ async function main() {
     const rows = sortRows(applyFilters(all, f, asOf), f.sort);
     renderAuthors(authorSummary(applyFilters(all, { ...f, author: "all" }, asOf)), f.author, avatars, ratings, ASORT);
     renderStats(rows);
-    renderRows(rows, asOf, avatars);
+    renderRows(rows, asOf, avatars, sectors);
     document.body.setAttribute("data-shown", String(rows.length));
   };
   document.getElementById("filters").addEventListener("change", e => {
