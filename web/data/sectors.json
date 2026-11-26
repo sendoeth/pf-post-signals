@@ -1,7 +1,279 @@
 {
  "schema": "quanty.sectors_page.v1",
- "sectors": [],
- "by_asset": {},
+ "sectors": [
+  {
+   "id": "metals",
+   "name": "Metals",
+   "proxy": "COPX",
+   "members": [
+    {
+     "asset": "COPPER",
+     "source": "https://en.wikipedia.org/wiki/Copper",
+     "added_at": "2026-11-26T14:58:39Z",
+     "calls": [
+      {
+       "post_id": "2011110630338535867",
+       "author": "BobLoukas",
+       "posted_at": "2026-01-13T16:18:33Z",
+       "side": "long",
+       "state": "open",
+       "result": -0.08829142809725332
+      },
+      {
+       "post_id": "2003490330650575038",
+       "author": "BobLoukas",
+       "posted_at": "2025-12-23T15:38:12Z",
+       "side": "long",
+       "state": "open",
+       "result": -0.011960431654676196
+      }
+     ]
+    },
+    {
+     "asset": "COPX",
+     "source": "https://www.globalxetfs.com/funds/copx/",
+     "added_at": "2026-11-26T14:58:48Z",
+     "calls": [
+      {
+       "post_id": "2106750657877434407",
+       "author": "BobLoukas",
+       "posted_at": "2026-10-04T14:17:53Z",
+       "side": "long",
+       "state": "open",
+       "result": -0.3179069767441861
+      },
+      {
+       "post_id": "2097324043334451439",
+       "author": "BobLoukas",
+       "posted_at": "2026-09-08T13:59:52Z",
+       "side": "long",
+       "state": "open",
+       "result": -0.3845346763193789
+      }
+     ]
+    },
+    {
+     "asset": "GOLD",
+     "source": "https://en.wikipedia.org/wiki/Gold_as_an_investment",
+     "added_at": "2026-11-26T14:58:23Z",
+     "calls": [
+      {
+       "post_id": "2116199680157647216",
+       "author": "BobLoukas",
+       "posted_at": "2026-10-30T16:04:55Z",
+       "side": "none",
+       "state": "open",
+       "result": -0.0766316153314387
+      },
+      {
+       "post_id": "2113602987008356795",
+       "author": "goodalexander",
+       "posted_at": "2026-10-23T12:06:35Z",
+       "side": "short",
+       "state": "open",
+       "result": 0.10741511007363402
+      },
+      {
+       "post_id": "2112919830357577753",
+       "author": "BobLoukas",
+       "posted_at": "2026-10-21T14:51:58Z",
+       "side": "short",
+       "state": "open",
+       "result": 0.13067376160057853
+      },
+      {
+       "post_id": "2062554209212358962",
+       "author": "BobLoukas",
+       "posted_at": "2026-06-04T15:16:58Z",
+       "side": "long",
+       "state": "open",
+       "result": -0.19944949276231427
+      },
+      {
+       "post_id": "2011105173104705981",
+       "author": "BobLoukas",
+       "posted_at": "2026-01-13T15:56:52Z",
+       "side": "long",
+       "state": "open",
+       "result": -0.2206928400417988
+      },
+      {
+       "post_id": "2003111794072801304",
+       "author": "BobLoukas",
+       "posted_at": "2025-12-22T14:34:02Z",
+       "side": "long",
+       "state": "open",
+       "result": -0.19044624631616436
+      }
+     ]
+    },
+    {
+     "asset": "SILVER",
+     "source": "https://en.wikipedia.org/wiki/Silver_as_an_investment",
+     "added_at": "2026-11-26T14:58:30Z",
+     "calls": [
+      {
+       "post_id": "2113613893662588966",
+       "author": "BobLoukas",
+       "posted_at": "2026-10-23T12:49:55Z",
+       "side": "short",
+       "state": "open",
+       "result": 0.22167533432392272
+      },
+      {
+       "post_id": "2106744910896312646",
+       "author": "BobLoukas",
+       "posted_at": "2026-10-04T13:55:02Z",
+       "side": "short",
+       "state": "open",
+       "result": 0.3137078283655421
+      },
+      {
+       "post_id": "2104977267109896477",
+       "author": "BobLoukas",
+       "posted_at": "2026-09-29T16:51:03Z",
+       "side": "short",
+       "state": "open",
+       "result": 0.31421323950576874
+      },
+      {
+       "post_id": "1993658195982876720",
+       "author": "BobLoukas",
+       "posted_at": "2025-11-26T12:28:48Z",
+       "side": "long",
+       "state": "open",
+       "result": -0.20150533536585358
+      },
+      {
+       "post_id": "1776235528741937435",
+       "author": "BobLoukas",
+       "posted_at": "2024-04-05T13:08:45Z",
+       "side": "long",
+       "state": "closed",
+       "result": 1.8816759575615896
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "semis",
+   "name": "Semiconductors",
+   "proxy": "SOXX",
+   "members": [
+    {
+     "asset": "SOXL",
+     "source": "https://www.direxion.com/product/daily-semiconductor-bull-bear-3x-etfs",
+     "added_at": "2026-11-26T14:59:03Z",
+     "calls": [
+      {
+       "post_id": "2116304617047007308",
+       "author": "goodalexander",
+       "posted_at": "2026-10-30T23:01:54Z",
+       "side": "short",
+       "state": "open",
+       "result": 0.5969538674554722
+      }
+     ]
+    },
+    {
+     "asset": "XYZ:CXMT",
+     "source": "https://en.wikipedia.org/wiki/ChangXin_Memory_Technologies",
+     "added_at": "2026-11-26T14:59:24Z",
+     "calls": [
+      {
+       "post_id": "corbanu:cxmt-entry",
+       "author": "Corbanu",
+       "posted_at": "2026-09-04T20:09:40Z",
+       "side": "long",
+       "state": "open",
+       "result": -0.4014061732683347
+      }
+     ]
+    },
+    {
+     "asset": "XYZ:KIOXIA",
+     "source": "https://en.wikipedia.org/wiki/Kioxia",
+     "added_at": "2026-11-26T14:59:16Z",
+     "calls": [
+      {
+       "post_id": "corbanu:kioxia-entry",
+       "author": "Corbanu",
+       "posted_at": "2026-09-16T00:00:00Z",
+       "side": "long",
+       "state": "open",
+       "result": -0.5607165609926281
+      }
+     ]
+    },
+    {
+     "asset": "XYZ:SKHX",
+     "source": "https://en.wikipedia.org/wiki/SK_Hynix",
+     "added_at": "2026-11-26T14:59:10Z",
+     "calls": [
+      {
+       "post_id": "corbanu:skhx-entry",
+       "author": "Corbanu",
+       "posted_at": "2026-09-27T21:27:41Z",
+       "side": "long",
+       "state": "open",
+       "result": -0.4276357242288813
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "by_asset": {
+  "COPPER": [
+   {
+    "id": "metals",
+    "name": "Metals"
+   }
+  ],
+  "COPX": [
+   {
+    "id": "metals",
+    "name": "Metals"
+   }
+  ],
+  "GOLD": [
+   {
+    "id": "metals",
+    "name": "Metals"
+   }
+  ],
+  "SILVER": [
+   {
+    "id": "metals",
+    "name": "Metals"
+   }
+  ],
+  "SOXL": [
+   {
+    "id": "semis",
+    "name": "Semiconductors"
+   }
+  ],
+  "XYZ:CXMT": [
+   {
+    "id": "semis",
+    "name": "Semiconductors"
+   }
+  ],
+  "XYZ:KIOXIA": [
+   {
+    "id": "semis",
+    "name": "Semiconductors"
+   }
+  ],
+  "XYZ:SKHX": [
+   {
+    "id": "semis",
+    "name": "Semiconductors"
+   }
+  ]
+ },
  "charts_sha256": "88dc1f5a5b6eeadf8e4825421a8093bbdddb269fda68916995c4d46f0e25c0c2",
- "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+ "source_sha256": "d4cca828e16951a8e3f99a1763a30a80ba3a74d62b4051bf76107ef4503431c4"
 }

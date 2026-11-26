@@ -1,0 +1,61 @@
+{
+ "schema": "quanty.sectors.v1",
+ "sectors": [
+  {
+   "id": "metals",
+   "name": "Metals",
+   "proxy": "COPX",
+   "created_at": "2026-11-26T14:57:58Z",
+   "members": [
+    {
+     "asset": "COPPER",
+     "source": "https://en.wikipedia.org/wiki/Copper",
+     "added_at": "2026-11-26T14:58:39Z"
+    },
+    {
+     "asset": "COPX",
+     "source": "https://www.globalxetfs.com/funds/copx/",
+     "added_at": "2026-11-26T14:58:48Z"
+    },
+    {
+     "asset": "GOLD",
+     "source": "https://en.wikipedia.org/wiki/Gold_as_an_investment",
+     "added_at": "2026-11-26T14:58:23Z"
+    },
+    {
+     "asset": "SILVER",
+     "source": "https://en.wikipedia.org/wiki/Silver_as_an_investment",
+     "added_at": "2026-11-26T14:58:30Z"
+    }
+   ]
+  },
+  {
+   "id": "semis",
+   "name": "Semiconductors",
+   "proxy": "SOXX",
+   "created_at": "2026-11-26T14:58:57Z",
+   "members": [
+    {
+     "asset": "SOXL",
+     "source": "https://www.direxion.com/product/daily-semiconductor-bull-bear-3x-etfs",
+     "added_at": "2026-11-26T14:59:03Z"
+    },
+    {
+     "asset": "XYZ:CXMT",
+     "source": "https://en.wikipedia.org/wiki/ChangXin_Memory_Technologies",
+     "added_at": "2026-11-26T14:59:24Z"
+    },
+    {
+     "asset": "XYZ:KIOXIA",
+     "source": "https://en.wikipedia.org/wiki/Kioxia",
+     "added_at": "2026-11-26T14:59:16Z"
+    },
+    {
+     "asset": "XYZ:SKHX",
+     "source": "https://en.wikipedia.org/wiki/SK_Hynix",
+     "added_at": "2026-11-26T14:59:10Z"
+    }
+   ]
+  }
+ ]
+}
